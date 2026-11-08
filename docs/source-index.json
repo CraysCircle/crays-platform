@@ -33,6 +33,36 @@
       "sha256": "3f4453f6c801cee5db1b63b5ae21584d84b370f216219b53b429c1c4fb1cf8cf",
       "bytes": 241,
       "sourceCapture": "actual-aws-build-context30"
+    },
+    {
+      "path": "services/qlo-gateway/test-provider-room-inventory.mjs",
+      "sha256": "37faae73f6d26bf624e09e41beaec8531f2b08a75d0fa97f6c6d7212fd45969e",
+      "bytes": 2813,
+      "sourceCapture": "original-gateway-test-and-readme-supplement01"
+    },
+    {
+      "path": "services/qlo-gateway/test-provider-property-services.mjs",
+      "sha256": "50f5b3210226f06978b2ee1f62fa4e74c64996f4415e11f91f2284dcc114ca43",
+      "bytes": 2409,
+      "sourceCapture": "original-gateway-test-and-readme-supplement01"
+    },
+    {
+      "path": "services/qlo-gateway/test-server-room-inventory.mjs",
+      "sha256": "0290b713bff20b46e75ce724ea46b97af2d7bf59b27171d7cc624a306d478b10",
+      "bytes": 5040,
+      "sourceCapture": "original-gateway-test-and-readme-supplement01"
+    },
+    {
+      "path": "services/qlo-gateway/test-gateway.mjs",
+      "sha256": "729e80e7a4afedb476d8f6c450ab52f00453e7425ec6b6ce09bf3fcb5e7e87ad",
+      "bytes": 19508,
+      "sourceCapture": "original-gateway-test-and-readme-supplement01"
+    },
+    {
+      "path": "docs/original-qlo-gateway-readme.md",
+      "sha256": "72fc4b33e95a6e9aceeda006ac8e4c868719bf488df555a9d45ff0cc947e04cc",
+      "bytes": 950,
+      "sourceCapture": "original-gateway-test-and-readme-supplement01"
     }
   ],
   "existingArtifact": {

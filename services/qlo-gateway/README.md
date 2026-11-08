@@ -38,7 +38,9 @@ That command is documentation, not a request to build or run a production replac
 
 ## Tests and validation limits
 
-The original `package.json` lists four test scripts. Those test files were not present in the five-file AWS source allowlist and are not included in this initial import. Consequently, `npm test` is **not** a passing verification command for this snapshot. Their source provenance and import remain open.
+The original four test files are now preserved unchanged beside the application modules. Their original README is retained [separately](../../docs/original-qlo-gateway-readme.md), and exact hashes are recorded in the source index. The test gateway uses synthetic fixture credentials and local mock services; these are not production credentials.
+
+The tests have not been executed by this source-preservation import. Read the original package scripts before running them in an authorized development environment; no passing test result is asserted here.
 
 This import verifies file bytes against the supplied original/build pins and checks the committed files after publication. It reuses the already recorded image30 build evidence. It does not rerun the unchanged gateway, call provider APIs, change credentials, start a container or establish customer acceptance.
 

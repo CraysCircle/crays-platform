@@ -1,0 +1,28 @@
+{
+  "schema": "crays.operations.source-index.v1",
+  "files": [
+    {
+      "path": "operations/qlo/qlo_account2_rotation79.rev03.py",
+      "sha256": "d3fba5e0edc3e7c77f8505b609e98233089f99c69df1fdf0a2f417aa7abfc8d3",
+      "bytes": 17139
+    },
+    {
+      "path": "operations/storage/persistent_storage_guards.py",
+      "sha256": "3efa226b84d375cf96f911c620b7dbefa814f0c54abb8fa61944d0aeb658c739",
+      "bytes": 1992
+    }
+  ],
+  "sourcePacket": {
+    "key": "migration-work/20261108/business/qlo-key-rotation79/source.rev03.candidate.json",
+    "versionId": "bWuVyq3arhWBKbYZBFNmdTIMTkHQ9qlE",
+    "sha256": "a941c0b378b900cda3bb6e056cb7121f3a809dc0933793ff7ca56e3db4633090"
+  },
+  "sourceReview": {
+    "key": "migration-work/20261108/business/qlo-key-rotation79/review.rev03.source-only.json",
+    "versionId": "0UcM2XeZa9YtfYQg8Z5wYgIskU..qqrP",
+    "sha256": "7bfcbce1db93c49c2c38a6138b360584c3412643e6b9638c5fbef1d75822f0f6"
+  },
+  "executedByImport": false,
+  "executionApprovedByImport": false,
+  "licenseClosure": "OPEN_NO_LICENSE_INVENTED"
+}

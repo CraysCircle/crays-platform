@@ -7,7 +7,7 @@ This record separates the original application source, the CRAYS AWS build descr
 | Four Qlo gateway application files | Exact original application capture19; all supplied file hashes match | No standalone application LICENSE/NOTICE/COPYING was found in the specifically examined original component directories and roots. The original package metadata has no license field. No MIT, GPL, AGPL or other application license has been assigned by inference. |
 | AWS Dockerfile | Exact image30 build-context file; SHA-256 recorded in the source index | CRAYS-specific deployment source, retained unchanged. No separate license or copyright ownership is invented for it. |
 | Node/Alpine runtime and bundled components | Exact base reference in the original Dockerfile; existing Node version qualification | Full version-specific license/NOTICE texts and the complete source/provenance relationship of the exact runtime image still require capture and verification. A base-image name alone does not close this work. |
-| Test sources referenced by package metadata | Names preserved in the original package test command | The files are absent from this initial AWS allowlist import; their actual source and any associated notices still need to be recovered. |
+| Test sources referenced by package metadata | Names preserved in the original package test command | All four original test files and the original component README have now been recovered and preserved unchanged with exact hashes. No separate license grant has been inferred. |
 
 The original application capture and AWS Dockerfile were supplied by the Business migration workstream. Application SHA pins and the existing image30 build receipt establish the recorded relationship; a new reproducible build from Git has not been performed.
 
@@ -21,4 +21,8 @@ No customer data, provider keys, consumer tokens, private bindings, database dum
 
 ## Open acceptance points
 
-The initial source capture is usable for precise repository/commit identification. Complete application authorship/license provenance, exact runtime license closure, missing test-source custody and any applicable source-offer obligations remain open. They must not be reported as legally complete or release-approved.
+The initial source capture is usable for precise repository/commit identification. Complete application authorship/license provenance, exact runtime license closure, test execution evidence and any applicable source-offer obligations remain open. They must not be reported as legally complete or release-approved.
+
+## Operations source
+
+The reviewed Qlo account2 revision03 and unchanged storage guard are preserved with their source packet/review identities under [operations](../operations/README.md). This import supplies no new license grant and does not authorize execution. Their original ownership and license evidence remain an explicit open item.

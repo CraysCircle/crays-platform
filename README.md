@@ -9,13 +9,16 @@ This repository preserves CRAYS-owned service source and its relationship to AWS
 - [License and provenance record](docs/license-and-provenance.md): what is established and which evidence is still missing.
 - [Development and release process](docs/development-and-releases.md): how future changes reach a protected preview and an approved release.
 
-The current import contains one component. It does not claim that the entire CRAYS platform or AWS migration is already represented here. More sources will be added after their ownership, exact versions and confidentiality have been checked.
+The current import contains the Qlo gateway and reviewed Qlo operations source. It does not claim that the entire CRAYS platform or AWS migration is already represented here. More sources will be added after their ownership, exact versions and confidentiality have been checked.
 
 ## Repository layout
 
 ```text
 services/
   qlo-gateway/       Original gateway modules, package metadata and AWS Dockerfile
+operations/
+  qlo/              Reviewed account2 correction source and restore conditions
+  storage/          Original persistent-storage guard
 docs/
   source-index.json  File-level provenance and artifact identities
   license-and-provenance.md
@@ -25,3 +28,5 @@ docs/
 The service README is the operational entry point. Runtime credentials, account-specific bindings, import receipts, database exports and live customer data are kept outside Git.
 
 The owner requires public source access after source and history review. Public readability does not create a new license grant or prove complete corresponding source, a successful customer journey or approval to deploy.
+
+- [Operations source](operations/README.md): reviewed programs, exact provenance and execution boundaries.
