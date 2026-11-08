@@ -1,0 +1,15 @@
+# Private operational material stays outside the repository.
+.env
+.env.*
+!.env.example
+**/bindings/
+**/secrets/
+**/private/
+**/import-receipt*.json
+**/node_modules/
+**/.next/
+**/dist/
+**/coverage/
+*.log
+*.pem
+*.key

@@ -1,0 +1,8 @@
+{
+  "name": "crays-clubs-qlo-gateway",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node test-provider-room-inventory.mjs && node test-provider-property-services.mjs && node test-server-room-inventory.mjs && node test-gateway.mjs"
+  }
+}

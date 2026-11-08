@@ -1,0 +1,50 @@
+{
+  "schema": "crays.platform.source-artifact-index.v1",
+  "component": "qlo-gateway",
+  "captureUTC": "2026-11-08T19:58:47.474498+00:00",
+  "applicationFilesUnchanged": true,
+  "files": [
+    {
+      "path": "services/qlo-gateway/server.mjs",
+      "sha256": "642e68a03e6d3331ad4e29c036d41f0797c11a165725fbb2b82d304c2e7adb57",
+      "bytes": 30346,
+      "sourceCapture": "original-application19"
+    },
+    {
+      "path": "services/qlo-gateway/provider-room-inventory.mjs",
+      "sha256": "24cb98700f736780e583599dbd8e2bd82c969e0838119a5215221601a9291167",
+      "bytes": 2776,
+      "sourceCapture": "original-application19"
+    },
+    {
+      "path": "services/qlo-gateway/provider-property-services.mjs",
+      "sha256": "8430d78393d58326e8b602f770dfa3a6a7161bb202ab82959522de7b5da9ba75",
+      "bytes": 2935,
+      "sourceCapture": "original-application19"
+    },
+    {
+      "path": "services/qlo-gateway/package.json",
+      "sha256": "ff14f766142763e4799a197cd4b1e2b471e9bdd04708120809ed57e75dbff46b",
+      "bytes": 259,
+      "sourceCapture": "original-application19"
+    },
+    {
+      "path": "services/qlo-gateway/Dockerfile",
+      "sha256": "3f4453f6c801cee5db1b63b5ae21584d84b370f216219b53b429c1c4fb1cf8cf",
+      "bytes": 241,
+      "sourceCapture": "actual-aws-build-context30"
+    }
+  ],
+  "existingArtifact": {
+    "type": "docker-image-id",
+    "id": "sha256:190ad343504d8807d1cebaadccf37c3c4858114175fe844100e874a90cf92686",
+    "registryManifestDigest": null,
+    "recordedBuildCommandId": "a87168c1-983a-4a21-9f7d-8763715bc56b",
+    "recordedNodeVersion": "22.23.1",
+    "capturedSourceRebuiltByThisImport": false,
+    "runtimeStartedByThisImport": false
+  },
+  "licenseClosure": "OPEN_SEE_LICENSE_AND_PROVENANCE",
+  "customerAcceptance": false,
+  "sourceCaptureIsNotProductionRelease": true
+}
