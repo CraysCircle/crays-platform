@@ -1,36 +1,42 @@
-# CRAYS platform services
+# CRAYS platform sources
 
-This repository preserves CRAYS-owned service source and its relationship to AWS artifacts. It is the home for shared platform services, rather than the public websites or third-party upstream projects.
+Shared CRAYS services, website-hosting wrappers and reviewed migration operations source, with exact provenance and version records. Website implementations and retained upstream forks remain in their own project repositories.
 
-## Start here
+## Find a component
 
-- [Qlo gateway](services/qlo-gateway/README.md): the first preserved component, connecting the existing Core/session boundary with Qlo provider reads.
-- [Source and artifact index](docs/source-index.json): exact file hashes and the existing AWS image identity.
-- [License and provenance record](docs/license-and-provenance.md): what is established and which evidence is still missing.
-- [Development and release process](docs/development-and-releases.md): how future changes reach a protected preview and an approved release.
-
-The current import contains the Qlo gateway, Clubs Commerce BFF and reviewed-candidate Qlo operations source. It does not claim that the entire CRAYS platform or AWS migration is already represented here. More sources will be added after their ownership, exact versions and confidentiality have been checked.
+| Component | Source and documentation |
+| --- | --- |
+| Qlo gateway | [Service, original tests and configuration](services/qlo-gateway/README.md) |
+| Clubs Commerce BFF | [Original service, build/test inputs and dependency notices](services/clubs-commerce-bff/README.md) |
+| Net hosting | [Unchanged static-hosting wrapper and exact application reference](hosting/net/README.md) |
+| Qlo operations | [Account2 correction](operations/qlo/README.md) and [runtime44 source versions](operations/qlo/gateway-runtime44/README.md) |
+| Delivery/Postiz operations | [Original-frontend qualifier and separate physical-return helper](operations/delivery/postiz/README.md) |
+| Persistent storage guard | [Original source and operations index](operations/README.md) |
 
 ## Repository layout
 
-```text
-services/
-  qlo-gateway/       Original gateway modules, package metadata and AWS Dockerfile
-operations/
-  qlo/              Reviewed account2 correction source and restore conditions
-  storage/          Original persistent-storage guard
-docs/
-  source-index.json  File-level provenance and artifact identities
-  license-and-provenance.md
-  development-and-releases.md
-```
+    services/
+      qlo-gateway/
+      clubs-commerce-bff/
+    hosting/
+      net/
+    operations/
+      qlo/
+      storage/
+      delivery/postiz/
+    docs/
+      source-index.json
+      license-and-provenance.md
+      development-and-releases.md
 
-The service README is the operational entry point. Runtime credentials, account-specific bindings, import receipts, database exports and live customer data are kept outside Git.
+[Source/artifact index](docs/source-index.json) links each preserved component's exact file and version records. [License/provenance](docs/license-and-provenance.md) distinguishes established notices from missing evidence. [Development/releases](docs/development-and-releases.md) describes the required review and release sequence.
 
-The owner requires public source access after source and history review. Public readability does not create a new license grant or prove complete corresponding source, a successful customer journey or approval to deploy.
+The broader platform/app source reconciliation remains in progress. This repository does not yet claim to contain every CRAYS service, native/Core WIP, dependency source or runtime notice.
 
-- [Operations source](operations/README.md): reviewed programs, exact provenance and execution boundaries.
+## Source and execution boundaries
 
-- [Clubs Commerce BFF](services/clubs-commerce-bff/README.md): original service, tests, lockfile and version-specific dependency notices.
+Original component files are retained unchanged unless a record explicitly identifies a later revision. Historical test output, source review, fresh tests/builds, actual runtime execution and customer/rights acceptance remain distinct evidence.
 
-- [Website hosting sources](hosting/README.md): exact hosting wrappers and links to the existing application repositories.
+Operations programs retain original runtime assumptions and protected-input dependencies. Publication is source custody, not a standalone instruction or authorization to execute them. No product deployment workflow is included; GitHub Actions remains disabled during consolidation.
+
+Credentials, private keys, customer data, database exports and private runtime/custody records remain outside Git. Original license/copyright/NOTICE terms apply per component; public readability does not create a new blanket license grant.
