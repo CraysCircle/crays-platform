@@ -8,3 +8,5 @@ This directory preserves reviewed migration and recovery programs separately fro
 Programs retain their original environment assumptions, absolute paths and helper imports. Their directory placement does not make them standalone commands. An authorized runtime owner must review the execution wrapper, dependency locations, protected configuration and current state before any execution. No runtime execution, account mutation, key generation or restore was performed by this import.
 
 See [provenance](source-index.json) for exact source hashes. No application license is inferred from publication.
+
+- [Gateway runtime44](qlo/gateway-runtime44/README.md): exact source39/source44 and current revision02 wrapper, with the earlier wrapper retained as history.

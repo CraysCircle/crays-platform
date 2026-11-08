@@ -1,0 +1,283 @@
+{
+  "status": "ALL_14_LOCKED_TARBALLS_AND_ORIGINAL_LICENSE_TEXTS_CAPTURED",
+  "packages": [
+    {
+      "package": "pg",
+      "version": "8.22.0",
+      "lockedIntegrity": "sha512-8wih1vVIBMxoUM2oB4soJsD9tDnDpLv4OXBJ+EJzFsvycD+lfyIreC2gGHq78f8jbLLt+bvlPTFdFZfJkOuzAA==",
+      "packageTarballURL": "https://registry.npmjs.org/pg/-/pg-8.22.0.tgz",
+      "tarballSHA256": "2f8b273b9b93b8712251cbe2b0f05378f4da2187eab5348c3c6c34d02622a55e",
+      "packageDeclaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "notices": [
+        {
+          "path": "LICENSE",
+          "sha256": "192b8f5c96900f04a1271dec39688655d7416c1c6ea84a508e18b50d2b6751f3",
+          "bytes": 1077,
+          "repositoryPath": "services/clubs-commerce-bff/third-party/notices/pg/8.22.0/LICENSE"
+        }
+      ],
+      "missingOriginalNoticeInPackage": false
+    },
+    {
+      "package": "pg-cloudflare",
+      "version": "1.4.0",
+      "lockedIntegrity": "sha512-Vo7z/6rrQYxpNRylp4Tlob2elzbh+N/MOQbxFVWCxS7oEx6jF53GTJFxK2WWpKuBRkmiin4Mt+xofFDjx09R0A==",
+      "packageTarballURL": "https://registry.npmjs.org/pg-cloudflare/-/pg-cloudflare-1.4.0.tgz",
+      "tarballSHA256": "bffbb359f525d8ef6a0ce72f185feb109018a6c763aafc4f7a1b20fde66b98da",
+      "packageDeclaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "notices": [
+        {
+          "path": "LICENSE",
+          "sha256": "192b8f5c96900f04a1271dec39688655d7416c1c6ea84a508e18b50d2b6751f3",
+          "bytes": 1077,
+          "repositoryPath": "services/clubs-commerce-bff/third-party/notices/pg-cloudflare/1.4.0/LICENSE"
+        }
+      ],
+      "missingOriginalNoticeInPackage": false
+    },
+    {
+      "package": "pg-connection-string",
+      "version": "2.14.0",
+      "lockedIntegrity": "sha512-XwWDGcLRGCXAR8F/AM5bG7Q+A3Wm2s6QeEjlOKZLlH3UYcguiqCWKyWXVag5TLTIjR7oOJUY8kcADaZgWPyLeg==",
+      "packageTarballURL": "https://registry.npmjs.org/pg-connection-string/-/pg-connection-string-2.14.0.tgz",
+      "tarballSHA256": "314e8be01b0c5217f51b51a8d334ddbb41d84de437e1296e2608b97dc1dfc120",
+      "packageDeclaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "notices": [
+        {
+          "path": "LICENSE",
+          "sha256": "2244b5486c4427001b6756a87b9a297d427c111dcc3ba64a097492a8979c23d0",
+          "bytes": 1082,
+          "repositoryPath": "services/clubs-commerce-bff/third-party/notices/pg-connection-string/2.14.0/LICENSE"
+        }
+      ],
+      "missingOriginalNoticeInPackage": false
+    },
+    {
+      "package": "pg-int8",
+      "version": "1.0.1",
+      "lockedIntegrity": "sha512-WCtabS6t3c8SkpDBUlb1kjOs7l66xsGdKpIPZsg4wR+B3+u9UAum2odSsF9tnvxg80h4ZxLWMy4pRjOsFIqQpw==",
+      "packageTarballURL": "https://registry.npmjs.org/pg-int8/-/pg-int8-1.0.1.tgz",
+      "tarballSHA256": "f010d48974a96814e841edbb6fc6096385574610714d2a50e99811170c365e92",
+      "packageDeclaredLicense": "ISC",
+      "lockDeclaredLicense": "ISC",
+      "notices": [
+        {
+          "path": "LICENSE",
+          "sha256": "4e8e87ccdfc7e4b47fd89015f78468aa53b6bf43ab6e6e12d43e8f55294911de",
+          "bytes": 750,
+          "repositoryPath": "services/clubs-commerce-bff/third-party/notices/pg-int8/1.0.1/LICENSE"
+        }
+      ],
+      "missingOriginalNoticeInPackage": false
+    },
+    {
+      "package": "pg-pool",
+      "version": "3.14.0",
+      "lockedIntegrity": "sha512-gKtPkFdQPU3DksooVLi9LsjZxrsBUZIpa+7aVx+LV5pNh0KzP4Zleud2po+ConrxbuXGBJ6Hfer6hdgpIBpBaw==",
+      "packageTarballURL": "https://registry.npmjs.org/pg-pool/-/pg-pool-3.14.0.tgz",
+      "tarballSHA256": "0b0b8729c09d5eaa059313c9c3d11efc8907441386bbf86ccc57e1298c6ce71a",
+      "packageDeclaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "notices": [
+        {
+          "path": "LICENSE",
+          "sha256": "4f15ee7fc2a72082859d7e0d12dfa4bcdd70b1c744ad3850d07780730ac08557",
+          "bytes": 1073,
+          "repositoryPath": "services/clubs-commerce-bff/third-party/notices/pg-pool/3.14.0/LICENSE"
+        }
+      ],
+      "missingOriginalNoticeInPackage": false
+    },
+    {
+      "package": "pg-protocol",
+      "version": "1.16.0",
+      "lockedIntegrity": "sha512-sILXutLVjCLjcDuOmvhX5e2Z4cS5qG/6Bu3VkpFwdf/633ElGLpEh9bgmuI5I4sqKqkifQiGyiCcx1HdtrK7tg==",
+      "packageTarballURL": "https://registry.npmjs.org/pg-protocol/-/pg-protocol-1.16.0.tgz",
+      "tarballSHA256": "37fd174ff80805dff9faadd44cc0c3fe854096ba8823002348c94fabcab7ddfc",
+      "packageDeclaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "notices": [
+        {
+          "path": "LICENSE",
+          "sha256": "192b8f5c96900f04a1271dec39688655d7416c1c6ea84a508e18b50d2b6751f3",
+          "bytes": 1077,
+          "repositoryPath": "services/clubs-commerce-bff/third-party/notices/pg-protocol/1.16.0/LICENSE"
+        }
+      ],
+      "missingOriginalNoticeInPackage": false
+    },
+    {
+      "package": "pg-types",
+      "version": "2.2.0",
+      "lockedIntegrity": "sha512-qTAAlrEsl8s4OiEQY69wDvcMIdQN6wdz5ojQiOy6YRMuynxenON0O5oCpJI6lshc6scgAY8qvJ2On/p+CXY0GA==",
+      "packageTarballURL": "https://registry.npmjs.org/pg-types/-/pg-types-2.2.0.tgz",
+      "tarballSHA256": "c4804fd058140c32f8fda78883ad45dee3eaa4fd9e9127b6eb659fefe51981bd",
+      "packageDeclaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "notices": [
+        {
+          "path": "README.md",
+          "sha256": "ecda9bca71d3f0cee4e600d1dd2bef336213f39ef2e8fca6a1a1c1c8723f643a",
+          "bytes": 3831,
+          "kind": "FULL_ORIGINAL_README_WITH_EMBEDDED_LICENSE",
+          "repositoryPath": "services/clubs-commerce-bff/third-party/notices/pg-types/2.2.0/README.md"
+        }
+      ],
+      "missingOriginalNoticeInPackage": false,
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/brianc/node-pg-types.git"
+      },
+      "registryGitHead": "d9d9dfb87eb50914043cbc178c301b7dd3b0c50d",
+      "registryRepository": {
+        "url": "git://github.com/brianc/node-pg-types.git",
+        "type": "git"
+      },
+      "missingStandaloneLicenseFile": true
+    },
+    {
+      "package": "pgpass",
+      "version": "1.0.5",
+      "lockedIntegrity": "sha512-FdW9r/jQZhSeohs1Z3sI1yxFQNFvMcnmfuj4WBMUTxOrAyLMaTcE1aAMBiTlbMNaXvBCQuVi0R7hd8udDSP7ug==",
+      "packageTarballURL": "https://registry.npmjs.org/pgpass/-/pgpass-1.0.5.tgz",
+      "tarballSHA256": "ff794c956186430afd600b5bc4500f3f0faf34b62be6ff98494f4c7f4a6d8597",
+      "packageDeclaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "notices": [
+        {
+          "path": "README.md",
+          "sha256": "62549909404b5a0dcb2b4b74c9a930baf8095dbcfa1543c4ffc79378acd22b57",
+          "bytes": 3294,
+          "kind": "FULL_ORIGINAL_README_WITH_EMBEDDED_LICENSE",
+          "repositoryPath": "services/clubs-commerce-bff/third-party/notices/pgpass/1.0.5/README.md"
+        }
+      ],
+      "missingOriginalNoticeInPackage": false,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/hoegaarden/pgpass.git"
+      },
+      "registryGitHead": "4230ed5e417ba6044ea7eb80b7c33db9ec301398",
+      "registryRepository": {
+        "url": "git+https://github.com/hoegaarden/pgpass.git",
+        "type": "git"
+      },
+      "missingStandaloneLicenseFile": true
+    },
+    {
+      "package": "postgres-array",
+      "version": "2.0.0",
+      "lockedIntegrity": "sha512-VpZrUqU5A69eQyW2c5CA1jtLecCsN2U/bD6VilrFDWq5+5UIEVO7nazS3TEcHf1zuPYO/sqGvUvW62g86RXZuA==",
+      "packageTarballURL": "https://registry.npmjs.org/postgres-array/-/postgres-array-2.0.0.tgz",
+      "tarballSHA256": "dbf1035c777631d4b0a4b5c035b1f6247dd923db6b2ea115b93b1eabb172b3a0",
+      "packageDeclaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "notices": [
+        {
+          "path": "license",
+          "sha256": "f057f36739d53d228a746de4440c1e0c644ecde06d6beab45337d39c9d12a393",
+          "bytes": 1111,
+          "repositoryPath": "services/clubs-commerce-bff/third-party/notices/postgres-array/2.0.0/license"
+        }
+      ],
+      "missingOriginalNoticeInPackage": false
+    },
+    {
+      "package": "postgres-bytea",
+      "version": "1.0.1",
+      "lockedIntegrity": "sha512-5+5HqXnsZPE65IJZSMkZtURARZelel2oXUEO8rH83VS/hxH5vv1uHquPg5wZs8yMAfdv971IU+kcPUczi7NVBQ==",
+      "packageTarballURL": "https://registry.npmjs.org/postgres-bytea/-/postgres-bytea-1.0.1.tgz",
+      "tarballSHA256": "0395e34ecb9945b0003132af6e11463ec7ec8f17fb5cbdbccc5a822bd6807d96",
+      "packageDeclaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "notices": [
+        {
+          "path": "license",
+          "sha256": "f057f36739d53d228a746de4440c1e0c644ecde06d6beab45337d39c9d12a393",
+          "bytes": 1111,
+          "repositoryPath": "services/clubs-commerce-bff/third-party/notices/postgres-bytea/1.0.1/license"
+        }
+      ],
+      "missingOriginalNoticeInPackage": false
+    },
+    {
+      "package": "postgres-date",
+      "version": "1.0.7",
+      "lockedIntegrity": "sha512-suDmjLVQg78nMK2UZ454hAG+OAW+HQPZ6n++TNDUX+L0+uUlLywnoxJKDou51Zm+zTCjrCl0Nq6J9C5hP9vK/Q==",
+      "packageTarballURL": "https://registry.npmjs.org/postgres-date/-/postgres-date-1.0.7.tgz",
+      "tarballSHA256": "a67a8d90e7b8f64041a6f425b102b27a3e86d5854ace7e9414a890912f3adb59",
+      "packageDeclaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "notices": [
+        {
+          "path": "license",
+          "sha256": "f057f36739d53d228a746de4440c1e0c644ecde06d6beab45337d39c9d12a393",
+          "bytes": 1111,
+          "repositoryPath": "services/clubs-commerce-bff/third-party/notices/postgres-date/1.0.7/license"
+        }
+      ],
+      "missingOriginalNoticeInPackage": false
+    },
+    {
+      "package": "postgres-interval",
+      "version": "1.2.0",
+      "lockedIntegrity": "sha512-9ZhXKM/rw350N1ovuWHbGxnGh/SNJ4cnxHiM0rxE4VN41wsg8P8zWn9hv/buK00RP4WvlOyr/RBDiptyxVbkZQ==",
+      "packageTarballURL": "https://registry.npmjs.org/postgres-interval/-/postgres-interval-1.2.0.tgz",
+      "tarballSHA256": "e67563626b30aa7d22caf930e38529bb137476146a11eaaa0bb1e07c0a2413b1",
+      "packageDeclaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "notices": [
+        {
+          "path": "license",
+          "sha256": "f057f36739d53d228a746de4440c1e0c644ecde06d6beab45337d39c9d12a393",
+          "bytes": 1111,
+          "repositoryPath": "services/clubs-commerce-bff/third-party/notices/postgres-interval/1.2.0/license"
+        }
+      ],
+      "missingOriginalNoticeInPackage": false
+    },
+    {
+      "package": "split2",
+      "version": "4.2.0",
+      "lockedIntegrity": "sha512-UcjcJOWknrNkF6PLX83qcHM6KHgVKNkV62Y8a5uYDVv9ydGQVwAHMKqHdJje1VTWpljG0WYpCDhrCdAOYH4TWg==",
+      "packageTarballURL": "https://registry.npmjs.org/split2/-/split2-4.2.0.tgz",
+      "tarballSHA256": "e0061e7f042fc5ff6dcda8afb66619757d92ab1ff514a28a5904f2ebde27bf54",
+      "packageDeclaredLicense": "ISC",
+      "lockDeclaredLicense": "ISC",
+      "notices": [
+        {
+          "path": "LICENSE",
+          "sha256": "c372ef2fa1dfcb124ed807609751e75e3a009f108c5724916b489288fcb88a0c",
+          "bytes": 764,
+          "repositoryPath": "services/clubs-commerce-bff/third-party/notices/split2/4.2.0/LICENSE"
+        }
+      ],
+      "missingOriginalNoticeInPackage": false
+    },
+    {
+      "package": "xtend",
+      "version": "4.0.2",
+      "lockedIntegrity": "sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==",
+      "packageTarballURL": "https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz",
+      "tarballSHA256": "bd22a01d43c799be7bb53dfa9e775b132045e39525e51efb977528a00041ba48",
+      "packageDeclaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "notices": [
+        {
+          "path": "LICENSE",
+          "sha256": "82e67379203d5794e7c44549847d8d64ae6904591381682360470898bd306821",
+          "bytes": 1078,
+          "repositoryPath": "services/clubs-commerce-bff/third-party/notices/xtend/4.0.2/LICENSE"
+        }
+      ],
+      "missingOriginalNoticeInPackage": false
+    }
+  ],
+  "packagesExecuted": false,
+  "runtimeImageLicenseClosure": false,
+  "standaloneNoticeFiles": 12,
+  "fullOriginalReadmesWithEmbeddedLicense": 2
+}

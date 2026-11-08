@@ -1,0 +1,56 @@
+
+> @crays/clubs-commerce-bff@1.2.0-cclub067 test
+> node --test test.mjs
+
+TAP version 13
+# Subtest: only the six CCLUB067 browser operations are admitted
+ok 1 - only the six CCLUB067 browser operations are admitted
+  ---
+  duration_ms: 2.853962
+  type: 'test'
+  ...
+# Subtest: browser authority and unknown fields fail closed
+ok 2 - browser authority and unknown fields fail closed
+  ---
+  duration_ms: 0.641863
+  type: 'test'
+  ...
+# Subtest: trusted assertion is purpose and identity-provider scoped
+ok 3 - trusted assertion is purpose and identity-provider scoped
+  ---
+  duration_ms: 1.691306
+  type: 'test'
+  ...
+# Subtest: B2B identity cannot be substituted into the B2C assertion
+ok 4 - B2B identity cannot be substituted into the B2C assertion
+  ---
+  duration_ms: 0.488444
+  type: 'test'
+  ...
+# Subtest: safe responses reject provider authority and business identity
+ok 5 - safe responses reject provider authority and business identity
+  ---
+  duration_ms: 0.506238
+  type: 'test'
+  ...
+# Subtest: Vendure session encryption keeps raw provider authority server-only
+ok 6 - Vendure session encryption keeps raw provider authority server-only
+  ---
+  duration_ms: 1.699592
+  type: 'test'
+  ...
+# Subtest: errors are collapsed to a small public vocabulary
+ok 7 - errors are collapsed to a small public vocabulary
+  ---
+  duration_ms: 1.306927
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 103.819473

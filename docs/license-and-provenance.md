@@ -26,3 +26,7 @@ The initial source capture is usable for precise repository/commit identificatio
 ## Operations source
 
 The reviewed Qlo account2 revision03 and unchanged storage guard are preserved with their source packet/review identities under [operations](../operations/README.md). This import supplies no new license grant and does not authorize execution. Their original ownership and license evidence remain an explicit open item.
+
+## Clubs Commerce BFF
+
+The nine original component files are preserved unchanged with their [source record](../services/clubs-commerce-bff/source-index.json). All fourteen locked npm package archives were checked against their original SHA-512 lock integrity. Twelve standalone license files and two complete original READMEs containing license text are retained under its third-party directory; their copyright and permissions are not replaced with a generic license. This does not establish the BFF application license, exact runtime/base-image notices or AWS deployment parity.

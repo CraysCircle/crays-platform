@@ -10,6 +10,30 @@
       "path": "operations/storage/persistent_storage_guards.py",
       "sha256": "3efa226b84d375cf96f911c620b7dbefa814f0c54abb8fa61944d0aeb658c739",
       "bytes": 1992
+    },
+    {
+      "path": "operations/qlo/gateway-runtime44/source39.py",
+      "sha256": "46db8a7df103f8e94a8e613cf2e38ef7608d315acfbc75e357f70b2bf0e23eec",
+      "bytes": 4191,
+      "sourcePacketRevision": "opsrev02"
+    },
+    {
+      "path": "operations/qlo/gateway-runtime44/source44.py",
+      "sha256": "98e9836507a38b22ede4811c36e4de64e88fdda4b9e5cba8551fc6c6d395cf31",
+      "bytes": 24571,
+      "sourcePacketRevision": "opsrev02"
+    },
+    {
+      "path": "operations/qlo/gateway-runtime44/start44-wrapper.rev02.py",
+      "sha256": "c0a54824458847b329c4ade0a668b74d7b1895f433033dcbde95fcbab4a1dda0",
+      "bytes": 38416,
+      "sourcePacketRevision": "opsrev02"
+    },
+    {
+      "path": "operations/qlo/gateway-runtime44/history/start44-wrapper.rev01.py",
+      "sha256": "961ed152da2c35e47b43b9a114daa7c0ef18cf8c66057162e2a05b2fc668fb6b",
+      "bytes": 38269,
+      "sourcePacketRevision": "opsrev01"
     }
   ],
   "sourcePacket": {
@@ -24,5 +48,22 @@
   },
   "executedByImport": false,
   "executionApprovedByImport": false,
-  "licenseClosure": "OPEN_NO_LICENSE_INVENTED"
+  "licenseClosure": "OPEN_NO_LICENSE_INVENTED",
+  "gatewayRuntime44": {
+    "currentSourceOnlyPacket": {
+      "name": "opsrev02",
+      "key": "migration-work/20261108/business/gateway-runtime44-rotation79/start44.source-only.rev02.json",
+      "version": "O49oIXNWJcdU5plyXLc0sc8BWx0QGR8i",
+      "sha": "09044382a0d0886be4bc433538c11bb297941dbfdeb3e725df975400e3439641"
+    },
+    "historicalSourceOnlyPacket": {
+      "name": "opsrev01",
+      "key": "migration-work/20261108/business/gateway-runtime44-rotation79/start44.source-only.rev01.json",
+      "version": "orjJje_2cZtsSQD_ShZ.v4YrBxP60Du2",
+      "sha": "21d57c35e287cb76233836bd102156bef0c02f93cb6abdbab13a8cfc89a4fef6"
+    },
+    "packetDeclaredIndependentReviewStatus": "PENDING_FINAL_DERIVATIVE_REVIEW",
+    "sourceExecutedByImport": false,
+    "standaloneExecutionApproved": false
+  }
 }

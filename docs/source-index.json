@@ -76,5 +76,15 @@
   },
   "licenseClosure": "OPEN_SEE_LICENSE_AND_PROVENANCE",
   "customerAcceptance": false,
-  "sourceCaptureIsNotProductionRelease": true
+  "sourceCaptureIsNotProductionRelease": true,
+  "otherComponentIndexes": [
+    {
+      "component": "clubs-commerce-bff",
+      "path": "services/clubs-commerce-bff/source-index.json"
+    },
+    {
+      "component": "operations",
+      "path": "operations/source-index.json"
+    }
+  ]
 }

@@ -1,0 +1,18 @@
+{
+  "schema": "crays.cclub068.clubs-commerce-bff-source-bundle.v1",
+  "block": "CCLUB-068",
+  "service": "crays-clubs-commerce-bff",
+  "contractVersion": "cclub068.clubs-booking-consequence-bff.v1",
+  "buildHostRole": "XXL",
+  "runtimeHostRole": "XL",
+  "filesCanonicalization": "UTF-8 compact JSON array in ascending filename order with properties file, sha256, bytes",
+  "files": [{"file":".dockerignore","sha256":"ff36cd8317268e8b7f0fa88fc14c7561fb3bc2912c9750965646e42ec40c6a21","bytes":50},{"file":"lib.mjs","sha256":"aa171859f5569f4ae52412f4b1ce872d62e55e16c0b4a9ebee6359af343960be","bytes":63459},{"file":"package-lock.json","sha256":"3bc3d679850e3e7181dcce08b5f78068e214d937a27a5817756eaa5bd5b7c6ef","bytes":5729},{"file":"package.json","sha256":"78c6b9b0c5a7ed424fba9cb5c81f8b278ea8d8553b58c52b1f41b80de73a2172","bytes":282},{"file":"server.mjs","sha256":"6d14df24cbb8471bf36270546461ef8c398bdd8ee9e62d880368661d813e04a9","bytes":11839},{"file":"test.mjs","sha256":"807c9ee2525d8a9ecb4ebe14f3a84988707062a87a5c131feb3eefec196730ea","bytes":11360}],
+  "bundleSha256": "3aea48235023e32705d3c3e5e127109ba94f26b19dee482bb12a30d2030aae80",
+  "authorityBoundary": {
+    "vendure": "commerce order and payment state",
+    "bookingCore": "holds bookings and capacity consequences",
+    "erpNext": "invoices credit notes tax debtors accounting and reconciliation",
+    "qlo": "real channel manager only at final cutover immediately before CCLUB-120",
+    "liveMoneyAllowed": false
+  }
+}
