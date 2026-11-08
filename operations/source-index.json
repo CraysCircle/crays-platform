@@ -34,6 +34,27 @@
       "sha256": "961ed152da2c35e47b43b9a114daa7c0ef18cf8c66057162e2a05b2fc668fb6b",
       "bytes": 38269,
       "sourcePacketRevision": "opsrev01"
+    },
+    {
+      "sha256": "506ef15f0f324801540bb39441a9e7db023bc7d378c16ad9b5cea60d551a6bc2",
+      "bytes": 22973,
+      "sourcePacketKey": "migration-work/20261108/delivery/postiz-frontend-isolated01/SOURCE_PACKET_CANDIDATE_REV04.json",
+      "sourcePacketVersion": "0_42fhke6MtAQyDKulQt2Q5OVRQLa5y_",
+      "path": "operations/delivery/postiz/frontend-isolated01/qualify_original_frontend.candidate.py"
+    },
+    {
+      "sha256": "83a82fb3057632fb3a851c5810e6f452869ad8133cd852329c238e522b13fd14",
+      "bytes": 629,
+      "sourcePacketKey": "migration-work/20261108/delivery/postiz-frontend-isolated01/SOURCE_PACKET_CANDIDATE_REV04.json",
+      "sourcePacketVersion": "0_42fhke6MtAQyDKulQt2Q5OVRQLa5y_",
+      "path": "operations/delivery/postiz/frontend-isolated01/binding.json"
+    },
+    {
+      "sha256": "e40598f4e8d26b56683364ccf21ffd4f2a8ba96f4d3b129c0ad7b058ad238768",
+      "bytes": 6101,
+      "sourcePacketKey": "migration-work/20261108/delivery/postiz-frontend-isolated01/physical-readback01/REVIEW_PACKET_REV02.json",
+      "sourcePacketVersion": "kWRf_IMZPTB5UalvM8mtcbn2bQW77Ody",
+      "path": "operations/delivery/postiz/physical-readback01/read_physical_return.rev02.py"
     }
   ],
   "sourcePacket": {
@@ -65,5 +86,26 @@
     "packetDeclaredIndependentReviewStatus": "PENDING_FINAL_DERIVATIVE_REVIEW",
     "sourceExecutedByImport": false,
     "standaloneExecutionApproved": false
+  },
+  "deliveryPostiz": {
+    "handoff": {
+      "key": "migration-work/20261108/delivery/DELIVERY_GITHUB_NEW_OPS_REV04_BINDING_20261108_2043.json",
+      "versionId": "jP8Uw4hqUb3Jm3GQpTZDAD9apq4rtVQL",
+      "checksumSHA256Base64": "w2PLJqca4onb81MoWFJ2uZXUx07/6zJjspVwYqRKi7I="
+    },
+    "sourceReviewedNotExecuted": true,
+    "privateCustodyOrLaunchMetadataCopied": false,
+    "observedOriginalInstalledMetadata": {
+      "@sentry/nextjs": {
+        "version": "10.45.0",
+        "packageSHA256": "453fb89a08385c1c4ed7763938cc64a8188289832c572f856f6c823ca59f6c1f"
+      },
+      "dotenv-cli": {
+        "version": "8.0.0",
+        "bin": "./cli.js",
+        "packageSHA256": "a76e5b0daf988210718a31062a8d5e2832406b27b57a75c63904024265fe1b0f"
+      }
+    },
+    "productSourceAndLicenseClosure": false
   }
 }

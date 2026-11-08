@@ -1,0 +1,17 @@
+{
+  "launchPath": "/srv/crays/runtime/delivery-original-runtime-config-custody-20261108-01/launch/source-01.launch.private.json",
+  "launchSHA256": "9220db366770dea9d2faae99081811f759d7326ef035a4a228ab9864dd2245b2",
+  "envJsonPath": [
+    "Config",
+    "Env"
+  ],
+  "userJsonPath": [
+    "Config",
+    "User"
+  ],
+  "expectedUser": "",
+  "ownerThread": "01a1b9f3-700f-78b2-ad73-b6d9334c4ac4",
+  "image": "sha256:44587056a2696bd6f126ffdbe111ab0b20db75907fa0f67e213554fc68f680a9",
+  "root": "/srv/crays/migration-work/20261108/delivery/postiz-frontend-isolated01",
+  "name": "crays-delivery-postiz-frontend-isolated-20261108-01"
+}

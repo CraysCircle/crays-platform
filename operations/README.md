@@ -10,3 +10,5 @@ Programs retain their original environment assumptions, absolute paths and helpe
 See [provenance](source-index.json) for exact source hashes. No application license is inferred from publication.
 
 - [Gateway runtime44](qlo/gateway-runtime44/README.md): exact source39/source44 and current revision02 wrapper, with the earlier wrapper retained as history.
+
+- [Postiz delivery helpers](delivery/postiz/README.md): exact qualifier revision04, public binding and separately reviewed physical-readback revision02.
