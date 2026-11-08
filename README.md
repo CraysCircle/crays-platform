@@ -24,4 +24,4 @@ docs/
 
 The service README is the operational entry point. Runtime credentials, account-specific bindings, import receipts, database exports and live customer data are kept outside Git.
 
-This is a private source repository. Its presence is not a public source offer, a new software license, proof of a successful customer journey or approval to deploy.
+The owner requires public source access after source and history review. Public readability does not create a new license grant or prove complete corresponding source, a successful customer journey or approval to deploy.

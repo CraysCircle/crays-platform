@@ -15,7 +15,7 @@ The original application capture and AWS Dockerfile were supplied by the Busines
 
 Keep original license and copyright texts intact. Read the actual version-specific license before describing its permissions or source requirements. Preserve relevant NOTICE files, upstream commit references and modification history. A dependency license does not automatically license the surrounding application.
 
-For each component, record whether corresponding source or another source offer is required and how the intended recipients can actually obtain it. A private repository link is not, by itself, proof of accessible source for those recipients.
+For each component, record whether corresponding source or another source offer is required and how the intended recipients can actually obtain it. The exact source must be accessible to those recipients; repository visibility alone does not establish source completeness.
 
 No customer data, provider keys, consumer tokens, private bindings, database dumps or import receipts were included in this source snapshot. No upstream software is being relicensed by this documentation.
 
