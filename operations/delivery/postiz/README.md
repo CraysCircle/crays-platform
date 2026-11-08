@@ -20,6 +20,6 @@ No helper was executed or imported during this capture. A source review or publi
 
 Only the three specifically handed-off public source files are included. Original effective launch/environment/custody archives and private diagnostic logs are not included, nor are credentials, keys, customer data or database dumps. Raw packet metadata containing private custody references is not copied into this directory.
 
-The handoff records installed original @sentry/nextjs10.45.0, rather than merely its declared range, and dotenv-cli8.0.0 with bin ./cli.js. These are version observations with original package hashes, not complete license evidence. Their actual product source, original notices, deployed-image relationship and any applicable source offer still need reconciliation.
+The handoff records installed original @sentry/nextjs 10.45.0, rather than merely its declared range, and dotenv-cli 8.0.0 with bin ./cli.js. These are version observations with original package hashes, not complete license evidence. Their actual product source, original notices, deployed-image relationship and any applicable source offer still need reconciliation.
 
 No license for these CRAYS operations helpers is invented from repository visibility or from Postiz's component licenses.

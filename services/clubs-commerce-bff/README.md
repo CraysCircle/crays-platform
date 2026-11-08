@@ -27,19 +27,19 @@ The original package requires Node >=22 and defines start and test commands. For
 
 Keep actual database URLs, provider/channel credentials, HMAC secrets and encryption keys outside Git. The runtime owner must supply the original protected bindings and separately qualify the complete provider/database dependencies.
 
-The original Dockerfile pins a base image by digest and runs npm ci with scripts disabled. It copies only server.mjs and lib.mjs as application runtime source, runs as the node user and exposes port8080. The package's Node range is not evidence of the exact Node version inside that image.
+The original Dockerfile pins a base image by digest and runs npm ci with scripts disabled. It copies only server.mjs and lib.mjs as application runtime source, runs as the node user and exposes port 8080. The package's Node range is not evidence of the exact Node version inside that image.
 
 ## Validation and versions
 
 This capture verifies original file hashes, the original CCLUB-068 manifest pins and each locked dependency tarball's SHA-512 integrity. The original test source contains synthetic idempotency keys; these are request identifiers, not credentials.
 
-The historical seven-test output belongs to version1.2.0-cclub067. The preserved package is version1.3.0-cclub068, so that output is not a new test pass for this snapshot. No source test, build, container, provider request or database mutation was executed by the import.
+The historical seven-test output belongs to version 1.2.0-cclub067. The preserved package is version 1.3.0-cclub068, so that output is not a new test pass for this snapshot. No source test, build, container, provider request or database mutation was executed by the import.
 
 Exact AWS artifact/deployment parity and recovery of protected runtime dependencies remain open. Do not treat the Dockerfile, its historical labels or this commit as proof that this BFF is deployed on AWS.
 
 ## Licenses and recovery
 
-The [dependency source/license index](third-party/source-and-license-index.json) binds fourteen exact locked packages to their tarball integrity and original notices. Twelve packages provide standalone notice files; pg-types2.2.0 and pgpass1.0.5 contain their full license text in their original README, which is preserved in full.
+The [dependency source/license index](third-party/source-and-license-index.json) binds fourteen exact locked packages to their tarball integrity and original notices. Twelve packages provide standalone notice files; pg-types 2.2.0 and pgpass 1.0.5 contain their full license text in their original README, which is preserved in full.
 
 No application LICENSE was found among the scoped original component files; no application license has been assigned by inference. The Node/base-image and other runtime-component notices remain a separate open review.
 
