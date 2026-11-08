@@ -32,3 +32,5 @@ The owner requires public source access after source and history review. Public 
 - [Operations source](operations/README.md): reviewed programs, exact provenance and execution boundaries.
 
 - [Clubs Commerce BFF](services/clubs-commerce-bff/README.md): original service, tests, lockfile and version-specific dependency notices.
+
+- [Website hosting sources](hosting/README.md): exact hosting wrappers and links to the existing application repositories.

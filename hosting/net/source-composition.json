@@ -1,0 +1,47 @@
+{
+  "schema": "crays.website.source-composition.v1",
+  "website": "net",
+  "domain": "crays.net",
+  "application": {
+    "repository": "CraysCircle/crays-web-codex",
+    "commit": "2b81461e8e8b5ee6fbdb59e36215c4b574d235bf",
+    "gitTree": "10a0524334869373c3f711bbae49398960cbc411",
+    "trackedBlobFiles": 982,
+    "gitlinks": [],
+    "publicRepository": true,
+    "currentDefaultBranchEqualsRecordedSourceCommit": true,
+    "rootLicensePath": "LICENSE",
+    "rootLicenseSHA256": "fae8fb8506fe2f152dc398f75fe422b9640f51e8610bd8a6e9126502dae67c2b",
+    "originalTrackedSourceArchiveSHA256": "ffe77c9b191fe77d06006558fcaac84e90d831f12f0e758fc3a731e978db42fa"
+  },
+  "hosting": {
+    "repository": "CraysCircle/crays-platform",
+    "path": "hosting/net/server.mjs",
+    "sourceSHA256": "f44d38b1229179399de47276da563ed4964e862a01b51ffd0a61ee58215981ef",
+    "bytes": 2450,
+    "sourcePacket": {
+      "key": "migration-work/20261108/github/net-source-reconciliation01/ORIGINAL_WRAPPER_PACKET.json",
+      "version": "fB.sWk8EAisGlL89Q85OxPnoZSQMmqAw",
+      "sha256": "e8b50f91358eabc577f3872b49f2a21e7c344ff5f918a6f1a61ec9096bbda68e"
+    },
+    "publicBuildRootRelativeToWrapper": "public"
+  },
+  "recordedArtifact": {
+    "asOfUTC": "2026-11-08T19:43:20.683946+00:00",
+    "runtimeImageId": "sha256:752ea8a2f758c34002a0461bd9f1cee4f9a3c36d48494586f60ffce1fc708e0e",
+    "imageIdIsNotRegistryManifestDigest": true,
+    "nodeVersion": null,
+    "releaseArchiveSHA256": "749fbece1fa700eeb9ee2519fd2db55397461a23a54b2061ea088520156b36c2",
+    "releaseManifestSHA256": "6347eeb62ac0907b6701895c17600cd24fd74b83b632e374cc54f05ce9d0a666",
+    "originalPublishedBuildFiles": 630,
+    "runtimeReleaseFiles": 676
+  },
+  "sourceEvidence": {
+    "websiteAppendixSHA256": "4f95ffaf6fa7e48a0a04de0a91e27c037dee8ba5b61749f82c173b87798c4c19",
+    "recordedRuntimeImageBindingSHA256": "766573a25c4f50e78e19c3053e058a611ace2b4c720a71b75479d39c8967b5f8"
+  },
+  "sourceToOutputReproducibleBuildVerified": false,
+  "runtimeStartedByImport": false,
+  "applicationDependencyAndImageNoticeClosureComplete": false,
+  "currentRuntimeBeyondRecordedObservationClaimed": false
+}

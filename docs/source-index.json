@@ -85,6 +85,10 @@
     {
       "component": "operations",
       "path": "operations/source-index.json"
+    },
+    {
+      "component": "net-website-hosting",
+      "path": "hosting/net/source-composition.json"
     }
   ]
 }
