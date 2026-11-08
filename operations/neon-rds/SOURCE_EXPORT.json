@@ -1,0 +1,211 @@
+{
+  "schema": "crays.lossless-operations-source-export.v1",
+  "sourceGroup": "neon-rds",
+  "files": [
+    {
+      "component": "selected-max2-builder",
+      "sourcePath": "selected-proof/work04/build_root_selected_exact_proof_envelope.rev04.candidate.py",
+      "publicPath": "selected-proof/work04/build_root_selected_exact_proof_envelope.rev04.candidate.py.in",
+      "originalSHA256": "3c11f4ba525493f842f455526cb611e5a0aded814daa06e3ecbbcafa08e6f5ac",
+      "originalBytes": 11140,
+      "publicSHA256": "ce5c8e5e4518d862a2ad8022b36d23a31c02df8db5352456b8749c3b15c25f38",
+      "publicBytes": 10984,
+      "requiredBindings": [
+        "fixed-guard-001",
+        "fixed-guard-002",
+        "fixed-guard-003",
+        "fixed-guard-004"
+      ],
+      "provenance": "Internal original38 builder derivative; adds max2 selected scope, private proof capsule and separate exact prior proof ACK; no unchanged source re-review"
+    },
+    {
+      "component": "selected-proof-driver",
+      "sourcePath": "selected-proof/work04/native_exact_proof_reuse.candidate.py",
+      "publicPath": "selected-proof/work04/native_exact_proof_reuse.candidate.py.in",
+      "originalSHA256": "e4580a9262b5665f013ca1a3abb24e81f73d8d1266069cd9750be8574f0f6ec8",
+      "originalBytes": 15553,
+      "publicSHA256": "a6a91e33256b0c50558f7edfc4260bce5a83b11afec41685cd16e1bf886ef304",
+      "publicBytes": 15514,
+      "requiredBindings": [
+        "fixed-guard-003"
+      ],
+      "provenance": "Internal migration orchestrator; metadata unit/physical terminal proof/separate ACK; original controller retained"
+    },
+    {
+      "component": "selected-metadata-reader",
+      "sourcePath": "selected-proof/work04/read_selected_retained_comparison.candidate.py",
+      "publicPath": "selected-proof/work04/read_selected_retained_comparison.candidate.py",
+      "originalSHA256": "d5d7a05a740162f0c81618227c1523b5ffe733b751a086b1de38cde1a11be3b0",
+      "originalBytes": 7351,
+      "publicSHA256": "d5d7a05a740162f0c81618227c1523b5ffe733b751a086b1de38cde1a11be3b0",
+      "publicBytes": 7351,
+      "requiredBindings": [],
+      "provenance": "Internal retained-comparison reader derivative with exact scopeUUID/kernel/unit checks"
+    },
+    {
+      "component": "selected-exact-proof-classifier",
+      "sourcePath": "selected-proof/work04/classify_selected_exact_proofs.candidate.py",
+      "publicPath": "selected-proof/work04/classify_selected_exact_proofs.candidate.py.in",
+      "originalSHA256": "3188908cda2d5db18799a61d8325e9b0fb9ad1568ee98efdfe0933bbd0155f98",
+      "originalBytes": 7714,
+      "publicSHA256": "01d1eeed9ef787d2dcc9d765f76eb83680e5d0a0a806fd2689bdebaa3d0b7372",
+      "publicBytes": 7675,
+      "requiredBindings": [
+        "fixed-guard-003"
+      ],
+      "provenance": "Internal exact prior proof classifier derivative, strict selected scope/status/count guards"
+    },
+    {
+      "component": "metadata-terminal-writer",
+      "sourcePath": "selected-proof/work04/write_metadata_unit_terminal.candidate.py",
+      "publicPath": "selected-proof/work04/write_metadata_unit_terminal.candidate.py",
+      "originalSHA256": "4abdca1118a0d513fddb8e457a9ae3052f57860e561b9166d7364825a17df91d",
+      "originalBytes": 3872,
+      "publicSHA256": "4abdca1118a0d513fddb8e457a9ae3052f57860e561b9166d7364825a17df91d",
+      "publicBytes": 3872,
+      "requiredBindings": [],
+      "provenance": "Internal ExecStopPost terminal writer with invocation/intent/batch path binding"
+    },
+    {
+      "component": "pure-finaldelta-classifier",
+      "sourcePath": "final-delta/classify_final_delta.py",
+      "publicPath": "final-delta/classify_final_delta.py",
+      "originalSHA256": "0ff7378ff87d1a3463fcd583906a8cca0af3efbcf7d3a1d0538be71f576468a4",
+      "originalBytes": 3151,
+      "publicSHA256": "0ff7378ff87d1a3463fcd583906a8cca0af3efbcf7d3a1d0538be71f576468a4",
+      "publicBytes": 3151,
+      "requiredBindings": [],
+      "provenance": "Existing internal offline classifier, byte-identical reused; initial external author or upstream not established"
+    },
+    {
+      "component": "fingerprint-content-adapter-v2",
+      "sourcePath": "final-delta/adapt_original_fingerprint.v2.candidate.py",
+      "publicPath": "final-delta/adapt_original_fingerprint.v2.candidate.py",
+      "originalSHA256": "ddefdc8c1f27273c4f4de93365d5faeb506db1190689f0754e523711dc8267ff",
+      "originalBytes": 6981,
+      "publicSHA256": "ddefdc8c1f27273c4f4de93365d5faeb506db1190689f0754e523711dc8267ff",
+      "publicBytes": 6981,
+      "requiredBindings": [],
+      "provenance": "New code authored in this chat; reuses fingerprint output/classifier contract, no imported third-party source file; V2 adds kind-independent SQL relation namespace guard"
+    },
+    {
+      "component": "owner01-atomic-envelope-builder",
+      "sourcePath": "owner01/atomic-transport02/build_root_owner01_mapping_envelope.candidate.py",
+      "publicPath": "owner01/atomic-transport02/build_root_owner01_mapping_envelope.candidate.py.in",
+      "originalSHA256": "373ec59bd1074f8bb51db3470ab4cd4f79483b43ba8303c06d3c08c0781938a6",
+      "originalBytes": 6205,
+      "publicSHA256": "e5b4a9f4890b1c9e34c1009564e5b4073be590932f385904946f0fe1d1877be1",
+      "publicBytes": 6127,
+      "requiredBindings": [
+        "fixed-guard-005",
+        "fixed-guard-006"
+      ],
+      "provenance": "Existing internal Owner01 atomic transport source, unchanged reviewed source; actual owner execution not claimed"
+    },
+    {
+      "component": "owner01-custodian",
+      "sourcePath": "owner01/atomic-transport02/secure_owner01_mapping_session.candidate.py",
+      "publicPath": "owner01/atomic-transport02/secure_owner01_mapping_session.candidate.py.in",
+      "originalSHA256": "19cd8683002709943ff2d5003bca0c75ac08db3c4f3ba6625430ce9ed89167af",
+      "originalBytes": 12808,
+      "publicSHA256": "93d3a66f207f94e1bd71354cc248f7069a031c4e37dc75dfacecd58333f3e407",
+      "publicBytes": 12730,
+      "requiredBindings": [
+        "fixed-guard-005",
+        "fixed-guard-007"
+      ],
+      "provenance": "Existing internal managed credential custodian, unchanged reviewed source"
+    },
+    {
+      "component": "owner01-operations",
+      "sourcePath": "owner01/atomic-transport02/owner01_mapping_operations.candidate.py",
+      "publicPath": "owner01/atomic-transport02/owner01_mapping_operations.candidate.py",
+      "originalSHA256": "1d8f1cb84014976af0873e52eb3d99834bd78d0dd751d74f9e051d5626b34ecb",
+      "originalBytes": 4492,
+      "publicSHA256": "1d8f1cb84014976af0873e52eb3d99834bd78d0dd751d74f9e051d5626b34ecb",
+      "publicBytes": 4492,
+      "requiredBindings": [],
+      "provenance": "Existing internal mapping operation source, unchanged reviewed source"
+    },
+    {
+      "component": "owner01-guest",
+      "sourcePath": "owner01/atomic-transport02/run_owner01_mapping_on_guest.candidate.py",
+      "publicPath": "owner01/atomic-transport02/run_owner01_mapping_on_guest.candidate.py.in",
+      "originalSHA256": "63fbb2ef09661c2d87660e508ae58b582d5611d6c6815d9a90e763b705147eb6",
+      "originalBytes": 4153,
+      "publicSHA256": "9c92d8593bbf7be910e6be53b33a5257ff34b20ef81ebaa4509758d2214a3d2f",
+      "publicBytes": 4075,
+      "requiredBindings": [
+        "fixed-guard-005",
+        "fixed-guard-006"
+      ],
+      "provenance": "Existing internal guest source, unchanged reviewed source"
+    },
+    {
+      "component": "original-fingerprint",
+      "sourcePath": "original-fingerprint/fingerprint.py",
+      "publicPath": "original-fingerprint/fingerprint.py",
+      "originalSHA256": "80c9b9438fb1b61e83953677b161b7df2d5f889709f4ceebb34034307ac1121d",
+      "originalBytes": 2335,
+      "publicSHA256": "80c9b9438fb1b61e83953677b161b7df2d5f889709f4ceebb34034307ac1121d",
+      "publicBytes": 2335,
+      "requiredBindings": [],
+      "provenance": "Original retained fingerprint source; source bytes only, no fingerprint output or database data"
+    }
+  ],
+  "bindings": [
+    {
+      "id": "fixed-guard-001",
+      "marker": "__CRAYS_fixed-guard-001__",
+      "format": "exact64HexCharacters",
+      "valuesStoredInGit": false,
+      "classification": "Withheld fixed guard/proof/approval binding; one confirmed private proof-library fingerprint. Unclassified guard values withheld conservatively."
+    },
+    {
+      "id": "fixed-guard-002",
+      "marker": "__CRAYS_fixed-guard-002__",
+      "format": "exact64HexCharacters",
+      "valuesStoredInGit": false,
+      "classification": "Withheld fixed guard/proof/approval binding; one confirmed private proof-library fingerprint. Unclassified guard values withheld conservatively."
+    },
+    {
+      "id": "fixed-guard-003",
+      "marker": "__CRAYS_fixed-guard-003__",
+      "format": "exact64HexCharacters",
+      "valuesStoredInGit": false,
+      "classification": "Withheld fixed guard/proof/approval binding; one confirmed private proof-library fingerprint. Unclassified guard values withheld conservatively."
+    },
+    {
+      "id": "fixed-guard-004",
+      "marker": "__CRAYS_fixed-guard-004__",
+      "format": "exact64HexCharacters",
+      "valuesStoredInGit": false,
+      "classification": "Withheld fixed guard/proof/approval binding; one confirmed private proof-library fingerprint. Unclassified guard values withheld conservatively."
+    },
+    {
+      "id": "fixed-guard-005",
+      "marker": "__CRAYS_fixed-guard-005__",
+      "format": "exact64HexCharacters",
+      "valuesStoredInGit": false,
+      "classification": "Withheld fixed guard/proof/approval binding; one confirmed private proof-library fingerprint. Unclassified guard values withheld conservatively."
+    },
+    {
+      "id": "fixed-guard-006",
+      "marker": "__CRAYS_fixed-guard-006__",
+      "format": "exact64HexCharacters",
+      "valuesStoredInGit": false,
+      "classification": "Withheld fixed guard/proof/approval binding; one confirmed private proof-library fingerprint. Unclassified guard values withheld conservatively."
+    },
+    {
+      "id": "fixed-guard-007",
+      "marker": "__CRAYS_fixed-guard-007__",
+      "format": "exact64HexCharacters",
+      "valuesStoredInGit": false,
+      "classification": "Withheld fixed guard/proof/approval binding; one confirmed private proof-library fingerprint. Unclassified guard values withheld conservatively."
+    }
+  ],
+  "allTwelveOriginalProgramsRoundTripVerifiedWithoutExecution": true,
+  "privateProofMetadataCatalogsOrDumpsIncluded": false,
+  "sourceExecuted": false,
+  "fullDependenciesRuntimeAndLicenseClosure": false
+}

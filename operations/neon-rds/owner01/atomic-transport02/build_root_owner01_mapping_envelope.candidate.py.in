@@ -1,0 +1,61 @@
+"""Materialize exact Root-reviewed SSM parameters only; never dispatch/cloud/auth."""
+from pathlib import Path
+import json,hashlib,re,gzip,base64,bz2
+P=Path(__file__).resolve().parent
+STAGE='/srv/crays/incoming/neon-rds-owner01-atomic-mapping-20261108-01'
+UNIT='crays-rds-owner01-atomic-mapping-20261108-01.service'
+def build(review):
+ manifest=json.loads((P/'OWNER01_MAPPING_TRANSPORT_INPUT_MANIFEST.json').read_text())
+ mh=hashlib.sha256((P/'OWNER01_MAPPING_TRANSPORT_INPUT_MANIFEST.json').read_bytes()).hexdigest()
+ assert review.get('rootExecutionReviewComplete') is True and review.get('stage')=='owner01_atomic_mapping02' and review.get('manifestSHA256')==mh
+ independent=P/'INDEPENDENT_OWNER01_MAPPING_TRANSPORT_REVIEW_ACTUAL.json';approval=json.loads(independent.read_text())
+ assert approval.get('approved') is True and approval.get('manifestSHA256')==mh
+ assert review.get('independentReviewEvidenceSHA256')==hashlib.sha256(independent.read_bytes()).hexdigest()
+ assert review.get('ownerCompatibilityMutationApproved')is True and review.get('targetDatabase')=='crays_dev_3abc00b5a673'
+ assert review.get('sqlSHA256')=='__CRAYS_fixed-guard-005__'and review.get('independentSQLRightsReviewEvidenceSHA256')=='__CRAYS_fixed-guard-006__'
+ assert review.get('globalRoleOrPasswordWritesApproved')is False and review.get('consumerActivationApproved')is False
+ sql_review_raw=(P.parent/'INDEPENDENT_OWNER01_MAPPING_SQL_REVIEW_ACTUAL.json').read_bytes();sql_review=json.loads(sql_review_raw)
+ assert hashlib.sha256(sql_review_raw).hexdigest()==review['independentSQLRightsReviewEvidenceSHA256']and sql_review.get('pureOwnerMappingSQLApproved')is True and sql_review['sqlSHA256']==review['sqlSHA256']
+ assert review.get('guestSHA256')==manifest['sourceFiles']['run_owner01_mapping_on_guest.candidate.py']
+ expected={k:manifest['sourceFiles'][k] for k in manifest['runtimeFiles'] if k!='run_owner01_mapping_on_guest.candidate.py'}
+ assert review.get('inputPins')==expected
+ for name,pin in manifest['sourceFiles'].items():assert hashlib.sha256((P/name).read_bytes()).hexdigest()==pin,'EXACT_REVIEWED_PACKAGE_PIN_REQUIRED'
+ payload={name:(P/name).read_text() for name in manifest['runtimeFiles']}
+ payload['ROOT_EXECUTION_REVIEW.json']=json.dumps(review,separators=(',',':'))
+ packed=base64.b64encode(bz2.compress(json.dumps(payload,separators=(',',':')).encode(),compresslevel=9)).decode()
+ code='''import pathlib,os,json,hashlib,subprocess,base64,gzip,bz2
+os.umask(0o077)
+assert os.getuid()==0 and pathlib.Path('/sys/devices/virtual/dmi/id/board_asset_tag').read_text().strip()=='i-0eb300e1b02414d8f'
+p=pathlib.Path(STAGE_LITERAL);parent=p.parent
+assert parent.is_dir() and not parent.is_symlink() and parent.stat().st_uid==0 and not parent.stat().st_mode&0o077
+assert not p.exists() and not p.is_symlink(),'EXISTING_STAGE_ADOPT_SAME_INTENT_NO_REPLAY'
+for n in ['neon-rds-owner01-atomic-mapping-20261108-01','neon-rds-owner01-atomic-mapping-20261108-01.intent.json']:
+ assert not (pathlib.Path('/srv/crays/acceptance')/n).exists(),'EXISTING_QUERY_INTENT_ADOPT_NO_REPLAY'
+def require_unit_absent():
+ s=subprocess.run(['/usr/bin/systemctl','show',UNIT_LITERAL,'--property=MainPID,LoadState,Job'],capture_output=True,text=True,timeout=10)
+ v=dict(line.split('=',1) for line in s.stdout.splitlines() if '=' in line)
+ assert s.returncode==0 and v.get('MainPID')=='0' and v.get('LoadState')=='not-found' and v.get('Job') in ('','0'),'EXISTING_OR_QUEUED_UNIT_ADOPT_NO_REPLAY'
+require_unit_absent()
+p.mkdir(mode=0o700)
+decoded_payload=bz2.decompress(base64.b64decode(PAYLOAD_LITERAL));assert len(decoded_payload)<=1048576
+for name,data in json.loads(decoded_payload).items():
+ assert '/' not in name and not name.startswith('.')
+ fd=os.open(p/name,os.O_CREAT|os.O_EXCL|os.O_WRONLY|os.O_NOFOLLOW,0o400)
+ with os.fdopen(fd,'wb')as f:f.write(data.encode('utf-8'));f.flush();os.fsync(f.fileno())
+require_unit_absent()
+r=subprocess.run(['/usr/bin/systemd-run','--quiet','--wait','--unit='+UNIT_LITERAL,'--property=MemoryMax=768M','--property=CPUQuota=50%','--property=TasksMax=128','--property=RuntimeMaxSec=300','--property=TimeoutStopSec=120','--property=KillMode=control-group','--property=UMask=0077','/usr/bin/python3',str(p/'run_owner01_mapping_on_guest.candidate.py')],capture_output=True,timeout=450)
+state=subprocess.run(['/usr/bin/systemctl','show',UNIT_LITERAL,'--property=MainPID,Job,Result,ExecMainStatus'],capture_output=True,text=True,timeout=10)
+values=dict(line.split('=',1)for line in state.stdout.splitlines()if'='in line)
+assert state.returncode==0 and values.get('MainPID')=='0'and values.get('Job')in('','0'),'UNIT_NOT_TERMINAL_INSPECT_SAME_INTENT'
+if r.returncode:
+ print(json.dumps({'status':'OWNER01_READONLY_UNIT_NONZERO_INSPECT_SAME_INTENT','returnCode':r.returncode,'rawStreamsPrinted':False,'replayAllowed':False}));raise SystemExit(1)
+assert values.get('Result')=='success'and values.get('ExecMainStatus')=='0','FAILED_UNIT_INSPECT_SAME_INTENT_NO_REPLAY'
+f=pathlib.Path('/srv/crays/acceptance/neon-rds-owner01-atomic-mapping-20261108-01/CONTROLLER_METADATA_ACTUAL.json');raw=f.read_bytes();v=json.loads(raw)
+assert v['ownClientPhysicallyRemoved'] and v['ownCredentialRAMJobsRemoved'] and v['ownControllerChildrenAbsent']
+encoded=base64.b64encode(gzip.compress(raw,mtime=0)).decode();assert len(encoded)<20000,'RETAIN_EXISTING_METADATA_READ_FILE_NO_QUERY_REPLAY'
+print(json.dumps({'status':'OWNER01_ATOMIC_MAPPING_COMPRESSED_COMPLETE','bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest(),'gzipBase64':encoded}))
+'''.replace('STAGE_LITERAL',repr(STAGE)).replace('UNIT_LITERAL',repr(UNIT)).replace('PAYLOAD_LITERAL',repr(packed))
+ command="python3 -I -B - <<'CRAYS_OWNER01_READONLY'\n"+code+'CRAYS_OWNER01_READONLY\n'
+ assert len(command.encode())<=60000
+ return dict(InstanceIds=['i-0eb300e1b02414d8f'],DocumentName='AWS-RunShellScript',Comment='Root reviewed Owner01 isolated owner policies and minimal defaults; no global roles',TimeoutSeconds=540,Parameters={'commands':[command],'executionTimeout':['520']})
+if __name__=='__main__':raise SystemExit('SOURCE_ONLY_ROOT_EXACT_REVIEW_AND_DISPATCH_REQUIRED')

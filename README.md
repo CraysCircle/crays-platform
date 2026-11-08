@@ -11,6 +11,7 @@ Shared CRAYS services, website-hosting wrappers and reviewed migration operation
 | Net hosting | [Unchanged static-hosting wrapper and exact application reference](hosting/net/README.md) |
 | Qlo operations | [Account2 correction](operations/qlo/README.md) and [runtime44 source versions](operations/qlo/gateway-runtime44/README.md) |
 | Delivery/Postiz operations | [Original-frontend qualifier and separate physical-return helper](operations/delivery/postiz/README.md) |
+| Neon → RDS operations | [Source export, original checksums and protected reconstruction](operations/neon-rds/README.md) |
 | Persistent storage guard | [Original source and operations index](operations/README.md) |
 
 ## Repository layout
@@ -24,6 +25,7 @@ Shared CRAYS services, website-hosting wrappers and reviewed migration operation
       qlo/
       storage/
       delivery/postiz/
+      neon-rds/
     docs/
       source-index.json
       license-and-provenance.md

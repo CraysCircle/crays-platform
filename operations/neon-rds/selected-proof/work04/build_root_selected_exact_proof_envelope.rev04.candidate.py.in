@@ -1,0 +1,105 @@
+"""Root-only selected restore envelope, exact prior proof reuse; no dispatch."""
+from pathlib import Path
+import base64,bz2,hashlib,json,shlex
+P=Path(__file__).resolve().parent
+I=P.parent/'input'
+sha=lambda raw:hashlib.sha256(raw).hexdigest()
+canonical=lambda value:sha(json.dumps(value,sort_keys=True,separators=(',',':')).encode())
+OLD_BUILDER_SHA='__CRAYS_fixed-guard-001__'
+OLD_FINAL_SHA='__CRAYS_fixed-guard-002__'
+LIBRARY_SHA='__CRAYS_fixed-guard-003__'
+NAMES=['read_selected_retained_comparison.candidate.py','classify_selected_exact_proofs.candidate.py','write_metadata_unit_terminal.candidate.py','native_exact_proof_reuse.candidate.py']
+def capsule():
+ files={name:(P/name).read_bytes()for name in NAMES}
+ for name in ['ROOT_ACCEPTED_EXACT_PAIR_LIBRARY.json','root-proof-0.json','root-proof-1.json','independent-proof-0.json','independent-proof-1.json']:files[name]=(I/'proofs'/name).read_bytes()
+ raw=json.dumps({name:dict(bytes=len(data),sha256=sha(data),dataBase64=base64.b64encode(data).decode())for name,data in sorted(files.items())},sort_keys=True,separators=(',',':')).encode()
+ assert len(raw)<262144
+ return raw,bz2.compress(raw,9),files
+def build(root_review):
+ assert type(root_review)is dict
+ original_path=I/'baseline/build_root_serial_remaining38_envelope.candidate.py'
+ old_raw=original_path.read_bytes();assert sha(old_raw)==OLD_BUILDER_SHA
+ final_raw=(I/'baseline/FINAL_SERIAL_TRANSPORT_REVIEW_ACTUAL.json').read_bytes();assert sha(final_raw)==OLD_FINAL_SHA
+ review_raw=(P/'FINAL_SELECTED_PROOF_TRANSPORT_REVIEW_ACTUAL.json').read_bytes();review=json.loads(review_raw)
+ assert review.get('approved')is True and review['builderSHA256']==sha(Path(__file__).read_bytes())and review['originalBuilderSHA256']==OLD_BUILDER_SHA and review['originalFinalReviewSHA256']==OLD_FINAL_SHA
+ cap_raw,compressed,files=capsule()
+ assert review['proofCapsuleSHA256']==sha(cap_raw)and review['proofCapsuleCompressedSHA256']==sha(compressed)
+ assert review['proofFiles']=={name:dict(bytes=len(data),sha256=sha(data))for name,data in files.items()}
+ assert sha(files['ROOT_ACCEPTED_EXACT_PAIR_LIBRARY.json'])==LIBRARY_SHA
+ index=json.loads((I/'baseline/BATCH_SOURCE_INDEX.json').read_bytes())
+ selected=root_review['selectedTargets'];allowed=[j['targetDatabase']for j in index['jobs']if j['targetDatabase']!='crays_dev_060408f873e0']
+ assert type(selected)is list and 0<len(selected)<=2 and all(type(db)is str for db in selected)and len(selected)==len(set(selected))and selected==[db for db in allowed if db in selected]
+ selected_jobs=[j for j in index['jobs']if j['targetDatabase']in selected]
+ ns={'__name__':'selected_proof_source_driver'};exec(compile(files['native_exact_proof_reuse.candidate.py'],'reviewed_proof_driver','exec'),ns)
+ check=dict(rootReview=root_review,selectedTargets=selected,sourceIndexSHA256=sha((I/'baseline/BATCH_SOURCE_INDEX.json').read_bytes()),jobs=selected_jobs,exactProofTransportReviewSHA256=sha(review_raw))
+ ns['admit'](check,files)
+ source=old_raw.decode()
+ old="directory=Path(j['sourceDirectory']);assert directory==P.parent/('remaining-scoped-setting-source-drafts01'if j['databaseScopedSettingsCount']else'remaining-zero-setting-source-drafts01')/db"
+ new="directory=P.parent.parent/'source-bundle-original38'/db;assert directory.is_dir()and not directory.is_symlink()"
+ assert source.count(old)==1;source=source.replace(old,new)
+ old="code=BOOTSTRAP.replace('BATCH_CONSTANTS_LITERAL',repr(C));compile(code,'reviewed_root_serial_remaining38','exec')"
+ new="C=augment(C);code=BOOTSTRAP.replace('BATCH_CONSTANTS_LITERAL',repr(C));compile(code,'reviewed_root_serial_remaining38','exec')"
+ assert source.count(old)==1;source=source.replace(old,new)
+ original={'__name__':'original_frozen_serial_builder','__file__':str(original_path)}
+ exec(compile(source,'frozen_builder_selected_cloud_mapping','exec'),original)
+ def augment(C):
+  C.update(proofCapsuleSHA256=sha(cap_raw),proofCapsuleCompressedSHA256=sha(compressed),proofCapsulePath=str(P/'EXACT_PRIOR_PROOF_CAPSULE.private.bz2'),proofFiles=review['proofFiles'],exactProofTransportReviewSHA256=sha(review_raw),rootReviewCanonicalSHA256=canonical(root_review),originalBuilderSHA256=OLD_BUILDER_SHA,originalFinalReviewSHA256=OLD_FINAL_SHA)
+  return C
+ original['augment']=augment
+ native=original['BOOTSTRAP']
+ needle="assert capacity_fresh(),'FRESH_CAPACITY_REQUIRED_BEFORE_NATIVE_BATCH_INTENT'"
+ admission="""import base64,bz2
+assert hashlib.sha256(pathlib.Path('/srv/crays/migration-work/20261108/ROOT_CURRENT.json').read_bytes()).hexdigest()=='__CRAYS_fixed-guard-004__'
+capsule_path=pathlib.Path(C['proofCapsulePath'])
+assert capsule_path==pathlib.Path('/srv/crays/migration-work/20261108/neon-rds/source-exact-proof-transport02-direct03/work04/EXACT_PRIOR_PROOF_CAPSULE.private.bz2')
+fd=os.open(capsule_path,os.O_RDONLY|os.O_NOFOLLOW)
+with os.fdopen(fd,'rb')as stream:
+ before=os.fstat(stream.fileno());assert stat.S_ISREG(before.st_mode)and before.st_uid==0 and before.st_nlink==1 and not before.st_mode&0o077 and 0<before.st_size<=100000
+ compressed=stream.read(100001);after=os.fstat(stream.fileno())
+ assert len(compressed)==before.st_size and (before.st_dev,before.st_ino,before.st_size,before.st_mtime_ns,before.st_ctime_ns)==(after.st_dev,after.st_ino,after.st_size,after.st_mtime_ns,after.st_ctime_ns)
+assert sha(compressed)==C['proofCapsuleCompressedSHA256']
+decoder=bz2.BZ2Decompressor();capsule_raw=decoder.decompress(compressed,max_length=262145)
+assert decoder.eof and not decoder.unused_data and len(capsule_raw)<=262144 and sha(capsule_raw)==C['proofCapsuleSHA256']
+entries=json.loads(capsule_raw);assert set(entries)==set(C['proofFiles'])and len(entries)==9
+proof_files={}
+for name,pin in C['proofFiles'].items():
+ entry=entries[name];assert set(entry)=={'bytes','sha256','dataBase64'}and entry['bytes']==pin['bytes']and entry['sha256']==pin['sha256']
+ data=base64.b64decode(entry['dataBase64'],validate=True);assert len(data)==pin['bytes']and sha(data)==pin['sha256'];proof_files[name]=data
+proof_module={'__name__':'selected_native_proof_driver'}
+exec(compile(proof_files['native_exact_proof_reuse.candidate.py'],'pinned_native_proof_driver','exec'),proof_module)
+context=proof_module['admit'](C,proof_files)
+assert context['rootReviewCanonicalSHA256']==C['rootReviewCanonicalSHA256']
+"""
+ assert native.count(needle)==1;native=native.replace(needle,admission+needle)
+ old="batch_name='neon-rds-serial-remaining38-'+C['group'];batch=acceptance/batch_name"
+ new="batch_name='neon-rds-selected-proof-'+C['group']+'-'+context['scope']['scopeId'];batch=acceptance/batch_name"
+ assert native.count(old)==1;native=native.replace(old,new)
+ old="exclusive(acceptance/(batch_name+'.intent.json'),json.dumps({'selectedTargets':C['selectedTargets'],'sourceArchiveSHA256':C['archiveSHA256'],'replayAllowed':False}).encode())"
+ new="""batch_intent=dict(selectedTargets=C['selectedTargets'],sourceArchiveSHA256=C['archiveSHA256'],sourceArchiveVersionId=C['versionId'],sourceIndexSHA256=C['sourceIndexSHA256'],rootScopedProofReuseReviewId=context['scope']['scopeId'],selectedDatabaseScopes=context['scope']['selectedDatabaseScopes'],rootReviewCanonicalSHA256=C['rootReviewCanonicalSHA256'],proofCapsuleSHA256=C['proofCapsuleSHA256'],proofTransportReviewSHA256=C['exactProofTransportReviewSHA256'],originalBuilderSHA256=C['originalBuilderSHA256'],originalFinalReviewSHA256=C['originalFinalReviewSHA256'],actualNativeCommandId=None,externalNativeCommandIdBindingRequired=True,replayAllowed=False)
+exclusive(acceptance/(batch_name+'.intent.json'),json.dumps(batch_intent,sort_keys=True,separators=(',',':')).encode())"""
+ assert native.count(old)==1;native=native.replace(old,new)
+ native=native.replace("batch.mkdir(mode=0o700);results=[];unstarted=","batch.mkdir(mode=0o700);results=[];proof_results=[];unstarted=")
+ old="if result['sourceMetadataAccepted']is not True or result['sourceObjectBlocksExact']is not True:raise RuntimeError('EXACT_OBJECT_BLOCK_REVIEW_REQUIRED_STOP_BEFORE_NEXT_SOURCE')"
+ new="""if result['sourceMetadataAccepted']is not True or result['sourceObjectBlocksExact']is not True:
+   assert result['sourceMetadataAccepted']is False and result['sourceObjectBlocksExact']is False,'RAW_METADATA_FLAGS_UNEXPECTED_STOP'
+   phase='exact_prior_proof_reuse_'+j['targetDatabase']
+   proof_result=proof_module['qualify'](j,receipt,C,context,files,batch,exclusive);proof_results.append(proof_result)
+   assert proof_result['allDifferencesPreviouslyRootAccepted']is True and proof_result.get('scopedProofReuseACK',{}).get('catalogProofReuseAcknowledgedUnderSelectedRootScope')is True,'UNMATCHED_CATALOG_PAIR_STOP_BEFORE_NEXT_SOURCE'"""
+ assert native.count(old)==1;native=native.replace(old,new)
+ native=native.replace("'SERIAL_REMAINING38_SELECTED_ORIGINAL_SNAPSHOTS_BYTE_EXACT_UNBOUND'","'SELECTED_ORIGINAL_SNAPSHOTS_DATA_EXACT_SCOPED_PRIOR_PROOF_ACK_UNBOUND'")
+ native=native.replace("'results':results,'unstartedTargets':unstarted","'results':results,'exactPriorProofReuse':proof_results,'metadataUnitAttempts':context.get('metadataUnitAttempts',[]),'unstartedTargets':unstarted")
+ old="exclusive(batch/'BATCH_RESULT_ACTUAL.json',json.dumps(final,indent=2).encode());print(json.dumps(final,separators=(',',':')))"
+ new="""exclusive(batch/'BATCH_RESULT_ACTUAL.json',json.dumps(final,indent=2).encode())
+summary=dict(status=final['status'],batchDirectory=str(batch),selectedTargets=C['selectedTargets'],unstartedTargets=unstarted,databases=[dict(database=r['result']['database'],tables=r['result']['tables'],rows=r['result']['rows'],sequences=r['result']['sequences'],sourceMetadataAcceptedRaw=r['result']['sourceMetadataAccepted'],dataFingerprintExact=r['result']['dataFingerprintExact'])for r in results],proofReuse=[{k:v for k,v in r.items()if k!='scopedProofReuseACK'}for r in proof_results],metadataUnitAttempts=context.get('metadataUnitAttempts',[]),errorClass=final.get('errorClass'),phase=final.get('phase'),batchResultSHA256=sha((batch/'BATCH_RESULT_ACTUAL.json').read_bytes()),actualNativeCommandId=None,externalNativeCommandIdBindingRequired=True,ownerCompatibilityOrConsumerOrEndDeltaAccepted=False,replayAllowed=False)
+printed=json.dumps(summary,separators=(',',':'));assert len(printed.encode())<23000;print(printed)"""
+ assert native.count(old)==1;native=native.replace(old,new)
+ original['BOOTSTRAP']=native
+ envelope=original['build'](root_review)
+ command=envelope['Parameters']['commands'][0];prefix="python3 -I -B - <<'ROOT_SERIAL_REMAINING38_REVIEWED'\n";suffix="\nROOT_SERIAL_REMAINING38_REVIEWED\n"
+ assert command.startswith(prefix)and command.endswith(suffix)
+ code=command[len(prefix):-len(suffix)]
+ envelope['Parameters']['commands']=["python3 -I -B -c "+shlex.quote(code)]
+ envelope['Comment']='Root exact selected Neon restore and prior21 scoped proof reuse'
+ assert len(envelope['Parameters']['commands'][0].encode())<60000
+ return envelope
+if __name__=='__main__':raise SystemExit('ROOT_SELECTED_REVIEW_REQUIRED_SOURCE_ONLY_NO_DISPATCH')

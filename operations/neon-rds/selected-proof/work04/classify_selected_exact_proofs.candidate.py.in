@@ -1,0 +1,59 @@
+"""Pure exact-key+two-SHA comparison; returns a candidate, never Root approval."""
+import json,hashlib,re
+LIBRARY_SHA='__CRAYS_fixed-guard-003__'
+sha=lambda b:hashlib.sha256(b).hexdigest()
+canonical=lambda x:sha(json.dumps(x,sort_keys=True,separators=(',',':')).encode())
+def triple(key,expected,actual):
+ assert isinstance(key,list)and len(key)==4 and all(isinstance(v,str)and v for v in key)
+ assert all(isinstance(v,str)and re.fullmatch('[0-9a-f]{64}',v)for v in [expected,actual])
+ return tuple(key)+(expected,actual)
+def classify(job,controller,courier,spec_raw,library_raw,proof_receipts,root_scope_id):
+ assert re.fullmatch('[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}',root_scope_id)
+ assert courier.get('originalCommandId')is None and courier['rootScopedProofReuseReviewId']==root_scope_id and courier['externalNativeCommandIdBindingRequired']is True
+ assert sha(library_raw)==LIBRARY_SHA
+ library=json.loads(library_raw);assert library['generalNormalizationApproved']is False
+ assert len(proof_receipts)==len(library['proofs'])==2
+ accepted=set()
+ for binding,receipt in zip(library['proofs'],proof_receipts):
+  root_raw=receipt['rootAcceptanceRaw'];review_raw=receipt['independentReviewRaw'];root=json.loads(root_raw);proof=json.loads(review_raw)
+  assert sha(root_raw)==binding['rootAcceptanceSHA256']and sha(review_raw)==binding['independentReviewSHA256']==root['independentReviewSHA256']
+  assert root['status']==binding['rootStatus']and root['dataFingerprintExact']is True and root['physicalCleanupProven']is True
+  assert proof['scopedSnapshotCatalogEquivalentApproved']is True and proof['physicalCleanupProven']is True and proof['originalGlobalRolesAndScopedMembershipsUnchanged']is True
+  assert root['targetDatabase']==proof['targetDatabase']==binding['targetDatabase']and root['originalCommandId']==proof['originalCommandId']==binding['originalCommandId']
+  entries=proof['exactScopedEquivalentBlocks'];current={triple(p['key'],p['expectedBlockSHA256'],p['actualBlockSHA256'])for p in entries}
+  assert len(current)==binding['exactPairCount']
+  if root['status']=='ROOT_SCOPED_SNAPSHOT_ACCEPTED':
+   assert root['scopedSnapshotAccepted']is True and root['originalGlobalRolesUnchanged']is True and root['originalControllerReceiptPreserved']is True
+   assert root['exactScopedEquivalentBlocks']==entries
+  else:
+   assert root['status']=='ROOT_ACCEPTED_EXACT_DATA_AND_SIX_SPECIFIC_CHECK_ASSOCIATION_DIFFERENCES'and root['generalNormalizationApproved']is False and root['scopedEquivalentBlocks']==len(current)
+  accepted.update(current)
+ assert len(accepted)==21 and accepted=={triple(p['key'],p['expectedBlockSHA256'],p['actualBlockSHA256'])for p in library['pairs']}
+ assert sha(spec_raw)==job['files']['RECOVERY01_SPEC.json']['sha256']and len(spec_raw)==job['files']['RECOVERY01_SPEC.json']['bytes'];spec=json.loads(spec_raw)
+ assert spec['targetDatabase']==job['targetDatabase']and spec['source']==job['source']and spec['originalDump']==job['originalDump']
+ assert controller.get('status')=='RECOVERY01_CONTROLLER_RETURNED'
+ assert controller['errorClass']is None and all(controller[k]is True for k in ['ownClientPhysicallyRemoved','ownCredentialRamJobsPhysicallyRemoved','ownControllerChildrenAbsent'])
+ result=controller['result'];assert result.get('status')=='SEPARATE_RECOVERY01_DATA_RESTORED_OBJECT_BLOCK_REVIEW_PENDING'and result.get('sourceObjectBlocksExact')is False
+ assert result['database']==job['targetDatabase']==courier['database']and result['dumpSHA256']==job['originalDump']['sha256']
+ assert result['sourceBranchId']==job['source']['branchId']and result['sourceDatabase']==job['source']['database']
+ assert result['dataFingerprintExact']is True and result['ordinaryApplicationConnectDenied']is True and result['originalGlobalRolesAndScopedMembershipsUnchanged']is True
+ assert all(result[k]is False for k in ['globalRolesOrPasswordsChanged','sourceChanged','productiveNeondbChanged','applicationBindingsChanged','ordinaryConsumerConnectActivated','ownerCompatibilityAccepted','finalSourceDeltaAccepted','authenticatedCustomerAccepted','sourceMetadataAccepted'])
+ for key,expected_key in [('tables','expectedTables'),('rows','expectedRows'),('sequences','expectedSequences'),('functions','expectedFunctions'),('originalPolicies','expectedOriginalPolicies'),('enabledRLSTables','expectedEnabledRLS'),('forceRLSTables','expectedForcedRLS')]:assert result[key]==spec[expected_key]
+ assert courier['status']=='RETAINED_RECOVERY_EXACT_COMPARISON_METADATA_ONLY'and courier['blockBodiesReturned']is False
+ assert all(courier[k]is False for k in ['sourceOrTargetSQLExecuted','credentialsRead','filesWritten','liveDatabaseRequeried','customerRowsRead','sourceMetadataAccepted'])
+ assert courier['controllerCanonicalSHA256']==canonical(controller)and courier['inputManifestSHA256']==job['inputManifestSHA256']
+ assert courier['sourceSchemaSHA256']==job['files']['source-schema.private.sql']['sha256']and courier['projectorSHA256']==job['files']['project_private_schema_blocks.py']['sha256']
+ comparison=courier['comparison'];assert comparison['exact']is False and comparison['semanticNormalizationUsed']is False and comparison['originalObjectBlocks']==comparison['actualObjectBlocks']
+ assert comparison['targetSchemaSHA256']==courier['targetSchemaSHA256']
+ assert type(comparison['originalObjectBlocks'])is int and comparison['originalObjectBlocks']>0 and type(comparison['actualObjectBlocks'])is int
+ differences=comparison['differences'];assert comparison['originalObjectBlocks']>=len(differences)
+ assert len(differences)==result['catalogDifferenceBlocks']and 0<len(differences)<=128
+ keys=[tuple(d['key'])for d in differences];assert len(keys)==len(set(keys))
+ observed=[triple(d['key'],d['expectedSHA256'],d['actualSHA256'])for d in differences]
+ # Complete recomputed difference set, not a chosen subset; sizes only, no bodies.
+ selected=courier['selected'];assert [triple(d['key'],d['expectedSHA256'],d['actualSHA256'])for d in selected]==observed
+ assert all(isinstance(d[k],int)and d[k]>0 for d in selected for k in ['originalBlockBytes','targetBlockBytes'])
+ assert courier['totalSelectedBlockBytes']==sum(d['originalBlockBytes']+d['targetBlockBytes']for d in selected)
+ unknown=[d for d,t in zip(differences,observed)if t not in accepted]
+ return dict(status='EXACT_PREVIOUS_PROOFS_MATCH_ROOT_REVIEW_REQUIRED'if not unknown else'UNMATCHED_EXACT_TRIPLES_REQUIRE_SEPARATE_BLOCK_REVIEW',targetDatabase=job['targetDatabase'],inputManifestSHA256=job['inputManifestSHA256'],originalCommandId=None,rootScopedProofReuseReviewId=root_scope_id,externalNativeCommandIdBindingRequired=True,sourceSchemaSHA256=courier['sourceSchemaSHA256'],targetSchemaSHA256=courier['targetSchemaSHA256'],controllerCanonicalSHA256=canonical(controller),comparisonSHA256=courier['comparisonSHA256'],proofLibrarySHA256=LIBRARY_SHA,rootProofAcceptanceSHA256s=[p['rootAcceptanceSHA256']for p in library['proofs']],independentProofReviewSHA256s=[p['independentReviewSHA256']for p in library['proofs']],allDifferencesPreviouslyRootAccepted=not unknown,previouslyAcceptedExactTriples=len(observed)-len(unknown),unmatchedExactTriples=unknown,originalObjectBlocks=comparison['originalObjectBlocks'],byteExactOtherObjectBlocks=comparison['originalObjectBlocks']-len(differences),generalNormalizationApproved=False,rootScopedAcceptanceGranted=False,rootFinalReviewRequired=True,ownerCompatibilityApproved=False,consumerActivationApproved=False,databaseScopedSettingsAcceptanceGranted=False,finalDeltaApproved=False,authenticatedCustomerApproved=False,restoreReplayApproved=False)
+if __name__=='__main__':raise SystemExit('PURE_CLASSIFIER_NO_IO_OR_EXECUTION')

@@ -1,0 +1,98 @@
+"""Selected Root preauthorization of exact prior catalog proofs; no SQL or restore."""
+import pathlib,os,stat,json,hashlib,base64,re,subprocess,zlib
+LIBRARY_SHA='__CRAYS_fixed-guard-003__'
+ALLOWED_SELECTED37=['crays_dev_08af27a169d1', 'crays_dev_26e9e39e1a4d', 'crays_dev_283aefa36882', 'crays_dev_2989d706a39b', 'crays_dev_321358bbc6a0', 'crays_dev_32850bb44881', 'crays_dev_38a4c903826f', 'crays_dev_4d18bb49bb09', 'crays_dev_57f1084b11f4', 'crays_dev_7660fa574189', 'crays_dev_7b438a8cdc0e', 'crays_dev_814f4813593b', 'crays_dev_836e8b9b1da5', 'crays_dev_8a298be15caf', 'crays_dev_a2f6fbb3f74e', 'crays_dev_a4310b437ba5', 'crays_dev_aa34eb02b7de', 'crays_dev_bb71b6983f8f', 'crays_dev_c3cf3567ce06', 'crays_dev_c570f79d6ee3', 'crays_dev_cfb6611a7f71', 'crays_dev_d2e487bcd30f', 'crays_dev_f0fbb7ddf8b4', 'crays_dev_f27eb91d67f6', 'crays_dev_0db21754ff7f', 'crays_dev_171e6450bade', 'crays_dev_2582f8491a2a', 'crays_dev_3ecb0654c2e0', 'crays_dev_3ff6b759d4c1', 'crays_dev_788703a21e4d', 'crays_dev_ac38d9637ed2', 'crays_dev_bd85cdf0072c', 'crays_dev_d4b535e04202', 'crays_dev_e379e548fc64', 'crays_dev_e77d597e46f1', 'crays_dev_e821914e1c2f', 'crays_dev_f6e62f4684ce']
+sha=lambda data:hashlib.sha256(data).hexdigest()
+canonical=lambda value:sha(json.dumps(value,sort_keys=True,separators=(',',':')).encode())
+def scope_entry(job):
+ return dict(inputManifestSHA256=job['inputManifestSHA256'],specSHA256=job['files']['RECOVERY01_SPEC.json']['sha256'],originalDumpSHA256=job['originalDump']['sha256'],independentSourceReviewSHA256=job['independentSourceReviewSHA256'],reuseOnlyExactTwentyOnePreviouslyRootAcceptedTriples=True,sourceMetadataRawMustRemainFalse=True,ownerCompatibilityApproved=False,consumerActivationApproved=False,databaseScopedSettingsAcceptanceGranted=False,finalDeltaApproved=False,authenticatedCustomerApproved=False)
+def admit(C,proof_files):
+ root=C['rootReview'];assert root.get('rootExecutionReviewComplete')is True and root.get('globalRoleOrPasswordWritesApproved')is False and root.get('consumerActivationApproved')is False
+ selected=C['selectedTargets'];assert type(selected)is list and 0<len(selected)<=2 and all(type(db)is str for db in selected)and len(selected)==len(set(selected))and selected==[db for db in ALLOWED_SELECTED37 if db in selected]
+ assert root['selectedTargets']==selected and root['batchSourceIndexSHA256']==C['sourceIndexSHA256']
+ scope=root['exactPreviousProofReuse']
+ assert set(scope)=={'scopeId','librarySHA256','transportReviewSHA256','selectedDatabaseScopes'}
+ assert re.fullmatch('[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}',scope['scopeId'])
+ assert scope['librarySHA256']==LIBRARY_SHA and scope['transportReviewSHA256']==C['exactProofTransportReviewSHA256']
+ assert scope['selectedDatabaseScopes']=={job['targetDatabase']:scope_entry(job)for job in C['jobs']}
+ for job in C['jobs']:
+  actual=scope['selectedDatabaseScopes'][job['targetDatabase']]
+  for key,value in scope_entry(job).items():
+   if type(value)is bool:assert actual[key]is value,'STRICT_SCOPE_BOOLEAN_REQUIRED'
+   else:assert type(actual[key])is str and actual[key]==value
+ assert [job['targetDatabase']for job in C['jobs']]==C['selectedTargets']and 0<len(C['jobs'])<=2
+ assert sha(proof_files['ROOT_ACCEPTED_EXACT_PAIR_LIBRARY.json'])==LIBRARY_SHA
+ library=json.loads(proof_files['ROOT_ACCEPTED_EXACT_PAIR_LIBRARY.json']);assert len(library['proofs'])==2 and len(library['pairs'])==21 and library['generalNormalizationApproved']is False
+ for index,binding in enumerate(library['proofs']):
+  assert sha(proof_files['root-proof-'+str(index)+'.json'])==binding['rootAcceptanceSHA256']
+  assert sha(proof_files['independent-proof-'+str(index)+'.json'])==binding['independentReviewSHA256']
+ return dict(scope=scope,proofFiles=proof_files,rootReviewCanonicalSHA256=canonical(C['rootReview']))
+def read_private(path,maximum):
+ fd=os.open(path,os.O_RDONLY|os.O_NOFOLLOW)
+ with os.fdopen(fd,'rb')as f:
+  before=os.fstat(f.fileno());assert stat.S_ISREG(before.st_mode)and before.st_uid==0 and before.st_nlink==1 and not before.st_mode&0o077 and 0<before.st_size<=maximum
+  raw=f.read(maximum+1);after=os.fstat(f.fileno());assert len(raw)==before.st_size and (before.st_dev,before.st_ino,before.st_size,before.st_mtime_ns,before.st_ctime_ns)==(after.st_dev,after.st_ino,after.st_size,after.st_mtime_ns,after.st_ctime_ns)
+ return raw
+def unit_state(unit):
+ result=subprocess.run(['/usr/bin/systemctl','show',unit,'--property=MainPID,LoadState,Job,Result,ExecMainStatus,InvocationID'],capture_output=True,text=True,timeout=10)
+ assert result.returncode==0
+ return dict(line.split('=',1)for line in result.stdout.splitlines()if'='in line)
+def pid_gone(pid,ticks):
+ assert type(pid)is int and pid>0 and isinstance(ticks,str)and ticks.isdigit()
+ path=pathlib.Path('/proc')/str(pid)/'stat'
+ assert not path.exists()or path.read_text().rsplit(')',1)[1].split()[19]!=ticks
+
+def child_code(reader_raw,meta):
+ # Catch module initialization, projector loading and inspection; never emit exception values.
+ return ('import json,traceback,pathlib,sys\ntry:\n module={"__name__":"selected_root_metadata_child"}\n exec(compile('+repr(reader_raw.decode())+',"pinned_selected_retained_reader","exec"),module)\n print(module["inspect"]('+repr(meta)+'))\nexcept BaseException as error:\n print(json.dumps(dict(status="OWN_METADATA_CHILD_ERROR_NO_VALUES",errorClass=type(error).__name__,failureFrames=[dict(file=pathlib.Path(f.filename).name,line=f.lineno)for f in traceback.extract_tb(sys.exc_info()[2])])))\n raise SystemExit(1)\n')
+def run_child(argv,code,batch,db,intent_raw,meta,exclusive):
+ run=None;problem=None;stdout=b'';stderr=b''
+ try:
+  run=subprocess.run(argv,input=code.encode(),capture_output=True,timeout=55);stdout=run.stdout;stderr=run.stderr
+ except subprocess.TimeoutExpired as error:
+  problem='TimeoutExpired';stdout=error.stdout or b'';stderr=error.stderr or b''
+ except BaseException as error:problem=type(error).__name__
+ raw=dict(status='OWN_METADATA_CHILD_RAW_RESPONSE_BEFORE_DECODE',targetDatabase=db,rootScopedProofReuseReviewId=meta['rootScopedProofReuseReviewId'],expectedMetadataUnit=meta['expectedMetadataUnit'],metadataIntentSHA256=sha(intent_raw),codeSHA256=sha(code.encode()),returncode=run.returncode if run is not None else None,errorClass=problem,stdoutBytes=len(stdout),stderrBytes=len(stderr),stdoutSHA256=sha(stdout),stderrSHA256=sha(stderr),stdoutBase64=base64.b64encode(stdout[:65536]).decode(),stderrBase64=base64.b64encode(stderr[:16384]).decode(),completeOutput=len(stdout)<=65536 and len(stderr)<=16384,actualNativeCommandId=None,externalNativeCommandIdBindingRequired=True,automaticRetryApproved=False)
+ raw_bytes=json.dumps(raw,sort_keys=True,separators=(',',':')).encode();exclusive(batch/(db+'-metadata-child-raw-actual.json'),raw_bytes)
+ assert problem is None and raw['completeOutput']is True,'METADATA_CHILD_RAW_QUARANTINED_STOP_ADOPT_NO_RETRY'
+ return run,sha(raw_bytes)
+
+def qualify(job,controller,C,context,files,batch,exclusive):
+ scope=context['scope'];proof=context['proofFiles'];db=job['targetDatabase'];unit='crays-neon-rds-proof-'+db.removeprefix('crays_dev_')+'-'+scope['scopeId']+'.service'
+ current=unit_state(unit);assert current['MainPID']=='0'and current['LoadState']=='not-found'and current['Job']in('','0'),'OWN_METADATA_UNIT_EXISTS_ADOPT_NO_RELAUNCH'
+ meta=dict(instance='i-0eb300e1b02414d8f',database=db,rootScopedProofReuseReviewId=scope['scopeId'],expectedMetadataUnit=unit,controllerCanonicalSHA256=canonical(controller),inputManifestSHA256=job['inputManifestSHA256'],projectorSHA256=job['files']['project_private_schema_blocks.py']['sha256'],sourceSchemaSHA256=job['files']['source-schema.private.sql']['sha256'],expectedDifferences=controller['result']['catalogDifferenceBlocks'],stage=job['launchContract']['stage'],out=job['launchContract']['stage'].replace('/incoming/','/acceptance/'),SQLOrCloudOrCredentialOrMutationApproved=False)
+ writer=batch/'native_metadata_terminal_writer.py';writer_raw=proof['write_metadata_unit_terminal.candidate.py'];writer_sha=sha(writer_raw)
+ if not writer.exists():exclusive(writer,writer_raw,0o400)
+ assert read_private(writer,16384)==writer_raw
+ intent=dict(targetDatabase=db,orderedSelectedTargets=C['selectedTargets'],rootScopedProofReuseReviewId=scope['scopeId'],expectedMetadataUnit=unit,rootReviewCanonicalSHA256=context['rootReviewCanonicalSHA256'],terminalWriterSHA256=writer_sha,proofCapsuleSHA256=C['proofCapsuleSHA256'],proofLibrarySHA256=LIBRARY_SHA,sourceIndexSHA256=C['sourceIndexSHA256'],batchIntentSHA256=sha(read_private(batch.parent/(batch.name+'.intent.json'),65536)),selectedDatabaseScopes=scope['selectedDatabaseScopes'],sourceJobCanonicalSHA256=canonical({k:v for k,v in job.items()if k not in ('rootReviewBytes','finalReviewBytes')}),controllerCanonicalSHA256=canonical(controller),readerConfig=meta,actualNativeCommandId=None,externalNativeCommandIdBindingRequired=True)
+ intent_path=batch/(db+'-metadata-intent.json');intent_raw=json.dumps(intent,sort_keys=True,separators=(',',':')).encode();exclusive(intent_path,intent_raw)
+ code=child_code(proof['read_selected_retained_comparison.candidate.py'],meta)
+ argv=['/usr/bin/systemd-run','--quiet','--pipe','--wait','--unit='+unit,'--property=MemoryMax=128M','--property=CPUQuota=25%','--property=TasksMax=16','--property=RuntimeMaxSec=35','--property=TimeoutStopSec=10','--property=KillMode=control-group','--property=UMask=0077','--property=NoNewPrivileges=yes','--property=LimitCORE=0','--property=ExecStopPost=/usr/bin/python3 -I -B '+str(writer)+' '+str(intent_path)+' '+sha(intent_raw),'/usr/bin/python3','-I','-B','-']
+ attempt=dict(targetDatabase=db,unit=unit,metadataIntentSHA256=sha(intent_raw),physicalTerminalProven=False);context.setdefault('metadataUnitAttempts',[]).append(attempt)
+ run,raw_child_sha=run_child(argv,code,batch,db,intent_raw,meta,exclusive)
+ assert run.returncode==0 and 0<len(run.stdout)<23500,'OWN_METADATA_CHILD_FAILURE_STOP_NO_ACK_OR_RETRY'
+ terminal_raw=read_private(batch/(db+'-metadata-terminal-actual.json'),16384);terminal=json.loads(terminal_raw)
+ assert terminal['status']=='OWN_METADATA_UNIT_NATIVE_EXECSTOPPOST_SUCCESS'and terminal['unit']==unit and terminal['targetDatabase']==db and terminal['rootScopedProofReuseReviewId']==scope['scopeId']and terminal['metadataIntentSHA256']==sha(intent_raw)and terminal['terminalWriterSHA256']==writer_sha and terminal['rootReviewCanonicalSHA256']==context['rootReviewCanonicalSHA256']
+ assert terminal['serviceResult']=='success'and terminal['exitCode']=='exited'and terminal['exitStatus']=='0'
+ envelope=json.loads(run.stdout);assert envelope['status']=='COMPRESSED_RETAINED_POSTIMAGE_COMPLETE'and type(envelope['bytes'])is int and 0<envelope['bytes']<=65536
+ compressed=base64.b64decode(envelope['gzipBase64'],validate=True);assert len(compressed)<=16384
+ decoder=zlib.decompressobj(16+zlib.MAX_WBITS);decoded=decoder.decompress(compressed,65537);assert decoder.eof and not decoder.unused_data and not decoder.unconsumed_tail and len(decoded)==envelope['bytes']<=65536 and sha(decoded)==envelope['sha256']
+ courier=json.loads(decoded);identity=courier['nativeMetadataReaderPhysicalIdentity'];group='/system.slice/'+unit
+ assert identity['unit']==unit and identity['cgroup']==terminal['cgroup']==group and identity['invocationId']==terminal['invocationId']and re.fullmatch('[0-9a-f]{32}',identity['invocationId'])
+ assert identity['memoryMaxBytes']==134217728 and identity['cpuMax']=='25000 100000'and identity['tasksMax']==16
+ state=unit_state(unit);assert state['MainPID']=='0'and state['Job']in('','0')
+ if state['LoadState']!='not-found':assert state['Result']=='success'and state['ExecMainStatus']=='0'and state['InvocationID']==identity['invocationId']
+ pid_gone(identity['pid'],identity['startTicks']);pid_gone(terminal['writerPID'],terminal['writerStartTicks'])
+ cgroup=pathlib.Path('/sys/fs/cgroup')/group.lstrip('/')/'cgroup.procs';assert not cgroup.exists()or not cgroup.read_text().strip()
+ attempt['physicalTerminalProven']=True
+ exclusive(batch/(db+'-metadata-courier-actual.json'),decoded)
+ module={'__name__':'selected_root_pure_exact_classifier'};exec(compile(proof['classify_selected_exact_proofs.candidate.py'],'pinned_selected_exact_classifier','exec'),module)
+ receipts=[dict(rootAcceptanceRaw=proof['root-proof-'+str(i)+'.json'],independentReviewRaw=proof['independent-proof-'+str(i)+'.json'])for i in range(2)]
+ classified=module['classify'](job,controller,courier,files[db+'/RECOVERY01_SPEC.json'],proof['ROOT_ACCEPTED_EXACT_PAIR_LIBRARY.json'],receipts,scope['scopeId'])
+ classification_raw=json.dumps(classified,sort_keys=True,separators=(',',':')).encode();exclusive(batch/(db+'-exact-proof-classification-actual.json'),classification_raw)
+ physical=dict(rawMetadataChildReceiptSHA256=raw_child_sha,metadataReaderPIDAndTicksGone=True,metadataTerminalWriterPIDAndTicksGone=True,ownMetadataCgroupPhysicallyEmpty=True,nativeTerminalReceiptSHA256=sha(terminal_raw),nativeMetadataUnit=unit,invocationId=identity['invocationId'])
+ summary=dict(targetDatabase=db,status=classified['status'],allDifferencesPreviouslyRootAccepted=classified['allDifferencesPreviouslyRootAccepted'],previouslyAcceptedExactTriples=classified['previouslyAcceptedExactTriples'],unmatchedExactTripleCount=len(classified['unmatchedExactTriples']),classificationSHA256=sha(classification_raw),metadataDecodedSHA256=sha(decoded),metadataIntentSHA256=sha(intent_raw),rootScopedProofReuseReviewId=scope['scopeId'],physicalMetadataChildCleanup=physical,actualNativeCommandId=None,externalNativeCommandIdBindingRequired=True)
+ if classified['allDifferencesPreviouslyRootAccepted']is not True:return summary
+ ack=dict(status='ROOT_SELECTED_DATABASE_EXACT_PRIOR_CATALOG_PROOF_REUSE_ACK',targetDatabase=db,rootScopedProofReuseReviewId=scope['scopeId'],rootReviewCanonicalSHA256=context['rootReviewCanonicalSHA256'],orderedSelectedTargets=C['selectedTargets'],selectedDatabaseScope=scope_entry(job),batchIntentSHA256=intent['batchIntentSHA256'],metadataIntentSHA256=sha(intent_raw),sourceIndexSHA256=C['sourceIndexSHA256'],proofCapsuleSHA256=C['proofCapsuleSHA256'],proofLibrarySHA256=LIBRARY_SHA,proofTransportReviewSHA256=C['exactProofTransportReviewSHA256'],controllerCanonicalSHA256=canonical(controller),comparisonSHA256=courier['comparisonSHA256'],sourceSchemaSHA256=courier['sourceSchemaSHA256'],targetSchemaSHA256=courier['targetSchemaSHA256'],classificationSHA256=sha(classification_raw),priorRootProofAcceptanceSHA256s=classified['rootProofAcceptanceSHA256s'],priorIndependentProofReviewSHA256s=classified['independentProofReviewSHA256s'],exactPreviouslyAcceptedTriples=classified['previouslyAcceptedExactTriples'],originalObjectBlocks=classified['originalObjectBlocks'],byteExactOtherObjectBlocks=classified['byteExactOtherObjectBlocks'],catalogProofReuseAcknowledgedUnderSelectedRootScope=True,sourceMetadataAcceptedRaw=False,rawControllerReceiptPreserved=True,generalNormalizationApproved=False,ownerCompatibilityApproved=False,consumerActivationApproved=False,databaseScopedSettingsAcceptanceGranted=False,finalDeltaApproved=False,authenticatedCustomerApproved=False,restoreReplayApproved=False,actualNativeCommandId=None,externalNativeCommandIdBindingRequired=True,physicalMetadataChildCleanup=physical)
+ ack_raw=json.dumps(ack,sort_keys=True,separators=(',',':')).encode();exclusive(batch/(db+'-scoped-proof-reuse-ack.json'),ack_raw);summary.update(scopedProofReuseACK=ack,scopedProofReuseACKSHA256=sha(ack_raw))
+ return summary

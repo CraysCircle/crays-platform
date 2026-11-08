@@ -1,0 +1,12 @@
+{
+  "roundtripOriginals": 12,
+  "allOriginalSHA256Verified": true,
+  "allOriginalSyntaxParsed": true,
+  "sourceProgramsExecuted": false,
+  "publicFilesContainNoWithheldBindingValues": true,
+  "materializerSHA256": "93a884bfa8f6c19bd7801f783bd8c313a6f8ec7c5a8c5af293b9f633a9f50b12",
+  "wrongBindingsRejectedBeforeAnyOutput": true,
+  "gitOutputDestinationRejected": true,
+  "publicSourceGitleaksFindings": 0,
+  "validationScope": "Source export integrity, twelve original reconstructions, syntax-only parsing and materializer safety checks; no migration execution or runtime acceptance."
+}

@@ -12,3 +12,5 @@ See [provenance](source-index.json) for exact source hashes. No application lice
 - [Gateway runtime44](qlo/gateway-runtime44/README.md): exact source39/source44 and current revision02 wrapper, with the earlier wrapper retained as history.
 
 - [Postiz delivery helpers](delivery/postiz/README.md): exact qualifier revision04, public binding and separately reviewed physical-readback revision02.
+
+- [Neon → RDS migration sources](neon-rds/README.md): twelve original programs, six unchanged files and six protected-binding templates, with byte-verified reconstruction and explicit dependency/license gaps.

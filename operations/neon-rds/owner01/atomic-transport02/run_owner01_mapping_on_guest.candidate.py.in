@@ -1,0 +1,29 @@
+from pathlib import Path
+import os,json,runpy,hashlib,gzip,base64,stat,subprocess
+ROOT=Path(__file__).resolve().parent
+UNIT='crays-rds-owner01-atomic-mapping-20261108-01.service'
+assert os.getuid()==0 and os.environ.get('INVOCATION_ID'),'OWN_ROOT_READONLY_UNIT_REQUIRED'
+group=Path('/proc/self/cgroup').read_text().strip().split(':',2)[-1];assert group=='/system.slice/'+UNIT,'EXACT_READONLY_UNIT_CGROUP_REQUIRED'
+review_path=ROOT/'ROOT_EXECUTION_REVIEW.json';st=review_path.lstat();assert stat.S_ISREG(st.st_mode) and st.st_uid==0 and st.st_nlink==1 and not st.st_mode&0o077
+review=json.loads(review_path.read_bytes());assert review.get('rootExecutionReviewComplete') is True and review.get('stage')=='owner01_atomic_mapping02' and review.get('guestSHA256')==hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+assert review.get('ownerCompatibilityMutationApproved')is True and review.get('targetDatabase')=='crays_dev_3abc00b5a673'and review.get('sqlSHA256')=='__CRAYS_fixed-guard-005__'
+assert review.get('independentSQLRightsReviewEvidenceSHA256')=='__CRAYS_fixed-guard-006__'
+assert review.get('globalRoleOrPasswordWritesApproved')is False and review.get('consumerActivationApproved')is False
+assert len(review.get('independentReviewEvidenceSHA256',''))==64 and set(review['independentReviewEvidenceSHA256'])<=set('0123456789abcdef')
+assert set(review['inputPins'])=={'secure_owner01_mapping_session.candidate.py','owner01_mapping_operations.candidate.py','atomic_owner_mapping.candidate.sql','native-binding.json','rds-ca.pem','SOURCE_BINDING.json'},'EXACT_RUNTIME_INPUT_SET_REQUIRED'
+for name,pin in review['inputPins'].items():
+ assert '/' not in name and name!='ROOT_EXECUTION_REVIEW.json'
+ p=ROOT/name;st=p.lstat();assert stat.S_ISREG(st.st_mode) and st.st_uid==0 and st.st_nlink==1 and not st.st_mode&0o077
+ assert hashlib.sha256(p.read_bytes()).hexdigest()==pin,'ROOT_REVIEWED_EXACT_INPUT_PIN_REQUIRED'
+cgroup=Path('/sys/fs/cgroup')/group.lstrip('/');memory=int((cgroup/'memory.max').read_text());tasks=int((cgroup/'pids.max').read_text());quota,period=(cgroup/'cpu.max').read_text().split();assert memory<=805306368 and tasks<=128 and quota!='max' and int(quota)/int(period)<=.5
+limits={'controllerPID':os.getpid(),'controllerStartTicks':Path('/proc/self/stat').read_text().rsplit(')',1)[1].split()[19],'invocationId':os.environ['INVOCATION_ID'],'memoryMaxBytes':memory,'pidsMax':tasks,'cpuMax':quota+' '+period,'unit':UNIT,'unitProperties':subprocess.run(['/usr/bin/systemctl','show',UNIT,'--property=RuntimeMaxUSec,TimeoutStopUSec,KillMode,InvocationID,MemoryMax,TasksMax,CPUQuotaPerSecUSec'],capture_output=True,text=True,check=True,timeout=10).stdout}
+session=runpy.run_path(str(ROOT/'secure_owner01_mapping_session.candidate.py'));ops=runpy.run_path(str(ROOT/'owner01_mapping_operations.candidate.py'))
+result=session['restore'](json.loads((ROOT/'native-binding.json').read_text()),ROOT/'atomic_owner_mapping.candidate.sql',ROOT/'rds-ca.pem',ops)
+r=session['docker']('inspect',session['NAME']);assert r.returncode==1 and r.stdout.strip()=='[]' and 'no such object'in r.stderr.lower(),'OWN_READONLY_CLIENT_REMOVAL_REQUIRED'
+assert not list(Path('/run').glob('crays-rds-owner01-atomic-mapping-20261108-01-*')),'OWN_CREDENTIAL_RAM_REMOVAL_REQUIRED'
+f=cgroup/'cgroup.procs';assert not[x for x in f.read_text().split()if int(x)!=os.getpid()],'OWN_CONTROLLER_CHILDREN_ABSENT_REQUIRED'
+result.update(ownClientPhysicallyRemoved=True,ownCredentialRAMJobsRemoved=True,ownControllerChildrenAbsent=True,nativeUnitLimits=limits)
+raw=json.dumps(result,separators=(',',':')).encode();fd=os.open(ops['OUT']/'CONTROLLER_METADATA_ACTUAL.json',os.O_CREAT|os.O_EXCL|os.O_WRONLY|os.O_NOFOLLOW,0o600)
+with os.fdopen(fd,'wb')as f:f.write(raw);f.flush();os.fsync(f.fileno())
+encoded=base64.b64encode(gzip.compress(raw,mtime=0)).decode();assert len(encoded)<20000,'BOUNDED_RETAINED_METADATA_OUTPUT_REQUIRED_NO_QUERY_REPLAY'
+print(json.dumps({'status':'OWNER01_ATOMIC_MAPPING_COMPRESSED_COMPLETE','bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest(),'gzipBase64':encoded}))
