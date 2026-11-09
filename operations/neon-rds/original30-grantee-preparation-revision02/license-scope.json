@@ -1,0 +1,55 @@
+{
+  "license": "AGPL-3.0-only",
+  "copyrightHolder": "CRAYS AG",
+  "sourceCount": 4,
+  "sourceBytes": 52167,
+  "coveredOriginalRevisions": [
+    {
+      "name": "PREPARE_ORIGINAL30_GRANTEES.candidate.sql",
+      "originalSourcePath": "/srv/crays/migration-work/20261108/neon-rds/native-core-original30-grantee-preparation-runtime-source01/PREPARE_ORIGINAL30_GRANTEES.candidate.sql",
+      "bytes": 17432,
+      "sha256": "a5feae0ffb60429cfd13ac013fc15f8bb0417334f4f368920f916318ca019faa",
+      "originalMode": "0o600",
+      "publishedMode": "100644",
+      "representation": "UNCHANGED_ORIGINAL"
+    },
+    {
+      "name": "run_original30_role_preparation_on_guest.rev02.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261108/neon-rds/native-core-original30-grantee-preparation-runtime-source01/run_original30_role_preparation_on_guest.rev02.candidate.py",
+      "bytes": 8061,
+      "sha256": "b6206fef05551b8ba0fd1bff7147613795315035155aa40f347d8e18ea481d02",
+      "originalMode": "0o600",
+      "publishedMode": "100644",
+      "representation": "UNCHANGED_ORIGINAL"
+    },
+    {
+      "name": "original30_role_preparation_operations.rev02.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261108/neon-rds/native-core-original30-grantee-preparation-runtime-source01/original30_role_preparation_operations.rev02.candidate.py",
+      "bytes": 13511,
+      "sha256": "c8f0748e3865a7ef06dd4fa3239bb4dddfd2efdf66020dbd20768b52a9b0c06e",
+      "originalMode": "0o600",
+      "publishedMode": "100644",
+      "representation": "UNCHANGED_ORIGINAL"
+    },
+    {
+      "name": "secure_original30_role_preparation_session.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261108/neon-rds/native-core-original30-grantee-preparation-runtime-source01/secure_original30_role_preparation_session.candidate.py",
+      "bytes": 13163,
+      "sha256": "9a4831aee05235169cdfc102960770311a0ac505d6116bbd6d64bc9227795021",
+      "originalMode": "0o600",
+      "publishedMode": "100644",
+      "representation": "UNCHANGED_ORIGINAL"
+    }
+  ],
+  "authority": {
+    "humanInstruction": "Existing explicit own-code AGPL-3.0-only / CRAYS AG decision",
+    "trustedRootStatement": "Exactly these four sources were newly created here by Codex for CRAYS as own programs without embedded third-party implementation.",
+    "sqlRightsReviewNotCopyrightAuthority": true
+  },
+  "excluded": [
+    "all unlisted revisions and repository files",
+    "stdlib, boto3, PostgreSQL CLI, system/runtime and imported third-party implementation",
+    "private operational inputs, credentials, CA, expected roles, postprojections and database contents"
+  ],
+  "recipientDerivativeRightsUnaffected": true
+}

@@ -265,6 +265,10 @@
     {
       "component": "nextcloud-access-purpose52",
       "path": "operations/nextcloud-access-purpose52/source-capture.json"
+    },
+    {
+      "component": "original30-grantee-preparation-revision02",
+      "path": "operations/neon-rds/original30-grantee-preparation-revision02/source-capture.json"
     }
   ]
 }

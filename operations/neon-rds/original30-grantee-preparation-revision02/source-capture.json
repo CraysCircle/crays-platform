@@ -1,0 +1,66 @@
+{
+  "schema": "crays.original30.grantee-preparation.source.v1",
+  "state": "SOURCE_SNAPSHOT_PREPARED_RUNTIME_EXECUTION_NOT_ATTESTED",
+  "sourceCount": 4,
+  "sourceBytes": 52167,
+  "files": [
+    {
+      "name": "PREPARE_ORIGINAL30_GRANTEES.candidate.sql",
+      "originalSourcePath": "/srv/crays/migration-work/20261108/neon-rds/native-core-original30-grantee-preparation-runtime-source01/PREPARE_ORIGINAL30_GRANTEES.candidate.sql",
+      "bytes": 17432,
+      "sha256": "a5feae0ffb60429cfd13ac013fc15f8bb0417334f4f368920f916318ca019faa",
+      "originalMode": "0o600",
+      "publishedMode": "100644",
+      "representation": "UNCHANGED_ORIGINAL"
+    },
+    {
+      "name": "run_original30_role_preparation_on_guest.rev02.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261108/neon-rds/native-core-original30-grantee-preparation-runtime-source01/run_original30_role_preparation_on_guest.rev02.candidate.py",
+      "bytes": 8061,
+      "sha256": "b6206fef05551b8ba0fd1bff7147613795315035155aa40f347d8e18ea481d02",
+      "originalMode": "0o600",
+      "publishedMode": "100644",
+      "representation": "UNCHANGED_ORIGINAL"
+    },
+    {
+      "name": "original30_role_preparation_operations.rev02.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261108/neon-rds/native-core-original30-grantee-preparation-runtime-source01/original30_role_preparation_operations.rev02.candidate.py",
+      "bytes": 13511,
+      "sha256": "c8f0748e3865a7ef06dd4fa3239bb4dddfd2efdf66020dbd20768b52a9b0c06e",
+      "originalMode": "0o600",
+      "publishedMode": "100644",
+      "representation": "UNCHANGED_ORIGINAL"
+    },
+    {
+      "name": "secure_original30_role_preparation_session.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261108/neon-rds/native-core-original30-grantee-preparation-runtime-source01/secure_original30_role_preparation_session.candidate.py",
+      "bytes": 13163,
+      "sha256": "9a4831aee05235169cdfc102960770311a0ac505d6116bbd6d64bc9227795021",
+      "originalMode": "0o600",
+      "publishedMode": "100644",
+      "representation": "UNCHANGED_ORIGINAL"
+    }
+  ],
+  "privacySourceReview": {
+    "path": "/srv/crays/migration-work/20261108/github/parallel-repository-readability01/original30-role-preparation-independent-source-review01/INDEPENDENT_ORIGINAL30_FOUR_SOURCE_PRIVACY_NOTICE_REVIEW_ACTUAL.private.json",
+    "sha256": "7f195a5e91e58d6eba9874247cc5087680fcfca94251420afffb562bd5e0e371",
+    "rawEligible": true,
+    "protectedSpans": 0
+  },
+  "publicSqlSourceReview": {
+    "originalSourcePath": "/srv/crays/migration-work/20261108/neon-rds/native-core-original30-grantee-preparation-runtime-source01/INDEPENDENT_SQL_SOURCE_REVIEW.public.json",
+    "sha256": "7c500d9f1112ea33f909ce2af2a89c89d96d22d3ea94e5ba4dce998bd20e35ee",
+    "meaning": "Source-only SQL/database-authority review, not copyright evidence or execution admission."
+  },
+  "authorship": "Trusted Root expressly attests four newly authored Codex-for-CRAYS own programs, no embedded third-party implementation; existing human AGPL-3.0-only / CRAYS AG rule applies.",
+  "privateInputsNotIncluded": [
+    "admission and execution reviews",
+    "expected-role and postprojection records",
+    "native binding, CA and PGpass/credential inputs",
+    "source package container and private contract bodies"
+  ],
+  "restoration": "Restore each exact file by recorded name and whole-file SHA256; external private inputs and dependencies are separate and this snapshot is not an executable complete restore package.",
+  "runtimePeer": "Root identifies a separate runtime source peer; its unresolved locator/body was not searched or read here. No runtime approval is inferred.",
+  "sqlOrProgramExecutionPerformed": false,
+  "consumerActivationOrLoginParityClaim": false
+}
