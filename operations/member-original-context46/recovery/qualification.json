@@ -1,0 +1,21 @@
+{
+  "schema": "crays.recovery46.rev03.source-qualification.v1",
+  "RootPeerReview": {
+    "path": "/srv/crays/migration-work/20261109/root/member-original-context46-install-source01/INDEPENDENT_RECOVERY46_REV03_SOURCE_REVIEW.json",
+    "sha256": "d27b0d00f2941537210145f91b69baa336815477c875373fb1fab5dc935d1d15",
+    "status": "PASS_RECOVERY46_REV03_SOURCE_ONLY",
+    "allTwoExactFinalPinsPresent": true,
+    "findings": []
+  },
+  "sourcePins": {
+    "member46_journalled_recovery.rev03.candidate.py": "e590407df80b0802c7aeb7a77965d7958a637e9abe7400d6796afca7fb561fc8",
+    "project_exact_member46_recovery_payloads.candidate.py": "ebcc5a05769b85d05f8e8a7873436e1152e3e68292b416ea0dc0a98596d31a9d"
+  },
+  "supersededController898688AndPatch02c7NotIncluded": true,
+  "sourceSyntaxParsedWithoutExecution": true,
+  "privateRecoveryOrAdmissionInputsNotRead": true,
+  "originalProgramsTestsSQLFailedIntentsOrRuntimeNotExecuted": true,
+  "independentPublicPrivacyDerivativeNoticeReviewRequiredBeforePublication": true,
+  "sourceReviewNotRuntimeExecutionApproval": true,
+  "wholeRuntimeRecoveryOrLicenseClosureClaim": false
+}

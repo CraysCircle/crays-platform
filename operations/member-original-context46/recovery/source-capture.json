@@ -1,0 +1,48 @@
+{
+  "schema": "crays.recovery46.rev03.public-source-capture.v1",
+  "sourceOnly": true,
+  "files": [
+    {
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-original-context46-install-source01/member46_journalled_recovery.rev03.candidate.py",
+      "originalRelativePath": "member46_journalled_recovery.rev03.candidate.py",
+      "originalBytes": 34989,
+      "originalSHA256": "e590407df80b0802c7aeb7a77965d7958a637e9abe7400d6796afca7fb561fc8",
+      "publishedRelativePath": "member46_journalled_recovery.rev03.candidate.py",
+      "publishedBytes": 34989,
+      "publishedSHA256": "e590407df80b0802c7aeb7a77965d7958a637e9abe7400d6796afca7fb561fc8",
+      "representation": "unchanged-original",
+      "sourceRevision": "final Root revision03",
+      "predecessor": {
+        "path": "operations/member-original-context46/install/member46_lifecycle.candidate.py",
+        "sha256": "a68b37a8f4436e52a2311ffe96f7744ab052da32099b76fbe337a9535881c32c"
+      },
+      "privateComparisonDiffSHA256": "ac3ce57a76458fe5389a2f13581e79ba68816daaa62f52a1b1a66b2ee43bda07"
+    },
+    {
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-original-context46-install-source01/project_exact_member46_recovery_payloads.candidate.py",
+      "originalRelativePath": "project_exact_member46_recovery_payloads.candidate.py",
+      "originalBytes": 5963,
+      "originalSHA256": "ebcc5a05769b85d05f8e8a7873436e1152e3e68292b416ea0dc0a98596d31a9d",
+      "publishedRelativePath": "project_exact_member46_recovery_payloads.candidate.py",
+      "publishedBytes": 5963,
+      "publishedSHA256": "ebcc5a05769b85d05f8e8a7873436e1152e3e68292b416ea0dc0a98596d31a9d",
+      "representation": "unchanged-original",
+      "sourceRevision": "final Root revision03",
+      "predecessor": {
+        "path": "operations/member-original-context46/install/project_exact_member46_successor_payloads.candidate.py",
+        "sha256": "5077decd4320dbdc53fa796544adce6b8532f70d1e204bd61a3015fe1e1c3fe0"
+      },
+      "privateComparisonDiffSHA256": "16ea32e1d78b5b906ee200fcbe4eb6e59ebdd45c825374f4f3f9c0d68497da83"
+    }
+  ],
+  "originalPrograms": 2,
+  "originalBytes": 40952,
+  "RootPeerSourceReviewSHA256": "d27b0d00f2941537210145f91b69baa336815477c875373fb1fab5dc935d1d15",
+  "RootPeerSourceReviewStatus": "PASS_RECOVERY46_REV03_SOURCE_ONLY",
+  "obsoleteProposalControllerAndPatchExcluded": true,
+  "previousSource46BodiesPreservedUnchanged": true,
+  "privateInputsReadOrIncluded": false,
+  "originalProgramsExecutedByPreservation": false,
+  "runtimeAdoptionClaim": false,
+  "newBlanketLicenseGrant": false
+}

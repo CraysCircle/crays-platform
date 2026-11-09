@@ -40,3 +40,7 @@ The original Source42 source/notice assessments are reused only where exact body
 ## Ingress46 addendum
 
 The separate [three-program ingress addendum](ingress/README.md) records the supplied Source46 ingress controller, exact seven-block projector and retained physical-container helper. Its own source map and review scope distinguish these three originals from the initial fifteen-file build/install capture. The historical Work23 helper body remains identifiable; publication runs none of these programs.
+
+## Journalled recovery revision03
+
+The [two-program revision03 recovery archive](recovery/README.md) preserves the final controller and pure payload projector, their exact source hashes and independent source-review scope. The earlier operating and ingress sources remain unchanged. Publication establishes source availability; recovery execution and its outcome require separate Root receipts.
