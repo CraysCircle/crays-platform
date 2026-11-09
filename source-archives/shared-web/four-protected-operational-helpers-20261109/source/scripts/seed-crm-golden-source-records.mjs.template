@@ -1,0 +1,456 @@
+import { existsSync, readFileSync } from "node:fs";
+import { dirname, join, resolve } from "node:path";
+
+const apply = process.argv.includes("--apply");
+
+function loadEnvFile(path) {
+  if (!existsSync(path)) return;
+  for (const line of readFileSync(path, "utf8").split(/\r?\n/)) {
+    const match = line.trim().match(/^([A-Za-z_][A-Za-z0-9_]*)=(.*)$/);
+    if (!match) continue;
+    const [, key, rawValue] = match;
+    if (process.env[key] !== undefined) continue;
+    process.env[key] = rawValue.trim().replace(/^['"]|['"]$/g, "");
+  }
+}
+
+function loadLocalEnv() {
+  const cwd = process.cwd();
+  const parent = dirname(cwd);
+  const grandParent = dirname(parent);
+  for (const path of [join(cwd, ".env.local"), join(parent, ".env.local"), join(grandParent, ".env.local"), resolve(".env.local")]) {
+    loadEnvFile(path);
+  }
+}
+
+function requireEnv(key) {
+  const value = process.env[key]?.trim();
+  if (!value) throw new Error(`${key} is not configured.`);
+  return value;
+}
+
+function safeBaseUrl(value) {
+  const parsed = new URL(value);
+  if (parsed.username || parsed.password || parsed.search || parsed.hash) {
+    throw new Error("CRM source URL contains unsupported credentials or query data.");
+  }
+  if (parsed.protocol !== "https:" && !(parsed.protocol === "http:" && ["localhost", "127.0.0.1", "::1"].includes(parsed.hostname))) {
+    throw new Error("CRM source URL must be HTTPS or local HTTP.");
+  }
+  return parsed.toString().replace(/\/$/, "");
+}
+
+async function crmRequest(baseUrl, path, init = {}) {
+  const target = new URL(path.replace(/^\/+/, ""), `${baseUrl}/`);
+  if (target.origin !== new URL(baseUrl).origin) throw new Error("Rejected cross-origin CRM request.");
+  const response = await fetch(target, {
+    ...init,
+    headers: {
+      Accept: "application/json",
+      ...(init.body ? { "Content-Type": "application/json" } : {}),
+      ...(init.headers ?? {}),
+    },
+  });
+  const text = await response.text();
+  let body = null;
+  try {
+    body = text ? JSON.parse(text) : null;
+  } catch {
+    body = { text: text.slice(0, 500) };
+  }
+  if (!response.ok) {
+    const error = new Error(`CRM source request failed for ${path} with HTTP ${response.status}.`);
+    error.status = response.status;
+    error.body = body;
+    throw error;
+  }
+  return body;
+}
+
+async function graph(baseUrl, query, variables) {
+  return crmRequest(baseUrl, "/metadata", {
+    method: "POST",
+    headers: { Origin: baseUrl },
+    body: JSON.stringify({ query, variables }),
+  });
+}
+
+async function crmAccessToken(baseUrl, email, password) {
+  const signIn = await graph(
+    baseUrl,
+    `mutation SignInForWorkspace($email: String!, $password: String!) {
+      signIn(email: $email, password: $password) {
+        availableWorkspaces {
+          availableWorkspacesForSignIn {
+            loginToken
+          }
+        }
+      }
+    }`,
+    { email, password },
+  );
+  const loginToken = signIn?.data?.signIn?.availableWorkspaces?.availableWorkspacesForSignIn?.[0]?.loginToken;
+  if (!loginToken) throw new Error("CRM source did not return a login token.");
+
+  const auth = await graph(
+    baseUrl,
+    `mutation getAuthTokensFromLoginToken($loginToken: String!, $origin: String!) {
+      getAuthTokensFromLoginToken(loginToken: $loginToken, origin: $origin) {
+        tokens {
+          accessOrWorkspaceAgnosticToken {
+            token
+          }
+        }
+      }
+    }`,
+    { loginToken, origin: baseUrl },
+  );
+  const token = auth?.data?.getAuthTokensFromLoginToken?.tokens?.accessOrWorkspaceAgnosticToken?.token;
+  if (!token) throw new Error("CRM source did not return an access token.");
+  return token;
+}
+
+function phone(number) {
+  return {
+    primaryPhoneNumber: number,
+    primaryPhoneCountryCode: "DE",
+    primaryPhoneCallingCode: "+49",
+    additionalPhones: [],
+  };
+}
+
+function domain(primaryLinkUrl) {
+  const label = primaryLinkUrl.replace(/^https?:\/\//, "").replace(/\/$/, "");
+  return { primaryLinkLabel: label, primaryLinkUrl, secondaryLinks: [] };
+}
+
+function address(addressStreet1, addressCity, addressPostcode, addressState = "") {
+  return {
+    addressStreet1,
+    addressStreet2: "",
+    addressCity,
+    addressPostcode,
+    addressState,
+    addressCountry: "Germany",
+    addressLat: null,
+    addressLng: null,
+  };
+}
+
+function euros(amount) {
+  return { amountMicros: Math.round(amount * 1_000_000), currencyCode: "EUR" };
+}
+
+function email(primaryEmail) {
+  return { primaryEmail, additionalEmails: [] };
+}
+
+const companies = [
+  {
+    id: "06290608-8bf0-4806-99ae-a715a6a93fad",
+    name: "Adler Fitness Beteiligungs GmbH",
+    domainName: domain("https://adler-fitness.de"),
+    address: address("Rosenthaler Strasse 40", "Berlin", "10178", "Berlin"),
+    annualRevenue: euros(1_850_000),
+  },
+  {
+    id: "1f70157c-4ea5-4d81-bc49-e1401abfbb94",
+    name: "RheinBank Commercial Finance AG",
+    domainName: domain("https://rheinbank-commercial.de"),
+    address: address("Taunusanlage 12", "Frankfurt am Main", "60325", "Hesse"),
+    annualRevenue: euros(42_000_000),
+  },
+  {
+    id: "9d5bcf43-7d38-4e88-82cb-d6d4ce638bf0",
+    name: "Keller Immobilien GmbH",
+    domainName: domain("https://keller-immo.de"),
+    address: address("Mehringdamm 62", "Berlin", "10961", "Berlin"),
+    annualRevenue: euros(8_400_000),
+  },
+  {
+    id: "c776ee49-f608-4a77-8cc8-6fe96ae1e43f",
+    name: "UrbanFit Hamburg GmbH",
+    domainName: domain("https://urbanfit-hamburg.de"),
+    address: address("Ottenser Hauptstrasse 15", "Hamburg", "22765", "Hamburg"),
+    annualRevenue: euros(2_650_000),
+  },
+  {
+    id: "f45ee421-8a3e-4aa5-a1cf-7207cc6754e1",
+    name: "CRAYS Studio Operations GmbH",
+    domainName: domain("https://craysgym.de"),
+    address: address("Kaiser-Wilhelm-Strasse 20", "Hamburg", "20355", "Hamburg"),
+    annualRevenue: euros(6_200_000),
+  },
+];
+
+const people = [
+  {
+    id: "CRAYS_PROTECTED_TEXT_0033",
+    name: { firstName: "CRAYS_PROTECTED_TEXT_0034", lastName: "CRAYS_PROTECTED_TEXT_0035" },
+    emails: email("CRAYS_PROTECTED_TEXT_0002"),
+    phones: phone("CRAYS_PROTECTED_TEXT_0036"),
+    jobTitle: "CRAYS_PROTECTED_TEXT_0037",
+    companyId: "CRAYS_PROTECTED_TEXT_0038",
+    avatarUrl: "",
+  },
+  {
+    id: "CRAYS_PROTECTED_TEXT_0039",
+    name: { firstName: "CRAYS_PROTECTED_TEXT_0040", lastName: "CRAYS_PROTECTED_TEXT_0041" },
+    emails: email("CRAYS_PROTECTED_TEXT_0042"),
+    phones: phone("CRAYS_PROTECTED_TEXT_0043"),
+    jobTitle: "CRAYS_PROTECTED_TEXT_0044",
+    companyId: "CRAYS_PROTECTED_TEXT_0045",
+    avatarUrl: "",
+  },
+  {
+    id: "CRAYS_PROTECTED_TEXT_0046",
+    name: { firstName: "CRAYS_PROTECTED_TEXT_0047", lastName: "CRAYS_PROTECTED_TEXT_0048" },
+    emails: email("CRAYS_PROTECTED_TEXT_0049"),
+    phones: phone("CRAYS_PROTECTED_TEXT_0050"),
+    jobTitle: "CRAYS_PROTECTED_TEXT_0051",
+    companyId: "CRAYS_PROTECTED_TEXT_0052",
+    avatarUrl: "",
+  },
+  {
+    id: "CRAYS_PROTECTED_TEXT_0053",
+    name: { firstName: "CRAYS_PROTECTED_TEXT_0054", lastName: "CRAYS_PROTECTED_TEXT_0055" },
+    emails: email("CRAYS_PROTECTED_TEXT_0056"),
+    phones: phone("CRAYS_PROTECTED_TEXT_0057"),
+    jobTitle: "CRAYS_PROTECTED_TEXT_0058",
+    companyId: "CRAYS_PROTECTED_TEXT_0059",
+    avatarUrl: "",
+  },
+  {
+    id: "CRAYS_PROTECTED_TEXT_0060",
+    name: { firstName: "CRAYS_PROTECTED_TEXT_0061", lastName: "CRAYS_PROTECTED_TEXT_0062" },
+    emails: email("CRAYS_PROTECTED_TEXT_0063"),
+    phones: phone("CRAYS_PROTECTED_TEXT_0064"),
+    jobTitle: "CRAYS_PROTECTED_TEXT_0065",
+    companyId: "CRAYS_PROTECTED_TEXT_0066",
+    avatarUrl: "",
+  },
+];
+
+const opportunities = [
+  {
+    id: "CRAYS_PROTECTED_TEXT_0067",
+    name: "CRAYS_PROTECTED_TEXT_0068",
+    amount: euros(0/*CRAYS_PROTECTED_NUMBER_0069*/),
+    closeDate: "CRAYS_PROTECTED_TEXT_0070",
+    stage: "CRAYS_PROTECTED_TEXT_0071",
+    companyId: "CRAYS_PROTECTED_TEXT_0038",
+    pointOfContactId: "CRAYS_PROTECTED_TEXT_0033",
+  },
+  {
+    id: "CRAYS_PROTECTED_TEXT_0072",
+    name: "CRAYS_PROTECTED_TEXT_0073",
+    amount: euros(0/*CRAYS_PROTECTED_NUMBER_0074*/),
+    closeDate: "CRAYS_PROTECTED_TEXT_0075",
+    stage: "CRAYS_PROTECTED_TEXT_0076",
+    companyId: "CRAYS_PROTECTED_TEXT_0066",
+    pointOfContactId: "CRAYS_PROTECTED_TEXT_0060",
+  },
+  {
+    id: "CRAYS_PROTECTED_TEXT_0077",
+    name: "CRAYS_PROTECTED_TEXT_0078",
+    amount: euros(0/*CRAYS_PROTECTED_NUMBER_0079*/),
+    closeDate: "CRAYS_PROTECTED_TEXT_0080",
+    stage: "CRAYS_PROTECTED_TEXT_0081",
+    companyId: "CRAYS_PROTECTED_TEXT_0059",
+    pointOfContactId: "CRAYS_PROTECTED_TEXT_0053",
+  },
+  {
+    id: "CRAYS_PROTECTED_TEXT_0082",
+    name: "CRAYS_PROTECTED_TEXT_0083",
+    amount: euros(0/*CRAYS_PROTECTED_NUMBER_0084*/),
+    closeDate: "CRAYS_PROTECTED_TEXT_0085",
+    stage: "CRAYS_PROTECTED_TEXT_0071",
+    companyId: "CRAYS_PROTECTED_TEXT_0052",
+    pointOfContactId: "CRAYS_PROTECTED_TEXT_0046",
+  },
+  {
+    id: "CRAYS_PROTECTED_TEXT_0086",
+    name: "CRAYS_PROTECTED_TEXT_0087",
+    amount: euros(0/*CRAYS_PROTECTED_NUMBER_0088*/),
+    closeDate: "CRAYS_PROTECTED_TEXT_0089",
+    stage: "CRAYS_PROTECTED_TEXT_0090",
+    companyId: "CRAYS_PROTECTED_TEXT_0059",
+    pointOfContactId: "CRAYS_PROTECTED_TEXT_0053",
+  },
+  {
+    id: "CRAYS_PROTECTED_TEXT_0091",
+    name: "CRAYS_PROTECTED_TEXT_0092",
+    amount: euros(0/*CRAYS_PROTECTED_NUMBER_0093*/),
+    closeDate: "CRAYS_PROTECTED_TEXT_0094",
+    stage: "CRAYS_PROTECTED_TEXT_0081",
+    companyId: "CRAYS_PROTECTED_TEXT_0045",
+    pointOfContactId: "CRAYS_PROTECTED_TEXT_0039",
+  },
+];
+
+const tasks = [
+  {
+    title: "CRAYS_PROTECTED_TEXT_0095",
+    status: "CRAYS_PROTECTED_TEXT_0096",
+    dueAt: "CRAYS_PROTECTED_TEXT_0097",
+    targetOpportunityId: "CRAYS_PROTECTED_TEXT_0067",
+  },
+  {
+    title: "CRAYS_PROTECTED_TEXT_0098",
+    status: "CRAYS_PROTECTED_TEXT_0096",
+    dueAt: "CRAYS_PROTECTED_TEXT_0099",
+    targetOpportunityId: "CRAYS_PROTECTED_TEXT_0072",
+  },
+  {
+    title: "CRAYS_PROTECTED_TEXT_0100",
+    status: "CRAYS_PROTECTED_TEXT_0096",
+    dueAt: "CRAYS_PROTECTED_TEXT_0101",
+    targetOpportunityId: "CRAYS_PROTECTED_TEXT_0077",
+  },
+  {
+    title: "CRAYS_PROTECTED_TEXT_0102",
+    status: "CRAYS_PROTECTED_TEXT_0096",
+    dueAt: "CRAYS_PROTECTED_TEXT_0103",
+    targetOpportunityId: "CRAYS_PROTECTED_TEXT_0082",
+  },
+  {
+    title: "CRAYS_PROTECTED_TEXT_0104",
+    status: "CRAYS_PROTECTED_TEXT_0096",
+    dueAt: "CRAYS_PROTECTED_TEXT_0105",
+    targetOpportunityId: "CRAYS_PROTECTED_TEXT_0086",
+  },
+  {
+    title: "CRAYS_PROTECTED_TEXT_0106",
+    status: "CRAYS_PROTECTED_TEXT_0096",
+    dueAt: "CRAYS_PROTECTED_TEXT_0107",
+    targetOpportunityId: "CRAYS_PROTECTED_TEXT_0091",
+  },
+];
+
+async function patchRecord(baseUrl, token, collection, id, body) {
+  return crmRequest(baseUrl, `/rest/${collection}/${id}`, {
+    method: "PATCH",
+    headers: { Authorization: `Bearer ${token}` },
+    body: JSON.stringify(body),
+  });
+}
+
+async function getCollection(baseUrl, token, collection, limit = 200) {
+  const payload = await crmRequest(baseUrl, `/rest/${collection}?limit=${limit}&depth=1`, {
+    method: "GET",
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  return payload?.data?.[collection] ?? payload?.[collection] ?? [];
+}
+
+function firstCreatedId(payload, key) {
+  const value = payload?.data?.[key] ?? payload?.[key];
+  return value?.id;
+}
+
+async function ensureTask(baseUrl, token, taskSpec, existingTasks, existingTargets) {
+  const existing = existingTasks.find((task) => task.title === taskSpec.title);
+  let taskId = existing?.id;
+  const taskPayload = { title: taskSpec.title, status: taskSpec.status, dueAt: taskSpec.dueAt };
+
+  if (taskId) {
+    await patchRecord(baseUrl, token, "tasks", taskId, taskPayload);
+  } else {
+    const created = await crmRequest(baseUrl, "/rest/tasks", {
+      method: "POST",
+      headers: { Authorization: `Bearer ${token}` },
+      body: JSON.stringify(taskPayload),
+    });
+    taskId = firstCreatedId(created, "createTask");
+    if (!taskId) throw new Error(`CRM source did not return an id for task "${taskSpec.title}".`);
+    existingTasks.push({ ...taskPayload, id: taskId });
+  }
+
+  const targetExists = existingTargets.some(
+    (target) => target.taskId === taskId && target.targetOpportunityId === taskSpec.targetOpportunityId,
+  );
+  if (!targetExists) {
+    const createdTarget = await crmRequest(baseUrl, "/rest/taskTargets", {
+      method: "POST",
+      headers: { Authorization: `Bearer ${token}` },
+      body: JSON.stringify({ taskId, targetOpportunityId: taskSpec.targetOpportunityId }),
+    });
+    const targetId = firstCreatedId(createdTarget, "createTaskTarget");
+    existingTargets.push({ id: targetId, taskId, targetOpportunityId: taskSpec.targetOpportunityId });
+  }
+  return taskId;
+}
+
+async function main() {
+  loadLocalEnv();
+  const baseUrl = safeBaseUrl(requireEnv("CRAYS_CRM_BASE_URL"));
+  const emailValue = requireEnv("CRAYS_CRM_EMAIL");
+  const password = requireEnv("CRAYS_CRM_PASSWORD");
+  const host = new URL(baseUrl).host;
+
+  const summary = {
+    apply,
+    targetHost: host,
+    companies: companies.length,
+    people: people.length,
+    opportunities: opportunities.length,
+    tasks: tasks.length,
+    sendsEnabled: false,
+    deletesEnabled: false,
+  };
+
+  if (!apply) {
+    console.log(JSON.stringify({ status: "dry_run", ...summary }, null, 2));
+    return;
+  }
+
+  const token = await crmAccessToken(baseUrl, emailValue, password);
+  for (const company of companies) {
+    const { id, ...body } = company;
+    await patchRecord(baseUrl, token, "companies", id, body);
+  }
+  for (const person of people) {
+    const { id, ...body } = person;
+    await patchRecord(baseUrl, token, "people", id, body);
+  }
+  for (const opportunity of opportunities) {
+    const { id, ...body } = opportunity;
+    await patchRecord(baseUrl, token, "opportunities", id, body);
+  }
+
+  const existingTasks = await getCollection(baseUrl, token, "tasks");
+  const existingTargets = await getCollection(baseUrl, token, "taskTargets");
+  const taskIds = [];
+  for (const task of tasks) {
+    taskIds.push(await ensureTask(baseUrl, token, task, existingTasks, existingTargets));
+  }
+
+  console.log(
+    JSON.stringify(
+      {
+        status: "applied",
+        ...summary,
+        updatedRecords: companies.length + people.length + opportunities.length,
+        ensuredTasks: taskIds.length,
+      },
+      null,
+      2,
+    ),
+  );
+}
+
+main().catch((error) => {
+  console.error(
+    JSON.stringify(
+      {
+        status: "failed",
+        message: error instanceof Error ? error.message : "Unknown CRM source seed failure.",
+        httpStatus: error?.status ?? null,
+        body: error?.body ?? null,
+      },
+      null,
+      2,
+    ),
+  );
+  process.exit(1);
+});

@@ -12,14 +12,14 @@ The [capture manifest](../provenance/operational-helpers.json) records each sele
 
 ## Open source inputs
 
-Four referenced programs remain outside this public selection pending independent review of embedded contact and realistic business fixture literals:
+Four referenced programs now have [protected source views](../../../source-archives/shared-web/four-protected-operational-helpers-20261109/README.md). Their original person/contact and linked sensitive literals remain private pending the separate origin clarification; the rest of their implementation is inspectable:
 
-- migrate-golden-operating-dataset-v1.mjs
-- repair-core-golden-test-data.mjs
-- seed-crm-golden-source-records.mjs
-- seed-erp-finance-workflow-source-slice.mjs
+- [migrate-golden-operating-dataset-v1.mjs](../../../source-archives/shared-web/four-protected-operational-helpers-20261109/source/scripts/migrate-golden-operating-dataset-v1.mjs.template)
+- [repair-core-golden-test-data.mjs](../../../source-archives/shared-web/four-protected-operational-helpers-20261109/source/scripts/repair-core-golden-test-data.mjs.template)
+- [seed-crm-golden-source-records.mjs](../../../source-archives/shared-web/four-protected-operational-helpers-20261109/source/scripts/seed-crm-golden-source-records.mjs.template)
+- [seed-erp-finance-workflow-source-slice.mjs](../../../source-archives/shared-web/four-protected-operational-helpers-20261109/source/scripts/seed-erp-finance-workflow-source-slice.mjs.template)
 
-The original files remain preserved in the protected source intake and their historical Git repository. A test/seed label alone is not treated as proof that contact data is synthetic.
+The four exact original files remain in their existing private GitHub repository. The archive maps the immutable private recovery paths and provides a checked in-memory restorer without publishing the private patch. No fictional-origin assertion is made; these are source templates, not runnable operational inputs.
 
 ## Execution and recovery
 
@@ -29,4 +29,4 @@ Before any separately authorized execution, establish the exact environment, tar
 
 No .env contents, database exports or runtime credentials are included. See [recovery limits](../docs/recovery.md), [source recovery gaps](../provenance/recovery-gaps.json) and [license status](../LICENSE-STATUS.md). The application rights record remains open; no new blanket license is inferred for these files.
 
-The [anonymous GitHub readback record](../provenance/operational-helpers-readback.json) confirms 99 current source/documentation files and all 92 historical helper files against their expected original bytes and SHA-256 values.
+The [original anonymous GitHub readback record](../provenance/operational-helpers-readback.json) confirms 99 files in the initial source/documentation selection and all 92 historical helper files against their expected original bytes and SHA-256 values. The later protected-source archive is preserved and verified separately.

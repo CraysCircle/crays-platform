@@ -1,0 +1,179 @@
+import { existsSync, readFileSync } from "node:fs";
+import { resolve } from "node:path";
+import pg from "pg";
+
+const apply = process.argv.includes("--apply");
+const appRoot = resolve(import.meta.dirname, "..");
+const generatedAt = new Date().toISOString();
+const confirmation = "APPLY_GOLDEN_OPERATING_DATASET_V1";
+
+function loadEnv() {
+  for (const filename of [".env.local", ".env"]) {
+    const filePath = resolve(appRoot, filename);
+    if (!existsSync(filePath)) continue;
+    for (const line of readFileSync(filePath, "utf8").split(/\r?\n/)) {
+      const match = line.match(/^\s*([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*)\s*$/);
+      if (!match || process.env[match[1]]) continue;
+      let value = match[2];
+      if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) value = value.slice(1, -1);
+      process.env[match[1]] = value;
+    }
+  }
+}
+
+function poolConfig() {
+  const connectionString = process.env.CRAYS_DATABASE_URL;
+  if (!connectionString) throw new Error("CRAYS_DATABASE_URL is required.");
+  return {
+    connectionString,
+    ssl: process.env.CRAYS_DATABASE_SSL === "disable" ? undefined : { rejectUnauthorized: process.env.CRAYS_DATABASE_SSL_REJECT_UNAUTHORIZED !== "false" },
+    options: "-c crays.app_role=core_service",
+    max: 2,
+  };
+}
+
+const metadataMigrationExpression = `
+  replace(
+    replace(
+      replace(
+        replace(
+          replace(
+            replace(
+              replace(metadata::text, 'CRAYS_PROTECTED_TEXT_0001', 'CRAYS_PROTECTED_TEXT_0002'),
+              'mustermann-fitness.de', 'adler-fitness.de'
+            ),
+            'Mustermann Fitness Muenchen Schwabing GmbH', 'Adler Fitness Muenchen Schwabing GmbH'
+          ),
+          'Mustermann Fitness GmbH', 'Adler Fitness Beteiligungs GmbH'
+        ),
+        'Max Mustermann', 'CRAYS_PROTECTED_TEXT_0003'
+      ),
+      'Mustermann', 'Adler'
+    ),
+    'mustermann', 'adler'
+  )::jsonb
+`;
+
+async function counts(client) {
+  const result = await client.query(`
+    select 'accounts' family, count(*)::int records
+    from crays_core.crays_accounts
+    where account_id = 'CRAYS_PROTECTED_TEXT_0004'
+      and (lower(display_name) like '%mustermann%' or lower(primary_contact) like '%mustermann%')
+    union all
+    select 'organizations', count(*)::int
+    from crays_core.organizations
+    where organization_id = 'bench_crays_benchmark_20260710_v1_org_org_0014'
+      and lower(name) like '%mustermann%'
+    union all
+    select 'map_entity_ids', count(*)::int
+    from crays_core.external_record_maps
+    where lower(crays_entity_id) like '%mustermann%'
+    union all
+    select 'map_metadata', count(*)::int
+    from crays_core.external_record_maps
+    where lower(metadata::text) like '%mustermann%'
+    union all
+    select 'immutable_command_history', count(*)::int
+    from crays_core.core_command_requests
+    where lower(coalesce(idempotency_key, '')) like '%mustermann%'
+       or lower(coalesce(input_payload::text, '')) like '%mustermann%'
+    order by family
+  `);
+  return result.rows;
+}
+
+async function main() {
+  loadEnv();
+  if (apply && process.env.CONFIRM_CRAYS_GOLDEN_OPERATING_DATASET !== confirmation) {
+    throw new Error(`Set CONFIRM_CRAYS_GOLDEN_OPERATING_DATASET=${confirmation} before applying the Golden Operating Dataset migration.`);
+  }
+
+  const pool = new pg.Pool(poolConfig());
+  const client = await pool.connect();
+  try {
+    const before = await counts(client);
+    const updated = { accounts: 0, organizations: 0, mapEntityIds: 0, mapMetadata: 0 };
+
+    if (apply) {
+      await client.query("begin");
+      const account = await client.query(`
+        update crays_core.crays_accounts
+        set display_name = 'CRAYS_PROTECTED_TEXT_0003',
+            primary_contact = 'CRAYS_PROTECTED_TEXT_0002'
+        where account_id = 'CRAYS_PROTECTED_TEXT_0004'
+          and (lower(display_name) like '%mustermann%' or lower(primary_contact) like '%mustermann%')
+      `);
+      updated.accounts = account.rowCount ?? 0;
+
+      const organization = await client.query(`
+        update crays_core.organizations
+        set name = 'Adler Fitness Beteiligungs GmbH',
+            organization_type = 'franchise-partner',
+            status = 'active'
+        where organization_id = 'bench_crays_benchmark_20260710_v1_org_org_0014'
+          and lower(name) like '%mustermann%'
+      `);
+      updated.organizations = organization.rowCount ?? 0;
+
+      const mapEntityIds = await client.query(`
+        update crays_core.external_record_maps
+        set crays_entity_id = replace(replace(crays_entity_id, 'Mustermann', 'Adler'), 'mustermann', 'adler')
+        where lower(crays_entity_id) like '%mustermann%'
+      `);
+      updated.mapEntityIds = mapEntityIds.rowCount ?? 0;
+
+      const mapMetadata = await client.query(`
+        update crays_core.external_record_maps
+        set metadata = (${metadataMigrationExpression}) || jsonb_build_object(
+              'goldenDatasetVersion', 'crays-golden-operating-dataset-20260713-v1',
+              'legacyIdentityMigratedAt', $1::text
+            )
+        where lower(metadata::text) like '%mustermann%'
+      `, [generatedAt]);
+      updated.mapMetadata = mapMetadata.rowCount ?? 0;
+
+      const afterApply = await counts(client);
+      const activeHits = afterApply.filter((row) => row.family !== "immutable_command_history").reduce((total, row) => total + row.records, 0);
+      if (activeHits !== 0) throw new Error(`Golden Operating Dataset migration left ${activeHits} active legacy identity hits.`);
+      await client.query("commit");
+    }
+
+    const after = await counts(client);
+    console.log(JSON.stringify({
+      mode: apply ? "applied" : "dry_run",
+      datasetVersion: "crays-golden-operating-dataset-20260713-v1",
+      identity: {
+        person: "CRAYS_PROTECTED_TEXT_0003",
+        organization: "Adler Fitness Beteiligungs GmbH",
+        journey: "Munich Schwabing benchmark candidate-to-bank readiness",
+      },
+      before,
+      updated,
+      after,
+      immutableHistoryPreserved: after.find((row) => row.family === "immutable_command_history")?.records ?? 0,
+      boundaries: {
+        coreDemoDataWrite: apply,
+        externalSourceWrite: false,
+        syncApplyEnabled: false,
+        toolApplyEnabled: false,
+        targetApplyEnabled: false,
+        destructiveApplyEnabled: false,
+        externalSendingEnabled: false,
+        releasesEnabled: false,
+        secretsReturned: false,
+      },
+    }, null, 2));
+  } catch (error) {
+    if (apply) await client.query("rollback").catch(() => undefined);
+    throw error;
+  } finally {
+    client.release();
+    await pool.end();
+  }
+}
+
+main().catch((error) => {
+  console.error(error instanceof Error ? error.message : "Golden Operating Dataset migration failed.");
+  process.exit(1);
+});

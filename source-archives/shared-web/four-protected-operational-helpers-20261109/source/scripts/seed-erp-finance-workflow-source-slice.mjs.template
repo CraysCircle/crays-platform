@@ -1,0 +1,640 @@
+import { createHash } from "node:crypto";
+import { Pool } from "pg";
+import { getRedactedDatabaseTarget, loadLocalEnv } from "./env-loader.mjs";
+
+loadLocalEnv();
+
+const apply = process.argv.includes("--apply");
+const confirm = process.env.CONFIRM_CRAYS_ERP_FINANCE_WORKFLOW_SOURCE === "APPLY_ERP_FINANCE_WORKFLOW_SOURCE_SLICE";
+const connectionString = process.env.CRAYS_DATABASE_URL;
+const generatedAt = new Date().toISOString();
+const seedBatch = "crays-erp-finance-workflow-20260712-v1";
+
+if (!connectionString) {
+  console.error("CRAYS_DATABASE_URL is required.");
+  process.exit(1);
+}
+
+if (apply && !confirm) {
+  console.error("Set CONFIRM_CRAYS_ERP_FINANCE_WORKFLOW_SOURCE=APPLY_ERP_FINANCE_WORKFLOW_SOURCE_SLICE to apply ERP finance workflow source records.");
+  process.exit(1);
+}
+
+const pool = new Pool({
+  connectionString,
+  max: Number.parseInt(process.env.CRAYS_DATABASE_POOL_MAX ?? "5", 10),
+  ssl:
+    process.env.CRAYS_DATABASE_SSL === "require"
+      ? { rejectUnauthorized: process.env.CRAYS_DATABASE_SSL_REJECT_UNAUTHORIZED !== "false" }
+      : undefined,
+  options: "-c crays.app_role=core_service",
+});
+
+function digest(value, length = 24) {
+  return createHash("sha256").update(JSON.stringify(value)).digest("hex").slice(0, length);
+}
+
+function slug(value) {
+  return String(value)
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 90);
+}
+
+const companies = {
+  franchisor: "CRAYS Operations GmbH",
+  schwabing: "Adler Fitness Muenchen Schwabing GmbH",
+  prenzlauer: "CRAYS Prenzlauer Studio GmbH",
+  candidate: "Adler Fitness Beteiligungs GmbH",
+  equipment: "Noack Fitness Equipment GmbH",
+  cleaning: "UrbanCare Facility Services GmbH",
+  access: "SecureEntry Systems GmbH",
+  landlord: "Keller Urban Properties GmbH",
+};
+
+const people = {
+  candidate: "CRAYS_PROTECTED_TEXT_0003",
+  financeLead: "CRAYS_PROTECTED_TEXT_0108",
+  studioLead: "CRAYS_PROTECTED_TEXT_0019",
+  operationsLead: "CRAYS_PROTECTED_TEXT_0015",
+  coach: "CRAYS_PROTECTED_TEXT_0109",
+  salesLead: "CRAYS_PROTECTED_TEXT_0110",
+  applicantCoach: "CRAYS_PROTECTED_TEXT_0111",
+  applicantSales: "CRAYS_PROTECTED_TEXT_0112",
+  memberA: "CRAYS_PROTECTED_TEXT_0113",
+  memberB: "CRAYS_PROTECTED_TEXT_0114",
+  memberC: "CRAYS_PROTECTED_TEXT_0115",
+};
+
+const baseFields = {
+  moduleKey: "erp",
+  seedBatch,
+  sourceWritesEnabled: false,
+  syncApplyEnabled: false,
+  targetApplyEnabled: false,
+  accountingExportsEnabled: false,
+  bankSendEnabled: false,
+  paymentInitiationEnabled: false,
+  sourceUse: "ERP finance workflow source-map projection for CRAYS operating processes.",
+};
+
+function record(family, label, options) {
+  const externalId = options.externalId ?? `erp_finance_${slug(family)}_${digest(label, 10)}`;
+  return {
+    family,
+    label,
+    externalId,
+    craysEntityType: options.craysEntityType,
+    craysEntityId: options.craysEntityId ?? `erp_finance_${slug(label)}_${digest([family, label], 8)}`,
+    syncStatus: options.syncStatus ?? "synced",
+    owner: options.owner,
+    role: options.role ?? "finance",
+    status: options.status,
+    dueDate: options.dueDate,
+    priority: options.priority ?? "medium",
+    fields: options.fields ?? {},
+  };
+}
+
+const records = [
+  record("customers", companies.schwabing, {
+    externalId: "CRAYS-CUST-SCHWABING",
+    craysEntityType: "organization",
+    owner: "Finance",
+    status: "CRAYS_PROTECTED_TEXT_0116",
+    dueDate: "CRAYS_PROTECTED_TEXT_0117",
+    fields: { company: companies.franchisor, customerType: "CRAYS_PROTECTED_TEXT_0118", candidate: people.candidate, relatedDeal: "CRAYS_PROTECTED_TEXT_0119" },
+  }),
+  record("customers", companies.prenzlauer, {
+    externalId: "CRAYS-CUST-PRENZLAUER",
+    craysEntityType: "organization",
+    owner: "Finance",
+    status: "active",
+    dueDate: "2026-07-19",
+    fields: { company: companies.franchisor, customerType: "Studio Operating Entity", relatedStudio: "Berlin Prenzlauer Studio" },
+  }),
+  record("suppliers", companies.equipment, {
+    externalId: "CRAYS-SUP-EQUIPMENT",
+    craysEntityType: "organization",
+    owner: "Procurement",
+    status: "active",
+    dueDate: "2026-07-13",
+    fields: { country: "Germany", supplierGroup: "Fitness Equipment", defaultCurrency: "EUR", nextAction: "Confirm delivery slot for functional training floor." },
+  }),
+  record("suppliers", companies.cleaning, {
+    externalId: "CRAYS-SUP-CLEANING",
+    craysEntityType: "organization",
+    owner: "Procurement",
+    status: "active",
+    dueDate: "2026-07-16",
+    fields: { country: "Germany", supplierGroup: "Facility Services", defaultCurrency: "EUR", nextAction: "Attach cleaning kickoff quote to opening budget review." },
+  }),
+  record("suppliers", companies.access, {
+    craysEntityType: "organization",
+    owner: "Procurement",
+    status: "review",
+    dueDate: "2026-07-14",
+    priority: "high",
+    fields: { country: "Germany", supplierGroup: "Access Control", defaultCurrency: "EUR", nextAction: "Resolve installation dependency with facilities lead." },
+  }),
+  record("invoices", "Adler Fitness Muenchen Schwabing franchise fee invoice", {
+    externalId: "CRAYS-SINV-SCHWABING-001",
+    craysEntityType: "financial-model",
+    owner: "Finance",
+    status: "draft",
+    dueDate: "2026-07-26",
+    fields: { kind: "Sales Invoice", company: companies.franchisor, customer: companies.schwabing, amountEur: 4200, invoiceNo: "SI-2026-0712-044", nextAction: "Hold invoice in review until candidate package approval is complete." },
+  }),
+  record("invoices", "Noack equipment opening invoice - Munich Schwabing", {
+    craysEntityType: "financial-model",
+    owner: "Finance",
+    status: "pending",
+    dueDate: "2026-07-18",
+    priority: "high",
+    fields: { kind: "Purchase Invoice", company: companies.franchisor, supplier: companies.equipment, amountEur: 82450, invoiceNo: "NF-2026-0712", costCenter: "Munich Schwabing Studio", nextAction: "Match invoice lines against purchase order and opening budget." },
+  }),
+  record("invoices", "UrbanCare pre-opening cleaning kickoff invoice", {
+    craysEntityType: "financial-model",
+    owner: "Finance",
+    status: "review",
+    dueDate: "2026-07-19",
+    fields: { kind: "Purchase Invoice", company: companies.franchisor, supplier: companies.cleaning, amountEur: 3180, invoiceNo: "UC-2026-3348", costCenter: "Munich Schwabing Studio", nextAction: "Approve after facility handover checklist is signed." },
+  }),
+  record("payment-exceptions", `${people.memberA} membership retry - Berlin Mitte`, {
+    craysEntityType: "financial-model",
+    owner: "Finance",
+    status: "CRAYS_PROTECTED_TEXT_0120",
+    dueDate: "CRAYS_PROTECTED_TEXT_0121",
+    priority: "critical",
+    syncStatus: "CRAYS_PROTECTED_TEXT_0122",
+    fields: { member: people.memberA, studio: "CRAYS_PROTECTED_TEXT_0123", amountEur: 0/*CRAYS_PROTECTED_NUMBER_0124*/, paymentMethod: "CRAYS_PROTECTED_TEXT_0125", retryDate: "CRAYS_PROTECTED_TEXT_0121", supportTicket: "CRAYS_PROTECTED_TEXT_0126", nextAction: "CRAYS_PROTECTED_TEXT_0127" },
+  }),
+  record("payment-exceptions", `${people.memberB} membership payment past due - Berlin Mitte`, {
+    craysEntityType: "financial-model",
+    owner: "Finance",
+    status: "CRAYS_PROTECTED_TEXT_0128",
+    dueDate: "CRAYS_PROTECTED_TEXT_0129",
+    priority: "high",
+    fields: { member: people.memberB, studio: "CRAYS_PROTECTED_TEXT_0123", amountEur: 0/*CRAYS_PROTECTED_NUMBER_0130*/, paymentMethod: "CRAYS_PROTECTED_TEXT_0131", retryDate: "CRAYS_PROTECTED_TEXT_0129", supportTicket: "CRAYS_PROTECTED_TEXT_0132", nextAction: "CRAYS_PROTECTED_TEXT_0133" },
+  }),
+  record("payment-exceptions", `${people.memberC} family membership collection review`, {
+    craysEntityType: "financial-model",
+    owner: "Finance",
+    status: "CRAYS_PROTECTED_TEXT_0134",
+    dueDate: "CRAYS_PROTECTED_TEXT_0135",
+    fields: { member: people.memberC, studio: "CRAYS_PROTECTED_TEXT_0136", amountEur: 0/*CRAYS_PROTECTED_NUMBER_0137*/, paymentMethod: "CRAYS_PROTECTED_TEXT_0138", retryDate: "CRAYS_PROTECTED_TEXT_0135", supportTicket: "CRAYS_PROTECTED_TEXT_0139", nextAction: "CRAYS_PROTECTED_TEXT_0140" },
+  }),
+  record("accounts", "Opening Costs", {
+    externalId: "CRAYS-ACC-OPENING-COSTS",
+    craysEntityType: "financial-model",
+    owner: "Finance",
+    status: "active",
+    dueDate: "2026-07-12",
+    fields: { company: companies.franchisor, rootType: "Expense", accountType: "Opening Cost Control", nextAction: "Use for opening budget variance review only." },
+  }),
+  record("accounts", "Studio Equipment", {
+    externalId: "CRAYS-ACC-EQUIPMENT",
+    craysEntityType: "financial-model",
+    owner: "Finance",
+    status: "active",
+    dueDate: "2026-07-12",
+    fields: { company: companies.franchisor, rootType: "Asset", accountType: "Fixed Asset", nextAction: "Match equipment invoices before asset acceptance." },
+  }),
+  record("budgets", "Munich Schwabing opening budget v3", {
+    externalId: "CRAYS-BUDGET-SCHWABING-OPENING",
+    craysEntityType: "financial-model",
+    owner: "Finance",
+    status: "review",
+    dueDate: "2026-07-16",
+    priority: "high",
+    fields: { company: companies.franchisor, costCenter: "Munich Schwabing Studio", totalBudgetEur: 642000, committedEur: 418250, variancePct: 6.2, candidateCompany: companies.candidate, nextAction: "Review equipment and lease deposit variance before bank package update." },
+  }),
+  record("budgets", "Berlin Prenzlauer pre-opening payroll reserve", {
+    craysEntityType: "financial-model",
+    owner: "Finance",
+    status: "active",
+    dueDate: "2026-07-18",
+    fields: { company: companies.franchisor, costCenter: "Berlin Prenzlauer Studio", totalBudgetEur: 118500, committedEur: 73400, variancePct: 2.8, nextAction: "Confirm launch staffing cost before partner finance review." },
+  }),
+  record("cost-centers", "Munich Schwabing Studio", {
+    externalId: "CRAYS-CC-SCHWABING",
+    craysEntityType: "financial-model",
+    owner: "Finance",
+    status: "active",
+    dueDate: "2026-07-12",
+    fields: { company: companies.franchisor, parent: "German Studio Operations", group: false, city: "Munich", openingDate: "2026-09-05" },
+  }),
+  record("cost-centers", "Berlin Prenzlauer Studio", {
+    externalId: "CRAYS-CC-PRENZLAUER",
+    craysEntityType: "financial-model",
+    owner: "Finance",
+    status: "active",
+    dueDate: "2026-07-12",
+    fields: { company: companies.franchisor, parent: "German Studio Operations", group: false, city: "Berlin", openingDate: "2026-10-12" },
+  }),
+  record("purchase-orders", "Noack equipment purchase order - Munich Schwabing", {
+    externalId: "CRAYS-PO-SCHWABING-001",
+    craysEntityType: "financial-model",
+    owner: "Procurement",
+    status: "to_receive_and_bill",
+    dueDate: "2026-07-26",
+    priority: "high",
+    fields: { supplier: companies.equipment, company: companies.franchisor, amountEur: 27600, scheduleDate: "2026-07-26", transactionDate: "2026-07-12", nextAction: "Confirm split delivery before floor installation begins." },
+  }),
+  record("purchase-orders", "UrbanCare cleaning setup purchase order", {
+    externalId: "CRAYS-PO-SCHWABING-002",
+    craysEntityType: "financial-model",
+    owner: "Procurement",
+    status: "draft",
+    dueDate: "2026-07-19",
+    fields: { supplier: companies.cleaning, company: companies.franchisor, amountEur: 1800, scheduleDate: "2026-07-19", transactionDate: "2026-07-12", nextAction: "Approve after handover cleaning scope is confirmed." },
+  }),
+  record("material-requests", "Munich Schwabing functional floor supply request", {
+    externalId: "CRAYS-MR-SCHWABING-001",
+    craysEntityType: "property-case",
+    owner: "Procurement",
+    status: "pending",
+    dueDate: "2026-07-22",
+    priority: "high",
+    fields: { company: companies.franchisor, requestType: "Purchase", scheduleDate: "2026-07-22", location: "Munich Schwabing Studio", nextAction: "Tie material request to approved purchase order and budget line." },
+  }),
+  record("material-requests", "Berlin Prenzlauer locker room supply request", {
+    externalId: "CRAYS-MR-PRENZLAUER-001",
+    craysEntityType: "property-case",
+    owner: "Procurement",
+    status: "ordered",
+    dueDate: "2026-08-02",
+    fields: { company: companies.franchisor, requestType: "Purchase", scheduleDate: "2026-08-02", location: "Berlin Prenzlauer Studio", nextAction: "Confirm supplier delivery against studio launch calendar." },
+  }),
+  record("items", "Functional Training Rack", {
+    externalId: "CRAYS-ITEM-RACK",
+    craysEntityType: "property-case",
+    owner: "Procurement",
+    status: "active",
+    dueDate: "2026-07-12",
+    fields: { group: "Equipment", stockUnit: "Nos", fixedAsset: true, maintainStock: false, valuationRateEur: 27600, nextAction: "Keep item tied to asset acceptance and safety inspection." },
+  }),
+  record("items", "Smart Locker Set", {
+    externalId: "CRAYS-ITEM-LOCKERS",
+    craysEntityType: "property-case",
+    owner: "Procurement",
+    status: "active",
+    dueDate: "2026-07-12",
+    fields: { group: "Equipment", stockUnit: "Nos", fixedAsset: true, maintainStock: false, valuationRateEur: 18400, nextAction: "Keep item tied to locker commissioning visit." },
+  }),
+  record("employees", `${people.studioLead} - Studio Manager launch assignment`, {
+    craysEntityType: "account",
+    owner: "HR",
+    status: "CRAYS_PROTECTED_TEXT_0116",
+    dueDate: "CRAYS_PROTECTED_TEXT_0135",
+    fields: { employeeName: people.studioLead, department: "CRAYS_PROTECTED_TEXT_0141", designation: "CRAYS_PROTECTED_TEXT_0142", branch: "CRAYS_PROTECTED_TEXT_0136", company: companies.franchisor, dateOfJoining: "CRAYS_PROTECTED_TEXT_0143", monthlyCostEur: 0/*CRAYS_PROTECTED_NUMBER_0144*/, nextAction: "CRAYS_PROTECTED_TEXT_0145" },
+  }),
+  record("employees", `${people.coach} - Head Coach onboarding`, {
+    craysEntityType: "account",
+    owner: "HR",
+    status: "CRAYS_PROTECTED_TEXT_0146",
+    dueDate: "CRAYS_PROTECTED_TEXT_0147",
+    fields: { employeeName: people.coach, department: "CRAYS_PROTECTED_TEXT_0148", designation: "CRAYS_PROTECTED_TEXT_0149", branch: "CRAYS_PROTECTED_TEXT_0136", company: companies.franchisor, dateOfJoining: "CRAYS_PROTECTED_TEXT_0150", monthlyCostEur: 0/*CRAYS_PROTECTED_NUMBER_0151*/, nextAction: "CRAYS_PROTECTED_TEXT_0152" },
+  }),
+  record("employees", `${people.salesLead} - Membership lead launch coverage`, {
+    craysEntityType: "account",
+    owner: "HR",
+    status: "CRAYS_PROTECTED_TEXT_0134",
+    dueDate: "CRAYS_PROTECTED_TEXT_0153",
+    fields: { employeeName: people.salesLead, department: "CRAYS_PROTECTED_TEXT_0154", designation: "CRAYS_PROTECTED_TEXT_0155", branch: "CRAYS_PROTECTED_TEXT_0136", company: companies.franchisor, dateOfJoining: "CRAYS_PROTECTED_TEXT_0135", monthlyCostEur: 0/*CRAYS_PROTECTED_NUMBER_0156*/, nextAction: "CRAYS_PROTECTED_TEXT_0157" },
+  }),
+  record("departments", "Munich Schwabing Studio Operations", {
+    craysEntityType: "property-case",
+    owner: "HR",
+    status: "active",
+    dueDate: "2026-07-12",
+    fields: { company: companies.franchisor, parentDepartment: "German Studio Operations", headcountPlan: 14, launchCoveragePct: 86, nextAction: "Close two trainer shifts and one front desk shift." },
+  }),
+  record("job-applicants", `${people.applicantCoach} - group fitness coach application`, {
+    craysEntityType: "account",
+    owner: "HR",
+    status: "CRAYS_PROTECTED_TEXT_0158",
+    dueDate: "CRAYS_PROTECTED_TEXT_0159",
+    fields: { applicantName: people.applicantCoach, designation: "CRAYS_PROTECTED_TEXT_0160", source: "CRAYS_PROTECTED_TEXT_0161", branch: "CRAYS_PROTECTED_TEXT_0136", expectedMonthlyCostEur: 0/*CRAYS_PROTECTED_NUMBER_0162*/, nextAction: "CRAYS_PROTECTED_TEXT_0163" },
+  }),
+  record("job-applicants", `${people.applicantSales} - membership sales application`, {
+    craysEntityType: "account",
+    owner: "HR",
+    status: "CRAYS_PROTECTED_TEXT_0164",
+    dueDate: "CRAYS_PROTECTED_TEXT_0165",
+    fields: { applicantName: people.applicantSales, designation: "CRAYS_PROTECTED_TEXT_0166", source: "CRAYS_PROTECTED_TEXT_0167", branch: "CRAYS_PROTECTED_TEXT_0136", expectedMonthlyCostEur: 0/*CRAYS_PROTECTED_NUMBER_0168*/, nextAction: "CRAYS_PROTECTED_TEXT_0169" },
+  }),
+  record("training-events", "Munich Schwabing opening sales playbook training", {
+    craysEntityType: "property-case",
+    owner: "Learning",
+    status: "scheduled",
+    dueDate: "2026-07-20",
+    fields: { program: "Opening Sales Playbook", eventDate: "2026-07-20", location: "Munich Schwabing Studio", attendees: 8, nextAction: "Confirm attendance before pre-sales sprint starts." },
+  }),
+  record("assets", "Functional training rack - Munich Schwabing", {
+    craysEntityType: "property-case",
+    owner: "Facilities",
+    status: "ordered",
+    dueDate: "2026-07-26",
+    priority: "high",
+    fields: { itemCode: "CRAYS-ITEM-RACK", supplier: companies.equipment, location: "Munich Schwabing Studio", purchaseDate: "2026-07-12", grossPurchaseAmountEur: 27600, nextAction: "Confirm delivery floor access and installation window." },
+  }),
+  record("assets", "Smart locker set - Munich Schwabing", {
+    craysEntityType: "property-case",
+    owner: "Facilities",
+    status: "in_transit",
+    dueDate: "2026-07-28",
+    fields: { itemCode: "CRAYS-ITEM-LOCKERS", supplier: companies.equipment, location: "Munich Schwabing Studio", purchaseDate: "2026-07-12", grossPurchaseAmountEur: 18400, nextAction: "Check access-control compatibility before acceptance." },
+  }),
+  record("assets", "Member access terminal - Munich Schwabing", {
+    craysEntityType: "property-case",
+    owner: "Facilities",
+    status: "blocked",
+    dueDate: "2026-07-18",
+    priority: "critical",
+    syncStatus: "conflict",
+    fields: { itemCode: "CRAYS-ITEM-ACCESS-TERMINAL", supplier: companies.access, location: "Munich Schwabing Studio", purchaseDate: "2026-07-12", grossPurchaseAmountEur: 9200, nextAction: "Resolve network cabinet readiness with Project before installation." },
+  }),
+  record("maintenance", "Locker commissioning visit - Munich Schwabing", {
+    craysEntityType: "property-case",
+    owner: "Facilities",
+    status: "planned",
+    dueDate: "2026-07-29",
+    fields: { asset: "Smart locker set - Munich Schwabing", maintenanceDate: "2026-07-29", completionStatus: "Planned", company: companies.franchisor, nextAction: "Book supplier visit after goods receipt confirmation." },
+  }),
+  record("maintenance", "HVAC handover inspection - Munich Schwabing", {
+    craysEntityType: "property-case",
+    owner: "Facilities",
+    status: "review",
+    dueDate: "2026-07-24",
+    priority: "high",
+    fields: { asset: "Studio HVAC zone 2", maintenanceDate: "2026-07-24", completionStatus: "Reviewer required", company: companies.franchisor, nextAction: "Attach landlord handover note before opening readiness review." },
+  }),
+  record("issues", "Access terminal network cabinet dependency", {
+    craysEntityType: "property-case",
+    owner: "Facilities",
+    status: "CRAYS_PROTECTED_TEXT_0170",
+    dueDate: "CRAYS_PROTECTED_TEXT_0147",
+    priority: "critical",
+    syncStatus: "CRAYS_PROTECTED_TEXT_0122",
+    fields: { priority: "CRAYS_PROTECTED_TEXT_0171", issueType: "CRAYS_PROTECTED_TEXT_0172", relatedSupplier: companies.access, raisedBy: people.operationsLead, nextAction: "CRAYS_PROTECTED_TEXT_0173" },
+  }),
+  record("quality-inspections", "Equipment safety inspection - Munich Schwabing", {
+    craysEntityType: "property-case",
+    owner: "Quality",
+    status: "CRAYS_PROTECTED_TEXT_0179",
+    dueDate: "CRAYS_PROTECTED_TEXT_0180",
+    priority: "high",
+    fields: { inspectionType: "CRAYS_PROTECTED_TEXT_0181", referenceType: "CRAYS_PROTECTED_TEXT_0182", referenceName: "CRAYS_PROTECTED_TEXT_0183", inspectedBy: "CRAYS_PROTECTED_TEXT_0184", nextAction: "CRAYS_PROTECTED_TEXT_0185" },
+  }),
+  record("quality-inspections", "Cleaning handover quality check - Munich Schwabing", {
+    craysEntityType: "property-case",
+    owner: "Quality",
+    status: "CRAYS_PROTECTED_TEXT_0134",
+    dueDate: "CRAYS_PROTECTED_TEXT_0174",
+    fields: { inspectionType: "CRAYS_PROTECTED_TEXT_0175", referenceType: "CRAYS_PROTECTED_TEXT_0176", referenceName: companies.cleaning, inspectedBy: people.studioLead, nextAction: "CRAYS_PROTECTED_TEXT_0177" },
+  }),
+  record("quality-inspections", "Fire safety documentation check - Munich Schwabing", {
+    craysEntityType: "document",
+    owner: "Quality",
+    status: "CRAYS_PROTECTED_TEXT_0170",
+    dueDate: "CRAYS_PROTECTED_TEXT_0153",
+    priority: "critical",
+    syncStatus: "CRAYS_PROTECTED_TEXT_0122",
+    fields: { inspectionType: "CRAYS_PROTECTED_TEXT_0186", referenceType: "CRAYS_PROTECTED_TEXT_0187", referenceName: companies.landlord, inspectedBy: "CRAYS_PROTECTED_TEXT_0188", nextAction: "CRAYS_PROTECTED_TEXT_0189" },
+  }),
+  record("communications", "Noack delivery confirmation thread", {
+    externalId: "CRAYS-COMM-MAINT-001",
+    craysEntityType: "conversation",
+    owner: "Procurement",
+    status: "linked",
+    dueDate: "2026-07-13",
+    fields: { communicationType: "Email", referenceDoctype: "Purchase Order", referenceName: "Noack equipment purchase order - Munich Schwabing", sender: "CRAYS_PROTECTED_TEXT_0178", nextAction: "Attach delivery confirmation to purchase order review." },
+  }),
+];
+
+function connectionId() {
+  return "core_source_erp";
+}
+
+function systemKey() {
+  return "erp-engine";
+}
+
+function sectionLabel(family) {
+  return family
+    .split("-")
+    .map((part) => part.slice(0, 1).toUpperCase() + part.slice(1))
+    .join(" ");
+}
+
+function mapId(item) {
+  return `map_${digest({ moduleKey: "erp", sectionKey: item.family, rowId: item.externalId }, 30)}`;
+}
+
+function currentProof(item) {
+  return {
+    id: item.externalId,
+    label: item.label,
+    status: item.status,
+    owner: item.owner,
+    modifiedAt: generatedAt,
+    role: item.role,
+    dueDate: item.dueDate,
+    priority: item.priority,
+    fields: item.fields,
+  };
+}
+
+function grouped() {
+  return records.reduce((acc, item) => {
+    acc[item.family] ??= [];
+    acc[item.family].push(item);
+    return acc;
+  }, {});
+}
+
+async function persist(client) {
+  const connection = connectionId();
+  const system = systemKey();
+  const groupedRecords = grouped();
+  const jobId = `sync_job_${digest(["erp-finance-workflow-source-slice", generatedAt, records.length], 28)}`;
+
+  await client.query(
+    `
+      insert into crays_core.integration_connections (
+        connection_id, module_key, system_key, connection_name, owner_role, status,
+        connection_mode, secret_reference_status, connection_health, metadata, updated_at
+      )
+      values ($1, 'erp', $2, 'ERP finance workflow source slice', 'finance', 'active', 'sync_read_model', 'configured_reference', 'degraded', $3::jsonb, now())
+      on conflict (connection_id) do update set
+        status = excluded.status,
+        connection_mode = excluded.connection_mode,
+        secret_reference_status = excluded.secret_reference_status,
+        connection_health = excluded.connection_health,
+        metadata = excluded.metadata,
+        updated_at = now()
+    `,
+    [
+      connection,
+      system,
+      JSON.stringify({
+        ...baseFields,
+        sourceConnection: "snapshot",
+        generatedAt,
+        rowsSeen: records.length,
+        families: Object.keys(groupedRecords).sort(),
+        liveRuntimeAvailable: false,
+      }),
+    ],
+  );
+
+  await client.query(
+    `
+      insert into crays_core.sync_jobs (
+        job_id, connection_id, job_type, direction, status, attempt_count,
+        payload_summary, scheduled_at, started_at, finished_at, updated_at
+      )
+      values ($1, $2, 'read_sync', 'read', 'succeeded', 1, $3::jsonb, now(), now(), now(), now())
+      on conflict (job_id) do update set
+        status = excluded.status,
+        attempt_count = crays_core.sync_jobs.attempt_count + 1,
+        payload_summary = excluded.payload_summary,
+        started_at = excluded.started_at,
+        finished_at = excluded.finished_at,
+        updated_at = now()
+    `,
+    [
+      jobId,
+      connection,
+      JSON.stringify({
+        ...baseFields,
+        sourceConnection: "snapshot",
+        generatedAt,
+        rowsSeen: records.length,
+        families: Object.keys(groupedRecords).sort(),
+      }),
+    ],
+  );
+
+  let written = 0;
+  for (const item of records) {
+    const proof = currentProof(item);
+    const result = await client.query(
+      `
+        insert into crays_core.external_record_maps (
+          map_id, crays_entity_type, crays_entity_id, external_system, external_entity_type,
+          external_entity_id, sync_direction, sync_status, last_synced_at, metadata, updated_at
+        )
+        values ($1, $2, $3, $4, $5, $6, 'read', $7, now(), $8::jsonb, now())
+        on conflict (external_system, external_entity_type, external_entity_id) do update set
+          crays_entity_type = excluded.crays_entity_type,
+          crays_entity_id = excluded.crays_entity_id,
+          sync_status = excluded.sync_status,
+          last_synced_at = excluded.last_synced_at,
+          metadata = excluded.metadata,
+          updated_at = now()
+      `,
+      [
+        mapId(item),
+        item.craysEntityType,
+        item.craysEntityId,
+        system,
+        item.family,
+        item.externalId,
+        item.syncStatus,
+        JSON.stringify({
+          moduleKey: "erp",
+          sectionKey: item.family,
+          sectionLabel: sectionLabel(item.family),
+          syncJobId: jobId,
+          snapshotGeneratedAt: generatedAt,
+          seedBatch,
+          row: proof,
+          sourceDigest: digest(proof, 32),
+        }),
+      ],
+    );
+    written += result.rowCount ?? 0;
+  }
+
+  return { connection, system, rowsSeen: records.length, mapsWritten: written };
+}
+
+function dryRunSummary() {
+  const families = Object.entries(grouped()).map(([family, items]) => ({
+    family,
+    records: items.length,
+    attention: items.filter((item) => ["blocked", "review", "pending", "failed_payment", "past_due"].includes(item.status)).length,
+    conflicts: items.filter((item) => item.syncStatus === "conflict").length,
+  }));
+
+  return {
+    status: "dry_run",
+    apply,
+    seedBatch,
+    records: records.length,
+    families,
+    target: getRedactedDatabaseTarget(connectionString),
+    gates: {
+      sourceWritesEnabled: false,
+      syncApplyEnabled: false,
+      targetApplyEnabled: false,
+      accountingExportsEnabled: false,
+      bankSendEnabled: false,
+      paymentInitiationEnabled: false,
+      destructiveResetEnabled: false,
+    },
+  };
+}
+
+async function main() {
+  if (!apply) {
+    console.log(JSON.stringify(dryRunSummary(), null, 2));
+    return;
+  }
+
+  const client = await pool.connect();
+  try {
+    await client.query("begin");
+    const result = await persist(client);
+    await client.query("commit");
+    console.log(
+      JSON.stringify(
+        {
+          status: "applied",
+          seedBatch,
+          ...result,
+          records: records.length,
+          gates: dryRunSummary().gates,
+        },
+        null,
+        2,
+      ),
+    );
+  } catch (error) {
+    await client.query("rollback").catch(() => {});
+    throw error;
+  } finally {
+    client.release();
+    await pool.end();
+  }
+}
+
+main().catch(async (error) => {
+  await pool.end().catch(() => {});
+  console.error(
+    JSON.stringify(
+      {
+        status: "failed",
+        message: error instanceof Error ? error.message : "Unknown ERP finance workflow source seed failure.",
+      },
+      null,
+      2,
+    ),
+  );
+  process.exit(1);
+});

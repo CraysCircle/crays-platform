@@ -1,0 +1,903 @@
+{
+  "schema": "crays.protected-sharedweb-source.public-map.v1",
+  "state": "SOURCE_TEMPLATE_RAW_IDENTITY_DATA_ORIGIN_UNRESOLVED",
+  "sourceKind": "SOURCE_TEMPLATE_NOT_RUNNABLE_INPUT",
+  "originalSourceFiles": 4,
+  "originalSourceBytes": 69610,
+  "files": [
+    {
+      "originalRelativePath": "scripts/migrate-golden-operating-dataset-v1.mjs",
+      "originalBytes": 6858,
+      "originalSHA256": "e3dad75314c3a14a3e6d104e42e859029cd6ca596cb6f8a12917cd972a3ab473",
+      "templateRelativePath": "source/scripts/migrate-golden-operating-dataset-v1.mjs.template",
+      "templateBytes": 6816,
+      "templateSHA256": "1e95cc632cff66b1ea1ae2ac39e1e072e7fd9995ac2367404c4f32bf22681eaf",
+      "sourceKind": "SOURCE_TEMPLATE_NOT_RUNNABLE_INPUT",
+      "protectionSpans": 8,
+      "protectedOriginalBytes": 242,
+      "retainedExactOriginalBytes": 6616,
+      "groups": [
+        {
+          "groupId": 1,
+          "occurrences": 1
+        },
+        {
+          "groupId": 2,
+          "occurrences": 2
+        },
+        {
+          "groupId": 3,
+          "occurrences": 3
+        },
+        {
+          "groupId": 4,
+          "occurrences": 2
+        }
+      ],
+      "sourceUnchangedOutsideExactRanges": true,
+      "privateOriginalRecovery": {
+        "gitPath": "crays-platform/scripts/migrate-golden-operating-dataset-v1.mjs",
+        "mode": "100644",
+        "gitBlobOID": "382e597c1b00fa476b64935fbc013b0a1a35a89d",
+        "privateImmutableURL": "https://github.com/CraysWorld/crays-gym/blob/0dd822d7578dfffd55ff76eb8f37ae4c5f6f99ed/crays-platform/scripts/migrate-golden-operating-dataset-v1.mjs",
+        "repository": "CraysWorld/crays-gym",
+        "repositoryId": 1280582408,
+        "commit": "0dd822d7578dfffd55ff76eb8f37ae4c5f6f99ed"
+      }
+    },
+    {
+      "originalRelativePath": "scripts/repair-core-golden-test-data.mjs",
+      "originalBytes": 21538,
+      "originalSHA256": "7a105fc5b04738ccc4a701f1edd836d865f6bcd57a57ebe0fa87b8c732e0c73a",
+      "templateRelativePath": "source/scripts/repair-core-golden-test-data.mjs.template",
+      "templateBytes": 21370,
+      "templateSHA256": "bf17ad2e4ef2730e9b6783aaee97ba4bec83fa859e2378be3506b594e2a62782",
+      "sourceKind": "SOURCE_TEMPLATE_NOT_RUNNABLE_INPUT",
+      "protectionSpans": 31,
+      "protectedOriginalBytes": 943,
+      "retainedExactOriginalBytes": 20595,
+      "groups": [
+        {
+          "groupId": 2,
+          "occurrences": 1
+        },
+        {
+          "groupId": 3,
+          "occurrences": 1
+        },
+        {
+          "groupId": 4,
+          "occurrences": 1
+        },
+        {
+          "groupId": 5,
+          "occurrences": 1
+        },
+        {
+          "groupId": 6,
+          "occurrences": 1
+        },
+        {
+          "groupId": 7,
+          "occurrences": 1
+        },
+        {
+          "groupId": 8,
+          "occurrences": 1
+        },
+        {
+          "groupId": 9,
+          "occurrences": 1
+        },
+        {
+          "groupId": 10,
+          "occurrences": 1
+        },
+        {
+          "groupId": 11,
+          "occurrences": 1
+        },
+        {
+          "groupId": 12,
+          "occurrences": 1
+        },
+        {
+          "groupId": 13,
+          "occurrences": 1
+        },
+        {
+          "groupId": 14,
+          "occurrences": 1
+        },
+        {
+          "groupId": 15,
+          "occurrences": 1
+        },
+        {
+          "groupId": 16,
+          "occurrences": 1
+        },
+        {
+          "groupId": 17,
+          "occurrences": 1
+        },
+        {
+          "groupId": 18,
+          "occurrences": 1
+        },
+        {
+          "groupId": 19,
+          "occurrences": 1
+        },
+        {
+          "groupId": 20,
+          "occurrences": 1
+        },
+        {
+          "groupId": 21,
+          "occurrences": 1
+        },
+        {
+          "groupId": 22,
+          "occurrences": 1
+        },
+        {
+          "groupId": 23,
+          "occurrences": 1
+        },
+        {
+          "groupId": 24,
+          "occurrences": 1
+        },
+        {
+          "groupId": 25,
+          "occurrences": 1
+        },
+        {
+          "groupId": 26,
+          "occurrences": 1
+        },
+        {
+          "groupId": 27,
+          "occurrences": 1
+        },
+        {
+          "groupId": 28,
+          "occurrences": 1
+        },
+        {
+          "groupId": 29,
+          "occurrences": 1
+        },
+        {
+          "groupId": 30,
+          "occurrences": 1
+        },
+        {
+          "groupId": 31,
+          "occurrences": 1
+        },
+        {
+          "groupId": 32,
+          "occurrences": 1
+        }
+      ],
+      "sourceUnchangedOutsideExactRanges": true,
+      "privateOriginalRecovery": {
+        "gitPath": "crays-platform/scripts/repair-core-golden-test-data.mjs",
+        "mode": "100644",
+        "gitBlobOID": "086f0bf1e41ae9a958c952c72592ffa9eab589a3",
+        "privateImmutableURL": "https://github.com/CraysWorld/crays-gym/blob/0dd822d7578dfffd55ff76eb8f37ae4c5f6f99ed/crays-platform/scripts/repair-core-golden-test-data.mjs",
+        "repository": "CraysWorld/crays-gym",
+        "repositoryId": 1280582408,
+        "commit": "0dd822d7578dfffd55ff76eb8f37ae4c5f6f99ed"
+      }
+    },
+    {
+      "originalRelativePath": "scripts/seed-crm-golden-source-records.mjs",
+      "originalBytes": 14471,
+      "originalSHA256": "ce094f785c4fc3411fa9f539e3ee4b702836053e4c55c186b1ee269449ea61e6",
+      "templateRelativePath": "source/scripts/seed-crm-golden-source-records.mjs.template",
+      "templateBytes": 14661,
+      "templateSHA256": "6cebbf363732aa619dcbc8655f5d407bffa4017a917c7b96a40317ff1c06ef73",
+      "sourceKind": "SOURCE_TEMPLATE_NOT_RUNNABLE_INPUT",
+      "protectionSpans": 101,
+      "protectedOriginalBytes": 2377,
+      "retainedExactOriginalBytes": 12094,
+      "groups": [
+        {
+          "groupId": 2,
+          "occurrences": 1
+        },
+        {
+          "groupId": 33,
+          "occurrences": 2
+        },
+        {
+          "groupId": 34,
+          "occurrences": 1
+        },
+        {
+          "groupId": 35,
+          "occurrences": 1
+        },
+        {
+          "groupId": 36,
+          "occurrences": 1
+        },
+        {
+          "groupId": 37,
+          "occurrences": 1
+        },
+        {
+          "groupId": 38,
+          "occurrences": 2
+        },
+        {
+          "groupId": 39,
+          "occurrences": 2
+        },
+        {
+          "groupId": 40,
+          "occurrences": 1
+        },
+        {
+          "groupId": 41,
+          "occurrences": 1
+        },
+        {
+          "groupId": 42,
+          "occurrences": 1
+        },
+        {
+          "groupId": 43,
+          "occurrences": 1
+        },
+        {
+          "groupId": 44,
+          "occurrences": 1
+        },
+        {
+          "groupId": 45,
+          "occurrences": 2
+        },
+        {
+          "groupId": 46,
+          "occurrences": 2
+        },
+        {
+          "groupId": 47,
+          "occurrences": 1
+        },
+        {
+          "groupId": 48,
+          "occurrences": 1
+        },
+        {
+          "groupId": 49,
+          "occurrences": 1
+        },
+        {
+          "groupId": 50,
+          "occurrences": 1
+        },
+        {
+          "groupId": 51,
+          "occurrences": 1
+        },
+        {
+          "groupId": 52,
+          "occurrences": 2
+        },
+        {
+          "groupId": 53,
+          "occurrences": 3
+        },
+        {
+          "groupId": 54,
+          "occurrences": 1
+        },
+        {
+          "groupId": 55,
+          "occurrences": 1
+        },
+        {
+          "groupId": 56,
+          "occurrences": 1
+        },
+        {
+          "groupId": 57,
+          "occurrences": 1
+        },
+        {
+          "groupId": 58,
+          "occurrences": 1
+        },
+        {
+          "groupId": 59,
+          "occurrences": 3
+        },
+        {
+          "groupId": 60,
+          "occurrences": 2
+        },
+        {
+          "groupId": 61,
+          "occurrences": 1
+        },
+        {
+          "groupId": 62,
+          "occurrences": 1
+        },
+        {
+          "groupId": 63,
+          "occurrences": 1
+        },
+        {
+          "groupId": 64,
+          "occurrences": 1
+        },
+        {
+          "groupId": 65,
+          "occurrences": 1
+        },
+        {
+          "groupId": 66,
+          "occurrences": 2
+        },
+        {
+          "groupId": 67,
+          "occurrences": 2
+        },
+        {
+          "groupId": 68,
+          "occurrences": 1
+        },
+        {
+          "groupId": 69,
+          "occurrences": 1
+        },
+        {
+          "groupId": 70,
+          "occurrences": 1
+        },
+        {
+          "groupId": 71,
+          "occurrences": 2
+        },
+        {
+          "groupId": 72,
+          "occurrences": 2
+        },
+        {
+          "groupId": 73,
+          "occurrences": 1
+        },
+        {
+          "groupId": 74,
+          "occurrences": 1
+        },
+        {
+          "groupId": 75,
+          "occurrences": 1
+        },
+        {
+          "groupId": 76,
+          "occurrences": 1
+        },
+        {
+          "groupId": 77,
+          "occurrences": 2
+        },
+        {
+          "groupId": 78,
+          "occurrences": 1
+        },
+        {
+          "groupId": 79,
+          "occurrences": 1
+        },
+        {
+          "groupId": 80,
+          "occurrences": 1
+        },
+        {
+          "groupId": 81,
+          "occurrences": 2
+        },
+        {
+          "groupId": 82,
+          "occurrences": 2
+        },
+        {
+          "groupId": 83,
+          "occurrences": 1
+        },
+        {
+          "groupId": 84,
+          "occurrences": 1
+        },
+        {
+          "groupId": 85,
+          "occurrences": 1
+        },
+        {
+          "groupId": 86,
+          "occurrences": 2
+        },
+        {
+          "groupId": 87,
+          "occurrences": 1
+        },
+        {
+          "groupId": 88,
+          "occurrences": 1
+        },
+        {
+          "groupId": 89,
+          "occurrences": 1
+        },
+        {
+          "groupId": 90,
+          "occurrences": 1
+        },
+        {
+          "groupId": 91,
+          "occurrences": 2
+        },
+        {
+          "groupId": 92,
+          "occurrences": 1
+        },
+        {
+          "groupId": 93,
+          "occurrences": 1
+        },
+        {
+          "groupId": 94,
+          "occurrences": 1
+        },
+        {
+          "groupId": 95,
+          "occurrences": 1
+        },
+        {
+          "groupId": 96,
+          "occurrences": 6
+        },
+        {
+          "groupId": 97,
+          "occurrences": 1
+        },
+        {
+          "groupId": 98,
+          "occurrences": 1
+        },
+        {
+          "groupId": 99,
+          "occurrences": 1
+        },
+        {
+          "groupId": 100,
+          "occurrences": 1
+        },
+        {
+          "groupId": 101,
+          "occurrences": 1
+        },
+        {
+          "groupId": 102,
+          "occurrences": 1
+        },
+        {
+          "groupId": 103,
+          "occurrences": 1
+        },
+        {
+          "groupId": 104,
+          "occurrences": 1
+        },
+        {
+          "groupId": 105,
+          "occurrences": 1
+        },
+        {
+          "groupId": 106,
+          "occurrences": 1
+        },
+        {
+          "groupId": 107,
+          "occurrences": 1
+        }
+      ],
+      "sourceUnchangedOutsideExactRanges": true,
+      "privateOriginalRecovery": {
+        "gitPath": "crays-platform/scripts/seed-crm-golden-source-records.mjs",
+        "mode": "100644",
+        "gitBlobOID": "1e538f7fb4a182f678fa8016d7664f1cada5efeb",
+        "privateImmutableURL": "https://github.com/CraysWorld/crays-gym/blob/0dd822d7578dfffd55ff76eb8f37ae4c5f6f99ed/crays-platform/scripts/seed-crm-golden-source-records.mjs",
+        "repository": "CraysWorld/crays-gym",
+        "repositoryId": 1280582408,
+        "commit": "0dd822d7578dfffd55ff76eb8f37ae4c5f6f99ed"
+      }
+    },
+    {
+      "originalRelativePath": "scripts/seed-erp-finance-workflow-source-slice.mjs",
+      "originalBytes": 26743,
+      "originalSHA256": "753857b4cb937a041af6ee083122e4f62a1164c9fbd2b1dc312ba9645f3c7f7f",
+      "templateRelativePath": "source/scripts/seed-erp-finance-workflow-source-slice.mjs.template",
+      "templateBytes": 27537,
+      "templateSHA256": "8cc0297072f15490c02dd7a9db3bdb215cff878c1370cfd9e8abd26832644a6a",
+      "sourceKind": "SOURCE_TEMPLATE_NOT_RUNNABLE_INPUT",
+      "protectionSpans": 104,
+      "protectedOriginalBytes": 1862,
+      "retainedExactOriginalBytes": 24881,
+      "groups": [
+        {
+          "groupId": 3,
+          "occurrences": 1
+        },
+        {
+          "groupId": 15,
+          "occurrences": 1
+        },
+        {
+          "groupId": 19,
+          "occurrences": 1
+        },
+        {
+          "groupId": 108,
+          "occurrences": 1
+        },
+        {
+          "groupId": 109,
+          "occurrences": 1
+        },
+        {
+          "groupId": 110,
+          "occurrences": 1
+        },
+        {
+          "groupId": 111,
+          "occurrences": 1
+        },
+        {
+          "groupId": 112,
+          "occurrences": 1
+        },
+        {
+          "groupId": 113,
+          "occurrences": 1
+        },
+        {
+          "groupId": 114,
+          "occurrences": 1
+        },
+        {
+          "groupId": 115,
+          "occurrences": 1
+        },
+        {
+          "groupId": 116,
+          "occurrences": 2
+        },
+        {
+          "groupId": 117,
+          "occurrences": 1
+        },
+        {
+          "groupId": 118,
+          "occurrences": 1
+        },
+        {
+          "groupId": 119,
+          "occurrences": 1
+        },
+        {
+          "groupId": 120,
+          "occurrences": 1
+        },
+        {
+          "groupId": 121,
+          "occurrences": 2
+        },
+        {
+          "groupId": 122,
+          "occurrences": 3
+        },
+        {
+          "groupId": 123,
+          "occurrences": 2
+        },
+        {
+          "groupId": 124,
+          "occurrences": 1
+        },
+        {
+          "groupId": 125,
+          "occurrences": 1
+        },
+        {
+          "groupId": 126,
+          "occurrences": 1
+        },
+        {
+          "groupId": 127,
+          "occurrences": 1
+        },
+        {
+          "groupId": 128,
+          "occurrences": 1
+        },
+        {
+          "groupId": 129,
+          "occurrences": 2
+        },
+        {
+          "groupId": 130,
+          "occurrences": 1
+        },
+        {
+          "groupId": 131,
+          "occurrences": 1
+        },
+        {
+          "groupId": 132,
+          "occurrences": 1
+        },
+        {
+          "groupId": 133,
+          "occurrences": 1
+        },
+        {
+          "groupId": 134,
+          "occurrences": 3
+        },
+        {
+          "groupId": 135,
+          "occurrences": 4
+        },
+        {
+          "groupId": 136,
+          "occurrences": 6
+        },
+        {
+          "groupId": 137,
+          "occurrences": 1
+        },
+        {
+          "groupId": 138,
+          "occurrences": 1
+        },
+        {
+          "groupId": 139,
+          "occurrences": 1
+        },
+        {
+          "groupId": 140,
+          "occurrences": 1
+        },
+        {
+          "groupId": 141,
+          "occurrences": 1
+        },
+        {
+          "groupId": 142,
+          "occurrences": 1
+        },
+        {
+          "groupId": 143,
+          "occurrences": 1
+        },
+        {
+          "groupId": 144,
+          "occurrences": 1
+        },
+        {
+          "groupId": 145,
+          "occurrences": 1
+        },
+        {
+          "groupId": 146,
+          "occurrences": 1
+        },
+        {
+          "groupId": 147,
+          "occurrences": 2
+        },
+        {
+          "groupId": 148,
+          "occurrences": 1
+        },
+        {
+          "groupId": 149,
+          "occurrences": 1
+        },
+        {
+          "groupId": 150,
+          "occurrences": 1
+        },
+        {
+          "groupId": 151,
+          "occurrences": 1
+        },
+        {
+          "groupId": 152,
+          "occurrences": 1
+        },
+        {
+          "groupId": 153,
+          "occurrences": 2
+        },
+        {
+          "groupId": 154,
+          "occurrences": 1
+        },
+        {
+          "groupId": 155,
+          "occurrences": 1
+        },
+        {
+          "groupId": 156,
+          "occurrences": 1
+        },
+        {
+          "groupId": 157,
+          "occurrences": 1
+        },
+        {
+          "groupId": 158,
+          "occurrences": 1
+        },
+        {
+          "groupId": 159,
+          "occurrences": 1
+        },
+        {
+          "groupId": 160,
+          "occurrences": 1
+        },
+        {
+          "groupId": 161,
+          "occurrences": 1
+        },
+        {
+          "groupId": 162,
+          "occurrences": 1
+        },
+        {
+          "groupId": 163,
+          "occurrences": 1
+        },
+        {
+          "groupId": 164,
+          "occurrences": 1
+        },
+        {
+          "groupId": 165,
+          "occurrences": 1
+        },
+        {
+          "groupId": 166,
+          "occurrences": 1
+        },
+        {
+          "groupId": 167,
+          "occurrences": 1
+        },
+        {
+          "groupId": 168,
+          "occurrences": 1
+        },
+        {
+          "groupId": 169,
+          "occurrences": 1
+        },
+        {
+          "groupId": 170,
+          "occurrences": 2
+        },
+        {
+          "groupId": 171,
+          "occurrences": 1
+        },
+        {
+          "groupId": 172,
+          "occurrences": 1
+        },
+        {
+          "groupId": 173,
+          "occurrences": 1
+        },
+        {
+          "groupId": 174,
+          "occurrences": 1
+        },
+        {
+          "groupId": 175,
+          "occurrences": 1
+        },
+        {
+          "groupId": 176,
+          "occurrences": 1
+        },
+        {
+          "groupId": 177,
+          "occurrences": 1
+        },
+        {
+          "groupId": 178,
+          "occurrences": 1
+        },
+        {
+          "groupId": 179,
+          "occurrences": 1
+        },
+        {
+          "groupId": 180,
+          "occurrences": 1
+        },
+        {
+          "groupId": 181,
+          "occurrences": 1
+        },
+        {
+          "groupId": 182,
+          "occurrences": 1
+        },
+        {
+          "groupId": 183,
+          "occurrences": 1
+        },
+        {
+          "groupId": 184,
+          "occurrences": 1
+        },
+        {
+          "groupId": 185,
+          "occurrences": 1
+        },
+        {
+          "groupId": 186,
+          "occurrences": 1
+        },
+        {
+          "groupId": 187,
+          "occurrences": 1
+        },
+        {
+          "groupId": 188,
+          "occurrences": 1
+        },
+        {
+          "groupId": 189,
+          "occurrences": 1
+        }
+      ],
+      "sourceUnchangedOutsideExactRanges": true,
+      "privateOriginalRecovery": {
+        "gitPath": "crays-platform/scripts/seed-erp-finance-workflow-source-slice.mjs",
+        "mode": "100644",
+        "gitBlobOID": "39f51e95ff3f868c52e5d882e3d05ae7634fd2cc",
+        "privateImmutableURL": "https://github.com/CraysWorld/crays-gym/blob/0dd822d7578dfffd55ff76eb8f37ae4c5f6f99ed/crays-platform/scripts/seed-erp-finance-workflow-source-slice.mjs",
+        "repository": "CraysWorld/crays-gym",
+        "repositoryId": 1280582408,
+        "commit": "0dd822d7578dfffd55ff76eb8f37ae4c5f6f99ed"
+      }
+    }
+  ],
+  "privatePatchRequired": true,
+  "algorithm": "Verify manifest/template/private-patch whole-file hashes, restore exact marker counts in memory, and require all four original sizes and SHA256s before returning bytes. The reference helper performs no storage writes or source execution.",
+  "privacyLimit": "Only selected identity/contact and direct person-linked financial/employment/payment/opportunity literal data are replaced. City/company labels, schema/logic, service-account businesscode and non-person financial rows are retained. Templates do not assert synthetic origin or actualruntimeaccepteddata.",
+  "originalDataOriginStillUnresolved": true,
+  "humanSeed24AttestationNotReused": true,
+  "protectedPublicationIndependentOfOptionalRawOriginAnswer": true,
+  "restorerLicense": {
+    "path": "restore-in-memory.py",
+    "spdx": "AGPL-3.0-only",
+    "copyright": "2026 CRAYS AG",
+    "scope": "Only the newly authored restoration helper; no grant on the four original/template programs or upstream dependencies.",
+    "fullLicenseRelativePath": "../../../services/clubs-commerce-bff/LICENSE",
+    "canonicalLicenseSHA256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  }
+}

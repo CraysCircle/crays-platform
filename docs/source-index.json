@@ -257,6 +257,10 @@
     {
       "component": "member-document-provider51-historical-revisions01-03",
       "path": "operations/member-document-provider51/historical-revisions01-03/source-capture.json"
+    },
+    {
+      "component": "shared-web-four-protected-operational-helpers",
+      "path": "source-archives/shared-web/four-protected-operational-helpers-20261109/source-template-map.json"
     }
   ]
 }

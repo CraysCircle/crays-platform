@@ -1,0 +1,616 @@
+import { existsSync, readFileSync } from "node:fs";
+import { resolve } from "node:path";
+import pg from "pg";
+
+const apply = process.argv.includes("--apply");
+const appRoot = resolve(import.meta.dirname, "..");
+
+const marketProfiles = {
+  "Amsterdam De Pijp": {
+    city: "Amsterdam",
+    district: "De Pijp",
+    country: "Netherlands",
+    address: "Ceintuurbaan 242, 1072 GE Amsterdam, Netherlands",
+    property: "Ceintuurbaan 242 Fitness Studio Lease",
+    owner: "De Pijp Vastgoed B.V.",
+    bank: "Amstel Commercial Finance N.V.",
+  },
+  "Austin Downtown": {
+    city: "Austin",
+    district: "Downtown",
+    country: "United States",
+    address: "Congress Avenue 515, Austin, TX 78701, United States",
+    property: "Congress Avenue 515 Studio Lease",
+    owner: "Lone Star Urban Properties LLC",
+    bank: "Hill Country Commercial Finance LLC",
+  },
+  "Barcelona Eixample": {
+    city: "Barcelona",
+    district: "Eixample",
+    country: "Spain",
+    address: "Carrer d'Arago 284, 08009 Barcelona, Spain",
+    property: "Carrer d'Arago 284 Fitness Studio Lease",
+    owner: "Eixample Habitat S.L.",
+    bank: "Mediterranean Business Finance S.A.",
+  },
+  "Berlin Mitte": {
+    city: "Berlin",
+    district: "Mitte",
+    country: "Germany",
+    address: "Friedrichstrasse 112, 10117 Berlin, Germany",
+    property: "Friedrichstrasse 112 Studio Lease",
+    owner: "Mitte Gewerbehof GmbH",
+    bank: "Spree Commercial Finance AG",
+  },
+  "Cayman Camana Bay": {
+    city: "George Town",
+    district: "Camana Bay",
+    country: "Cayman Islands",
+    address: "Market Street 18, Camana Bay, KY1-9006, Cayman Islands",
+    property: "Market Street 18 Studio Lease",
+    owner: "Camana Bay Retail Holdings Ltd.",
+    bank: "Caribbean Growth Finance Ltd.",
+  },
+  "Cologne Belgian Quarter": {
+    city: "Cologne",
+    district: "Belgian Quarter",
+    country: "Germany",
+    address: "Aachener Strasse 62, 50674 Cologne, Germany",
+    property: "Aachener Strasse 62 Studio Lease",
+    owner: "Belgisches Viertel Immobilien GmbH",
+    bank: "Rheinland Commercial Finance AG",
+  },
+  "Cyprus Limassol": {
+    city: "Limassol",
+    district: "Marina",
+    country: "Cyprus",
+    address: "Agiou Andreou 219, 3036 Limassol, Cyprus",
+    property: "Agiou Andreou 219 Fitness Studio Lease",
+    owner: "Limassol Marina Properties Ltd.",
+    bank: "Cyprus Growth Finance Ltd.",
+  },
+  "Dubai Marina": {
+    city: "Dubai",
+    district: "Marina",
+    country: "United Arab Emirates",
+    address: "Al Marsa Street 12, Dubai Marina, Dubai, United Arab Emirates",
+    property: "Al Marsa Street 12 Studio Lease",
+    owner: "Marina Fitness Properties LLC",
+    bank: "Gulf Commercial Finance LLC",
+  },
+  "Dublin Docklands": {
+    city: "Dublin",
+    district: "Docklands",
+    country: "Ireland",
+    address: "North Wall Quay 77, Dublin 1, Ireland",
+    property: "North Wall Quay 77 Studio Lease",
+    owner: "Docklands Retail Properties Ltd.",
+    bank: "Liffey Business Finance Ltd.",
+  },
+  "Dusseldorf Pempelfort": {
+    city: "Dusseldorf",
+    district: "Pempelfort",
+    country: "Germany",
+    address: "Nordstrasse 118, 40477 Dusseldorf, Germany",
+    property: "Nordstrasse 118 Studio Lease",
+    owner: "Pempelfort Gewerbeimmobilien GmbH",
+    bank: "Niederrhein Commercial Finance AG",
+  },
+  "Hamburg HafenCity": {
+    city: "Hamburg",
+    district: "HafenCity",
+    country: "Germany",
+    address: "Ueberseeallee 10, 20457 Hamburg, Germany",
+    property: "Ueberseeallee 10 Studio Lease",
+    owner: "HafenCity Quartier GmbH",
+    bank: "Elbe Commercial Finance AG",
+  },
+  "Leipzig Plagwitz": {
+    city: "Leipzig",
+    district: "Plagwitz",
+    country: "Germany",
+    address: "Karl-Heine-Strasse 93, 04229 Leipzig, Germany",
+    property: "Karl-Heine-Strasse 93 Studio Lease",
+    owner: "Plagwitz Loft Immobilien GmbH",
+    bank: "Sachsen Growth Finance AG",
+  },
+  "Lisbon Chiado": {
+    city: "Lisbon",
+    district: "Chiado",
+    country: "Portugal",
+    address: "Rua Garrett 42, 1200-203 Lisbon, Portugal",
+    property: "Rua Garrett 42 Studio Lease",
+    owner: "Chiado Retail Assets Lda.",
+    bank: "Tejo Commercial Finance S.A.",
+  },
+  "London Shoreditch": {
+    city: "London",
+    district: "Shoreditch",
+    country: "United Kingdom",
+    address: "Great Eastern Street 128, London EC2A 3JL, United Kingdom",
+    property: "Great Eastern Street 128 Studio Lease",
+    owner: "Shoreditch Urban Estates Ltd.",
+    bank: "Thames Commercial Finance Ltd.",
+  },
+  "Los Angeles Santa Monica": {
+    city: "Los Angeles",
+    district: "Santa Monica",
+    country: "United States",
+    address: "Lincoln Boulevard 1432, Santa Monica, CA 90401, United States",
+    property: "Lincoln Boulevard 1432 Studio Lease",
+    owner: "Pacific Retail Properties LLC",
+    bank: "West Coast Growth Finance LLC",
+  },
+  "Luxembourg Kirchberg": {
+    city: "Luxembourg",
+    district: "Kirchberg",
+    country: "Luxembourg",
+    address: "Avenue J.F. Kennedy 45, 1855 Luxembourg",
+    property: "Avenue J.F. Kennedy 45 Studio Lease",
+    owner: "Kirchberg Retail Properties S.A.",
+    bank: "Moselle Commercial Finance S.A.",
+  },
+  "Lyon Part-Dieu": {
+    city: "Lyon",
+    district: "Part-Dieu",
+    country: "France",
+    address: "Rue de la Villette 26, 69003 Lyon, France",
+    property: "Rue de la Villette 26 Studio Lease",
+    owner: "Part-Dieu Patrimoine S.A.S.",
+    bank: "Rhone Commercial Finance S.A.",
+  },
+  "Manchester Ancoats": {
+    city: "Manchester",
+    district: "Ancoats",
+    country: "United Kingdom",
+    address: "Great Ancoats Street 81, Manchester M4 5AG, United Kingdom",
+    property: "Great Ancoats Street 81 Studio Lease",
+    owner: "Ancoats Retail Estates Ltd.",
+    bank: "North West Growth Finance Ltd.",
+  },
+  "Miami Brickell": {
+    city: "Miami",
+    district: "Brickell",
+    country: "United States",
+    address: "Brickell Avenue 801, Miami, FL 33131, United States",
+    property: "Brickell Avenue 801 Studio Lease",
+    owner: "Brickell Wellness Properties LLC",
+    bank: "Atlantic Commercial Finance LLC",
+  },
+  "Milan Porta Nuova": {
+    city: "Milan",
+    district: "Porta Nuova",
+    country: "Italy",
+    address: "Via Melchiorre Gioia 8, 20124 Milan, Italy",
+    property: "Via Melchiorre Gioia 8 Studio Lease",
+    owner: "Porta Nuova Retail S.r.l.",
+    bank: "Lombardia Business Finance S.p.A.",
+  },
+  "Munich Schwabing": {
+    city: "Munich",
+    district: "Schwabing",
+    country: "Germany",
+    address: "Leopoldstrasse 87, 80802 Munich, Germany",
+    property: "Leopoldstrasse 87 Studio Lease",
+    owner: "Schwabing Atrium Immobilien GmbH",
+    bank: "Isar Commercial Finance AG",
+  },
+  "New York Williamsburg": {
+    city: "New York",
+    district: "Williamsburg",
+    country: "United States",
+    address: "Bedford Avenue 186, Brooklyn, NY 11249, United States",
+    property: "Bedford Avenue 186 Studio Lease",
+    owner: "Brooklyn Wellness Properties LLC",
+    bank: "Hudson Commercial Finance LLC",
+  },
+  "Oslo Grunerlokka": {
+    city: "Oslo",
+    district: "Grunerlokka",
+    country: "Norway",
+    address: "Thorvald Meyers gate 59, 0552 Oslo, Norway",
+    property: "Thorvald Meyers gate 59 Studio Lease",
+    owner: "Grunerlokka Eiendom AS",
+    bank: "Fjord Commercial Finance AS",
+  },
+  "Palma Santa Catalina": {
+    city: "Palma",
+    district: "Santa Catalina",
+    country: "Spain",
+    address: "Carrer de Sant Magi 76, 07013 Palma, Spain",
+    property: "Carrer de Sant Magi 76 Studio Lease",
+    owner: "Santa Catalina Retail S.L.",
+    bank: "Balearic Growth Finance S.A.",
+  },
+  "Paris Bastille": {
+    city: "Paris",
+    district: "Bastille",
+    country: "France",
+    address: "Rue du Faubourg Saint-Antoine 64, 75012 Paris, France",
+    property: "Rue du Faubourg Saint-Antoine 64 Studio Lease",
+    owner: "Bastille Patrimoine S.A.S.",
+    bank: "Seine Commercial Finance S.A.",
+  },
+  "Prague Karlin": {
+    city: "Prague",
+    district: "Karlin",
+    country: "Czech Republic",
+    address: "Krizikova 52, 186 00 Prague, Czech Republic",
+    property: "Krizikova 52 Studio Lease",
+    owner: "Karlin Retail Properties s.r.o.",
+    bank: "Vltava Commercial Finance a.s.",
+  },
+  "Rome Prati": {
+    city: "Rome",
+    district: "Prati",
+    country: "Italy",
+    address: "Via Cola di Rienzo 212, 00192 Rome, Italy",
+    property: "Via Cola di Rienzo 212 Studio Lease",
+    owner: "Prati Urban Properties S.r.l.",
+    bank: "Tevere Commercial Finance S.p.A.",
+  },
+  "Singapore Tanjong Pagar": {
+    city: "Singapore",
+    district: "Tanjong Pagar",
+    country: "Singapore",
+    address: "Tanjong Pagar Road 88, Singapore 088509",
+    property: "Tanjong Pagar Road 88 Studio Lease",
+    owner: "Tanjong Pagar Retail Holdings Pte. Ltd.",
+    bank: "Harbour Commercial Finance Pte. Ltd.",
+  },
+  "Stockholm Sodermalm": {
+    city: "Stockholm",
+    district: "Sodermalm",
+    country: "Sweden",
+    address: "Gotgatan 78, 118 30 Stockholm, Sweden",
+    property: "Gotgatan 78 Studio Lease",
+    owner: "Sodermalm Fastigheter AB",
+    bank: "Baltic Commercial Finance AB",
+  },
+  "Toronto Liberty Village": {
+    city: "Toronto",
+    district: "Liberty Village",
+    country: "Canada",
+    address: "East Liberty Street 85, Toronto, ON M6K 3R4, Canada",
+    property: "East Liberty Street 85 Studio Lease",
+    owner: "Liberty Village Properties Inc.",
+    bank: "Maple Commercial Finance Inc.",
+  },
+  "Vancouver Yaletown": {
+    city: "Vancouver",
+    district: "Yaletown",
+    country: "Canada",
+    address: "Hamilton Street 1055, Vancouver, BC V6B 5T4, Canada",
+    property: "Hamilton Street 1055 Studio Lease",
+    owner: "Yaletown Urban Properties Inc.",
+    bank: "Pacific North Commercial Finance Inc.",
+  },
+  "Vienna Neubau": {
+    city: "Vienna",
+    district: "Neubau",
+    country: "Austria",
+    address: "Mariahilfer Strasse 71, 1060 Vienna, Austria",
+    property: "Mariahilfer Strasse 71 Studio Lease",
+    owner: "Neubau Gewerbeimmobilien GmbH",
+    bank: "Danube Commercial Finance AG",
+  },
+  "Warsaw Wola": {
+    city: "Warsaw",
+    district: "Wola",
+    country: "Poland",
+    address: "Prosta 51, 00-838 Warsaw, Poland",
+    property: "Prosta 51 Studio Lease",
+    owner: "Wola Retail Properties Sp. z o.o.",
+    bank: "Vistula Commercial Finance S.A.",
+  },
+  "Zug Metalli": {
+    city: "Zug",
+    district: "Metalli",
+    country: "Switzerland",
+    address: "Baarerstrasse 22, 6300 Zug, Switzerland",
+    property: "Baarerstrasse 22 Studio Lease",
+    owner: "Metalli Gewerbeimmobilien AG",
+    bank: "Alpine Commercial Finance AG",
+  },
+  "Zurich Oerlikon": {
+    city: "Zurich",
+    district: "Oerlikon",
+    country: "Switzerland",
+    address: "Thurgauerstrasse 36, 8050 Zurich, Switzerland",
+    property: "Thurgauerstrasse 36 Studio Lease",
+    owner: "Oerlikon Gewerbeimmobilien AG",
+    bank: "Limmat Commercial Finance AG",
+  },
+};
+
+marketProfiles["George Town Camana Bay"] = marketProfiles["Cayman Camana Bay"];
+marketProfiles["Limassol Marina"] = marketProfiles["Cyprus Limassol"];
+
+const accountProfiles = [
+  ["CRAYS_PROTECTED_TEXT_0005", "CRAYS_PROTECTED_TEXT_0006", "CRAYS_PROTECTED_TEXT_0007"],
+  ["CRAYS_PROTECTED_TEXT_0008", "CRAYS_PROTECTED_TEXT_0009", "CRAYS_PROTECTED_TEXT_0010"],
+  ["CRAYS_PROTECTED_TEXT_0011", "CRAYS_PROTECTED_TEXT_0012", "CRAYS_PROTECTED_TEXT_0013"],
+  ["CRAYS_PROTECTED_TEXT_0014", "CRAYS_PROTECTED_TEXT_0015", "CRAYS_PROTECTED_TEXT_0016"],
+  ["bench_crays_benchmark_20260710_v1_account_system", "CRAYS Operations Service", "CRAYS_PROTECTED_TEXT_0017"],
+  ["CRAYS_PROTECTED_TEXT_0004", "CRAYS_PROTECTED_TEXT_0003", "CRAYS_PROTECTED_TEXT_0002"],
+  ["CRAYS_PROTECTED_TEXT_0018", "CRAYS_PROTECTED_TEXT_0019", "CRAYS_PROTECTED_TEXT_0020"],
+  ["CRAYS_PROTECTED_TEXT_0021", "CRAYS_PROTECTED_TEXT_0022", "CRAYS_PROTECTED_TEXT_0023"],
+  ["CRAYS_PROTECTED_TEXT_0024", "CRAYS_PROTECTED_TEXT_0025", "CRAYS_PROTECTED_TEXT_0026"],
+  ["CRAYS_PROTECTED_TEXT_0027", "CRAYS_PROTECTED_TEXT_0028", "CRAYS_PROTECTED_TEXT_0029"],
+  ["CRAYS_PROTECTED_TEXT_0030", "CRAYS_PROTECTED_TEXT_0031", "CRAYS_PROTECTED_TEXT_0032"],
+];
+
+const organizationProfiles = [
+  ["bench_crays_benchmark_20260710_v1_org_org_0014", "Adler Fitness Beteiligungs GmbH", "franchise-partner", "active"],
+];
+
+function loadEnv() {
+  for (const filename of [".env.local", ".env"]) {
+    const filePath = resolve(appRoot, filename);
+    if (!existsSync(filePath)) continue;
+    for (const line of readFileSync(filePath, "utf8").split(/\r?\n/)) {
+      const match = line.match(/^\s*([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*)\s*$/);
+      if (!match || process.env[match[1]]) continue;
+      let value = match[2];
+      if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
+        value = value.slice(1, -1);
+      }
+      process.env[match[1]] = value;
+    }
+  }
+}
+
+function poolConfig() {
+  const connectionString = process.env.CRAYS_DATABASE_URL;
+  if (!connectionString) throw new Error("CRAYS_DATABASE_URL is required.");
+  const ssl =
+    process.env.CRAYS_DATABASE_SSL === "disable"
+      ? undefined
+      : { rejectUnauthorized: process.env.CRAYS_DATABASE_SSL_REJECT_UNAUTHORIZED !== "false" };
+  return {
+    connectionString,
+    ssl,
+    options: "-c crays.app_role=core_service",
+    max: 3,
+  };
+}
+
+function cleanMarket(title) {
+  return String(title || "").replace(/^Prepared Franchise Deal -\s*/i, "").trim();
+}
+
+function uniquePropertyName(base, index) {
+  if (index === 0) return base;
+  const suffixes = ["North Unit", "South Unit", "Annex", "Corner Unit"];
+  return `${base} ${suffixes[index % suffixes.length]}`;
+}
+
+async function main() {
+  loadEnv();
+  if (apply && process.env.CONFIRM_CRAYS_GOLDEN_TEST_DATA !== "APPLY_CORE_GOLDEN_TEST_DATA") {
+    throw new Error("Set CONFIRM_CRAYS_GOLDEN_TEST_DATA=APPLY_CORE_GOLDEN_TEST_DATA before applying Core golden test data repairs.");
+  }
+
+  const pool = new pg.Pool(poolConfig());
+  const client = await pool.connect();
+  try {
+    const rowsResult = await client.query(`
+      select
+        po.offer_id,
+        po.title as offer_title,
+        po.market,
+        pc.case_id as property_case_id,
+        p.property_id,
+        p.owner_organization_id,
+        d.deal_id,
+        bp.package_id as bank_package_id,
+        bp.bank_partner_organization_id
+      from crays_core.prepared_offers po
+      left join crays_core.property_cases pc on pc.case_id = po.property_case_id
+      left join crays_core.properties p on p.property_id = pc.property_id
+      left join crays_core.deals d on d.prepared_offer_id = po.offer_id
+      left join crays_core.bank_packages bp on bp.deal_id = d.deal_id
+      where po.offer_id like 'bench_crays_benchmark_%'
+      order by po.offer_id
+    `);
+
+    const marketCounts = new Map();
+    const updates = {
+      offers: 0,
+      properties: 0,
+      ownerOrganizations: 0,
+      bankOrganizations: 0,
+      accounts: 0,
+      partnerOrganizations: 0,
+      coreOrganization: 0,
+    };
+    const preview = [];
+
+    if (apply) await client.query("begin");
+
+    if (apply) {
+      const orgResult = await client.query(
+        `
+          update crays_core.organizations
+          set name = 'CRAYS Operating Company',
+              organization_type = 'crays',
+              status = 'active'
+          where organization_id = 'bench_crays_benchmark_20260710_v1_org_crays_core'
+             or name = 'CRAYS Benchmark Core'
+        `,
+      );
+      updates.coreOrganization = orgResult.rowCount ?? 0;
+    }
+
+    for (const [accountId, displayName, primaryContact] of accountProfiles) {
+      if (apply) {
+        const result = await client.query(
+          `
+            update crays_core.crays_accounts
+            set display_name = $2,
+                primary_contact = $3
+            where account_id = $1
+          `,
+          [accountId, displayName, primaryContact],
+        );
+        updates.accounts += result.rowCount ?? 0;
+      } else {
+        updates.accounts += 1;
+      }
+    }
+
+    for (const [organizationId, name, organizationType, status] of organizationProfiles) {
+      if (apply) {
+        const result = await client.query(
+          `
+            update crays_core.organizations
+            set name = $2,
+                organization_type = $3,
+                status = $4
+            where organization_id = $1
+          `,
+          [organizationId, name, organizationType, status],
+        );
+        updates.partnerOrganizations += result.rowCount ?? 0;
+      } else {
+        updates.partnerOrganizations += 1;
+      }
+    }
+
+    for (const row of rowsResult.rows) {
+      const market = cleanMarket(row.offer_title);
+      const profile = marketProfiles[market];
+      if (!profile) {
+        throw new Error(`Missing market profile for ${market}`);
+      }
+      const duplicateIndex = marketCounts.get(market) ?? 0;
+      marketCounts.set(market, duplicateIndex + 1);
+      const propertyTitle = uniquePropertyName(profile.property, duplicateIndex);
+      const offerTitle = `Prepared Franchise Deal - ${profile.city} ${profile.district}`;
+
+      preview.push({
+        offerId: row.offer_id,
+        offerTitle,
+        propertyTitle,
+        owner: profile.owner,
+        bank: profile.bank,
+      });
+
+      if (!apply) {
+        updates.offers += 1;
+        updates.properties += row.property_id ? 1 : 0;
+        updates.ownerOrganizations += row.owner_organization_id ? 1 : 0;
+        updates.bankOrganizations += row.bank_partner_organization_id ? 1 : 0;
+        continue;
+      }
+
+      const offerResult = await client.query(
+        `
+          update crays_core.prepared_offers
+          set title = $2,
+              market = $3,
+              metadata = coalesce(metadata, '{}'::jsonb) || jsonb_build_object(
+                'displayMarket', $3::text,
+                'testDataQuality', 'golden_realistic',
+                'stakeholderDataReady', true
+              )
+          where offer_id = $1
+        `,
+        [row.offer_id, offerTitle, `${profile.city} ${profile.district}`],
+      );
+      updates.offers += offerResult.rowCount ?? 0;
+
+      if (row.property_id) {
+        const propertyResult = await client.query(
+          `
+            update crays_core.properties
+            set title = $2,
+                address_summary = $3,
+                city = $4,
+                country = $5,
+                metadata = coalesce(metadata, '{}'::jsonb) || jsonb_build_object(
+                  'district', $6::text,
+                  'displayAddress', $3::text,
+                  'testDataQuality', 'golden_realistic'
+                )
+            where property_id = $1
+          `,
+          [row.property_id, propertyTitle, profile.address, profile.city, profile.country, profile.district],
+        );
+        updates.properties += propertyResult.rowCount ?? 0;
+      }
+
+      if (row.owner_organization_id) {
+        const ownerResult = await client.query(
+          `
+            update crays_core.organizations
+            set name = $2,
+                organization_type = 'landlord',
+                status = 'review'
+            where organization_id = $1
+          `,
+          [row.owner_organization_id, profile.owner],
+        );
+        updates.ownerOrganizations += ownerResult.rowCount ?? 0;
+      }
+
+      if (row.bank_partner_organization_id) {
+        const bankResult = await client.query(
+          `
+            update crays_core.organizations
+            set name = $2,
+                organization_type = 'bank',
+                status = 'review'
+            where organization_id = $1
+          `,
+          [row.bank_partner_organization_id, profile.bank],
+        );
+        updates.bankOrganizations += bankResult.rowCount ?? 0;
+      }
+    }
+
+    const genericResult = apply
+      ? await client.query(`
+          select 'generic_owner_organizations' label, count(*)::int value from crays_core.organizations where name ~ '^Owner Organization [0-9]+'
+          union all select 'generic_bank_organizations', count(*)::int from crays_core.organizations where name ~ '^Bank Partner [0-9]+'
+          union all select 'benchmark_property_titles', count(*)::int from crays_core.properties where title like 'Benchmark Property - %'
+          union all select 'generic_candidate_accounts', count(*)::int from crays_core.crays_accounts where display_name ~ '^Franchise Candidate [0-9]+'
+          union all select 'numbered_partner_organizations', count(*)::int from crays_core.organizations where name ~ 'Partner [0-9]{3}$'
+        `)
+      : { rows: [] };
+
+    if (apply) await client.query("commit");
+
+    console.log(
+      JSON.stringify(
+        {
+          mode: apply ? "applied" : "dry_run",
+          affected: updates,
+          sampledRecords: preview.slice(0, 8),
+          remainingGenericCounts: genericResult.rows,
+          gates: {
+            releasesEnabled: false,
+            externalSendingEnabled: false,
+            sourceWritesEnabled: false,
+            syncApplyEnabled: false,
+            targetApplyEnabled: false,
+            secretsReturned: false,
+          },
+        },
+        null,
+        2,
+      ),
+    );
+  } catch (error) {
+    if (apply) await client.query("rollback").catch(() => undefined);
+    throw error;
+  } finally {
+    client.release();
+    await pool.end();
+  }
+}
+
+main().catch((error) => {
+  console.error(error instanceof Error ? error.message : error);
+  process.exit(1);
+});
