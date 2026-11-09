@@ -225,6 +225,10 @@
     {
       "component": "historical-nostr-broker-member-provider-original",
       "path": "source-archives/nostr-broker/provider-deployment-9Bw2a9ACdj6YJGzqPTtSBcmTZA5T/web/source-capture.json"
+    },
+    {
+      "component": "member-document-provider-selector51",
+      "path": "services/member-club/source51/source-capture.json"
     }
   ]
 }

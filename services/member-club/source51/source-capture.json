@@ -1,0 +1,58 @@
+{
+  "schema": "crays.member-document51.provider-selector-source-capture.v1",
+  "sourceOnly": true,
+  "originalFiles": 1,
+  "originalBytes": 2090,
+  "files": [
+    {
+      "path": "services/member-club/source51/member073-native-provider-binding.ts",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/document-provider-aws51-source01/member073-native-provider-binding.candidate.ts",
+      "originalBasename": "member073-native-provider-binding.candidate.ts",
+      "bytes": 2090,
+      "sha256": "2f03b4fa91e784230772849baba55fe3765e3d56e0a0ca848e8cdd4c3c7ede51",
+      "representation": "unchanged-original",
+      "restoration": {
+        "targetRelativeToOriginalApplicationRoot": "src/lib/clubs/member073-native-provider-binding.ts",
+        "bytes": 2090,
+        "sha256": "2f03b4fa91e784230772849baba55fe3765e3d56e0a0ca848e8cdd4c3c7ede51",
+        "noRuntimeOverlayAuthorized": true
+      }
+    }
+  ],
+  "sourcePeer": {
+    "path": "/srv/crays/migration-work/20261109/root/document-provider-aws51-source01/INDEPENDENT_DOCUMENT51_PROVIDER_SELECTOR_SOURCE_REVIEW.json",
+    "sha256": "bd7c668b5f412018a50b4af1ff1aba58d5ffaf12f3b96e3863946861ef18c623",
+    "status": "PASS_SOURCE_ONLY_INDEPENDENT_DOCUMENT51_PROVIDER_SELECTOR_REVIEW",
+    "findings": 0,
+    "scope": "Narrow selector source review; baseline and unchanged handler/provider hashes are supplied by this receipt, not independently recaptured by this packet."
+  },
+  "lineageReportedBySourcePeer": {
+    "originalSHA256": "8ef51fad36b40c519d373e56c9eebab2f458aecbb422c7506f804f257ec00c0e",
+    "unchangedHandlers": {
+      "/srv/crays/releases/member-original-context46-20261109-01/app/src/lib/clubs/member-native-document-handler.ts": "a9c2705a10fec87333f6e03236232958a4b9facf09c2d17cb513c788a47ede21",
+      "/srv/crays/releases/member-original-context46-20261109-01/app/src/lib/clubs/member-nextcloud-document-provider.ts": "f4aa7c6e28cc72d0303174425706e350d98cc87887c84f9209b4ed18e0cb8d48"
+    },
+    "existingPureChecks": {
+      "checks": 249,
+      "path": "/srv/crays/migration-work/20261109/root/document-provider-aws51-source01/UNIT_DOCUMENT51_ACTUAL.json",
+      "rerun": false,
+      "sha256": "a5021e36291f7b23b9f601a46059c568985366bdda6c093a423aac5b274c6cd2",
+      "testSHA256": "1db1466d2e67df0cd6d7cfcef7bf99297718942e8e736195bf69d621d6593281"
+    },
+    "sourceManifestSHA256": "5cd090a0071dca1bb41117c1fef16796d04e8838ea89d7578e59e04de61c5d4b"
+  },
+  "exactChange": "Document-only compatibility branch for backend aws-member-v1 with native-provider binding strictly undefined. Original document target/host predicates and generic/Vendure/ERP selectors preserved per pinned review.",
+  "dependenciesNotIncluded": [
+    "server-only",
+    "local member-xxl-customer-provider-admission module",
+    "unchanged document handler and DAV provider",
+    "complete matching Next application/dependency/build composition"
+  ],
+  "requiresNewCompleteNextBundle": true,
+  "runtimeDeliveryByTSFileAloneClaimed": false,
+  "privateEnvironmentPrincipalAdmissionOrCustomerBodiesIncluded": false,
+  "sourceOrTestsExecutedDuringPreservation": false,
+  "newBuildOrRuntimeOrCustomerAcceptanceClaimed": false,
+  "originalNoticeRemoved": false,
+  "newLicenseGrant": false
+}
