@@ -1,9 +1,10 @@
 {
-  "atUTC": "2026-11-09T02:46:22.916608+00:00",
-  "sourceCommit": "81ddce57809f0daff06eba3770c0442fb873bf17",
-  "sourceTag": "personal-build-inputs-source-20261109",
-  "anonymousPublicFilesSHA256AndSizeVerified": 25,
-  "originalFilesRestoredAndIndependentlyCompared": 2975,
+  "atUTC": "2026-11-09T03:18:03.712088+00:00",
+  "sourceCommit": "4c66ad69ba3e6745e58feb12b5a9f61005301a05",
+  "sourceTag": "personal-generated-images-source-20261109",
+  "newChangedPublicFilesAnonymousVerified": 15,
+  "completePublishedPersonalDirectoryFilesAnonymousVerified": 1535,
+  "all2975OriginalAndCandidateFileComparisons": true,
   "views": [
     {
       "version": "baseline",
@@ -16,12 +17,12 @@
       "sourceProgramsExecuted": false
     }
   ],
-  "ownerProtectedInputsRequired": true,
-  "sourceImageBodiesFromGitHub": 4,
-  "remainingOwnerSuppliedImageBodies": 50,
-  "sourceProgramsExecuted": false,
+  "originalPublicImageInputPaths": 11,
+  "newGeneratedOriginalImageBodies": 7,
+  "remainingOwnerSuppliedImageInputPaths": 43,
+  "pendingDistinctImageBodies": 40,
+  "protectedOwnerSourceBindingRequired": true,
+  "originalSourceProgramsExecuted": false,
   "buildRepeated": false,
-  "allSourceLicenseRuntimeAndRecoveryClosure": false,
-  "previousUnchangedPublicFilesReverified": 1510,
-  "allCurrentAndPriorSelectedPublicFileComparisons": 1535
+  "fullRuntimeRightsAndRecoveryClosure": false
 }
