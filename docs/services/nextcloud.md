@@ -35,6 +35,8 @@ The [Purpose52 source archive](../../operations/nextcloud-access-purpose52/READM
 
 Two SQL files are protected source views; the TypeScript pool and function-pin record are unchanged originals. [The capture map](../../operations/nextcloud-access-purpose52/source-capture.json) identifies exact private original recovery, and the [CRAYS AG AGPL-3.0-only grant](../../operations/nextcloud-access-purpose52/LICENSING.md) covers only these four own revisions. These sources activate neither SQL nor SSO and prove no complete access journey. Existing provider adapters, Nextcloud Server/apps and their upstream terms remain separate.
 
+The [correction history](../../operations/nextcloud-access-purpose45-history/README.md) preserves the two historical SQL/pool changes leading to Purpose52 under their own scoped license; the SQL diff protects account bindings, while the earlier SQL/pool originals remain privately recoverable with unresolved authorship.
+
 ## Development and contributions
 
 Read the [shared web development guide](../../apps/web/README.md) and identify the relevant source composition first. The transport and provider boundaries can be exercised with injected synthetic responses; no customer documents or live credentials are needed in test fixtures.
