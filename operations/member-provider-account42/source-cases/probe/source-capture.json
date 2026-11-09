@@ -1,0 +1,17 @@
+{
+  "schema": "crays.member42.anonymous-probe.source-capture.v1",
+  "path": "operations/member-provider-account42/source-cases/probe/member26-original-anonymous-auth0-probe.cjs",
+  "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-provider-account42-install-source01/member26-original-anonymous-auth0-probe.cjs",
+  "bytes": 3522,
+  "sha256": "9533a8389df91206ddfc51ab1218a531823fd25c9dd82c1474fcb6308760554c",
+  "originalMode": "0o400",
+  "sourceVersion": "Named historical Member26 anonymous probe preserved as a bound Member42 coordinator input; source pin does not prove execution.",
+  "matchingCoordinatorSourceSHA256": "9533a8389df91206ddfc51ab1218a531823fd25c9dd82c1474fcb6308760554c",
+  "sourceBodyPreservedUnchanged": true,
+  "sourcePrivacyVerdict": "No identified fixed private subject/token/cookie/customer/runtime-policy source literal requiring redaction. Public provider endpoint validators and private-input pathnames alone are not secret values.",
+  "runtimeInputsNotIncludedOrRead": true,
+  "sourceNotExecuted": true,
+  "vendorCodeNotIncluded": true,
+  "noNewLicenseAssigned": true,
+  "independentReviewRequired": true
+}

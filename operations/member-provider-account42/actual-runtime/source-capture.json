@@ -1,0 +1,56 @@
+{
+  "schema": "crays.member42.actual-runtime-two-source-capture.v1",
+  "sourceRole": "Two exact original operations sources from the actual recorded Member42 release; source preservation, not execution or a new deployment.",
+  "files": [
+    {
+      "path": "operations/member-provider-account42/actual-runtime/member_rds_runtime_boot.cjs",
+      "originalSourcePath": "/srv/crays/releases/member-provider-account42-20261109-01/member-code/member_rds_runtime_boot.cjs",
+      "bytes": 1364,
+      "sha256": "76f74910dc11bc9ca9c00c3599bbee0073b0298c4bbd1e0d2b9f242f3bc8e2e1",
+      "originalMode": "0o400",
+      "originalBodyPreservedUnchanged": true,
+      "existingOriginal26ReferenceIndependentlyLocated": false
+    },
+    {
+      "path": "operations/member-provider-account42/actual-runtime/serve_exact_member42_common_currentness.py",
+      "originalSourcePath": "/srv/crays/releases/member-provider-account42-20261109-01/witness-currentness42/serve_exact_member42_common_currentness.py",
+      "bytes": 8950,
+      "sha256": "95b381ef86afec2efe4ab785cfd4cbc25008089aaadf918057147d7a5e3312cf",
+      "originalMode": "0o444",
+      "originalBodyPreservedUnchanged": true,
+      "existingOriginal26ReferenceIndependentlyLocated": false
+    }
+  ],
+  "recordedReleaseRoot": "/srv/crays/releases/member-provider-account42-20261109-01",
+  "rootAdoptionReceipt": {
+    "rootReceiptPath": "/srv/crays/acceptance/member42-family-adoption-20261109-01/RESULT_ACTUAL.json",
+    "sha256": "813a9a412fcf552afbd0f1152b1e7b8a354af65bb9a216a6fdb0126fb61bd5c5",
+    "bytes": 1848,
+    "contentsNotPrintedOrPublished": true
+  },
+  "rootReportedApplicationSourceCommit": "c6122b268ccd499e20eb3ec186e05fdcb5a65ea6",
+  "modificationProvenance": {
+    "authority": "Root statement supplied to this GitHub preservation task",
+    "reportedBootChange": "Original BUILD_ID26 binding updated to42.",
+    "reportedCurrentnessChanges": "Original26 member CID and ExecStart path updated to actual42 values; validators retained.",
+    "independentlyComputedWholeOriginal26Diff": false,
+    "limit": "The bounded existing docs/operations source-map lookup and two filename-targeted index lookups did not locate an independently pinned public original26 body. The Root statement is recorded separately from exact capture/hash facts; no broader delta-equivalence claim is made."
+  },
+  "sourceAndNoticeScope": {
+    "rootDeclaredOwnPublicDerivatives": true,
+    "originalInlineLicenseOrCopyrightNoticeFound": false,
+    "newLicenseTextAssigned": false,
+    "otherApplicationOrThirdPartyRightsUnchanged": true,
+    "notGlobalLegalCompliance": true
+  },
+  "review": {
+    "onlyExactTwoOriginalSourcesRead": true,
+    "pinnedRootMetadataOnlyRead": true,
+    "privateAuthConfigEnvPrincipalPoliciesCookiesCustomersNotRead": true,
+    "obviousStaticSecretPatternFlags": 0,
+    "pythonAstSyntaxParsed": true,
+    "sourceNotExecuted": true,
+    "runtimeNotInspectedOrChanged": true,
+    "independentParentReviewRequiredBeforePublication": true
+  }
+}

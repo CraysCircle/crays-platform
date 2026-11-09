@@ -157,6 +157,14 @@
     {
       "component": "member-provider-account42",
       "path": "services/member-identity/provider-account/source-capture.json"
+    },
+    {
+      "component": "member42-actual-runtime",
+      "path": "operations/member-provider-account42/actual-runtime/source-capture.json"
+    },
+    {
+      "component": "member42-installation-source-versions",
+      "path": "operations/member-provider-account42/source-cases/source-versions.json"
     }
   ]
 }
