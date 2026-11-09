@@ -32,3 +32,14 @@ The native @rolldown/binding-linux-x64-gnu1.1.5 package declares MIT in metadata
 The original build helper remains in the input capture. Source capture/build/stage/adoption controllers are archived separately under operations/member-origin35 with their original paths and preconditions. Publication does not execute or authorize them. This task did not repeat the successful owner build or change any runtime.
 
 Common-shell/backend integration, current images and full protected operating recovery are separate. Original code and notices are preserved; no blanket application license or complete legal acceptance is inferred.
+
+## Source-level component relationship
+
+```mermaid
+flowchart LR
+  Shell["Common shell"] --> Module["Club/Member browser module"]
+  Module -->|"provider/account read"| API["Member Next provider/account API"]
+  API --> Identity["Original identity/provider services"]
+```
+
+This describes source responsibilities; current cross-service runtime acceptance remains separate. The [anonymous GitHub readback](github-readback.json) confirms all 222 published file blobs and both complete restored source views.

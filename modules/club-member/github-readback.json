@@ -1,0 +1,16 @@
+{
+  "schema": "crays.anonymous-module-source-readback.v1",
+  "sourceCommit": "def37d293076d098dbdb902a2b1588773e2a71c8",
+  "sourceTag": "club-member-module-origin35-source-20261109",
+  "verifiedAtUTC": "2026-11-09T02:04:47.471438+00:00",
+  "anonymousHTTPSCloneWithoutCredentialsOrLocalAlternates": true,
+  "newOrChangedPublicBlobsSHA256AndSizesVerified": 222,
+  "originalViewFilesRestored": 133,
+  "origin35ViewFilesRestored": 133,
+  "all266OriginalRestorationComparisonsPassed": true,
+  "restorationUsesPublicSourceAndSeparatelyProtectedOwnerInput": true,
+  "rawProtectedInputIncludedInNewPublicExport": false,
+  "preservedProgramsExecuted": false,
+  "newBuildOrRuntimeMutation": false,
+  "fullRuntimeAndLicenseClosure": false
+}

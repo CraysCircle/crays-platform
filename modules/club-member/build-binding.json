@@ -63,5 +63,7 @@
     "x-CcgbWEuX.mjs": "3d95f9f6f7ab1326f929ffe658530c12bebdaaff271f462615f367ef8e592f7d"
   },
   "newBuildByThisTask": false,
-  "runtimeAdoptionAndCustomerAcceptance": false
+  "runtimeAdoptionEstablishedByThisSourceRecord": false,
+  "customerAcceptanceEstablishedByThisSourceRecord": false,
+  "anonymousSourceReadbackEvidence": "github-readback.json"
 }
