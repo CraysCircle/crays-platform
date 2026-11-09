@@ -198,7 +198,7 @@
     }
   ],
   "fileVersions": 13,
-  "distinctNamedPrograms": 12,
+  "distinctNamedPrograms": 11,
   "originalBytes": 151525,
   "sourceVersionDistinction": "Capture of current named files plus explicitly bound historical preimages; none is claimed executed solely because it appears in a source manifest.",
   "projectorPinReconciliation": {
@@ -235,5 +235,36 @@
     "notExecutedDuringCaptureOrReview": true,
     "protectedInputBodiesNotRead": true
   },
-  "compositionReaderStatus": "This file enumerates the unchanged13-version subpacket. The separately linked probe adds one original version, for14explicitoperations source versions in the combined source archive. It does not change which original bodies this manifest enumerates."
+  "compositionReaderStatus": "This file enumerates 13 original source versions for 11 named install/ingress programs, including two earlier revisions. The separately linked probe adds one version and one program: 14 versions for 12 operations programs. Together with the two separately captured actual runtime wrappers, the combined publication contains 16 versions for 14 programs and 165361 original bytes. The files array here remains the unchanged 13-version subpacket.",
+  "programCountingModel": {
+    "definition": "Each of the 11 captured named install/ingress program paths counts once; two separately retained earlier revisions belong to two of those same programs. Count versions separately from programs.",
+    "namedInstallPrograms": 8,
+    "namedIngressPrograms": 3,
+    "historicalAdditionalVersions": 2,
+    "historicalVersionPairs": [
+      {
+        "program": "install/project_exact_member42_successor_payloads.candidate.py",
+        "earlierVersion": "preimages/install/project_exact_member42_successor_payloads.before-sdk-mirror.py"
+      },
+      {
+        "program": "install/stage_exact_completed_member42_release.candidate.py",
+        "earlierVersion": "preimages/install/stage_exact_completed_member42_release.before-common-mode-fix.py"
+      }
+    ],
+    "thisSubpacket": {
+      "sourceVersions": 13,
+      "distinctPrograms": 11,
+      "sourceBytes": 151525
+    },
+    "withSeparateProbe": {
+      "sourceVersions": 14,
+      "distinctPrograms": 12,
+      "sourceBytes": 155047
+    },
+    "withSeparateProbeAndTwoActualRuntimeWrappers": {
+      "sourceVersions": 16,
+      "distinctPrograms": 14,
+      "sourceBytes": 165361
+    }
+  }
 }

@@ -1,6 +1,6 @@
 # Member42 installation, coordination and ingress source versions
 
-This archive keeps the exact source versions explicitly bound by the Member42 installation, family-coordination and ingress source manifests. It adds 12 named operations programs and one historical projector preimage to the separately captured runtime boot/currentness sources. Reading this archive does not run those programs or authorize a runtime change.
+This archive keeps the exact source versions explicitly bound by the Member42 installation, family-coordination and ingress source manifests. It preserves 13 original source versions for 11 named operations programs: eight installation/coordination programs and three ingress programs, plus two earlier revisions of the projector and release-staging programs. The separately linked probe adds one version and one program. Including the two separately captured runtime boot/currentness wrappers, the combined publication has 16 original versions for 14 programs (165,361 bytes). Reading this archive does not run those programs or authorize a runtime change.
 
 ## Find the right version
 
