@@ -32,3 +32,7 @@ The four shared-account source revisions match the original Platform paths recor
 ## Frappe Team Scope original package metadata
 
 The preserved [crays_team_scope 0.1.0 source](services/frappe/custom-apps/crays_team_scope/README.md) declares publisher CRAYS and app_license = "MIT" in its unchanged original hook. No standalone LICENSE, NOTICE or copyright-grant file occurs in the exact nine-member source archive. This publication preserves that evidence and adds no replacement grant; it does not apply the AGPL grants for other CRAYS files to this package. The original notice text and the complete external Frappe/dependency obligations remain to be reconciled.
+
+## Member/Main and Common Source46 candidate
+
+The [Source46 provenance and licensing notes](services/member-identity/provider-account/source46/README.md#licensing-and-provenance) identify the fourteen selected application, Common, test and patch revisions, including two exact-recovery templates protecting internal account bindings. The original Source42 sources remain retained. The separately scoped Source42 operating-wrapper grant does not license this complete application or Common host; no blanket grant or new right over imported dependencies is added by this archive. Applicable original component notices and file-specific grants remain authoritative, and complete dependency/runtime and rights reconciliation remains open.

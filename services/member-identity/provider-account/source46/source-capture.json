@@ -1,0 +1,197 @@
+{
+  "schema": "crays.member46.public-source-capture.v1",
+  "candidateNotLive": true,
+  "sourceOnly": true,
+  "source42PreservedUnchanged": true,
+  "originalFileCount": 14,
+  "unchangedOriginals": 12,
+  "protectedTemplates": 2,
+  "files": [
+    {
+      "originalRelativePath": "app/src/db/core-identity-runtime-pool.ts",
+      "originalBytes": 23827,
+      "originalSHA256": "cbc265c0016dd7fe1d6c2e86c80bffb78315e298539ca263612ec84df402a972",
+      "publishedRelativePath": "app/src/db/core-identity-runtime-pool.ts",
+      "publishedBytes": 23827,
+      "publishedSHA256": "cbc265c0016dd7fe1d6c2e86c80bffb78315e298539ca263612ec84df402a972",
+      "representation": "unchanged-original",
+      "protectedSlots": []
+    },
+    {
+      "originalRelativePath": "app/src/db/aws-database-target-binding.cjs",
+      "originalBytes": 4696,
+      "originalSHA256": "adfb4bde91eed0d8485a755dabc8502932f68ee177f1b16ed4604e542d311cad",
+      "publishedRelativePath": "app/src/db/aws-database-target-binding.cjs",
+      "publishedBytes": 4696,
+      "publishedSHA256": "adfb4bde91eed0d8485a755dabc8502932f68ee177f1b16ed4604e542d311cad",
+      "representation": "unchanged-original",
+      "protectedSlots": []
+    },
+    {
+      "originalRelativePath": "app/src/db/aws-database-target-binding.d.cts",
+      "originalBytes": 351,
+      "originalSHA256": "266a29636b352608445a61c9feb11150f1eea5ff58b671a8d3320a6065b6c77b",
+      "publishedRelativePath": "app/src/db/aws-database-target-binding.d.cts",
+      "publishedBytes": 351,
+      "publishedSHA256": "266a29636b352608445a61c9feb11150f1eea5ff58b671a8d3320a6065b6c77b",
+      "representation": "unchanged-original",
+      "protectedSlots": []
+    },
+    {
+      "originalRelativePath": "app/src/app/api/crays/auth/provider/account/route.ts",
+      "originalBytes": 10986,
+      "originalSHA256": "171378d0610e241d64fdc42d2fd3d6cefe1ca2403532e65dc92338b2059375b1",
+      "publishedRelativePath": "app/src/app/api/crays/auth/provider/account/route.ts",
+      "publishedBytes": 10986,
+      "publishedSHA256": "171378d0610e241d64fdc42d2fd3d6cefe1ca2403532e65dc92338b2059375b1",
+      "representation": "unchanged-original",
+      "protectedSlots": []
+    },
+    {
+      "originalRelativePath": "app/src/app/api/crays/clubs/member/session/route.ts",
+      "originalBytes": 3434,
+      "originalSHA256": "a1936f3e1d80b713e42907a502c97f9cee6680961648112ed56c4cc20fadc63b",
+      "publishedRelativePath": "app/src/app/api/crays/clubs/member/session/route.ts",
+      "publishedBytes": 3434,
+      "publishedSHA256": "a1936f3e1d80b713e42907a502c97f9cee6680961648112ed56c4cc20fadc63b",
+      "representation": "unchanged-original",
+      "protectedSlots": []
+    },
+    {
+      "originalRelativePath": "app/src/lib/clubs/original-global-native-session.ts",
+      "originalBytes": 3042,
+      "originalSHA256": "b9a22bb5b70c645b85e9de65aff97ff99d33a5acc78fea2fc89a081f02fa6979",
+      "publishedRelativePath": "app/src/lib/clubs/original-global-native-session.ts",
+      "publishedBytes": 3042,
+      "publishedSHA256": "b9a22bb5b70c645b85e9de65aff97ff99d33a5acc78fea2fc89a081f02fa6979",
+      "representation": "unchanged-original",
+      "protectedSlots": []
+    },
+    {
+      "originalRelativePath": "app/src/lib/clubs/original-global-native-session.cjs",
+      "originalBytes": 3009,
+      "originalSHA256": "229c8b5a7432e61fdaa3ba83fc4095a0e7e782a277117527aca0ca98bf6cbfff",
+      "publishedRelativePath": "app/src/lib/clubs/original-global-native-session.cjs.template",
+      "publishedBytes": 3047,
+      "publishedSHA256": "ad86033ee6d0ca7ac0d52e97ba1c8d1a4ea1506df4bd0999c2850cc88d75da92",
+      "representation": "protected-template",
+      "protectedSlots": [
+        {
+          "slot": "SOURCE46_OPERATOR_BINDING_01",
+          "marker": "__CRAYS_PROTECTED_SOURCE46_OPERATOR_BINDING_01__",
+          "occurrences": 1
+        },
+        {
+          "slot": "SOURCE46_OPERATOR_BINDING_02",
+          "marker": "__CRAYS_PROTECTED_SOURCE46_OPERATOR_BINDING_02__",
+          "occurrences": 1
+        },
+        {
+          "slot": "SOURCE46_OPERATOR_BINDING_03",
+          "marker": "__CRAYS_PROTECTED_SOURCE46_OPERATOR_BINDING_03__",
+          "occurrences": 1
+        },
+        {
+          "slot": "SOURCE46_OPERATOR_BINDING_04",
+          "marker": "__CRAYS_PROTECTED_SOURCE46_OPERATOR_BINDING_04__",
+          "occurrences": 1
+        },
+        {
+          "slot": "SOURCE46_OPERATOR_BINDING_05",
+          "marker": "__CRAYS_PROTECTED_SOURCE46_OPERATOR_BINDING_05__",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "originalRelativePath": "app/src/lib/clubs/original-native-session-projections.cjs",
+      "originalBytes": 2428,
+      "originalSHA256": "5ce3c410105f473ec3ec194520bc84c36ca1a4b38ae5affff3d0d76eba7878b2",
+      "publishedRelativePath": "app/src/lib/clubs/original-native-session-projections.cjs",
+      "publishedBytes": 2428,
+      "publishedSHA256": "5ce3c410105f473ec3ec194520bc84c36ca1a4b38ae5affff3d0d76eba7878b2",
+      "representation": "unchanged-original",
+      "protectedSlots": []
+    },
+    {
+      "originalRelativePath": "app/CURRENT42_TO_CANDIDATE46.patch",
+      "originalBytes": 4918,
+      "originalSHA256": "c492ac0acfaa7471103df3f6372c8c5fb05631cb67c3aea6e5aa4965275b1f11",
+      "publishedRelativePath": "app/CURRENT42_TO_CANDIDATE46.patch",
+      "publishedBytes": 4918,
+      "publishedSHA256": "c492ac0acfaa7471103df3f6372c8c5fb05631cb67c3aea6e5aa4965275b1f11",
+      "representation": "unchanged-original",
+      "protectedSlots": []
+    },
+    {
+      "originalRelativePath": "common/common-host.main-context46.candidate.cjs",
+      "originalBytes": 48362,
+      "originalSHA256": "0fded17840166bb8b992bb3e1708a4c566cb56f182cd239d44f2327f874c8e7c",
+      "publishedRelativePath": "common/common-host.main-context46.candidate.cjs",
+      "publishedBytes": 48362,
+      "publishedSHA256": "0fded17840166bb8b992bb3e1708a4c566cb56f182cd239d44f2327f874c8e7c",
+      "representation": "unchanged-original",
+      "protectedSlots": []
+    },
+    {
+      "originalRelativePath": "common/original-native-session-projections.reference.cjs",
+      "originalBytes": 2428,
+      "originalSHA256": "5ce3c410105f473ec3ec194520bc84c36ca1a4b38ae5affff3d0d76eba7878b2",
+      "publishedRelativePath": "common/original-native-session-projections.reference.cjs",
+      "publishedBytes": 2428,
+      "publishedSHA256": "5ce3c410105f473ec3ec194520bc84c36ca1a4b38ae5affff3d0d76eba7878b2",
+      "representation": "unchanged-original",
+      "protectedSlots": []
+    },
+    {
+      "originalRelativePath": "common/CURRENT_COMMON42_TO_MAIN46.patch",
+      "originalBytes": 10770,
+      "originalSHA256": "69b450a4beb2c390ae332b835557ed8d779eaedbe9332f56980010968a44c6e5",
+      "publishedRelativePath": "common/CURRENT_COMMON42_TO_MAIN46.patch",
+      "publishedBytes": 10770,
+      "publishedSHA256": "69b450a4beb2c390ae332b835557ed8d779eaedbe9332f56980010968a44c6e5",
+      "representation": "unchanged-original",
+      "protectedSlots": []
+    },
+    {
+      "originalRelativePath": "common/common-main46.regression.cjs",
+      "originalBytes": 3292,
+      "originalSHA256": "9a8f7e23df5d6d656e68adccd4c78f6a4fe6462c1d4f554b9a89b5a7c9682b53",
+      "publishedRelativePath": "common/common-main46.regression.cjs",
+      "publishedBytes": 3292,
+      "publishedSHA256": "9a8f7e23df5d6d656e68adccd4c78f6a4fe6462c1d4f554b9a89b5a7c9682b53",
+      "representation": "unchanged-original",
+      "protectedSlots": []
+    },
+    {
+      "originalRelativePath": "tests/original-envelope46.regression.rev02.cjs",
+      "originalBytes": 3943,
+      "originalSHA256": "aa2d46bed6b8ca2264dc78baa7cb9967e905ea6ce6fb03677a219038cd9a013a",
+      "publishedRelativePath": "tests/original-envelope46.regression.rev02.cjs.template",
+      "publishedBytes": 3989,
+      "publishedSHA256": "ebfc8712129b74f09729015b0f66c4523e9c7294a68c70fd73076321177198ce",
+      "representation": "protected-template",
+      "protectedSlots": [
+        {
+          "slot": "SOURCE46_OPERATOR_BINDING_03",
+          "marker": "__CRAYS_PROTECTED_SOURCE46_OPERATOR_BINDING_03__",
+          "occurrences": 2
+        },
+        {
+          "slot": "SOURCE46_OPERATOR_BINDING_04",
+          "marker": "__CRAYS_PROTECTED_SOURCE46_OPERATOR_BINDING_04__",
+          "occurrences": 1
+        },
+        {
+          "slot": "SOURCE46_OPERATOR_BINDING_05",
+          "marker": "__CRAYS_PROTECTED_SOURCE46_OPERATOR_BINDING_05__",
+          "occurrences": 1
+        }
+      ]
+    }
+  ],
+  "applicationOriginalSourceRoot": "Root supplied final candidate-revision01",
+  "commonOriginalSourceRoot": "Root supplied final common-revision01",
+  "licensing": "No blanket grant; original component terms and file-specific grants remain authoritative",
+  "completeRuntimeRecoveryClaim": false
+}

@@ -23,3 +23,9 @@ Use a separately configured development identity tenant and reviewed application
 The shared source capture records the Auth0 SDK version above. A separate custom-login asset capture identifies ACUL release **5161b54e24be68c38b293ca4** and preserves 18 of 22 original source files, but its evidence does not prove the Auth0 tenant actually uses those assets. Complete custom-login source/release mapping and the selected application's current end-to-end identity acceptance remain separate work.
 
 [Back to services](README.md)
+
+## Member/Main and Common Source46
+
+The [Source46 candidate](../../services/member-identity/provider-account/source46/README.md) preserves the final Member/Main session-envelope and matching Common host source revisions. It distinguishes the global Main account representation from the native Club account representation while preserving the existing Work role and tenant checks.
+
+The additive archive retains twelve unchanged original source/test/patch files and two exact-recovery templates for internal account bindings. Source42 original files remain unchanged. The source map, existing owner test evidence and scoped licensing notes describe this candidate; publication is not runtime adoption or authenticated customer acceptance.

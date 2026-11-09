@@ -1,0 +1,33 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),Module=require('node:module'),assert=require('node:assert/strict');
+const base='/srv/crays/migration-work/20261109/root/member-club-session-envelope46-source01/candidate-revision01';
+const deps=Module.createRequire("/srv/crays/migration-work/20261108/root/member25-original-image-dependencies-copy03/package.json");
+const ts=deps('typescript');
+const source35='/srv/crays/migration-work/20261108/root/member-origin-binding35-capture01/source/candidate/src/lib/clubs';
+function loadTS(filename) {
+ const mod=new Module(filename,module);mod.filename=filename;
+ mod.require=function(name){if(name.startsWith('.'))return loadTS(path.resolve(path.dirname(filename),name)+'.ts');return deps(name);};
+ mod._compile(ts.transpileModule(fs.readFileSync(filename,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText,filename);
+ return mod.exports;
+}
+const schema=loadTS(source35+'/member-global-native-session.ts');
+const E=require(base+'/src/lib/clubs/original-global-native-session.cjs');
+const P=require(base+'/src/lib/clubs/original-native-session-projections.cjs');
+const MAIN='__CRAYS_PROTECTED_SOURCE46_OPERATOR_BINDING_04__',NATIVE='__CRAYS_PROTECTED_SOURCE46_OPERATOR_BINDING_05__';
+const user={email_verified:true};
+const state={schema:'crays.clubs.member-own-state-rpc.v1',accountId:NATIVE,savedPropertyIds:[],application:null,membership:null,authorities:{authenticationReady:true,membershipConfirmed:false,marinaPropertyAdmission:false,availabilityAuthority:false,bookingAuthority:false}};
+const globalResult=P.dto({account:{account_id:MAIN,display_name:'Original Main',status:'active',primary_contact:null}},user,'__CRAYS_PROTECTED_SOURCE46_OPERATOR_BINDING_03__');
+const native={bundle:{account:{account_id:NATIVE,display_name:'Original Native',primary_contact:null}},state};
+const project=(g=globalResult,n=native)=>E.project(g,n,user,P.memberSession);
+const ok=project();assert.equal(ok.status,200);assert.equal(ok.body.globalSession.account.id,MAIN);assert.equal(ok.body.clubSession.account.id,NATIVE);
+assert(schema.parseMemberGlobalNativeSession(ok.body,MAIN));
+assert.equal(schema.parseMemberGlobalNativeSession(ok.body,NATIVE),null);
+assert.equal(schema.parseMemberGlobalNativeSession({...ok.body,extra:true},MAIN),null);
+const bad=structuredClone(ok.body);bad.clubSession.ownState.accountId=MAIN;assert.equal(schema.parseMemberGlobalNativeSession(bad,MAIN),null);
+const fake=structuredClone(ok.body);fake.clubSession.ownState.authorities.membershipConfirmed=true;assert.equal(schema.parseMemberGlobalNativeSession(fake,MAIN),null);
+const noState=structuredClone(ok.body);delete noState.clubSession.ownState;assert.equal(schema.parseMemberGlobalNativeSession(noState,MAIN),null);
+const wrongNative=structuredClone(native);wrongNative.bundle.account.account_id=MAIN;assert.equal(project(globalResult,wrongNative).status,503);
+const wrongState=structuredClone(native);wrongState.state.accountId=MAIN;assert.equal(project(globalResult,wrongState).status,503);
+const blocked=structuredClone(globalResult);blocked.body.session.account.status='blocked';assert.equal(project(blocked).status,403);
+assert.equal(E.sameExactTuple({issuer:'https://wrong.invalid/',subject:'synthetic-test',serverConfiguredClientId:'__CRAYS_PROTECTED_SOURCE46_OPERATOR_BINDING_03__'}),false);
+(async()=>{let nativeCalls=0;const denied=await E.resolve({sdkIdentity:{issuer:'https://wrong.invalid/',subject:'synthetic-test',serverConfiguredClientId:'wrong-client'},user,globalResult,readNative:async()=>{nativeCalls++;return native;},projectGlobalSession:P.memberSession});assert.equal(denied.status,403);assert.equal(nativeCalls,0);console.log(JSON.stringify({status:'PASS',checks:12,usesOriginalStrictSource35Parser:true,originalEmitterByteIdentical:true,fixturesOnly:true,noHTTPOrSQL:true}));})().catch(()=>{console.log(JSON.stringify({status:'FAIL',noRawError:true}));process.exitCode=1;});

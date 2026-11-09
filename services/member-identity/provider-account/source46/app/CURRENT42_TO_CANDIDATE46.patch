@@ -1,0 +1,91 @@
+--- a/src/app/api/crays/auth/provider/account/route.ts
++++ b/src/app/api/crays/auth/provider/account/route.ts
+@@ -1,5 +1,5 @@
+ import {createHash} from "node:crypto";
+-import {createCoreOriginalMemberIdentityRuntimeRpcClient} from "@/db/core-identity-runtime-rpc";
++import {createCoreIdentityRuntimeRpcClient,createCoreOriginalMemberIdentityRuntimeRpcClient} from "@/db/core-identity-runtime-rpc";
+ import {getCoreOriginalMemberIdentityRpcPool} from "@/db/core-identity-runtime-pool";
+ import {isRegisteredOriginalGoogleRepairRequired,originalGoogleRepairPendingResponse} from "@/lib/clubs/original-google-provisioning-duplicate-guard";
+ import { NextRequest } from "next/server";
+@@ -91,15 +91,14 @@
+   }
+ }
+ 
+-async function lookupProviderBundle(identity: NonNullable<Awaited<ReturnType<typeof getProviderIdentity>>>) {
+-  // Clubs uses the same existing SDK-validated issuer/subject/client and
+-  // restricted original-member RDS RPC as /clubs/member/session. Do not open
+-  // the legacy direct Core pool or infer an account from a contact address.
++async function lookupProviderBundle(identity: NonNullable<Awaited<ReturnType<typeof getProviderIdentity>>>, originalMain = false) {
++  // Global GET resolves the original Main realm with the same exact SDK tuple.
++  // Existing POST keeps its original native lookup and provisioning guards.
+   const original = identity.originalClubsSession;
+   return original
+-    ? createCoreOriginalMemberIdentityRuntimeRpcClient(
++    ? (originalMain ? createCoreIdentityRuntimeRpcClient() : createCoreOriginalMemberIdentityRuntimeRpcClient(
+         (sql, values) => getCoreOriginalMemberIdentityRpcPool().query(sql, values),
+-      ).resolveAuth0IdentityBundleV2(
++      )).resolveAuth0IdentityBundleV2(
+         original.validatedIssuer,
+         original.validatedSubject,
+         original.serverConfiguredClientId,
+@@ -158,7 +157,7 @@
+   }
+ 
+   let bundle;
+-  try { bundle = await lookupProviderBundle(providerIdentity); }
++  try { bundle = await lookupProviderBundle(providerIdentity, true); }
+   catch { return json({status:"core_unavailable",providerAuthenticated:true,accountMapped:false,provisioningAvailable:false,bookingAuthority:false},{status:503}); }
+   if (!bundle && providerIdentity.originalRepairSession) {
+     return json(originalGoogleRepairPendingResponse, {status:409});
+--- a/src/app/api/crays/clubs/member/session/route.ts
++++ b/src/app/api/crays/clubs/member/session/route.ts
+@@ -1,3 +1,4 @@
++import {readOriginalGlobalNativeSession} from "@/lib/clubs/original-global-native-session";
+ import { NextRequest } from "next/server";
+ import { resolveClubsMemberAccountState } from "@/lib/clubs/member-account";
+ import {
+@@ -12,6 +13,10 @@
+ export async function GET(request: NextRequest) {
+   const returnTo =
+     request.nextUrl.searchParams.get("returnTo") ?? "/en/account";
++  if (returnTo === "/personal/club") {
++    const result = await readOriginalGlobalNativeSession(request);
++    return Response.json(result.body, {status: result.status, headers: {"cache-control":"private, no-store", Vary:"Cookie"}});
++  }
+   let resolution = await resolveClubsMemberAccountState(request, {includeOwnState: true});
+   // Optional member data must not make the existing identity login unavailable.
+   // This error-only fallback independently repeats every SDK/Core identity gate;
+--- a/src/db/core-identity-runtime-pool.ts
++++ b/src/db/core-identity-runtime-pool.ts
+@@ -1,3 +1,4 @@
++import {getAwsDatabaseTargetBinding} from "./aws-database-target-binding.cjs";
+ import {readFileSync as awsReadFileSync,lstatSync as awsLstatSync} from "node:fs";
+ import {Pool, type PoolClient, type PoolConfig} from "pg";
+ 
+@@ -57,6 +58,7 @@
+ export function buildCoreIdentityRuntimeRpcPoolConfig(
+   env: Record<string, string | undefined> = process.env,
+ ): PoolConfig {
++  const awsBinding = getAwsDatabaseTargetBinding(env, "coreIdentity");
+   const connectionString = env[CORE_IDENTITY_RUNTIME_RPC_DATABASE_URL_ENV];
+   if (
+     typeof connectionString !== "string" ||
+@@ -100,7 +102,8 @@
+     /^127\./.test(hostname) ||
+     hostname.includes(":") ||
+     database !== expectedDatabase ||
+-    (expectedDatabase === FOREST_CITY_MAIN_TEST_DATABASE &&
++    (awsBinding !== null && (hostname !== awsBinding.hostname || database !== awsBinding.database || user !== awsBinding.role || port !== awsBinding.port)) ||
++    (awsBinding === null && expectedDatabase === FOREST_CITY_MAIN_TEST_DATABASE &&
+       (!FOREST_CITY_MAIN_TEST_HOSTS.has(hostname) || port !== 5432)) ||
+     containsControlCharacter(database) ||
+     database.includes("/") ||
+@@ -126,7 +129,7 @@
+     allowExitOnIdle: true,
+     application_name: "crays-core-identity-rpc-v1",
+     keepAlive: true,
+-    ssl: {rejectUnauthorized: true},
++    ssl: {rejectUnauthorized: true, ...(awsBinding ? {ca: awsBinding.ca} : {})},
+   };
+   Object.defineProperty(config, "password", {
+     configurable: false,

@@ -1,0 +1,27 @@
+'use strict';
+// Server-only compatibility projection. Neither source account ID is rewritten.
+const crypto=require('node:crypto');
+const EXACT=Object.freeze({issuer:'__CRAYS_PROTECTED_SOURCE46_OPERATOR_BINDING_01__',subjectSha256:'__CRAYS_PROTECTED_SOURCE46_OPERATOR_BINDING_02__',clientId:'__CRAYS_PROTECTED_SOURCE46_OPERATOR_BINDING_03__',globalAccountId:'__CRAYS_PROTECTED_SOURCE46_OPERATOR_BINDING_04__',verticalAccountId:'__CRAYS_PROTECTED_SOURCE46_OPERATOR_BINDING_05__'});
+function sameExactTuple(sdk){return sdk?.issuer===EXACT.issuer&&typeof sdk.subject==='string'&&crypto.createHash('sha256').update(sdk.subject,'utf8').digest('hex')===EXACT.subjectSha256&&sdk.serverConfiguredClientId===EXACT.clientId;}
+function project(globalResult,native,user,projectGlobalSession){
+ if(globalResult.status!==200||globalResult.body?.status!=='mapped'||globalResult.body.session?.status!=='crays_mapped'||globalResult.body.session.account?.id!==EXACT.globalAccountId)return{status:403,body:{status:'invalid_session_provenance'}};
+ if(!native||native.bundle?.account?.account_id!==EXACT.verticalAccountId||native.state?.accountId!==EXACT.verticalAccountId||native.state.authorities?.authenticationReady!==true)return{status:503,body:{status:'club_account_unavailable'}};
+ const globalSession=projectGlobalSession(globalResult);
+ if(globalSession.status!==200||globalSession.body?.status!=='ready'||globalSession.body.account?.id!==EXACT.globalAccountId)return{status:403,body:{status:'invalid_session_provenance'}};
+ const a=native.bundle.account;
+ const clubSession={status:'ready',authenticated:true,accountMapped:true,sessionMode:'auth0',account:{id:a.account_id,displayName:a.display_name,name:a.display_name,email:a.primary_contact??null,emailVerified:user.email_verified===true,backendSynced:true,provider:'auth0'},ownState:native.state,bookingAuthority:false,logoutHref:'/auth/logout?returnTo=%2Fen'};
+ return{status:200,body:{schema:'crays.club.global-native-session.v1',globalSession:globalSession.body,clubSession}};
+}
+/** Input tuple must come directly from the same original SDK getSession result.
+ * Native authority is always re-read by the original pool/parser, never from an
+ * email or browser account. globalResult is the matching original Main read.
+ * A denied Main mapping is returned before any native records are requested.
+ */
+async function resolve({sdkIdentity,user,globalResult,readNative,projectGlobalSession}){
+ if(globalResult.status!==200||globalResult.body?.status!=='mapped'||globalResult.body.session?.status!=='crays_mapped')return globalResult;
+ if(!sameExactTuple(sdkIdentity)||globalResult.body.session.account?.id!==EXACT.globalAccountId)return{status:403,body:{status:'club_account_not_admitted'}};
+ const sdk=Object.freeze({issuer:sdkIdentity.issuer,subject:sdkIdentity.subject,serverConfiguredClientId:sdkIdentity.serverConfiguredClientId});
+ const native=await readNative(sdk);
+ return project(globalResult,native,user,projectGlobalSession);
+}
+module.exports=Object.freeze({resolve,sameExactTuple,project});

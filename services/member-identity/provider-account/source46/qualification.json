@@ -1,0 +1,21 @@
+{
+  "schema": "crays.member46.source-qualification.v1",
+  "candidateNotLive": true,
+  "sourceOnly": true,
+  "applicationSourceManifestSHA256": "141b38984dcc42ac36c4ca0043ea9426cd8b6690ab679ac99ff34ac029f915ad",
+  "applicationPatchSHA256": "c492ac0acfaa7471103df3f6372c8c5fb05631cb67c3aea6e5aa4965275b1f11",
+  "applicationSourceReviewSHA256": "37d8eead34327a70692c953581206d39e48598f4196336e78d14763d6be2483c",
+  "commonSourceManifestSHA256": "c2c1549148bd0078c2008d6ea525a546c283536630b7f67d819f7252ebb2eeb0",
+  "commonSourceReviewSHA256": "faaded802b2941dcf1d8236d60729c26f7e278f1e42c1136bbef84b34b536d34",
+  "applicationExistingTestReceiptSHA256": "de891ed3bc2e8dbf22ddc1440d24371ec50f273658cda4a186a00c31662ba766",
+  "applicationExistingReportedChecks": 12,
+  "commonExistingTestReceiptSHA256": "e20bdb8a1d6cfccd332dc3ecc1de3e953034fb81cc14abfc0b4d30bb60b28a8a",
+  "commonExistingReportedChecks": 12,
+  "commonTestSourceSHA256": "9a8f7e23df5d6d656e68adccd4c78f6a4fe6462c1d4f554b9a89b5a7c9682b53",
+  "syntheticTestReceiptsReusedNotRerun": true,
+  "sourceProgramsExecutedByArchive": false,
+  "runtimeChangedByArchive": false,
+  "allPrivateEnvironmentAndBindingsExcluded": true,
+  "adoptionRequiresSeparateRootAcknowledgment": true,
+  "completeDependencyAndRuntimeLicenseClosure": false
+}

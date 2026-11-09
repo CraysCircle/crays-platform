@@ -169,6 +169,10 @@
     {
       "component": "frappe-crays-team-scope-0.1.0",
       "path": "services/frappe/custom-apps/crays_team_scope/source-capture.json"
+    },
+    {
+      "component": "member-main-common46",
+      "path": "services/member-identity/provider-account/source46/source-capture.json"
     }
   ]
 }
