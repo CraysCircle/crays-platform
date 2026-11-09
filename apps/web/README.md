@@ -70,3 +70,7 @@ The [Member composition export](compositions/member-source25/README.md) preserve
 ## Native Core working-tree source slice
 
 The separate [native Core source slice](compositions/native-core-worktree-20261109/README.md) retains 28 tracked modifications and their 28 exact committed preimages at c2018d04f6a52d8716326a098dde7624cbb18963. Four unchanged preimages reference existing immutable source; two identity files use protected reversible templates. Both views passed original-byte restoration checks. Its 48-package lock is distinct from the shared dependency set. The 453-commit history, required untracked sources, later runtime selection and full license/recovery closure remain open.
+
+## Exact Club Build38 input
+
+The [Club source38 composition](compositions/club-source38/README.md) maps all 2,045 effective source inputs to immutable existing source and one original RDS adapter override. The original finite build controller is retained separately, along with the original framework build ID oBGvsXCd08tp4gsMwOOo5 and 3,554 compiled-file pins. All 2,045 source bodies passed exact reconstruction against the recorded owner source. The declared existing pool overlay and its baseline remain explicit. This source custody record does not establish current runtime adoption, compiled-body equality, full dependency/media recovery or complete license clearance.

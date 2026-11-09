@@ -1,0 +1,39 @@
+{
+  "sourceTag": "club-source38-preserved-20261109",
+  "originalSourceManifestSHA256": "1634e5479d6438babb86573755de354cf0ead8eaba07b022214017bc052254a4",
+  "originalCompiledManifestSHA256": "fb2a5cbe1d46cdcda8162ce23194237fac1972771c34cbc351be8db3294f52a5",
+  "frameworkBuildId": "oBGvsXCd08tp4gsMwOOo5",
+  "effectiveSourceFiles": 2045,
+  "effectiveSourceBytes": 19323567,
+  "existingImmutableSourceReferences": 2044,
+  "originalAdapter": {
+    "state": "build38",
+    "path": "runtime-integration/member-original-read-api-source002/src/db/core-identity-runtime-pool.ts",
+    "originalBytes": 23899,
+    "originalSHA256": "5490f6a92c466227589a3977c794c45b688893d92a9b3d8f6fd715b9be240b69",
+    "protectedReplacements": [],
+    "storage": {
+      "kind": "repository-file",
+      "path": "apps/web/compositions/club-source38/overrides/runtime-integration/member-original-read-api-source002/src/db/core-identity-runtime-pool.ts",
+      "bytes": 23899,
+      "sha256": "5490f6a92c466227589a3977c794c45b688893d92a9b3d8f6fd715b9be240b69"
+    }
+  },
+  "originalAdapterPreimage": {
+    "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+    "path": "apps/web/runtime-integration/member-original-read-api-source002/src/db/core-identity-runtime-pool.ts",
+    "bytes": 21543,
+    "sha256": "f6e802dadcfbdd45ca0bf8d19b8c1a93ad456ebe2c56ed59c5249f6e61dd6c8f"
+  },
+  "originalBuildController": {
+    "path": "operations/club-next-runtime/build38/run_club_original_adapter_rds_build38.candidate.py",
+    "bytes": 11294,
+    "sha256": "5077aa1f067450a5d79fd7bfe108fa3092fc7c33697c4bd21fa9659b1651723b"
+  },
+  "compiledOutputFilePins": 3554,
+  "originalCompiledStatus": "CURRENT_CLUB_ORIGINAL_ADAPTER_RDS_BUILD_PASS_NOT_INSTALLED",
+  "runtimeInstalledFromOriginalManifest": false,
+  "customerAcceptanceFromOriginalManifest": false,
+  "sourceProgramsExecuted": false,
+  "independentCompiledBodyRuntimeLicenseAndRecoveryClosure": false
+}

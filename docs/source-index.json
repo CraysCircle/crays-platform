@@ -137,6 +137,10 @@
     {
       "component": "native-core-tracked-working-tree",
       "path": "apps/web/compositions/native-core-worktree-20261109/source-state.json"
+    },
+    {
+      "component": "club-source38-composition",
+      "path": "apps/web/compositions/club-source38/build-binding.json"
     }
   ]
 }
