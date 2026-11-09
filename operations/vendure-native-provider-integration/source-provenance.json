@@ -1,6 +1,6 @@
 {
   "schema": "crays.vendure-native-provider-integration.source-provenance.v1",
-  "scope": "Four exact source-only operation programs; no admission/request templates or private launch payloads",
+  "scope": "Seven exact source-only operation programs; three additional selected native-verifier code fields, no other envelope fields or admission/request templates or private launch payloads",
   "files": [
     {
       "path": "operations/vendure-native-provider-integration/original-asset-delivery-controller.compiled07.rev02.cjs",
@@ -57,6 +57,72 @@
         "envelopeSHA256": "471d161d516639199b8a0455755de01834d2ed3527748f0c205afe1c08745690"
       },
       "transformation": "NONE_EXACT_ORIGINAL_SOURCE_BODY"
+    },
+    {
+      "path": "operations/vendure-native-provider-integration/vendure-native-verify-format-outcome.rev01.cjs",
+      "originalBodyBytes": 8133,
+      "originalBodySHA256": "3fdeea06f6d66834b33ec65aa75f44f464f5cf3ba8ae0d812ff7ca2ddc13e09a",
+      "exportedBodySHA256": "3fdeea06f6d66834b33ec65aa75f44f464f5cf3ba8ae0d812ff7ca2ddc13e09a",
+      "originalSourceField": "JSON.nodeSource UTF-8 bytes",
+      "immutableSourceArtifact": {
+        "key": "migration-work/20261108/business/vendure-native-provider-integration/native-verify-format-outcome-fix.source-only.rev01.json",
+        "versionId": "kbNWitF0KcX9oOCEtFrkmg8AJWmbdZ6d",
+        "envelopeBytes": 12544,
+        "envelopeSHA256": "5224f54c14c1abb422a1d5b2036dfc0e0033e6151584c8d1b4d7cc539e6d326c"
+      },
+      "transformation": "NONE_EXACT_ORIGINAL_SOURCE_FIELD",
+      "restoration": {
+        "publicSourcePath": "operations/vendure-native-provider-integration/vendure-native-verify-format-outcome.rev01.cjs",
+        "sourceField": "nodeSource",
+        "encoding": "UTF-8",
+        "bytes": 8133,
+        "sha256": "3fdeea06f6d66834b33ec65aa75f44f464f5cf3ba8ae0d812ff7ca2ddc13e09a",
+        "scope": "Recover only the selected source field bytes; do not reconstruct/export other envelope fields or execute the program."
+      }
+    },
+    {
+      "path": "operations/vendure-native-provider-integration/vendure-native-verify-closed-runner.rev01.py",
+      "originalBodyBytes": 2759,
+      "originalBodySHA256": "cb8cc765709309993695fe3cc98a3b1b9b256f0c49209efc3dbfc61abdb1b325",
+      "exportedBodySHA256": "cb8cc765709309993695fe3cc98a3b1b9b256f0c49209efc3dbfc61abdb1b325",
+      "originalSourceField": "JSON.closedRunnerSource UTF-8 bytes",
+      "immutableSourceArtifact": {
+        "key": "migration-work/20261108/business/vendure-native-provider-integration/native-verify-format-outcome-fix.source-only.rev01.json",
+        "versionId": "kbNWitF0KcX9oOCEtFrkmg8AJWmbdZ6d",
+        "envelopeBytes": 12544,
+        "envelopeSHA256": "5224f54c14c1abb422a1d5b2036dfc0e0033e6151584c8d1b4d7cc539e6d326c"
+      },
+      "transformation": "NONE_EXACT_ORIGINAL_SOURCE_FIELD",
+      "restoration": {
+        "publicSourcePath": "operations/vendure-native-provider-integration/vendure-native-verify-closed-runner.rev01.py",
+        "sourceField": "closedRunnerSource",
+        "encoding": "UTF-8",
+        "bytes": 2759,
+        "sha256": "cb8cc765709309993695fe3cc98a3b1b9b256f0c49209efc3dbfc61abdb1b325",
+        "scope": "Recover only the selected source field bytes; do not reconstruct/export other envelope fields or execute the program."
+      }
+    },
+    {
+      "path": "operations/vendure-native-provider-integration/vendure-native-verifier02-fresh-lease.rev01.py",
+      "originalBodyBytes": 31652,
+      "originalBodySHA256": "3a7f41d84541b4a9b605203f515474363c38600bb09b2bec7691447c69914e6c",
+      "exportedBodySHA256": "3a7f41d84541b4a9b605203f515474363c38600bb09b2bec7691447c69914e6c",
+      "originalSourceField": "JSON.source UTF-8 bytes",
+      "immutableSourceArtifact": {
+        "key": "migration-work/20261108/business/vendure-native-provider-integration/native-verifier02.fresh-lease.source-request.rev01.json",
+        "versionId": "96Mue1YT8zL4aB5pc4.MZMtQlXTO7OSP",
+        "envelopeBytes": 79728,
+        "envelopeSHA256": "8676dc3a9cdf189f3e37a261edce6590cea472c4d024ee67a35d3809688483d9"
+      },
+      "transformation": "NONE_EXACT_ORIGINAL_SOURCE_FIELD",
+      "restoration": {
+        "publicSourcePath": "operations/vendure-native-provider-integration/vendure-native-verifier02-fresh-lease.rev01.py",
+        "sourceField": "source",
+        "encoding": "UTF-8",
+        "bytes": 31652,
+        "sha256": "3a7f41d84541b4a9b605203f515474363c38600bb09b2bec7691447c69914e6c",
+        "scope": "Recover only the selected source field bytes; do not reconstruct/export other envelope fields or execute the program."
+      }
     }
   ],
   "sourceOnly": true,
@@ -78,5 +144,37 @@
     ],
     "dependenciesNotBundledByThisPacket": true
   },
-  "privateOriginalCustody": "The exact source fields are retained in the immutable private S3 object versions identified per file; source-only JSON envelopes are not public exports."
+  "privateOriginalCustody": "The exact source fields are retained in the immutable private S3 object versions identified per file; source-only JSON envelopes are not public exports.",
+  "nativeVerifierAddition": {
+    "originalFiles": 3,
+    "originalBytes": 42544,
+    "selectedSourceFields": [
+      "nodeSource",
+      "closedRunnerSource",
+      "source"
+    ],
+    "independentSourceReviews": [
+      {
+        "key": "migration-work/20261108/business/vendure-native-provider-integration/native-verify-format-outcome-fix.independent-review.rev01.json",
+        "versionId": "Gl7XLN0IWHZgBVXGIKQCa0KYCgVTmfm5",
+        "bytes": 1239,
+        "sha256": "d027aa02eb5e34fcca6787fd3e6cbad5fe367ee9ea0fcdd36edca2f5aa951864",
+        "sourceOnlyStatus": "SOURCE_ONLY_PASS",
+        "qualification": "Pinned source/lifecycle review only; actual execution admission and request inputs remain separate and are not exported."
+      },
+      {
+        "key": "migration-work/20261108/business/vendure-native-provider-integration/native-verifier02.independent-lease-review.rev01.json",
+        "versionId": "5UR2hSV9iBx1T_3q47UN_f3QRAC9iyVE",
+        "bytes": 1207,
+        "sha256": "0083744dabe0ca015c49ece614dfa3e14986d0f075003cd9b747d852b13020be",
+        "sourceOnlyStatus": "SOURCE_AND_REQUEST_TEMPLATE_PASS_FINAL_ADMISSION_UNBOUND",
+        "qualification": "Pinned source/lifecycle review only; actual execution admission and request inputs remain separate and are not exported."
+      }
+    ],
+    "allOtherEnvelopeFieldsExported": false,
+    "approvalRequestOrPrivateInputsExported": false,
+    "sourceProgramsOrVerifierExecutedDuringPreservation": false,
+    "newLicenseGrant": false,
+    "runtimeOrCustomerAcceptanceClaimed": false
+  }
 }
