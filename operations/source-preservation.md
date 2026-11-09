@@ -1,6 +1,6 @@
 # Selected Core, Chuck, VIF and Nextcloud source snapshots
 
-This register identifies eleven selected source snapshots preserved in GitHub. It is not a complete CRAYS backup, database backup or runtime-recovery inventory. Scopes overlap with public source and with each other's lineage; do not add row counts as distinct ecosystem coverage.
+This register identifies twelve selected source snapshots preserved in GitHub. It is not a complete CRAYS backup, database backup or runtime-recovery inventory. Scopes overlap with public source and with each other's lineage; do not add row counts as distinct ecosystem coverage.
 
 Private originals are in **CraysWorld/crays-gym**, repository ID **1280582408**. Authorized owners or collaborators must sign in; public readers may see a 404. Each commit link opens the snapshot guide. Capture records identify original names, sizes and whole-file hashes.
 
@@ -17,6 +17,7 @@ Private originals are in **CraysWorld/crays-gym**, repository ID **1280582408**.
 | **Core function153 runtime-source03** — Guest controller, rollback-probe operations and protected session source | Private; authorized access | [14cafa2c150c](https://github.com/CraysWorld/crays-gym/blob/14cafa2c150ca771c5eb79e5911a5f6daa6575f2/protected-source-archives/native-core-function153-runtime-source03/README.md) · [capture](https://github.com/CraysWorld/crays-gym/blob/14cafa2c150ca771c5eb79e5911a5f6daa6575f2/protected-source-archives/native-core-function153-runtime-source03/source-capture.json) | 3 |
 | **VIF54 read-only diagnostic** — Identity-diagnostic source revisions and deltas | Private; authorized access | [615c55f835a6](https://github.com/CraysWorld/crays-gym/blob/615c55f835a6b3aef101396c7a4188bc08bdab32/protected-source-archives/vif54-readonly-identity-diagnostic-source04/README.md) · [capture](https://github.com/CraysWorld/crays-gym/blob/615c55f835a6b3aef101396c7a4188bc08bdab32/protected-source-archives/vif54-readonly-identity-diagnostic-source04/source-capture.json) | 8 |
 | **WorkForest principal source03** — Two isolated program fields for credential custody and an existing-environment projector; mixed container excluded | Private; authorized access | [24827509a3dd](https://github.com/CraysWorld/crays-gym/blob/24827509a3dd7385d6731221fd051a1502bb0657/protected-source-archives/work-forest-principal-source03-programs/README.md) · [capture](https://github.com/CraysWorld/crays-gym/blob/24827509a3dd7385d6731221fd051a1502bb0657/protected-source-archives/work-forest-principal-source03-programs/source-capture.json) | 2 isolated program fields |
+| **SaaS/Finance Source148 Orders** — Native page, module, family-entry and initial-read sources | Private; authorized access | [85221d40d5b9](https://github.com/CraysWorld/crays-gym/blob/85221d40d5b92200e691fd182a38cb609d3ed058/capsules/saas-finance/source148-orders/README.md) · [capture](https://github.com/CraysWorld/crays-gym/blob/85221d40d5b92200e691fd182a38cb609d3ed058/capsules/saas-finance/source148-orders/source-capture.json) | 6 |
 
 The publication records verify source bytes through authenticated readback and Git blob identities. Later child snapshots retain previously verified originals unchanged and verify their new or changed bodies. The isolated source branches and the existing master were checked; source custody does not establish execution or complete restoration.
 
@@ -40,6 +41,7 @@ Chuck catalogue projection04: cc21e094fc8824c7993447c93334148fe670d84f3d9075556e
 Core function153 runtime-source03: f10180613f55f04ee552c0b4d82608a88d6f951835ae9597ac8d822c072e02fc
 VIF54 read-only diagnostic: 5575bac66db01eb4fbb94f5631924bc4c2ea43970e8631f24a2075f495c8876b
 WorkForest principal source03: 64aa6a46d1f4a6a7fbdad233acd7ccc609e251e67b3aee8dd570a714e290dbbb
+SaaS/Finance Source148 Orders: 9f2b23619da35c70a1199b3239c216c55843c7f749f1b83683cdf2bc7374ce26
 ~~~
 
 These source snapshots do not supply execution approvals, expected-role/postprojection input bodies, CA/PGpass credentials, other secrets or database dumps. Code may refer to such inputs; this register neither backs them up nor promises their reconstruction.
@@ -60,5 +62,7 @@ The executor's revision01 and later acknowledgement fix are retained separately.
 The Core function153 and VIF54 revision04 snapshots preserve ten originals (58,702 bytes) across separate finite scopes: function153 has one source (7,869 bytes), and VIF54 has nine (50,833 bytes). Function153 preserves the generator, not generated or applied SQL. VIF54 preserves operating programs and deltas, including input-preparer code, not actual approval or runtime-binding inputs. Neither snapshot establishes a new own-code license grant or permission to execute its programs.
 
 The four further scopes add 14 selected source artifacts (86,164 bytes): 12 original files across the catalogue projection, Core function153 runtime and VIF diagnostic snapshots, plus two isolated WorkForest program-text fields. The WorkForest projector is also embedded byte-identically in the main field; this is not a count of independent implementations. These snapshots retain program source, not actual environment values, approval/binding inputs, credential outputs, generated SQL or a whole mixed custodian package. Their technical source reviews do not establish authorship, a new license grant, successful execution or complete recovery.
+
+The [SaaS/Finance Source148 guide](https://github.com/CraysWorld/crays-gym/blob/85221d40d5b92200e691fd182a38cb609d3ed058/capsules/saas-finance/source148-orders/README.md) identifies six native originals (78,859 bytes) and their original integration manifest. The original native commit is not established. The native Orders server differs from the effective AWS version named by the manifest; that effective body is not in this snapshot, and the separate invoice repair is metadata only. The current 14 changes, ten additional inputs and three reader overlays remain outside this capture. This capsule is not a complete development build root or a new license grant.
 
 This preservation does not activate SQL, SSO, roles or consumers. Full application acceptance, current runtime parity, complete dependency/license reconciliation and complete backup/recovery remain separate.

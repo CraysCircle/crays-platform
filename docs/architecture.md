@@ -47,6 +47,27 @@ flowchart TD
 
 Each named service retains its own API, runtime and domain responsibilities. A cross-service workflow needs explicit correlation and outcome reconciliation. Vendure order/payment state, Booking Core holds/bookings/capacity and ERPNext accounting remain different authorities. Personal is the application experience; Chuck is the broader personal-intelligence integration; OpenClaw is a documented upstream component family, not a synonym for either. The [service catalog](services/README.md) links their implementations and limits. Twenty is [archived and no longer used](https://github.com/CraysWorld/.github/blob/main/docs/legacy-projects.md); its appearance in a broader service concept does not establish a current or reintroduced CRM provider.
 
+### Example journey: a member order and its accounting consequence
+
+**Illustrative target journey · source contracts exist; this is not a live checkout or accounting acceptance claim.** This view follows one business action across the boundaries above. It separates the commerce result shown to the member from the later accounting consequence.
+
+~~~mermaid
+flowchart TD
+    Member["Member requests an order"] --> Authority["Core / BCC: identity, account<br/>and business authorization"]
+    Authority --> BFF["Commerce BFF: validate request<br/>and coordinate the order command"]
+    BFF --> Vendure["Vendure: commerce order / payment state"]
+    Vendure --> View["Application shows the commerce outcome"]
+    Vendure -. "intended accounting consequence" .-> Delivery["CRAYS projection / delivery contract:<br/>tenant, company and event correlation"]
+    Delivery --> ERP["Frappe / ERPNext adapter:<br/>dispatch the scoped consequence"]
+    ERP --> Accounting["ERP outcome:<br/>confirmed, failed or still unknown"]
+    classDef crays fill:#fff1f2,stroke:#b42335,color:#202124;
+    class Authority,BFF,Delivery,ERP crays;
+~~~
+
+In plain terms: authorize the action, ask the commerce provider, then account for the result through a separately scoped delivery. An order result, a queued consequence and a confirmed ERP result are different records. An unknown accounting result needs reconciliation; the interface must not turn it into a completed accounting claim. Booking Core separately owns holds, bookings and capacity when the operation involves them.
+
+Follow the [Commerce BFF](../services/clubs-commerce-bff/README.md), [commerce guide](services/commerce.md) and [Frappe / ERPNext workflow](services/frappe.md#understand-the-workflow). Their source records retain test-only inventory, disabled live-money movement and deferred ERP dispatch in the cited snapshots. The diagram explains responsibilities, not a claim that those restrictions have been lifted.
+
 ### Storage and the PostgreSQL migration
 
 ~~~mermaid
