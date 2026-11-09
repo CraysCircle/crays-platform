@@ -1,0 +1,16 @@
+{
+  "schema": "crays.github-source-readback.v1",
+  "sourceCommit": "2d6b7d12104b28058a519cc6d8852aec1b44e78c",
+  "baselineSourceCommit": "cbe2fe2b8784597640ad74ba0abd9c4ba7c3d3ea",
+  "sourceTag": "shared-web-source-state24-20261108",
+  "baselineTag": "shared-web-source-baseline-20261108",
+  "verifiedAtUTC": "2026-11-09T00:03:48.418832+00:00",
+  "method": "Fresh anonymous GitHub HTTPS bare clone without local alternates; SHA256 and byte count for every listed Git blob",
+  "currentNewOrChangedFilesVerified": 2154,
+  "baselineOriginalSourceFilesVerified": 2045,
+  "totalRevisionFileComparisons": 4199,
+  "allComparisonsPassed": true,
+  "sourceProgramsExecuted": false,
+  "buildOrProductDeploymentPerformed": false,
+  "fullCurrentAwsParityAndRecoveryAndRightsClosure": false
+}

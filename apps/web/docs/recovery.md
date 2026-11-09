@@ -19,3 +19,12 @@ The captured package build entry is next build --webpack. Its presence does not 
 The environment example is derived from direct process.env references. It contains names and empty values; it does not establish the complete required/optional configuration policy.
 
 Choose the exact source tag and qualified inputs from the component/artifact index. Source preservation, dependency recovery, a successful new build, runtime adoption and customer/rights acceptance are separate checks.
+
+## Exact source checkout
+
+The original capture includes its existing line endings. For the immutable capture tags, disable automatic line-ending conversion when cloning and switching to the tag:
+
+    git -c core.autocrlf=false clone https://github.com/CraysCircle/crays-platform.git
+    git -C crays-platform -c core.autocrlf=false switch --detach shared-web-source-state24-20261108
+
+The application directory also carries a byte-preserving attributes rule on the current branch. Compare captured source blobs against source-capture.json. The [anonymous GitHub readback record](../provenance/github-readback.json) identifies the already verified source revisions.
