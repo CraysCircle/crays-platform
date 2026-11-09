@@ -1,0 +1,121 @@
+{
+  "schema": "crays.qlo-work-operations-source.v1",
+  "scope": "Original current-family and same-intent continuation source revisions and referenced preflight/history, not a new execution or deployment",
+  "sourceFiles": [
+    {
+      "path": "current-family/EXACT_MINIMAL_DIFF.patch",
+      "sha256": "c075d775e52cc902b40a9c096402c56eedf146f8de5e68ea61b31036da50a1bc",
+      "bytes": 36351,
+      "originalSourcePath": "/srv/crays/migration-work/20261108/root/business44-current-family-source02/EXACT_MINIMAL_DIFF.patch",
+      "pinAuthority": "Matches recorded source manifest or recorded previous-wrapper source pin"
+    },
+    {
+      "path": "current-family/controller44.current-family.candidate.py",
+      "sha256": "53d0120de1f13f928ad9d917e41a3778177a923055bd462ff3b195d17afb17cd",
+      "bytes": 24571,
+      "originalSourcePath": "/srv/crays/migration-work/20261108/root/business44-current-family-source02/controller44.current-family.candidate.py",
+      "pinAuthority": "Matches recorded source manifest or recorded previous-wrapper source pin"
+    },
+    {
+      "path": "current-family/plan39.unchanged.py",
+      "sha256": "46db8a7df103f8e94a8e613cf2e38ef7608d315acfbc75e357f70b2bf0e23eec",
+      "bytes": 4191,
+      "originalSourcePath": "/srv/crays/migration-work/20261108/root/business44-current-family-source02/plan39.unchanged.py",
+      "pinAuthority": "Matches recorded source manifest or recorded previous-wrapper source pin"
+    },
+    {
+      "path": "current-family/wrapper44.current-family.candidate.py",
+      "sha256": "4ac8f2859d1cec96ad9a661f9bfd4f3d54140ea14c5b9405cb90bcb6a1292672",
+      "bytes": 38134,
+      "originalSourcePath": "/srv/crays/migration-work/20261108/root/business44-current-family-source02/wrapper44.current-family.candidate.py",
+      "pinAuthority": "Matches recorded source manifest or recorded previous-wrapper source pin"
+    },
+    {
+      "path": "history/wrapper44.current-family.BLOCKED.candidate.py",
+      "sha256": "fcd49409960b3bdb6b53d941926cf98b8e5eb25677aaf0dab616f30ffd56885d",
+      "bytes": 38497,
+      "originalSourcePath": "/srv/crays/migration-work/20261108/root/business44-current-family-source01/wrapper44.current-family.BLOCKED.candidate.py",
+      "pinAuthority": "Matches recorded source manifest or recorded previous-wrapper source pin"
+    },
+    {
+      "path": "preflight22/check_current_work24_qlo_bindings_readonly22.current.candidate.py",
+      "sha256": "132786f906c6ee4e6ee6d1fa15c76e898cfd84044205dd232f85c688340bdc67",
+      "bytes": 10009,
+      "originalSourcePath": "/srv/crays/migration-work/20261108/root/business44-current-binding-check22-source01/check_current_work24_qlo_bindings_readonly22.current.candidate.py",
+      "pinAuthority": "Matches recorded source manifest or recorded previous-wrapper source pin"
+    },
+    {
+      "path": "preflight22-original/check_current_work24_qlo_bindings_readonly22.candidate.py",
+      "sha256": "3239a74030dd178ad01b3405791a3b7b3d65ae5804f3b48a65086a856d994afe",
+      "bytes": 8923,
+      "originalSourcePath": "/srv/crays/migration-work/20261108/root/work24-qlo-consumer-corewriter-check22-source/check_current_work24_qlo_bindings_readonly22.candidate.py",
+      "pinAuthority": "Referenced stable original code; recorded execution approval not inferred"
+    },
+    {
+      "path": "same-intent/EXACT_MINIMAL_DIFF.patch",
+      "sha256": "5f4aa8a074f8734b8934475207c1bdf798050000bc98a0bc1e36e8bae44f00a6",
+      "bytes": 65026,
+      "originalSourcePath": "/srv/crays/migration-work/20261108/root/business44-same-intent-continuation01-source/EXACT_MINIMAL_DIFF.patch",
+      "pinAuthority": "Matches recorded source manifest or recorded previous-wrapper source pin"
+    },
+    {
+      "path": "same-intent/EXACT_MINIMAL_DIFF.rev02.patch",
+      "sha256": "0c4fbcf34889d7e84322091c600753813087d1bf28ea980b632e4c8ead82a2dc",
+      "bytes": 66086,
+      "originalSourcePath": "/srv/crays/migration-work/20261108/root/business44-same-intent-continuation01-source/EXACT_MINIMAL_DIFF.rev02.patch",
+      "pinAuthority": "Matches recorded source manifest or recorded previous-wrapper source pin"
+    },
+    {
+      "path": "same-intent/controller44.same-intent-start-only.candidate.py",
+      "sha256": "0827978530ef4cfecb5cc9470c46c418cb3f1e16acfa1f6e6caef36690cdc6c1",
+      "bytes": 26251,
+      "originalSourcePath": "/srv/crays/migration-work/20261108/root/business44-same-intent-continuation01-source/controller44.same-intent-start-only.candidate.py",
+      "pinAuthority": "Matches recorded source manifest or recorded previous-wrapper source pin"
+    },
+    {
+      "path": "same-intent/controller44.same-intent-start-only.rev02.candidate.py",
+      "sha256": "a6ccc15de2a1e4b90bb893500d8147f3ef1a1747dc3a4e28cc8040a1702d65aa",
+      "bytes": 26285,
+      "originalSourcePath": "/srv/crays/migration-work/20261108/root/business44-same-intent-continuation01-source/controller44.same-intent-start-only.rev02.candidate.py",
+      "pinAuthority": "Matches recorded source manifest or recorded previous-wrapper source pin"
+    },
+    {
+      "path": "same-intent/plan39.unchanged.py",
+      "sha256": "46db8a7df103f8e94a8e613cf2e38ef7608d315acfbc75e357f70b2bf0e23eec",
+      "bytes": 4191,
+      "originalSourcePath": "/srv/crays/migration-work/20261108/root/business44-same-intent-continuation01-source/plan39.unchanged.py",
+      "pinAuthority": "Matches recorded source manifest or recorded previous-wrapper source pin"
+    },
+    {
+      "path": "same-intent/wrapper44.same-intent-start-only.candidate.py",
+      "sha256": "050080fe8aa52d5dd69a111d0e8182ab1b94227e0b9e4873c3a17e37ba8e12fc",
+      "bytes": 39852,
+      "originalSourcePath": "/srv/crays/migration-work/20261108/root/business44-same-intent-continuation01-source/wrapper44.same-intent-start-only.candidate.py",
+      "pinAuthority": "Matches recorded source manifest or recorded previous-wrapper source pin"
+    },
+    {
+      "path": "same-intent/wrapper44.same-intent-start-only.rev02.candidate.py",
+      "sha256": "7b0e68a1972aa96b94afd5383ecad825aeb8c2bc8e86627fb4cef006eca62a4d",
+      "bytes": 39918,
+      "originalSourcePath": "/srv/crays/migration-work/20261108/root/business44-same-intent-continuation01-source/wrapper44.same-intent-start-only.rev02.candidate.py",
+      "pinAuthority": "Matches recorded source manifest or recorded previous-wrapper source pin"
+    }
+  ],
+  "sourceArtifactFiles": 14,
+  "pythonProgramFiles": 11,
+  "originalPatchFiles": 3,
+  "dependencies": {
+    "storageGuard": {
+      "repositoryPath": "operations/storage/persistent_storage_guards.py",
+      "sha256": "3efa226b84d375cf96f911c620b7dbefa814f0c54abb8fa61944d0aeb658c739",
+      "bytes": 1992,
+      "originalFilename": "persistent_storage_guards.candidate.py",
+      "exactBytesAlreadyPreserved": true
+    },
+    "workRuntime": "services/work-qlo-runtime/source-capture.json"
+  },
+  "pythonASTParsingPassed": true,
+  "sourceProgramsExecuted": false,
+  "privateRuntimeReviewCustodyOrEnvironmentRecordsIncluded": false,
+  "wholeRuntimeRecoveryImageAndLicenseClosure": false
+}

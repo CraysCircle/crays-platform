@@ -14,3 +14,5 @@ See [provenance](source-index.json) for exact source hashes. No application lice
 - [Postiz delivery helpers](delivery/postiz/README.md): exact qualifier revision04, public binding and separately reviewed physical-readback revision02.
 
 - [Neon → RDS migration sources](neon-rds/README.md): twelve original programs, six unchanged files and six protected-binding templates, with byte-verified reconstruction and explicit dependency/license gaps.
+
+- [Qlo/Work runtime family](qlo-work-family/README.md): exact current-family and same-intent revisions, original source patches, historical wrapper and both binding-check source versions; the storage guard is reused and runtime implementation stays in the service directory.

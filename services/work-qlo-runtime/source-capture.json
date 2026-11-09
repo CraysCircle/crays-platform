@@ -1,0 +1,70 @@
+{
+  "schema": "crays.work-qlo-runtime-source.v1",
+  "scope": "Observed exact runtime bootstrap and four local CommonJS module files referenced by Qlo/Work preflight source",
+  "files": [
+    {
+      "path": "code/bootstrap.cjs",
+      "sha256": "715b369d4784b7c8717e921d5cadd82278f24bccd883622f45521a36f635d151",
+      "bytes": 829,
+      "originalSourcePath": "/srv/crays/runtime/work24-qlo-runtime-20261108-01/code/bootstrap.cjs",
+      "observedRequires": [
+        "/srv/crays/releases/work24-qlo-20261108-01/runtime/work/user-runtime.cjs",
+        "node:assert/strict",
+        "node:crypto",
+        "node:fs"
+      ]
+    },
+    {
+      "path": "runtime/work/user-runtime.cjs",
+      "sha256": "faec36ee775063c3594df2c473dbcb12d228bc7e6c9f9e90f76b5c5fee887c14",
+      "bytes": 10941,
+      "originalSourcePath": "/srv/crays/releases/work24-qlo-20261108-01/runtime/work/user-runtime.cjs",
+      "observedRequires": [
+        "./pool-wait-observer.cjs",
+        "./prepare-next-readiness.cjs",
+        "./static-representation.cjs",
+        "node:assert/strict",
+        "node:async_hooks",
+        "node:crypto",
+        "node:fs",
+        "node:http",
+        "node:path"
+      ]
+    },
+    {
+      "path": "runtime/work/pool-wait-observer.cjs",
+      "sha256": "98edecab73c5cc6f040085649596292ea4f8a1de6e5f1acb9c198914ed264f3d",
+      "bytes": 2852,
+      "originalSourcePath": "/srv/crays/releases/work24-qlo-20261108-01/runtime/work/pool-wait-observer.cjs",
+      "observedRequires": []
+    },
+    {
+      "path": "runtime/work/prepare-next-readiness.cjs",
+      "sha256": "8e6ea25a6e9fb5e7501626a1a369511f2c20b232f92eca6c99f46a19a4a231f7",
+      "bytes": 855,
+      "originalSourcePath": "/srv/crays/releases/work24-qlo-20261108-01/runtime/work/prepare-next-readiness.cjs",
+      "observedRequires": [
+        "node:assert/strict",
+        "node:fs",
+        "node:path"
+      ]
+    },
+    {
+      "path": "runtime/work/static-representation.cjs",
+      "sha256": "42c767dbf02c2d4d828f614f6cbf137399cc6f716196c0a2bd6a97014a0268d9",
+      "bytes": 2543,
+      "originalSourcePath": "/srv/crays/releases/work24-qlo-20261108-01/runtime/work/static-representation.cjs",
+      "observedRequires": [
+        "node:assert/strict",
+        "node:crypto",
+        "node:zlib"
+      ]
+    }
+  ],
+  "bootstrapSHA256MatchesLiteralPinInCurrentPreflight": true,
+  "allObservedLocalRequireModulesPreserved": true,
+  "runtimeDependencySourceLicenseAndPrivateConfigurationClosure": false,
+  "originalUnderlyingNextApplicationAndClientAssetContinuityNotIncluded": true,
+  "sourceProgramsExecuted": false,
+  "freshRuntimeBuildOrDeployment": false
+}

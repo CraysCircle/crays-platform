@@ -93,6 +93,18 @@
     {
       "component": "shared-next-web-application",
       "path": "apps/web/source-capture.json"
+    },
+    {
+      "component": "qlo-work-family-operations",
+      "path": "operations/qlo-work-family/source-capture.json"
+    },
+    {
+      "component": "work-qlo-runtime",
+      "path": "services/work-qlo-runtime/source-capture.json"
+    },
+    {
+      "component": "member-source25-compositions",
+      "path": "apps/web/compositions/member-source25/aws-build25-source.json"
     }
   ]
 }

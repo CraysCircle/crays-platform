@@ -1,0 +1,4 @@
+"use strict";
+const fs=require("node:fs"),crypto=require("node:crypto"),assert=require("node:assert/strict");
+const fd=fs.openSync("/run/crays-work/environment.private.json",fs.constants.O_RDONLY|fs.constants.O_NOFOLLOW);let raw;try{const s=fs.fstatSync(fd);assert(s.isFile()&&s.uid===1000&&s.gid===32022&&(s.mode&511)===256&&s.nlink===1);raw=fs.readFileSync(fd);}finally{fs.closeSync(fd);}
+assert.equal(crypto.createHash("sha256").update(raw).digest("hex"),"3507491ab9d14b043b0ac7d105f83238c279aafaee4ced202ae6c8c15dcafe53");assert(process.getuid()===1000&&process.getgid()===32022);const env=JSON.parse(raw);for(const k of Object.keys(process.env))delete process.env[k];Object.assign(process.env,{PATH:"/usr/local/bin:/usr/bin:/bin",...env});require("/srv/crays/releases/work24-qlo-20261108-01/runtime/work/user-runtime.cjs");

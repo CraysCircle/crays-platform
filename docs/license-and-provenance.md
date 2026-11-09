@@ -34,3 +34,9 @@ The nine original component files are preserved unchanged with their [source rec
 ## Shared Next.js application
 
 The [qualified shared web capture](../apps/web/README.md) retains 2,045 selected original inputs in baseline and prepared source views. Its [direct-package index](../apps/web/third-party/index.json) preserves the observed package metadata and original root notice texts located for 45 of 47 direct packages. The server-only and drizzle-kit notice questions, application rights, transitive/bundled/runtime notices and source-availability obligations remain open. The [recovery record](../apps/web/docs/recovery.md) identifies missing operational helpers, the unqualified project lockfile and remaining media/runtime inputs. No application test, build, database program or deployment was executed by this import.
+
+## Qlo/Work family operating and runtime sources
+
+The [operating-source archive](../operations/qlo-work-family/README.md) preserves fourteen exact original program/patch files across their recorded revisions, with an existing byte-identical storage guard linked separately. The [Work runtime component](../services/work-qlo-runtime/README.md) retains the original bootstrap and four local CommonJS modules.
+
+Recorded source pins, AST parsing and the source/dependency secret scan do not establish execution success, application ownership/license clearance, a complete original underlying Next application/dependency/asset source set, runtime/image notices or applicable corresponding-source closure. Protected review/environment/custody records remain outside Git. No original program or product runtime was executed by this import.
