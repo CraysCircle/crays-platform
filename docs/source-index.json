@@ -217,6 +217,10 @@
     {
       "component": "member-messaging-module50-install-revision04",
       "path": "operations/member-messaging-module50/install-revision04/source-capture.json"
+    },
+    {
+      "component": "tls19-dns01-bootstrap",
+      "path": "operations/tls19-dns01-bootstrap/source-capture.json"
     }
   ]
 }

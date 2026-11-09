@@ -1,0 +1,60 @@
+{
+  "schema": "crays.tls19-dns01-bootstrap.original-source-capture.v1",
+  "scope": "Three unchanged Root operations source programs only; no private/runtime files",
+  "sourceFiles": 3,
+  "sourceBytes": 15367,
+  "files": [
+    {
+      "path": "operations/tls19-dns01-bootstrap/official_dns01_two_phase.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/public-tls19-official-acme-dns01-source01/official_dns01_two_phase.candidate.py",
+      "bytes": 12684,
+      "sha256": "a4a753f0f80c5d9d5342b6817d7804be2944fb9e86ba3976b23271ee9d66b298",
+      "originalBytesUnchanged": true,
+      "sourceKind": "CRAYS Root operations orchestration; no embedded dependency package distribution"
+    },
+    {
+      "path": "operations/tls19-dns01-bootstrap/refresh_and_simulate.candidate.sh",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/public-tls19-apt-https-source01/refresh_and_simulate.candidate.sh",
+      "bytes": 1587,
+      "sha256": "f94d735c53648debc34995988bfae6b20b3e2ca9ba2fdbe4a9205356fb0ba560",
+      "originalBytesUnchanged": true,
+      "sourceKind": "CRAYS Root operations orchestration; no embedded dependency package distribution"
+    },
+    {
+      "path": "operations/tls19-dns01-bootstrap/install_exact_libraries.candidate.sh",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/public-tls19-apt-https-source01/install_exact_libraries.candidate.sh",
+      "bytes": 1096,
+      "sha256": "bf6696ad725bd8b0f3d86fa8ce1c15f68fd98159bf162f8e478f35ab92a1270b",
+      "originalBytesUnchanged": true,
+      "sourceKind": "CRAYS Root operations orchestration; no embedded dependency package distribution"
+    }
+  ],
+  "sourcePeer": {
+    "originalPath": "/srv/crays/migration-work/20261109/root/public-tls19-official-acme-dns01-source01/INDEPENDENT_OFFICIAL_DNS01_TWO_PHASE_SOURCE_REVIEW.json",
+    "sha256": "b0161631b4eaa38eab74ffc9f08a83dddc42a0c6a9796add74eb45524a5e3611",
+    "status": "PASS_SOURCE_ONLY_INDEPENDENT_OFFICIAL_DNS01_TWO_PHASE_REVIEW",
+    "findings": 0,
+    "limits": "Source-only independent review; no runtime/install/renewal/deployment acceptance"
+  },
+  "privacyQualification": {
+    "exactSourceBodiesStaticallyReviewed": 3,
+    "privateBindingsOrCredentialsOrKeysEmbedded": false,
+    "privateSourceInputsRead": false,
+    "redactionsNeeded": 0,
+    "sourcePathnamesAndPublicDomainsAreTechnicalBindings": true,
+    "sourceOnlyReferencesToPrivateFilesAreNotTheirContents": true
+  },
+  "dependenciesReferencedNotIncluded": [
+    "python-acme",
+    "josepy",
+    "cryptography",
+    "Ubuntu APT and dpkg",
+    "OpenSSL",
+    "Caddy future renewal handoff"
+  ],
+  "originalNoticesRemoved": false,
+  "newLicenseGrant": false,
+  "sourceProgramsExecutedByConsolidation": false,
+  "RuntimeOrDNSOrPackageOrCaddyChangedByPublication": false,
+  "actualIssuanceInstallationRenewalOrIngressClaim": false
+}
