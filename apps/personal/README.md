@@ -12,7 +12,7 @@ It is a separate application from [the shared Next.js application](../web/) and 
 - `third-party/`: exact metadata for all 30 direct declared packages and 31 original root license/notice files from the captured dependency tree.
 - `build-binding.json`: relationship to the recorded AWS Build02 artifact, without claiming runtime adoption.
 
-Four original generated food illustrations are now preserved with their [source provenance](provenance/generated-food-illustrations.json). The other 50 image bodies remain separately pinned while their provenance and publication rights are reviewed. All application text, original build inputs and ten original changed text files are retained here, with the protected account constant represented by a recoverable marker.
+Eleven original generated image inputs are now preserved: four food illustrations and seven further project illustrations. The [complete image source map](provenance/images/README.md) records every original path, body hash, provenance observation and current availability. The other 43 image input paths remain separately pinned while their source, privacy and publication rights are reviewed. All application text, original build inputs and ten original changed text files are retained here, with the protected account constant represented by a recoverable marker.
 
 ## Restore the exact inputs
 
@@ -24,7 +24,7 @@ python3 restore_source.py --version candidate --destination /outside-git/persona
 
 Use `--version baseline` for the pre-overlay composition. The owner asset root must contain the exact original relative image paths. The source-binding JSON accepts `MEMBER_TEST_ACCOUNT_ID` and `MEMBER_TEST_SUBJECT_SHA256`; this application requires the account input. Keep that JSON outside Git. Missing or incorrect owner inputs are refused before destination files are written.
 
-The restorer checks the entire source composition against original hashes before writing files. Restoration executes no original application or build code. Public GitHub alone does not currently contain the remaining 50 image bodies or the protected constant.
+The restorer checks the entire source composition against original hashes before writing files. Restoration executes no original application or build code. Public GitHub alone does not currently contain the remaining 43 image input paths or the protected constant.
 
 ## Development and build
 

@@ -129,6 +129,10 @@
     {
       "component": "club-next-runtime-operations",
       "path": "operations/club-next-runtime/source-capture.json"
+    },
+    {
+      "component": "personal-original-image-catalog",
+      "path": "apps/personal/provenance/images/source-status.json"
     }
   ]
 }

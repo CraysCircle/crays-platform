@@ -10,11 +10,15 @@
   "originalPreimages": 10,
   "newFiles": 3,
   "currentTextSourceFiles": 1435,
-  "assetsPendingPublicRightsReview": 50,
+  "assetsPendingPublicRightsReview": 43,
   "protectedTemplateFiles": 9,
   "wholeMigrationOrLicenseClosure": false,
   "originalSourceProgramsExecuted": false,
-  "publicImageInputs": 4,
+  "publicImageInputs": 11,
   "totalOriginalImageInputs": 54,
-  "publicImageProvenance": "provenance/generated-food-illustrations.json"
+  "publicImageProvenance": "provenance/images/README.md",
+  "publicImageProvenanceIndexes": [
+    "provenance/generated-food-illustrations.json",
+    "provenance/generated-gym-images.json"
+  ]
 }

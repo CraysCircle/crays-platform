@@ -9817,7 +9817,9 @@
       "path": "src/gym-design/source-media/training-example-row.png",
       "bytes": 2223597,
       "sha256": "47ebb7a8f812c139ff4e7c7c7abe6fb0928d0c55aa2375c6a1adc2daf4f2e4f8",
-      "protectedAsset": true
+      "exportPath": "source/src/gym-design/source-media/training-example-row.png",
+      "exportBytes": 2223597,
+      "exportSHA256": "47ebb7a8f812c139ff4e7c7c7abe6fb0928d0c55aa2375c6a1adc2daf4f2e4f8"
     },
     {
       "path": "src/gym-design/source-media/health-original-mind.jpg",
@@ -9941,7 +9943,9 @@
       "path": "src/gym-design/source-media/today-mobility-studio.png",
       "bytes": 2157467,
       "sha256": "f249bbcf856b3c530d58d9146c42ed11c807d6e1affdea1a44b06c0c4745637c",
-      "protectedAsset": true
+      "exportPath": "source/src/gym-design/source-media/today-mobility-studio.png",
+      "exportBytes": 2157467,
+      "exportSHA256": "f249bbcf856b3c530d58d9146c42ed11c807d6e1affdea1a44b06c0c4745637c"
     },
     {
       "path": "src/gym-design/source-media/nutrition-example-mediterranean-bowl.png",
@@ -9961,7 +9965,9 @@
       "path": "src/gym-design/source-media/training-example-bench.png",
       "bytes": 2453764,
       "sha256": "6d42f294cf5ae881040b33e08af23757c801925cde2dcef6061a79b7d62343db",
-      "protectedAsset": true
+      "exportPath": "source/src/gym-design/source-media/training-example-bench.png",
+      "exportBytes": 2453764,
+      "exportSHA256": "6d42f294cf5ae881040b33e08af23757c801925cde2dcef6061a79b7d62343db"
     },
     {
       "path": "src/gym-design/source-media/crays-performance-class-pexels-3775566.jpg",
@@ -9991,7 +9997,9 @@
       "path": "src/gym-design/source-media/account-unique-member-phone-header-refined.png",
       "bytes": 2017455,
       "sha256": "661eb9d08125b3af56629d5acd64342e52d5ac263a37eefe2e59593c8b2d3c57",
-      "protectedAsset": true
+      "exportPath": "source/src/gym-design/source-media/account-unique-member-phone-header-refined.png",
+      "exportBytes": 2017455,
+      "exportSHA256": "661eb9d08125b3af56629d5acd64342e52d5ac263a37eefe2e59593c8b2d3c57"
     },
     {
       "path": "src/gym-design/source-media/health-original-metabolic-bowl.webp",
@@ -10021,7 +10029,9 @@
       "path": "src/gym-design/source-media/today-closing-dumbbells.png",
       "bytes": 1833888,
       "sha256": "ac2dfc988e352e79c54c08da0bf701fb98c740f6c8cd45f751e09caeff8a6f10",
-      "protectedAsset": true
+      "exportPath": "source/src/gym-design/source-media/today-closing-dumbbells.png",
+      "exportBytes": 1833888,
+      "exportSHA256": "ac2dfc988e352e79c54c08da0bf701fb98c740f6c8cd45f751e09caeff8a6f10"
     },
     {
       "path": "src/gym-design/source-media/member-training-hero-v2.png",
@@ -10039,13 +10049,17 @@
       "path": "src/gym-design/source-media/health-unique-wellbeing-hero.png",
       "bytes": 1798735,
       "sha256": "bad8adf6ad19d39d14bf52a7dbd69ff4eb7b5319fdf158b548ab3be7217d228e",
-      "protectedAsset": true
+      "exportPath": "source/src/gym-design/source-media/health-unique-wellbeing-hero.png",
+      "exportBytes": 1798735,
+      "exportSHA256": "bad8adf6ad19d39d14bf52a7dbd69ff4eb7b5319fdf158b548ab3be7217d228e"
     },
     {
       "path": "src/gym-design/source-media/today-coaching-conversation.png",
       "bytes": 1802675,
       "sha256": "7a2ce7c543ea5b8081e04977d15dedb9dd7216ee80d4f7f7c6cb3ad376e6d99f",
-      "protectedAsset": true
+      "exportPath": "source/src/gym-design/source-media/today-coaching-conversation.png",
+      "exportBytes": 1802675,
+      "exportSHA256": "7a2ce7c543ea5b8081e04977d15dedb9dd7216ee80d4f7f7c6cb3ad376e6d99f"
     },
     {
       "path": "src/gym-design/source-media/nutrition-original-french-toast-hero.png",

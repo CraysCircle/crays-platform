@@ -1,0 +1,2016 @@
+{
+  "schema": "crays.personal-original-image-status.v1",
+  "originalInputPaths": 54,
+  "distinctOriginalImageBodies": 51,
+  "publicOriginalInputPaths": 11,
+  "pendingOriginalInputPaths": 43,
+  "pendingDistinctImageBodies": 40,
+  "authorityDocumentObservations": 28,
+  "existingCandidateRepositoriesCompared": [
+    "CraysCircle/crays-club",
+    "CraysCircle/crays-world",
+    "CraysCircle/crays-franchise"
+  ],
+  "exactImageBodiesFoundInThoseThreeTrees": 0,
+  "rows": [
+    {
+      "path": "src/gym-data/progress-original-hero.jpg",
+      "bytes": 180116,
+      "sha256": "8b53e629508b1c837a228545add99fefe06b43c3ecc24a928fb027fc284a4184",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [
+        "src/gym-design/source-media/health-original-body-deadlift.jpg"
+      ],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_FINAL_BOUNDARY_20261029.json",
+          "authoritySHA256": "ce643fc3dd70edd47784b52c5ad7f7ef3c42178496c57ccc2945b7b86f7adb74",
+          "entryPointer": "/originalAndGeneratedMedia/1/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-performance-hero-pexels-13219986.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_FINAL_BOUNDARY_20261029.json",
+          "authoritySHA256": "ce643fc3dd70edd47784b52c5ad7f7ef3c42178496c57ccc2945b7b86f7adb74",
+          "entryPointer": "/imageRuntimeInventory/rows/3/distSha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_BOUNDARY_20261029.json",
+          "authoritySHA256": "7e1af8f882fbc5bf92a0c614b77bf9822a3bd189d66c3f26d51aedd885e3aede",
+          "entryPointer": "/ownSnapshotPins/gym-design/source-media/health-original-body-deadlift.jpg",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_BOUNDARY_20261029.json",
+          "authoritySHA256": "7e1af8f882fbc5bf92a0c614b77bf9822a3bd189d66c3f26d51aedd885e3aede",
+          "entryPointer": "/assetReadback/1/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-performance-hero-pexels-13219986.jpg"
+          },
+          "explicitSourceKind": "Retained original Gym asset",
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/function/HEALTH_IMAGE_ONLY_FUNCTION_EQUIVALENCE_20261029.json",
+          "authoritySHA256": "29e8151c4745ba2a0f2e20741bd4636848250ee0a767186eadf8aec766e95bd7",
+          "entryPointer": "/healthStaticImagePins/body/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/TRAINING_AND_HEALTH_SOURCE_ASSET_RECHECK_20261029.json",
+          "authoritySHA256": "fd940ee25e977feb97f6daa933f645ed88bcd3b7b39ae698a8b282bcce604dfc",
+          "entryPointer": "/sourceAssetsActuallyOpened/7/sha256",
+          "observedOriginalLocations": {
+            "path": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/health-image-correction-20261029/candidate/src/gym-design/source-media/health-original-body-deadlift.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/health-image-correction-20261029/ACTUAL_8990_HEALTH_IMAGES_HTTP.json",
+          "authoritySHA256": "5d215c1dddf3f9f2f907eb7285939d0d7212852f506136a9763347dcee96bd1a",
+          "entryPointer": "/proof/3/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/11/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/health-image-correction-20261029/ASSET_PROVENANCE.json",
+          "authoritySHA256": "62c5b92a23438ce14e7403d630f52aa3a3efee7e9a5c665e0668e1fab07ebc6f",
+          "entryPointer": "/1/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-performance-hero-pexels-13219986.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/access-original-arrival-hero.png",
+      "bytes": 1321801,
+      "sha256": "b4041a82d5dc84738983a266dc1bcf401bf7d6361d41df5a9273dcaecaced3de",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/ACCESS_MAIN_REFERENCE_ASSET_CONTROL_20261029.json",
+          "authoritySHA256": "ccd3d5076cadc57553d92c441c0f6c32bedf81a86c9473672fd65287a44c6a31",
+          "entryPointer": "/assets/0/sha256",
+          "observedOriginalLocations": {
+            "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/member-access-hero-v2.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/access-unique-reception-help.png",
+      "bytes": 2045911,
+      "sha256": "1f7ebda34471f5eb1842b8769ca3c74490a2d2b12028f7ad7c86e8c624aac558",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/account-unique-member-phone-header-refined.png",
+      "bytes": 2017455,
+      "sha256": "661eb9d08125b3af56629d5acd64342e52d5ac263a37eefe2e59593c8b2d3c57",
+      "status": "public-source-body",
+      "publicExportPath": "../../source/src/gym-design/source-media/account-unique-member-phone-header-refined.png",
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/account-main-preparation-20261029/ASSETS.json",
+          "authoritySHA256": "a367a788dc1d270a701837eb18d6c926488a40807429ff0bd2e5a2cb4b477c81",
+          "entryPointer": "/selectedAsset/sha256",
+          "observedOriginalLocations": {
+            "path": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/account-main-preparation-20261029/assets/account-unique-member-phone-header-refined.png",
+            "original": "/home/craysdev/.codex/generated_images/01a18636-3455-7781-9c94-22e9889898bb/exec-cbfea3a9-11a4-4edd-a205-ead70fe750c5.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": [
+            {
+              "path": "/home/craysdev/.codex/generated_images/01a18636-3455-7781-9c94-22e9889898bb/exec-cbfea3a9-11a4-4edd-a205-ead70fe750c5.png",
+              "exists": true,
+              "exactHash": true
+            }
+          ]
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/account-main-integration-20261029/RUNTIME_IMAGE_INVENTORY.json",
+          "authoritySHA256": "d328f06689d7787167e9c1d8b9c5fda481368d9a7b2999ab33d7c1fe3b33fc9a",
+          "entryPointer": "/0/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/book-original-dumbbell-hero.jpg",
+      "bytes": 197137,
+      "sha256": "da9cf86303552c70af0f4fc253c7acfb5f0e8136c80095ee771192afb1dadcf6",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/COACHING_MAIN_REFERENCE_ASSET_CONTROL_20261029.json",
+          "authoritySHA256": "69d0739585fb7a4e47ed0369714e4136dedc699aacf80d059d9c3b888d995827",
+          "entryPointer": "/bookHeroDistinctnessRecheck/bookHero/sha256",
+          "observedOriginalLocations": {
+            "path": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/shopping-main-integration-20261029/candidate/src/gym-design/source-media/book-original-dumbbell-hero.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/MEMBERSHIP_MAIN_REFERENCE_ASSET_CONTROL_20261029.json",
+          "authoritySHA256": "a4ad7e9bada47c43e20739a38cfcb5d83a4bc27843afb9dc66070f252bded20d",
+          "entryPointer": "/assets/1/sha256",
+          "observedOriginalLocations": {
+            "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-hero-dumbbell-slide-1.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/5/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/book-original-group-strength.jpg",
+      "bytes": 412220,
+      "sha256": "524de618f6673377730efae3c9963d5c7964733d646758033b3ac49e597bfa55",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/book-main-integration/ORIGINAL_MEDIA_PROVENANCE.json",
+          "authoritySHA256": "0f66567ae274439e8fe03b4f1f822117a9ecf5e78fa328530c4185af9a4e19aa",
+          "entryPointer": "/rows/0/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/classes-new.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/8/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/book-original-mobility.jpg",
+      "bytes": 557239,
+      "sha256": "d744bd7c83756f378ca000cf245d1206212209e85d0c34988d33cdc94802314a",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/book-main-integration/ORIGINAL_MEDIA_PROVENANCE.json",
+          "authoritySHA256": "0f66567ae274439e8fe03b4f1f822117a9ecf5e78fa328530c4185af9a4e19aa",
+          "entryPointer": "/rows/1/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/classes.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/7/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/book-original-wellness-sauna.jpg",
+      "bytes": 133912,
+      "sha256": "c3d7e8a2454dd3a48eccb3c46487023d17c044099b94fc3698bb9b5acd2d1c34",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/book-main-integration/ORIGINAL_MEDIA_PROVENANCE.json",
+          "authoritySHA256": "0f66567ae274439e8fe03b4f1f822117a9ecf5e78fa328530c4185af9a4e19aa",
+          "entryPointer": "/rows/2/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/longevity/hero-sauna.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/9/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/coaching-original-conversation.png",
+      "bytes": 1989484,
+      "sha256": "9f144ea06dd4a4248da8fb23c1725586e3df69a4eb8c5849a2f8ec1ae3858127",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/COACHING_MAIN_REFERENCE_ASSET_CONTROL_20261029.json",
+          "authoritySHA256": "69d0739585fb7a4e47ed0369714e4136dedc699aacf80d059d9c3b888d995827",
+          "entryPointer": "/assets/0/sha256",
+          "observedOriginalLocations": {
+            "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/longevity/safety-coach-v2.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/coaching-original-plan.jpg",
+      "bytes": 50818,
+      "sha256": "3050b214f29662e2c6de8e31eff65f54bfd432e0f8a3d263b52e93d35aefb26c",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/COACHING_MAIN_REFERENCE_ASSET_CONTROL_20261029.json",
+          "authoritySHA256": "69d0739585fb7a4e47ed0369714e4136dedc699aacf80d059d9c3b888d995827",
+          "entryPointer": "/assets/4/sha256",
+          "observedOriginalLocations": {
+            "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-fitness-dumbbell-model.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/COACHING_MAIN_REFERENCE_ASSET_CONTROL_20261029.json",
+          "authoritySHA256": "69d0739585fb7a4e47ed0369714e4136dedc699aacf80d059d9c3b888d995827",
+          "entryPointer": "/bookHeroDistinctnessRecheck/proposedPlan/sha256",
+          "observedOriginalLocations": {
+            "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-fitness-dumbbell-model.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/coaching-unique-checkin-studio.png",
+      "bytes": 2723987,
+      "sha256": "ca499c63e392807881f3d0cc0b66f6455a6b0f00e67294469228c620accf0901",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/coaching-unique-personal-training-hero.png",
+      "bytes": 2040206,
+      "sha256": "9815ede29e2e68fe9a57aaa5233284d7a90562ebe143b429e418d688519ddb0c",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/coaching-unique-services-banner.png",
+      "bytes": 1998040,
+      "sha256": "31acf761181d399e55e3a71e15eec1b3bfe9e819cb5f72a65f5db44790b1c833",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/crays-performance-class-pexels-3775566.jpg",
+      "bytes": 325395,
+      "sha256": "cc7c436048fe3103585d108b6331bb11c265e7dc794f79a0a7e07bc2607c4e60",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/gym-design-prototype/source-media-provenance.json",
+          "authoritySHA256": "840cbfb520effc1832a67d2384ffe082fad999858b6ac7fb24200735fb858486",
+          "entryPointer": "/4/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-performance-class-pexels-3775566.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/6/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/health-original-assessment.png",
+      "bytes": 327857,
+      "sha256": "a263c651f147c30735e31247427e095e21998be286360e1fee2003d330e2eaf1",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_FINAL_BOUNDARY_20261029.json",
+          "authoritySHA256": "ce643fc3dd70edd47784b52c5ad7f7ef3c42178496c57ccc2945b7b86f7adb74",
+          "entryPointer": "/originalAndGeneratedMedia/3/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-news-trainer-diagnosis.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_FINAL_BOUNDARY_20261029.json",
+          "authoritySHA256": "ce643fc3dd70edd47784b52c5ad7f7ef3c42178496c57ccc2945b7b86f7adb74",
+          "entryPointer": "/imageRuntimeInventory/rows/8/distSha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_BOUNDARY_20261029.json",
+          "authoritySHA256": "7e1af8f882fbc5bf92a0c614b77bf9822a3bd189d66c3f26d51aedd885e3aede",
+          "entryPointer": "/ownSnapshotPins/gym-design/source-media/health-original-assessment.png",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_BOUNDARY_20261029.json",
+          "authoritySHA256": "7e1af8f882fbc5bf92a0c614b77bf9822a3bd189d66c3f26d51aedd885e3aede",
+          "entryPointer": "/assetReadback/3/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-news-trainer-diagnosis.png"
+          },
+          "explicitSourceKind": "Retained original Gym asset",
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/function/HEALTH_IMAGE_ONLY_FUNCTION_EQUIVALENCE_20261029.json",
+          "authoritySHA256": "29e8151c4745ba2a0f2e20741bd4636848250ee0a767186eadf8aec766e95bd7",
+          "entryPointer": "/healthStaticImagePins/assessment/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/TRAINING_AND_HEALTH_SOURCE_ASSET_RECHECK_20261029.json",
+          "authoritySHA256": "fd940ee25e977feb97f6daa933f645ed88bcd3b7b39ae698a8b282bcce604dfc",
+          "entryPointer": "/sourceAssetsActuallyOpened/9/sha256",
+          "observedOriginalLocations": {
+            "path": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/health-image-correction-20261029/candidate/src/gym-design/source-media/health-original-assessment.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/health-image-correction-20261029/ACTUAL_8990_HEALTH_IMAGES_HTTP.json",
+          "authoritySHA256": "5d215c1dddf3f9f2f907eb7285939d0d7212852f506136a9763347dcee96bd1a",
+          "entryPointer": "/proof/5/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/13/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/health-image-correction-20261029/ASSET_PROVENANCE.json",
+          "authoritySHA256": "62c5b92a23438ce14e7403d630f52aa3a3efee7e9a5c665e0668e1fab07ebc6f",
+          "entryPointer": "/3/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-news-trainer-diagnosis.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/health-original-body-deadlift.jpg",
+      "bytes": 180116,
+      "sha256": "8b53e629508b1c837a228545add99fefe06b43c3ecc24a928fb027fc284a4184",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [
+        "src/gym-data/progress-original-hero.jpg"
+      ],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_FINAL_BOUNDARY_20261029.json",
+          "authoritySHA256": "ce643fc3dd70edd47784b52c5ad7f7ef3c42178496c57ccc2945b7b86f7adb74",
+          "entryPointer": "/originalAndGeneratedMedia/1/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-performance-hero-pexels-13219986.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_FINAL_BOUNDARY_20261029.json",
+          "authoritySHA256": "ce643fc3dd70edd47784b52c5ad7f7ef3c42178496c57ccc2945b7b86f7adb74",
+          "entryPointer": "/imageRuntimeInventory/rows/3/distSha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_BOUNDARY_20261029.json",
+          "authoritySHA256": "7e1af8f882fbc5bf92a0c614b77bf9822a3bd189d66c3f26d51aedd885e3aede",
+          "entryPointer": "/ownSnapshotPins/gym-design/source-media/health-original-body-deadlift.jpg",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_BOUNDARY_20261029.json",
+          "authoritySHA256": "7e1af8f882fbc5bf92a0c614b77bf9822a3bd189d66c3f26d51aedd885e3aede",
+          "entryPointer": "/assetReadback/1/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-performance-hero-pexels-13219986.jpg"
+          },
+          "explicitSourceKind": "Retained original Gym asset",
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/function/HEALTH_IMAGE_ONLY_FUNCTION_EQUIVALENCE_20261029.json",
+          "authoritySHA256": "29e8151c4745ba2a0f2e20741bd4636848250ee0a767186eadf8aec766e95bd7",
+          "entryPointer": "/healthStaticImagePins/body/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/TRAINING_AND_HEALTH_SOURCE_ASSET_RECHECK_20261029.json",
+          "authoritySHA256": "fd940ee25e977feb97f6daa933f645ed88bcd3b7b39ae698a8b282bcce604dfc",
+          "entryPointer": "/sourceAssetsActuallyOpened/7/sha256",
+          "observedOriginalLocations": {
+            "path": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/health-image-correction-20261029/candidate/src/gym-design/source-media/health-original-body-deadlift.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/health-image-correction-20261029/ACTUAL_8990_HEALTH_IMAGES_HTTP.json",
+          "authoritySHA256": "5d215c1dddf3f9f2f907eb7285939d0d7212852f506136a9763347dcee96bd1a",
+          "entryPointer": "/proof/3/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/11/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/health-image-correction-20261029/ASSET_PROVENANCE.json",
+          "authoritySHA256": "62c5b92a23438ce14e7403d630f52aa3a3efee7e9a5c665e0668e1fab07ebc6f",
+          "entryPointer": "/1/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-performance-hero-pexels-13219986.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/health-original-cardio.jpg",
+      "bytes": 558193,
+      "sha256": "12a8215fb5190b8437e1e3ce38313e92081b82040769b6dfaa6311fecff81b7c",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_FINAL_BOUNDARY_20261029.json",
+          "authoritySHA256": "ce643fc3dd70edd47784b52c5ad7f7ef3c42178496c57ccc2945b7b86f7adb74",
+          "entryPointer": "/imageRuntimeInventory/rows/2/distSha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/function/HEALTH_IMAGE_ONLY_FUNCTION_EQUIVALENCE_20261029.json",
+          "authoritySHA256": "29e8151c4745ba2a0f2e20741bd4636848250ee0a767186eadf8aec766e95bd7",
+          "entryPointer": "/healthStaticImagePins/cardio/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/health-main-integration-20261029/ORIGINAL_MEDIA_PROVENANCE.json",
+          "authoritySHA256": "7b132e6361fb91196d0fc1ef752ec7138d0e8658fa344d2ac2843eee1f6474c5",
+          "entryPointer": "/0/sha256",
+          "observedOriginalLocations": {
+            "original": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-performance-cardio-pexels-4944975.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/15/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/health-original-metabolic-bowl.webp",
+      "bytes": 152564,
+      "sha256": "3bde784209829efabfb75cce6683d9876cc38959afd12c2fdbd11042a96f1743",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_FINAL_BOUNDARY_20261029.json",
+          "authoritySHA256": "ce643fc3dd70edd47784b52c5ad7f7ef3c42178496c57ccc2945b7b86f7adb74",
+          "entryPointer": "/originalAndGeneratedMedia/2/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/recipe-protein-bowl.webp"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_FINAL_BOUNDARY_20261029.json",
+          "authoritySHA256": "ce643fc3dd70edd47784b52c5ad7f7ef3c42178496c57ccc2945b7b86f7adb74",
+          "entryPointer": "/imageRuntimeInventory/rows/7/distSha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_BOUNDARY_20261029.json",
+          "authoritySHA256": "7e1af8f882fbc5bf92a0c614b77bf9822a3bd189d66c3f26d51aedd885e3aede",
+          "entryPointer": "/ownSnapshotPins/gym-design/source-media/health-original-metabolic-bowl.webp",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_BOUNDARY_20261029.json",
+          "authoritySHA256": "7e1af8f882fbc5bf92a0c614b77bf9822a3bd189d66c3f26d51aedd885e3aede",
+          "entryPointer": "/assetReadback/2/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/recipe-protein-bowl.webp"
+          },
+          "explicitSourceKind": "Retained original Gym asset",
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/function/HEALTH_IMAGE_ONLY_FUNCTION_EQUIVALENCE_20261029.json",
+          "authoritySHA256": "29e8151c4745ba2a0f2e20741bd4636848250ee0a767186eadf8aec766e95bd7",
+          "entryPointer": "/healthStaticImagePins/metabolic/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/TRAINING_AND_HEALTH_SOURCE_ASSET_RECHECK_20261029.json",
+          "authoritySHA256": "fd940ee25e977feb97f6daa933f645ed88bcd3b7b39ae698a8b282bcce604dfc",
+          "entryPointer": "/sourceAssetsActuallyOpened/8/sha256",
+          "observedOriginalLocations": {
+            "path": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/health-image-correction-20261029/candidate/src/gym-design/source-media/health-original-metabolic-bowl.webp"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/health-image-correction-20261029/ACTUAL_8990_HEALTH_IMAGES_HTTP.json",
+          "authoritySHA256": "5d215c1dddf3f9f2f907eb7285939d0d7212852f506136a9763347dcee96bd1a",
+          "entryPointer": "/proof/4/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/12/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/health-image-correction-20261029/ASSET_PROVENANCE.json",
+          "authoritySHA256": "62c5b92a23438ce14e7403d630f52aa3a3efee7e9a5c665e0668e1fab07ebc6f",
+          "entryPointer": "/2/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/recipe-protein-bowl.webp"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/health-original-mind.jpg",
+      "bytes": 370293,
+      "sha256": "6a3cfb71a0c024188ad21aaf1c1112c5980bc01a9bb349c791b1d2091b4748d1",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_FINAL_BOUNDARY_20261029.json",
+          "authoritySHA256": "ce643fc3dd70edd47784b52c5ad7f7ef3c42178496c57ccc2945b7b86f7adb74",
+          "entryPointer": "/imageRuntimeInventory/rows/4/distSha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/function/HEALTH_IMAGE_ONLY_FUNCTION_EQUIVALENCE_20261029.json",
+          "authoritySHA256": "29e8151c4745ba2a0f2e20741bd4636848250ee0a767186eadf8aec766e95bd7",
+          "entryPointer": "/healthStaticImagePins/mind/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/health-main-integration-20261029/ORIGINAL_MEDIA_PROVENANCE.json",
+          "authoritySHA256": "7b132e6361fb91196d0fc1ef752ec7138d0e8658fa344d2ac2843eee1f6474c5",
+          "entryPointer": "/1/sha256",
+          "observedOriginalLocations": {
+            "original": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/label-recover-new.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/16/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/health-original-mobility.jpg",
+      "bytes": 374854,
+      "sha256": "43ea1b3ca45b50f0694f643fe9dbdcd6bacd920c861ed470865ad038e299a4c2",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_FINAL_BOUNDARY_20261029.json",
+          "authoritySHA256": "ce643fc3dd70edd47784b52c5ad7f7ef3c42178496c57ccc2945b7b86f7adb74",
+          "entryPointer": "/imageRuntimeInventory/rows/5/distSha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/function/HEALTH_IMAGE_ONLY_FUNCTION_EQUIVALENCE_20261029.json",
+          "authoritySHA256": "29e8151c4745ba2a0f2e20741bd4636848250ee0a767186eadf8aec766e95bd7",
+          "entryPointer": "/healthStaticImagePins/mobility/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/health-main-integration-20261029/ORIGINAL_MEDIA_PROVENANCE.json",
+          "authoritySHA256": "7b132e6361fb91196d0fc1ef752ec7138d0e8658fa344d2ac2843eee1f6474c5",
+          "entryPointer": "/2/sha256",
+          "observedOriginalLocations": {
+            "original": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-mindset-stretch-pexels-7992058.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/17/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/health-sleep-recovery-generated.png",
+      "bytes": 1933251,
+      "sha256": "85bd20f9968180393046f02fde8a611ca2300a53632373fd8e5f945ccec11733",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_FINAL_BOUNDARY_20261029.json",
+          "authoritySHA256": "ce643fc3dd70edd47784b52c5ad7f7ef3c42178496c57ccc2945b7b86f7adb74",
+          "entryPointer": "/imageRuntimeInventory/rows/1/distSha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/function/HEALTH_IMAGE_ONLY_FUNCTION_EQUIVALENCE_20261029.json",
+          "authoritySHA256": "29e8151c4745ba2a0f2e20741bd4636848250ee0a767186eadf8aec766e95bd7",
+          "entryPointer": "/healthStaticImagePins/sleep/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/14/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/health-unique-wellbeing-hero.png",
+      "bytes": 1798735,
+      "sha256": "bad8adf6ad19d39d14bf52a7dbd69ff4eb7b5319fdf158b548ab3be7217d228e",
+      "status": "public-source-body",
+      "publicExportPath": "../../source/src/gym-design/source-media/health-unique-wellbeing-hero.png",
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_FINAL_BOUNDARY_20261029.json",
+          "authoritySHA256": "ce643fc3dd70edd47784b52c5ad7f7ef3c42178496c57ccc2945b7b86f7adb74",
+          "entryPointer": "/originalAndGeneratedMedia/0/sha256",
+          "observedOriginalLocations": {
+            "source": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/health-image-correction-20261029/assets/health-unique-wellbeing-hero.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_FINAL_BOUNDARY_20261029.json",
+          "authoritySHA256": "ce643fc3dd70edd47784b52c5ad7f7ef3c42178496c57ccc2945b7b86f7adb74",
+          "entryPointer": "/imageRuntimeInventory/rows/0/distSha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_BOUNDARY_20261029.json",
+          "authoritySHA256": "7e1af8f882fbc5bf92a0c614b77bf9822a3bd189d66c3f26d51aedd885e3aede",
+          "entryPointer": "/ownSnapshotPins/gym-design/source-media/health-unique-wellbeing-hero.png",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_BOUNDARY_20261029.json",
+          "authoritySHA256": "7e1af8f882fbc5bf92a0c614b77bf9822a3bd189d66c3f26d51aedd885e3aede",
+          "entryPointer": "/assetReadback/0/sha256",
+          "observedOriginalLocations": {
+            "source": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/health-image-correction-20261029/assets/health-unique-wellbeing-hero.png"
+          },
+          "explicitSourceKind": "Local generated wellbeing illustration",
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/function/HEALTH_IMAGE_ONLY_FUNCTION_EQUIVALENCE_20261029.json",
+          "authoritySHA256": "29e8151c4745ba2a0f2e20741bd4636848250ee0a767186eadf8aec766e95bd7",
+          "entryPointer": "/healthStaticImagePins/hero/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/TRAINING_AND_HEALTH_SOURCE_ASSET_RECHECK_20261029.json",
+          "authoritySHA256": "fd940ee25e977feb97f6daa933f645ed88bcd3b7b39ae698a8b282bcce604dfc",
+          "entryPointer": "/sourceAssetsActuallyOpened/6/sha256",
+          "observedOriginalLocations": {
+            "path": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/health-image-correction-20261029/candidate/src/gym-design/source-media/health-unique-wellbeing-hero.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/health-image-correction-20261029/ACTUAL_8990_HEALTH_IMAGES_HTTP.json",
+          "authoritySHA256": "5d215c1dddf3f9f2f907eb7285939d0d7212852f506136a9763347dcee96bd1a",
+          "entryPointer": "/proof/2/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/10/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/health-image-correction-20261029/ASSET_PROVENANCE.json",
+          "authoritySHA256": "62c5b92a23438ce14e7403d630f52aa3a3efee7e9a5c665e0668e1fab07ebc6f",
+          "entryPointer": "/0/sha256",
+          "observedOriginalLocations": {
+            "source": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/health-image-correction-20261029/assets/health-unique-wellbeing-hero.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/help-original-training-support-hero.jpg",
+      "bytes": 253699,
+      "sha256": "eef6e76dfb6f495b32ea4ef85a0ad7f87204ab80a910ccf3713cc25ed451cc36",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/help-main-preparation-20261029/ORIGINAL_ASSET_SELECTION_20261029.json",
+          "authoritySHA256": "9916feddd3895413e25c6017398131644f04d3e311d051c8c6578cdbbca72a80",
+          "entryPointer": "/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/pexels-14209250.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/help-main-preparation-20261029/ORIGINAL_ASSET_SELECTION_20261101.json",
+          "authoritySHA256": "308590ac0d7c69566ca80014bab00b50df8e3c044689bae9b247435328667e22",
+          "entryPointer": "/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/pexels-14209250.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/help-main-integration-20261029/RUNTIME_IMAGE_INVENTORY.json",
+          "authoritySHA256": "880d840fd802ff0116d66197494d57619669b3e0936aa3c38562ab6ebe8771aa",
+          "entryPointer": "/0/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/member-today-hero.webp",
+      "bytes": 40030,
+      "sha256": "924bf35bcd1c478f0f6d085ab7ff10c287f63d309ce55d51d606467ec11e38b9",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/gym-design-prototype/source-media-provenance.json",
+          "authoritySHA256": "840cbfb520effc1832a67d2384ffe082fad999858b6ac7fb24200735fb858486",
+          "entryPointer": "/2/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/member-today-hero.webp"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/0/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/4/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/GYM_DESIGN_MEDIA_BYTE_PROOF.json",
+          "authoritySHA256": "1fd016ad1e4ffa8b6b0c07960bcfc332f22addf9f988b76d8f9a1ac91f50ca43",
+          "entryPointer": "/rows/2/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/member-today-hero.webp"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/member-training-hero-v2.png",
+      "bytes": 1740779,
+      "sha256": "5a3f6ab6195756443fdbf9679a594754f9c93fbd6d1a6ec5f6dc0ec73e917d15",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/gym-design-prototype/source-media-provenance.json",
+          "authoritySHA256": "840cbfb520effc1832a67d2384ffe082fad999858b6ac7fb24200735fb858486",
+          "entryPointer": "/3/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/member-training-hero-v2.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/access/HEALTH_IMAGE_CORRECTION_FINAL_BOUNDARY_20261029.json",
+          "authoritySHA256": "ce643fc3dd70edd47784b52c5ad7f7ef3c42178496c57ccc2945b7b86f7adb74",
+          "entryPointer": "/imageRuntimeInventory/rows/6/distSha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/function/HEALTH_IMAGE_ONLY_FUNCTION_EQUIVALENCE_20261029.json",
+          "authoritySHA256": "29e8151c4745ba2a0f2e20741bd4636848250ee0a767186eadf8aec766e95bd7",
+          "entryPointer": "/healthStaticImagePins/women/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/18/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/membership-original-legpress-hero.jpeg",
+      "bytes": 246120,
+      "sha256": "8f5dd96ccc29d9864ea29bc24b895bedfaff8dd0f988afdbf199cf3f2382942c",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/MEMBERSHIP_MAIN_REFERENCE_ASSET_CONTROL_20261029.json",
+          "authoritySHA256": "a4ad7e9bada47c43e20739a38cfcb5d83a4bc27843afb9dc66070f252bded20d",
+          "entryPointer": "/assets/0/sha256",
+          "observedOriginalLocations": {
+            "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-hero-leg-press-final.jpeg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/membership-unique-training-floor.png",
+      "bytes": 2581480,
+      "sha256": "ff2ccd992ec6761b34cc80a61ec10635d82f5dfa398e5a7d0e92fcfaa95f2df1",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/notifications-original-dumbbell-moment-hero.jpg",
+      "bytes": 228651,
+      "sha256": "f0cb9fa599a9e74a4d4d1a1b657979e56f695abc1f99e78f7e914e90fbba93ee",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/notifications-main-preparation-20261029/ORIGINAL_ASSET_SELECTION_20261029.json",
+          "authoritySHA256": "0afef3e02c82b309614e99e2af22bcd1cc77bd5068d1a4e717ff50348a793975",
+          "entryPointer": "/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/pexels-13978141.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/notifications-main-integration-20261029/RUNTIME_IMAGE_INVENTORY.json",
+          "authoritySHA256": "3ff4290a44bbbba2640b59f467fcb1b53615d9ccd4effd994db753bab63918e2",
+          "entryPointer": "/0/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/nutrition-example-avocado-toast.png",
+      "bytes": 3009766,
+      "sha256": "8629b382135df93a28baf5046329bbbd1e8b05c803612aabdcf11ffdc3ffdd5e",
+      "status": "public-source-body",
+      "publicExportPath": "../../source/src/gym-design/source-media/nutrition-example-avocado-toast.png",
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/nutrition-main-preparation-20261029/APPROVED_REFERENCE_AND_ASSETS.json",
+          "authoritySHA256": "f6741443284811f06397d59604d09a1cda478adaf6e45d513a93e48e0fff2a52",
+          "entryPointer": "/generatedRecipeIllustrations/0/sha256",
+          "observedOriginalLocations": {
+            "file": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/nutrition-main-preparation-20261029/assets/nutrition-example-avocado-toast.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/nutrition-example-berry-oats.png",
+      "bytes": 2862202,
+      "sha256": "871a985e27278fadc94c6939faa10df9a6f6fa85b1de7be5d61cf73fb38974be",
+      "status": "public-source-body",
+      "publicExportPath": "../../source/src/gym-design/source-media/nutrition-example-berry-oats.png",
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/nutrition-main-preparation-20261029/APPROVED_REFERENCE_AND_ASSETS.json",
+          "authoritySHA256": "f6741443284811f06397d59604d09a1cda478adaf6e45d513a93e48e0fff2a52",
+          "entryPointer": "/generatedRecipeIllustrations/1/sha256",
+          "observedOriginalLocations": {
+            "file": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/nutrition-main-preparation-20261029/assets/nutrition-example-berry-oats.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/nutrition-example-mediterranean-bowl.png",
+      "bytes": 2937628,
+      "sha256": "b112774fa7aebcbfb49941d8d7c800207bf9bfc7675a51694a81df36db1e1f1a",
+      "status": "public-source-body",
+      "publicExportPath": "../../source/src/gym-design/source-media/nutrition-example-mediterranean-bowl.png",
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/nutrition-main-preparation-20261029/APPROVED_REFERENCE_AND_ASSETS.json",
+          "authoritySHA256": "f6741443284811f06397d59604d09a1cda478adaf6e45d513a93e48e0fff2a52",
+          "entryPointer": "/generatedRecipeIllustrations/2/sha256",
+          "observedOriginalLocations": {
+            "file": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/nutrition-main-preparation-20261029/assets/nutrition-example-mediterranean-bowl.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/nutrition-example-yogurt-granola.png",
+      "bytes": 2819949,
+      "sha256": "77bffd7a0f8aa2a49bddd5e627d8426a8f144bc351d9082435f27668261f3df9",
+      "status": "public-source-body",
+      "publicExportPath": "../../source/src/gym-design/source-media/nutrition-example-yogurt-granola.png",
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/nutrition-main-preparation-20261029/APPROVED_REFERENCE_AND_ASSETS.json",
+          "authoritySHA256": "f6741443284811f06397d59604d09a1cda478adaf6e45d513a93e48e0fff2a52",
+          "entryPointer": "/generatedRecipeIllustrations/3/sha256",
+          "observedOriginalLocations": {
+            "file": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/nutrition-main-preparation-20261029/assets/nutrition-example-yogurt-granola.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/nutrition-original-french-toast-hero.png",
+      "bytes": 2925033,
+      "sha256": "bed709ed6a5376537fdda784628f189e27d608a0401c7ee38fab3eb15472c8ec",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/nutrition-main-preparation-20261029/APPROVED_REFERENCE_AND_ASSETS.json",
+          "authoritySHA256": "f6741443284811f06397d59604d09a1cda478adaf6e45d513a93e48e0fff2a52",
+          "entryPointer": "/heroCandidate/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/recipe-french-toast.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/referrals-original-friends-context.avif",
+      "bytes": 34008,
+      "sha256": "6b00975c01d84c845141a9ea86448dddfbffa11a5841ba4d3e97d48d350fab24",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/referrals-main-integration-20261029/RUNTIME_IMAGE_INVENTORY.json",
+          "authoritySHA256": "25f9842634abf4e3ca78dfe6909dedff1a2f5ee49eb26e13ac40a7f6bd053297",
+          "entryPointer": "/1/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/referrals-main-preparation-20261029/ORIGINAL_ASSET_SELECTION_20261029.json",
+          "authoritySHA256": "f7fab22d6c0b5543cd966959a1395f1c076877d858d933045e4c3561494258d2",
+          "entryPointer": "/assets/1/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/franchise-delivery-happy-workout.avif"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/referrals-original-highfive-hero.webp",
+      "bytes": 85378,
+      "sha256": "a0122194f1adcab6b3b90a89a6c934ef5ef0b44e57b71dafa85dc8b571427635",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/referrals-main-integration-20261029/RUNTIME_IMAGE_INVENTORY.json",
+          "authoritySHA256": "25f9842634abf4e3ca78dfe6909dedff1a2f5ee49eb26e13ac40a7f6bd053297",
+          "entryPointer": "/0/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/remaining-main-readonly-preparation-20261029/ASSET_RESEARCH.json",
+          "authoritySHA256": "e9dca73253b6b0efadf46e1ce2eac36dd3d0858adb4d1c4d940abb7cc5a4f7ca",
+          "entryPointer": "/candidates/0/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-hero-highfive-women.webp"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/referrals-main-preparation-20261029/ORIGINAL_ASSET_SELECTION_20261029.json",
+          "authoritySHA256": "f7fab22d6c0b5543cd966959a1395f1c076877d858d933045e4c3561494258d2",
+          "entryPointer": "/assets/0/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-hero-highfive-women.webp"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/referrals-original-joint-training-context.webp",
+      "bytes": 97262,
+      "sha256": "993307016c12747b12460a96126b8d73fe5b7381d15be2cd345b099a19e781ff",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/COACHING_MAIN_REFERENCE_ASSET_CONTROL_20261029.json",
+          "authoritySHA256": "69d0739585fb7a4e47ed0369714e4136dedc699aacf80d059d9c3b888d995827",
+          "entryPointer": "/assets/9/sha256",
+          "observedOriginalLocations": {
+            "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-association-couple-training.webp"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/referrals-main-integration-20261029/RUNTIME_IMAGE_INVENTORY.json",
+          "authoritySHA256": "25f9842634abf4e3ca78dfe6909dedff1a2f5ee49eb26e13ac40a7f6bd053297",
+          "entryPointer": "/2/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/remaining-main-readonly-preparation-20261029/ASSET_RESEARCH.json",
+          "authoritySHA256": "e9dca73253b6b0efadf46e1ce2eac36dd3d0858adb4d1c4d940abb7cc5a4f7ca",
+          "entryPointer": "/candidates/1/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-association-couple-training.webp"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/referrals-main-preparation-20261029/ORIGINAL_ASSET_SELECTION_20261029.json",
+          "authoritySHA256": "f7fab22d6c0b5543cd966959a1395f1c076877d858d933045e4c3561494258d2",
+          "entryPointer": "/assets/2/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-association-couple-training.webp"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/shop-performance-tee.webp",
+      "bytes": 76942,
+      "sha256": "41b02c16c716bbb8c653f23ed84507500b8ad9b98e13a042e740ca80eae2ff36",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [
+        "src/gym-design/source-media/shopping-shop-performance-tee.webp"
+      ],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/gym-design-prototype/source-media-provenance.json",
+          "authoritySHA256": "840cbfb520effc1832a67d2384ffe082fad999858b6ac7fb24200735fb858486",
+          "entryPointer": "/0/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/shop-performance-tee.webp"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/SHOPPING_MAIN_REFERENCE_ASSET_CONTROL_20261029.json",
+          "authoritySHA256": "75b52c44f23197a3eff96b3c9ab0d4c4541a0caefe78997e77838d745a641744",
+          "entryPointer": "/assets/5/sha256",
+          "observedOriginalLocations": {
+            "absolutePath": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/shop-performance-tee.webp"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/GYM_DESIGN_MEDIA_BYTE_PROOF.json",
+          "authoritySHA256": "1fd016ad1e4ffa8b6b0c07960bcfc332f22addf9f988b76d8f9a1ac91f50ca43",
+          "entryPointer": "/rows/0/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/shop-performance-tee.webp"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/shop-training-straps.webp",
+      "bytes": 188452,
+      "sha256": "f4b5a724f7251dd2fe7ab7a2caef0ab5ba24984a945de1115f3b379d47839885",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [
+        "src/gym-design/source-media/shopping-shop-training-straps.webp"
+      ],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/gym-design-prototype/source-media-provenance.json",
+          "authoritySHA256": "840cbfb520effc1832a67d2384ffe082fad999858b6ac7fb24200735fb858486",
+          "entryPointer": "/1/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/shop-training-straps.webp"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/SHOPPING_MAIN_REFERENCE_ASSET_CONTROL_20261029.json",
+          "authoritySHA256": "75b52c44f23197a3eff96b3c9ab0d4c4541a0caefe78997e77838d745a641744",
+          "entryPointer": "/assets/6/sha256",
+          "observedOriginalLocations": {
+            "absolutePath": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/shop-training-straps.webp"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/GYM_DESIGN_MEDIA_BYTE_PROOF.json",
+          "authoritySHA256": "1fd016ad1e4ffa8b6b0c07960bcfc332f22addf9f988b76d8f9a1ac91f50ca43",
+          "entryPointer": "/rows/1/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/shop-training-straps.webp"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/shopping-crays-accessories-range.png",
+      "bytes": 2578655,
+      "sha256": "8bb278d25ddceabfb0de34e7f4a7007900110df54c70173fd651f45d65b870df",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/SHOPPING_MAIN_REFERENCE_ASSET_CONTROL_20261029.json",
+          "authoritySHA256": "75b52c44f23197a3eff96b3c9ab0d4c4541a0caefe78997e77838d745a641744",
+          "entryPointer": "/assets/2/sha256",
+          "observedOriginalLocations": {
+            "absolutePath": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/commerce/crays-accessories-range.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/shopping-crays-apparel-capsule.png",
+      "bytes": 2216866,
+      "sha256": "bf022619ab24ec73586287f584e1f7e11ee8692798eb62c41f0248912e3bc46c",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/SHOPPING_MAIN_REFERENCE_ASSET_CONTROL_20261029.json",
+          "authoritySHA256": "75b52c44f23197a3eff96b3c9ab0d4c4541a0caefe78997e77838d745a641744",
+          "entryPointer": "/assets/1/sha256",
+          "observedOriginalLocations": {
+            "absolutePath": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/commerce/crays-apparel-capsule.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/shopping-crays-nutrition-range.png",
+      "bytes": 2179069,
+      "sha256": "eb88874c457800a32831eff764ae8c193d4e29947da6558afb7fa4fa96848447",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/SHOPPING_MAIN_REFERENCE_ASSET_CONTROL_20261029.json",
+          "authoritySHA256": "75b52c44f23197a3eff96b3c9ab0d4c4541a0caefe78997e77838d745a641744",
+          "entryPointer": "/assets/3/sha256",
+          "observedOriginalLocations": {
+            "absolutePath": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/commerce/crays-nutrition-range.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/shopping-crays-recovery-training-range.png",
+      "bytes": 2647966,
+      "sha256": "e5b3385534ab70113bd85c71ea83b5ed88f22a73d856c92bec932110181c4c29",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/SHOPPING_MAIN_REFERENCE_ASSET_CONTROL_20261029.json",
+          "authoritySHA256": "75b52c44f23197a3eff96b3c9ab0d4c4541a0caefe78997e77838d745a641744",
+          "entryPointer": "/assets/4/sha256",
+          "observedOriginalLocations": {
+            "absolutePath": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/commerce/crays-recovery-training-range.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/shopping-shop-performance-stack.webp",
+      "bytes": 28358,
+      "sha256": "a70b0a517e0e2d7a5d6c98bbb3b7eb9a23f29f2c4494066688aadf45013e4c2d",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/SHOPPING_MAIN_REFERENCE_ASSET_CONTROL_20261029.json",
+          "authoritySHA256": "75b52c44f23197a3eff96b3c9ab0d4c4541a0caefe78997e77838d745a641744",
+          "entryPointer": "/assets/0/sha256",
+          "observedOriginalLocations": {
+            "absolutePath": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/shop-performance-stack.webp"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/shopping-shop-performance-tee.webp",
+      "bytes": 76942,
+      "sha256": "41b02c16c716bbb8c653f23ed84507500b8ad9b98e13a042e740ca80eae2ff36",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [
+        "src/gym-design/source-media/shop-performance-tee.webp"
+      ],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/gym-design-prototype/source-media-provenance.json",
+          "authoritySHA256": "840cbfb520effc1832a67d2384ffe082fad999858b6ac7fb24200735fb858486",
+          "entryPointer": "/0/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/shop-performance-tee.webp"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/SHOPPING_MAIN_REFERENCE_ASSET_CONTROL_20261029.json",
+          "authoritySHA256": "75b52c44f23197a3eff96b3c9ab0d4c4541a0caefe78997e77838d745a641744",
+          "entryPointer": "/assets/5/sha256",
+          "observedOriginalLocations": {
+            "absolutePath": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/shop-performance-tee.webp"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/GYM_DESIGN_MEDIA_BYTE_PROOF.json",
+          "authoritySHA256": "1fd016ad1e4ffa8b6b0c07960bcfc332f22addf9f988b76d8f9a1ac91f50ca43",
+          "entryPointer": "/rows/0/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/shop-performance-tee.webp"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/shopping-shop-training-straps.webp",
+      "bytes": 188452,
+      "sha256": "f4b5a724f7251dd2fe7ab7a2caef0ab5ba24984a945de1115f3b379d47839885",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [
+        "src/gym-design/source-media/shop-training-straps.webp"
+      ],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/gym-design-prototype/source-media-provenance.json",
+          "authoritySHA256": "840cbfb520effc1832a67d2384ffe082fad999858b6ac7fb24200735fb858486",
+          "entryPointer": "/1/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/shop-training-straps.webp"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/SHOPPING_MAIN_REFERENCE_ASSET_CONTROL_20261029.json",
+          "authoritySHA256": "75b52c44f23197a3eff96b3c9ab0d4c4541a0caefe78997e77838d745a641744",
+          "entryPointer": "/assets/6/sha256",
+          "observedOriginalLocations": {
+            "absolutePath": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/shop-training-straps.webp"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/GYM_DESIGN_MEDIA_BYTE_PROOF.json",
+          "authoritySHA256": "1fd016ad1e4ffa8b6b0c07960bcfc332f22addf9f988b76d8f9a1ac91f50ca43",
+          "entryPointer": "/rows/1/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/member/shop-training-straps.webp"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/today-closing-dumbbells.png",
+      "bytes": 1833888,
+      "sha256": "ac2dfc988e352e79c54c08da0bf701fb98c740f6c8cd45f751e09caeff8a6f10",
+      "status": "public-source-body",
+      "publicExportPath": "../../source/src/gym-design/source-media/today-closing-dumbbells.png",
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/full-page-mockups/today-user-selected-20261028/ASSETS.json",
+          "authoritySHA256": "5ae35b3d286258a588ecbb8799c3f49e30865ba911259b1e6507c807173fb7dd",
+          "entryPointer": "/assets/1/sha256",
+          "observedOriginalLocations": {
+            "generatedSource": "/home/craysdev/.codex/generated_images/01a18150-cac0-7d51-9bc3-43e6a14d1fd8/exec-f8ed6549-8500-4c4f-bb93-2c55d2593161.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": [
+            {
+              "path": "/home/craysdev/.codex/generated_images/01a18150-cac0-7d51-9bc3-43e6a14d1fd8/exec-f8ed6549-8500-4c4f-bb93-2c55d2593161.png",
+              "exists": true,
+              "exactHash": true
+            }
+          ]
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/2/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/today-coaching-conversation.png",
+      "bytes": 1802675,
+      "sha256": "7a2ce7c543ea5b8081e04977d15dedb9dd7216ee80d4f7f7c6cb3ad376e6d99f",
+      "status": "public-source-body",
+      "publicExportPath": "../../source/src/gym-design/source-media/today-coaching-conversation.png",
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/full-page-mockups/today-user-selected-20261028/ASSETS.json",
+          "authoritySHA256": "5ae35b3d286258a588ecbb8799c3f49e30865ba911259b1e6507c807173fb7dd",
+          "entryPointer": "/assets/0/sha256",
+          "observedOriginalLocations": {
+            "generatedSource": "/home/craysdev/.codex/generated_images/01a18150-cac0-7d51-9bc3-43e6a14d1fd8/exec-adab45ca-c188-4ff6-8c39-e091c269fad8.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": [
+            {
+              "path": "/home/craysdev/.codex/generated_images/01a18150-cac0-7d51-9bc3-43e6a14d1fd8/exec-adab45ca-c188-4ff6-8c39-e091c269fad8.png",
+              "exists": true,
+              "exactHash": true
+            }
+          ]
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/1/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/today-mobility-studio.png",
+      "bytes": 2157467,
+      "sha256": "f249bbcf856b3c530d58d9146c42ed11c807d6e1affdea1a44b06c0c4745637c",
+      "status": "public-source-body",
+      "publicExportPath": "../../source/src/gym-design/source-media/today-mobility-studio.png",
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/full-page-mockups/today-user-selected-20261028/ASSETS.json",
+          "authoritySHA256": "5ae35b3d286258a588ecbb8799c3f49e30865ba911259b1e6507c807173fb7dd",
+          "entryPointer": "/assets/2/sha256",
+          "observedOriginalLocations": {
+            "generatedSource": "/home/craysdev/.codex/generated_images/01a18150-cac0-7d51-9bc3-43e6a14d1fd8/exec-d0fd09b1-b70d-4036-aecc-6c0477ff9861.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": [
+            {
+              "path": "/home/craysdev/.codex/generated_images/01a18150-cac0-7d51-9bc3-43e6a14d1fd8/exec-d0fd09b1-b70d-4036-aecc-6c0477ff9861.png",
+              "exists": true,
+              "exactHash": true
+            }
+          ]
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/3/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/training-example-bench.png",
+      "bytes": 2453764,
+      "sha256": "6d42f294cf5ae881040b33e08af23757c801925cde2dcef6061a79b7d62343db",
+      "status": "public-source-body",
+      "publicExportPath": "../../source/src/gym-design/source-media/training-example-bench.png",
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/TRAINING_AND_HEALTH_SOURCE_ASSET_RECHECK_20261029.json",
+          "authoritySHA256": "fd940ee25e977feb97f6daa933f645ed88bcd3b7b39ae698a8b282bcce604dfc",
+          "entryPointer": "/sourceAssetsActuallyOpened/3/sha256",
+          "observedOriginalLocations": {
+            "path": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/training-main-integration-20261029/candidate/src/gym-design/source-media/training-example-bench.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/training-main-integration-20261029/ASSET_PROVENANCE.json",
+          "authoritySHA256": "406874f8ffc03b404f12df74592b62d52a64329f7e1f5162d705f4860ad14747",
+          "entryPointer": "/bench/sha256",
+          "observedOriginalLocations": {
+            "source": "/home/craysdev/.codex/generated_images/01a18636-3455-7781-9c94-22e9889898bb/exec-df3d9ade-58d4-4994-a1d4-1dbf2559621c.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": [
+            {
+              "path": "/home/craysdev/.codex/generated_images/01a18636-3455-7781-9c94-22e9889898bb/exec-df3d9ade-58d4-4994-a1d4-1dbf2559621c.png",
+              "exists": true,
+              "exactHash": true
+            }
+          ]
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/22/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/training-example-row.png",
+      "bytes": 2223597,
+      "sha256": "47ebb7a8f812c139ff4e7c7c7abe6fb0928d0c55aa2375c6a1adc2daf4f2e4f8",
+      "status": "public-source-body",
+      "publicExportPath": "../../source/src/gym-design/source-media/training-example-row.png",
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/TRAINING_AND_HEALTH_SOURCE_ASSET_RECHECK_20261029.json",
+          "authoritySHA256": "fd940ee25e977feb97f6daa933f645ed88bcd3b7b39ae698a8b282bcce604dfc",
+          "entryPointer": "/sourceAssetsActuallyOpened/4/sha256",
+          "observedOriginalLocations": {
+            "path": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/training-main-integration-20261029/candidate/src/gym-design/source-media/training-example-row.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/training-main-integration-20261029/ASSET_PROVENANCE.json",
+          "authoritySHA256": "406874f8ffc03b404f12df74592b62d52a64329f7e1f5162d705f4860ad14747",
+          "entryPointer": "/row/sha256",
+          "observedOriginalLocations": {
+            "source": "/home/craysdev/.codex/generated_images/01a18636-3455-7781-9c94-22e9889898bb/exec-dee37c5f-dac3-4a47-a1fb-fd44a7681038.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": [
+            {
+              "path": "/home/craysdev/.codex/generated_images/01a18636-3455-7781-9c94-22e9889898bb/exec-dee37c5f-dac3-4a47-a1fb-fd44a7681038.png",
+              "exists": true,
+              "exactHash": true
+            }
+          ]
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/23/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/training-original-back-squat.jpg",
+      "bytes": 152549,
+      "sha256": "460903517a2509401a35e2765ceed7e257149816b33ee462ef210536f947b89e",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/TRAINING_AND_HEALTH_SOURCE_ASSET_RECHECK_20261029.json",
+          "authoritySHA256": "fd940ee25e977feb97f6daa933f645ed88bcd3b7b39ae698a8b282bcce604dfc",
+          "entryPointer": "/sourceAssetsActuallyOpened/2/sha256",
+          "observedOriginalLocations": {
+            "path": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/training-main-integration-20261029/candidate/src/gym-design/source-media/training-original-back-squat.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/training-main-integration-20261029/ASSET_PROVENANCE.json",
+          "authoritySHA256": "406874f8ffc03b404f12df74592b62d52a64329f7e1f5162d705f4860ad14747",
+          "entryPointer": "/squat/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-hero-barbell-woman-652259.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/20/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/training-original-challenge.jpg",
+      "bytes": 36940,
+      "sha256": "48b7bf6f7fa998e207717615ef2d97a70f6ebd1f8f1c942fc0ec0d3b9c670c52",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/TRAINING_AND_HEALTH_SOURCE_ASSET_RECHECK_20261029.json",
+          "authoritySHA256": "fd940ee25e977feb97f6daa933f645ed88bcd3b7b39ae698a8b282bcce604dfc",
+          "entryPointer": "/sourceAssetsActuallyOpened/5/sha256",
+          "observedOriginalLocations": {
+            "path": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/training-main-integration-20261029/candidate/src/gym-design/source-media/training-original-challenge.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/remaining-main-readonly-preparation-20261029/ASSET_RESEARCH.json",
+          "authoritySHA256": "e9dca73253b6b0efadf46e1ce2eac36dd3d0858adb4d1c4d940abb7cc5a4f7ca",
+          "entryPointer": "/candidates/4/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-impression-pushup-duo.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/remaining-main-readonly-preparation-20261029/ASSET_RESEARCH.json",
+          "authoritySHA256": "e9dca73253b6b0efadf46e1ce2eac36dd3d0858adb4d1c4d940abb7cc5a4f7ca",
+          "entryPointer": "/candidates/4/exactImportedGymMainMatches/0/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/remaining-main-readonly-preparation-20261029/ASSET_RESEARCH.json",
+          "authoritySHA256": "e9dca73253b6b0efadf46e1ce2eac36dd3d0858adb4d1c4d940abb7cc5a4f7ca",
+          "entryPointer": "/candidates/4/exactImportedGymMainMatches/1/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/training-main-integration-20261029/ASSET_PROVENANCE.json",
+          "authoritySHA256": "406874f8ffc03b404f12df74592b62d52a64329f7e1f5162d705f4860ad14747",
+          "entryPointer": "/challenge/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-impression-pushup-duo.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/24/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/training-original-floor-duo.jpg",
+      "bytes": 50889,
+      "sha256": "95dd59d1c51ebb79ff00daa2a7d99f58603a5fdfb14d11770c328e2678f37f76",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/TRAINING_AND_HEALTH_SOURCE_ASSET_RECHECK_20261029.json",
+          "authoritySHA256": "fd940ee25e977feb97f6daa933f645ed88bcd3b7b39ae698a8b282bcce604dfc",
+          "entryPointer": "/sourceAssetsActuallyOpened/1/sha256",
+          "observedOriginalLocations": {
+            "path": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/training-main-integration-20261029/candidate/src/gym-design/source-media/training-original-floor-duo.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/training-main-integration-20261029/ASSET_PROVENANCE.json",
+          "authoritySHA256": "406874f8ffc03b404f12df74592b62d52a64329f7e1f5162d705f4860ad14747",
+          "entryPointer": "/selected/sha256",
+          "observedOriginalLocations": {
+            "source": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/public/assets/images/crays-impression-floor-duo.jpg"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/21/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    },
+    {
+      "path": "src/gym-design/source-media/training-unique-cable-hero.png",
+      "bytes": 1792588,
+      "sha256": "502766e22c832cc899834579e2a757a3df6d94f94d56f94b9965bdfd4f8ec134",
+      "status": "pending-source-privacy-rights-review",
+      "publicExportPath": null,
+      "sameBodyOtherInputPaths": [],
+      "sourceAuthorityRecords": [
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/controls/design/TRAINING_AND_HEALTH_SOURCE_ASSET_RECHECK_20261029.json",
+          "authoritySHA256": "fd940ee25e977feb97f6daa933f645ed88bcd3b7b39ae698a8b282bcce604dfc",
+          "entryPointer": "/sourceAssetsActuallyOpened/0/sha256",
+          "observedOriginalLocations": {
+            "path": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/training-main-integration-20261029/candidate/src/gym-design/source-media/training-unique-cable-hero.png"
+          },
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/training-main-integration-20261029/ASSET_PROVENANCE.json",
+          "authoritySHA256": "406874f8ffc03b404f12df74592b62d52a64329f7e1f5162d705f4860ad14747",
+          "entryPointer": "/hero/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        },
+        {
+          "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/IMAGE_ALLOCATION_STATIC_AUDIT_20261029.json",
+          "authoritySHA256": "ec5a662afaf0897b7436e87375f946c0da583409cbe763b322c982dfbf8ca532",
+          "entryPointer": "/staticImports/19/sha256",
+          "observedOriginalLocations": {},
+          "explicitSourceKind": null,
+          "generatorOutputChecks": []
+        }
+      ],
+      "fullOriginalRightsLicenseAndRuntimeClosure": false
+    }
+  ],
+  "completeRightsClosure": false
+}
