@@ -10,6 +10,7 @@ CRAYS AG grants **AGPL-3.0-only** for the following original CRAYS-owned source 
 | --- | --- | --- |
 | Qlo gateway | 9 integration, build and test files | [License terms](services/qlo-gateway/LICENSING.md), [GNU license](services/qlo-gateway/LICENSE), [file hashes](services/qlo-gateway/license-scope.json) |
 | Clubs Commerce BFF | 6 integration, build and test files | [License terms](services/clubs-commerce-bff/LICENSING.md), [GNU license](services/clubs-commerce-bff/LICENSE), [file hashes](services/clubs-commerce-bff/license-scope.json) |
+| Shared account entry | Four exact shared-account integration files, also retained in the Org source archive | [Dated grant and exclusions](https://github.com/CraysCircle/crays-org/blob/org-web-own-code-agpl3-account4-20261109/source-archives/org-web/org05-20261107/LICENSING.md), [exact source hashes and original Platform paths](https://github.com/CraysCircle/crays-org/blob/org-web-own-code-agpl3-account4-20261109/source-archives/org-web/org05-20261107/license-scope.json) |
 
 The hashes identify the original covered source. Recipients may modify and redistribute that code under AGPL version 3; the scope records do not require downstream copies to keep the original hashes. These grants do not offer a later-version option.
 
@@ -24,3 +25,5 @@ Follow the relevant component's terms before reusing other code. The grants abov
 Use [CONTRIBUTING.md](CONTRIBUTING.md) to choose a component and propose a focused change. Preserve original author, copyright and license notices with code and check the terms for all material you add.
 
 The [source and provenance record](docs/license-and-provenance.md) tracks dependencies, runtime images, source availability and remaining rights/recovery work. A source-code license grant does not by itself demonstrate complete build inputs, runtime notices or fulfillment of every deployment-specific obligation.
+
+The four shared-account source revisions match the original Platform paths recorded in the linked scope manifest, including their exact file hashes. The current Platform copies were compared byte for byte before this map update. Other Member/account variants and referenced font binaries retain their separate terms; this row grants no license for the complete shared web application.
