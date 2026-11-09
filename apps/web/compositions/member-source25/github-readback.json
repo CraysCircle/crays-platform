@@ -1,0 +1,16 @@
+{
+  "schema": "crays.anonymous-github-source-restoration.v1",
+  "sourceCommit": "fb2d76c4d66225d2dabaab6fe6521c0c62f89cd0",
+  "sourceTag": "member-source25-preserved-20261109",
+  "verifiedAtUTC": "2026-11-09T01:05:22.874157+00:00",
+  "freshAnonymousHTTPSCloneWithoutCredentialsOrLocalObjectAlternates": true,
+  "newOrChangedPublicFileBlobsSHA256AndSizesVerified": 120,
+  "originalMemberFilesRestoredAndIndependentlyVerified": 1399,
+  "awsMemberBuildInputFilesRestoredAndIndependentlyVerified": 1401,
+  "totalOriginalSourceComparisons": 2800,
+  "restorationUsesPublicSourcePlusSeparatelyProtectedOwnerInputs": true,
+  "protectedOriginalInputValuesIncludedInNewPublicExport": false,
+  "originalApplicationProgramsExecuted": false,
+  "newApplicationBuildOrDeployment": false,
+  "fullRuntimeImageRecoveryOrLicenseClosure": false
+}

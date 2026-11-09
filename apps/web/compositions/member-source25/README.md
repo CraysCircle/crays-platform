@@ -45,3 +45,5 @@ The [source/build/dependency record](../../provenance/member-source25/README.md)
 This source capture did not execute the application or perform a new build, test against live services, install packages or deploy a product. The original 2,045-file prepared shared application remains separately retained. Its source tree is not silently replaced with the Member variant.
 
 Current runtime-image adoption, public assets/font inputs, complete transitive dependency and runtime sources/notices, the wider source pin set, other WIP and coding/operations documentation, and complete protected operational recovery remain open. See [application license status](../../LICENSE-STATUS.md) and the central source/license status page. No blanket application license or completed source-offer acceptance is inferred.
+
+The [anonymous GitHub restoration record](github-readback.json) confirms the 120 published file blobs and both complete source compositions: all 2,800 restored original files matched their independently retained byte counts and SHA-256 values.

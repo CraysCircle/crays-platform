@@ -18,5 +18,7 @@
   "protectedInputValuesPublishedByThisCapture": false,
   "sourceProgramsExecuted": false,
   "newApplicationBuildOrDeployment": false,
-  "completeRuntimeImageRecoveryOrLicenseClosure": false
+  "completeRuntimeImageRecoveryOrLicenseClosure": false,
+  "anonymousGitHubSourceRestorationVerified": true,
+  "anonymousRestorationEvidence": "github-readback.json"
 }
