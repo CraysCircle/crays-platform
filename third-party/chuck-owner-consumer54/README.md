@@ -1,0 +1,11 @@
+# Chuck owner-consumer dependency source inputs
+
+Use this snapshot to inspect the exact installed dependency files selected by the captured Chuck owner-consumer build. [Packages](packages) retain their package-relative filenames; [source-capture.json](source-capture.json) maps each file to its original location, size, SHA-256 and Git blob identity. [NOTICE.md](NOTICE.md) indexes the original license and attribution texts.
+
+The snapshot contains 40 nonempty dependency source inputs (177,251 bytes), 14 installed package manifests (13,397 bytes), 26 original captured LICENSE/README texts, one PostgreSQL 9.2.4 COPYRIGHT supplement and one zero-byte compile input. Source bytes and original notice text are preserved unchanged. The installed manifest names, versions and declared licenses match the captured build notices. Installed-source identity with pristine upstream registry distributions has not been independently established.
+
+These are selected build-used files, not complete npm package distributions or a standalone installation. To restore the preserved portion, use each source-capture record's original path and verify its byte count, SHA-256 and Git blob identity before use. Package-relative layout is retained here for reading; it does not reproduce the original node_modules installation or supply omitted files.
+
+The application-source references in [source-capture.json](source-capture.json) identify seven exact public originals and fifteen separately preserved private originals: 22 application-code pins totaling 185,077 bytes. The private map is [available to authorized repository readers](https://github.com/CraysWorld/crays-gym/blob/6d06d21265d49d3cd2526963689b13295995e3ed/protected-source-archives/chuck-build64-preferred-fifteen/source-capture.json). Those application bodies are referenced, not duplicated here.
+
+This source snapshot does not establish full recovery of all 64 build inputs, the effective loader transformation, a reproducible build, or runtime adoption. Private binding configuration, owner policy, credentials and runtime data are excluded. No source program, installation or runtime was executed during preparation. Original third-party terms and nested attributions are retained; no new CRAYS license is granted over this dependency snapshot.

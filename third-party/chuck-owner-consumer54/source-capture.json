@@ -1,0 +1,2246 @@
+{
+  "schema": "crays.selected-installed-build-input-source.v1",
+  "state": "SOURCE_SNAPSHOT_PREPARED_NO_RUNTIME_ADOPTION",
+  "scope": {
+    "nonemptyDependencySourceFiles": 40,
+    "nonemptyDependencySourceBytes": 177251,
+    "installedPackageMetadataFiles": 14,
+    "installedPackageMetadataBytes": 13397,
+    "originalCapturedNoticeFiles": 26,
+    "supplementalOriginalNoticeFiles": 1,
+    "emptyCompileInputFiles": 1,
+    "packageFamilies": 14,
+    "sourceAndNoticeArtifactCount": 82
+  },
+  "files": [
+    {
+      "componentPath": "packages/pg/8.22.0/esm/index.mjs",
+      "path": "third-party/chuck-owner-consumer54/packages/pg/8.22.0/esm/index.mjs",
+      "bytes": 579,
+      "sha256": "5ef4d06556eeb775987759c2c09229dca2139421ee40e819b566612db2b4a8dc",
+      "gitBlobOID": "587d80c1e57bebf7e8f886c510973c325a84de3e",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg/esm/index.mjs",
+        "logicalSourcePath": "core/node_modules/pg/esm/index.mjs",
+        "packageName": "pg",
+        "packageRelativePath": "esm/index.mjs",
+        "recordedVersion": "8.22.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg/esm/index.mjs",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg/esm/index.mjs",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg/8.22.0/lib/index.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg/8.22.0/lib/index.js",
+      "bytes": 1810,
+      "sha256": "3fad6e6d3d976edbabe0cbc9e1d39f4340bcb719bbbb186a0d3a24f3dbd4a94c",
+      "gitBlobOID": "e8b746149ca3480017b6faaa6c934bc5ce1ab2f0",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg/lib/index.js",
+        "logicalSourcePath": "core/node_modules/pg/lib/index.js",
+        "packageName": "pg",
+        "packageRelativePath": "lib/index.js",
+        "recordedVersion": "8.22.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg/lib/index.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg/lib/index.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg/8.22.0/lib/native/index.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg/8.22.0/lib/native/index.js",
+      "bytes": 50,
+      "sha256": "99fb61cb78a6d78b7a5fc0b9ac264ad58272af48be4bc50bfdb948b1342e3292",
+      "gitBlobOID": "eead422a3a65d871f6d419293534cdbe1187e908",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg/lib/native/index.js",
+        "logicalSourcePath": "core/node_modules/pg/lib/native/index.js",
+        "packageName": "pg",
+        "packageRelativePath": "lib/native/index.js",
+        "recordedVersion": "8.22.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg/lib/native/index.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg/lib/native/index.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg/8.22.0/lib/utils.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg/8.22.0/lib/utils.js",
+      "bytes": 5121,
+      "sha256": "97fb5d56e301d00412e85ce91d796a61c79493dc03ae5adc05995ed8a0ed7936",
+      "gitBlobOID": "638b439704713808ef0073746ed8ba72355677af",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg/lib/utils.js",
+        "logicalSourcePath": "core/node_modules/pg/lib/utils.js",
+        "packageName": "pg",
+        "packageRelativePath": "lib/utils.js",
+        "recordedVersion": "8.22.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg/lib/utils.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg/lib/utils.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg-pool/3.14.0/index.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-pool/3.14.0/index.js",
+      "bytes": 14460,
+      "sha256": "6f304776edaabde2954cbf8c4366fa6d9512bfba0e408e78cc56b3c46c69d058",
+      "gitBlobOID": "ab514fa88f0e2f37eaf19c25c54d527a28675a12",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg-pool/index.js",
+        "logicalSourcePath": "core/node_modules/pg-pool/index.js",
+        "packageName": "pg-pool",
+        "packageRelativePath": "index.js",
+        "recordedVersion": "3.14.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg-pool/index.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg-pool/index.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg/8.22.0/lib/connection.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg/8.22.0/lib/connection.js",
+      "bytes": 5861,
+      "sha256": "5c17c585f307518f8369d6162d138c58eef1309128ad2fae2d6b315c8000234e",
+      "gitBlobOID": "63cc13a53d39387a739ad4bcdeeb538cf62ef54a",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg/lib/connection.js",
+        "logicalSourcePath": "core/node_modules/pg/lib/connection.js",
+        "packageName": "pg",
+        "packageRelativePath": "lib/connection.js",
+        "recordedVersion": "8.22.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg/lib/connection.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg/lib/connection.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg/8.22.0/lib/defaults.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg/8.22.0/lib/defaults.js",
+      "bytes": 2612,
+      "sha256": "d91c22d082ec974f9f878a71e8d9d56a7e5fa9a711cc63f32522b43f5e9169d4",
+      "gitBlobOID": "427243f50a20c98f6699c94dc0559ff5c01fa276",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg/lib/defaults.js",
+        "logicalSourcePath": "core/node_modules/pg/lib/defaults.js",
+        "packageName": "pg",
+        "packageRelativePath": "lib/defaults.js",
+        "recordedVersion": "8.22.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg/lib/defaults.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg/lib/defaults.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg/8.22.0/lib/result.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg/8.22.0/lib/result.js",
+      "bytes": 2829,
+      "sha256": "6d7193da53f8557600a065e4356626026e8c5baf12c477dc19e439d8f204225c",
+      "gitBlobOID": "329fbf9fc615874e725d55a1026b4715414928fe",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg/lib/result.js",
+        "logicalSourcePath": "core/node_modules/pg/lib/result.js",
+        "packageName": "pg",
+        "packageRelativePath": "lib/result.js",
+        "recordedVersion": "8.22.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg/lib/result.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg/lib/result.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg-protocol/1.15.0/dist/index.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-protocol/1.15.0/dist/index.js",
+      "bytes": 775,
+      "sha256": "e7a99ac02633393d8c3ef16cd6385b8246100d28c838b02420844068429a46c9",
+      "gitBlobOID": "b89eb1feed9a013dc7145b6e368eb5966feab34e",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg-protocol/dist/index.js",
+        "logicalSourcePath": "core/node_modules/pg-protocol/dist/index.js",
+        "packageName": "pg-protocol",
+        "packageRelativePath": "dist/index.js",
+        "recordedVersion": "1.15.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg-protocol/dist/index.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg-protocol/dist/index.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg/8.22.0/lib/type-overrides.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg/8.22.0/lib/type-overrides.js",
+      "bytes": 770,
+      "sha256": "47cb7f7bc6a6e1b1d4dc7c92bacacb436f12e99242b77da8391fd5b71991d2a5",
+      "gitBlobOID": "9d219e52560d2e0349207b3fdb4dafa2cc559b0c",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg/lib/type-overrides.js",
+        "logicalSourcePath": "core/node_modules/pg/lib/type-overrides.js",
+        "packageName": "pg",
+        "packageRelativePath": "lib/type-overrides.js",
+        "recordedVersion": "8.22.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg/lib/type-overrides.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg/lib/type-overrides.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg/8.22.0/lib/client.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg/8.22.0/lib/client.js",
+      "bytes": 22776,
+      "sha256": "86cda0e1fda47e03d27dde65f10c7b9d597f7411f77ed853c8d27d5f150978a2",
+      "gitBlobOID": "18280f3c6c46022bffb5de476ac255d2597c9588",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg/lib/client.js",
+        "logicalSourcePath": "core/node_modules/pg/lib/client.js",
+        "packageName": "pg",
+        "packageRelativePath": "lib/client.js",
+        "recordedVersion": "8.22.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg/lib/client.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg/lib/client.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg-types/2.2.0/index.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-types/2.2.0/index.js",
+      "bytes": 1214,
+      "sha256": "ece6d549270ba55d08126b10c9997324d808ee828ef00dad236e84e54d9d556d",
+      "gitBlobOID": "952d8c279d7834c64598e96c01260ab01665e5c3",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg-types/index.js",
+        "logicalSourcePath": "core/node_modules/pg-types/index.js",
+        "packageName": "pg-types",
+        "packageRelativePath": "index.js",
+        "recordedVersion": "2.2.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg-types/index.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg-types/index.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg/8.22.0/lib/native/client.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg/8.22.0/lib/native/client.js",
+      "bytes": 8699,
+      "sha256": "d88c124d4835cc9d5b0389e2aaf63a144df8434c1b4b0d5e588691e068f49acf",
+      "gitBlobOID": "fa17d9f6541cacc41694b099a15bc30cd18c1659",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg/lib/native/client.js",
+        "logicalSourcePath": "core/node_modules/pg/lib/native/client.js",
+        "packageName": "pg",
+        "packageRelativePath": "lib/native/client.js",
+        "recordedVersion": "8.22.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg/lib/native/client.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg/lib/native/client.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg/8.22.0/lib/stream.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg/8.22.0/lib/stream.js",
+      "bytes": 2132,
+      "sha256": "0bd4001775301604ddf7c94152e05f6f30a9354876717bdae2ab636d00eb12ba",
+      "gitBlobOID": "edc3018332d999139e6b6573230e8c0553650bc0",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg/lib/stream.js",
+        "logicalSourcePath": "core/node_modules/pg/lib/stream.js",
+        "packageName": "pg",
+        "packageRelativePath": "lib/stream.js",
+        "recordedVersion": "8.22.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg/lib/stream.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg/lib/stream.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg-protocol/1.15.0/dist/parser.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-protocol/1.15.0/dist/parser.js",
+      "bytes": 13445,
+      "sha256": "7abb711bf087571db432102e1d2fe8321c3176b1191d1f026b97fee86b89b545",
+      "gitBlobOID": "8433c11345d12ac1d9bee9ef9faacf0046994987",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg-protocol/dist/parser.js",
+        "logicalSourcePath": "core/node_modules/pg-protocol/dist/parser.js",
+        "packageName": "pg-protocol",
+        "packageRelativePath": "dist/parser.js",
+        "recordedVersion": "1.15.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg-protocol/dist/parser.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg-protocol/dist/parser.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg-protocol/1.15.0/dist/messages.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-protocol/1.15.0/dist/messages.js",
+      "bytes": 4973,
+      "sha256": "dfd22ad639f3030b41617ff0ee201ece7cdbce4adb7e1aae7978541b1384cd31",
+      "gitBlobOID": "b9f2c4482e21a42482d29ffacb1f6bf8afe34392",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg-protocol/dist/messages.js",
+        "logicalSourcePath": "core/node_modules/pg-protocol/dist/messages.js",
+        "packageName": "pg-protocol",
+        "packageRelativePath": "dist/messages.js",
+        "recordedVersion": "1.15.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg-protocol/dist/messages.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg-protocol/dist/messages.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg-protocol/1.15.0/dist/serializer.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-protocol/1.15.0/dist/serializer.js",
+      "bytes": 7059,
+      "sha256": "342f298021498cbf35ccc8c06fd7ec36d215a3616549f6c87f286844b24f5578",
+      "gitBlobOID": "0690bed355c066f983c4bf7fad44d77462bb47cf",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg-protocol/dist/serializer.js",
+        "logicalSourcePath": "core/node_modules/pg-protocol/dist/serializer.js",
+        "packageName": "pg-protocol",
+        "packageRelativePath": "dist/serializer.js",
+        "recordedVersion": "1.15.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg-protocol/dist/serializer.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg-protocol/dist/serializer.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg-types/2.2.0/lib/builtins.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-types/2.2.0/lib/builtins.js",
+      "bytes": 1564,
+      "sha256": "09213197e4b44012e4c83669aa80884a189e90c777ddfef1f44c90c412167354",
+      "gitBlobOID": "f0c134a8abbce39244fe46b09dd861006196eb68",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg-types/lib/builtins.js",
+        "logicalSourcePath": "core/node_modules/pg-types/lib/builtins.js",
+        "packageName": "pg-types",
+        "packageRelativePath": "lib/builtins.js",
+        "recordedVersion": "2.2.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg-types/lib/builtins.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg-types/lib/builtins.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg-types/2.2.0/lib/arrayParser.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-types/2.2.0/lib/arrayParser.js",
+      "bytes": 208,
+      "sha256": "cad20b20e6312125b45f74480eba3ef46b456997da4f53bbec56356d66edd730",
+      "gitBlobOID": "81ccffbc85659d2a101f624b7e3ec220c00ecbaa",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg-types/lib/arrayParser.js",
+        "logicalSourcePath": "core/node_modules/pg-types/lib/arrayParser.js",
+        "packageName": "pg-types",
+        "packageRelativePath": "lib/arrayParser.js",
+        "recordedVersion": "2.2.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg-types/lib/arrayParser.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg-types/lib/arrayParser.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg-types/2.2.0/lib/binaryParsers.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-types/2.2.0/lib/binaryParsers.js",
+      "bytes": 6063,
+      "sha256": "4b0105414068ea96450ef0d420db9449c00c565c5894683955af15bf94075fb9",
+      "gitBlobOID": "e12c2f46365148c3e50646ce41264124c4c756d1",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg-types/lib/binaryParsers.js",
+        "logicalSourcePath": "core/node_modules/pg-types/lib/binaryParsers.js",
+        "packageName": "pg-types",
+        "packageRelativePath": "lib/binaryParsers.js",
+        "recordedVersion": "2.2.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg-types/lib/binaryParsers.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg-types/lib/binaryParsers.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg-types/2.2.0/lib/textParsers.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-types/2.2.0/lib/textParsers.js",
+      "bytes": 5367,
+      "sha256": "bd811a530000508b6b90c1db462078e122f0404769d73f57ad41fe90aca159bd",
+      "gitBlobOID": "b1218bfe26499c98c3a62d9f8e8c041c3106fc7d",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg-types/lib/textParsers.js",
+        "logicalSourcePath": "core/node_modules/pg-types/lib/textParsers.js",
+        "packageName": "pg-types",
+        "packageRelativePath": "lib/textParsers.js",
+        "recordedVersion": "2.2.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg-types/lib/textParsers.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg-types/lib/textParsers.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg-cloudflare/1.4.0/dist/empty.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-cloudflare/1.4.0/dist/empty.js",
+      "bytes": 258,
+      "sha256": "3f83d105df21adbeeffb03450deb422644c30023ece93b2d6191fac3c620a316",
+      "gitBlobOID": "bd78fc976ce1e8f5288b1c80dd7bf17382bb56eb",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg-cloudflare/dist/empty.js",
+        "logicalSourcePath": "core/node_modules/pg-cloudflare/dist/empty.js",
+        "packageName": "pg-cloudflare",
+        "packageRelativePath": "dist/empty.js",
+        "recordedVersion": "1.4.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg-cloudflare/dist/empty.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg-cloudflare/dist/empty.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/postgres-array/2.0.0/index.js",
+      "path": "third-party/chuck-owner-consumer54/packages/postgres-array/2.0.0/index.js",
+      "bytes": 2320,
+      "sha256": "807ba580ed423e518672c27b4022a56acb693be04349733ffc1fe6f324fbcee2",
+      "gitBlobOID": "18bfd163612aee7ad7c4256a555c675069b821c2",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/postgres-array/index.js",
+        "logicalSourcePath": "core/node_modules/postgres-array/index.js",
+        "packageName": "postgres-array",
+        "packageRelativePath": "index.js",
+        "recordedVersion": "2.0.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/postgres-array/index.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/postgres-array/index.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg-protocol/1.15.0/dist/buffer-writer.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-protocol/1.15.0/dist/buffer-writer.js",
+      "bytes": 3814,
+      "sha256": "618b3b9be3ad19e873d19494b34be41ea1ee91ddee66e4b065b5d416981c7859",
+      "gitBlobOID": "16d4344e1177892e42055702bc776d17b3f41192",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg-protocol/dist/buffer-writer.js",
+        "logicalSourcePath": "core/node_modules/pg-protocol/dist/buffer-writer.js",
+        "packageName": "pg-protocol",
+        "packageRelativePath": "dist/buffer-writer.js",
+        "recordedVersion": "1.15.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg-protocol/dist/buffer-writer.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg-protocol/dist/buffer-writer.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg-int8/1.0.1/index.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-int8/1.0.1/index.js",
+      "bytes": 1572,
+      "sha256": "f991b0a41119bce0efbb471275dbd02de31a79fe6f87f8f5e5678e373a0f1627",
+      "gitBlobOID": "db7797503d7f3e2110fa76ab2ac9b8c8834a0289",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg-int8/index.js",
+        "logicalSourcePath": "core/node_modules/pg-int8/index.js",
+        "packageName": "pg-int8",
+        "packageRelativePath": "index.js",
+        "recordedVersion": "1.0.1",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg-int8/index.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg-int8/index.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg/8.22.0/lib/native/query.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg/8.22.0/lib/native/query.js",
+      "bytes": 4757,
+      "sha256": "e17221776993847901de73de28690aebc1e5ed1151b115bc8d84cc10cddf4ae4",
+      "gitBlobOID": "e02294f638f9c0372b508d97f55d2f69663a4377",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg/lib/native/query.js",
+        "logicalSourcePath": "core/node_modules/pg/lib/native/query.js",
+        "packageName": "pg",
+        "packageRelativePath": "lib/native/query.js",
+        "recordedVersion": "8.22.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg/lib/native/query.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg/lib/native/query.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg-protocol/1.15.0/dist/buffer-reader.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-protocol/1.15.0/dist/buffer-reader.js",
+      "bytes": 1600,
+      "sha256": "fdae5fd80c1ad1015f91a92da667467752eabdf531f19558897e205559e6b714",
+      "gitBlobOID": "3358253cbb67074b0f9177d171d2a7d3b56120df",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg-protocol/dist/buffer-reader.js",
+        "logicalSourcePath": "core/node_modules/pg-protocol/dist/buffer-reader.js",
+        "packageName": "pg-protocol",
+        "packageRelativePath": "dist/buffer-reader.js",
+        "recordedVersion": "1.15.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg-protocol/dist/buffer-reader.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg-protocol/dist/buffer-reader.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg/8.22.0/lib/connection-parameters.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg/8.22.0/lib/connection-parameters.js",
+      "bytes": 5957,
+      "sha256": "6b6548f99acba3502663a17a180582ba8e1f1725aa9d94b5f47cac19dcb6211b",
+      "gitBlobOID": "37987fd688a49d10327aef1ab21fa7dea43b8389",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg/lib/connection-parameters.js",
+        "logicalSourcePath": "core/node_modules/pg/lib/connection-parameters.js",
+        "packageName": "pg",
+        "packageRelativePath": "lib/connection-parameters.js",
+        "recordedVersion": "8.22.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg/lib/connection-parameters.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg/lib/connection-parameters.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/postgres-bytea/1.0.1/index.js",
+      "path": "third-party/chuck-owner-consumer54/packages/postgres-bytea/1.0.1/index.js",
+      "bytes": 863,
+      "sha256": "c078b99e1009c4bcf6e3ab59d9fe808b12caee3461204ae599cdd9cccd990801",
+      "gitBlobOID": "b0dc4c78bd85a35bc587f83a2687a691f51aa34d",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/postgres-bytea/index.js",
+        "logicalSourcePath": "core/node_modules/postgres-bytea/index.js",
+        "packageName": "postgres-bytea",
+        "packageRelativePath": "index.js",
+        "recordedVersion": "1.0.1",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/postgres-bytea/index.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/postgres-bytea/index.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/postgres-date/1.0.7/index.js",
+      "path": "third-party/chuck-owner-consumer54/packages/postgres-date/1.0.7/index.js",
+      "bytes": 2676,
+      "sha256": "9a09e3ec0775237576b1f6ff0fba0ed6171235aeded635a42c174b517e34cb1a",
+      "gitBlobOID": "5dc73fbdad05559d5544930606c2cf526e3676e4",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/postgres-date/index.js",
+        "logicalSourcePath": "core/node_modules/postgres-date/index.js",
+        "packageName": "postgres-date",
+        "packageRelativePath": "index.js",
+        "recordedVersion": "1.0.7",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/postgres-date/index.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/postgres-date/index.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/postgres-interval/1.2.0/index.js",
+      "path": "third-party/chuck-owner-consumer54/packages/postgres-interval/1.2.0/index.js",
+      "bytes": 3413,
+      "sha256": "836fe0a39e52f051d62583d8375d3b270b4cb93dd026b125438a89e5a0258c41",
+      "gitBlobOID": "8ecca800af389b47fc7a1ebdaf0feb4e27f150a4",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/postgres-interval/index.js",
+        "logicalSourcePath": "core/node_modules/postgres-interval/index.js",
+        "packageName": "postgres-interval",
+        "packageRelativePath": "index.js",
+        "recordedVersion": "1.2.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/postgres-interval/index.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/postgres-interval/index.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pgpass/1.0.5/lib/index.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pgpass/1.0.5/lib/index.js",
+      "bytes": 467,
+      "sha256": "cc95b8ef6c32a9afdc48b85a5e7128d5e29567f8ded02d9bf7acd27c3d870c39",
+      "gitBlobOID": "ecfcf308efd59d0ac4330dcbf505bac7f5847acf",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pgpass/lib/index.js",
+        "logicalSourcePath": "core/node_modules/pgpass/lib/index.js",
+        "packageName": "pgpass",
+        "packageRelativePath": "lib/index.js",
+        "recordedVersion": "1.0.5",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pgpass/lib/index.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pgpass/lib/index.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg/8.22.0/lib/crypto/utils.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg/8.22.0/lib/crypto/utils.js",
+      "bytes": 2649,
+      "sha256": "a849cfe22d7590d79ddee76c8d7a058e2b67360a0d76683275d34133e5637117",
+      "gitBlobOID": "65aa4a182d322b1f8b00a313d10970306694d4dd",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg/lib/crypto/utils.js",
+        "logicalSourcePath": "core/node_modules/pg/lib/crypto/utils.js",
+        "packageName": "pg",
+        "packageRelativePath": "lib/crypto/utils.js",
+        "recordedVersion": "8.22.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg/lib/crypto/utils.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg/lib/crypto/utils.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg/8.22.0/lib/query.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg/8.22.0/lib/query.js",
+      "bytes": 7454,
+      "sha256": "4253bb48364243573c330a2d5827a0f306f632f84f5ac56feaa3ac83f2293001",
+      "gitBlobOID": "04e1c1d65c7743e1cd824cda0e61eefa1583bfe6",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg/lib/query.js",
+        "logicalSourcePath": "core/node_modules/pg/lib/query.js",
+        "packageName": "pg",
+        "packageRelativePath": "lib/query.js",
+        "recordedVersion": "8.22.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg/lib/query.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg/lib/query.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg/8.22.0/lib/crypto/sasl.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg/8.22.0/lib/crypto/sasl.js",
+      "bytes": 9900,
+      "sha256": "99f1a2607fe2a29f1c4dd1aaf43dec0fc2b5de8755de72b39d3aa8c575bd6a71",
+      "gitBlobOID": "ea63b24130b6c04aac83bc8787a3dde46cf85683",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg/lib/crypto/sasl.js",
+        "logicalSourcePath": "core/node_modules/pg/lib/crypto/sasl.js",
+        "packageName": "pg",
+        "packageRelativePath": "lib/crypto/sasl.js",
+        "recordedVersion": "8.22.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg/lib/crypto/sasl.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg/lib/crypto/sasl.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg-connection-string/2.14.0/index.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-connection-string/2.14.0/index.js",
+      "bytes": 7467,
+      "sha256": "6523b5d5ad961775b9befa691edccf8080a79da52b91142834f9e6f6d75eb5e3",
+      "gitBlobOID": "7ee3029763a61478d8e516681f0206cc380ea916",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg-connection-string/index.js",
+        "logicalSourcePath": "core/node_modules/pg-connection-string/index.js",
+        "packageName": "pg-connection-string",
+        "packageRelativePath": "index.js",
+        "recordedVersion": "2.14.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg-connection-string/index.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg-connection-string/index.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/xtend/4.0.2/mutable.js",
+      "path": "third-party/chuck-owner-consumer54/packages/xtend/4.0.2/mutable.js",
+      "bytes": 369,
+      "sha256": "71a38649c77408217483f81f55daee1d6646d6c670e3d034a4482cb3453886e9",
+      "gitBlobOID": "72debede6ca58592fe93b5ab22d434311a76861b",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/xtend/mutable.js",
+        "logicalSourcePath": "core/node_modules/xtend/mutable.js",
+        "packageName": "xtend",
+        "packageRelativePath": "mutable.js",
+        "recordedVersion": "4.0.2",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/xtend/mutable.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/xtend/mutable.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pgpass/1.0.5/lib/helper.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pgpass/1.0.5/lib/helper.js",
+      "bytes": 5488,
+      "sha256": "28d823dcde115f31848ba93d9cb55ba20089ac701b6a38b228d185d96df4f1b5",
+      "gitBlobOID": "f9884601e77e9af848b4582a9704772353f9b979",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pgpass/lib/helper.js",
+        "logicalSourcePath": "core/node_modules/pgpass/lib/helper.js",
+        "packageName": "pgpass",
+        "packageRelativePath": "lib/helper.js",
+        "recordedVersion": "1.0.5",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pgpass/lib/helper.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pgpass/lib/helper.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg/8.22.0/lib/crypto/cert-signatures.js",
+      "path": "third-party/chuck-owner-consumer54/packages/pg/8.22.0/lib/crypto/cert-signatures.js",
+      "bytes": 4096,
+      "sha256": "206ec95c51012b73fe15d549b24db2acab969271e971940a0b79cfdcf830755b",
+      "gitBlobOID": "8d8df342500b7d7e6ddb114d7ef53cd549ea2c04",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg/lib/crypto/cert-signatures.js",
+        "logicalSourcePath": "core/node_modules/pg/lib/crypto/cert-signatures.js",
+        "packageName": "pg",
+        "packageRelativePath": "lib/crypto/cert-signatures.js",
+        "recordedVersion": "8.22.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/pg/lib/crypto/cert-signatures.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg/lib/crypto/cert-signatures.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/split2/4.2.0/index.js",
+      "path": "third-party/chuck-owner-consumer54/packages/split2/4.2.0/index.js",
+      "bytes": 3764,
+      "sha256": "842471719e0e901e01ae1a1d3a6a4d1ff3e36747a7f50d5644f09d1d595c1857",
+      "gitBlobOID": "9b59f6ceed12c7d4035151870adc35a5521d33f8",
+      "mode": "100644",
+      "kind": "selected-installed-code",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/split2/index.js",
+        "logicalSourcePath": "core/node_modules/split2/index.js",
+        "packageName": "split2",
+        "packageRelativePath": "index.js",
+        "recordedVersion": "4.2.0",
+        "rootImmutableOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/core/node_modules/split2/index.js",
+        "nativeRegularTargetPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/split2/index.js",
+        "nativeOriginalTargetMode": "0o664",
+        "nativeAncestorLinks": [
+          {
+            "sourcePathComponent": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules",
+            "rawLinkTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "resolvedTarget": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules",
+            "inode": 2727116,
+            "device": 64769,
+            "mtimeNs": 1793562723493378300,
+            "ctimeNs": 1793562723493378300
+          }
+        ]
+      }
+    },
+    {
+      "componentPath": "packages/pg/8.22.0/package.json",
+      "path": "third-party/chuck-owner-consumer54/packages/pg/8.22.0/package.json",
+      "bytes": 1668,
+      "sha256": "bab5faf4410151a463078fffa326d10979150bfc330f0a29bd08948378ed3421",
+      "gitBlobOID": "53d624bc1c237f23b732303181745d26193a018f",
+      "mode": "100644",
+      "kind": "installed-package-metadata",
+      "origin": {
+        "originalPackageJsonPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg/package.json",
+        "resolvedRegularMetadataPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg/package.json",
+        "actualName": "pg",
+        "actualVersion": "8.22.0",
+        "actualDeclaredLicense": "MIT",
+        "originalTargetMode": "0o664"
+      }
+    },
+    {
+      "componentPath": "packages/pg-pool/3.14.0/package.json",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-pool/3.14.0/package.json",
+      "bytes": 1083,
+      "sha256": "0a9924def9e06f791b09a44eaefb227f323a39199887f6ce17b44cb5a9193134",
+      "gitBlobOID": "16cf2958d28c4785f35c2c44ca4b3f575dd2a61e",
+      "mode": "100644",
+      "kind": "installed-package-metadata",
+      "origin": {
+        "originalPackageJsonPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg-pool/package.json",
+        "resolvedRegularMetadataPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg-pool/package.json",
+        "actualName": "pg-pool",
+        "actualVersion": "3.14.0",
+        "actualDeclaredLicense": "MIT",
+        "originalTargetMode": "0o664"
+      }
+    },
+    {
+      "componentPath": "packages/pg-protocol/1.15.0/package.json",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-protocol/1.15.0/package.json",
+      "bytes": 1097,
+      "sha256": "379307bb82f56d649b11a5050d1d7978460ad6f2a92c0d3d7f15a04148e933d4",
+      "gitBlobOID": "314f41afcd75c5270db8d2c0a8079c6b87d7a6dd",
+      "mode": "100644",
+      "kind": "installed-package-metadata",
+      "origin": {
+        "originalPackageJsonPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg-protocol/package.json",
+        "resolvedRegularMetadataPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg-protocol/package.json",
+        "actualName": "pg-protocol",
+        "actualVersion": "1.15.0",
+        "actualDeclaredLicense": "MIT",
+        "originalTargetMode": "0o664"
+      }
+    },
+    {
+      "componentPath": "packages/pg-types/2.2.0/package.json",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-types/2.2.0/package.json",
+      "bytes": 973,
+      "sha256": "3ec0293cb38cc8d9475e3eb32ac5f19d195bf9fccc8b19a0714e6ecd6e7c2cf0",
+      "gitBlobOID": "5f18026fc8b4131a42f25a391408df6b4c180248",
+      "mode": "100644",
+      "kind": "installed-package-metadata",
+      "origin": {
+        "originalPackageJsonPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg-types/package.json",
+        "resolvedRegularMetadataPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg-types/package.json",
+        "actualName": "pg-types",
+        "actualVersion": "2.2.0",
+        "actualDeclaredLicense": "MIT",
+        "originalTargetMode": "0o664"
+      }
+    },
+    {
+      "componentPath": "packages/pg-cloudflare/1.4.0/package.json",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-cloudflare/1.4.0/package.json",
+      "bytes": 944,
+      "sha256": "26a5017fe5fa14bb2eaa90fb87a2c54becc2666516ef79ee591694bcb9533531",
+      "gitBlobOID": "8081b54cf64dec6e91b6e30df100b4f57472e618",
+      "mode": "100644",
+      "kind": "installed-package-metadata",
+      "origin": {
+        "originalPackageJsonPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg-cloudflare/package.json",
+        "resolvedRegularMetadataPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg-cloudflare/package.json",
+        "actualName": "pg-cloudflare",
+        "actualVersion": "1.4.0",
+        "actualDeclaredLicense": "MIT",
+        "originalTargetMode": "0o664"
+      }
+    },
+    {
+      "componentPath": "packages/postgres-array/2.0.0/package.json",
+      "path": "third-party/chuck-owner-consumer54/packages/postgres-array/2.0.0/package.json",
+      "bytes": 649,
+      "sha256": "dcd6a505fcbc032b409ee2838ab2c776dea3a9cfe02b736364b6cb82a946665f",
+      "gitBlobOID": "d6aa94e58760f370d66159a6b0e3991316470e42",
+      "mode": "100644",
+      "kind": "installed-package-metadata",
+      "origin": {
+        "originalPackageJsonPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/postgres-array/package.json",
+        "resolvedRegularMetadataPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/postgres-array/package.json",
+        "actualName": "postgres-array",
+        "actualVersion": "2.0.0",
+        "actualDeclaredLicense": "MIT",
+        "originalTargetMode": "0o664"
+      }
+    },
+    {
+      "componentPath": "packages/pg-int8/1.0.1/package.json",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-int8/1.0.1/package.json",
+      "bytes": 475,
+      "sha256": "147155887a41bb6f69ff98b3dde827b7e6a8214c3a71938da4babf8e12adff2e",
+      "gitBlobOID": "4b937e1b22cb6c45a1539b12db5ca7ebe5e81480",
+      "mode": "100644",
+      "kind": "installed-package-metadata",
+      "origin": {
+        "originalPackageJsonPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg-int8/package.json",
+        "resolvedRegularMetadataPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg-int8/package.json",
+        "actualName": "pg-int8",
+        "actualVersion": "1.0.1",
+        "actualDeclaredLicense": "ISC",
+        "originalTargetMode": "0o664"
+      }
+    },
+    {
+      "componentPath": "packages/postgres-bytea/1.0.1/package.json",
+      "path": "third-party/chuck-owner-consumer54/packages/postgres-bytea/1.0.1/package.json",
+      "bytes": 617,
+      "sha256": "9125568c5fb51a65b8f11adb0080c2775b99ee82822d73bff8b56b2a9d47d7aa",
+      "gitBlobOID": "344b9a01e6ab6e83529fc7b0a2e67d8513ebe3ff",
+      "mode": "100644",
+      "kind": "installed-package-metadata",
+      "origin": {
+        "originalPackageJsonPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/postgres-bytea/package.json",
+        "resolvedRegularMetadataPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/postgres-bytea/package.json",
+        "actualName": "postgres-bytea",
+        "actualVersion": "1.0.1",
+        "actualDeclaredLicense": "MIT",
+        "originalTargetMode": "0o664"
+      }
+    },
+    {
+      "componentPath": "packages/postgres-date/1.0.7/package.json",
+      "path": "third-party/chuck-owner-consumer54/packages/postgres-date/1.0.7/package.json",
+      "bytes": 607,
+      "sha256": "03f9edefa96697072075e02df045cc61ed4ca2f8dfffb1ff87f4070bc3404151",
+      "gitBlobOID": "6fddec71cc2457f58e25c2653d0ede1ef120e1eb",
+      "mode": "100644",
+      "kind": "installed-package-metadata",
+      "origin": {
+        "originalPackageJsonPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/postgres-date/package.json",
+        "resolvedRegularMetadataPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/postgres-date/package.json",
+        "actualName": "postgres-date",
+        "actualVersion": "1.0.7",
+        "actualDeclaredLicense": "MIT",
+        "originalTargetMode": "0o664"
+      }
+    },
+    {
+      "componentPath": "packages/postgres-interval/1.2.0/package.json",
+      "path": "third-party/chuck-owner-consumer54/packages/postgres-interval/1.2.0/package.json",
+      "bytes": 666,
+      "sha256": "cc3056db105e66c9128cb8a387cda782d5f1ae9281be90de0b8d26a90af89c57",
+      "gitBlobOID": "95520a0e686b436decf5d9d9d8f1eb5866689c03",
+      "mode": "100644",
+      "kind": "installed-package-metadata",
+      "origin": {
+        "originalPackageJsonPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/postgres-interval/package.json",
+        "resolvedRegularMetadataPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/postgres-interval/package.json",
+        "actualName": "postgres-interval",
+        "actualVersion": "1.2.0",
+        "actualDeclaredLicense": "MIT",
+        "originalTargetMode": "0o664"
+      }
+    },
+    {
+      "componentPath": "packages/pgpass/1.0.5/package.json",
+      "path": "third-party/chuck-owner-consumer54/packages/pgpass/1.0.5/package.json",
+      "bytes": 1074,
+      "sha256": "d75240eb4fe759c10db9f903838275348676a8bdc1f329e20a833713cd7c99bd",
+      "gitBlobOID": "22bfe84e1c068205301d6885d7d3bb6120257125",
+      "mode": "100644",
+      "kind": "installed-package-metadata",
+      "origin": {
+        "originalPackageJsonPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pgpass/package.json",
+        "resolvedRegularMetadataPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pgpass/package.json",
+        "actualName": "pgpass",
+        "actualVersion": "1.0.5",
+        "actualDeclaredLicense": "MIT",
+        "originalTargetMode": "0o664"
+      }
+    },
+    {
+      "componentPath": "packages/pg-connection-string/2.14.0/package.json",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-connection-string/2.14.0/package.json",
+      "bytes": 1375,
+      "sha256": "5e07e70c64af1e8695a91f9371b713106eeed3b52a1d6b7f7238a33f01dd3f20",
+      "gitBlobOID": "d495a1fa334437839ca3ca315b0646345e8d5cae",
+      "mode": "100644",
+      "kind": "installed-package-metadata",
+      "origin": {
+        "originalPackageJsonPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/pg-connection-string/package.json",
+        "resolvedRegularMetadataPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/pg-connection-string/package.json",
+        "actualName": "pg-connection-string",
+        "actualVersion": "2.14.0",
+        "actualDeclaredLicense": "MIT",
+        "originalTargetMode": "0o664"
+      }
+    },
+    {
+      "componentPath": "packages/xtend/4.0.2/package.json",
+      "path": "third-party/chuck-owner-consumer54/packages/xtend/4.0.2/package.json",
+      "bytes": 1056,
+      "sha256": "b02ffef8cda96c5c3ee00a00390e63f608362c2ddfb3ed754e181d013a45d48a",
+      "gitBlobOID": "f7a39d10af5f5ea48fcd948e72ba6af62e372d39",
+      "mode": "100644",
+      "kind": "installed-package-metadata",
+      "origin": {
+        "originalPackageJsonPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/xtend/package.json",
+        "resolvedRegularMetadataPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/xtend/package.json",
+        "actualName": "xtend",
+        "actualVersion": "4.0.2",
+        "actualDeclaredLicense": "MIT",
+        "originalTargetMode": "0o664"
+      }
+    },
+    {
+      "componentPath": "packages/split2/4.2.0/package.json",
+      "path": "third-party/chuck-owner-consumer54/packages/split2/4.2.0/package.json",
+      "bytes": 1113,
+      "sha256": "87b734c3087c8d9ed5d76d1bff00db30f960831ba8705dd18d73b180d08d2140",
+      "gitBlobOID": "e04bcc81cfe376e5beba446e27a69c1966aaafbe",
+      "mode": "100644",
+      "kind": "installed-package-metadata",
+      "origin": {
+        "originalPackageJsonPath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/.qualification/chuck-workspace-core-composed-v214/core/node_modules/split2/package.json",
+        "resolvedRegularMetadataPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/split2/package.json",
+        "actualName": "split2",
+        "actualVersion": "4.2.0",
+        "actualDeclaredLicense": "ISC",
+        "originalTargetMode": "0o664"
+      }
+    },
+    {
+      "componentPath": "packages/pg/8.22.0/LICENSE",
+      "path": "third-party/chuck-owner-consumer54/packages/pg/8.22.0/LICENSE",
+      "bytes": 1077,
+      "sha256": "192b8f5c96900f04a1271dec39688655d7416c1c6ea84a508e18b50d2b6751f3",
+      "gitBlobOID": "5c1405646fa9dfc49a4638bfc5c8ca908d912505",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "pg",
+        "version": "8.22.0",
+        "originalFilename": "LICENSE",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/pg/8.22.0/README.md",
+      "path": "third-party/chuck-owner-consumer54/packages/pg/8.22.0/README.md",
+      "bytes": 4452,
+      "sha256": "a02996f80893c4436e600406d5b48cfbc8d5f9500b9f595a6779361ef3a0b4d2",
+      "gitBlobOID": "2fca0eb10308a7cf3e23581c0280e481d160106e",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "pg",
+        "version": "8.22.0",
+        "originalFilename": "README.md",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/pg-pool/3.14.0/LICENSE",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-pool/3.14.0/LICENSE",
+      "bytes": 1073,
+      "sha256": "4f15ee7fc2a72082859d7e0d12dfa4bcdd70b1c744ad3850d07780730ac08557",
+      "gitBlobOID": "4e9058148e75f05ca4125f34eff371d08c014f6b",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "pg-pool",
+        "version": "3.14.0",
+        "originalFilename": "LICENSE",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/pg-pool/3.14.0/README.md",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-pool/3.14.0/README.md",
+      "bytes": 13094,
+      "sha256": "9d7028ff70e7cddeb97e7a2fda222e12c0e52fe954baf640d62d29880d9628bb",
+      "gitBlobOID": "80c64478882ae7ffb5cd752e11c2cfad7605a65d",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "pg-pool",
+        "version": "3.14.0",
+        "originalFilename": "README.md",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/pg-protocol/1.15.0/LICENSE",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-protocol/1.15.0/LICENSE",
+      "bytes": 1077,
+      "sha256": "192b8f5c96900f04a1271dec39688655d7416c1c6ea84a508e18b50d2b6751f3",
+      "gitBlobOID": "5c1405646fa9dfc49a4638bfc5c8ca908d912505",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "pg-protocol",
+        "version": "1.15.0",
+        "originalFilename": "LICENSE",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/pg-protocol/1.15.0/README.md",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-protocol/1.15.0/README.md",
+      "bytes": 150,
+      "sha256": "163df61eaa9f5337d5c0fcb3c0f15207f91a208dbd12ed26582bfc1e9bd59180",
+      "gitBlobOID": "8c52e40ecb41802595a88ae9e9a7ed58cb63c625",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "pg-protocol",
+        "version": "1.15.0",
+        "originalFilename": "README.md",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/pg-types/2.2.0/README.md",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-types/2.2.0/README.md",
+      "bytes": 3831,
+      "sha256": "ecda9bca71d3f0cee4e600d1dd2bef336213f39ef2e8fca6a1a1c1c8723f643a",
+      "gitBlobOID": "54a3f2c6b9335154c5c64520f46b7a88dc4675dc",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "pg-types",
+        "version": "2.2.0",
+        "originalFilename": "README.md",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/pg-cloudflare/1.4.0/LICENSE",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-cloudflare/1.4.0/LICENSE",
+      "bytes": 1077,
+      "sha256": "192b8f5c96900f04a1271dec39688655d7416c1c6ea84a508e18b50d2b6751f3",
+      "gitBlobOID": "5c1405646fa9dfc49a4638bfc5c8ca908d912505",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "pg-cloudflare",
+        "version": "1.4.0",
+        "originalFilename": "LICENSE",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/pg-cloudflare/1.4.0/README.md",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-cloudflare/1.4.0/README.md",
+      "bytes": 4383,
+      "sha256": "d76b5e56e088f30e86dba1466ed03adf924344db31278ec966c5a35d219aca26",
+      "gitBlobOID": "68663c45cd4ff74f19e14004e87ba870ad4a86ec",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "pg-cloudflare",
+        "version": "1.4.0",
+        "originalFilename": "README.md",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/postgres-array/2.0.0/license",
+      "path": "third-party/chuck-owner-consumer54/packages/postgres-array/2.0.0/license",
+      "bytes": 1111,
+      "sha256": "f057f36739d53d228a746de4440c1e0c644ecde06d6beab45337d39c9d12a393",
+      "gitBlobOID": "25c624701389bab54c94982531ea34e8d1702ccf",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "postgres-array",
+        "version": "2.0.0",
+        "originalFilename": "license",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/postgres-array/2.0.0/readme.md",
+      "path": "third-party/chuck-owner-consumer54/packages/postgres-array/2.0.0/readme.md",
+      "bytes": 692,
+      "sha256": "d6b0e269174660704b3d72438334a52d2bcb2f353a3354f3c7cd65771e27c0de",
+      "gitBlobOID": "b74b369df932ed5b7e45a66a522901f62a8ba8f1",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "postgres-array",
+        "version": "2.0.0",
+        "originalFilename": "readme.md",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/pg-int8/1.0.1/LICENSE",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-int8/1.0.1/LICENSE",
+      "bytes": 750,
+      "sha256": "4e8e87ccdfc7e4b47fd89015f78468aa53b6bf43ab6e6e12d43e8f55294911de",
+      "gitBlobOID": "c56c9731c140788997e7a389194eaf1c6f0fcc48",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "pg-int8",
+        "version": "1.0.1",
+        "originalFilename": "LICENSE",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/pg-int8/1.0.1/README.md",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-int8/1.0.1/README.md",
+      "bytes": 389,
+      "sha256": "d77eaaca16d1fe569ee6dc87d340d2fa6d14438652618a8cf20382e16648244a",
+      "gitBlobOID": "ef2e6084317fb61ce1a62c198134099eec895981",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "pg-int8",
+        "version": "1.0.1",
+        "originalFilename": "README.md",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/postgres-bytea/1.0.1/license",
+      "path": "third-party/chuck-owner-consumer54/packages/postgres-bytea/1.0.1/license",
+      "bytes": 1111,
+      "sha256": "f057f36739d53d228a746de4440c1e0c644ecde06d6beab45337d39c9d12a393",
+      "gitBlobOID": "25c624701389bab54c94982531ea34e8d1702ccf",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "postgres-bytea",
+        "version": "1.0.1",
+        "originalFilename": "license",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/postgres-bytea/1.0.1/readme.md",
+      "path": "third-party/chuck-owner-consumer54/packages/postgres-bytea/1.0.1/readme.md",
+      "bytes": 504,
+      "sha256": "24d2c6e5bc32e86c9263af0d8ca2e5217a43565a311942888ba979fd5b0ed550",
+      "gitBlobOID": "4939c3be4bbd31d5212b8fa8b5cf6d7a4ecec5b8",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "postgres-bytea",
+        "version": "1.0.1",
+        "originalFilename": "readme.md",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/postgres-date/1.0.7/license",
+      "path": "third-party/chuck-owner-consumer54/packages/postgres-date/1.0.7/license",
+      "bytes": 1111,
+      "sha256": "f057f36739d53d228a746de4440c1e0c644ecde06d6beab45337d39c9d12a393",
+      "gitBlobOID": "25c624701389bab54c94982531ea34e8d1702ccf",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "postgres-date",
+        "version": "1.0.7",
+        "originalFilename": "license",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/postgres-date/1.0.7/readme.md",
+      "path": "third-party/chuck-owner-consumer54/packages/postgres-date/1.0.7/readme.md",
+      "bytes": 1521,
+      "sha256": "ac45d399addd5e87db86d35adf84755bceadb0aee2360daeffd7af2d4ab41472",
+      "gitBlobOID": "095431a0f078a9dc3f8119d0128c2a644017d255",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "postgres-date",
+        "version": "1.0.7",
+        "originalFilename": "readme.md",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/postgres-interval/1.2.0/license",
+      "path": "third-party/chuck-owner-consumer54/packages/postgres-interval/1.2.0/license",
+      "bytes": 1111,
+      "sha256": "f057f36739d53d228a746de4440c1e0c644ecde06d6beab45337d39c9d12a393",
+      "gitBlobOID": "25c624701389bab54c94982531ea34e8d1702ccf",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "postgres-interval",
+        "version": "1.2.0",
+        "originalFilename": "license",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/postgres-interval/1.2.0/readme.md",
+      "path": "third-party/chuck-owner-consumer54/packages/postgres-interval/1.2.0/readme.md",
+      "bytes": 1115,
+      "sha256": "f5399e5250a2cc93245d874dbfe3527e5845119a65b80ea13cbb66ccf913818e",
+      "gitBlobOID": "53cda4ade18c8f47aeb411c0659e0ea204ce1992",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "postgres-interval",
+        "version": "1.2.0",
+        "originalFilename": "readme.md",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/pgpass/1.0.5/README.md",
+      "path": "third-party/chuck-owner-consumer54/packages/pgpass/1.0.5/README.md",
+      "bytes": 3294,
+      "sha256": "62549909404b5a0dcb2b4b74c9a930baf8095dbcfa1543c4ffc79378acd22b57",
+      "gitBlobOID": "bbc51939e148beac32d537bd6a74b7382bd7a5b4",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "pgpass",
+        "version": "1.0.5",
+        "originalFilename": "README.md",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/pg-connection-string/2.14.0/LICENSE",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-connection-string/2.14.0/LICENSE",
+      "bytes": 1082,
+      "sha256": "2244b5486c4427001b6756a87b9a297d427c111dcc3ba64a097492a8979c23d0",
+      "gitBlobOID": "b068a6cb2fe19df24ba034c3d27d78de8cd93ec7",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "pg-connection-string",
+        "version": "2.14.0",
+        "originalFilename": "LICENSE",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/pg-connection-string/2.14.0/README.md",
+      "path": "third-party/chuck-owner-consumer54/packages/pg-connection-string/2.14.0/README.md",
+      "bytes": 4932,
+      "sha256": "c2cba494f78d950f91ec21298bbf60a949dc379d4f873ffe3ee319c918a175e0",
+      "gitBlobOID": "5475f63bf0496b7281e7e1c24ab7f1ad876a4773",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "pg-connection-string",
+        "version": "2.14.0",
+        "originalFilename": "README.md",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/xtend/4.0.2/LICENSE",
+      "path": "third-party/chuck-owner-consumer54/packages/xtend/4.0.2/LICENSE",
+      "bytes": 1078,
+      "sha256": "82e67379203d5794e7c44549847d8d64ae6904591381682360470898bd306821",
+      "gitBlobOID": "0099f4f6c77f40ac409076408ad07449ffe246d3",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "xtend",
+        "version": "4.0.2",
+        "originalFilename": "LICENSE",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/xtend/4.0.2/README.md",
+      "path": "third-party/chuck-owner-consumer54/packages/xtend/4.0.2/README.md",
+      "bytes": 726,
+      "sha256": "fe5fb4d83470799709c32207fc1fff3e522070b2c625a9818f191125406cd360",
+      "gitBlobOID": "4a2703cff276b155e89c3abb7b09fbdfe90273f4",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "xtend",
+        "version": "4.0.2",
+        "originalFilename": "README.md",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/split2/4.2.0/LICENSE",
+      "path": "third-party/chuck-owner-consumer54/packages/split2/4.2.0/LICENSE",
+      "bytes": 764,
+      "sha256": "c372ef2fa1dfcb124ed807609751e75e3a009f108c5724916b489288fcb88a0c",
+      "gitBlobOID": "a91afe5b775f4384d878e5cef4427180ca7c368a",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "split2",
+        "version": "4.2.0",
+        "originalFilename": "LICENSE",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "packages/split2/4.2.0/README.md",
+      "path": "third-party/chuck-owner-consumer54/packages/split2/4.2.0/README.md",
+      "bytes": 3381,
+      "sha256": "7369c93bb01adc348ccdd1ac052880cc7d06e39a4a037c6a3f15175c3a6f0a64",
+      "gitBlobOID": "36f03ab67cf1fdf52841bb5b8fcdf8c297c12ca4",
+      "mode": "100644",
+      "kind": "original-captured-notice",
+      "origin": {
+        "capturedNoticeSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+        "packageName": "split2",
+        "version": "4.2.0",
+        "originalFilename": "README.md",
+        "extraction": "UTF-8 encoding of captured text without trimming or normalization"
+      }
+    },
+    {
+      "componentPath": "compile-inputs/server-only/empty.js",
+      "path": "third-party/chuck-owner-consumer54/compile-inputs/server-only/empty.js",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "gitBlobOID": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "kind": "empty-compile-input",
+      "origin": {
+        "originalPath": "/srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/node_modules/next/dist/compiled/server-only/empty.js",
+        "logicalSourcePath": "marker/empty.js",
+        "rootOriginalPath": "/srv/crays/migration-work/20261109/root/chuck-owner-consumer54-consumer-build-source01/original/marker/empty.js",
+        "rootOriginalSourcePointer": "/srv/crays/migration-work/20261108/root/member25-original-image-dependencies-copy03/node_modules/next/dist/compiled/server-only/empty.js"
+      }
+    },
+    {
+      "componentPath": "notices/postgresql/9.2.4/COPYRIGHT",
+      "path": "third-party/chuck-owner-consumer54/notices/postgresql/9.2.4/COPYRIGHT",
+      "bytes": 1192,
+      "sha256": "fb7ec5300ad39e9069383652becf6b11b8dd97debc50e9f2fdb1bcfeef1e968a",
+      "gitBlobOID": "e250de3df24905b474b33f9d97817ebdd4178efe",
+      "mode": "100644",
+      "kind": "supplemental-upstream-notice",
+      "origin": {
+        "repository": "postgres/postgres",
+        "tag": "REL9_2_4",
+        "commit": "73c122769ca1f49c451e315d476c80fdcf9f20cc",
+        "originalPath": "COPYRIGHT",
+        "url": "https://github.com/postgres/postgres/blob/73c122769ca1f49c451e315d476c80fdcf9f20cc/COPYRIGHT",
+        "applicability": "PostgreSQL 9.2.4 fe-exec.c attribution retained in packages/pg/8.22.0/lib/utils.js; supplemental notice does not replace pg MIT notice",
+        "provenanceReceiptSHA256": "9b47d0cae8ab5762c7b96a3408de3de6ca52a1c6fe513e5ff0d3555869907991"
+      }
+    }
+  ],
+  "packages": [
+    {
+      "name": "pg",
+      "version": "8.22.0",
+      "declaredLicense": "MIT",
+      "originalNotices": [
+        {
+          "file": "LICENSE",
+          "path": "packages/pg/8.22.0/LICENSE"
+        },
+        {
+          "file": "README.md",
+          "path": "packages/pg/8.22.0/README.md"
+        }
+      ]
+    },
+    {
+      "name": "pg-pool",
+      "version": "3.14.0",
+      "declaredLicense": "MIT",
+      "originalNotices": [
+        {
+          "file": "LICENSE",
+          "path": "packages/pg-pool/3.14.0/LICENSE"
+        },
+        {
+          "file": "README.md",
+          "path": "packages/pg-pool/3.14.0/README.md"
+        }
+      ]
+    },
+    {
+      "name": "pg-protocol",
+      "version": "1.15.0",
+      "declaredLicense": "MIT",
+      "originalNotices": [
+        {
+          "file": "LICENSE",
+          "path": "packages/pg-protocol/1.15.0/LICENSE"
+        },
+        {
+          "file": "README.md",
+          "path": "packages/pg-protocol/1.15.0/README.md"
+        }
+      ]
+    },
+    {
+      "name": "pg-types",
+      "version": "2.2.0",
+      "declaredLicense": "MIT",
+      "originalNotices": [
+        {
+          "file": "README.md",
+          "path": "packages/pg-types/2.2.0/README.md"
+        }
+      ]
+    },
+    {
+      "name": "pg-cloudflare",
+      "version": "1.4.0",
+      "declaredLicense": "MIT",
+      "originalNotices": [
+        {
+          "file": "LICENSE",
+          "path": "packages/pg-cloudflare/1.4.0/LICENSE"
+        },
+        {
+          "file": "README.md",
+          "path": "packages/pg-cloudflare/1.4.0/README.md"
+        }
+      ]
+    },
+    {
+      "name": "postgres-array",
+      "version": "2.0.0",
+      "declaredLicense": "MIT",
+      "originalNotices": [
+        {
+          "file": "license",
+          "path": "packages/postgres-array/2.0.0/license"
+        },
+        {
+          "file": "readme.md",
+          "path": "packages/postgres-array/2.0.0/readme.md"
+        }
+      ]
+    },
+    {
+      "name": "pg-int8",
+      "version": "1.0.1",
+      "declaredLicense": "ISC",
+      "originalNotices": [
+        {
+          "file": "LICENSE",
+          "path": "packages/pg-int8/1.0.1/LICENSE"
+        },
+        {
+          "file": "README.md",
+          "path": "packages/pg-int8/1.0.1/README.md"
+        }
+      ]
+    },
+    {
+      "name": "postgres-bytea",
+      "version": "1.0.1",
+      "declaredLicense": "MIT",
+      "originalNotices": [
+        {
+          "file": "license",
+          "path": "packages/postgres-bytea/1.0.1/license"
+        },
+        {
+          "file": "readme.md",
+          "path": "packages/postgres-bytea/1.0.1/readme.md"
+        }
+      ]
+    },
+    {
+      "name": "postgres-date",
+      "version": "1.0.7",
+      "declaredLicense": "MIT",
+      "originalNotices": [
+        {
+          "file": "license",
+          "path": "packages/postgres-date/1.0.7/license"
+        },
+        {
+          "file": "readme.md",
+          "path": "packages/postgres-date/1.0.7/readme.md"
+        }
+      ]
+    },
+    {
+      "name": "postgres-interval",
+      "version": "1.2.0",
+      "declaredLicense": "MIT",
+      "originalNotices": [
+        {
+          "file": "license",
+          "path": "packages/postgres-interval/1.2.0/license"
+        },
+        {
+          "file": "readme.md",
+          "path": "packages/postgres-interval/1.2.0/readme.md"
+        }
+      ]
+    },
+    {
+      "name": "pgpass",
+      "version": "1.0.5",
+      "declaredLicense": "MIT",
+      "originalNotices": [
+        {
+          "file": "README.md",
+          "path": "packages/pgpass/1.0.5/README.md"
+        }
+      ]
+    },
+    {
+      "name": "pg-connection-string",
+      "version": "2.14.0",
+      "declaredLicense": "MIT",
+      "originalNotices": [
+        {
+          "file": "LICENSE",
+          "path": "packages/pg-connection-string/2.14.0/LICENSE"
+        },
+        {
+          "file": "README.md",
+          "path": "packages/pg-connection-string/2.14.0/README.md"
+        }
+      ]
+    },
+    {
+      "name": "xtend",
+      "version": "4.0.2",
+      "declaredLicense": "MIT",
+      "originalNotices": [
+        {
+          "file": "LICENSE",
+          "path": "packages/xtend/4.0.2/LICENSE"
+        },
+        {
+          "file": "README.md",
+          "path": "packages/xtend/4.0.2/README.md"
+        }
+      ]
+    },
+    {
+      "name": "split2",
+      "version": "4.2.0",
+      "declaredLicense": "ISC",
+      "originalNotices": [
+        {
+          "file": "LICENSE",
+          "path": "packages/split2/4.2.0/LICENSE"
+        },
+        {
+          "file": "README.md",
+          "path": "packages/split2/4.2.0/README.md"
+        }
+      ]
+    }
+  ],
+  "authority": {
+    "rootOriginal64LedgerSHA256": "6faff7c9189a808fcca6579bfa38894c499510768a7144db8daad86ac3d23f64",
+    "buildJSONSHA256": "888d5c92cdda4cc0bcddee9df0cb861ee62f92e10a5b225989e4f5cae42bfb40",
+    "originalThirdPartyNoticesJSONSHA256": "af8086c229c17caa6fbb7ad80967bdf7ce3b6705b699abca1832c938252d0611",
+    "code40IntakeSHA256": "4433a7090642a1e2c3a4dc3abdadb25fe9700930377f901b0f3bebfc7b7479ab",
+    "package14IntakeSHA256": "59bf8c7efd0dddf1dcea9deceb4afd42103ace3e97242af490062841e03b7f3f",
+    "emptyInputIntakeSHA256": "f6df1a0b9ca9df800afb5df5fc584cce75a9eef84bfafd8a355cfb3facdd2b09",
+    "independentSourceReviewSHA256": "232cd598a81e44bc22b0aabe6b4a33d5f8e0444cf60dc0ee5c38b4019e8cd110",
+    "postgresqlSupplementProvenanceSHA256": "9b47d0cae8ab5762c7b96a3408de3de6ca52a1c6fe513e5ff0d3555869907991"
+  },
+  "relatedAlreadyPublicPreferredSources": [
+    {
+      "representation": "UNCHANGED_RAW_ORIGINAL",
+      "commit": "eaa9bf67cb531309dc6a777d137089da59eaebe2",
+      "path": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/native-personal-chuck-lifecycle.ts",
+      "mode": "100644",
+      "gitBlobOID": "50e479f4b282d228b84de470b0f9e180b4bcad3e",
+      "bytes": 5517,
+      "sha256": "8d272d91fd1f3b825f9f01f1d8318e4993d4aa493ba8ec238cb5a5bc7bb3c07c",
+      "url": "https://github.com/CraysWorld/crays-platform/blob/eaa9bf67cb531309dc6a777d137089da59eaebe2/apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/native-personal-chuck-lifecycle.ts",
+      "proof": "Exact catalog SHA256 and bytes plus immutable Git tree path/type/size; no body reread",
+      "license": "No new grant inferred; catalog originalityAndLicenseScope governs"
+    },
+    {
+      "representation": "UNCHANGED_RAW_ORIGINAL",
+      "commit": "eaa9bf67cb531309dc6a777d137089da59eaebe2",
+      "path": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/native-personal-service-admission.ts",
+      "mode": "100644",
+      "gitBlobOID": "3fc64c8a5d39f5ca41c2e543b59069e14a4d9224",
+      "bytes": 3625,
+      "sha256": "36856ba278ff99a80af928d806dd9828d9181cbc7d1088ed27f731c4101ad98f",
+      "url": "https://github.com/CraysWorld/crays-platform/blob/eaa9bf67cb531309dc6a777d137089da59eaebe2/apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/native-personal-service-admission.ts",
+      "proof": "Exact catalog SHA256 and bytes plus immutable Git tree path/type/size; no body reread",
+      "license": "No new grant inferred; catalog originalityAndLicenseScope governs"
+    },
+    {
+      "representation": "UNCHANGED_RAW_ORIGINAL",
+      "commit": "eaa9bf67cb531309dc6a777d137089da59eaebe2",
+      "path": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/verify-shared-artifacts.mjs",
+      "mode": "100644",
+      "gitBlobOID": "5c4797da72af35ecbc5518231a1562a86753bee4",
+      "bytes": 4507,
+      "sha256": "d4864d79f71e84dc003121ac9210674bb090399b749c5658e591ae26eed1f798",
+      "url": "https://github.com/CraysWorld/crays-platform/blob/eaa9bf67cb531309dc6a777d137089da59eaebe2/apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/verify-shared-artifacts.mjs",
+      "proof": "Exact catalog SHA256 and bytes plus immutable Git tree path/type/size; no body reread",
+      "license": "No new grant inferred; catalog originalityAndLicenseScope governs"
+    },
+    {
+      "representation": "UNCHANGED_RAW_ORIGINAL",
+      "commit": "eaa9bf67cb531309dc6a777d137089da59eaebe2",
+      "path": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/core-identity-runtime-rpc.ts",
+      "mode": "100644",
+      "gitBlobOID": "0002a5d8e6f79bef5546b6c9d4cbdbcc19092fd8",
+      "bytes": 30680,
+      "sha256": "5bf632b9f7014f432f86282bc3f763236e9fa9eeea36c4c37a639a0d7a0f0617",
+      "url": "https://github.com/CraysWorld/crays-platform/blob/eaa9bf67cb531309dc6a777d137089da59eaebe2/apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/core-identity-runtime-rpc.ts",
+      "proof": "Exact catalog SHA256 and bytes plus immutable Git tree path/type/size; no body reread",
+      "license": "No new grant inferred; catalog originalityAndLicenseScope governs"
+    },
+    {
+      "representation": "UNCHANGED_RAW_ORIGINAL",
+      "commit": "eaa9bf67cb531309dc6a777d137089da59eaebe2",
+      "path": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/native-personal-sdk-dispatch.ts",
+      "mode": "100644",
+      "gitBlobOID": "e8a00977a16aac73ea66c7167ff3f1647c5ac17c",
+      "bytes": 16841,
+      "sha256": "d691281d117e8abf45c3fddcd07c3a99e1925e9bf0aa6c2d883d88907c1ffedb",
+      "url": "https://github.com/CraysWorld/crays-platform/blob/eaa9bf67cb531309dc6a777d137089da59eaebe2/apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/native-personal-sdk-dispatch.ts",
+      "proof": "Exact catalog SHA256 and bytes plus immutable Git tree path/type/size; no body reread",
+      "license": "No new grant inferred; catalog originalityAndLicenseScope governs"
+    },
+    {
+      "representation": "UNCHANGED_RAW_ORIGINAL",
+      "commit": "eaa9bf67cb531309dc6a777d137089da59eaebe2",
+      "path": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/native-personal-agent-route.ts",
+      "mode": "100644",
+      "gitBlobOID": "1e1ff610f563faef8266cf4df24d040f621a782f",
+      "bytes": 2565,
+      "sha256": "ae55d85ff9c3253d58fa1a60ba5cf016c8d414ca13fc7d6b1ad5bdbed8bf2c78",
+      "url": "https://github.com/CraysWorld/crays-platform/blob/eaa9bf67cb531309dc6a777d137089da59eaebe2/apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/native-personal-agent-route.ts",
+      "proof": "Exact catalog SHA256 and bytes plus immutable Git tree path/type/size; no body reread",
+      "license": "No new grant inferred; catalog originalityAndLicenseScope governs"
+    },
+    {
+      "representation": "UNCHANGED_RAW_ORIGINAL",
+      "commit": "eaa9bf67cb531309dc6a777d137089da59eaebe2",
+      "path": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/personal-message-attachment-input.mjs",
+      "mode": "100644",
+      "gitBlobOID": "bd15b49a96e61c8b2edc003c5c47c3b267d9a472",
+      "bytes": 6641,
+      "sha256": "7779c7eb0ef1cfcbee8362cd99f7ab582fd16a22936243991f6622e6c5ec387b",
+      "url": "https://github.com/CraysWorld/crays-platform/blob/eaa9bf67cb531309dc6a777d137089da59eaebe2/apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/personal-message-attachment-input.mjs",
+      "proof": "Exact catalog SHA256 and bytes plus immutable Git tree path/type/size; no body reread",
+      "license": "No new grant inferred; catalog originalityAndLicenseScope governs"
+    }
+  ],
+  "relatedPrivatePreferredSources": {
+    "repository": "CraysWorld/crays-gym",
+    "commit": "6d06d21265d49d3cd2526963689b13295995e3ed",
+    "prefix": "protected-source-archives/chuck-build64-preferred-fifteen/source/",
+    "sourceCapturePath": "protected-source-archives/chuck-build64-preferred-fifteen/source-capture.json",
+    "sourceCaptureSHA256": "cf8e0c4138f854a9acac51eb8bf6f8dcfe0acba3edbd4420d64073143f7b1c46",
+    "applicationMap": {
+      "privateHere": {
+        "files": 15,
+        "bytes": 114701
+      },
+      "alreadyPublicElsewhere": {
+        "files": 7,
+        "bytes": 70376
+      },
+      "combinedExactApplicationSourcePins": 22,
+      "combinedApplicationSourceBytes": 185077,
+      "publicSevenBodyGetOrDuplicateCopyPerformed": false,
+      "coverageLimit": "Only twenty-two application preferred-code pins. Does not establish custody of all64 BUILD inputs, dependencies, private binding, effective-loader variants, runnable recovery or reproducible-build/source-offer closure.",
+      "buildMetadataSHA256": "888d5c92cdda4cc0bcddee9df0cb861ee62f92e10a5b225989e4f5cae42bfb40"
+    },
+    "sourceCaptureURL": "https://github.com/CraysWorld/crays-gym/blob/6d06d21265d49d3cd2526963689b13295995e3ed/protected-source-archives/chuck-build64-preferred-fifteen/source-capture.json"
+  },
+  "preferredApplicationCodeMap": {
+    "publicCount": 7,
+    "privateCount": 15,
+    "totalCount": 22,
+    "totalBytes": 185077,
+    "bodiesDuplicatedHere": false
+  },
+  "qualification": {
+    "capturedInstalledBuildInputIdentityVerified": true,
+    "installedPackageIdentityVerified": true,
+    "pristineUpstreamRegistryByteEquivalenceEstablished": false,
+    "newCopyrightGrant": false,
+    "completeUpstreamPackages": false,
+    "all64InputRecoveryOrReproducibilityClaim": false,
+    "runtimeAdoptionClaim": false,
+    "privateBindingConfigurationIncluded": false,
+    "workspaceOverlaysSubstituted": false,
+    "sourceProgramsExecuted": false
+  }
+}
