@@ -8,7 +8,7 @@ This guide is for developers who want to understand the system, inspect an integ
 
 **Club and Member** combine public discovery, account access, member views and commerce workflows. The [shared Next.js application](../../apps/web/README.md) contains multilingual pages, API/GraphQL routes, database adapters and business contracts. The [separate Club/Member browser module](../../modules/club-member/README.md) is built independently for its host shell.
 
-**Personal and Gym** bring personal workspaces, training views, social/Nostr interfaces and an embedded Member integration into a separate [React/Vite frontend](../../apps/personal/README.md). Its captured source is a useful contribution starting point; the complete current Gym and native Core systems have additional source authorities.
+**Personal and Gym** bring personal workspaces, training views, social/Nostr interfaces and an embedded Member integration into a separate [React/Vite frontend](../../apps/personal/README.md). The [Personal and Chuck guide](personal-and-chuck.md) distinguishes frontend actions from agent, broker and tool/workflow layers. Its captured source is a useful contribution starting point; the complete current Gym and native Core systems have additional source authorities.
 
 **Work and partner operations** connect commerce and hospitality events to finance, collaboration and project tasks. The CRAYS integration layer expresses tenant boundaries, provider commands, acknowledgements and reconciliation. The provider remains responsible for its own domain.
 
@@ -20,7 +20,7 @@ This guide is for developers who want to understand the system, inspect an integ
 | [Nextcloud](nextcloud.md) | Member documents and scoped collaboration access | [Document provider](../../apps/web/src/lib/clubs/member-nextcloud-document-provider.ts) and [collaboration access adapter](../../apps/web/src/lib/nextcloud-collaboration-access-adapter.ts) |
 | [Plane](plane.md) | Project work items and operational exception follow-up | [Work-item adapter](../../apps/web/src/lib/member-commerce/plane-work-item-adapter.ts), [webhook receiver](../../apps/web/src/lib/member-commerce/plane-webhook-receiver.ts) and reconciliation contracts |
 | [Qlo hospitality](qlo.md) | Hotel content, room/property-service projections and the Core-to-provider session boundary | [Gateway](../../services/qlo-gateway/README.md) and [provider read client](../../apps/web/src/lib/clubs/qlo-provider-read-client.ts) |
-| Vendure and Club commerce | Commerce sessions, hold/cart/order commands and safe browser responses | [Clubs Commerce BFF](../../services/clubs-commerce-bff/README.md), [Vendure adapter](../../apps/web/src/lib/member-commerce/vendure-http-adapter.ts) and [order contract](../../apps/web/src/lib/member-commerce/vendure-order-command.ts) |
+| [Vendure and Club commerce](commerce.md) | Commerce sessions, hold/cart/order commands and safe browser responses | [Clubs Commerce BFF](../../services/clubs-commerce-bff/README.md), [Vendure adapter](../../apps/web/src/lib/member-commerce/vendure-http-adapter.ts) and [order contract](../../apps/web/src/lib/member-commerce/vendure-order-command.ts) |
 | Payment and finance lifecycle contracts | Source contracts for payment/refund correlation and booking finance consequences; this is not a payment-readiness claim | [Finance lifecycle](../../apps/web/src/lib/member-commerce/booking-finance-lifecycle.ts), [refund saga](../../apps/web/src/lib/member-commerce/hotel-booking-stripe-refund-saga-repository.ts) and [split contract](../../apps/web/src/lib/member-commerce/stripe-automatic-booking-split-contract.ts) |
 
 Plane has one home in this service guide. It is part of the platform's project-work integration.
@@ -29,10 +29,10 @@ Plane has one home in this service guide. It is part of the platform's project-w
 
 | Area | What the source covers | Developer entry |
 | --- | --- | --- |
-| Identity and member access | Auth0 integration, session mapping and member access contracts | [Auth/session mapping](../../apps/web/src/lib/auth-session-mapping.ts), [member auth contract](../../apps/web/src/lib/clubs/member-auth-contract.ts) |
-| Nostr identity and browser sessions | Nostr identity, signature and browser-session boundaries | [Identity](../../apps/web/src/lib/nostr-identity.ts), [signatures](../../apps/web/src/lib/nostr-signature.ts), [browser session](../../apps/web/src/lib/nostr-browser-session.ts) |
+| [Identity and member access](identity.md) | Auth0 integration, session mapping and member access contracts | [Auth/session mapping](../../apps/web/src/lib/auth-session-mapping.ts), [member auth contract](../../apps/web/src/lib/clubs/member-auth-contract.ts) |
+| [Nostr identity and browser sessions](network.md) | Nostr identity, signature and browser-session boundaries | [Identity](../../apps/web/src/lib/nostr-identity.ts), [signatures](../../apps/web/src/lib/nostr-signature.ts), [browser session](../../apps/web/src/lib/nostr-browser-session.ts) |
 | Native applications | Separate native iOS, Android and BLE projects, with their own source and integration histories | [Mobile project guide](https://github.com/CraysCircle/.github/blob/main/docs/repositories.md#mobile-applications) and [native version map](https://github.com/CraysCircle/.github/blob/main/docs/native-source-map.md) |
-| Social publishing and delivery | Captured Postiz frontend qualification and delivery operating programs | [Postiz source guide](../../operations/delivery/postiz/README.md); the full provider application is a separate source scope |
+| [Social publishing and delivery](delivery-and-social.md) | Captured Postiz frontend qualification and delivery operating programs | [Postiz source guide](../../operations/delivery/postiz/README.md); the full provider application is a separate source scope |
 
 ## How the pieces work together
 
@@ -58,7 +58,7 @@ Standalone Coffee, Shop, Pro and other website projects remain in their [matchin
 
 Choose a component and read its README, original package/lock and relevant contracts. Describe the intended change in an issue or pull request in the responsible repository, including the behavior you observed and the result you expect.
 
-Useful starting points include synthetic adapter tests, accessibility and localization, clear error/reconciliation states, API contract examples and portable development instructions. The four service pages above name more focused tasks. Use synthetic identities and provider responses; do not place credentials or customer data in examples.
+Useful starting points include synthetic adapter tests, accessibility and localization, clear error/reconciliation states, API contract examples and portable development instructions. The component guides linked above name more focused tasks. Use synthetic identities and provider responses; do not place credentials or customer data in examples.
 
 There is no single root command that installs or starts every CRAYS service. Follow the component's development instructions and identify its required provider dependencies first. Review the [development/release process](../development-and-releases.md) before proposing runtime or deployment changes.
 

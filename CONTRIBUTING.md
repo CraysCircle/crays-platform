@@ -39,6 +39,18 @@ Some preserved views require separate protected bindings or original assets. The
 
 The [Qlo projection-test walkthrough](docs/services/qlo.md#first-local-check-the-two-projection-tests) is a focused entry point that requires a local Node.js installation and the checked-out sources. Its two original assertion scripts use in-memory synthetic fixtures and pure local projection modules, without an npm install, provider credentials or network services. The guide states the recorded Node baseline and expected console behavior.
 
+A concrete first exercise is an invalid property-receipt case in [the room-inventory test](services/qlo-gateway/test-provider-room-inventory.mjs):
+
+1. Clone the existing in-memory import receipt and set one admitted property's `hotelId` to a non-numeric string. Keep the original fixture unchanged.
+2. Add an assertion that `projectProviderPropertyRoomInventory` refuses that receipt with `qlo_room_inventory_receipt_invalid`. The [projection source](services/qlo-gateway/provider-room-inventory.mjs) already defines this boundary; this exercise adds coverage for malformed input, not a new booking capability.
+3. From the repository root, run the focused original script:
+
+```sh
+node services/qlo-gateway/test-provider-room-inventory.mjs
+```
+
+Describe the fixture, expected rejection and actual result in your pull request. This is a suggested contribution exercise, not an assigned issue or a freshly reported test pass.
+
 ## Propose a focused change
 
 Use [a platform issue](https://github.com/CraysCircle/crays-platform/issues) to describe the user or developer problem, affected component and expected result. Include reproducible steps with synthetic inputs. For an independent website, mobile app or upstream project, use that project's own repository and contribution rules.
