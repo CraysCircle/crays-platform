@@ -1,0 +1,40 @@
+{
+  "schema": "crays.member-identity.native-reader.source.v1",
+  "component": "member-native-identity-reader",
+  "sourceRevision": "reader40",
+  "originalBasename": "read_genuine_original_member_identity.candidate.cjs",
+  "files": [
+    {
+      "path": "read_genuine_original_member_identity.candidate.cjs",
+      "bytes": 2200,
+      "sha256": "1051c3caa8f5ceeecf22c10ac5f50ff899f0625de265b817a4167b892bb834bf",
+      "originalMode": "0o400",
+      "bytesUnchanged": true
+    }
+  ],
+  "responseSource": "Original Member SDK/Core session endpoint in the supplied browser context",
+  "publicOrigin": "https://member.crays.world",
+  "relativeSessionEndpoint": "/api/crays/clubs/member/session",
+  "staticContract": {
+    "existingContextAndExactOriginRequired": true,
+    "requestMethod": "GET",
+    "credentials": "same-origin",
+    "redirect": "error",
+    "cache": "no-store",
+    "timeoutMs": 8000,
+    "maximumResponseBytes": 262144,
+    "originalReadyAuth0MappedAccountGates": true,
+    "pageContextOriginAndURLRechecked": true,
+    "callerReceivesOriginalIdentityDTO": true
+  },
+  "verification": {
+    "originalOwnerExactHashNodeSyntaxPassed": true,
+    "syntaxCheckRepeatedByThisCapture": false,
+    "originalModuleOrBrowserExecutedByThisCapture": false,
+    "runtimeInstalledByThisCapture": false,
+    "newCredentialsAccountsSessionsOrGrantsCreatedByThisCapture": false
+  },
+  "runtimeAcceptanceEstablishedBySourceCapture": false,
+  "blanketLicenseGranted": false,
+  "privateBrowserSessionOrIdentityValuesIncluded": false
+}

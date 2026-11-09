@@ -149,6 +149,10 @@
     {
       "component": "nextcloud-private-https39-operations",
       "path": "operations/nextcloud/private-https39/source-capture.json"
+    },
+    {
+      "component": "member-native-identity-reader40",
+      "path": "services/member-identity/native-reader/source-capture.json"
     }
   ]
 }
