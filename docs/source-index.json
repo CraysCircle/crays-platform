@@ -233,6 +233,10 @@
     {
       "component": "historical-nostr-broker-web-api18-originals",
       "path": "source-archives/nostr-broker/historical-web-api18-20261109/source-capture.json"
+    },
+    {
+      "component": "member-document-provider51-build-revision02",
+      "path": "operations/member-document-provider51/build-revision02/source-capture.json"
     }
   ]
 }

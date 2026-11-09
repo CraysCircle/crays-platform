@@ -1,0 +1,52 @@
+{
+  "schema": "crays.member.document-provider51.build-revision02.source-capture.v1",
+  "sourceOnly": true,
+  "observedPlatformParent": "ce4b07beaab2d78e19c1f5cb4b4d9559e6cf101f",
+  "files": [
+    {
+      "name": "build_member_document_provider51.rev02.candidate.py",
+      "path": "/srv/crays/migration-work/20261109/root/document-provider-aws51-source01/build_member_document_provider51.rev02.candidate.py",
+      "bytes": 9471,
+      "sha256": "37aa41f3cefa49dfe4f9bb0b9cdcca59f7f4a0f7c1401fe7ae6017f1f460f47d",
+      "publicPath": "operations/member-document-provider51/build-revision02/build_member_document_provider51.rev02.candidate.py",
+      "restorationTarget": "/srv/crays/migration-work/20261109/root/document-provider-aws51-source01/build_member_document_provider51.rev02.candidate.py",
+      "transformation": "NONE_UNCHANGED_ORIGINAL_BYTES"
+    },
+    {
+      "name": "run_root_build51_window.rev02.candidate.py",
+      "path": "/srv/crays/migration-work/20261109/root/document-provider-aws51-source01/run_root_build51_window.rev02.candidate.py",
+      "bytes": 5483,
+      "sha256": "e3685619fa1f464881cd281a997b69280714ff495421b6fb2d81f00076e7be5f",
+      "publicPath": "operations/member-document-provider51/build-revision02/run_root_build51_window.rev02.candidate.py",
+      "restorationTarget": "/srv/crays/migration-work/20261109/root/document-provider-aws51-source01/run_root_build51_window.rev02.candidate.py",
+      "transformation": "NONE_UNCHANGED_ORIGINAL_BYTES"
+    }
+  ],
+  "sourceBytes": 14954,
+  "originalFileCount": 2,
+  "independentRootDerivativeReview": {
+    "name": "INDEPENDENT_BUILD51_REV02_DERIVATIVE_REVIEW.json",
+    "path": "/srv/crays/migration-work/20261109/root/document-provider-aws51-source01/INDEPENDENT_BUILD51_REV02_DERIVATIVE_REVIEW.json",
+    "bytes": 4266,
+    "sha256": "bda859842673756752c30cb355e512469c21c2c0022ca07e050673732729bd57"
+  },
+  "selectorSource": {
+    "repository": "CraysWorld/crays-platform",
+    "commit": "2fc2b2899e15e2d835781739042215998d0224b0",
+    "tag": "member-document-provider-selector51-source-20261109",
+    "path": "services/member-club/source51/member073-native-provider-binding.ts",
+    "bytes": 2090,
+    "sha256": "2f03b4fa91e784230772849baba55fe3765e3d56e0a0ca848e8cdd4c3c7ede51",
+    "restorationTarget": "src/lib/clubs/member073-native-provider-binding.ts",
+    "url": "https://github.com/CraysWorld/crays-platform/blob/2fc2b2899e15e2d835781739042215998d0224b0/services/member-club/source51/member073-native-provider-binding.ts"
+  },
+  "purpose": "Preserve exact Root Member46-to-provider51 revision02 build source, separate from actual build/adoption/customer results.",
+  "sourceReviewScope": "Exact two public program bodies and their pinned independent source peer only; no private admissions/Actuals/Logs/Inputs/environment read.",
+  "originalsChanged": false,
+  "sourceProgramsImportedOrExecuted": false,
+  "buildOrRuntimePerformedByPreservation": false,
+  "runtimeSuccessOrAdoptionClaimed": false,
+  "dependenciesBundled": false,
+  "licenseBoundary": "Exact two own-program AGPL-3.0-only scope is in LICENSING.md/license-scope.json; external application/framework/toolchain/imported sources excluded.",
+  "recoveryLimit": "Source-pair recovery only; guard/proposal/admission/toolchain/application dependencies are not recreated or falsely claimed complete here."
+}

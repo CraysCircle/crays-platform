@@ -1,0 +1,57 @@
+{
+  "schema": "crays.component.exact-owned-source-license-scope.v1",
+  "licenseExpression": "AGPL-3.0-only",
+  "copyrightHolder": "CRAYS AG",
+  "grantDateUTC": "2026-11-09",
+  "componentPath": "operations/member-document-provider51/build-revision02",
+  "files": [
+    {
+      "path": "operations/member-document-provider51/build-revision02/build_member_document_provider51.rev02.candidate.py",
+      "bytes": 9471,
+      "sha256": "37aa41f3cefa49dfe4f9bb0b9cdcca59f7f4a0f7c1401fe7ae6017f1f460f47d",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/document-provider-aws51-source01/build_member_document_provider51.rev02.candidate.py"
+    },
+    {
+      "path": "operations/member-document-provider51/build-revision02/run_root_build51_window.rev02.candidate.py",
+      "bytes": 5483,
+      "sha256": "e3685619fa1f464881cd281a997b69280714ff495421b6fb2d81f00076e7be5f",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/document-provider-aws51-source01/run_root_build51_window.rev02.candidate.py"
+    }
+  ],
+  "fileCount": 2,
+  "sourceBytes": 14954,
+  "sourceRevisionIdentification": "The exact published source bodies are identified by path, byte length and SHA-256; publication commit is assigned by the serialized publisher, not guessed here.",
+  "rightsAuthority": {
+    "humanDecision": "AGPL-3.0-only; Rechteinhaberin CRAYS AG",
+    "humanDecisionScope": "Demonstrably own previously unlicensed CRAYS code",
+    "authorshipBasis": "Trusted Root source-owner identification of the two exact build/orchestration programs as own CRAYS code. Exact Root file provenance and the independent derivative review bind their original42/46-derived own-code lineage. Ownership is not inferred from filenames, custody or absent headers.",
+    "sourcePeer": {
+      "path": "/srv/crays/migration-work/20261109/root/document-provider-aws51-source01/INDEPENDENT_BUILD51_REV02_DERIVATIVE_REVIEW.json",
+      "sha256": "bda859842673756752c30cb355e512469c21c2c0022ca07e050673732729bd57",
+      "status": "PASS_SOURCE_ONLY_INDEPENDENT_BUILD51_REV02_DERIVATIVE_REVIEW"
+    },
+    "ownPriorBuildPatternReportedByPeer": {
+      "controller42SHA256": "4b51743a1ffb7d9fbcd433b560b08fe3b246b0ebb4ff376df3afae08fe9fe995",
+      "wrapper42SHA256": "5c6a4489781051ae87145b3385c5e40d034769dbdc1c153a1df001b172de271e"
+    }
+  },
+  "recipientRights": "Hashes identify the licensed originals. AGPL rights to run, modify and redistribute the covered code and derivatives are unaffected. No blanket grant for unlisted independent files or all future CRAYS revisions.",
+  "excluded": [
+    "Python, Node.js, Next.js, systemd, Linux, Docker and other imported/invoked package or system-tool implementations and their dependencies",
+    "Original application composition, package/lock/dependency trees and the Docs selector module referenced or copied as external build inputs; this grant covers only the two listed programs",
+    "Private environment, credentials, admissions, approvals, runtime data, logs, actual result files and provider/customer inputs",
+    "Documentation, assets, unlisted independent code and unrelated future revisions",
+    "Third-party material with independently applicable terms, whose original terms and notices remain intact"
+  ],
+  "existingOriginalThirdPartyTermsOverridden": false,
+  "originalSourceBodiesModifiedByGrant": false,
+  "licenseText": {
+    "path": "operations/member-document-provider51/build-revision02/LICENSE",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "original": "Previously verified official GNU Affero General Public License version 3 full text, unchanged"
+  },
+  "notOrLater": true,
+  "sourcePublicationDoesNotAuthorizeCRAYSInfrastructureOrPrivateCredentialUse": true,
+  "buildExecutionOrRuntimeOutcomeClaimed": false
+}
