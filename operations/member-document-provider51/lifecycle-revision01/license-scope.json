@@ -1,0 +1,77 @@
+{
+  "schema": "crays.component.exact-owned-source-license-scope.v1",
+  "licenseExpression": "AGPL-3.0-only",
+  "copyrightHolder": "CRAYS AG",
+  "grantDateUTC": "2026-11-09",
+  "componentPath": "operations/member-document-provider51/lifecycle-revision01",
+  "files": [
+    {
+      "path": "operations/member-document-provider51/lifecycle-revision01/member51_lifecycle.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/member51_lifecycle.candidate.py",
+      "bytes": 34144,
+      "sha256": "fc81876552c26a03304b78f19b9b85f9e4280523ef7a011c2a6ea48931eae3fb"
+    },
+    {
+      "path": "operations/member-document-provider51/lifecycle-revision01/stage_exact_completed_member51_release.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/stage_exact_completed_member51_release.candidate.py",
+      "bytes": 10474,
+      "sha256": "23f22a6be067d91b594240e7cd3e8819b2dc4c01e5d43c67f02a13d85e927c97"
+    },
+    {
+      "path": "operations/member-document-provider51/lifecycle-revision01/project_exact_member51_successor_payloads.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/project_exact_member51_successor_payloads.candidate.py",
+      "bytes": 5714,
+      "sha256": "3b9c413c852eb5d8ebbd023a843ffacacbb51d523e167262e6df2cd0434636ae"
+    },
+    {
+      "path": "operations/member-document-provider51/lifecycle-revision01/finish_current_member51_generation.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/finish_current_member51_generation.candidate.py",
+      "bytes": 32197,
+      "sha256": "d3d3f863b589a28dff33d673cf6df5567e7f42fd46f2b692f6a04156805f558e"
+    },
+    {
+      "path": "operations/member-document-provider51/lifecycle-revision01/classify_exact_member51_runtime_addons.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/classify_exact_member51_runtime_addons.candidate.py",
+      "bytes": 1679,
+      "sha256": "96f5a5896b830b2155731f9e623221d0ec34994c3136144184e7d353dbaede22"
+    }
+  ],
+  "fileCount": 5,
+  "sourceBytes": 84208,
+  "sourceRevisionIdentification": "Exact source paths, sizes and SHA-256 values identify the original revisions; publication commit is assigned by the serialized publisher, not guessed here.",
+  "rightsAuthority": {
+    "humanDecision": "AGPL-3.0-only; Rechteinhaberin CRAYS AG",
+    "humanDecisionScope": "Demonstrably own previously unlicensed CRAYS code",
+    "authorshipBasis": "Trusted Root source-owner identification of these exact five new orchestration programs as own CRAYS code, with the pinned source manifest and independent incremental derivative review binding the inherited own-code lineage. Ownership is not inferred from missing headers, filenames or custody.",
+    "sourceManifest": {
+      "path": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/SOURCE_MANIFEST51_LIFECYCLE.json",
+      "sha256": "55ae953c24e7b46a048736e773af786e77fd50640493128ec68866d38f202544"
+    },
+    "sourcePeer": {
+      "path": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/INDEPENDENT_MEMBER51_LIFECYCLE_DELTA_SOURCE_REVIEW.json",
+      "sha256": "6a5babc0d4590b5d9a33ee4dc0ada003fb079ffc20f58dee3c6bbc2d845585fa",
+      "status": "PASS_SOURCE_ONLY_INDEPENDENT_MEMBER51_LIFECYCLE_DELTA_REVIEW"
+    }
+  },
+  "recipientRights": "Hashes identify licensed originals; recipients AGPL rights to run, modify and redistribute covered code and derivatives remain unaffected. No blanket grant for unlisted independent files or all future CRAYS source revisions.",
+  "excluded": [
+    "Referenced unchanged helper programs: anonymous Auth0 probe, anchor-generation helper and classifier50; existing independent file terms remain unchanged",
+    "The separately preserved product selector, application sources, Common/Serve/listener/Club/Personal/Work modules, dependency implementations, private bindings and runtime data referenced or copied as external inputs",
+    "Python, Node.js, Linux, Docker, systemd, Go, SDK and other imported/invoked upstream package or system-tool implementations",
+    "Optional ingress program and every source file not explicitly listed by exact hash",
+    "Private admissions, approvals, capture/preimage inputs, credentials, environment contents, registry bodies, logs and actual runtime result files",
+    "Documentation, assets, unlisted independent code and unrelated future revisions",
+    "Any third-party material with independently applicable terms; original terms and notices remain unchanged"
+  ],
+  "originalSourceBodiesModifiedByGrant": false,
+  "originalThirdPartyTermsOverridden": false,
+  "licenseText": {
+    "path": "operations/member-document-provider51/lifecycle-revision01/LICENSE",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "original": "Unchanged verified official GNU Affero General Public License version 3 full text"
+  },
+  "notOrLater": true,
+  "sourcePublicationDoesNotAuthorizeCRAYSInfrastructureOrPrivateCredentialUse": true,
+  "runtimeOrCustomerAcceptanceClaimed": false
+}

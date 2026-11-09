@@ -1,0 +1,109 @@
+{
+  "schema": "crays.member.document-provider51.lifecycle-revision01.source-capture.v1",
+  "sourceOnly": true,
+  "observedPlatformParent": "e33cd97d591d9e54b84cb043c5c86e0e0d079ff2",
+  "files": [
+    {
+      "name": "member51_lifecycle.candidate.py",
+      "originalPath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/member51_lifecycle.candidate.py",
+      "bytes": 34144,
+      "sha256": "fc81876552c26a03304b78f19b9b85f9e4280523ef7a011c2a6ea48931eae3fb",
+      "publicPath": "operations/member-document-provider51/lifecycle-revision01/member51_lifecycle.candidate.py",
+      "restorationTarget": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/member51_lifecycle.candidate.py",
+      "transformation": "NONE_EXACT_ORIGINAL_BYTES"
+    },
+    {
+      "name": "stage_exact_completed_member51_release.candidate.py",
+      "originalPath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/stage_exact_completed_member51_release.candidate.py",
+      "bytes": 10474,
+      "sha256": "23f22a6be067d91b594240e7cd3e8819b2dc4c01e5d43c67f02a13d85e927c97",
+      "publicPath": "operations/member-document-provider51/lifecycle-revision01/stage_exact_completed_member51_release.candidate.py",
+      "restorationTarget": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/stage_exact_completed_member51_release.candidate.py",
+      "transformation": "NONE_EXACT_ORIGINAL_BYTES"
+    },
+    {
+      "name": "project_exact_member51_successor_payloads.candidate.py",
+      "originalPath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/project_exact_member51_successor_payloads.candidate.py",
+      "bytes": 5714,
+      "sha256": "3b9c413c852eb5d8ebbd023a843ffacacbb51d523e167262e6df2cd0434636ae",
+      "publicPath": "operations/member-document-provider51/lifecycle-revision01/project_exact_member51_successor_payloads.candidate.py",
+      "restorationTarget": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/project_exact_member51_successor_payloads.candidate.py",
+      "transformation": "NONE_EXACT_ORIGINAL_BYTES"
+    },
+    {
+      "name": "finish_current_member51_generation.candidate.py",
+      "originalPath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/finish_current_member51_generation.candidate.py",
+      "bytes": 32197,
+      "sha256": "d3d3f863b589a28dff33d673cf6df5567e7f42fd46f2b692f6a04156805f558e",
+      "publicPath": "operations/member-document-provider51/lifecycle-revision01/finish_current_member51_generation.candidate.py",
+      "restorationTarget": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/finish_current_member51_generation.candidate.py",
+      "transformation": "NONE_EXACT_ORIGINAL_BYTES"
+    },
+    {
+      "name": "classify_exact_member51_runtime_addons.candidate.py",
+      "originalPath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/classify_exact_member51_runtime_addons.candidate.py",
+      "bytes": 1679,
+      "sha256": "96f5a5896b830b2155731f9e623221d0ec34994c3136144184e7d353dbaede22",
+      "publicPath": "operations/member-document-provider51/lifecycle-revision01/classify_exact_member51_runtime_addons.candidate.py",
+      "restorationTarget": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/classify_exact_member51_runtime_addons.candidate.py",
+      "transformation": "NONE_EXACT_ORIGINAL_BYTES"
+    }
+  ],
+  "fileCount": 5,
+  "originalBytes": 84208,
+  "RootSourceManifest": {
+    "originalPath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/SOURCE_MANIFEST51_LIFECYCLE.json",
+    "sha256": "55ae953c24e7b46a048736e773af786e77fd50640493128ec68866d38f202544"
+  },
+  "independentRootSourcePeer": {
+    "originalPath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/INDEPENDENT_MEMBER51_LIFECYCLE_DELTA_SOURCE_REVIEW.json",
+    "sha256": "6a5babc0d4590b5d9a33ee4dc0ada003fb079ffc20f58dee3c6bbc2d845585fa"
+  },
+  "buildBindingsAsRecordedByRootSourceManifest": {
+    "actualBuildId": "Em8YqZapuRa58BfKC5hRh",
+    "actualBuildSHA256": "ba713db5124d0a76c78c764e0bcacb0bae8e37f7aebc94e53728afeb5a9f1bf5",
+    "actualBuildPhysicalReturnSHA256": "25ba76f54ed7a8fbf276e2ab972501ef29749ac2e5ee4738bcfdaa920705db79"
+  },
+  "unchangedAlreadyPublicHelpers": [
+    {
+      "requiredOriginalName": "member26-original-anonymous-auth0-probe.cjs",
+      "sha256": "9533a8389df91206ddfc51ab1218a531823fd25c9dd82c1474fcb6308760554c",
+      "publicCommit": "970bc5b219b81e62cc8279074151ea703ce68cb4",
+      "publicPath": "operations/member-original-context46/install/member26-original-anonymous-auth0-probe.cjs",
+      "relationship": "Existing original source helper; not copied or newly licensed by this five-program selection.",
+      "immutablePublicURL": "https://github.com/CraysWorld/crays-platform/blob/970bc5b219b81e62cc8279074151ea703ce68cb4/operations/member-original-context46/install/member26-original-anonymous-auth0-probe.cjs"
+    },
+    {
+      "requiredOriginalName": "derive_exact_member46_anchor_generation.candidate.py",
+      "bytes": 6363,
+      "sha256": "6b1f876a93b6bcd1dc30402fa707689054f22ede413aa51222fad79d7a4a99b5",
+      "publicCommit": "970bc5b219b81e62cc8279074151ea703ce68cb4",
+      "publicPath": "operations/member-original-context46/install/derive_exact_member46_anchor_generation.candidate.py",
+      "relationship": "Exact original46 generation helper reused unchanged; not copied or newly licensed here.",
+      "immutablePublicURL": "https://github.com/CraysWorld/crays-platform/blob/970bc5b219b81e62cc8279074151ea703ce68cb4/operations/member-original-context46/install/derive_exact_member46_anchor_generation.candidate.py"
+    },
+    {
+      "requiredOriginalName": "classify_exact_member50_runtime_addons.candidate.py",
+      "bytes": 1679,
+      "sha256": "bd79ab3b3c838fb9a4f523e39bd42af928544e4e6b6a247481d285c02f643d92",
+      "publicCommit": "2882550dac27d5139ead2c89189425bd65bcd147",
+      "publicPath": "operations/member-messaging-module50/install-revision04/classify_exact_member50_runtime_addons.candidate.py",
+      "relationship": "Original50 classifier required unchanged by finisher; separate new51 classifier is included in this selection.",
+      "immutablePublicURL": "https://github.com/CraysWorld/crays-platform/blob/2882550dac27d5139ead2c89189425bd65bcd147/operations/member-messaging-module50/install-revision04/classify_exact_member50_runtime_addons.candidate.py"
+    }
+  ],
+  "selector": {
+    "commit": "2fc2b2899e15e2d835781739042215998d0224b0",
+    "path": "services/member-club/source51/member073-native-provider-binding.ts",
+    "sha256": "2f03b4fa91e784230772849baba55fe3765e3d56e0a0ca848e8cdd4c3c7ede51",
+    "originalRestoreTarget": "src/lib/clubs/member073-native-provider-binding.ts",
+    "includedAgain": false
+  },
+  "licenseScope": "Exact five own program revisions only; original external helper/application/framework terms unchanged. See license-scope.json.",
+  "privateInputsCapturedOrPublished": false,
+  "optionalIngressIncluded": false,
+  "sourceProgramsImportedOrExecuted": false,
+  "sourceProgramsModified": false,
+  "runtimeAdoptionOrDocumentAcceptanceClaimed": false,
+  "recoveryScope": "Five source programs plus exact helper/selector reference map. This finite selection is not the complete runnable application, toolchain, private configuration or whole backup."
+}

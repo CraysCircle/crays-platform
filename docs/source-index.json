@@ -237,6 +237,10 @@
     {
       "component": "member-document-provider51-build-revision02",
       "path": "operations/member-document-provider51/build-revision02/source-capture.json"
+    },
+    {
+      "component": "member-document-provider51-lifecycle-revision01",
+      "path": "operations/member-document-provider51/lifecycle-revision01/source-capture.json"
     }
   ]
 }
