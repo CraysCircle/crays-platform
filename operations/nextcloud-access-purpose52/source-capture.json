@@ -1,0 +1,239 @@
+{
+  "schema": "crays-source-preservation-v1",
+  "state": "SOURCE_SNAPSHOT_PREPARED_SQL_NOT_ACTIVATED",
+  "files": [
+    {
+      "originalName": "nextcloud-access-purpose52.corrected.sql",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/nextcloud-access-purpose52-source01/nextcloud-access-purpose52.corrected.sql",
+      "originalBytes": 43739,
+      "originalSha256": "ae9d5e56650ae61d7a19fee3e048d9bf77708389ee50db645b8c9e83240fd175",
+      "exportedName": "nextcloud-access-purpose52.corrected.sql.template",
+      "exportedBytes": 43507,
+      "exportedSha256": "fd1abd2489c8cf8d3933c48402c84d971d2d5f3a7355d222bc73ba6afafdc70d",
+      "representation": "protected-template",
+      "protectedSpans": [
+        {
+          "slot": "account-slot-01",
+          "originalStartByte": 4219,
+          "originalEndByteExclusive": 4283,
+          "originalLine": 54,
+          "templateStartByte": 4219,
+          "templateEndByteExclusive": 4254
+        },
+        {
+          "slot": "account-slot-01",
+          "originalStartByte": 20408,
+          "originalEndByteExclusive": 20472,
+          "originalLine": 268,
+          "templateStartByte": 20379,
+          "templateEndByteExclusive": 20414
+        },
+        {
+          "slot": "account-slot-01",
+          "originalStartByte": 22075,
+          "originalEndByteExclusive": 22139,
+          "originalLine": 280,
+          "templateStartByte": 22017,
+          "templateEndByteExclusive": 22052
+        },
+        {
+          "slot": "account-slot-01",
+          "originalStartByte": 38194,
+          "originalEndByteExclusive": 38258,
+          "originalLine": 406,
+          "templateStartByte": 38107,
+          "templateEndByteExclusive": 38142
+        },
+        {
+          "slot": "account-slot-01",
+          "originalStartByte": 38831,
+          "originalEndByteExclusive": 38895,
+          "originalLine": 407,
+          "templateStartByte": 38715,
+          "templateEndByteExclusive": 38750
+        },
+        {
+          "slot": "account-slot-01",
+          "originalStartByte": 39813,
+          "originalEndByteExclusive": 39877,
+          "originalLine": 408,
+          "templateStartByte": 39668,
+          "templateEndByteExclusive": 39703
+        },
+        {
+          "slot": "account-slot-01",
+          "originalStartByte": 40657,
+          "originalEndByteExclusive": 40721,
+          "originalLine": 409,
+          "templateStartByte": 40483,
+          "templateEndByteExclusive": 40518
+        },
+        {
+          "slot": "account-slot-01",
+          "originalStartByte": 41583,
+          "originalEndByteExclusive": 41647,
+          "originalLine": 410,
+          "templateStartByte": 41380,
+          "templateEndByteExclusive": 41415
+        }
+      ],
+      "byteOffsets": "zero-based UTF-8 raw bytes; end exclusive",
+      "privateGithubOriginal": {
+        "commit": "6d778b44d8da1822e283fe1ec32c6ef7da29e4ba",
+        "repository": "CraysWorld/crays-gym",
+        "path": "protected-source-archives/nextcloud-purpose52/source/nextcloud-access-purpose52.corrected.sql",
+        "url": "https://github.com/CraysWorld/crays-gym/blob/6d778b44d8da1822e283fe1ec32c6ef7da29e4ba/protected-source-archives/nextcloud-purpose52/source/nextcloud-access-purpose52.corrected.sql"
+      }
+    },
+    {
+      "originalName": "nextcloud-access-purpose-pool52.candidate.ts",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/nextcloud-access-purpose52-source01/nextcloud-access-purpose-pool52.candidate.ts",
+      "originalBytes": 5689,
+      "originalSha256": "3db9c7f6c1c9c02c880f9e172158648e9ec82c49e732bd1b80b2cd11d34d5a4e",
+      "exportedName": "nextcloud-access-purpose-pool52.candidate.ts",
+      "exportedBytes": 5689,
+      "exportedSha256": "3db9c7f6c1c9c02c880f9e172158648e9ec82c49e732bd1b80b2cd11d34d5a4e",
+      "representation": "unchanged-original",
+      "protectedSpans": [],
+      "byteOffsets": "zero-based UTF-8 raw bytes; end exclusive",
+      "privateGithubOriginal": {
+        "commit": "6d778b44d8da1822e283fe1ec32c6ef7da29e4ba",
+        "repository": "CraysWorld/crays-gym",
+        "path": "protected-source-archives/nextcloud-purpose52/source/nextcloud-access-purpose-pool52.candidate.ts",
+        "url": "https://github.com/CraysWorld/crays-gym/blob/6d778b44d8da1822e283fe1ec32c6ef7da29e4ba/protected-source-archives/nextcloud-purpose52/source/nextcloud-access-purpose-pool52.candidate.ts"
+      }
+    },
+    {
+      "originalName": "FUNCTION_BODY_PINS52.json",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/nextcloud-access-purpose52-source01/FUNCTION_BODY_PINS52.json",
+      "originalBytes": 436,
+      "originalSha256": "05bff96cd63a6ab65d19b7f06d66e7dace59d2043fa9010e1060f87f3e3fbbc6",
+      "exportedName": "FUNCTION_BODY_PINS52.json",
+      "exportedBytes": 436,
+      "exportedSha256": "05bff96cd63a6ab65d19b7f06d66e7dace59d2043fa9010e1060f87f3e3fbbc6",
+      "representation": "unchanged-original",
+      "protectedSpans": [],
+      "byteOffsets": "zero-based UTF-8 raw bytes; end exclusive",
+      "privateGithubOriginal": {
+        "commit": "6d778b44d8da1822e283fe1ec32c6ef7da29e4ba",
+        "repository": "CraysWorld/crays-gym",
+        "path": "protected-source-archives/nextcloud-purpose52/source/FUNCTION_BODY_PINS52.json",
+        "url": "https://github.com/CraysWorld/crays-gym/blob/6d778b44d8da1822e283fe1ec32c6ef7da29e4ba/protected-source-archives/nextcloud-purpose52/source/FUNCTION_BODY_PINS52.json"
+      }
+    },
+    {
+      "originalName": "qualify_nextcloud_purpose52.rollback.candidate.sql",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/nextcloud-access-purpose52-source01/qualify_nextcloud_purpose52.rollback.candidate.sql",
+      "originalBytes": 46807,
+      "originalSha256": "c6d604d8fb76fc901794c232ed390d1b90fb3026de2e7e8ba3ef47d87605bb78",
+      "exportedName": "qualify_nextcloud_purpose52.rollback.candidate.sql.template",
+      "exportedBytes": 46575,
+      "exportedSha256": "05df74dc5234319d8a84f41979bc38650e2327fa62d05f7c74702aa790abc30a",
+      "representation": "protected-template",
+      "protectedSpans": [
+        {
+          "slot": "account-slot-01",
+          "originalStartByte": 4735,
+          "originalEndByteExclusive": 4799,
+          "originalLine": 63,
+          "templateStartByte": 4735,
+          "templateEndByteExclusive": 4770
+        },
+        {
+          "slot": "account-slot-01",
+          "originalStartByte": 20924,
+          "originalEndByteExclusive": 20988,
+          "originalLine": 277,
+          "templateStartByte": 20895,
+          "templateEndByteExclusive": 20930
+        },
+        {
+          "slot": "account-slot-01",
+          "originalStartByte": 22591,
+          "originalEndByteExclusive": 22655,
+          "originalLine": 289,
+          "templateStartByte": 22533,
+          "templateEndByteExclusive": 22568
+        },
+        {
+          "slot": "account-slot-01",
+          "originalStartByte": 38710,
+          "originalEndByteExclusive": 38774,
+          "originalLine": 415,
+          "templateStartByte": 38623,
+          "templateEndByteExclusive": 38658
+        },
+        {
+          "slot": "account-slot-01",
+          "originalStartByte": 39347,
+          "originalEndByteExclusive": 39411,
+          "originalLine": 416,
+          "templateStartByte": 39231,
+          "templateEndByteExclusive": 39266
+        },
+        {
+          "slot": "account-slot-01",
+          "originalStartByte": 40329,
+          "originalEndByteExclusive": 40393,
+          "originalLine": 417,
+          "templateStartByte": 40184,
+          "templateEndByteExclusive": 40219
+        },
+        {
+          "slot": "account-slot-01",
+          "originalStartByte": 41173,
+          "originalEndByteExclusive": 41237,
+          "originalLine": 418,
+          "templateStartByte": 40999,
+          "templateEndByteExclusive": 41034
+        },
+        {
+          "slot": "account-slot-01",
+          "originalStartByte": 42099,
+          "originalEndByteExclusive": 42163,
+          "originalLine": 419,
+          "templateStartByte": 41896,
+          "templateEndByteExclusive": 41931
+        }
+      ],
+      "byteOffsets": "zero-based UTF-8 raw bytes; end exclusive",
+      "privateGithubOriginal": {
+        "commit": "6d778b44d8da1822e283fe1ec32c6ef7da29e4ba",
+        "repository": "CraysWorld/crays-gym",
+        "path": "protected-source-archives/nextcloud-purpose52/source/qualify_nextcloud_purpose52.rollback.candidate.sql",
+        "url": "https://github.com/CraysWorld/crays-gym/blob/6d778b44d8da1822e283fe1ec32c6ef7da29e4ba/protected-source-archives/nextcloud-purpose52/source/qualify_nextcloud_purpose52.rollback.candidate.sql"
+      }
+    }
+  ],
+  "privateOriginalGithubCustody": {
+    "status": "ACTUAL_EXACT_VERSION_BLOB_READBACK_PASS",
+    "repository": "CraysWorld/crays-gym",
+    "repositoryId": 1280582408,
+    "visibility": "private",
+    "branch": "codex/nextcloud-purpose52-private-source-20261109",
+    "commit": "6d778b44d8da1822e283fe1ec32c6ef7da29e4ba",
+    "tree": "228c67e688b6ca954c42c0f065ddb0f7d5b4915d",
+    "sourcePrefix": "protected-source-archives/nextcloud-purpose52/source",
+    "metadataPrefix": "protected-source-archives/nextcloud-purpose52",
+    "parentReceipt": "/srv/crays/migration-work/20261108/github/nextcloud-purpose52-private-source-publication01/PUBLISH_ACTUAL.json",
+    "proof": "Parent actual authenticated full GitBlob byte comparisons for all six files and branch reference; master unchanged. Private access required, not an anonymous recovery claim."
+  },
+  "protection": {
+    "slotId": "account-slot-01",
+    "category": "fixed account-selector fingerprint",
+    "valuesAndPerLiteralHashesOmitted": true,
+    "scope": "Only the same 64-byte account-specific literal at 8 positions per SQL original; surrounding SQL bytes and all structural function pins unchanged."
+  },
+  "sourceReview": {
+    "rootReviewSha256": "362c73a4048fdedd06038ebe06c95c7f72d5a7a4f7974a35335ec8d2850d8004",
+    "reviewMeaning": "SQL database authority and delta review, not a copyright attestation",
+    "independentPrivacyReviewSha256": "d7738db402be38c1642e16726613e65636315a963771f5c4b2f69d03c9e0c39e"
+  },
+  "restoration": {
+    "purpose": "Authorized private recovery only; never an execution recipe",
+    "method": "Use the private account-slot-01 bytes at the mapped template ranges in reverse offset order; verify original byte length and SHA256 for each result. Private originals already retained unchanged.",
+    "privateBindingValueLength": 64,
+    "templateIsRunnableOrQualifiedFunctionBody": false
+  },
+  "programsOrSQLExecuted": false
+}

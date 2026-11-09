@@ -1,0 +1,428 @@
+-- SOURCE ONLY. Independent SQL/rights review and exact first-account scope admission
+-- required before execution. No credentials, defaults, accepted intents, users or rights seeded.
+begin;
+do $roles$ begin
+ if exists(select 1 from pg_catalog.pg_roles where rolname in ('crays_nextcloud_access_rpc_owner_v1','crays_nextcloud_access_rpc_runtime_v1')) then
+  raise exception 'NEW_PURPOSE_ROLE_NAMES_MUST_BE_UNUSED';
+ end if;
+ create role crays_nextcloud_access_rpc_owner_v1 nologin noinherit nosuperuser nobypassrls nocreatedb nocreaterole noreplication;
+ create role crays_nextcloud_access_rpc_runtime_v1 login noinherit nosuperuser nobypassrls nocreatedb nocreaterole noreplication connection limit 2;
+end $roles$;
+create schema if not exists crays_nextcloud_access_rpc;
+revoke all on schema crays_nextcloud_access_rpc from public;
+grant usage on schema crays_nextcloud_access_rpc to crays_nextcloud_access_rpc_runtime_v1;
+grant usage,create on schema crays_nextcloud_access_rpc to crays_nextcloud_access_rpc_owner_v1;
+-- Strict first-account FILTER from genuine original API evidence. This is not
+-- canonical/provider authority: all original binding/four-approval joins below
+-- must independently match. No historical Owner02 account fallback.
+create table crays_integration.nextcloud_access_dispatch_attempts45 (
+ action_intent_id text primary key references crays_integration.action_intents(action_intent_id),
+ membership_projection_id text not null references crays_integration.collaboration_membership_projections(membership_projection_id),
+ projection_version bigint not null,
+ claim_token uuid not null default pg_catalog.gen_random_uuid(),
+ request_sha256 text not null check(request_sha256 ~ '^[a-f0-9]{64}$'),
+ authority_snapshot jsonb not null,
+ mutation_started boolean not null default false,
+ state text not null check(state in('CLAIMED','UNKNOWN_OUTCOME','RECONCILED')),
+ acknowledgement jsonb,
+ observation_sha256 text,
+ created_at timestamptz not null default pg_catalog.now(),
+ updated_at timestamptz not null default pg_catalog.now()
+);
+alter table crays_integration.nextcloud_access_dispatch_attempts45 enable row level security;
+alter table crays_integration.nextcloud_access_dispatch_attempts45 force row level security;
+create policy nextcloud_attempt45_owner on crays_integration.nextcloud_access_dispatch_attempts45 for all to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1') with check(current_user='crays_nextcloud_access_rpc_owner_v1');
+
+create function crays_nextcloud_access_rpc.resolve45(p_intent text,p_membership text,p_version bigint)
+returns jsonb language plpgsql security definer set search_path=pg_catalog,pg_temp set row_security=on as $resolve$
+declare
+ m crays_integration.collaboration_membership_projections%rowtype;
+ s crays_integration.collaboration_scope_projections%rowtype;
+ p crays_integration.provider_principal_mappings%rowtype;
+ r crays_integration.resource_bindings%rowtype;
+ a crays_integration.action_intents%rowtype;
+ exact_authorities jsonb[];
+ request_hash text;
+begin
+ select * into m from crays_integration.collaboration_membership_projections where membership_projection_id=p_membership for share;
+ if not found or m.projection_version<>p_version or m.lifecycle_state not in('prepared','pending','active') or m.valid_from>transaction_timestamp() or (m.valid_until is not null and m.valid_until<=transaction_timestamp()) then raise exception 'NEXTCLOUD45_MEMBERSHIP_NOT_CURRENT';end if;
+ select * into s from crays_integration.collaboration_scope_projections where scope_projection_id=m.scope_projection_id for share;
+ select * into p from crays_integration.provider_principal_mappings where principal_mapping_id=m.principal_mapping_id for share;
+ select * into r from crays_integration.resource_bindings where resource_binding_id=s.resource_binding_id for share;
+ select * into a from crays_integration.action_intents where action_intent_id=p_intent for share;
+ if s.scope_projection_id is null or p.principal_mapping_id is null or r.resource_binding_id is null or a.action_intent_id is null then raise exception 'NEXTCLOUD45_SOURCE_MISSING';end if;
+ if encode(sha256(convert_to(m.account_id,'UTF8')),'hex')<>'__CRAYS_PROTECTED_ACCOUNT_SLOT_01__'
+ or p.provider<>'nextcloud' or p.provider_principal_type<>'user' or p.status<>'active' or p.account_id<>m.account_id
+ or p.verification_receipt_id is null or p.last_verified_at is null
+ or s.provider<>'nextcloud' or s.provider_instance_id<>p.provider_instance_id
+ or s.lifecycle_state<>'active' or s.provider_group_ref is distinct from s.opaque_provider_group_key
+ or s.opaque_provider_group_key !~ '^crays-nc-[a-z2-7]{26}$'
+ or s.valid_from>transaction_timestamp() or (s.valid_until is not null and s.valid_until<=transaction_timestamp())
+ or r.binding_version<>s.resource_binding_version or r.crays_tenant_id<>s.crays_tenant_id or r.partner_tenant_id<>s.partner_tenant_id
+ or r.operator_legal_entity_id<>s.operator_legal_entity_id or r.store_id is distinct from s.store_id
+ or r.context_urn<>s.context_urn or r.resource_class<>s.resource_class or r.provider<>'nextcloud' or r.provider_instance_id<>p.provider_instance_id
+ or r.provider_tenant_ref<>p.provider_organization_scope_id or r.lifecycle_state<>'active'
+ or r.valid_from>transaction_timestamp() or (r.valid_until is not null and r.valid_until<=transaction_timestamp())
+ then raise exception 'NEXTCLOUD45_EXACT_PROVIDER_SCOPE_DENIED';end if;
+ if octet_length(p.provider_principal_ref)>64 or p.provider_principal_ref !~ '^[A-Za-z0-9][A-Za-z0-9._@+|-]{0,63}$'
+ or position(chr(13)in p.provider_principal_ref)>0 or position(chr(10)in p.provider_principal_ref)>0 then raise exception 'NEXTCLOUD45_NATIVE_UID_INVALID';end if;
+ -- This new dispatcher accepts only existing accepted Core ADD intents for this
+ -- exact original projection. It never issues/adopts an intent or grants a right.
+ if a.state not in('accepted','unknown') or a.requested_action<>'ADD_MEMBERSHIP'
+ or a.target_resource_type<>'collaboration_membership_projection' or a.target_resource_id<>m.membership_projection_id
+ or a.expected_resource_version is distinct from m.projection_version::text
+ or a.crays_tenant_id<>s.crays_tenant_id or a.partner_tenant_id<>m.partner_tenant_id or a.operator_legal_entity_id<>m.operator_legal_entity_id
+ or a.store_id is distinct from m.store_id or a.relationship_id<>m.relationship_id or a.role_assignment_id<>m.role_assignment_id
+ or a.purpose<>m.purpose or a.capability<>m.capability or a.policy_version<>m.policy_version or a.context_urn<>s.context_urn
+ or a.issued_at>transaction_timestamp() or a.expires_at<=transaction_timestamp()
+ or a.server_resolved_route->>'operation' is distinct from 'ADD_MEMBERSHIP'
+ or a.server_resolved_route->>'membershipProjectionId' is distinct from m.membership_projection_id
+ or a.server_resolved_route->>'desiredStateHash' is distinct from m.desired_state_hash
+ then raise exception 'NEXTCLOUD45_ACCEPTED_INTENT_REQUIRED';end if;
+ select array_agg(jsonb_build_object('bindingId',root.binding_id,'bindingVersion',version.binding_version,'bindingSha256',version.binding_sha256,
+ 'approvalReceipts',jsonb_build_array(
+ jsonb_build_array(version.identity_approval_receipt_id,version.identity_approval_receipt_sha256),
+ jsonb_build_array(version.security_approval_receipt_id,version.security_approval_receipt_sha256),
+ jsonb_build_array(version.environment_approval_receipt_id,version.environment_approval_receipt_sha256),
+ jsonb_build_array(version.mapping_ceremony_receipt_id,version.mapping_ceremony_receipt_sha256))))into exact_authorities
+        from crays_core.exact_oidc_core_binding_roots root
+        join lateral (
+          select candidate.*
+          from crays_core.exact_oidc_core_binding_versions candidate
+          where candidate.binding_id = root.binding_id
+          order by candidate.binding_version desc
+          limit 1
+        ) version on true
+        join crays_core.auth_identities source_identity
+          on source_identity.identity_id = root.source_auth_identity_id
+         and source_identity.account_id = root.account_id
+         and source_identity.provider_subject = root.subject
+         and source_identity.verified is true
+        join crays_core.crays_accounts account
+          on account.account_id = root.account_id and account.status = 'active'
+        join crays_core.canonical_people person
+          on person.canonical_person_id = root.canonical_person_id
+         and person.account_id = root.account_id
+         and person.person_version = root.person_version
+         and person.lifecycle_state = 'active'
+        join crays_core.organizations organization
+          on organization.organization_id = root.canonical_organization_id
+         and organization.status = 'active'
+        join crays_core.canonical_relationships relationship
+          on relationship.canonical_relationship_id = root.canonical_relationship_id
+         and relationship.relationship_version = root.relationship_version
+         and relationship.canonical_person_id = root.canonical_person_id
+         and relationship.organization_id = root.canonical_organization_id
+         and relationship.crays_tenant_id = root.crays_tenant_id
+         and relationship.vertical_root = root.vertical_root
+         and relationship.partner_tenant_id = root.partner_tenant_id
+         and relationship.operator_legal_entity_id = root.operator_legal_entity_id
+         and relationship.store_id = root.store_id
+         and relationship.purpose = root.purpose
+         and relationship.policy_version = root.security_policy_version
+         and relationship.lifecycle_state = 'active'
+         and relationship.valid_from <= transaction_timestamp()
+         and (relationship.valid_until is null or relationship.valid_until > transaction_timestamp())
+        join crays_core.partner_role_contexts role_context
+          on role_context.role_context_id = root.role_context_id
+         and role_context.context_version = root.role_context_version
+         and role_context.account_id = root.account_id
+         and role_context.role_assignment_id = root.role_assignment_id
+         and role_context.role_key = root.effective_role
+         and role_context.purpose = root.purpose
+         and role_context.policy_version = root.security_policy_version
+         and role_context.organization_id = root.canonical_organization_id
+         and role_context.vertical_root = root.vertical_root
+         and role_context.partner_tenant_id = root.partner_tenant_id
+         and role_context.operator_legal_entity_id = root.operator_legal_entity_id
+         and role_context.store_id = root.store_id
+         and role_context.store_operator_assignment_id = root.store_operator_assignment_id
+         and role_context.store_operator_assignment_version = root.store_operator_assignment_version
+         and role_context.relationship_id = root.canonical_relationship_id
+         and role_context.status = 'active'
+         and role_context.valid_from <= transaction_timestamp()
+         and (role_context.valid_until is null or role_context.valid_until > transaction_timestamp())
+        join crays_core.role_assignments role_assignment
+          on role_assignment.assignment_id = root.role_assignment_id
+         and role_assignment.account_id = root.account_id
+         and role_assignment.role_key = root.effective_role
+         and role_assignment.organization_id = root.canonical_organization_id
+         and role_assignment.status = 'active'
+        join crays_core.franchise_operator_tenants partner
+          on partner.partner_tenant_id = root.partner_tenant_id
+         and partner.organization_id = root.canonical_organization_id
+         and partner.version = root.partner_tenant_version and partner.status = 'active'
+        join crays_core.operator_legal_entities legal_entity
+          on legal_entity.legal_entity_id = root.operator_legal_entity_id
+         and legal_entity.partner_tenant_id = root.partner_tenant_id
+         and legal_entity.version = root.operator_legal_entity_version
+         and legal_entity.status = 'active'
+        join crays_core.stores store
+          on store.store_id = root.store_id and store.vertical_root = root.vertical_root
+         and store.version = root.store_version and store.status = 'active'
+        join crays_core.store_operator_assignments assignment
+          on assignment.assignment_id = root.store_operator_assignment_id
+         and assignment.store_id = root.store_id
+         and assignment.vertical_root = root.vertical_root
+         and assignment.partner_tenant_id = root.partner_tenant_id
+         and assignment.operator_legal_entity_id = root.operator_legal_entity_id
+         and assignment.version = root.store_operator_assignment_version
+         and assignment.status = 'active'
+         and assignment.valid_from <= transaction_timestamp()
+         and (assignment.valid_until is null or assignment.valid_until > transaction_timestamp())
+        join crays_integration.provider_principal_mappings principal
+          on principal.principal_mapping_id = root.nextcloud_principal_mapping_id
+         and principal.mapping_version = root.nextcloud_principal_mapping_version
+         and principal.account_id = root.account_id
+         and principal.provider = 'nextcloud'
+         and principal.provider_instance_id = root.nextcloud_provider_instance_id
+         and principal.provider_organization_scope_id = root.nextcloud_organization_scope_id
+         and encode(sha256(convert_to(principal.provider_principal_ref,'UTF8')),'hex') = root.nextcloud_internal_uid_sha256
+         and principal.status = 'active'
+        join lateral (
+          select
+            count(*)::integer as receipt_count,
+            count(distinct approval.approver_account_id)::integer as approver_count,
+            count(distinct approval.approver_role_assignment_id)::integer as assignment_count
+          from crays_core.exact_oidc_binding_approval_receipts approval
+          join crays_core.crays_accounts approver_account
+            on approver_account.account_id = approval.approver_account_id
+           and approver_account.status = 'active'
+          join crays_core.role_assignments approver_assignment
+            on approver_assignment.assignment_id = approval.approver_role_assignment_id
+           and approver_assignment.account_id = approval.approver_account_id
+           and approver_assignment.organization_id = root.canonical_organization_id
+           and approver_assignment.status = 'active'
+          join crays_core.partner_role_contexts approver_context
+            on approver_context.role_context_id = approval.approver_role_context_id
+           and approver_context.context_version = approval.approver_role_context_version
+           and approver_context.account_id = approval.approver_account_id
+           and approver_context.role_assignment_id = approval.approver_role_assignment_id
+           and approver_context.organization_id = root.canonical_organization_id
+           and approver_context.vertical_root = root.vertical_root
+           and approver_context.partner_tenant_id = root.partner_tenant_id
+           and approver_context.operator_legal_entity_id = root.operator_legal_entity_id
+           and approver_context.store_id is not distinct from root.store_id
+           and approver_context.store_operator_assignment_id is not distinct from root.store_operator_assignment_id
+           and approver_context.store_operator_assignment_version is not distinct from root.store_operator_assignment_version
+           and approver_context.relationship_id = root.canonical_relationship_id
+           and approver_context.purpose = 'approve-exact-identity-binding'
+           and approver_context.policy_version = approval.authority_policy_version
+           and approver_context.status = 'active'
+           and approver_context.valid_from <= transaction_timestamp()
+           and (approver_context.valid_until is null or approver_context.valid_until > transaction_timestamp())
+          where approval.binding_id = root.binding_id
+            and approval.decision = 'APPROVED'
+            and approval.valid_from <= transaction_timestamp()
+            and approval.valid_until > transaction_timestamp()
+            and approval.approver_role_key = case approval.approval_kind
+              when 'IDENTITY_APPROVAL' then 'identity-security-owner'
+              when 'SECURITY_APPROVAL' then 'security-owner'
+              when 'ENVIRONMENT_APPROVAL' then 'platform-operations-owner'
+              when 'MAPPING_CEREMONY' then 'collaboration-owner'
+            end
+            and approver_assignment.role_key = approval.approver_role_key
+            and approver_context.role_key = approval.approver_role_key
+            and approver_context.capabilities ? case approval.approval_kind
+              when 'IDENTITY_APPROVAL' then 'identity:approve'
+              when 'SECURITY_APPROVAL' then 'security:approve'
+              when 'ENVIRONMENT_APPROVAL' then 'environment:approve'
+              when 'MAPPING_CEREMONY' then 'mapping:approve'
+            end
+            and case approval.approval_kind
+              when 'IDENTITY_APPROVAL' then
+                approval.approval_receipt_id = version.identity_approval_receipt_id
+                and approval.approval_receipt_sha256 = version.identity_approval_receipt_sha256
+              when 'SECURITY_APPROVAL' then
+                approval.approval_receipt_id = version.security_approval_receipt_id
+                and approval.approval_receipt_sha256 = version.security_approval_receipt_sha256
+              when 'ENVIRONMENT_APPROVAL' then
+                approval.approval_receipt_id = version.environment_approval_receipt_id
+                and approval.approval_receipt_sha256 = version.environment_approval_receipt_sha256
+              when 'MAPPING_CEREMONY' then
+                approval.approval_receipt_id = version.mapping_ceremony_receipt_id
+                and approval.approval_receipt_sha256 = version.mapping_ceremony_receipt_sha256
+              else false
+            end
+        ) current_approvals
+          on current_approvals.receipt_count = 4
+         and current_approvals.approver_count = 4
+         and current_approvals.assignment_count = 4
+
+ where root.account_id=m.account_id and root.canonical_person_id=a.actor_person_id
+ and root.nextcloud_principal_mapping_id=p.principal_mapping_id and root.nextcloud_principal_mapping_version=p.mapping_version
+ and root.nextcloud_provider_instance_id=s.provider_instance_id and root.nextcloud_organization_scope_id=p.provider_organization_scope_id
+ and root.crays_tenant_id=s.crays_tenant_id and root.role_assignment_id=m.role_assignment_id and root.role_context_id=m.role_context_id
+ and root.effective_role=m.role_key and root.canonical_relationship_id=m.relationship_id and root.purpose=m.purpose
+ and root.vertical_root=m.vertical_root and root.partner_tenant_id=m.partner_tenant_id and root.operator_legal_entity_id=m.operator_legal_entity_id
+ and root.store_id is not distinct from m.store_id and root.security_policy_version=m.policy_version
+ and version.binding_state='ACTIVE' and version.valid_from<=transaction_timestamp() and (version.valid_until is null or version.valid_until>transaction_timestamp())
+ and m.role_key not in('admin','crays-management','reviewer')
+ and s.vertical_root=m.vertical_root and s.partner_tenant_id=m.partner_tenant_id and s.operator_legal_entity_id=m.operator_legal_entity_id
+ and s.store_id is not distinct from m.store_id and s.purpose=m.purpose and s.required_capability=m.capability and s.access_policy_version=m.policy_version
+ and role_context.capabilities ? m.capability
+ and exists(select 1 from crays_core.organization_memberships om where om.account_id=m.account_id and om.organization_id=root.canonical_organization_id and om.role_key=m.role_key and om.status='active');
+ if coalesce(array_length(exact_authorities,1),0)<>1 then raise exception 'NEXTCLOUD45_EXACT_CURRENT_AUTHORITY_DENIED';end if;
+ request_hash=encode(sha256(convert_to(array_to_json(array['ADD_MEMBERSHIP',s.opaque_provider_group_key,p.provider_principal_ref])::text,'UTF8')),'hex');
+ return jsonb_build_object('commandId',a.action_intent_id,'operation','ADD_MEMBERSHIP','membershipProjectionId',m.membership_projection_id,'projectionVersion',m.projection_version,
+ 'accountSha256','__CRAYS_PROTECTED_ACCOUNT_SLOT_01__','providerInstanceId',p.provider_instance_id,'providerOrganizationScopeId',p.provider_organization_scope_id,
+ 'groupKey',s.opaque_provider_group_key,'principalRef',p.provider_principal_ref,'principalRefSha256',encode(sha256(convert_to(p.provider_principal_ref,'UTF8')),'hex'),
+ 'requestSha256',request_hash,'bindingId',exact_authorities[1]->>'bindingId','bindingAuthority',exact_authorities[1],'scopeProjectionId',s.scope_projection_id,'scopeProjectionVersion',s.projection_version,'resourceBindingId',r.resource_binding_id,'resourceBindingVersion',r.binding_version,'principalMappingId',p.principal_mapping_id,'principalMappingVersion',p.mapping_version,'desiredStateHash',m.desired_state_hash,'policyVersion',m.policy_version,'expiresAtUnixMs',least(extract(epoch from a.expires_at)*1000,extract(epoch from clock_timestamp())*1000+10000)::bigint);
+end $resolve$;
+
+create function crays_nextcloud_access_rpc.claim_v1(p_intent text,p_membership text,p_version bigint)
+returns jsonb language plpgsql security definer set search_path=pg_catalog,pg_temp set row_security=on as $claim$
+declare plan jsonb;attempt crays_integration.nextcloud_access_dispatch_attempts45%rowtype; fresh boolean;
+begin
+ perform 1 from crays_integration.action_intents where action_intent_id=p_intent for update;
+ select * into attempt from crays_integration.nextcloud_access_dispatch_attempts45 where action_intent_id=p_intent for update;
+ if found and attempt.state='RECONCILED'then
+  if attempt.membership_projection_id<>p_membership or attempt.projection_version<>p_version or attempt.authority_snapshot->>'accountSha256'<>'__CRAYS_PROTECTED_ACCOUNT_SLOT_01__'then raise exception 'NEXTCLOUD45_REPLAY_SCOPE_CONFLICT';end if;
+  return jsonb_build_object('commandId',p_intent,'completed',true,'state','RECONCILED','currentEntitlementProven',false);
+ end if;
+ plan=crays_nextcloud_access_rpc.resolve45(p_intent,p_membership,p_version);
+ insert into crays_integration.nextcloud_access_dispatch_attempts45(action_intent_id,membership_projection_id,projection_version,request_sha256,authority_snapshot,state)
+ values(p_intent,p_membership,p_version,plan->>'requestSha256',plan-'principalRef'-'expiresAtUnixMs','CLAIMED')on conflict(action_intent_id)do nothing;
+ fresh=found;
+ if fresh and not exists(select 1 from crays_integration.action_intents where action_intent_id=p_intent and state='accepted')then raise exception 'NEXTCLOUD45_UNKNOWN_INTENT_CANNOT_MUTATE';end if;
+ select * into attempt from crays_integration.nextcloud_access_dispatch_attempts45 where action_intent_id=p_intent for update;
+ if attempt.membership_projection_id<>p_membership or attempt.projection_version<>p_version or attempt.request_sha256<>plan->>'requestSha256'
+ or attempt.authority_snapshot<>plan-'principalRef'-'expiresAtUnixMs' then raise exception 'NEXTCLOUD45_REPLAY_SCOPE_CONFLICT';end if;
+ return plan||jsonb_build_object('claimToken',attempt.claim_token,'fresh',fresh,'state',attempt.state,'mutationStarted',attempt.mutation_started);
+end $claim$;
+
+create function crays_nextcloud_access_rpc.authorize_mutation_v1(p_intent text,p_token uuid)
+returns jsonb language plpgsql security definer set search_path=pg_catalog,pg_temp set row_security=on as $authorize$
+declare attempt crays_integration.nextcloud_access_dispatch_attempts45%rowtype;plan jsonb;
+begin
+ perform 1 from crays_integration.action_intents where action_intent_id=p_intent for update;
+ select * into attempt from crays_integration.nextcloud_access_dispatch_attempts45 where action_intent_id=p_intent and claim_token=p_token for update;
+ if not found or attempt.state<>'CLAIMED' or attempt.mutation_started then raise exception 'NEXTCLOUD45_MUTATION_ALREADY_FENCED';end if;
+ plan=crays_nextcloud_access_rpc.resolve45(p_intent,attempt.membership_projection_id,attempt.projection_version);
+ if attempt.authority_snapshot<>plan-'principalRef'-'expiresAtUnixMs' then raise exception 'NEXTCLOUD45_AUTHORITY_CHANGED';end if;
+ update crays_integration.nextcloud_access_dispatch_attempts45 set mutation_started=true,updated_at=clock_timestamp()where action_intent_id=p_intent;
+ return plan||jsonb_build_object('claimToken',attempt.claim_token,'authorized',true);
+end $authorize$;
+
+create function crays_nextcloud_access_rpc.mark_unknown_v1(p_intent text,p_token uuid)
+returns jsonb language plpgsql security definer set search_path=pg_catalog,pg_temp set row_security=on as $unknown$
+begin
+ perform 1 from crays_integration.action_intents where action_intent_id=p_intent for update;
+ update crays_integration.nextcloud_access_dispatch_attempts45 set state='UNKNOWN_OUTCOME',updated_at=clock_timestamp()where action_intent_id=p_intent and claim_token=p_token and state<>'RECONCILED';
+ if found then update crays_integration.action_intents set state='unknown'where action_intent_id=p_intent and state='accepted';end if;
+ return jsonb_build_object('status','UNKNOWN_OUTCOME','automaticRetryAllowed',false);
+end $unknown$;
+
+create function crays_nextcloud_access_rpc.observe_v1(p_intent text,p_token uuid,p_ack jsonb,p_observation jsonb)
+returns jsonb language plpgsql security definer set search_path=pg_catalog,pg_temp set row_security=on as $observe$
+declare attempt crays_integration.nextcloud_access_dispatch_attempts45%rowtype;plan jsonb;a crays_integration.action_intents%rowtype;receipt text;downstream jsonb;
+begin
+ perform 1 from crays_integration.action_intents where action_intent_id=p_intent for update;
+ select * into attempt from crays_integration.nextcloud_access_dispatch_attempts45 where action_intent_id=p_intent and claim_token=p_token for update;
+ if not found then raise exception 'NEXTCLOUD45_EXACT_CLAIM_REQUIRED';end if;
+ if attempt.state='RECONCILED'then return jsonb_build_object('status','ALREADY_RECONCILED_HISTORY_ONLY','currentEntitlementProven',false,'mutationClaimed',false);end if;
+ plan=crays_nextcloud_access_rpc.resolve45(p_intent,attempt.membership_projection_id,attempt.projection_version);
+ if attempt.authority_snapshot<>plan-'principalRef'-'expiresAtUnixMs' then raise exception 'NEXTCLOUD45_AUTHORITY_CHANGED';end if;
+ if p_observation->>'providerInstanceId' is distinct from plan->>'providerInstanceId' or p_observation->>'providerOrganizationScopeId'is distinct from plan->>'providerOrganizationScopeId'
+ or p_observation->>'groupKey'is distinct from plan->>'groupKey' or p_observation->>'observedState'is distinct from 'PROVIDER_OBSERVED_PENDING_RECONCILIATION'
+ or coalesce(p_observation->>'responseSha256','') !~ '^[a-f0-9]{64}$' or jsonb_typeof(p_observation->'principalRefs')is distinct from 'array'
+ or jsonb_array_length(p_observation->'principalRefs')>10000 or not(p_observation->'principalRefs' @> jsonb_build_array(plan->>'principalRef'))
+ or p_observation->'mutatesCraysAuthority' is distinct from 'false'::jsonb then raise exception 'NEXTCLOUD45_EXACT_NATIVE_OBSERVATION_REQUIRED';end if;
+ downstream='[]'::jsonb;
+ if p_ack is not null then
+  if p_ack->>'commandId'is distinct from p_intent or p_ack->>'operation'is distinct from 'ADD_MEMBERSHIP' or p_ack->>'requestSha256'is distinct from attempt.request_sha256
+  or p_ack->>'providerInstanceId'is distinct from plan->>'providerInstanceId' or p_ack->>'providerOrganizationScopeId'is distinct from plan->>'providerOrganizationScopeId'
+  or p_ack->>'providerStatusCode'is distinct from '100' or coalesce(p_ack->>'responseSha256','') !~ '^[a-f0-9]{64}$'
+  or p_ack->>'state'is distinct from 'ACKNOWLEDGED_PENDING_RECONCILIATION'or p_ack->'mutatesCraysAuthority'is distinct from 'false'::jsonb
+  then raise exception 'NEXTCLOUD45_EXACT_OCS_ACK_REQUIRED';end if;
+  downstream=jsonb_build_array(p_ack);
+ end if;
+ select * into a from crays_integration.action_intents where action_intent_id=p_intent for update;
+ receipt='nca45_'||encode(sha256(convert_to(p_intent||':'||attempt.request_sha256,'UTF8')),'hex');
+ insert into crays_integration.action_receipts(receipt_id,action_intent_id,request_hash,effective_context_hash,policy_version,assignment_version,resolved_provider_bindings,provider_command_ref,provider_outcome,downstream_acknowledgements,final_comparison,reconciliation_state,reconciled_at,correlation_id)
+ values(receipt,p_intent,attempt.request_sha256,a.preflight_hash,a.policy_version,a.assignment_version,plan-'principalRef'-'expiresAtUnixMs',case when p_ack is null then null else p_intent end,
+ case when p_ack is null then 'native_state_observed_without_delivery_claim'else 'ocs_ack_plus_native_state_observed'end,downstream,'exact_current_native_membership_present','matched',clock_timestamp(),a.correlation_id)
+ ; -- Unexpected receipt collision fails atomically; own replay returns before INSERT.
+ update crays_integration.collaboration_membership_projections set lifecycle_state='active',last_action_receipt_id=receipt,last_reconciled_at=clock_timestamp(),updated_at=clock_timestamp()
+ where membership_projection_id=attempt.membership_projection_id and projection_version=attempt.projection_version;
+ if not found then raise exception 'NEXTCLOUD45_PROJECTION_CAS_FAILED';end if;
+ update crays_integration.action_intents set state='reconciled'where action_intent_id=p_intent;
+ update crays_integration.nextcloud_access_dispatch_attempts45 set state='RECONCILED',acknowledgement=p_ack,observation_sha256=p_observation->>'responseSha256',updated_at=clock_timestamp()where action_intent_id=p_intent;
+ return jsonb_build_object('status','RECONCILED_PROVIDER_STATE','receiptId',receipt,'mutationClaimed',p_ack is not null,'automaticRetryAllowed',false);
+end $observe$;
+grant select on crays_core.auth_identities to crays_nextcloud_access_rpc_owner_v1;
+create policy nca45_read_d845da711364 on crays_core.auth_identities for select to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1');
+grant select on crays_core.canonical_people to crays_nextcloud_access_rpc_owner_v1;
+create policy nca45_read_216f399c22ef on crays_core.canonical_people for select to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1');
+grant select on crays_core.canonical_relationships to crays_nextcloud_access_rpc_owner_v1;
+create policy nca45_read_e04e52205394 on crays_core.canonical_relationships for select to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1');
+grant select on crays_core.crays_accounts to crays_nextcloud_access_rpc_owner_v1;
+create policy nca45_read_4d08234b687c on crays_core.crays_accounts for select to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1');
+grant select on crays_core.exact_oidc_binding_approval_receipts to crays_nextcloud_access_rpc_owner_v1;
+create policy nca45_read_41c4a9932396 on crays_core.exact_oidc_binding_approval_receipts for select to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1');
+grant select on crays_core.exact_oidc_core_binding_roots to crays_nextcloud_access_rpc_owner_v1;
+create policy nca45_read_b49bba988b6f on crays_core.exact_oidc_core_binding_roots for select to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1');
+grant select on crays_core.exact_oidc_core_binding_versions to crays_nextcloud_access_rpc_owner_v1;
+create policy nca45_read_8226f8bfa749 on crays_core.exact_oidc_core_binding_versions for select to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1');
+grant select on crays_core.franchise_operator_tenants to crays_nextcloud_access_rpc_owner_v1;
+create policy nca45_read_da61d17956c3 on crays_core.franchise_operator_tenants for select to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1');
+grant select on crays_core.operator_legal_entities to crays_nextcloud_access_rpc_owner_v1;
+create policy nca45_read_5676a59ac679 on crays_core.operator_legal_entities for select to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1');
+grant select on crays_core.organization_memberships to crays_nextcloud_access_rpc_owner_v1;
+create policy nca45_read_889120643040 on crays_core.organization_memberships for select to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1');
+grant select on crays_core.organizations to crays_nextcloud_access_rpc_owner_v1;
+create policy nca45_read_b7e70d31b1c9 on crays_core.organizations for select to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1');
+grant select on crays_core.partner_role_contexts to crays_nextcloud_access_rpc_owner_v1;
+create policy nca45_read_54579348426e on crays_core.partner_role_contexts for select to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1');
+grant select on crays_core.role_assignments to crays_nextcloud_access_rpc_owner_v1;
+create policy nca45_read_5523c17338c0 on crays_core.role_assignments for select to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1');
+grant select on crays_core.store_operator_assignments to crays_nextcloud_access_rpc_owner_v1;
+create policy nca45_read_97fe5b35144f on crays_core.store_operator_assignments for select to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1');
+grant select on crays_core.stores to crays_nextcloud_access_rpc_owner_v1;
+create policy nca45_read_f78b084a18ef on crays_core.stores for select to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1');
+grant select on crays_integration.action_intents to crays_nextcloud_access_rpc_owner_v1;
+create policy nca45_read_74f6ea170fbf on crays_integration.action_intents for select to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1');
+grant select on crays_integration.collaboration_membership_projections to crays_nextcloud_access_rpc_owner_v1;
+create policy nca45_read_cb5d28e712ac on crays_integration.collaboration_membership_projections for select to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1');
+grant select on crays_integration.collaboration_scope_projections to crays_nextcloud_access_rpc_owner_v1;
+create policy nca45_read_05f0bea43eb0 on crays_integration.collaboration_scope_projections for select to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1');
+grant select on crays_integration.provider_principal_mappings to crays_nextcloud_access_rpc_owner_v1;
+create policy nca45_read_2f0f2618a73b on crays_integration.provider_principal_mappings for select to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1');
+grant select on crays_integration.resource_bindings to crays_nextcloud_access_rpc_owner_v1;
+create policy nca45_read_f6f4337d31b7 on crays_integration.resource_bindings for select to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1');
+grant usage on schema crays_core,crays_integration to crays_nextcloud_access_rpc_owner_v1;
+grant select,insert,update on crays_integration.nextcloud_access_dispatch_attempts45 to crays_nextcloud_access_rpc_owner_v1;
+grant insert on crays_integration.action_receipts to crays_nextcloud_access_rpc_owner_v1;
+grant update(state) on crays_integration.action_intents to crays_nextcloud_access_rpc_owner_v1;
+grant update(lifecycle_state,last_action_receipt_id,last_reconciled_at,updated_at)on crays_integration.collaboration_membership_projections to crays_nextcloud_access_rpc_owner_v1;
+create policy nca45_receipt_insert on crays_integration.action_receipts for insert to crays_nextcloud_access_rpc_owner_v1 with check(current_user='crays_nextcloud_access_rpc_owner_v1'and exists(select 1 from crays_integration.nextcloud_access_dispatch_attempts45 x where x.action_intent_id=action_receipts.action_intent_id and x.request_sha256=action_receipts.request_hash));
+create policy nca45_intent_state on crays_integration.action_intents for update to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1'and exists(select 1 from crays_integration.nextcloud_access_dispatch_attempts45 x where x.action_intent_id=action_intents.action_intent_id))with check(current_user='crays_nextcloud_access_rpc_owner_v1');
+create policy nca45_projection_evidence on crays_integration.collaboration_membership_projections for update to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1'and exists(select 1 from crays_integration.nextcloud_access_dispatch_attempts45 x where x.membership_projection_id=collaboration_membership_projections.membership_projection_id))with check(current_user='crays_nextcloud_access_rpc_owner_v1');
+
+-- Review proposal: row-lock admission only; original resolver/locks/authority remain unchanged.
+grant update(scope_projection_id) on crays_integration.collaboration_scope_projections to crays_nextcloud_access_rpc_owner_v1;
+grant update(principal_mapping_id) on crays_integration.provider_principal_mappings to crays_nextcloud_access_rpc_owner_v1;
+grant update(resource_binding_id) on crays_integration.resource_bindings to crays_nextcloud_access_rpc_owner_v1;
+create policy nca45_exact_add_lock1 on crays_integration.action_intents for update to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1' and (exists(select 1 from crays_integration.collaboration_membership_projections m where m.membership_projection_id=action_intents.target_resource_id and encode(sha256(convert_to(m.account_id,'UTF8')),'hex')='__CRAYS_PROTECTED_ACCOUNT_SLOT_01__' and action_intents.state in('accepted','unknown') and action_intents.requested_action='ADD_MEMBERSHIP' and action_intents.target_resource_type='collaboration_membership_projection' and action_intents.expected_resource_version=m.projection_version::text))) with check(false);
+create policy nca45_exact_add_lock2 on crays_integration.collaboration_membership_projections for update to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1' and (encode(sha256(convert_to(collaboration_membership_projections.account_id,'UTF8')),'hex')='__CRAYS_PROTECTED_ACCOUNT_SLOT_01__' and exists(select 1 from crays_integration.action_intents a where a.target_resource_id=collaboration_membership_projections.membership_projection_id and a.state in('accepted','unknown') and a.requested_action='ADD_MEMBERSHIP' and a.target_resource_type='collaboration_membership_projection' and a.expected_resource_version=collaboration_membership_projections.projection_version::text))) with check(false);
+create policy nca45_exact_add_lock3 on crays_integration.collaboration_scope_projections for update to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1' and (exists(select 1 from crays_integration.collaboration_membership_projections m join crays_integration.action_intents a on a.target_resource_id=m.membership_projection_id where m.scope_projection_id=collaboration_scope_projections.scope_projection_id and encode(sha256(convert_to(m.account_id,'UTF8')),'hex')='__CRAYS_PROTECTED_ACCOUNT_SLOT_01__' and a.state in('accepted','unknown') and a.requested_action='ADD_MEMBERSHIP' and a.target_resource_type='collaboration_membership_projection' and a.target_resource_id=m.membership_projection_id and a.expected_resource_version=m.projection_version::text))) with check(false);
+create policy nca45_exact_add_lock4 on crays_integration.provider_principal_mappings for update to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1' and (exists(select 1 from crays_integration.collaboration_membership_projections m join crays_integration.action_intents a on a.target_resource_id=m.membership_projection_id where m.principal_mapping_id=provider_principal_mappings.principal_mapping_id and encode(sha256(convert_to(m.account_id,'UTF8')),'hex')='__CRAYS_PROTECTED_ACCOUNT_SLOT_01__' and a.state in('accepted','unknown') and a.requested_action='ADD_MEMBERSHIP' and a.target_resource_type='collaboration_membership_projection' and a.target_resource_id=m.membership_projection_id and a.expected_resource_version=m.projection_version::text))) with check(false);
+create policy nca45_exact_add_lock5 on crays_integration.resource_bindings for update to crays_nextcloud_access_rpc_owner_v1 using(current_user='crays_nextcloud_access_rpc_owner_v1' and (exists(select 1 from crays_integration.collaboration_membership_projections m join crays_integration.action_intents a on a.target_resource_id=m.membership_projection_id join crays_integration.collaboration_scope_projections s on s.scope_projection_id=m.scope_projection_id where s.resource_binding_id=resource_bindings.resource_binding_id and encode(sha256(convert_to(m.account_id,'UTF8')),'hex')='__CRAYS_PROTECTED_ACCOUNT_SLOT_01__' and a.state in('accepted','unknown') and a.requested_action='ADD_MEMBERSHIP' and a.target_resource_type='collaboration_membership_projection' and a.target_resource_id=m.membership_projection_id and a.expected_resource_version=m.projection_version::text))) with check(false);
+-- WITH CHECK(false) grants lock visibility, no new successful row-update path.
+-- Existing purpose write policies continue to require a durable exact attempt.
+alter function crays_nextcloud_access_rpc.resolve45(text,text,bigint) owner to crays_nextcloud_access_rpc_owner_v1;
+revoke all on function crays_nextcloud_access_rpc.resolve45(text,text,bigint) from public;
+alter function crays_nextcloud_access_rpc.claim_v1(text,text,bigint) owner to crays_nextcloud_access_rpc_owner_v1;
+revoke all on function crays_nextcloud_access_rpc.claim_v1(text,text,bigint) from public;
+grant execute on function crays_nextcloud_access_rpc.claim_v1(text,text,bigint) to crays_nextcloud_access_rpc_runtime_v1;
+alter function crays_nextcloud_access_rpc.authorize_mutation_v1(text,uuid) owner to crays_nextcloud_access_rpc_owner_v1;
+revoke all on function crays_nextcloud_access_rpc.authorize_mutation_v1(text,uuid) from public;
+grant execute on function crays_nextcloud_access_rpc.authorize_mutation_v1(text,uuid) to crays_nextcloud_access_rpc_runtime_v1;
+alter function crays_nextcloud_access_rpc.mark_unknown_v1(text,uuid) owner to crays_nextcloud_access_rpc_owner_v1;
+revoke all on function crays_nextcloud_access_rpc.mark_unknown_v1(text,uuid) from public;
+grant execute on function crays_nextcloud_access_rpc.mark_unknown_v1(text,uuid) to crays_nextcloud_access_rpc_runtime_v1;
+alter function crays_nextcloud_access_rpc.observe_v1(text,uuid,jsonb,jsonb) owner to crays_nextcloud_access_rpc_owner_v1;
+revoke all on function crays_nextcloud_access_rpc.observe_v1(text,uuid,jsonb,jsonb) from public;
+grant execute on function crays_nextcloud_access_rpc.observe_v1(text,uuid,jsonb,jsonb) to crays_nextcloud_access_rpc_runtime_v1;
+revoke create on schema crays_nextcloud_access_rpc from crays_nextcloud_access_rpc_owner_v1;
+commit;

@@ -261,6 +261,10 @@
     {
       "component": "shared-web-four-protected-operational-helpers",
       "path": "source-archives/shared-web/four-protected-operational-helpers-20261109/source-template-map.json"
+    },
+    {
+      "component": "nextcloud-access-purpose52",
+      "path": "operations/nextcloud-access-purpose52/source-capture.json"
     }
   ]
 }
