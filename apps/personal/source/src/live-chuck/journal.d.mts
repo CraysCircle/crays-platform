@@ -1,0 +1,5 @@
+export type ChuckJournal={claimContext:(loginScope:string,canonicalScope:string)=>Promise<boolean>;read:(scope:string)=>Promise<unknown>;save:(scope:string,next:unknown,expected:unknown)=>Promise<boolean>;saveOriginals:(scope:string,next:unknown,payloads:(Uint8Array|ArrayBuffer)[],expected:unknown)=>Promise<boolean>;readOriginals:(scope:string,expected:unknown)=>Promise<ArrayBuffer[]>;archive:(scope:string,expected:unknown)=>Promise<boolean>;restoreArchived:(scope:string,expected:unknown)=>Promise<'restored'|'active-request'|'archive-changed'>;readArchive:(scope:string)=>Promise<unknown[]>;readArchivePage:(scope:string,cursor?:{afterId?:string})=>Promise<{records:unknown[];hasMore:boolean;nextAfterId:string|null}>;close:()=>Promise<void>};
+export function createChuckPendingJournal(config?:{indexedDB?:IDBFactory;databaseName?:'crays-personal-chuck-pending-v1'}):ChuckJournal;
+export function createChuckTaskDecisionJournal(config?:{indexedDB?:IDBFactory}):ChuckJournal;
+
+export function createChuckWorkspaceActionJournal(config?:{indexedDB?:IDBFactory}):ChuckJournal;

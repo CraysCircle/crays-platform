@@ -1,0 +1,5 @@
+import type {CurrentSignerBinding} from './currentBoundSigner.mjs';
+import type {CurrentAccountMessagingPort} from './currentAccountMessaging.mjs';
+export interface AccountEncryptedStore {readonly durability?:'default'|'strict'|'relaxed';getItem(key:string):Promise<unknown>;setItem(key:string,value:unknown):Promise<unknown>;removeItem(key:string):Promise<void>;keys():Promise<string[]>;clear():Promise<void>;close():Promise<void>;}
+export type AccountBrowserStores=Readonly<{deviceSlot:string;stores:Readonly<Record<'groupStateStore'|'keyPackageStore'|'ingestStateStore'|'inviteStore'|'rewindStore'|'removedMarkerStore'|'conversationStore'|'historyStore',AccountEncryptedStore>>;signal:AbortSignal;close():void;settled():Promise<void>}>;
+export function openAccountBrowserStores(options:{account:CurrentAccountMessagingPort;isCurrent:(binding:CurrentSignerBinding)=>boolean;indexedDB?:IDBFactory;crypto?:Crypto;locks?:LockManager;durability?:'default'|'strict';databaseName?:string;dataDatabaseName?:string;dataKeyCache?:import('./accountDataKeyCache.mjs').AccountDataKeyCache}):Promise<AccountBrowserStores>;

@@ -1,0 +1,48 @@
+.web-spot-rules{box-sizing:border-box;padding:24px 28px 32px;color:#082638;font:16px/1.5 Crays,Avenir,sans-serif;width:100%}
+.web-spot-rules *{box-sizing:border-box}
+.web-spot-rules-path,.web-spot-rules-heading,.web-spot-rules-columns{max-width:1120px}
+.web-spot-rules :is(button,a,summary){font:inherit}
+.web-spot-rules-path{display:flex;align-items:center;flex-wrap:wrap;gap:10px;font-size:14px;color:#526b87}
+.web-spot-rules-path a{display:inline-flex;align-items:center;min-height:48px;text-decoration:none;color:inherit}
+.web-spot-rules-path a:hover{text-decoration:underline}
+.web-spot-rules-heading{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:12px 0 20px;margin-bottom:24px;border-bottom:1px solid #d9e3ed}
+.web-spot-rules-heading h1{margin:0!important;font-size:26px!important;line-height:1.25}
+.web-spot-rules-heading>div{display:flex;align-items:center;gap:12px}
+.web-spot-rules-back{min-height:48px;display:inline-flex;align-items:center;gap:10px;background:white;border:1px solid #d9e3ed;border-radius:6px;padding:0 16px;cursor:pointer;color:inherit}
+.web-spot-rules-heading .toolbar-chuck{min-width:48px;min-height:48px}
+.web-spot-rules-columns{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:28px;align-items:start}
+.web-spot-rules-main{min-width:0}
+.web-spot-rules :is(h2){font-size:20px;line-height:1.3;margin:24px 0 16px}
+.web-spot-rules-main>.venue-rules{margin:0;padding:0;border:0;background:transparent}
+.web-spot-rules-main>.venue-rules h2{margin-top:0}
+.web-spot-rules-main p{font-size:16px;line-height:1.5;max-width:65ch;margin:0 0 16px}
+.web-spot-rules-main .web-spot-rules-note{font-size:14px;color:#526b87}
+.web-spot-rules-main .venue-access-strip{display:flex;flex-wrap:wrap;gap:16px;padding:16px 0;margin:24px 0;border-top:1px solid #d9e3ed;border-bottom:1px solid #d9e3ed;background:none}
+.web-spot-rules-main .venue-access-strip span{display:inline-flex;align-items:center;gap:8px;font-size:14px}
+.web-spot-rules .venue-access-details,.web-spot-rules .venue-about-details{margin:0 0 24px;padding:0;border:0;background:transparent}
+.web-spot-rules summary{font-size:16px;min-height:48px;cursor:pointer;align-content:center}
+.web-spot-rules .list-row{min-height:64px;padding:12px 0;border-bottom:1px solid #d9e3ed;border-radius:0;font-size:16px}
+.web-spot-rules .list-row small{font-size:14px;line-height:1.5}
+.web-spot-rules-context{min-width:0;padding:24px;background:#f5f8fc;border:1px solid #d9e3ed;border-radius:6px}
+.web-spot-rules-context .venue-cover{width:100%;height:160px;object-fit:cover;border-radius:6px;margin:0 0 16px}
+.web-spot-rules-context h2{margin:0 0 12px}
+.web-spot-rules-context .web-spot-rules-location,.web-spot-rules-context p{font-size:14px;line-height:1.5;color:#526b87;margin:0 0 16px}
+.web-spot-rules-links{border-top:1px solid #d9e3ed;padding-top:16px}
+.web-spot-rules-links>button.secondary,.web-spot-rules-links>button.primary{width:100%;min-height:48px;border-radius:6px;font-size:16px;margin:0 0 12px}
+.web-spot-rules-links>button.primary{margin:20px 0 0;background:#cd003c;color:white}
+.web-spot-rules :is(button,a,summary):focus-visible{outline:2px solid #007d8c;outline-offset:4px}
+.space-native:has(>.web-spot-rules){padding:0!important}
+.crays-screen-body:has(.web-spot-rules){bottom:0!important;padding-bottom:0!important}
+@media(max-width:1250px){.web-spot-rules-heading h1{font-size:24px!important}.web-spot-rules-columns{grid-template-columns:minmax(0,1fr) 280px;gap:24px}.web-spot-rules-context{padding:20px}}
+@media(max-width:1100px){.web-spot-rules-columns{grid-template-columns:minmax(0,1fr)}.web-spot-rules-context .venue-cover{height:160px;max-width:280px}}
+/* Explicit leaf sizes prevent inherited native row typography and icon blocks. */
+.web-spot-rules .list-row .row-copy strong{font-size:16px;line-height:1.4}
+.web-spot-rules .list-row .row-icon{width:24px;height:24px;border-radius:0;background:none}
+.web-spot-rules :is(.venue-access-details,.venue-about-details)>summary{font-size:16px;min-height:48px}
+.web-spot-rules .product-details{font-size:14px;overflow-wrap:anywhere}
+
+.web-spot-rules-links>button.web-spot-rules-photos{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:48px;padding:12px 0;margin:0;background:transparent;color:inherit;border:0;border-bottom:1px solid #d9e3ed;border-radius:0;text-align:left}
+
+.web-spot-rules :is(.venue-access-details,.venue-about-details)>summary{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.web-spot-rules :is(.venue-access-details,.venue-about-details)>summary svg{flex-shrink:0}
+.web-spot-rules :is(.venue-access-details,.venue-about-details)[open]>summary svg{transform:rotate(180deg)}

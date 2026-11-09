@@ -1,0 +1,7 @@
+import {ArrowLeft,ArrowRight,Clock} from '@phosphor-icons/react';
+import ChuckWorkspaceHeader from './ChuckWorkspaceHeader';
+import './chuck-screen1.css';
+type Props={onBack:()=>void;onAsk:()=>void;onTab:(tab:string)=>void;onApps:()=>void;problem:string};
+/** No canonical reminder port has been delivered yet. Never project a local
+ * preview record as a scheduled personal reminder or fabricate an empty list. */
+export default function WebChuckRemindersUnavailable(p:Props){return <main className="chuck-screen1"><div className="chuck-s1-body"><ChuckWorkspaceHeader selected="Tasks & planning" canonicalNavigation onTab={p.onTab} onApps={p.onApps}/><section className="chuck-s1-scroll" aria-label="Your reminders"><button className="chuck-s1-link" onClick={p.onBack}><ArrowLeft size={18}/>Back</button><h2>Your reminders</h2><p role="status">Your reminders are currently unavailable.</p><p>There is no confirmed schedule to show here. Your existing reminders have not been changed.</p>{p.problem&&<p role="alert">{p.problem}</p>}<button className="chuck-s1-primary" onClick={p.onAsk}>Discuss a reminder with Chuck<ArrowRight size={18}/></button></section></div><aside className="chuck-s1-side" aria-label="Plan with Chuck"><section><h2><Clock size={22}/>Plan with Chuck</h2><p>Prepare your request, including the date, time and time zone. Opening the conversation does not schedule a reminder.</p><p>You can review and edit the message before sending it.</p></section></aside></main>;}

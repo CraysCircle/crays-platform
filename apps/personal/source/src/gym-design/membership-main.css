@@ -1,0 +1,77 @@
+/* Membership main staging. Shared Club tokens, fonts and controllers stay unchanged. */
+.gym-membership-main{min-width:0;color:var(--web-ink)}
+.gym-membership-main[hidden]{display:none}
+.gym-design-page .gym-membership-sections{display:grid;gap:48px}
+.gym-design-page .gym-membership-sections>.club-adjustable-block{position:relative;min-width:0;height:auto}
+.gym-design-page .gym-membership-sections>.club-adjustable-block:nth-child(n+4)::before{content:"";position:absolute;inset:-24px 0 auto;border-top:1px solid var(--web-rule);pointer-events:none}
+.gym-design-page .gym-membership-sections>.club-adjustable-block>.club-adjustable-frame:has(>.club-adjustable-content[data-sized=false]),.gym-design-page .gym-membership-sections>.club-adjustable-block>.club-adjustable-frame>.club-adjustable-content[data-sized=false]{height:auto}
+.gym-design-page .gym-membership-main h1,.gym-design-page .gym-membership-main h2{font-size:26px;line-height:1.3;font-weight:700;letter-spacing:-.4px;margin:0}
+.gym-design-page .gym-membership-main h3{font-size:20px;line-height:1.35;font-weight:700;margin:0}
+.gym-design-page .gym-membership-main p{font-size:17px;line-height:1.55;color:var(--web-muted);margin:10px 0 0}
+.gym-design-page .gym-membership-main p.gym-membership-kicker{font-size:12px;line-height:18px;font-weight:700;letter-spacing:.08em;color:var(--web-accent);margin:0 0 12px}
+.gym-membership-main :is(button,select,input){font-family:inherit}
+article.gym-design-page.gym-design-page .gym-membership-main button.gym-design-action{font-size:16px;line-height:1.4;font-weight:500;min-height:44px;padding:10px 18px;border-radius:999px;gap:12px;white-space:normal;justify-content:center;margin:0}
+article.gym-design-page.gym-design-page .gym-membership-main button.gym-design-action.primary{min-height:48px;padding:12px 18px}
+.gym-membership-hero{height:400px;min-height:360px;max-height:400px;position:relative;display:flex;align-items:flex-end;overflow:hidden;border-radius:6px;background:var(--web-ink)}
+.gym-membership-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.gym-membership-hero>div{position:relative;max-width:520px;padding:36px 32px;background:#082638e8;border-radius:0 6px 0 0}
+.gym-design-page .gym-membership-hero h1,.gym-design-page .gym-membership-hero p,.gym-design-page .gym-membership-hero p.gym-membership-kicker{color:#fff}
+.gym-design-page .gym-membership-hero>div>p:not(.gym-membership-kicker){font-size:19px;line-height:29.45px;margin:20px 0 24px}
+.gym-design-page [data-sized=true]>.gym-membership-hero{height:100%;min-height:0;max-height:none;overflow:auto}
+.gym-membership-nav{display:flex;gap:24px;flex-wrap:wrap;border-bottom:1px solid var(--web-rule);min-height:48px}
+article.gym-design-page.gym-design-page .gym-membership-main .gym-membership-nav>button{font-size:15px;line-height:22.5px;font-weight:400;min-height:48px;padding:10px 4px;background:transparent;border:0;border-bottom:2px solid transparent;color:var(--web-muted)}
+article.gym-design-page.gym-design-page .gym-membership-main .gym-membership-nav>button[aria-current=location]{color:var(--web-ink);font-weight:700;border-bottom-color:var(--web-accent)}
+.gym-membership-status{display:flex;gap:20px;align-items:flex-start;padding:24px;border:1px solid #f6d9e4;border-radius:6px;background:#fceef3}
+.gym-membership-status>svg{flex-shrink:0;color:var(--web-accent)}
+.gym-membership-status h3{margin-top:12px!important}
+.gym-design-page .gym-membership-status p.gym-membership-local-notice{font-size:14px;line-height:1.5;color:var(--web-ink)}
+.gym-membership-card{padding:24px;border:1px solid var(--web-rule);border-radius:6px;min-width:0;background:#fff}
+.gym-membership-heading{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:24px}
+.gym-membership-heading>div:first-child>svg{float:left;margin:2px 16px 8px 0}
+.gym-membership-heading>div:first-child{min-width:0;flex:1}
+.gym-membership-details{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin:0;padding:24px;background:var(--web-soft,#f5f9fd);border:1px solid var(--web-rule);border-radius:6px}
+.gym-membership-details>div{min-width:0}
+.gym-membership-details dt{font-size:14px;line-height:1.5;color:var(--web-muted)}
+.gym-membership-details dd{font-size:16px;line-height:1.5;margin:8px 0 0}
+.gym-membership-plan-choice{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:28px;align-items:center}
+.gym-membership-plan-choice>.club-adjustable-block{min-width:0;height:auto}
+.gym-membership-plan-choice img{display:block;width:100%;height:280px;object-fit:cover;object-position:center;border-radius:6px}
+.gym-membership-icon-heading{display:flex;align-items:center;gap:16px}
+.gym-membership-icon-heading>svg{flex-shrink:0}
+.gym-membership-plan-choice label{display:block;font-size:15px;line-height:1.5;font-weight:700;margin-top:24px}
+.gym-design-page .gym-membership-main select{width:100%;min-height:48px;padding:12px;border:1px solid var(--web-rule);border-radius:6px;background:var(--web-soft,#f5f9fd);font-size:16px;line-height:1.5;color:var(--web-ink);margin-top:8px}
+.gym-membership-info{display:flex;gap:16px;align-items:flex-start;padding:18px;background:var(--web-soft,#f5f9fd);border:1px solid var(--web-rule);border-radius:6px;margin-top:20px}
+.gym-membership-info>svg{flex-shrink:0}
+.gym-design-page .gym-membership-info>p{font-size:14px;line-height:1.5;margin:0}
+.gym-membership-plan-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--web-soft,#f5f9fd);border:1px solid var(--web-rule);border-radius:6px;padding:20px;margin-top:24px}
+.gym-membership-plan-actions>svg{flex-shrink:0}
+.gym-membership-plan-actions>div{flex:1;min-width:200px}
+.gym-design-page .gym-membership-plan-actions p{font-size:14px;line-height:1.5}
+.gym-membership-document{display:flex;align-items:center;gap:16px;padding:20px 0;border-top:1px solid var(--web-rule)}
+.gym-membership-document:last-child{padding-bottom:0}
+.gym-membership-document>svg{flex-shrink:0}
+.gym-membership-document>div{flex:1;min-width:0}
+.gym-design-page .gym-membership-document p{font-size:14px;line-height:1.5}
+.gym-membership-filters{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.gym-membership-filters label{min-width:160px;flex:1}
+.gym-membership-filters select{margin:0!important}
+.gym-membership-invoice-table{overflow:auto;border:1px solid var(--web-rule);border-radius:6px}
+.gym-design-page .gym-membership-invoice-table table{width:100%;border-collapse:collapse;min-width:540px;text-align:left}
+.gym-design-page .gym-membership-invoice-table caption{padding:12px 16px;font-size:14px;line-height:1.5;color:var(--web-muted);text-align:left}
+.gym-design-page .gym-membership-invoice-table th{padding:14px 16px;font-size:14px;line-height:1.5;background:var(--web-soft,#f5f9fd);border-bottom:1px solid var(--web-rule)}
+.gym-design-page .gym-membership-invoice-table td{text-align:center;padding:28px 24px;border:0}
+.gym-membership-invoice-table td>svg{margin-bottom:12px}
+.gym-membership-invoice-table td .gym-design-action{margin-top:20px!important}
+.gym-membership-recovery{display:flex;align-items:center;gap:20px;flex-wrap:wrap;padding:24px;background:var(--web-soft,#f5f9fd);border:1px solid var(--web-rule);border-radius:6px;margin-top:24px}
+.gym-membership-recovery>svg{flex-shrink:0}
+.gym-membership-recovery>div{flex:1;min-width:220px}
+.gym-design-page .gym-membership-recovery p{font-size:14px;line-height:1.5}
+.gym-membership-main :is(button,select){cursor:pointer;transition:box-shadow 160ms ease,transform 160ms ease}
+.gym-membership-main button:not(:disabled):hover{box-shadow:0 3px 10px #08263814;transform:translateY(-1px)}
+article.gym-design-page.gym-design-page .gym-membership-main button.gym-design-action.primary:hover{background:var(--web-accent);color:#fff}
+.gym-membership-main button:disabled{cursor:not-allowed;opacity:.5}
+.gym-membership-main :is(button,select):focus-visible{outline:2px solid var(--web-ink);outline-offset:3px}
+.gym-membership-hero button:focus-visible{outline-color:#fff}
+.gym-membership-main [data-membership-section]{scroll-margin-top:24px}
+@media(max-width:1100px){.gym-membership-hero{display:flex;flex-direction:column;align-items:stretch;height:auto;min-height:0;max-height:none}.gym-membership-hero>img{position:relative;inset:auto;height:240px;object-position:right top}.gym-membership-hero>div{max-width:none;padding:24px 32px;background:var(--web-ink);border-radius:0}.gym-membership-plan-choice{grid-template-columns:1fr}.gym-membership-details{grid-template-columns:1fr 1fr}.gym-membership-document{flex-wrap:wrap}.gym-membership-document>div{min-width:200px}}
+@media(prefers-reduced-motion:reduce){.gym-membership-main :is(button,select){transition:none}.gym-membership-main button:not(:disabled):hover{transform:none}}

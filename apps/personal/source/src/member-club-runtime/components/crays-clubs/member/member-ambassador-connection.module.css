@@ -1,0 +1,4 @@
+/* Public recruitment retains an honest, visible connection notice. Private
+   denials and recovery views retain their existing presentation and authority. */
+.programmeNotice{margin:0 0 10px;padding:8px 12px;border:1px solid var(--member-line);border-radius:5px;background:var(--account-paper,#f7f8f8);color:var(--member-muted);font-family:var(--crays-font-avenir-book);font-size:14px;line-height:1.4}
+.programmeNotice p{margin:0}

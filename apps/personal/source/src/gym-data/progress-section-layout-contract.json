@@ -1,0 +1,231 @@
+{
+  "Overview": [
+    {
+      "id": "your-progress-in-perspective",
+      "label": "Your progress, in perspective.",
+      "indices": [
+        0
+      ]
+    },
+    {
+      "id": "your-recorded-trend",
+      "label": "Your recorded trend",
+      "indices": [
+        1
+      ]
+    },
+    {
+      "id": "behind-your-trend",
+      "label": "Behind your trend",
+      "indices": [
+        2
+      ]
+    },
+    {
+      "id": "make-room-for-your-next-goal",
+      "label": "Make room for your next goal.",
+      "indices": [
+        3
+      ]
+    },
+    {
+      "id": "the-moments-that-matter",
+      "label": "The moments that matter.",
+      "indices": [
+        4
+      ]
+    },
+    {
+      "id": "find-a-pattern-keep-the-context",
+      "label": "Find a pattern. Keep the context.",
+      "indices": [
+        5
+      ]
+    }
+  ],
+  "Goals": [
+    {
+      "id": "a-goal-that-means-something-to-you",
+      "label": "A goal that means something to you.",
+      "indices": [
+        0
+      ]
+    },
+    {
+      "id": "your-goals",
+      "label": "Your goals",
+      "indices": [
+        1
+      ]
+    },
+    {
+      "id": "make-your-goal-fit-your-life",
+      "label": "Make your goal fit your life.",
+      "indices": [
+        2
+      ]
+    }
+  ],
+  "Habits": [
+    {
+      "id": "small-steps-your-rhythm",
+      "label": "Small steps. Your rhythm.",
+      "indices": [
+        0
+      ]
+    },
+    {
+      "id": "your-confirmed-habits",
+      "label": "Your confirmed habits",
+      "indices": [
+        1,
+        2
+      ]
+    }
+  ],
+  "Measurements": [
+    {
+      "id": "a-moment-worth-recording",
+      "label": "A moment worth recording.",
+      "indices": [
+        0
+      ]
+    },
+    {
+      "id": "your-measurement-history",
+      "label": "Your measurement history",
+      "indices": [
+        1
+      ]
+    }
+  ],
+  "Gallery": [
+    {
+      "id": "your-story-kept-private",
+      "label": "Your story, kept private.",
+      "indices": [
+        0
+      ]
+    },
+    {
+      "id": "your-private-gallery",
+      "label": "Your private gallery",
+      "indices": [
+        1
+      ]
+    }
+  ],
+  "Weekly review": [
+    {
+      "id": "your-week-at-your-pace",
+      "label": "Your week, at your pace.",
+      "indices": [
+        0
+      ]
+    },
+    {
+      "id": "a-clear-view-of-the-evidence",
+      "label": "A clear view of the evidence.",
+      "indices": [
+        1
+      ]
+    },
+    {
+      "id": "look-back-decide-what-comes-next",
+      "label": "Look back. Decide what comes next.",
+      "indices": [
+        2
+      ]
+    },
+    {
+      "id": "choose-your-next-step",
+      "label": "Choose your next step.",
+      "indices": [
+        3
+      ]
+    },
+    {
+      "id": "your-review-history",
+      "label": "Your review history",
+      "indices": [
+        4
+      ]
+    }
+  ],
+  "Challenges": [
+    {
+      "id": "a-little-motivation-your-choice",
+      "label": "A little motivation. Your choice.",
+      "indices": [
+        0
+      ]
+    },
+    {
+      "id": "your-selected-challenge",
+      "label": "Your selected challenge",
+      "indices": [
+        1
+      ]
+    },
+    {
+      "id": "every-contribution-keeps-its-context",
+      "label": "Every contribution keeps its context.",
+      "indices": [
+        2
+      ]
+    },
+    {
+      "id": "something-does-not-add-up",
+      "label": "Something does not add up?",
+      "indices": [
+        3
+      ]
+    },
+    {
+      "id": "your-appeals",
+      "label": "Your appeals",
+      "indices": [
+        4
+      ]
+    }
+  ],
+  "Sharing": [
+    {
+      "id": "share-a-little-stay-in-control",
+      "label": "Share a little. Stay in control.",
+      "indices": [
+        0
+      ]
+    },
+    {
+      "id": "your-sharing-decisions",
+      "label": "Your sharing decisions",
+      "indices": [
+        1
+      ]
+    }
+  ],
+  "Privacy": [
+    {
+      "id": "your-progress-your-controls",
+      "label": "Your progress. Your controls.",
+      "indices": [
+        0
+      ]
+    },
+    {
+      "id": "your-requests",
+      "label": "Your requests",
+      "indices": [
+        1
+      ]
+    },
+    {
+      "id": "before-requesting-deletion",
+      "label": "Before requesting deletion",
+      "indices": [
+        2
+      ]
+    }
+  ]
+}

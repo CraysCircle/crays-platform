@@ -1,0 +1,2 @@
+import type {PublicMessagingIdentity,SignerOperation,NonexportingSignerProvider} from '../currentBoundSigner.mjs';
+export function openExistingFileSigner(options:{descriptorPath:string;binding:PublicMessagingIdentity;isCurrent:(binding:PublicMessagingIdentity)=>boolean;authorizeOperation:(binding:PublicMessagingIdentity,operation:SignerOperation)=>boolean;signal:AbortSignal}):NonexportingSignerProvider&{close():void};

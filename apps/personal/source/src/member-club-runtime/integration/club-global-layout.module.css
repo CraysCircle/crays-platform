@@ -1,0 +1,6 @@
+/* Scoped integration roles follow the host's existing web-design-tokens.css. */
+:global(.crays-club-member-global){min-width:0;font-family:Avenir,sans-serif;color:var(--web-ink,#082638);font-size:var(--web-body,17px);line-height:1.5}
+:global(.crays-club-member-global) :is(button,input,select,textarea){font-family:inherit}
+:global(.crays-club-member-global) :is(input:not([type=checkbox]):not([type=radio]),select,textarea){font-size:16px;line-height:1.5}
+:global(.crays-club-member-global) :is(button,a,input,select,textarea):focus-visible{outline:3px solid #007587;outline-offset:3px}
+:global(.crays-club-member-global) :is(button,a):not([hidden]){touch-action:manipulation}

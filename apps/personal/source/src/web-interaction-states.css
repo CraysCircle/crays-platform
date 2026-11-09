@@ -1,0 +1,18 @@
+/* Restore shared desktop feedback from the original CRAYS shell palette.
+   Hover changes fill only; no hover outline, shadow, border or layout movement. */
+@media (hover:hover){
+ body:has(.desktop-chrome) :is(
+  .context-scroll button,
+  [role="tablist"]>button,button[role="tab"],
+  .web-vifs-filters>button,.web-profile-tabs>button,
+  .spot-collection-scope>button,.spot-matching-purposes>button,
+  .web-commerce-filters>button,.activity-task-filters>button,
+  .feed-context-format button,.feed-context-view button,
+  [class$="-tabs"]>button,[class$="-filters"]>button,
+  [role="group"]>button[aria-pressed]
+ ):not(:disabled):not([aria-disabled="true"]):not([aria-pressed="true"]):not([aria-selected="true"]):not(.active):not(.selected):hover{background-color:#eaf0f5!important}
+ body:has(.desktop-chrome) .account-menu>button:not(:disabled):hover{background-color:#f7f9fb!important}
+ body:has(.desktop-chrome) .web-vifs-reader-header>div>button:not(:disabled):hover{background-color:#f0f4f7!important}
+}
+body:has(.desktop-chrome) :is([role="tablist"]>button,.context-scroll button,.web-vifs-filters>button,.spot-collection-scope>button):focus-visible{outline:2px solid #082638;outline-offset:3px}
+.scene-opening{padding:24px;color:#526780;font:16px/1.5 Crays,Avenir,sans-serif}.scene-opening p{margin:0}

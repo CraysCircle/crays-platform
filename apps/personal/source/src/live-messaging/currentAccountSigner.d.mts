@@ -1,0 +1,2 @@
+import type {CurrentBoundSigner,NonexportingSignerProvider,PublicMessagingIdentity,CurrentSignerBinding,SignerOperation} from './currentBoundSigner.mjs';
+export function openCurrentAccountSigner(options:{accountId:string;provider:NonexportingSignerProvider;isCurrent:(accountId:string)=>boolean;authorizeOperation:(binding:CurrentSignerBinding,operation:SignerOperation)=>boolean;signal:AbortSignal;fetcher?:typeof fetch}):Promise<Readonly<{identity:PublicMessagingIdentity;signer:CurrentBoundSigner;signal:AbortSignal;close():void}>>;

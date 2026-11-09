@@ -1,0 +1,449 @@
+[
+  {
+    "id": "C-NEW-1",
+    "segment": "guest",
+    "name": "CRAYS Insider",
+    "badgeName": "CRAYS Insider Badge",
+    "monthlyNetEur": 15.966387,
+    "annualNetEur": 159.663866,
+    "allowances": {
+      "aiUnits": 60,
+      "aiUnitName": "Chuck credit",
+      "aiDirectSupplierBudgetEur": 0.6,
+      "storageGB": 2,
+      "videoStoredMinutes": 0,
+      "videoDeliveredMinutes": 0,
+      "seats": 1,
+      "venues": 0,
+      "planningMAU": 1,
+      "requestsPerMonth": 10000,
+      "readsPerMonth": 10000,
+      "writesPerMonth": 1000
+    },
+    "benefits": [
+      "Distinct paid member badge while active; Founder/Lifetime awards stay separate",
+      "Participating venue member offers and member event access; exact inclusions visible before purchase",
+      "2GB original uploads; personal Chuck allocation; consent-based introductions"
+    ],
+    "overagePolicy": {
+      "default": "hard-stop new metered work; preserve draft and purchased access",
+      "warnings": [
+        0.7,
+        0.9,
+        1
+      ],
+      "topup": "exact prepaid quote or explicitly capped revocable mandate only",
+      "video": "no unbounded delivery guarantee; capacity reservation and creator alert needed before public growth",
+      "noDuplicateDebit": "one contract/payer ledger per action; staff seats do not multiply shared AI allowance"
+    },
+    "pricingProposal": true,
+    "existingLifetimeUnchanged": true,
+    "badgeId": "BADGE-PLAN-C-NEW-1",
+    "monthlyGrossDE19Eur": 19.0,
+    "annualGrossDE19Eur": 190.0,
+    "pricingVersion": "proposal-2026-10-18-v1",
+    "sourceHash": "7b9cbcde8e19bdedb28fc636ce97a166e091a57c6b046599eb1316034bb1f101",
+    "relayCommercialOptions": {},
+    "assistedSetupNetEur": 0
+  },
+  {
+    "id": "C-NEW-2",
+    "segment": "guest",
+    "name": "CRAYS Signature",
+    "badgeName": "CRAYS Signature Badge",
+    "monthlyNetEur": 41.176471,
+    "annualNetEur": 411.764706,
+    "allowances": {
+      "aiUnits": 200,
+      "aiUnitName": "Chuck credit",
+      "aiDirectSupplierBudgetEur": 2.0,
+      "storageGB": 10,
+      "videoStoredMinutes": 0,
+      "videoDeliveredMinutes": 0,
+      "seats": 1,
+      "venues": 0,
+      "planningMAU": 1,
+      "requestsPerMonth": 10000,
+      "readsPerMonth": 10000,
+      "writesPerMonth": 1000
+    },
+    "benefits": [
+      "All Insider benefits without second membership charge",
+      "Priority check-in and earlier booking windows ONLY where venue signs the benefit schedule",
+      "Optional disclosed business/social matching; privacy and current visit gates unchanged"
+    ],
+    "overagePolicy": {
+      "default": "hard-stop new metered work; preserve draft and purchased access",
+      "warnings": [
+        0.7,
+        0.9,
+        1
+      ],
+      "topup": "exact prepaid quote or explicitly capped revocable mandate only",
+      "video": "no unbounded delivery guarantee; capacity reservation and creator alert needed before public growth",
+      "noDuplicateDebit": "one contract/payer ledger per action; staff seats do not multiply shared AI allowance"
+    },
+    "pricingProposal": true,
+    "existingLifetimeUnchanged": true,
+    "badgeId": "BADGE-PLAN-C-NEW-2",
+    "monthlyGrossDE19Eur": 49.0,
+    "annualGrossDE19Eur": 490.0,
+    "pricingVersion": "proposal-2026-10-18-v1",
+    "sourceHash": "7b9cbcde8e19bdedb28fc636ce97a166e091a57c6b046599eb1316034bb1f101",
+    "relayCommercialOptions": {},
+    "assistedSetupNetEur": 0
+  },
+  {
+    "id": "C-NEW-3",
+    "segment": "guest",
+    "name": "CRAYS Privé",
+    "badgeName": "CRAYS Privé Badge",
+    "monthlyNetEur": 125.210084,
+    "annualNetEur": 1252.10084,
+    "allowances": {
+      "aiUnits": 800,
+      "aiUnitName": "Chuck credit",
+      "aiDirectSupplierBudgetEur": 8.0,
+      "storageGB": 25,
+      "videoStoredMinutes": 0,
+      "videoDeliveredMinutes": 0,
+      "seats": 1,
+      "venues": 0,
+      "planningMAU": 1,
+      "requestsPerMonth": 10000,
+      "readsPerMonth": 10000,
+      "writesPerMonth": 1000
+    },
+    "benefits": [
+      "All Signature benefits without second membership charge",
+      "Up to15 minutes/month human concierge assistance, included; no unbounded booking guarantee",
+      "Named member experiences and priority assistance only from exact contracted benefit schedule"
+    ],
+    "overagePolicy": {
+      "default": "hard-stop new metered work; preserve draft and purchased access",
+      "warnings": [
+        0.7,
+        0.9,
+        1
+      ],
+      "topup": "exact prepaid quote or explicitly capped revocable mandate only",
+      "video": "no unbounded delivery guarantee; capacity reservation and creator alert needed before public growth",
+      "noDuplicateDebit": "one contract/payer ledger per action; staff seats do not multiply shared AI allowance"
+    },
+    "pricingProposal": true,
+    "existingLifetimeUnchanged": true,
+    "badgeId": "BADGE-PLAN-C-NEW-3",
+    "monthlyGrossDE19Eur": 149.0,
+    "annualGrossDE19Eur": 1490.0,
+    "pricingVersion": "proposal-2026-10-18-v1",
+    "sourceHash": "7b9cbcde8e19bdedb28fc636ce97a166e091a57c6b046599eb1316034bb1f101",
+    "relayCommercialOptions": {},
+    "assistedSetupNetEur": 0
+  },
+  {
+    "id": "R-NEW-1",
+    "segment": "creator",
+    "name": "Creator Start",
+    "badgeName": "Creator Start Badge",
+    "monthlyNetEur": 69,
+    "annualNetEur": 690,
+    "allowances": {
+      "aiUnits": 300,
+      "aiUnitName": "Chuck credit",
+      "aiDirectSupplierBudgetEur": 3.0,
+      "storageGB": 50,
+      "videoStoredMinutes": 100,
+      "videoDeliveredMinutes": 1000,
+      "seats": 1,
+      "venues": 1,
+      "planningMAU": 1000,
+      "requestsPerMonth": 300000,
+      "readsPerMonth": 200000,
+      "writesPerMonth": 20000
+    },
+    "benefits": [
+      "Own logically isolated relay endpoint and own Blossom endpoint/storage allocation; platform-managed shared physical hosting",
+      "Own Creator profile/linkhub, manual posts/stories/reels/commerce, authorised agent assistance",
+      "0% CRAYS digital-content sale commission; external payment/network charges remain itemised",
+      "No member private contacts, venue grants or identity verification merely from purchase"
+    ],
+    "overagePolicy": {
+      "default": "hard-stop new metered work; preserve draft and purchased access",
+      "warnings": [
+        0.7,
+        0.9,
+        1
+      ],
+      "topup": "exact prepaid quote or explicitly capped revocable mandate only",
+      "video": "no unbounded delivery guarantee; capacity reservation and creator alert needed before public growth",
+      "noDuplicateDebit": "one contract/payer ledger per action; staff seats do not multiply shared AI allowance"
+    },
+    "pricingProposal": true,
+    "existingLifetimeUnchanged": true,
+    "badgeId": "BADGE-PLAN-R-NEW-1",
+    "monthlyGrossDE19Eur": 82.11,
+    "annualGrossDE19Eur": 821.1,
+    "pricingVersion": "proposal-2026-10-18-v1",
+    "sourceHash": "7b9cbcde8e19bdedb28fc636ce97a166e091a57c6b046599eb1316034bb1f101",
+    "relayCommercialOptions": {},
+    "assistedSetupNetEur": 0
+  },
+  {
+    "id": "R-NEW-2",
+    "segment": "creator",
+    "name": "Creator Studio",
+    "badgeName": "Creator Studio Badge",
+    "monthlyNetEur": 199,
+    "annualNetEur": 1990,
+    "allowances": {
+      "aiUnits": 800,
+      "aiUnitName": "Chuck credit",
+      "aiDirectSupplierBudgetEur": 8.0,
+      "storageGB": 250,
+      "videoStoredMinutes": 500,
+      "videoDeliveredMinutes": 10000,
+      "seats": 3,
+      "venues": 1,
+      "planningMAU": 10000,
+      "requestsPerMonth": 3000000,
+      "readsPerMonth": 2000000,
+      "writesPerMonth": 200000
+    },
+    "benefits": [
+      "Own logically isolated relay endpoint and own Blossom endpoint/storage allocation; platform-managed shared physical hosting",
+      "Own Creator profile/linkhub, manual posts/stories/reels/commerce, authorised agent assistance",
+      "0% CRAYS digital-content sale commission; external payment/network charges remain itemised",
+      "No member private contacts, venue grants or identity verification merely from purchase"
+    ],
+    "overagePolicy": {
+      "default": "hard-stop new metered work; preserve draft and purchased access",
+      "warnings": [
+        0.7,
+        0.9,
+        1
+      ],
+      "topup": "exact prepaid quote or explicitly capped revocable mandate only",
+      "video": "no unbounded delivery guarantee; capacity reservation and creator alert needed before public growth",
+      "noDuplicateDebit": "one contract/payer ledger per action; staff seats do not multiply shared AI allowance"
+    },
+    "pricingProposal": true,
+    "existingLifetimeUnchanged": true,
+    "badgeId": "BADGE-PLAN-R-NEW-2",
+    "monthlyGrossDE19Eur": 236.81,
+    "annualGrossDE19Eur": 2368.1,
+    "pricingVersion": "proposal-2026-10-18-v1",
+    "sourceHash": "7b9cbcde8e19bdedb28fc636ce97a166e091a57c6b046599eb1316034bb1f101",
+    "relayCommercialOptions": {},
+    "assistedSetupNetEur": 0
+  },
+  {
+    "id": "R-NEW-3",
+    "segment": "creator",
+    "name": "Creator Label",
+    "badgeName": "Creator Label Badge",
+    "monthlyNetEur": 799,
+    "annualNetEur": 7990,
+    "allowances": {
+      "aiUnits": 2500,
+      "aiUnitName": "Chuck credit",
+      "aiDirectSupplierBudgetEur": 25.0,
+      "storageGB": 1000,
+      "videoStoredMinutes": 2000,
+      "videoDeliveredMinutes": 50000,
+      "seats": 10,
+      "venues": 1,
+      "planningMAU": 50000,
+      "requestsPerMonth": 15000000,
+      "readsPerMonth": 10000000,
+      "writesPerMonth": 1000000
+    },
+    "benefits": [
+      "Own logically isolated relay endpoint and own Blossom endpoint/storage allocation; platform-managed shared physical hosting",
+      "Own Creator profile/linkhub, manual posts/stories/reels/commerce, authorised agent assistance",
+      "0% CRAYS digital-content sale commission; external payment/network charges remain itemised",
+      "No member private contacts, venue grants or identity verification merely from purchase"
+    ],
+    "overagePolicy": {
+      "default": "hard-stop new metered work; preserve draft and purchased access",
+      "warnings": [
+        0.7,
+        0.9,
+        1
+      ],
+      "topup": "exact prepaid quote or explicitly capped revocable mandate only",
+      "video": "no unbounded delivery guarantee; capacity reservation and creator alert needed before public growth",
+      "noDuplicateDebit": "one contract/payer ledger per action; staff seats do not multiply shared AI allowance"
+    },
+    "pricingProposal": true,
+    "existingLifetimeUnchanged": true,
+    "badgeId": "BADGE-PLAN-R-NEW-3",
+    "monthlyGrossDE19Eur": 950.81,
+    "annualGrossDE19Eur": 9508.1,
+    "pricingVersion": "proposal-2026-10-18-v1",
+    "sourceHash": "7b9cbcde8e19bdedb28fc636ce97a166e091a57c6b046599eb1316034bb1f101",
+    "relayCommercialOptions": {},
+    "assistedSetupNetEur": 0
+  },
+  {
+    "id": "V-NEW-1",
+    "segment": "venue",
+    "name": "Spot Connect",
+    "badgeName": "Spot Connect Badge",
+    "monthlyNetEur": 249,
+    "annualNetEur": 2490,
+    "allowances": {
+      "aiUnits": 2000,
+      "aiUnitName": "Chuck credit",
+      "aiDirectSupplierBudgetEur": 20.0,
+      "storageGB": 100,
+      "videoStoredMinutes": 100,
+      "videoDeliveredMinutes": 5000,
+      "seats": 3,
+      "venues": 1,
+      "planningMAU": 500,
+      "requestsPerMonth": 150000,
+      "readsPerMonth": 100000,
+      "writesPerMonth": 10000
+    },
+    "benefits": [
+      "Venue organisation/profile setup plus managed relay OR bring-your-own relay connection",
+      "Staff roles, own scoped moderation, venue/group/global publishing, configured services/F&B/events/bookings",
+      "Organisation Chuck pool shared only with explicitly authorised staff; no guest personal-memory access",
+      "No automatic opening, payment activation, physical admission or regulatory verification from subscription"
+    ],
+    "overagePolicy": {
+      "default": "hard-stop new metered work; preserve draft and purchased access",
+      "warnings": [
+        0.7,
+        0.9,
+        1
+      ],
+      "topup": "exact prepaid quote or explicitly capped revocable mandate only",
+      "video": "no unbounded delivery guarantee; capacity reservation and creator alert needed before public growth",
+      "noDuplicateDebit": "one contract/payer ledger per action; staff seats do not multiply shared AI allowance"
+    },
+    "pricingProposal": true,
+    "existingLifetimeUnchanged": true,
+    "badgeId": "BADGE-PLAN-V-NEW-1",
+    "monthlyGrossDE19Eur": 296.31,
+    "annualGrossDE19Eur": 2963.1,
+    "pricingVersion": "proposal-2026-10-18-v1",
+    "sourceHash": "7b9cbcde8e19bdedb28fc636ce97a166e091a57c6b046599eb1316034bb1f101",
+    "relayCommercialOptions": {
+      "managedRelayAdditionalNetEur": 6,
+      "managedTotalNetEur": 249,
+      "BYOTotalNetEur": 243,
+      "BYOAnnualNetEur": 2430,
+      "managedAnnualNetEur": 2490
+    },
+    "assistedSetupNetEur": 249
+  },
+  {
+    "id": "V-NEW-2",
+    "segment": "venue",
+    "name": "Spot Host",
+    "badgeName": "Spot Host Badge",
+    "monthlyNetEur": 699,
+    "annualNetEur": 6990,
+    "allowances": {
+      "aiUnits": 6000,
+      "aiUnitName": "Chuck credit",
+      "aiDirectSupplierBudgetEur": 60.0,
+      "storageGB": 500,
+      "videoStoredMinutes": 500,
+      "videoDeliveredMinutes": 20000,
+      "seats": 10,
+      "venues": 3,
+      "planningMAU": 2500,
+      "requestsPerMonth": 750000,
+      "readsPerMonth": 500000,
+      "writesPerMonth": 50000
+    },
+    "benefits": [
+      "Venue organisation/profile setup plus managed relay OR bring-your-own relay connection",
+      "Staff roles, own scoped moderation, venue/group/global publishing, configured services/F&B/events/bookings",
+      "Organisation Chuck pool shared only with explicitly authorised staff; no guest personal-memory access",
+      "No automatic opening, payment activation, physical admission or regulatory verification from subscription"
+    ],
+    "overagePolicy": {
+      "default": "hard-stop new metered work; preserve draft and purchased access",
+      "warnings": [
+        0.7,
+        0.9,
+        1
+      ],
+      "topup": "exact prepaid quote or explicitly capped revocable mandate only",
+      "video": "no unbounded delivery guarantee; capacity reservation and creator alert needed before public growth",
+      "noDuplicateDebit": "one contract/payer ledger per action; staff seats do not multiply shared AI allowance"
+    },
+    "pricingProposal": true,
+    "existingLifetimeUnchanged": true,
+    "badgeId": "BADGE-PLAN-V-NEW-2",
+    "monthlyGrossDE19Eur": 831.81,
+    "annualGrossDE19Eur": 8318.1,
+    "pricingVersion": "proposal-2026-10-18-v1",
+    "sourceHash": "7b9cbcde8e19bdedb28fc636ce97a166e091a57c6b046599eb1316034bb1f101",
+    "relayCommercialOptions": {
+      "managedRelayAdditionalNetEur": 15,
+      "managedTotalNetEur": 699,
+      "BYOTotalNetEur": 684,
+      "BYOAnnualNetEur": 6840,
+      "managedAnnualNetEur": 6990
+    },
+    "assistedSetupNetEur": 699
+  },
+  {
+    "id": "V-NEW-3",
+    "segment": "venue",
+    "name": "Spot Collective",
+    "badgeName": "Spot Collective Badge",
+    "monthlyNetEur": 2499,
+    "annualNetEur": 24990,
+    "allowances": {
+      "aiUnits": 18000,
+      "aiUnitName": "Chuck credit",
+      "aiDirectSupplierBudgetEur": 180.0,
+      "storageGB": 2000,
+      "videoStoredMinutes": 2000,
+      "videoDeliveredMinutes": 100000,
+      "seats": 30,
+      "venues": 10,
+      "planningMAU": 10000,
+      "requestsPerMonth": 3000000,
+      "readsPerMonth": 2000000,
+      "writesPerMonth": 200000
+    },
+    "benefits": [
+      "Venue organisation/profile setup plus managed relay OR bring-your-own relay connection",
+      "Staff roles, own scoped moderation, venue/group/global publishing, configured services/F&B/events/bookings",
+      "Organisation Chuck pool shared only with explicitly authorised staff; no guest personal-memory access",
+      "No automatic opening, payment activation, physical admission or regulatory verification from subscription"
+    ],
+    "overagePolicy": {
+      "default": "hard-stop new metered work; preserve draft and purchased access",
+      "warnings": [
+        0.7,
+        0.9,
+        1
+      ],
+      "topup": "exact prepaid quote or explicitly capped revocable mandate only",
+      "video": "no unbounded delivery guarantee; capacity reservation and creator alert needed before public growth",
+      "noDuplicateDebit": "one contract/payer ledger per action; staff seats do not multiply shared AI allowance"
+    },
+    "pricingProposal": true,
+    "existingLifetimeUnchanged": true,
+    "badgeId": "BADGE-PLAN-V-NEW-3",
+    "monthlyGrossDE19Eur": 2973.81,
+    "annualGrossDE19Eur": 29738.1,
+    "pricingVersion": "proposal-2026-10-18-v1",
+    "sourceHash": "7b9cbcde8e19bdedb28fc636ce97a166e091a57c6b046599eb1316034bb1f101",
+    "relayCommercialOptions": {
+      "managedRelayAdditionalNetEur": 50,
+      "managedTotalNetEur": 2499,
+      "BYOTotalNetEur": 2449,
+      "BYOAnnualNetEur": 24490,
+      "managedAnnualNetEur": 24990
+    },
+    "assistedSetupNetEur": 1999
+  }
+]

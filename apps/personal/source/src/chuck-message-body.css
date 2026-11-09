@@ -1,0 +1,21 @@
+[data-live-chuck-conversation=true] .chuck-message-body{min-width:0;max-width:100%;overflow-wrap:anywhere;font:inherit}
+[data-live-chuck-conversation=true] .chuck-message-body-plain{white-space:pre-wrap}
+[data-live-chuck-conversation=true] .chuck-message-body>:first-child{margin-top:0}
+[data-live-chuck-conversation=true] .chuck-message-body>:last-child{margin-bottom:0}
+[data-live-chuck-conversation=true] .chuck-message-body p{margin:0 0 .7em}
+[data-live-chuck-conversation=true] .chuck-message-body :is(h1,h2,h3,h4,h5,h6){font-size:1.05em;line-height:1.4;margin:1em 0 .4em;font-weight:700}
+[data-live-chuck-conversation=true] .chuck-message-body :is(ul,ol){padding-left:1.4em;margin:.5em 0 .8em;list-style-position:outside}
+[data-live-chuck-conversation=true] .chuck-message-body ul{list-style-type:disc}
+[data-live-chuck-conversation=true] .chuck-message-body ol{list-style-type:decimal}
+[data-live-chuck-conversation=true] .chuck-message-body li+li{margin-top:.3em}
+[data-live-chuck-conversation=true] .chuck-message-body pre{max-width:100%;overflow:auto;padding:10px;background:#edf2f5;border-radius:8px;white-space:pre}
+[data-live-chuck-conversation=true] .chuck-message-body code{font-size:.9em;white-space:pre-wrap}
+[data-live-chuck-conversation=true] .chuck-message-body pre code{white-space:pre}
+[data-live-chuck-conversation=true] .chuck-message-body blockquote{margin:.7em 0;padding-left:12px;border-left:2px solid #bccbd6;color:#486174}
+[data-live-chuck-conversation=true] .chuck-message-body a{text-decoration:underline;text-underline-offset:3px;color:inherit}
+[data-live-chuck-conversation=true] .chuck-message-table{max-width:100%;overflow:auto}
+[data-live-chuck-conversation=true] .chuck-message-table table{border-collapse:collapse;font-size:inherit}
+[data-live-chuck-conversation=true] .chuck-message-table :is(th,td){border:1px solid #dce5ed;padding:6px 8px;text-align:left}
+
+/* Keep short table labels readable beside long values; wide tables scroll inside the response. */
+[data-live-chuck-conversation=true] .chuck-message-table :is(th,td){min-width:10ch}

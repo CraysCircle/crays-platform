@@ -1,0 +1,4 @@
+import type {ConversationDraft,ConversationDraftBinding} from './conversationDraft.mjs';
+import type {ConversationForwardingPort} from './conversationForward.mjs';
+export type ParentForwardTarget=Readonly<ConversationDraftBinding&{title:string;version:string}>;
+export function createParentDraftForwardingPort(options:{accountId:string;signal:AbortSignal;catalog:{getSnapshot():Readonly<{available:boolean;targets:readonly ParentForwardTarget[]}>;subscribe(fn:()=>void):()=>void};currentSource:()=>ConversationDraftBinding|null;authorize:(binding:ConversationDraftBinding,action:'source'|'destination'|'open')=>boolean;getComposer:(target:ParentForwardTarget)=>ConversationDraft;prepareComposer?:(target:ParentForwardTarget,signal:AbortSignal)=>Promise<void>;attachmentState:(target:ParentForwardTarget)=>Readonly<{version:string;hasAttachments:boolean}>;open:(originalConversationId:string)=>void}):Readonly<{port:ConversationForwardingPort;close:()=>void}>;

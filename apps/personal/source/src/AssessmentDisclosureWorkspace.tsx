@@ -1,0 +1,40 @@
+import {useState} from 'react';
+import {ShieldCheck,LockKey,User,Check} from '@phosphor-icons/react';
+import {MobileScroll,useKeyboard} from './mobile';
+import {VoiceInput} from './VoiceInput';
+import {usePreviewExpiry} from './usePreviewExpiry';
+import type {ProductWorld,ActionContext,ActionResult} from './productModel';
+import {assessmentDisclosureFields,assessmentDisclosurePurposes,assessmentDisclosureContact,assessmentDisclosureReview,outgoingAssessmentDisclosures,sharedAssessmentInsights,type AssessmentDisclosurePurpose,type AssessmentDisclosureField} from './assessmentDisclosure';
+import './assessment-disclosure.css';
+type Run=(op:string,data:Record<string,string>,ctx:ActionContext)=>ActionResult;
+const date=(v:number)=>Number.isFinite(v)?new Intl.DateTimeFormat('en-GB',{dateStyle:'medium',timeStyle:'short',timeZone:'UTC'}).format(v)+' · UTC':'Not set';
+const nextDay=()=>new Date(Date.now()+86400000).toISOString().slice(0,16);
+function earliest(values:number[]){const future=values.filter(v=>Number.isFinite(v)&&v>Date.now());return future.length?Math.min(...future):NaN;}
+
+/** Embedded in the existing assessment Permissions tab; reuses its canonical commands. */
+export function AssessmentDisclosureWorkspace({world,assessmentId,run}:{world:ProductWorld;assessmentId:string;run:Run}){
+ const keyboard=useKeyboard(),[recipient,setRecipient]=useState(''),[purpose,setPurpose]=useState<AssessmentDisclosurePurpose>('Socializing'),[fields,setFields]=useState<AssessmentDisclosureField[]>([]),[expires,setExpires]=useState(nextDay),[approved,setApproved]=useState(''),[message,setMessage]=useState(''),[error,setError]=useState(false);
+ const records=world.objects.filter(o=>o.id===assessmentId&&o.owner===world.owner&&o.kind==='assessment'),r=records.length===1?records[0]:undefined,contacts=world.people.filter(p=>assessmentDisclosureContact(world,p.id));
+ const grants=outgoingAssessmentDisclosures(world,assessmentId);let review='',problem='';const time=Date.parse(`${expires}:00.000Z`);let expiry='';try{if(Number.isFinite(time))expiry=new Date(time).toISOString();review=assessmentDisclosureReview(world,assessmentId,recipient,purpose,fields,expiry);}catch(e){problem=e instanceof Error?e.message:'Review this sharing choice.';}
+ usePreviewExpiry(earliest([...grants.map(g=>g.expiresAt),time]));
+ const feedback=(result:ActionResult)=>{setMessage(result.message);setError(!result.ok);setApproved('');};
+ if(!world.identity.signedIn||!r)return <section className="assessment-disclosure"><h2>Choose your private result first.</h2><p>No assessment is shared without its original and your explicit permission.</p></section>;
+ return <section className="assessment-disclosure" aria-label="Selective assessment sharing"><div className="assessment-disclosure-heading"><ShieldCheck size={25}/><h2>Share only what you choose.</h2></div><p>Choose one person, one purpose and an expiry. Matching permission stays separate.</p>
+ <label className="assessment-disclosure-field"><span>Share with</span><select aria-label="Assessment sharing recipient" value={recipient} onChange={e=>{setRecipient(e.target.value);setApproved('');}}><option value="">Choose a current VIF</option>{contacts.map(p=><option key={p.id} value={p.id}>{p.name}</option>)}</select></label>{!contacts.length&&<p className="assessment-disclosure-caption">There is no mutually accepted VIF available for sharing.</p>}
+ <label className="assessment-disclosure-field"><span>For this purpose</span><select aria-label="Assessment disclosure purpose" value={purpose} onChange={e=>{setPurpose(e.target.value as AssessmentDisclosurePurpose);setApproved('');}}>{assessmentDisclosurePurposes.map(p=><option key={p}>{p}</option>)}</select></label>
+ <fieldset className="assessment-disclosure-fields"><legend>Selected parts</legend>{assessmentDisclosureFields.map(f=><label className="assessment-disclosure-check" key={f.id}><input type="checkbox" checked={fields.includes(f.id)} onChange={e=>{setFields(e.target.checked?[...fields,f.id]:fields.filter(id=>id!==f.id));setApproved('');}}/><span><strong>{f.label}</strong>{fields.includes(f.id)&&<small>{typeof r[f.id]==='string'?String(r[f.id]):'Not supplied'}</small>}</span></label>)}</fieldset>
+ <label className="assessment-disclosure-field"><span>Permission ends · UTC</span><VoiceInput type="datetime-local" aria-label="Assessment permission expiry UTC" value={expires} onChange={e=>{setExpires(e.target.value);setApproved('');}} onBlur={()=>keyboard.hide()}/></label>
+ <label className="assessment-disclosure-check"><input type="checkbox" disabled={!review} checked={!!review&&approved===review} onChange={e=>setApproved(e.target.checked?review:'')}/><span>I reviewed the person, purpose, selected values and expiry.</span></label>
+ <button className="primary" disabled={!review||approved!==review} onClick={()=>{keyboard.hide();feedback(run('complete.assessment.share',{recipient,purpose,fields:JSON.stringify(fields),expires:expiry,reviewSnapshot:review,approved:'Yes'},{featureId:'AL-089',objectId:assessmentId}));}}>Share selected parts<Check size={18}/></button>{problem&&<p className="assessment-disclosure-caption">{problem}</p>}
+ {grants.length>0&&<section className="assessment-disclosure-history"><h3>Your sharing permissions</h3>{grants.map(g=><article key={g.id}><strong>{world.people.find(p=>p.id===g.recipient)?.name||'Original recipient'}</strong><p>{g.purpose} · {g.status==='active'?'Active':g.status==='revoked'?'Revoked':g.status==='expired'?'Expired':'Needs review'}</p><small>{g.fields.join(', ')||'Selected parts need review'}<br/>Until {date(g.expiresAt)}</small>{g.canRevoke&&<button className="secondary" onClick={()=>{keyboard.hide();feedback(run('complete.assessment.unshare',{}, {featureId:'AL-089',objectId:g.id}));}}>Revoke future access</button>}</article>)}</section>}
+ {message&&<p className={error?'notice':'assessment-disclosure-feedback'} role={error?'alert':'status'}>{message}</p>}<p className="assessment-disclosure-caption">This shares a personal perspective, not a diagnosis or compatibility score. Revocation stops future access; information someone already saw cannot be recalled.</p>
+ </section>;
+}
+
+export function SharedAssessmentInsightsWorkspace({world,personId,onProfile}:{world:ProductWorld;personId:string;onProfile?:()=>void}){
+ const [purpose,setPurpose]=useState<AssessmentDisclosurePurpose>('Socializing');const people=world.people.filter(p=>p.id===personId),person=people.length===1?people[0]:undefined,rows=sharedAssessmentInsights(world,personId,purpose);
+ usePreviewExpiry(earliest(rows.map(r=>r.expiresAt)));
+ return <MobileScroll><main className="detail-content assessment-disclosure"><h1>{person?`${person.name}’s shared insights`:'Shared insights'}</h1><p>Only the parts this person permits for your selected purpose are shown.</p><label className="assessment-disclosure-field"><span>For this purpose</span><select aria-label="Shared insights purpose" value={purpose} onChange={e=>setPurpose(e.target.value as AssessmentDisclosurePurpose)}>{assessmentDisclosurePurposes.map(p=><option key={p}>{p}</option>)}</select></label>
+ {rows.length?rows.map(row=><article className="assessment-disclosure-incoming" key={row.grantId}><div className="assessment-disclosure-heading"><ShieldCheck size={23}/><h2>Shared with you</h2></div><dl>{row.fields.map(f=><div key={f.id}><dt>{f.label}</dt><dd>{f.value}</dd></div>)}</dl><small>{row.purpose} · until {date(row.expiresAt)}</small><p className="assessment-disclosure-caption">Personal perspective · not a clinical assessment or a judgement about this person.</p></article>):<section className="assessment-disclosure-empty"><LockKey size={30}/><h2>No current insights shared for {purpose.toLowerCase()}.</h2><p>A permission may be absent, expired, revoked or no longer match the original result. A connection or matching suggestion does not grant access.</p></section>}
+ {person&&onProfile&&<button className="secondary" onClick={onProfile}><User size={19}/>View profile</button>}</main></MobileScroll>;
+}

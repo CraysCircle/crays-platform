@@ -1,0 +1,8 @@
+.web-context-link{color:inherit;font:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em;cursor:pointer}
+.web-context-link:hover{color:#007f91}
+.web-context-link:focus-visible{outline:2px solid #007f91;outline-offset:3px;border-radius:2px}
+
+.detail-content.web-route-unavailable p{font:18px/1.5 Crays,Avenir,sans-serif}
+.detail-content.web-route-unavailable h1{font-size:40px;line-height:1.2}
+
+.detail-content.web-route-unavailable .web-context-link{display:inline-flex;align-items:center;min-height:48px}

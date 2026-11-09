@@ -1,0 +1,67 @@
+import {useEffect,useMemo,useRef,useState,type ReactNode} from 'react';
+import {ArrowLeft,ArrowRight,CalendarBlank} from '@phosphor-icons/react';
+import {usePlanningData} from './usePlanningData';
+import {useTrainingData} from './useTrainingData';
+import {usePlanningCommands} from './usePlanningCommands';
+import type {GymAccess} from './client/gym-access';
+const readLabel=(value:string)=>value.toLowerCase().replaceAll('_',' ').replace(/^./,c=>c.toUpperCase());
+function validTimezone(value:unknown):value is string{if(typeof value!=='string'||!value)return false;try{new Intl.DateTimeFormat('en-GB',{timeZone:value}).format();return true;}catch{return false;}}
+function localDate(timezone:string){const parts=new Intl.DateTimeFormat('en-CA',{timeZone:timezone,year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());const get=(type:string)=>parts.find(item=>item.type===type)?.value;return `${get('year')}-${get('month')}-${get('day')}`;}
+function addDays(date:string,days:number){const value=new Date(date+'T12:00:00Z');value.setUTCDate(value.getUTCDate()+days);return value.toISOString().slice(0,10);}
+/** Five original planning reads and the original stored profile timezone. No
+ * illustrative programmes, default timezone or assumed save result. */
+export function useOriginalTrainingPlanning(active:boolean,access:GymAccess|null,onInvalidated:()=>void){
+ const [revision,setRevision]=useState(0);
+ const profile=useTrainingData(active,access,{domain:'profile'},onInvalidated);
+ const originalProfile=profile.view?.domain==='profile'&&profile.view.model.state==='READY'?profile.view.model.profile:null;
+ const timezone=validTimezone(originalProfile?.timezone)?originalProfile.timezone:null;
+ const owner=active&&access?.kind==='ready'?access.ownerKey:'';
+ const [held,setHeld]=useState({owner:'',week:0,day:''});const selection=held.owner===owner?held:{owner,week:0,day:''};
+ const today=useMemo(()=>timezone?localDate(timezone):null,[timezone,owner]);
+ const monday=today?addDays(today,-((new Date(today+'T12:00:00Z').getUTCDay()+6)%7)+selection.week*7):null;
+ const query=new URLSearchParams(monday?{from:monday,to:addDays(monday,6)}:{});
+ const templates=usePlanningData(active,access,'templates',new URLSearchParams(),onInvalidated,revision);
+ const programs=usePlanningData(active,access,'programs',new URLSearchParams(),onInvalidated,revision);
+ const recommendations=usePlanningData(active,access,'recommendations',new URLSearchParams(),onInvalidated,revision);
+ const substitutions=usePlanningData(active,access,'substitutions',new URLSearchParams(),onInvalidated,revision);
+ const calendar=usePlanningData(active&&Boolean(monday),access,'calendar',query,onInvalidated,revision);
+ const commands=usePlanningCommands(active?access:null,onInvalidated,()=>setRevision(value=>value+1));
+ const selectedDay=selection.day&&monday&&selection.day>=monday&&selection.day<=addDays(monday,6)?selection.day:selection.week===0?today:monday;
+ return {commands,access,profile,templates,programs,recommendations,substitutions,calendar,timezone,today,monday,selectedDay,owner,changeWeek:(delta:number)=>setHeld({...selection,owner,week:selection.week+delta,day:''}),chooseDay:(day:string)=>setHeld({...selection,owner,day}),todayWeek:()=>setHeld({owner,week:0,day:''})};
+}
+type Data=ReturnType<typeof useOriginalTrainingPlanning>;
+function Action({children,onClick,disabled=false}:{children:ReactNode;onClick?:()=>void;disabled?:boolean}){return <button type="button" className="gym-design-action" disabled={disabled} onClick={onClick}>{children}<ArrowRight size={18}/></button>}
+function Status({state,access,onRetry}:{state:Data['templates']|Data['profile'];access:GymAccess|null;onRetry:()=>void}){const message=state.phase==='loading'?'Loading saved planning records…':state.phase==='error'?state.error==='PERMISSION'?'These records are not available with your current permissions.':state.error==='SESSION'?'Your current CRAYS session must be checked.':'These planning records could not be loaded.':state.phase==='access'?access?.kind==='denied'?'Planning records are not available with your current Gym access.':access?.kind==='signed_out'?'Sign in through your existing CRAYS account to review planning records.':'Checking your current Gym access…':null;return message?<p role={state.phase==='error'?'alert':'status'}>{message} {state.phase!=='loading'&&<Action onClick={onRetry}>Reload records</Action>}</p>:null;}
+function PlanningExplanation({value}:{value:unknown}){
+ if(typeof value==='string')return <p>{value}</p>;
+ if(!value||typeof value!=='object'||Array.isArray(value))return null;
+ const explanation=value as Record<string,unknown>;
+ return <>{['rules','limitations'].map(key=>{const items=explanation[key];return Array.isArray(items)?<div key={key}><h4>{key==='rules'?'Why this plan':'Things to consider'}</h4><ul>{items.filter((item):item is string=>typeof item==='string').map((item,index)=><li key={index}>{item}</li>)}</ul></div>:null;})}</>;
+}
+const isScenarioMetadata=(text:string)=>/^(Demonstration scenario:|Demonstration of consistent training|User-authorized CRAYS demonstration)/.test(text);
+
+export function TrainingPlanningRecords({data,section,onRetry,onSession}:{onSession?:(sessionId:string)=>void;data:Data;section:'calendar'|'templates'|'programs'|'recommendations'|'substitutions';onRetry:()=>void}){
+ const style={minWidth:0,overflowWrap:'anywhere' as const};
+ const navigation=useRef({owner:data.owner,onSession,alive:true});navigation.current={...navigation.current,owner:data.owner,onSession};
+ useEffect(()=>{navigation.current.alive=true;return()=>{navigation.current.alive=false;};},[]);
+ const safeVersion=(value:unknown)=>{const n=Number(value);return Number.isSafeInteger(n)&&n>0?n:null;};
+ async function start(templateId:string,version:unknown,key:string,timezone:string){
+  const sourceVersion=safeVersion(version),originalOwner=data.owner;if(!sourceVersion||!onSession)return;
+  const result=await data.commands.run((commands,owner)=>commands.startTemplate(owner,{idempotencyKey:key,sourceKind:'TEMPLATE',sourceId:templateId,sourceVersion,timezone,readinessSnapshotId:null,notes:'Started from the member training calendar.'}));
+  if(!navigation.current.alive||navigation.current.owner!==originalOwner)return;
+  if(result?.state==='CONFIRMED'&&typeof result.receipt.sessionId==='string')navigation.current.onSession?.(result.receipt.sessionId);
+  else if(result?.state==='CONFLICT'&&result.activeSession)navigation.current.onSession?.(result.activeSession.sessionId);
+ }
+
+ if(section==='calendar'){
+  const model=data.calendar.view?.domain==='calendar'?data.calendar.view.model:null,events=model?.events??[];
+  return <div data-original-planning-calendar style={style}><Status state={data.profile} access={data.access} onRetry={onRetry}/>{!data.timezone&&<p role="status">Your saved training timezone is not available. No calendar range or schedule has been inferred.</p>}{data.monday&&<><div className="training-selected-week-actions"><button className="gym-design-action" type="button" onClick={()=>data.changeWeek(-1)}><ArrowLeft size={18}/>Previous week</button><Action onClick={data.todayWeek}>Today</Action><Action onClick={()=>data.changeWeek(1)}>Next week</Action></div><p>{data.monday} – {addDays(data.monday,6)} · {data.timezone}</p><Status state={data.calendar} access={data.access} onRetry={onRetry}/><div className="gym-training-calendar">{Array.from({length:7},(_,index)=>{const date=addDays(data.monday!,index),count=events.filter(event=>event.localDate===date).length;return <button key={date} type="button" aria-pressed={data.selectedDay===date} aria-label={'Training day '+date} onClick={()=>data.chooseDay(date)}><strong>{new Intl.DateTimeFormat('en-GB',{weekday:'short',timeZone:'UTC'}).format(new Date(date+'T12:00:00Z'))}</strong><small>{date}</small><CalendarBlank size={28}/><span>{model?`${count} scheduled ${count===1?'workout':'workouts'}`:'Not loaded'}</span></button>})}</div>{events.filter(event=>event.localDate===data.selectedDay).map(event=><section key={event.eventId} className="training-selected-card" data-calendar-event-id={event.eventId}><h3>{data.templates.view?.domain==='templates'?data.templates.view.model.templates.find(row=>row.templateId===event.templateId&&String(row.templateVersion)===String(event.templateVersion))?.name??'Scheduled workout':'Scheduled workout'}</h3><p>{new Intl.DateTimeFormat('en-GB',{dateStyle:'full',timeZone:'UTC'}).format(new Date(event.localDate+'T12:00:00Z'))}{event.localTime?' · '+event.localTime.slice(0,5):''} · {event.timezone.split('/').at(-1)?.replaceAll('_',' ')}</p><p>{readLabel(event.state)}</p><div className="training-selected-actions"><Action disabled={data.commands.disabled||event.state!=='PLANNED'||!event.templateId||!safeVersion(event.templateVersion)||!onSession} onClick={()=>void start(event.templateId!,event.templateVersion,`member-calendar:${event.eventId}:v${event.eventVersion}`,event.timezone)}>Start workout</Action><Action disabled={data.commands.disabled||event.state!=='PLANNED'||!safeVersion(event.eventVersion)} onClick={()=>void data.commands.run((commands,owner)=>commands.calendarDecision(owner,event.eventId,{action:'COMPLETE',expectedVersion:safeVersion(event.eventVersion),reason:'Member marked the scheduled calendar entry complete'},event.localDate))}>Mark schedule complete</Action><Action disabled={data.commands.disabled||event.state!=='PLANNED'||!safeVersion(event.eventVersion)} onClick={()=>void data.commands.run((commands,owner)=>commands.calendarDecision(owner,event.eventId,{action:'SKIP',expectedVersion:safeVersion(event.eventVersion),reason:'Member skipped the scheduled workout'},event.localDate))}>Skip workout</Action></div></section>)}{model&&!events.some(event=>event.localDate===data.selectedDay)&&<p>No saved workouts were returned for the selected day.</p>}</>}</div>;
+ }
+ const state=data[section],view=state.view,model=view?.domain===section?view.model:null;
+ let values:Record<string,unknown>[]=[];
+ if(section==='templates'&&view?.domain==='templates')values=view.model.templates;
+ if(section==='programs'&&view?.domain==='programs')values=view.model.programs;
+ if(section==='recommendations'&&view?.domain==='recommendations')values=view.model.recommendations;
+ if(section==='substitutions'&&view?.domain==='substitutions')values=view.model.proposals;
+ return <div style={{...style,display:'grid',gap:16,marginTop:24}} data-original-planning-section={section}><Status state={state} access={data.access} onRetry={onRetry}/>{model&&values.length===0&&<p role="status">{section==='programs'?'Your training programmes will appear here.':section==='templates'?'Create a workout to build your training routine.':section==='recommendations'?'Your plan recommendations will appear here.':'No exercise alternatives requested yet.'}</p>}{values.map((item,index)=>{const row=item as Record<string,unknown>,id=String(row.templateId??row.programId??row.recommendationId??row.proposalId),title=typeof row.name==='string'?row.name:section==='substitutions'?`${row.originalName} → ${row.substituteName}`:'Plan recommendation';return <section key={id+':'+index} data-planning-record-id={id} className={section==='recommendations'?'training-selected-review':'training-selected-card'}><h3>{title}</h3><p>{readLabel(String(row.lifecycleState??row.state))}</p>{typeof row.goal==='string'&&!isScenarioMetadata(row.goal)&&<p>{row.goal}</p>}{typeof row.notes==='string'&&row.notes&&!isScenarioMetadata(row.notes)&&<p>{row.notes}</p>}{section==='templates'&&<p>{String(row.exerciseCount)} exercises</p>}{section==='programs'&&<p>{row.weeks===null?'Duration not supplied':`${row.weeks} weeks`}</p>}{(section==='recommendations'||section==='substitutions')&&<PlanningExplanation value={row.explanation}/>} <div className="training-selected-actions">{section==='recommendations'||section==='substitutions'?<><Action disabled={data.commands.disabled||row.state!=='PROPOSED'} onClick={()=>void data.commands.run((commands,owner)=>section==='recommendations'?commands.decideRecommendation(owner,id,{action:'ACCEPT'}):commands.decideSubstitution(owner,id,{action:'ACCEPT'}))}>{section==='recommendations'?'Use this plan as a draft':'Choose alternative'}</Action><Action disabled={data.commands.disabled||row.state!=='PROPOSED'} onClick={()=>void data.commands.run((commands,owner)=>section==='recommendations'?commands.decideRecommendation(owner,id,{action:'REJECT'}):commands.decideSubstitution(owner,id,{action:'REJECT'}))}>Reject</Action></>:section==='programs'?<>{row.lifecycleState==='DRAFT'&&<Action disabled={data.commands.disabled||!safeVersion(row.activeVersion)} onClick={()=>void data.commands.run((commands,owner)=>commands.programState(owner,id,{action:'ACTIVATE',expectedVersion:safeVersion(row.activeVersion)}))}>Activate programme</Action>}{row.lifecycleState==='ACTIVE'&&<Action disabled={data.commands.disabled||!safeVersion(row.activeVersion)} onClick={()=>void data.commands.run((commands,owner)=>commands.programState(owner,id,{action:'PAUSE',expectedVersion:safeVersion(row.activeVersion)}))}>Pause programme</Action>}</>:<Action disabled={data.commands.disabled||row.lifecycleState!=='ACTIVE'||!data.timezone||!safeVersion(row.templateVersion)||!onSession} onClick={()=>void start(id,row.templateVersion,`member-template:${id}:${row.templateVersion}:${crypto.randomUUID()}`,data.timezone!)}>Start workout</Action>}</div></section>})}</div>;
+}

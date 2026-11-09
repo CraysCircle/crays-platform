@@ -1,0 +1,9 @@
+export type PublicChuckStarterId='plan-trip'|'bring-people-together'|'organise-week'|'research-topic'|'explore-spots'|'meet-person'|'work-document'|'prepare-original'|'creator-page'|'food-shopping'|'movement-wellbeing'|'notes-reminders'|'work-project';
+export type PublicChuckStarter=Readonly<{id:PublicChuckStarterId;label:string;text:string;previewFeature:string}>;
+export type PublicChuckStarterSnapshot={signedIn:boolean;owner:string;revision:number;draft:unknown;context:unknown};
+export type PublicChuckStarterChoice=Readonly<{id:PublicChuckStarterId;label:string;text:string;owner:string;revision:number;before:string;beforeContext:string;requiresReview:boolean}>;
+export const chuckPublicStarterGroups:Readonly<Record<string,Readonly<{title:string;description:string;examples:readonly(readonly[string,string,string,PublicChuckStarterId])[]}>>>;
+export function publicChuckStarter(id:unknown):PublicChuckStarter;
+export function capturePublicChuckStarter(id:unknown,snapshot:PublicChuckStarterSnapshot):PublicChuckStarterChoice;
+export function publicChuckStarterIsCurrent(choice:PublicChuckStarterChoice,snapshot:PublicChuckStarterSnapshot):boolean;
+export function publicChuckStarterPreview(choice:PublicChuckStarterChoice,snapshot:PublicChuckStarterSnapshot):{text:string;label:string;context:{sourceId:'web-global-chuck'}};

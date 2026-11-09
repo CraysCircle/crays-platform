@@ -1,0 +1,67 @@
+import type {ProductWorld,Entity,ActionContext} from './productModel.ts';
+import {localPreviewId} from './localPreviewId.ts';
+import {ownTrainingPlans,trainingSnapshot,applyTrainingJourney,type TrainingBrief} from './trainingJourney.ts';
+import {trainerExample} from './fitnessMedia.ts';
+import {privacyState} from './privacyOverview.ts';
+export type CoachRequest=Entity&{kind:'fitness-coaching-preview';version:number;attemptId:string;creationSnapshot:string;planId:string;planVersion:number;planSnapshot:TrainingBrief;permissionId:string;trainerId:string;question:string;state:'draft'|'pending'|'unknown'|'received'|'declined'|'proposal'|'applied'|'closed';proposal:{exerciseId:string;rest:string;explanation:string;source:'explicit-local-example'}|null;history:{version:number;state:string;action:string;at:number}[];exampleOnly:true};
+const kind='fitness-coaching-preview';
+const unique=(w:ProductWorld,id:string)=>w.objects.filter(o=>o.id===id).length===1;
+const owns=(w:ProductWorld,ctx?:ActionContext)=>{if(!w.identity.signedIn||ctx?.personId&&ctx.personId!==w.owner)throw Error('Sign in to your own coaching workspace.');};
+function initialProof(r:CoachRequest){try{const p=JSON.parse(r.creationSnapshot);return p.planId===r.planId&&p.planVersion===r.planVersion&&trainingSnapshot(p.planSnapshot)===trainingSnapshot(r.planSnapshot)&&p.trainerId===r.trainerId&&p.purpose==='training-coaching'&&p.question===r.question&&p.attemptId===r.attemptId&&Number.isFinite(p.expiresAt);}catch{return false;}}
+function valid(o:Entity){try{const r=o as CoachRequest;return initialProof(r)&&r.exampleOnly===true&&r.trainerId===trainerExample.id&&Number.isSafeInteger(r.version)&&r.version>0&&typeof r.attemptId==='string'&&r.attemptId.length>=8&&typeof r.creationSnapshot==='string'&&typeof r.planId==='string'&&Number.isSafeInteger(r.planVersion)&&r.planVersion>0&&Boolean(trainingSnapshot(r.planSnapshot))&&typeof r.permissionId==='string'&&typeof r.question==='string'&&r.question.trim().length>0&&r.question.length<=2000&&['draft','pending','unknown','received','declined','proposal','applied','closed'].includes(r.state)&&Array.isArray(r.history)&&r.history.length>0&&r.history.at(-1)?.version===r.version&&r.history.at(-1)?.state===r.state&&r.history.every(h=>Number.isSafeInteger(h.version)&&Number.isFinite(h.at)&&typeof h.action==='string')&&(r.proposal===null||r.proposal.source==='explicit-local-example'&&r.planSnapshot.lines.some(l=>l.exerciseId===r.proposal!.exerciseId)&&/^\d+$/.test(r.proposal.rest)&&Number(r.proposal.rest)<=900&&Number(r.proposal.rest)>=0&&typeof r.proposal.explanation==='string'&&r.proposal.explanation.length<=1000)&&(!['draft','pending','unknown','received'].includes(r.state)||r.proposal===null)&&(!['proposal','applied'].includes(r.state)||r.proposal!==null);}catch{return false;}}
+export const ownCoachRequests=(w:ProductWorld):CoachRequest[]=>w.identity.signedIn?w.objects.filter((o):o is CoachRequest=>o.kind===kind&&o.owner===w.owner&&unique(w,o.id)&&valid(o)):[];
+export function coachPermissions(w:ProductWorld,id:string){return w.identity.signedIn?w.objects.filter(o=>o.owner===w.owner&&o.kind==='permission'&&o.coachingRequestId===id&&unique(w,o.id)):[];}
+export function coachAccess(w:ProductWorld,r:CoachRequest,now=Date.now()){
+ const raw=w.objects.filter(o=>o.owner===w.owner&&o.kind==='permission'&&o.coachingRequestId===r.id),g=coachPermissions(w,r.id)[0];
+ return Boolean(w.identity.signedIn&&unique(w,r.id)&&ownCoachRequests(w).some(x=>x.id===r.id)&&raw.length===1&&g?.id===r.permissionId&&g.exampleOnly===true&&g.fitnessTrainerId===r.trainerId&&g.recipient===trainerExample.name&&g.purpose==='training-coaching'&&g.dataType==='One selected training plan and coaching question'&&g.coachingPlanId===r.planId&&g.coachingPlanVersion===r.planVersion&&typeof g.startsAt==='number'&&Number.isFinite(g.startsAt)&&typeof g.expiresAt==='number'&&Number.isFinite(g.expiresAt)&&g.expiresAt>g.startsAt&&g.expiresAt===JSON.parse(r.creationSnapshot).expiresAt&&privacyState(g,now)==='Current');
+}
+export function coachCreateSnapshot(w:ProductWorld,data:Record<string,string>,now=Date.now()){
+ owns(w);const p=ownTrainingPlans(w).find(p=>p.id===data.planId);if(!p||String(p.version)!==data.planVersion||p.status==='archived')throw Error('Choose your current own non-archived plan; training and health data are not inferred.');
+ if(data.trainerId!==trainerExample.id||data.assignment!=='explicit-assigned-example')throw Error('Choose the explicit assigned-trainer example; no real assignment is inferred.');
+ const until=Date.parse(data.expiresAt);if(!Number.isFinite(until)||until<=now||until>now+30*86400000)throw Error('Choose a future expiry within thirty days for this local example.');
+ if(data.includePlan!=='Yes'||typeof data.question!=='string'||!data.question.trim()||data.question.length>2000)throw Error('Review this exact plan excerpt and your question. No other private information is included.');
+ if(typeof data.attemptId!=='string'||data.attemptId.length<8||data.attemptId.length>160)throw Error('Keep one original coaching draft reference.');
+ return JSON.stringify({planId:p.id,planVersion:p.version,planSnapshot:p.brief,trainerId:trainerExample.id,purpose:'training-coaching',question:data.question.trim(),expiresAt:until,attemptId:data.attemptId});
+}
+export function coachProposalSnapshot(r:CoachRequest,exerciseId:string,rest:string,explanation:string){
+ if(!r.planSnapshot.lines.some(l=>l.exerciseId===exerciseId)||!/^\d+$/.test(rest)||Number(rest)<0||Number(rest)>900||typeof explanation!=='string'||!explanation.trim()||explanation.length>1000)throw Error('Select an original exercise, a reviewed rest time from zero to 900 seconds and an explanation for this fictional example.');
+ return JSON.stringify({requestId:r.id,version:r.version,exerciseId,rest:String(Number(rest)),explanation:explanation.trim(),source:'explicit-local-example'});
+}
+export function coachChuckExcerpt(w:ProductWorld,id:string,version:string){owns(w);const r=ownCoachRequests(w).find(r=>r.id===id);if(!r||String(r.version)!==version)throw Error('Open the current own coaching original.');return {key:JSON.stringify({id,version,question:r.question,state:r.state,planId:r.planId,planVersion:r.planVersion}),text:`Help me prepare for my coaching conversation. My explicitly selected question: ${r.question}\nLocal request status: ${r.state}. No training plan, workout, nutrition, media or health values are included in this separate Chuck draft. Do not send messages, book, share data or change any plan.`};}
+export function applyFitnessCoaching(w:ProductWorld,op:string,data:Record<string,string>,ctx:ActionContext,now=Date.now()):{objectId:string;message:string}|null{
+ if(!op.startsWith('fitness.coaching.'))return null;owns(w,ctx);
+ if(data.approved!=='Yes')throw Error('Review and confirm this exact separate action.');
+ if(op==='fitness.coaching.create'){
+  const key=coachCreateSnapshot(w,data,now);if(key!==data.snapshot)throw Error('The selected plan, trainer, question or expiry changed. Review again.');
+  const raw=w.objects.filter(o=>o.owner===w.owner&&o.kind===kind&&o.attemptId===data.attemptId);if(raw.length){const r=ownCoachRequests(w).find(r=>r.id===raw[0].id);if(raw.length!==1||!r||r.creationSnapshot!==key)throw Error('This original intent needs review; no duplicate draft was created.');return {objectId:r.id,message:'Opened the same coaching original. No second draft, permission or request.'};}
+  const p=ownTrainingPlans(w).find(p=>p.id===data.planId)!,id=localPreviewId(),permissionId=localPreviewId();if(id===permissionId||w.objects.some(o=>[id,permissionId].includes(o.id)))throw Error('Conflicting original reference.');
+  const r:CoachRequest={id,owner:w.owner,kind,version:1,attemptId:data.attemptId,creationSnapshot:key,planId:p.id,planVersion:p.version,planSnapshot:structuredClone(p.brief),permissionId,trainerId:trainerExample.id,question:data.question.trim(),state:'draft',proposal:null,history:[{version:1,state:'draft',action:'Reviewed private local draft; not sent',at:now}],exampleOnly:true};
+  const g:Entity={id:permissionId,owner:w.owner,kind:'permission',name:'Selected training plan · example coach review',recipient:trainerExample.name,purpose:'training-coaching',dataType:'One selected training plan and coaching question',scope:'Only the displayed plan version and question; no workout logs, nutrition, goals, measurements, media, payment or private chat rights',status:'active',startsAt:now,expiresAt:Date.parse(data.expiresAt),version:1,coachingRequestId:id,coachingPlanId:p.id,coachingPlanVersion:p.version,fitnessTrainerId:trainerExample.id,exampleOnly:true};
+  w.objects.push(r,g);return {objectId:id,message:'Private draft and one limited local permission saved. No trainer message, booking or payment was sent.'};
+ }
+ const r=ownCoachRequests(w).find(r=>r.id===ctx.objectId);if(!r||String(r.version)!==data.version)throw Error('Review the current own coaching original; stale or conflicting records are held.');
+ const record=(state:CoachRequest['state'],action:string)=>{r.state=state;r.version++;r.history.push({version:r.version,state,action,at:now});};
+ if(op==='fitness.coaching.close'){if(['applied','closed'].includes(r.state))throw Error('This historical original is retained.');record('closed','Member closed the local review; no appointment cancelled or prior copy erased');return {objectId:r.id,message:'Local review closed. Its original permission, prior outcomes and copies remain separate; withdraw access explicitly.'};}
+ if(!coachAccess(w,r,now))throw Error('The exact trainer, plan, purpose or current permission is missing, expired or withdrawn. No new delivery, feedback or plan change.');
+ const p=ownTrainingPlans(w).find(p=>p.id===r.planId);if(!p||p.version!==r.planVersion||trainingSnapshot(p.brief)!==trainingSnapshot(r.planSnapshot))throw Error('The source plan changed. Keep this original and prepare a fresh review; nothing is silently rebound.');
+ if(op==='fitness.coaching.send'){
+  if(['pending','unknown','received','proposal'].includes(r.state))return {objectId:r.id,message:'Keep the same request attempt and check its status; no repeat delivery.'};
+  if(r.state!=='draft')throw Error('This review cannot be sent again.');record('pending','Local delivery example requested; no external trainer was contacted');return {objectId:r.id,message:'Local request pending. Not received or answered; no external communication was executed.'};
+ }
+ if(op==='fitness.coaching.outcome'){
+  if(data.scenario!=='explicit-local-example'||!['pending','unknown'].includes(r.state)||!['unknown','received','declined'].includes(data.outcome))throw Error('Use an explicit fictional source outcome on the original pending attempt.');if(r.state!==data.outcome)record(data.outcome as CoachRequest['state'],'Explicit fictional delivery source result');return {objectId:r.id,message:'Fictional request outcome recorded on the same original; no real trainer delivery.'};
+ }
+ if(op==='fitness.coaching.propose'){
+  if(r.state!=='received'||data.scenario!=='explicit-local-example')throw Error('A received local example is required before a fictional proposal.');const key=coachProposalSnapshot(r,data.exerciseId,data.rest,data.explanation);if(key!==data.snapshot)throw Error('Review the exact fictional proposal again.');r.proposal={exerciseId:data.exerciseId,rest:String(Number(data.rest)),explanation:data.explanation.trim(),source:'explicit-local-example'};record('proposal','Fictional trainer proposal available for separate member review; plan unchanged');return {objectId:r.id,message:'Example proposal saved. The original plan and existing workouts are unchanged.'};
+ }
+ if(op==='fitness.coaching.decline'){
+  if(r.state!=='proposal')throw Error('Open the pending proposal first.');record('declined','Member declined fictional proposal; source plan unchanged');return {objectId:r.id,message:'Proposal declined. No plan, workout, booking or payment was changed.'};
+ }
+ if(op==='fitness.coaching.apply'){
+  if(r.state!=='proposal'||!r.proposal)throw Error('Open the pending original proposal.');if(!['draft','paused'].includes(p.status))throw Error('Pause the active plan in its own workspace before reviewing this change. No automatic pause or edit.');
+  const brief={...structuredClone(p.brief),lines:p.brief.lines.map(l=>l.exerciseId===r.proposal!.exerciseId?{...l,rest:r.proposal!.rest}:{...l})},snapshot=trainingSnapshot(brief);if(data.snapshot!==snapshot)throw Error('Review the complete resulting plan and exact rest change.');
+  applyTrainingJourney(w,'training.preview.plan.save',{version:String(p.version),brief:JSON.stringify(brief),snapshot,approved:'Yes'},{...ctx,objectId:p.id},now);record('applied','Member explicitly applied reviewed example through original plan editor; no automatic activation');return {objectId:r.id,message:'Same original plan updated as a private draft. Earlier workouts keep their old version; no activation, booking or payment.'};
+ }
+ throw Error('This coaching action is unsupported.');
+}
+export function coachResultPlan(w:ProductWorld,id:string){const r=ownCoachRequests(w).find(r=>r.id===id),p=r&&ownTrainingPlans(w).find(p=>p.id===r.planId);if(!r?.proposal||!p||p.version!==r.planVersion||trainingSnapshot(p.brief)!==trainingSnapshot(r.planSnapshot))throw Error('Review the unchanged original plan first.');return {...structuredClone(p.brief),lines:p.brief.lines.map(l=>l.exerciseId===r.proposal!.exerciseId?{...l,rest:r.proposal!.rest}:{...l})};}

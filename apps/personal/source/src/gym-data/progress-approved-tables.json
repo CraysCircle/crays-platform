@@ -1,0 +1,164 @@
+{
+  "Overview:0": {
+    "headers": [
+      "Recorded at",
+      "Metric",
+      "Value",
+      "Unit",
+      "Source"
+    ],
+    "empty": "Choose a recorded series to review its values."
+  },
+  "Overview:1": {
+    "headers": [
+      "Milestone",
+      "State",
+      "Your choice"
+    ],
+    "empty": "Your private milestones appear with their recorded history."
+  },
+  "Overview:2": {
+    "headers": [
+      "Metric",
+      "Observed period",
+      "Proposed value",
+      "Recorded points"
+    ],
+    "empty": "Your activity baseline proposals appear after authorised loading."
+  },
+  "Overview:3": {
+    "headers": [
+      "Observation",
+      "Period",
+      "Coverage",
+      "Limitations"
+    ],
+    "empty": "Your saved private patterns appear after authorised loading."
+  },
+  "Goals:0": {
+    "headers": [
+      "Goal",
+      "Metric & target",
+      "Target date",
+      "State",
+      "Actions"
+    ],
+    "empty": "Your saved goals will appear after your records are connected."
+  },
+  "Habits:0": {
+    "headers": [
+      "Habit",
+      "Schedule",
+      "Latest decision",
+      "State",
+      "Actions"
+    ],
+    "empty": "Your confirmed habit programmes will appear after your records are connected."
+  },
+  "Measurements:0": {
+    "headers": [
+      "Recorded at",
+      "Goal / metric",
+      "Value",
+      "Unit",
+      "Source",
+      "Actions"
+    ],
+    "empty": "Your measurement history will appear when your records are loaded."
+  },
+  "Gallery:0": {
+    "headers": [
+      "File",
+      "Captured",
+      "Retention until",
+      "Visibility",
+      "Status"
+    ],
+    "empty": "Select a saved photo to review its original details."
+  },
+  "Weekly review:0": {
+    "headers": [
+      "Review period",
+      "Included areas",
+      "Created",
+      "Your decision"
+    ],
+    "empty": "Your saved review previews and decisions appear after authorised loading."
+  },
+  "Challenges:0": {
+    "headers": [
+      "Challenge",
+      "Target",
+      "Dates",
+      "Participation"
+    ],
+    "empty": "Available challenges will appear when your records are loaded."
+  },
+  "Challenges:1": {
+    "headers": [
+      "Progress",
+      "Target",
+      "Visibility",
+      "State",
+      "Recognition"
+    ],
+    "empty": "Select a challenge to review its details."
+  },
+  "Challenges:2": {
+    "headers": [
+      "Recorded at",
+      "Kind",
+      "Contribution",
+      "State"
+    ],
+    "empty": "Your challenge evidence appears after authorised loading."
+  },
+  "Challenges:3": {
+    "headers": [
+      "Calculated at",
+      "Previous total",
+      "Current total",
+      "Reason"
+    ],
+    "empty": "Your saved calculation history appears after authorised loading."
+  },
+  "Challenges:4": {
+    "headers": [
+      "Challenge",
+      "Requested",
+      "Disputed progress",
+      "State"
+    ],
+    "empty": "Your original appeal history appears after authorised loading."
+  },
+  "Sharing:0": {
+    "headers": [
+      "Qualification",
+      "Issued by",
+      "Valid until"
+    ],
+    "empty": "Qualification details follow the selected eligible trainer."
+  },
+  "Sharing:1": {
+    "headers": [
+      "Trainer",
+      "Purpose",
+      "Shared data",
+      "Expires",
+      "State",
+      "Actions"
+    ],
+    "empty": "Your sharing history will appear when your records are loaded."
+  },
+  "Privacy:0": {
+    "headers": [
+      "Request",
+      "Type",
+      "Requested",
+      "Due",
+      "State",
+      "Download"
+    ],
+    "empty": "Your request history will appear when your records are loaded."
+  }
+}

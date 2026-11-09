@@ -1,0 +1,24 @@
+import {createPortal} from 'react-dom';
+import {useEffect,useRef,useState,useSyncExternalStore} from 'react';
+import {Clock,X} from 'lucide-react';
+import {CONVERSATION_TIMER_SECONDS,conversationTimerLabel} from './conversationTimer.mjs';
+import type {ConversationTimer} from './conversationTimer.mjs';
+
+export function WebConversationTimer({controller}:{controller:ConversationTimer}){
+ const state=useSyncExternalStore(controller.subscribe,controller.getSnapshot,controller.getSnapshot),[open,setOpen]=useState(false),opener=useRef<HTMLButtonElement>(null);
+ const close=()=>{setOpen(false);requestAnimationFrame(()=>opener.current?.isConnected&&opener.current.focus({preventScroll:true}));};
+ return <><button ref={opener} type="button" className={'icon-button private-timer-opener'+(state.seconds?' is-enabled':'')} aria-label={'Disappearing messages: '+conversationTimerLabel(state.seconds)} title={'Disappearing messages: '+conversationTimerLabel(state.seconds)} aria-haspopup="dialog" aria-expanded={open} disabled={!state.available} onClick={()=>setOpen(true)}><Clock size={20} aria-hidden="true"/>{state.seconds>0&&<span>{state.seconds===86400?'24h':state.seconds===604800?'7d':'90d'}</span>}</button>{open&&createPortal(<TimerDialog controller={controller} onClose={close}/>,opener.current?.closest('.private-human-workspace')??document.body)}</>;
+}
+function TimerDialog({controller,onClose}:{controller:ConversationTimer;onClose:()=>void}){
+ const state=useSyncExternalStore(controller.subscribe,controller.getSnapshot,controller.getSnapshot),[choice,setChoice]=useState(state.seconds),[problem,setProblem]=useState(''),[shown,setShown]=useState(10),panel=useRef<HTMLElement>(null),close=useRef<HTMLButtonElement>(null);
+ useEffect(()=>{close.current?.focus({preventScroll:true});},[]);
+ const save=async()=>{try{setProblem('');await controller.save(choice);onClose();}catch(error){setProblem(error instanceof Error?error.message:'Your timer could not be saved.');}};
+ const reload=async()=>{try{await controller.reload();setChoice(controller.getSnapshot().seconds);setProblem('');}catch{setProblem('Your saved timer could not be opened. Try again.');}};
+ return <div className="private-timer-shade"><section ref={panel} className="private-timer-dialog" role="dialog" aria-modal="true" aria-label="Disappearing messages" onKeyDown={event=>{
+  if(event.key==='Escape'){event.preventDefault();event.stopPropagation();if(!state.saving)onClose();}
+  if(event.key==='Tab'){const items=Array.from(panel.current?.querySelectorAll<HTMLElement>('button:not(:disabled),input:not(:disabled),a[href]')??[]).filter(e=>e.getClientRects().length);const first=items[0],last=items.at(-1);if(event.shiftKey&&document.activeElement===first){event.preventDefault();last?.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first?.focus();}}
+ }}><header><h2>Disappearing messages</h2><button ref={close} type="button" className="icon-button" aria-label="Close message timer" disabled={state.saving} onClick={onClose}><X size={20} aria-hidden="true"/></button></header><div className="private-timer-body"><p>Choose how long new messages stay in your view.</p><fieldset disabled={!state.available||state.saving}><legend>Timer for new messages</legend>{CONVERSATION_TIMER_SECONDS.map(seconds=><label key={seconds}><input type="radio" name="private-message-timer" value={seconds} checked={choice===seconds} onChange={()=>{setChoice(seconds);setProblem('');}}/><span><strong>{conversationTimerLabel(seconds)}</strong><small>{seconds?'New messages disappear after '+conversationTimerLabel(seconds)+'.':'Keep new messages in your view.'}</small></span></label>)}</fieldset><p className="private-timer-caption">Earlier messages keep their original timer. This changes your view only; other people can keep their own copies.</p>
+ {(!state.available||problem||state.problem)&&<div role="alert"><p>{!state.available?'This message timer is no longer available.':problem||state.problem}</p>{state.available&&<button type="button" disabled={state.saving} onClick={()=>void reload()}>Reload saved timer</button>}</div>}
+ {state.changes.length>0&&<details><summary>Previous changes · {state.changes.length}</summary><ol>{[...state.changes].reverse().slice(0,shown).map((change,index)=><li key={change.at+':'+index}><strong>{conversationTimerLabel(change.seconds)}</strong><time dateTime={new Date(change.at*1000).toISOString()}>{new Date(change.at*1000).toLocaleString()}</time></li>)}</ol>{shown<state.changes.length&&<button type="button" onClick={()=>setShown(value=>value+20)}>Show earlier changes</button>}</details>}
+ </div><footer><button type="button" disabled={state.saving} onClick={onClose}>Cancel</button><button type="button" disabled={!state.available||state.saving||choice===state.seconds} onClick={()=>void save()}>{state.saving?'Saving…':'Save timer'}</button></footer></section></div>;
+}

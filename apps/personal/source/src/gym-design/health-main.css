@@ -1,0 +1,74 @@
+/* Health overview only; existing host typography, session and layout controllers stay authoritative. */
+.gym-health-main{min-width:0;color:var(--web-ink)}
+.gym-health-main[hidden]{display:none}
+.gym-design-page .gym-health-sections{display:grid;gap:64px}
+.gym-design-page .gym-health-main h2{font-size:var(--web-h2);line-height:1.3;letter-spacing:-.4px;margin:0}
+.gym-design-page .gym-health-main h3,.gym-design-page .gym-health-domain strong{font-size:var(--web-h3);font-weight:700;line-height:1.35;margin:0}
+.gym-design-page .gym-health-main p{font-size:var(--web-body);line-height:1.55;margin:10px 0 0;color:var(--web-muted)}
+.gym-design-page .gym-health-sections>[data-layout-block=hero]{margin-bottom:-40px}
+.gym-design-page [data-sized=false]>.gym-health-hero{height:auto;max-height:calc(100svh - 340px);aspect-ratio:1744/901;min-height:360px}
+.gym-design-page .gym-health-main .gym-lifestyle-hero-copy{width:min(100%,560px);max-width:65%;padding:36px 32px}
+.gym-design-page .gym-health-main .gym-lifestyle-hero-copy p{color:#fff;font-size:19px;line-height:1.55;margin:0 0 17px}
+.gym-design-page .gym-health-main .gym-design-action{font-size:var(--web-control);font-weight:500;min-height:44px;border-radius:999px;padding:10px 18px;line-height:1.4;gap:14px;white-space:normal;margin:0}
+.gym-design-page .gym-health-main .gym-design-action.primary{min-height:48px;padding:12px 18px}
+.gym-design-page .gym-health-tabs{display:flex;flex-wrap:wrap;gap:8px 24px;margin:0;border-bottom:1px solid var(--web-rule)}
+.gym-design-page.gym-design-page .gym-health-main .gym-health-tabs>button[aria-pressed]{font-family:inherit;font-size:15px;line-height:1.5;min-height:48px;padding:10px 4px;background:transparent;color:var(--web-muted);border:0;border-bottom:2px solid transparent}
+.gym-design-page.gym-design-page .gym-health-main .gym-health-tabs>button[aria-pressed=true]{border-bottom-color:var(--web-accent);color:var(--web-ink);font-weight:700}
+.gym-design-page .gym-health-source-band{display:grid;grid-template-columns:48px minmax(0,1fr) minmax(240px,28%);gap:24px;align-items:center;padding:24px;background:var(--web-soft,#f7faff);border:1px solid var(--web-rule);border-radius:6px}
+.gym-design-page .gym-health-source-band h2{font-size:var(--web-h3);line-height:1.35}
+.gym-design-page .gym-health-source-band p{font-size:var(--web-meta)}
+.gym-design-page .gym-health-source-summary{border-left:1px solid var(--web-rule);padding-left:24px}
+.gym-design-page .gym-health-source-summary>span{display:block;font-size:var(--web-meta);margin-bottom:10px;color:var(--web-muted)}
+.gym-design-page .gym-health-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:18px}
+.gym-design-page .gym-health-section-heading{margin:0 0 28px}
+.gym-design-page .gym-health-section-heading .gym-health-kicker{font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--web-accent);margin:0 0 10px}
+.gym-design-page .gym-health-heading-with-action{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.gym-design-page .gym-health-heading-with-action>div{max-width:78%}
+.gym-design-page .gym-health-domains{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px}
+.gym-design-page .gym-health-domains>.club-adjustable-block{grid-column:span 3}
+.gym-design-page .gym-health-domains>.club-adjustable-block:nth-child(n+5){grid-column:span 4}
+.gym-design-page .gym-health-domain{display:flex;flex-direction:column;width:100%;min-width:0;overflow:hidden;border:1px solid var(--web-rule);border-radius:6px;background:white;color:var(--web-ink);text-align:left;padding:0;font-family:inherit}
+.gym-design-page .gym-health-domain>img{width:100%;height:180px;object-fit:cover}
+.gym-design-page .gym-health-domain-copy{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.gym-design-page .gym-health-domain-copy>span:not(.gym-health-domain-action){font-size:var(--web-meta);line-height:1.6;color:var(--web-muted)}
+.gym-design-page .gym-health-domain-action{display:flex;align-items:center;gap:10px;min-height:44px;color:var(--web-accent);font-size:var(--web-meta);font-weight:700;margin-top:auto;padding-top:8px}
+.gym-design-page .gym-health-text-action{display:inline-flex;align-items:center;gap:12px;border:0;background:transparent;color:var(--web-ink);font-family:inherit;font-size:var(--web-control);min-height:44px;padding:8px 0;text-align:left}
+.gym-design-page .gym-health-twin{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.gym-design-page .gym-health-twin .club-adjustable-content>section{display:flex;align-items:flex-start;gap:24px;padding:24px;border:1px solid var(--web-rule);border-radius:6px;background:var(--web-soft,#f7faff)}
+.gym-design-page .gym-health-twin svg{flex:none}
+.gym-design-page .gym-health-twin p{font-size:var(--web-meta);margin-bottom:12px}
+.gym-design-page .gym-health-match{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;margin-top:24px}
+.gym-design-page .gym-health-match p{flex-basis:100%;text-align:center;font-size:var(--web-meta);margin:0}
+.gym-design-page .gym-health-match>button:disabled{color:var(--web-muted);background:#edf2f6;cursor:not-allowed}
+.gym-design-page .gym-health-assessment{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:center;background:var(--web-soft,#f7faff);border:1px solid var(--web-rule);border-radius:6px;overflow:hidden}
+.gym-design-page .gym-health-assessment>img{width:100%;height:260px;object-fit:cover;object-position:center 12%}
+.gym-design-page .gym-health-assessment>div{padding:28px}
+.gym-design-page .gym-health-data-links{display:grid;gap:0;border:1px solid var(--web-rule);border-radius:6px;overflow:hidden}
+.gym-design-page .gym-health-data-links>.club-adjustable-block+ .club-adjustable-block{border-top:1px solid var(--web-rule)}
+.gym-design-page .gym-health-data-links button{display:grid;grid-template-columns:32px minmax(0,1fr) auto 20px;gap:20px;align-items:center;width:100%;background:white;border:0;padding:20px 24px;color:var(--web-ink);text-align:left;font-family:inherit}
+.gym-design-page .gym-health-data-links strong{display:block;font-size:var(--web-h3);line-height:1.35}
+.gym-design-page .gym-health-data-links small{display:block;margin-top:6px;font-size:var(--web-meta);line-height:1.55;color:var(--web-muted)}
+.gym-design-page .gym-health-link-label{font-size:var(--web-meta)}
+.gym-design-page .gym-health-privacy{display:flex;align-items:center;gap:24px;padding:20px 24px;background:var(--web-ink);color:white;border-radius:6px}
+.gym-design-page .gym-health-privacy>div{flex:1}
+.gym-design-page .gym-health-privacy h3,.gym-design-page .gym-health-privacy button{color:white}
+.gym-design-page .gym-health-privacy p{font-size:var(--web-meta);color:#e0e9f2;margin-top:6px}
+.gym-design-page .gym-health-main button{transition:background-color 160ms ease,box-shadow 160ms ease,transform 160ms ease}
+.gym-design-page .gym-health-main button:hover:not(:disabled){background-color:#edf4f9}
+.gym-design-page .gym-health-main .gym-design-action.primary:hover{background:var(--web-accent);filter:brightness(.92);transform:translateY(-1px)}
+.gym-design-page .gym-health-domain:hover{box-shadow:0 5px 18px #08263812;transform:translateY(-2px)}
+.gym-design-page .gym-health-main button:active:not(:disabled){transform:translateY(1px)}
+.gym-design-page .gym-health-main button:focus-visible{outline:2px solid var(--web-ink);outline-offset:4px}
+.gym-design-page .gym-health-privacy button:focus-visible{outline-color:white}
+.gym-design-page .gym-health-privacy button:hover{color:var(--web-ink)}
+.gym-design-page .gym-health-sections>.club-adjustable-block{position:relative}
+.gym-design-page .gym-health-sections>.club-adjustable-block:not(:first-child):not([data-layout-block=navigation])::before{content:"";position:absolute;left:0;right:0;top:-32px;border-top:1px solid var(--web-rule);pointer-events:none}
+@media(max-width:1400px){.gym-design-page .gym-health-sections{gap:48px}.gym-design-page .gym-health-sections>[data-layout-block=hero]{margin-bottom:-24px}.gym-design-page .gym-health-sections>.club-adjustable-block:not(:first-child):not([data-layout-block=navigation])::before{top:-24px}.gym-design-page .gym-health-domains{gap:16px}.gym-design-page .gym-health-domain-copy{padding:16px}}
+@media(max-width:1100px){.gym-design-page [data-sized=false]>.gym-health-hero{max-height:none}.gym-design-page .gym-health-source-band{grid-template-columns:40px minmax(0,1fr)}.gym-design-page .gym-health-source-summary{grid-column:2;border-left:0;padding-left:0}.gym-design-page .gym-health-domains{grid-template-columns:repeat(2,minmax(0,1fr))}.gym-design-page .gym-health-domains>.club-adjustable-block,.gym-design-page .gym-health-domains>.club-adjustable-block:nth-child(n+5){grid-column:auto}.gym-design-page .gym-health-domains>.club-adjustable-block:last-child{grid-column:1/-1}.gym-design-page .gym-health-twin{grid-template-columns:1fr}.gym-design-page .gym-health-heading-with-action{flex-wrap:wrap}.gym-design-page .gym-health-heading-with-action>div{max-width:100%}.gym-design-page .gym-health-assessment>img{height:300px}.gym-design-page .gym-health-assessment>div{padding:20px}.gym-design-page .gym-health-data-links button{grid-template-columns:28px minmax(0,1fr) 20px;padding:18px;gap:14px}.gym-design-page .gym-health-link-label{display:none}.gym-design-page .gym-health-privacy{flex-wrap:wrap}.gym-design-page .gym-health-privacy>button{margin-left:56px}}
+@media(prefers-reduced-motion:reduce){.gym-design-page .gym-health-main button{transition:none!important;transform:none!important}}
+
+/* An explicit shared height replaces intrinsic hero geometry; keep controls reachable when reduced. */
+.gym-design-page [data-sized=true]>.gym-health-hero{height:100%;max-height:none;aspect-ratio:auto;align-items:flex-start;overflow:auto}
+
+/* Health compact hero — direct human correction, 29 October. Custom shared sizing remains user-owned. */
+.gym-design-page [data-sized=false]>.gym-health-hero{height:400px;min-height:360px;max-height:400px;aspect-ratio:auto}

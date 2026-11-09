@@ -1,0 +1,25 @@
+{
+  "originalAndCandidateFilesVerified": 2975,
+  "views": [
+    {
+      "version": "baseline",
+      "originalFilesSHA256AndSizeVerified": 1486,
+      "sourceProgramsExecuted": false
+    },
+    {
+      "version": "candidate",
+      "originalFilesSHA256AndSizeVerified": 1489,
+      "sourceProgramsExecuted": false
+    }
+  ],
+  "negativeSafetyCasesPassed": [
+    "missing-assets",
+    "wrong-binding",
+    "missing-owner-assets",
+    "inside-archive",
+    "existing",
+    "symlink-parent"
+  ],
+  "sourceProgramsExecuted": false,
+  "buildRepeated": false
+}

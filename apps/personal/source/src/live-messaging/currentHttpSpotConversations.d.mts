@@ -1,0 +1,2 @@
+import type {SpotRelayClientIdentity} from './currentSpotRelayClient.mjs';
+export function createCurrentHttpSpotConversations(options:{identity:SpotRelayClientIdentity;signal:AbortSignal;isCurrent:()=>boolean;fetcher?:typeof fetch;dataKeyCache?:unknown;locks?:LockManager;crypto?:Crypto}):{open(options:{spotId:string;rootId:string;signal:AbortSignal}):Promise<ReturnType<typeof import('./currentSpotRelayClient.mjs').createCurrentSpotRelayClient>>;close():void};

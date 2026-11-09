@@ -1,0 +1,1 @@
+export function recommendationPhoto(person:{namespace:string;personId:string;pubkey:string},catalog:{people:readonly {id:string;pubkey:string;picture:string|null}[]}|null,resolveMedia:(value:string)=>string):string;

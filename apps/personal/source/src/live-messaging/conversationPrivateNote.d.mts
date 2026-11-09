@@ -1,0 +1,4 @@
+import type {ConversationDraftBinding as HumanConversationBinding} from './conversationDraft.mjs';
+export type PrivateNoteSnapshot=Readonly<{available:boolean;note:string;saving:boolean;problem:string|null;revision:number}>;
+export interface ConversationPrivateNote {readonly binding:HumanConversationBinding;getSnapshot():PrivateNoteSnapshot;subscribe(fn:()=>void):()=>void;reload():Promise<void>;save(note:string):Promise<PrivateNoteSnapshot>;close():void;}
+export function openConversationPrivateNote(options:{binding:HumanConversationBinding;journal:{getItem(key:string):Promise<unknown>;setItem(key:string,value:unknown):Promise<unknown>};exclusive:(address:string,work:()=>Promise<PrivateNoteSnapshot>,signal:AbortSignal)=>Promise<PrivateNoteSnapshot>;authorize:(binding:HumanConversationBinding)=>boolean;signal:AbortSignal}):Promise<ConversationPrivateNote>;

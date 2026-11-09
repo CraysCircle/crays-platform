@@ -1,0 +1,33 @@
+/* Owner-selected existing Chuck row, shared by every Personal shell destination. */
+.desktop-topbar .global-chuck-composer{position:relative;flex:1;min-width:0;display:flex;align-items:center;gap:6px;height:56px;margin:0;padding:3px 5px 3px 10px;border:1px solid #dce5ef;border-radius:10px;background:#fff}
+.global-chuck-composer>img{width:32px;height:32px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.global-chuck-composer>svg{flex-shrink:0;color:#607e9e}
+.desktop-topbar .global-chuck-composer input{flex:1;min-width:0;width:100%;height:48px;border:0;border-radius:8px;background:#f2f5fa;padding:10px 12px;font:400 16px/1.4 Avenir,sans-serif;color:#092c40;outline:none}
+.global-chuck-composer input::placeholder{color:#526780;opacity:1}
+.desktop-topbar .global-chuck-composer input:focus-visible{outline:2px solid #007f91;outline-offset:-2px}
+.desktop-topbar .global-chuck-composer button{display:grid;place-items:center;flex-shrink:0;width:48px;min-width:48px;height:48px;min-height:48px;padding:0;border:0;border-radius:8px;background:transparent;color:#607e9e}
+.desktop-topbar .global-chuck-composer .global-chuck-send{border-radius:50%;background:#052a3c;color:white}
+.global-chuck-composer .global-chuck-problem{position:absolute;left:0;top:100%;width:100%;padding:12px;margin:8px 0 0;background:white;border:1px solid #dce5ef;border-radius:8px;font-size:18px;color:#9b123b;box-shadow:0 4px 16px #001b2e20}
+.web-feed-composer-row,.web-explore-composer{justify-content:flex-end}
+@media(max-width:1200px){.desktop-topbar{gap:10px;padding-left:16px;padding-right:16px}.desktop-topbar .web-layout-trigger span{display:none}}
+
+.global-chuck-composer button:disabled,.global-chuck-composer input:disabled{opacity:.5;cursor:not-allowed}
+
+.deferred-workspace-status{padding:24px;font:400 18px/1.5 Avenir,sans-serif;color:#092c40}.deferred-workspace-status button{min-height:48px;padding:10px 20px;border:1px solid #dce5ef;border-radius:8px;background:white;color:inherit}
+
+/* Canonical Personal mobile header: retain every original action, give typing its own row.
+   Frozen preview and independent Club/Gym member surfaces keep their existing layout. */
+@media(max-width:760px){
+ .desktop-chrome[data-personal-live="true"]:not([data-root="club"]):not([data-root="gym"]) .desktop-topbar{height:160px;display:flex;flex-wrap:wrap;align-content:flex-start;align-items:center;gap:4px;padding:8px}
+ .desktop-chrome[data-personal-live="true"]:not([data-root="club"]):not([data-root="gym"]) .desktop-topbar>button{height:44px;width:44px;min-height:44px;min-width:44px;padding:0;flex-shrink:0}
+ .desktop-chrome[data-personal-live="true"]:not([data-root="club"]):not([data-root="gym"]) .desktop-topbar>.global-chuck-composer{order:1;flex:0 0 100%;display:grid;grid-template-columns:44px 44px minmax(0,1fr) 44px;grid-template-rows:44px 40px;gap:4px;min-width:0;height:96px;padding:3px 5px}
+ .desktop-chrome[data-personal-live="true"]:not([data-root="club"]):not([data-root="gym"]) .global-chuck-composer>input{grid-column:1/-1;grid-row:1;min-width:0;width:100%;height:44px;font-size:16px}
+ .desktop-chrome[data-personal-live="true"]:not([data-root="club"]):not([data-root="gym"]) .global-chuck-composer>:is(img,svg){display:none}
+ .desktop-chrome[data-personal-live="true"]:not([data-root="club"]):not([data-root="gym"]) .global-chuck-composer>button{grid-row:2;width:40px;min-width:40px;height:40px;min-height:40px}
+ .desktop-chrome[data-personal-live="true"]:not([data-root="club"]):not([data-root="gym"]) .global-chuck-composer>.global-chuck-tool{grid-column:1}
+ .desktop-chrome[data-personal-live="true"]:not([data-root="club"]):not([data-root="gym"]) .global-chuck-composer>:is(.voice-draft-trigger,button[aria-label="Speak: Ask Chuck"]){grid-column:2}
+ .desktop-chrome[data-personal-live="true"]:not([data-root="club"]):not([data-root="gym"]) .global-chuck-composer>.global-chuck-send{grid-column:4;justify-self:end}
+ body:has(.desktop-chrome[data-personal-live="true"]:not([data-root="club"]):not([data-root="gym"])) .mobile-app-viewport{top:160px!important;height:calc(100dvh - 160px)!important}
+ .desktop-chrome[data-personal-live="true"]:not([data-root="club"]):not([data-root="gym"]) .personal-home{top:160px}
+ .desktop-chrome[data-personal-live="true"]:not([data-root="club"]):not([data-root="gym"]) .account-menu{top:52px}
+}

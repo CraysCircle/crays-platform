@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "allowImportingTsExtensions": true,
+    "paths": {
+      "pdfjs-dist": [
+        "/srv/crays/worktrees/nostr-web-01a1863a/apps/web-runtime/.qualification/desktop-pdf-dependency-v576/node_modules/pdfjs-dist/types/src/pdf.d.ts"
+      ]
+    },
+    "incremental": false
+  },
+  "include": [
+    "src"
+  ],
+  "references": []
+}

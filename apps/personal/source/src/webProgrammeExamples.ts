@@ -1,0 +1,8 @@
+import type {ProductWorld} from './productModel';
+/** New explicitly fictional dated programme, separate from retained historical events. */
+export function withWebProgrammeExamples(world:ProductWorld):ProductWorld{
+ if(world.owner!=='thorben'||!world.identity.signedIn||world.identity.destination!=='Demo account'||world.settings.webProgrammeExamplesV1)return world;
+ const examples=[['shared-table','Shared table evening at Harbor House','harbor-house','2026-10-28','18:30','Europe/Lisbon','Food & drinks','A communal dinner and open table. Dietary requirements, available places and the final menu are confirmed by the host.'],['creative-conversation','A conversation about making things','harbor-house','2026-10-31','16:00','Europe/Lisbon','Community','A workshop and open conversation about ideas, materials and bringing things to life.'],['coast-sunset','Sunset at the coast','coast','2026-11-07','17:00','Europe/Madrid','Outdoors','An evening by the sea. Review the host’s programme, weather arrangements and access conditions.']];
+ const objects=examples.filter(e=>world.venues.some(v=>v.id===e[2])).map(([id,name,venueId,date,time,timezone,planCategory,description])=>({id:'web-demo-experience-'+id,owner:world.owner,kind:'event',name,venueId,date,time,timezone,planCategory,description,image:id==='shared-table'?'web-event-shared-table.webp':id==='creative-conversation'?'web-event-makers.webp':'lifestyle-club-05.jpg',status:'available',attendance:'none',capacity:'Availability on request',recurring:false,sourceAuthority:'fictional-preview',liveExecution:false}));
+ return {...world,settings:{...world.settings,webProgrammeExamplesV1:true},objects:[...world.objects,...objects.filter(o=>!world.objects.some(x=>x.id===o.id))]};
+}

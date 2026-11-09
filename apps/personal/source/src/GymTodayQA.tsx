@@ -1,0 +1,7 @@
+import {useState} from 'react';
+import {createRoot} from 'react-dom/client';
+import DesktopShell from './DesktopShell';import {MobileDeviceProvider} from './mobile/Device';import {KeyboardProvider} from './mobile/Keyboard';import {PhoneFrame} from './mobile/PhoneFrame';
+import '@fontsource/roboto/latin-500.css';import './styles.css';import './prototype.css';import './web-design-tokens.css';import './desktop.css';import './web-layout.css';
+function Harness(){const [signedIn,setSignedIn]=useState(true),[held,setHeld]=useState(''),[draft,setDraft]=useState('');
+return <><DesktopShell signedIn={signedIn} ownName="Gym design preview" ownPhoto="" demoHome={false} previewMode onNavigate={target=>setHeld(target)} overview={{conversations:[],today:[],date:'Wednesday, 28 October 2026',available:true,draft,onDraft:setDraft,onChuck:(_intent,onReturn)=>{setHeld('Chuck');window.dispatchEvent(new Event('crays:web-content'));(window as unknown as {gymQAReturn?:()=>void}).gymQAReturn=onReturn},problem:''}} heldContent={<section><h1>{held}</h1><button onClick={()=>{(window as unknown as {gymQAReturn?:()=>void}).gymQAReturn?.()}}>Return to previous page</button></section>}/><button id="gym-qa-signout" style={{display:'none'}} onClick={()=>setSignedIn(false)}>QA signout</button></>}
+createRoot(document.getElementById('root')!).render(<MobileDeviceProvider><PhoneFrame><KeyboardProvider><Harness/></KeyboardProvider></PhoneFrame></MobileDeviceProvider>);

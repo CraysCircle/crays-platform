@@ -1,0 +1,1 @@
+export function SpaceSaaSHint(){return <p className="space-saas-hint">Running a hospitality, gym, coffee or retail business? Discover the full CRAYS 360° SaaS: 5% software fee, plus the 0.25% ecosystem transaction fee. <a href="https://crays.pro" target="_blank" rel="noopener noreferrer">Explore crays.pro ↗</a></p>;}

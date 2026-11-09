@@ -1,0 +1,27 @@
+/** Presentation-only covers for existing illustrative scenario records. */
+const covers:Record<string,string>={
+ 'travel:travel-seed':'web-saved-lisbon.png',
+ 'object:demo-event-8':'web-event-movement.webp',
+ 'object:web-demo-marina-stay':'member-marina-original.webp',
+ 'object:web-demo-club-dinner':'member-dining.webp',
+ 'object:web-demo-team-golf':'member-golf.webp',
+ 'object:web-demo-spa':'member-wellness.webp',
+ 'object:web-demo-undated':'lifestyle-club-06.jpg',
+ 'object:demo-order-4':'web-chuck-coffee-pickup.png',
+ 'object:demo-order-3':'web-chuck-coffee-iced.png',
+ 'object:demo-order-2':'web-chuck-coffee-filter.png',
+ 'object:demo-order-1':'web-chuck-coffee-cappuccino.png',
+ 'object:demo-order-0':'web-chuck-coffee-espresso.png',
+ 'object:demo-booking-1':'gym-coaching-trainer-client.jpg',
+ 'object:web-demo-cancelled':'web-plan-golf-course.jpg',
+ 'object:web-demo-past':'web-event-shared-table.webp',
+ 'object:demo-booking-0':'web-discover-rooftop.webp',
+ 'object:demo-event-7':'web-event-makers.webp',
+ 'object:demo-booking-2':'circle.png',
+ 'object:demo-booking-3':'lifestyle-gym-02.webp',
+ 'object:demo-booking-4':'lifestyle-club-13.jpg',
+ 'object:demo-booking-5':'gym-challenge-strength-duo.jpeg',
+ 'object:demo-booking-6':'lifestyle-club-12.jpg',
+ 'object:demo-booking-7':'lifestyle-gym-03.webp',
+};
+export function webPlanImage(plan:{key:string;image:string}){return covers[plan.key]||plan.image;}

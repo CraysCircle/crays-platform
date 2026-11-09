@@ -1,0 +1,6 @@
+import type {HumanConversationResources} from './humanConversationWorkspace.mjs';
+import type {HistoryVisibilityBinding} from './historyVisibility.mjs';
+import type {AccountBrowserStores} from './accountBrowserStores.mjs';
+import type {MarmotClient} from '../../.qualification/marmot-pilot-v1/node_modules/@internet-privacy/marmot-ts-welcome-context-v1/dist/client/marmot-client.js';
+import type {MarmotGroup,BaseGroupHistory} from '../../.qualification/marmot-pilot-v1/node_modules/@internet-privacy/marmot-ts-welcome-context-v1/dist/client/group/marmot-group.js';
+export function openCurrentTextResources(options:{binding:HistoryVisibilityBinding;group:MarmotGroup<BaseGroupHistory>;client:MarmotClient<BaseGroupHistory>;stores:AccountBrowserStores['stores'];signal:AbortSignal;isCurrent():boolean;recoverHistory():Promise<unknown>;origin:'welcome'|'creation';connect?:boolean;openMedia?:(context:{binding:HistoryVisibilityBinding;group:MarmotGroup<BaseGroupHistory>;client:MarmotClient<BaseGroupHistory>;stores:AccountBrowserStores['stores'];journal:{getItem(key:string):Promise<any>;setItem(key:string,value:any):Promise<void>};signal:AbortSignal;isCurrent():boolean})=>Promise<import('./privateMediaSession.mjs').PrivateMediaSession>;locks?:LockManager;crypto?:Crypto}):Promise<HumanConversationResources>;

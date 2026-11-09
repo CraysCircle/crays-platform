@@ -1,0 +1,22 @@
+import type {PrivateMediaSession} from './privateMediaSession.mjs';
+import type {PrivateGroupDeparture} from './privateGroupDeparture.mjs';
+import type {PrivateGroupInvitations} from './privateGroupInvitations.mjs';
+import type {PrivateGroupController} from './privateGroupController.mjs';
+import type {MdkNormalDeviceRuntime} from './mdkDeviceRuntime.mjs';
+import type {MdkGroupJournalBinding,MdkGroupJournal} from './mdkMembershipJournal.mjs';
+import type {MdkOutgoingAdmission} from './mdkOutgoingPublisher.mjs';
+import type {HumanConversationClient} from './humanConversationClient.mjs';
+import type {ConversationDraft} from './conversationDraft.mjs';
+export function openMdkGroupTextResources(options:{
+ binding:MdkGroupJournalBinding&{storageFormat:'crays-original-mdk-current-v1'};
+ runtime:MdkNormalDeviceRuntime;
+ mediaConfiguration?:{baseUrl:string;transport:{upload(input:{baseUrl:string;data:Uint8Array;ciphertextSha256:string;signal:AbortSignal;maxBytes:number}):Promise<string>;fetch(input:{url:string;signal:AbortSignal;maxBytes:number}):Promise<Uint8Array>}};
+ accountStore:{openGroupJournal(input:{binding:MdkGroupJournalBinding;getAdmission():MdkOutgoingAdmission|null;signal:AbortSignal}):Promise<MdkGroupJournal>};
+ getAdmission():MdkOutgoingAdmission|null;
+ authorize(binding:MdkGroupJournalBinding,action:'read'|'send'|'manage'|'invite'|'leave',target?:string):boolean;
+ invitationCandidates?():readonly Readonly<{pubkey:string;name:string}>[];
+ resolveInvitationPackage?(pubkey:string,options:{signal:AbortSignal}):Promise<unknown>;
+ prepareInvitationRetry?(attempt:Readonly<import('./privateGroupInvitations.mjs').GroupInviteResult>,options:{signal:AbortSignal;needsCommitProof?:boolean}):Promise<unknown>;
+ onGroupLeft?(state:Readonly<{groupId:string;requestId:string}>):Promise<void>;
+ signal:AbortSignal;pageSize?:number;onGroupConfirmed?(state:Readonly<{groupId:string;name:string;members:readonly string[]}>):Promise<void>;
+}):Promise<Readonly<{client:HumanConversationClient;media?:PrivateMediaSession;composer:ConversationDraft;group:PrivateGroupController;departure:PrivateGroupDeparture;invitations?:PrivateGroupInvitations;close():Promise<void>}>>;

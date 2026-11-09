@@ -1,0 +1,113 @@
+/* Training main only. Shared CI, navigation, session and layout controllers remain authoritative. */
+.gym-training-main{min-width:0;color:var(--web-ink)}
+.gym-training-main[hidden]{display:none}
+.gym-design-page .gym-training-sections{display:grid;gap:64px}
+.gym-design-page .gym-training-main h2{font-size:var(--web-h2);line-height:1.3;letter-spacing:-.4px;margin:0}
+.gym-design-page .gym-training-main h3{font-size:var(--web-h3);line-height:1.35;font-weight:700;margin:0}
+.gym-design-page .gym-training-main p{font-size:var(--web-body);line-height:1.55;color:var(--web-muted);margin:10px 0 0}
+.gym-design-page .gym-training-heading{margin-bottom:28px}
+.gym-design-page .gym-training-heading-actions{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.gym-design-page .gym-training-heading-actions>div:first-child{min-width:0}
+.gym-design-page .gym-training-main .gym-design-action{font-size:var(--web-control);font-weight:500;line-height:1.4;min-height:44px;padding:10px 18px;margin:0;gap:14px;white-space:normal}
+.gym-design-page .gym-training-main .gym-design-action.primary{min-height:48px;padding:12px 18px}
+.gym-design-page .gym-training-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px}
+.gym-design-page .gym-training-tabs{display:flex;flex-wrap:wrap;gap:4px 24px;border-bottom:1px solid var(--web-rule)}
+.gym-design-page.gym-design-page .gym-training-main .gym-training-tabs>button[aria-pressed]{font-family:inherit;font-size:15px;line-height:1.5;font-weight:400;min-height:48px;padding:10px 3px;border:0;border-bottom:2px solid transparent;background:transparent;color:var(--web-muted)}
+.gym-design-page.gym-design-page .gym-training-main .gym-training-tabs>button[aria-pressed=true]{font-weight:700;color:var(--web-ink);border-bottom-color:var(--web-accent)}
+.gym-design-page .gym-training-sections>[data-layout-block=navigation]{margin-bottom:-40px}
+.gym-design-page [data-sized=false]>.gym-training-hero{height:auto;aspect-ratio:1744/901;min-height:360px;max-height:calc(100svh - 340px)}
+.gym-design-page [data-sized=true]>.gym-training-hero{height:100%;max-height:none;aspect-ratio:auto;align-items:flex-start;overflow:auto}
+.gym-design-page .gym-training-main .gym-lifestyle-hero-copy{width:min(100%,560px);max-width:65%;padding:36px 32px}
+.gym-design-page .gym-training-main .gym-lifestyle-hero-copy h1{font-size:26px;line-height:1.3;letter-spacing:-.4px;font-weight:700;margin:8px 0 14px}
+.gym-design-page .gym-training-main .gym-lifestyle-hero-copy p{font-size:19px;line-height:1.55;color:#fff;margin:0 0 20px;max-width:460px}
+.gym-design-page .gym-training-kicker{font-size:12px;font-weight:700;line-height:1.5;letter-spacing:.08em}
+.gym-design-page .gym-training-main .gym-training-hero-secondary{background:transparent;color:#fff;border-color:#b7c9d4}
+.gym-design-page .gym-training-next{position:absolute;right:24px;top:24px;display:grid;gap:10px;width:240px;max-width:30%;padding:20px;background:var(--web-ink);color:#fff;border:1px solid #597384;border-radius:6px;text-align:left}
+.gym-design-page .gym-training-next>span{display:flex;align-items:center;gap:10px}
+.gym-design-page .gym-training-next>span:last-child>svg:last-child{margin-left:auto}
+.gym-design-page .gym-training-next small{font-size:var(--web-meta);font-weight:400;color:#dbe7ef}
+.gym-design-page .gym-training-next strong{font-size:var(--web-h3);font-weight:700;line-height:1.35}
+.gym-design-page .gym-training-icon-button{display:grid;place-items:center;min-height:44px;min-width:44px;padding:10px;border:1px solid var(--web-rule);border-radius:50%;background:#fff;color:var(--web-ink)}
+.gym-design-page .gym-training-text-action{display:inline-flex;align-items:center;gap:12px;min-height:44px;padding:8px 0;margin:0;border:0;background:transparent;color:var(--web-ink);font-family:inherit;font-size:var(--web-control);text-align:left}
+.gym-design-page .gym-training-calendar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:12px;margin-bottom:24px}
+.gym-design-page .gym-training-calendar button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;width:100%;min-height:180px;padding:16px 8px;background:#fff;border:1px solid var(--web-rule);border-radius:6px;color:var(--web-ink)}
+.gym-design-page .gym-training-calendar strong{font-size:16px;font-weight:700}
+.gym-design-page .gym-training-calendar small{font-size:var(--web-meta);font-weight:400;line-height:1.5;color:var(--web-muted)}
+.gym-design-page .gym-training-calendar button[aria-pressed=true]{background:#fcecf2;border-color:#e8a8be}
+.gym-design-page .gym-training-calendar button[aria-pressed=true]>strong{color:var(--web-accent)}
+.gym-design-page .gym-training-selected{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr) minmax(0,1fr);border:1px solid var(--web-rule);border-radius:6px;overflow:hidden;background:#f7faff}
+.gym-design-page .gym-training-selected>img{width:100%;height:100%;min-height:260px;object-fit:cover;object-position:center 8%}
+.gym-design-page .gym-training-selected-copy{display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:24px;min-width:0}
+.gym-design-page .gym-training-selected-copy p{font-size:var(--web-meta);margin:0 0 6px}
+.gym-design-page .gym-training-selected-copy>.gym-design-action{margin-top:auto}
+.gym-design-page .gym-training-meta{font-size:var(--web-meta);line-height:1.55;font-weight:400;color:var(--web-muted);display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+.gym-design-page .gym-training-example{font-size:12px;line-height:1.5;font-weight:400;padding:3px 8px;border-radius:5px;background:#e6eff6;color:var(--web-ink);width:fit-content}
+.gym-design-page .gym-training-selected-movements{padding:24px;min-width:0;border-left:1px solid var(--web-rule)}
+.gym-design-page .gym-training-selected-movements>h3{margin-bottom:16px}
+.gym-design-page .gym-training-selected-movements>button:not(.gym-design-action){display:flex;align-items:center;gap:12px;width:100%;min-height:80px;padding:8px 0;background:transparent;border:0;border-bottom:1px solid var(--web-rule);color:var(--web-ink);text-align:left}
+.gym-design-page .gym-training-selected-movements>button img{width:64px;height:64px;border-radius:5px;object-fit:cover;flex:none}
+.gym-design-page .gym-training-selected-movements>button>span{flex:1;min-width:0}
+.gym-design-page .gym-training-selected-movements strong{font-size:16px;line-height:1.4;font-weight:700;display:block}
+.gym-design-page .gym-training-selected-movements small{font-size:var(--web-meta);line-height:1.5;font-weight:400;color:var(--web-muted);display:block;margin-top:5px}
+.gym-design-page .gym-training-selected-movements p{font-size:var(--web-meta);margin-bottom:20px}
+.gym-design-page .gym-training-search{display:flex;align-items:center;gap:12px;padding:0 16px;min-height:52px;background:#f7faff;border:1px solid var(--web-rule);border-radius:6px}
+.gym-design-page .gym-training-search input{font-family:inherit;font-size:var(--web-control);color:var(--web-ink);background:transparent;border:0;width:100%;min-width:0;padding:12px 0}
+.gym-design-page .gym-training-filters{display:flex;align-items:end;flex-wrap:wrap;gap:12px;margin:16px 0}
+.gym-design-page .gym-training-filters>label{display:grid;gap:6px;font-size:var(--web-meta);color:var(--web-muted);min-width:160px}
+.gym-design-page .gym-training-filters select{max-width:100%;min-height:44px;padding:10px 14px;border:1px solid var(--web-rule);border-radius:999px;background:#f7faff;color:var(--web-ink);font-family:inherit;font-size:var(--web-meta)}
+.gym-design-page .gym-training-main .gym-training-results{font-size:var(--web-meta);margin:0 0 20px}
+.gym-design-page .gym-training-exercises{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.gym-design-page .gym-training-exercise{display:flex;flex-direction:column;overflow:hidden;border:1px solid var(--web-rule);border-radius:6px;background:#fff}
+.gym-design-page .gym-training-exercise>img{width:100%;height:210px;object-fit:cover}
+.gym-design-page .gym-training-exercise>div{padding:22px;display:flex;flex-direction:column;align-items:flex-start;gap:10px;flex:1}
+.gym-design-page .gym-training-exercise p{margin:0}
+.gym-design-page .gym-training-exercise .gym-training-actions{margin-top:auto;padding-top:10px}
+.gym-design-page .gym-training-empty,.gym-design-page .gym-training-band{display:flex;align-items:center;gap:24px;padding:24px;background:#f7faff;border:1px solid var(--web-rule);border-radius:6px}
+.gym-design-page .gym-training-empty>div,.gym-design-page .gym-training-band>div{flex:1}
+.gym-design-page .gym-training-main .gym-training-band p,.gym-design-page .gym-training-main .gym-training-empty p{font-size:var(--web-meta);margin-top:6px}
+.gym-design-page .gym-training-band>svg,.gym-design-page .gym-training-empty>svg{flex:none}
+.gym-design-page .gym-training-progress-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:24px}
+.gym-design-page .gym-training-goal{display:flex;align-items:flex-start;gap:24px;padding:28px;border:1px solid var(--web-rule);border-radius:6px;background:#f7faff}
+.gym-design-page .gym-training-goal>svg{flex:none}
+.gym-design-page .gym-training-goal p{font-size:var(--web-meta);margin-bottom:22px}
+.gym-design-page .gym-training-challenge{display:grid;grid-template-columns:42% minmax(0,1fr);background:#f7faff;border:1px solid var(--web-rule);border-radius:6px;overflow:hidden}
+.gym-design-page .gym-training-challenge>img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.gym-design-page .gym-training-challenge>div{padding:24px;display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.gym-design-page .gym-training-challenge p{font-size:var(--web-meta);margin:0 0 6px}
+.gym-design-page .gym-training-support{display:flex;align-items:center;gap:24px;padding:20px 24px;border-radius:6px;background:var(--web-ink);color:#fff}
+.gym-design-page .gym-training-support>div:first-of-type{flex:1}
+.gym-design-page .gym-training-support p{font-size:var(--web-meta);color:#dbe7ef;margin-top:6px}
+.gym-design-page .gym-training-support button{color:#fff}
+.gym-design-page .gym-training-main button{transition:background-color 160ms ease,box-shadow 160ms ease,transform 160ms ease}
+.gym-design-page .gym-training-main button:hover:not(:disabled){background-color:#edf4f9}
+.gym-design-page .gym-training-main button:active:not(:disabled){transform:translateY(1px)}
+.gym-design-page .gym-training-main button:focus-visible,.gym-design-page .gym-training-main :is(input,select):focus-visible{outline:2px solid var(--web-ink);outline-offset:4px}
+.gym-design-page .gym-training-main .gym-design-action.primary:hover{background:var(--web-accent);filter:brightness(.92);transform:translateY(-1px)}
+.gym-design-page .gym-training-main .gym-training-next:hover,.gym-design-page .gym-training-main .gym-training-hero-secondary:hover{background:#29495d;color:#fff}
+.gym-design-page .gym-training-main .gym-training-support button:hover{color:var(--web-ink)}
+.gym-design-page .gym-training-support button:focus-visible,.gym-design-page .gym-training-hero button:focus-visible{outline-color:#fff}
+.gym-design-page .gym-training-sections>.club-adjustable-block{position:relative}
+.gym-design-page .gym-training-sections>.club-adjustable-block:not(:first-child):not([data-layout-block=hero])::before{content:"";position:absolute;left:0;right:0;top:-32px;border-top:1px solid var(--web-rule);pointer-events:none}
+@media(max-width:1400px){.gym-design-page .gym-training-sections{gap:48px}.gym-design-page .gym-training-sections>[data-layout-block=navigation]{margin-bottom:-24px}.gym-design-page .gym-training-sections>.club-adjustable-block:not(:first-child):not([data-layout-block=hero])::before{top:-24px}.gym-design-page .gym-training-selected{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr)}.gym-design-page .gym-training-selected-movements{grid-column:1/-1;border-left:0;border-top:1px solid var(--web-rule);display:flex;align-items:center;gap:16px;flex-wrap:wrap}.gym-design-page .gym-training-selected-movements>h3{flex-basis:100%;margin-bottom:0}.gym-design-page .gym-training-selected-movements>button:not(.gym-design-action){flex:1;min-width:200px}.gym-design-page .gym-training-exercises{gap:16px}.gym-design-page .gym-training-exercise>div{padding:18px}}
+@media(max-width:1100px){.gym-design-page [data-sized=false]>.gym-training-hero{max-height:none;min-height:360px}.gym-design-page .gym-training-main .gym-lifestyle-hero-copy{max-width:72%;padding:28px 24px}.gym-design-page .gym-training-next{top:16px;right:16px;width:190px;max-width:30%;padding:12px}.gym-design-page .gym-training-next>span:first-child{font-size:14px}.gym-design-page .gym-training-heading-actions{align-items:flex-start;flex-wrap:wrap}.gym-design-page .gym-training-calendar{gap:6px}.gym-design-page .gym-training-calendar button{padding:12px 4px;min-height:172px}.gym-design-page .gym-training-calendar button>span{font-size:14px}.gym-design-page .gym-training-exercises{grid-template-columns:repeat(2,minmax(0,1fr))}.gym-design-page .gym-training-progress-cards{grid-template-columns:1fr}.gym-design-page .gym-training-band,.gym-design-page .gym-training-empty,.gym-design-page .gym-training-support{flex-wrap:wrap}.gym-design-page .gym-training-band>.gym-design-action,.gym-design-page .gym-training-empty>.gym-design-action{margin-left:60px}.gym-design-page .gym-training-support>.gym-training-actions{flex-basis:100%;margin-left:56px}.gym-design-page .gym-training-selected-movements>button:not(.gym-design-action){min-width:180px}}
+@media(prefers-reduced-motion:reduce){.gym-design-page .gym-training-main button{transition:none!important;transform:none!important}}
+
+/* Metadata inside a card paragraph keeps the shared metadata role. */
+.gym-design-page .gym-training-main p.gym-training-meta{font-size:var(--web-meta);font-weight:400;line-height:1.55}
+.gym-design-page .gym-training-exercise{transition:transform 160ms ease,box-shadow 160ms ease}
+.gym-design-page .gym-training-exercise:hover,.gym-design-page .gym-training-exercise:focus-within{box-shadow:0 5px 18px #08263812;transform:translateY(-2px)}
+@media(prefers-reduced-motion:reduce){.gym-design-page .gym-training-exercise{transition:none!important;transform:none!important}}
+
+.gym-design-page .gym-training-hero>img{object-position:center top}
+.gym-design-page .gym-training-selected-movements>button>svg{flex:none}
+
+/* Native browser zoom can reduce a desktop viewport below1000 CSSpx. Keep both
+   original hero actions and the next-session shortcut in separate readable rows. */
+@media(max-width:1000px){
+ .gym-design-page [data-sized=false]>.gym-training-hero{aspect-ratio:auto}
+ .gym-design-page .gym-training-hero{flex-direction:column;align-items:stretch}
+ .gym-design-page .gym-training-main .gym-lifestyle-hero-copy{width:100%;max-width:100%;padding:28px 24px}
+ .gym-design-page .gym-training-next{position:relative;inset:auto;align-self:flex-start;width:calc(100% - 48px);max-width:none;margin:0 24px 24px;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center}
+ .gym-design-page .gym-training-next>small{text-align:right}
+ .gym-design-page .gym-training-next>span:last-child{justify-content:flex-end}
+}

@@ -1,0 +1,1 @@
+export function openMessagingDeviceSlot(options:{store:{getItem(key:string):Promise<unknown>;setItem(key:string,value:unknown):Promise<unknown>};locks:Pick<LockManager,'request'>;scope:string;isCurrent:()=>boolean;crypto?:Crypto}):Promise<string>;

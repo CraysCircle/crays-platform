@@ -1,0 +1,10 @@
+import type {GuestCatalogueItem} from './venueCatalogue.ts';
+import type {CatalogueModifierGroup} from './catalogueModifiers.ts';
+/** Fixed, labelled fictional menu publication; never refreshes stale evidence silently. */
+export function coffeeModifierExample(base:GuestCatalogueItem):GuestCatalogueItem{
+ const item:GuestCatalogueItem={...structuredClone(base),id:`${base.venueId}:configured-latte`,name:'Latte · your way',description:'Fictional latte and options for exploring the planned ordering experience. Ingredients, allergens and actual availability need the seller’s confirmation.',variants:[{...base.variants[0],spacePrice:'4.00',sourcePrice:'4.00',priceVersion:`${base.catalogueId}:configured-latte:v1`,externalVariantId:`preview:${base.venueId}:configured-latte`}]};
+ const context={venueId:item.venueId,catalogueId:item.catalogueId,catalogueVersion:item.catalogueVersion,sellerId:item.sellerId,channelId:item.channelId,variantId:item.variants[0].variantId,priceVersion:item.variants[0].priceVersion,currency:'USD' as const};
+ const option=(code:string,name:string,delta:number)=>({optionCode:code,displayName:name,vendureProductVariantId:`preview-option:${code}`,catalogObservationId:`preview-observation:${code}:v1`,priceDeltaMinor:delta,currencyCode:'USD' as const,observation:{id:`preview-observation:${code}:v1`,variantId:`preview-option:${code}`,unitMinor:400+delta,currency:'USD' as const,context:{...context},observedAt:Date.parse('2026-10-21T00:00:00Z'),freshUntil:Date.parse('2030-01-01T00:00:00Z'),availability:'available' as const}});
+ const groups:CatalogueModifierGroup[]=[{groupCode:'milk-choice',displayName:'Milk choice',minSelections:1,maxSelections:1,sourceId:'fictional-coffee-menu',version:1,sourceAuthority:'fictional-preview',options:[option('milk-classic','Classic milk',0),option('milk-oat','Oat drink',50)]},{groupCode:'coffee-extras',displayName:'Extras',minSelections:0,maxSelections:2,sourceId:'fictional-coffee-menu',version:1,sourceAuthority:'fictional-preview',options:[option('extra-shot','Extra espresso shot',100),option('vanilla-syrup','Vanilla syrup',25)]}];
+ return {...item,modifierGroups:groups};
+}

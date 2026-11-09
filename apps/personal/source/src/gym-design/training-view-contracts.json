@@ -1,0 +1,135 @@
+[
+  {
+    "tab": "Training home",
+    "view": "home",
+    "authority": {
+      "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/src/components/member-train/member-training-overview.tsx",
+      "lines": "28\u201395 DTO;156\u2013227 reads/session recovery;234\u2013346 presentation",
+      "sha256": "014e51a981abdba63f35120847bb531ad56498fff41ccff96e7de555ace8035b"
+    },
+    "fieldIdentities": [
+      "profileState/profile/profileVersion",
+      "programsState/programId/activeVersion/lifecycleState/contentSha256",
+      "calendarState/eventId/eventVersion/templateId/templateVersion/localDate/localTime/timezone",
+      "sessionsState/sessionId/sourceKind/sourceId/sourceVersion/sessionVersion/state"
+    ],
+    "requiredSelectedContents": [
+      "Shared My training/My progress switch and six original Training task labels. Selected home overview only; deep Library/History/Strength/Settings bodies belong to their own tabs.",
+      "Training hero with open plan and free/continue/review exact local workout intent; upcoming/active context is original or clearly Example plan, never fabricated original member status.",
+      "Training week/selected date/next workout summary and planning entry. Existing illustrative week previous/next/Today and selected session remain coherent.",
+      "Original own training-profile summary, original programme version/state and upcoming/recent-workout summaries can be compact entries; unloaded fields unknown.",
+      "Voluntary readiness context/entry and tools links (Plan/calendar, exercise guides, strength, history, settings, wearables). My progress is an independent crosslink, not all nine child contents mixed into home."
+    ]
+  },
+  {
+    "tab": "Training plan",
+    "view": "planning",
+    "authority": {
+      "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/src/components/member-train/training-planning.tsx",
+      "lines": "3\u20136 DTO/recovery;14\u201326 reads/commands;29\u201333 five original content areas",
+      "sha256": "168201dab58b9f2804e6cdc7d795e4e57f6f9f4b57877a631086ad9b61ae282d"
+    },
+    "fieldIdentities": [
+      "templateId/templateVersion/contentSha256/craysExerciseId",
+      "programId/activeVersion/lifecycleState/weeks",
+      "eventId/eventVersion/programId/programVersion/templateId/templateVersion/localDate/localTime/timezone",
+      "recommendationId/rulesetVersion/proposedProgramContent/explanation.basis/rules/limitations",
+      "proposalId/mappingVersion/reasonCodes/evidence.authority/reviewState/publicationState/state"
+    ],
+    "requiredSelectedContents": [
+      "Workout templates: approved exercise search/selection, template name, sets/rest and source-qualified exercise list; stored template name/count/version/lifecycle.",
+      "Training programmes: name/goal/weeks/template version; DRAFT/ACTIVE/PAUSED/COMPLETED/ARCHIVED state; explicit draft creation/activation boundary.",
+      "Calendar: exact template/version + localDate/localTime/timezone; displayed event version/state; existing scheduled-session entry and skip/complete decisions only when eligible.",
+      "Plan recommendations: original proposal content, input basis, rules, limitations, ruleset version/state; accepting creates draft only, never silently activates a programme.",
+      "Governed substitutions: original exercise\u2192substitute names, mappingVersion/reasonCodes/explanation/publication and review evidence/state; accept records decision, never silently replaces template/programme."
+    ]
+  },
+  {
+    "tab": "Exercise library",
+    "view": "exercises",
+    "authority": {
+      "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/src/components/member-train/exercise-library.tsx",
+      "lines": "15\u201320 filters/search contract;23\u201345 query/pagination;55\u201358 filters/cards/states",
+      "sha256": "e462537437d1a984fec380736237ecbda308bba0af31170e1da35925f52a7834"
+    },
+    "fieldIdentities": [
+      "crays.train-exercise-search.v2",
+      "craysExerciseId/slug/name/movementPattern/primaryMuscles/level",
+      "media.posterUrl/width/height/altText/mediaSequence",
+      "nextCursor/appliedFilters/publicationReceiptDigest/availableLimitations",
+      "filters q/muscle/equipment/movement/goal/level/limitation/media/take24/cursor"
+    ],
+    "requiredSelectedContents": [
+      "Exercise discovery search with minimum2-character original query rule; query1character shows Keep typing and sends no actual original request.",
+      "Original facets muscle,goal,movement,equipment,level includingUNKNOWN, limitation tag if supplied, media ANY/EXACT/NONE; clear/count/current filters and URL context.",
+      "Source-qualified results retain craysExerciseId/slug/movementPattern/primaryMuscles/level and governed media relation including position sequence; absent approved image has explicit no-approved-media state.",
+      "Cursor-based load more, result/end count and session/cursor-expired recovery; proper READY/NO_RESULTS/EMPTY/REVIEW_REQUIRED/PERMISSION_DENIED/UNAVAILABLE and loading states.",
+      "View exercise entry keeps exact original exercise slug. Existing local examples may be used with explicit illustrative IDs/classifications and no original instruction claim."
+    ]
+  },
+  {
+    "tab": "History",
+    "view": "history",
+    "authority": {
+      "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/src/components/member-train/training-history.tsx",
+      "lines": "20\u201328 DTO;40\u201385 filters/readcounts;112\u2013190 list/states",
+      "sha256": "644f98dcff444e81ffad19507acb51292ed5c54e02509b21b41c5880331ebf3b"
+    },
+    "fieldIdentities": [
+      "sessionId/sourceKind/state/startedAt/completedAt/timezone",
+      "filters state/from/to/take100",
+      "ACTIVE/PAUSED/COMPLETED/ABORTED"
+    ],
+    "requiredSelectedContents": [
+      "Own sessions list, status filter All/ACTIVE/PAUSED/COMPLETED/ABORTED and From/To; Apply/clear chosen context.",
+      "Visible filtered counts total/completed/open are counted only from successfully loaded own records or clearly labelled local examples; not server total or unknown0.",
+      "Each row keeps sessionId, sourceKind, startedAt/completedAt, timezone and exact state; open exact session/history detail with return preserving filters.",
+      "Loading/private/unavailable/filtered-empty separate. Unknown original history is not no-records. Existing example detail/export/remove flow is separate local prototype and must not become actual mutation."
+    ]
+  },
+  {
+    "tab": "Strength trends",
+    "view": "progression",
+    "authority": {
+      "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/src/components/member-train/training-progress.tsx",
+      "lines": "21\u201347 DTO;85\u2013125 read/chart12;149\u2013178 commands;245\u2013376 content",
+      "sha256": "bf8c90be8a5eb4230cad801997bb881e2f11c567596b047f9261d318b9bc2c0b"
+    },
+    "fieldIdentities": [
+      "records.craysExerciseId/name/maxLoadKg/maxReps/maxSetVolumeKg/setCount/lastPerformedAt",
+      "history.sessionId/startedAt/completedAt/exerciseCount/setCount/volumeKg",
+      "proposalId/proposalKind/priorTarget/proposedTarget/explanation/state/rulesetVersion"
+    ],
+    "requiredSelectedContents": [
+      "Measured completed-workout volume over last12completed sessions; missing volume null remains absent rather than zero-filled.",
+      "Recent evidence list links exact completed session; recorded setcount/volume/date, no original loaded record fabricated.",
+      "Personal records table per craysExerciseId: maxLoadKg/maxReps/maxSetVolumeKg/setCount/lastPerformedAt, unknown nulls explicit; evaluate progression action gated by original evidence.",
+      "Progression proposals: proposalId/proposalKind/priorTarget/proposedTarget/explanation/rulesetVersion/state; explicit Accept proposal/Keep current plan for eligible PROPOSED only, no autonomous change.",
+      "Unknown/private/unavailable/recovery state and source separation; trends do not host body-photo/habit/goal/challenge controls."
+    ]
+  },
+  {
+    "tab": "Settings",
+    "view": "settings",
+    "authority": {
+      "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/src/components/member-train/training-settings.tsx",
+      "lines": "12\u201398 read/profile/preferences;104\u2013205 guardedcreate/save;217\u2013303 basefields;390\u2013511 notification/zones/safety",
+      "sha256": "34e9feabe9b798852edb1ae635a81bf6ef5bcaa0cad752d9c690b13c00bcb0d3"
+    },
+    "fieldIdentities": [
+      "goals/experience/availableDays/minutesPerSession/equipment/units/timezone/profileVersion",
+      "preferences.notifications.restTimer/workoutReminders",
+      "preferences.zones.method/values",
+      "voluntaryLimitations.notes",
+      "safety.principles/stopSignals/escalation",
+      "expectedVersion"
+    ],
+    "requiredSelectedContents": [
+      "Profile goals, experienceBEGINNER/INTERMEDIATE/ADVANCED/UNKNOWN, minutesperSession optional10..300, availableDaysMon1..Sun7, equipment, METRIC/IMPERIAL units and source timezone/version context.",
+      "Rest-timer notification/workoutreminder preferences; manualzones UNKNOWN/MANUAL_HEART_RATE/MANUAL_POWER with5zone values; voluntary limitations optionalnever inferred.",
+      "Profile READY/EMPTYsetup/LOADING/PERMISSION_DENIED/OFFLINE/UNAVAILABLE distinct; local drafts/save status remain explicitly local until data integration.",
+      "Safety boundary principles, stopSignals and escalation from original safety source; unloaded safety not invented medicaladvice.",
+      "Wearables/consent existing crosslink, separate from profile save and coach grants; save never grants providerpermission. Exact version/recovery boundary visible in integrationdesign."
+    ]
+  }
+]

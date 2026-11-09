@@ -1,0 +1,52 @@
+/** Existing own Library overview destinations only. No action, draft, task, approval or
+ * provider request is serialized here; nondefault process routes keep their originals. */
+export const libraryNavigationDefinitions = {
+  library3DFiles: {path: '/account/library/3d-files', label: "3D files", root: 'you', section: 'Overview', parent: 'library'},
+  libraryDiagrams: {path: '/account/library/diagrams', label: "Your diagrams", root: 'you', section: 'Overview', parent: 'library'},
+  libraryImages: {path: '/account/library/images', label: "Images & screenshots", root: 'you', section: 'Overview', parent: 'library'},
+  libraryChess: {path: '/account/library/chess', label: "Chess", root: 'you', section: 'Overview', parent: 'library'},
+  libraryInteractiveTools: {path: '/account/library/interactive-tools', label: "My interactive tools", root: 'you', section: 'Overview', parent: 'library'},
+  libraryCardsStoriesPoems: {path: '/account/library/cards-stories-poems', label: "Cards, stories & poems", root: 'you', section: 'Overview', parent: 'library'},
+  libraryPodcastsVideos: {path: '/account/library/podcasts-videos', label: "Podcasts & videos", root: 'you', section: 'Overview', parent: 'library'},
+  libraryMusic: {path: '/account/library/music', label: "Music & playback", root: 'you', section: 'Overview', parent: 'library'},
+  libraryVoiceAudio: {path: '/account/library/voice-audio', label: "Private voice & audio", root: 'you', section: 'Overview', parent: 'library'},
+  libraryPdfForms: {path: '/account/library/pdf-forms', label: "Private PDF forms", root: 'you', section: 'Overview', parent: 'library'},
+  libraryOfflineBooks: {path: '/account/library/offline-books', label: "Offline books", root: 'you', section: 'Overview', parent: 'library'},
+  libraryPhotoArchive: {path: '/account/library/photo-archive', label: "My photo archive", root: 'you', section: 'Overview', parent: 'library'},
+  libraryCollections: {path: '/account/library/collections', label: "My personal collections", root: 'you', section: 'Overview', parent: 'library'},
+  libraryTableReservations: {path: '/account/library/table-reservations', label: "Table reservations", root: 'you', section: 'Overview', parent: 'library'},
+  libraryLeisure: {path: '/account/library/leisure', label: "Leisure & weekends", root: 'you', section: 'Overview', parent: 'library'},
+  libraryTravelInformation: {path: '/account/library/travel-information', label: "Your travel information", root: 'you', section: 'Overview', parent: 'library'},
+  libraryGroceryDelivery: {path: '/account/library/grocery-delivery', label: "Grocery delivery", root: 'you', section: 'Overview', parent: 'library'},
+  libraryFlightCheckIn: {path: '/account/library/flight-check-in', label: "Flight check-in", root: 'you', section: 'Overview', parent: 'library'},
+  libraryDecisions: {path: '/account/library/decisions', label: "My comparisons", root: 'you', section: 'Overview', parent: 'library'},
+  libraryHousing: {path: '/account/library/housing', label: "My housing searches", root: 'you', section: 'Overview', parent: 'library'},
+  libraryQrCodes: {path: '/account/library/qr-codes', label: "My private QR codes", root: 'you', section: 'Overview', parent: 'library'},
+  librarySmartHome: {path: '/account/library/smart-home', label: "Smart home", root: 'you', section: 'Overview', parent: 'library'},
+  libraryThings: {path: '/account/library/things', label: "My things", root: 'you', section: 'Overview', parent: 'library'},
+  libraryCareLog: {path: '/account/library/care-log', label: "Care log", root: 'you', section: 'Overview', parent: 'library'},
+  libraryPetCare: {path: '/account/library/pet-care', label: "Pet care", root: 'you', section: 'Overview', parent: 'library'},
+  libraryCommunitySearches: {path: '/account/library/community-searches', label: "Community searches", root: 'you', section: 'Overview', parent: 'library'},
+  libraryIntroductions: {path: '/account/library/introductions', label: "Introductions for you", root: 'you', section: 'Overview', parent: 'library'},
+  libraryAddressBook: {path: '/account/library/address-book', label: "Own address book", root: 'you', section: 'Overview', parent: 'library'},
+  libraryMailbox: {path: '/account/library/mailbox', label: "Mailbox & replies", root: 'you', section: 'Overview', parent: 'library'},
+  libraryDocumentArchive: {path: '/account/library/document-archive', label: "Archive a document", root: 'you', section: 'Overview', parent: 'library'},
+  libraryContactSafety: {path: '/account/library/contact-safety', label: "Contact safety", root: 'you', section: 'Overview', parent: 'library'},
+  libraryLinkChecks: {path: '/account/library/link-checks', label: "Link checks", root: 'you', section: 'Overview', parent: 'library'},
+  libraryEmailAliases: {path: '/account/library/email-aliases', label: "Email aliases", root: 'you', section: 'Overview', parent: 'library'},
+  libraryEmergencyAccess: {path: '/account/library/emergency-access', label: "Emergency access", root: 'you', section: 'Overview', parent: 'library'},
+  libraryPdfQuestions: {path: '/account/library/pdf-questions', label: "PDF questions & answers", root: 'you', section: 'Overview', parent: 'library'},
+  libraryArticleExplanations: {path: '/account/library/article-explanations', label: "Article explanations", root: 'you', section: 'Overview', parent: 'library'},
+  libraryNewsDigests: {path: '/account/library/news-digests', label: "News digests", root: 'you', section: 'Overview', parent: 'library'},
+  libraryResearch: {path: '/account/library/research', label: "Questions & research", root: 'you', section: 'Overview', parent: 'library'},
+  librarySourceComparisons: {path: '/account/library/source-comparisons', label: "Source comparisons", root: 'you', section: 'Overview', parent: 'library'},
+  libraryTravelFamilyDocuments: {path: '/account/library/travel-family-documents', label: "Travel & family documents", root: 'you', section: 'Overview', parent: 'library'},
+  libraryDeadlines: {path: '/account/library/deadlines', label: "Returns, warranties & deadlines", root: 'you', section: 'Overview', parent: 'library'},
+  libraryPrivateNotes: {path: '/account/library/private-notes', label: "My private notes", root: 'you', section: 'Overview', parent: 'library'},
+  libraryConversationNotes: {path: '/account/library/conversation-notes', label: "Voice notes & conversations", root: 'you', section: 'Overview', parent: 'library'},
+} as const;
+
+export type LibraryNavigationName = keyof typeof libraryNavigationDefinitions;
+export function isLibraryNavigationName(name: string): name is LibraryNavigationName {
+  return Object.prototype.hasOwnProperty.call(libraryNavigationDefinitions, name);
+}

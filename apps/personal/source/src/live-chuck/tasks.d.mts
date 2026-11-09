@@ -1,0 +1,3 @@
+export type PersonalChuckTask={taskId:string;version:string;planSHA256:string;createdAt:string;sourceMessageId:string;sourceReceiptId:string;sourceAvailable:boolean;state:'awaiting-review'|'plan-confirmed'|'paused'|'cancelled';lastEventId:string|null;replayed:boolean;nodeExecutionAuthorized:false;providerDisclosureAuthorized:false;spendingAuthorized:false;plan:{title:string;nodes:{nodeRef:string;parents:string[];workloadRef:string;operationRef:string;actorRef:string;state:'planned'}[]}|null};
+export function personalTask(value:unknown):PersonalChuckTask;
+export function personalTaskPage(value:unknown):{tasks:PersonalChuckTask[];hasMore:boolean;completeTaskHistory:false};

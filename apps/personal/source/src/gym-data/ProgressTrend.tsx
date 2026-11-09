@@ -1,0 +1,12 @@
+import {lazy,Suspense} from 'react';
+import {ProgressAction,useProgress} from './ProgressWidgets';
+const Chart=lazy(()=>import('./ProgressTrendChart'));
+/** One selected original metric AND unit AND exact goal. Different units and
+ * unrelated goals never get merged into a manufactured trend. */
+export function useProgressSeries(){const {data,drafts}=useProgress();const goal=data.model?.goals.find(row=>row.goal_id===drafts['Overview:0']);const metric=drafts['Overview:1']||goal?.metric;const unit=goal?.unit;
+ const rows=goal&&metric&&typeof unit==='string'?(data.model?.measurements??[]).filter(row=>row.goal_id===goal.goal_id&&row.metric===metric&&row.unit===unit&&row.value!==null&&row.value!==undefined&&Number.isFinite(Number(row.value))&&typeof row.measured_at==='string'&&Number.isFinite(Date.parse(row.measured_at))).slice().sort((a,b)=>Date.parse(String(a.measured_at))-Date.parse(String(b.measured_at))).slice(-12):[];
+ return {rows,unit};
+}
+function decimalDifference(a:unknown,b:unknown){const left=String(a),right=String(b);if(!/^-?\d+(\.\d+)?$/.test(left)||! /^-?\d+(\.\d+)?$/.test(right))return null;const digits=Math.max(left.split('.')[1]?.length??0,right.split('.')[1]?.length??0);if(digits>30)return null;const integer=(s:string)=>{const neg=s.startsWith('-');const[p,d='']=s.replace(/^-/,'').split('.');return BigInt(p+d.padEnd(digits,'0'))*(neg?-1n:1n);};const delta=integer(left)-integer(right),raw=(delta<0n?-delta:delta).toString().padStart(digits+1,'0');return(delta<0n?'-':delta>0n?'+':'')+(digits?raw.slice(0,-digits)+'.'+raw.slice(-digits):raw);}
+export function ProgressTrend(){const {rows}=useProgressSeries();return rows.length?<div className="pg-chart-empty"><Suspense fallback={<p role="status">Loading your recorded measurement chart…</p>}><Chart rows={rows}/></Suspense><p className="pg-note">Last {rows.length} recorded points · original timestamps and values remain available in the table.</p></div>:<div className="pg-chart-empty"><strong>Your measurements tell the story.</strong><p>Dates, values and units stay linked to their original records.</p><ProgressAction action="Record a measurement" primary/></div>;}
+export function ProgressTrendValue({kind}:{kind:'latest'|'change'|'count'}){const {rows,unit}=useProgressSeries();if(!rows.length)return <>—</>;if(kind==='count')return <>{rows.length}</>;if(kind==='latest')return <>{String(rows.at(-1)?.value)} {unit}</>;const delta=rows.length>1?decimalDifference(rows.at(-1)?.value,rows[0].value):null;return <>{delta===null?'—':delta+' '+unit}</>;}

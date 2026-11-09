@@ -1,0 +1,4 @@
+export type PrivateGroupCreationReview=Readonly<{requestId:string;name:string}>;
+export type PrivateGroupCreationResult=PrivateGroupCreationReview&Readonly<{status:'creating'|'unconfirmed'|'created';groupId?:string}>;
+export interface PrivateGroupCreation{getSnapshot():Readonly<{available:boolean;canCreate:boolean;canReconcile:boolean;busy:boolean;status:'idle'|'creating'|'unconfirmed'|'created';groupId:string|null;name:string}>;subscribe(fn:()=>void):()=>void;prepare(name:string):PrivateGroupCreationReview;confirm(review:PrivateGroupCreationReview):Promise<PrivateGroupCreationResult>;reconcile():Promise<PrivateGroupCreationResult>;beginAnother():Promise<void>;recheck():void;close():void;}
+export function openPrivateGroupCreation(options:Record<string,unknown>):Promise<PrivateGroupCreation>;

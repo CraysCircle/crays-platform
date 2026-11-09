@@ -1,0 +1,4 @@
+import type{ChuckPending,ChuckReceipt}from'./controller.mjs';
+export type ChuckArchiveRow={archivedAt:string;coreActionCancelled:false;record:ChuckPending};
+export type ChuckArchiveSnapshot={phase:string;records:ChuckArchiveRow[];hasMore:boolean;nextAfterId:string|null;checked:{key:string;receipt:ChuckReceipt|null;replyInLoadedPage:boolean}|null;problem:string|null};
+export class PersonalChuckArchiveController{constructor(config:{execute:(name:string,variables?:Record<string,unknown>,control?:{signal?:AbortSignal})=>Promise<unknown>;journal:unknown;includeOriginals?:boolean});subscribe:(fn:()=>void)=>()=>void;getSnapshot:()=>ChuckArchiveSnapshot;setContext(scope:string):void;load(options?:{more?:boolean}):Promise<void>;checkRequest(key:string):Promise<void>;restoreRequest(key:string):Promise<boolean|undefined>;clear():void;dispose():void;}

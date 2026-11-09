@@ -1,0 +1,7 @@
+import type {HumanConversationClient} from './humanConversationClient.mjs';
+export type LocalViewReview=Readonly<{type:'remove'|'restore';count:number;ids:readonly string[];operationId:string}>;
+export type LocalViewSnapshot=Readonly<{available:boolean;hiddenCount:number;busy:boolean;problem:string|null}>;
+export interface ConversationLocalView{getHiddenIds():readonly string[];getSnapshot():LocalViewSnapshot;subscribe(fn:()=>void):()=>void;prepareRemove(ids:readonly string[]):LocalViewReview;prepareRestore():LocalViewReview;isReviewCurrent(review:LocalViewReview):boolean;confirm(review:LocalViewReview):Promise<{status:'applied';type:'remove'|'restore';count:number}>;}
+export function openConversationLocalView(options:{binding:{kind:'person'|'spot'|'circle';accountId:string;conversationId:string;groupId:string;pubkey:string;membershipId:string};client:HumanConversationClient;journal:{getItem(key:string):Promise<unknown>;setItem(key:string,value:unknown):Promise<unknown>};exclusive:<T>(scope:string,operation:()=>Promise<T>,signal:AbortSignal)=>Promise<T>;authorize:(binding:unknown)=>boolean;signal:AbortSignal;newId?:()=>string}):Promise<HumanConversationClient&{localView:ConversationLocalView;flushLocalView():Promise<void>}>;
+
+export function validateConversationLocalViewRecord(value:unknown,binding:Record<string,string>):{schema:1;scope:readonly string[];revision:number;operationId:string|null;hiddenIds:string[]};

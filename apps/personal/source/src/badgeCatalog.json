@@ -1,0 +1,50 @@
+[
+  {
+    "id": "BADGE-C01",
+    "name": "Scout Badge ’25",
+    "family": "COMMUNITY",
+    "lifetime": true
+  },
+  {
+    "id": "BADGE-C02",
+    "name": "Shark Badge ’25",
+    "family": "COMMUNITY",
+    "lifetime": true
+  },
+  {
+    "id": "BADGE-R01",
+    "name": "Build Caster ’25",
+    "family": "CASTER_CREATOR",
+    "lifetime": true
+  },
+  {
+    "id": "BADGE-C03",
+    "name": "Whale Badge ’25",
+    "family": "COMMUNITY",
+    "lifetime": true
+  },
+  {
+    "id": "BADGE-R02",
+    "name": "GMI Caster ’25",
+    "family": "CASTER_CREATOR",
+    "lifetime": true
+  },
+  {
+    "id": "BADGE-C04",
+    "name": "Crays OG ’25",
+    "family": "COMMUNITY",
+    "lifetime": true
+  },
+  {
+    "id": "BADGE-R03",
+    "name": "OG Caster ’25",
+    "family": "CASTER_CREATOR",
+    "lifetime": true
+  },
+  {
+    "id": "BADGE-S01",
+    "name": "Special Investor Badge",
+    "family": "SEPARATE_CONTRIBUTOR_AGREEMENT",
+    "lifetime": false
+  }
+]

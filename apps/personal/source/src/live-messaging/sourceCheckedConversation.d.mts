@@ -1,0 +1,2 @@
+import type {HumanConversationClient} from './humanConversationClient.mjs';
+export function openSourceCheckedConversation(options:{client:HumanConversationClient;history:{queryRumors(filter:unknown):Promise<{id:string;kind:number;content:string;pubkey:string;created_at:number}[]>;on(event:string,listener:()=>void):unknown;off(event:string,listener:()=>void):unknown};sourceFor(id:string):Promise<unknown|null>;isCurrent():boolean;signal:AbortSignal}):Promise<HumanConversationClient>;

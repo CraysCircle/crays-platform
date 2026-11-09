@@ -1,0 +1,20 @@
+import {useRef,useState} from 'react';
+import {ArrowLeft,ArrowRight,MagnifyingGlass,ShieldCheck} from '@phosphor-icons/react';
+import ChuckWorkspaceHeader from './ChuckWorkspaceHeader';
+import {appProviders} from './appConnections';
+import {personalNavigationHref} from './webPersonalNavigation';
+import './chuck-screen1.css';
+import './chuck-app-access.css';
+type Props={providerId?:string;onBack:()=>void;onProvider:(id:string)=>void;onAsk:(name?:string)=>void;onTab:(tab:string)=>void;onApps:()=>void;problem:string};
+/** Catalogue metadata is public planning information. It is not an account,
+ * grant, actual installation, action permission or provider connection. */
+const plannedApps=appProviders.filter(app=>app.id!=='research-preview');
+export default function WebChuckAppsAccess(p:Props){
+ const [query,setQuery]=useState('');const search=useRef<HTMLInputElement>(null);const provider=p.providerId?plannedApps.find(app=>app.id===p.providerId):undefined;
+ const fold=(text:string)=>text.normalize('NFKD').replace(/\p{M}/gu,'').toLocaleLowerCase();
+ const terms=fold(query).trim().split(/\s+/).filter(Boolean);
+ const items=plannedApps.filter(app=>{const text=fold([app.name,app.category,app.summary,...app.scopes.flatMap(scope=>[scope.label,scope.detail])].join(' '));return terms.every(term=>text.includes(term));});
+ const clearSearch=()=>{setQuery('');search.current?.focus({preventScroll:true});};
+ const link=(id:string)=>personalNavigationHref({name:'appProvider',id});
+ return <main className="chuck-screen1 chuck-app-access"><div className="chuck-s1-body"><ChuckWorkspaceHeader selected="Overview" canonicalNavigation onTab={p.onTab} onApps={p.onApps}/><section className="chuck-s1-scroll" aria-label="Apps and permissions"><button className="chuck-s1-link" onClick={p.onBack}><ArrowLeft size={18}/>Back</button><h2>{p.providerId?provider?.name??'This app is unavailable.':'Apps & permissions'}</h2><p role="status">Your connected accounts and current permissions are unavailable.</p><p>No account, permission or spending limit has been changed. Planned options below do not confirm that an app is connected or available to Chuck.</p>{p.problem&&<p role="alert">{p.problem}</p>}{p.providerId?provider&&<><p>{provider.summary}</p><h3>Permission options to review</h3><ul className="chuck-app-access-scopes">{provider.scopes.map(scope=><li key={scope.id}><strong>{scope.label}</strong><p>{scope.detail}</p></li>)}</ul><p>These are catalogue descriptions. No access is granted here.</p><button className="chuck-s1-primary" onClick={()=>p.onAsk(provider.name)}>Discuss this connection with Chuck<ArrowRight size={18}/></button></>:<><h3>Explore planned connections</h3><label className="chuck-s1-search"><MagnifyingGlass size={20}/><input ref={search} type="search" aria-label="Search planned apps" placeholder="Search planned apps…" value={query} onChange={event=>setQuery(event.target.value)}/></label>{!!query&&<button type="button" className="chuck-s1-link" onClick={clearSearch}>Clear search</button>}<p role="status" aria-live="polite">Showing {items.length} of {plannedApps.length} planned apps.</p><div className="chuck-s1-rows">{items.map(app=><article className="chuck-s1-row" key={app.id}><div><h3>{app.name}</h3><p>{app.summary}</p><small>{app.category} · Connection not confirmed</small></div><a className="chuck-s1-link" href={link(app.id)} onClick={event=>{if(event.button===0&&!event.ctrlKey&&!event.metaKey&&!event.shiftKey&&!event.altKey){event.preventDefault();p.onProvider(app.id);}}}>Review options<ArrowRight size={18}/></a></article>)}</div>{!items.length&&<p role="status">No planned apps match this search.</p>}</>}</section></div><aside className="chuck-s1-side" aria-label="Your access choices"><section><h2><ShieldCheck size={22}/>Separate choices</h2><p>Connecting an account, allowing access for a purpose, approving an action and setting a spending limit are separate decisions.</p><p>Discussing a connection does not sign in to a provider or grant access. Review the message before sending it.</p></section></aside></main>;
+}

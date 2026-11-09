@@ -1,0 +1,4 @@
+/* Shared original control primitives used across deferred workspaces. */
+.activity-primary,.activity-secondary{display:flex;align-items:center;justify-content:center;gap:9px;font:inherit;font-size:14px;padding:12px 18px;border:0;border-radius:24px;background:#cd003c;color:white;cursor:pointer}
+.activity-secondary{background:#f1f4f8;color:#17364a}
+.activity-back{display:flex;gap:8px;align-items:center;border:0;background:none;color:#526780;padding:0;font:inherit;font-size:14px;cursor:pointer}

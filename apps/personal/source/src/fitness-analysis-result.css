@@ -1,0 +1,7 @@
+.fitness-analysis-result{padding:20px 18px 32px;color:#102732;font-size:14px;line-height:1.55}
+.fitness-analysis-result h1{font-size:26px;line-height:1.2;letter-spacing:-.5px}.fitness-analysis-result h2{font-size:19px;margin:20px 0 10px}.fitness-analysis-result h3{font-size:15px}
+.fitness-analysis-result section,.fitness-analysis-result details{margin:16px 0}.fitness-analysis-result pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;background:#f3f5f6;padding:14px;border-radius:14px}
+.fitness-analysis-result label{display:block;margin:14px 0}.fitness-analysis-result select,.fitness-analysis-result input:not([type=checkbox]),.fitness-analysis-result textarea{box-sizing:border-box;width:100%;padding:12px;border-radius:12px;border:1px solid #ccd8df;font:inherit;background:#fff;color:inherit}
+.fitness-analysis-result button{margin:8px 0;min-height:44px}.fitness-analysis-result .secondary{width:100%;display:flex;align-items:center;justify-content:space-between;text-align:left}
+.fitness-analysis-held,.fitness-analysis-status,.fitness-analysis-plan{background:#f1f5f7;padding:14px;border-radius:14px;overflow-wrap:anywhere}.fitness-analysis-held{display:flex;gap:10px}.fitness-analysis-held svg{flex-shrink:0}
+.fitness-analysis-result .fitness-analysis-approval{display:flex;gap:10px;align-items:flex-start}.fitness-analysis-approval input{margin-top:5px;accent-color:#ff0750}.fitness-analysis-result button:disabled{opacity:.5}

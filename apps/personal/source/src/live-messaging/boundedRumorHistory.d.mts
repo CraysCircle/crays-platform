@@ -1,0 +1,4 @@
+export type HistoryCursor=Readonly<{created_at:number;id:string;query:string}>;
+export type HistoryPage=Readonly<{messages:readonly any[];hasMore:boolean;cursor:HistoryCursor|null;byteLength:number}>;
+export function createBoundedRumorHistoryBackend(options:{store:{keys():Promise<string[]>;getItem(key:string):Promise<any>};backend:{addRumor(row:any):Promise<void>;removeRumor(id:string):Promise<void>;clear():Promise<void>};compileFilter:(filter:any)=>(row:any)=>boolean;isCurrent:()=>boolean;scopeKey:string;crypto?:Crypto}):Readonly<{addRumor(row:any):Promise<void>;removeRumor(id:string):Promise<void>;clear():Promise<void>;queryRumors(filters:any|any[]):Promise<any[]>;queryPage(options?:{filter?:any;cursor?:HistoryCursor|null;limit?:number;maxBytes?:number;signal?:AbortSignal}):Promise<HistoryPage>}>;
+export function createPagedSdkGroupHistory(options:{GroupRumorHistory:new(backend:any)=>any;backend:ReturnType<typeof createBoundedRumorHistoryBackend>}):any;

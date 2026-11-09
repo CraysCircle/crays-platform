@@ -1,0 +1,13 @@
+export const movementPatterns = ["SQUAT", "HINGE", "HORIZONTAL_PUSH", "VERTICAL_PUSH", "HORIZONTAL_PULL", "VERTICAL_PULL", "LOCOMOTION", "CARRY", "ROTATION", "ANTI_ROTATION", "FLEXION", "EXTENSION", "ABDUCTION", "ADDUCTION", "ISOMETRIC", "MOBILITY", "OTHER"] as const;
+export const jointIds = ["ANKLE", "KNEE", "HIP", "SPINE", "SCAPULA", "SHOULDER", "ELBOW", "WRIST", "NECK"] as const;
+export const muscleRoles = ["PRIMARY", "SECONDARY", "STABILIZER"] as const;
+export const movementPlanes = ["SAGITTAL", "FRONTAL", "TRANSVERSE", "MULTIPLANAR", "UNKNOWN"] as const;
+export const loadTypes = ["BODYWEIGHT", "EXTERNAL_FREE_WEIGHT", "MACHINE", "CABLE", "BAND", "ASSISTED", "CARDIO_MACHINE", "MOBILITY", "OTHER"] as const;
+export const equipmentIds = ["NONE", "BARBELL", "DUMBBELL", "KETTLEBELL", "CABLE", "MACHINE", "BAND", "BENCH", "PULL_UP_BAR", "DIP_STATION", "MEDICINE_BALL", "STABILITY_BALL", "FOAM_ROLLER", "CARDIO_MACHINE", "OTHER", "UNKNOWN"] as const;
+export type MovementPattern = typeof movementPatterns[number];
+export type JointId = typeof jointIds[number];
+export type MuscleRole = typeof muscleRoles[number];
+export type MovementPlane = typeof movementPlanes[number];
+export type LoadType = typeof loadTypes[number];
+export type EquipmentId = typeof equipmentIds[number];
+export const trainVocabularyContract = "crays.train-vocabulary.v1" as const;

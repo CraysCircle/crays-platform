@@ -1,0 +1,19 @@
+{
+  "scope": "Original source inputs of recorded Personal Build02; source snapshot is not by itself the entire AWS build environment",
+  "all1489OriginalInputsMatchRecordedEntry": true,
+  "originalDependencyFiles": 27607,
+  "originalDirectDependencyVersions": 30,
+  "artifactDigestSHA256": "2cdcf48ed1d3b1d99880969a5683b3c0a79b9431a91c300911097506cae1b088",
+  "artifactFiles": 513,
+  "artifactBytes": 86364877,
+  "outsideDistRuntimeAssets": 12,
+  "buildRepeated": false,
+  "runtimeAcceptance": false,
+  "requiredAdditionalBuildInputs": [
+    "Exact original dependency tree and fallback packages",
+    "Original AWS derived build configuration",
+    "Recharts closure",
+    "Existing external shared React import-map runtime",
+    "Focus CSS/JS, fonts and remaining external runtime assets"
+  ]
+}

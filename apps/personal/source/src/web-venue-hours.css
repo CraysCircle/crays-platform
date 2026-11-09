@@ -1,0 +1,48 @@
+.web-venue-hours{box-sizing:border-box;padding:24px 28px 32px;color:#082638;font:16px/1.5 Crays,Avenir,sans-serif;width:100%}
+.web-venue-hours *{box-sizing:border-box}
+.web-venue-hours-path,.web-venue-hours-heading,.web-venue-hours-columns{max-width:1120px}
+.web-venue-hours-path{display:flex;align-items:center;flex-wrap:wrap;gap:10px;font-size:14px;color:#526b87}
+.web-venue-hours :is(button,a,summary){font:inherit}
+.web-venue-hours-path a,.web-venue-hours-heading button,.web-venue-hours-return a{min-height:48px;display:inline-flex;align-items:center;gap:10px;color:inherit}
+.web-venue-hours-path a{text-decoration:none}
+.web-venue-hours-path a:hover,.web-venue-hours-return a:hover{text-decoration:underline}
+.web-venue-hours-heading{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:12px 0 20px;margin-bottom:24px;border-bottom:1px solid #d9e3ed}
+.web-venue-hours-heading h1{margin:0!important;font-size:26px!important;line-height:1.25}
+.web-venue-hours-heading button{background:white;border:1px solid #d9e3ed;border-radius:6px;padding:0 16px;cursor:pointer}
+.web-venue-hours-columns{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:28px;align-items:start}
+.web-venue-hours-main{min-width:0;padding:0!important;margin:0!important}
+.web-venue-hours-main>h2{font-size:20px;line-height:1.3;margin:0 0 24px}
+.web-venue-hours-main p{font-size:16px;line-height:1.5;max-width:65ch}
+.web-venue-hours-main .hours-status{padding:20px 0;margin:0 0 24px;gap:16px}
+.web-venue-hours-main .hours-status small{font-size:14px;line-height:1.5}
+.web-venue-hours-main>.secondary,.web-venue-hours-main .hours-examples .secondary{width:auto;min-height:48px;display:inline-flex;align-items:center;gap:12px;padding:0 20px;border-radius:6px;font-size:16px}
+.web-venue-hours-main>.secondary{background:#cd003c;color:white;border:1px solid #cd003c;margin:8px 0 24px}
+.web-venue-hours-main .hours-examples .secondary{margin:4px 12px 4px 0}
+.web-venue-hours-main :is(.hours-source,.hours-examples){margin:24px 0 0}
+.web-venue-hours-main :is(.hours-source,.hours-examples) summary{min-height:48px;font-size:16px}
+.web-venue-hours-main .hours-examples summary{gap:16px;padding:12px 0}
+.web-venue-hours-main .hours-examples summary span{display:grid;gap:4px}
+.web-venue-hours-main .hours-examples summary small{font-size:14px;line-height:1.5;color:#526b87;font-weight:400}
+.web-venue-hours-main .hours-examples summary svg{flex-shrink:0}
+.web-venue-hours-main .hours-examples[open] summary svg{transform:rotate(180deg)}
+.web-venue-hours-main :is(.hours-source,.hours-examples) p,.web-venue-hours-main .hours-source a,.web-venue-hours-main .source-caption{font-size:14px!important;line-height:1.6}
+.web-venue-hours-main .hours-source a{display:inline-flex;align-items:center;min-height:48px}
+.web-venue-hours-main .hours-local>strong{font-size:28px}
+.web-venue-hours-main .hours-local>span,.web-venue-hours-main .hours-local small{font-size:14px}
+.web-venue-hours-main .hours-today{border-radius:6px;margin:24px 0;padding:20px}
+.web-venue-hours-main .hours-today>span{font-size:14px;letter-spacing:.04em}
+.web-venue-hours-main .hours-today>strong{font-size:24px}
+.web-venue-hours-main .hours-today p{font-size:14px;color:white}
+.web-venue-hours-main :is(.hours-week,.hours-exceptions) h2{font-size:20px}
+.web-venue-hours-main .hours-week>div{font-size:16px;min-height:48px;align-items:center;padding:12px 0}
+.web-venue-hours-main .hours-week strong small,.web-venue-hours-main .hours-exceptions article :is(strong,p){font-size:14px}
+.web-venue-hours-context{padding:24px;border:1px solid #d9e3ed;border-radius:6px;background:#f5f8fc;min-width:0}
+.web-venue-hours-context .venue-hours-photo{width:100%;height:160px;object-fit:cover;border-radius:6px;margin:0 0 16px}
+.web-venue-hours-context h2{font-size:20px;line-height:1.3;margin:0 0 12px}
+.web-venue-hours-context>p{font-size:14px;color:#526b87;line-height:1.5;margin:0}
+.web-venue-hours-return{border-top:1px solid #d9e3ed;margin-top:24px;padding-top:16px;font-size:14px}
+.web-venue-hours :is(button,a,summary):focus-visible{outline:2px solid #007d8c;outline-offset:4px}
+.space-native:has(>.web-venue-hours){padding:0!important}
+.crays-screen-body:has(.web-venue-hours){bottom:0!important;padding-bottom:0!important}
+@media(max-width:1250px){.web-venue-hours-heading h1{font-size:24px!important}.web-venue-hours-columns{grid-template-columns:minmax(0,1fr) 280px;gap:24px}.web-venue-hours-context{padding:20px}}
+@media(max-width:1100px){.web-venue-hours-columns{grid-template-columns:minmax(0,1fr)}.web-venue-hours-context{display:grid;grid-template-columns:180px minmax(0,1fr);gap:12px 24px}.web-venue-hours-context .venue-hours-photo{grid-row:1/4;height:120px;margin:0}.web-venue-hours-context h2,.web-venue-hours-context>p{margin:0}.web-venue-hours-return{grid-column:2;margin:0;padding-top:8px}}

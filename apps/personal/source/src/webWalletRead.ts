@@ -1,0 +1,6 @@
+import type {ProductWorld,Wallet,Payment} from './productModel';
+const paymentStates=new Set(['prepared','approved','submitted','pending','confirmed','unknown','failed','refunded']);
+const quantity=(value:unknown)=>typeof value==='string'&&/^\d+(?:\.\d+)?$/.test(value)&&Number.isFinite(Number(value));
+/** Canonical own-world projections only; malformed or ambiguous records are retained for source review. */
+export function canonicalWalletSources(world:ProductWorld):Wallet[]{if(!world.identity.signedIn)return [];return world.wallets.filter(w=>typeof w.id==='string'&&!!w.id&&['name','asset','network','custody'].every(key=>typeof w[key as keyof Wallet]==='string')&&['connected','read','transfer','budget'].every(key=>typeof w[key as keyof Wallet]==='boolean')&&world.wallets.filter(other=>other.id===w.id).length===1);}
+export function ownWalletPaymentRecords(world:ProductWorld):Payment[]{if(!world.identity.signedIn)return [];return world.payments.filter(p=>p.owner===world.owner&&typeof p.id==='string'&&!!p.id&&['walletId','sourceId','purpose','asset','network','reference','recipient'].every(key=>typeof p[key as keyof Payment]==='string')&&quantity(p.amount)&&quantity(p.fee)&&paymentStates.has(p.status)&&world.payments.filter(other=>other.id===p.id).length===1);}

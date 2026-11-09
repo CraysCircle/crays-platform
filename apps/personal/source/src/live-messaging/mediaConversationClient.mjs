@@ -1,0 +1,9 @@
+/** Stable reader projection combines actual text and encrypted media controllers by original rumor ID. */
+export function createMediaConversationClient({text,media}){
+ const sentAt=row=>Number.isFinite(row.createdAt)?row.createdAt:Number.isFinite(row.observedAt)?row.observedAt/1000:0;
+ const observedAt=row=>Number.isFinite(row.observedAt)?row.observedAt:0;
+ let closed=false,current;const listeners=new Set();
+ const update=()=>{if(closed)return;const base=text.getSnapshot(),attachment=media.getSnapshot(),available=base.available&&attachment.available,rows=new Map(base.messages.map(row=>[row.id,row]));for(const row of attachment.rows){const existing=rows.get(row.id);rows.set(row.id,{...existing,...row,...(row.fromHistory&&existing?{status:existing.status}:{}),observedAt:[existing?.observedAt,row.observedAt].filter(Number.isFinite).reduce((first,value)=>Math.min(first,value),Infinity)});}current=Object.freeze({...base,available,messages:available?[...rows.values()].sort((a,b)=>sentAt(a)-sentAt(b)||observedAt(a)-observedAt(b)):[],sending:base.sending||attachment.sending,hasEarlierMessages:base.hasEarlierMessages||attachment.hasEarlierMessages,problem:attachment.persistenceWarning?'Attachment history could not be saved':base.problem});for(const fn of listeners)fn();};
+ update();const unsubscribeText=text.subscribe(update),unsubscribeMedia=media.subscribe(update);
+ return {getSnapshot:()=>current,subscribe:fn=>{listeners.add(fn);return()=>listeners.delete(fn);},refresh:async()=>{await text.refresh();update();},prepareAttempt:(value,replyTo)=>text.prepareAttempt(value,replyTo),acknowledgeAttempt:id=>text.acknowledgeAttempt(id),send:value=>text.send(value),close(){if(closed)return;closed=true;unsubscribeText();unsubscribeMedia();text.close();media.close();current=Object.freeze({state:'closed',available:false,messages:[],sending:false,problem:null});for(const fn of listeners)fn();listeners.clear();}};
+}

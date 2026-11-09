@@ -1,0 +1,44 @@
+import {fail,immutable,validBody} from './protocol.mjs';
+import {personalTask,personalTaskPage} from './tasks.mjs';
+import {personalRequestPage} from './requests.mjs';
+import {originalRequestPage,canRefreshOriginal} from './originals.mjs';
+const sourceEmpty=()=>({source:null,sourcePhase:'idle',sourceCursor:null});
+const sameSource=(a,b)=>a.taskId===b.taskId&&a.version===b.version&&a.planSHA256===b.planSHA256&&a.sourceMessageId===b.sourceMessageId&&a.sourceReceiptId===b.sourceReceiptId&&b.sourceAvailable;
+const empty=()=>({phase:'idle',tasks:[],hasMore:false,detail:null,problem:null,...sourceEmpty()});
+/** Original Core proposal reads only. A browser scope partitions display;
+ * each actual request still requires the SDK and exact original Core owner. */
+export class PersonalChuckTaskController{
+ #viewTaskId=null;#sourceSeen=new Set();#sourceKnown=new Map();#attachmentOwners=new Map();#sourceBinding=null;#includeOriginals;#execute;#scope=null;#generation=0;#abort;#disposed=false;#busy=false;#snapshot=immutable(empty());#published=this.#snapshot;#listeners=new Set();
+ constructor({execute,includeOriginals=false}){if(typeof execute!=='function'||typeof includeOriginals!=='boolean')throw fail('invalid-transport');this.#execute=execute;this.#includeOriginals=includeOriginals;}
+ subscribe=fn=>{this.#listeners.add(fn);return()=>this.#listeners.delete(fn);};
+ getSnapshot=()=>this.#published;
+ #emit(patch){this.#snapshot=immutable({...this.#snapshot,...patch});this.#published=this.#includeOriginals&&this.#snapshot.phase.startsWith('loading')?immutable({...empty(),phase:this.#snapshot.phase,sourcePhase:this.#snapshot.phase==='loading-source'?'loading':'idle'}):this.#snapshot;for(const fn of this.#listeners)fn();}
+ setContext(scope){if(this.#disposed||typeof scope!=='string'||!scope.length||scope.length>200)throw fail('invalid-context');this.#generation++;this.#abort?.abort();this.#busy=false;this.#scope=scope;this.#sourceSeen.clear();this.#sourceKnown.clear();this.#attachmentOwners.clear();this.#sourceBinding=null;this.#snapshot=immutable(empty());this.#published=this.#snapshot;for(const fn of this.#listeners)fn();}
+ #check(token){if(this.#disposed||token.generation!==this.#generation||token.scope!==this.#scope||token.signal.aborted)throw fail('cancelled');}
+ async #run(phase,operation){if(this.#disposed||!this.#scope)throw fail('invalid-context');if(this.#busy)return;const abort=new AbortController(),token={generation:this.#generation,scope:this.#scope,signal:abort.signal};this.#abort=abort;this.#busy=true;this.#emit({phase,problem:null});try{return await operation(token);}catch(error){try{this.#check(token);}catch{return;}this.#emit({phase:'unavailable',problem:error.code??'unavailable',tasks:[],hasMore:false,detail:null,...sourceEmpty()});}finally{if(token.generation===this.#generation){this.#busy=false;if(this.#abort===abort)this.#abort=null;}}}
+ async #call(token,name,variables={}){this.#check(token);const value=await this.#execute(name,variables,{signal:token.signal});this.#check(token);return value;}
+ async load(){this.#viewTaskId=null;return this.#run('loading',async token=>{this.#sourceSeen.clear();const page=personalTaskPage(await this.#call(token,'NativePersonalTaskFlows'));this.#emit({phase:'ready',tasks:page.tasks,hasMore:page.hasMore,detail:null,...sourceEmpty()});});}
+ async loadOlder(){if(!this.#snapshot.hasMore||!this.#snapshot.tasks.length)return;return this.#run('loading-older',async token=>{const old=this.#snapshot.tasks,last=old.at(-1),page=personalTaskPage(await this.#call(token,'NativePersonalTaskFlowsPage',{beforeTaskId:last.taskId,beforeVersion:last.version}));if(!page.tasks.length||page.tasks.some(t=>old.some(o=>o.taskId===t.taskId))||page.tasks[0].createdAt>last.createdAt)throw fail('cursor-changed');this.#emit({phase:'ready',tasks:[...old,...page.tasks],hasMore:page.hasMore});});}
+ async open(taskId){this.#viewTaskId=taskId;if(this.#busy){this.#generation++;this.#abort?.abort();this.#busy=false;}return this.#run('loading-detail',async token=>{this.#sourceSeen.clear();this.#emit(sourceEmpty());const value=await this.#call(token,'NativePersonalTaskFlow',{taskId});if(value===null)throw fail('task-unavailable');const detail=personalTask(value);if(detail.taskId!==taskId)throw fail('invalid-response');const old=this.#snapshot.tasks.find(t=>t.taskId===taskId);if(old&&(BigInt(detail.version)<BigInt(old.version)||detail.version===old.version&&(detail.planSHA256!==old.planSHA256||detail.createdAt!==old.createdAt||detail.sourceMessageId!==old.sourceMessageId||detail.sourceReceiptId!==old.sourceReceiptId)))throw fail('original-changed');const changedVersion=old&&old.version!==detail.version;this.#emit({phase:'ready',detail,...(changedVersion?{tasks:[],hasMore:false}:{tasks:this.#snapshot.tasks.map(t=>t.taskId===taskId?detail:t)})});return detail;});}
+ /** Explicit one-page source review. No request is re-sent or guessed. */
+ async openSource({earlier=false}={}){return this.#run('loading-source',async token=>{
+  const original=this.#snapshot.detail,previous=this.#snapshot.sourceCursor;if(!original?.sourceAvailable||earlier&&!previous)throw fail('source-unavailable');if(!earlier)this.#sourceSeen.clear();this.#emit({source:null,sourcePhase:'loading'});
+  const before=personalTask(await this.#call(token,'NativePersonalTaskFlow',{taskId:original.taskId}));if(!sameSource(original,before))throw fail('source-changed');
+  const page=(this.#includeOriginals?originalRequestPage:personalRequestPage)(await this.#call(token,this.#includeOriginals?'NativePersonalRequestsOriginals':'NativePersonalRequests',earlier?{beforeMessageId:previous.nextBeforeMessageId}:{}));
+  if(earlier&&(page.requests.some(r=>this.#sourceSeen.has(r.messageId))||previous.bindingId!==page.bindingId||previous.revision!==page.revision||previous.conversationId!==page.conversationId||page.requests.some(r=>r.messageId===previous.nextBeforeMessageId)||page.requests.length&&page.requests.at(-1).createdAt>previous.oldestCreatedAt))throw fail('cursor-changed');
+  const after=personalTask(await this.#call(token,'NativePersonalTaskFlow',{taskId:original.taskId}));if(!sameSource(before,after))throw fail('source-changed');
+  const candidate=page.requests.find(r=>r.messageId===after.sourceMessageId);if(candidate&&candidate.receiptId!==after.sourceReceiptId)throw fail('source-changed');if(candidate&&!this.#includeOriginals&&!validBody(candidate.body))throw fail('source-unavailable');
+  if(this.#includeOriginals){
+   const binding=JSON.stringify([page.bindingId,page.revision,page.conversationId]);if(this.#sourceBinding!==null&&binding!==this.#sourceBinding)throw fail('binding-changed');
+   for(const row of page.requests){const known=this.#sourceKnown.get(row.messageId);if(known&&(['messageId','receiptId','body','createdAt','acceptedAt','acceptanceOutcome','runtimeAdmissionState','hasOriginals'].some(key=>known[key]!==row[key])||known.originals.length!==row.originals.length||known.originals.some((r,index)=>!canRefreshOriginal(r,row.originals[index]))))throw fail('original-changed');for(const r of row.originals){const owner=this.#attachmentOwners.get(r.attachmentId);if(owner&&owner!==row.messageId)throw fail('original-changed');}}
+   this.#sourceBinding=binding;for(const row of page.requests){this.#sourceKnown.set(row.messageId,row);for(const r of row.originals)this.#attachmentOwners.set(r.attachmentId,row.messageId);}
+  }
+  const cursor=!candidate&&page.hasOlderRequests?{bindingId:page.bindingId,revision:page.revision,conversationId:page.conversationId,nextBeforeMessageId:page.nextBeforeMessageId,oldestCreatedAt:page.requests[0].createdAt}:null;
+  for(const r of page.requests)this.#sourceSeen.add(r.messageId);this.#emit({phase:'ready',detail:after,source:candidate??null,sourcePhase:candidate?'ready':cursor?'earlier-available':'unavailable',sourceCursor:cursor});return candidate??null;
+ });}
+ /** Hidden task UI may release only its own in-flight original read.
+  * Account journals/decisions and another current task are untouched. */
+ cancelRead(taskId){if(this.#disposed||!this.#busy||this.#viewTaskId!==taskId)return;this.#generation++;this.#abort?.abort();this.#abort=null;this.#busy=false;this.#viewTaskId=null;this.#emit({phase:'idle',detail:null,...sourceEmpty()});}
+ invalidateAccess(){if(this.#disposed)return;this.#generation++;this.#abort?.abort();this.#abort=null;this.#busy=false;this.#sourceSeen.clear();this.#emit({...empty(),phase:'unavailable',problem:'access-denied'});}
+ dispose(){this.#generation++;this.#abort?.abort();this.#scope=null;this.#sourceSeen.clear();this.#sourceKnown.clear();this.#attachmentOwners.clear();this.#sourceBinding=null;this.#disposed=true;this.#snapshot=immutable(empty());this.#published=this.#snapshot;for(const fn of this.#listeners)fn();this.#listeners.clear();}
+}

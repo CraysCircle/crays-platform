@@ -1,0 +1,10 @@
+import type {PublicMessagingIdentity} from './currentBoundSigner.mjs';
+import type {CurrentGroupDirectoryClient} from './currentGroupDirectoryClient.mjs';
+import type {HumanConversationWorkspace} from './humanConversationWorkspace.mjs';
+import type {ConversationDraft} from './conversationDraft.mjs';
+import type {PrivateGroupCreation} from './privateGroupCreation.mjs';
+import type {openCurrentBrowserMls} from './currentBrowserMls.mjs';
+import type {openCurrentGroupResources} from './currentGroupResources.mjs';
+export type CurrentOwnedGroupOptions={loadOriginalEngine?:()=>Promise<import('./mdkBrowserAccount.mjs').MdkBrowserAccountClass>;contacts:()=>readonly {pubkey:string;name:string;photo?:string;spotIds?:readonly string[]}[];spots:readonly {id:string;relay:string;name?:string}[];storage?:Parameters<typeof openCurrentBrowserMls>[0]['storage'];locks?:LockManager;crypto?:Crypto;createSocket?:(url:string)=>WebSocket;openMedia?:Parameters<typeof openCurrentGroupResources>[0]['openMedia']};
+export type CurrentOwnedGroups=Readonly<{directory:CurrentGroupDirectoryClient;accountId:string;signal:AbortSignal;refresh():Promise<void>;openCreation(options:{spotId:string;parentKind?:'vifs'|'spot'|'circle';parentId?:string}):Promise<PrivateGroupCreation>;openConversation(request:{accountId:string;conversationId:string;signal:AbortSignal}):Promise<HumanConversationWorkspace>;owns(workspace:HumanConversationWorkspace):boolean;getComposer(workspace:HumanConversationWorkspace):ConversationDraft;start():void;close():void;settled():Promise<void>}>;
+export function createCurrentOwnedGroups(options:CurrentOwnedGroupOptions&{identity:PublicMessagingIdentity;isCurrent:(identity:unknown)=>boolean;signal:AbortSignal;fetcher?:typeof fetch}):CurrentOwnedGroups;

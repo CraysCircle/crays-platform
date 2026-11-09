@@ -1,0 +1,150 @@
+[
+  {
+    "tab": "Overview",
+    "view": "overview",
+    "assertions": [
+      "sleep",
+      "recovery",
+      "activity",
+      "steps",
+      "active-energy",
+      "resting-heart-rate",
+      "hrv",
+      "body-weight",
+      "duration",
+      "distance"
+    ],
+    "trends": [
+      "steps",
+      "heart-rate",
+      "hrv",
+      "body-weight"
+    ]
+  },
+  {
+    "tab": "Sleep & recovery",
+    "view": "sleep",
+    "assertions": [
+      "sleep",
+      "in-bed",
+      "sleep-schedule",
+      "sleep-stages",
+      "naps",
+      "recovery",
+      "hrv",
+      "resting-heart-rate",
+      "respiration",
+      "spo2",
+      "temperature"
+    ],
+    "trends": [
+      "sleep-duration",
+      "heart-rate",
+      "hrv",
+      "respiration",
+      "spo2",
+      "temperature"
+    ]
+  },
+  {
+    "tab": "Heart & cardio",
+    "view": "cardio",
+    "assertions": [
+      "resting-heart-rate",
+      "hrv",
+      "heart-rate",
+      "heart-rate-zones",
+      "duration",
+      "distance",
+      "pace",
+      "power",
+      "cadence",
+      "elevation",
+      "laps",
+      "route-projection"
+    ],
+    "trends": [
+      "heart-rate",
+      "hrv"
+    ]
+  },
+  {
+    "tab": "Body & age",
+    "view": "body",
+    "assertions": [
+      "body-weight",
+      "activity",
+      "steps",
+      "active-energy"
+    ],
+    "trends": [
+      "body-weight",
+      "steps"
+    ]
+  },
+  {
+    "tab": "Stress & mind",
+    "view": "stress",
+    "assertions": [
+      "recovery",
+      "hrv",
+      "sleep",
+      "resting-heart-rate"
+    ],
+    "trends": [
+      "heart-rate",
+      "hrv"
+    ]
+  },
+  {
+    "tab": "Mobility",
+    "view": "mobility",
+    "assertions": [
+      "activity",
+      "steps",
+      "distance",
+      "duration"
+    ],
+    "trends": [
+      "steps"
+    ]
+  },
+  {
+    "tab": "Women's health",
+    "view": "women",
+    "assertions": [],
+    "trends": []
+  },
+  {
+    "tab": "Metabolic",
+    "view": "metabolic",
+    "assertions": [
+      "body-weight",
+      "active-energy",
+      "activity",
+      "steps"
+    ],
+    "trends": [
+      "body-weight",
+      "steps"
+    ]
+  },
+  {
+    "tab": "Session twin",
+    "view": "session-twin",
+    "assertions": [],
+    "trends": []
+  },
+  {
+    "tab": "Assessments & services",
+    "view": "services",
+    "assertions": [],
+    "trends": []
+  },
+  {
+    "tab": "Connections & data",
+    "view": "connections",
+    "assertions": [],
+    "trends": []
+  }
+]

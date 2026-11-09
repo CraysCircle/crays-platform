@@ -1,0 +1,26 @@
+/* Existing CRAYS Commerce row/detail vocabulary; no page shell or outer frame. */
+.own-purchase-slot{min-width:0;color:inherit;font:inherit}
+.own-purchase-slot .own-purchase-row{grid-template-columns:minmax(64px,14%) minmax(0,1fr) auto;border:0;border-bottom:1px solid #dce6f0;border-radius:0;padding:16px 0;margin:0;min-height:174px}
+.own-purchase-preview{min-width:0;align-self:stretch;display:flex;align-items:center;justify-content:center}
+.own-purchase-preview img,.own-purchase-preview video{display:block;max-width:100%;max-height:154px;object-fit:contain;height:auto;width:auto}
+.own-purchase-locked{display:flex;flex-direction:column;gap:10px;align-items:center;text-align:center;color:#607993;font-size:14px;line-height:1.5}
+.own-purchase-copy{min-width:0;overflow-wrap:anywhere}
+.own-purchase-slot .own-purchase-text-action{display:inline-flex;gap:6px;align-items:center;padding:0;border:0;background:none;color:#33576c;font:inherit;font-size:14px;line-height:1.5;cursor:pointer;text-align:left;min-height:32px}
+.own-purchase-slot .own-purchase-text-action:hover{text-decoration:underline}
+.own-purchase-slot button:focus-visible{outline:2px solid #007987;outline-offset:3px}
+.own-purchase-slot button:disabled{cursor:wait}
+.own-purchase-states{display:flex;gap:8px 16px;flex-wrap:wrap;margin:12px 0 0;font-size:14px;line-height:1.5}
+.own-purchase-states>div{min-width:0}.own-purchase-states dt{color:#607993}.own-purchase-states dd{margin:0;color:#17364a}
+.own-purchase-original h2{font-size:24px;line-height:1.4;margin:18px 0 14px}.own-purchase-original h3{font-size:18px;line-height:1.4;margin:7px 0}.own-purchase-original p{line-height:1.65}
+.own-purchase-original-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+/* Scope the existing Commerce primitives so the same slots also work inside
+   Library without importing a second page's global stylesheet. */
+.own-purchase-slot .web-commerce-section-heading{display:flex;gap:16px;align-items:center;justify-content:space-between;margin:18px 0 14px}
+.own-purchase-slot .web-commerce-section-heading h2{font-size:24px;line-height:1.4;margin:0}
+.own-purchase-slot .web-commerce-section-heading>span,.own-purchase-slot .web-commerce-muted{font-size:14px;line-height:1.65;color:#607993}
+.own-purchase-slot .own-purchase-row{display:grid;gap:16px;align-items:center}
+.own-purchase-slot .own-purchase-row h3{font-size:18px;line-height:1.4;margin:7px 0}
+.own-purchase-slot .own-purchase-row small,.own-purchase-original>small{display:block;font-size:14px;line-height:1.5;color:#607993}
+.own-purchase-slot .own-purchase-row p{display:flex;align-items:center;gap:5px;flex-wrap:wrap;font-size:14px;line-height:1.5;color:#607993;margin:5px 0}
+.own-purchase-slot .web-commerce-history,.own-purchase-slot .own-purchase-row>button{display:inline-flex;gap:8px;align-items:center;border:1px solid #adc1d1;border-radius:6px;padding:10px 12px;font:inherit;font-size:14px;color:#17364a;background:white;cursor:pointer}
+.own-purchase-slot .own-purchase-row>button{align-self:center}

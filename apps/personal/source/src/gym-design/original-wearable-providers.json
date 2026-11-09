@@ -1,0 +1,67 @@
+{
+  "sourceReceipt": "../OPENWEARABLES_PUBLIC_RUNTIME_ACTUAL.json",
+  "publicMetadataOnly": true,
+  "currentMemberAvailabilityAsserted": false,
+  "providers": [
+    {
+      "key": "apple",
+      "label": "Apple Health",
+      "integration": "SDK_IMPORT"
+    },
+    {
+      "key": "samsung",
+      "label": "Samsung Health",
+      "integration": "SDK_IMPORT"
+    },
+    {
+      "key": "garmin",
+      "label": "Garmin",
+      "integration": "OAUTH"
+    },
+    {
+      "key": "google",
+      "label": "Google Health",
+      "integration": "OAUTH"
+    },
+    {
+      "key": "polar",
+      "label": "Polar",
+      "integration": "OAUTH"
+    },
+    {
+      "key": "suunto",
+      "label": "Suunto",
+      "integration": "OAUTH"
+    },
+    {
+      "key": "whoop",
+      "label": "Whoop",
+      "integration": "OAUTH"
+    },
+    {
+      "key": "strava",
+      "label": "Strava",
+      "integration": "OAUTH"
+    },
+    {
+      "key": "oura",
+      "label": "Oura",
+      "integration": "OAUTH"
+    },
+    {
+      "key": "fitbit",
+      "label": "Fitbit",
+      "integration": "OAUTH"
+    },
+    {
+      "key": "ultrahuman",
+      "label": "Ultrahuman",
+      "integration": "OAUTH"
+    },
+    {
+      "key": "sensorbio",
+      "label": "Sensor Bio",
+      "integration": "OAUTH"
+    }
+  ]
+}

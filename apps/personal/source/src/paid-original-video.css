@@ -1,0 +1,9 @@
+.paid-original-video { margin: 0; min-width: 0; }
+.paid-original-video-stage { position: relative; overflow: hidden; border-radius: 16px; background: #091e29; }
+.paid-original-video-stage > video { display: block; width: 100%; max-width: 100%; margin: 0; }
+.paid-original-video-watermark { position: absolute; top: 12%; right: 12px; max-width: calc(100% - 24px); padding: 4px 7px; border-radius: 5px; color: #fff; background: #091e2980; font: 500 10px/1.4 system-ui, sans-serif; letter-spacing: .03em; overflow-wrap: anywhere; pointer-events: none; user-select: none; }
+.paid-original-video-caption, .paid-original-video-status { margin: 7px 0 0; color: #60778b; font-size: 11px; line-height: 1.5; }
+.paid-original-video-caption > span { display: block; }
+.paid-original-video-caption summary { cursor: pointer; }
+.paid-original-video-caption summary:focus-visible { outline: 2px solid #0c3d56; outline-offset: 3px; }
+.paid-original-video-caption p { margin: 5px 0 0; }

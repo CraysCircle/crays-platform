@@ -1,0 +1,24 @@
+import {useState} from 'react';
+import {VoiceTextarea} from './VoiceInput';
+import {ArrowRight,CheckCircle,Package,Receipt} from '@phosphor-icons/react';
+import type {ProductWorld} from './productModel';
+import {ownStoryDrafts,storyCampaignsFor} from './awardStoryRegistry';
+import {allValidStoryOrders} from './awardStoryLedger';
+import {storyDelivery,setStoryDelivery} from './awardStoryFulfilment';
+const stages=['announced','preparing','ready','delivered'] as const;
+/** Owner operations remain separate from published contest terms and fan rights. */
+export function AwardCreatorDashboard({world,update,onOpen}:{world:ProductWorld;update:(f:(w:ProductWorld)=>ProductWorld)=>void;onOpen:(id:string)=>void}){
+ const [notes,setNotes]=useState<Record<string,string>>({}),[error,setError]=useState('');
+ if(!world.identity.signedIn)return null;
+ const campaigns=storyCampaignsFor(world).filter(c=>c.creatorId===world.owner&&c.id.startsWith('contest-local-'));
+ if(!campaigns.length)return null;
+ const counted=allValidStoryOrders(world).filter(o=>o.status==='counted'&&campaigns.some(c=>c.id===o.campaignId));
+ const votes=counted.reduce((n,o)=>n+o.quantity,0),income=counted.reduce((n,o)=>n+o.nomineeMinor,0);
+ const drafts=ownStoryDrafts(world);
+ return <section className="award-creator-dashboard" aria-label="Your contest delivery dashboard"><p className="as-kicker">YOUR CONTESTS. YOUR PROMISES.</p><h2>Keep the story moving.</h2><div className="as-history-stats"><span><b>{votes.toLocaleString('en-US')}</b>counted demo Props</span><span><b>${(income/100).toFixed(2)}</b>creator share · simulated</span></div><p className="as-quiet">No payout or real fulfilment occurs. Recording a demo delivery update does not grant admission, content rights or a vote.</p>{error&&<p role="alert">{error}</p>}{campaigns.map(c=>{const state=storyDelivery(world,c.id);if(!state)return null;const next=stages[stages.indexOf(state.status)+1];const terms=drafts.find(d=>d.publishedCampaignId===c.id)?.input;return <article className="award-delivery-card" key={c.id}><button className="award-delivery-cover" onClick={()=>onOpen(c.id)}><img src={`/assets/crays/${c.image}`} alt={c.imageLabel}/><span><small>{c.category} · YOUR DEMO CONTEST</small><strong>{c.title}</strong><span>Open this contest <ArrowRight size={15}/></span></span></button><div className="award-delivery-body"><div className="award-delivery-status">{state.status==='delivered'?<CheckCircle size={22}/>:<Package size={22}/>}<strong>{state.status==='delivered'?'Delivered · local example':state.status==='ready'?'Ready to deliver':state.status==='preparing'?'In preparation':'Promise announced'}</strong></div><p>{c.unlockTitle}</p>{state.needsReview&&<p role="alert">The original delivery record needs review. No replacement update can be recorded.</p>}<dl><dt>Inventory / capacity</dt><dd>{terms?.inventory||'No limited inventory specified'}</dd><dt>Original fulfilment terms</dt><dd>{terms?.fulfilment||c.description}</dd></dl>{state.note&&<p className="award-delivery-note">{state.note}</p>}{next&&<><label className="as-field">Public demo delivery update<VoiceTextarea aria-label={`Delivery update for ${c.title}`} value={notes[c.id]||''} maxLength={1000} onChange={e=>setNotes({...notes,[c.id]:e.target.value})}/></label><button className="as-outline" disabled={!!state.needsReview||!notes[c.id]?.trim()} onClick={()=>{setError('');update(w=>{try{return setStoryDelivery(w,c.id,next,notes[c.id].trim());}catch(e){setError(e instanceof Error?e.message:'Review this original promise.');return w;}});}}>{next==='preparing'?'Record demo preparation':next==='ready'?'Mark ready in this demo':'Record demo delivery'}<ArrowRight size={16}/></button></>}<details className="as-details"><summary><Receipt size={16}/> Original terms stay unchanged</summary><p>The saved contest, price and voting rights retain their original terms. The delivery update is a separate, clearly simulated creator statement.</p></details></div></article>})}</section>;
+}
+
+export function AwardCampaignDelivery({world,campaignId}:{world:ProductWorld;campaignId:string}){
+ const delivery=storyDelivery(world,campaignId);if(!delivery)return null;
+ return <section className="award-delivery-public"><p className="as-kicker">THE CREATOR'S PROMISE · DEMO UPDATE</p><h2>{delivery.status==='delivered'?'The promised moment.':delivery.status==='ready'?'The next moment is ready.':'Behind the next chapter.'}</h2><ol aria-label="Demo delivery progress">{stages.map((stage,i)=><li key={stage} aria-current={stage===delivery.status?'step':undefined} className={i<=stages.indexOf(delivery.status)?'is-reached':''}><span>{i+1}</span>{stage}</li>)}</ol><p>{delivery.note||delivery.termsSummary}</p><small>Public local simulation. This creator update does not change voting totals or grant access, ownership or event admission.</small></section>;
+}

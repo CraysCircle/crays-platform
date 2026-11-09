@@ -1,0 +1,13 @@
+.commercial-applicant{display:flex;align-items:center;gap:18px;border-bottom:1px solid #d8e3ec;padding:6px 0 24px;margin-bottom:24px}.commercial-applicant>svg{flex-shrink:0;color:#91a5b6}.commercial-applicant>div{flex:1}.commercial-applicant strong{font-size:20px}.commercial-applicant small{display:block}.commercial-applicant>span{display:flex;gap:8px;align-items:center;font-size:16px;text-transform:capitalize;background:#f3f6f9;border-radius:22px;padding:8px 16px}.commercial-shared-answer h3{font-size:18px!important;color:#526d85}.commercial-shared-answer p{padding:14px 18px;border-radius:8px;background:#f3f6f9;overflow-wrap:anywhere;white-space:pre-wrap}.commercial-app-consent{display:flex;align-items:center;gap:16px}.commercial-decision-note{border-top:1px solid #d8e3ec;padding-top:24px;margin-top:28px}.commercial-decision-note small{text-align:right}.commercial-application-review aside>small{display:block;margin:12px 0}.commercial-application-review aside>button{margin-top:12px}
+
+.commercial-application-list article{display:flex;align-items:center;gap:16px;border-bottom:1px solid #d8e3ec;padding:20px 0}.commercial-application-list article>div{flex:1;min-width:0}.commercial-application-list article h3{margin:0}.commercial-application-list article p{margin:8px 0}.commercial-application-list .commercial-advanced>p>svg{vertical-align:middle;margin-right:8px}
+
+/* Application source uses compact original-value rows, not catalogue cards. */
+.web-commercial.commercial-application-review aside dl{margin:16px 0 20px}
+.web-commercial.commercial-application-review aside dl>div{background:none;border-radius:0;border-bottom:1px solid #d8e3ec;padding:10px 0;margin:0;min-height:44px;box-sizing:border-box;align-items:baseline;gap:20px}
+.web-commercial.commercial-application-review aside dt{flex:0 0 110px;min-width:0}
+.web-commercial.commercial-application-review aside dd{flex:1;min-width:0}
+.web-commercial.commercial-application-review aside .commercial-info{margin-top:20px;padding-top:0;border-top:0;margin-bottom:16px}
+.web-commercial.commercial-application-review aside>button{margin-top:10px}
+.web-commercial.commercial-application-review aside>small{margin:8px 0}
+.web-commercial.commercial-application-review .commercial-app-consent{margin:16px 0}

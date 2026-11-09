@@ -1,0 +1,16 @@
+import type {ChuckMessage} from './controller.mjs';
+import type {ChuckOriginalRequest} from './requests.mjs';
+export type ChuckOriginalReference=Readonly<{attachmentId:string;version:1;sha256:string;mimeType:string;byteLength:number;messageReceiptId:string;registrationReceiptId:string;createdAt:string;expiresAt:string;availability:'RETAINED'|'ERASED'|'EXPIRED'|'UNAVAILABLE';displayName:string|null}>;
+export type ChuckMessageWithOriginals=Readonly<ChuckMessage&{hasOriginals:boolean;originals:readonly ChuckOriginalReference[]}>;
+export const ORIGINAL_REFERENCE_MAX_BYTES:number;
+export const NATIVE_ORIGINAL_TRANSFER_MAX_BYTES:number;
+export const ORIGINAL_MIME_TYPES:readonly string[];
+export function originalReference(value:unknown):ChuckOriginalReference;
+export function originalReadReference(value:unknown):{attachmentId:string;version:1;sha256:string};
+export function captureOriginalReadInput(value:unknown):{attachmentId:string;version:1;sha256:string};
+export function isOriginalLocallyRetained(value:unknown,instant?:number):boolean;
+export function canRefreshOriginal(previous:unknown,next:unknown):boolean;
+export function originalMessage(value:unknown):ChuckMessageWithOriginals;
+export function canRefreshOriginalMessage(previous:unknown,next:unknown):boolean;
+export function originalTranscript(value:unknown):{bindingId:string;revision:string;conversationId:string;hasOlderMessages:boolean;nextBeforeMessageId:string|null;messages:readonly ChuckMessageWithOriginals[]};
+export function originalRequestPage(value:unknown):{bindingId:string;revision:string;conversationId:string;hasOlderRequests:boolean;nextBeforeMessageId:string|null;requests:readonly Readonly<ChuckOriginalRequest&{hasOriginals:boolean;originals:readonly ChuckOriginalReference[]}>[]};

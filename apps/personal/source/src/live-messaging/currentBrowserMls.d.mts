@@ -1,0 +1,24 @@
+import type {MarmotClient} from '../../.qualification/marmot-pilot-v1/node_modules/@internet-privacy/marmot-ts-welcome-context-v1/dist/client/marmot-client.js';
+import type {MarmotGroup,GroupHistoryFactory,BaseGroupHistory} from '../../.qualification/marmot-pilot-v1/node_modules/@internet-privacy/marmot-ts-welcome-context-v1/dist/client/group/marmot-group.js';
+import type {NostrNetworkInterface} from '../../.qualification/marmot-pilot-v1/node_modules/@internet-privacy/marmot-ts-welcome-context-v1/dist/client/nostr-interface.js';
+import type {CurrentAccountMessagingPort,CurrentConversationGrant} from './currentAccountMessaging.mjs';
+import type {AccountBrowserStores,openAccountBrowserStores} from './accountBrowserStores.mjs';
+import type {openCurrentAccountSigner} from './currentAccountSigner.mjs';
+import type {CurrentSignerBinding,PublicMessagingIdentity,CurrentBoundSigner,SignedEvent} from './currentBoundSigner.mjs';
+import type {CurrentSdkHistoryFactory} from './currentSdkHistory.mjs';
+type Engine=MarmotClient<BaseGroupHistory>;
+type Network=NostrNetworkInterface&{close():void};
+type Context={identity:PublicMessagingIdentity;signer:CurrentBoundSigner;signal:AbortSignal};
+type HistoryContext=Context&{stores:AccountBrowserStores['stores'];network:NostrNetworkInterface;getClient:()=>Engine;isCurrent:()=>boolean};
+export function openCurrentBrowserMls(options:Omit<Parameters<typeof openCurrentAccountSigner>[0],never>&{
+ startGroupBeforeReturn?:boolean;
+ isCurrentBinding(binding:CurrentSignerBinding):boolean;
+ storage?:Omit<Parameters<typeof openAccountBrowserStores>[0],'account'|'isCurrent'>;
+ openNetwork(context:Context&{stores:AccountBrowserStores['stores']}):Network;
+ openPublicationGate?:(context:HistoryContext&{network:Network})=>Promise<{network:NostrNetworkInterface;close():void;settled():Promise<void>}>;
+ onGroupLoaded?:(group:MarmotGroup<BaseGroupHistory>)=>void;
+ onGroupUnloaded?:(groupId:string)=>void;
+ authorizeEvent(context:{identity:PublicMessagingIdentity;relays:string[];event:SignedEvent;client:Engine}):boolean;
+ admitConversation(context:Context&{conversationId:string;client:Engine;stores:AccountBrowserStores['stores'];network:NostrNetworkInterface}):Promise<CurrentConversationGrant|null>;
+ createHistoryFactory?:(context:HistoryContext)=>GroupHistoryFactory<BaseGroupHistory>|CurrentSdkHistoryFactory;
+}):Promise<Readonly<{account:PublicMessagingIdentity;messaging:CurrentAccountMessagingPort;client:Engine;network:NostrNetworkInterface;storage:AccountBrowserStores;historyReady:boolean;close():void;settled():Promise<void>}>>;

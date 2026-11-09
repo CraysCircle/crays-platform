@@ -1,0 +1,2060 @@
+{
+  "areas": [
+    {
+      "id": "Everyday",
+      "headline": "A little more room in your day.",
+      "description": "Notes, reminders and plans that stay together.",
+      "icon": "ListChecks",
+      "image": ""
+    },
+    {
+      "id": "Learn",
+      "headline": "Follow your curiosity.",
+      "description": "Answers, sources and something new to learn.",
+      "icon": "FileText",
+      "image": ""
+    },
+    {
+      "id": "Travel",
+      "headline": "A trip that feels like you.",
+      "description": "From the first idea to the journey home.",
+      "icon": "Compass",
+      "image": "forest-city-marina.webp"
+    },
+    {
+      "id": "Go out",
+      "headline": "Good reasons to get out.",
+      "description": "Places, experiences and a little time together.",
+      "icon": "MapPin",
+      "image": "venue-table.png"
+    },
+    {
+      "id": "Eat well",
+      "headline": "Good food. Less figuring it out.",
+      "description": "Meals, recipes and a shopping list for your week.",
+      "icon": "BowlFood",
+      "image": ""
+    },
+    {
+      "id": "Move",
+      "headline": "Make movement part of your day.",
+      "description": "Goals, training plans, routines and recovery.",
+      "icon": "Pulse",
+      "image": "venue-gym.jpg"
+    },
+    {
+      "id": "Home",
+      "headline": "Take care of the everyday.",
+      "description": "Shopping, your home and the things worth keeping.",
+      "icon": "House",
+      "image": ""
+    },
+    {
+      "id": "Connect",
+      "headline": "Find the words. Keep in touch.",
+      "description": "Your own messages, conversations and invitations.",
+      "icon": "ChatCircle",
+      "image": ""
+    },
+    {
+      "id": "Create",
+      "headline": "Make something that’s yours.",
+      "description": "Images, words, music and small creative projects.",
+      "icon": "NotePencil",
+      "image": ""
+    },
+    {
+      "id": "People",
+      "headline": "Good company starts somewhere.",
+      "description": "VIFs, introductions and your permitted communities.",
+      "icon": "UsersThree",
+      "image": ""
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "B2C-CAP-001",
+      "title": "Plan my day",
+      "area": "Everyday",
+      "sourceTitle": "Tagesplanung",
+      "sourceUse": "Termine und eigene Aufgaben zu einem Tagesplan verbinden",
+      "featureId": "AL-293",
+      "prompt": "Plan my day. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-007"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-025"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-002",
+      "title": "Make room in my week",
+      "area": "Everyday",
+      "sourceTitle": "Wochenplanung",
+      "sourceUse": "Freie Zeit und persönliche Vorhaben verteilen",
+      "featureId": "AL-293",
+      "prompt": "Make room in my week. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-007"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-025"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-003",
+      "title": "Find a time together",
+      "area": "Everyday",
+      "sourceTitle": "Terminabstimmung",
+      "sourceUse": "Freie Zeiten prüfen und einen Termin vorbereiten",
+      "featureId": "AL-293",
+      "prompt": "Find a time together. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-007"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-028"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-004",
+      "title": "Remember something",
+      "area": "Everyday",
+      "sourceTitle": "Persönliche Erinnerungen",
+      "sourceUse": "An eigene Termine und Vorhaben erinnern",
+      "featureId": "AL-293",
+      "prompt": "Remember something. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-007"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-002"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-005",
+      "title": "Remember birthdays & anniversaries",
+      "area": "Everyday",
+      "sourceTitle": "Geburtstage und Jahrestage",
+      "sourceUse": "An gespeicherte persönliche Anlässe erinnern",
+      "featureId": "AL-293",
+      "prompt": "Remember birthdays & anniversaries. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-007"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-002"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-006",
+      "title": "Keep my to-dos together",
+      "area": "Everyday",
+      "sourceTitle": "Persönliche Aufgabenlisten",
+      "sourceUse": "Eigene Aufgaben erfassen, ordnen und wiederfinden",
+      "featureId": "AL-293",
+      "prompt": "Keep my to-dos together. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-007"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-002"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-007",
+      "title": "Build a routine",
+      "area": "Everyday",
+      "sourceTitle": "Gewohnheiten begleiten",
+      "sourceUse": "Selbst gewählte Routinen protokollieren",
+      "featureId": "AL-293",
+      "prompt": "Build a routine. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-007"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-002"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-008",
+      "title": "Find my notes",
+      "area": "Everyday",
+      "sourceTitle": "Persönliche Notizen",
+      "sourceUse": "Eigene Ideen und Notizen wiederfinden",
+      "featureId": "AL-293",
+      "prompt": "Find my notes. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-007"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-001"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-009",
+      "title": "Organise family & travel documents",
+      "area": "Everyday",
+      "sourceTitle": "Reise- und Familienunterlagen",
+      "sourceUse": "Freigegebene persönliche Unterlagen durchsuchen",
+      "featureId": "AL-293",
+      "prompt": "Organise family & travel documents. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-007"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-034"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-010",
+      "title": "Keep track of everyday deadlines",
+      "area": "Everyday",
+      "sourceTitle": "Fristen im Alltag",
+      "sourceUse": "Eigene Kündigungs-, Garantie- und Rückgabefristen merken",
+      "featureId": "AL-293",
+      "prompt": "Keep track of everyday deadlines. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-007"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-002"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-011",
+      "title": "Research a question",
+      "area": "Learn",
+      "sourceTitle": "Aktuelle Webrecherche",
+      "sourceUse": "Eine Frage mit aktuellen Quellen beantworten",
+      "featureId": "AL-293",
+      "prompt": "Research a question. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-008"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-022"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-012",
+      "title": "Compare the sources",
+      "area": "Learn",
+      "sourceTitle": "Quellenvergleich",
+      "sourceUse": "Widersprüche und Belege mehrerer Quellen darstellen",
+      "featureId": "AL-293",
+      "prompt": "Compare the sources. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-008"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-025"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-013",
+      "title": "Catch up on my topics",
+      "area": "Learn",
+      "sourceTitle": "Persönlicher Nachrichtenüberblick",
+      "sourceUse": "Aus selbst gewählten Themen einen Überblick erstellen",
+      "featureId": "AL-293",
+      "prompt": "Catch up on my topics. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-008"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-018"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-014",
+      "title": "Understand a long article",
+      "area": "Learn",
+      "sourceTitle": "Lange Artikel verstehen",
+      "sourceUse": "Einen Text verständlich zusammenfassen und erklären",
+      "featureId": "AL-293",
+      "prompt": "Understand a long article. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-008"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-023"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-015",
+      "title": "Ask questions about my PDF",
+      "area": "Learn",
+      "sourceTitle": "PDF-Fragen beantworten",
+      "sourceUse": "Antworten mit Seitenbezug aus einem eigenen PDF herleiten",
+      "featureId": "AL-293",
+      "prompt": "Ask questions about my PDF. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-008"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-024"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-016",
+      "title": "Find my next book",
+      "area": "Learn",
+      "sourceTitle": "Bücher entdecken",
+      "sourceUse": "Bücher nach Themen und Interessen suchen",
+      "featureId": "AL-293",
+      "prompt": "Find my next book. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-008"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-018"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-017",
+      "title": "Make a learning plan",
+      "area": "Learn",
+      "sourceTitle": "Persönlicher Lernplan",
+      "sourceUse": "Lernziele in überschaubare Einheiten aufteilen",
+      "featureId": "AL-293",
+      "prompt": "Make a learning plan. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-008"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-025"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-018",
+      "title": "Practise a language",
+      "area": "Learn",
+      "sourceTitle": "Sprachen üben",
+      "sourceUse": "Dialoge und Aussprache mit Text und Sprache üben",
+      "featureId": "AL-293",
+      "prompt": "Practise a language. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-008"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-018"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-019",
+      "title": "Quiz me on what I’m learning",
+      "area": "Learn",
+      "sourceTitle": "Quiz und Wiederholung",
+      "sourceUse": "Aus freigegebenem Lernstoff Übungsfragen erstellen",
+      "featureId": "AL-293",
+      "prompt": "Quiz me on what I’m learning. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-008"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-025"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-020",
+      "title": "Explain something simply",
+      "area": "Learn",
+      "sourceTitle": "Alltagswissen erklären",
+      "sourceUse": "Unbekannte Begriffe an nachvollziehbaren Beispielen erklären",
+      "featureId": "AL-293",
+      "prompt": "Explain something simply. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-008"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-022"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-021",
+      "title": "Plan a trip",
+      "area": "Travel",
+      "sourceTitle": "Individueller Reiseplan",
+      "sourceUse": "Eine Reise nach Budget, Zeit und Vorlieben planen",
+      "featureId": "AL-273",
+      "prompt": "Plan a trip. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-009"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-025"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-022",
+      "title": "Compare places to stay",
+      "area": "Travel",
+      "sourceTitle": "Unterkünfte vergleichen",
+      "sourceUse": "Öffentliche Unterkunftsangebote mit Abrufzeit vergleichen",
+      "featureId": "AL-273",
+      "prompt": "Compare places to stay. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-009"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-022"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-023",
+      "title": "Compare flight options",
+      "area": "Travel",
+      "sourceTitle": "Flugangebote recherchieren",
+      "sourceUse": "Aktuelle veröffentlichte Angebote und Bedingungen prüfen",
+      "featureId": "AL-273",
+      "prompt": "Compare flight options. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-009"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-022"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-024",
+      "title": "Find trains & public transport",
+      "area": "Travel",
+      "sourceTitle": "Bahn- und ÖPNV-Verbindungen",
+      "sourceUse": "Verbindungen aus aktuellen Verkehrsquellen recherchieren",
+      "featureId": "AL-273",
+      "prompt": "Find trains & public transport. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-009"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-018"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-025",
+      "title": "Plan a route with good stops",
+      "area": "Travel",
+      "sourceTitle": "Routen und Zwischenstopps",
+      "sourceUse": "Passende Wege und Stopps für einen Ausflug finden",
+      "featureId": "AL-273",
+      "prompt": "Plan a route with good stops. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-009"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-018"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-026",
+      "title": "Make a packing list",
+      "area": "Travel",
+      "sourceTitle": "Packlisten",
+      "sourceUse": "Eine Packliste für Reisedauer und Aktivitäten erstellen",
+      "featureId": "AL-273",
+      "prompt": "Make a packing list. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-009"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-025"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-027",
+      "title": "Check official entry information",
+      "area": "Travel",
+      "sourceTitle": "Einreiseinformationen recherchieren",
+      "sourceUse": "Aktuelle Informationen zuständiger Behörden verlinken",
+      "featureId": "AL-273",
+      "prompt": "Check official entry information. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-009"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-022"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-028",
+      "title": "Work out a travel budget",
+      "area": "Travel",
+      "sourceTitle": "Reisebudget planen",
+      "sourceUse": "Eigene Preisannahmen und recherchierte Angebote zusammenrechnen",
+      "featureId": "AL-273",
+      "prompt": "Work out a travel budget. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-009"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-025"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-029",
+      "title": "Plan an accessible or family trip",
+      "area": "Travel",
+      "sourceTitle": "Familien- und barrierearme Reisen",
+      "sourceUse": "Passende Optionen suchen und offene Angaben benennen",
+      "featureId": "AL-273",
+      "prompt": "Plan an accessible or family trip. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-009"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-022"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-030",
+      "title": "Keep my travel documents together",
+      "area": "Travel",
+      "sourceTitle": "Reiseunterlagen bündeln",
+      "sourceUse": "Buchungsbestätigungen und eigene Dokumente als Reiseübersicht ordnen",
+      "featureId": "AL-273",
+      "prompt": "Keep my travel documents together. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-009"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-034"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-031",
+      "title": "Find a restaurant",
+      "area": "Go out",
+      "sourceTitle": "Restaurants finden",
+      "sourceUse": "Passende Restaurants nach Ort und eigenen Wünschen finden",
+      "featureId": "AL-293",
+      "prompt": "Find a restaurant. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-010"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-022"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-032",
+      "title": "Find a good café",
+      "area": "Go out",
+      "sourceTitle": "Cafés finden",
+      "sourceUse": "Cafés nach Lage, Öffnungszeiten und Vorlieben auswählen",
+      "featureId": "AL-293",
+      "prompt": "Find a good café. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-010"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-022"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-033",
+      "title": "Find something happening nearby",
+      "area": "Go out",
+      "sourceTitle": "Veranstaltungen entdecken",
+      "sourceUse": "Aktuelle Veranstaltungen für Ort und Datum recherchieren",
+      "featureId": "AL-293",
+      "prompt": "Find something happening nearby. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-010"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-022"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-034",
+      "title": "Find a film, exhibition or show",
+      "area": "Go out",
+      "sourceTitle": "Kino und Kultur",
+      "sourceUse": "Programme, Ausstellungen und Aufführungen suchen",
+      "featureId": "AL-293",
+      "prompt": "Find a film, exhibition or show. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-010"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-022"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-035",
+      "title": "Plan a museum visit",
+      "area": "Go out",
+      "sourceTitle": "Museen und Sehenswürdigkeiten",
+      "sourceUse": "Besuche nach Interessen und Öffnungszeiten planen",
+      "featureId": "AL-293",
+      "prompt": "Plan a museum visit. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-010"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-022"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-036",
+      "title": "Plan a walk or bike ride",
+      "area": "Go out",
+      "sourceTitle": "Wander- und Radausflüge",
+      "sourceUse": "Touren aus geeigneten aktuellen Quellen zusammenstellen",
+      "featureId": "AL-293",
+      "prompt": "Plan a walk or bike ride. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-010"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-018"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-037",
+      "title": "Find a day out with the kids",
+      "area": "Go out",
+      "sourceTitle": "Aktivitäten mit Kindern",
+      "sourceUse": "Passende Ausflüge nach Alter und Interessen finden",
+      "featureId": "AL-293",
+      "prompt": "Find a day out with the kids. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-010"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-022"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-038",
+      "title": "Plan a pet-friendly outing",
+      "area": "Go out",
+      "sourceTitle": "Aktivitäten mit Haustieren",
+      "sourceUse": "Ausflugsziele mit belegten Haustierregeln suchen",
+      "featureId": "AL-293",
+      "prompt": "Plan a pet-friendly outing. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-010"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-022"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-039",
+      "title": "Make a plan for any weather",
+      "area": "Go out",
+      "sourceTitle": "Wetterabhängige Freizeitplanung",
+      "sourceUse": "Für gutes oder schlechtes Wetter Alternativen vorschlagen",
+      "featureId": "AL-293",
+      "prompt": "Make a plan for any weather. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-010"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-025"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-040",
+      "title": "Make a little weekend plan",
+      "area": "Go out",
+      "sourceTitle": "Persönlicher Wochenendplan",
+      "sourceUse": "Freizeitoptionen mit freien Zeiten verbinden",
+      "featureId": "AL-293",
+      "prompt": "Make a little weekend plan. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-010"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-025"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-041",
+      "title": "Find something good to cook",
+      "area": "Eat well",
+      "sourceTitle": "Rezepte finden",
+      "sourceUse": "Rezepte nach eigenen Vorlieben recherchieren",
+      "featureId": "AL-293",
+      "prompt": "Find something good to cook. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-011"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-022"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-042",
+      "title": "Cook with what I have",
+      "area": "Eat well",
+      "sourceTitle": "Kochen mit vorhandenen Zutaten",
+      "sourceUse": "Gerichtideen aus der eigenen Vorratsliste ableiten",
+      "featureId": "AL-293",
+      "prompt": "Cook with what I have. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-011"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-025"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-043",
+      "title": "Plan this week’s meals",
+      "area": "Eat well",
+      "sourceTitle": "Wochen-Speiseplan",
+      "sourceUse": "Mahlzeiten für eine selbst gewählte Woche planen",
+      "featureId": "AL-293",
+      "prompt": "Plan this week’s meals. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-011"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-025"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-044",
+      "title": "Turn recipes into a shopping list",
+      "area": "Eat well",
+      "sourceTitle": "Einkaufsliste aus Rezepten",
+      "sourceUse": "Benötigte Mengen in einer Einkaufsliste zusammenfassen",
+      "featureId": "AL-293",
+      "prompt": "Turn recipes into a shopping list. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-011"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-025"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-045",
+      "title": "Find an ingredient swap",
+      "area": "Eat well",
+      "sourceTitle": "Zutaten ersetzen",
+      "sourceUse": "Kulinarische Alternativen für fehlende Zutaten finden",
+      "featureId": "AL-293",
+      "prompt": "Find an ingredient swap. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-011"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-022"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-046",
+      "title": "Look up a product barcode",
+      "area": "Eat well",
+      "sourceTitle": "Produktinformationen per Barcode",
+      "sourceUse": "Mit einer validierten eingegebenen EAN vorhandene Produktdaten abrufen; Foto-Barcodes erst mit tatsächlichem Decoder",
+      "featureId": "AL-293",
+      "prompt": "Look up a product barcode. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-011"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-018"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-047",
+      "title": "Read a food label with me",
+      "area": "Eat well",
+      "sourceTitle": "Etiketten und Allergene lesen",
+      "sourceUse": "Deklarierte Angaben sichtbar machen und unsichere Stellen benennen",
+      "featureId": "AL-293",
+      "prompt": "Read a food label with me. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-011"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-018"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-048",
+      "title": "Adjust recipe portions",
+      "area": "Eat well",
+      "sourceTitle": "Portionen umrechnen",
+      "sourceUse": "Rezeptmengen rechnerisch an die Personenzahl anpassen",
+      "featureId": "AL-293",
+      "prompt": "Adjust recipe portions. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-011"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-025"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-049",
+      "title": "Cook one step at a time",
+      "area": "Eat well",
+      "sourceTitle": "Schrittweise Kochbegleitung",
+      "sourceUse": "Ein gewähltes Rezept mit einzelnen Schritten begleiten",
+      "featureId": "AL-293",
+      "prompt": "Cook one step at a time. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-011"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-018"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-050",
+      "title": "Make something from leftovers",
+      "area": "Eat well",
+      "sourceTitle": "Reste verwerten",
+      "sourceUse": "Ideen für selbst benannte übrig gebliebene Zutaten sammeln",
+      "featureId": "AL-293",
+      "prompt": "Make something from leftovers. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-011"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-025"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-051",
+      "title": "Set my movement goals",
+      "area": "Move",
+      "sourceTitle": "Eigene Bewegungsziele",
+      "sourceUse": "Selbst gesetzte Ziele speichern und verfolgen",
+      "featureId": "AL-293",
+      "prompt": "Set my movement goals. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-012"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-001"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-052",
+      "title": "Fit training into my week",
+      "area": "Move",
+      "sourceTitle": "Trainingstermine planen",
+      "sourceUse": "Gewählte Einheiten im eigenen Kalender berücksichtigen",
+      "featureId": "AL-293",
+      "prompt": "Fit training into my week. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-012"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-028"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-053",
+      "title": "Keep a training journal",
+      "area": "Move",
+      "sourceTitle": "Trainingsprotokoll",
+      "sourceUse": "Eigene Einheiten und Rückmeldungen dokumentieren",
+      "featureId": "AL-293",
+      "prompt": "Keep a training journal. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-012"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-001"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-054",
+      "title": "Understand my training plan",
+      "area": "Move",
+      "sourceTitle": "Freigegebenen Trainingsplan erklären",
+      "sourceUse": "Einen vorhandenen Plan verständlich aufschlüsseln",
+      "featureId": "AL-293",
+      "prompt": "Understand my training plan. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-012"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-024"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-055",
+      "title": "Make time for a break",
+      "area": "Move",
+      "sourceTitle": "Bewegungs- und Bildschirmpausen",
+      "sourceUse": "An selbst gewählte Pausen erinnern",
+      "featureId": "AL-293",
+      "prompt": "Make time for a break. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-012"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-002"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-056",
+      "title": "Build an evening routine",
+      "area": "Move",
+      "sourceTitle": "Schlafroutine organisieren",
+      "sourceUse": "Gewählte Schlafenszeiten und Routinen unterstützen",
+      "featureId": "AL-293",
+      "prompt": "Build an evening routine. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-012"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-002"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-057",
+      "title": "Take a moment to unwind",
+      "area": "Move",
+      "sourceTitle": "Entspannung begleiten",
+      "sourceUse": "Gewählte Atem- oder Entspannungsübungen vorlesen",
+      "featureId": "AL-293",
+      "prompt": "Take a moment to unwind. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-012"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-018"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-058",
+      "title": "Keep a private journal",
+      "area": "Move",
+      "sourceTitle": "Selbstreflexion und Tagebuch",
+      "sourceUse": "Eigene Gedanken privat erfassen und wiederfinden",
+      "featureId": "AL-293",
+      "prompt": "Keep a private journal. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-012"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-001"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-059",
+      "title": "Prepare for a health appointment",
+      "area": "Move",
+      "sourceTitle": "Gesundheitstermine vorbereiten",
+      "sourceUse": "Eigene Fragen und Unterlagen für einen Termin ordnen",
+      "featureId": "AL-293",
+      "prompt": "Prepare for a health appointment. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-012"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-028"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-060",
+      "title": "Find a class or place to train",
+      "area": "Move",
+      "sourceTitle": "Fitnessangebote finden",
+      "sourceUse": "Passende Kurse und Einrichtungen recherchieren",
+      "featureId": "AL-293",
+      "prompt": "Find a class or place to train. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-012"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-022"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-061",
+      "title": "Compare products",
+      "area": "Home",
+      "sourceTitle": "Produkte vergleichen",
+      "sourceUse": "Eigenschaften und Quellen gegenüberstellen",
+      "featureId": "AL-293",
+      "prompt": "Compare products. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-013"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-025"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-062",
+      "title": "Compare prices & conditions",
+      "area": "Home",
+      "sourceTitle": "Preise recherchieren",
+      "sourceUse": "Öffentliche Preise mit Zeitpunkt und Bedingungen vergleichen",
+      "featureId": "AL-293",
+      "prompt": "Compare prices & conditions. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-013"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-022"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-063",
+      "title": "Watch a price for me",
+      "area": "Home",
+      "sourceTitle": "Preisbeobachtung",
+      "sourceUse": "Erlaubte Quellen regelmäßig prüfen und Änderungen melden",
+      "featureId": "AL-293",
+      "prompt": "Watch a price for me. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-013"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-002"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-064",
+      "title": "Make a household budget",
+      "area": "Home",
+      "sourceTitle": "Privates Haushaltsbudget",
+      "sourceUse": "Eigene Einnahmen und Ausgaben strukturiert zusammenrechnen",
+      "featureId": "AL-293",
+      "prompt": "Make a household budget. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-013"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-025"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-065",
+      "title": "Organise my receipts",
+      "area": "Home",
+      "sourceTitle": "Ausgaben aus Belegen erfassen",
+      "sourceUse": "Eigene Belege lesen und Beträge zur Prüfung vorschlagen",
+      "featureId": "AL-293",
+      "prompt": "Organise my receipts. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-013"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-034"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-066",
+      "title": "See my subscriptions",
+      "area": "Home",
+      "sourceTitle": "Private Abos überblicken",
+      "sourceUse": "Eigene laufende Abos und Fristen auflisten",
+      "featureId": "AL-293",
+      "prompt": "See my subscriptions. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-013"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-001"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-067",
+      "title": "Find a warranty or purchase receipt",
+      "area": "Home",
+      "sourceTitle": "Garantien und Kaufbelege",
+      "sourceUse": "Eigene Unterlagen und Fristen wiederfinden",
+      "featureId": "AL-293",
+      "prompt": "Find a warranty or purchase receipt. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-013"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-001"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-068",
+      "title": "Prepare a return",
+      "area": "Home",
+      "sourceTitle": "Retouren vorbereiten",
+      "sourceUse": "Händlerbedingungen finden und eine Rückgabe vorbereiten",
+      "featureId": "AL-293",
+      "prompt": "Prepare a return. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-013"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-030"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-069",
+      "title": "Set the lights at home",
+      "area": "Home",
+      "sourceTitle": "Eigene Hue-Beleuchtung steuern",
+      "sourceUse": "Eigene Hue-Lampen, Räume und Lichtszenen steuern",
+      "featureId": "AL-293",
+      "prompt": "Set the lights at home. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-013"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-018"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-070",
+      "title": "Understand a device manual",
+      "area": "Home",
+      "sourceTitle": "Bedienungsanleitungen verstehen",
+      "sourceUse": "Herstellerangaben eines vorhandenen Geräts erklären",
+      "featureId": "AL-293",
+      "prompt": "Understand a device manual. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-013"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-024"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-071",
+      "title": "Turn my voice note into text",
+      "area": "Connect",
+      "sourceTitle": "Sprachnachrichten transkribieren",
+      "sourceUse": "Eine eigene Audionachricht in Text umwandeln",
+      "featureId": "AL-293",
+      "prompt": "Turn my voice note into text. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-014"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-032"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-072",
+      "title": "Hear an answer aloud",
+      "area": "Connect",
+      "sourceTitle": "Gesprochene Antworten",
+      "sourceUse": "Antworten als Audiodatei erhalten",
+      "featureId": "AL-293",
+      "prompt": "Hear an answer aloud. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-014"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-033"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-073",
+      "title": "Talk with Chuck",
+      "area": "Connect",
+      "sourceTitle": "Direkter Sprachdialog",
+      "sourceUse": "Mit dem Agenten sprechen und ihn unterbrechen können",
+      "featureId": "AL-293",
+      "prompt": "Talk with Chuck. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-014"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-143"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-074",
+      "title": "Translate my text",
+      "area": "Connect",
+      "sourceTitle": "Texte übersetzen",
+      "sourceUse": "Eigene Texte in eine gewünschte Sprache übertragen",
+      "featureId": "AL-293",
+      "prompt": "Translate my text. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-014"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-018"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-075",
+      "title": "Translate a photo or menu",
+      "area": "Connect",
+      "sourceTitle": "Fotos und Speisekarten übersetzen",
+      "sourceUse": "Sichtbaren Text erkennen und übersetzen",
+      "featureId": "AL-293",
+      "prompt": "Translate a photo or menu. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-014"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-018"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-076",
+      "title": "Draft a personal email",
+      "area": "Connect",
+      "sourceTitle": "Private E-Mails entwerfen",
+      "sourceUse": "Eine persönliche Nachricht passend formulieren",
+      "featureId": "AL-293",
+      "prompt": "Draft a personal email. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-014"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-030"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-077",
+      "title": "Find something in my inbox",
+      "area": "Connect",
+      "sourceTitle": "Eigene E-Mails durchsuchen",
+      "sourceUse": "Eine Nachricht im eigenen verbundenen Postfach finden",
+      "featureId": "AL-293",
+      "prompt": "Find something in my inbox. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-014"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-029"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-078",
+      "title": "Prepare a reply",
+      "area": "Connect",
+      "sourceTitle": "Antworten vorbereiten",
+      "sourceUse": "Auf eine ausgewählte Nachricht einen Entwurf erstellen",
+      "featureId": "AL-293",
+      "prompt": "Prepare a reply. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-014"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-030"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-079",
+      "title": "Write an invitation",
+      "area": "Connect",
+      "sourceTitle": "Private Einladungen formulieren",
+      "sourceUse": "Einladungen zu eigenen Anlässen verfassen",
+      "featureId": "AL-293",
+      "prompt": "Write an invitation. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-014"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-030"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-080",
+      "title": "Listen to a document",
+      "area": "Connect",
+      "sourceTitle": "Dokumente vorlesen",
+      "sourceUse": "Freigegebene Dokumentinhalte als Sprache ausgeben",
+      "featureId": "AL-293",
+      "prompt": "Listen to a document. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-014"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-018"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-081",
+      "title": "Create an image",
+      "area": "Create",
+      "sourceTitle": "Bilder erstellen",
+      "sourceUse": "Ein Bild aus einer eigenen Beschreibung erzeugen",
+      "featureId": "AL-293",
+      "prompt": "Create an image. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-015"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-018"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-082",
+      "title": "Edit my own image",
+      "area": "Create",
+      "sourceTitle": "Eigene Bilder bearbeiten",
+      "sourceUse": "Ein eigenes Bild nach Anweisung verändern",
+      "featureId": "AL-293",
+      "prompt": "Edit my own image. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-015"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-018"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-083",
+      "title": "Make a card or invitation",
+      "area": "Create",
+      "sourceTitle": "Gruß- und Einladungskarten",
+      "sourceUse": "Ein persönliches Kartenmotiv mit Text vorbereiten",
+      "featureId": "AL-293",
+      "prompt": "Make a card or invitation. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-015"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-018"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-084",
+      "title": "Write a story or poem",
+      "area": "Create",
+      "sourceTitle": "Geschichten und Gedichte",
+      "sourceUse": "Persönliche kreative Texte verfassen",
+      "featureId": "AL-293",
+      "prompt": "Write a story or poem. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-015"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-018"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-085",
+      "title": "Find a thoughtful gift",
+      "area": "Create",
+      "sourceTitle": "Geschenkideen",
+      "sourceUse": "Ideen anhand von Anlass, Interessen und Budget sammeln",
+      "featureId": "AL-293",
+      "prompt": "Find a thoughtful gift. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-015"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-022"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-086",
+      "title": "Find music & press play",
+      "area": "Create",
+      "sourceTitle": "Musik entdecken und steuern",
+      "sourceUse": "Musik im eigenen verbundenen Konto suchen und abspielen",
+      "featureId": "AL-293",
+      "prompt": "Find music & press play. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-015"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-018"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-087",
+      "title": "Explore a podcast or video",
+      "area": "Create",
+      "sourceTitle": "Podcasts und Videos erschließen",
+      "sourceUse": "Inhalte zusammenfassen und relevante Stellen herausarbeiten",
+      "featureId": "AL-293",
+      "prompt": "Explore a podcast or video. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-015"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-023"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-088",
+      "title": "Understand a photo or screenshot",
+      "area": "Create",
+      "sourceTitle": "Eigene Fotos und Screenshots erklären",
+      "sourceUse": "Inhalte und sichtbare Details eines Bildes beschreiben",
+      "featureId": "AL-293",
+      "prompt": "Understand a photo or screenshot. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-015"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-018"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-089",
+      "title": "Make a diagram",
+      "area": "Create",
+      "sourceTitle": "Persönliche Diagramme erstellen",
+      "sourceUse": "Einen Plan oder Zusammenhang als Grafik darstellen",
+      "featureId": "AL-293",
+      "prompt": "Make a diagram. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-015"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-018"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-090",
+      "title": "Compare my choices interactively",
+      "area": "Create",
+      "sourceTitle": "Interaktive Entscheidungshilfen",
+      "sourceUse": "Eigene Optionen in einer unterstützten Ansicht vergleichen",
+      "featureId": "AL-293",
+      "prompt": "Compare my choices interactively. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-015"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-018"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-091",
+      "title": "Find someone in my contacts",
+      "area": "People",
+      "sourceTitle": "Eigene Kontakte finden",
+      "sourceUse": "Kontakte im eigenen freigegebenen Adressbuch suchen",
+      "featureId": "AL-269",
+      "prompt": "Find someone in my contacts. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-016"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-031"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-092",
+      "title": "Make plans with my VIFs",
+      "area": "People",
+      "sourceTitle": "Gemeinsame Treffen planen",
+      "sourceUse": "Eigene freie Zeiten und Treffen koordinieren",
+      "featureId": "AL-269",
+      "prompt": "Make plans with my VIFs. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-016"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-028"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-093",
+      "title": "Remember what matters to me",
+      "area": "People",
+      "sourceTitle": "Eigene Interessen und Wünsche",
+      "sourceUse": "Freiwillige persönliche Ziele für Begegnungen speichern",
+      "featureId": "AL-269",
+      "prompt": "Remember what matters to me. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-016"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-059"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-094",
+      "title": "Meet someone with shared interests",
+      "area": "People",
+      "sourceTitle": "Menschen mit gemeinsamen Interessen",
+      "sourceUse": "In erlaubten Suchräumen passende Personen empfehlen",
+      "featureId": "AL-269",
+      "prompt": "Meet someone with shared interests. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-016"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-062"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-095",
+      "title": "Ask for a thoughtful introduction",
+      "area": "People",
+      "sourceTitle": "Vorstellungen mit Zustimmung",
+      "sourceUse": "Eine Vorstellung erst nach beidseitiger Freigabe ausführen",
+      "featureId": "AL-269",
+      "prompt": "Ask for a thoughtful introduction. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-016"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-065"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-096",
+      "title": "Find company for an activity",
+      "area": "People",
+      "sourceTitle": "Freizeitpartner finden",
+      "sourceUse": "Menschen für gemeinsame Aktivitäten empfehlen",
+      "featureId": "AL-269",
+      "prompt": "Find company for an activity. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-016"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-131"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-097",
+      "title": "Explore a dating introduction",
+      "area": "People",
+      "sourceTitle": "Dating-Empfehlungen",
+      "sourceUse": "Freiwillige Wünsche und gegenseitige Passung berücksichtigen",
+      "featureId": "AL-269",
+      "prompt": "Explore a dating introduction. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-016"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-134"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-098",
+      "title": "Make a useful business introduction",
+      "area": "People",
+      "sourceTitle": "Persönliches Business-Networking",
+      "sourceUse": "Personen nach beiderseitigem Nutzen empfehlen",
+      "featureId": "AL-269",
+      "prompt": "Make a useful business introduction. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-016"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-062"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-099",
+      "title": "Catch up with my communities",
+      "area": "People",
+      "sourceTitle": "Eigene Communities nutzen",
+      "sourceUse": "Zulässige Informationen eigener bestätigter Communities abrufen",
+      "featureId": "AL-269",
+      "prompt": "Catch up with my communities. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-016"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-129"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-100",
+      "title": "Manage my contact boundaries",
+      "area": "People",
+      "sourceTitle": "Kontaktgrenzen verwalten",
+      "sourceUse": "Blockieren, Melden und Freigaben widerrufen",
+      "featureId": "AL-269",
+      "prompt": "Manage my contact boundaries. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-016"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-139"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-101",
+      "title": "Track my parcel",
+      "area": "Home",
+      "sourceTitle": "Paketstatus mit berechtigtem Sendungszugriff verfolgen",
+      "sourceUse": "Paketstatus mit berechtigtem Sendungszugriff verfolgen",
+      "featureId": "AL-293",
+      "prompt": "Track my parcel. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-077"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-102",
+      "title": "Check a link’s reputation",
+      "area": "Home",
+      "sourceTitle": "Freigegebene Links gegen Bedrohungslisten prüfen",
+      "sourceUse": "Freigegebene Links gegen Bedrohungslisten prüfen",
+      "featureId": "AL-293",
+      "prompt": "Check a link’s reputation. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-022"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-103",
+      "title": "Split a shared expense",
+      "area": "Home",
+      "sourceTitle": "Gemeinsame private Ausgaben und Salden verwalten",
+      "sourceUse": "Gemeinsame private Ausgaben und Salden verwalten",
+      "featureId": "AL-293",
+      "prompt": "Split a shared expense. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-025"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-104",
+      "title": "Share a family or shopping list",
+      "area": "Everyday",
+      "sourceTitle": "Geteilte Familien- und Einkaufslisten gemeinsam führen",
+      "sourceUse": "Geteilte Familien- und Einkaufslisten gemeinsam führen",
+      "featureId": "AL-293",
+      "prompt": "Share a family or shopping list. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-002"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-105",
+      "title": "Book a stay or table",
+      "area": "Travel",
+      "sourceTitle": "Unterkünfte tatsächlich buchen und Restaurantreservierungen buchen, ändern und stornieren",
+      "sourceUse": "Unterkünfte tatsächlich buchen und Restaurantreservierungen buchen, ändern und stornieren",
+      "featureId": "AL-273",
+      "prompt": "Book a stay or table. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-076"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-106",
+      "title": "Control my connected home",
+      "area": "Home",
+      "sourceTitle": "Eigene Smart-Home-Geräte berechtigt bedienen",
+      "sourceUse": "Eigene Smart-Home-Geräte berechtigt bedienen",
+      "featureId": "AL-293",
+      "prompt": "Control my connected home. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-018"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-107",
+      "title": "Find a document in my archive",
+      "area": "Home",
+      "sourceTitle": "Eigene Dokumente im privaten Archiv ablegen und wiederfinden",
+      "sourceUse": "Eigene Dokumente im privaten Archiv ablegen und wiederfinden",
+      "featureId": "AL-293",
+      "prompt": "Find a document in my archive. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-034"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-108",
+      "title": "Remember where I put something",
+      "area": "Home",
+      "sourceTitle": "Eigene Gegenstände und erfasste Standorte verwalten",
+      "sourceUse": "Eigene Gegenstände und erfasste Standorte verwalten",
+      "featureId": "AL-293",
+      "prompt": "Remember where I put something. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-001"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-109",
+      "title": "Keep track of my pantry",
+      "area": "Eat well",
+      "sourceTitle": "Vorratsmengen und Verfallsdaten tatsächlich führen",
+      "sourceUse": "Vorratsmengen und Verfallsdaten tatsächlich führen",
+      "featureId": "AL-293",
+      "prompt": "Keep track of my pantry. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-002"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-110",
+      "title": "Find a photo in my archive",
+      "area": "Create",
+      "sourceTitle": "Eigenes Fotoarchiv durchsuchen und kuratieren",
+      "sourceUse": "Eigenes Fotoarchiv durchsuchen und kuratieren",
+      "featureId": "AL-293",
+      "prompt": "Find a photo in my archive. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-034"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-111",
+      "title": "Fill out a PDF form",
+      "area": "Connect",
+      "sourceTitle": "PDF-Formulare ausfüllen und prüfbar zurückgeben",
+      "sourceUse": "PDF-Formulare ausfüllen und prüfbar zurückgeben",
+      "featureId": "AL-293",
+      "prompt": "Fill out a PDF form. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-034"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-112",
+      "title": "Manage my email aliases",
+      "area": "Connect",
+      "sourceTitle": "Persönliche Mailaliase erstellen und widerrufen",
+      "sourceUse": "Persönliche Mailaliase erstellen und widerrufen",
+      "featureId": "AL-293",
+      "prompt": "Manage my email aliases. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-030"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-113",
+      "title": "Prepare my emergency access plan",
+      "area": "Everyday",
+      "sourceTitle": "Einwilligungsbasierten digitalen Notfallzugang vorbereiten",
+      "sourceUse": "Einwilligungsbasierten digitalen Notfallzugang vorbereiten",
+      "featureId": "AL-293",
+      "prompt": "Prepare my emergency access plan. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-001"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-114",
+      "title": "Keep a care or baby journal",
+      "area": "Everyday",
+      "sourceTitle": "Autorisierte Baby- und Pflegeereignisse protokollieren",
+      "sourceUse": "Autorisierte Baby- und Pflegeereignisse protokollieren",
+      "featureId": "AL-293",
+      "prompt": "Keep a care or baby journal. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-002"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-115",
+      "title": "Organise pet care",
+      "area": "Everyday",
+      "sourceTitle": "Haustierpflege und freigegebene Aktivitätsdaten nutzen",
+      "sourceUse": "Haustierpflege und freigegebene Aktivitätsdaten nutzen",
+      "featureId": "AL-293",
+      "prompt": "Organise pet care. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-002"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-116",
+      "title": "Check in for my flight",
+      "area": "Travel",
+      "sourceTitle": "Flug-Check-in und Sitzplatzwahl ausführen",
+      "sourceUse": "Flug-Check-in und Sitzplatzwahl ausführen",
+      "featureId": "AL-273",
+      "prompt": "Check in for my flight. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-076"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-117",
+      "title": "Order my groceries",
+      "area": "Eat well",
+      "sourceTitle": "Lebensmitteleinkauf tatsächlich bestellen",
+      "sourceUse": "Lebensmitteleinkauf tatsächlich bestellen",
+      "featureId": "AL-293",
+      "prompt": "Order my groceries. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-076"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-118",
+      "title": "Follow my home search",
+      "area": "Home",
+      "sourceTitle": "Wohnungssuche und neue Angebote verfolgen",
+      "sourceUse": "Wohnungssuche und neue Angebote verfolgen",
+      "featureId": "AL-293",
+      "prompt": "Follow my home search. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-022"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-119",
+      "title": "Arrange a repair or insurance claim",
+      "area": "Home",
+      "sourceTitle": "Reparaturtermine und eigene Versicherungsfälle bearbeiten",
+      "sourceUse": "Reparaturtermine und eigene Versicherungsfälle bearbeiten",
+      "featureId": "AL-293",
+      "prompt": "Arrange a repair or insurance claim. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-028"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-120",
+      "title": "Take my reading offline",
+      "area": "Learn",
+      "sourceTitle": "Eigene Inhalte als Offline-EPUB exportieren",
+      "sourceUse": "Eigene Inhalte als Offline-EPUB exportieren",
+      "featureId": "AL-293",
+      "prompt": "Take my reading offline. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-034"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-121",
+      "title": "Create or read a QR code",
+      "area": "Create",
+      "sourceTitle": "QR-Codes exakt erzeugen und auslesen",
+      "sourceUse": "QR-Codes exakt erzeugen und auslesen",
+      "featureId": "AL-293",
+      "prompt": "Create or read a QR code. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-034"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-122",
+      "title": "Play a game of chess",
+      "area": "Create",
+      "sourceTitle": "Schach mit legalem dauerhaftem Brett spielen",
+      "sourceUse": "Schach mit legalem dauerhaftem Brett spielen",
+      "featureId": "AL-293",
+      "prompt": "Play a game of chess. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-025"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-123",
+      "title": "Preview a 3D file",
+      "area": "Create",
+      "sourceTitle": "3D-Dateien sicher prüfen und als Vorschau darstellen",
+      "sourceUse": "3D-Dateien sicher prüfen und als Vorschau darstellen",
+      "featureId": "AL-293",
+      "prompt": "Preview a 3D file. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-034"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    },
+    {
+      "id": "B2C-CAP-124",
+      "title": "Make a little interactive tool",
+      "area": "Create",
+      "sourceTitle": "Kleine persönliche interaktive Webtools erstellen",
+      "sourceUse": "Kleine persönliche interaktive Webtools erstellen",
+      "featureId": "AL-293",
+      "prompt": "Make a little interactive tool. Ask me what matters, work only with the details I choose to share and show me the next step before taking action.",
+      "sourceOwner": {
+        "earlyGeneralSkillDeliveryTaskIds": ["CHUCK-017"],
+        "retainedSpecialistAndIntegrationTaskIds": ["CHUCK-034"],
+        "fullOutcomeRequiresAllApplicableNamedActionsAndActualEvidence": true,
+        "personalConnectionMissingDoesNotRemoveScopeOrBlockOtherBranches": true
+      },
+      "delivery": "Planning preview; no live external execution"
+    }
+  ]
+}

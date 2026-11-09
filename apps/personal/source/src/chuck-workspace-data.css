@@ -1,0 +1,9 @@
+.chuck-core-recommendation{max-width:980px;margin:0 auto;padding:28px 32px;color:#0a2d40;font-size:15px;line-height:1.65}.chuck-core-recommendation header{display:flex;align-items:center;gap:16px;padding-bottom:22px;border-bottom:1px solid #d8e3ee}.chuck-core-recommendation h1{font-size:28px;margin:0}.chuck-core-recommendation h2{font-size:21px;margin:24px 0 10px}.chuck-core-recommendation header p,.chuck-core-purpose{color:#627b96}.chuck-core-recommendation section{margin-top:28px;padding-top:8px;border-top:1px solid #d8e3ee}.chuck-core-recommendation .chuck-s1-primary{display:inline-flex;align-items:center;gap:18px;text-decoration:none;background:#ec0044;color:white;padding:12px 20px;border-radius:8px}.chuck-core-recommendation button{display:inline-flex;align-items:center;gap:8px;border:1px solid #d8e3ee;border-radius:8px;padding:10px 16px;background:#f2f6fa;color:#0a2d40}.chuck-core-recommendation :focus-visible{outline:2px solid #213e55;outline-offset:3px}@media(max-width:640px){.chuck-core-recommendation{padding:20px 16px}}
+
+.chuck-s1-person-placeholder{display:grid;place-items:center;flex:0 0 88px;width:88px;min-height:104px;border-radius:8px;background:#f2f6fa;color:#627b96}
+
+
+/* Keep admitted names, URLs and source references readable without widening the private view. */
+.chuck-core-recommendation{min-width:0;overflow-wrap:anywhere}
+.chuck-core-recommendation header>div{min-width:0}
+.chuck-core-recommendation header>svg{flex-shrink:0}

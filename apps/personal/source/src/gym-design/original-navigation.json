@@ -1,0 +1,191 @@
+{
+  "at": "2026-10-28T10:43:08.953564+00:00",
+  "scope": "Original advanced retained Gym navigation into selected unified design; public website excluded",
+  "primary": [
+    {
+      "key": "today",
+      "label": "TODAY"
+    },
+    {
+      "key": "book",
+      "label": "BOOK"
+    },
+    {
+      "key": "performance",
+      "label": "HEALTH"
+    },
+    {
+      "key": "progress",
+      "label": "TRAINING"
+    },
+    {
+      "key": "nutrition",
+      "label": "NUTRITION"
+    },
+    {
+      "key": "shop",
+      "label": "SHOPPING"
+    },
+    {
+      "key": "coaching",
+      "label": "COACHING"
+    },
+    {
+      "key": "help",
+      "label": "MORE"
+    }
+  ],
+  "utility": [
+    {
+      "key": "access",
+      "label": "Access"
+    },
+    {
+      "key": "membership",
+      "label": "Membership"
+    },
+    {
+      "key": "profile",
+      "label": "Account & Privacy"
+    },
+    {
+      "key": "help",
+      "label": "Help"
+    }
+  ],
+  "subtabs": {
+    "training": [
+      "Training home",
+      "Training plan",
+      "Exercise library",
+      "History",
+      "Strength trends",
+      "Settings"
+    ],
+    "progress": [
+      "Overview",
+      "Goals",
+      "Habits",
+      "Measurements",
+      "Gallery",
+      "Weekly review",
+      "Challenges",
+      "Sharing",
+      "Privacy"
+    ],
+    "health": [
+      "Overview",
+      "Sleep & recovery",
+      "Heart & cardio",
+      "Body & age",
+      "Stress & mind",
+      "Mobility",
+      "Women's health",
+      "Metabolic",
+      "Session twin",
+      "Assessments & services",
+      "Connections & data"
+    ],
+    "nutrition": [
+      "Food diary",
+      "Food log & goals",
+      "Pantry",
+      "Meal prep"
+    ],
+    "recipes": [
+      "Catalogue",
+      "Favorites",
+      "Collections",
+      "Shopping list"
+    ],
+    "shop": [
+      "Discover",
+      "Cart",
+      "Orders",
+      "Returns"
+    ],
+    "profile": [
+      "Profile",
+      "Documents",
+      "Support",
+      "Connections & data",
+      "Privacy",
+      "Notifications"
+    ],
+    "legacyTraining": [
+      "Plan",
+      "Workout",
+      "Exercises",
+      "Progress",
+      "Challenges"
+    ],
+    "legacyProfile": [
+      "Profile",
+      "Privacy",
+      "Notifications",
+      "Access"
+    ],
+    "membership": [
+      "Overview",
+      "Invoices",
+      "Recovery"
+    ]
+  },
+  "sourcePins": [
+    {
+      "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/src/components/member-app/member-app-shell.tsx",
+      "sha256": "f654bca58bf7ee446497099286edd8c7140c53d8684a0d9e3c1ead2d0b4daf9c"
+    },
+    {
+      "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/src/components/member-app/member-app-complete-sections.tsx",
+      "sha256": "ea73d0fa2a4db8e993f64fb7100a4b9a5998d533b8f573c1256af3a019c471e5"
+    },
+    {
+      "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/src/components/member-app/member-progress-challenge-experience.tsx",
+      "sha256": "cd99607cbe4754080701a981d36c9e3ede204ee0cbc100a5d9820f2d6d8c546d"
+    },
+    {
+      "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/src/components/member-app/member-nutrition-experience.tsx",
+      "sha256": "d4365b918ea760fb85113748e005b1f80cb685288257b05b89046e54ccbcee57"
+    },
+    {
+      "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/src/components/member-app/member-recipe-experience-v2.tsx",
+      "sha256": "b944cd51b1718a53cc415aa0a0dbcd8a619118278acfb69beca64270f3d9cb78"
+    },
+    {
+      "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/src/components/member-health/member-health-experience.tsx",
+      "sha256": "cd8bd4dcbb9d3a5591180b1aa48d8a6fe956f667dc8f922916be0b9fb96fe9e4"
+    },
+    {
+      "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/src/components/member-train/member-training-navigation.tsx",
+      "sha256": "207bcc3bc3a30406524697372f8682a1f1ce1da352781dae5033fb35edbd553e"
+    },
+    {
+      "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/src/components/member-train/member-training-overview.tsx",
+      "sha256": "014e51a981abdba63f35120847bb531ad56498fff41ccff96e7de555ace8035b"
+    },
+    {
+      "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/src/components/member-app/member-account-support-privacy-experience.tsx",
+      "sha256": "ed6d827fcd91ac805d4b59caf89e7626d5b825ec0e8865dcf4064fd4800b840a"
+    },
+    {
+      "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/src/components/member-app/member-membership-billing-experience.tsx",
+      "sha256": "d738e18bbbb5dc1b2cf290b67208492a4240d2d6e72ef6dcdb302d4d02d0cc5d"
+    },
+    {
+      "path": "/srv/crays/dev-state/019ffbba-e7b6-7391-87d3-6794b4e46818/b151-b200/phase20-north-star-resume-0510-20260913-1/source/src/app/member/performance/training/page.tsx",
+      "sha256": "74d413bf61a2f0a0e48d1ce6410f4f9dcd925a93dfad8836286b4ec2863b680b"
+    }
+  ],
+  "primaryIdenticalInFAndA": true,
+  "targetSource": "/home/craysdev/codex-chat-projects/openclaw/review/crays-unified-desktop-20261026/satlantis-deep-analysis-20261028/implementation/community-membership/candidate",
+  "targetRegistryVersion": "common053-personal-current-e8a2427969a743bb",
+  "prototypeStageOnly": true,
+  "allSubnavigationExhaustivelyRecovered": false,
+  "remainingReconciliation": "Booking/coaching/account support/trainer nested actions and source deltas remain to be read; no tab omitted on the basis of this partial register.",
+  "activationEvidence": {
+    "training": "src/app/member/performance/training/page.tsx → TrainingOverview → MemberTrainingNavigation; My training/My progress preserved via MemberPerformanceNavigation",
+    "profile": "ProfileSection → MemberAccountSupportPrivacyExperience initialTab Profile; LegacyProfileSection is a separate unused older export",
+    "membership": "MembershipSection → MemberMembershipBillingExperience → membershipTabs"
+  }
+}

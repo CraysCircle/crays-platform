@@ -1,0 +1,5 @@
+import type{OriginalUploadCommand}from'./upload-command.mjs';
+export type OriginalSourceUse={schema:'crays.personal-original.source-use.v1';sourceUseReceiptId:string;purpose:'personal-chuck-input';messageId:string;messageReceiptId:string;originals:readonly {attachmentId:string;version:1;sha256:string}[];agentId:string;bindingRevision:string;contactRevision:string;createdAt:string;expiresAt:string;current:boolean;replayed:boolean;modelExecutionAuthorized:false;sdkDelivered:false};
+export type OriginalUploadReceipt={receiptId:string;messageId:string;outcome:string;replayed:boolean;createdAt:string;sourceUse?:Readonly<OriginalSourceUse>};
+export function originalUploadReceipt(value:unknown,command:unknown,options?:{allowReceiptOnly?:boolean}):Readonly<OriginalUploadReceipt>;
+export function createOriginalUploadTransport(options:{fetch?:typeof fetch;accountScope:string}):(command:Readonly<OriginalUploadCommand>,payloads:(Uint8Array|ArrayBuffer)[],control?:{signal?:AbortSignal;assertCurrent?:()=>void})=>Promise<Readonly<OriginalUploadReceipt>>;

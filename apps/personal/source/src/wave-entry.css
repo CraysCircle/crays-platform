@@ -1,0 +1,11 @@
+/* Shared Wave entry: explicit CRAYS typography rather than native button defaults. */
+.wave-entry {display:grid;grid-template-columns:36px minmax(0,1fr) 19px;align-items:center;gap:12px;width:100%;box-sizing:border-box;min-height:72px;margin:0 0 15px;padding:12px;border:1px solid var(--crays-line,#e0e5eb);border-radius:14px;background:#fff;color:var(--crays-navy,#051823);font-family:Crays,Avenir,sans-serif;text-align:left;appearance:none;}
+.wave-entry-symbol {display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#edf4f7;color:var(--crays-blue,#0a3753);}
+.wave-entry-copy {display:flex;flex-direction:column;gap:4px;min-width:0;}
+.wave-entry-copy strong {display:block;font-size:18px;font-weight:700;line-height:1.3;letter-spacing:0;}
+.wave-entry-copy small {display:block;font-size:14px;font-weight:400;line-height:1.5;color:var(--crays-muted,#52627a);overflow-wrap:anywhere;}
+.wave-entry>svg {color:var(--crays-blue,#0a3753);}
+.wave-entry:focus-visible {outline:2px solid var(--crays-red,#f31248);outline-offset:3px;}
+.wave-entry:active {background:#fafafa;}
+.web-own-spot-content .wave-entry,.web-own-spot-content .wave-entry .wave-entry-copy strong,.wave-entry .wave-entry-copy strong{font-size:18px!important}
+.desktop-chrome .wave-entry-copy small{font-size:14px!important}

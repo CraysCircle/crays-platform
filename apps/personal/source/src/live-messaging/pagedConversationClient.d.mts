@@ -1,0 +1,2 @@
+import type {HumanConversationClient,HumanMessage} from './humanConversationClient.mjs';
+export function openPagedConversationClient(options:{client:HumanConversationClient;queryPage:(options:{cursor:any;limit:number})=>Promise<{messages:any[];hasMore:boolean;cursor:any}>;decodeRow:(row:any)=>HumanMessage;isCurrent:()=>boolean;signal?:AbortSignal;pageSize?:number;maxVisible?:number}):Promise<HumanConversationClient&{loadOlder():Promise<void>;showLatest():Promise<void>}>;

@@ -1,0 +1,17 @@
+{
+  "schema": "crays.personal-source-capture.v1",
+  "originalSourceRole": "Shared Personal Vite/React application including Gym, social and Member integration views",
+  "originalSourceRoot": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/health-training-data-integration-20261101/training-home-product-20261103/frontend-candidate",
+  "historicalGymCommitCompared": "0dd822d7578dfffd55ff76eb8f37ae4c5f6f99ed",
+  "historicalTreeTruncated": false,
+  "candidateExactBlobsPresentInHistoricalGymTree": 17,
+  "baselineFiles": 1486,
+  "candidateFiles": 1489,
+  "originalPreimages": 10,
+  "newFiles": 3,
+  "currentTextSourceFiles": 1435,
+  "assetsPendingPublicRightsReview": 54,
+  "protectedTemplateFiles": 9,
+  "wholeMigrationOrLicenseClosure": false,
+  "originalSourceProgramsExecuted": false
+}

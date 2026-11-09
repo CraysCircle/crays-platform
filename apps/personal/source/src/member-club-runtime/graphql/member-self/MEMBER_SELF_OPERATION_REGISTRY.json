@@ -1,0 +1,162 @@
+{
+  "sourceSha256": "2df3a4099c13fb9a582b77342366185dadccf1f945af74670cfe2985c1b05fed",
+  "operations": {
+    "ownState": {
+      "operationName": "ClubMemberOwnState",
+      "id": "sha256:10f91556f37d3e6880ce05b3682a66ac32654a10e0b566206b29ee923163ad7f",
+      "field": "clubMemberOwnState",
+      "kind": "query"
+    },
+    "ownTestStays": {
+      "operationName": "ClubMemberOwnTestStays",
+      "id": "sha256:231874d5938ce1a304663fb6443fe252a658b89bf969891908ed8824bbd6fc46",
+      "field": "clubMemberOwnTestStays",
+      "kind": "query"
+    },
+    "ownConversations": {
+      "operationName": "ClubMemberOwnConversations",
+      "id": "sha256:f6d942e31749e49c0683305e32567e52eaa3e33ed020a907abc077e284d3c7ab",
+      "field": "clubMemberOwnConversations",
+      "kind": "query"
+    },
+    "ownExperiences": {
+      "operationName": "ClubMemberOwnExperiences",
+      "id": "sha256:e8f05e1b1a383501612fbae6b3e0bb3d1f4765e017154b64f6e7cfe77cd3b297",
+      "field": "clubMemberOwnExperiences",
+      "kind": "query"
+    },
+    "ownServiceOffers": {
+      "operationName": "ClubMemberOwnServiceOffers",
+      "id": "sha256:b84879c4400efb5a331a81ccaafc735cfdc38c3f03b3f5baebe22ab9093440b3",
+      "field": "clubMemberOwnServiceOffers",
+      "kind": "query"
+    },
+    "ownFinance": {
+      "operationName": "ClubMemberOwnFinance",
+      "id": "sha256:8a61eb7579d15c9bc2576b1cc2289224ebbb3ace064da35b2523dd026a06be25",
+      "field": "clubMemberOwnFinance",
+      "kind": "query"
+    },
+    "ownCommerce": {
+      "operationName": "ClubMemberOwnCommerce",
+      "id": "sha256:3f9ad60e770a6df2bd84c8027f480eac95ee640f5ccc6c2bc6268a339668348c",
+      "field": "clubMemberOwnCommerce",
+      "kind": "query"
+    },
+    "commerceCommand": {
+      "operationName": "ClubMemberCommerceCommand",
+      "id": "sha256:7c6b302b5ccc1684f9475cb8e1ead963d1c6a5e48df10932326bcfb6d93f65d5",
+      "field": "clubMemberCommerceCommand",
+      "kind": "mutation"
+    },
+    "savedPlanCommand": {
+      "operationName": "ClubMemberSavedPlanCommand",
+      "id": "sha256:2ff5c028a10c314f34e1af03f812358b9efd18cd5230e984b36007e45236cf25",
+      "field": "clubMemberSavedPlanCommand",
+      "kind": "mutation"
+    },
+    "ownDemoDocuments": {
+      "operationName": "ClubMemberOwnDemoDocuments",
+      "id": "sha256:f0c0a5b9e98d24212355739fb039648e920992cf1957631b5759e0045b80a6fb",
+      "field": "clubMemberOwnDemoDocuments",
+      "kind": "query"
+    },
+    "ownPurchaseFulfilment": {
+      "operationName": "ClubMemberOwnPurchaseFulfilment",
+      "id": "sha256:4970746ce527f89696deefa3db9a436a0407f9b5b500009b3693b0c1ed9a6434",
+      "field": "clubMemberOwnPurchaseFulfilment",
+      "kind": "query"
+    },
+    "ownApplication": {
+      "operationName": "ClubMemberOwnApplication",
+      "id": "sha256:1b10639950c19a402e43a261e302e591190ffae34c609004b2a648f60cd1f156",
+      "field": "clubMemberOwnApplication",
+      "kind": "query"
+    },
+    "applicationCommand": {
+      "operationName": "ClubMemberApplicationCommand",
+      "id": "sha256:031048f35ca469eeaad19f3eb33e2dc6a4e4253784dd51fecdb7f8d8ac7e9548",
+      "field": "clubMemberApplicationCommand",
+      "kind": "mutation"
+    },
+    "ownProfile": {
+      "operationName": "ClubMemberOwnProfile",
+      "id": "sha256:88760cd693654b9c10fb41b3db8a5a7a542392a06954caacf9308a16d13c6949",
+      "field": "clubMemberOwnProfile",
+      "kind": "query"
+    },
+    "profileCommand": {
+      "operationName": "ClubMemberProfileCommand",
+      "id": "sha256:4e14dbc6bfed44c390529d7cb21ab0acf4307a75d49c2d725f3561111f69b690",
+      "field": "clubMemberProfileCommand",
+      "kind": "mutation"
+    },
+    "ownFinanceRequests": {
+      "operationName": "ClubMemberOwnFinanceRequests",
+      "id": "sha256:de0db3fdebbd0cf0f9aef5f5d038575b098cfe5c3fd2b335210f1c432747b136",
+      "field": "readOwnFinanceRequests",
+      "kind": "query"
+    },
+    "financeRequestCommand": {
+      "operationName": "ClubMemberFinanceRequestCommand",
+      "id": "sha256:a6e588bdab7936d1a435dcd4b032c478da0ec554bd7afd121089186521d3e6e9",
+      "field": "submitRequest",
+      "kind": "mutation"
+    },
+    "ownPrivacyRequests": {
+      "id": "sha256:c787e4a12bc816cb9ef15104faa0eb1b411c30f73278e359b5969c1cd6a2ae5a",
+      "operationName": "ClubMemberOwnPrivacyRequests",
+      "kind": "query",
+      "field": "clubMemberOwnPrivacyRequests"
+    },
+    "privacyRequestCommand": {
+      "id": "sha256:886323fadcd33570fef7d42795b6a6b7154b12704302e85b96d5bca702c379eb",
+      "operationName": "ClubMemberPrivacyRequestCommand",
+      "kind": "mutation",
+      "field": "clubMemberPrivacyRequestCommand"
+    }
+  },
+  "sourcePins": {
+    "member-self.graphql": "3904bdf51d7f99f9f11b821c0d81afd19f251c4a7acd256d46e3dfeda406c718",
+    "ClubMemberOwnState.graphql": "10f91556f37d3e6880ce05b3682a66ac32654a10e0b566206b29ee923163ad7f",
+    "member-own-state-client.ts": "7327161f8556f59d6a0b4961297ce4ead00f2e246eefc3932461e0f7dd26673a",
+    "member-self-resolvers.ts": "cbaeba3b9d00f7b113504349dd67d4b892380c62b124c2c1c8875b9de7b91288",
+    "member-self-runtime-ports.ts": "4a893c86c1cf7f3c752939738f91637ffab892fbbb2f3ff5ba115771465267c5",
+    "member-self-selector.ts": "65af85b486cfae049ddc0339537a21082476c5091ff04f16279ad6af92bd1a2b",
+    "member-self-yoga.ts": "870a6eb152a98a59f310bbd908d788b9290ad4bf4069f18cf12332ed1b0d2f36",
+    "persisted-documents.json": "05f45a8710f8b0f5e6a4fd38dec2e8db2df0c61f341ee5ca9ff6beb95bd76f19",
+    "graphql-route.candidate.ts": "8bbdd92482f3c3bf3bdddb690f40fc4b06733226440d38574b7b5ef915e71107",
+    "ClubMemberOwnTestStays.graphql": "231874d5938ce1a304663fb6443fe252a658b89bf969891908ed8824bbd6fc46",
+    "member-own-test-stays-native-resolver.ts": "523ae76ecffe1e65448e07365d582b45e4a6cb4cd95106bb94eff90198142f8b",
+    "ClubMemberOwnExperiences.graphql": "bb2828ea0ae43e0c15b39e5556860f07412ea96af6fa9b633703cda315af682f",
+    "member-own-experiences-native-resolver.ts": "f67264de9a0e0ca31776b17f89612c0b687be95d38eb2f3edff7aa3801af42c3",
+    "ClubMemberSavedPlanCommand.graphql": "2ff5c028a10c314f34e1af03f812358b9efd18cd5230e984b36007e45236cf25",
+    "member-demo-saved-plan-resolver.ts": "0b6daa15df6039941b80846081773b1c1d4989ddd4740fe20859fa0bf40347e4",
+    "ClubMemberOwnFinance.graphql": "8a61eb7579d15c9bc2576b1cc2289224ebbb3ace064da35b2523dd026a06be25",
+    "ClubMemberOwnConversations.graphql": "f6d942e31749e49c0683305e32567e52eaa3e33ed020a907abc077e284d3c7ab",
+    "member-own-conversations-native-resolver.ts": "92aa68fab25df028d7cf3708af7bead2c5bf5bcb5b97f020a3b8a523ea563040",
+    "core-member-purchase-fulfilment-runtime.ts": "fb5dcae21ce9a7d832443de9579279c4e33bd7e70eb1fdaee3b2aea672a4f89d",
+    "member-purchase-fulfilment-contract.ts": "f2d23ce06cbd818ace90df18c4bf8308766e1169491abdc1b524e56ddced12d1",
+    "member-own-purchase-fulfilment-native-resolver.ts": "e7b6dc11cf67e7695a5e0a2fefa8de36197c0feee099f1d68257d689fb0dab08",
+    "ClubMemberOwnPurchaseFulfilment.graphql": "05df88b30779ba6eb23ad8d9b9f449c1f882fffaac0554631f963d48b1f9cdf9",
+    "member-purchase-fulfilment-graphql-reader.ts": "f46dc90d473575fc529465e70b27728850ff8023878408a85f99907218819661",
+    "member-purchase-fulfilment-progress.tsx": "01c50f047cd52c195354754969b2ce4ca9006ca5ac330cf9519e459e9756b705",
+    "member-application-contract.ts": "65e908dd27152ebe0341c5f969ae502e693a97290c0bd97564944ca456159b7e",
+    "core-member-application-runtime.ts": "76475fa856d17d9d35c7b5cdd6d028ae181d642ee4d75b4049abd43e50e51ac5",
+    "member-application-resolver.ts": "dd358046080d06914f9e9b6acb50a41665f0a51fe700a568cbd48b7317af753c",
+    "member-application-client.ts": "6fcb049dc6c5cb680685f0b6610872df48f0d72243b367c31817a6410bb914c0",
+    "ClubMemberOwnApplication.graphql": "1b10639950c19a402e43a261e302e591190ffae34c609004b2a648f60cd1f156",
+    "ClubMemberApplicationCommand.graphql": "031048f35ca469eeaad19f3eb33e2dc6a4e4253784dd51fecdb7f8d8ac7e9548",
+    "core-member-profile-runtime.ts": "973ec2a3b4cacceda224f6f1b3f83883b8c0a6a8c6cb81e49b5b027739606448",
+    "member-profile-contract.ts": "35fadb3699a00048292a585012c9350655f9dddf6dae1659141f6027eade4790",
+    "member-own-profile-native-resolver.ts": "be31b0829d3ff44a0bd11c823ca223691391c4395d25740b4205e2e4ff1ad642",
+    "ClubMemberOwnProfile.graphql": "ff50037614c9ba816b202c74e72d7222b3ecad27b5d62bcc1238d400d0339acf",
+    "ClubMemberProfileCommand.graphql": "552677537912d4baeb8db5a22bc525fc7498dee352f46465cb4c337b9086c26e",
+    "member-profile-client.ts": "6f9e9f6345eb0ad899278f6667e01f480c9ba5eca05fa03acea964fb08ffe347",
+    "member-native-profile-workspace.tsx": "6a27c4c70c681af998afb7d2939f1e527681fe5aaff7192014fd4b7c51cf1140",
+    "ClubMemberFinanceRequestCommand.graphql": "a6e588bdab7936d1a435dcd4b032c478da0ec554bd7afd121089186521d3e6e9",
+    "ClubMemberOwnFinanceRequests.graphql": "de0db3fdebbd0cf0f9aef5f5d038575b098cfe5c3fd2b335210f1c432747b136",
+    "member-finance-request-native-resolver.ts": "9a8af6b1003b9bfe67af167e776582db01aad904365fd8cfae59e8045fa1da4d"
+  },
+  "runtimeInstalled": false
+}

@@ -1,0 +1,16 @@
+import oats from './source-media/nutrition-example-berry-oats.png';
+import yogurt from './source-media/nutrition-example-yogurt-granola.png';
+import toast from './source-media/nutrition-example-avocado-toast.png';
+import bowl from './source-media/nutrition-example-mediterranean-bowl.png';
+
+/** Local versioned illustrations only. No imported recipe, nutrition or allergen authority. */
+export type DesignRecipeFixture={version:string;title:string;name:string;image:string;category:string;description:string;ingredients:{name:string;amount:number;unit:string}[];instructions:string[];allowsBerrySwap:boolean};
+export type DesignRecipeRequest={id:number;view:'catalogue'|'detail'|'diary'|'cooking';date:string;meal:string};
+export const nutritionRecipes:readonly DesignRecipeFixture[]=[
+ {version:'design-oats-v1',title:'Berry oats',name:'Berry oats · Design example',image:oats,category:'Breakfast',description:'Oats, water and berries. A simple breakfast example.',ingredients:[{name:'Oats',amount:50,unit:'g'},{name:'Water',amount:150,unit:'ml'},{name:'Berries',amount:80,unit:'g'}],instructions:['Measure the ingredients for your selected servings.','Prepare the oats with water and stir.','Add the berries and serve.'],allowsBerrySwap:true},
+ {version:'design-yogurt-granola-v1',title:'Greek yogurt with granola',name:'Greek yogurt with granola · Design example',image:yogurt,category:'Breakfast',description:'Yogurt, oat granola and banana in one bowl.',ingredients:[{name:'Greek yogurt',amount:150,unit:'g'},{name:'Oat granola',amount:30,unit:'g'},{name:'Banana',amount:60,unit:'g'}],instructions:['Measure the yogurt and granola for your selected servings.','Slice the banana.','Spoon the yogurt into a bowl and add the granola and banana.'],allowsBerrySwap:false},
+ {version:'design-avocado-toast-v1',title:'Avocado toast',name:'Avocado toast · Design example',image:toast,category:'Lunch',description:'Toast with avocado and a poached egg.',ingredients:[{name:'Bread',amount:60,unit:'g'},{name:'Avocado',amount:70,unit:'g'},{name:'Egg',amount:1,unit:'piece'}],instructions:['Measure the ingredients and toast the bread.','Cook the egg according to your usual food preparation guidance.','Spread the avocado on the toast and add the cooked egg.'],allowsBerrySwap:false},
+ {version:'design-mediterranean-bowl-v1',title:'Mediterranean bowl',name:'Mediterranean bowl · Design example',image:bowl,category:'Lunch',description:'Quinoa, chickpeas, vegetables, olives and feta.',ingredients:[{name:'Cooked quinoa',amount:100,unit:'g'},{name:'Cooked chickpeas',amount:80,unit:'g'},{name:'Cucumber',amount:50,unit:'g'},{name:'Cherry tomatoes',amount:50,unit:'g'},{name:'Roasted red pepper',amount:40,unit:'g'},{name:'Black olives',amount:20,unit:'g'},{name:'Feta',amount:30,unit:'g'}],instructions:['Measure the prepared quinoa and chickpeas.','Wash and cut the cucumber and tomatoes; cut the roasted pepper.','Combine the ingredients in a bowl and add the olives and feta.'],allowsBerrySwap:false},
+];
+
+export const nutritionNutrients=[['Energy','kcal'],['Protein','g'],['Carbohydrates','g'],['Sugar','g'],['Fat','g'],['Saturated fat','g'],['Fibre','g'],['Sodium','mg'],['Potassium','mg'],['Magnesium','mg'],['Calcium','mg'],['Iron','mg'],['Vitamin D','µg'],['Vitamin B12','µg'],['Omega-3','g'],['Caffeine','mg']] as const;

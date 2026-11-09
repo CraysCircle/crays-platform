@@ -1,0 +1,1 @@
+export function resolveChuckWebContext(config?:{fetch?:typeof fetch;signal?:AbortSignal}):Promise<{accountScope:string;setup:{accountMapped:boolean;emailVerificationRequired:boolean;contactRevision:string|null}}>;

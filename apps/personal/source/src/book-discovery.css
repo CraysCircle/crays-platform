@@ -1,0 +1,61 @@
+.book-discovery h1{font-size:29px;line-height:1.14;letter-spacing:-.6px;margin:13px 0}.book-discovery-intro{font-size:12px!important;line-height:1.65!important;color:#6b8090;margin-bottom:24px}.book-discovery h2{font-size:18px;line-height:1.35}.book-discovery-goal{font-size:12px!important;line-height:1.6!important;color:#667e90}.book-discovery-options{margin:18px 0;border-top:1px solid #dde7ed}.book-discovery-options>summary,.book-discovery-search-options>summary,.book-discovery-boundaries>summary{font-size:12px;min-height:48px;color:#416980}.book-discovery .learn-record{gap:12px;padding:16px 0;border:0;border-bottom:1px solid #e1e9ed;background:#fff;border-radius:0}.book-discovery .learn-record>svg{flex-shrink:0}.book-discovery .learn-record strong{font-size:13px;line-height:1.45}.book-discovery .learn-record small{font-size:10px;line-height:1.6;margin-top:5px}.book-discovery-library h2{font-size:17px;margin:22px 0 10px}.book-discovery-next{margin:26px 0 10px;padding:18px 0;border-top:1px solid #e1e9ed}.book-discovery-next h2{font-size:18px;margin:0 0 10px}.book-discovery-next p{font-size:12px;line-height:1.65;color:#657e90;margin:0 0 18px}.book-discovery-next .learn-primary{display:flex;align-items:center;justify-content:center;gap:9px;font-size:13px}.book-discovery-empty-note{font-size:11px!important;line-height:1.6!important;color:#6c8293}.book-discovery-boundaries p{font-size:11px!important;line-height:1.6!important;color:#6b8090}.book-discovery button:focus-visible,.book-discovery summary:focus-visible{outline:2px solid #f31248;outline-offset:3px}
+
+/* Book editor: concrete desktop premock, original fields and model remain intact. */
+.web-book-editor{max-width:1500px;margin:0 auto;padding:24px 32px 48px;color:#082638;font:18px/1.5 Avenir,sans-serif;overflow-wrap:anywhere}
+.web-book-editor-back{display:flex;align-items:center;gap:12px;min-height:48px;padding:0 4px;margin:0 0 24px;border:0;background:transparent;color:#082638;font:inherit;font-weight:500}
+.web-book-editor-columns{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(0,1fr);gap:34px;align-items:start}
+.web-book-editor-columns>.club-adjustable-block,.web-book-editor-columns .club-adjustable-content{min-width:0}
+.web-book-editor-columns.club-arrangement-custom{display:flex;flex-wrap:wrap}
+.web-book-editor .web-book-editor-content{padding:0;margin:0;max-width:none;min-width:0;font:inherit}
+.web-book-editor-content>.learn-eyebrow{display:none}
+.web-book-editor-content h1{font-size:40px;line-height:1.15;letter-spacing:-.7px;margin:0 0 16px;font-weight:800}
+.web-book-editor-content h2,.web-book-editor-aside h2{font-size:26px;line-height:1.25;margin:22px 0 14px;font-weight:800}
+.web-book-editor-content h3{font-size:22px;line-height:1.3}
+.web-book-editor-content p,.web-book-editor-aside p{font-size:18px!important;line-height:1.55!important;margin:0 0 20px;color:#526780}
+.web-book-editor-content .book-discovery-intro{margin-bottom:28px}
+.web-book-editor-content .learn-field{margin:18px 0}
+.web-book-editor-content .learn-field>span{font-size:18px;line-height:1.5;margin-bottom:10px;font-weight:500;color:#082638}
+.web-book-editor-content .learn-field :is(input,textarea,select){font:inherit;font-size:18px;min-height:52px;padding:12px 14px;background:#f5f7f9;border-color:#cddce6;border-radius:9px;max-width:100%}
+.web-book-editor-content .learn-field textarea{min-height:128px;resize:vertical}
+.web-book-editor-content .learn-field :is(input,textarea,select):focus-visible{outline:2px solid #007f91;outline-offset:3px}
+.web-book-editor-content :is(button,summary){font-family:inherit;font-size:18px;line-height:1.5;min-height:48px;white-space:normal;overflow-wrap:anywhere}
+.web-book-editor-content .learn-details{margin:0;padding:0;border-top:1px solid #dce6ef}
+.web-book-editor-content .learn-details>summary{display:list-item;padding:16px 0;color:#082638;font-size:18px;line-height:1.5;font-weight:500;min-height:60px}
+.web-book-editor-content .learn-details[open]{padding-bottom:16px}
+.web-book-editor-content .learn-details .learn-details{margin-top:16px}
+.web-book-editor-content .learn-card{padding:18px;margin:16px 0;border-color:#dce6ef;border-radius:9px;min-width:0}
+.web-book-editor-content .learn-card :is(p,small,.learn-caption),.web-book-editor-content :is(.learn-caption,.learn-notice,.book-discovery-boundaries p){font-size:16px!important;line-height:1.55!important;color:#526780}
+.web-book-editor-content .learn-notice.error{color:#96203c}
+.web-book-editor-content .learn-choice{font-size:18px;align-items:flex-start;padding:16px 0}
+.web-book-editor-content .learn-choice>span{margin-top:3px}
+.web-book-editor-content .learn-primary{min-height:52px;border-radius:28px;background:#ce003e;color:white;font-size:18px;font-weight:500;margin:24px 0 18px;justify-content:space-between;padding:12px 22px}
+.web-book-editor-content .learn-secondary{font-size:18px;min-height:52px;background:#edf4f7;color:#082638}
+.web-book-editor-content .learn-quiet{font-size:18px;min-height:48px;color:#a90035}
+.web-book-editor-content .learn-notice{font-size:16px;line-height:1.55}
+.web-book-editor-content .book-discovery-boundaries{margin-top:20px}
+.web-book-editor-aside{min-width:0;padding:0}
+.web-book-editor-aside>img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:8px}
+.web-book-editor-aside .web-book-editor-source-note{font-size:16px!important;margin-top:28px;color:#526780}
+.web-book-editor-back:focus-visible,.web-book-editor :is(button,summary):focus-visible{outline:2px solid #007f91;outline-offset:3px}
+@media(max-width:1150px){.web-book-editor{padding:24px}.web-book-editor-columns{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:24px}}
+@media(max-width:950px){.web-book-editor-columns{grid-template-columns:minmax(0,1fr)}.web-book-editor-aside{max-width:560px}}
+
+/* Share the helper row without shrinking text or removing the voice action. */
+.web-book-reading-goal{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 16px;margin:22px 0 16px}
+.web-book-reading-goal>.learn-field,.web-book-reading-goal .voice-textarea-shell{display:contents}
+.web-book-reading-goal>.learn-field>span{grid-column:1/-1;margin:0 0 2px}
+.web-book-reading-goal textarea{grid-column:1/-1;grid-row:2}
+.web-book-reading-goal .voice-draft-trigger{grid-column:2;grid-row:3;align-self:center}
+.web-book-reading-goal>.learn-quiet{grid-column:1;grid-row:3;align-self:center;justify-self:start;width:auto;margin:0;padding:0}
+
+.web-book-editor-content[data-testid="book-discovery-draft-held"] .learn-notice{font-size:18px!important;padding:24px;margin:28px 0;line-height:1.55}
+.web-book-editor-content[data-testid="book-discovery-draft-held"] .learn-choice{margin-top:24px;gap:14px}
+
+.web-book-review-summary>h2{margin-top:26px}
+.web-book-review-facts{display:grid;grid-template-columns:minmax(100px,.55fr) minmax(0,1fr);gap:8px 20px;font-size:18px;line-height:1.5;margin:20px 0 24px}
+.web-book-review-facts dt{color:#526780}
+.web-book-review-facts dd{margin:0;overflow-wrap:anywhere;min-width:0;color:#082638}
+.web-book-review-source{padding:4px 0 18px}
+.web-book-review-source h3{font-size:22px;margin:18px 0 12px}
+.web-book-review-source>p{font-size:18px!important;margin-bottom:12px}
+.web-book-review-summary>.learn-details{margin:0}

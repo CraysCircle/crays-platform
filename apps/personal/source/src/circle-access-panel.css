@@ -1,0 +1,27 @@
+.circle-access-panel { margin: 20px 0; min-width: 0; color: #09212f; }
+.circle-access-heading { display: flex; align-items: center; gap: 9px; }
+.circle-access-heading h2 { margin: 0; font-size: 17px; line-height: 1.4; }
+.circle-access-caption { margin: 8px 0 12px; color: #62798d; font-size: 12px; line-height: 1.6; }
+.circle-access-section { border-top: 1px solid #e0e8ee; padding: 15px 0; }
+.circle-access-section > summary { display: flex; align-items: center; gap: 10px; cursor: pointer; font-weight: 600; font-size: 14px; min-height: 30px; }
+.circle-access-section > summary::after { content: '+'; margin-left: auto; color: #62798d; font-weight: 400; }
+.circle-access-section[open] > summary::after { content: '−'; }
+.circle-access-section > summary:focus-visible { outline: 2px solid #0d3e57; outline-offset: 4px; border-radius: 3px; }
+.circle-access-section > p, .circle-access-card p, .circle-access-review p { font-size: 12px; line-height: 1.6; color: #62798d; }
+.circle-access-field { display: block; margin: 14px 0; font-size: 12px; color: #405d72; }
+.circle-access-field > span { display: block; margin-bottom: 7px; }
+.circle-access-field select, .circle-access-field input { display: block; width: 100%; min-width: 0; min-height: 44px; border: 1px solid #dce5ed; border-radius: 12px; padding: 10px; background: #f5f7f9; color: #09212f; font: inherit; box-sizing: border-box; }
+.circle-access-card { padding: 13px 0; border-bottom: 1px solid #e8edf2; overflow-wrap: anywhere; }
+.circle-access-card > strong { font-size: 14px; }
+.circle-access-card p { margin: 5px 0 9px; }
+.circle-access-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.circle-access-actions > button { flex: 1 1 100px; min-width: 0; }
+.circle-access-choice { display: flex; align-items: flex-start; gap: 10px; margin: 12px 0; color: #29475b; font-size: 12px; line-height: 1.6; }
+.circle-access-choice > input { flex: 0 0 auto; margin-top: 4px; accent-color: #0c3d56; width: 17px; height: 17px; }
+.circle-access-choice > span { min-width: 0; overflow-wrap: anywhere; }
+.circle-access-choice strong, .circle-access-choice span span, .circle-access-choice small { display: block; }
+.circle-access-choice small { color: #62798d; margin-top: 4px; }
+.circle-access-review { border: 1px solid #cedde7; background: #f6f8fa; border-radius: 16px; padding: 14px; margin-top: 14px; }
+.circle-access-review h3 { font-size: 16px; line-height: 1.4; margin: 0; }
+.circle-access-feedback { font-size: 12px; line-height: 1.6; padding: 10px 0; color: #0c3d56; overflow-wrap: anywhere; }
+.circle-access-feedback[role='alert'] { color: #ae2646; }

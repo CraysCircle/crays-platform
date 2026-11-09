@@ -1,0 +1,24 @@
+import {getEventHash,verifyEvent} from 'nostr-tools';
+/** BUD-02/11 transport for already MLS-encrypted bytes. Explicit destinations only, no public fallback.
+ * Caller owns current signer/admission; this port never discovers owner keys or uploads plaintext media. */
+export function createPrivateBlobTransport({baseUrls,pubkey,signer,isAuthorized,fetcher=globalThis.fetch,crypto=globalThis.crypto,allowLoopback=false}){
+ if(!Array.isArray(baseUrls)||baseUrls.length<1||baseUrls.length>16||!/^[a-f0-9]{64}$/.test(pubkey)||!signer?.signEvent||typeof isAuthorized!=='function')throw Error('Explicit private media destinations and signer required');
+ const check=()=>{if(isAuthorized()!==true)throw Error('Private media access is no longer authorized');};
+ const normalize=raw=>{const u=new URL(raw);if(u.username||u.password||u.search||u.hash||!(u.protocol==='https:'||allowLoopback&&u.protocol==='http:'&&u.hostname==='127.0.0.1'))throw Error('Unapproved private media destination');return u;};
+ const roots=baseUrls.map(raw=>{const u=normalize(raw);if(!u.pathname.endsWith('/'))throw Error('Private media root must end in slash');return u.href;});
+ const approved=raw=>{const u=normalize(raw);if(!roots.some(root=>u.href.startsWith(root)))throw Error('Unapproved private media destination');return u;};
+ const hash=async bytes=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),b=>b.toString(16).padStart(2,'0')).join('');
+ async function bytes(response,maxBytes,signal){if(!response.ok||response.redirected){await response.body?.cancel().catch(()=>{});throw Error('Private media request failed');}const size=response.headers.get('content-length');if(size!==null&&(!/^\d+$/.test(size)||Number(size)>maxBytes)){await response.body?.cancel().catch(()=>{});throw Error('Private media exceeds byte limit');}if(!response.body)throw Error('Private media response missing');const reader=response.body.getReader(),chunks=[];let count=0,complete=false;try{for(;;){check();signal.throwIfAborted();const {done,value}=await reader.read();if(done){complete=true;break;}count+=value.length;if(count>maxBytes)throw Error('Private media exceeds byte limit');chunks.push(value);}check();const result=new Uint8Array(count);let at=0;for(const chunk of chunks){result.set(chunk,at);at+=chunk.length;}return result;}finally{if(!complete)await reader.cancel().catch(()=>{});reader.releaseLock();}}
+ function limits(maxBytes,signal){check();if(!Number.isSafeInteger(maxBytes)||maxBytes<16||maxBytes>32*1024*1024||!signal?.throwIfAborted)throw Error('Bounded cancellable media request required');signal.throwIfAborted();}
+ return {
+  async upload({baseUrl,data,ciphertextSha256,signal,maxBytes}){
+   limits(maxBytes,signal);const root=approved(baseUrl);if(!roots.includes(root.href))throw Error('Exact private media upload root required');if(!(data instanceof Uint8Array)||data.length>maxBytes||!/^[a-f0-9]{64}$/.test(ciphertextSha256)||await hash(data)!==ciphertextSha256)throw Error('Encrypted media hash mismatch');
+   check();signal.throwIfAborted();const now=Math.floor(Date.now()/1000),template={kind:24242,created_at:now-1,content:'Upload an encrypted CRAYS message attachment',tags:[['t','upload'],['x',ciphertextSha256],['server',root.hostname],['expiration',String(now+120)]]};
+   const event=await signer.signEvent(structuredClone(template));check();signal.throwIfAborted();if(event?.pubkey!==pubkey||!verifyEvent(event)||event.id!==getEventHash({...template,pubkey}))throw Error('Private media authorization changed');
+   const binary=Array.from(new TextEncoder().encode(JSON.stringify(event)),byte=>String.fromCharCode(byte)).join(''),authorization='Nostr '+btoa(binary).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+   const response=await fetcher(new URL('upload',root).href,{method:'PUT',headers:{'content-type':'application/octet-stream','x-sha-256':ciphertextSha256,authorization},body:data,signal,credentials:'omit',redirect:'error',cache:'no-store',referrerPolicy:'no-referrer'});
+   const descriptor=JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(await bytes(response,16384,signal)));const url=approved(descriptor.url);if(descriptor.sha256!==ciphertextSha256||descriptor.size!==data.length||url.origin!==root.origin||!url.pathname.startsWith(root.pathname)||!new RegExp('^'+ciphertextSha256+'(?:\\.[a-z0-9]{1,10})?$').test(url.pathname.slice(root.pathname.length)))throw Error('Private media descriptor mismatch');return url.href;
+  },
+  async fetch({url,signal,maxBytes}){limits(maxBytes,signal);const target=approved(url);const name=target.pathname.split('/').at(-1);if(!/^[a-f0-9]{64}(?:\.[a-z0-9]{1,10})?$/.test(name))throw Error('Content-addressed private media URL required');const response=await fetcher(target.href,{method:'GET',signal,credentials:'omit',redirect:'error',cache:'no-store',referrerPolicy:'no-referrer'});return bytes(response,maxBytes,signal);},
+ };
+}
