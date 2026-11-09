@@ -12,6 +12,7 @@ Shared CRAYS application/service sources, website-hosting wrappers and migration
 | Personal build operations | [Original build controllers, lease adapter, artifact inspection and adoption-plan source](operations/personal-build/README.md) |
 | Qlo gateway | [Service, original tests and configuration](services/qlo-gateway/README.md) |
 | Clubs Commerce BFF | [Original service, build/test inputs and dependency notices](services/clubs-commerce-bff/README.md) |
+| Club Next listener and private HTTPS | [Original listener/bootstrap fragments and exact source records](services/club-next-runtime/README.md); [controller revisions, original patches and acceptance-program source](operations/club-next-runtime/README.md) |
 | Work/Qlo runtime | [Original bootstrap and four local runtime modules](services/work-qlo-runtime/README.md) |
 | Qlo/Work family operations | [Original continuation revisions, source patches and binding checks](operations/qlo-work-family/README.md) |
 | Net hosting | [Unchanged static-hosting wrapper and exact application reference](hosting/net/README.md) |
@@ -31,6 +32,7 @@ Shared CRAYS application/service sources, website-hosting wrappers and migration
       qlo-gateway/
       clubs-commerce-bff/
       work-qlo-runtime/
+      club-next-runtime/
     hosting/
       net/
     operations/
@@ -38,6 +40,7 @@ Shared CRAYS application/service sources, website-hosting wrappers and migration
       qlo-work-family/
       member-origin35/
       personal-build/
+      club-next-runtime/
       storage/
       delivery/postiz/
       neon-rds/

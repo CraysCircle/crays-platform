@@ -1,0 +1,22 @@
+
+# BEGIN Club28 private verified HTTPS; append only, existing routes preserved.
+https://www.craysclub.com, https://craysclub.com {
+ bind 172.26.0.1
+ tls force_automate {
+  issuer internal {
+   ca crays-qlo-private-20261108
+  }
+ }
+ @own_club_https_bridge remote_ip 172.26.0.1
+ handle @own_club_https_bridge {
+  reverse_proxy 172.18.0.11:8080 {
+   header_up Host www.craysclub.com
+   header_up X-Forwarded-Proto https
+   header_up X-Forwarded-Port 443
+  }
+ }
+ handle {
+  respond "Private Club client not admitted" 403
+ }
+}
+# END Club28 private verified HTTPS.

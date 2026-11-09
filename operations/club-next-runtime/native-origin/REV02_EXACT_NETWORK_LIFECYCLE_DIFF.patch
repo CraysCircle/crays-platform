@@ -1,0 +1,24 @@
+--- restart_same_club_native_origin.candidate.py
++++ restart_same_club_native_origin.rev02.candidate.py
+@@ -53,10 +53,10 @@
+   r[nid]={k:v for k,v in n['Containers'].items()if k!=CID}
+  return r
+ def routes(pid):
+- lines=Path('/proc',str(pid),'net/route').read_text().splitlines()[1:];r=sorted(tuple(l.split()[i]for i in [0,1,2,3,6,7])for l in lines)
+- need(any(x[1]=='00000000'and x[2]=='010018AC'for x in r),'EXISTING_QUALIFIED_RDS_DEFAULT_ROUTE_REQUIRED');return r
++ lines=Path('/proc',str(pid),'net/route').read_text().splitlines()[1:];r=sorted(tuple(int(l.split()[i],16)for i in [1,2,3,7])for l in lines)
++ need(any(x[0]==0 and x[1]==int('010018AC',16)and x[3]==0 for x in r),'EXISTING_QUALIFIED_RDS_DEFAULT_ROUTE_REQUIRED');return r
+ def invariant(c):
+- return {'Id':c['Id'],'Name':c['Name'],'Image':c['Image'],'Config':c['Config'],'HostConfig':c['HostConfig'],'Mounts':c['Mounts'],'Networks':c['NetworkSettings']['Networks']}
++ return {'Id':c['Id'],'Name':c['Name'],'Image':c['Image'],'Config':c['Config'],'HostConfig':c['HostConfig'],'Mounts':c['Mounts'],'Networks':{name:{k:ep.get(k)for k in ['NetworkID','IPAMConfig','GwPriority','Aliases','Links','DriverOpts']}for name,ep in c['NetworkSettings']['Networks'].items()}}
+ def running():
+  c=inspect();need(c['Id']==CID and c['State']['Running']and c['State']['Pid']>0 and not c['State']['OOMKilled'],'EXACT_RUNNING_CLUB_REQUIRED');return c
+ def terminal(mark=None):
+@@ -111,6 +111,7 @@
+   M.write(OUT/'CAS_ACK.json',{'sameInode':True,'originalPrivateTemplatePreserved':True,'publicFragmentAppended':True,'privateValuesOrDigestsPrinted':False})
+   need(invariant(inspect())==before and family()==shared and endpoints()==foreign,'PRESTART_PRESERVATION_REQUIRED')
+   start_attempted=True;M.docker('start',CID,timeout=25);after=running();newmark=M.mark(after)
++  actual_nets=after['NetworkSettings']['Networks'];site=actual_nets['crays-acceptance-public-static-20261105-01'];egress=actual_nets['crays-private-app-canonical-20261106-01'];need(set(actual_nets)==set(NETS)and all(actual_nets[n]['NetworkID']==nid for n,nid in NETS.items())and site['IPAddress']=='172.18.0.11'and site['GwPriority']==0 and egress['IPAddress']=='172.24.0.3'and egress['Gateway']=='172.24.0.1'and egress['GwPriority']==1,'EXACT_RESTARTED_SITE_AND_RDS_RUNNING_ENDPOINTS_REQUIRED')
+   need(invariant(after)==before and newmark['pid']!=PID and family()==shared and endpoints()==foreign and routes(newmark['pid'])==before_routes and sha(REQUIRED)==REQUIRED_SHA,'SAME_CID_CONFIG_MOUNTS_ROUTES_AND_SHARED_PRESERVATION_REQUIRED')
+   r={'status':'SAME_CLUB_NATIVE_ORIGIN_CONFIG_BOUND_RUNNING_PENDING_ACCEPTANCE18','id':CID,'oldPid':PID,'oldTicks':TICKS,'process':newmark,'buildId':'aySu5l_FzwATUE3NCHrmf','compiledServerConfigSHA256':REQUIRED_SHA,'publicFragmentSHA256':fragment_sha,'privateEdgeSHA256':EDGE_SHA,'sameBootstrapInode':True,'sameCID':True,'allOriginalMountsConfigImageEndpointsPreserved':True,'sharedFamilyAndCaddyPreserved':True,'readinessAccepted':False,'customerAcceptance':False,'replayAllowed':False};M.write(OUT/'RESULT_ACTUAL.json',r);print(json.dumps(r))
+  except BaseException as e:

@@ -1,0 +1,396 @@
+{
+  "schema": "crays.club-next-https-source.v1",
+  "atUTC": "2026-11-09T02:56:50.466831+00:00",
+  "originalSourceFiles": 35,
+  "newOriginalFilesPreserved": 24,
+  "unchangedOriginalFilesReferencedByImmutableCommit": 11,
+  "pythonSourceFilesParsedNotExecuted": 23,
+  "rows": [
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/club-private-tls36-source01/append_only_private_club_tls36.candidate.py",
+      "exportPath": "operations/club-next-runtime/private-tls/append_only_private_club_tls36.candidate.py",
+      "bytes": 5675,
+      "sha256": "59d4239ecf434ee1f8fd45a5ca0cb45105fe88d7957c4acf4353777095824c16",
+      "ownerCodePinManifests": [],
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/club-private-tls36-source01/append_only_private_club_tls36.rev02.candidate.py",
+      "exportPath": "operations/club-next-runtime/private-tls/append_only_private_club_tls36.rev02.candidate.py",
+      "bytes": 5755,
+      "sha256": "c72f66ea195cdb9c5e7b9e3f6d8fda7f5bd9ac6f185cc7eff4122a24fdfcdd23",
+      "ownerCodePinManifests": [],
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/club28-custom-listener-source01/EXACT_CURRENT_LISTENER_DIFF.patch",
+      "exportPath": "operations/club-next-runtime/listener-binding/EXACT_CURRENT_LISTENER_DIFF.patch",
+      "bytes": 20178,
+      "sha256": "cdefbdee52bd87a2452d859e60c2ebed6abafae7ff9a224556bc4dcdfd53ea26",
+      "ownerCodePinManifests": [
+        "SOURCE_MANIFEST.json"
+      ],
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/club28-custom-listener-source01/bind_current_club_custom_listener.candidate.py",
+      "exportPath": "operations/club-next-runtime/listener-binding/bind_current_club_custom_listener.candidate.py",
+      "bytes": 20130,
+      "sha256": "4f943fecdb975686b249ba50a56d41fb41b84f51d7770421ef7380852c2ada81",
+      "ownerCodePinManifests": [
+        "SOURCE_MANIFEST.json"
+      ],
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/club28-custom-listener-source01/custom-listener.cjs",
+      "exportPath": "services/club-next-runtime/custom-listener/custom-listener.cjs",
+      "bytes": 1694,
+      "sha256": "8d9e51d4b5d5e3532289f3ff9e17072bc911914cce38b06c76f98a7aa139d380",
+      "ownerCodePinManifests": [
+        "SOURCE_MANIFEST.json"
+      ],
+      "originalMode": "0444",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/club28-custom-listener-source01/CLUB_PRIVATE_TLS.append.caddyfile",
+      "exportPath": "services/club-next-runtime/edge/CLUB_PRIVATE_TLS.append.caddyfile",
+      "bytes": 558,
+      "sha256": "95995cdfeceff9f50b3acd321ab9211779df3621502ed811463dbcb331d9cc22",
+      "ownerCodePinManifests": [
+        "SOURCE_MANIFEST.json"
+      ],
+      "originalMode": "0444",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/club28-native-origin-config-source01/native-origin-config.append.cjs",
+      "exportPath": "services/club-next-runtime/native-origin/native-origin-config.append.cjs",
+      "bytes": 810,
+      "sha256": "672a68880a7c9fcbd6543396a8de3c9b49c39c37d71c3c60dc530ed6ff00b40f",
+      "ownerCodePinManifests": [],
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/club28-native-origin-config-source01/restart_same_club_native_origin.candidate.py",
+      "exportPath": "operations/club-next-runtime/native-origin/restart_same_club_native_origin.candidate.py",
+      "bytes": 11858,
+      "sha256": "fd31a08b30354facbe1f8319ac40b5dac44dc3ab6b9559b8e5fe7a3ee439ffec",
+      "ownerCodePinManifests": [],
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/club28-native-origin-config-source01/restart_same_club_native_origin.rev02.candidate.py",
+      "exportPath": "operations/club-next-runtime/native-origin/restart_same_club_native_origin.rev02.candidate.py",
+      "bytes": 12492,
+      "sha256": "a93709649ffe054ee84b4be3ba211dea36613f3810dec9c0e1ada9ae787d2903",
+      "ownerCodePinManifests": [],
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/club28-native-origin-config-source01/REV02_EXACT_NETWORK_LIFECYCLE_DIFF.patch",
+      "exportPath": "operations/club-next-runtime/native-origin/REV02_EXACT_NETWORK_LIFECYCLE_DIFF.patch",
+      "bytes": 3130,
+      "sha256": "930a746ebc04d5fe6063efc048ea49c42ad9035273dcfc2629099a76ddce999c",
+      "ownerCodePinManifests": [],
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/club28-existing-runtime-bind-source01/EXACT_SOURCE_DIFF.patch",
+      "exportPath": "operations/club-next-runtime/runtime-binding/EXACT_SOURCE_DIFF.patch",
+      "bytes": 39387,
+      "sha256": "e7c709617e20ae0082f345fe61e4d6bdb1da8b442391558c7d62447598089621",
+      "ownerCodePinManifests": [
+        "SOURCE_MANIFEST.json"
+      ],
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/club28-existing-runtime-bind-source01/bind_existing_club28.candidate.py",
+      "exportPath": "operations/club-next-runtime/runtime-binding/bind_existing_club28.candidate.py",
+      "bytes": 18517,
+      "sha256": "a8e6e6f0835918b46be16b813940812a8e4885ae4caa88b6edbcdf0162bd9464",
+      "ownerCodePinManifests": [
+        "SOURCE_MANIFEST.rev02.json",
+        "ROOT_REVIEW_INPUT.template.json",
+        "SOURCE_MANIFEST.json"
+      ],
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/club28-existing-runtime-bind-source01/REV02_EXACT_NETWORK_DIFF.patch",
+      "exportPath": "operations/club-next-runtime/runtime-binding/REV02_EXACT_NETWORK_DIFF.patch",
+      "bytes": 9728,
+      "sha256": "f9ce95d9c6eb3842c00b03c2c3ec666e70ef47dccfb080898f6d1626b132e1f5",
+      "ownerCodePinManifests": [
+        "SOURCE_MANIFEST.rev02.json"
+      ],
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/club28-existing-runtime-bind-source01/bind_existing_club28.rev02.candidate.py",
+      "exportPath": "operations/club-next-runtime/runtime-binding/bind_existing_club28.rev02.candidate.py",
+      "bytes": 19893,
+      "sha256": "b989ac7dad7e2b6717aebe7536d45a0e3be54942846ea5eeb3eb6e878fdf6483",
+      "ownerCodePinManifests": [
+        "SOURCE_MANIFEST.rev02.json",
+        "ROOT_REVIEW_INPUT.rev02.template.json"
+      ],
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/club28-original-acceptance18-after-native-config-source02/verify_original_club_public_after_root_bind.candidate.py",
+      "exportPath": "operations/club-next-runtime/acceptance/native-origin/verify_original_club_public_after_root_bind.candidate.py",
+      "bytes": 8425,
+      "sha256": "fbe015be3b2666c21e7e6686a277a10be8c5c2f48c2fa48c2d6eb22da281be8e",
+      "ownerCodePinManifests": [],
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/club-original-worker-memory28-source01/run_original_club_build28.candidate.py",
+      "exportPath": "operations/club-next-runtime/build28/run_original_club_build28.candidate.py",
+      "bytes": 11707,
+      "sha256": "8f0616298c3e7849e6549c7f9418dd715196fa36ec170578aa3e421478757594",
+      "ownerCodePinManifests": [
+        "SOURCE_MANIFEST_BUILD28.json"
+      ],
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/club-original-worker-memory28-source01/EXACT_MEMORY_NAMESPACE28_DELTA.patch",
+      "exportPath": "operations/club-next-runtime/build28/EXACT_MEMORY_NAMESPACE28_DELTA.patch",
+      "bytes": 5844,
+      "sha256": "b386e6f366ca8b13ecb90e02c6c8fca6815dc93fbe91a64009eaf98a6980dea8",
+      "ownerCodePinManifests": [
+        "SOURCE_MANIFEST_BUILD28.json"
+      ],
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/club28-private-https-acceptance18-source03/verify_original_club_public_after_root_bind.candidate.py",
+      "exportPath": "operations/club-next-runtime/acceptance/private-https/verify_original_club_public_after_root_bind.candidate.py",
+      "bytes": 9225,
+      "sha256": "750ff4e3bd06e3bc2256f12efb5bc2f3b2664075ff89998b67ea09b5cfa0016f",
+      "ownerCodePinManifests": [],
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/common-club-origin35-adoption-source01/complete_immutable_club_origin35_same_intent.candidate.py",
+      "exportPath": "operations/member-origin35/adoption/complete_immutable_club_origin35_same_intent.candidate.py",
+      "bytes": 8983,
+      "sha256": "2799ab38ce926945350768ac2e1d59de57468a87057dd5fa16da39a3d0dc2b9f",
+      "ownerCodePinManifests": [
+        "SOURCE_MANIFEST35_COMPLETION01.json",
+        "ROOT_STAGE35_COMPLETION_APPROVED.json",
+        "ROOT_STAGE35_COMPLETION_REVIEW_TEMPLATE.json",
+        "ROOT_ADOPTION35_REVIEW_TEMPLATE.rev02.json"
+      ],
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/common-club-origin35-adoption-source01/stage_immutable_club_origin35.candidate.py",
+      "bytes": 8150,
+      "sha256": "96eb6bef192b0f461ddbf4ff60845f766f08c0d99f9116502151b25ab7b5a031",
+      "existingSourceCommit": "045c2594fb752e8ed801667e909f605756351651",
+      "existingSourcePath": "operations/member-origin35/adoption/stage_immutable_club_origin35.candidate.py",
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/common-club-origin35-adoption-source01/qualified_container_physical.py",
+      "bytes": 23361,
+      "sha256": "63b137e94a98cebdfc456a83efabd907f64b4e34ac39fe59fbf364553f3b0bdb",
+      "existingSourceCommit": "045c2594fb752e8ed801667e909f605756351651",
+      "existingSourcePath": "operations/member-origin35/adoption/qualified_container_physical.py",
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/common-club-origin35-adoption-source01/qualified53_exact_helpers.py",
+      "bytes": 5809,
+      "sha256": "4fe3e20966c0a8ef8f0dd84e43c5ee5f7dc0654f35067685b7c9c903677fb0da",
+      "existingSourceCommit": "045c2594fb752e8ed801667e909f605756351651",
+      "existingSourcePath": "operations/member-origin35/adoption/qualified53_exact_helpers.py",
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/common-club-origin35-adoption-source01/EXACT_STAGE_COMPLETION35_AND_PHYSICAL_NORMALIZATION.diff",
+      "exportPath": "operations/member-origin35/adoption/EXACT_STAGE_COMPLETION35_AND_PHYSICAL_NORMALIZATION.diff",
+      "bytes": 8578,
+      "sha256": "07808686149c05ea88e54001ea6618077ca18a0d5758ada4953f11ff49232190",
+      "ownerCodePinManifests": [
+        "SOURCE_MANIFEST35_COMPLETION01.json"
+      ],
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/common-club-origin35-adoption-source01/EXACT_MINIMAL_DIFF35.patch",
+      "bytes": 32481,
+      "sha256": "65fac5e09a0ab35de743cef511ee066e6f00df120e2ba80244b67ef7ca59fb17",
+      "existingSourceCommit": "045c2594fb752e8ed801667e909f605756351651",
+      "existingSourcePath": "operations/member-origin35/adoption/EXACT_MINIMAL_DIFF35.patch",
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/common-club-origin35-adoption-source01/finish_same_common_origin35_generation.candidate.py",
+      "bytes": 31638,
+      "sha256": "2165e860585d7975e960f753ed9b32356cd15987eed451082813c8d807a014b4",
+      "existingSourceCommit": "045c2594fb752e8ed801667e909f605756351651",
+      "existingSourcePath": "operations/member-origin35/adoption/finish_same_common_origin35_generation.candidate.py",
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/common-club-origin35-adoption-source01/adopt_same_common_club_origin35.candidate.py",
+      "bytes": 15957,
+      "sha256": "d3eb68b28081f7c25e3118b8d31f0f3a917804f9fb5c95afa0aa35f4664e2f25",
+      "existingSourceCommit": "045c2594fb752e8ed801667e909f605756351651",
+      "existingSourcePath": "operations/member-origin35/adoption/adopt_same_common_club_origin35.candidate.py",
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/common-club-origin35-adoption-source01/member26_lifecycle.candidate.py",
+      "bytes": 29718,
+      "sha256": "b7817dc7bec651fb8a702790d63e3622dad3162b3e5c93123405da679ffd7024",
+      "existingSourceCommit": "045c2594fb752e8ed801667e909f605756351651",
+      "existingSourcePath": "operations/member-origin35/adoption/member26_lifecycle.candidate.py",
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/common-club-origin35-adoption-source01/listener.nostr18-machine57-team33.candidate.mjs",
+      "bytes": 5011,
+      "sha256": "7e8b668caf10118d84082f8fd68a63e390a3ee36a2e0da7b022a06d7203fa5bb",
+      "existingSourceCommit": "045c2594fb752e8ed801667e909f605756351651",
+      "existingSourcePath": "operations/member-origin35/adoption/listener.nostr18-machine57-team33.candidate.mjs",
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/common-club-origin35-adoption-source01/derive_owned_member26_anchor_generation.candidate.py",
+      "bytes": 6227,
+      "sha256": "bbb13b5abdaebaba4801c2da099896e24b79fb4c464074817783341d4323cb49",
+      "existingSourceCommit": "045c2594fb752e8ed801667e909f605756351651",
+      "existingSourcePath": "operations/member-origin35/adoption/derive_owned_member26_anchor_generation.candidate.py",
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/common-club-origin35-adoption-source01/project_exact_club_registry35.candidate.py",
+      "bytes": 2059,
+      "sha256": "3f2f7c5cf530f79756a53b80fef81201c03edb47f7a0754ebc029f727b8bdde6",
+      "existingSourceCommit": "045c2594fb752e8ed801667e909f605756351651",
+      "existingSourcePath": "operations/member-origin35/adoption/project_exact_club_registry35.candidate.py",
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/common-club-origin35-adoption-source01/adopt_same_common_club_origin35.rev02.candidate.py",
+      "exportPath": "operations/member-origin35/adoption/adopt_same_common_club_origin35.rev02.candidate.py",
+      "bytes": 16159,
+      "sha256": "4aa4c9e0438fcafe792bbddc7985504b26d8cd11b2cfb9297a5da09b1e378004",
+      "ownerCodePinManifests": [
+        "SOURCE_MANIFEST35_COMPLETION01.json",
+        "ROOT_STAGE35_COMPLETION_APPROVED.json",
+        "ROOT_STAGE35_COMPLETION_REVIEW_TEMPLATE.json",
+        "ROOT_ADOPTION35_REVIEW_TEMPLATE.rev02.json"
+      ],
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/root/common-club-origin35-adoption-source01/classify_exact_member26_runtime_addons.candidate.py",
+      "bytes": 1679,
+      "sha256": "fd6d3a5f28138a395f429e60367480c2bacbeec689d97b747fb125e840928938",
+      "existingSourceCommit": "045c2594fb752e8ed801667e909f605756351651",
+      "existingSourcePath": "operations/member-origin35/adoption/classify_exact_member26_runtime_addons.candidate.py",
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/websites/club-original-saas-build21-20261108-01/private-app-bootstrap.template.cjs",
+      "exportPath": "services/club-next-runtime/bootstrap/private-app-bootstrap.template.cjs",
+      "bytes": 1755,
+      "sha256": "14061ea234fa915e9b7f2628fb52380f47030a238c904d083f03a37f6f5ed7c9",
+      "ownerCodePinManifests": [
+        "ROOT_BUILD21_AND_BOOTSTRAP_INTAKE.json"
+      ],
+      "originalMode": "0444",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/websites/club-original-ordinary-pool20-rev02-qualified-source02/run_original_pool_readonly_once.candidate.py",
+      "exportPath": "operations/club-next-runtime/dependencies/run_original_pool_readonly_once.candidate.py",
+      "bytes": 9401,
+      "sha256": "9a3bf2ae8926906a48d5b267443a64ef64558873059f4f1aef638ede8e5df2b1",
+      "ownerCodePinManifests": [
+        "REV02_ACTUAL.json"
+      ],
+      "originalMode": "0400",
+      "originalExecutable": false
+    },
+    {
+      "sourcePath": "/srv/crays/incoming/org-private-correction-20261107-02-r04/install_org_private_candidate.py",
+      "exportPath": "operations/club-next-runtime/dependencies/org-private-correction-r04/install_org_private_candidate.py",
+      "bytes": 24810,
+      "sha256": "157996e57ce3fd6ccfaf9d764f86a80edf9220d05f19987b5337bc61ce096aa0",
+      "ownerCodePinManifests": [],
+      "originalMode": "0400",
+      "originalExecutable": false
+    }
+  ],
+  "ownerCodeExecutionBindings": [
+    {
+      "originalOwnerFolder": "/srv/crays/migration-work/20261108/root/club28-custom-listener-root-window01",
+      "sourceCodePath": "operations/club-next-runtime/listener-binding/bind_current_club_custom_listener.candidate.py",
+      "sourceCodeSHA256": "4f943fecdb975686b249ba50a56d41fb41b84f51d7770421ef7380852c2ada81",
+      "ownerReturnCode": 0,
+      "ownerExecutionStatus": "CLUB28_CUSTOM_LISTENER_SINGLETON_BOUND_RUNNING_PENDING_PRIVATE_TLS_ACCEPTANCE18",
+      "privateControlValuesPublished": false
+    },
+    {
+      "originalOwnerFolder": "/srv/crays/migration-work/20261108/root/club-private-tls36-root-window01",
+      "sourceCodePath": "operations/club-next-runtime/private-tls/append_only_private_club_tls36.rev02.candidate.py",
+      "sourceCodeSHA256": "c72f66ea195cdb9c5e7b9e3f6d8fda7f5bd9ac6f185cc7eff4122a24fdfcdd23",
+      "ownerReturnCode": 0,
+      "ownerExecutionStatus": "PRIVATE_CLUB_TLS36_APPEND_AND_VERIFIED_SNI_READY",
+      "privateControlValuesPublished": false
+    },
+    {
+      "originalOwnerFolder": "/srv/crays/migration-work/20261108/root/club28-native-origin-root-window01",
+      "sourceCodePath": "operations/club-next-runtime/native-origin/restart_same_club_native_origin.rev02.candidate.py",
+      "sourceCodeSHA256": "a93709649ffe054ee84b4be3ba211dea36613f3810dec9c0e1ada9ae787d2903",
+      "ownerReturnCode": 0,
+      "ownerExecutionStatus": "SAME_CLUB_NATIVE_ORIGIN_CONFIG_BOUND_RUNNING_PENDING_ACCEPTANCE18",
+      "privateControlValuesPublished": false
+    }
+  ],
+  "sourceProgramsExecutedByPublication": false,
+  "runtimeChangedByPublication": false,
+  "rootObservedPrivateHttpsReportedConfigured": true,
+  "currentExactRuntimeParityAndFullApplicationAcceptanceProven": false,
+  "certificatesPrivateKeysCredentialsLiveReviewWindowAndUserDataIncluded": false,
+  "fullSourceDependencyRuntimeLicenseAndRecoveryClosure": false
+}

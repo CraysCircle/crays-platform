@@ -1,0 +1,94 @@
+--- stage35.original
++++ stage35.same-intent-completion
+@@ -1,4 +1,4 @@
+-"""Root-reviewed immutable ClubMember35 stage and current33 preimage capture. No live adoption."""
++"""Root-reviewed SAME-INTENT completion of partial immutable35 stage. Writes only missing preimage/result; no live adoption."""
+ from pathlib import Path
+ import os,stat,json,hashlib,runpy,sys
+ H=Path(__file__).resolve().parent
+@@ -13,6 +13,10 @@
+ sha=lambda b:hashlib.sha256(b).hexdigest()
+ def need(v,g):
+  if not v:raise RuntimeError(g)
++def json_physical(values):
++ pid,ticks,cgroup=values
++ need(type(pid)is int and type(ticks)is str and isinstance(cgroup,Path),'EXACT_PID_TICKS_CGROUP_PATH_SHAPE')
++ return [pid,ticks,str(cgroup)]
+ def stable(p,maxbytes=8388608):
+  p=Path(p);need(p.resolve()==p,'CANONICAL_SOURCE_ONLY')
+  fd=os.open(p,os.O_RDONLY|os.O_NOFOLLOW)
+@@ -34,9 +38,9 @@
+ def main(r):
+  os.umask(0o022)
+  need(os.geteuid()==0 and Path('/sys/devices/virtual/dmi/id/board_asset_tag').read_text().strip()=='i-0eb300e1b02414d8f','ROOT_EXISTING_HOST_ONLY')
+- need(r.get('executionApproved')is True and r.get('sourceSHA256')==sha(stable(__file__)) and r.get('stageOnly')is True,'ROOT_STAGE_ONLY_REVIEW_REQUIRED')
++ need(r.get('executionApproved')is True and r.get('sourceSHA256')==sha(stable(__file__)) and r.get('stageOnly')is True and r.get('sameIntentCompletionOnly')is True,'ROOT_STAGE_ONLY_REVIEW_REQUIRED')
+  for n,h in r['sourcePins'].items():need(Path(n).name==n and sha(stable(H/n))==h,'EXACT_STAGE_HELPER_PIN')
+- need(not OUT.exists()and not ROOT.exists(),'STAGE_INTENT_EXISTS_INSPECT_NO_REPLAY')
++ need(OUT.resolve()==OUT and OUT.is_dir()and ROOT.resolve()==ROOT and ROOT.is_dir()and set(x.name for x in OUT.iterdir())=={'INTENT.json','MODULE_REGISTRY.club35.json'},'EXACT_EXISTING_PARTIAL_STAGE_NO_COMPLETION_REPLAY')
+  build=stable(SOURCE/'BUILD_ACTUAL.json');mr=stable(SOURCE/'MODULE_MANIFEST.json')
+  need(sha(build)=='3ea042b9c2d2f6e959b4215d8c6f42535df088222469e31ca5e1dd9f78b2c2aa'and sha(mr)=='5dd49cd0773ffa89b9897614b44998a826b525896d8d45c926f6c349ca1cf54b','EXACT_PASSED_BUILD35')
+  ba=json.loads(build);manifest=json.loads(mr)
+@@ -52,7 +56,7 @@
+  u=runpy.run_path(str(H/'qualified_container_physical.py'));q=runpy.run_path(str(H/'qualified53_exact_helpers.py'))
+  for role in ['member','work','common']:
+   c=u['inspect'](a33['ids'][role]);need(c['State']['Running']and list(u['physical'](c)[:2])==a33[role+'Process']and all(u['canon'](c[k])==pre['containers'][role]['hashes'][k]for k in ['Config','HostConfig','Mounts']),'EXACT_CURRENT33_UNCHANGED_'+role.upper())
+-  pre['containers'][role]['physical']=list(u['physical'](c))
++  pre['containers'][role]['physical']=json_physical(u['physical'](c))
+  pre['controlsSHA256']=a33['generation']['controlsSHA256']
+  for n,p in runpy.run_path(str(H/'member26_lifecycle.candidate.py'))['PATHS'].items():need(sha(stable(p))==pre['controlsSHA256'][n],'EXACT_CURRENT33_CONTROL')
+  pre['units']={n:q['show'](n)for n in runpy.run_path(str(H/'member26_lifecycle.candidate.py'))['UNITS']}
+@@ -63,21 +67,23 @@
+  for key,path in [('registryMetadata',REGISTRY),('listenerMetadata',Path('/srv/crays/releases/nostr-original-core-addon-20261108-18/common-machine57/listener.nostr18-machine57.candidate.mjs'))]:
+   s=path.lstat();pre[key]=[s.st_dev,s.st_ino,s.st_uid,s.st_gid,stat.S_IMODE(s.st_mode),s.st_nlink]
+  ec=u['inspect'](json.loads(er)['containerId']);need(ec['State']['Running'],'CURRENT_CADDY_RUNNING')
+- pre['edgeGuard']={'id':ec['Id'],'physical':list(u['physical'](ec)),'hashes':{k:u['canon'](ec[k])for k in ['Config','HostConfig','Mounts']},'fileSHA256':sha(stable(EDGEFILE)),'fileMetadata':[EDGEFILE.stat().st_dev,EDGEFILE.stat().st_ino]}
++ pre['edgeGuard']={'id':ec['Id'],'physical':json_physical(u['physical'](ec)),'hashes':{k:u['canon'](ec[k])for k in ['Config','HostConfig','Mounts']},'fileSHA256':sha(stable(EDGEFILE)),'fileMetadata':[EDGEFILE.stat().st_dev,EDGEFILE.stat().st_ino]}
+  qc=u['inspect'](QLO);need(qc['State']['Running']and list(u['physical'](qc)[:2])==[1626455,'30108680'],'EXACT_RUNNING_QLO44')
+- pre['qloGuard']={'id':QLO,'physical':list(u['physical'](qc)),'hashes':{k:u['canon'](qc[k])for k in ['Config','HostConfig','Mounts']}}
++ pre['qloGuard']={'id':QLO,'physical':json_physical(u['physical'](qc)),'hashes':{k:u['canon'](qc[k])for k in ['Config','HostConfig','Mounts']}}
+  files=manifest['files'];need(set(p.name for p in (SOURCE/'dist').iterdir())==set(files),'EXACT_DIST48_NO_EXTRA_FILES')
+  for n,h in files.items():need(sha(stable(SOURCE/'dist'/n))==h,'EXACT_DIST_ARTIFACT')
+- OUT.mkdir(mode=0o700);put(OUT/'INTENT.json',{'status':'CLUB35_IMMUTABLE_STAGE_ONLY','automaticReplayAllowed':False})
+- ROOT.mkdir(mode=0o755);(ROOT/'dist').mkdir(mode=0o755)
++ expectedIntent=(json.dumps({'status':'CLUB35_IMMUTABLE_STAGE_ONLY','automaticReplayAllowed':False},sort_keys=True,indent=2)+'\n').encode()
++ need(stable(OUT/'INTENT.json')==expectedIntent and stable(OUT/'MODULE_REGISTRY.club35.json')==descriptor,'EXACT_EXISTING_INTENT_AND_DESCRIPTOR_BYTES')
++ need(set(x.name for x in ROOT.iterdir())=={'dist'} and set(x.name for x in (ROOT/'dist').iterdir())==set(files),'EXACT_EXISTING_IMMUTABLE48_ONLY')
+  for n,h in files.items():
+-  raw=stable(SOURCE/'dist'/n);need(sha(raw)==h,'BUILD_SOURCE_STABLE_DURING_COPY');put(ROOT/'dist'/n,raw,0o444)
+-  need(sha(stable(ROOT/'dist'/n))==h,'IMMUTABLE_COPY_BYTE_EXACT')
++  source=stable(SOURCE/'dist'/n);existing=stable(ROOT/'dist'/n)
++  need(existing==source and sha(existing)==h,'EXISTING_IMMUTABLE48_BYTES_UNCHANGED')
++ for p in [OUT/'INTENT.json',OUT/'MODULE_REGISTRY.club35.json']:
++  st=p.lstat();need(st.st_uid==0 and st.st_nlink==1 and stat.S_IMODE(st.st_mode)==(0o400 if p.name=='INTENT.json'else 0o444),'EXISTING_STAGE_FILE_CUSTODY')
+  for d in [ROOT,ROOT/'dist']:need(stat.S_IMODE(d.stat().st_mode)==0o755 and d.stat().st_uid==0,'PUBLIC_MODULE_DIRECTORY_CUSTODY')
+  for n in files:
+   host=(ROOT/'dist'/n).stat();inside=(Path('/proc',str(pre['containers']['common']['physical'][0]),'root')/str(ROOT/'dist'/n).lstrip('/')).stat()
+   need((host.st_dev,host.st_ino)==(inside.st_dev,inside.st_ino)and stat.S_IMODE(host.st_mode)==0o444 and host.st_uid==0,'SAME_COMMON_PUBLIC_BIND_NEW_MODULE_VISIBILITY')
+- put(OUT/'MODULE_REGISTRY.club35.json',descriptor,0o444)
+  put(OUT/'CURRENT_FAMILY35_PREIMAGE.private.json',pre)
+  put(OUT/'RESULT_ACTUAL.json',{'status':'CLUB35_IMMUTABLE_MODULE_DESCRIPTOR_AND_CURRENT33_PREIMAGE_STAGED_NOT_ADOPTED','root':str(ROOT/'dist'),'version':manifest['version'],'files':48,'registryPath':str(OUT/'MODULE_REGISTRY.club35.json'),'registrySHA256':sha(descriptor),'registryBytes':len(descriptor),'preimagePath':str(OUT/'CURRENT_FAMILY35_PREIMAGE.private.json'),'preimageSHA256':sha(stable(OUT/'CURRENT_FAMILY35_PREIMAGE.private.json')),'moduleManifestPath':str(SOURCE/'MODULE_MANIFEST.json'),'moduleManifestSHA256':sha(mr),'liveRegistryOrRuntimeChanged':False,'memberWorkQloAndCaddyPreserved':True,'customerAcceptance':False})
+  print(json.dumps({'status':'STAGE35_PASS_NOT_ADOPTED','actualPath':str(OUT/'RESULT_ACTUAL.json'),'actualSHA256':sha(stable(OUT/'RESULT_ACTUAL.json'))}))
+
+--- adoption35.original
++++ adoption35.rev02
+@@ -14,6 +14,10 @@
+ for n in ['need','sha','canon','stable','put','sync']:globals()[n]=m[n]
+ UNITS=m['UNITS'];PATHS=m['PATHS']
+ PHASE='ADMISSION'
++def json_physical(values):
++ pid,ticks,cgroup=values
++ need(type(pid)is int and type(ticks)is str and isinstance(cgroup,Path),'EXACT_PID_TICKS_CGROUP_PATH_SHAPE')
++ return [pid,ticks,str(cgroup)]
+ def read_control(path):
+  s=path.lstat();need(path.resolve()==path and stat.S_ISREG(s.st_mode)and s.st_uid==s.st_gid==0 and stat.S_IMODE(s.st_mode)==0o444 and s.st_nlink==1,'EXACT_ORIGINAL_PUBLIC_CONTROL_CUSTODY')
+  return stable(path,131072)
+@@ -38,7 +42,7 @@
+  def preserved():
+   for guard in [pre['edgeGuard'],pre['qloGuard']]:
+    live=u['inspect'](guard['id'])
+-   need(live['State']['Running']and list(u['physical'](live))==guard['physical']and all(u['canon'](live[k])==guard['hashes'][k]for k in ['Config','HostConfig','Mounts']),'CADDY05_AND_RUNNING_QLO44_PRESERVED')
++   need(live['State']['Running']and json_physical(u['physical'](live))==guard['physical']and all(u['canon'](live[k])==guard['hashes'][k]for k in ['Config','HostConfig','Mounts']),'CADDY05_AND_RUNNING_QLO44_PRESERVED')
+   ep=Path('/srv/crays/runtime/private-edge-caddy-20261106-03/Caddyfile.private');es=ep.lstat()
+   need([es.st_dev,es.st_ino]==pre['edgeGuard']['fileMetadata']and sha(stable(ep,131072))==pre['edgeGuard']['fileSHA256'],'CADDY05_BYTES_AND_INODE_UNCHANGED')
+  preserved()

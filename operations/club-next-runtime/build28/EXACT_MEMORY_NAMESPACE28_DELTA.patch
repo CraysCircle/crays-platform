@@ -1,0 +1,40 @@
+--- /srv/crays/migration-work/20261108/websites/club-original-saas-build21-20261108-01/run_existing_club_next_build_original_serial27.candidate.py
++++ run_original_club_build28.candidate.py
+@@ -2,8 +2,8 @@
+ from pathlib import Path
+ import os,sys,json,hashlib,subprocess,runpy,datetime,signal,time
+-P=Path(__file__).resolve().parent
++P=Path('/srv/crays/migration-work/20261108/websites/club-original-saas-build21-20261108-01')
+ HELPER=Path('/srv/crays/migration-work/20261108/websites/club-original-ordinary-pool20-rev02-qualified-source02/run_original_pool_readonly_once.candidate.py')
+ HELPER_SHA='9a3bf2ae8926906a48d5b267443a64ef64558873059f4f1aef638ede8e5df2b1'
+-NAME='crays-club-source15-build27-20261108-01'
++NAME='crays-club-source15-build28-20261108-01'
+ OWNER='01a1b9fb-cf93-7de1-97a3-ceac6824969a'
+ IMAGE='sha256:752ea8a2f758c34002a0461bd9f1cee4f9a3c36d48494586f60ffce1fc708e0e'
+@@ -29,4 +29,10 @@
+  need(sha(HELPER.read_bytes())==HELPER_SHA,'EXISTING_PHYSICAL_HELPERS_REQUIRED')
+  h=runpy.run_path(str(HELPER));docker,field,physical,terminal,absent=(h[k]for k in ['docker','field','physical','terminal','absent'])
++ previous=P/'build-execution07/RESULT_ACTUAL.json';previous_raw=previous.read_bytes()
++ need(sha(previous_raw)=='ded07502b8d56288900dcfa7355252b5d34e60feee94b7119b2b70152e40606d','EXACT_PREVIOUS_27_TERMINAL_OUTCOME_REQUIRED')
++ previous_actual=json.loads(previous_raw)
++ need(previous_actual.get('oomKilled')is True and all(previous_actual.get(k)is True for k in ['ownPIDAndCgroupPhysicallyStopped','ownBuildContainerPhysicallyRemoved','ownLeaseReleasedAfterPhysicalCleanup'])and not previous_actual.get('cleanupErrors')and absent(previous_actual['containerId']),'PREVIOUS_27_PHYSICAL_RETURN_REQUIRED')
++ available=next(int(line.split()[1])*1024 for line in Path('/proc/meminfo').read_text().splitlines()if line.startswith('MemAvailable:'))
++ need(available>=12884901888,'EXISTING_HOST_TWELVE_GIB_AVAILABLE_REQUIRED')
+  state=json.loads((P/'SOURCE_TREE24_ORIGINAL_INTEGRATION_ACTUAL.json').read_bytes());need(state['status']=='EXACT_LATEST_CLUB_SOURCE15_BUILD_TREE_READY_NOT_BUILT','EXACT_SOURCE_TREE_REQUIRED')
+  need(sha((P/'SOURCE_TREE24_ORIGINAL_INTEGRATION_ACTUAL.json').read_bytes())==rev['sourceTreeActualSHA256'],'EXACT_SOURCE_TREE_REVIEW_REQUIRED')
+@@ -36,12 +42,12 @@
+  need(field(state['borrowedClubCID'],'{{.State.Running}} {{.State.Pid}}')=='true '+str(state['borrowedClubPID']),'ORIGINAL_CLUB_SOURCE_VIEW_CHANGED')
+  need(Path('/proc',str(state['borrowedClubPID']),'stat').read_text().rsplit(')',1)[1].split()[19]==state['borrowedClubStartTicks'],'ORIGINAL_CLUB_SOURCE_GENERATION_CHANGED')
+- out=P/'build-execution07';out.mkdir(mode=0o700);os.chown(out,1000,1000)
++ out=P/'build-execution08';out.mkdir(mode=0o700);os.chown(out,1000,1000)
+  lease=P/'LEASE_ACTIVE.json';fd=os.open(lease,os.O_WRONLY|os.O_CREAT|os.O_EXCL|os.O_NOFOLLOW,0o600);ls=os.fstat(fd)
+- with os.fdopen(fd,'w')as f:json.dump({'owner':OWNER,'name':NAME,'sourceSHA256':rev['controllerSHA256'],'rootReviewSHA256':sha(rp.read_bytes()),'maximumSeconds':560,'cpu':1,'memoryBytes':5368709120},f)
++ with os.fdopen(fd,'w')as f:json.dump({'owner':OWNER,'name':NAME,'sourceSHA256':rev['controllerSHA256'],'rootReviewSHA256':sha(rp.read_bytes()),'maximumSeconds':560,'cpu':1,'memoryBytes':10737418240},f)
+  result={'status':'INCOMPLETE','credentialsReadOrInBuild':False,'networkEnabled':True,'sourceOriginalsModified':False,'runtimeEdgeChanged':False,'cleanupErrors':[]}
+  cid=None;proof=None;attempted=False;started=time.monotonic()
+  try:
+   need(absent(NAME),'OWN_PRIOR_BUILD_EXISTS_NO_REPLAY')
+-  argv=['create','--pull=never','--name',NAME,'--label','crays.website.owner='+OWNER,'--label','crays.website.controller='+rev['controllerSHA256'],'--network','bridge','--user','1000:1000','--workdir','/build','--read-only','--cap-drop=ALL','--security-opt=no-new-privileges','--cpus=1','--memory=5368709120','--memory-swap=5368709120','--pids-limit=256','--log-driver=none','--tmpfs','/tmp:rw,nosuid,nodev,size=134217728,mode=1777','--mount','type=bind,src='+str(P/'source')+',dst=/build','--mount','type=bind,src='+state['dependenciesReadonlyMount']+',dst=/build/node_modules,readonly','--mount','type=bind,src='+state['borrowedOriginalPublicView']+',dst=/original-public,readonly','--mount','type=bind,src='+str(out)+',dst=/output','--entrypoint','/bin/sh',IMAGE,'-c','exec env -i PATH=/usr/local/bin:/usr/bin:/bin HOME=/tmp NODE_ENV=production NODE_OPTIONS=--max-old-space-size=3072 NEXT_TELEMETRY_DISABLED=1 CRAYS_PERFORMANCE_BUILD_SERIAL=true node /build/node_modules/next/dist/bin/next build --webpack > /output/build.stdout.txt 2> /output/build.stderr.txt']
++  argv=['create','--pull=never','--name',NAME,'--label','crays.website.owner='+OWNER,'--label','crays.website.controller='+rev['controllerSHA256'],'--network','bridge','--user','1000:1000','--workdir','/build','--read-only','--cap-drop=ALL','--security-opt=no-new-privileges','--cpus=1','--memory=10737418240','--memory-swap=10737418240','--pids-limit=256','--log-driver=none','--tmpfs','/tmp:rw,nosuid,nodev,size=134217728,mode=1777','--mount','type=bind,src='+str(P/'source')+',dst=/build','--mount','type=bind,src='+state['dependenciesReadonlyMount']+',dst=/build/node_modules,readonly','--mount','type=bind,src='+state['borrowedOriginalPublicView']+',dst=/original-public,readonly','--mount','type=bind,src='+str(out)+',dst=/output','--entrypoint','/bin/sh',IMAGE,'-c','exec env -i PATH=/usr/local/bin:/usr/bin:/bin HOME=/tmp NODE_ENV=production NODE_OPTIONS=--max-old-space-size=3072 NEXT_TELEMETRY_DISABLED=1 CRAYS_PERFORMANCE_BUILD_SERIAL=true node /build/node_modules/next/dist/bin/next build --webpack > /output/build.stdout.txt 2> /output/build.stderr.txt']
+   original_view_mounts=state['borrowedOriginalPublicNestedReadonlyMounts']
+   anchor=argv.index('--entrypoint')

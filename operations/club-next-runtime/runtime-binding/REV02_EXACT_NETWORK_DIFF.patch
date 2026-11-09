@@ -1,0 +1,85 @@
+--- bind_existing_club28.candidate.py
++++ bind_existing_club28.rev02.candidate.py
+@@ -16,6 +16,8 @@
+ IMAGE='sha256:752ea8a2f758c34002a0461bd9f1cee4f9a3c36d48494586f60ffce1fc708e0e'
+ NET='crays-acceptance-public-static-20261105-01'
+ NETID='fd541962418c24223d4b467427ced8662ac254c4f55e8ad06bc6ea6c2b5beaca'
++EGRESS='crays-private-app-canonical-20261106-01'
++EGRESS_ID='f023edae110b963b4c6a24ae708256c02c6c962fb0302f5d23bd52b615244dea'
+ IP='172.18.0.11'
+ EDGE=BASE/'runtime/private-edge-caddy-20261106-03/Caddyfile.private'
+ EDGE_SHA='f9f992e24a6973d1b64cb225390959cb4d89c8d5ccac98466fbf52752b36260c'
+@@ -54,7 +56,7 @@
+ def review(path,action):
+  p=Path(path);s=leaf(p,0,0,0o400);v=json.loads(p.read_text());now=time.time()
+  need(0<=now-s.st_mtime<=120 and 0<=now-v['issuedEpoch']<=120,'FRESH_ROOT_SOURCE_FENCE_REQUIRED')
+- need(v['action']==action and v['sourceSHA256']==sha(__file__) and v['oldId']==OLD and v['edgeSHA256']==EDGE_SHA and v['manifestSHA256']==MANIFEST_SHA and v['buildId']==BUILD_ID and v['singletonSameIPReplacementApproved']is True and v['privateProjectionQualified']is True,'EXACT_ROOT_REVIEW_REQUIRED')
++ need(v['action']==action and v['sourceSHA256']==sha(__file__) and v['oldId']==OLD and v['edgeSHA256']==EDGE_SHA and v['manifestSHA256']==MANIFEST_SHA and v['buildId']==BUILD_ID and v['singletonSameIPReplacementApproved']is True and v['privateProjectionQualified']is True and v['qualifiedEgressNetworkId']==EGRESS_ID and v['qualifiedEgressGwPriority']==1,'EXACT_ROOT_REVIEW_REQUIRED')
+  return v
+ def compiled():
+  need(sha(MANIFEST)==MANIFEST_SHA,'EXACT_BUILD08_MANIFEST_REQUIRED')
+@@ -134,17 +136,20 @@
+  c=inspect(cid);need(not c['State']['Running']and c['State']['Pid']==0,'OWN_CLUB_NOT_TERMINAL')
+  if mark:M.terminal(mark)
+ def netread():return json.loads(dock('network','inspect',NETID,timeout=8))[0]
++def egressread():
++ n=json.loads(dock('network','inspect',EGRESS_ID,timeout=8))[0]
++ need(n['Id']==EGRESS_ID and n['Name']==EGRESS and n['Driver']=='bridge'and n['Internal']is False and n['IPAM']['Config']==[{'Subnet':'172.24.0.0/16','Gateway':'172.24.0.1'}],'EXACT_QUALIFIED_EGRESS_NETWORK_REQUIRED');return n
+ def others(net,owned):return {cid:v for cid,v in net['Containers'].items()if cid not in owned}
+ def bind(args):
+  review(args.review,'bind');sealed();need((OUT/'SEALED_ACTUAL.json').is_file()and not os.path.lexists(OUT/'BIND_INTENT.json'),'SEALED_RELEASE_REQUIRED_NO_REPLAY')
+  family=shared();old=admit_old();mark=M.mark(old);need(mark['pid']==1081952 and mark['ticks']=='25485691','EXACT_CURRENT_CLUB_PROCESS_REQUIRED')
+  ep=old['NetworkSettings']['Networks'];need(set(ep)=={NET}and ep[NET]['NetworkID']==NETID and ep[NET]['IPAddress']==IP and ep[NET]['IPAMConfig']['IPv4Address']==IP,'EXACT_SINGLE_STATIC_CLUB_ENDPOINT_REQUIRED');ep=ep[NET]
+- n=netread();foreign=others(n,{OLD});need(n['Id']==NETID,'EXACT_WEBSITE_NETWORK_REQUIRED')
++ n=netread();foreign=others(n,{OLD});need(n['Id']==NETID,'EXACT_WEBSITE_NETWORK_REQUIRED');egress=egressread();egress_foreign=others(egress,set());need(OLD not in egress_foreign,'OLD_CLUB_EGRESS_PREIMAGE_CHANGED')
+  q=subprocess.run(['/usr/bin/docker','inspect',NAME],capture_output=True,timeout=8);need(q.returncode==1 and b'no such object'in q.stderr.lower(),'NEW_NAME_EXISTS_NO_REPLAY')
+  bootstrap=OUT/'bootstrap.private.cjs';private_bootstrap(bootstrap);config,host=expectations(old,bootstrap)
+  # Private exact preimage is retained for explicit rollback, never emitted.
+- write(OUT/'BEFORE.private.json',{'old':old,'mark':mark,'foreign':foreign,'family':family,'config':config,'host':host})
+- review(args.review,'bind');write(OUT/'BIND_INTENT.json',{'oldId':OLD,'newName':NAME,'buildId':BUILD_ID,'ip':IP,'edgeSHA256':EDGE_SHA,'replayAllowed':False,'parallelServingStackAllowed':False})
++ write(OUT/'BEFORE.private.json',{'old':old,'mark':mark,'foreign':foreign,'egressForeign':egress_foreign,'family':family,'config':config,'host':host})
++ review(args.review,'bind');write(OUT/'BIND_INTENT.json',{'oldId':OLD,'newName':NAME,'buildId':BUILD_ID,'ip':IP,'edgeSHA256':EDGE_SHA,'replayAllowed':False,'parallelServingStackAllowed':False,'egressNetworkId':EGRESS_ID,'egressGwPriority':1})
+  signal.signal(signal.SIGTERM,lambda *a:(_ for _ in()).throw(KeyboardInterrupt()));signal.signal(signal.SIGINT,lambda *a:(_ for _ in()).throw(KeyboardInterrupt()))
+  cid=None;admitted=False
+  try:
+@@ -154,17 +159,17 @@
+   import http.client,socket
+   class UnixDocker(http.client.HTTPConnection):
+    def connect(self):self.sock=socket.socket(socket.AF_UNIX,socket.SOCK_STREAM);self.sock.settimeout(self.timeout);self.sock.connect('/var/run/docker.sock')
+-  payload=copy.deepcopy(config);payload['HostConfig']=host;payload['NetworkingConfig']={'EndpointsConfig':{NET:{'IPAMConfig':{'IPv4Address':IP},'Aliases':ep.get('Aliases'),'DriverOpts':ep.get('DriverOpts'),'GwPriority':ep.get('GwPriority',0)}}}
++  payload=copy.deepcopy(config);payload['HostConfig']=host;payload['NetworkingConfig']={'EndpointsConfig':{NET:{'IPAMConfig':{'IPv4Address':IP},'Aliases':ep.get('Aliases'),'DriverOpts':ep.get('DriverOpts'),'GwPriority':0},EGRESS:{'GwPriority':1}}}
+   conn=UnixDocker('localhost',timeout=25)
+   try:
+    conn.request('POST','/containers/create?name='+NAME,json.dumps(payload).encode(),{'Content-Type':'application/json'});r=conn.getresponse();body=r.read(1048577);need(r.status==201 and len(body)<=1048576,'CREATE_RESULT_UNCERTAIN_INSPECT_NO_REPLAY');cid=json.loads(body)['Id']
+   finally:conn.close()
+   write(OUT/'CREATED.json',{'id':cid});new_admit(cid,config,host);admitted=True;write(OUT/'NEW_ADMITTED.json',{'id':cid,'name':NAME,'buildId':BUILD_ID})
+   need(not inspect(OLD)['State']['Running'],'OLD_MUST_BE_TERMINAL_BEFORE_NEW_START');dock('start',cid,timeout=25);c=new_admit(cid,config,host);need(c['State']['Running']and c['State']['Pid']>0 and not c['State']['OOMKilled'],'NEW_CLUB_RUNNING_REQUIRED')
+-  nep=c['NetworkSettings']['Networks'];need(set(nep)=={NET}and nep[NET]['NetworkID']==NETID and nep[NET]['IPAddress']==IP,'SAME_ORIGINAL_ROUTED_ENDPOINT_REQUIRED')
+-  need(others(netread(),{OLD,cid})==foreign and shared()==family,'FOREIGN_ENDPOINT_OR_SHARED_FAMILY_CHANGED')
++  nep=c['NetworkSettings']['Networks'];need(set(nep)=={NET,EGRESS}and nep[NET]['NetworkID']==NETID and nep[NET]['IPAddress']==IP and nep[NET]['GwPriority']==0 and nep[EGRESS]['NetworkID']==EGRESS_ID and nep[EGRESS]['GwPriority']==1 and nep[EGRESS]['Gateway']=='172.24.0.1'and nep[EGRESS]['IPAddress'].startswith('172.24.'),'SAME_SITE_AND_QUALIFIED_EGRESS_ENDPOINTS_REQUIRED')
++  need(others(netread(),{OLD,cid})==foreign and others(egressread(),{cid})==egress_foreign and shared()==family,'FOREIGN_ENDPOINT_OR_SHARED_FAMILY_CHANGED')
+   # Runtime readiness/product GETs belong to existing Acceptance18, bound to this actual.
+-  r={'status':'CLUB28_SINGLETON_BOUND_RUNNING_PENDING_ACCEPTANCE18','oldRetainedId':OLD,'newId':cid,'process':M.mark(c),'buildId':BUILD_ID,'manifestSHA256':MANIFEST_SHA,'ip':IP,'edgeSHA256':EDGE_SHA,'edgeUnchanged':True,'sharedFamilyUnchanged':True,'originalPublicAndDependencyMountsRetained':True,'readinessAccepted':False,'customerAcceptance':False,'replayAllowed':False};write(OUT/'RESULT_ACTUAL.json',r);return r
++  r={'status':'CLUB28_SINGLETON_BOUND_RUNNING_PENDING_ACCEPTANCE18','oldRetainedId':OLD,'newId':cid,'process':M.mark(c),'buildId':BUILD_ID,'manifestSHA256':MANIFEST_SHA,'ip':IP,'egressNetworkId':EGRESS_ID,'egressIP':nep[EGRESS]['IPAddress'],'egressGwPriority':1,'edgeSHA256':EDGE_SHA,'edgeUnchanged':True,'sharedFamilyUnchanged':True,'originalPublicAndDependencyMountsRetained':True,'readinessAccepted':False,'customerAcceptance':False,'replayAllowed':False};write(OUT/'RESULT_ACTUAL.json',r);return r
+  except BaseException as e:
+   signal.signal(signal.SIGTERM,signal.SIG_IGN);signal.signal(signal.SIGINT,signal.SIG_IGN)
+   stopped=False
+@@ -186,14 +191,16 @@
+  if q.returncode==0:
+   cid=json.loads(q.stdout)[0]['Id'];stop_terminal(cid,pre['config'],pre['host'])
+   if NET in inspect(cid)['NetworkSettings']['Networks']:dock('network','disconnect',NETID,cid,timeout=15)
++  if EGRESS in inspect(cid)['NetworkSettings']['Networks']:dock('network','disconnect',EGRESS_ID,cid,timeout=15)
++  need(not inspect(cid)['NetworkSettings']['Networks'],'OWNED_NEW_ENDPOINTS_NOT_DETACHED')
+  else:need(q.returncode==1 and b'no such object'in q.stderr.lower(),'UNKNOWN_OWNED_RUNTIME_STATE')
+- need(others(netread(),{OLD,cid})==pre['foreign'],'FOREIGN_ENDPOINTS_CHANGED')
++ need(others(netread(),{OLD,cid})==pre['foreign']and others(egressread(),{cid})==pre['egressForeign'],'FOREIGN_ENDPOINTS_CHANGED')
+  if NET not in old['NetworkSettings']['Networks']:
+   # Reconnect only the preserved old singleton at its original explicit address.
+   ep=pre['old']['NetworkSettings']['Networks'][NET];cmd=['network','connect','--ip',IP]
+   for alias in ep.get('Aliases')or[]:cmd+=['--alias',alias]
+   dock(*cmd,NETID,OLD,timeout=15)
+- dock('start',OLD,timeout=25);c=admit_old();need(c['NetworkSettings']['Networks'][NET]['IPAddress']==IP and others(netread(),{OLD,cid})==pre['foreign']and shared()==pre['family'],'ORIGINAL_SINGLETON_RESTORE_REQUIRED')
++ dock('start',OLD,timeout=25);c=admit_old();need(c['NetworkSettings']['Networks'][NET]['IPAddress']==IP and others(netread(),{OLD,cid})==pre['foreign']and others(egressread(),{cid})==pre['egressForeign']and shared()==pre['family'],'ORIGINAL_SINGLETON_RESTORE_REQUIRED')
+  r={'status':'ORIGINAL_CLUB_SINGLETON_ROLLBACK_RUNNING_PENDING_READINESS','id':OLD,'process':M.mark(c),'ip':IP,'sharedFamilyUnchanged':True,'edgeUnchanged':True,'readinessAccepted':False,'replayAllowed':False};write(OUT/'ROLLBACK_ACTUAL.json',r);return r
+ def main():
+  os.umask(0o077);need(os.getuid()==0,'ROOT_REQUIRED')

@@ -121,6 +121,14 @@
     {
       "component": "personal-build-operations",
       "path": "operations/personal-build/source-capture.json"
+    },
+    {
+      "component": "club-next-runtime",
+      "path": "services/club-next-runtime/source-capture.json"
+    },
+    {
+      "component": "club-next-runtime-operations",
+      "path": "operations/club-next-runtime/source-capture.json"
     }
   ]
 }
