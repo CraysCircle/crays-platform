@@ -1,0 +1,93 @@
+{
+  "schema": "crays.component.own-source-license-scope.v1",
+  "component": "services/clubs-commerce-bff",
+  "license": "AGPL-3.0-only",
+  "copyrightHolder": "CRAYS AG",
+  "grantDate": "2026-11-09",
+  "sourceCommit": "c6122b268ccd499e20eb3ec186e05fdcb5a65ea6",
+  "scope": "Only the exact CRAYS-owned integration file revisions listed in files; no directory-wide or repository-wide grant.",
+  "files": [
+    {
+      "path": "services/clubs-commerce-bff/.dockerignore",
+      "sha256": "ff36cd8317268e8b7f0fa88fc14c7561fb3bc2912c9750965646e42ec40c6a21",
+      "bytes": 50,
+      "sourceAtCommit": "https://github.com/CraysCircle/crays-platform/blob/c6122b268ccd499e20eb3ec186e05fdcb5a65ea6/services/clubs-commerce-bff/.dockerignore",
+      "capture": {
+        "path": "services/clubs-commerce-bff/.dockerignore",
+        "sha256": "ff36cd8317268e8b7f0fa88fc14c7561fb3bc2912c9750965646e42ec40c6a21",
+        "bytes": 50
+      }
+    },
+    {
+      "path": "services/clubs-commerce-bff/Dockerfile",
+      "sha256": "01062ffdf49886d0b65bb9c1334702ebc779d28647d21b7de9086eafae29b9da",
+      "bytes": 1249,
+      "sourceAtCommit": "https://github.com/CraysCircle/crays-platform/blob/c6122b268ccd499e20eb3ec186e05fdcb5a65ea6/services/clubs-commerce-bff/Dockerfile",
+      "capture": {
+        "path": "services/clubs-commerce-bff/Dockerfile",
+        "sha256": "01062ffdf49886d0b65bb9c1334702ebc779d28647d21b7de9086eafae29b9da",
+        "bytes": 1249
+      }
+    },
+    {
+      "path": "services/clubs-commerce-bff/lib.mjs",
+      "sha256": "aa171859f5569f4ae52412f4b1ce872d62e55e16c0b4a9ebee6359af343960be",
+      "bytes": 63459,
+      "sourceAtCommit": "https://github.com/CraysCircle/crays-platform/blob/c6122b268ccd499e20eb3ec186e05fdcb5a65ea6/services/clubs-commerce-bff/lib.mjs",
+      "capture": {
+        "path": "services/clubs-commerce-bff/lib.mjs",
+        "sha256": "aa171859f5569f4ae52412f4b1ce872d62e55e16c0b4a9ebee6359af343960be",
+        "bytes": 63459
+      }
+    },
+    {
+      "path": "services/clubs-commerce-bff/package.json",
+      "sha256": "78c6b9b0c5a7ed424fba9cb5c81f8b278ea8d8553b58c52b1f41b80de73a2172",
+      "bytes": 282,
+      "sourceAtCommit": "https://github.com/CraysCircle/crays-platform/blob/c6122b268ccd499e20eb3ec186e05fdcb5a65ea6/services/clubs-commerce-bff/package.json",
+      "capture": {
+        "path": "services/clubs-commerce-bff/package.json",
+        "sha256": "78c6b9b0c5a7ed424fba9cb5c81f8b278ea8d8553b58c52b1f41b80de73a2172",
+        "bytes": 282
+      }
+    },
+    {
+      "path": "services/clubs-commerce-bff/server.mjs",
+      "sha256": "6d14df24cbb8471bf36270546461ef8c398bdd8ee9e62d880368661d813e04a9",
+      "bytes": 11839,
+      "sourceAtCommit": "https://github.com/CraysCircle/crays-platform/blob/c6122b268ccd499e20eb3ec186e05fdcb5a65ea6/services/clubs-commerce-bff/server.mjs",
+      "capture": {
+        "path": "services/clubs-commerce-bff/server.mjs",
+        "sha256": "6d14df24cbb8471bf36270546461ef8c398bdd8ee9e62d880368661d813e04a9",
+        "bytes": 11839
+      }
+    },
+    {
+      "path": "services/clubs-commerce-bff/test.mjs",
+      "sha256": "807c9ee2525d8a9ecb4ebe14f3a84988707062a87a5c131feb3eefec196730ea",
+      "bytes": 11360,
+      "sourceAtCommit": "https://github.com/CraysCircle/crays-platform/blob/c6122b268ccd499e20eb3ec186e05fdcb5a65ea6/services/clubs-commerce-bff/test.mjs",
+      "capture": {
+        "path": "services/clubs-commerce-bff/test.mjs",
+        "sha256": "807c9ee2525d8a9ecb4ebe14f3a84988707062a87a5c131feb3eefec196730ea",
+        "bytes": 11360
+      }
+    }
+  ],
+  "exclusions": [
+    "CRAYS-authored files or independent future CRAYS revisions not identified in this initial grant. Rights to modify and redistribute the covered code are governed by AGPL version 3.",
+    "Third-party packages, upstream applications, container base images and runtimes retain their own licenses.",
+    "Lockfiles, captured evidence/manifests, historical test output, consolidated documentation and configuration examples are outside this initial grant."
+  ],
+  "originalLicenseText": {
+    "path": "LICENSE",
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "bytes": 34523,
+    "url": "https://ftp.gnu.org/gnu/Licenses/agpl-3.0.txt",
+    "finalUrl": "https://ftp.gnu.org/gnu/Licenses/agpl-3.0.txt"
+  },
+  "captureAuthority": {
+    "path": "services/clubs-commerce-bff/source-index.json",
+    "sha256": "bca69d27a6cb12fc7eaa9fbeb11833b7ffe11452f4bb096e05ab9362988e72d4"
+  }
+}

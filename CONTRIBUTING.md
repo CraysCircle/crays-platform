@@ -74,6 +74,8 @@ Separate a review/build result from a production release. Follow [the developmen
 
 Use upstream contribution rules when changing upstream implementation. Keep original authorship, license texts and NOTICE files with the corresponding source. Describe CRAYS changes separately; do not relabel third-party code as CRAYS-owned.
 
+The confirmed CRAYS-owned Qlo gateway and Clubs Commerce BFF source revisions have explicit **AGPL-3.0-only** grants from CRAYS AG. Read the [component license map](LICENSING.md) and the exact file-scope record when reusing or modifying them. Preserve applicable upstream terms for dependencies and material you add.
+
 License terms vary by component. Identify the applicable original license before reusing or contributing code; if a source area has no established license grant, ask for that scope to be clarified in an issue. This organization does not impose a new blanket license or contributor agreement through this guide.
 
 ## Report problems responsibly

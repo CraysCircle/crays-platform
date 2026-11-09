@@ -58,4 +58,4 @@ Independent websites and native apps remain in their own repositories. Twenty an
 
 Source consolidation and integration are in progress. Select the component and source view you need before building; an archived controller is not a general installation command. Original licenses, copyright and NOTICE terms apply per component.
 
-[Source and version catalog](docs/source-index.json) · [License and provenance](docs/license-and-provenance.md) · [Development and releases](docs/development-and-releases.md) · [Organization coverage status](https://github.com/CraysCircle/.github/blob/main/docs/source-and-license-status.md)
+[Source and version catalog](docs/source-index.json) · [Component licenses](LICENSING.md) · [License and provenance](docs/license-and-provenance.md) · [Development and releases](docs/development-and-releases.md) · [Organization coverage status](https://github.com/CraysCircle/.github/blob/main/docs/source-and-license-status.md)

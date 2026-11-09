@@ -1,13 +1,13 @@
 # License and provenance
 
-This record separates the original application source, the CRAYS AWS build description and the runtime distribution. It is an evidence record, not a new license grant.
+This record separates the original application source, the CRAYS AWS build description and the runtime distribution. It is an evidence record. The explicit CRAYS AG grants for the listed Qlo/BFF source revisions are documented separately in the [component license map](../LICENSING.md).
 
 | Material | Established provenance | License evidence and remaining work |
 | --- | --- | --- |
-| Four Qlo gateway application files | Exact original application capture19; all supplied file hashes match | No standalone application LICENSE/NOTICE/COPYING was found in the specifically examined original component directories and roots. The original package metadata has no license field. No MIT, GPL, AGPL or other application license has been assigned by inference. |
-| AWS Dockerfile | Exact image30 build-context file; SHA-256 recorded in the source index | CRAYS-specific deployment source, retained unchanged. No separate license or copyright ownership is invented for it. |
+| Four Qlo gateway application files | Exact original application capture19; all supplied file hashes match | No standalone application LICENSE/NOTICE/COPYING was found in the specifically examined original component directories and roots. The original package metadata has no license field. The nine identified CRAYS-owned integration/build/test revisions now have an explicit [AGPL-3.0-only grant](../services/qlo-gateway/LICENSING.md) from CRAYS AG; original package bytes are unchanged. |
+| AWS Dockerfile | Exact image30 build-context file; SHA-256 recorded in the source index | CRAYS-specific deployment source, retained unchanged and included in the exact Qlo AGPL-3.0-only grant. |
 | Node/Alpine runtime and bundled components | Exact base reference in the original Dockerfile; existing Node version qualification | Full version-specific license/NOTICE texts and the complete source/provenance relationship of the exact runtime image still require capture and verification. A base-image name alone does not close this work. |
-| Test sources referenced by package metadata | Names preserved in the original package test command | All four original test files and the original component README have now been recovered and preserved unchanged with exact hashes. No separate license grant has been inferred. |
+| Test sources referenced by package metadata | Names preserved in the original package test command | All four original test files and the original component README have now been recovered and preserved unchanged with exact hashes. The four identified original test files are included in the explicit Qlo AGPL-3.0-only grant; consolidated README text remains outside that initial file-specific scope. |
 
 The original application capture and AWS Dockerfile were supplied by the Business migration workstream. Application SHA pins and the existing image30 build receipt establish the recorded relationship; a new reproducible build from Git has not been performed.
 
@@ -21,7 +21,7 @@ No customer data, provider keys, consumer tokens, private bindings, database dum
 
 ## Open acceptance points
 
-The initial source capture is usable for precise repository/commit identification. Complete application authorship/license provenance, exact runtime license closure, test execution evidence and any applicable source-offer obligations remain open. They must not be reported as legally complete or release-approved.
+The initial source capture is usable for precise repository/commit identification. The explicit Qlo/BFF grants resolve the license designation for their listed CRAYS-owned revisions. Other application authorship/license questions, exact runtime license closure, test execution evidence and applicable source-offer obligations remain open. They must not be reported as legally complete or release-approved.
 
 ## Operations source
 
@@ -29,7 +29,7 @@ The reviewed Qlo account2 revision03 and unchanged storage guard are preserved w
 
 ## Clubs Commerce BFF
 
-The nine original component files are preserved unchanged with their [source record](../services/clubs-commerce-bff/source-index.json). All fourteen locked npm package archives were checked against their original SHA-512 lock integrity. Twelve standalone license files and two complete original READMEs containing license text are retained under its third-party directory; their copyright and permissions are not replaced with a generic license. This does not establish the BFF application license, exact runtime/base-image notices or AWS deployment parity.
+The nine original component files are preserved unchanged with their [source record](../services/clubs-commerce-bff/source-index.json). All fourteen locked npm package archives were checked against their original SHA-512 lock integrity. Twelve standalone license files and two complete original READMEs containing license text are retained under its third-party directory; their copyright and permissions are not replaced with a generic license. The six identified CRAYS-owned integration/build/test revisions now have an explicit [AGPL-3.0-only grant](../services/clubs-commerce-bff/LICENSING.md). Dependency notices retain their original terms; exact runtime/base-image notices and AWS deployment parity remain open.
 
 ## Shared Next.js application
 
