@@ -1,0 +1,14 @@
+.env
+.env.*
+.vercel
+.next*
+node_modules
+.next-local-logs
+.next-local
+.playwright-cli
+.config
+output
+storybook-static
+*.log
+test-results
+\['Vault'

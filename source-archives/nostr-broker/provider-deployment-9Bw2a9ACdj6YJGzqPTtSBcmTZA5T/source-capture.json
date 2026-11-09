@@ -1,0 +1,47 @@
+{
+  "schema": "crays.nostr-broker.historical-provider-configuration-source.v1",
+  "provider": "Vercel",
+  "deploymentID": "dpl_9Bw2a9ACdj6YJGzqPTtSBcmTZA5T",
+  "retrievalMethod": "get_deployment_file_contents connector; explicit deployment ID, source path and provider file ID",
+  "sourceFiles": [
+    {
+      "providerPath": "src/.vercelignore",
+      "providerFileIDRawSHA1": "d81362b2952e4340aced68e915f5ce3cbd8e2e44",
+      "bytes": 146,
+      "sha256": "ecb1b26c229aff778d97b36658697794c0f2c1e932d5da2deb009f243b152303",
+      "publishedRelativePath": "src/.vercelignore",
+      "representation": "unchanged-full-provider-original"
+    },
+    {
+      "providerPath": "src/next.config.ts",
+      "providerFileIDRawSHA1": "8caf5a28272f5098dc5809f8534b7338d47fa13a",
+      "bytes": 580,
+      "sha256": "836b7048744d7666b2f83f77caa4c60bf70da94521eef7dbe77f612b38cff5e3",
+      "publishedRelativePath": "src/next.config.ts",
+      "representation": "unchanged-full-provider-original"
+    },
+    {
+      "providerPath": "src/eslint.config.mjs",
+      "providerFileIDRawSHA1": "7805200c1117d03cdc808b751a5d3ea0c9c9cd9d",
+      "bytes": 537,
+      "sha256": "d3f8eb3919e0c8b18fc2930917f81739c38cbf3e183b2b90c1e5200fc4943009",
+      "publishedRelativePath": "src/eslint.config.mjs",
+      "representation": "unchanged-full-provider-original"
+    },
+    {
+      "providerPath": "src/.crays-nostr-broker-staging.json",
+      "providerFileIDRawSHA1": "cecce5632ed904c0b975a5bf0cef9fea7b29f924",
+      "bytes": 78,
+      "sha256": "f59beb635902337a254dfed79b6528f14ed58fd0ad74ac9cb0f911fed5286ea8",
+      "publishedRelativePath": "src/.crays-nostr-broker-staging.json",
+      "representation": "unchanged-full-provider-original"
+    }
+  ],
+  "files": 4,
+  "bytes": 1341,
+  "originalAbsoluteSourceRootUnknown": true,
+  "sourceProgramsExecuted": false,
+  "historicalSourceNotCurrentRuntimeClaim": true,
+  "completeApplicationDependenciesLicenseOrHistoryClosure": false,
+  "newLicenseGrant": false
+}

@@ -185,6 +185,10 @@
     {
       "component": "member-membership-title47",
       "path": "services/member-identity/provider-account/source47/source-capture.json"
+    },
+    {
+      "component": "nostr-broker-historical-provider-config",
+      "path": "source-archives/nostr-broker/provider-deployment-9Bw2a9ACdj6YJGzqPTtSBcmTZA5T/source-capture.json"
     }
   ]
 }
