@@ -1,0 +1,76 @@
+{
+  "schema": "crays.original-embedded-notice-capture.v1",
+  "package": "drizzle-kit",
+  "version": "0.31.10",
+  "registryVersionURL": "https://registry.npmjs.org/drizzle-kit/0.31.10",
+  "archiveURL": "https://registry.npmjs.org/drizzle-kit/-/drizzle-kit-0.31.10.tgz",
+  "archiveSHA256": "dbfcac9baf43a591b2652b43f46b12d8fb21b80ba4c8103b919dd29d15d0270d",
+  "registryIntegrity": "sha512-7OZcmQUrdGI+DUNNsKBn1aW8qSoKuTH7d0mYgSP8bAzdFzKoovxEFnoGQp2dVs82EOJeYycqRtciopszwUf8bw==",
+  "registryIntegrityVerified": true,
+  "entireCompressedBodyIncludingTrailingBytesHashed": true,
+  "declaredRootPackageLicenseMetadata": "MIT",
+  "selectedOriginalMembers": [
+    {
+      "archiveMember": "package/bin.cjs",
+      "bytes": 3693410,
+      "sha256": "44f5420e63c88e13e750f5233878b054e262c3223bd94eabf6ac05b2ae77abd7",
+      "extractedNoticeOccurrences": 1
+    },
+    {
+      "archiveMember": "package/api.js",
+      "bytes": 2956135,
+      "sha256": "5c39a62e2e5fc1554b8e423b1ffe453ccc975e0ccca0090f0cf3210aeb6c49fc",
+      "extractedNoticeOccurrences": 1
+    },
+    {
+      "archiveMember": "package/api.mjs",
+      "bytes": 2946338,
+      "sha256": "680719eabea08e3e7155c822adcaf9343b3d9b30a9baea935be8de8069bcee4e",
+      "extractedNoticeOccurrences": 1
+    }
+  ],
+  "originalNoticeOccurrences": [
+    {
+      "archiveMember": "package/bin.cjs",
+      "originalMemberBytes": 3693410,
+      "originalMemberSHA256": "44f5420e63c88e13e750f5233878b054e262c3223bd94eabf6ac05b2ae77abd7",
+      "byteStartInclusive": 3688326,
+      "byteEndExclusive": 3693409,
+      "kind": "original-block-comment",
+      "originalByteSliceEqualsPreservedNotice": true,
+      "relativeNoticePath": "notices/bundled-license-information.original.txt",
+      "bytes": 5083,
+      "sha256": "11f9dbd4cf76437663981491e7f90f913687c143f49e199cfea10a9e4fe2dbcd"
+    },
+    {
+      "archiveMember": "package/api.js",
+      "originalMemberBytes": 2956135,
+      "originalMemberSHA256": "5c39a62e2e5fc1554b8e423b1ffe453ccc975e0ccca0090f0cf3210aeb6c49fc",
+      "byteStartInclusive": 2951051,
+      "byteEndExclusive": 2956134,
+      "kind": "original-block-comment",
+      "originalByteSliceEqualsPreservedNotice": true,
+      "relativeNoticePath": "notices/bundled-license-information.original.txt",
+      "bytes": 5083,
+      "sha256": "11f9dbd4cf76437663981491e7f90f913687c143f49e199cfea10a9e4fe2dbcd"
+    },
+    {
+      "archiveMember": "package/api.mjs",
+      "originalMemberBytes": 2946338,
+      "originalMemberSHA256": "680719eabea08e3e7155c822adcaf9343b3d9b30a9baea935be8de8069bcee4e",
+      "byteStartInclusive": 2941254,
+      "byteEndExclusive": 2946337,
+      "kind": "original-block-comment",
+      "originalByteSliceEqualsPreservedNotice": true,
+      "relativeNoticePath": "notices/bundled-license-information.original.txt",
+      "bytes": 5083,
+      "sha256": "11f9dbd4cf76437663981491e7f90f913687c143f49e199cfea10a9e4fe2dbcd"
+    }
+  ],
+  "uniqueOriginalNoticeBodies": 1,
+  "rootLicenseAndCopyrightNoticeQuestionClosed": false,
+  "noticesArePartialEmbeddedComponentNotices": true,
+  "rootPackageCopyrightInferredFromDependencyNotices": false,
+  "completeBundleTransitiveDependencyAndSourceOfferClosure": false,
+  "programsExecuted": false
+}

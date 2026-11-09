@@ -17,3 +17,7 @@ The [Member source25 record](../provenance/member-source25/README.md) preserves 
 ## Distinct native Core package set
 
 The [native Core dependency record](../compositions/native-core-worktree-20261109/dependencies.json) covers its separate 48-package lock. It retains all 48 original package manifests, 41 installed root notice files and five matching-version upstream package relationships, with immutable references for existing byte-identical files. Root notice text is located for 47 packages. The exact npm source commits additionally qualify the original GraphQL Armor root notice for its three Core packages, with byte-identical existing package manifests. The drizzle-kit 0.31.10 notice discrepancy and full transitive/runtime/rights closure remain open. These Core observations do not change the 47-package shared application selection above.
+
+## Original bundled notice fragments
+
+[drizzle-kit 0.31.10 embedded notices](packages/drizzle-kit/0.31.10/embedded-notices.md) preserve the unchanged original dependency-notice footer from three exact package bundles. The index records archive integrity, complete bundle hashes and byte positions. These dependency comments do not resolve the original drizzle-kit MIT notice question or the package/source license discrepancy; full incorporated-source and notice closure remains open.
