@@ -29,6 +29,12 @@ For collaboration, begin with the exact provider/organization scope and the adap
 
 See the [service guide](README.md) for how identity, documents and business workflows connect.
 
+## Account-bound access intents
+
+The [Purpose52 source archive](../../operations/nextcloud-access-purpose52/README.md) adds the database RPC side of scoped Nextcloud membership dispatch. Its pool checks runtime roles and original function bodies; the SQL resolves current authority and approval relationships, claims an existing access intent and records its outcome. The separate rollback-qualification source describes checks for that boundary, not a completed rollback.
+
+Two SQL files are protected source views; the TypeScript pool and function-pin record are unchanged originals. [The capture map](../../operations/nextcloud-access-purpose52/source-capture.json) identifies exact private original recovery, and the [CRAYS AG AGPL-3.0-only grant](../../operations/nextcloud-access-purpose52/LICENSING.md) covers only these four own revisions. These sources activate neither SQL nor SSO and prove no complete access journey. Existing provider adapters, Nextcloud Server/apps and their upstream terms remain separate.
+
 ## Development and contributions
 
 Read the [shared web development guide](../../apps/web/README.md) and identify the relevant source composition first. The transport and provider boundaries can be exercised with injected synthetic responses; no customer documents or live credentials are needed in test fixtures.
