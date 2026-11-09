@@ -1,0 +1,16 @@
+{
+  "schema": "crays.ops46.source-qualification.v1",
+  "finalInstallRequestSHA256": "e71e24c8720e84a4513d374b957f9da0a45ba3999d2cae89e862e9bb79ac81a9",
+  "independentInstallReviewSHA256": "3854c4eaf9078e023f346499b630dd64c889367811d532b74eb152038f4e93ba",
+  "independentBuildReviewSHA256": "f81b3a1baa8ba6ae589493bd10935a9495dad3c6d0a05b7ebf3f86a2c506afed",
+  "phaseWindowWrapperSHA256": "a5bcf20cd7d1e6a6e154d0cb7d8e3b328f5a141cc055de00aaa45fcde4f74928",
+  "phaseWindowReviewAuthority": "Root explicit final source-publish instruction; bounded four-phase lock/fence/physical-return wrapper reviewed by Root",
+  "exactPrior42BodyReuse": 4,
+  "prior42ReuseMetadataReceiptSHA256": "cf7fbabd4cfe6f28dbf4d599f75adbd07bf721c198bfdadaec15b8d4a81b1fee",
+  "CommonSourceAlreadyPublishedAtCommit": "ef3a04f101ba675028e97d5fcf95848e3883ad4b",
+  "privateEnvironmentAndRuntimeInputBodiesNotRead": true,
+  "originalProgramOrTestsNotExecutedDuringPreservation": true,
+  "runtimeNotChangedByPreservation": true,
+  "noFullSourceOrLicenseClosureClaim": true,
+  "independentNewChangedSourcePrivacyProvenanceReviewRequiredBeforePublication": true
+}

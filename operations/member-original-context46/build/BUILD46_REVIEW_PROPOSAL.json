@@ -1,0 +1,18 @@
+{
+  "controllerSHA256": "602878e276420a6ae6c4081ac6eafd28c3aac558dfb468afd110d80b04910a97",
+  "executionApproved": false,
+  "existingAWSMemberRdsSourceRoot": "/srv/crays/migration-work/20261109/root/member-provider-account42-build01/source",
+  "existingNodeBinary": "/srv/crays/migration-work/20261108/root/member25-original-image-dependencies-copy03/toolchain/node",
+  "existingQualifiedNodeModulesRoot": "/srv/crays/migration-work/20261108/root/member25-original-image-dependencies-copy03/node_modules",
+  "freshExclusiveBuildWindowApproved": false,
+  "nextPackageSHA256": "57f3d18dd1fbfd586762782d5ab66ba0862380bcdbeec633a5cbe124a1b365ee",
+  "nodeBinarySHA256": "ccacb2d6d87ba6d118b2bffc1ae33747a05cc5fc6b1f1ec4fc1d420b687e952d",
+  "resourceWindowUnbound": true,
+  "runtimeInstalled": false,
+  "sourceLockSHA256": "56f6a775592cfeed09711f1480c835832e4700b8c65837f7ae66a5480a580458",
+  "sourcePackageSHA256": "8334d99c71e4737d3c06f929c0b1ea502ee26b7a0d0902509ec25e1d83ca6906",
+  "sourcePins": {
+    "GUARD_BUILD_SOURCE_PROVENANCE.json": "685f07f13f4dd90c34c8c153b16f60490f65a57fe2d22935cb89dde6ae95d30b"
+  },
+  "unit": "crays-member-club-session-envelope46-build-20261109-01.service"
+}

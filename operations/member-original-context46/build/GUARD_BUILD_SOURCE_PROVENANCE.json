@@ -1,0 +1,43 @@
+{
+  "productionBuildId": "zsJCbh0zXoJq2A5zOzkMU",
+  "productionReleaseManifestSHA256": "d082cd17b73d9a03fe510de4633d8a9432da69de0e89e2fa1c6d7a3a795589c4",
+  "productionArchiveSHA256": "f5a239e2e3983c872a1aec2d58dae097ff9081579af30211b27f70a26c6c62f5",
+  "actualProductionBuildReceiptSHA256": "550eb0129d74327c011497fccecc958b04d721530c22401549083f0c3bbe9797",
+  "compiledProbeSHA256": "f1f5a544905fb3d248b7bdbca8c2edcd38a51273aaa008b5764034e89d9ad1f3",
+  "sourceRoot": "/home/craysdev/codex-chat-projects/member/output/aws-inventory-20261104/member-rds-nextjs-20261107-01",
+  "source28Pins": {
+    "src/db/core-identity-runtime-pool.ts": "b0c9bda86305cdb0490fcfd4944e24105daf4a395998ba8901cb40cc4c6ace4e",
+    "src/db/core-member-application-runtime.ts": "913f4d726073496e687f796346822b36cafba506ff0c12f116ab7ea31b091df5",
+    "src/db/core-member-booking-runtime-pool.ts": "d776e15319718cddcb194c8401dfe1288ba6267af66be4cd3bac94836067abbf",
+    "src/db/core-member-demo-catalog-runtime.ts": "056ab0ded6c1892c8bdeddd21785f7264b62a9647974f9d6f411e2f1bcc023f3",
+    "src/db/core-member-demo-commerce-runtime.ts": "b61cfb15f257e87e069f952d8ba829fe4a12517b3cd2872d9641fdc58aa6df66",
+    "src/db/core-member-demo-documents-runtime.ts": "26b3a389d4539fc6c761d850ea3c9420e484be08f1b09895671bcf6e234406f1",
+    "src/db/core-member-demo-finance-runtime.ts": "18e829d65112b117d2df46155707213f4690366b4daaffe261e080c49e0241e1",
+    "src/db/core-member-demo-saved-plan-runtime.ts": "51a587ea554d5cf6faf2840a0f96a57b9fb45921ebbb2d0be1c4810d877127f0",
+    "src/db/core-member-demo-services-runtime.ts": "fb8c2bfd3563ff28bc665e902ce0b784e1fdaec7216f466800cc6a6a56190a9e",
+    "src/db/core-member-finance-request-runtime.ts": "0d2704d1c04009038c258bc2933c87735f22350176cc11678c7f33c3349b069f",
+    "src/db/core-member-privacy-runtime.ts": "1f454a5cf6f22d6e71a201f885d8691075c801f1a943e782f84a4404649d30d9",
+    "src/db/core-member-profile-runtime.ts": "2997d3b3dc907b8065e4b99f16694039afb94c0baf0a1751ebe969b98de9e0f0",
+    "src/db/core-member-purchase-fulfilment-runtime.ts": "e549d40da7d8f3a1da073f6136bae5dbb95caa8733b068db3b54660ed8a355f3",
+    "src/db/core-member-support-tools-runtime.ts": "aa54f5035ba653d16545a2fb0cc7202963c7d689ac7e881034ecbfc230107f9e",
+    "src/db/core-member-test-stays-runtime.ts": "1b1c6e07c63671e84ba1eb9ec564554783d043a1f28abefb6ba4e8251e095dc5",
+    "src/db/member-aws-runtime.ts": "88208cdfe3f1885606e8d78b7563997739cebb38f167042e5ef9ad7749fa6c8f",
+    "src/db/member-support-bff-runtime.ts": "5f9115b163a6fdf1b2397d2221766e2975568555c2c8b0f212f47dad32ff28a4",
+    "src/db/member-support-native-automation-dispatch.ts": "eac0b033b3b22dc6451ba318330205397fe46dad7d4db5a33551678c0c6fa9e4",
+    "src/db/member-support-native-contract.ts": "445cba8c27eee56803884fa2e0cdb962666aa98ac78dbc48b0870da1f07dbf5a",
+    "src/db/member-test-custody-subject.ts": "4b254f216a288600fa1722783a09a16abb04015c976dad84afce3254ed0a725f",
+    "src/db/member-xxl-no-expiry-runtime.ts": "0de3bb3abed4b7cf53f8a14c1ff4927044091712dcdff5fa103b1e1d23a8d391",
+    "src/db/member073-native-binding.ts": "5f28d3014910cb6db779d9c35b370df3f6dc01bed428601123def47725ff271f",
+    "src/lib/clubs/member-application-contract.ts": "65e908dd27152ebe0341c5f969ae502e693a97290c0bd97564944ca456159b7e",
+    "src/lib/clubs/member-demo-vendure-provider.ts": "430bda3825e89934badea767ccd3dccae387a3039d9d186082664d241809da4c",
+    "src/lib/clubs/member-privacy-contract.ts": "7ae81b5b2f1185eb46d31361b4c729626210e58879d2d768847e37f8d734ad43",
+    "src/lib/clubs/member-support-command-status-contract.ts": "1ce87ca523380d3b6d3b12f0ab9b3e112c9dd68d5773c73abaecb0d6d4f089bb",
+    "src/lib/clubs/member073-native-provider-binding.ts": "8ef51fad36b40c519d373e56c9eebab2f458aecbb422c7506f804f257ec00c0e",
+    "src/lib/clubs/member073-native-worker-queue.ts": "51bb0249b4dbbb9ef58fdc9813552e492f608fa59ab715de1fb8ff1f363635e3"
+  },
+  "sourceDeltaFromQualifiedCanonical": [
+    "src/db/core-identity-runtime-pool.ts",
+    "src/db/member-aws-runtime.ts"
+  ],
+  "runtimeProof": "Retained metadata guards compiled from same immutable build input source, with test exports only; no actual business function calls. This does not replace real HTTP/customer acceptance."
+}

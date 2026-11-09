@@ -173,6 +173,10 @@
     {
       "component": "member-main-common46",
       "path": "services/member-identity/provider-account/source46/source-capture.json"
+    },
+    {
+      "component": "member-main-common46-operating-sources",
+      "path": "operations/member-original-context46/source-capture.json"
     }
   ]
 }

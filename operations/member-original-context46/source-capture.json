@@ -1,0 +1,264 @@
+{
+  "schema": "crays.ops46.public-source-capture.v1",
+  "sourcePreservationOnly": true,
+  "originalFiles": 15,
+  "programs": 13,
+  "sourceMetadata": 2,
+  "originalBytes": 132958,
+  "files": [
+    {
+      "originalRelativePath": "install/classify_exact_member42_runtime_addons.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-original-context46-install-source01/classify_exact_member42_runtime_addons.candidate.py",
+      "originalBytes": 1679,
+      "originalSHA256": "9278909c2759f014a0b897f0823ec8963a21db497b3e366d826cfa65ea728039",
+      "publishedRelativePath": "install/classify_exact_member42_runtime_addons.candidate.py",
+      "publishedBytes": 1679,
+      "publishedSHA256": "9278909c2759f014a0b897f0823ec8963a21db497b3e366d826cfa65ea728039",
+      "representation": "unchanged-original",
+      "sourceRole": "program",
+      "prior42ExactBodyReuse": true,
+      "prior42Reference": {
+        "path": "operations/member-provider-account42/source-cases/install/classify_exact_member42_runtime_addons.candidate.py",
+        "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-provider-account42-install-source01/classify_exact_member42_runtime_addons.candidate.py",
+        "bytes": 1679,
+        "sha256": "9278909c2759f014a0b897f0823ec8963a21db497b3e366d826cfa65ea728039",
+        "originalMode": "0o400",
+        "versionRole": "CURRENT_NAMED_CASE_FILE_NOT_ASSERTED_EXECUTED",
+        "sourceManifestBindings": [
+          {
+            "manifestPath": "/srv/crays/migration-work/20261109/root/member-provider-account42-install-source01/SOURCE_MANIFEST42_COORDINATOR.json",
+            "declaredSourceSHA256": "9278909c2759f014a0b897f0823ec8963a21db497b3e366d826cfa65ea728039"
+          }
+        ],
+        "unchangedOriginalBody": true
+      }
+    },
+    {
+      "originalRelativePath": "install/classify_exact_member46_runtime_addons.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-original-context46-install-source01/classify_exact_member46_runtime_addons.candidate.py",
+      "originalBytes": 1679,
+      "originalSHA256": "3d306f4d65962a9fa606e7a22684ae7439e2fef3e3a8952b502bc04c34a60938",
+      "publishedRelativePath": "install/classify_exact_member46_runtime_addons.candidate.py",
+      "publishedBytes": 1679,
+      "publishedSHA256": "3d306f4d65962a9fa606e7a22684ae7439e2fef3e3a8952b502bc04c34a60938",
+      "representation": "unchanged-original",
+      "sourceRole": "program",
+      "prior42ExactBodyReuse": false
+    },
+    {
+      "originalRelativePath": "install/derive_exact_member46_anchor_generation.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-original-context46-install-source01/derive_exact_member46_anchor_generation.candidate.py",
+      "originalBytes": 6363,
+      "originalSHA256": "6b1f876a93b6bcd1dc30402fa707689054f22ede413aa51222fad79d7a4a99b5",
+      "publishedRelativePath": "install/derive_exact_member46_anchor_generation.candidate.py",
+      "publishedBytes": 6363,
+      "publishedSHA256": "6b1f876a93b6bcd1dc30402fa707689054f22ede413aa51222fad79d7a4a99b5",
+      "representation": "unchanged-original",
+      "sourceRole": "program",
+      "prior42ExactBodyReuse": true,
+      "prior42Reference": {
+        "path": "operations/member-provider-account42/source-cases/install/derive_exact_member42_anchor_generation.candidate.py",
+        "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-provider-account42-install-source01/derive_exact_member42_anchor_generation.candidate.py",
+        "bytes": 6363,
+        "sha256": "6b1f876a93b6bcd1dc30402fa707689054f22ede413aa51222fad79d7a4a99b5",
+        "originalMode": "0o400",
+        "versionRole": "CURRENT_NAMED_CASE_FILE_NOT_ASSERTED_EXECUTED",
+        "sourceManifestBindings": [
+          {
+            "manifestPath": "/srv/crays/migration-work/20261109/root/member-provider-account42-install-source01/SOURCE_MANIFEST42_COORDINATOR.json",
+            "declaredSourceSHA256": "6b1f876a93b6bcd1dc30402fa707689054f22ede413aa51222fad79d7a4a99b5"
+          }
+        ],
+        "unchangedOriginalBody": true
+      }
+    },
+    {
+      "originalRelativePath": "install/finish_current_member46_generation.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-original-context46-install-source01/finish_current_member46_generation.candidate.py",
+      "originalBytes": 32374,
+      "originalSHA256": "8a7bd58c4e1e9f99597e32c3b9e95ab4135a0182a862f08d0ad806c20f456689",
+      "publishedRelativePath": "install/finish_current_member46_generation.candidate.py",
+      "publishedBytes": 32374,
+      "publishedSHA256": "8a7bd58c4e1e9f99597e32c3b9e95ab4135a0182a862f08d0ad806c20f456689",
+      "representation": "unchanged-original",
+      "sourceRole": "program",
+      "prior42ExactBodyReuse": false
+    },
+    {
+      "originalRelativePath": "install/listener.nostr18-machine57-team33.candidate.mjs",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-original-context46-install-source01/listener.nostr18-machine57-team33.candidate.mjs",
+      "originalBytes": 5011,
+      "originalSHA256": "7e8b668caf10118d84082f8fd68a63e390a3ee36a2e0da7b022a06d7203fa5bb",
+      "publishedRelativePath": "install/listener.nostr18-machine57-team33.candidate.mjs",
+      "publishedBytes": 5011,
+      "publishedSHA256": "7e8b668caf10118d84082f8fd68a63e390a3ee36a2e0da7b022a06d7203fa5bb",
+      "representation": "unchanged-original",
+      "sourceRole": "program",
+      "prior42ExactBodyReuse": true,
+      "prior42Reference": {
+        "path": "operations/member-provider-account42/source-cases/install/listener.nostr18-machine57-team33.candidate.mjs",
+        "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-provider-account42-install-source01/listener.nostr18-machine57-team33.candidate.mjs",
+        "bytes": 5011,
+        "sha256": "7e8b668caf10118d84082f8fd68a63e390a3ee36a2e0da7b022a06d7203fa5bb",
+        "originalMode": "0o400",
+        "versionRole": "CURRENT_NAMED_CASE_FILE_NOT_ASSERTED_EXECUTED",
+        "sourceManifestBindings": [
+          {
+            "manifestPath": "/srv/crays/migration-work/20261109/root/member-provider-account42-install-source01/SOURCE_MANIFEST42_COORDINATOR.json",
+            "declaredSourceSHA256": "7e8b668caf10118d84082f8fd68a63e390a3ee36a2e0da7b022a06d7203fa5bb"
+          }
+        ],
+        "unchangedOriginalBody": true
+      }
+    },
+    {
+      "originalRelativePath": "install/member26-original-anonymous-auth0-probe.cjs",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-original-context46-install-source01/member26-original-anonymous-auth0-probe.cjs",
+      "originalBytes": 3522,
+      "originalSHA256": "9533a8389df91206ddfc51ab1218a531823fd25c9dd82c1474fcb6308760554c",
+      "publishedRelativePath": "install/member26-original-anonymous-auth0-probe.cjs",
+      "publishedBytes": 3522,
+      "publishedSHA256": "9533a8389df91206ddfc51ab1218a531823fd25c9dd82c1474fcb6308760554c",
+      "representation": "unchanged-original",
+      "sourceRole": "program",
+      "prior42ExactBodyReuse": true,
+      "prior42Reference": {
+        "name": "member26-original-anonymous-auth0-probe.cjs",
+        "excludedFromThis13VersionSubpacket": true,
+        "earlierSeparationWasPendingReviewNotCurrentHold": true,
+        "sourceAddendum": "probe/source-capture.json",
+        "readerGuide": "probe/README.md",
+        "originalBytes": 3522,
+        "originalSHA256": "9533a8389df91206ddfc51ab1218a531823fd25c9dd82c1474fcb6308760554c",
+        "exactOriginalBodyPreservedUnchanged": true,
+        "sourcePrivacyReviewComplete": true,
+        "identifiedFixedPrivateSourceRedactionHolds": 0,
+        "publicProviderEndpointAndPrivateInputPathnamesAreNotSecretsAlone": true,
+        "notExecutedDuringCaptureOrReview": true,
+        "protectedInputBodiesNotRead": true
+      }
+    },
+    {
+      "originalRelativePath": "install/member46_lifecycle.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-original-context46-install-source01/member46_lifecycle.candidate.py",
+      "originalBytes": 32285,
+      "originalSHA256": "a68b37a8f4436e52a2311ffe96f7744ab052da32099b76fbe337a9535881c32c",
+      "publishedRelativePath": "install/member46_lifecycle.candidate.py",
+      "publishedBytes": 32285,
+      "publishedSHA256": "a68b37a8f4436e52a2311ffe96f7744ab052da32099b76fbe337a9535881c32c",
+      "representation": "unchanged-original",
+      "sourceRole": "program",
+      "prior42ExactBodyReuse": false
+    },
+    {
+      "originalRelativePath": "install/project_exact_existing_work_main_keys_to_member46.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-original-context46-install-source01/project_exact_existing_work_main_keys_to_member46.candidate.py",
+      "originalBytes": 6809,
+      "originalSHA256": "e881657e44ecac2bfeb016915bd22edcd3c0488ee7db9c063bc7bf657fe46be2",
+      "publishedRelativePath": "install/project_exact_existing_work_main_keys_to_member46.candidate.py",
+      "publishedBytes": 6809,
+      "publishedSHA256": "e881657e44ecac2bfeb016915bd22edcd3c0488ee7db9c063bc7bf657fe46be2",
+      "representation": "unchanged-original",
+      "sourceRole": "program",
+      "prior42ExactBodyReuse": false
+    },
+    {
+      "originalRelativePath": "install/project_exact_member46_successor_payloads.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-original-context46-install-source01/project_exact_member46_successor_payloads.candidate.py",
+      "originalBytes": 5883,
+      "originalSHA256": "5077decd4320dbdc53fa796544adce6b8532f70d1e204bd61a3015fe1e1c3fe0",
+      "publishedRelativePath": "install/project_exact_member46_successor_payloads.candidate.py",
+      "publishedBytes": 5883,
+      "publishedSHA256": "5077decd4320dbdc53fa796544adce6b8532f70d1e204bd61a3015fe1e1c3fe0",
+      "representation": "unchanged-original",
+      "sourceRole": "program",
+      "prior42ExactBodyReuse": false
+    },
+    {
+      "originalRelativePath": "install/stage_exact_completed_member46_release.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-original-context46-install-source01/stage_exact_completed_member46_release.candidate.py",
+      "originalBytes": 10182,
+      "originalSHA256": "51f14e0fe17f6ff3cf7bd3fd81a809673323be70802ced3a6cd4639dda9e8a58",
+      "publishedRelativePath": "install/stage_exact_completed_member46_release.candidate.py",
+      "publishedBytes": 10182,
+      "publishedSHA256": "51f14e0fe17f6ff3cf7bd3fd81a809673323be70802ced3a6cd4639dda9e8a58",
+      "representation": "unchanged-original",
+      "sourceRole": "program",
+      "prior42ExactBodyReuse": false
+    },
+    {
+      "originalRelativePath": "install/run_root_install46_phase_window.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-original-context46-install-source01/run_root_install46_phase_window.candidate.py",
+      "originalBytes": 6875,
+      "originalSHA256": "a5bcf20cd7d1e6a6e154d0cb7d8e3b328f5a141cc055de00aaa45fcde4f74928",
+      "publishedRelativePath": "install/run_root_install46_phase_window.candidate.py",
+      "publishedBytes": 6875,
+      "publishedSHA256": "a5bcf20cd7d1e6a6e154d0cb7d8e3b328f5a141cc055de00aaa45fcde4f74928",
+      "representation": "unchanged-original",
+      "sourceRole": "program",
+      "prior42ExactBodyReuse": false
+    },
+    {
+      "originalRelativePath": "build/build_member_original_context46.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-club-session-envelope46-source01/build_member_original_context46.candidate.py",
+      "originalBytes": 9400,
+      "originalSHA256": "602878e276420a6ae6c4081ac6eafd28c3aac558dfb468afd110d80b04910a97",
+      "publishedRelativePath": "build/build_member_original_context46.candidate.py",
+      "publishedBytes": 9400,
+      "publishedSHA256": "602878e276420a6ae6c4081ac6eafd28c3aac558dfb468afd110d80b04910a97",
+      "representation": "unchanged-original",
+      "sourceRole": "program",
+      "prior42ExactBodyReuse": false
+    },
+    {
+      "originalRelativePath": "build/run_root_build46_window.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-club-session-envelope46-source01/run_root_build46_window.candidate.py",
+      "originalBytes": 5477,
+      "originalSHA256": "fddcf2ec3bb51a7c9423653ecae578afd8defa47264b1cb684a7a0fb4dd67728",
+      "publishedRelativePath": "build/run_root_build46_window.candidate.py",
+      "publishedBytes": 5477,
+      "publishedSHA256": "fddcf2ec3bb51a7c9423653ecae578afd8defa47264b1cb684a7a0fb4dd67728",
+      "representation": "unchanged-original",
+      "sourceRole": "program",
+      "prior42ExactBodyReuse": false
+    },
+    {
+      "originalRelativePath": "build/BUILD46_REVIEW_PROPOSAL.json",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-club-session-envelope46-source01/BUILD46_REVIEW_PROPOSAL.json",
+      "originalBytes": 1187,
+      "originalSHA256": "c509f566819917cdb02f30b4671ee1b7f3f0e11fe9b2a19bacb7288172801f64",
+      "publishedRelativePath": "build/BUILD46_REVIEW_PROPOSAL.json",
+      "publishedBytes": 1187,
+      "publishedSHA256": "c509f566819917cdb02f30b4671ee1b7f3f0e11fe9b2a19bacb7288172801f64",
+      "representation": "unchanged-original",
+      "sourceRole": "build-source-metadata",
+      "prior42ExactBodyReuse": false
+    },
+    {
+      "originalRelativePath": "build/GUARD_BUILD_SOURCE_PROVENANCE.json",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-club-session-envelope46-source01/GUARD_BUILD_SOURCE_PROVENANCE.json",
+      "originalBytes": 4232,
+      "originalSHA256": "685f07f13f4dd90c34c8c153b16f60490f65a57fe2d22935cb89dde6ae95d30b",
+      "publishedRelativePath": "build/GUARD_BUILD_SOURCE_PROVENANCE.json",
+      "publishedBytes": 4232,
+      "publishedSHA256": "685f07f13f4dd90c34c8c153b16f60490f65a57fe2d22935cb89dde6ae95d30b",
+      "representation": "unchanged-original",
+      "sourceRole": "build-source-metadata",
+      "prior42ExactBodyReuse": false
+    }
+  ],
+  "applicationSourceReference": {
+    "commit": "ef3a04f101ba675028e97d5fcf95848e3883ad4b",
+    "path": "services/member-identity/provider-account/source46/common/common-host.main-context46.candidate.cjs",
+    "sha256": "0fded17840166bb8b992bb3e1708a4c566cb56f182cd239d44f2327f874c8e7c"
+  },
+  "previous42SourceVersionsManifestSHA256": "339f2b97dedfddf9598c866fb078c47fd0ecc702d302e60abd10f2b059b0ced1",
+  "exactPrior42BodyReuses": 4,
+  "source42PreservedUnchanged": true,
+  "privateInputBodiesIncluded": false,
+  "sourceProgramsExecutedDuringPreservation": false,
+  "runtimeAdoptionClaim": false,
+  "wholeRuntimeRecoveryClaim": false,
+  "newBlanketLicenseGrant": false,
+  "sourceMetadataProposalsAreHistoricalNotLiveApproval": true
+}

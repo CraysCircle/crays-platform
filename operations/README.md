@@ -18,3 +18,9 @@ See [provenance](source-index.json) for exact source hashes. No application lice
 - [Qlo/Work runtime family](qlo-work-family/README.md): exact current-family and same-intent revisions, original source patches, historical wrapper and both binding-check source versions; the storage guard is reused and runtime implementation stays in the service directory.
 
 - [Club/Member origin35](member-origin35/README.md): exact source capture, bounded build and Common-shell stage/adoption controller source; the browser module itself is separately preserved under modules/club-member.
+
+## Member/Main/Common Source46 operating sources
+
+The [Source46 build and installation archive](member-original-context46/README.md) preserves fifteen unchanged original files: thirteen operating programs and two build-source metadata inputs. It links the separately preserved Member/Common application revisions and keeps the earlier Source42 bodies identifiable.
+
+The archive records original resource fences, source guards and protected-input prerequisites. Publication executes none of these programs and is not private runtime adoption or a new production acceptance result.

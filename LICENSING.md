@@ -36,3 +36,7 @@ The preserved [crays_team_scope 0.1.0 source](services/frappe/custom-apps/crays_
 ## Member/Main and Common Source46 candidate
 
 The [Source46 provenance and licensing notes](services/member-identity/provider-account/source46/README.md#licensing-and-provenance) identify the fourteen selected application, Common, test and patch revisions, including two exact-recovery templates protecting internal account bindings. The original Source42 sources remain retained. The separately scoped Source42 operating-wrapper grant does not license this complete application or Common host; no blanket grant or new right over imported dependencies is added by this archive. Applicable original component notices and file-specific grants remain authoritative, and complete dependency/runtime and rights reconciliation remains open.
+
+## Source46 operating source provenance
+
+The [Source46 operating-source notes](operations/member-original-context46/README.md#licensing-and-notices) preserve fifteen original build/install/proposal/guard files and the exact Source42 reuse relationships. Original inline notices are retained; public provider endpoints, dependency names and protected-input path references are source context rather than copies of those private inputs. No blanket grant over the operating programs, applications, imports or frameworks is added. The separate Source42 grants remain file-specific, and full dependency/runtime and rights reconciliation remains open.
