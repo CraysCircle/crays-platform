@@ -12,7 +12,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/@auth0/nextjs-auth0/-/nextjs-auth0-4.24.0.tgz",
       "integrity": "sha512-5rEWJjJ+axhlJONtMp04BvCQtmLVMYBTvxAH86v9GpvXPvZgk8H+vKlYEPb67j/pdYOzdGEknHYg582asIPLig==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/@auth0/nextjs-auth0/4.24.0/package.json",
+        "bytes": 3260,
+        "sha256": "8beda27b39231214952dec5fb500b31026a847464a637ab36e0ca8a7385b051e",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/@auth0/nextjs-auth0/4.24.0/LICENSE",
+          "bytes": 1116,
+          "sha256": "3779c39bada8eef82f985db06ee63216b37c9514a5b071a0b2956d237f80466b",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "@axe-core/playwright",
@@ -21,7 +41,27 @@
       "licenseMetadata": "MPL-2.0",
       "resolved": "https://registry.npmjs.org/@axe-core/playwright/-/playwright-4.12.1.tgz",
       "integrity": "sha512-rMd7xriptqKpP+w5265i4Hdkv2X5kbu6uiBi/B2I7uf3hieRBM3qDCfaKPtxfiYb2mKXfF+yLODJwIx+Jv1GDw==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/@axe-core/playwright/4.12.1/package.json",
+        "bytes": 2217,
+        "sha256": "c3e69bcde1800e1e748023ce6ed68018b1ce48714160441b7ffb7e1a6f2bd2a2",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/@axe-core/playwright/4.12.1/LICENSE",
+          "bytes": 15920,
+          "sha256": "812e9d96e900a093ae4d1d3f22c5f82f568a0a0461c3007a99d00573d41c5461",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "@dnd-kit/core",
@@ -30,7 +70,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/@dnd-kit/core/-/core-6.3.1.tgz",
       "integrity": "sha512-xkGBRQQab4RLwgXxoqETICr6S5JlogafbhNsidmrkVv2YRs5MLwpjoF2qpiGjQt8S9AoxtIV603s0GIUpY5eYQ==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/@dnd-kit/core/6.3.1/package.json",
+        "bytes": 1030,
+        "sha256": "4da9a60c80aa9c0564d1f31ba1502058f2b84240842269c6d54801c8d3175d77",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/@dnd-kit/core/6.3.1/LICENSE",
+          "bytes": 1075,
+          "sha256": "537607e3f1533ad2c5b12978967f5ab27f34ffb7e626e321017a7ccca6cc24ff",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "@dnd-kit/sortable",
@@ -39,7 +99,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/@dnd-kit/sortable/-/sortable-10.0.0.tgz",
       "integrity": "sha512-+xqhmIIzvAYMGfBYYnbKuNicfSsk4RksY2XdmJhT+HAC01nix6fHCztU68jooFiMUB01Ky3F0FyOvhG/BZrWkg==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/@dnd-kit/sortable/10.0.0/package.json",
+        "bytes": 1007,
+        "sha256": "c3b9c43549eb627d12edae5d2e1ae38e334fee774ddfe20acf1008b915f0d565",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/@dnd-kit/core/6.3.1/LICENSE",
+          "bytes": 1075,
+          "sha256": "537607e3f1533ad2c5b12978967f5ab27f34ffb7e626e321017a7ccca6cc24ff",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "@dnd-kit/utilities",
@@ -48,7 +128,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/@dnd-kit/utilities/-/utilities-3.2.2.tgz",
       "integrity": "sha512-+MKAJEOfaBe5SmV6t34p80MMKhjvUz0vRrvVJbPT0WElzaOJ/1xs+D+KDv+tD/NE5ujfrChEcshd4fLn0wpiqg==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/@dnd-kit/utilities/3.2.2/package.json",
+        "bytes": 896,
+        "sha256": "c1f7cb1b258509c1fdccf9b23d072f0b81fc56498be0a6334189342b5cb8a477",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/@dnd-kit/core/6.3.1/LICENSE",
+          "bytes": 1075,
+          "sha256": "537607e3f1533ad2c5b12978967f5ab27f34ffb7e626e321017a7ccca6cc24ff",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "@escape.tech/graphql-armor-cost-limit",
@@ -57,7 +157,16 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/@escape.tech/graphql-armor-cost-limit/-/graphql-armor-cost-limit-2.4.3.tgz",
       "integrity": "sha512-fLZTlJjrjinpNhbv5VP6f8Ce4MiQzbcHtCNaCPVaHqArTEbN7vDnlVLiH+VcmZBmOwU6Si97lKdlOXWNgB5ytw==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/@escape.tech/graphql-armor-cost-limit/2.4.3/package.json",
+        "bytes": 1164,
+        "sha256": "3ce7e0119fb319161fa7a574fb2fa2cc44d59baf9126c8bb8ade274a869f4145",
+        "kind": "new-repository-file"
+      },
+      "originalNoticeTexts": [],
+      "originalRootNoticeTextLocated": false
     },
     {
       "package": "@escape.tech/graphql-armor-max-depth",
@@ -66,7 +175,16 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/@escape.tech/graphql-armor-max-depth/-/graphql-armor-max-depth-2.4.2.tgz",
       "integrity": "sha512-J9fbW1+W4u3GAcf19wwS0zrNGICCbWn/glvopCoC11Ga0reXvGwgr8EcyuHjTFLL7+pPvWAeVhP4qo6hybcB9w==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/@escape.tech/graphql-armor-max-depth/2.4.2/package.json",
+        "bytes": 1169,
+        "sha256": "f39718cc0f7cd4260e32fe1af364e4ced7b9a77d0f2c5740b51bcc7df8004d66",
+        "kind": "new-repository-file"
+      },
+      "originalNoticeTexts": [],
+      "originalRootNoticeTextLocated": false
     },
     {
       "package": "@escape.tech/graphql-armor-max-tokens",
@@ -75,7 +193,16 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/@escape.tech/graphql-armor-max-tokens/-/graphql-armor-max-tokens-2.5.1.tgz",
       "integrity": "sha512-XHui2npOz7Jn8shBZqfyeocWhdl0pUbKiaWmvbF+5rvNoRIGMgwMtaVhmf9ia8oGGbd+cx5EYo1v+oKHzIm79w==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/@escape.tech/graphql-armor-max-tokens/2.5.1/package.json",
+        "bytes": 1205,
+        "sha256": "2d7718f22de8a77614aec55dc6a80a6b037b02df8117cb6acd02f5a6a413b259",
+        "kind": "new-repository-file"
+      },
+      "originalNoticeTexts": [],
+      "originalRootNoticeTextLocated": false
     },
     {
       "package": "@graphql-yoga/plugin-persisted-operations",
@@ -84,7 +211,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/@graphql-yoga/plugin-persisted-operations/-/plugin-persisted-operations-3.21.2.tgz",
       "integrity": "sha512-ahx/TlVxax9JZLfZa7GzzDuAx2LOEoSDqB4AsaRTXyjg4EaLYSzLlUnJKpDg3opNKGZMjMGk63lvMrhUjdAj0w==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/@graphql-yoga/plugin-persisted-operations/3.21.2/package.json",
+        "bytes": 1155,
+        "sha256": "58751ced408f11f25cc0ecb52cdfe7cb6daba08bb7653ef67a99fca58619cacd",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/@graphql-yoga/plugin-persisted-operations/3.21.2/LICENSE",
+          "bytes": 1132,
+          "sha256": "df11c053f884c88a2b405eed9cae822e206c81c4fdbc3c68e9f016ae46f8242c",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "@hookform/resolvers",
@@ -93,7 +240,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/@hookform/resolvers/-/resolvers-5.4.0.tgz",
       "integrity": "sha512-EIsqr/t/qbinPIhGjMdtvutIN1Kk4uwbROE9/UQ93CAVGR7GkA7Y92+fX80OzXi/OB67jVFYwKGO1WzkxmkFZw==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/@hookform/resolvers/5.4.0/package.json",
+        "bytes": 12570,
+        "sha256": "4c94b8c3b12469f53486ca275d279642b8745007d2d80ce060d9f1dc407483b3",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/@hookform/resolvers/5.4.0/LICENSE",
+          "bytes": 1080,
+          "sha256": "e8eeb472f0a5889c2c51625b86a3f9b8630680adb9f49a125352e2e426392780",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "@noble/curves",
@@ -102,7 +269,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/@noble/curves/-/curves-2.2.0.tgz",
       "integrity": "sha512-T/BoHgFXirb0ENSPBquzX0rcjXeM6Lo892a2jlYJkqk83LqZx0l1Of7DzlKJ6jkpvMrkHSnAcgb5JegL8SeIkQ==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/@noble/curves/2.2.0/package.json",
+        "bytes": 3243,
+        "sha256": "b305a9a8e20df7767458bff98aafb7423cb39e00f543fffea5a9e0b88e0ada9e",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/@noble/curves/2.2.0/LICENSE",
+          "bytes": 1109,
+          "sha256": "4f221aee6e072336700c408c68ab3b96a3fc09f6aebe6f48f1bd99e5ef13faec",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "@playwright/test",
@@ -111,7 +298,36 @@
       "licenseMetadata": "Apache-2.0",
       "resolved": "https://registry.npmjs.org/@playwright/test/-/test-1.61.1.tgz",
       "integrity": "sha512-8nKv6+0RJSL9FE4jYOEGXnPeM/Hg12qZpmqzZjRh3qM0Y7c3z1mrOTfFLids72RDQYVh9WpLEfR5WdpNX4fkig==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/@playwright/test/1.61.1/package.json",
+        "bytes": 754,
+        "sha256": "9d8556509e073169efec663b7f71c13f17d7002b307d00d48bf88ee91c387f3e",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/@playwright/test/1.61.1/LICENSE",
+          "bytes": 11601,
+          "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        },
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/@playwright/test/1.61.1/NOTICE",
+          "bytes": 254,
+          "sha256": "6d602191187b35b9b01d2cffa01c8469c2c8d9de8a96f1bf868e0f264f51c81d",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "@refinedev/core",
@@ -120,7 +336,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/@refinedev/core/-/core-5.0.12.tgz",
       "integrity": "sha512-9y5Bi9Lb7XyJmM55b8rCeBTDRCBU41p47OymJldasLfrtpUm2EwI+27DjjNpHTOugymiZsIbLlPtHCPQIXBHcg==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/@refinedev/core/5.0.12/package.json",
+        "bytes": 2449,
+        "sha256": "3924e54115c21c14a6514fff1324c20e298763cb947a149b7525fb1635aaeb12",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/@refinedev/core/5.0.12/LICENSE",
+          "bytes": 1079,
+          "sha256": "ae616936d77df09838b97cb6d4a41921bcd47b676fe9ce623a5ee4cdbb1db91f",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "@refinedev/nextjs-router",
@@ -129,7 +365,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/@refinedev/nextjs-router/-/nextjs-router-7.0.5.tgz",
       "integrity": "sha512-Z724KBsnEtESGYZMntXEhXr9gmQD/kD6s7poeMY4HeLtWLfNyJPdopHntD4BYMU1ApZweDBJeSqEuWjoL3/x5A==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/@refinedev/nextjs-router/7.0.5/package.json",
+        "bytes": 2924,
+        "sha256": "566028c2a0551919a4d241baa5d1dbec2a9af77c85b6a6d895510f63d7c2509b",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/@refinedev/core/5.0.12/LICENSE",
+          "bytes": 1079,
+          "sha256": "ae616936d77df09838b97cb6d4a41921bcd47b676fe9ce623a5ee4cdbb1db91f",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "@storybook/addon-a11y",
@@ -138,7 +394,31 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/@storybook/addon-a11y/-/addon-a11y-10.5.0.tgz",
       "integrity": "sha512-AguqTsYS2NX20AF1vWt6IonbkpMXur30/dAOOYltbEW7uKmPxBNtjuiBmYB2WI4aFN4r8jje4bbDGk/Yfq58hQ==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/@storybook/addon-a11y/10.5.0/package.json",
+        "bytes": 2176,
+        "sha256": "e54f016ad981e65a0f57ad34e0e57f7a929f0fdb42d5d293f42b5389b10c7f94",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/upstream/storybook/9dafcd22ed55947bc4c2fa1d5066b552baa0ebf4/LICENSE",
+          "bytes": 1077,
+          "sha256": "bc90586179d44dcb313a9a289d687a2f26226303b2066bd21dbefd2378e894e5",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "previously-qualified-matching-version-upstream-root",
+          "upstreamEvidence": {
+            "commit": "9dafcd22ed55947bc4c2fa1d5066b552baa0ebf4",
+            "url": "https://raw.githubusercontent.com/storybookjs/storybook/9dafcd22ed55947bc4c2fa1d5066b552baa0ebf4/LICENSE"
+          }
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "@storybook/nextjs-vite",
@@ -147,7 +427,31 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/@storybook/nextjs-vite/-/nextjs-vite-10.5.0.tgz",
       "integrity": "sha512-r0KE5il9HjpmA6zdCSQtWqZZZvYPsj9ov2kVZmicn6aWgHFqorCPnM5TftbR2VF3WWYel4OjPqCo7DCWOJjkLQ==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/@storybook/nextjs-vite/10.5.0/package.json",
+        "bytes": 3764,
+        "sha256": "ff11c6167ad7199eec9826baa3131886e4de6c5e9df71019c904ab417c41a268",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/upstream/storybook/9dafcd22ed55947bc4c2fa1d5066b552baa0ebf4/LICENSE",
+          "bytes": 1077,
+          "sha256": "bc90586179d44dcb313a9a289d687a2f26226303b2066bd21dbefd2378e894e5",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "previously-qualified-matching-version-upstream-root",
+          "upstreamEvidence": {
+            "commit": "9dafcd22ed55947bc4c2fa1d5066b552baa0ebf4",
+            "url": "https://raw.githubusercontent.com/storybookjs/storybook/9dafcd22ed55947bc4c2fa1d5066b552baa0ebf4/LICENSE"
+          }
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "@tailwindcss/postcss",
@@ -156,7 +460,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/@tailwindcss/postcss/-/postcss-4.3.2.tgz",
       "integrity": "sha512-rjVWYCa7Ngbi5AarT6k8TkxUG3Wl1QKzHdIZVsjZSzf36Jmo2IKZt/NHRAwly8oDkbBOH0YTu+CHuf9jPxMc+g==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/@tailwindcss/postcss/4.3.2/package.json",
+        "bytes": 1296,
+        "sha256": "c208667cb39ba99dc29e4124d6dbfc86b39e778399f4913eb9304ef785d86882",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/@tailwindcss/postcss/4.3.2/LICENSE",
+          "bytes": 1071,
+          "sha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "@tanstack/react-query",
@@ -165,7 +489,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/@tanstack/react-query/-/react-query-5.101.2.tgz",
       "integrity": "sha512-seDkr6kzGzX1okaaTtZPtgA688CDPlXUz1C6xSg0ESqn04Vuc8tlrYms1s3de+znBqhPVxFRfpAfUf+6XvfPWg==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/@tanstack/react-query/5.101.2/package.json",
+        "bytes": 3106,
+        "sha256": "d9ebc9d11e76bdb5ca6c8929bf0a11fda60ce66bf238c6b6aed4809d070cc4bf",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/@tanstack/react-query/5.101.2/LICENSE",
+          "bytes": 1079,
+          "sha256": "a405ee70c632bb938acb7ac5f210e814409b3760ea9d2329d8ed8ffcfd11a0e7",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "@tanstack/react-table",
@@ -174,7 +518,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/@tanstack/react-table/-/react-table-8.21.3.tgz",
       "integrity": "sha512-5nNMTSETP4ykGegmVkhjcS8tTLW6Vl4axfEGQN3v0zdHYbK4UfoqfPChclTrJ4EoK9QynqAu9oUf8VEmrpZ5Ww==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/@tanstack/react-table/8.21.3/package.json",
+        "bytes": 1244,
+        "sha256": "06484aa892e133fd488097c4aa74f91452b73338a9115bc6c8939def748e8ce0",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/@tanstack/react-table/8.21.3/LICENSE",
+          "bytes": 1071,
+          "sha256": "9db3f8ddd7031ab264b99bec49c221155d0c8649b53dd4aa007f2041d36cdf5f",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "@types/node",
@@ -183,7 +547,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/@types/node/-/node-20.19.43.tgz",
       "integrity": "sha512-6oYBAi5ikg4Pl+kGsoYtawUMBT2zZMCvPNF7pVLnHZfd1zf38DRiWn/gT01RYCdUqkv7Fhr+C9ot4/tb+2sVvA==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/@types/node/20.19.43/package.json",
+        "bytes": 4128,
+        "sha256": "30af579da31ec3b497b9405bed1592a8c041f15c8e25db3a010e3c67f765ab41",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/@types/node/20.19.43/LICENSE",
+          "bytes": 1141,
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "@types/pg",
@@ -192,7 +576,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/@types/pg/-/pg-8.20.0.tgz",
       "integrity": "sha512-bEPFOaMAHTEP1EzpvHTbmwR8UsFyHSKsRisLIHVMXnpNefSbGA1bD6CVy+qKjGSqmZqNqBDV2azOBo8TgkcVow==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/@types/pg/8.20.0/package.json",
+        "bytes": 1089,
+        "sha256": "df5092354fcbbf4acc0f70e0d2885ddd0ac76c21a57bb598d4b41a4ca6832d38",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/@types/node/20.19.43/LICENSE",
+          "bytes": 1141,
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "@types/react",
@@ -201,7 +605,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/@types/react/-/react-19.2.17.tgz",
       "integrity": "sha512-MXfmqaVPEVgkBT/aY0aGCkRWWtByiYQXo3xdQ8r5RzuFrPiRn8Gar2tQdXSUQ2GKV3bkXckek89V8wQBY2Q/Aw==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/@types/react/19.2.17/package.json",
+        "bytes": 6109,
+        "sha256": "36496fc09a9dcf31b0ca969ce5677c9ce9ebb5c89da9bd6212e0c89b6fae3f88",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/@types/node/20.19.43/LICENSE",
+          "bytes": 1141,
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "@types/react-dom",
@@ -210,7 +634,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-19.2.3.tgz",
       "integrity": "sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/@types/react-dom/19.2.3/package.json",
+        "bytes": 3383,
+        "sha256": "bf90986beaec5f757c164bf1d374f3038dc41b0b06673de4a55fd975d1e5deca",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/@types/node/20.19.43/LICENSE",
+          "bytes": 1141,
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "class-variance-authority",
@@ -219,7 +663,27 @@
       "licenseMetadata": "Apache-2.0",
       "resolved": "https://registry.npmjs.org/class-variance-authority/-/class-variance-authority-0.7.1.tgz",
       "integrity": "sha512-Ka+9Trutv7G8M6WT6SeiRWz792K5qEqIGEGzXKhAE6xOWAY6pPH8U+9IY3oCMv6kqTmLsv7Xh/2w2RigkePMsg==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/class-variance-authority/0.7.1/package.json",
+        "bytes": 1752,
+        "sha256": "f487885eb010b36aec829ab8fb5fc845918006c4633e3c88c750e73bd35c6381",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/class-variance-authority/0.7.1/LICENSE",
+          "bytes": 10753,
+          "sha256": "0ccbf956cffc8dcf515809433cb5242ee67c94513d46e48c261d68d0880de406",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "clsx",
@@ -228,7 +692,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz",
       "integrity": "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/clsx/2.1.1/package.json",
+        "bytes": 1192,
+        "sha256": "a5e616b9883177fb47c1fca22b6a4ab42be1c3ed6ffae8595a5c7d88630eeec2",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/clsx/2.1.1/license",
+          "bytes": 1104,
+          "sha256": "9a9edad7baae52622bddf3c15b2ef8a33d2c89f2d25408ad13e8a7481c6b0c97",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "dataloader",
@@ -237,7 +721,26 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/dataloader/-/dataloader-2.2.3.tgz",
       "integrity": "sha512-y2krtASINtPFS1rSDjacrFgn1dcUuoREVabwlOGOe4SdxenREqwjwjElAdwvbGM7kgZz9a3KVicWR7vcz8rnzA==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/dataloader/2.2.3/package.json",
+        "bytes": 1986,
+        "sha256": "73f4024c0bfa4b40926fcc49e1f3ca78440c1c638437543f2c1ba00198d858ce",
+        "kind": "new-repository-file"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/graphql/16.14.2/LICENSE",
+          "bytes": 1072,
+          "sha256": "35a11da7e877009ddc57405844209908cfc567adda0ec1daf410368c9f5b0d01",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "drizzle-kit",
@@ -246,7 +749,17 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/drizzle-kit/-/drizzle-kit-0.31.10.tgz",
       "integrity": "sha512-7OZcmQUrdGI+DUNNsKBn1aW8qSoKuTH7d0mYgSP8bAzdFzKoovxEFnoGQp2dVs82EOJeYycqRtciopszwUf8bw==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/drizzle-kit/0.31.10/package.json",
+        "bytes": 3683,
+        "sha256": "c258e6134d938d6d718448274fd3e89ed9c05aeca7bb6bc7df22c89d943615c8",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [],
+      "originalRootNoticeTextLocated": false
     },
     {
       "package": "drizzle-orm",
@@ -255,7 +768,31 @@
       "licenseMetadata": "Apache-2.0",
       "resolved": "https://registry.npmjs.org/drizzle-orm/-/drizzle-orm-0.45.2.tgz",
       "integrity": "sha512-kY0BSaTNYWnoDMVoyY8uxmyHjpJW1geOmBMdSSicKo9CIIWkSxMIj2rkeSR51b8KAPB7m+qysjuHme5nKP+E5Q==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/drizzle-orm/0.45.2/package.json",
+        "bytes": 177277,
+        "sha256": "9fd30ce718965c19178ac6936462b77017f1fffe56865124d0cfe55850de09ff",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/upstream/drizzle-orm/273c78071d4841b497f5144734b38294df7ec64b/LICENSE",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "previously-qualified-matching-version-upstream-root",
+          "upstreamEvidence": {
+            "commit": "273c78071d4841b497f5144734b38294df7ec64b",
+            "url": "https://raw.githubusercontent.com/drizzle-team/drizzle-orm/273c78071d4841b497f5144734b38294df7ec64b/LICENSE"
+          }
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "eslint",
@@ -264,7 +801,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/eslint/-/eslint-9.39.4.tgz",
       "integrity": "sha512-XoMjdBOwe/esVgEvLmNsD3IRHkm7fbKIUGvrleloJXUZgDHig2IPWNniv+GwjyJXzuNqVjlr5+4yVUZjycJwfQ==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/eslint/9.39.4/package.json",
+        "bytes": 7225,
+        "sha256": "80a7caf2adf34963e47b32a1e75157de6d6814c3ae5a9d90358ddd9364833fe7",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/eslint/9.39.4/LICENSE",
+          "bytes": 1094,
+          "sha256": "3b6be04f862a077a4b97929dbf247299360824d9365f8603c263769303ace18c",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "eslint-config-next",
@@ -273,7 +830,31 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/eslint-config-next/-/eslint-config-next-16.2.10.tgz",
       "integrity": "sha512-HSybLOY0QKf39i4FWUqPN0xWiNDi6A6UqJmZtgDkS3zMqjXTqULvj/sueXx3cdCG0mVG+qH6k5/qdegklH1d1w==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/eslint-config-next/16.2.10/package.json",
+        "bytes": 1673,
+        "sha256": "cf1c525e38c14a59b00bec24c495e24e7b41e83d274075f0433b43034974b409",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/upstream/eslint-config-next/9dadfd693c5d26bb3c85d1c17802f49dde244b3e/license.md",
+          "bytes": 1079,
+          "sha256": "ee765244e2d59f5234d474f62e0766fa0c8b99af967fdd4c0cb8dcb0c76ea224",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "previously-qualified-matching-version-upstream-root",
+          "upstreamEvidence": {
+            "commit": "9dadfd693c5d26bb3c85d1c17802f49dde244b3e",
+            "url": "https://raw.githubusercontent.com/vercel/next.js/9dadfd693c5d26bb3c85d1c17802f49dde244b3e/license.md"
+          }
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "graphql",
@@ -282,7 +863,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/graphql/-/graphql-16.14.2.tgz",
       "integrity": "sha512-Chq1s4CY7jmh8gO2qvLIJyfCDIN+EHLFW/9iShnp1z8FjBQMoodWP1kDC36VAMXXIvAjj4ARa7ntfAV2BrjsbA==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/graphql/16.14.2/package.json",
+        "bytes": 777,
+        "sha256": "d936a7b80542de54dd1323cd20c5e3481a753e7cc00dac6191d3ff8a3ed187d3",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/graphql/16.14.2/LICENSE",
+          "bytes": 1072,
+          "sha256": "35a11da7e877009ddc57405844209908cfc567adda0ec1daf410368c9f5b0d01",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "graphql-yoga",
@@ -291,7 +892,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/graphql-yoga/-/graphql-yoga-5.21.2.tgz",
       "integrity": "sha512-IIRF/3xtjj2D6caAWL9177hQ8tV3mWB3hve1GRnz7njPhQ3iY1jFtSp98fNGv0yV9kaPh9kKQ8JWdJZnedVmDw==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/graphql-yoga/5.21.2/package.json",
+        "bytes": 1572,
+        "sha256": "3c6550d2c1618370744e648f8b55f7aaca27b10ad82da1a4044ac9f7090ac9eb",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/@graphql-yoga/plugin-persisted-operations/3.21.2/LICENSE",
+          "bytes": 1132,
+          "sha256": "df11c053f884c88a2b405eed9cae822e206c81c4fdbc3c68e9f016ae46f8242c",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "ioredis",
@@ -300,7 +921,25 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/ioredis/-/ioredis-5.11.1.tgz",
       "integrity": "sha512-ehuGcf94bQXhfagULNXrJdfnWO38v070jxSx/qE87Kjzmu2fU7ro5EFAb+OPituLqgfyuQaym5DlrNydW2sJ9A==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/ioredis/5.11.1/package.json",
+        "bytes": 3067,
+        "sha256": "aab3b06ddef6e6754aaefc35ebce7c0cb76b4d0237d08c965dc21d36d509d89d",
+        "kind": "new-repository-file"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/ioredis/5.11.1/LICENSE",
+          "bytes": 1080,
+          "sha256": "7c1ed12e0891c08e5ed645b684235f13cdcefcce83000da91568375231e58469",
+          "kind": "new-repository-file",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "jose",
@@ -309,7 +948,25 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/jose/-/jose-6.2.3.tgz",
       "integrity": "sha512-YYVDInQKFJfR/xa3ojUTl8c2KoTwiL1R5Wg9YCydwH0x0B9grbzlg5HC7mMjCtUJjbQ/YnGEZIhI5tCgfTb4Hw==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/jose/6.2.3/package.json",
+        "bytes": 5633,
+        "sha256": "cbd17f658085419b9ee540e78e40cbe4d4f7916a51578af1d650c84d49525fdf",
+        "kind": "new-repository-file"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/jose/6.2.3/LICENSE.md",
+          "bytes": 1079,
+          "sha256": "8078b0829d6c3e9ecde2f003e1966e4cad3efc6e7a640efbab0313cc166b1af1",
+          "kind": "new-repository-file",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "lucide-react",
@@ -318,7 +975,27 @@
       "licenseMetadata": "ISC",
       "resolved": "https://registry.npmjs.org/lucide-react/-/lucide-react-1.23.0.tgz",
       "integrity": "sha512-38BpJcD0JhFosxHApP/BYsBetLpQFRoTRzEzstM/XCc3jsAG7wqaY1lgVwxiUe3xqYE+lNxo2PkCmYwXWrwwIw==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/lucide-react/1.23.0/package.json",
+        "bytes": 2382,
+        "sha256": "89b273b576398863371027110beb8ecef8c822dd611c01f34adab5fe503e2e69",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/lucide-react/1.23.0/LICENSE",
+          "bytes": 3208,
+          "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "next",
@@ -327,7 +1004,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/next/-/next-16.2.10.tgz",
       "integrity": "sha512-2som5AVXb3kE6Yjine3/mNbBayYF58eguBWIVVUdr1y/L426xyVEgYxgBG+1QC34P2x5E+tcDup6XkuOAX3dCA==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/next/16.2.10/package.json",
+        "bytes": 3128,
+        "sha256": "57f3d18dd1fbfd586762782d5ab66ba0862380bcdbeec633a5cbe124a1b365ee",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/next/16.2.10/license.md",
+          "bytes": 1079,
+          "sha256": "ee765244e2d59f5234d474f62e0766fa0c8b99af967fdd4c0cb8dcb0c76ea224",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "pg",
@@ -336,7 +1033,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/pg/-/pg-8.22.0.tgz",
       "integrity": "sha512-8wih1vVIBMxoUM2oB4soJsD9tDnDpLv4OXBJ+EJzFsvycD+lfyIreC2gGHq78f8jbLLt+bvlPTFdFZfJkOuzAA==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/pg/8.22.0/package.json",
+        "bytes": 1668,
+        "sha256": "bab5faf4410151a463078fffa326d10979150bfc330f0a29bd08948378ed3421",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/pg/8.22.0/LICENSE",
+          "bytes": 1077,
+          "sha256": "192b8f5c96900f04a1271dec39688655d7416c1c6ea84a508e18b50d2b6751f3",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "radix-ui",
@@ -345,7 +1062,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/radix-ui/-/radix-ui-1.6.2.tgz",
       "integrity": "sha512-OwYUjzMwiInCUxgAWpPsavXC3Kh4iyi/49uU1/qZTG3RQDlvegyk1GOMiGvSkjua1RDb3JD3fo3eroL9FV4GQw==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/radix-ui/1.6.2/package.json",
+        "bytes": 4409,
+        "sha256": "11468f5960f30725657677dc73d948f448b35e4ed252a8c5d40f9158f1fafda8",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/radix-ui/1.6.2/LICENSE",
+          "bytes": 1063,
+          "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "react",
@@ -354,7 +1091,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/react/-/react-19.2.4.tgz",
       "integrity": "sha512-9nfp2hYpCwOjAN+8TZFGhtWEwgvWHXqESH8qT89AT/lWklpLON22Lc8pEtnpsZz7VmawabSU0gCjnj8aC0euHQ==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/react/19.2.4/package.json",
+        "bytes": 1248,
+        "sha256": "e60b92f6031f023907bbfab8f96e63e44307776ec1488f310ba61d41b8cda8cc",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/react-dom/19.2.4/LICENSE",
+          "bytes": 1088,
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "react-dom",
@@ -363,7 +1120,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-19.2.4.tgz",
       "integrity": "sha512-AXJdLo8kgMbimY95O2aKQqsz2iWi9jMgKJhRBAxECE4IFxfcazB2LmzloIoibJI3C12IlY20+KFaLv+71bUJeQ==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/react-dom/19.2.4/package.json",
+        "bytes": 3063,
+        "sha256": "b8448092689c7e6191595a98526ced808288f35138d97fbce5801a94922e3c36",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/react-dom/19.2.4/LICENSE",
+          "bytes": 1088,
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "react-hook-form",
@@ -372,7 +1149,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/react-hook-form/-/react-hook-form-7.81.0.tgz",
       "integrity": "sha512-ocbmr2p5KBMoAfj4WCUvped33lVi1Kd5DuDUvQDnB6VEAacOjPI/jMbtDdbhco4y9ct4xUuCmMY0b/C9L0QHjw==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/react-hook-form/7.81.0/package.json",
+        "bytes": 4537,
+        "sha256": "dcfdf6c3072708e18f66d7f06aeb8768f5780ba8c6b2c03ddf1b45b104f60b7b",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/@hookform/resolvers/5.4.0/LICENSE",
+          "bytes": 1080,
+          "sha256": "e8eeb472f0a5889c2c51625b86a3f9b8630680adb9f49a125352e2e426392780",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "storybook",
@@ -381,7 +1178,31 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/storybook/-/storybook-10.5.0.tgz",
       "integrity": "sha512-dRhM/kSSvHQR8DmZO41v5sJuz9U6zDjjR2gRBTgZN2RBSXbmF0Brvgszrvvxyx2VfxuYKzhB+xumKwWkwlBtig==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/storybook/10.5.0/package.json",
+        "bytes": 13973,
+        "sha256": "3a2f8e650b5d922a410f15e45bdf9aeda0bcbabbd580afa8fcad190c25fea525",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/upstream/storybook/9dafcd22ed55947bc4c2fa1d5066b552baa0ebf4/LICENSE",
+          "bytes": 1077,
+          "sha256": "bc90586179d44dcb313a9a289d687a2f26226303b2066bd21dbefd2378e894e5",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "previously-qualified-matching-version-upstream-root",
+          "upstreamEvidence": {
+            "commit": "9dafcd22ed55947bc4c2fa1d5066b552baa0ebf4",
+            "url": "https://raw.githubusercontent.com/storybookjs/storybook/9dafcd22ed55947bc4c2fa1d5066b552baa0ebf4/LICENSE"
+          }
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "tailwind-merge",
@@ -390,7 +1211,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.6.0.tgz",
       "integrity": "sha512-uxL7qAVQriqRQPAyK3pj66VqskWqoZ37PW94jwOTwNfq/z9oyu1V+eqrZqtR2+fCiXdYOZe/Modt8GtvqNzu+w==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/tailwind-merge/3.6.0/package.json",
+        "bytes": 3320,
+        "sha256": "dd8a34386cdd58744a48027a30fc75103d8bf246cbbb4aa90f0b2333b25818b6",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/tailwind-merge/3.6.0/LICENSE.md",
+          "bytes": 1070,
+          "sha256": "d4c70c7ce38cea8778f0aed3fc0bef0a9dbd27f13bd8b6773cbd6d37941971e5",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "tailwindcss",
@@ -399,7 +1240,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.3.2.tgz",
       "integrity": "sha512-WtctNNSH8A9jlMIqxzuYumOHU5uGZyRv0Q5svQl+oEPy5w84YpBxdb7MdqyiSPQge5jTJ6zFQLq0PFygdccSBA==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/tailwindcss/4.3.2/package.json",
+        "bytes": 2493,
+        "sha256": "92a1151a2e1adb85c736228008ae2d3fa293dc1c51c058f5317a238194298a97",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/@tailwindcss/postcss/4.3.2/LICENSE",
+          "bytes": 1071,
+          "sha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "tw-animate-css",
@@ -408,7 +1269,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/tw-animate-css/-/tw-animate-css-1.4.0.tgz",
       "integrity": "sha512-7bziOlRqH0hJx80h/3mbicLW7o8qLsH5+RaLR2t+OHM3D0JlWGODQKQ4cxbK7WlvmUxpcj6Kgu6EKqjrGFe3QQ==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/tw-animate-css/1.4.0/package.json",
+        "bytes": 1941,
+        "sha256": "66849c41b809ccca55c6484bf102044c73847b21a7d3bc3fd95df133c0a578e1",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/tw-animate-css/1.4.0/LICENSE",
+          "bytes": 1068,
+          "sha256": "039184dfa0a822397b3f45a435b5b1e538721587fbade96b9fa80f86cb354109",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "typescript",
@@ -417,7 +1298,36 @@
       "licenseMetadata": "Apache-2.0",
       "resolved": "https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz",
       "integrity": "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/typescript/5.9.3/package.json",
+        "bytes": 3620,
+        "sha256": "822ef7ca6452205657b6288b066481ecf508bfbf43455d715cf7d3ec457561e6",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/typescript/5.9.3/LICENSE.txt",
+          "bytes": 9197,
+          "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        },
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/typescript/5.9.3/ThirdPartyNoticeText.txt",
+          "bytes": 37824,
+          "sha256": "1af3c68039c57e539422da82a4faada506ce6d0ea6f90e0b699d02dbcdb7a90c",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "vite",
@@ -426,7 +1336,27 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/vite/-/vite-8.1.4.tgz",
       "integrity": "sha512-bTT9PsdWO+MQMNG9ZXIP/qM9wGh37DFxTV/sPq9cFpHr3w4jkgef032PkAL9jAqhk3Nz8NQw3O8n6/xFkqO4QQ==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/vite/8.1.4/package.json",
+        "bytes": 5083,
+        "sha256": "d26ea2d65c50959b1b5dcd0d1c52eba22eb6c3f4dc335f618053b15970bb63d6",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/vite/8.1.4/LICENSE.md",
+          "bytes": 110976,
+          "sha256": "b1d741c26b53de1bbc0d4d7d3365b79888f9fe511527544a8a7b8e24dec43147",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     },
     {
       "package": "zod",
@@ -435,7 +1365,40 @@
       "licenseMetadata": "MIT",
       "resolved": "https://registry.npmjs.org/zod/-/zod-4.4.3.tgz",
       "integrity": "sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==",
-      "exactOriginalNoticeClosure": false
+      "exactOriginalNoticeClosure": false,
+      "originalPackageManifest": {
+        "repository": "CraysCircle/crays-platform",
+        "path": "apps/web/third-party/packages/zod/4.4.3/package.json",
+        "bytes": 3796,
+        "sha256": "c630bd10b52dcf71c112a2bf78dbf2734b9db58d62de663b8d86c2ec2c8cda2e",
+        "kind": "immutable-repository-file",
+        "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379"
+      },
+      "originalNoticeTexts": [
+        {
+          "repository": "CraysCircle/crays-platform",
+          "path": "apps/web/third-party/packages/zod/4.4.3/LICENSE",
+          "bytes": 1072,
+          "sha256": "3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8",
+          "kind": "immutable-repository-file",
+          "commit": "8580d3227f4ab6928e4eba3fa7fa751b289c6379",
+          "source": "exact-installed-package-root"
+        }
+      ],
+      "originalRootNoticeTextLocated": true
     }
+  ],
+  "all48InstalledVersionsMatchOriginalCoreLock": true,
+  "originalCoreLockSHA256": "8f4d6ceb04e4043a980675578c5e92b7eafb81e594e72056f6a1087de3131648",
+  "originalPackageManifestsPreserved": 48,
+  "installedOriginalNoticeFiles": 41,
+  "packagesWithInstalledRootNotices": 39,
+  "packagesWithAdditionalQualifiedUpstreamRootTexts": 5,
+  "packagesWithLocatedOriginalRootNoticeTexts": 44,
+  "remainingDirectNoticeQuestions": [
+    "@escape.tech/graphql-armor-cost-limit",
+    "@escape.tech/graphql-armor-max-depth",
+    "@escape.tech/graphql-armor-max-tokens",
+    "drizzle-kit"
   ]
 }

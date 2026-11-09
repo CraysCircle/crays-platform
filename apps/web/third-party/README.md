@@ -13,3 +13,7 @@ This is the direct-package/root-notice scope. Nested/bundled dependencies, full 
 ## Member source25 dependency binding
 
 The [Member source25 record](../provenance/member-source25/README.md) preserves its original source lock and confirms all 47 directly installed versions against that lock. Its 47 observed package manifests and 41 root notice files are byte-identical to files already retained in this catalog. The version-specific binding links them without duplication. Complete transitive/runtime/source-offer and application rights closure remains open.
+
+## Distinct native Core package set
+
+The [native Core dependency record](../compositions/native-core-worktree-20261109/dependencies.json) covers its separate 48-package lock. It retains all 48 original package manifests, 41 installed root notice files and five matching-version upstream package relationships, with immutable references for existing byte-identical files. Root notice text is located for 44 packages; four direct notice questions and full transitive/runtime/rights closure remain open. These Core observations do not change the 47-package shared application selection above.

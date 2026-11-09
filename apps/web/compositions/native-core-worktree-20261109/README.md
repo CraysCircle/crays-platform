@@ -39,3 +39,9 @@ Later Core handoffs and selected runtime sources must still be reconciled. No pr
 No original root LICENSE/NOTICE file was present in the recorded source root or its `crays-platform` root. This capture does not invent a license grant or apply a blanket license to third-party work. Existing version-specific notices are indexed in [the shared source notice catalog](../../third-party/README.md); that catalog is not evidence that this distinct 48-package Core set is complete.
 
 Exact original notices for this package set, all transitive and runtime sources, applicable corresponding-source obligations, asset rights, the 453-commit history, required untracked source and full recovery remain open. Public source availability alone does not establish legal compliance.
+
+## Version-specific direct dependency notices
+
+The [Core dependency record](dependencies.json) now preserves all 48 exact original installed package manifests and 41 original root notice files for 39 packages. Forty-two manifests and 39 notice bodies match existing public files byte-for-byte and are referenced at immutable commits; six original manifests and two original notice bodies are added without altering their text. The installed versions all match the original Core worktree lock.
+
+Matching-version upstream notice records already qualified in the shared catalog supply the root texts for five additional packages. Original root texts are therefore located for 44 of 48 direct packages. Four questions remain: the three @escape.tech GraphQL Armor packages and drizzle-kit 0.31.10. For drizzle-kit, MIT package metadata and the upstream Apache-2.0 root remain an unresolved package-specific discrepancy. Package metadata is not a substitute for an original notice or complete license compliance. Full transitive, bundled, runtime and corresponding-source obligations remain open.
