@@ -8,6 +8,12 @@ The unchanged [MIT license](source/node_modules/esbuild/LICENSE.md) retains Evan
 
 These are exact installed files, not a claim of pristine upstream archive identity. Generated module comments reference upstream source names; they do not mean the complete preferred TypeScript/Go compiler source is included. The [official esbuild project](https://github.com/evanw/esbuild) is a reference, not proof of exact registry/source equivalence.
 
+## Official upstream source alongside the installed snapshot
+
+The [official esbuild 0.28.1 source reference](upstream/README.md) preserves 349 original paths (9,444,544 bytes) at commit bb9db84c02433fbe37b3509f53f9f3e3cc48725e, including Go/TypeScript source, build helpers and tests. Its [source and comparison map](upstream/source-capture.json) records six exact overlapping installed-file paths; this does not establish equivalence for all eight installed files or either private binary.
+
+The [upstream notice guide](upstream/NOTICE.md) retains original MIT licenses and inline BSD notices, with Apache 2.0 terms supplied for the marked source-map fixture. No CRAYS AGPL grant is applied. This pinned reference complements the observed installed snapshot; it does not establish binary correspondence, a reproduced build, complete Node/SDK coverage or completion of a broader source offer.
+
 The installer contains executable installation, fetch, platform-selection and integrity-check logic as inert source. Publication does not run it. No compiler, installer, JavaScript API, postinstall or type compilation was executed by this preservation task. This scope does not establish complete Node/SDK/dependency coverage, reproducible builds, current runtime adoption or customer acceptance.
 
 Authorized repository readers can use the [private selected installed-package recovery snapshot](https://github.com/CraysWorld/crays-gym/blob/c88fe99e05fde6da3f8221e218215f73376110eb/protected-source-archives/chuck-esbuild0281-toolchain/README.md) and its [exact restore map](https://github.com/CraysWorld/crays-gym/blob/c88fe99e05fde6da3f8221e218215f73376110eb/protected-source-archives/chuck-esbuild0281-toolchain/source-capture.json), including the two excluded binary paths. These links require private repository access; they do not make binaries part of this public text snapshot.
