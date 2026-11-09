@@ -1,0 +1,190 @@
+{
+  "schema": "crays.native.personal.runtime-access.v1",
+  "role": "crays_core_native_personal_runtime_v1",
+  "database": "neondb",
+  "host": "ep-wandering-field-astlbgje.c-4.eu-central-1.aws.neon.tech",
+  "tables": [
+    {
+      "table": "crays_accounts",
+      "privileges": [
+        "SELECT"
+      ],
+      "lockColumn": "account_id",
+      "boundary": "account_id=nullif(current_setting('crays.native_personal_account',true),'')"
+    },
+    {
+      "table": "auth_identities",
+      "privileges": [
+        "SELECT"
+      ],
+      "lockColumn": "identity_id",
+      "boundary": "account_id=nullif(current_setting('crays.native_personal_account',true),'') or (verified=true and provider_key=current_setting('crays.native_personal_provider_key',true) and provider_subject=current_setting('crays.native_personal_provider_subject',true))"
+    },
+    {
+      "table": "canonical_people",
+      "privileges": [
+        "SELECT"
+      ],
+      "lockColumn": "canonical_person_id",
+      "boundary": "exists(select 1 from crays_core.canonical_person_accounts own_link where own_link.account_id=nullif(current_setting('crays.native_personal_account',true),'') and own_link.purpose='customer' and own_link.status='active' and own_link.version>0 and own_link.canonical_person_id=canonical_people.canonical_person_id)"
+    },
+    {
+      "table": "canonical_person_accounts",
+      "privileges": [
+        "SELECT"
+      ],
+      "lockColumn": "account_id",
+      "boundary": "account_id=nullif(current_setting('crays.native_personal_account',true),'') and purpose='customer' and status='active' and version>0"
+    },
+    {
+      "table": "account_email_verifications",
+      "privileges": [
+        "SELECT"
+      ],
+      "lockColumn": "account_id",
+      "boundary": "account_id=nullif(current_setting('crays.native_personal_account',true),'')"
+    },
+    {
+      "table": "personal_agent_standard_assignments",
+      "privileges": [
+        "SELECT",
+        "INSERT"
+      ],
+      "lockColumn": "canonical_person_id",
+      "boundary": "account_id=nullif(current_setting('crays.native_personal_account',true),'')"
+    },
+    {
+      "table": "personal_agent_baseline_deliveries",
+      "privileges": [
+        "SELECT",
+        "INSERT"
+      ],
+      "lockColumn": "canonical_person_id",
+      "boundary": "account_id=nullif(current_setting('crays.native_personal_account',true),'')"
+    },
+    {
+      "table": "conversations",
+      "privileges": [
+        "SELECT",
+        "INSERT"
+      ],
+      "boundary": "created_by_account_id=nullif(current_setting('crays.native_personal_account',true),'') and conversation_type='personal_chuck' and related_entity_type='canonical-person' and exists(select 1 from crays_core.canonical_person_accounts own_link where own_link.account_id=nullif(current_setting('crays.native_personal_account',true),'') and own_link.purpose='customer' and own_link.status='active' and own_link.version>0 and own_link.canonical_person_id=conversations.related_entity_id)",
+      "updateColumns": [
+        "last_message_at",
+        "updated_at"
+      ]
+    },
+    {
+      "table": "conversation_participants",
+      "privileges": [
+        "SELECT",
+        "INSERT"
+      ],
+      "lockColumn": "participant_id",
+      "boundary": "account_id=nullif(current_setting('crays.native_personal_account',true),'')"
+    },
+    {
+      "table": "personal_messenger_bindings",
+      "privileges": [
+        "SELECT",
+        "INSERT"
+      ],
+      "lockColumn": "binding_id",
+      "boundary": "account_id=nullif(current_setting('crays.native_personal_account',true),'')"
+    },
+    {
+      "table": "personal_messenger_ingress_receipts",
+      "privileges": [
+        "SELECT",
+        "INSERT"
+      ],
+      "lockColumn": "receipt_id",
+      "boundary": "account_id=nullif(current_setting('crays.native_personal_account',true),'')"
+    },
+    {
+      "table": "personal_messenger_runtime_attempts",
+      "privileges": [
+        "SELECT",
+        "INSERT"
+      ],
+      "lockColumn": "attempt_id",
+      "boundary": "account_id=nullif(current_setting('crays.native_personal_account',true),'')"
+    },
+    {
+      "table": "personal_messenger_runtime_observations",
+      "privileges": [
+        "SELECT",
+        "INSERT"
+      ],
+      "lockColumn": "observation_id",
+      "boundary": "account_id=nullif(current_setting('crays.native_personal_account',true),'')"
+    },
+    {
+      "table": "personal_message_attachment_versions",
+      "privileges": [
+        "SELECT",
+        "INSERT"
+      ],
+      "lockColumn": "attachment_id",
+      "boundary": "account_id=nullif(current_setting('crays.native_personal_account',true),'')"
+    },
+    {
+      "table": "messages",
+      "privileges": [
+        "SELECT",
+        "INSERT"
+      ],
+      "updateColumns": [
+        "attachment_refs"
+      ],
+      "boundary": "exists(select 1 from crays_core.conversations own_conversation where own_conversation.conversation_id=messages.conversation_id and own_conversation.created_by_account_id=nullif(current_setting('crays.native_personal_account',true),'') and own_conversation.conversation_type='personal_chuck')"
+    },
+    {
+      "table": "personal_messenger_outbox",
+      "privileges": [
+        "SELECT",
+        "INSERT"
+      ],
+      "boundary": "exists(select 1 from crays_core.personal_messenger_ingress_receipts own_receipt where own_receipt.receipt_id=personal_messenger_outbox.receipt_id and own_receipt.account_id=nullif(current_setting('crays.native_personal_account',true),''))"
+    },
+    {
+      "table": "personal_messenger_agent_responses",
+      "privileges": [
+        "SELECT",
+        "INSERT"
+      ],
+      "boundary": "account_id=nullif(current_setting('crays.native_personal_account',true),'')"
+    },
+    {
+      "table": "personal_message_attachment_payloads",
+      "privileges": [
+        "SELECT",
+        "INSERT",
+        "DELETE"
+      ],
+      "lockColumn": "attachment_id",
+      "boundary": "exists(select 1 from crays_core.personal_message_attachment_versions own_version where own_version.attachment_id=personal_message_attachment_payloads.attachment_id and own_version.account_id=nullif(current_setting('crays.native_personal_account',true),''))"
+    },
+    {
+      "table": "personal_message_attachment_erasures",
+      "privileges": [
+        "SELECT",
+        "INSERT"
+      ],
+      "boundary": "exists(select 1 from crays_core.personal_message_attachment_versions own_version where own_version.attachment_id=personal_message_attachment_erasures.attachment_id and own_version.account_id=nullif(current_setting('crays.native_personal_account',true),''))"
+    }
+  ],
+  "sequences": [
+    "conversations_id_seq",
+    "conversation_participants_id_seq",
+    "messages_id_seq",
+    "personal_messenger_runtime_observations_observation_id_seq"
+  ],
+  "functions": [
+    "assert_native_personal_runtime_attempt_current(text,text)",
+    "append_native_personal_runtime_observation(text,text,text,jsonb)",
+    "persist_native_personal_agent_response(text,bigint,text)"
+  ],
+  "sourceOnly": true,
+  "roleOrConfigurationInstalled": false
+}

@@ -66,3 +66,7 @@ The [original scripts](scripts/README.md) retain 90 referenced operational progr
 ## Exact Member source variants
 
 The [Member composition export](compositions/member-source25/README.md) preserves the 1,399-file original Member input and the 1,401-file AWS build input without replacing the prepared shared application tree. Unchanged source is referenced by immutable Git commit; changed source bodies and protected templates are retained with exact manifests. Both views passed full original-byte reconstruction checks. See the [Member source/build/dependency binding](provenance/member-source25/README.md) for the recorded build, original project lock and existing notice catalog.
+
+## Native Core working-tree source slice
+
+The separate [native Core source slice](compositions/native-core-worktree-20261109/README.md) retains 28 tracked modifications and their 28 exact committed preimages at c2018d04f6a52d8716326a098dde7624cbb18963. Four unchanged preimages reference existing immutable source; two identity files use protected reversible templates. Both views passed original-byte restoration checks. Its 48-package lock is distinct from the shared dependency set. The 453-commit history, required untracked sources, later runtime selection and full license/recovery closure remain open.

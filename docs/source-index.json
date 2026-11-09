@@ -133,6 +133,10 @@
     {
       "component": "personal-original-image-catalog",
       "path": "apps/personal/provenance/images/source-status.json"
+    },
+    {
+      "component": "native-core-tracked-working-tree",
+      "path": "apps/web/compositions/native-core-worktree-20261109/source-state.json"
     }
   ]
 }

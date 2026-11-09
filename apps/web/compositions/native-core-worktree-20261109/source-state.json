@@ -1,0 +1,919 @@
+{
+  "schema": "crays.native-core.source-slice.v1",
+  "capturedUTC": "2026-11-09T04:00:27.304295+00:00",
+  "sourceHead": "c2018d04f6a52d8716326a098dde7624cbb18963",
+  "sourceBranch": "codex/ios-core-native-01a14a1b",
+  "sourceScope": "28 tracked working-tree modifications and their28 exact original committed preimages; not the whole Core source tree",
+  "fullCurrentRuntimeAuthority": false,
+  "wholeCoreHistoryPreserved": false,
+  "sourceProgramsExecuted": false,
+  "requiredProtectedBindings": [
+    "CORE_NATIVE_SEED_ACCOUNT_ID",
+    "CORE_NATIVE_SEED_ASSIGNMENT_ID",
+    "CORE_NATIVE_SEED_AUDIT_ID",
+    "CORE_NATIVE_SEED_CRAYS_ID",
+    "CORE_NATIVE_SEED_DISPLAY_NAME",
+    "CORE_NATIVE_SEED_ENTITY_ID",
+    "CORE_NATIVE_SEED_HANDLE_ID",
+    "CORE_NATIVE_SEED_IDENTITY_ID",
+    "CORE_NATIVE_SEED_MEMBERSHIP_ID",
+    "CORE_NATIVE_SEED_NAME",
+    "CORE_NATIVE_SEED_NPUB",
+    "CORE_NATIVE_SEED_ORGANIZATION_ID",
+    "CORE_NATIVE_SEED_PROVIDER_SUBJECT"
+  ],
+  "files": [
+    {
+      "state": "worktree",
+      "path": "AGENTS.md",
+      "originalBytes": 25839,
+      "originalSHA256": "8a1a71ab3321c7f3c726550cf6839c76593940cb932be24d50977d0eb4e3186f",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/AGENTS.md",
+        "bytes": 25839,
+        "sha256": "8a1a71ab3321c7f3c726550cf6839c76593940cb932be24d50977d0eb4e3186f"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "AGENTS.md",
+      "originalBytes": 23939,
+      "originalSHA256": "9a8a785e07f78bca9311a10795b6db1cbb5ba36b538b97d0f87578dadeec8719",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/AGENTS.md",
+        "bytes": 23939,
+        "sha256": "9a8a785e07f78bca9311a10795b6db1cbb5ba36b538b97d0f87578dadeec8719"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/.gitignore",
+      "originalBytes": 651,
+      "originalSHA256": "280ea1f1088f93c9ac34dba736ef86d457885e772bdd3e5f3338e257431b16d8",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/.gitignore",
+        "bytes": 651,
+        "sha256": "280ea1f1088f93c9ac34dba736ef86d457885e772bdd3e5f3338e257431b16d8"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/.gitignore",
+      "originalBytes": 634,
+      "originalSHA256": "fb68f8a1f0afdb7510df80d9d469806bd3765f7441637e1369a649e1c27eeb55",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/crays-platform/.gitignore",
+        "bytes": 634,
+        "sha256": "fb68f8a1f0afdb7510df80d9d469806bd3765f7441637e1369a649e1c27eeb55"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/next.config.ts",
+      "originalBytes": 407,
+      "originalSHA256": "0f80486075ec77e411698000d08e389fa707e1487bbd63712c93f4a8ca7153b7",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/next.config.ts",
+        "bytes": 407,
+        "sha256": "0f80486075ec77e411698000d08e389fa707e1487bbd63712c93f4a8ca7153b7"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/next.config.ts",
+      "originalBytes": 165,
+      "originalSHA256": "66cbcc6ca30f899bf1230debb5a0e03bc90824abd6c949ede1c30b057f18df56",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/crays-platform/next.config.ts",
+        "bytes": 165,
+        "sha256": "66cbcc6ca30f899bf1230debb5a0e03bc90824abd6c949ede1c30b057f18df56"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/package-lock.json",
+      "originalBytes": 484776,
+      "originalSHA256": "8f4d6ceb04e4043a980675578c5e92b7eafb81e594e72056f6a1087de3131648",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/package-lock.json",
+        "bytes": 484776,
+        "sha256": "8f4d6ceb04e4043a980675578c5e92b7eafb81e594e72056f6a1087de3131648"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/package-lock.json",
+      "originalBytes": 466280,
+      "originalSHA256": "c9d97d7ae21836f571e4b65a573d54612b3aeea1ecb809b96888bfdd0785cfe4",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/crays-platform/package-lock.json",
+        "bytes": 466280,
+        "sha256": "c9d97d7ae21836f571e4b65a573d54612b3aeea1ecb809b96888bfdd0785cfe4"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/package.json",
+      "originalBytes": 15028,
+      "originalSHA256": "c47ef1e435212bd22b9265e02a4b78cd2ba37e50a72e6a783004b57c2994f2dc",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/package.json",
+        "bytes": 15028,
+        "sha256": "c47ef1e435212bd22b9265e02a4b78cd2ba37e50a72e6a783004b57c2994f2dc"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/package.json",
+      "originalBytes": 14371,
+      "originalSHA256": "be4b6837ce9b4eff454ae132840a8d2402a3c30acadc605cb013df107e70da3e",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/crays-platform/package.json",
+        "bytes": 14371,
+        "sha256": "be4b6837ce9b4eff454ae132840a8d2402a3c30acadc605cb013df107e70da3e"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/scripts/ios-native-auth-qualification/prepare-native-pool-fixture.mjs",
+      "originalBytes": 1401,
+      "originalSHA256": "8f5c451163e6a1ab13df4ba000331cf3d7350cc6f6ccbc2ff6a68e7f12e5eebe",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/scripts/ios-native-auth-qualification/prepare-native-pool-fixture.mjs",
+        "bytes": 1401,
+        "sha256": "8f5c451163e6a1ab13df4ba000331cf3d7350cc6f6ccbc2ff6a68e7f12e5eebe"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/scripts/ios-native-auth-qualification/prepare-native-pool-fixture.mjs",
+      "originalBytes": 1349,
+      "originalSHA256": "08ea5e3375a6de87414775017c2cededc08441558537c164513fce6993c8b22a",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/crays-platform/scripts/ios-native-auth-qualification/prepare-native-pool-fixture.mjs",
+        "bytes": 1349,
+        "sha256": "08ea5e3375a6de87414775017c2cededc08441558537c164513fce6993c8b22a"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/src/app/api/crays/auth/provider/account/route.ts",
+      "originalBytes": 5516,
+      "originalSHA256": "ba8f2058ef69ffb3cea55f2f2eb0e9ef3002f26c3afd8e04f7ee6f05929f27da",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/src/app/api/crays/auth/provider/account/route.ts",
+        "bytes": 5516,
+        "sha256": "ba8f2058ef69ffb3cea55f2f2eb0e9ef3002f26c3afd8e04f7ee6f05929f27da"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/src/app/api/crays/auth/provider/account/route.ts",
+      "originalBytes": 5292,
+      "originalSHA256": "ce3d5295b91d305528a4ccbc3a301a92ae35795551701d0abb097060015cb8eb",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/crays-platform/src/app/api/crays/auth/provider/account/route.ts",
+        "bytes": 5292,
+        "sha256": "ce3d5295b91d305528a4ccbc3a301a92ae35795551701d0abb097060015cb8eb"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/src/app/auth/provider-account/review/route.ts",
+      "originalBytes": 1940,
+      "originalSHA256": "fffb1f77db898149e60897d9ea4d202d3c06bfa8fb23c4e9ddb40d510ea089c5",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/src/app/auth/provider-account/review/route.ts",
+        "bytes": 1940,
+        "sha256": "fffb1f77db898149e60897d9ea4d202d3c06bfa8fb23c4e9ddb40d510ea089c5"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/src/app/auth/provider-account/review/route.ts",
+      "originalBytes": 1563,
+      "originalSHA256": "7b65e6fea8454ac5501279ecacec6e781cf74ba1a5603c03c3acf54bf9f97fe5",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "immutable-git-source",
+        "repository": "CraysCircle/crays-platform",
+        "commit": "678129cd65d73abc4f1a379a1805d05f437e38d2",
+        "path": "apps/web/src/app/auth/provider-account/review/route.ts",
+        "gitBlobSHA1": "0bf18a57c9d3a32a547175683b3bc9686d1654df"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/src/components/oca-authority-permission-lens.tsx",
+      "originalBytes": 12735,
+      "originalSHA256": "2b751fa464153a471fb37c703da9800377d98c6de4711a19225f9d086bb25283",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/src/components/oca-authority-permission-lens.tsx",
+        "bytes": 12735,
+        "sha256": "2b751fa464153a471fb37c703da9800377d98c6de4711a19225f9d086bb25283"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/src/components/oca-authority-permission-lens.tsx",
+      "originalBytes": 12035,
+      "originalSHA256": "15d41dac1f6f72c12ad4714af34963a65896c63ecb64ad679adb23e80e47a3c0",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/crays-platform/src/components/oca-authority-permission-lens.tsx",
+        "bytes": 12035,
+        "sha256": "15d41dac1f6f72c12ad4714af34963a65896c63ecb64ad679adb23e80e47a3c0"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/src/components/oca-cell-console-panel.tsx",
+      "originalBytes": 7375,
+      "originalSHA256": "d43048aefecc18a84757a0c1362f4f7100ac021129279bb49c586a38025fdcec",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/src/components/oca-cell-console-panel.tsx",
+        "bytes": 7375,
+        "sha256": "d43048aefecc18a84757a0c1362f4f7100ac021129279bb49c586a38025fdcec"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/src/components/oca-cell-console-panel.tsx",
+      "originalBytes": 6842,
+      "originalSHA256": "f8d7980da9499ce7502cf6470950d93be23af3022bcc038ab6b63a4155257bcc",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/crays-platform/src/components/oca-cell-console-panel.tsx",
+        "bytes": 6842,
+        "sha256": "f8d7980da9499ce7502cf6470950d93be23af3022bcc038ab6b63a4155257bcc"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/src/components/oca-command-gateway-panel.tsx",
+      "originalBytes": 8041,
+      "originalSHA256": "f5a16b7e189f6eab70b855644d610bfcd7e540a8995ac4bc9024672fa077405f",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/src/components/oca-command-gateway-panel.tsx",
+        "bytes": 8041,
+        "sha256": "f5a16b7e189f6eab70b855644d610bfcd7e540a8995ac4bc9024672fa077405f"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/src/components/oca-command-gateway-panel.tsx",
+      "originalBytes": 7578,
+      "originalSHA256": "bb15d29dc3c0a56ff98aba3dbf2e311ebceb44e5d44cf90d95740cc463382e5f",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/crays-platform/src/components/oca-command-gateway-panel.tsx",
+        "bytes": 7578,
+        "sha256": "bb15d29dc3c0a56ff98aba3dbf2e311ebceb44e5d44cf90d95740cc463382e5f"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/src/components/oca-context-broker-panel.tsx",
+      "originalBytes": 13531,
+      "originalSHA256": "c377c4b1e22fd1e1a05b36b8596982927398a4efe52b3072cd59843385e7637f",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/src/components/oca-context-broker-panel.tsx",
+        "bytes": 13531,
+        "sha256": "c377c4b1e22fd1e1a05b36b8596982927398a4efe52b3072cd59843385e7637f"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/src/components/oca-context-broker-panel.tsx",
+      "originalBytes": 13005,
+      "originalSHA256": "450ed5776b64c69c9cd3f73533d85c729bce6ba1fc96049cc7d5dd29d2af7767",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/crays-platform/src/components/oca-context-broker-panel.tsx",
+        "bytes": 13005,
+        "sha256": "450ed5776b64c69c9cd3f73533d85c729bce6ba1fc96049cc7d5dd29d2af7767"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/src/components/oca-evaluation-panel.tsx",
+      "originalBytes": 7011,
+      "originalSHA256": "835f157789c1f8e3540145e88c22a6b9d3e72217bdc696594a42101e81820270",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/src/components/oca-evaluation-panel.tsx",
+        "bytes": 7011,
+        "sha256": "835f157789c1f8e3540145e88c22a6b9d3e72217bdc696594a42101e81820270"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/src/components/oca-evaluation-panel.tsx",
+      "originalBytes": 6474,
+      "originalSHA256": "56fc4274267651dcee1bb59f94313c3f4ea3bdfcbed04c9d42a0b38cea2dce7f",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/crays-platform/src/components/oca-evaluation-panel.tsx",
+        "bytes": 6474,
+        "sha256": "56fc4274267651dcee1bb59f94313c3f4ea3bdfcbed04c9d42a0b38cea2dce7f"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/src/components/oca-model-gateway-panel.tsx",
+      "originalBytes": 11429,
+      "originalSHA256": "3e03c6dea98fcd18a4adc722d467915075c8d86c987f2112f093ff024648e72b",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/src/components/oca-model-gateway-panel.tsx",
+        "bytes": 11429,
+        "sha256": "3e03c6dea98fcd18a4adc722d467915075c8d86c987f2112f093ff024648e72b"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/src/components/oca-model-gateway-panel.tsx",
+      "originalBytes": 11038,
+      "originalSHA256": "e89601755c8538778d1e0087f524fec0e28a1a9b99b4a1526e3381751ee7684e",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/crays-platform/src/components/oca-model-gateway-panel.tsx",
+        "bytes": 11038,
+        "sha256": "e89601755c8538778d1e0087f524fec0e28a1a9b99b4a1526e3381751ee7684e"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/src/components/oca-receipt-fabric-panel.tsx",
+      "originalBytes": 7574,
+      "originalSHA256": "3a8bc70e880a977dabab1fa5e044d12ed79f20cd7860d0c0b2cd2e5580db7208",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/src/components/oca-receipt-fabric-panel.tsx",
+        "bytes": 7574,
+        "sha256": "3a8bc70e880a977dabab1fa5e044d12ed79f20cd7860d0c0b2cd2e5580db7208"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/src/components/oca-receipt-fabric-panel.tsx",
+      "originalBytes": 7112,
+      "originalSHA256": "42cd26dffaae80022963cde494f4be3ce022450a9cade842a8094d89643df5f5",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/crays-platform/src/components/oca-receipt-fabric-panel.tsx",
+        "bytes": 7112,
+        "sha256": "42cd26dffaae80022963cde494f4be3ce022450a9cade842a8094d89643df5f5"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/src/components/oca-secret-custody-panel.tsx",
+      "originalBytes": 12016,
+      "originalSHA256": "6f27895ca69b4cffea87cc55478258f85c21c4d7327872e3fc17ae7c6ad06fa4",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/src/components/oca-secret-custody-panel.tsx",
+        "bytes": 12016,
+        "sha256": "6f27895ca69b4cffea87cc55478258f85c21c4d7327872e3fc17ae7c6ad06fa4"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/src/components/oca-secret-custody-panel.tsx",
+      "originalBytes": 11582,
+      "originalSHA256": "5cc7fd15090f8b4819b5fc86566c143cf9354eb7b1cb577a01ee507fe01d9ee7",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/crays-platform/src/components/oca-secret-custody-panel.tsx",
+        "bytes": 11582,
+        "sha256": "5cc7fd15090f8b4819b5fc86566c143cf9354eb7b1cb577a01ee507fe01d9ee7"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/src/db/core-identity-repository.ts",
+      "originalBytes": 29452,
+      "originalSHA256": "430c097eecda9ed1f76fc96b63e73b11ef23b464696d338e582dbb27da9cdbf0",
+      "protectedReplacements": [
+        {
+          "binding": "CORE_NATIVE_SEED_ACCOUNT_ID",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_ACCOUNT_ID__",
+          "occurrences": 2
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_CRAYS_ID",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_CRAYS_ID__",
+          "occurrences": 1
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_DISPLAY_NAME",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_DISPLAY_NAME__",
+          "occurrences": 1
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_IDENTITY_ID",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_IDENTITY_ID__",
+          "occurrences": 1
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_PROVIDER_SUBJECT",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_PROVIDER_SUBJECT__",
+          "occurrences": 1
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_NPUB",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_NPUB__",
+          "occurrences": 1
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_HANDLE_ID",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_HANDLE_ID__",
+          "occurrences": 1
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_ORGANIZATION_ID",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_ORGANIZATION_ID__",
+          "occurrences": 3
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_NAME",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_NAME__",
+          "occurrences": 1
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_MEMBERSHIP_ID",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_MEMBERSHIP_ID__",
+          "occurrences": 1
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_ASSIGNMENT_ID",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_ASSIGNMENT_ID__",
+          "occurrences": 1
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_ENTITY_ID",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_ENTITY_ID__",
+          "occurrences": 2
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_AUDIT_ID",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_AUDIT_ID__",
+          "occurrences": 1
+        }
+      ],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/src/db/core-identity-repository.ts.template",
+        "bytes": 29954,
+        "sha256": "299247747963db27de0bf6c3e61835c6889f29f7db29b3b69944a8c4c1b931de"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/src/db/core-identity-repository.ts",
+      "originalBytes": 29039,
+      "originalSHA256": "c8da30084d08bc6115d33d819e3be0dca3a80941bda4cfc785ee2828b6fc118b",
+      "protectedReplacements": [
+        {
+          "binding": "CORE_NATIVE_SEED_ACCOUNT_ID",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_ACCOUNT_ID__",
+          "occurrences": 2
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_CRAYS_ID",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_CRAYS_ID__",
+          "occurrences": 1
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_DISPLAY_NAME",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_DISPLAY_NAME__",
+          "occurrences": 1
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_IDENTITY_ID",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_IDENTITY_ID__",
+          "occurrences": 1
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_PROVIDER_SUBJECT",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_PROVIDER_SUBJECT__",
+          "occurrences": 1
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_NPUB",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_NPUB__",
+          "occurrences": 1
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_HANDLE_ID",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_HANDLE_ID__",
+          "occurrences": 1
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_ORGANIZATION_ID",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_ORGANIZATION_ID__",
+          "occurrences": 3
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_NAME",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_NAME__",
+          "occurrences": 1
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_MEMBERSHIP_ID",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_MEMBERSHIP_ID__",
+          "occurrences": 1
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_ASSIGNMENT_ID",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_ASSIGNMENT_ID__",
+          "occurrences": 1
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_ENTITY_ID",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_ENTITY_ID__",
+          "occurrences": 2
+        },
+        {
+          "binding": "CORE_NATIVE_SEED_AUDIT_ID",
+          "token": "__CRAYS_CORE_PROTECTED_CORE_NATIVE_SEED_AUDIT_ID__",
+          "occurrences": 1
+        }
+      ],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/crays-platform/src/db/core-identity-repository.ts.template",
+        "bytes": 29541,
+        "sha256": "5745534cc499edf11eece195c5a270dde0e179cb0d04bedd8c4010eb84524b04"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/src/db/native-personal-runtime-access.json",
+      "originalBytes": 7878,
+      "originalSHA256": "c5235b71e53243ea0e9ec88ec85e1fdd66750b89e6b977b6240453e975b482ed",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/src/db/native-personal-runtime-access.json",
+        "bytes": 7878,
+        "sha256": "c5235b71e53243ea0e9ec88ec85e1fdd66750b89e6b977b6240453e975b482ed"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/src/db/native-personal-runtime-access.json",
+      "originalBytes": 7094,
+      "originalSHA256": "e9e5bcadcb1854aa9daf7187f49279df50fcced3c93549436ae0b421ba3ddfb8",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/crays-platform/src/db/native-personal-runtime-access.json",
+        "bytes": 7094,
+        "sha256": "e9e5bcadcb1854aa9daf7187f49279df50fcced3c93549436ae0b421ba3ddfb8"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/src/db/native-personal-runtime-pool.ts",
+      "originalBytes": 10153,
+      "originalSHA256": "475fd6190c89942f1a9dff566b293fd3a81c5d1800b863a01e321a6e835ea949",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/src/db/native-personal-runtime-pool.ts",
+        "bytes": 10153,
+        "sha256": "475fd6190c89942f1a9dff566b293fd3a81c5d1800b863a01e321a6e835ea949"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/src/db/native-personal-runtime-pool.ts",
+      "originalBytes": 10089,
+      "originalSHA256": "d5f53d9bd80df356be443314e5d8bd242b6a26154052c18ae92dd49f25af0f9b",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/crays-platform/src/db/native-personal-runtime-pool.ts",
+        "bytes": 10089,
+        "sha256": "d5f53d9bd80df356be443314e5d8bd242b6a26154052c18ae92dd49f25af0f9b"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/src/db/oca-environment-workbench-service.ts",
+      "originalBytes": 8181,
+      "originalSHA256": "2eb39823b025055303fc52b38775b55423c1f4de511c5dc23f4afd81b27cb027",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/src/db/oca-environment-workbench-service.ts",
+        "bytes": 8181,
+        "sha256": "2eb39823b025055303fc52b38775b55423c1f4de511c5dc23f4afd81b27cb027"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/src/db/oca-environment-workbench-service.ts",
+      "originalBytes": 7605,
+      "originalSHA256": "af2ece9ff2a5399ee3048dcd553f7f5e13de12d720b8cf01b4b022cb987f6670",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/crays-platform/src/db/oca-environment-workbench-service.ts",
+        "bytes": 7605,
+        "sha256": "af2ece9ff2a5399ee3048dcd553f7f5e13de12d720b8cf01b4b022cb987f6670"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/src/db/oca-secret-resilience-service.ts",
+      "originalBytes": 12475,
+      "originalSHA256": "862ff40640c1dd0cc97d76afb9717f0c393a02b82383584c16971ec13dc44037",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/src/db/oca-secret-resilience-service.ts",
+        "bytes": 12475,
+        "sha256": "862ff40640c1dd0cc97d76afb9717f0c393a02b82383584c16971ec13dc44037"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/src/db/oca-secret-resilience-service.ts",
+      "originalBytes": 12562,
+      "originalSHA256": "5fd76fefc0a69ba99e338bb9068db832b49d176f4b3c7321e3cdea4a703fd4eb",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/crays-platform/src/db/oca-secret-resilience-service.ts",
+        "bytes": 12562,
+        "sha256": "5fd76fefc0a69ba99e338bb9068db832b49d176f4b3c7321e3cdea4a703fd4eb"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/src/graphql/generated/client/persisted-documents.json",
+      "originalBytes": 68397,
+      "originalSHA256": "f4d3a997b789a836136eb06d5e12226132ac4fffaeac8434c97e0eb5158871cc",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/src/graphql/generated/client/persisted-documents.json",
+        "bytes": 68397,
+        "sha256": "f4d3a997b789a836136eb06d5e12226132ac4fffaeac8434c97e0eb5158871cc"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/src/graphql/generated/client/persisted-documents.json",
+      "originalBytes": 63529,
+      "originalSHA256": "91a06e5395f28f14f7dad0eab8f84098b6cacbad3c19d1eaf0ab76c46106ab61",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/crays-platform/src/graphql/generated/client/persisted-documents.json",
+        "bytes": 63529,
+        "sha256": "91a06e5395f28f14f7dad0eab8f84098b6cacbad3c19d1eaf0ab76c46106ab61"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/src/lib/auth-session-mapping.ts",
+      "originalBytes": 8992,
+      "originalSHA256": "5c425ac493c8511947805152cc918cb31b05443a24f77dc0bec3767deb60fa6c",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/src/lib/auth-session-mapping.ts",
+        "bytes": 8992,
+        "sha256": "5c425ac493c8511947805152cc918cb31b05443a24f77dc0bec3767deb60fa6c"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/src/lib/auth-session-mapping.ts",
+      "originalBytes": 8911,
+      "originalSHA256": "29a3dcb9f54edfcf1ca9cb151e7f8fed56250709e8be4174b321b1308e4c3be4",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "immutable-git-source",
+        "repository": "CraysCircle/crays-platform",
+        "commit": "678129cd65d73abc4f1a379a1805d05f437e38d2",
+        "path": "apps/web/src/lib/auth-session-mapping.ts",
+        "gitBlobSHA1": "51d125154181f7730c68f97ce1d8121022fbac03"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/src/lib/auth0.ts",
+      "originalBytes": 1278,
+      "originalSHA256": "cca7ffa6c4101bcc23a83f8753586376b0f8d6fcab3f64da3ed1ccc61353b97e",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/src/lib/auth0.ts",
+        "bytes": 1278,
+        "sha256": "cca7ffa6c4101bcc23a83f8753586376b0f8d6fcab3f64da3ed1ccc61353b97e"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/src/lib/auth0.ts",
+      "originalBytes": 1201,
+      "originalSHA256": "ea7c167a4675107b861a8e9ac594b12d9e7fe9cbb3d798ffa82cbcf7d87926cf",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/crays-platform/src/lib/auth0.ts",
+        "bytes": 1201,
+        "sha256": "ea7c167a4675107b861a8e9ac594b12d9e7fe9cbb3d798ffa82cbcf7d87926cf"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/src/lib/dal/server-trust.ts",
+      "originalBytes": 7196,
+      "originalSHA256": "02f0a3fbf44b40922ca1e356ced51b7958f4dbddba8125ad032d5ed5cafb6dba",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/src/lib/dal/server-trust.ts",
+        "bytes": 7196,
+        "sha256": "02f0a3fbf44b40922ca1e356ced51b7958f4dbddba8125ad032d5ed5cafb6dba"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/src/lib/dal/server-trust.ts",
+      "originalBytes": 6947,
+      "originalSHA256": "7c6535daa1ba1a1a1ba88224c361c1d69f1faddb1b5809b9c97dc8bc2a965b9f",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/crays-platform/src/lib/dal/server-trust.ts",
+        "bytes": 6947,
+        "sha256": "7c6535daa1ba1a1a1ba88224c361c1d69f1faddb1b5809b9c97dc8bc2a965b9f"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/src/lib/identity.ts",
+      "originalBytes": 2917,
+      "originalSHA256": "d724803eae946b245a05eaa69172d763d17999c7605d5e8e0b6a770e9e5f7639",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/src/lib/identity.ts",
+        "bytes": 2917,
+        "sha256": "d724803eae946b245a05eaa69172d763d17999c7605d5e8e0b6a770e9e5f7639"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/src/lib/identity.ts",
+      "originalBytes": 2882,
+      "originalSHA256": "b1c673ebb9de0ab8d50cd437ac08a2a4b5c18a44dfc17a0c090d709b1218b1e7",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "immutable-git-source",
+        "repository": "CraysCircle/crays-platform",
+        "commit": "678129cd65d73abc4f1a379a1805d05f437e38d2",
+        "path": "apps/web/src/lib/identity.ts",
+        "gitBlobSHA1": "3ce2a8944303d5da729c0dcd03c454158a79c295"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/src/lib/nostr-identity.ts",
+      "originalBytes": 8495,
+      "originalSHA256": "5c34c7d98932a7376080b652055605d3a59343c00c285efdfe28aba5378264a6",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/src/lib/nostr-identity.ts",
+        "bytes": 8495,
+        "sha256": "5c34c7d98932a7376080b652055605d3a59343c00c285efdfe28aba5378264a6"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/src/lib/nostr-identity.ts",
+      "originalBytes": 8491,
+      "originalSHA256": "1a5cd20d3921872f766da5da2cda1286bccbc37ae796b229656b26300ed535bc",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "immutable-git-source",
+        "repository": "CraysCircle/crays-platform",
+        "commit": "678129cd65d73abc4f1a379a1805d05f437e38d2",
+        "path": "apps/web/src/lib/nostr-identity.ts",
+        "gitBlobSHA1": "13fb6064bf0ca2427085ea3cfeb59c78ce0b0355"
+      }
+    },
+    {
+      "state": "worktree",
+      "path": "crays-platform/src/lib/provider-account-provisioning.ts",
+      "originalBytes": 6706,
+      "originalSHA256": "d4230fb6da0a900bbddc0430fcda13863771a75b85f6fb0e37c8272819169387",
+      "protectedReplacements": [],
+      "originalMode": "0o664",
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/worktree/crays-platform/src/lib/provider-account-provisioning.ts",
+        "bytes": 6706,
+        "sha256": "d4230fb6da0a900bbddc0430fcda13863771a75b85f6fb0e37c8272819169387"
+      }
+    },
+    {
+      "state": "head-preimages",
+      "path": "crays-platform/src/lib/provider-account-provisioning.ts",
+      "originalBytes": 6007,
+      "originalSHA256": "007a7d5a880c7bd148e9414429f30450faa7720e3aa7228a6aa1619d260fe797",
+      "protectedReplacements": [],
+      "storage": {
+        "kind": "repository-file",
+        "path": "apps/web/compositions/native-core-worktree-20261109/head-preimages/crays-platform/src/lib/provider-account-provisioning.ts",
+        "bytes": 6007,
+        "sha256": "007a7d5a880c7bd148e9414429f30450faa7720e3aa7228a6aa1619d260fe797"
+      }
+    }
+  ]
+}

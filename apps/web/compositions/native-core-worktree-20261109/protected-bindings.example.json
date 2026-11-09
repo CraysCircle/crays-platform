@@ -1,0 +1,15 @@
+{
+  "CORE_NATIVE_SEED_ACCOUNT_ID": "<supply exact protected original separately>",
+  "CORE_NATIVE_SEED_ASSIGNMENT_ID": "<supply exact protected original separately>",
+  "CORE_NATIVE_SEED_AUDIT_ID": "<supply exact protected original separately>",
+  "CORE_NATIVE_SEED_CRAYS_ID": "<supply exact protected original separately>",
+  "CORE_NATIVE_SEED_DISPLAY_NAME": "<supply exact protected original separately>",
+  "CORE_NATIVE_SEED_ENTITY_ID": "<supply exact protected original separately>",
+  "CORE_NATIVE_SEED_HANDLE_ID": "<supply exact protected original separately>",
+  "CORE_NATIVE_SEED_IDENTITY_ID": "<supply exact protected original separately>",
+  "CORE_NATIVE_SEED_MEMBERSHIP_ID": "<supply exact protected original separately>",
+  "CORE_NATIVE_SEED_NAME": "<supply exact protected original separately>",
+  "CORE_NATIVE_SEED_NPUB": "<supply exact protected original separately>",
+  "CORE_NATIVE_SEED_ORGANIZATION_ID": "<supply exact protected original separately>",
+  "CORE_NATIVE_SEED_PROVIDER_SUBJECT": "<supply exact protected original separately>"
+}

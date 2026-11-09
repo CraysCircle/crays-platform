@@ -1,0 +1,441 @@
+{
+  "directDeclarations": 48,
+  "source": "Unchanged original worktree package.json and package-lock.json in this source slice",
+  "metadataIsNotOriginalLicenseText": true,
+  "noticesNotInvented": true,
+  "fullTransitiveRuntimeAndRightsClosure": false,
+  "packages": [
+    {
+      "package": "@auth0/nextjs-auth0",
+      "declaredConstraint": "^4.24.0",
+      "lockedVersion": "4.24.0",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/@auth0/nextjs-auth0/-/nextjs-auth0-4.24.0.tgz",
+      "integrity": "sha512-5rEWJjJ+axhlJONtMp04BvCQtmLVMYBTvxAH86v9GpvXPvZgk8H+vKlYEPb67j/pdYOzdGEknHYg582asIPLig==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "@axe-core/playwright",
+      "declaredConstraint": "^4.12.1",
+      "lockedVersion": "4.12.1",
+      "licenseMetadata": "MPL-2.0",
+      "resolved": "https://registry.npmjs.org/@axe-core/playwright/-/playwright-4.12.1.tgz",
+      "integrity": "sha512-rMd7xriptqKpP+w5265i4Hdkv2X5kbu6uiBi/B2I7uf3hieRBM3qDCfaKPtxfiYb2mKXfF+yLODJwIx+Jv1GDw==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "@dnd-kit/core",
+      "declaredConstraint": "^6.3.1",
+      "lockedVersion": "6.3.1",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/@dnd-kit/core/-/core-6.3.1.tgz",
+      "integrity": "sha512-xkGBRQQab4RLwgXxoqETICr6S5JlogafbhNsidmrkVv2YRs5MLwpjoF2qpiGjQt8S9AoxtIV603s0GIUpY5eYQ==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "@dnd-kit/sortable",
+      "declaredConstraint": "^10.0.0",
+      "lockedVersion": "10.0.0",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/@dnd-kit/sortable/-/sortable-10.0.0.tgz",
+      "integrity": "sha512-+xqhmIIzvAYMGfBYYnbKuNicfSsk4RksY2XdmJhT+HAC01nix6fHCztU68jooFiMUB01Ky3F0FyOvhG/BZrWkg==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "@dnd-kit/utilities",
+      "declaredConstraint": "^3.2.2",
+      "lockedVersion": "3.2.2",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/@dnd-kit/utilities/-/utilities-3.2.2.tgz",
+      "integrity": "sha512-+MKAJEOfaBe5SmV6t34p80MMKhjvUz0vRrvVJbPT0WElzaOJ/1xs+D+KDv+tD/NE5ujfrChEcshd4fLn0wpiqg==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "@escape.tech/graphql-armor-cost-limit",
+      "declaredConstraint": "^2.4.3",
+      "lockedVersion": "2.4.3",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/@escape.tech/graphql-armor-cost-limit/-/graphql-armor-cost-limit-2.4.3.tgz",
+      "integrity": "sha512-fLZTlJjrjinpNhbv5VP6f8Ce4MiQzbcHtCNaCPVaHqArTEbN7vDnlVLiH+VcmZBmOwU6Si97lKdlOXWNgB5ytw==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "@escape.tech/graphql-armor-max-depth",
+      "declaredConstraint": "^2.4.2",
+      "lockedVersion": "2.4.2",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/@escape.tech/graphql-armor-max-depth/-/graphql-armor-max-depth-2.4.2.tgz",
+      "integrity": "sha512-J9fbW1+W4u3GAcf19wwS0zrNGICCbWn/glvopCoC11Ga0reXvGwgr8EcyuHjTFLL7+pPvWAeVhP4qo6hybcB9w==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "@escape.tech/graphql-armor-max-tokens",
+      "declaredConstraint": "^2.5.1",
+      "lockedVersion": "2.5.1",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/@escape.tech/graphql-armor-max-tokens/-/graphql-armor-max-tokens-2.5.1.tgz",
+      "integrity": "sha512-XHui2npOz7Jn8shBZqfyeocWhdl0pUbKiaWmvbF+5rvNoRIGMgwMtaVhmf9ia8oGGbd+cx5EYo1v+oKHzIm79w==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "@graphql-yoga/plugin-persisted-operations",
+      "declaredConstraint": "^3.21.2",
+      "lockedVersion": "3.21.2",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/@graphql-yoga/plugin-persisted-operations/-/plugin-persisted-operations-3.21.2.tgz",
+      "integrity": "sha512-ahx/TlVxax9JZLfZa7GzzDuAx2LOEoSDqB4AsaRTXyjg4EaLYSzLlUnJKpDg3opNKGZMjMGk63lvMrhUjdAj0w==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "@hookform/resolvers",
+      "declaredConstraint": "^5.4.0",
+      "lockedVersion": "5.4.0",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/@hookform/resolvers/-/resolvers-5.4.0.tgz",
+      "integrity": "sha512-EIsqr/t/qbinPIhGjMdtvutIN1Kk4uwbROE9/UQ93CAVGR7GkA7Y92+fX80OzXi/OB67jVFYwKGO1WzkxmkFZw==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "@noble/curves",
+      "declaredConstraint": "^2.2.0",
+      "lockedVersion": "2.2.0",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/@noble/curves/-/curves-2.2.0.tgz",
+      "integrity": "sha512-T/BoHgFXirb0ENSPBquzX0rcjXeM6Lo892a2jlYJkqk83LqZx0l1Of7DzlKJ6jkpvMrkHSnAcgb5JegL8SeIkQ==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "@playwright/test",
+      "declaredConstraint": "^1.61.1",
+      "lockedVersion": "1.61.1",
+      "licenseMetadata": "Apache-2.0",
+      "resolved": "https://registry.npmjs.org/@playwright/test/-/test-1.61.1.tgz",
+      "integrity": "sha512-8nKv6+0RJSL9FE4jYOEGXnPeM/Hg12qZpmqzZjRh3qM0Y7c3z1mrOTfFLids72RDQYVh9WpLEfR5WdpNX4fkig==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "@refinedev/core",
+      "declaredConstraint": "^5.0.12",
+      "lockedVersion": "5.0.12",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/@refinedev/core/-/core-5.0.12.tgz",
+      "integrity": "sha512-9y5Bi9Lb7XyJmM55b8rCeBTDRCBU41p47OymJldasLfrtpUm2EwI+27DjjNpHTOugymiZsIbLlPtHCPQIXBHcg==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "@refinedev/nextjs-router",
+      "declaredConstraint": "^7.0.5",
+      "lockedVersion": "7.0.5",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/@refinedev/nextjs-router/-/nextjs-router-7.0.5.tgz",
+      "integrity": "sha512-Z724KBsnEtESGYZMntXEhXr9gmQD/kD6s7poeMY4HeLtWLfNyJPdopHntD4BYMU1ApZweDBJeSqEuWjoL3/x5A==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "@storybook/addon-a11y",
+      "declaredConstraint": "^10.5.0",
+      "lockedVersion": "10.5.0",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/@storybook/addon-a11y/-/addon-a11y-10.5.0.tgz",
+      "integrity": "sha512-AguqTsYS2NX20AF1vWt6IonbkpMXur30/dAOOYltbEW7uKmPxBNtjuiBmYB2WI4aFN4r8jje4bbDGk/Yfq58hQ==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "@storybook/nextjs-vite",
+      "declaredConstraint": "^10.5.0",
+      "lockedVersion": "10.5.0",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/@storybook/nextjs-vite/-/nextjs-vite-10.5.0.tgz",
+      "integrity": "sha512-r0KE5il9HjpmA6zdCSQtWqZZZvYPsj9ov2kVZmicn6aWgHFqorCPnM5TftbR2VF3WWYel4OjPqCo7DCWOJjkLQ==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "@tailwindcss/postcss",
+      "declaredConstraint": "^4",
+      "lockedVersion": "4.3.2",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/@tailwindcss/postcss/-/postcss-4.3.2.tgz",
+      "integrity": "sha512-rjVWYCa7Ngbi5AarT6k8TkxUG3Wl1QKzHdIZVsjZSzf36Jmo2IKZt/NHRAwly8oDkbBOH0YTu+CHuf9jPxMc+g==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "@tanstack/react-query",
+      "declaredConstraint": "^5.101.2",
+      "lockedVersion": "5.101.2",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/@tanstack/react-query/-/react-query-5.101.2.tgz",
+      "integrity": "sha512-seDkr6kzGzX1okaaTtZPtgA688CDPlXUz1C6xSg0ESqn04Vuc8tlrYms1s3de+znBqhPVxFRfpAfUf+6XvfPWg==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "@tanstack/react-table",
+      "declaredConstraint": "^8.21.3",
+      "lockedVersion": "8.21.3",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/@tanstack/react-table/-/react-table-8.21.3.tgz",
+      "integrity": "sha512-5nNMTSETP4ykGegmVkhjcS8tTLW6Vl4axfEGQN3v0zdHYbK4UfoqfPChclTrJ4EoK9QynqAu9oUf8VEmrpZ5Ww==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "@types/node",
+      "declaredConstraint": "^20",
+      "lockedVersion": "20.19.43",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-20.19.43.tgz",
+      "integrity": "sha512-6oYBAi5ikg4Pl+kGsoYtawUMBT2zZMCvPNF7pVLnHZfd1zf38DRiWn/gT01RYCdUqkv7Fhr+C9ot4/tb+2sVvA==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "@types/pg",
+      "declaredConstraint": "^8.20.0",
+      "lockedVersion": "8.20.0",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/@types/pg/-/pg-8.20.0.tgz",
+      "integrity": "sha512-bEPFOaMAHTEP1EzpvHTbmwR8UsFyHSKsRisLIHVMXnpNefSbGA1bD6CVy+qKjGSqmZqNqBDV2azOBo8TgkcVow==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "@types/react",
+      "declaredConstraint": "^19",
+      "lockedVersion": "19.2.17",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/@types/react/-/react-19.2.17.tgz",
+      "integrity": "sha512-MXfmqaVPEVgkBT/aY0aGCkRWWtByiYQXo3xdQ8r5RzuFrPiRn8Gar2tQdXSUQ2GKV3bkXckek89V8wQBY2Q/Aw==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "@types/react-dom",
+      "declaredConstraint": "^19",
+      "lockedVersion": "19.2.3",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-19.2.3.tgz",
+      "integrity": "sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "class-variance-authority",
+      "declaredConstraint": "^0.7.1",
+      "lockedVersion": "0.7.1",
+      "licenseMetadata": "Apache-2.0",
+      "resolved": "https://registry.npmjs.org/class-variance-authority/-/class-variance-authority-0.7.1.tgz",
+      "integrity": "sha512-Ka+9Trutv7G8M6WT6SeiRWz792K5qEqIGEGzXKhAE6xOWAY6pPH8U+9IY3oCMv6kqTmLsv7Xh/2w2RigkePMsg==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "clsx",
+      "declaredConstraint": "^2.1.1",
+      "lockedVersion": "2.1.1",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz",
+      "integrity": "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "dataloader",
+      "declaredConstraint": "^2.2.3",
+      "lockedVersion": "2.2.3",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/dataloader/-/dataloader-2.2.3.tgz",
+      "integrity": "sha512-y2krtASINtPFS1rSDjacrFgn1dcUuoREVabwlOGOe4SdxenREqwjwjElAdwvbGM7kgZz9a3KVicWR7vcz8rnzA==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "drizzle-kit",
+      "declaredConstraint": "^0.31.10",
+      "lockedVersion": "0.31.10",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/drizzle-kit/-/drizzle-kit-0.31.10.tgz",
+      "integrity": "sha512-7OZcmQUrdGI+DUNNsKBn1aW8qSoKuTH7d0mYgSP8bAzdFzKoovxEFnoGQp2dVs82EOJeYycqRtciopszwUf8bw==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "drizzle-orm",
+      "declaredConstraint": "^0.45.2",
+      "lockedVersion": "0.45.2",
+      "licenseMetadata": "Apache-2.0",
+      "resolved": "https://registry.npmjs.org/drizzle-orm/-/drizzle-orm-0.45.2.tgz",
+      "integrity": "sha512-kY0BSaTNYWnoDMVoyY8uxmyHjpJW1geOmBMdSSicKo9CIIWkSxMIj2rkeSR51b8KAPB7m+qysjuHme5nKP+E5Q==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "eslint",
+      "declaredConstraint": "^9",
+      "lockedVersion": "9.39.4",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/eslint/-/eslint-9.39.4.tgz",
+      "integrity": "sha512-XoMjdBOwe/esVgEvLmNsD3IRHkm7fbKIUGvrleloJXUZgDHig2IPWNniv+GwjyJXzuNqVjlr5+4yVUZjycJwfQ==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "eslint-config-next",
+      "declaredConstraint": "16.2.10",
+      "lockedVersion": "16.2.10",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/eslint-config-next/-/eslint-config-next-16.2.10.tgz",
+      "integrity": "sha512-HSybLOY0QKf39i4FWUqPN0xWiNDi6A6UqJmZtgDkS3zMqjXTqULvj/sueXx3cdCG0mVG+qH6k5/qdegklH1d1w==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "graphql",
+      "declaredConstraint": "^16.14.2",
+      "lockedVersion": "16.14.2",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/graphql/-/graphql-16.14.2.tgz",
+      "integrity": "sha512-Chq1s4CY7jmh8gO2qvLIJyfCDIN+EHLFW/9iShnp1z8FjBQMoodWP1kDC36VAMXXIvAjj4ARa7ntfAV2BrjsbA==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "graphql-yoga",
+      "declaredConstraint": "^5.21.2",
+      "lockedVersion": "5.21.2",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/graphql-yoga/-/graphql-yoga-5.21.2.tgz",
+      "integrity": "sha512-IIRF/3xtjj2D6caAWL9177hQ8tV3mWB3hve1GRnz7njPhQ3iY1jFtSp98fNGv0yV9kaPh9kKQ8JWdJZnedVmDw==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "ioredis",
+      "declaredConstraint": "^5.11.1",
+      "lockedVersion": "5.11.1",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/ioredis/-/ioredis-5.11.1.tgz",
+      "integrity": "sha512-ehuGcf94bQXhfagULNXrJdfnWO38v070jxSx/qE87Kjzmu2fU7ro5EFAb+OPituLqgfyuQaym5DlrNydW2sJ9A==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "jose",
+      "declaredConstraint": "6.2.3",
+      "lockedVersion": "6.2.3",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/jose/-/jose-6.2.3.tgz",
+      "integrity": "sha512-YYVDInQKFJfR/xa3ojUTl8c2KoTwiL1R5Wg9YCydwH0x0B9grbzlg5HC7mMjCtUJjbQ/YnGEZIhI5tCgfTb4Hw==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "lucide-react",
+      "declaredConstraint": "^1.23.0",
+      "lockedVersion": "1.23.0",
+      "licenseMetadata": "ISC",
+      "resolved": "https://registry.npmjs.org/lucide-react/-/lucide-react-1.23.0.tgz",
+      "integrity": "sha512-38BpJcD0JhFosxHApP/BYsBetLpQFRoTRzEzstM/XCc3jsAG7wqaY1lgVwxiUe3xqYE+lNxo2PkCmYwXWrwwIw==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "next",
+      "declaredConstraint": "16.2.10",
+      "lockedVersion": "16.2.10",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/next/-/next-16.2.10.tgz",
+      "integrity": "sha512-2som5AVXb3kE6Yjine3/mNbBayYF58eguBWIVVUdr1y/L426xyVEgYxgBG+1QC34P2x5E+tcDup6XkuOAX3dCA==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "pg",
+      "declaredConstraint": "^8.22.0",
+      "lockedVersion": "8.22.0",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/pg/-/pg-8.22.0.tgz",
+      "integrity": "sha512-8wih1vVIBMxoUM2oB4soJsD9tDnDpLv4OXBJ+EJzFsvycD+lfyIreC2gGHq78f8jbLLt+bvlPTFdFZfJkOuzAA==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "radix-ui",
+      "declaredConstraint": "^1.6.2",
+      "lockedVersion": "1.6.2",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/radix-ui/-/radix-ui-1.6.2.tgz",
+      "integrity": "sha512-OwYUjzMwiInCUxgAWpPsavXC3Kh4iyi/49uU1/qZTG3RQDlvegyk1GOMiGvSkjua1RDb3JD3fo3eroL9FV4GQw==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "react",
+      "declaredConstraint": "19.2.4",
+      "lockedVersion": "19.2.4",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/react/-/react-19.2.4.tgz",
+      "integrity": "sha512-9nfp2hYpCwOjAN+8TZFGhtWEwgvWHXqESH8qT89AT/lWklpLON22Lc8pEtnpsZz7VmawabSU0gCjnj8aC0euHQ==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "react-dom",
+      "declaredConstraint": "19.2.4",
+      "lockedVersion": "19.2.4",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-19.2.4.tgz",
+      "integrity": "sha512-AXJdLo8kgMbimY95O2aKQqsz2iWi9jMgKJhRBAxECE4IFxfcazB2LmzloIoibJI3C12IlY20+KFaLv+71bUJeQ==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "react-hook-form",
+      "declaredConstraint": "^7.81.0",
+      "lockedVersion": "7.81.0",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/react-hook-form/-/react-hook-form-7.81.0.tgz",
+      "integrity": "sha512-ocbmr2p5KBMoAfj4WCUvped33lVi1Kd5DuDUvQDnB6VEAacOjPI/jMbtDdbhco4y9ct4xUuCmMY0b/C9L0QHjw==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "storybook",
+      "declaredConstraint": "^10.5.0",
+      "lockedVersion": "10.5.0",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/storybook/-/storybook-10.5.0.tgz",
+      "integrity": "sha512-dRhM/kSSvHQR8DmZO41v5sJuz9U6zDjjR2gRBTgZN2RBSXbmF0Brvgszrvvxyx2VfxuYKzhB+xumKwWkwlBtig==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "tailwind-merge",
+      "declaredConstraint": "^3.6.0",
+      "lockedVersion": "3.6.0",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.6.0.tgz",
+      "integrity": "sha512-uxL7qAVQriqRQPAyK3pj66VqskWqoZ37PW94jwOTwNfq/z9oyu1V+eqrZqtR2+fCiXdYOZe/Modt8GtvqNzu+w==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "tailwindcss",
+      "declaredConstraint": "^4",
+      "lockedVersion": "4.3.2",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.3.2.tgz",
+      "integrity": "sha512-WtctNNSH8A9jlMIqxzuYumOHU5uGZyRv0Q5svQl+oEPy5w84YpBxdb7MdqyiSPQge5jTJ6zFQLq0PFygdccSBA==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "tw-animate-css",
+      "declaredConstraint": "^1.4.0",
+      "lockedVersion": "1.4.0",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/tw-animate-css/-/tw-animate-css-1.4.0.tgz",
+      "integrity": "sha512-7bziOlRqH0hJx80h/3mbicLW7o8qLsH5+RaLR2t+OHM3D0JlWGODQKQ4cxbK7WlvmUxpcj6Kgu6EKqjrGFe3QQ==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "typescript",
+      "declaredConstraint": "^5",
+      "lockedVersion": "5.9.3",
+      "licenseMetadata": "Apache-2.0",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz",
+      "integrity": "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "vite",
+      "declaredConstraint": "^8.1.4",
+      "lockedVersion": "8.1.4",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/vite/-/vite-8.1.4.tgz",
+      "integrity": "sha512-bTT9PsdWO+MQMNG9ZXIP/qM9wGh37DFxTV/sPq9cFpHr3w4jkgef032PkAL9jAqhk3Nz8NQw3O8n6/xFkqO4QQ==",
+      "exactOriginalNoticeClosure": false
+    },
+    {
+      "package": "zod",
+      "declaredConstraint": "^4.4.3",
+      "lockedVersion": "4.4.3",
+      "licenseMetadata": "MIT",
+      "resolved": "https://registry.npmjs.org/zod/-/zod-4.4.3.tgz",
+      "integrity": "sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==",
+      "exactOriginalNoticeClosure": false
+    }
+  ]
+}

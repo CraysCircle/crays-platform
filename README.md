@@ -7,6 +7,7 @@ Shared CRAYS application/service sources, website-hosting wrappers and migration
 | Component | Source and documentation |
 | --- | --- |
 | Shared Next.js application | [Qualified Club/Member/SaaS source views, recovery prerequisites and original notices](apps/web/README.md) |
+| Native Core working-tree slice | [28 tracked modifications, original preimages and verified restoration](apps/web/compositions/native-core-worktree-20261109/README.md) |
 | Personal web application | [Original and 13-overlay React/Vite source, recovery inputs and exact notices](apps/personal/README.md) |
 | Club/Member browser module | [Original and origin35 input views, recorded build and original notices](modules/club-member/README.md) |
 | Personal build operations | [Original build controllers, lease adapter, artifact inspection and adoption-plan source](operations/personal-build/README.md) |
