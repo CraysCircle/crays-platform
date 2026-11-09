@@ -1,0 +1,830 @@
+{
+  "scope": "Exact original Member source lock and observed original-image dependency copy; not a new lock for the prepared Club composition",
+  "directPackages": 47,
+  "all47VersionsMatchSourceLock": true,
+  "lockRootDeclarationsMatchApplication": true,
+  "sourcePackageSHA256": "8334d99c71e4737d3c06f929c0b1ea502ee26b7a0d0902509ec25e1d83ca6906",
+  "sourceLock": {
+    "path": "package-lock.original.json",
+    "sha256": "56f6a775592cfeed09711f1480c835832e4700b8c65837f7ae66a5480a580458",
+    "bytes": 483086
+  },
+  "originalMetadataFilesComparedWithExistingPublicCatalog": 47,
+  "originalRootNoticeFilesComparedWithExistingPublicCatalog": 41,
+  "packagesWithLocatedVersionBoundRootNotices": 45,
+  "unresolvedOriginalNoticeQuestions": [
+    "server-only 0.0.1 original MIT notice",
+    "drizzle-kit 0.31.10 package MIT versus root Apache-2.0 original notice question"
+  ],
+  "packages": [
+    {
+      "name": "@auth0/nextjs-auth0",
+      "version": "4.24.0",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@auth0/nextjs-auth0/4.24.0/package.json",
+      "originalPackageManifestSHA256": "8beda27b39231214952dec5fb500b31026a847464a637ab36e0ca8a7385b051e",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/@auth0/nextjs-auth0/4.24.0/LICENSE",
+          "sha256": "3779c39bada8eef82f985db06ee63216b37c9514a5b071a0b2956d237f80466b",
+          "bytes": 1116
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/@auth0/nextjs-auth0/4.24.0/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "@axe-core/playwright",
+      "version": "4.12.1",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@axe-core/playwright/4.12.1/package.json",
+      "originalPackageManifestSHA256": "c3e69bcde1800e1e748023ce6ed68018b1ce48714160441b7ffb7e1a6f2bd2a2",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/@axe-core/playwright/4.12.1/LICENSE",
+          "sha256": "812e9d96e900a093ae4d1d3f22c5f82f568a0a0461c3007a99d00573d41c5461",
+          "bytes": 15920
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/@axe-core/playwright/4.12.1/LICENSE"
+      ],
+      "licenseMetadata": "MPL-2.0"
+    },
+    {
+      "name": "@dnd-kit/core",
+      "version": "6.3.1",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@dnd-kit/core/6.3.1/package.json",
+      "originalPackageManifestSHA256": "4da9a60c80aa9c0564d1f31ba1502058f2b84240842269c6d54801c8d3175d77",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/@dnd-kit/core/6.3.1/LICENSE",
+          "sha256": "537607e3f1533ad2c5b12978967f5ab27f34ffb7e626e321017a7ccca6cc24ff",
+          "bytes": 1075
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/@dnd-kit/core/6.3.1/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "@dnd-kit/sortable",
+      "version": "10.0.0",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@dnd-kit/sortable/10.0.0/package.json",
+      "originalPackageManifestSHA256": "c3b9c43549eb627d12edae5d2e1ae38e334fee774ddfe20acf1008b915f0d565",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/@dnd-kit/sortable/10.0.0/LICENSE",
+          "sha256": "537607e3f1533ad2c5b12978967f5ab27f34ffb7e626e321017a7ccca6cc24ff",
+          "bytes": 1075
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/@dnd-kit/sortable/10.0.0/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "@dnd-kit/utilities",
+      "version": "3.2.2",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@dnd-kit/utilities/3.2.2/package.json",
+      "originalPackageManifestSHA256": "c1f7cb1b258509c1fdccf9b23d072f0b81fc56498be0a6334189342b5cb8a477",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/@dnd-kit/utilities/3.2.2/LICENSE",
+          "sha256": "537607e3f1533ad2c5b12978967f5ab27f34ffb7e626e321017a7ccca6cc24ff",
+          "bytes": 1075
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/@dnd-kit/utilities/3.2.2/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "@fullcalendar/daygrid",
+      "version": "6.1.21",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@fullcalendar/daygrid/6.1.21/package.json",
+      "originalPackageManifestSHA256": "d769ce7946264aee33f79a6d1d71cf95977be308f23e26277cad32f949790d66",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/@fullcalendar/daygrid/6.1.21/LICENSE.md",
+          "sha256": "4c0b0dae26c99e3b11be70b990a703be4deb75e21884104582e0e217786d3209",
+          "bytes": 1066
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/@fullcalendar/daygrid/6.1.21/LICENSE.md"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "@fullcalendar/list",
+      "version": "6.1.21",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@fullcalendar/list/6.1.21/package.json",
+      "originalPackageManifestSHA256": "563ee656630f559083feb533735050ee156451319492a635d4bb1b67a2b5586f",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/@fullcalendar/list/6.1.21/LICENSE.md",
+          "sha256": "4c0b0dae26c99e3b11be70b990a703be4deb75e21884104582e0e217786d3209",
+          "bytes": 1066
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/@fullcalendar/list/6.1.21/LICENSE.md"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "@fullcalendar/react",
+      "version": "6.1.21",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@fullcalendar/react/6.1.21/package.json",
+      "originalPackageManifestSHA256": "fdcdf926bf2645dab6aa3f3e971cb2f01fdcbf0606f83d2739fe40bc2adab878",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/@fullcalendar/react/6.1.21/LICENSE.txt",
+          "sha256": "8235fc24c22e91eae54d476a4445f0c566e2e9530adc70b8b8cd6089a61d4657",
+          "bytes": 1066
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/@fullcalendar/react/6.1.21/LICENSE.txt"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "@graphql-yoga/plugin-persisted-operations",
+      "version": "3.21.2",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@graphql-yoga/plugin-persisted-operations/3.21.2/package.json",
+      "originalPackageManifestSHA256": "58751ced408f11f25cc0ecb52cdfe7cb6daba08bb7653ef67a99fca58619cacd",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/@graphql-yoga/plugin-persisted-operations/3.21.2/LICENSE",
+          "sha256": "df11c053f884c88a2b405eed9cae822e206c81c4fdbc3c68e9f016ae46f8242c",
+          "bytes": 1132
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/@graphql-yoga/plugin-persisted-operations/3.21.2/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "@hookform/resolvers",
+      "version": "5.4.0",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@hookform/resolvers/5.4.0/package.json",
+      "originalPackageManifestSHA256": "4c94b8c3b12469f53486ca275d279642b8745007d2d80ce060d9f1dc407483b3",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/@hookform/resolvers/5.4.0/LICENSE",
+          "sha256": "e8eeb472f0a5889c2c51625b86a3f9b8630680adb9f49a125352e2e426392780",
+          "bytes": 1080
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/@hookform/resolvers/5.4.0/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "@noble/curves",
+      "version": "2.2.0",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@noble/curves/2.2.0/package.json",
+      "originalPackageManifestSHA256": "b305a9a8e20df7767458bff98aafb7423cb39e00f543fffea5a9e0b88e0ada9e",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/@noble/curves/2.2.0/LICENSE",
+          "sha256": "4f221aee6e072336700c408c68ab3b96a3fc09f6aebe6f48f1bd99e5ef13faec",
+          "bytes": 1109
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/@noble/curves/2.2.0/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "@playwright/test",
+      "version": "1.61.1",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@playwright/test/1.61.1/package.json",
+      "originalPackageManifestSHA256": "9d8556509e073169efec663b7f71c13f17d7002b307d00d48bf88ee91c387f3e",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/@playwright/test/1.61.1/LICENSE",
+          "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb",
+          "bytes": 11601
+        },
+        {
+          "path": "../../third-party/packages/@playwright/test/1.61.1/NOTICE",
+          "sha256": "6d602191187b35b9b01d2cffa01c8469c2c8d9de8a96f1bf868e0f264f51c81d",
+          "bytes": 254
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/@playwright/test/1.61.1/LICENSE",
+        "../../third-party/packages/@playwright/test/1.61.1/NOTICE"
+      ],
+      "licenseMetadata": "Apache-2.0"
+    },
+    {
+      "name": "@refinedev/core",
+      "version": "5.0.12",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@refinedev/core/5.0.12/package.json",
+      "originalPackageManifestSHA256": "3924e54115c21c14a6514fff1324c20e298763cb947a149b7525fb1635aaeb12",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/@refinedev/core/5.0.12/LICENSE",
+          "sha256": "ae616936d77df09838b97cb6d4a41921bcd47b676fe9ce623a5ee4cdbb1db91f",
+          "bytes": 1079
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/@refinedev/core/5.0.12/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "@refinedev/nextjs-router",
+      "version": "7.0.5",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@refinedev/nextjs-router/7.0.5/package.json",
+      "originalPackageManifestSHA256": "566028c2a0551919a4d241baa5d1dbec2a9af77c85b6a6d895510f63d7c2509b",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/@refinedev/nextjs-router/7.0.5/LICENSE",
+          "sha256": "ae616936d77df09838b97cb6d4a41921bcd47b676fe9ce623a5ee4cdbb1db91f",
+          "bytes": 1079
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/@refinedev/nextjs-router/7.0.5/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "@storybook/addon-a11y",
+      "version": "10.5.0",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@storybook/addon-a11y/10.5.0/package.json",
+      "originalPackageManifestSHA256": "e54f016ad981e65a0f57ad34e0e57f7a929f0fdb42d5d293f42b5389b10c7f94",
+      "installedRootNoticesByteVerified": [],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/upstream/storybook/9dafcd22ed55947bc4c2fa1d5066b552baa0ebf4/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "@storybook/nextjs-vite",
+      "version": "10.5.0",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@storybook/nextjs-vite/10.5.0/package.json",
+      "originalPackageManifestSHA256": "ff11c6167ad7199eec9826baa3131886e4de6c5e9df71019c904ab417c41a268",
+      "installedRootNoticesByteVerified": [],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/upstream/storybook/9dafcd22ed55947bc4c2fa1d5066b552baa0ebf4/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "@tailwindcss/postcss",
+      "version": "4.3.2",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@tailwindcss/postcss/4.3.2/package.json",
+      "originalPackageManifestSHA256": "c208667cb39ba99dc29e4124d6dbfc86b39e778399f4913eb9304ef785d86882",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/@tailwindcss/postcss/4.3.2/LICENSE",
+          "sha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985",
+          "bytes": 1071
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/@tailwindcss/postcss/4.3.2/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "@tanstack/react-query",
+      "version": "5.101.2",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@tanstack/react-query/5.101.2/package.json",
+      "originalPackageManifestSHA256": "d9ebc9d11e76bdb5ca6c8929bf0a11fda60ce66bf238c6b6aed4809d070cc4bf",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/@tanstack/react-query/5.101.2/LICENSE",
+          "sha256": "a405ee70c632bb938acb7ac5f210e814409b3760ea9d2329d8ed8ffcfd11a0e7",
+          "bytes": 1079
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/@tanstack/react-query/5.101.2/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "@tanstack/react-table",
+      "version": "8.21.3",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@tanstack/react-table/8.21.3/package.json",
+      "originalPackageManifestSHA256": "06484aa892e133fd488097c4aa74f91452b73338a9115bc6c8939def748e8ce0",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/@tanstack/react-table/8.21.3/LICENSE",
+          "sha256": "9db3f8ddd7031ab264b99bec49c221155d0c8649b53dd4aa007f2041d36cdf5f",
+          "bytes": 1071
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/@tanstack/react-table/8.21.3/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "@types/node",
+      "version": "20.19.43",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@types/node/20.19.43/package.json",
+      "originalPackageManifestSHA256": "30af579da31ec3b497b9405bed1592a8c041f15c8e25db3a010e3c67f765ab41",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/@types/node/20.19.43/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "bytes": 1141
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/@types/node/20.19.43/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "@types/papaparse",
+      "version": "5.5.2",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@types/papaparse/5.5.2/package.json",
+      "originalPackageManifestSHA256": "d273d5ce7585c9da097fbb5b7fcf9e859c5edff7e6f4681f46dc4ddd3e911814",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/@types/papaparse/5.5.2/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "bytes": 1141
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/@types/papaparse/5.5.2/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "@types/pg",
+      "version": "8.20.0",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@types/pg/8.20.0/package.json",
+      "originalPackageManifestSHA256": "df5092354fcbbf4acc0f70e0d2885ddd0ac76c21a57bb598d4b41a4ca6832d38",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/@types/pg/8.20.0/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "bytes": 1141
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/@types/pg/8.20.0/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "@types/react",
+      "version": "19.2.17",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@types/react/19.2.17/package.json",
+      "originalPackageManifestSHA256": "36496fc09a9dcf31b0ca969ce5677c9ce9ebb5c89da9bd6212e0c89b6fae3f88",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/@types/react/19.2.17/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "bytes": 1141
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/@types/react/19.2.17/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "@types/react-dom",
+      "version": "19.2.3",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/@types/react-dom/19.2.3/package.json",
+      "originalPackageManifestSHA256": "bf90986beaec5f757c164bf1d374f3038dc41b0b06673de4a55fd975d1e5deca",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/@types/react-dom/19.2.3/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "bytes": 1141
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/@types/react-dom/19.2.3/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "class-variance-authority",
+      "version": "0.7.1",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/class-variance-authority/0.7.1/package.json",
+      "originalPackageManifestSHA256": "f487885eb010b36aec829ab8fb5fc845918006c4633e3c88c750e73bd35c6381",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/class-variance-authority/0.7.1/LICENSE",
+          "sha256": "0ccbf956cffc8dcf515809433cb5242ee67c94513d46e48c261d68d0880de406",
+          "bytes": 10753
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/class-variance-authority/0.7.1/LICENSE"
+      ],
+      "licenseMetadata": "Apache-2.0"
+    },
+    {
+      "name": "clsx",
+      "version": "2.1.1",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/clsx/2.1.1/package.json",
+      "originalPackageManifestSHA256": "a5e616b9883177fb47c1fca22b6a4ab42be1c3ed6ffae8595a5c7d88630eeec2",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/clsx/2.1.1/license",
+          "sha256": "9a9edad7baae52622bddf3c15b2ef8a33d2c89f2d25408ad13e8a7481c6b0c97",
+          "bytes": 1104
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/clsx/2.1.1/license"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "drizzle-kit",
+      "version": "0.31.10",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/drizzle-kit/0.31.10/package.json",
+      "originalPackageManifestSHA256": "c258e6134d938d6d718448274fd3e89ed9c05aeca7bb6bc7df22c89d943615c8",
+      "installedRootNoticesByteVerified": [],
+      "locatedVersionBoundNoticeFiles": [],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "drizzle-orm",
+      "version": "0.45.2",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/drizzle-orm/0.45.2/package.json",
+      "originalPackageManifestSHA256": "9fd30ce718965c19178ac6936462b77017f1fffe56865124d0cfe55850de09ff",
+      "installedRootNoticesByteVerified": [],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/upstream/drizzle-orm/273c78071d4841b497f5144734b38294df7ec64b/LICENSE"
+      ],
+      "licenseMetadata": "Apache-2.0"
+    },
+    {
+      "name": "eslint",
+      "version": "9.39.4",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/eslint/9.39.4/package.json",
+      "originalPackageManifestSHA256": "80a7caf2adf34963e47b32a1e75157de6d6814c3ae5a9d90358ddd9364833fe7",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/eslint/9.39.4/LICENSE",
+          "sha256": "3b6be04f862a077a4b97929dbf247299360824d9365f8603c263769303ace18c",
+          "bytes": 1094
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/eslint/9.39.4/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "eslint-config-next",
+      "version": "16.2.10",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/eslint-config-next/16.2.10/package.json",
+      "originalPackageManifestSHA256": "cf1c525e38c14a59b00bec24c495e24e7b41e83d274075f0433b43034974b409",
+      "installedRootNoticesByteVerified": [],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/upstream/eslint-config-next/9dadfd693c5d26bb3c85d1c17802f49dde244b3e/license.md"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "graphql",
+      "version": "16.14.2",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/graphql/16.14.2/package.json",
+      "originalPackageManifestSHA256": "d936a7b80542de54dd1323cd20c5e3481a753e7cc00dac6191d3ff8a3ed187d3",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/graphql/16.14.2/LICENSE",
+          "sha256": "35a11da7e877009ddc57405844209908cfc567adda0ec1daf410368c9f5b0d01",
+          "bytes": 1072
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/graphql/16.14.2/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "graphql-yoga",
+      "version": "5.21.2",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/graphql-yoga/5.21.2/package.json",
+      "originalPackageManifestSHA256": "3c6550d2c1618370744e648f8b55f7aaca27b10ad82da1a4044ac9f7090ac9eb",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/graphql-yoga/5.21.2/LICENSE",
+          "sha256": "df11c053f884c88a2b405eed9cae822e206c81c4fdbc3c68e9f016ae46f8242c",
+          "bytes": 1132
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/graphql-yoga/5.21.2/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "lucide-react",
+      "version": "1.23.0",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/lucide-react/1.23.0/package.json",
+      "originalPackageManifestSHA256": "89b273b576398863371027110beb8ecef8c822dd611c01f34adab5fe503e2e69",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/lucide-react/1.23.0/LICENSE",
+          "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+          "bytes": 3208
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/lucide-react/1.23.0/LICENSE"
+      ],
+      "licenseMetadata": "ISC"
+    },
+    {
+      "name": "next",
+      "version": "16.2.10",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/next/16.2.10/package.json",
+      "originalPackageManifestSHA256": "57f3d18dd1fbfd586762782d5ab66ba0862380bcdbeec633a5cbe124a1b365ee",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/next/16.2.10/license.md",
+          "sha256": "ee765244e2d59f5234d474f62e0766fa0c8b99af967fdd4c0cb8dcb0c76ea224",
+          "bytes": 1079
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/next/16.2.10/license.md"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "pg",
+      "version": "8.22.0",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/pg/8.22.0/package.json",
+      "originalPackageManifestSHA256": "bab5faf4410151a463078fffa326d10979150bfc330f0a29bd08948378ed3421",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/pg/8.22.0/LICENSE",
+          "sha256": "192b8f5c96900f04a1271dec39688655d7416c1c6ea84a508e18b50d2b6751f3",
+          "bytes": 1077
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/pg/8.22.0/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "radix-ui",
+      "version": "1.6.2",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/radix-ui/1.6.2/package.json",
+      "originalPackageManifestSHA256": "11468f5960f30725657677dc73d948f448b35e4ed252a8c5d40f9158f1fafda8",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/radix-ui/1.6.2/LICENSE",
+          "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138",
+          "bytes": 1063
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/radix-ui/1.6.2/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "react",
+      "version": "19.2.4",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/react/19.2.4/package.json",
+      "originalPackageManifestSHA256": "e60b92f6031f023907bbfab8f96e63e44307776ec1488f310ba61d41b8cda8cc",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/react/19.2.4/LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+          "bytes": 1088
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/react/19.2.4/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "react-dom",
+      "version": "19.2.4",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/react-dom/19.2.4/package.json",
+      "originalPackageManifestSHA256": "b8448092689c7e6191595a98526ced808288f35138d97fbce5801a94922e3c36",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/react-dom/19.2.4/LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+          "bytes": 1088
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/react-dom/19.2.4/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "react-hook-form",
+      "version": "7.81.0",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/react-hook-form/7.81.0/package.json",
+      "originalPackageManifestSHA256": "dcfdf6c3072708e18f66d7f06aeb8768f5780ba8c6b2c03ddf1b45b104f60b7b",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/react-hook-form/7.81.0/LICENSE",
+          "sha256": "e8eeb472f0a5889c2c51625b86a3f9b8630680adb9f49a125352e2e426392780",
+          "bytes": 1080
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/react-hook-form/7.81.0/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "server-only",
+      "version": "0.0.1",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/server-only/0.0.1/package.json",
+      "originalPackageManifestSHA256": "e4b0cc01e2e0349c51c694fa97d8a642eb8322521ca1444b20bd1842594b4339",
+      "installedRootNoticesByteVerified": [],
+      "locatedVersionBoundNoticeFiles": [],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "storybook",
+      "version": "10.5.0",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/storybook/10.5.0/package.json",
+      "originalPackageManifestSHA256": "3a2f8e650b5d922a410f15e45bdf9aeda0bcbabbd580afa8fcad190c25fea525",
+      "installedRootNoticesByteVerified": [],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/upstream/storybook/9dafcd22ed55947bc4c2fa1d5066b552baa0ebf4/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "tailwind-merge",
+      "version": "3.6.0",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/tailwind-merge/3.6.0/package.json",
+      "originalPackageManifestSHA256": "dd8a34386cdd58744a48027a30fc75103d8bf246cbbb4aa90f0b2333b25818b6",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/tailwind-merge/3.6.0/LICENSE.md",
+          "sha256": "d4c70c7ce38cea8778f0aed3fc0bef0a9dbd27f13bd8b6773cbd6d37941971e5",
+          "bytes": 1070
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/tailwind-merge/3.6.0/LICENSE.md"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "tailwindcss",
+      "version": "4.3.2",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/tailwindcss/4.3.2/package.json",
+      "originalPackageManifestSHA256": "92a1151a2e1adb85c736228008ae2d3fa293dc1c51c058f5317a238194298a97",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/tailwindcss/4.3.2/LICENSE",
+          "sha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985",
+          "bytes": 1071
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/tailwindcss/4.3.2/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "tw-animate-css",
+      "version": "1.4.0",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/tw-animate-css/1.4.0/package.json",
+      "originalPackageManifestSHA256": "66849c41b809ccca55c6484bf102044c73847b21a7d3bc3fd95df133c0a578e1",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/tw-animate-css/1.4.0/LICENSE",
+          "sha256": "039184dfa0a822397b3f45a435b5b1e538721587fbade96b9fa80f86cb354109",
+          "bytes": 1068
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/tw-animate-css/1.4.0/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "typescript",
+      "version": "5.9.3",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/typescript/5.9.3/package.json",
+      "originalPackageManifestSHA256": "822ef7ca6452205657b6288b066481ecf508bfbf43455d715cf7d3ec457561e6",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/typescript/5.9.3/LICENSE.txt",
+          "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47",
+          "bytes": 9197
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/typescript/5.9.3/LICENSE.txt",
+        "../../third-party/packages/typescript/5.9.3/ThirdPartyNoticeText.txt"
+      ],
+      "licenseMetadata": "Apache-2.0"
+    },
+    {
+      "name": "vite",
+      "version": "8.1.4",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/vite/8.1.4/package.json",
+      "originalPackageManifestSHA256": "d26ea2d65c50959b1b5dcd0d1c52eba22eb6c3f4dc335f618053b15970bb63d6",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/vite/8.1.4/LICENSE.md",
+          "sha256": "b1d741c26b53de1bbc0d4d7d3365b79888f9fe511527544a8a7b8e24dec43147",
+          "bytes": 110976
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/vite/8.1.4/LICENSE.md"
+      ],
+      "licenseMetadata": "MIT"
+    },
+    {
+      "name": "zod",
+      "version": "4.4.3",
+      "installedVersionMatchesSourceLock": true,
+      "originalPackageManifest": "../../third-party/packages/zod/4.4.3/package.json",
+      "originalPackageManifestSHA256": "c630bd10b52dcf71c112a2bf78dbf2734b9db58d62de663b8d86c2ec2c8cda2e",
+      "installedRootNoticesByteVerified": [
+        {
+          "path": "../../third-party/packages/zod/4.4.3/LICENSE",
+          "sha256": "3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8",
+          "bytes": 1072
+        }
+      ],
+      "locatedVersionBoundNoticeFiles": [
+        "../../third-party/packages/zod/4.4.3/LICENSE"
+      ],
+      "licenseMetadata": "MIT"
+    }
+  ],
+  "fullTransitiveRuntimeRightsAndSourceOfferClosure": false,
+  "packagesInstalledOrExecuted": false
+}

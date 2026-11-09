@@ -1,0 +1,22 @@
+{
+  "schema": "crays.member.source-build-binding.v1",
+  "sourceScope": "Existing AWS materialized Member25 application inputs",
+  "sourceFiles": 1401,
+  "all1401InputHashesMatchCapturedComposition": true,
+  "inputManifestSHA256": "7c34d45450bc9385ad548f25932badf1f29006fd75255994438a88e250b22757",
+  "rootBuildResultSHA256": "e346df2f1ce938134fd96c802bae4758494eaf0b67209eb4dce8a96bd4d1abdb",
+  "source14HandlerSHA256": "a9c2705a10fec87333f6e03236232958a4b9facf09c2d17cb513c788a47ede21",
+  "all28TransportAdaptersReportedPreserved": true,
+  "originalFrameworkBuildId": "wUKFmu0-AhQgD3tntumrG",
+  "frameworkBuildIdIsNotImageOrRegistryDigest": true,
+  "recordedBuildExitCode": 0,
+  "buildExecutedByThisGitHubTask": false,
+  "postBuildGeneratedConfigFilesSeparatelyPreserved": [
+    "tsconfig.json",
+    "next-env.d.ts"
+  ],
+  "currentRuntimeImageAdoptionAndFullLicenseClosure": false,
+  "githubSourceCommitAssigned": false,
+  "sourceFileManifest": "source-files.json",
+  "actualMemberSupplementalCodePublicationComplete": false
+}
