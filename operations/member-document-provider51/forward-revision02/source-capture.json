@@ -1,0 +1,60 @@
+{
+  "schema": "crays.member51-forward-source.v1",
+  "sourceOnly": true,
+  "sourceRevision": "forward02 with finisher rev04 and namespace lifetime verifier; separately pinned ingress51",
+  "originalFiles": [
+    {
+      "path": "recover_same_created_member51_family.forward02.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/recover_same_created_member51_family.forward02.candidate.py",
+      "restoreTarget": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/recover_same_created_member51_family.forward02.candidate.py",
+      "bytes": 13932,
+      "sha256": "5cb42866b7335b4335aec6755d6342ec60b515c7c0bc283dc23a06af71db1273",
+      "mode": "100644",
+      "sourceAuthority": "exact Forward02 manifest pin"
+    },
+    {
+      "path": "verify_lifetime_member51_namespace.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/verify_lifetime_member51_namespace.candidate.py",
+      "restoreTarget": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/verify_lifetime_member51_namespace.candidate.py",
+      "bytes": 7258,
+      "sha256": "a5c0f8bb1187d10388d0a624013dddf14a12f83a18e66485695e9ecb883f71ad",
+      "mode": "100644",
+      "sourceAuthority": "exact Forward02 manifest pin"
+    },
+    {
+      "path": "finish_current_member51_generation.rev04.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/finish_current_member51_generation.rev04.candidate.py",
+      "restoreTarget": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/finish_current_member51_generation.rev04.candidate.py",
+      "bytes": 32650,
+      "sha256": "03aee7dab95a44c727eaa683a6279406f06088e1d03e5ace2528656a70448208",
+      "mode": "100644",
+      "sourceAuthority": "exact Forward02 manifest pin"
+    },
+    {
+      "path": "member51_current39_ingress.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/ingress51-source01/member51_current39_ingress.candidate.py",
+      "restoreTarget": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/ingress51-source01/member51_current39_ingress.candidate.py",
+      "bytes": 21454,
+      "sha256": "3a94415c5441db067678104ccea158ce6a461e635e2f23f93c5f9437e7da38a3",
+      "mode": "100644",
+      "sourceAuthority": "separate direct Root full-SHA ingress source pin; not invented as a Forward02 manifest row"
+    }
+  ],
+  "forwardManifest": {
+    "sha256": "fcd3356bacfd33689f168d7c4ea1e589c65486b5349f3f1503de916d8946483d",
+    "originalName": "SOURCE_MANIFEST51_FORWARD02.json",
+    "scope": "Three current Python programs; source-manifest historical status SOURCE_ONLY_FORWARD02_NOT_EXECUTED is not current runtime evidence."
+  },
+  "authority": "Trusted Root exact source pins, independently verified full bytes; explicit Root statement that these Python sources were created here by Codex for CRAYS.",
+  "buildIdInSource": "Em8YqZapuRa58BfKC5hRh",
+  "rootReportedExecution": {
+    "reported": true,
+    "independentlyReadActualReceipt": false,
+    "description": "Root reports Forward02 Success0, three-phase physical return and fence release. This archive does not reverify that runtime or customer acceptance."
+  },
+  "historicalVariants": "Not part of these four files; earlier initial lifecycle/build/selector sources remain separately preserved.",
+  "privacyReview": "Full static review of all four unchanged sources, including finite embedded UID-access Python and JavaScript schema-validator adapter strings. Technical instance/container/process/inode/network/build/receipt bindings retained; no fixed person, credential or customer-data literals identified.",
+  "dependencyBoundary": "stdlib imports and references to separately preserved lifecycle/physical/projection/derive helpers and existing Common SDK modules; imported implementations and private admission/config/runtime/registry payloads are not included or relicensed.",
+  "originalSourceExecutionPerformed": false,
+  "newRuntimeInstallOrAcceptanceClaim": false
+}

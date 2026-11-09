@@ -1,0 +1,69 @@
+{
+  "schema": "crays.component.exact-owned-source-license-scope.v1",
+  "licenseExpression": "AGPL-3.0-only",
+  "copyrightHolder": "CRAYS AG",
+  "grantDateUTC": "2026-11-09",
+  "componentPath": "operations/member-document-provider51/forward-revision02",
+  "files": [
+    {
+      "path": "operations/member-document-provider51/forward-revision02/recover_same_created_member51_family.forward02.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/recover_same_created_member51_family.forward02.candidate.py",
+      "bytes": 13932,
+      "sha256": "5cb42866b7335b4335aec6755d6342ec60b515c7c0bc283dc23a06af71db1273",
+      "pinAuthority": "SOURCE_MANIFEST51_FORWARD02.json"
+    },
+    {
+      "path": "operations/member-document-provider51/forward-revision02/verify_lifetime_member51_namespace.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/verify_lifetime_member51_namespace.candidate.py",
+      "bytes": 7258,
+      "sha256": "a5c0f8bb1187d10388d0a624013dddf14a12f83a18e66485695e9ecb883f71ad",
+      "pinAuthority": "SOURCE_MANIFEST51_FORWARD02.json"
+    },
+    {
+      "path": "operations/member-document-provider51/forward-revision02/finish_current_member51_generation.rev04.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/finish_current_member51_generation.rev04.candidate.py",
+      "bytes": 32650,
+      "sha256": "03aee7dab95a44c727eaa683a6279406f06088e1d03e5ace2528656a70448208",
+      "pinAuthority": "SOURCE_MANIFEST51_FORWARD02.json"
+    },
+    {
+      "path": "operations/member-document-provider51/forward-revision02/member51_current39_ingress.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/ingress51-source01/member51_current39_ingress.candidate.py",
+      "bytes": 21454,
+      "sha256": "3a94415c5441db067678104ccea158ce6a461e635e2f23f93c5f9437e7da38a3",
+      "pinAuthority": "Trusted Root explicit exact ingress source path and full SHA-256 authorization"
+    }
+  ],
+  "fileCount": 4,
+  "sourceBytes": 75294,
+  "rightsAuthority": {
+    "humanDecision": "AGPL-3.0-only / CRAYS AG for demonstrably own previously unlicensed CRAYS code",
+    "exactSourceAuthorBasis": "Trusted Root explicitly attests that these exact Codex-created CRAYS programs are own project-specific migration code and the existing own-code license rule applies. The original exact paths, full hashes and manifest bind scope. Ownership is not inferred from filenames, storage or absent headers.",
+    "sourceManifest": {
+      "path": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/SOURCE_MANIFEST51_FORWARD02.json",
+      "sha256": "fcd3356bacfd33689f168d7c4ea1e589c65486b5349f3f1503de916d8946483d",
+      "pinsThreeCurrentProgramsOnly": true
+    },
+    "ingressPin": "Exact separate Root-authorized source path/fullSHA3a94415c5441db067678104ccea158ce6a461e635e2f23f93c5f9437e7da38a3; no invented manifest membership"
+  },
+  "recipientRights": "Hashes identify licensed originals; recipients AGPL rights to run, modify and redistribute covered code and derivatives remain unaffected.",
+  "excluded": [
+    "Earlier lifecycle/finisher/stage/projection/classifier programs and historical Forward variants not listed here",
+    "The separately preserved Docs selector, initial Lifecycle51 and Build51 code, application/Common/Work/Member/BFF modules and unchanged external helper implementations",
+    "Python, Linux, Docker, systemd, Node.js, Go, SDK, networking libraries and imported/invoked upstream implementations",
+    "Private current-family snapshots, admission/capture/preimage inputs, credentials, environment contents, keys, registry bodies, actuals, logs, Caddy configuration and runtime/customer data",
+    "Documentation, assets, unlisted independent code and unrelated future revisions",
+    "Independently licensed third-party material, whose original terms and notices remain unchanged"
+  ],
+  "noLargeEmbeddedThirdPartyImplementationIdentifiedInScopedStringBoundaryReview": true,
+  "originalSourceBodiesModified": false,
+  "existingOriginalTermsOverridden": false,
+  "licenseText": {
+    "path": "operations/member-document-provider51/forward-revision02/LICENSE",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  "notOrLater": true,
+  "sourcePublicationDoesNotAuthorizeCRAYSInfrastructureOrPrivateCredentialUse": true,
+  "runtimeOutcomeOrCustomerAcceptanceClaimedByLicense": false
+}

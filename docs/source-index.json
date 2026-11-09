@@ -249,6 +249,10 @@
     {
       "component": "clubs-commerce-bff-pure80-source-revision01",
       "path": "operations/clubs-commerce-bff/pure80-source-revision01/source-capture.json"
+    },
+    {
+      "component": "member-document-provider51-forward-revision02",
+      "path": "operations/member-document-provider51/forward-revision02/source-capture.json"
     }
   ]
 }
