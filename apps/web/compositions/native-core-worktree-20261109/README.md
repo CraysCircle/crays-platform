@@ -61,3 +61,7 @@ A further 232 byte-preserved original files cover native/Personal identity and C
 - [Untracked Synthetic Auth Fixtures](UNTRACKED_SYNTHETIC_AUTH_FIXTURES.md)
 
 These are source slices at the recorded historical Core authority, not a claim of the latest deployed runtime or complete recovery. Marketing/profile data, provider bindings, generated/vendor relationships and the remaining candidates require their own checks.
+
+## Personal account and feature materializer source
+
+A further 212 original source files retain account-connection, credential-custody interface, runtime-authority, composition and feature modules. The [account/materializer guide](UNTRACKED_ORIGINAL_MATERIALIZER.md) and [feature-composition guide](UNTRACKED_FEATURE_COMPOSITION_SOURCE.md) describe original speech, research, translation, preference, planning and document-integration sources. Their exact paths and hashes remain recorded; no provider or product program was executed. Compiled upstream overlays, personal-literal contexts and full runtime/dependency rights remain separate.

@@ -1,0 +1,7 @@
+const fail=()=>{throw Object.assign(new Error('Invalid planner time'),{safeCode:'INVALID_PLANNER_INPUT'});};
+export function zone(x){if(typeof x!=='string'||x.length>80||!/^[A-Za-z_]+(?:\/[A-Za-z0-9_+\-]+)*$/.test(x))fail();try{new Intl.DateTimeFormat('en-GB',{timeZone:x}).format(0);}catch{fail();}return x;}
+export function day(x){if(typeof x!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(x)||x.startsWith('0000'))fail();const d=new Date(x+'T00:00:00Z');if(!Number.isFinite(+d)||d.toISOString().slice(0,10)!==x)fail();return x;}
+export function localParts(ms,tz){const p=Object.fromEntries(new Intl.DateTimeFormat('en-GB',{timeZone:tz,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(ms).map(p=>[p.type,p.value]));return p.year+'-'+p.month+'-'+p.day+'T'+p.hour+':'+p.minute;}
+// Explicit offset resolves repeated clock times; nonexistent local times never validate.
+export function instant(x,tz){if(typeof x!=='string'||!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?:Z|[+-]\d{2}:\d{2})$/.test(x))fail();day(x.slice(0,10));const suffix=x.slice(16),m=suffix==='Z'?0:Number(suffix.slice(1,3))*60+Number(suffix.slice(4));if(suffix!=='Z'&&(Number(suffix.slice(4))>59||m>840))fail();const ms=Date.parse(x);if(!Number.isFinite(ms)||localParts(ms,tz)!==x.slice(0,16))fail();return ms;}
+export function display(ms,tz){return {instant:new Date(ms).toISOString(),local:localParts(ms,tz),timeZone:tz};}

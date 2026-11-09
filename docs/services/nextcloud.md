@@ -4,6 +4,8 @@ CRAYS connects member documents and organizational collaboration to Nextcloud th
 
 These are distinct paths: a successful provider write or membership acknowledgement must still be related to the correct CRAYS account and authority record.
 
+The broader documented collaboration scope also includes **Talk/calls, Office/document collaboration and Whiteboard**. Each has separate provider/app, access, source-version and end-to-end validation requirements. Their presence in the documented service graph is not evidence that those user journeys are complete or currently accepted on AWS; the adapters described below establish their own narrower source scope.
+
 ## Upstream platform and CRAYS code
 
 [Nextcloud Server](https://github.com/nextcloud/server) provides the cloud-file and collaboration platform. CRAYS supplies the application-facing authorization, document contracts and reconciliation:

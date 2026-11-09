@@ -4,6 +4,8 @@ CRAYS uses its finance integration to connect commerce activity with accounting 
 
 The integration is designed around explicit delivery and reconciliation. An originating commerce command, a queued consequence and a provider response remain separate records.
 
+The preserved finance-provider evidence identifies **ERPNext 16.26.1** on **Frappe 16.25.0**. Original installed-app metadata also lists **Frappe CRM 1.76.0**. An installed CRM app does not, by itself, establish that it is the active CRAYS CRM provider or that its workflows have been accepted. These versions describe that recorded provider snapshot, not every current AWS container.
+
 ## Upstream platform and CRAYS code
 
 [Frappe](https://github.com/frappe/frappe) and [ERPNext](https://github.com/frappe/erpnext) provide the ERP application domain. CRAYS code translates its commerce events and controls delivery across the application boundary:

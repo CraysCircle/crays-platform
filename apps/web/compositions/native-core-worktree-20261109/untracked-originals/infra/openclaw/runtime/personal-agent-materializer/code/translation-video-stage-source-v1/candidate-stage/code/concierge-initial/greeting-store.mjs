@@ -1,0 +1,19 @@
+/** Private once-only two-step plan; SQLite kernel transactions, no process-local once flag. */
+import fs from 'node:fs';import path from 'node:path';import {DatabaseSync} from 'node:sqlite';import {createHash} from 'node:crypto';
+const fail=()=>{throw Error('CONCIERGE_GREETING_UNAVAILABLE');};
+export function openGreetingStore({agentDir,guard}){
+ guard();const uid=process.getuid();if(uid===0||uid===1000)fail();const base=fs.realpathSync(agentDir),st=fs.lstatSync(base,{bigint:true});if(!st.isDirectory()||st.uid!==BigInt(uid)||(st.mode&0o077n)!==0n)fail();
+ const syncDir=p=>{const fd=fs.openSync(p,fs.constants.O_RDONLY|fs.constants.O_DIRECTORY|fs.constants.O_NOFOLLOW);try{fs.fsyncSync(fd);}finally{fs.closeSync(fd);}};
+ const root=path.join(base,'.crays-concierge-initial-v1');try{fs.mkdirSync(root,{mode:0o700});}catch(e){if(e.code!=='EEXIST')throw e;}
+ syncDir(base);
+ const own=fs.lstatSync(root,{bigint:true});if(!own.isDirectory()||own.isSymbolicLink()||own.uid!==BigInt(uid)||(own.mode&0o077n)!==0n)fail();
+ const check=()=>{guard();const a=fs.lstatSync(base,{bigint:true}),b=fs.lstatSync(root,{bigint:true});if(a.dev!==st.dev||a.ino!==st.ino||a.uid!==st.uid||b.dev!==own.dev||b.ino!==own.ino||b.uid!==own.uid||!b.isDirectory()||(b.mode&0o077n)!==0n)fail();};
+ const file=path.join(root,'greeting.sqlite');try{const fd=fs.openSync(file,fs.constants.O_CREAT|fs.constants.O_EXCL|fs.constants.O_WRONLY|fs.constants.O_NOFOLLOW,0o600);fs.fsyncSync(fd);fs.closeSync(fd);}catch(e){if(e.code!=='EEXIST')throw e;}
+ const secure=p=>{const s=fs.lstatSync(p,{bigint:true});if(!s.isFile()||s.isSymbolicLink()||s.nlink!==1n||s.uid!==BigInt(uid)||(s.mode&0o077n)!==0n)fail();return s;};const inode=secure(file);syncDir(root);
+ for(const suffix of ['-journal','-wal','-shm'])if(fs.existsSync(file+suffix))secure(file+suffix);
+ const db=new DatabaseSync(file);const dbGuard=()=>{check();const s=secure(file);if(s.dev!==inode.dev||s.ino!==inode.ino)fail();};
+ try{db.exec('PRAGMA busy_timeout=1000; PRAGMA journal_mode=DELETE; PRAGMA synchronous=FULL; CREATE TABLE IF NOT EXISTS initial_greeting(scope_key TEXT PRIMARY KEY,revision INTEGER NOT NULL,state TEXT NOT NULL,origin_hash TEXT NOT NULL,plan_json TEXT NOT NULL,first_receipt_json TEXT,second_receipt_json TEXT,error_code TEXT);');dbGuard();}catch(e){db.close();throw e;}
+ const tx=fn=>{dbGuard();db.exec('BEGIN IMMEDIATE');try{const x=fn();dbGuard();db.exec('COMMIT');return x;}catch(e){try{db.exec('ROLLBACK');}catch{}throw e;}};
+ const read=key=>{dbGuard();const r=db.prepare('SELECT * FROM initial_greeting WHERE scope_key=?').get(key);return r?{...r,plan:JSON.parse(r.plan_json)}:null;};
+ return {read,prepare({scopeKey,originHash,first,second,intentIds}){return tx(()=>{const prior=read(scopeKey);if(prior)return prior;const plan={schema:1,payloads:[{text:first},{text:second}],intentIds};const raw=JSON.stringify(plan);db.prepare('INSERT INTO initial_greeting(scope_key,revision,state,origin_hash,plan_json) VALUES(?,1,?,?,?)').run(scopeKey,'PLANNED',originHash,raw);return read(scopeKey);});},transition({scopeKey,revision,from,to,receipt,errorCode}){return tx(()=>{const current=read(scopeKey);if(!current||current.revision!==revision||current.state!==from)fail();if(!['FIRST_INFLIGHT','FIRST_ACCEPTED','SECOND_INFLIGHT','COMPLETE','UNKNOWN'].includes(to))fail();const col=to==='FIRST_ACCEPTED'?'first_receipt_json':to==='COMPLETE'?'second_receipt_json':null;const sql='UPDATE initial_greeting SET revision=revision+1,state=?,error_code=?'+(col?', '+col+'=?':'')+' WHERE scope_key=? AND revision=? AND state=?';const args=[to,errorCode??null,...(col?[JSON.stringify(receipt)]:[]),scopeKey,revision,from];if(db.prepare(sql).run(...args).changes!==1)fail();return read(scopeKey);});},identity:{dev:st.dev.toString(),ino:st.ino.toString()},close(){db.close();}};
+}

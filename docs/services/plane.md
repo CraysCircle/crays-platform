@@ -2,7 +2,7 @@
 
 CRAYS uses a Plane integration to turn application and partner-operation work into scoped project work items. A task remains connected to its originating business record so that delivery, provider acceptance and later status can be reconciled.
 
-Plane appears once in the platform service map. Its role here is project work and operational follow-up.
+Plane is the provider integration documented for the **Project area within Work**, covering project work and operational follow-up. The published [Work module registry](../../apps/web/src/lib/modules.ts#L104) declares the canonical module key `project`, label `Project` and route `/project`. This source declaration identifies the application area; it does not establish that a production route or complete workflow has been accepted. Plane is not a second project feature beside that area.
 
 ## Upstream platform and CRAYS code
 

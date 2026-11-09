@@ -6,7 +6,7 @@ The service keeps content discovery separate from room availability, booking and
 
 ## Provider and CRAYS code
 
-The underlying Qlo hospitality provider owns its provider-side application and content. CRAYS code handles its Core/session boundary and the projections consumed by the application:
+The native Qlo application supplies hospitality data; CRAYS supplies the Core/session boundary and the projections consumed by the application:
 
 | Source | Responsibility |
 | --- | --- |
@@ -40,6 +40,29 @@ Useful contributions include:
 - Media provenance, dependency notice and exact provider-version documentation.
 
 Production provider credentials, business import receipts and customer booking data remain outside Git.
+
+## First local check: the two projection tests
+
+A small starting point is the pair of projection tests at the beginning of the [original package test script](../../services/qlo-gateway/package.json). They exercise the two local projection modules with in-memory fixtures: no npm dependencies, Docker, protected configuration, real provider credentials or provider calls are required.
+
+Use a local Node.js installation. The recorded gateway build used **Node.js 22.23.1**; use that version when matching the recorded baseline.
+
+From the repository root:
+
+```sh
+node --version
+cd services/qlo-gateway
+node test-provider-room-inventory.mjs
+node test-provider-property-services.mjs
+```
+
+The room test checks property scoping, pending physical inventory and removal of internal room/provider details. The service test checks pending catalog imports, admitted services and the explicitly non-bookable projection.
+
+When their assertions succeed, these Node assertion scripts print lines beginning `CCLUB120_QLO_PROVIDER_ROOM_INVENTORY_PASS` and `CCLUB120_QLO_PROVIDER_PROPERTY_SERVICES_PASS`; a failed assertion produces a nonzero exit.
+
+For a first change, add a synthetic malformed or cross-property fixture, state the expected safe projection and run the relevant script. Keep any new fixture entirely artificial.
+
+The package's full `npm test` command runs these two scripts followed by two gateway integration scripts. Those additional tests create loopback mock servers, temporary fixture files and a gateway child process. Inspect their setup and cleanup before expanding to that suite. The narrow commands above exercise only the pure projections; they do not start a gateway or test a live booking flow.
 
 ## Version and source status
 

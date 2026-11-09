@@ -1,0 +1,1554 @@
+{
+  "schema": "crays.core-untracked-feature-composition-source.v1",
+  "sourceHead": "c2018d04f6a52d8716326a098dde7624cbb18963",
+  "files": [
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v1/cited-research/compose-cited-research-inheritance.mjs",
+      "bytes": 2604,
+      "sha256": "a95b6917382970419b888a7baf5662d86fd22235a0c17b2f2f10427604c1b5d2",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v1/cited-research/compose-cited-research-inheritance.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v1/compose-approved-general-baseline.mjs",
+      "bytes": 5733,
+      "sha256": "97501218b9fc5a673e11de783bdb3adf157430654accec60293afc73291ab8a1",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v1/compose-approved-general-baseline.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v1/expedia/compose-expedia-search-delta.mjs",
+      "bytes": 4782,
+      "sha256": "0c4e73f7312b79d2167e7d36b6716ab846160a50a529b9a229d41d0d23709529",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v1/expedia/compose-expedia-search-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v1/multipart-pdf/compose-multipart-pdf-delta.mjs",
+      "bytes": 2358,
+      "sha256": "1bdb04c103456b9efd82154e1f42f7720e03ee393e6e67d3b9f6ba1786caa377",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v1/multipart-pdf/compose-multipart-pdf-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v1/reminders/compose-personal-reminder-candidate.mjs",
+      "bytes": 4672,
+      "sha256": "f717d07532f06498cbdd0c9cdad96ae0206d0ef473bdcbdb1df778d421dc8d80",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v1/reminders/compose-personal-reminder-candidate.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v1/selected-local-skills/compose-selected-local-skills.mjs",
+      "bytes": 1579,
+      "sha256": "83048f9b4486e8f9e0932e4c5b89f31ff901d62cc9059ab2035b6fb4a377ebed",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v1/selected-local-skills/compose-selected-local-skills.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v1/tts/compose-explicit-speech-delta.mjs",
+      "bytes": 2345,
+      "sha256": "da72a8e1b3f12bb56972ffd879b92e2a0e4532045ba4f5ee2f3407a48c9ccd8c",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v1/tts/compose-explicit-speech-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/channel-independent/cited-research/compose-cited-research-inheritance.mjs",
+      "bytes": 2618,
+      "sha256": "14c6aa71657035a25852837b0942c3c5455829139b9b1faaf2cf315324bdb989",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/channel-independent/cited-research/compose-cited-research-inheritance.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/channel-independent/expedia/compose-expedia-search-delta.mjs",
+      "bytes": 4780,
+      "sha256": "7be9782832902c76d5ae26af85d5164d1d8437d9d5c1222965f137d2f4fde1d3",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/channel-independent/expedia/compose-expedia-search-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/channel-independent/multipart-pdf/compose-multipart-pdf-delta.mjs",
+      "bytes": 2358,
+      "sha256": "f9c419316be54b0824086e2cbd313e6f483696b40513d65597f629a2ded8ab9d",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/channel-independent/multipart-pdf/compose-multipart-pdf-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/channel-independent/tts/compose-explicit-speech-delta.mjs",
+      "bytes": 2345,
+      "sha256": "f7467103ed6746b049af3444456fe164e75039c688679ec8387d719eebd196b6",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/channel-independent/tts/compose-explicit-speech-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/cited-research/compose-cited-research-inheritance.mjs",
+      "bytes": 2604,
+      "sha256": "a95b6917382970419b888a7baf5662d86fd22235a0c17b2f2f10427604c1b5d2",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/cited-research/compose-cited-research-inheritance.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/compose-approved-general-baseline.mjs",
+      "bytes": 5860,
+      "sha256": "14907f3f1713510f742cb43eab135f08143bf23bb81a1a12bacb5c3a592f043d",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/compose-approved-general-baseline.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/compose-channel-independent-baseline.mjs",
+      "bytes": 4029,
+      "sha256": "c9e8664bf89f5b5c1811d186df07d3ef463154e730b3a84cf5801b3e7b3fcc84",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/compose-channel-independent-baseline.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/expedia/compose-expedia-search-delta.mjs",
+      "bytes": 4782,
+      "sha256": "0c4e73f7312b79d2167e7d36b6716ab846160a50a529b9a229d41d0d23709529",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/expedia/compose-expedia-search-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/multipart-pdf/compose-multipart-pdf-delta.mjs",
+      "bytes": 2358,
+      "sha256": "1bdb04c103456b9efd82154e1f42f7720e03ee393e6e67d3b9f6ba1786caa377",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/multipart-pdf/compose-multipart-pdf-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/reminders/compose-personal-reminder-candidate.mjs",
+      "bytes": 4672,
+      "sha256": "f717d07532f06498cbdd0c9cdad96ae0206d0ef473bdcbdb1df778d421dc8d80",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/reminders/compose-personal-reminder-candidate.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/selected-local-skills/compose-selected-local-skills.mjs",
+      "bytes": 1579,
+      "sha256": "83048f9b4486e8f9e0932e4c5b89f31ff901d62cc9059ab2035b6fb4a377ebed",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/selected-local-skills/compose-selected-local-skills.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/tts/compose-explicit-speech-delta.mjs",
+      "bytes": 2345,
+      "sha256": "da72a8e1b3f12bb56972ffd879b92e2a0e4532045ba4f5ee2f3407a48c9ccd8c",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/tts/compose-explicit-speech-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/channel-independent/cited-research/compose-cited-research-inheritance.mjs",
+      "bytes": 2618,
+      "sha256": "14c6aa71657035a25852837b0942c3c5455829139b9b1faaf2cf315324bdb989",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/channel-independent/cited-research/compose-cited-research-inheritance.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/channel-independent/expedia/compose-expedia-search-delta.mjs",
+      "bytes": 5064,
+      "sha256": "af23dc192484f05911724f760dfb0ed01c75c23db2b1684954f912390c787b6c",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/channel-independent/expedia/compose-expedia-search-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/channel-independent/multipart-pdf/compose-multipart-pdf-delta.mjs",
+      "bytes": 2358,
+      "sha256": "f9c419316be54b0824086e2cbd313e6f483696b40513d65597f629a2ded8ab9d",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/channel-independent/multipart-pdf/compose-multipart-pdf-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/channel-independent/tts/compose-explicit-speech-delta.mjs",
+      "bytes": 2345,
+      "sha256": "f7467103ed6746b049af3444456fe164e75039c688679ec8387d719eebd196b6",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/channel-independent/tts/compose-explicit-speech-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/cited-research/compose-cited-research-inheritance.mjs",
+      "bytes": 2604,
+      "sha256": "a95b6917382970419b888a7baf5662d86fd22235a0c17b2f2f10427604c1b5d2",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/cited-research/compose-cited-research-inheritance.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/compose-approved-general-baseline.mjs",
+      "bytes": 5860,
+      "sha256": "7cc05d4ff031de5649b61e604c513d61860381bdeee8785994d5853c03e86f0d",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/compose-approved-general-baseline.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/compose-channel-independent-baseline.mjs",
+      "bytes": 4087,
+      "sha256": "333333d770a6ee2535cd4bb8c794f2b99be6d461da67b425738c58f61a7e4b0d",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/compose-channel-independent-baseline.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/expedia/compose-expedia-search-delta.mjs",
+      "bytes": 4782,
+      "sha256": "0c4e73f7312b79d2167e7d36b6716ab846160a50a529b9a229d41d0d23709529",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/expedia/compose-expedia-search-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/multipart-pdf/compose-multipart-pdf-delta.mjs",
+      "bytes": 2358,
+      "sha256": "1bdb04c103456b9efd82154e1f42f7720e03ee393e6e67d3b9f6ba1786caa377",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/multipart-pdf/compose-multipart-pdf-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/reminders/compose-personal-reminder-candidate.mjs",
+      "bytes": 4672,
+      "sha256": "f717d07532f06498cbdd0c9cdad96ae0206d0ef473bdcbdb1df778d421dc8d80",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/reminders/compose-personal-reminder-candidate.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/selected-local-skills/compose-selected-local-skills.mjs",
+      "bytes": 1579,
+      "sha256": "83048f9b4486e8f9e0932e4c5b89f31ff901d62cc9059ab2035b6fb4a377ebed",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/selected-local-skills/compose-selected-local-skills.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/tts/compose-explicit-speech-delta.mjs",
+      "bytes": 2345,
+      "sha256": "da72a8e1b3f12bb56972ffd879b92e2a0e4532045ba4f5ee2f3407a48c9ccd8c",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/tts/compose-explicit-speech-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v4-real-factory/compose-approved-general-baseline.mjs",
+      "bytes": 6322,
+      "sha256": "d0fb2977bee827220f36748959bc6f6dc3534ecdc821ca688adb29512d25ccaf",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v4-real-factory/compose-approved-general-baseline.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v4-real-factory/compose-channel-independent-baseline.mjs",
+      "bytes": 4468,
+      "sha256": "defeae3bf1fb0a5a774eda5e4002c320ab0cfa5d8eefb5707c64bb468f2c3159",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v4-real-factory/compose-channel-independent-baseline.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v4-real-factory/compose-expedia-search-delta.mjs",
+      "bytes": 5544,
+      "sha256": "bc73d288168157e54f4d44cd8d224698bc7d2a6239fa9cfb199543a8c29df6eb",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v4-real-factory/compose-expedia-search-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v4-real-factory/compose-explicit-speech-delta.mjs",
+      "bytes": 2456,
+      "sha256": "80b37d457dbd6e69ed2bd493e26ec0e42555c3d76c8a4e73fce261e48d2b7f3b",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v4-real-factory/compose-explicit-speech-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v5-translation-video/compose-approved-general-baseline.mjs",
+      "bytes": 5113,
+      "sha256": "bb5a0fd4ea70cd5317ce29c5e2db587da2f3d5a9513a4250ddad9edffd15a15e",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v5-translation-video/compose-approved-general-baseline.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-v5-catalogue-source-v1/generate-v5-catalogue.mjs",
+      "bytes": 3205,
+      "sha256": "cf0c8d901ae43b1890e5eb664bdae1f76e7a4171f516a2e131313d4a5917a159",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-v5-catalogue-source-v1/generate-v5-catalogue.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-v5-catalogue-source-v1/test-v5-catalogue.mjs",
+      "bytes": 2897,
+      "sha256": "d0067b2a7f79b37078accf8f996ebe3da3d456a0d19c07554dd1166837d7a722",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-v5-catalogue-source-v1/test-v5-catalogue.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/cited-research-inheritance-v1/compose-cited-research-inheritance.mjs",
+      "bytes": 2604,
+      "sha256": "a95b6917382970419b888a7baf5662d86fd22235a0c17b2f2f10427604c1b5d2",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/cited-research-inheritance-v1/compose-cited-research-inheritance.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/cited-research-inheritance-v1/test-cited-research-inheritance.mjs",
+      "bytes": 4039,
+      "sha256": "3804fa48052107d3f08c60af591575eea4019621ff638059952f523d6766c195",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/cited-research-inheritance-v1/test-cited-research-inheritance.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/default-source-direct-root-adoption-v1/ORIGINAL_server-materializer.mjs",
+      "bytes": 1607,
+      "sha256": "185bea8804560b82f34b13b645acbf68839bb1703733d95c56267b6823b19d90",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/default-source-direct-root-adoption-v1/ORIGINAL_server-materializer.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/default-source-direct-root-adoption-v1/PROPOSED_server-materializer.mjs",
+      "bytes": 444,
+      "sha256": "2e46d8a8fa8c5eda4a257eefc763b34c3b80ef38e0b80cf5d3202da827d28055",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/default-source-direct-root-adoption-v1/PROPOSED_server-materializer.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/general-extension-host-environment-v1/prepare-dependencies.mjs",
+      "bytes": 1442,
+      "sha256": "a25d3bb88201e98aac1c6e32fde4e2b744beeb7c705f27b479b388a5aa07752d",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/general-extension-host-environment-v1/prepare-dependencies.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/general-extension-host-environment-v1/prepare-host-environment.mjs",
+      "bytes": 3133,
+      "sha256": "592ee1b94aedd67ca9f381e629ca231f901a9227664ff9b3cd8cae7b45883ced",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/general-extension-host-environment-v1/prepare-host-environment.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/general-extension-host-environment-v1/prepare-host-environment.test.mjs",
+      "bytes": 2350,
+      "sha256": "96833307671cb233e09dc12c3963ac1e27e3954c4d1b1e60a21c643d4c89d5d0",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/general-extension-host-environment-v1/prepare-host-environment.test.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/local-speech/build-local-aware-native-tts-overlay.mjs",
+      "bytes": 4088,
+      "sha256": "75c50321327cf80a83b115a282d801397d159eaa31d95db96b89b1d1c5a24723",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/local-speech/build-local-aware-native-tts-overlay.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/local-speech/build-local-aware-native-tts-overlay.test.mjs",
+      "bytes": 2616,
+      "sha256": "a47a40d7d2d3c8af83365a350264dfa17955dd6fd530a9b29600e6f28a8e3f29",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/local-speech/build-local-aware-native-tts-overlay.test.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/local-speech/compose-optional-local-cli-provider.mjs",
+      "bytes": 3973,
+      "sha256": "183831841c445b057de54ee9876ff8fa4f10aae1781bbd6a59599c9b5af0d3fa",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/local-speech/compose-optional-local-cli-provider.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/local-speech/compose-optional-local-cli-provider.test.mjs",
+      "bytes": 3083,
+      "sha256": "b68d4eb3dac79b8e87504bb66dcfbcd079ccf16422af910ccd53ee9643425445",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/local-speech/compose-optional-local-cli-provider.test.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/local-speech/original-explicit-speech-call.mjs",
+      "bytes": 3419,
+      "sha256": "74ce3ed6a4d9ba08e78a29c3d2b7ccbfac4266642b7f2e1c4ea9e85bd2cf078e",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/local-speech/original-explicit-speech-call.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/local-speech/read-runtime-admission.mjs",
+      "bytes": 4404,
+      "sha256": "cc2fca21986b5416f93daeac1682530a5376794fdd9c5aa04afcee203b768df6",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/local-speech/read-runtime-admission.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/local-speech/resolve-optional-explicit-speech-config.mjs",
+      "bytes": 2366,
+      "sha256": "906e50b73ec74268b9884a9406a9dfbca0cb53b827c1689c939722221849ffc0",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/local-speech/resolve-optional-explicit-speech-config.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/local-speech/resolve-optional-explicit-speech-config.test.mjs",
+      "bytes": 2722,
+      "sha256": "85d30a75b02c94531c05b81168b6fb72ad274caebd14829d3121ee52f188773d",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/local-speech/resolve-optional-explicit-speech-config.test.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/local-speech/resolve-personal-speech-host-context.mjs",
+      "bytes": 8780,
+      "sha256": "1d203100173477885a82ba1e372105b506a8a00942592210b6e5f2ff033e3779",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/local-speech/resolve-personal-speech-host-context.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/local-speech/resolve-personal-speech-host-context.test.mjs",
+      "bytes": 7423,
+      "sha256": "b81a3b8515fbe7c10843d81155617d00edecb53c587fdb5b00f2e5a933401349",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/local-speech/resolve-personal-speech-host-context.test.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/local-speech/server-personal-speech-context.candidate.mjs",
+      "bytes": 1750,
+      "sha256": "c14dc28ef1bdf4e852a5c5c280f07fcd7e1b7d0a1bcabcf7a3615b8543b80a06",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/local-speech/server-personal-speech-context.candidate.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/personal-preference-recall-availability-source-v1/FIRST_FIXTURE_FAILURE/test-recall-availability.mjs",
+      "bytes": 4997,
+      "sha256": "369ddd455446e88a9beea871cae349437c593de5151a5051341f8c88b6da0fe5",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/personal-preference-recall-availability-source-v1/FIRST_FIXTURE_FAILURE/test-recall-availability.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/personal-preference-recall-availability-source-v1/ORIGINAL_recall-core.mjs",
+      "bytes": 6414,
+      "sha256": "8a717bfed031ffc0d24a79d31bed3e6132d04d7ab72c99102517e69844eca6ab",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/personal-preference-recall-availability-source-v1/ORIGINAL_recall-core.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/personal-preference-recall-availability-source-v1/recall-core.mjs",
+      "bytes": 6507,
+      "sha256": "68bbe7137937d9cd4155087a280d252e78d565198dcd94cde8238ce04255a5da",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/personal-preference-recall-availability-source-v1/recall-core.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/personal-preference-recall-availability-source-v1/test-recall-availability.mjs",
+      "bytes": 5032,
+      "sha256": "2fa6d3673c8fae2b1f4a542589d873aeed11e0efb509ca67b68011b62b4a9e4e",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/personal-preference-recall-availability-source-v1/test-recall-availability.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/speech-inheritance-v1/apply-shared-speech-inheritance.mjs",
+      "bytes": 6708,
+      "sha256": "405adf5252339deab0c871e6a99f5ba89153891efcd8ec1ce15931a672b738ec",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/speech-inheritance-v1/apply-shared-speech-inheritance.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/speech-inheritance-v1/server-materializer-with-speech.candidate.mjs",
+      "bytes": 1293,
+      "sha256": "4ae20fa8d7d31fbd30ba2329c404aea5017e405a5725aa5563432c78c0003ddf",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/speech-inheritance-v1/server-materializer-with-speech.candidate.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/speech-inheritance-v1/test-shared-speech-inheritance.mjs",
+      "bytes": 5394,
+      "sha256": "e08a2904e60a1b16b232c81a12e9c6fbc74136e4f94232150cfae87f371dd091",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/speech-inheritance-v1/test-shared-speech-inheritance.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-activation-source-v1/project-live-weather.proposed.mjs",
+      "bytes": 13938,
+      "sha256": "0f1bfeac5ea2b297afdd468b50f6c1b2b97b16f0f2a8d2684984a643fee99b24",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-activation-source-v1/project-live-weather.proposed.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-batch-v1/baseline/compose-weather-v53.mjs",
+      "bytes": 5216,
+      "sha256": "b4a62ab04e6b213e1f59ffb0a82d687faa787d49e437554201dcc1d1f4243d03",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-batch-v1/baseline/compose-weather-v53.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-batch-v1/compose-translation-video-batch.mjs",
+      "bytes": 7411,
+      "sha256": "9e0651ba3d7cea304773ec0f3c1ee2c604709f847e2b9fc303154a46cd5e0a98",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-batch-v1/compose-translation-video-batch.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-batch-v1/compose-translation-video-batch.test.mjs",
+      "bytes": 7580,
+      "sha256": "1bdc6d9b199deb3e9a812128353660c09ecc663eba44e26060dda6365e2654b1",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-batch-v1/compose-translation-video-batch.test.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-late-integration-v1/assert-weather-instruction-profile.mjs",
+      "bytes": 3169,
+      "sha256": "26322e55fc4bde8183f8d64f9cd6675b96ad498e1f1c4c2cf9c11598801d271e",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-late-integration-v1/assert-weather-instruction-profile.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-late-integration-v1/test-late-profile-source.mjs",
+      "bytes": 3736,
+      "sha256": "cc3b57716bea5c76f89749662ef2668c98659e2d588b8c059f6cccf4a490e5d0",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-late-integration-v1/test-late-profile-source.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-native-preparation-v1/candidate-overlays/translation-video-batch-v1/compose-translation-video-batch.mjs",
+      "bytes": 7411,
+      "sha256": "9e0651ba3d7cea304773ec0f3c1ee2c604709f847e2b9fc303154a46cd5e0a98",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-native-preparation-v1/candidate-overlays/translation-video-batch-v1/compose-translation-video-batch.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-native-preparation-v1/candidate-overlays/weather/assert-weather-instruction-profile.mjs",
+      "bytes": 3169,
+      "sha256": "26322e55fc4bde8183f8d64f9cd6675b96ad498e1f1c4c2cf9c11598801d271e",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-native-preparation-v1/candidate-overlays/weather/assert-weather-instruction-profile.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-native-preparation-v1/code/failure-projection.mjs",
+      "bytes": 3340,
+      "sha256": "ada1f08375b5ec7741f8de871105223e7ba975dd342f3496ab82b28a75d13856",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-native-preparation-v1/code/failure-projection.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-native-preparation-v1/code/gateway-phase-observer.mjs",
+      "bytes": 523,
+      "sha256": "9f34fe822be630fd3135c9ba19e5b720fa0ed40de60df7176f9204d4009a127e",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-native-preparation-v1/code/gateway-phase-observer.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-native-preparation-v1/code/qualify-reminder-registry-boundary.mjs",
+      "bytes": 6057,
+      "sha256": "d17fb60a9a8fffb754c2acab9959d836c9583c7dba0d0863632a5c4077a5df59",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-native-preparation-v1/code/qualify-reminder-registry-boundary.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-native-preparation-v1/code/run-full-gateway-probe.mjs",
+      "bytes": 838,
+      "sha256": "be81013497ba5c927197564397238a8d936a175d71f5e050ba61ae463681c971",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-native-preparation-v1/code/run-full-gateway-probe.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-publication-source-v1/preflight-supervisor-admission.mjs",
+      "bytes": 12730,
+      "sha256": "5c05b842436ff42bb3592bf88c76c1e872c779414480730da8302e612f36c289",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-publication-source-v1/preflight-supervisor-admission.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/cited-research/compose-cited-research-delta.mjs",
+      "bytes": 1428,
+      "sha256": "803c444485987667b1b705217b139ea5a57c8c854608a39fc5163cb89c7f193c",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/cited-research/compose-cited-research-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/compose-owner-config.mjs",
+      "bytes": 2036,
+      "sha256": "67fb15b6fe7b3334054bef1e01265953bd8a66ca45ade796d4077e2c11a4ea99",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/compose-owner-config.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/concierge-initial/greeting-store.mjs",
+      "bytes": 3824,
+      "sha256": "89432ac51e9e74e14d06e2cce3de68e1a7f6c5ef167c3ffb3c39dd804cfec084",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/concierge-initial/greeting-store.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/concierge-initial/initial-greeting.mjs",
+      "bytes": 9232,
+      "sha256": "a3919ebc0b7b68ad936ced07091616516baacffaead9279809e08a4db6c75f1c",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/concierge-initial/initial-greeting.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/cooking/compose-personal-cooking-delta.mjs",
+      "bytes": 2970,
+      "sha256": "9388b9ef7e987c10f1ee34a1f981b4577935a0c95bcac32242400b588fe3e716",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/cooking/compose-personal-cooking-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/expedia/assert-expedia-native-registry.mjs",
+      "bytes": 3157,
+      "sha256": "90903ead992b2e22c882e4d3e9254a6702dd856f9de855395b62c55e038a3f1c",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/expedia/assert-expedia-native-registry.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/expedia/compose-expedia-search-delta.mjs",
+      "bytes": 4987,
+      "sha256": "29b825c3445ba7d3c8f97d1f6da06926e7033488ccf085be5e26668f0e904fe8",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/expedia/compose-expedia-search-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/gateway-exit-diagnostics.mjs",
+      "bytes": 6120,
+      "sha256": "c9b85a21a085db012764f92db38b95d45a9e86eb259dfd7c06e33f266e2d6471",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/gateway-exit-diagnostics.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/inbound-office/extract-office.mjs",
+      "bytes": 3091,
+      "sha256": "adb07931d4262243b6aa0463f30f6572dcbbe28312e0ceadf7927f39e0315079",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/inbound-office/extract-office.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/inbound-office/office-worker.mjs",
+      "bytes": 4558,
+      "sha256": "5d8f349207387e67abfe6cf03186c7bd6106c84c040f059435f8a08069e4c1f1",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/inbound-office/office-worker.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/inbound-office/zip-preflight.mjs",
+      "bytes": 2862,
+      "sha256": "0880e3ffd3d2570ff871fa6655b9a9b17412bdddb42083fd0ea19bad8be1106f",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/inbound-office/zip-preflight.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/multipart-pdf/assert-multipart-pdf-native-registry.mjs",
+      "bytes": 3129,
+      "sha256": "d1037babb4146fba6961db1f8baa268556ff5f1a4034ddb32956c5b4abd0a2f3",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/multipart-pdf/assert-multipart-pdf-native-registry.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/multipart-pdf/compose-multipart-pdf-delta.mjs",
+      "bytes": 2459,
+      "sha256": "16e6a07e598c50fe4409e19b3a33fcccccfa1891affbddcb1e3f3441c1a69fdb",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/multipart-pdf/compose-multipart-pdf-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/operational-learning/compose-operational-learning-delta.mjs",
+      "bytes": 1605,
+      "sha256": "ed7a1005ce21c37e01ffae8efbae316993fac94d348d8138737efd0e64ef8571",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/operational-learning/compose-operational-learning-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/personal-owner-records/learning-evidence.mjs",
+      "bytes": 3799,
+      "sha256": "f6c7df9f9ee605595ae84f761ba8927a9e1ef867d87d0a82c508d15c3073aec0",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/personal-owner-records/learning-evidence.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/personal-owner-records/learning-format.mjs",
+      "bytes": 4919,
+      "sha256": "9f4588871b3965f601e82a13991c99f66ea90f9211b44e7fbc02fe85ecfe2381",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/personal-owner-records/learning-format.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/personal-owner-records/store.mjs",
+      "bytes": 26589,
+      "sha256": "7b41876f7f68a76ecc06a6045e66bb491d71e2db791c6c3705e960fdd70a4d38",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/personal-owner-records/store.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/personal-planner/compose-personal-planner-delta.mjs",
+      "bytes": 2930,
+      "sha256": "94600d5ddd9b4e63a52cfcbbc6e2eb5363bbe6b8dfaba8b8e7b90ab7f203456f",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/personal-planner/compose-personal-planner-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/pptx/compose-pptx-delta.mjs",
+      "bytes": 2270,
+      "sha256": "ea0dfac0002b164158c4651f50823e0fc7d27c0c0807b27062a52386ab6b0aab",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/pptx/compose-pptx-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/preferences/compose-personal-preferences-delta.mjs",
+      "bytes": 3063,
+      "sha256": "6ea9d66fc26d806276185438f47e8ff063a5fa07e7e0a8e19e8abfec60f53a92",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/preferences/compose-personal-preferences-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/preferences/raw-confirmation.mjs",
+      "bytes": 3957,
+      "sha256": "868f2d37388f545a2e9f51b60fb9bec18385ac24dc1e762c0b2feaa1cf5ac9a3",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/preferences/raw-confirmation.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/quiz-review/compose-personal-quiz-review-delta.mjs",
+      "bytes": 2911,
+      "sha256": "17b203d7880cc5ea63248a55c42ed71fda7ec9fa279080fb07fc9f4c6ee8be7d",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/quiz-review/compose-personal-quiz-review-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/reminders/compose-personal-reminder-candidate.mjs",
+      "bytes": 4672,
+      "sha256": "f717d07532f06498cbdd0c9cdad96ae0206d0ef473bdcbdb1df778d421dc8d80",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/reminders/compose-personal-reminder-candidate.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/reminders/inspect-native-reminder-registry.mjs",
+      "bytes": 2299,
+      "sha256": "e3a99229d9da454bfd0832f18f3f254554057d54bbbe4da343de84cb271e1f35",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/reminders/inspect-native-reminder-registry.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/reminders/model-facing-reminder-contract.mjs",
+      "bytes": 5136,
+      "sha256": "811d2e4a4df626cca833d1e2041af45f67f4a0927a02a4f2415b37bfdda4d41c",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/reminders/model-facing-reminder-contract.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/reminders/native-reminder-runtime-boundary.mjs",
+      "bytes": 10841,
+      "sha256": "4d38c9adc0da0e3654791951473edb0afba29d0a3c07cf245d12398bd1106c41",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/reminders/native-reminder-runtime-boundary.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/reminders/prepare-native-reminder-machine-state.mjs",
+      "bytes": 4230,
+      "sha256": "468eb474661680d6dc2937397f9d86fed7969ae371f6afd1a76054a118da30ba",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/reminders/prepare-native-reminder-machine-state.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/scripts/crays-agent-general-skills-policy.mjs",
+      "bytes": 3119,
+      "sha256": "7b1bae78eec91d10ac74d6a6d56c42065edd1af8704af691990cd2700d67c68b",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/scripts/crays-agent-general-skills-policy.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/scripts/crays-agent-general-skills-second-wave.mjs",
+      "bytes": 4344,
+      "sha256": "244c7757cfd9232eecceaa298c5b560f17d5b9f4b090776ac595d0164e6bb0e1",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/scripts/crays-agent-general-skills-second-wave.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/selected-local-skills/compose-selected-local-skills.mjs",
+      "bytes": 1579,
+      "sha256": "83048f9b4486e8f9e0932e4c5b89f31ff901d62cc9059ab2035b6fb4a377ebed",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/selected-local-skills/compose-selected-local-skills.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/challenge-store.mjs",
+      "bytes": 11161,
+      "sha256": "bf3f26765a4df9e514dc56bbb55814818867109daac1c10795f60aefa4fe1907",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/challenge-store.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/explicit-memory-capture.mjs",
+      "bytes": 7101,
+      "sha256": "dc715e4c073dacde54e6af401e1fd65f2f11c2d05c3bdc354bc43a6a9fb7764e",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/explicit-memory-capture.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/index.mjs",
+      "bytes": 8558,
+      "sha256": "c6ff926fe921d60659e93368e2ed72c931b12feaefd172491be66e29e0553d2f",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/index.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/learning-evidence.mjs",
+      "bytes": 169,
+      "sha256": "f7587fbd40c7a0bc8618d38f32c7603477ca2c469be3cfdb588a91ee7b26f634",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/learning-evidence.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/learning-format.mjs",
+      "bytes": 161,
+      "sha256": "ea64871fa03048c76e80b6f8cc9da3e5fdd744077489d65a6276d77144689629",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/learning-format.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/memory-context.mjs",
+      "bytes": 1772,
+      "sha256": "00347646446e1f2f3166bee793ae5fe4869be1fb3ea802c1134a4356628a020b",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/memory-context.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/native-confirmation-connector.mjs",
+      "bytes": 13014,
+      "sha256": "e01f13e5f9fb63f33f0f12f2465812f25f0f22db9603d6a178e223aa4380a751",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/native-confirmation-connector.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": [
+        "openclaw/plugin-sdk/agent-scope-runtime"
+      ]
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/natural-correction.mjs",
+      "bytes": 1195,
+      "sha256": "81800f9312d1ef70153ed0e249aafa00add8a3d5620cc9d7165d5cab22b86a05",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/natural-correction.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/operational-learning-hooks.mjs",
+      "bytes": 8883,
+      "sha256": "25dd71da3986e1d44aece18c152a1702a80588567e456fd3d5369d98c401690c",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/operational-learning-hooks.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/operational-learning-recall.mjs",
+      "bytes": 4035,
+      "sha256": "6cef0ea05680486f4cf29ed88b27f635875f7df0b4e042af674d297d002a62a5",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/operational-learning-recall.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/operational-learning.mjs",
+      "bytes": 4553,
+      "sha256": "e74ca3bb1202d6f186cfafcb46ea5856b16fc9fe151855541fb38699ef3cf6aa",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/operational-learning.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/pending-task-overview.mjs",
+      "bytes": 7828,
+      "sha256": "f111928784f6d5dcc654368e4595c4deaba7d8ad38a8fb2fba1035854bfde392",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/pending-task-overview.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/planner-original/input.mjs",
+      "bytes": 5497,
+      "sha256": "77799450a60c6ea3f55b497b8f10548fbb7fc126f4124c52e7e424a4af6ba808",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/planner-original/input.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/planner-original/schedule.mjs",
+      "bytes": 2052,
+      "sha256": "e3a9f86e74c59ec86c7e2ebfd353b4c8f4fae6fca133f30194b5a90b6386330e",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/planner-original/schedule.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/planner-original/time.mjs",
+      "bytes": 1435,
+      "sha256": "81d9397824f0673736642e81d11139dec8c8fbcec87a05d7ee3f01bf4cccf834",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/planner-original/time.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/preference-adapter.mjs",
+      "bytes": 9867,
+      "sha256": "d14b70d4d9f76c6598837fb05cb5189158c4b7d8b7ad3f730763d561b0e9fabe",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/preference-adapter.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/private-readonly.mjs",
+      "bytes": 3649,
+      "sha256": "62d8333191411b7e2dd08fa46a2652e85d71c000fc85b129876e4ed267840546",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/private-readonly.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/recall-core.mjs",
+      "bytes": 6414,
+      "sha256": "8a717bfed031ffc0d24a79d31bed3e6132d04d7ab72c99102517e69844eca6ab",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/recall-core.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/recall.mjs",
+      "bytes": 663,
+      "sha256": "2441e5dea375346b2fac955abf0f889650ca09cbe87c69e7ad20ada6dbb68ba2",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/recall.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/receipt-store.mjs",
+      "bytes": 11178,
+      "sha256": "03dd1067290887daa84f917195242354da7c446c81a366e86ca3ed301d7852a7",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/receipt-store.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/records-factory.mjs",
+      "bytes": 4849,
+      "sha256": "b96a7c7922383c8bfa56ba87d0c5130320f6fb6d615cd07a773b7a207e3bcc6f",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/records-factory.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/records-store.mjs",
+      "bytes": 222,
+      "sha256": "e5e49fb14cefee335d9d0d83207b1e4f453152d2a94c88ac078b97e477305cd9",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/records-store.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/records/index.mjs",
+      "bytes": 4841,
+      "sha256": "f2503ac0e59e4e3a7218e761a30aec718c5d64e8906cf13ef93355800a01b7d9",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/records/index.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/records/store.mjs",
+      "bytes": 204,
+      "sha256": "4a5dc63b7f1e702c7ecde7efe1f1a630833afcdbe04889f4b9a5237afbc159ba",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/records/store.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/transcript-draft/ingress-draft.mjs",
+      "bytes": 2979,
+      "sha256": "94519f96f45fa5594eed6b74bd2e9c837687ad542b5a7628e3954b2825c72399",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/transcript-draft/ingress-draft.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/translation-video-batch-v1/compose-translation-video-batch.mjs",
+      "bytes": 7411,
+      "sha256": "9e0651ba3d7cea304773ec0f3c1ee2c604709f847e2b9fc303154a46cd5e0a98",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/translation-video-batch-v1/compose-translation-video-batch.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/tts/compose-explicit-speech-delta.mjs",
+      "bytes": 2345,
+      "sha256": "da72a8e1b3f12bb56972ffd879b92e2a0e4532045ba4f5ee2f3407a48c9ccd8c",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/tts/compose-explicit-speech-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/tts/crays-explicit-speech-call.mjs",
+      "bytes": 3419,
+      "sha256": "74ce3ed6a4d9ba08e78a29c3d2b7ccbfac4266642b7f2e1c4ea9e85bd2cf078e",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/tts/crays-explicit-speech-call.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/tts/crays-tts-isolated-worker.mjs",
+      "bytes": 1474,
+      "sha256": "16498f42372c7ee609898a07b3357aa31f1f9109d217b6ed72d93271d3bcef74",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/tts/crays-tts-isolated-worker.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/tts/crays-tts-original-writer.mjs",
+      "bytes": 2052,
+      "sha256": "25c2c2a809f8ca5dd277c645abc3d6308275d6c7bc7d7eafec815357c043f4b0",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/tts/crays-tts-original-writer.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": [
+        "node-edge-tts"
+      ]
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/tts/microsoft-capability-catalog.js",
+      "bytes": 287,
+      "sha256": "d40ce05416dc9ad5d1dceba5ecc45606f24bbb070bf0ef94552eaffd6334de78",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/tts/microsoft-capability-catalog.js",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/tts/tts-D9HL-FBa.mjs",
+      "bytes": 3657,
+      "sha256": "f009286378ca9d047e863888fdcb4c890242f244fcf6f60590f95a6104529ad2",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/tts/tts-D9HL-FBa.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/video/compose-short-video-delta.mjs",
+      "bytes": 1717,
+      "sha256": "5e393ed89464ac64c7682379625f193c6fa94143ecfd8e7ba1381c80718834cb",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/video/compose-short-video-delta.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/video/extract-video-frames.mjs",
+      "bytes": 8329,
+      "sha256": "b39d77bfcf27bc0433fcfd26812e48d1fd83ccdfe350cd5ec2deb0d750bd0ec5",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/video/extract-video-frames.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": [
+        "@openclaw/fs-safe/temp",
+        "openclaw/plugin-sdk/media-runtime"
+      ]
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/video/short-video-own-vision.mjs",
+      "bytes": 4508,
+      "sha256": "4ea286bc9e4dd8f7b6fb018b5e05d7547ef2892e758cfe91513027c0845fe2db",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/video/short-video-own-vision.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": [
+        "openclaw/plugin-sdk/media-understanding"
+      ]
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/weather/assert-weather-instruction-profile.mjs",
+      "bytes": 3169,
+      "sha256": "26322e55fc4bde8183f8d64f9cd6675b96ad498e1f1c4c2cf9c11598801d271e",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/weather/assert-weather-instruction-profile.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/weather/compose-weather-v53.mjs",
+      "bytes": 5216,
+      "sha256": "b4a62ab04e6b213e1f59ffb0a82d687faa787d49e437554201dcc1d1f4243d03",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/weather/compose-weather-v53.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/weather/startup-currentness.mjs",
+      "bytes": 2785,
+      "sha256": "dbea0a423b481e8ef6511efefef84f013ddad32de5472a333aba81764a0e64c0",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/weather/startup-currentness.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/with-owner-personal-records.mjs",
+      "bytes": 2996,
+      "sha256": "2eb868abf6561cc0920a3588f57337d79fade443d79bdacfb387ed8f1bc8b278",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/with-owner-personal-records.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-supervisor-preflight-source-v1/PRE_TWO_FIELD_NATIVE_PROOF_TRANSFORM/preflight-supervisor-admission.mjs",
+      "bytes": 11870,
+      "sha256": "7b8a91fd7c4355cad253882e9443938ff741247a0ba279672274fa0895482717",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-supervisor-preflight-source-v1/PRE_TWO_FIELD_NATIVE_PROOF_TRANSFORM/preflight-supervisor-admission.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-supervisor-preflight-source-v1/preflight-supervisor-admission.mjs",
+      "bytes": 12730,
+      "sha256": "5c05b842436ff42bb3592bf88c76c1e872c779414480730da8302e612f36c289",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-supervisor-preflight-source-v1/preflight-supervisor-admission.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/weather-v53-stepwise-source-v1/compose-weather-v53.mjs",
+      "bytes": 4527,
+      "sha256": "05d90e151d535f36ed61bfd9c6781089f2e1227f59e7e2f406a67ddde4d3f9f0",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/weather-v53-stepwise-source-v1/compose-weather-v53.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/weather-v53-stepwise-source-v1/compose-weather-v53.test.mjs",
+      "bytes": 5937,
+      "sha256": "4a966b103c26070c89f78e9716e8ea25045893d8458066618d27c6618faca6ce",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/weather-v53-stepwise-source-v1/compose-weather-v53.test.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/weather-v53-stepwise-source-v2/compose-weather-v53.mjs",
+      "bytes": 5216,
+      "sha256": "b4a62ab04e6b213e1f59ffb0a82d687faa787d49e437554201dcc1d1f4243d03",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/weather-v53-stepwise-source-v2/compose-weather-v53.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/weather-v53-stepwise-source-v2/compose-weather-v53.test.mjs",
+      "bytes": 7837,
+      "sha256": "233ed687c0b51811ed21406280046a8ca650bdbb91007f2283a585c2a879801b",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/weather-v53-stepwise-source-v2/compose-weather-v53.test.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/product-wiring/coordination-metadata.mjs",
+      "bytes": 2296,
+      "sha256": "703f2023e7ebfd16dcfd79fba8186f383ddc7ee93e1de0a4896900ccd79249d9",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/product-wiring/coordination-metadata.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/product-wiring/provider-provisioning.mjs",
+      "bytes": 1152,
+      "sha256": "4c57169420c4530153181514130b9245d5e2414913cbd30aeedcbe35c617fdfe",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/product-wiring/provider-provisioning.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/product-wiring/test-coordination-registry.mjs",
+      "bytes": 4074,
+      "sha256": "dc6fdd530ffe96788668bc81b3fc8e3e13e8815964d2aa74477f8f57333f7e65",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/product-wiring/test-coordination-registry.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/product-wiring/test-product-wiring.mjs",
+      "bytes": 8813,
+      "sha256": "d1a456565e7a5d91721159e3d67347e1af7bd9c8144836b48d85d0e02bb59dd7",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/product-wiring/test-product-wiring.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/product-wiring/workbench-bootstrap.mjs",
+      "bytes": 899,
+      "sha256": "44c4b865fb609f180d06761e8ab83afcfe253e2be77a50e6717b3396e46ed8eb",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/product-wiring/workbench-bootstrap.mjs",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/qualification/core/materializer-core-resolver.native.test.mts",
+      "bytes": 7128,
+      "sha256": "7ab673ef6e98289cc11432ade9097baf23efbe79dea092eac0c812a13246bbe7",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/qualification/core/materializer-core-resolver.native.test.mts",
+      "category": "ORIGINAL_FEATURE_COMPOSITION_INTEGRATION_OR_SOURCE_TEST",
+      "externalImportSpecifiers": [
+        "pg"
+      ]
+    }
+  ],
+  "identicalBodyGroups": [
+    {
+      "sha256": "a95b6917382970419b888a7baf5662d86fd22235a0c17b2f2f10427604c1b5d2",
+      "sourcePaths": [
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v1/cited-research/compose-cited-research-inheritance.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/cited-research/compose-cited-research-inheritance.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/cited-research/compose-cited-research-inheritance.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/cited-research-inheritance-v1/compose-cited-research-inheritance.mjs"
+      ]
+    },
+    {
+      "sha256": "0c4e73f7312b79d2167e7d36b6716ab846160a50a529b9a229d41d0d23709529",
+      "sourcePaths": [
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v1/expedia/compose-expedia-search-delta.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/expedia/compose-expedia-search-delta.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/expedia/compose-expedia-search-delta.mjs"
+      ]
+    },
+    {
+      "sha256": "1bdb04c103456b9efd82154e1f42f7720e03ee393e6e67d3b9f6ba1786caa377",
+      "sourcePaths": [
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v1/multipart-pdf/compose-multipart-pdf-delta.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/multipart-pdf/compose-multipart-pdf-delta.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/multipart-pdf/compose-multipart-pdf-delta.mjs"
+      ]
+    },
+    {
+      "sha256": "f717d07532f06498cbdd0c9cdad96ae0206d0ef473bdcbdb1df778d421dc8d80",
+      "sourcePaths": [
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v1/reminders/compose-personal-reminder-candidate.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/reminders/compose-personal-reminder-candidate.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/reminders/compose-personal-reminder-candidate.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/reminders/compose-personal-reminder-candidate.mjs"
+      ]
+    },
+    {
+      "sha256": "83048f9b4486e8f9e0932e4c5b89f31ff901d62cc9059ab2035b6fb4a377ebed",
+      "sourcePaths": [
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v1/selected-local-skills/compose-selected-local-skills.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/selected-local-skills/compose-selected-local-skills.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/selected-local-skills/compose-selected-local-skills.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/selected-local-skills/compose-selected-local-skills.mjs"
+      ]
+    },
+    {
+      "sha256": "da72a8e1b3f12bb56972ffd879b92e2a0e4532045ba4f5ee2f3407a48c9ccd8c",
+      "sourcePaths": [
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v1/tts/compose-explicit-speech-delta.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/tts/compose-explicit-speech-delta.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/tts/compose-explicit-speech-delta.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/tts/compose-explicit-speech-delta.mjs"
+      ]
+    },
+    {
+      "sha256": "14c6aa71657035a25852837b0942c3c5455829139b9b1faaf2cf315324bdb989",
+      "sourcePaths": [
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/channel-independent/cited-research/compose-cited-research-inheritance.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/channel-independent/cited-research/compose-cited-research-inheritance.mjs"
+      ]
+    },
+    {
+      "sha256": "f9c419316be54b0824086e2cbd313e6f483696b40513d65597f629a2ded8ab9d",
+      "sourcePaths": [
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/channel-independent/multipart-pdf/compose-multipart-pdf-delta.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/channel-independent/multipart-pdf/compose-multipart-pdf-delta.mjs"
+      ]
+    },
+    {
+      "sha256": "f7467103ed6746b049af3444456fe164e75039c688679ec8387d719eebd196b6",
+      "sourcePaths": [
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/channel-independent/tts/compose-explicit-speech-delta.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/channel-independent/tts/compose-explicit-speech-delta.mjs"
+      ]
+    },
+    {
+      "sha256": "74ce3ed6a4d9ba08e78a29c3d2b7ccbfac4266642b7f2e1c4ea9e85bd2cf078e",
+      "sourcePaths": [
+        "infra/openclaw/runtime/personal-agent-materializer/code/local-speech/original-explicit-speech-call.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/tts/crays-explicit-speech-call.mjs"
+      ]
+    },
+    {
+      "sha256": "8a717bfed031ffc0d24a79d31bed3e6132d04d7ab72c99102517e69844eca6ab",
+      "sourcePaths": [
+        "infra/openclaw/runtime/personal-agent-materializer/code/personal-preference-recall-availability-source-v1/ORIGINAL_recall-core.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/self-improving/plugin/recall-core.mjs"
+      ]
+    },
+    {
+      "sha256": "b4a62ab04e6b213e1f59ffb0a82d687faa787d49e437554201dcc1d1f4243d03",
+      "sourcePaths": [
+        "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-batch-v1/baseline/compose-weather-v53.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/weather/compose-weather-v53.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/weather-v53-stepwise-source-v2/compose-weather-v53.mjs"
+      ]
+    },
+    {
+      "sha256": "9e0651ba3d7cea304773ec0f3c1ee2c604709f847e2b9fc303154a46cd5e0a98",
+      "sourcePaths": [
+        "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-batch-v1/compose-translation-video-batch.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-native-preparation-v1/candidate-overlays/translation-video-batch-v1/compose-translation-video-batch.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/translation-video-batch-v1/compose-translation-video-batch.mjs"
+      ]
+    },
+    {
+      "sha256": "26322e55fc4bde8183f8d64f9cd6675b96ad498e1f1c4c2cf9c11598801d271e",
+      "sourcePaths": [
+        "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-late-integration-v1/assert-weather-instruction-profile.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-native-preparation-v1/candidate-overlays/weather/assert-weather-instruction-profile.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/weather/assert-weather-instruction-profile.mjs"
+      ]
+    },
+    {
+      "sha256": "5c05b842436ff42bb3592bf88c76c1e872c779414480730da8302e612f36c289",
+      "sourcePaths": [
+        "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-publication-source-v1/preflight-supervisor-admission.mjs",
+        "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-supervisor-preflight-source-v1/preflight-supervisor-admission.mjs"
+      ]
+    }
+  ],
+  "scope": "Original composition and integration source programs for speech, cited research, weather, translation/video, preferences, original-text capture, transcript drafts, personal planning and document tooling. Historical ORIGINAL/PROPOSED/candidate versions remain explicitly distinct.",
+  "privacyAndProvenanceScope": "No compiled native upstream overlays, instrumented server startup bundle, WhatsApp response-policy override, fixed inline person-name contexts or flagged email/UUID/phone/credential literals are included. Runtime inputs and exact upstream dependency/notice closure remain separate; no new blanket license.",
+  "sourceProgramsTestsGeneratorsOrFeatureProvidersExecuted": false,
+  "runtimeAcceptance": false
+}

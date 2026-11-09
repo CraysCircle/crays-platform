@@ -35,6 +35,10 @@ Then:
 
 Some preserved views require separate protected bindings or original assets. Their READMEs explain these prerequisites. Do not treat a successful dependency install as evidence that a complete service is configured.
 
+## A small first test
+
+The [Qlo projection-test walkthrough](docs/services/qlo.md#first-local-check-the-two-projection-tests) is a focused entry point that requires a local Node.js installation and the checked-out sources. Its two original assertion scripts use in-memory synthetic fixtures and pure local projection modules, without an npm install, provider credentials or network services. The guide states the recorded Node baseline and expected console behavior.
+
 ## Propose a focused change
 
 Use [a platform issue](https://github.com/CraysCircle/crays-platform/issues) to describe the user or developer problem, affected component and expected result. Include reproducible steps with synthetic inputs. For an independent website, mobile app or upstream project, use that project's own repository and contribution rules.

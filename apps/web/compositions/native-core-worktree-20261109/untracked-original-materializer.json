@@ -1,0 +1,512 @@
+{
+  "schema": "crays.core-untracked-original-materializer.v1",
+  "sourceHead": "c2018d04f6a52d8716326a098dde7624cbb18963",
+  "files": [
+    {
+      "path": "infra/openclaw/connections/personal-account/attempt-repository.mjs",
+      "bytes": 9799,
+      "sha256": "5c0bfc1faa1c72823eeecca30984faec5d6fd5156eec932dda9402980725e77c",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/connections/personal-account/attempt-repository.mjs",
+      "category": "ORIGINAL_PERSONAL_ACCOUNT_CONNECTION_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/connections/personal-account/core-person.mjs",
+      "bytes": 2700,
+      "sha256": "1b57d310c9943ce090929a9aafd74c32c6779ddf789607a5312c247fb9a0688e",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/connections/personal-account/core-person.mjs",
+      "category": "ORIGINAL_PERSONAL_ACCOUNT_CONNECTION_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/connections/personal-account/envelope.mjs",
+      "bytes": 2859,
+      "sha256": "8aa91a46eb6011c3c99490ac98c16a3ce8f29ae99c3c02073e46700bf65576c7",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/connections/personal-account/envelope.mjs",
+      "category": "ORIGINAL_PERSONAL_ACCOUNT_CONNECTION_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/connections/personal-account/fixed-provider-transport.mjs",
+      "bytes": 1383,
+      "sha256": "fbe70c93cd9927b239f36ff3c1f1e8028ec77d6984185c90dc174e8bc51837a9",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/connections/personal-account/fixed-provider-transport.mjs",
+      "category": "ORIGINAL_PERSONAL_ACCOUNT_CONNECTION_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/connections/personal-account/oauth-connection-service.mjs",
+      "bytes": 12979,
+      "sha256": "220100994b5a5b456a23e9dbb7579bcf0fd7d7201216208fbcecbd00ece8db38",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/connections/personal-account/oauth-connection-service.mjs",
+      "category": "ORIGINAL_PERSONAL_ACCOUNT_CONNECTION_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/connections/personal-account/oidc-verifier.mjs",
+      "bytes": 3765,
+      "sha256": "ad4b3b541a242342a692a67ed24cbcdf77719f3d1c8abc314a3847852ed875e5",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/connections/personal-account/oidc-verifier.mjs",
+      "category": "ORIGINAL_PERSONAL_ACCOUNT_CONNECTION_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "jose"
+      ]
+    },
+    {
+      "path": "infra/openclaw/connections/personal-account/os-credential-custody.mjs",
+      "bytes": 6684,
+      "sha256": "de9a4f41861322203f10b6c92f3d7089c846e66d9c0e614b14d0ce3b8e392e88",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/connections/personal-account/os-credential-custody.mjs",
+      "category": "ORIGINAL_PERSONAL_ACCOUNT_CONNECTION_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/connections/personal-account/person-pg-context.mjs",
+      "bytes": 3115,
+      "sha256": "82aa705a26d18e2127c720c2301ef49c12bcd2733c363c4aa71f1077cbf289aa",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/connections/personal-account/person-pg-context.mjs",
+      "category": "ORIGINAL_PERSONAL_ACCOUNT_CONNECTION_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/connections/personal-account/providers.mjs",
+      "bytes": 2234,
+      "sha256": "5ce8fd8e312b1c3f7b70f4f30426dc157255188e8d1cf309aa84ad8e8289ffb8",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/connections/personal-account/providers.mjs",
+      "category": "ORIGINAL_PERSONAL_ACCOUNT_CONNECTION_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/connections/personal-account/refresh-repository.mjs",
+      "bytes": 6192,
+      "sha256": "ac648f898e8f0b2494b381f7f8c71a1ea702fecb61bde68027f3002f1b9d7701",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/connections/personal-account/refresh-repository.mjs",
+      "category": "ORIGINAL_PERSONAL_ACCOUNT_CONNECTION_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/connections/personal-account/root-owned-deployment-policy.mjs",
+      "bytes": 7260,
+      "sha256": "3d0ee07233dc1ddbd2b11bdf2ba681949fdfd06ed24c71a4a3fb45e5c05260b1",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/connections/personal-account/root-owned-deployment-policy.mjs",
+      "category": "ORIGINAL_PERSONAL_ACCOUNT_CONNECTION_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/connections/personal-account/server-oauth-persistence.mjs",
+      "bytes": 2003,
+      "sha256": "fb49bb7d3aba2110597e0f7d456dbdd5082edd3a35b9cb2fb6bddcd921415d38",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/connections/personal-account/server-oauth-persistence.mjs",
+      "category": "ORIGINAL_PERSONAL_ACCOUNT_CONNECTION_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/connections/personal-account/slack-installation-v1/core-person-v2.mjs",
+      "bytes": 3822,
+      "sha256": "61313571b67c605fd61e423faf2a1b0e5bf424af325ddee491083196a54a7e31",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/connections/personal-account/slack-installation-v1/core-person-v2.mjs",
+      "category": "ORIGINAL_PERSONAL_ACCOUNT_CONNECTION_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/connections/personal-account/slack-installation-v1/person-pg-context-v2.mjs",
+      "bytes": 3709,
+      "sha256": "e6f5bb424f94ba6422ee6c60741b645ac4abc32b4139f7ac4773705d2b68c6c1",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/connections/personal-account/slack-installation-v1/person-pg-context-v2.mjs",
+      "category": "ORIGINAL_PERSONAL_ACCOUNT_CONNECTION_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/connections/personal-account/test-os-credential-custody.mjs",
+      "bytes": 6174,
+      "sha256": "311f1038757b0dcc9f3156d5d680bf2e58a2e68cd14af5d60d15aa60a0d79bd4",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/connections/personal-account/test-os-credential-custody.mjs",
+      "category": "ORIGINAL_PERSONAL_ACCOUNT_CONNECTION_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/connections/personal-account/vault.mjs",
+      "bytes": 6382,
+      "sha256": "7456774f09b7a7f6d3e22618ec034d1f4614458bdf6d215ff6c47811a4ee45d4",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/connections/personal-account/vault.mjs",
+      "category": "ORIGINAL_PERSONAL_ACCOUNT_CONNECTION_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/apply-shared-default-inheritance.mjs",
+      "bytes": 2492,
+      "sha256": "49e83f18102c1881601ef0c6674e990f785c8ab5cc35ae7aaf1f9110aa054ca6",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/apply-shared-default-inheritance.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/authenticated-baseline-v2.mjs",
+      "bytes": 5629,
+      "sha256": "46cf03d1470c4981a41995b4df8c46b43fcb9651f0ba8116a39027b48e8a2afe",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/authenticated-baseline-v2.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/authenticated-baseline.mjs",
+      "bytes": 5093,
+      "sha256": "c62fb1d140f29e59e65616a84db5d0bf2f49baf73159098b86ff9885c9d20c17",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/authenticated-baseline.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/materialize-personal-general-runtime.candidate-v5.mjs",
+      "bytes": 14413,
+      "sha256": "4f7c366aac6444d6078a35632ba17405c7581d8efd61c5889aaaaa490c08b18c",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/materialize-personal-general-runtime.candidate-v5.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/materialize-personal-general-runtime.candidate.mjs",
+      "bytes": 14355,
+      "sha256": "20e8ffb63037203735d572f942864bd99a3299f64aa4827f8c20955cfd910e6a",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/materialize-personal-general-runtime.candidate.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/materialize-personal-general-runtime.direct-roots.candidate.mjs",
+      "bytes": 14404,
+      "sha256": "9c94bb34a67b392116b9579891484f633ea8f97d84a6fa71d6474753ca6ea133",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/materialize-personal-general-runtime.direct-roots.candidate.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/materialize-personal-runtime-with-speech.candidate.mjs",
+      "bytes": 13860,
+      "sha256": "590b310e8efa0c73bfe9c6d497556e8a3b46eb855e21f36f89562deabc73fb57",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/materialize-personal-runtime-with-speech.candidate.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/materialize-personal-runtime.mjs",
+      "bytes": 13585,
+      "sha256": "98c8b6c1b650a2ceb6f84da482214f231b9483d14b027ec51d18fe6eacf8c065",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/materialize-personal-runtime.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/native-own-account-authority.mjs",
+      "bytes": 6563,
+      "sha256": "800ae4cca87c0cebc22676c9bd5468de0d7da439c196e51e85e697ab6bc664fc",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/native-own-account-authority.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/open-runtime-root.mjs",
+      "bytes": 915,
+      "sha256": "4602a115ff65d64041d40c2b55b75bf89649204d7953d10e995a32c2ffb01a3e",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/open-runtime-root.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/original-native-config-validator.mjs",
+      "bytes": 476,
+      "sha256": "6b2ec1e4de41b4e89199aa5e78c1adb766fb99f2a49495c0f2bc61102c762705",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/original-native-config-validator.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/prepare-approved-general-runtime.candidate-v2.mjs",
+      "bytes": 5749,
+      "sha256": "baaa73ca53aa16157072ab5b144dc93b9a1b6b5b4f0d9ae73bf6de29aa9e47ce",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/prepare-approved-general-runtime.candidate-v2.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/prepare-approved-general-runtime.candidate-v3.mjs",
+      "bytes": 5762,
+      "sha256": "d327e87800ddfa320a9dd87292bf453f8936e68435bf3650d4f6250f07a7f5d9",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/prepare-approved-general-runtime.candidate-v3.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/prepare-approved-general-runtime.candidate-v5.mjs",
+      "bytes": 9409,
+      "sha256": "ae3152077224e7575baf02719435eed672cc2a10ccfc11a4c3b6a85e344440ee",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/prepare-approved-general-runtime.candidate-v5.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/prepare-approved-general-runtime.candidate.mjs",
+      "bytes": 5382,
+      "sha256": "75c14c36feab116c12a746b7f90dc82562cab51fdf1b22505cc446bcf0251970",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/prepare-approved-general-runtime.candidate.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/prepare-channel-independent-general-runtime.candidate-v2.mjs",
+      "bytes": 2701,
+      "sha256": "53d5f4b6fd891febbc49c3442192e860a165d5d7f4fad2a6be32a33a9833be86",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/prepare-channel-independent-general-runtime.candidate-v2.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/prepare-channel-independent-general-runtime.candidate.mjs",
+      "bytes": 1327,
+      "sha256": "7ae3ae172bc3ed0ce31e5cdad495ac2133db8d4290344977378e107691ddd0a8",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/prepare-channel-independent-general-runtime.candidate.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/qualify-host-composition.mjs",
+      "bytes": 7359,
+      "sha256": "b01b37f31f17ffc90139bafeb13405906080a5262088e5fdfad44d43e163643b",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/qualify-host-composition.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/qualify-real-factory-general-catalogue.candidate.mjs",
+      "bytes": 3351,
+      "sha256": "2e78c79c9d4e46a08a2c71d67944aff04b5d3ceabd8fb0ffec98bc9db1e16f37",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/qualify-real-factory-general-catalogue.candidate.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/resolve-core-assignment.mjs",
+      "bytes": 3812,
+      "sha256": "7d523569f6835879e8e515260a3cf6f9d0f4c223eda495335ef837a32e12486a",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/resolve-core-assignment.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/resolve-default-instruction-roots-v1.mjs",
+      "bytes": 3701,
+      "sha256": "78287ca162577cd0775159ef7cb5923bd2bae8a462985d5f122d857674c9e9d5",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/resolve-default-instruction-roots-v1.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/runtime-journal.mjs",
+      "bytes": 3713,
+      "sha256": "af5f7d6f6fdc7245bbae98ef0c49a8afc276651858b547b2f23b8ad47c576695",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/runtime-journal.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/sdk-inventory-links.mjs",
+      "bytes": 3632,
+      "sha256": "325bf78e36fd032311873389c8d786f6cec4fc5d375023bf05c84666e39d6726",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/sdk-inventory-links.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/server-general-materializer.candidate-v5.mjs",
+      "bytes": 1717,
+      "sha256": "8ccf987acb8861907cae0bb716201df6cac9bc2556d1b21281abce3fe89c4c06",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/server-general-materializer.candidate-v5.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/server-general-materializer.candidate.mjs",
+      "bytes": 1630,
+      "sha256": "a75922e62a0abc7a512cd2aeb546875cb5b0e36809fb164efe4a968b51c3e285",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/server-general-materializer.candidate.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/server-general-materializer.direct-roots.candidate.mjs",
+      "bytes": 1727,
+      "sha256": "d84a74f80508116f9f5cf676be252ac6ca4c692603193d8475aeb16affb8fd39",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/server-general-materializer.direct-roots.candidate.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/server-materializer.mjs",
+      "bytes": 444,
+      "sha256": "2e46d8a8fa8c5eda4a257eefc763b34c3b80ef38e0b80cf5d3202da827d28055",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/server-materializer.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/test-authenticated-baseline.mjs",
+      "bytes": 6310,
+      "sha256": "ba904acb02bfd8b81bfc927037ccbe2398f452d50c0008dbe202b74c0e903890",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/test-authenticated-baseline.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/test-journal-child.mjs",
+      "bytes": 831,
+      "sha256": "a1825a4584b8aca68ad5a15240150d624b3937ecfb7509dc848fb2fa86e03eaf",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/test-journal-child.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/test-materialize-personal-general-runtime-direct-roots.mjs",
+      "bytes": 6551,
+      "sha256": "1c2b06ecbaa7821de200c0a8e29e0fbd8db783ae766c17445b9d93870e328630",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/test-materialize-personal-general-runtime-direct-roots.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/test-materialize-personal-general-runtime-v5.mjs",
+      "bytes": 7919,
+      "sha256": "c613679836fae7a6cd8c08cb8a02e792e59d6dce13546f96b25234767407cd37",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/test-materialize-personal-general-runtime-v5.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/test-materialize-personal-runtime.mjs",
+      "bytes": 12773,
+      "sha256": "65252e4e6b8660f24c118881bb71f8f396179aff8975f53910b9ab970c3267e2",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/test-materialize-personal-runtime.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/test-native-own-account.mjs",
+      "bytes": 5895,
+      "sha256": "15575d15faf4e6c700bda36bf887507a5ccff05e6c2bd46caf0e134839ea6234",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/test-native-own-account.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/test-original-validator-materialize.mjs",
+      "bytes": 4787,
+      "sha256": "f12a911f323b3e0f5d5abfe8ae6fd659a548ce679f3dd1105f1933bd236ce41c",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/test-original-validator-materialize.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/test-sdk-inventory-links.mjs",
+      "bytes": 4223,
+      "sha256": "dc6ac014d8a744ebf1e51164fe90ff15b6a46b01f3d4c7762118d224e4a673ad",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/test-sdk-inventory-links.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/test-shared-default-inheritance.mjs",
+      "bytes": 4764,
+      "sha256": "89a77e621e26042dd4eaed6d6b2e76929e055d28961d5098396151152e6b7907",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/test-shared-default-inheritance.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/verify-fixed-general-guides-v1.mjs",
+      "bytes": 3781,
+      "sha256": "5627687a1c618630157212c2de37f7303769b5dd3705031947f78965e3451b08",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/verify-fixed-general-guides-v1.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/verify-fixed-general-guides-v1.test.mjs",
+      "bytes": 1460,
+      "sha256": "bc9b1d877b09f154050435e23a04cfc442420cbe3b36a5dbf2492b4ffe3d09d4",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/verify-fixed-general-guides-v1.test.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "infra/openclaw/runtime/personal-agent-materializer/code/verify-shared-artifacts.mjs",
+      "bytes": 4507,
+      "sha256": "d4864d79f71e84dc003121ac9210674bb090399b749c5658e591ae26eed1f798",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/verify-shared-artifacts.mjs",
+      "category": "ORIGINAL_MATERIALIZER_TOP_LEVEL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    }
+  ],
+  "existingPlatformBodyReferenceComparison": {
+    "pinnedCommit": "fe3b03c4f6a5f116a66f86eb08af63f0aa19e6a5",
+    "matchingCurrentTreeBodies": 0,
+    "newPublicBodyReadbackPerformed": false
+  },
+  "privacyAndProvenanceScope": "Original source implementations of injected server ports, account authority, OS credential consumers, runtime source verification and materialization. Runtime account values and credentials enter via authenticated ports, private host inputs and runtime arguments; no live configuration, keys, account records or materialized state is copied. Compiled native upstream overlays and all flagged inline data/literal contexts remain outside this slice.",
+  "noLicenseGrantOrUpstreamNoticeClosureClaim": true,
+  "originalSourceProgramsExecuted": false,
+  "fullRecoveryOrRuntimeAcceptance": false
+}
