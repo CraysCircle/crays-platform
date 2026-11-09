@@ -18,5 +18,9 @@
   "currentRuntimeImageAdoptionAndFullLicenseClosure": false,
   "githubSourceCommitAssigned": false,
   "sourceFileManifest": "source-files.json",
-  "actualMemberSupplementalCodePublicationComplete": false
+  "actualMemberSupplementalCodePublicationComplete": true,
+  "reconstructableSourceExport": "../../compositions/member-source25",
+  "protectedSourceInputCount": 2,
+  "protectedSourceInputPublicDemoClassification": "unresolved; values supplied separately",
+  "exactOriginalSourceRecoveryWithOwnerInputsVerified": true
 }

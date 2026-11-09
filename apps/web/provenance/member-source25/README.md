@@ -20,6 +20,6 @@ A matching direct-package list does not establish complete transitive/bundled de
 
 ## Remaining source and recovery work
 
-The supplemental Member implementation files are still undergoing publication review. Some exact originals contain fixed test account/subject bindings. Their public demo status is being clarified; protected original values are not included in this provenance record. An old shared source capture or a source-hash list alone is not complete Member code recovery.
+The [Member composition export](../../compositions/member-source25/README.md) now preserves the required original source bodies and protected templates, with complete per-file manifests and a source-only reconstruction tool. Both the original and AWS input compositions were restored and all 2,800 original file hashes and sizes verified. Fixed test account/subject bindings are supplied separately while their public demo status remains unresolved. A separately protected off-server backup of those two source inputs was read back and verified. This source reconstruction does not establish complete runtime or data recovery.
 
 The wider original source pin set, other WIP, operations and technical documents, original runtime integration, public assets, protected settings and current runtime-image bindings must also be reconciled. No application, migration or operational program was executed by this GitHub verification.

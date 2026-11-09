@@ -10,3 +10,9 @@ Two direct-package notice questions remain unresolved:
 - drizzle-kit 0.31.10 declares MIT. The located exact release repository-root license is Apache-2.0; it is not presented here as a matching package-specific MIT notice.
 
 The borrowed lockfiles and package metadata are provenance evidence. Full transitive/bundled notices, exact shipped-runtime obligations, application authorship and applicable corresponding-source availability or offers remain to be reconciled. The retained notice texts do not establish whole-application legal acceptance.
+
+## Member source composition supplement
+
+The Member source25 export preserves original source bodies, original source hashes and templates for two fixed test-binding inputs. Original application rights and complete source-offer acceptance remain unresolved; no new blanket application license is assigned.
+
+Its original project lock and 47 observed direct package versions are recorded separately. The existing original package/notice catalog is referenced without duplication. The unresolved server-only/drizzle-kit notice questions and full transitive, bundled, font/media and Node/container/runtime rights checks still apply.

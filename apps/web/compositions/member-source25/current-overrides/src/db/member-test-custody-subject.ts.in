@@ -1,0 +1,14 @@
+import "server-only";
+import {createHash} from "node:crypto";
+
+/** Original Google syntax plus the single independently approved TEST custody
+ * tuple. This is an input guard; every original SDK/Core/RLS check still runs.
+ * No email, profile, role, local storage or browser claim can admit an account.
+ */
+export function isOriginalMemberSdkSubject(sdk:Readonly<{issuer:string;subject:string;serverConfiguredClientId:string}>):boolean {
+  if (typeof sdk.subject !== "string" || !sdk.subject || sdk.subject.length > 512) return false;
+  if (/^google-oauth2\|\S+$/.test(sdk.subject)) return true;
+  return sdk.issuer === "https://login.crays.pro/"
+    && sdk.serverConfiguredClientId === "gVA7ECS4WDjweQjtjZFbyNoxaVXnH2vl"
+    && createHash("sha256").update(sdk.subject,"utf8").digest("hex") === "__CRAYS_PROTECTED_MEMBER_TEST_SUBJECT_SHA256__";
+}

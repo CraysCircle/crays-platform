@@ -1,0 +1,23 @@
+import "server-only";
+import {createHash} from "node:crypto";
+import {lstatSync,openSync,fstatSync,writeFileSync,fsyncSync,closeSync,constants} from "node:fs";
+import {member073NativeProviders} from "./member073-native-provider-binding";
+const directory="/run/crays/member073/worker-queue";
+/** Native backend alone; no worker/Core/provider credentials or processes in Node. */
+export function queueMember073NativeWorker(purpose:"finance"|"support",objectId:string):boolean{
+ if(process.env.CRAYS_MEMBER_NATIVE_BACKEND===undefined){member073NativeProviders();return false;}
+ member073NativeProviders();
+ const valid=purpose==="finance"?/^[0-9]{1,16}$/.test(objectId)&&objectId!=="19808":objectId.length>0&&objectId.length<=180&&!/[\r\n\0]/.test(objectId);
+ if(!valid)throw Error("NATIVE_WORKER_OBJECT_DENIED");
+ const st=lstatSync(directory);if(!st.isDirectory()||st.isSymbolicLink()||st.uid!==process.getuid?.()||(st.mode&0o7777)!==0o700)throw Error("NATIVE_WORKER_QUEUE_NOT_BOUND");
+ const dir=openSync(directory,constants.O_RDONLY|constants.O_DIRECTORY|constants.O_NOFOLLOW);
+ try{
+  const bound=fstatSync(dir);if(bound.dev!==st.dev||bound.ino!==st.ino)throw Error("NATIVE_WORKER_QUEUE_CHANGED");
+  const name=purpose+"-"+createHash("sha256").update(purpose+":"+objectId).digest("hex")+".json";
+  let fd:number;
+  try{fd=openSync("/proc/self/fd/"+dir+"/"+name,constants.O_WRONLY|constants.O_CREAT|constants.O_EXCL|constants.O_NOFOLLOW,0o600);}
+  catch(error){if((error as NodeJS.ErrnoException).code==="EEXIST")return true;throw error;}
+  try{writeFileSync(fd,JSON.stringify({purpose,objectId,accountId:"__CRAYS_PROTECTED_MEMBER_TEST_ACCOUNT_ID__",generation:"member073-native-worker-v1"}));fsyncSync(fd);}finally{closeSync(fd);}
+  fsyncSync(dir);return true;
+ }finally{closeSync(dir);}
+}

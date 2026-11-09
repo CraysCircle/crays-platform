@@ -1,0 +1,95 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "src/app/**/*.ts",
+    "src/app/**/*.tsx",
+    "src/proxy.ts",
+    ".next-unified-native-test/types/**/*.ts",
+    ".next-unified-native-test/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "scripts",
+    ".next-performance-20261011-pair",
+    ".next-performance-20261011-completion-005",
+    ".next-performance-20261011-completion",
+    ".next-performance-20261010",
+    ".next-performance-20261010-failed001",
+    ".next-performance-20261011-batch",
+    ".next-public-ui049",
+    ".next-performance-20261011-final",
+    ".next-performance-20261011-completion-006",
+    "retained-app-original",
+    ".next-member-native-test001",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original",
+    "retained-app-original"
+  ]
+}

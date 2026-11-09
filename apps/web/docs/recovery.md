@@ -32,3 +32,9 @@ The application directory also carries a byte-preserving attributes rule on the 
 ## Operational program source supplement
 
 The [scripts source guide](../scripts/README.md) and [operational helper manifest](../provenance/operational-helpers.json) preserve 90 referenced programs and two imported helpers. Both the historical baseline and the two different worktree files have their own tags. Four source files containing contact/realistic fixture literals remain under provenance review. The original source-package manifest is retained separately; it is not the application's install manifest. Current runtime compatibility, external datasets and remaining technical documents are not established by this source supplement. No preserved program was run.
+
+## Member source composition recovery
+
+[Member source25](../compositions/member-source25/README.md) includes complete manifests and a source-only materializer for its 1,399-file original and 1,401-file AWS input views. All 2,800 original file hashes and sizes were verified after reconstruction. The exported code uses 82 whole original bodies and 25 protected templates, plus two later generated configuration files. Shared unchanged files come from the recorded immutable baseline.
+
+The two fixed test-binding inputs are restored separately. Their encrypted, non-public off-server source backup has been verified; this does not cover runtime credentials, customer data, databases, the wider source pin set or other operational recovery prerequisites. No application program or product build was executed by this source-preservation work.

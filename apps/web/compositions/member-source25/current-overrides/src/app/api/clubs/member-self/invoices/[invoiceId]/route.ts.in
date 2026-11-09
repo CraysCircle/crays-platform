@@ -1,0 +1,51 @@
+// Candidate target src/app/api/clubs/member-self/invoices/[invoiceId]/route.ts
+import "server-only";
+import {projectExactXxlErpProvider} from "@/lib/clubs/member-xxl-customer-provider-admission";
+import {member073ErpHost,member073ErpEndpoint} from "@/lib/clubs/member073-native-provider-binding";
+import {readFile} from "node:fs/promises";
+import {createHash} from "node:crypto";
+import {request as nativeRequest} from "node:http";
+import {z} from "zod";
+import {readNativeMemberOwnFinance} from "@/graphql/member-self/member-own-finance-native-resolver";
+
+export const runtime="nodejs";
+export const dynamic="force-dynamic";
+const privatePath="/srv/crays/dev-state/member-area-screen1-20261006/member-demo100-20261012/erp-runtime.private.json";
+const configSchema=z.object({endpoint:z.literal(member073ErpEndpoint()),host:z.literal("erp.craysgym.com"),
+ company:z.literal("CRAYS Club Manager TEST"),currency:z.literal("USD"),testOnly:z.literal(true),
+ productionActivationAllowed:z.literal(false),user:z.literal("member-demo-01a11155@crays.test"),
+ apiKey:z.string().min(8),apiSecret:z.string().min(8),expiresAt:z.string().datetime({offset:true}),
+ accountId:z.literal("__CRAYS_PROTECTED_MEMBER_TEST_ACCOUNT_ID__")}).passthrough();
+const headers={"Cache-Control":"private, no-store, max-age=0","X-Content-Type-Options":"nosniff","Referrer-Policy":"no-referrer"};
+const input={contractVersion:"1.0.0",offerId:null,planId:null,limit:100};
+export async function GET(request:Request,{params}:{params:Promise<{invoiceId:string}>}){
+ try{
+  const {invoiceId}=await params;
+  if(!/^ACC-SINV-[0-9]{4}-[0-9]{5,}$/.test(invoiceId))return new Response("Invoice unavailable.",{status:404,headers});
+  const site=request.headers.get("sec-fetch-site");
+  if(site&&!["same-origin","none"].includes(site))return new Response("Invoice unavailable.",{status:403,headers});
+  const finance=await readNativeMemberOwnFinance(null,{input},{request});
+  const entitled=finance.orders.find(o=>o.invoiceId===invoiceId&&o.financeState==="erp_acknowledged"&&o.testOnly===true);
+  if(!entitled)return new Response("Invoice unavailable.",{status:404,headers});
+  const configText=await readFile(privatePath,"utf8"),reviewed=projectExactXxlErpProvider(configText,finance.accountId);
+  const config=configSchema.parse(reviewed?.config??JSON.parse(configText));
+  if(finance.accountId!==config.accountId||!reviewed&&Date.parse(config.expiresAt)<=Date.now())throw Error("ERP_BINDING_EXPIRED");
+  const manifest=z.object({invoiceId:z.string(),accountId:z.string(),company:z.literal("CRAYS Club Manager TEST"),currency:z.literal("USD"),amountMinor:z.number().int().nonnegative(),invoiceModified:z.string(),sha256:z.string().regex(/^[a-f0-9]{64}$/),nativePdfVerified:z.literal(true),testOnly:z.literal(true),liveMoney:z.literal(false)}).passthrough().parse(JSON.parse(await readFile(privatePath.replace("erp-runtime.private.json",`invoice-pdfs/${invoiceId}.json`),"utf8")));
+  if(manifest.invoiceId!==invoiceId||manifest.accountId!==finance.accountId||manifest.amountMinor!==entitled.totalMinor)throw Error("PDF_RECEIPT_SCOPE_INVALID");
+  const native=await new Promise<unknown>((resolve,reject)=>{
+   const req=nativeRequest({hostname:member073ErpHost(),port:8000,method:"GET",path:`/api/resource/Sales%20Invoice/${encodeURIComponent(invoiceId)}`,headers:{Host:config.host,Authorization:`token ${config.apiKey}:${config.apiSecret}`,Accept:"application/json"}},response=>{
+    if(response.statusCode!==200){response.resume();reject(Error("ERP_INVOICE_UNAVAILABLE"));return;}
+    const chunks:Buffer[]=[];let size=0;response.on("data",(chunk:Buffer)=>{size+=chunk.length;if(size>1024*1024){req.destroy(Error("ERP_DOCUMENT_LIMIT"));return;}chunks.push(chunk);});response.on("error",reject);response.on("end",()=>{try{resolve(JSON.parse(Buffer.concat(chunks).toString("utf8")));}catch{reject(Error("ERP_DOCUMENT_INVALID"));}});
+   });req.setTimeout(10000,()=>req.destroy(Error("ERP_DOCUMENT_TIMEOUT")));req.on("error",reject);req.end();
+  });
+  const document=z.object({data:z.object({name:z.string(),company:z.string(),currency:z.string(),docstatus:z.literal(1),modified:z.string(),grand_total:z.number(),outstanding_amount:z.number(),status:z.string()}).passthrough()}).parse(native).data;
+  if(document.name!==invoiceId||document.company!==config.company||document.currency!=="USD"||document.modified!==manifest.invoiceModified||Math.round(document.grand_total*100)!==manifest.amountMinor||document.outstanding_amount!==0)throw Error("ERP_INVOICE_CHANGED");
+  const bytes=await readFile(privatePath.replace("erp-runtime.private.json",`invoice-pdfs/${invoiceId}.pdf`));
+  if(bytes.length<5||bytes.length>8*1024*1024||bytes.subarray(0,5).toString()!=="%PDF-"||createHash("sha256").update(bytes).digest("hex")!==manifest.sha256)throw Error("PDF_CACHE_INVALID");
+  const pdf=new Uint8Array(bytes);const length=pdf.length;
+  const fresh=await readNativeMemberOwnFinance(null,{input},{request});
+  if(fresh.accountId!==finance.accountId||!fresh.orders.some(o=>o.invoiceId===invoiceId&&o.financeState==="erp_acknowledged"))throw Error("INVOICE_ENTITLEMENT_CHANGED");
+  return new Response(pdf,{status:200,headers:{...headers,"Content-Type":"application/pdf",
+   "Content-Disposition":`attachment; filename="CRAYS-TEST-${invoiceId}.pdf"`,"Content-Length":String(length)}});
+ }catch{return new Response("We couldn’t load your invoice. Please try again.",{status:503,headers});}
+}

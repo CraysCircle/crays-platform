@@ -1,0 +1,58 @@
+import {memberAwsPgSsl} from "./member-aws-runtime";
+import {memberXxlNoExpiryContract,memberXxlNoExpiryRole} from "./member-xxl-no-expiry-runtime";
+import "server-only";
+import {member073RuntimeRole,member073NativeBinding,member073RuntimeDatabase} from "./member073-native-binding";
+import {createHash} from "node:crypto";
+import {Pool,type PoolClient} from "pg";
+import {memberApplicationReadSchema,memberApplicationOutcomeSchema,memberApplicationCommandSchema} from "@/lib/clubs/member-application-contract";
+import {MemberBookingScramClient,isMemberNativeCoreScramVerified} from "./core-member-booking-runtime-pool";
+const originalRole="crays_core_member_application_rpc_runtime_v1";
+const role=member073RuntimeRole(originalRole);
+const statements={read:{values:3,sql:"select crays_core_rpc.read_own_member_application_v1($1::text,$2::text,$3::text) as payload"},command:{values:4,sql:"select crays_core_rpc.execute_own_member_application_v1($1::text,$2::text,$3::text,$4::jsonb) as payload"}} as const;
+const signatures={identity:"crays_core_rpc.resolve_auth0_identity_bundle_v2(text,text,text)",state:"crays_core_rpc.read_own_clubs_member_state_v1(text,text,text)",actor:"crays_core_rpc.member_application_actor_v1(text,text,text)",read:"crays_core_rpc.read_own_member_application_v1(text,text,text)",command:"crays_core_rpc.execute_own_member_application_v1(text,text,text,jsonb)"};
+type Contract={schema:string;role:string;expiresAt:string;approvalReceiptSha256:string;functions:Record<string,{owner:string;definitionSha256:string}>};
+const hash=(s:string)=>createHash("sha256").update(s).digest("hex");
+const object=(v:unknown):v is Record<string,unknown>=>v!==null&&typeof v==="object"&&!Array.isArray(v);
+export function memberApplicationRuntimeConfiguration(env:NodeJS.ProcessEnv=process.env){
+ const native=member073NativeBinding(originalRole,"CRAYS_MEMBER_APPLICATION_RPC",role,env);
+ const text=env.CRAYS_MEMBER_APPLICATION_RPC_CONTRACT,url=env.CRAYS_MEMBER_APPLICATION_RPC_DATABASE_URL;
+ if(!text||!url||(env.CRAYS_MEMBER_APPLICATION_RPC_TARGET!=="xxl-member-core-test"&&!native))throw Error("APPLICATION_CORE_NOT_ADMITTED");
+ const parsed:unknown=JSON.parse(text);if(!object(parsed)||Object.keys(parsed).sort().join(",")!=="approvalReceiptSha256,expiresAt,functions,role,schema")throw Error("APPLICATION_CORE_CONTRACT_INVALID");
+ const c=parsed as unknown as Contract,u=new URL(url);
+ if(c.schema!=="crays.member.application.write-runtime.v1"||c.role!==role||typeof c.expiresAt!=="string"||(!memberXxlNoExpiryContract(c,originalRole,env)&&(!Number.isFinite(Date.parse(c.expiresAt))||Date.parse(c.expiresAt)<=Date.now()||Date.parse(c.expiresAt)>Date.now()+7200000))||typeof c.approvalReceiptSha256!=="string"||!/^[a-f0-9]{64}$/.test(c.approvalReceiptSha256)||u.hostname!==(native?.host??"172.23.0.2")||u.pathname!=="/"+(native?.database??"member_core_01a11155_20261011")||decodeURIComponent(u.username)!==role||!u.password||u.search||u.hash||u.port!=="5432"||!["postgres:","postgresql:"].includes(u.protocol)||!object(c.functions)||Object.keys(c.functions).sort().join("|")!==Object.values(signatures).sort().join("|"))throw Error("APPLICATION_CORE_CONTRACT_INVALID");
+ for(const [signature,pin] of Object.entries(c.functions))if(!object(pin)||Object.keys(pin).sort().join(",")!=="definitionSha256,owner"||pin.owner!==(signature===signatures.identity||signature===signatures.state?"crays_core_identity_rpc_owner_v2":"crays_core_member_application_rpc_owner_v1")||typeof pin.definitionSha256!=="string"||!/^[a-f0-9]{64}$/.test(pin.definitionSha256))throw Error("APPLICATION_CORE_CONTRACT_INVALID");
+ return {c,url,fingerprint:hash(text+url)};
+}
+async function verify(client:PoolClient,c:Contract){
+ const v=(await client.query(`select current_database() database,current_user role,session_user session_role,r.rolsuper,r.rolbypassrls,r.rolcreatedb,r.rolcreaterole,r.rolreplication,r.rolinherit,r.rolcanlogin,r.rolvaliduntil,exists(select from pg_auth_members m where m.member=r.oid) memberships from pg_roles r where r.rolname=current_user`)).rows[0];
+ if(!v||v.database!==member073RuntimeDatabase(originalRole,"member_core_01a11155_20261011")||v.role!==role||v.session_role!==role||v.rolsuper||v.rolbypassrls||v.rolcreatedb||v.rolcreaterole||v.rolreplication||v.rolinherit||!v.rolcanlogin||v.memberships||(!memberXxlNoExpiryRole(c,originalRole,v.rolvaliduntil)&&(!(v.rolvaliduntil instanceof Date)||v.rolvaliduntil.toISOString()!==new Date(c.expiresAt).toISOString()||v.rolvaliduntil.getTime()<=Date.now())))throw Error("APPLICATION_CORE_ROLE_INVALID");
+ const f=await client.query("select p.oid::regprocedure::text signature,pg_get_userbyid(p.proowner) owner,p.prosecdef definer,pg_get_functiondef(p.oid) definition,has_function_privilege(current_user,p.oid,'EXECUTE') executable from pg_proc p where p.oid=any($1::regprocedure[])",[Object.values(signatures)]);if(f.rowCount!==5)throw Error("APPLICATION_CORE_FUNCTION_INVALID");for(const r of f.rows){const pin=c.functions[r.signature];if(!pin||pin.owner!==(r.signature===signatures.identity||r.signature===signatures.state?"crays_core_identity_rpc_owner_v2":"crays_core_member_application_rpc_owner_v1")||r.owner!==pin.owner||!r.definer||r.executable!==[signatures.read,signatures.command].includes(r.signature)||hash(r.definition)!==pin.definitionSha256)throw Error("APPLICATION_CORE_FUNCTION_INVALID");}
+ const broad=await client.query("select exists(select from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname in ('crays_core','crays_core_rpc') and c.relkind in ('r','p','v','m','f') and (has_table_privilege(current_user,c.oid,'SELECT,INSERT,UPDATE,DELETE,TRUNCATE,REFERENCES,TRIGGER') or has_any_column_privilege(current_user,c.oid,'SELECT,INSERT,UPDATE,REFERENCES'))) broad");if(broad.rows[0]?.broad!==false)throw Error("APPLICATION_CORE_BROAD_ROLE_DENIED");
+ const extra=await client.query("select exists(select from pg_proc p join pg_namespace n on n.oid=p.pronamespace where n.nspname in ('crays_core','crays_core_rpc') and has_schema_privilege(current_user,n.oid,'USAGE') and p.oid<>ALL($1::regprocedure[]) and has_function_privilege(current_user,p.oid,'EXECUTE')) extra",[[signatures.read,signatures.command]]);if(extra.rows[0]?.extra!==false)throw Error("APPLICATION_CORE_EXTRA_EXECUTE_DENIED");
+}
+let active:{fingerprint:string;pool:Pool}|undefined;
+export async function queryMemberApplication(operation:keyof typeof statements,values:unknown[],beforeCommit:()=>Promise<void>){
+ if(typeof beforeCommit!=="function"||!Object.hasOwn(statements,operation)||values.length!==statements[operation].values||typeof values[0]!=="string"||values[0].length>1024||typeof values[1]!=="string"||values[1].length>512||typeof values[2]!=="string"||!/^[a-f0-9]{64}$/.test(values[2])||operation==="command"&&(typeof values[3]!=="string"||values[3].length>3000))throw Error("APPLICATION_CORE_QUERY_DENIED");const x=memberApplicationRuntimeConfiguration();if(active&&active.fingerprint!==x.fingerprint)throw Error("APPLICATION_RUNTIME_CHANGED");active??={fingerprint:x.fingerprint,pool:new Pool({connectionString:x.url,Client:MemberBookingScramClient,ssl:memberAwsPgSsl(x.url),max:1,connectionTimeoutMillis:3000,idleTimeoutMillis:1000,application_name:"crays-member-application",options:"-c statement_timeout=5000 -c lock_timeout=1000 -c idle_in_transaction_session_timeout=7000"})};
+ const client=await active.pool.connect();let committing=false;
+ try{
+  if(!isMemberNativeCoreScramVerified(client))throw Error("APPLICATION_SCRAM_REQUIRED");
+  await client.query(operation==="read"?"BEGIN READ ONLY":"BEGIN");await verify(client,x.c);
+  const result=await client.query(statements[operation].sql,values);await verify(client,x.c);
+  if(result.rows.length!==1)throw Error("APPLICATION_CORE_ENVELOPE_INVALID");
+  const payload=operation==="read"?memberApplicationReadSchema.parse(result.rows[0].payload):memberApplicationOutcomeSchema.parse(result.rows[0].payload);
+  if(payload.accountId!=="__CRAYS_PROTECTED_MEMBER_TEST_ACCOUNT_ID__")throw Error("APPLICATION_CORE_SCOPE_INVALID");
+  if(operation==="command"){
+   const input=memberApplicationCommandSchema.parse(JSON.parse(values[3] as string)),out=memberApplicationOutcomeSchema.parse(payload);
+   if(out.idempotencyKey!==input.idempotencyKey||out.commandType!==input.type)throw Error("APPLICATION_CORE_ACKNOWLEDGEMENT_INVALID");
+  }
+  await beforeCommit();
+  if(memberApplicationRuntimeConfiguration().fingerprint!==x.fingerprint)throw Error("APPLICATION_RUNTIME_CHANGED");
+  committing=true;await client.query("COMMIT");return payload;
+ }catch(e){
+  await client.query("ROLLBACK").catch(()=>undefined);
+  if(committing)throw Error("APPLICATION_COMMIT_OUTCOME_UNKNOWN");
+  throw e;
+ }finally{client.release();}
+}
+
+export async function closeMemberApplicationRuntime(){const old=active;active=undefined;if(old)await old.pool.end();}

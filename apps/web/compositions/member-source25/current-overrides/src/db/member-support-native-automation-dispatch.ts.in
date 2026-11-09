@@ -1,0 +1,22 @@
+import "server-only";
+import {queueMember073NativeWorker} from "@/lib/clubs/member073-native-worker-queue";
+import {spawn} from "node:child_process";
+import {writeFileSync} from "node:fs";
+import {randomUUID} from "node:crypto";
+import type {MemberSupportSdk} from "./member-stay-support-handler";
+import type {OwnSupportReceipt} from "./member-support-native-contract";
+const base="/srv/crays/dev-state/member-area-screen1-20261006/member-demo100-20261012";
+const account="__CRAYS_PROTECTED_MEMBER_TEST_ACCOUNT_ID__";
+/** Only after the original SDK-bound Core transaction has committed.
+ * The durable original Core rows remain authoritative if dispatch is unavailable.
+ * Provider credentials never leave the existing restricted server runtime.
+ */
+export function queueConfirmedNativeMemberSupport(sdk:MemberSupportSdk,receipt:OwnSupportReceipt){
+ if(process.env.CRAYS_MEMBER_NATIVE_BACKEND!==undefined){if(sdk.sessionReady===true&&sdk.expectedAccountId===account&&receipt.accountId===account&&receipt.testOnly===true&&receipt.externalDeliveryConfirmed===false&&receipt.receipt.outcome==="applied"&&receipt.receipt.caseId){try{queueMember073NativeWorker("support",receipt.receipt.caseId);}catch{console.warn("MEMBER_NATIVE_SUPPORT_DISPATCH_NOT_QUEUED");}}return;}
+ if(process.env.CRAYS_MEMBER_SUPPORT_AUTOMATION_TARGET!=="xxl-original-member-test"||sdk.sessionReady!==true||sdk.expectedAccountId!==account||receipt.accountId!==account||receipt.testOnly!==true||receipt.externalDeliveryConfirmed!==false||receipt.receipt.outcome!=="applied"||!receipt.receipt.caseId)return;
+ try{
+  writeFileSync(base+"/SUPPORT_DISPATCH_PENDING.flag",new Date().toISOString()+":"+randomUUID(),{mode:0o600});
+  const child=spawn("/usr/bin/python3",[base+"/erp-agent/support_dispatch.py"],{stdio:"ignore",detached:false});
+  child.once("error",()=>console.warn("MEMBER_SUPPORT_TOOLS_DISPATCH_NOT_STARTED"));child.unref();
+ }catch{console.warn("MEMBER_SUPPORT_TOOLS_DISPATCH_NOT_STARTED");}
+}

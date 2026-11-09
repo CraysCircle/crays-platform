@@ -1,0 +1,22 @@
+{
+  "schema": "crays.source-composition-verification.v1",
+  "originalSourceFiles": 1399,
+  "awsBuildInputFiles": 1401,
+  "all2800OriginalSHA256AndSizeComparisonsPassed": true,
+  "wholeOriginalExportBodies": 82,
+  "protectedSourceTemplates": 25,
+  "generatedConfigurationFilesSeparatelyPreserved": 2,
+  "negativeRestoreChecks": [
+    "missing-protected-inputs",
+    "wrong-protected-inputs",
+    "destination-inside-git",
+    "existing-destination",
+    "symlink-destination-parent"
+  ],
+  "allNegativeChecksRefusedWithoutNewOutput": true,
+  "twoProtectedSourceInputsOffServerBackupAndExactVersionReadbackVerified": true,
+  "protectedInputValuesPublishedByThisCapture": false,
+  "sourceProgramsExecuted": false,
+  "newApplicationBuildOrDeployment": false,
+  "completeRuntimeImageRecoveryOrLicenseClosure": false
+}

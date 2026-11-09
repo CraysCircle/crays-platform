@@ -1,5 +1,5 @@
 {
-  "scope": "Exact source hashes, not a claim that all corresponding Member code is already published",
+  "scope": "Exact original source hashes for the reconstructable Member source export; protected test inputs supplied separately",
   "originalBaseline": {
     "files": [
       {
@@ -14012,5 +14012,6 @@
   },
   "reusedPublicSourceBaselineCommit": "cbe2fe2b8784597640ad74ba0abd9c4ba7c3d3ea",
   "sourceProgramsExecuted": false,
-  "supplementalCodePublicationComplete": false
+  "supplementalCodePublicationComplete": true,
+  "reconstructableSourceExport": "../../compositions/member-source25"
 }

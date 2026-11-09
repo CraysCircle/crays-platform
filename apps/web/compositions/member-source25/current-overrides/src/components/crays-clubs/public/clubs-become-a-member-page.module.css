@@ -1,0 +1,1878 @@
+.page {
+  --ink: #061b35;
+  --navy: #031d38;
+  --navy-deep: #02172c;
+  --blue: #0c3a66;
+  --cyan: #13829a;
+  --pink: #ff315f;
+  --paper: #f7f8f8;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
+  overflow: hidden;
+}
+
+.page,
+.page * {
+  box-sizing: border-box;
+}
+
+.page h1,
+.page h2,
+.page h3,
+.page p,
+.page ul,
+.page ol {
+  margin: 0;
+}
+
+.page ul,
+.page ol {
+  padding: 0;
+  list-style: none;
+}
+
+.section {
+  position: relative;
+  padding: 72px max(28px, calc((100vw - 1296px) / 2));
+}
+
+.backdrop {
+  object-fit: cover;
+  z-index: 0;
+}
+
+.kicker,
+.kickerLight {
+  color: var(--pink);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.page h1,
+.page h2 {
+  font-weight: 800;
+  letter-spacing: -0.045em;
+}
+
+.primaryButton,
+.secondaryButton,
+.creatorButton {
+  align-items: center;
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 750;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 24px;
+  text-decoration: none;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.primaryButton:hover,
+.secondaryButton:hover,
+.creatorButton:hover {
+  transform: translateY(-2px);
+}
+
+.primaryButton {
+  background: var(--pink);
+  color: #fff;
+  gap: 10px;
+}
+
+.secondaryButton {
+  background: #fff;
+  color: var(--ink) !important;
+}
+
+.hero {
+  align-items: center;
+  background: var(--navy-deep);
+  color: #fff;
+  display: flex;
+  height: 100svh;
+  min-height: 100svh;
+  overflow: hidden;
+  padding: clamp(96px, 15svh, 132px) max(28px, calc((100vw - 1296px) / 2)) clamp(34px, 6svh, 68px);
+  position: relative;
+}
+
+@supports (height: 100dvh) {
+  .hero {
+    height: 100dvh;
+    min-height: 100dvh;
+  }
+}
+
+.heroWash {
+  background:
+    linear-gradient(90deg, rgba(1, 18, 35, 0.98) 0%, rgba(1, 18, 35, 0.88) 37%, rgba(1, 18, 35, 0.3) 71%, rgba(1, 18, 35, 0.55) 100%),
+    linear-gradient(0deg, rgba(1, 17, 33, 0.82) 0%, transparent 45%);
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.heroInner {
+  align-items: center;
+  display: grid;
+  gap: 42px;
+  grid-template-columns: minmax(0, 1.05fr) minmax(460px, 0.95fr);
+  margin: 0 auto;
+  max-width: 1296px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.heroCopy {
+  max-width: 690px;
+}
+
+.heroCopy h1 {
+  font-size: clamp(58px, 5.05vw, 76px);
+  line-height: 0.92;
+  margin-top: 22px;
+  max-width: 680px;
+}
+
+.heroLead {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 16px;
+  line-height: 1.55;
+  margin-top: 26px !important;
+  max-width: 560px;
+}
+
+.heroActions {
+  display: flex;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.signalRail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 22px !important;
+}
+
+.signalRail li {
+  border: 1px solid rgba(255, 255, 255, 0.23);
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 11px;
+  padding: 7px 13px;
+}
+
+.heroCollage {
+  height: 555px;
+  position: relative;
+}
+
+.heroCollage > div {
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.34);
+  overflow: hidden;
+  position: absolute;
+}
+
+.heroCollage img,
+.ideaCollage img,
+.accessImage img,
+.companyImage img,
+.responsibleMedia img {
+  object-fit: cover;
+}
+
+.heroTile1 {
+  height: 275px;
+  left: 54px;
+  top: 16px;
+  width: 205px;
+}
+
+.heroTile2 {
+  height: 205px;
+  right: 12px;
+  top: 72px;
+  width: 245px;
+}
+
+.heroTile3 {
+  bottom: 29px;
+  height: 260px;
+  left: 0;
+  width: 220px;
+}
+
+.heroTile4 {
+  bottom: 2px;
+  height: 244px;
+  right: 30px;
+  width: 205px;
+}
+
+.idea {
+  align-items: center;
+  background: #fafafa;
+  display: grid;
+  gap: 48px;
+  grid-template-columns: 0.9fr 1.05fr 1fr;
+  height: 580px;
+}
+
+.idea h2 {
+  font-size: clamp(42px, 3.9vw, 57px);
+  line-height: 0.96;
+  margin-top: 19px;
+  max-width: 410px;
+}
+
+.proseColumns {
+  display: grid;
+  gap: 24px;
+}
+
+.proseColumns p,
+.sectionLead,
+.layersHeading > p:last-child {
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.ideaCollage {
+  height: 370px;
+  position: relative;
+}
+
+.ideaCollage > div {
+  border-radius: 7px;
+  box-shadow: 0 16px 30px rgba(7, 27, 50, 0.13);
+  overflow: hidden;
+  position: absolute;
+}
+
+.ideaImage1 {
+  height: 370px;
+  left: 0;
+  width: 55%;
+}
+
+.ideaImage2 {
+  height: 158px;
+  right: 2%;
+  top: 18px;
+  width: 38%;
+}
+
+.ideaImage3 {
+  bottom: 14px;
+  height: 174px;
+  right: 8%;
+  width: 32%;
+}
+
+.access {
+  background:
+    linear-gradient(rgba(2, 20, 39, 0.9), rgba(2, 20, 39, 0.94)),
+    url("/__crays-clubs/assets/crays-seo/become-a-member-crays-lifestyle-event-and-community-moment-10.jpg") center 42% / cover no-repeat;
+  color: #fff;
+  height: 630px;
+  overflow: hidden;
+}
+
+.centerHeading {
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.centerHeading h2 {
+  font-size: clamp(42px, 3.7vw, 54px);
+  line-height: 0.95;
+  margin-top: 18px;
+}
+
+.accessGrid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0 auto;
+  max-width: 1296px;
+}
+
+.accessCard {
+  background: #fff;
+  color: var(--ink);
+  min-height: 355px;
+  overflow: hidden;
+}
+
+.accessImage {
+  height: 185px;
+  position: relative;
+}
+
+.accessCardCopy {
+  padding: 18px 18px 20px;
+}
+
+.accessCardCopy span {
+  color: var(--pink);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.accessCardCopy h3 {
+  font-size: 23px;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  margin-top: 8px;
+}
+
+.accessCardCopy p {
+  font-size: 12px;
+  line-height: 1.45;
+  margin-top: 12px;
+}
+
+.living {
+  align-items: center;
+  background: #052b4d;
+  color: #fff;
+  display: flex;
+  height: 665px;
+  overflow: hidden;
+}
+
+.living .backdrop {
+  object-position: center;
+}
+
+.livingWash {
+  background: linear-gradient(90deg, rgba(2, 30, 57, 0.98) 0%, rgba(3, 38, 70, 0.94) 48%, rgba(4, 42, 70, 0.68) 100%);
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.livingInner {
+  display: grid;
+  gap: 84px;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+  margin: 0 auto;
+  max-width: 1296px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.livingCopy h2 {
+  font-size: clamp(46px, 4.1vw, 60px);
+  line-height: 0.94;
+  margin-top: 18px;
+  max-width: 520px;
+}
+
+.livingCopy > p:last-child {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
+  line-height: 1.55;
+  margin-top: 25px;
+  max-width: 510px;
+}
+
+.livingList {
+  display: grid;
+  gap: 24px;
+}
+
+.livingList article {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 30px 1fr;
+}
+
+.livingList svg {
+  color: var(--pink);
+  margin-top: 2px;
+}
+
+.livingList article p {
+  color: var(--pink);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.livingList h3 {
+  font-size: 19px;
+  line-height: 1.15;
+  margin-top: 4px;
+}
+
+.livingList article div div {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 12px;
+  line-height: 1.45;
+  margin-top: 5px;
+  max-width: 360px;
+}
+
+.companies {
+  align-items: center;
+  background: #fbfbfb;
+  display: grid;
+  gap: 80px;
+  grid-template-columns: 1.08fr 0.92fr;
+  height: 665px;
+}
+
+.companies h2,
+.responsible h2 {
+  font-size: clamp(42px, 3.7vw, 54px);
+  line-height: 0.96;
+  margin-top: 18px;
+}
+
+.companies .sectionLead,
+.responsible .sectionLead {
+  color: rgba(6, 27, 53, 0.76);
+  margin-top: 22px;
+}
+
+.companyGrid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 24px;
+}
+
+.companyGrid article {
+  background: #fff;
+  box-shadow: 0 7px 24px rgba(7, 27, 50, 0.07);
+  min-height: 90px;
+  padding: 15px 17px;
+}
+
+.companyGrid h3 {
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.companyGrid p {
+  color: rgba(6, 27, 53, 0.7);
+  font-size: 11px;
+  line-height: 1.4;
+  margin-top: 6px;
+}
+
+.companyMedia {
+  background: #fff;
+  box-shadow: 0 15px 38px rgba(7, 27, 50, 0.13);
+  overflow: hidden;
+}
+
+.companyImage {
+  height: 370px;
+  position: relative;
+}
+
+.companyMedia > p {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 18px 20px 21px;
+}
+
+.responsible {
+  align-items: center;
+  background: #fff;
+  display: grid;
+  gap: 78px;
+  grid-template-columns: 0.9fr 1.1fr;
+  height: 560px;
+}
+
+.responsibleMedia {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1fr 1fr;
+  height: 390px;
+}
+
+.responsibleMedia > div {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.responsibleImage1 img {
+  object-position: 32% center;
+}
+
+.responsibleImage2 img {
+  object-position: center;
+}
+
+.responsibleList {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 20px !important;
+}
+
+.responsibleList li {
+  align-items: flex-start;
+  background: #fff;
+  box-shadow: 0 6px 22px rgba(7, 27, 50, 0.08);
+  display: grid;
+  gap: 9px;
+  grid-template-columns: 18px 1fr;
+  min-height: 62px;
+  padding: 12px;
+}
+
+.responsibleList svg {
+  color: var(--pink);
+}
+
+.responsibleList p {
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.creators {
+  align-items: center;
+  background: var(--navy-deep);
+  color: #fff;
+  display: flex;
+  height: 560px;
+  overflow: hidden;
+}
+
+.creators .backdrop {
+  object-position: center 44%;
+}
+
+.creatorsWash {
+  background: linear-gradient(90deg, rgba(2, 20, 39, 0.97) 0%, rgba(2, 21, 41, 0.86) 55%, rgba(26, 4, 25, 0.58) 100%);
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.creatorsContent {
+  margin: 0 auto;
+  max-width: 1296px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.creators h2 {
+  font-size: clamp(43px, 3.8vw, 55px);
+  line-height: 0.95;
+  margin-top: 18px;
+  max-width: 580px;
+}
+
+.creatorLead {
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 13px;
+  line-height: 1.5;
+  margin-top: 18px !important;
+  max-width: 690px;
+}
+
+.creatorGrid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-top: 30px;
+}
+
+.creatorGrid article {
+  background: rgba(5, 28, 51, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  min-height: 128px;
+  padding: 16px;
+}
+
+.creatorGrid h3 {
+  font-size: 14px;
+  line-height: 1.15;
+}
+
+.creatorGrid p {
+  color: rgba(255, 255, 255, 0.67);
+  font-size: 10px;
+  line-height: 1.45;
+  margin-top: 8px;
+}
+
+.creatorClose {
+  align-items: flex-end;
+  display: flex;
+}
+
+.creatorButton {
+  background: var(--pink);
+  color: #fff;
+  display: none;
+  margin-top: 20px;
+}
+
+.layers {
+  background: #fbfbfb;
+  height: 550px;
+  padding-bottom: 42px;
+  padding-top: 58px;
+}
+
+.layersHeading {
+  margin: 0 auto;
+  max-width: 740px;
+  text-align: center;
+}
+
+.layersHeading h2 {
+  font-size: 46px;
+  line-height: 0.96;
+  margin-top: 14px;
+}
+
+.layersHeading > p:last-child {
+  color: rgba(6, 27, 53, 0.72);
+  margin-top: 14px;
+}
+
+.layerGrid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 30px auto 0;
+  max-width: 1296px;
+}
+
+.layerCard {
+  background: #fff;
+  border: 1px solid #dde2e7;
+  box-shadow: 0 8px 22px rgba(7, 27, 50, 0.07);
+  display: grid;
+  min-height: 145px;
+  padding: 20px 24px;
+}
+
+.layerCard > p {
+  color: var(--pink);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.layerCard strong {
+  font-size: 29px;
+  line-height: 1;
+  margin-top: 8px;
+}
+
+.layerCard span {
+  font-size: 11px;
+  line-height: 1.42;
+  margin-top: 12px;
+}
+
+.layerCardFeatured {
+  background: var(--navy-deep);
+  border-color: var(--navy-deep);
+  color: #fff;
+}
+
+.layerCardFeatured span {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.layerNote {
+  background: #ffe8ed;
+  font-size: 11px;
+  line-height: 1.35;
+  margin: 18px auto 0 !important;
+  max-width: 740px;
+  padding: 10px 18px;
+  text-align: center;
+}
+
+.layerSignals {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 14px auto 0 !important;
+  max-width: 1296px;
+}
+
+.layerSignals li {
+  background: var(--navy-deep);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 750;
+  padding: 9px 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.closing {
+  align-items: center;
+  background: var(--navy-deep);
+  color: #fff;
+  display: flex;
+  height: 275px;
+  overflow: hidden;
+  padding: 34px max(28px, calc((100vw - 1296px) / 2));
+  position: relative;
+}
+
+.closing .backdrop {
+  object-position: center 35%;
+}
+
+.closingWash {
+  background: linear-gradient(90deg, rgba(3, 26, 49, 0.98) 0%, rgba(4, 31, 57, 0.8) 62%, rgba(3, 23, 43, 0.48) 100%);
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.closingCopy {
+  max-width: 900px;
+  position: relative;
+  z-index: 2;
+}
+
+.closing h2 {
+  font-size: 42px;
+  line-height: 0.96;
+  margin-top: 12px;
+}
+
+.closingCopy > p:nth-of-type(2) {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 12px;
+  line-height: 1.45;
+  margin-top: 13px;
+  max-width: 700px;
+}
+
+.closing .primaryButton {
+  margin-top: 16px;
+  min-height: 38px;
+  padding: 0 18px;
+}
+
+@media (min-width: 761px) and (max-width: 1199px) {
+  .hero {
+    padding: 100px 32px 36px;
+  }
+
+  .heroInner {
+    gap: 24px;
+    grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+  }
+
+  .heroCopy h1 {
+    font-size: clamp(46px, 6vw, 62px);
+  }
+
+  .heroLead {
+    font-size: 14px;
+    margin-top: 20px !important;
+  }
+
+  .heroActions {
+    margin-top: 22px;
+  }
+
+  .signalRail {
+    margin-top: 16px !important;
+  }
+
+  .heroCollage {
+    height: min(520px, 60svh);
+  }
+
+  .heroTile1 {
+    height: 230px;
+    left: 34px;
+    width: 165px;
+  }
+
+  .heroTile2 {
+    height: 165px;
+    right: 4px;
+    width: 190px;
+  }
+
+  .heroTile3 {
+    height: 215px;
+    width: 180px;
+  }
+
+  .heroTile4 {
+    height: 205px;
+    right: 14px;
+    width: 165px;
+  }
+}
+
+@media (min-width: 761px) and (max-height: 700px) {
+  .hero {
+    padding-bottom: 24px;
+    padding-top: 86px;
+  }
+
+  .heroCopy h1 {
+    font-size: clamp(44px, 4.6vw, 64px);
+    margin-top: 14px;
+  }
+
+  .heroLead {
+    font-size: 13px;
+    margin-top: 16px !important;
+  }
+
+  .heroActions {
+    margin-top: 18px;
+  }
+
+  .signalRail {
+    margin-top: 12px !important;
+  }
+
+  .heroCollage {
+    height: 460px;
+  }
+}
+
+@media (max-width: 760px) {
+  .section {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .kicker,
+  .kickerLight {
+    font-size: 8px;
+    letter-spacing: 0.14em;
+  }
+
+  .hero {
+    height: auto;
+    min-height: max(100svh, 760px);
+    padding: 78px 20px 22px;
+  }
+
+  .heroInner {
+    align-items: start;
+    gap: 8px;
+    grid-template-columns: minmax(0, 1.25fr) minmax(118px, 0.75fr);
+  }
+
+  .heroCopy h1 {
+    font-size: clamp(28px, 8.2vw, 34px);
+    line-height: 0.93;
+    margin-top: 12px;
+  }
+
+  .heroLead {
+    font-size: 10px;
+    line-height: 1.42;
+    margin-top: 13px !important;
+  }
+
+  .heroActions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .primaryButton,
+  .secondaryButton,
+  .creatorButton {
+    font-size: 9px;
+    min-height: 31px;
+    padding: 0 13px;
+  }
+
+  .signalRail {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(2, max-content);
+    margin-top: 10px !important;
+  }
+
+  .signalRail li {
+    font-size: 7px;
+    padding: 4px 7px;
+  }
+
+  .heroCollage {
+    height: 250px;
+    margin-top: 54px;
+  }
+
+  .heroCollage > div {
+    border-radius: 3px;
+  }
+
+  .heroTile1 {
+    height: 108px;
+    left: 4px;
+    top: 0;
+    width: 68px;
+  }
+
+  .heroTile2 {
+    height: 80px;
+    right: 0;
+    top: 35px;
+    width: 70px;
+  }
+
+  .heroTile3 {
+    bottom: 24px;
+    height: 105px;
+    left: -8px;
+    width: 76px;
+  }
+
+  .heroTile4 {
+    bottom: 0;
+    height: 102px;
+    right: 5px;
+    width: 65px;
+  }
+
+  .idea {
+    align-content: start;
+    display: grid;
+    gap: 18px;
+    grid-template-columns: 1fr;
+    height: 570px;
+    padding-bottom: 26px;
+    padding-top: 36px;
+  }
+
+  .idea h2 {
+    font-size: 34px;
+    line-height: 0.94;
+    margin-top: 12px;
+    max-width: 300px;
+  }
+
+  .proseColumns {
+    gap: 12px;
+  }
+
+  .proseColumns p,
+  .sectionLead,
+  .layersHeading > p:last-child {
+    font-size: 10px;
+    line-height: 1.42;
+  }
+
+  .ideaCollage {
+    height: 188px;
+    margin-top: 2px;
+  }
+
+  .ideaImage1 {
+    height: 188px;
+    width: 54%;
+  }
+
+  .ideaImage2 {
+    height: 86px;
+    right: 3%;
+    top: 3px;
+    width: 39%;
+  }
+
+  .ideaImage3 {
+    bottom: 0;
+    height: 92px;
+    right: 8%;
+    width: 32%;
+  }
+
+  .access {
+    height: 586px;
+    padding-bottom: 30px;
+    padding-top: 34px;
+  }
+
+  .centerHeading {
+    margin-bottom: 22px;
+    text-align: left;
+  }
+
+  .centerHeading h2 {
+    font-size: 30px;
+    margin-top: 10px;
+    max-width: 270px;
+  }
+
+  .accessGrid {
+    gap: 10px;
+    grid-template-columns: 1fr;
+  }
+
+  .accessCard {
+    align-items: stretch;
+    background: rgba(255, 255, 255, 0.06);
+    color: #fff;
+    display: grid;
+    grid-template-columns: 122px 1fr;
+    min-height: 101px;
+  }
+
+  .accessImage {
+    height: 101px;
+  }
+
+  .accessCardCopy {
+    padding: 10px 12px;
+  }
+
+  .accessCardCopy span {
+    font-size: 10px;
+  }
+
+  .accessCardCopy h3 {
+    font-size: 16px;
+    margin-top: 3px;
+  }
+
+  .accessCardCopy p {
+    color: rgba(255, 255, 255, 0.67);
+    font-size: 8px;
+    line-height: 1.35;
+    margin-top: 5px;
+  }
+
+  .living {
+    height: 596px;
+    padding-bottom: 34px;
+    padding-top: 38px;
+  }
+
+  .living .backdrop {
+    object-position: 65% center;
+  }
+
+  .livingWash {
+    background: linear-gradient(90deg, rgba(2, 30, 57, 0.98), rgba(3, 38, 70, 0.87));
+  }
+
+  .livingInner {
+    gap: 24px;
+    grid-template-columns: 1fr;
+  }
+
+  .livingCopy h2 {
+    font-size: 32px;
+    line-height: 0.94;
+    margin-top: 10px;
+    max-width: 330px;
+  }
+
+  .livingCopy > p:last-child {
+    font-size: 9px;
+    line-height: 1.4;
+    margin-top: 13px;
+    max-width: 330px;
+  }
+
+  .livingList {
+    gap: 14px;
+  }
+
+  .livingList article {
+    gap: 12px;
+    grid-template-columns: 22px 1fr;
+  }
+
+  .livingList svg {
+    height: 20px;
+    width: 20px;
+  }
+
+  .livingList article p {
+    font-size: 7px;
+  }
+
+  .livingList h3 {
+    font-size: 15px;
+    margin-top: 2px;
+  }
+
+  .livingList article div div {
+    font-size: 8px;
+    line-height: 1.35;
+    margin-top: 3px;
+  }
+
+  .companies {
+    align-content: start;
+    gap: 18px;
+    grid-template-columns: 1fr;
+    height: 615px;
+    padding-bottom: 28px;
+    padding-top: 36px;
+  }
+
+  .companies h2,
+  .responsible h2 {
+    font-size: 32px;
+    margin-top: 10px;
+  }
+
+  .companies .sectionLead,
+  .responsible .sectionLead {
+    margin-top: 12px;
+  }
+
+  .companyGrid {
+    gap: 8px;
+    margin-top: 15px;
+  }
+
+  .companyGrid article {
+    min-height: 72px;
+    padding: 10px;
+  }
+
+  .companyGrid h3 {
+    font-size: 10px;
+  }
+
+  .companyGrid p {
+    font-size: 8px;
+    line-height: 1.33;
+    margin-top: 4px;
+  }
+
+  .companyMedia {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+
+  .companyImage {
+    height: 142px;
+  }
+
+  .companyMedia > p {
+    align-self: center;
+    font-size: 8px;
+    padding: 12px;
+  }
+
+  .responsible {
+    align-content: start;
+    gap: 0;
+    grid-template-columns: 1fr;
+    height: 500px;
+    padding-bottom: 30px;
+    padding-top: 38px;
+  }
+
+  .responsibleMedia {
+    display: none;
+  }
+
+  .responsibleList {
+    gap: 8px;
+    grid-template-columns: 1fr;
+    margin-top: 17px !important;
+  }
+
+  .responsibleList li {
+    min-height: 54px;
+    padding: 10px 12px;
+  }
+
+  .responsibleList p {
+    font-size: 8.5px;
+  }
+
+  .creators {
+    height: 344px;
+    padding-bottom: 32px;
+    padding-top: 34px;
+  }
+
+  .creators .backdrop {
+    object-position: 62% center;
+  }
+
+  .creators h2 {
+    font-size: 31px;
+    margin-top: 10px;
+    max-width: 330px;
+  }
+
+  .creatorLead {
+    font-size: 9px;
+    line-height: 1.4;
+    margin-top: 12px !important;
+    max-width: 330px;
+  }
+
+  .creatorGrid {
+    display: none;
+  }
+
+  .creatorButton {
+    display: inline-flex;
+  }
+
+  .layers {
+    height: 472px;
+    padding-bottom: 22px;
+    padding-top: 32px;
+  }
+
+  .layersHeading {
+    text-align: left;
+  }
+
+  .layersHeading h2 {
+    font-size: 31px;
+    margin-top: 9px;
+  }
+
+  .layersHeading > p:last-child {
+    margin-top: 9px;
+  }
+
+  .layerGrid {
+    gap: 7px;
+    grid-template-columns: 1fr;
+    margin-top: 15px;
+  }
+
+  .layerCard {
+    min-height: 72px;
+    padding: 10px 13px;
+  }
+
+  .layerCard > p {
+    font-size: 7px;
+  }
+
+  .layerCard strong {
+    font-size: 20px;
+    margin-top: 4px;
+  }
+
+  .layerCard span {
+    font-size: 7.5px;
+    line-height: 1.3;
+    margin-top: 5px;
+  }
+
+  .layerNote {
+    font-size: 7.5px;
+    margin-top: 9px !important;
+    padding: 6px 9px;
+  }
+
+  .layerSignals {
+    gap: 4px;
+    grid-template-columns: 1fr;
+    margin-top: 8px !important;
+  }
+
+  .layerSignals li {
+    font-size: 7px;
+    padding: 5px 8px;
+  }
+
+  .closing {
+    height: 156px;
+    padding: 22px;
+  }
+
+  .closing h2 {
+    font-size: 26px;
+    margin-top: 7px;
+    max-width: 300px;
+  }
+
+  .closingCopy > p:nth-of-type(2) {
+    display: none;
+  }
+
+  .closing .primaryButton {
+    margin-top: 11px;
+    min-height: 29px;
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .primaryButton,
+  .secondaryButton,
+  .creatorButton {
+    transition: none;
+  }
+}
+
+/* Owner-approved CRAYS Clubs CI typography — V37.0 authority. */
+.page {
+  --member-display: var(--crays-font-display, "Crays", Arial, sans-serif);
+  --member-body: var(--crays-font-display, "Crays", Arial, sans-serif);
+  --member-medium: var(--crays-font-avenir-medium, "Crays Avenir Medium", "Avenir Medium", "Crays Avenir Book", Arial, sans-serif);
+  font-family: var(--member-body);
+}
+
+.page :where(p, li) {
+  font-family: var(--member-body) !important;
+  font-weight: 400;
+  letter-spacing: -0.012em;
+}
+
+.signalRail li {
+  font-family: var(--member-body) !important;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.012em;
+  line-height: 1.4;
+}
+
+.page :where(h1, h2) {
+  font-family: var(--member-display) !important;
+  font-weight: 400;
+  text-wrap: balance;
+}
+
+.kicker,
+.kickerLight {
+  font-family: var(--member-medium) !important;
+  font-size: 13.824px;
+  font-weight: 800;
+  letter-spacing: 1.65888px;
+  line-height: 18.6624px;
+}
+
+.primaryButton,
+.secondaryButton,
+.creatorButton {
+  font-family: var(--member-medium) !important;
+  font-size: 14.976px;
+  font-weight: 800;
+  letter-spacing: 1.19808px;
+  line-height: 20.2176px;
+}
+
+.heroCopy h1 {
+  font-size: clamp(48px, 3.34vw, 64px);
+  font-weight: 400;
+  letter-spacing: -0.042em;
+  line-height: 0.94;
+  max-width: 680px;
+}
+
+.heroLead,
+.proseColumns p,
+.sectionLead,
+.livingCopy > p:last-child,
+.creatorLead,
+.layersHeading > p:last-child,
+.closingCopy > p:nth-of-type(2) {
+  font-family: var(--member-body) !important;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: -0.012em;
+  line-height: 1.55;
+}
+
+.idea {
+  grid-template-columns: 1fr 1.04fr 1fr;
+  height: auto;
+  min-height: 720px;
+}
+
+.idea h2 {
+  font-size: clamp(48px, 3.34vw, 64px);
+  font-weight: 400;
+  letter-spacing: -0.042em;
+  line-height: 0.94;
+  max-width: 460px;
+}
+
+.access,
+.living,
+.companies,
+.responsible,
+.creators,
+.layers,
+.closing {
+  height: auto;
+}
+
+.access {
+  min-height: 660px;
+}
+
+.living,
+.companies {
+  min-height: 665px;
+}
+
+.responsible {
+  min-height: 620px;
+}
+
+.creators {
+  min-height: 620px;
+}
+
+.layers {
+  min-height: 590px;
+}
+
+.closing {
+  min-height: 340px;
+}
+
+.centerHeading h2,
+.livingCopy h2,
+.companies h2,
+.responsible h2,
+.creators h2,
+.layersHeading h2,
+.closing h2 {
+  font-family: var(--member-display) !important;
+  font-size: clamp(38px, 2.73vw, 52px);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  line-height: 0.94;
+  text-wrap: balance;
+}
+
+.responsible h2,
+.creators h2 {
+  font-size: clamp(38px, 2.5vw, 48px);
+}
+
+.responsible h2 {
+  max-width: 540px;
+}
+
+.accessCardCopy h3,
+.livingList h3,
+.companyGrid h3,
+.creatorGrid h3 {
+  font-family: var(--member-display) !important;
+  font-size: clamp(18px, 1.04vw, 20px);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.accessCardCopy p,
+.livingList article div div,
+.companyGrid p,
+.responsibleList p,
+.creatorGrid p {
+  font-family: var(--member-body) !important;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.012em;
+  line-height: 1.45;
+}
+
+.accessCardCopy span,
+.livingList article p,
+.layerCard > p {
+  font-family: var(--member-medium) !important;
+  font-size: 13.824px;
+  font-weight: 800;
+  letter-spacing: 1.65888px;
+  line-height: 18.6624px;
+  text-transform: uppercase;
+}
+
+.accessCard,
+.creatorGrid article {
+  min-height: 380px;
+}
+
+.creatorGrid article {
+  min-height: 170px;
+}
+
+.companyGrid article,
+.responsibleList li {
+  height: auto;
+  min-height: 104px;
+}
+
+.companyMedia > p,
+.creatorClose {
+  font-family: var(--member-body) !important;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.012em;
+  line-height: 1.45;
+}
+
+.layerCard {
+  min-height: 184px;
+  padding: 22px 24px;
+}
+
+.layerCard > p {
+  font-size: 13.824px;
+  letter-spacing: 1.65888px;
+  line-height: 18.6624px;
+}
+
+.layerCard strong {
+  font-family: var(--member-display) !important;
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: -0.042em;
+  line-height: 0.94;
+}
+
+.layerCard span {
+  font-family: var(--member-body) !important;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.012em;
+  line-height: 1.45;
+}
+
+.layerNote {
+  font-family: var(--member-body) !important;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.012em;
+  line-height: 1.45;
+}
+
+.layerSignals li {
+  font-family: var(--member-medium) !important;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.075em;
+  line-height: 1.35;
+}
+
+@media (max-width: 760px) {
+  .kicker,
+  .kickerLight {
+    font-size: 13.824px;
+    letter-spacing: 1.65888px;
+    line-height: 18.6624px;
+  }
+
+  .heroCopy h1 {
+    font-size: clamp(42px, 11.8vw, 46px);
+    line-height: 0.98;
+  }
+
+  .heroLead {
+    font-size: 18px;
+    line-height: 1.46;
+  }
+
+  .primaryButton,
+  .secondaryButton,
+  .creatorButton {
+    font-size: 14.976px;
+    letter-spacing: 1.19808px;
+    line-height: 20.2176px;
+  }
+
+  .idea,
+  .access,
+  .living,
+  .companies,
+  .responsible,
+  .creators,
+  .layers,
+  .closing {
+    height: auto;
+  }
+
+  .idea {
+    min-height: 660px;
+  }
+
+  .access {
+    min-height: 670px;
+  }
+
+  .living {
+    min-height: 650px;
+  }
+
+  .companies {
+    min-height: 690px;
+  }
+
+  .responsible {
+    min-height: 590px;
+  }
+
+  .creators {
+    min-height: 400px;
+  }
+
+  .layers {
+    min-height: 620px;
+  }
+
+  .closing {
+    min-height: 210px;
+  }
+
+  .idea h2 {
+    font-size: 42px;
+    line-height: 0.98;
+    max-width: 325px;
+  }
+
+  .centerHeading h2,
+  .livingCopy h2,
+  .companies h2,
+  .responsible h2,
+  .creators h2,
+  .layersHeading h2,
+  .closing h2 {
+    font-size: 38px;
+    line-height: 0.94;
+  }
+
+  .proseColumns p,
+  .sectionLead,
+  .livingCopy > p:last-child,
+  .creatorLead,
+  .layersHeading > p:last-child,
+  .closingCopy > p:nth-of-type(2) {
+    font-size: 18px;
+    line-height: 1.46;
+  }
+
+  .proseColumns p {
+    font-size: 19px;
+    line-height: 1.55;
+  }
+
+  .accessCard {
+    min-height: 115px;
+  }
+
+  .accessImage {
+    height: 115px;
+  }
+
+  .accessCardCopy h3,
+  .livingList h3,
+  .companyGrid h3,
+  .creatorGrid h3 {
+    font-size: 18px;
+  }
+
+  .accessCardCopy p,
+  .livingList article div div,
+  .companyGrid p,
+  .responsibleList p,
+  .creatorGrid p {
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .companyGrid article {
+    min-height: 88px;
+  }
+
+  .responsibleList li {
+    min-height: 66px;
+  }
+
+  .companyMedia > p {
+    font-size: 14px;
+  }
+
+  .layerCard {
+    min-height: 92px;
+    padding: 12px 14px;
+  }
+
+  .layerCard > p {
+    font-size: 13.824px;
+    letter-spacing: 1.65888px;
+    line-height: 18.6624px;
+  }
+
+  .layerCard strong {
+    font-size: 30px;
+  }
+
+  .layerCard span,
+  .layerNote {
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .layerSignals li {
+    font-size: 13.824px;
+  }
+}
+
+/* The Homepage V37 module loads later, so this page-local lock supplies the
+ * approved semantic families and metrics without touching the shared shell. */
+.page.page.page {
+  font-family: var(--member-body) !important;
+}
+
+.page.page.page :where(p, li) {
+  font-family: var(--member-body) !important;
+}
+
+.page.page.page :where(h1, h2) {
+  font-family: var(--member-display) !important;
+  font-weight: 400 !important;
+}
+
+.page.page.page :where(.kicker, .kickerLight) {
+  font-family: var(--member-medium) !important;
+}
+
+.page.page.page :where(.primaryButton, .secondaryButton, .creatorButton) {
+  font-family: var(--member-medium) !important;
+}
+
+.page.page.page .heroCopy h1,
+.page.page.page .idea h2 {
+  font-family: var(--member-display) !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.042em !important;
+  line-height: 0.94 !important;
+}
+
+.page.page.page :where(
+  .centerHeading h2,
+  .livingCopy h2,
+  .companies h2,
+  .responsible h2,
+  .creators h2,
+  .layersHeading h2,
+  .closing h2
+) {
+  font-family: var(--member-display) !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.045em !important;
+  line-height: 0.94 !important;
+}
+
+.page.page.page :where(
+  .heroLead,
+  .proseColumns p,
+  .sectionLead,
+  .livingCopy > p:last-child,
+  .creatorLead,
+  .layersHeading > p:last-child,
+  .closingCopy > p:nth-of-type(2)
+) {
+  font-family: var(--member-body) !important;
+  font-size: 19px !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.012em !important;
+  line-height: 1.55 !important;
+}
+
+.page.page.page :where(
+  .accessCardCopy h3,
+  .livingList h3,
+  .companyGrid h3,
+  .creatorGrid h3
+) {
+  font-family: var(--member-display) !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.15 !important;
+}
+
+.page.page.page :where(
+  .accessCardCopy p,
+  .livingList article div div,
+  .companyGrid p,
+  .responsibleList p,
+  .creatorGrid p,
+  .companyMedia > p,
+  .creatorClose,
+  .layerCard span,
+  .layerNote
+) {
+  font-family: var(--member-body) !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.012em !important;
+}
+
+.page.page.page :where(
+  .accessCardCopy span,
+  .livingList article p,
+  .layerCard > p,
+  .layerSignals li
+) {
+  font-family: var(--member-medium) !important;
+  font-weight: 800 !important;
+}
+
+.page.page.page .layerCard strong {
+  font-family: var(--member-display) !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.042em !important;
+  line-height: 0.94 !important;
+}
+
+@media (max-width: 760px) {
+  .page.page.page .heroCopy h1,
+  .page.page.page .idea h2 {
+    line-height: 0.98 !important;
+  }
+
+  .page.page.page .heroLead {
+    font-size: 18px !important;
+    line-height: 1.46 !important;
+  }
+
+  .page.page.page :where(
+    .sectionLead,
+    .livingCopy > p:last-child,
+    .creatorLead,
+    .layersHeading > p:last-child,
+    .closingCopy > p:nth-of-type(2)
+  ) {
+    font-size: 18px !important;
+    line-height: 1.46 !important;
+  }
+
+  .page.page.page .proseColumns p {
+    font-size: 19px !important;
+    line-height: 1.55 !important;
+  }
+}

@@ -62,3 +62,7 @@ Original .orig/.rej/.tmp and disabled-route files remain in the captured tree as
 ## Operational source
 
 The [original scripts](scripts/README.md) retain 90 referenced operational programs and two imported helpers with exact baseline/worktree tags. Four referenced programs and remaining execution datasets/documents are still under review. The separate [helper manifest](provenance/operational-helpers.json) distinguishes their source history from the 2,045-file application capture and current AWS runtime.
+
+## Exact Member source variants
+
+The [Member composition export](compositions/member-source25/README.md) preserves the 1,399-file original Member input and the 1,401-file AWS build input without replacing the prepared shared application tree. Unchanged source is referenced by immutable Git commit; changed source bodies and protected templates are retained with exact manifests. Both views passed full original-byte reconstruction checks. See the [Member source/build/dependency binding](provenance/member-source25/README.md) for the recorded build, original project lock and existing notice catalog.
