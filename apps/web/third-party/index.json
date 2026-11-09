@@ -1,0 +1,500 @@
+{
+  "scope": "Original direct-package root notices for the prepared borrowed dependency input",
+  "directPackages": 47,
+  "packagesWithLocatedRootNoticeTexts": 45,
+  "fullTransitiveBundledRuntimeAndRightsClosure": false,
+  "unresolved": [
+    "server-only 0.0.1 original MIT notice",
+    "drizzle-kit 0.31.10 package MIT versus root Apache-2.0 original notice question"
+  ],
+  "packages": [
+    {
+      "name": "@auth0/nextjs-auth0",
+      "version": "4.24.0",
+      "declaredRange": "^4.24.0",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/@auth0/nextjs-auth0/4.24.0/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/@auth0/nextjs-auth0/4.24.0/package.json"
+    },
+    {
+      "name": "@dnd-kit/core",
+      "version": "6.3.1",
+      "declaredRange": "^6.3.1",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/@dnd-kit/core/6.3.1/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/@dnd-kit/core/6.3.1/package.json"
+    },
+    {
+      "name": "@dnd-kit/sortable",
+      "version": "10.0.0",
+      "declaredRange": "^10.0.0",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/@dnd-kit/sortable/10.0.0/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/@dnd-kit/sortable/10.0.0/package.json"
+    },
+    {
+      "name": "@dnd-kit/utilities",
+      "version": "3.2.2",
+      "declaredRange": "^3.2.2",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/@dnd-kit/utilities/3.2.2/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/@dnd-kit/utilities/3.2.2/package.json"
+    },
+    {
+      "name": "@fullcalendar/daygrid",
+      "version": "6.1.21",
+      "declaredRange": "6.1.21",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/@fullcalendar/daygrid/6.1.21/LICENSE.md"
+      ],
+      "originalPackageManifest": "third-party/packages/@fullcalendar/daygrid/6.1.21/package.json"
+    },
+    {
+      "name": "@fullcalendar/list",
+      "version": "6.1.21",
+      "declaredRange": "6.1.21",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/@fullcalendar/list/6.1.21/LICENSE.md"
+      ],
+      "originalPackageManifest": "third-party/packages/@fullcalendar/list/6.1.21/package.json"
+    },
+    {
+      "name": "@fullcalendar/react",
+      "version": "6.1.21",
+      "declaredRange": "6.1.21",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/@fullcalendar/react/6.1.21/LICENSE.txt"
+      ],
+      "originalPackageManifest": "third-party/packages/@fullcalendar/react/6.1.21/package.json"
+    },
+    {
+      "name": "@graphql-yoga/plugin-persisted-operations",
+      "version": "3.21.2",
+      "declaredRange": "3.21.2",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/@graphql-yoga/plugin-persisted-operations/3.21.2/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/@graphql-yoga/plugin-persisted-operations/3.21.2/package.json"
+    },
+    {
+      "name": "@hookform/resolvers",
+      "version": "5.4.0",
+      "declaredRange": "^5.4.0",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/@hookform/resolvers/5.4.0/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/@hookform/resolvers/5.4.0/package.json"
+    },
+    {
+      "name": "@noble/curves",
+      "version": "2.2.0",
+      "declaredRange": "^2.2.0",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/@noble/curves/2.2.0/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/@noble/curves/2.2.0/package.json"
+    },
+    {
+      "name": "@refinedev/core",
+      "version": "5.0.12",
+      "declaredRange": "^5.0.12",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/@refinedev/core/5.0.12/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/@refinedev/core/5.0.12/package.json"
+    },
+    {
+      "name": "@refinedev/nextjs-router",
+      "version": "7.0.5",
+      "declaredRange": "^7.0.5",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/@refinedev/nextjs-router/7.0.5/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/@refinedev/nextjs-router/7.0.5/package.json"
+    },
+    {
+      "name": "@tanstack/react-query",
+      "version": "5.101.2",
+      "declaredRange": "^5.101.2",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/@tanstack/react-query/5.101.2/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/@tanstack/react-query/5.101.2/package.json"
+    },
+    {
+      "name": "@tanstack/react-table",
+      "version": "8.21.3",
+      "declaredRange": "^8.21.3",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/@tanstack/react-table/8.21.3/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/@tanstack/react-table/8.21.3/package.json"
+    },
+    {
+      "name": "class-variance-authority",
+      "version": "0.7.1",
+      "declaredRange": "^0.7.1",
+      "licenseMetadata": "Apache-2.0",
+      "noticeFiles": [
+        "third-party/packages/class-variance-authority/0.7.1/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/class-variance-authority/0.7.1/package.json"
+    },
+    {
+      "name": "clsx",
+      "version": "2.1.1",
+      "declaredRange": "^2.1.1",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/clsx/2.1.1/license"
+      ],
+      "originalPackageManifest": "third-party/packages/clsx/2.1.1/package.json"
+    },
+    {
+      "name": "drizzle-orm",
+      "version": "0.45.2",
+      "declaredRange": "^0.45.2",
+      "licenseMetadata": "Apache-2.0",
+      "noticeFiles": [
+        "third-party/upstream/drizzle-orm/273c78071d4841b497f5144734b38294df7ec64b/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/drizzle-orm/0.45.2/package.json",
+      "upstreamNotice": {
+        "commit": "273c78071d4841b497f5144734b38294df7ec64b",
+        "url": "https://raw.githubusercontent.com/drizzle-team/drizzle-orm/273c78071d4841b497f5144734b38294df7ec64b/LICENSE"
+      }
+    },
+    {
+      "name": "graphql",
+      "version": "16.14.2",
+      "declaredRange": "16.14.2",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/graphql/16.14.2/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/graphql/16.14.2/package.json"
+    },
+    {
+      "name": "graphql-yoga",
+      "version": "5.21.2",
+      "declaredRange": "5.21.2",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/graphql-yoga/5.21.2/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/graphql-yoga/5.21.2/package.json"
+    },
+    {
+      "name": "lucide-react",
+      "version": "1.23.0",
+      "declaredRange": "^1.23.0",
+      "licenseMetadata": "ISC",
+      "noticeFiles": [
+        "third-party/packages/lucide-react/1.23.0/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/lucide-react/1.23.0/package.json"
+    },
+    {
+      "name": "next",
+      "version": "16.2.10",
+      "declaredRange": "16.2.10",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/next/16.2.10/license.md"
+      ],
+      "originalPackageManifest": "third-party/packages/next/16.2.10/package.json"
+    },
+    {
+      "name": "pg",
+      "version": "8.22.0",
+      "declaredRange": "^8.22.0",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/pg/8.22.0/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/pg/8.22.0/package.json"
+    },
+    {
+      "name": "radix-ui",
+      "version": "1.6.2",
+      "declaredRange": "^1.6.2",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/radix-ui/1.6.2/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/radix-ui/1.6.2/package.json"
+    },
+    {
+      "name": "react",
+      "version": "19.2.4",
+      "declaredRange": "19.2.4",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/react/19.2.4/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/react/19.2.4/package.json"
+    },
+    {
+      "name": "react-dom",
+      "version": "19.2.4",
+      "declaredRange": "19.2.4",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/react-dom/19.2.4/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/react-dom/19.2.4/package.json"
+    },
+    {
+      "name": "react-hook-form",
+      "version": "7.81.0",
+      "declaredRange": "^7.81.0",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/react-hook-form/7.81.0/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/react-hook-form/7.81.0/package.json"
+    },
+    {
+      "name": "server-only",
+      "version": "0.0.1",
+      "declaredRange": "0.0.1",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [],
+      "originalPackageManifest": "third-party/packages/server-only/0.0.1/package.json"
+    },
+    {
+      "name": "tailwind-merge",
+      "version": "3.6.0",
+      "declaredRange": "^3.6.0",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/tailwind-merge/3.6.0/LICENSE.md"
+      ],
+      "originalPackageManifest": "third-party/packages/tailwind-merge/3.6.0/package.json"
+    },
+    {
+      "name": "tw-animate-css",
+      "version": "1.4.0",
+      "declaredRange": "^1.4.0",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/tw-animate-css/1.4.0/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/tw-animate-css/1.4.0/package.json"
+    },
+    {
+      "name": "zod",
+      "version": "4.4.3",
+      "declaredRange": "^4.4.3",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/zod/4.4.3/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/zod/4.4.3/package.json"
+    },
+    {
+      "name": "@axe-core/playwright",
+      "version": "4.12.1",
+      "declaredRange": "4.12.1",
+      "licenseMetadata": "MPL-2.0",
+      "noticeFiles": [
+        "third-party/packages/@axe-core/playwright/4.12.1/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/@axe-core/playwright/4.12.1/package.json"
+    },
+    {
+      "name": "@playwright/test",
+      "version": "1.61.1",
+      "declaredRange": "^1.61.1",
+      "licenseMetadata": "Apache-2.0",
+      "noticeFiles": [
+        "third-party/packages/@playwright/test/1.61.1/LICENSE",
+        "third-party/packages/@playwright/test/1.61.1/NOTICE"
+      ],
+      "originalPackageManifest": "third-party/packages/@playwright/test/1.61.1/package.json"
+    },
+    {
+      "name": "@storybook/addon-a11y",
+      "version": "10.5.0",
+      "declaredRange": "^10.5.0",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/upstream/storybook/9dafcd22ed55947bc4c2fa1d5066b552baa0ebf4/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/@storybook/addon-a11y/10.5.0/package.json",
+      "upstreamNotice": {
+        "commit": "9dafcd22ed55947bc4c2fa1d5066b552baa0ebf4",
+        "url": "https://raw.githubusercontent.com/storybookjs/storybook/9dafcd22ed55947bc4c2fa1d5066b552baa0ebf4/LICENSE"
+      }
+    },
+    {
+      "name": "@storybook/nextjs-vite",
+      "version": "10.5.0",
+      "declaredRange": "^10.5.0",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/upstream/storybook/9dafcd22ed55947bc4c2fa1d5066b552baa0ebf4/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/@storybook/nextjs-vite/10.5.0/package.json",
+      "upstreamNotice": {
+        "commit": "9dafcd22ed55947bc4c2fa1d5066b552baa0ebf4",
+        "url": "https://raw.githubusercontent.com/storybookjs/storybook/9dafcd22ed55947bc4c2fa1d5066b552baa0ebf4/LICENSE"
+      }
+    },
+    {
+      "name": "@tailwindcss/postcss",
+      "version": "4.3.2",
+      "declaredRange": "^4",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/@tailwindcss/postcss/4.3.2/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/@tailwindcss/postcss/4.3.2/package.json"
+    },
+    {
+      "name": "@types/node",
+      "version": "20.19.43",
+      "declaredRange": "^20",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/@types/node/20.19.43/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/@types/node/20.19.43/package.json"
+    },
+    {
+      "name": "@types/papaparse",
+      "version": "5.5.2",
+      "declaredRange": "5.5.2",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/@types/papaparse/5.5.2/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/@types/papaparse/5.5.2/package.json"
+    },
+    {
+      "name": "@types/pg",
+      "version": "8.20.0",
+      "declaredRange": "^8.20.0",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/@types/pg/8.20.0/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/@types/pg/8.20.0/package.json"
+    },
+    {
+      "name": "@types/react",
+      "version": "19.2.17",
+      "declaredRange": "^19",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/@types/react/19.2.17/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/@types/react/19.2.17/package.json"
+    },
+    {
+      "name": "@types/react-dom",
+      "version": "19.2.3",
+      "declaredRange": "^19",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/@types/react-dom/19.2.3/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/@types/react-dom/19.2.3/package.json"
+    },
+    {
+      "name": "drizzle-kit",
+      "version": "0.31.10",
+      "declaredRange": "^0.31.10",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [],
+      "originalPackageManifest": "third-party/packages/drizzle-kit/0.31.10/package.json"
+    },
+    {
+      "name": "eslint",
+      "version": "9.39.4",
+      "declaredRange": "^9",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/eslint/9.39.4/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/eslint/9.39.4/package.json"
+    },
+    {
+      "name": "eslint-config-next",
+      "version": "16.2.10",
+      "declaredRange": "16.2.10",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/upstream/eslint-config-next/9dadfd693c5d26bb3c85d1c17802f49dde244b3e/license.md"
+      ],
+      "originalPackageManifest": "third-party/packages/eslint-config-next/16.2.10/package.json",
+      "upstreamNotice": {
+        "commit": "9dadfd693c5d26bb3c85d1c17802f49dde244b3e",
+        "url": "https://raw.githubusercontent.com/vercel/next.js/9dadfd693c5d26bb3c85d1c17802f49dde244b3e/license.md"
+      }
+    },
+    {
+      "name": "storybook",
+      "version": "10.5.0",
+      "declaredRange": "^10.5.0",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/upstream/storybook/9dafcd22ed55947bc4c2fa1d5066b552baa0ebf4/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/storybook/10.5.0/package.json",
+      "upstreamNotice": {
+        "commit": "9dafcd22ed55947bc4c2fa1d5066b552baa0ebf4",
+        "url": "https://raw.githubusercontent.com/storybookjs/storybook/9dafcd22ed55947bc4c2fa1d5066b552baa0ebf4/LICENSE"
+      }
+    },
+    {
+      "name": "tailwindcss",
+      "version": "4.3.2",
+      "declaredRange": "^4",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/tailwindcss/4.3.2/LICENSE"
+      ],
+      "originalPackageManifest": "third-party/packages/tailwindcss/4.3.2/package.json"
+    },
+    {
+      "name": "typescript",
+      "version": "5.9.3",
+      "declaredRange": "^5",
+      "licenseMetadata": "Apache-2.0",
+      "noticeFiles": [
+        "third-party/packages/typescript/5.9.3/LICENSE.txt",
+        "third-party/packages/typescript/5.9.3/ThirdPartyNoticeText.txt"
+      ],
+      "originalPackageManifest": "third-party/packages/typescript/5.9.3/package.json"
+    },
+    {
+      "name": "vite",
+      "version": "8.1.4",
+      "declaredRange": "^8.1.4",
+      "licenseMetadata": "MIT",
+      "noticeFiles": [
+        "third-party/packages/vite/8.1.4/LICENSE.md"
+      ],
+      "originalPackageManifest": "third-party/packages/vite/8.1.4/package.json"
+    }
+  ]
+}

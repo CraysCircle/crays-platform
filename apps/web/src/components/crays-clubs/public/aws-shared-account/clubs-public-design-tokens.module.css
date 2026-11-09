@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "Crays";
+  src: url("/__crays-account/v1/fonts/avenir-book.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Crays";
+  src: url("/__crays-account/v1/fonts/avenir-heavy.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700 900;
+}
+
+@font-face {
+  font-family: "Crays Avenir Book";
+  src: url("/__crays-account/v1/fonts/avenir-book.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Crays Avenir Medium";
+  src: url("/__crays-account/v1/fonts/avenir-medium.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400 500;
+}
+
+/*
+ * CRAYS Clubs public-site design-token owner.
+ *
+ * This module is intentionally scoped to the CRAYS Clubs public website. It
+ * owns the accepted typography, colour, motion and global editorial-photo CI.
+ */
+.theme {
+  /* Brand colour */
+  --crays-color-blue: #0b5fc7;
+  --crays-color-blue-deep: #064899;
+  --crays-color-blue-bright: #1474d9;
+  --crays-color-navy: #001b2e;
+  --crays-color-red: #ef1c4a;
+  --crays-color-paper: #fbfbfa;
+  --crays-color-ink: #041d37;
+  --crays-color-white: #fff;
+
+  /* Type families */
+  --crays-font-display: "Crays", Arial, sans-serif;
+  --crays-font-avenir-book: "Crays Avenir Book", "Avenir Book", Arial, sans-serif;
+  --crays-font-avenir-medium: "Crays Avenir Medium", "Avenir Medium", "Crays Avenir Book", Arial, sans-serif;
+
+  /* Approved desktop type scale */
+  --crays-type-h1-size: 64px;
+  --crays-type-h1-weight: 400;
+  --crays-type-h1-leading: 0.94;
+  --crays-type-h1-tracking: -0.042em;
+  --crays-type-h2-large-size: 84px;
+  --crays-type-h2-large-weight: 400;
+  --crays-type-h2-large-leading: 0.92;
+  --crays-type-h2-large-tracking: -0.052em;
+  --crays-type-h3-size: 52px;
+  --crays-type-h3-weight: 400;
+  --crays-type-h3-leading: 0.94;
+  --crays-type-h3-tracking: -0.045em;
+  --crays-type-body-size: 19px;
+  --crays-type-body-weight: 400;
+  --crays-type-body-leading: 1.48;
+  --crays-type-body-tracking: -0.012em;
+  --crays-type-kicker-size: 13.824px;
+  --crays-type-kicker-weight: 800;
+  --crays-type-kicker-leading: 18.6624px;
+  --crays-type-kicker-tracking: 1.65888px;
+  --crays-type-button-size: 14.976px;
+  --crays-type-button-weight: 800;
+  --crays-type-button-leading: 20.2176px;
+  --crays-type-button-tracking: 1.19808px;
+  --crays-type-header-size: 10px;
+  --crays-type-header-weight: 500;
+  --crays-type-header-leading: 40px;
+  --crays-type-header-tracking: 0.14em;
+
+  /* Shared shell dimensions */
+  --crays-header-height: 67px;
+  --crays-header-logo-width: 142px;
+  --crays-action-height: 44px;
+  --crays-content-max-width: 1440px;
+  --crays-page-gutter: clamp(20px, 4vw, 72px);
+
+  /* Shape and focus */
+  --crays-radius-compact: 18px;
+  --crays-radius-card: 28px;
+  --crays-radius-pill: 999px;
+  --crays-focus-ring: 0 0 0 3px var(--crays-color-white), 0 0 0 5px var(--crays-color-red);
+
+  /* Global editorial-photo CI — warm, restrained and recognisably CRAYS */
+  --crays-photo-filter: saturate(.74) contrast(.94) brightness(.91);
+  --crays-photo-wash: rgba(164, 151, 137, .18);
+  --crays-photo-overlay: linear-gradient(135deg, rgba(34, 27, 22, .16) 0%, rgba(222, 211, 199, .07) 48%, rgba(0, 29, 44, .13) 100%);
+
+  /* Approved motion */
+  --crays-motion-fast: 200ms ease;
+  --crays-motion-track: 760ms cubic-bezier(0.22, 1, 0.36, 1);
+  --crays-motion-image: 880ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.theme :global(img:not([src*=".svg"]):not([data-crays-photo-treatment="none"])) {
+  filter: var(--crays-photo-filter);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme {
+    --crays-motion-fast: 0ms linear;
+    --crays-motion-track: 0ms linear;
+    --crays-motion-image: 0ms linear;
+  }
+}

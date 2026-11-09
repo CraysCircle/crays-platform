@@ -1,0 +1,244 @@
+import {readPublicHotelDraftUrl} from "@/lib/member-commerce/hotel-public-stay-history";
+import {sanitizeClubsReturnTo} from "@/lib/clubs/member-auth-contract";
+/** NEXT DEPLOYMENT: full public plan remains a preference, never a saved Core plan. */
+export const DIRECT_MEMBERSHIP_APPLICATION_UI_CONTRACT = {
+  schema: "crays.clubs.direct-membership-application-ui.v1",
+  version: "1.0.0",
+  publicRoute: "/en/apply-directly",
+  endpoints: {
+    publicConfiguration:
+      "/api/crays/clubs/public/membership-applications/direct",
+    memberApplication: "/api/crays/clubs/member/membership-applications/direct",
+    ambassadorInbox: "/api/crays/clubs/ambassador/membership-applications",
+    teamReview: "/api/crays/clubs/team/membership-applications",
+  },
+  cache: "no-store",
+  entrypoints: {
+    applicant: "https://www.craysclub.com",
+    ambassadorAndTeam: "https://www.crays.pro",
+    craysGym: "blueprint_only_not_an_identity_entrypoint",
+  },
+  authentication: {
+    publicPage: "not_required",
+    submitAndMemberStatus: "crays_clubs_b2c_auth0_exact_core_mapping",
+    ambassadorInbox: "crays_pro_b2b_auth0_exact_ambassador_mapping",
+    teamDecision: "crays_pro_b2b_auth0_exact_team_mapping",
+  },
+  submissionActivation: {
+    state: "assigned_reviewer_not_ready",
+    submissionEnabled: false,
+    requestedAssigneeDisplayName: "Thorben Biesenbach",
+    coreAccountId: null,
+    ambassadorPartyId: null,
+    ambassadorRelationshipVersion: null,
+    reviewerRoleAssignmentId: null,
+    beneficiaryLedgerAccountId: null,
+    payoutBindingVersion: null,
+    activeAttributionPolicyVersion: null,
+    bindingReceiptId: null,
+    observedAuth0: {
+      tenant: "dev-mjsjuyaiepbde62t",
+      businessIdentitySubjectSha256:
+        "6c140ff00fa680dfc032107e3ebbcb8971696a22419ae3eebbd89695de47cdc4",
+      businessIdentityCoreBinding: null,
+      memberIdentitySubjectSha256:
+        "c33f9ea064c5d82ccf2ad3646583b8a1fa16c8187ee3979463ffd6e393448841",
+      observedCoreAccountId: "acct_384c05e7-e716-4dc9-864d-8c63bf13876c",
+      observedCoreRole: "gym-member",
+      admittedAsAmbassador: false,
+      reason: "wrong_vertical_and_no_ambassador_role_or_relationship",
+    },
+    forbiddenPreviewAccountId: "acct_clubs_test_member_001",
+    forbiddenPreviewReason:
+      "synthetic_mallorca_test_account_not_ambassador_authority",
+  },
+  mutationSecurity: {
+    sameOrigin: true,
+    jsonOnly: true,
+    idempotencyKeyHeader: "Idempotency-Key",
+    idempotencyKeyPattern: "^[A-Za-z0-9:_.-]{16,200}$",
+    originMustEqualRequestOrigin: true,
+    secFetchSite: "same-origin",
+    serverResolvedAccountEmailOnly: true,
+    optimisticSuccessForbidden: true,
+    retryUnknownOutcomeWithSameKey: true,
+    appendOnlyCommandReceipt: true,
+  },
+  privacy: {
+    privacyNoticeRoute: "/en/legal/privacy-policy",
+    dataProtectionRoute: "/en/legal/data-protection",
+    consentStatementVersion: "CCLUB-DIRECT-MEMBERSHIP-APPLICATION-CONSENT-V1",
+    requiredConsentCopy:
+      "I agree that CRAYS may use the information I provide to assess my membership application and contact me about it. I have read the Privacy Policy and Data Protection information.",
+    marketingConsentRequired: false,
+    publicPayloadMayExposeInternalAssignment: false,
+    publicPayloadMayExposeRevenueTerms: false,
+  },
+  authoritySeparation: {
+    application: "does_not_create_membership",
+    ambassadorRecommendation: "does_not_make_final_decision",
+    teamApproval: "creates_confirmed_membership_only",
+    marinaAdmission: "separate_exact_active_grant_required",
+    availability: "separate_source_authority_required",
+    quote: "separate_source_authority_required",
+    booking: "separate_commercial_authority_required",
+    payment: "separate_payment_authority_required",
+    revenue: "no_entitlement_at_application_or_membership_decision",
+  },
+} as const;
+
+export const DIRECT_MEMBERSHIP_APPLICATION_PUBLIC_COPY = {
+  eyebrow: "Membership application",
+  title: "Tell us about your next chapter.",
+  introduction:
+    "Share what brings you to CRAYS, what you would like to build or experience, and how you hope to contribute.",
+  signInRequired: "Sign in to submit and follow your application.",
+  submit: "Submit application",
+  submitted:
+    "Your application has been received. You can follow its progress in your member account.",
+  temporarilyUnavailable:
+    "Applications are temporarily unavailable. Please try again later.",
+  boundary:
+    "This application does not make a booking, confirm hotel availability or take payment.",
+  assignmentDisclosure:
+    "A CRAYS Ambassador may support the conversation. The CRAYS team reviews and decides every application.",
+} as const;
+
+export const DIRECT_MEMBERSHIP_APPLICATION_FIELDS = [
+  {
+    name: "applicantType",
+    type: "enum",
+    required: true,
+    values: ["individual", "family", "team"],
+  },
+  { name: "fullName", type: "string", required: true, min: 2, max: 120 },
+  { name: "basedIn", type: "string", required: true, min: 2, max: 120 },
+  { name: "interest", type: "string", required: true, min: 2, max: 160 },
+  {
+    name: "preferredArrivalWindow",
+    type: "string",
+    required: true,
+    min: 2,
+    max: 120,
+  },
+  {
+    name: "preferredParticipationLength",
+    type: "string",
+    required: true,
+    min: 2,
+    max: 120,
+  },
+  { name: "linkedinUrl", type: "https_url", required: false, max: 500 },
+  { name: "socialUrl", type: "https_url", required: false, max: 500 },
+  { name: "profileUrl", type: "https_url", required: false, max: 500 },
+  {
+    name: "motivation",
+    type: "string",
+    required: true,
+    min: 20,
+    max: 2000,
+  },
+  {
+    name: "contribution",
+    type: "string",
+    required: true,
+    min: 20,
+    max: 2000,
+  },
+  { name: "consent", type: "literal_true", required: true },
+] as const;
+
+export const DIRECT_MEMBERSHIP_APPLICATION_HTTP = {
+  readyOrReplay: 200,
+  validationError: 400,
+  signedOut: 401,
+  deniedOrStepUpRequired: 403,
+  notFound: 404,
+  replayDuplicateOrStateConflict: 409,
+  rateLimited: 429,
+  unavailableOrUnknownOutcome: 503,
+} as const;
+
+export const DIRECT_MEMBERSHIP_APPLICATION_STATES = {
+  applicant: [
+    "none",
+    "submitted",
+    "under_review",
+    "more_information_required",
+    "approved",
+    "declined",
+    "withdrawn",
+  ],
+  internal: [
+    "submitted",
+    "assigned",
+    "ambassador_review",
+    "more_information_required",
+    "recommended",
+    "not_recommended",
+    "team_review",
+    "approved",
+    "declined",
+    "withdrawn",
+  ],
+  ambassadorCommands: [
+    "start_ambassador_review",
+    "request_more_information",
+    "recommend_for_team_review",
+    "do_not_recommend",
+  ],
+  teamCommands: ["start_review", "approve_application", "decline_application"],
+} as const;
+
+export const DIRECT_MEMBERSHIP_APPLICATION_REVENUE_BOUNDARY = {
+  applicationTrigger: "none",
+  membershipDecisionTrigger: "none",
+  bookingTrigger:
+    "provider_confirmed_booking_plus_certified_settlement_base_plus_confirmed_ambassador_attribution",
+  currency: "certified_booking_settlement_currency",
+  amountUnit: "minor_units",
+  rounding: "LARGEST_REMAINDER_BPS_V1",
+  lines: [
+    {
+      code: "PROJECT_MARKETING_CONTRIBUTION",
+      rateBps: 1000,
+      beneficiaryKind: "PERSON",
+      beneficiaryAuthority:
+        "confirmed_booking_ambassador_attribution_receipt_required",
+    },
+    {
+      code: "TECHNOLOGY_MARKETING_FEE",
+      rateBps: 500,
+      beneficiaryKind: "PERSON",
+      beneficiaryAuthority:
+        "active_franchise_revenue_policy_beneficiary_required_not_inferred_from_assignee",
+    },
+    {
+      code: "GLOBAL_CONCEPT_TRANSACTION_FEE",
+      rateBps: 25,
+      beneficiaryKind: "LEGAL_ENTITY",
+      beneficiaryAuthority:
+        "active_franchise_revenue_policy_legal_entity_required_not_person_account",
+    },
+  ],
+  payoutState: "not_authorized_held_pending_reconciliation",
+} as const;
+
+const SAFE_RETURN_ROUTES = new Set(
+ ["en", "de", "es", "ca", "fr", "pt", "it"].flatMap(locale =>
+  ["account", "search", "hospitality/golf-hotel", "hospitality/marina-hotel"].map(route => `/${locale}/${route}`)),
+);
+
+export function isSafeDirectMembershipReturnTo(value: string): boolean {
+ if(typeof value!=="string"||value.length<1||value.length>2048||!/^\/(?:en|de|es|ca|fr|pt|it)\//.test(value)||value.includes("\\")||/[\u0000-\u001f\u007f]/.test(value))return false;
+ try{
+  const parsed=new URL(value,"https://clubs-return.invalid");
+  if(parsed.origin!=="https://clubs-return.invalid"||!SAFE_RETURN_ROUTES.has(parsed.pathname))return false;
+  if(/^\/(?:en|de|es|ca|fr|pt|it)\/hospitality\/(?:golf|marina)-hotel$/.test(parsed.pathname)){
+   const propertyId=parsed.pathname.endsWith("golf-hotel")?"property-clubs-forest-city-golf":"property-clubs-forest-city-marina";
+   // Require complete public115 snapshots. Unknown/private keys are denied by118.
+   return Boolean(readPublicHotelDraftUrl(parsed.href,propertyId))&&sanitizeClubsReturnTo(value,"/en/search")===value;
+  }
+  return sanitizeClubsReturnTo(value,"/en/search")===value;
+ }catch{return false;}
+}

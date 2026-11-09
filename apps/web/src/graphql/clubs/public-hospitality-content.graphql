@@ -1,0 +1,10 @@
+input PublicHospitalityContentInput { propertyId: String! }
+type PublicHospitalityCopy { headline: String!, cardSummary: String!, overview: String!, locationText: String!, amenitiesIntroduction: String!, diningIntroduction: String!, meetingsIntroduction: String!, roomIntroduction: String!, seoTitle: String!, seoDescription: String! }
+type PublicHospitalityMap { embedUrl: String!, placeUrl: String!, directionsUrl: String!, latitude: Float, longitude: Float, coordinateStatus: String!, officialEntityReference: String!, loadPolicy: String! }
+type PublicHospitalityLocation { address: String!, countryCode: String!, map: PublicHospitalityMap! }
+type PublicHospitalitySection { id: String!, label: String!, description: String!, details: [String!]! }
+type PublicHospitalityRoomCopy { publicRoomTypeId: String!, name: String!, description: String!, providerRoomTypeId: String }
+type PublicHospitalityMedia { assetId: String!, url: String!, width: Int!, height: Int!, alt: String!, caption: String!, purpose: String!, galleryGroup: String!, galleryOrder: Int!, maxCssWidth: Float!, maxDevicePixelRatio: Float! }
+type PublicHospitalityContent { propertyId: String!, locale: String!, canonicalName: String!, contentVersionId: String!, contentSha256: String!, copy: PublicHospitalityCopy!, location: PublicHospitalityLocation!, facilities: [PublicHospitalitySection!]!, dining: [PublicHospitalitySection!]!, meetings: [PublicHospitalitySection!]!, rooms: [PublicHospitalityRoomCopy!]!, media: [PublicHospitalityMedia!]! }
+type PublicHospitalityContentEnvelope { schema: String!, version: String!, propertyId: String!, status: String!, code: String!, authority: String!, nativeReadGranted: Boolean!, bookingGranted: Boolean!, content: PublicHospitalityContent }
+extend type Query { clubPublicHospitalityContent(input: PublicHospitalityContentInput!): PublicHospitalityContentEnvelope! }

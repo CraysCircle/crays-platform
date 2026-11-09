@@ -1,0 +1,733 @@
+.page {
+  --imprint-navy: #001b2e;
+  --imprint-ink: #041d37;
+  --imprint-blue: #0b5fc7;
+  --imprint-deep-blue: #064899;
+  --imprint-bright-blue: #1474d9;
+  --imprint-red: #ef1c4a;
+  --imprint-paper: #fbfbfa;
+  --imprint-line: rgba(4, 29, 55, 0.18);
+  min-width: 0;
+  background: var(--imprint-paper);
+  color: var(--imprint-ink);
+  font-family: var(--crays-font-avenir-book);
+}
+
+/* The homepage header has no inline shortcut rail; keep only its three actions. */
+:global(body):has(.page) :global(header > nav[aria-label$="shortcuts"]) {
+  display: none;
+}
+
+.hero {
+  padding: calc(var(--crays-header-height, 67px) + clamp(4.5rem, 8vw, 7.5rem)) var(--crays-page-gutter) clamp(4rem, 7vw, 6.5rem);
+  background: var(--imprint-navy);
+  color: #fff;
+}
+
+.heroInner,
+.contentInner,
+.contactInner,
+.disclosureGrid,
+.documentNavInner,
+.documentIndexInner {
+  width: min(var(--crays-content-max-width), 100%);
+  margin: 0 auto;
+}
+
+.heroInner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.58fr) minmax(18rem, 0.72fr);
+  align-items: end;
+  gap: clamp(3rem, 8vw, 9rem);
+}
+
+.eyebrow,
+.entityLabel {
+  margin: 0;
+  color: var(--imprint-red);
+  font-family: var(--crays-font-avenir-medium);
+  font-size: var(--crays-type-kicker-size);
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.heroCopy h1 {
+  margin: 1.3rem 0 0;
+  font-family: var(--crays-font-display);
+  font-size: clamp(4rem, 7vw, 7.2rem);
+  font-weight: 700;
+  line-height: 0.92;
+  letter-spacing: -0.055em;
+}
+
+.heroIntro {
+  max-width: 42rem;
+  margin: 1.75rem 0 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+  line-height: 1.55;
+}
+
+.legalContact {
+  padding: 0.3rem 0.5rem 0.35rem clamp(2rem, 4vw, 3.5rem);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.legalContact h2 {
+  margin: 0;
+  font-family: var(--crays-font-display);
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+.legalContact p {
+  max-width: 27rem;
+  margin: 1.15rem 0;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.legalContact a,
+.contactSection a {
+  color: inherit;
+  font-family: var(--crays-font-avenir-medium);
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: var(--imprint-red);
+  text-decoration-thickness: 0.13em;
+  text-underline-offset: 0.28em;
+}
+
+.legalContact a {
+  color: #ff5275;
+}
+
+.documentNav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid var(--imprint-line);
+  background: rgba(251, 251, 250, 0.98);
+}
+
+.documentNavInner {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding: 0 var(--crays-page-gutter);
+}
+
+.documentLink {
+  position: relative;
+  display: flex;
+  min-height: 5.25rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem clamp(0.65rem, 1.5vw, 1.5rem);
+  border-right: 1px solid var(--imprint-line);
+  color: var(--imprint-ink);
+  font-family: var(--crays-font-avenir-medium);
+  font-size: clamp(0.86rem, 1vw, 0.98rem);
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.documentLink:first-child {
+  border-left: 1px solid var(--imprint-line);
+}
+
+.documentLink::after {
+  position: absolute;
+  right: 18%;
+  bottom: -1px;
+  left: 18%;
+  height: 3px;
+  background: transparent;
+  content: "";
+}
+
+.documentLink:hover,
+.documentLink[aria-current="page"] {
+  color: var(--imprint-red);
+}
+
+.documentLink[aria-current="page"]::after {
+  background: var(--imprint-red);
+}
+
+.officialSection {
+  padding: clamp(5rem, 8vw, 8.5rem) var(--crays-page-gutter) clamp(5.5rem, 9vw, 9rem);
+  background: #fff;
+}
+
+.sectionHeader h2,
+.contactInner h2,
+.disclosure h2 {
+  margin: 0;
+  font-family: var(--crays-font-display);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.sectionHeader h2 {
+  font-size: clamp(2.8rem, 5.3vw, 5rem);
+  line-height: 0.98;
+}
+
+.sectionHeader > p {
+  max-width: 64rem;
+  margin: 1.7rem 0 0;
+  color: rgba(4, 29, 55, 0.78);
+  font-size: clamp(1rem, 1.25vw, 1.16rem);
+  line-height: 1.65;
+}
+
+.entityGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin-top: clamp(3.5rem, 6vw, 6rem);
+}
+
+.entity {
+  min-width: 0;
+  padding: 0 clamp(2.5rem, 6vw, 6.5rem) 0 0;
+}
+
+.entitySecondary {
+  padding: 0 0 0 clamp(2.5rem, 6vw, 6.5rem);
+  border-left: 0.35rem solid var(--imprint-bright-blue);
+}
+
+.entityLabel {
+  color: var(--imprint-blue);
+}
+
+.entity h3 {
+  margin: 1.2rem 0 1.25rem;
+  font-family: var(--crays-font-display);
+  font-size: clamp(2rem, 3.4vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.entity address,
+.director {
+  margin: 0;
+  color: rgba(4, 29, 55, 0.88);
+  font-size: clamp(1rem, 1.25vw, 1.15rem);
+  font-style: normal;
+  line-height: 1.75;
+}
+
+.director {
+  margin-top: 1.1rem;
+}
+
+.contactSection {
+  padding: clamp(3.5rem, 6vw, 6rem) var(--crays-page-gutter);
+  background: var(--imprint-blue);
+  color: #fff;
+}
+
+.contactInner {
+  display: grid;
+  grid-template-columns: minmax(13rem, 0.36fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(2rem, 6vw, 7rem);
+}
+
+.contactInner h2 {
+  font-size: clamp(2.7rem, 4.8vw, 4.5rem);
+  line-height: 1;
+}
+
+.contactInner p {
+  max-width: 58rem;
+  margin: 0 0 1rem;
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  line-height: 1.6;
+}
+
+.contactInner p:last-child {
+  margin-bottom: 0;
+}
+
+.disclosureSection {
+  padding: clamp(4.75rem, 8vw, 8rem) var(--crays-page-gutter);
+  background: var(--imprint-paper);
+}
+
+.disclosureGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.disclosure {
+  min-width: 0;
+  padding: 0 clamp(2.5rem, 5.5vw, 6rem) 0 0;
+}
+
+.copyright {
+  padding: 0 0 0 clamp(2.5rem, 5.5vw, 6rem);
+  border-left: 1px solid var(--imprint-line);
+}
+
+.disclosure h2 {
+  max-width: 13ch;
+  font-size: clamp(2.3rem, 4.2vw, 4rem);
+  line-height: 0.98;
+}
+
+.disclosure p {
+  max-width: 38rem;
+  margin: 1.65rem 0 0;
+  color: rgba(4, 29, 55, 0.82);
+  font-size: clamp(1rem, 1.15vw, 1.08rem);
+  line-height: 1.72;
+}
+
+.documentIndex {
+  border-top: 1px solid var(--imprint-line);
+  background: #fff;
+}
+
+.documentIndexInner {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding: 0 var(--crays-page-gutter);
+}
+
+.documentIndex a {
+  display: grid;
+  min-height: 9rem;
+  place-items: center;
+  align-content: center;
+  gap: 0.85rem;
+  padding: 1.5rem 1rem;
+  border-right: 1px solid var(--imprint-line);
+  color: var(--imprint-ink);
+  font-family: var(--crays-font-avenir-medium);
+  font-size: 0.9rem;
+  font-weight: 750;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.documentIndex a:first-child {
+  border-left: 1px solid var(--imprint-line);
+}
+
+.documentIndex svg {
+  color: var(--imprint-bright-blue);
+}
+
+.documentIndex a:hover,
+.documentIndex a[aria-current="page"] {
+  color: var(--imprint-red);
+}
+
+.documentLink:focus-visible,
+.legalContact a:focus-visible,
+.contactSection a:focus-visible,
+.documentIndex a:focus-visible {
+  outline: 3px solid var(--imprint-red);
+  outline-offset: -3px;
+}
+
+@media (max-width: 64rem) {
+  .heroInner {
+    grid-template-columns: minmax(0, 1.25fr) minmax(16rem, 0.75fr);
+    gap: 3rem;
+  }
+
+  .entity {
+    padding-right: 3rem;
+  }
+
+  .entitySecondary {
+    padding-right: 0;
+    padding-left: 3rem;
+  }
+
+  .disclosure {
+    padding-right: 3rem;
+  }
+
+  .copyright {
+    padding-right: 0;
+    padding-left: 3rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .hero {
+    padding-top: calc(var(--crays-header-height, 67px) + 3.5rem);
+  }
+
+  .heroInner,
+  .contactInner {
+    grid-template-columns: 1fr;
+  }
+
+  .heroInner {
+    gap: 2.75rem;
+  }
+
+  .legalContact {
+    padding: 2rem 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 0;
+  }
+
+  .documentNav {
+    overflow: hidden;
+  }
+
+  .documentNavInner {
+    display: flex;
+    overflow-x: auto;
+    padding: 0;
+    scroll-snap-type: x proximity;
+    scrollbar-width: thin;
+  }
+
+  .documentLink {
+    flex: 0 0 min(12rem, 62vw);
+    min-height: 4.75rem;
+    border-left: 0;
+    scroll-snap-align: start;
+  }
+
+  .documentLink:first-child {
+    border-left: 0;
+  }
+
+  .entityGrid,
+  .disclosureGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .entity {
+    padding: 0;
+  }
+
+  .entitySecondary {
+    margin-top: 3rem;
+    padding: 3rem 0 0;
+    border-top: 0.28rem solid var(--imprint-bright-blue);
+    border-left: 0;
+  }
+
+  .contactInner {
+    gap: 1.75rem;
+  }
+
+  .disclosure {
+    padding: 0;
+  }
+
+  .copyright {
+    margin-top: 3.5rem;
+    padding-top: 3.5rem;
+    border-top: 1px solid var(--imprint-line);
+    border-left: 0;
+  }
+
+  .documentIndexInner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 0;
+  }
+
+  .documentIndex a,
+  .documentIndex a:first-child {
+    min-height: 7.5rem;
+    border: 0;
+    border-right: 1px solid var(--imprint-line);
+    border-bottom: 1px solid var(--imprint-line);
+  }
+
+  .documentIndex a:nth-child(even) {
+    border-right: 0;
+  }
+
+  .documentIndex a:nth-child(n + 3) {
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 32rem) {
+  .heroCopy h1 {
+    font-size: clamp(3.7rem, 20vw, 5.4rem);
+  }
+
+  .heroCopy {
+    transform: translateY(10px);
+  }
+
+  .officialSection,
+  .disclosureSection {
+    padding-top: 4rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .sectionHeader h2,
+  .contactInner h2,
+  .disclosure h2 {
+    overflow-wrap: anywhere;
+  }
+}
+
+/*
+ * The approved desktop concept was delivered as an 806 px-wide full-screen
+ * composition. This narrow-desktop window reproduces that exact artboard
+ * geometry while the existing mobile rules remain authoritative below 48rem.
+ */
+@media (min-width: 48.01rem) and (max-width: 56rem) {
+  .page {
+    --crays-page-gutter: 46px;
+    --imprint-navy: #011f40;
+    --imprint-blue: #005bc2;
+    --imprint-paper: #fdfefd;
+  }
+
+  .hero {
+    height: 311px;
+    padding: 114px 40px 0;
+  }
+
+  .heroInner {
+    grid-template-columns: 424px minmax(0, 1fr);
+    gap: 52px;
+  }
+
+  .heroCopy h1 {
+    margin-top: 1.2rem;
+    font-size: 63px;
+    line-height: 0.94;
+    letter-spacing: 0.035em;
+  }
+
+  .heroIntro {
+    margin-top: 1.35rem;
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .legalContact {
+    align-self: start;
+    margin-top: 12px;
+    padding-left: 28px;
+    padding-top: 13px;
+  }
+
+  .legalContact h2 {
+    font-size: 17px;
+  }
+
+  .legalContact p,
+  .legalContact a {
+    font-size: 14px;
+  }
+
+  .legalContact p {
+    max-width: 177px;
+    margin: 0.9rem 0;
+    line-height: 1.5;
+  }
+
+  .documentNav {
+    height: 44px;
+  }
+
+  .documentNavInner {
+    width: 100%;
+    grid-template-columns: 23% 28% 24% 25%;
+    padding: 0;
+  }
+
+  .documentLink {
+    min-height: 44px;
+    padding: 0.45rem 0.75rem;
+    font-size: 12px;
+  }
+
+  .documentLink::after {
+    right: 36%;
+    left: 36%;
+  }
+
+  .officialSection {
+    height: 461px;
+    padding: 67px var(--crays-page-gutter) 30px;
+    background: var(--imprint-paper);
+  }
+
+  .sectionHeader h2 {
+    font-size: 35px;
+    line-height: 1;
+    letter-spacing: 0.015em;
+  }
+
+  .sectionHeader > p {
+    margin-top: 1.35rem;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .entityGrid {
+    grid-template-columns: 44% 56%;
+    margin-top: 53px;
+  }
+
+  .entity {
+    padding-right: 46px;
+  }
+
+  .entitySecondary {
+    position: relative;
+    padding-right: 0;
+    padding-left: 48px;
+    border-left: 0;
+  }
+
+  .entitySecondary::before {
+    position: absolute;
+    top: -13px;
+    bottom: auto;
+    left: 0;
+    width: 4px;
+    height: 250px;
+    background: var(--imprint-bright-blue);
+    content: "";
+  }
+
+  .entityLabel {
+    font-size: 12px;
+  }
+
+  .entity h3 {
+    margin: 1.05rem 0 0.85rem;
+    font-size: 27px;
+    letter-spacing: 0;
+  }
+
+  .entity address,
+  .director {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .director {
+    margin-top: 1.7rem;
+  }
+
+  .contactSection {
+    height: 184px;
+    padding: 43px 50px 30px;
+  }
+
+  .contactInner {
+    display: block;
+  }
+
+  .contactInner h2 {
+    font-size: 39px;
+    letter-spacing: 0;
+  }
+
+  .contactInner > div {
+    margin-top: 17px;
+  }
+
+  .contactInner p {
+    max-width: none;
+    margin-bottom: 0.65rem;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .disclosureSection {
+    height: 365px;
+    padding: 37px 50px 30px;
+  }
+
+  .disclosureGrid {
+    grid-template-columns: 47.5% 52.5%;
+  }
+
+  .disclosure {
+    padding-right: 36px;
+  }
+
+  .copyright {
+    padding-right: 0;
+    padding-left: 36px;
+  }
+
+  .disclosure h2 {
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+
+  .disclosure p {
+    margin-top: 1.4rem;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .documentIndex,
+  .documentIndexInner {
+    width: 100%;
+    grid-template-columns: 24% 26% 22.5% 27.5%;
+    padding: 0;
+  }
+
+  .documentIndexInner {
+    height: 99px;
+  }
+
+  .documentIndex a {
+    min-height: 99px;
+    gap: 0.6rem;
+    padding: 0.85rem 0.75rem;
+    font-size: 12px;
+    transform: translateY(-5px);
+  }
+
+  .documentIndex svg {
+    width: 24px;
+    height: 24px;
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .documentNavInner {
+    scroll-behavior: auto;
+  }
+}
+
+@media (forced-colors: active) {
+  .documentLink[aria-current="page"]::after {
+    background: Highlight;
+  }
+
+  .entitySecondary,
+  .copyright,
+  .legalContact,
+  .documentLink,
+  .documentIndex a {
+    border-color: CanvasText;
+  }
+}
+
+.entityGrid.singleEntity{grid-template-columns:minmax(0,1fr);}
+.singleEntity .entity{padding-inline:0;}

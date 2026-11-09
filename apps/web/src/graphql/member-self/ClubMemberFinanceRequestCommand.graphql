@@ -1,0 +1,1 @@
+mutation ClubMemberFinanceRequestCommand($input: ClubMemberFinanceRequestCommandInput!) { submitRequest(input: $input) { schema payloadJson } }

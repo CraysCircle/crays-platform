@@ -1,0 +1,311 @@
+.root {
+  color: #17362f;
+  padding: clamp(18px, 3vw, 28px);
+  border: 1px solid rgba(66, 99, 87, 0.16);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 20px 48px rgba(44, 67, 58, 0.08);
+}
+
+.heading,
+.cardHeader,
+.errorPanel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.heading h2 {
+  margin: 5px 0 8px;
+  font-size: clamp(1.45rem, 3vw, 2.15rem);
+  font-weight: 650;
+  letter-spacing: -0.035em;
+}
+
+.eyebrow,
+.cardKicker {
+  margin: 0;
+  color: #28735e;
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.intro {
+  max-width: 680px;
+  margin: 0;
+  color: #516961;
+  line-height: 1.55;
+}
+
+.retryButton {
+  min-height: 44px;
+  padding: 10px 15px;
+  border: 1px solid #aac0b7;
+  border-radius: 10px;
+  background: #fff;
+  color: #285c4c;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.retryButton:hover:not(:disabled) {
+  border-color: #2b866b;
+  background: #f4fbf7;
+}
+
+.retryButton:focus-visible {
+  outline: 3px solid rgba(43, 134, 107, 0.32);
+  outline-offset: 3px;
+}
+
+.retryButton:disabled {
+  cursor: wait;
+  opacity: 0.56;
+}
+
+.boundary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin: 20px 0;
+  padding: 13px 16px;
+  border: 1px solid #b9d7cb;
+  border-radius: 14px;
+  background: rgba(244, 251, 247, 0.88);
+  color: #49645b;
+  font-size: 0.82rem;
+}
+
+.boundary strong {
+  color: #184d3f;
+}
+
+.statePanel,
+.errorPanel {
+  min-height: 112px;
+  padding: 18px;
+  border: 1px solid #dbe5e0;
+  border-radius: 15px;
+  background: #fcfdfc;
+}
+
+.statePanel {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.statePanel p,
+.errorPanel p {
+  margin: 5px 0 0;
+  color: #657b73;
+  line-height: 1.5;
+}
+
+.errorPanel {
+  border-color: #e1b5ac;
+  background: #fff7f4;
+}
+
+.errorPanel strong {
+  color: #8f3327;
+}
+
+.spinner,
+.lockIcon,
+.emptyIcon {
+  display: inline-grid;
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 999px;
+}
+
+.spinner {
+  border: 3px solid #d4dfda;
+  border-top-color: #28735e;
+  animation: queue-spin 0.9s linear infinite;
+}
+
+.lockIcon {
+  background: #e0eee8;
+  color: #24634f;
+  font-size: 0.7rem;
+}
+
+.emptyIcon {
+  background: #dff4e8;
+  color: #25694f;
+  font-weight: 800;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  height: 100%;
+  padding: 17px;
+  border: 1px solid #dbe5e0;
+  border-radius: 15px;
+  background: #fcfdfc;
+}
+
+.cardHeader {
+  align-items: flex-start;
+}
+
+.cardHeader h3 {
+  margin: 4px 0 0;
+  font-size: 1.05rem;
+}
+
+.cardHeader time {
+  color: #657b73;
+  font-size: 0.76rem;
+  white-space: nowrap;
+}
+
+.reference {
+  display: grid;
+  gap: 4px;
+  margin: 15px 0;
+  padding: 10px 11px;
+  border-radius: 9px;
+  background: #f3f7f5;
+}
+
+.reference span {
+  color: #789087;
+  font-size: 0.66rem;
+  font-weight: 650;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.reference strong {
+  overflow-wrap: anywhere;
+  color: #41675a;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.73rem;
+}
+
+.statusGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+}
+
+.statusGrid div {
+  padding: 10px;
+  border-radius: 9px;
+  background: #f3f7f5;
+}
+
+.statusGrid dt {
+  color: #789087;
+  font-size: 0.66rem;
+}
+
+.statusGrid dd {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 5px 0 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.readyDot,
+.pendingDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+}
+
+.readyDot {
+  background: #2b866b;
+}
+
+.pendingDot {
+  border: 1px solid #8d7657;
+  background: #f4e8cf;
+}
+
+.providerBoundary {
+  margin: 13px 0 0;
+  color: #5c746b;
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+.truncated {
+  margin: 14px 0 0;
+  padding: 12px 14px;
+  border: 1px solid #d4dfda;
+  border-radius: 10px;
+  background: #f7faf8;
+  color: #5c746b;
+  font-size: 0.8rem;
+}
+
+@keyframes queue-spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 700px) {
+  .root {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .heading,
+  .errorPanel {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .retryButton {
+    width: 100%;
+  }
+
+  .cardHeader {
+    gap: 10px;
+  }
+
+  .cardHeader time {
+    white-space: normal;
+    text-align: right;
+  }
+}
+
+@media (max-width: 420px) {
+  .statusGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .readyDot,
+  .pendingDot {
+    forced-color-adjust: none;
+  }
+}

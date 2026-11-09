@@ -1,0 +1,114 @@
+"use client";
+import styles from "./member-complete-workspaces.module.css";
+import {useEffect,useRef,useState,type FormEvent} from "react";
+import type {z} from "zod";
+import {memberFinanceRequestRead,memberFinanceRequestCommand,type MemberFinanceRequestCommand} from "@/lib/clubs/member-finance-request-contract";
+import {readMemberFinanceRequests,submitMemberFinanceRequest} from "./member-finance-requests-graphql-reader";
+type Feed=z.infer<typeof memberFinanceRequestRead>;
+type RecordRow=Feed["requests"][number];
+const selected=(rows:readonly {lineId:string;quantity:number}[])=>JSON.stringify([...rows].sort((a,b)=>a.lineId.localeCompare(b.lineId)));
+export function financeRequestLedgerMatches(row:RecordRow,command:MemberFinanceRequestCommand){
+ return row.requestId===command.requestId&&row.orderId===command.orderId&&row.sourceOrderVersion===command.expectedOrderVersion&&row.requestKind===command.requestKind&&row.reason===command.reason&&selected(row.lines.map(l=>({lineId:l.lineId,quantity:l.selectedQuantity})))===selected(command.lines);
+}
+/** Existing Payments owns layout/styles. Unknown submissions retain exact frozen body and UUID. */
+export function MemberFinanceRequestForm({orderId,onSaved}:{orderId:string;onSaved?:()=>void}){
+ const [feed,setFeed]=useState<Feed|null>(null),[error,setError]=useState(""),[reason,setReason]=useState("");
+ const [kind,setKind]=useState<"cancellation"|"refund">("cancellation"),[quantities,setQuantities]=useState<Record<string,number>>({});
+ const [state,setState]=useState<"ready"|"submitting"|"unknown"|"saved">("unknown");
+ const frozen=useRef<MemberFinanceRequestCommand|null>(null),frozenRaw=useRef<string|null>(null),generation=useRef(0),abort=useRef<AbortController|null>(null),checking=useRef<symbol|null>(null),savedCallback=useRef(onSaved),locked=state!=="ready";
+ const accountId="acct_384c05e7-e716-4dc9-864d-8c63bf13876c",storageKey=`crays-finance-request:${accountId}:${orderId}`;
+ savedCallback.current=onSaved;
+ function restorePending(){
+  try{
+   const raw=sessionStorage.getItem(storageKey);
+   if(frozen.current)return raw===null||raw===frozenRaw.current;
+   if(raw===null){frozenRaw.current=null;return true;}
+   const parsed=memberFinanceRequestCommand.safeParse(JSON.parse(raw)?.command);
+   if(!parsed.success||parsed.data.orderId!==orderId)return false;
+   frozen.current=parsed.data;frozenRaw.current=raw;
+   setReason(parsed.data.reason);setKind(parsed.data.requestKind);setQuantities(Object.fromEntries(parsed.data.lines.map(l=>[l.lineId,l.quantity])));return true;
+  }catch{return false;}
+ }
+ function persist(command:MemberFinanceRequestCommand){
+  try{
+   if(sessionStorage.getItem(storageKey)!==null)return false;
+   const raw=JSON.stringify({command});sessionStorage.setItem(storageKey,raw);
+   if(sessionStorage.getItem(storageKey)!==raw)return false;
+   frozen.current=command;frozenRaw.current=raw;return true;
+  }catch{return false;}
+ }
+ function clearPending(command:MemberFinanceRequestCommand){
+  if(frozen.current!==command)return false;
+  try{
+   const raw=sessionStorage.getItem(storageKey);
+   if(raw!==null&&raw!==frozenRaw.current)return false;
+   if(raw!==null)sessionStorage.removeItem(storageKey);
+   if(sessionStorage.getItem(storageKey)!==null)return false;
+   frozen.current=null;frozenRaw.current=null;return true;
+  }catch{return false;}
+ }
+ async function reconcileWithSignal(signal=abort.current?.signal,notify=true){
+  if(checking.current)return;
+  if(!restorePending()){setState("unknown");setError("We couldn’t check your previous request reference. No request will be sent; refresh this panel to reconnect.");return;}
+  const current=generation.current,command=frozen.current,ticket=Symbol();checking.current=ticket;
+  const isCurrent=()=>!signal?.aborted&&generation.current===current&&frozen.current===command&&checking.current===ticket;
+  try{
+   const fresh=await readMemberFinanceRequests(signal);if(!isCurrent())return;
+   if(fresh.accountId!==accountId||!restorePending()||frozen.current!==command){setState("unknown");setError("Your request reference needs checking before another request. No request has been repeated.");return;}
+   setFeed(fresh);
+   if(command){
+    const row=fresh.requests.find(r=>r.requestId===command.requestId);
+    if(row&&financeRequestLedgerMatches(row,command)){setState("saved");setError("");if(notify)savedCallback.current?.();}
+    else{setState("unknown");setError(row?"This reference has different saved details. Please ask the team to check it.":"The result is still unconfirmed. Keep this request reference and check again before sending anything else.");}
+   }else{setState("ready");setError("");}
+  }catch{if(isCurrent()){setState("unknown");setError("We couldn’t check the result yet. Your draft and request reference are preserved.");}}
+  finally{if(checking.current===ticket)checking.current=null;}
+ }
+ async function reconcile(){await reconcileWithSignal();}
+ useEffect(()=>{
+  const controller=new AbortController();abort.current=controller;generation.current++;checking.current=null;
+  setFeed(null);setError("");setReason("");setKind("cancellation");setQuantities({});setState("unknown");frozen.current=null;frozenRaw.current=null;
+  void reconcileWithSignal(controller.signal,false);
+  return()=>{controller.abort();generation.current++;};
+ },[orderId]);
+ const order=feed?.orders.find(o=>o.orderId===orderId);
+ async function submit(event:FormEvent<HTMLFormElement>){
+  event.preventDefault();if(!order||locked||frozen.current||checking.current||!feed||feed.accountId!==accountId)return;
+  const lines=order.lines.filter(l=>(quantities[l.lineId]??0)>0).map(l=>({lineId:l.lineId,quantity:quantities[l.lineId]}));
+  const parsed=memberFinanceRequestCommand.safeParse({requestId:crypto.randomUUID(),orderId:order.orderId,expectedOrderVersion:order.sourceVersion,requestKind:kind,reason,lines});
+  if(!parsed.success){setError("Choose the items and tell us a little about your request.");return;}
+  const command=parsed.data,current=generation.current,signal=abort.current?.signal;
+  if(!persist(command)){setState("unknown");setError("We couldn’t save your request reference. Your details are kept here and no request was sent.");return;}
+  const isCurrent=()=>!signal?.aborted&&generation.current===current&&frozen.current===command;
+  setState("submitting");setError("");
+  try{
+   const receipt=await submitMemberFinanceRequest(command,signal);if(!isCurrent())return;
+   const support=receipt.supportReceipt;
+   if(receipt.accountId!==accountId||!financeRequestLedgerMatches(receipt.request,command)||support.accountId!==accountId||support.receipt.requestId!==command.requestId||support.receipt.caseId!==receipt.request.caseId||support.receipt.outcome!=="applied"||!restorePending()){
+    setState("unknown");setError("We couldn’t confirm matching saved details. Check request history with this reference; we won’t resend it automatically.");return;
+   }
+   setState("saved");setError("");savedCallback.current?.();
+  }catch(e){if(!isCurrent())return;const code=(e as {code?:string}).code;
+   // Only explicit pre-COMMIT rejection permits matching reference removal; refresh before a new UUID.
+   if(["BAD_USER_INPUT","FORBIDDEN","UNAUTHENTICATED","IDENTITY_BINDING_REQUIRED"].includes(code??"")){
+    if(!clearPending(command)){setState("unknown");setError("That request was rejected, but its matching reference still needs checking. No request has been repeated.");return;}
+    setState("unknown");setError(e instanceof Error?e.message:"Your request was not accepted. Your draft is still here.");await reconcileWithSignal(signal,false);
+   }else{setState("unknown");setError("We couldn’t confirm the result. Check request history with this reference; we won’t resend it automatically.");}
+  }
+ }
+ return <section className={styles.financeRequestForm} aria-label="Request help with this order"><h3>A change of plans?</h3>
+  <p>Send us a request for these TEST items. This does not cancel a booking, refund a payment or create a credit note.</p>
+  {!order?<p role="status">{error||"Loading your own order details…"}</p>:<form onSubmit={submit}>
+   <fieldset disabled={locked}><legend>What would you like us to review?</legend>
+    <label className={styles.requestTypeField}><span>Request type</span><select value={kind} onChange={e=>setKind(e.target.value as "cancellation"|"refund")}><option value="cancellation">Cancellation request</option>{order.originalAmountMinor>0&&<option value="refund">Refund request</option>}</select></label>
+    {order.lines.map(line=><div className={styles.requestLine} key={line.lineId}>
+     <label className={styles.requestLineChoice}><input type="checkbox" checked={(quantities[line.lineId]??0)>0} onChange={e=>setQuantities(q=>({...q,[line.lineId]:e.target.checked?1:0}))}/><span>{line.title}<small>{line.date?line.date:"Date unavailable"}</small></span></label>
+     {(quantities[line.lineId]??0)>0&&<label className={styles.requestQuantity}><span>Qty</span><input aria-label={`Quantity for ${line.title}`} type="number" min={1} max={line.quantity} value={quantities[line.lineId]} onChange={e=>setQuantities(q=>({...q,[line.lineId]:Math.max(1,Math.min(line.quantity,Number(e.target.value)||1))}))}/></label>}
+    </div>)}
+    <label className={styles.requestReason}><span>Your reason</span><textarea value={reason} onChange={e=>setReason(e.target.value)} minLength={3} maxLength={2000} required/></label>
+    <button type="submit">{state==="submitting"?"Saving your request…":"Send request"}</button>
+   </fieldset>{error&&<p role="alert">{error}</p>}{frozen.current&&<p>Request reference: {frozen.current.requestId}</p>}
+   {state==="unknown"&&<button type="button" onClick={reconcile}>Check request history</button>}
+   {state==="saved"&&<p role="status">Your request is saved for review. No cancellation or refund has been confirmed.</p>}
+  </form>}</section>;
+}

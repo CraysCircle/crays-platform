@@ -1,0 +1,6 @@
+query ClubMemberOwnTestStays($input: ClubMemberOwnTestStaysInput!) {
+  clubMemberOwnTestStays(input: $input) {
+    schema accountId scene testOnly sourceAuthority
+    stays { sourceRecordId sourceId sourceVersion sourceRowSha256 publicReference propertyId propertyDisplayName arrivalDate departureDate departureDateSemantics dateSemanticsTimezone dateSemanticsReceiptSha256 nativeDateSemanticsVerified guestCount status currency totalMinor scene testOnly sourceAuthority providerConfirmed nativeBookingId bookingAuthority paymentAuthority nativeConfirmation changeRequestAuthority }
+  }
+}

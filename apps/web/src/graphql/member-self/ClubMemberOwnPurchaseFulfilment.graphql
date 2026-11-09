@@ -1,0 +1,32 @@
+query ClubMemberOwnPurchaseFulfilment($input: ClubMemberOwnPurchaseFulfilmentInput!) {
+  clubMemberOwnPurchaseFulfilment(input: $input) {
+    schema
+    accountId
+    testOnly
+    realWorldDeliveryConfirmed
+    humanTeamAssigned
+    tasks {
+      kind
+      provider
+      orderId
+      lineId
+      taskId
+      projectId
+      workspaceId
+      offerId
+      offerKind
+      title
+      slotId
+      date
+      quantity
+      nativeStateId
+      status
+      assigneeType
+      assigneeName
+      nativeApiAcknowledged
+      testOnly
+      realWorldDeliveryConfirmed
+      humanTeamAssigned
+    }
+  }
+}

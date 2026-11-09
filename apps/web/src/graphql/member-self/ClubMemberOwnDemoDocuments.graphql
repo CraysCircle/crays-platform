@@ -1,0 +1,6 @@
+query ClubMemberOwnDemoDocuments($input: ClubMemberDemoDocumentsInput!) {
+  clubMemberOwnDemoDocuments(input: $input) {
+    schema
+    payloadJson
+  }
+}

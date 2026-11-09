@@ -1,0 +1,470 @@
+"use client";
+
+import Link from "next/link";
+import {
+  ArrowRight,
+  BriefcaseBusiness,
+  CalendarDays,
+  Check,
+  ChevronDown,
+  Dumbbell,
+  Globe2,
+  HeartHandshake,
+  MapPin,
+  Menu,
+  Mic2,
+  Sparkles,
+  UserCircle,
+  Users,
+  Waves,
+  Wifi,
+} from "lucide-react";
+import { useEffect, useState } from "react";
+import styles from "./clubs-public-homepage.module.css";
+
+type ClubsPublicHomepageProps = {
+  locale: string;
+  copy?: unknown;
+};
+
+type HeroTile = {
+  first: string;
+  second: string;
+  alt: string;
+};
+
+const HERO_TILES: HeroTile[] = [
+  {
+    first: "/__crays-clubs/assets/crays-club/deck-party.webp",
+    second: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1100&q=86",
+    alt: "Friends meeting by the water",
+  },
+  {
+    first: "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=1100&q=86",
+    second: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1100&q=86",
+    alt: "Waterfront life",
+  },
+  {
+    first: "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=1100&q=86",
+    second: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1100&q=86",
+    alt: "Golf and outdoor life",
+  },
+  {
+    first: "/__crays-clubs/assets/crays-club/cafe-founder.webp",
+    second: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1100&q=86",
+    alt: "CRAYS members working together",
+  },
+  {
+    first: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1100&q=86",
+    second: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1100&q=86",
+    alt: "Shared meals",
+  },
+  {
+    first: "/__crays-clubs/assets/crays-club/event-arrival.webp",
+    second: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1100&q=86",
+    alt: "Members arriving together",
+  },
+  {
+    first: "/__crays-clubs/assets/crays-club/nightlife.webp",
+    second: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1100&q=86",
+    alt: "CRAYS community event",
+  },
+  {
+    first: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1100&q=86",
+    second: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1100&q=86",
+    alt: "Founders collaborating",
+  },
+  {
+    first: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1100&q=86",
+    second: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1100&q=86",
+    alt: "A focused team session",
+  },
+  {
+    first: "/__crays-clubs/assets/crays-club/creators.webp",
+    second: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1100&q=86",
+    alt: "Creators in community",
+  },
+  {
+    first: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1100&q=86",
+    second: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1100&q=86",
+    alt: "A shared workspace",
+  },
+  {
+    first: "/__crays-clubs/assets/crays-club/work-hero.jpg",
+    second: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1100&q=86",
+    alt: "Working together at CRAYS",
+  },
+  {
+    first: "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=1100&q=86",
+    second: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1100&q=86",
+    alt: "Wellness and movement",
+  },
+  {
+    first: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1100&q=86",
+    second: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1100&q=86",
+    alt: "Training and fitness",
+  },
+  {
+    first: "https://images.unsplash.com/photo-1485217988980-11786ced9454?auto=format&fit=crop&w=1100&q=86",
+    second: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1100&q=86",
+    alt: "Families spending time together",
+  },
+  {
+    first: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1100&q=86",
+    second: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1100&q=86",
+    alt: "Learning with peers",
+  },
+  {
+    first: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=1100&q=86",
+    second: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1100&q=86",
+    alt: "A community gathering",
+  },
+  {
+    first: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1100&q=86",
+    second: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1100&q=86",
+    alt: "City and nature",
+  },
+];
+
+const FEATURES = [
+  { icon: Waves, title: "By the sea", body: "Marina, parks and waterfront living." },
+  { icon: Sparkles, title: "Built for focus", body: "Spaces, tools and people to go further." },
+  { icon: Globe2, title: "Global community", body: "Friends, mentors and like-minded peers." },
+  { icon: MapPin, title: "Future ready", body: "School & Jobs that open new paths." },
+];
+
+const COMMUNITY = [
+  { icon: CalendarDays, title: "Community Events", image: "https://images.unsplash.com/photo-1507501336603-6e31db2be093?auto=format&fit=crop&w=900&q=84" },
+  { icon: Wifi, title: "24/7 Coworking", image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=900&q=84" },
+  { icon: Dumbbell, title: "CRAYS Gym", image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=84" },
+  { icon: HeartHandshake, title: "Healthy Meals", image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=900&q=84" },
+  { icon: Sparkles, title: "Content Studio", image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=900&q=84" },
+  { icon: MapPin, title: "Apartment Living", image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=84" },
+  { icon: Users, title: "Founder Circles", image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=84" },
+  { icon: Mic2, title: "Guest Speakers", image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=900&q=84" },
+  { icon: Dumbbell, title: "Fitness Classes", image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=84" },
+  { icon: Wifi, title: "Fast Wi-Fi", image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=84" },
+  { icon: BriefcaseBusiness, title: "Tech Tutorials", image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=84" },
+];
+
+const WORK_CARDS = [
+  { title: "Coworking", body: "Focus with community.", image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=84" },
+  { title: "Community", body: "Real friendships, real support.", image: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1000&q=84" },
+  { title: "Forest City", body: "Nature, sea and city.", image: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1000&q=84" },
+  { title: "Johor & Singapore", body: "Two hubs. Easy access.", image: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1000&q=84" },
+];
+
+const WELLBEING = [
+  { title: "Healthy Meals", body: "Nourish your body.", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=84" },
+  { title: "Gym Access", body: "Train with pros.", image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=84" },
+  { title: "Fitness Classes", body: "Daily motivation.", image: "https://images.unsplash.com/photo-1518611012118-f0c5d3176e4f?auto=format&fit=crop&w=900&q=84" },
+];
+
+const FAMILY = [
+  { title: "Daily Drop-off", body: "Safe and convenient.", image: "https://images.unsplash.com/photo-1504151932400-72d4384f04b3?auto=format&fit=crop&w=900&q=84" },
+  { title: "Helpful Tutors", body: "Learn and grow.", image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=84" },
+  { title: "Healthy Days", body: "Play and explore.", image: "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=900&q=84" },
+];
+
+const HOST = [
+  { title: "One-day events", body: "Inspire, connect and celebrate.", image: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1200&q=84" },
+  { title: "One-week sprints", body: "Focus, build and ship together.", image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=84" },
+  { title: "One-month residencies", body: "Live, work and grow as a team.", image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=84" },
+  { title: "Build a Forest City base", body: "Make Forest City your home.", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=84" },
+];
+
+const FAQS = [
+  ["What is CRAYS?", "CRAYS is an invitation-led private members club for people building their next chapter."],
+  ["Who can become an Ambassador?", "Approved creators, founders and community leaders can apply to prequalify people they know."],
+  ["Do I need an invitation to join?", "You can apply directly. The final admission decision always remains with the CRAYS team."],
+  ["Is Forest City a good place for families?", "Forest City combines homes, learning, wellness and daily life by the sea."],
+  ["What is CRAYS Club?", "A real-world social layer for work, living, culture, hospitality and useful community."],
+  ["How do I get started?", "Apply directly or use the invitation link shared by an approved Ambassador."],
+];
+
+function HeroMosaic() {
+  const [flipped, setFlipped] = useState<boolean[]>(() => HERO_TILES.map(() => false));
+
+  useEffect(() => {
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const forced = window.matchMedia("(forced-colors: active)").matches;
+    if (reduced || forced) return;
+
+    let cursor = 0;
+    let timer: ReturnType<typeof window.setTimeout>;
+    const intervals = [3000, 3400, 3800, 4200, 4400, 3200, 3600, 4000];
+    const step = () => {
+      setFlipped((current) => current.map((value, index) => (index === cursor ? !value : value)));
+      const delay = intervals[cursor % intervals.length];
+      cursor = (cursor + 1) % HERO_TILES.length;
+      timer = window.setTimeout(step, delay);
+    };
+    timer = window.setTimeout(step, 5700);
+    return () => window.clearTimeout(timer);
+  }, []);
+
+  return (
+    <div className={styles.heroMosaic} aria-label="Life around the CRAYS community">
+      {HERO_TILES.map((tile, index) => (
+        <figure className={`${styles.heroTile} ${styles[`tile${index + 1}`]}`} key={tile.first}>
+          <img className={`${styles.heroImage} ${flipped[index] ? styles.imageHidden : ""}`} src={tile.first} alt={tile.alt} />
+          <img className={`${styles.heroImage} ${styles.secondImage} ${flipped[index] ? styles.imageVisible : ""}`} src={tile.second} alt="" aria-hidden="true" />
+        </figure>
+      ))}
+    </div>
+  );
+}
+
+function ImageCard({ title, body, image }: { title: string; body: string; image: string }) {
+  return (
+    <article className={styles.imageCard}>
+      <img src={image} alt="" aria-hidden="true" loading="lazy" />
+      <div className={styles.cardShade} />
+      <div className={styles.cardCopy}>
+        <strong>{title}</strong>
+        <span>{body}</span>
+      </div>
+    </article>
+  );
+}
+
+export function ClubsPublicHomepage({ locale }: ClubsPublicHomepageProps) {
+  const root = `/${locale}`;
+  const applyHref = `${root}/become-a-member`;
+  const ambassadorHref = `${root}/ambassadors/isabel-maria-jeworski/apply`;
+
+  return (
+    <main className={styles.page}>
+      <section className={styles.hero} id="top">
+        <header className={styles.header}>
+          <Link href={root} className={styles.logoLink} aria-label="CRAYS Clubs home">
+            <img src="/brand/crays-logo-dark.svg" alt="CRAYS" className={styles.logo} />
+          </Link>
+
+          <nav className={styles.primaryNav} aria-label="Primary navigation">
+            <Link href={`${root}/forest-city`}>Forest City</Link>
+            <Link href={`${root}/community-life`}>Community</Link>
+            <Link href={`${root}/school-jobs`}>School &amp; Jobs</Link>
+            <Link href={`${root}/ambassadors`}>Ambassadors</Link>
+          </nav>
+
+          <div className={styles.headerActions}>
+            <Link className={styles.applyHeader} href={applyHref}>Apply</Link>
+            <details className={styles.headerDetail}>
+              <summary><Menu size={19} /> <span>Menu</span></summary>
+              <div className={styles.menuPanel}>
+                <Link href={`${root}/about-us`}>About Us</Link>
+                <Link href={`${root}/lifestyle`}>Lifestyle</Link>
+                <Link href={`${root}/hospitality`}>Hospitality</Link>
+                <Link href={`${root}/community-life`}>Community Life</Link>
+                <Link href={`${root}/contact`}>Contact</Link>
+                <Link href={`${root}/brand-as-a-service`}>Brand as a Service</Link>
+              </div>
+            </details>
+            <Link className={styles.roundAction} href={`${root}/account`} aria-label="Account">
+              <UserCircle size={21} />
+            </Link>
+            <details className={`${styles.headerDetail} ${styles.localeDetail}`}>
+              <summary aria-label="Change language"><Globe2 size={20} /></summary>
+              <div className={styles.localePanel}>
+                {['en', 'de', 'es', 'ca', 'fr', 'pt', 'it'].map((code) => (
+                  <Link href={`/${code}`} key={code}>{code.toUpperCase()}</Link>
+                ))}
+              </div>
+            </details>
+          </div>
+        </header>
+
+        <HeroMosaic />
+
+        <div className={styles.heroCenter}>
+          <p className={styles.eyebrow}>Private Members Club</p>
+          <h1>Forest City is<br />our campus.</h1>
+          <p className={styles.heroLead}>Work, live, play and build your next chapter<br />in one invitation-led community by the sea.</p>
+          <div className={styles.heroButtons}>
+            <Link href={`${root}/forest-city`} className={styles.primaryButton}>Discover Forest City <ArrowRight size={18} /></Link>
+            <Link href={applyHref} className={styles.secondaryButton}>Have an invitation?</Link>
+          </div>
+        </div>
+      </section>
+
+      <section className={`${styles.section} ${styles.introSection}`}>
+        <div className={styles.introCopy}>
+          <p className={styles.kicker}>Forest City, Malaysia</p>
+          <h2>A city designed for<br />the life you are building.</h2>
+          <p>CRAYS is an invitation-led community in Forest City, Malaysia. Here, international founders, remote professionals and their families live, work and grow together, steps from the sea.</p>
+          <div className={styles.featureGrid}>
+            {FEATURES.map(({ icon: Icon, title, body }) => (
+              <div className={styles.feature} key={title}>
+                <Icon size={25} />
+                <strong>{title}</strong>
+                <span>{body}</span>
+              </div>
+            ))}
+          </div>
+          <aside className={styles.mou}>
+            <strong>Memorandum of Understanding</strong>
+            <p>A memorandum of understanding has been signed between the Forest City Free Zone and the CRAYS Business Club Association.</p>
+          </aside>
+        </div>
+        <figure className={styles.introImage}>
+          <img src="/__crays-clubs/forest-city-public/forest-city.jpg" alt="Forest City by the sea" />
+        </figure>
+      </section>
+
+      <section className={`${styles.section} ${styles.staySection}`}>
+        <div className={styles.sideHeading}>
+          <h2>Stay in<br />Forest City.</h2>
+          <span />
+        </div>
+        <div className={styles.stayGrid}>
+          <Link href={`${root}/hospitality/golf-hotel`} className={styles.stayCard}>
+            <img src="/__crays-clubs/forest-city-public/golf-hotel-exterior.jpg" alt="Golf Hotel in Forest City" loading="lazy" />
+            <div className={styles.cardShade} />
+            <div className={styles.stayCopy}><strong>Golf Hotel</strong><span>Open booking on detail page</span><b>Explore</b></div>
+          </Link>
+          <Link href={`${root}/hospitality/marina-hotel`} className={styles.stayCard}>
+            <img src="/__crays-clubs/forest-city-public/marina-hotel-exterior.jpg" alt="Marina Hotel in Forest City" loading="lazy" />
+            <div className={styles.cardShade} />
+            <div className={styles.stayCopy}><strong>Marina Hotel</strong><span>Invitation path</span><b>Explore</b></div>
+          </Link>
+        </div>
+      </section>
+
+      <section className={`${styles.section} ${styles.communitySection}`}>
+        <div className={styles.sideHeading}>
+          <h2>Everything<br />you need,<br />in one<br />community.</h2>
+        </div>
+        <div className={styles.communityGrid}>
+          {COMMUNITY.map(({ icon: Icon, title, image }, index) => (
+            <article className={`${styles.communityCard} ${index === 9 ? styles.communityWide : ""}`} key={title}>
+              <img src={image} alt="" aria-hidden="true" loading="lazy" />
+              <div className={styles.cardShade} />
+              <span><Icon size={18} />{title}</span>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className={styles.learningSection}>
+        <div className={styles.learningInner}>
+          <div className={styles.learningCopy}>
+            <p className={styles.kicker}>School &amp; Jobs</p>
+            <h2>Learn here.<br />Get discovered<br />anywhere.</h2>
+            <p>CRAYS Club is an invitation-led program that trains you for real opportunities. Learn in-demand skills, complete a live assessment, and get introduced to hiring partners through our community.</p>
+            <Link href={`${root}/school-jobs`} className={styles.primaryButton}>Explore the Job Board <ArrowRight size={18} /></Link>
+          </div>
+          <div className={styles.jobsBoard}>
+            <div className={styles.steps}>
+              {[
+                ["Build verified skills", "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=700&q=84"],
+                ["Join CRAYS Club", "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=700&q=84"],
+                ["Complete a live assessment", "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=700&q=84"],
+                ["Meet hiring partners", "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=700&q=84"],
+              ].map(([title, image], index) => (
+                <div className={styles.step} key={title}>
+                  <b>{index + 1}</b>
+                  <strong>{title}</strong>
+                  <img src={image} alt="" aria-hidden="true" loading="lazy" />
+                </div>
+              ))}
+            </div>
+            <div className={styles.jobList}>
+              <div><strong>New opportunities</strong><Link href={`${root}/school-jobs`}>View all jobs <ArrowRight size={14} /></Link></div>
+              {[
+                ["Growth Marketing Manager", "Remote", "Marketing"],
+                ["Product Designer", "Kuala Lumpur", "Design"],
+                ["Community Manager", "Remote", "Community"],
+                ["Full Stack Developer", "Remote", "Engineering"],
+                ["Video Editor", "Singapore", "Creative"],
+              ].map((job) => <p key={job[0]}><span>{job[0]}</span><span>{job[1]}</span><span>{job[2]}</span></p>)}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={`${styles.section} ${styles.lifeSection}`}>
+        <h2>Work remotely, live together.</h2>
+        <div className={styles.workGrid}>{WORK_CARDS.map((card) => <ImageCard {...card} key={card.title} />)}</div>
+        <div className={styles.splitRows}>
+          <div className={styles.compactRow}>
+            <div className={styles.rowTitle}><h3>Strong days<br />start here.</h3><span /></div>
+            <div className={styles.threeCards}>{WELLBEING.map((card) => <ImageCard {...card} key={card.title} />)}</div>
+          </div>
+          <div className={styles.compactRow}>
+            <div className={styles.rowTitle}><h3>Bring your<br />family.</h3><span /></div>
+            <div className={styles.threeCards}>{FAMILY.map((card) => <ImageCard {...card} key={card.title} />)}</div>
+          </div>
+        </div>
+      </section>
+
+      <section className={`${styles.section} ${styles.hostSection}`}>
+        <div className={styles.centerHeading}>
+          <h2>Host your company in Forest City.</h2>
+          <p>Hold a one-day event, run a one-week sprint or bring the team for a one-month residency.<br />Then make Forest City your base.</p>
+          <Link href={`${root}/host-company`} className={styles.darkButton}>Host your company <ArrowRight size={17} /></Link>
+        </div>
+        <div className={styles.hostGrid}>{HOST.map((card) => <ImageCard {...card} key={card.title} />)}</div>
+      </section>
+
+      <section className={`${styles.section} ${styles.retainedSection}`}>
+        <p className={styles.kicker}>Lifestyle Culture</p>
+        <h2>Crays is where strangers become stories.</h2>
+        <div className={styles.retainedColumns}>
+          <p>Connect with friends, colleagues, and business partners in one place. Crays Clubs are phygital work-live-play spaces for creators, founders, and nomads.</p>
+          <p>The club is not only a place to sit down. It is a real-world social layer for people who want more than passive feeds: hotel guests, city locals, remote workers, founders, creators, artists, music people, fashion people and lifestyle brands meeting in the same physical environment.</p>
+          <p>From private dinners and brand partner events to afterwork sessions and founder circles, Crays Clubs are built to make the guest experience feel local, social, useful and premium.</p>
+        </div>
+        <strong className={styles.retainedCallout}>Join our community of builders &amp; makers. A New Era of Work, Live, and Play.</strong>
+      </section>
+
+      <section className={`${styles.section} ${styles.ambassadorBand}`}>
+        <div className={styles.ambassadorImage}>
+          <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=1300&q=84" alt="CRAYS members meeting by the sea" loading="lazy" />
+          <div className={styles.cardShade} />
+          <h2>Come through<br />someone you trust.</h2>
+        </div>
+        <div className={styles.ambassadorCopy}>
+          <p className={styles.kicker}>You&apos;re in if you&apos;re in</p>
+          <p>CRAYS is invitation-led. Ambassadors are creators, founders and community leaders who can prequalify people who add value and uplift the community. The final decision always remains with the CRAYS team.</p>
+          <div className={styles.inlineButtons}>
+            <Link href={ambassadorHref} className={styles.primaryButton}>Apply through an Ambassador <ArrowRight size={17} /></Link>
+            <Link href={applyHref} className={styles.secondaryButton}>Apply directly</Link>
+          </div>
+        </div>
+      </section>
+
+      <section className={`${styles.section} ${styles.faqSection}`}>
+        <h2>Frequently asked questions</h2>
+        <div className={styles.faqGrid}>
+          {FAQS.map(([question, answer]) => (
+            <details key={question}>
+              <summary>{question}<ChevronDown size={17} /></summary>
+              <p>{answer}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <footer className={styles.footer}>
+        <section className={styles.footerCta}>
+          <p>CLAIM YOUR GLOBAL HOME</p>
+          <h2>Meet friends, colleagues and business partners in the new Crays Club world.</h2>
+          <Link href={applyHref} className={styles.primaryButton}>Become a member <ArrowRight size={19} /></Link>
+        </section>
+        <div className={styles.footerMain}>
+          <div className={styles.footerBrand}>
+            <img src="/brand/crays-logo-dark.svg" alt="CRAYS" />
+            <p>An invitation-led community in Forest City, Malaysia. Live, work, learn and build together by the sea.</p>
+          </div>
+          <div className={styles.footerColumn}><strong>Forest City</strong><Link href={`${root}/forest-city`}>About Forest City</Link><Link href={`${root}/community-life`}>Living in Forest City</Link><Link href={`${root}/hospitality`}>Hospitality</Link><Link href={`${root}/become-a-member`}>Membership</Link></div>
+          <div className={styles.footerColumn}><strong>Community</strong><Link href={`${root}/lifestyle`}>Lifestyle</Link><Link href={`${root}/events`}>Events</Link><Link href={`${root}/families`}>Families</Link><Link href={`${root}/teams`}>Teams</Link></div>
+          <div className={styles.footerColumn}><strong>Company</strong><Link href={`${root}/about-us`}>About Us</Link><Link href={`${root}/host-company`}>Host Company</Link><Link href={`${root}/portfolio-companies`}>Portfolio Companies</Link><Link href={`${root}/brand-as-a-service`}>Brand as a Service</Link></div>
+          <div className={styles.footerColumn}><strong>Connect</strong><Link href={`${root}/contact`}>Contact</Link><Link href={`${root}/ambassadors`}>Ambassadors</Link><Link href={`${root}/conference`}>Conference</Link><a href="https://www.crays.org/" target="_blank" rel="noreferrer">Association</a></div>
+        </div>
+        <div className={styles.associationLine}><span>CRAYS Business Club Association</span><span>Private Members Club</span></div>
+        <div className={styles.legalLine}><span>© 2026 CRAYS. All rights reserved.</span><div><Link href={`${root}/legal/privacy-policy`}>Privacy</Link><Link href={`${root}/legal/terms-and-conditions`}>Terms</Link><Link href={`${root}/legal/data-protection`}>Data protection</Link><Link href={`${root}/legal/imprint`}>Imprint</Link></div></div>
+      </footer>
+    </main>
+  );
+}

@@ -1,0 +1,168 @@
+import "server-only";
+
+import { createHash } from "node:crypto";
+import {
+  FOREST_CITY_QLO_RATE_FORMULA,
+  FOREST_CITY_MARINA_PUBLIC_FROM_RATE,
+  FOREST_CITY_QLO_RATE_PROVENANCE,
+  FOREST_CITY_QLO_RATE_UI_CONTRACT,
+  type ForestCityRateBand,
+  type ForestCityRateBandProjection,
+  type ForestCityRatePropertyId,
+  type ForestCityStayUnit,
+} from "./forest-city-hospitality-rate-contract";
+
+const FX_SCALED = 40_271n;
+const FX_SCALE = 10_000n;
+
+const SOURCE_ROWS = [
+  { roomType: "Superior Twin", weekdayMyr: 348, weekendMyr: 368 },
+  { roomType: "Superior King", weekdayMyr: 378, weekendMyr: 398 },
+  { roomType: "Deluxe Twin", weekdayMyr: 398, weekendMyr: 418 },
+  { roomType: "Deluxe King", weekdayMyr: 428, weekendMyr: 448 },
+  { roomType: "Superior Suite", weekdayMyr: 578, weekendMyr: 598 },
+  { roomType: "Deluxe Suite", weekdayMyr: 678, weekendMyr: 698 },
+  { roomType: "Family Suite", weekdayMyr: 778, weekendMyr: 798 },
+  { roomType: "Presidential Suite", weekdayMyr: 4_018, weekendMyr: 5_018 },
+] as const;
+
+const UNIT_FORMULAS = {
+  night: {
+    multiplierNumerator: 3n,
+    multiplierDenominator: 1n,
+    displayIncrementMinor: 1_000n,
+  },
+  week: {
+    multiplierNumerator: 35n,
+    multiplierDenominator: 2n,
+    displayIncrementMinor: 5_000n,
+  },
+  month: {
+    multiplierNumerator: 60n,
+    multiplierDenominator: 1n,
+    displayIncrementMinor: 10_000n,
+  },
+} as const;
+
+function divideHalfUp(numerator: bigint, denominator: bigint): bigint {
+  return (numerator + denominator / 2n) / denominator;
+}
+
+function price(sourceAmountMyr: number, stayUnit: ForestCityStayUnit) {
+  const formula = UNIT_FORMULAS[stayUnit];
+  const exactMinorNumerator =
+    BigInt(sourceAmountMyr) * formula.multiplierNumerator * 100n * FX_SCALE;
+  const exactMinorDenominator = formula.multiplierDenominator * FX_SCALED;
+  const exactUsdMinor = divideHalfUp(
+    exactMinorNumerator,
+    exactMinorDenominator,
+  );
+  const displayUsdMinor =
+    divideHalfUp(
+      exactMinorNumerator,
+      exactMinorDenominator * formula.displayIncrementMinor,
+    ) * formula.displayIncrementMinor;
+
+  return Object.freeze({
+    stayUnit,
+    exactUsdMinor: Number(exactUsdMinor),
+    displayUsdMinor: Number(displayUsdMinor),
+    currency: "USD" as const,
+    formulaVersion: FOREST_CITY_QLO_RATE_FORMULA.version,
+  });
+}
+
+function rateBand(
+  roomType: string,
+  rateBandValue: ForestCityRateBand,
+  sourceAmountMyr: number,
+): ForestCityRateBandProjection {
+  return Object.freeze({
+    roomType,
+    canonicalRoomTypeId: null,
+    rateBand: rateBandValue,
+    sourceAmountMinor: sourceAmountMyr * 100,
+    sourceCurrency: "MYR" as const,
+    prices: Object.freeze(
+      (["night", "week", "month"] as const).map((stayUnit) =>
+        price(sourceAmountMyr, stayUnit),
+      ),
+    ),
+  });
+}
+
+const COMPLETE_RATE_MATRIX = Object.freeze(
+  SOURCE_ROWS.flatMap((row) => [
+    rateBand(row.roomType, "weekday", row.weekdayMyr),
+    rateBand(row.roomType, "weekend", row.weekendMyr),
+  ]),
+);
+
+function canonicalJson(value: unknown): string {
+  if (Array.isArray(value)) {
+    return `[${value.map(canonicalJson).join(",")}]`;
+  }
+  if (value && typeof value === "object") {
+    const object = value as Record<string, unknown>;
+    return `{${Object.keys(object)
+      .sort()
+      .map((key) => `${JSON.stringify(key)}:${canonicalJson(object[key])}`)
+      .join(",")}}`;
+  }
+  return JSON.stringify(value);
+}
+
+const seedMaterial = {
+  schema: FOREST_CITY_QLO_RATE_UI_CONTRACT.schema,
+  version: FOREST_CITY_QLO_RATE_UI_CONTRACT.version,
+  provenance: FOREST_CITY_QLO_RATE_PROVENANCE,
+  formula: FOREST_CITY_QLO_RATE_FORMULA,
+  matrix: COMPLETE_RATE_MATRIX,
+  marinaPublicFromRate: FOREST_CITY_MARINA_PUBLIC_FROM_RATE,
+};
+
+export const FOREST_CITY_PROVISIONAL_RATE_SEED = Object.freeze({
+  seedVersion: "2026-08-28.owner-provisional.3",
+  persistenceState: "source_only_no_database_mutation",
+  seedSha256: createHash("sha256")
+    .update(canonicalJson(seedMaterial))
+    .digest("hex"),
+  provenance: FOREST_CITY_QLO_RATE_PROVENANCE,
+  formula: FOREST_CITY_QLO_RATE_FORMULA,
+  properties: Object.freeze({
+    "property-clubs-forest-city-golf": Object.freeze({
+      publicProjectionStatus: "ready",
+      membershipTierId: null,
+      completeRateMatrix: COMPLETE_RATE_MATRIX,
+    }),
+    "property-clubs-forest-city-marina": Object.freeze({
+      publicProjectionStatus: "ready_provisional_tier_neutral",
+      membershipTierId: null,
+      publicFromRate: FOREST_CITY_MARINA_PUBLIC_FROM_RATE,
+      completeUnderlyingRateMatrix: COMPLETE_RATE_MATRIX,
+    }),
+  }),
+});
+
+export function readForestCityProvisionalRateMatrix(
+  propertyId: ForestCityRatePropertyId,
+) {
+  if (propertyId === "property-clubs-forest-city-golf") {
+    return {
+      status: "ready" as const,
+      matrix:
+        FOREST_CITY_PROVISIONAL_RATE_SEED.properties[
+          "property-clubs-forest-city-golf"
+        ].completeRateMatrix,
+      seedSha256: FOREST_CITY_PROVISIONAL_RATE_SEED.seedSha256,
+    };
+  }
+  return {
+    status: "ready_provisional_tier_neutral" as const,
+    matrix:
+      FOREST_CITY_PROVISIONAL_RATE_SEED.properties[
+        "property-clubs-forest-city-marina"
+      ].completeUnderlyingRateMatrix,
+    seedSha256: FOREST_CITY_PROVISIONAL_RATE_SEED.seedSha256,
+  };
+}

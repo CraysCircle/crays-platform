@@ -1,0 +1,1 @@
+query ClubMemberOwnFinanceRequests($input: ClubMemberFinanceRequestReadInput!) { readOwnFinanceRequests(input: $input) { schema payloadJson } }

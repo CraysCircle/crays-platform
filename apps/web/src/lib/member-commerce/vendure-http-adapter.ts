@@ -1,0 +1,720 @@
+import "server-only";
+
+import { z } from "zod";
+
+import {
+  type CommerceMemberContext,
+  type CommerceSessionStore,
+  CoreCommerceSessionStore,
+} from "./commerce-session-store";
+
+const assetSchema = z.object({
+  id: z.string().min(1),
+  preview: z.string().url(),
+  source: z.string().url().nullable().optional(),
+  width: z.number().int().nonnegative().nullable().optional(),
+  height: z.number().int().nonnegative().nullable().optional(),
+});
+
+const facetValueSchema = z.object({
+  id: z.string().min(1),
+  code: z.string().min(1),
+  name: z.string().min(1),
+  facet: z.object({
+    id: z.string().min(1),
+    code: z.string().min(1),
+    name: z.string().min(1),
+  }).optional(),
+});
+
+const collectionSummarySchema = z.object({
+  id: z.string().min(1),
+  name: z.string().min(1),
+  slug: z.string().min(1),
+  description: z.string(),
+  position: z.number().int().optional(),
+  featuredAsset: assetSchema.nullable().optional(),
+  breadcrumbs: z.array(z.object({
+    id: z.string().min(1),
+    name: z.string().min(1),
+    slug: z.string().min(1),
+  })).optional().default([]),
+});
+
+const variantOptionSchema = z.object({
+  id: z.string().min(1),
+  code: z.string().min(1),
+  name: z.string().min(1),
+  group: z.object({
+    id: z.string().min(1),
+    code: z.string().min(1),
+    name: z.string().min(1),
+  }),
+});
+
+const promotionSchema = z.object({
+  id: z.string().min(1),
+  name: z.string().min(1),
+  description: z.string().optional().default(""),
+  couponCode: z.string().nullable().optional(),
+});
+
+const adjustmentSchema = z.object({
+  adjustmentSource: z.string().min(1),
+  type: z.string().min(1),
+  description: z.string().optional().default(""),
+  amount: z.number().int(),
+  amountWithTax: z.number().int().optional(),
+});
+
+const vendureProductVariantSchema = z.object({
+  id: z.string().min(1),
+  name: z.string().min(1),
+  sku: z.string(),
+  price: z.number().int().nonnegative(),
+  priceWithTax: z.number().int().nonnegative(),
+  currencyCode: z.string().regex(/^[A-Z]{3}$/),
+  stockLevel: z.enum(["IN_STOCK", "OUT_OF_STOCK", "LOW_STOCK"]),
+  options: z.array(variantOptionSchema).optional().default([]),
+  featuredAsset: assetSchema.nullable().optional(),
+  assets: z.array(assetSchema).optional().default([]),
+  taxRateApplied: z.object({
+    id: z.string().min(1),
+    name: z.string().min(1),
+    value: z.number(),
+  }).nullable().optional(),
+});
+
+const vendureProductSchema = z.object({
+  id: z.string().min(1),
+  name: z.string().min(1),
+  slug: z.string().min(1),
+  description: z.string(),
+  featuredAsset: assetSchema.nullable().optional(),
+  assets: z.array(assetSchema).optional().default([]),
+  optionGroups: z.array(z.object({
+    id: z.string().min(1),
+    code: z.string().min(1),
+    name: z.string().min(1),
+    options: z.array(z.object({
+      id: z.string().min(1),
+      code: z.string().min(1),
+      name: z.string().min(1),
+    })),
+  })).optional().default([]),
+  facetValues: z.array(facetValueSchema).optional().default([]),
+  collections: z.array(collectionSummarySchema).optional().default([]),
+  variants: z.array(vendureProductVariantSchema),
+});
+
+export type VendureProduct = z.infer<typeof vendureProductSchema>;
+export type VendureProductVariant = z.infer<typeof vendureProductVariantSchema>;
+export type VendureAsset = z.infer<typeof assetSchema>;
+export type VendureCollection = z.infer<typeof collectionSummarySchema>;
+export type VendureFacetValue = z.infer<typeof facetValueSchema>;
+
+const channelSchema = z.object({
+  id: z.string().min(1),
+  code: z.string().min(1),
+  token: z.string().optional(),
+  defaultCurrencyCode: z.string().regex(/^[A-Z]{3}$/),
+  availableCurrencyCodes: z.array(z.string().regex(/^[A-Z]{3}$/)),
+});
+
+const facetSchema = z.object({
+  id: z.string().min(1),
+  code: z.string().min(1),
+  name: z.string().min(1),
+  values: z.array(facetValueSchema),
+});
+
+const searchResultSchema = z.object({
+  productId: z.string().min(1),
+  productName: z.string().min(1),
+  slug: z.string().min(1),
+  description: z.string(),
+  sku: z.string(),
+  currencyCode: z.string().regex(/^[A-Z]{3}$/),
+  price: z.union([
+    z.number().int().nonnegative(),
+    z.object({ min: z.number().int().nonnegative(), max: z.number().int().nonnegative() }),
+  ]),
+  priceWithTax: z.union([
+    z.number().int().nonnegative(),
+    z.object({ min: z.number().int().nonnegative(), max: z.number().int().nonnegative() }),
+  ]),
+  productAsset: assetSchema.nullable().optional(),
+  facetValueIds: z.array(z.string()).optional().default([]),
+  collectionIds: z.array(z.string()).optional().default([]),
+});
+
+void channelSchema;
+void facetSchema;
+void searchResultSchema;
+
+export type VendureChannel = z.infer<typeof channelSchema>;
+export type VendureFacet = z.infer<typeof facetSchema>;
+export type VendureSearchResult = z.infer<typeof searchResultSchema>;
+
+const orderLineSchema = z.object({
+  id: z.string().min(1),
+  quantity: z.number().int().positive(),
+  unitPrice: z.number().int().nonnegative(),
+  unitPriceWithTax: z.number().int().nonnegative(),
+  linePrice: z.number().int().nonnegative(),
+  linePriceWithTax: z.number().int().nonnegative(),
+  discountedLinePrice: z.number().int().nonnegative(),
+  discountedLinePriceWithTax: z.number().int().nonnegative(),
+  adjustments: z.array(adjustmentSchema).optional().default([]),
+  featuredAsset: assetSchema.nullable().optional(),
+  productVariant: z.object({
+    id: z.string().min(1),
+    name: z.string().min(1),
+    sku: z.string(),
+    stockLevel: z.enum(["IN_STOCK", "OUT_OF_STOCK", "LOW_STOCK"]).optional(),
+    options: z.array(variantOptionSchema).optional().default([]),
+    product: z.object({
+      id: z.string().min(1),
+      name: z.string().min(1),
+      slug: z.string().min(1),
+    }).optional(),
+  }),
+});
+
+const vendureOrderSchema = z.object({
+  id: z.string().min(1),
+  code: z.string().min(1),
+  state: z.string().min(1),
+  currencyCode: z.string().regex(/^[A-Z]{3}$/),
+  subTotal: z.number().int().nonnegative(),
+  subTotalWithTax: z.number().int().nonnegative(),
+  shipping: z.number().int().nonnegative(),
+  shippingWithTax: z.number().int().nonnegative(),
+  total: z.number().int().nonnegative(),
+  totalWithTax: z.number().int().nonnegative(),
+  totalQuantity: z.number().int().nonnegative(),
+  couponCodes: z.array(z.string()).optional().default([]),
+  discounts: z.array(z.object({
+    description: z.string(),
+    amount: z.number().int(),
+    amountWithTax: z.number().int(),
+  })).optional().default([]),
+  promotions: z.array(promotionSchema).optional().default([]),
+  surcharges: z.array(adjustmentSchema).optional().default([]),
+  lines: z.array(orderLineSchema),
+});
+
+export type VendureOrder = z.infer<typeof vendureOrderSchema>;
+
+const shippingMethodSchema = z.object({
+  id: z.string().min(1),
+  code: z.string().min(1),
+  name: z.string().min(1),
+  description: z.string(),
+  priceWithTax: z.number().int().nonnegative(),
+});
+
+const paymentMethodSchema = z.object({
+  id: z.string().min(1),
+  code: z.string().min(1),
+  name: z.string().min(1),
+  description: z.string(),
+  isEligible: z.boolean(),
+  eligibilityMessage: z.string().nullable().optional(),
+});
+
+export type VendureShippingMethod = z.infer<typeof shippingMethodSchema>;
+export type VendurePaymentMethod = z.infer<typeof paymentMethodSchema>;
+
+const providerEventSchema = z.object({
+  eventId: z.string().min(1),
+  eventType: z.string().min(1),
+  aggregateType: z.string().min(1),
+  aggregateId: z.string().min(1),
+  idempotencyKey: z.string().min(8),
+  payload: z.record(z.string(), z.unknown()),
+  createdAt: z.string().datetime(),
+});
+
+export type VendureProviderEvent = z.infer<typeof providerEventSchema>;
+
+export type CommerceErrorCode =
+  | "COMMERCE_NO_ACTIVE_ORDER"
+  | "COMMERCE_INVALID_QUANTITY"
+  | "COMMERCE_MAX_QUANTITY_EXCEEDED"
+  | "COMMERCE_INSUFFICIENT_STOCK"
+  | "COMMERCE_ORDER_CONFLICT"
+  | "COMMERCE_COUPON_INVALID"
+  | "COMMERCE_COUPON_EXPIRED"
+  | "COMMERCE_COUPON_EXHAUSTED"
+  | "COMMERCE_COUPON_REMOVED"
+  | "COMMERCE_PRICE_CHANGED"
+  | "COMMERCE_TOTAL_CHANGED"
+  | "COMMERCE_PROVIDER_TIMEOUT"
+  | "COMMERCE_PROVIDER_UNAVAILABLE"
+  | "COMMERCE_PROVIDER_RESPONSE_INVALID"
+  | "COMMERCE_PROVIDER_ERROR"
+  | "COMMERCE_PROVIDER_NOT_CONFIGURED";
+
+export class CommerceAdapterError extends Error {
+  constructor(
+    public readonly code: CommerceErrorCode,
+    message: string,
+    public readonly details: {
+      providerCode?: string;
+      availableQuantity?: number;
+      orderLimit?: number;
+      field?: string;
+    } = {},
+  ) {
+    super(message);
+    this.name = "CommerceAdapterError";
+  }
+}
+
+type ProviderErrorShape = {
+  __typename?: string;
+  errorCode?: string;
+  message?: string;
+  quantityAvailable?: number;
+  maxItems?: number;
+  field?: string;
+};
+
+export function mapVendureBusinessError(error: ProviderErrorShape): CommerceAdapterError {
+  const discriminator = `${error.__typename ?? ""} ${error.errorCode ?? ""} ${error.message ?? ""}`.toLowerCase();
+  let code: CommerceErrorCode = "COMMERCE_PROVIDER_ERROR";
+  if (/noactiveorder|no active order/.test(discriminator)) code = "COMMERCE_NO_ACTIVE_ORDER";
+  else if (/negativequantity|invalid.?quantity|quantity.*positive/.test(discriminator)) code = "COMMERCE_INVALID_QUANTITY";
+  else if (/orderlimit|max.*quantity|quantity.*limit/.test(discriminator)) code = "COMMERCE_MAX_QUANTITY_EXCEEDED";
+  else if (/insufficientstock|out.?of.?stock|quantity.*available/.test(discriminator)) code = "COMMERCE_INSUFFICIENT_STOCK";
+  else if (/coupon.*expired|couponcodeexpirederror/.test(discriminator)) code = "COMMERCE_COUPON_EXPIRED";
+  else if (/coupon.*limit|coupon.*exhaust|couponcodelimiterror/.test(discriminator)) code = "COMMERCE_COUPON_EXHAUSTED";
+  else if (/coupon.*removed|coupon.*not.*applied/.test(discriminator)) code = "COMMERCE_COUPON_REMOVED";
+  else if (/coupon|promotion.*invalid/.test(discriminator)) code = "COMMERCE_COUPON_INVALID";
+  else if (/price.*changed|pricechang/.test(discriminator)) code = "COMMERCE_PRICE_CHANGED";
+  else if (/total.*changed|totalchang/.test(discriminator)) code = "COMMERCE_TOTAL_CHANGED";
+  else if (/conflict|interceptor|orderstate|optimistic|version/.test(discriminator)) code = "COMMERCE_ORDER_CONFLICT";
+  return new CommerceAdapterError(code, error.message || code, {
+    providerCode: error.errorCode || error.__typename,
+    availableQuantity: error.quantityAvailable,
+    orderLimit: error.maxItems,
+    field: error.field,
+  });
+}
+
+export type VendureCommercePurpose =
+  | "public-catalog"
+  | "cart-mutation"
+  | "checkout-preflight"
+  | "payment-admission";
+
+export type VendureCommerceContext = Readonly<{
+  encodedContext: string;
+  signature: string;
+}>;
+
+export type VendurePublicCatalogContext = VendureCommerceContext;
+
+export type VendureConfig = {
+  shopApiUrl: string;
+  channelToken: string | null;
+  adapterKey: string | null;
+  timeoutMs: number;
+  commerceContext?: (purpose: VendureCommercePurpose) =>
+    Promise<VendureCommerceContext> | VendureCommerceContext;
+};
+
+function vendureOperationPurpose(query: string): VendureCommercePurpose | null {
+  if (/^\s*query\b/.test(query)) return "public-catalog";
+  if (!/^\s*mutation\b/.test(query)) return null;
+  const mappings: ReadonlyArray<readonly [RegExp, VendureCommercePurpose]> = [
+    [/\b(?:addItemToOrder|adjustOrderLine|removeOrderLine|setOrderShippingMethod)\b/, "cart-mutation"],
+    [/\b(?:transitionOrderToState|craysPrepareOrderSellerSnapshot)\b/, "checkout-preflight"],
+    [/\baddPaymentToOrder\b/, "payment-admission"],
+  ];
+  const matches = mappings.filter(([pattern]) => pattern.test(query));
+  return matches.length === 1 ? matches[0][1] : null;
+}
+
+function configuredVendure(): VendureConfig | null {
+  const shopApiUrl = process.env.CRAYS_COMMERCE_PROVIDER_BASE_URL?.trim();
+  if (!shopApiUrl) return null;
+  return {
+    shopApiUrl,
+    channelToken: process.env.CRAYS_COMMERCE_PROVIDER_API_TOKEN?.trim() || null,
+    adapterKey: process.env.CRAYS_COMMERCE_PROVIDER_ADAPTER_KEY?.trim() || null,
+    timeoutMs: 8_000,
+  };
+}
+
+export interface CraysCommerceAdapter {
+  listProducts(take?: number, skip?: number): Promise<VendureProduct[]>;
+  listOrders(take?: number): Promise<VendureOrder[]>;
+  activeOrder(): Promise<VendureOrder | null>;
+  addItemToOrder(productVariantId: string, quantity: number): Promise<VendureOrder>;
+  adjustOrderLine(orderLineId: string, quantity: number): Promise<VendureOrder>;
+  removeOrderLine(orderLineId: string): Promise<VendureOrder>;
+  eligibleShippingMethods(): Promise<VendureShippingMethod[]>;
+  setShippingMethod(shippingMethodId: string): Promise<VendureOrder>;
+  eligiblePaymentMethods(): Promise<VendurePaymentMethod[]>;
+  addStripePayment(metadata: { stripePaymentIntentId: string; idempotencyKey: string }): Promise<VendureOrder>;
+  transitionOrderToState(state: "ArrangingPayment" | "Cancelled"): Promise<VendureOrder>;
+  requestReturn(input: { orderCode: string; lines: Array<{ orderLineId: string; quantity: number }>; reasonCode: string; idempotencyKey: string }): Promise<{ requestId: string; state: string }>;
+  requestRefund(input: { paymentId: string; amountMinor: number; reasonCode: string; idempotencyKey: string }): Promise<{ refundId: string; state: string }>;
+  transitionReturn(input: { requestId: string; expectedState: string; targetState: string; idempotencyKey: string }): Promise<{ requestId: string; state: string }>;
+  transitionRefund(input: { refundId: string; expectedState: "Pending"; targetState: "Settled" | "Failed"; idempotencyKey: string }): Promise<{ refundId: string; state: string }>;
+  pendingProviderEvents(take?: number): Promise<VendureProviderEvent[]>;
+  acknowledgeProviderEvent(eventId: string): Promise<boolean>;
+}
+
+export class ClosedCommerceAdapter implements CraysCommerceAdapter {
+  async listProducts(): Promise<VendureProduct[]> {
+    return [];
+  }
+  async listOrders(): Promise<VendureOrder[]> { return []; }
+  async activeOrder() { return null; }
+  async addItemToOrder(): Promise<VendureOrder> { throw new Error("COMMERCE_PROVIDER_NOT_CONFIGURED"); }
+  async adjustOrderLine(): Promise<VendureOrder> { throw new Error("COMMERCE_PROVIDER_NOT_CONFIGURED"); }
+  async removeOrderLine(): Promise<VendureOrder> { throw new Error("COMMERCE_PROVIDER_NOT_CONFIGURED"); }
+  async eligibleShippingMethods(): Promise<VendureShippingMethod[]> { return []; }
+  async setShippingMethod(): Promise<VendureOrder> { throw new Error("COMMERCE_PROVIDER_NOT_CONFIGURED"); }
+  async eligiblePaymentMethods(): Promise<VendurePaymentMethod[]> { return []; }
+  async addStripePayment(): Promise<VendureOrder> { throw new Error("COMMERCE_PROVIDER_NOT_CONFIGURED"); }
+  async transitionOrderToState(): Promise<VendureOrder> { throw new Error("COMMERCE_PROVIDER_NOT_CONFIGURED"); }
+  async requestReturn(): Promise<{ requestId: string; state: string }> { throw new Error("COMMERCE_PROVIDER_NOT_CONFIGURED"); }
+  async requestRefund(): Promise<{ refundId: string; state: string }> { throw new Error("COMMERCE_PROVIDER_NOT_CONFIGURED"); }
+  async transitionReturn(): Promise<{ requestId: string; state: string }> { throw new Error("COMMERCE_PROVIDER_NOT_CONFIGURED"); }
+  async transitionRefund(): Promise<{ refundId: string; state: string }> { throw new Error("COMMERCE_PROVIDER_NOT_CONFIGURED"); }
+  async pendingProviderEvents(): Promise<VendureProviderEvent[]> { return []; }
+  async acknowledgeProviderEvent(): Promise<boolean> { throw new Error("COMMERCE_PROVIDER_NOT_CONFIGURED"); }
+}
+
+export class VendureHttpAdapter implements CraysCommerceAdapter {
+  constructor(
+    private readonly config: VendureConfig,
+    private readonly memberContext: CommerceMemberContext | null = null,
+    private readonly sessionStore: CommerceSessionStore | null = null,
+  ) {}
+
+  private async graphql<T>(query: string, variables: Record<string, unknown>): Promise<T> {
+    const headers = new Headers({ "content-type": "application/json" });
+    if (this.config.channelToken) {
+      headers.set("vendure-token", this.config.channelToken);
+    }
+    if (this.config.adapterKey) {
+      headers.set("x-crays-commerce-adapter-key", this.config.adapterKey);
+    }
+    if (this.config.commerceContext) {
+      const purpose = vendureOperationPurpose(query);
+      if (!purpose) {
+        throw new Error("COMMERCE_CONTEXT_PURPOSE_UNSUPPORTED");
+      }
+      const context = await this.config.commerceContext(purpose);
+      if (
+        !/^[A-Za-z0-9_-]{20,12000}$/.test(context.encodedContext) ||
+        !/^[A-Za-z0-9_-]{20,300}$/.test(context.signature)
+      ) {
+        throw new Error("COMMERCE_SIGNED_CONTEXT_INVALID");
+      }
+      headers.set("x-crays-commerce-context", context.encodedContext);
+      headers.set(
+        "x-crays-commerce-context-signature",
+        context.signature,
+      );
+    }
+    if (this.memberContext) {
+      headers.set("x-crays-member-reference", `${this.memberContext.tenantId}:${this.memberContext.memberId}`);
+      const activeOrderToken = await this.sessionStore?.readActiveOrderToken(this.memberContext);
+      if (activeOrderToken) headers.set("vendure-auth-token", activeOrderToken);
+    }
+    const response = await fetch(this.config.shopApiUrl, {
+      method: "POST",
+      headers,
+      cache: "no-store",
+      signal: AbortSignal.timeout(this.config.timeoutMs),
+      body: JSON.stringify({ query, variables }),
+    });
+    if (!response.ok) throw new Error(`VENDURE_HTTP_${response.status}`);
+    const payload = await response.json() as { data?: T; errors?: Array<{ message?: string }> };
+    if (payload.errors?.length || !payload.data) throw new Error("VENDURE_GRAPHQL_ERROR");
+    const activeOrderToken = response.headers.get("vendure-auth-token");
+    if (activeOrderToken && this.memberContext && this.sessionStore) {
+      await this.sessionStore.writeActiveOrderToken(this.memberContext, activeOrderToken);
+    }
+    return payload.data;
+  }
+
+  async listProducts(take = 24, skip = 0): Promise<VendureProduct[]> {
+    const data = await this.graphql<{ products?: { items?: unknown[] } }>(
+      `query CraysRetailProducts($take: Int!, $skip: Int!) {
+          products(options: { take: $take, skip: $skip }) {
+            items {
+              id name slug description
+              featuredAsset { id preview source width height }
+              facetValues { id code name facet { id code name } }
+              collections { id name slug description }
+              variants {
+                id name sku price priceWithTax currencyCode stockLevel
+                taxRateApplied { id name value }
+              }
+            }
+          }
+        }`,
+      {
+        take: Math.min(Math.max(take, 1), 100),
+        skip: Math.min(Math.max(skip, 0), 100_000),
+      },
+    );
+    return z.array(vendureProductSchema).parse(data.products?.items ?? []);
+  }
+
+  async listOrders(take = 20): Promise<VendureOrder[]> {
+    const data = await this.graphql<{ activeCustomer?: { orders?: { items?: unknown[] } } }>(
+      `query CraysMemberOrders($take: Int!) {
+        activeCustomer { orders(options: { take: $take, sort: { createdAt: DESC } }) {
+          items { ${this.orderSelection()} }
+        } }
+      }`,
+      { take: Math.min(Math.max(take, 1), 100) },
+    );
+    return z.array(vendureOrderSchema).parse(data.activeCustomer?.orders?.items ?? []);
+  }
+
+  private orderSelection() {
+    return `
+      id code state currencyCode
+      subTotal subTotalWithTax shipping shippingWithTax
+      total totalWithTax totalQuantity couponCodes
+      discounts { description amount amountWithTax }
+      promotions { id couponCode name description enabled startsAt endsAt }
+      surcharges { adjustmentSource adjustmentSourceId description type amount amountWithTax }
+      lines {
+        id quantity unitPrice unitPriceWithTax linePrice linePriceWithTax
+        discountedLinePrice discountedLinePriceWithTax
+        adjustments { adjustmentSource adjustmentSourceId description type amount amountWithTax }
+        featuredAsset { id preview source width height }
+        productVariant {
+          id name sku stockLevel
+          options { id code name group { id code name } }
+          product { id name slug }
+        }
+      }
+    `;
+  }
+
+  async activeOrder(): Promise<VendureOrder | null> {
+    const data = await this.graphql<{ activeOrder?: unknown }>(
+      `query CraysActiveOrder { activeOrder { ${this.orderSelection()} } }`,
+      {},
+    );
+    return data.activeOrder ? vendureOrderSchema.parse(data.activeOrder) : null;
+  }
+
+  async addItemToOrder(productVariantId: string, quantity: number): Promise<VendureOrder> {
+    const data = await this.graphql<{ addItemToOrder?: unknown }>(
+      `mutation CraysAddItem($productVariantId: ID!, $quantity: Int!) { addItemToOrder(productVariantId: $productVariantId, quantity: $quantity) { ... on Order { ${this.orderSelection()} } } }`,
+      { productVariantId, quantity: Math.min(Math.max(quantity, 1), 100) },
+    );
+    const order = vendureOrderSchema.parse(data.addItemToOrder);
+    if (this.memberContext && this.sessionStore) {
+      const token = await this.sessionStore.readActiveOrderToken(this.memberContext);
+      if (token) await this.sessionStore.writeActiveOrderToken(this.memberContext, token, order.id);
+    }
+    return order;
+  }
+
+  async adjustOrderLine(orderLineId: string, quantity: number): Promise<VendureOrder> {
+    const data = await this.graphql<{ adjustOrderLine?: unknown }>(
+      `mutation CraysAdjustLine($orderLineId: ID!, $quantity: Int!) { adjustOrderLine(orderLineId: $orderLineId, quantity: $quantity) { ... on Order { ${this.orderSelection()} } } }`,
+      { orderLineId, quantity: Math.min(Math.max(quantity, 0), 100) },
+    );
+    return vendureOrderSchema.parse(data.adjustOrderLine);
+  }
+
+  async removeOrderLine(orderLineId: string): Promise<VendureOrder> {
+    const data = await this.graphql<{ removeOrderLine?: unknown }>(
+      `mutation CraysRemoveLine($orderLineId: ID!) { removeOrderLine(orderLineId: $orderLineId) { ... on Order { ${this.orderSelection()} } } }`,
+      { orderLineId },
+    );
+    return vendureOrderSchema.parse(data.removeOrderLine);
+  }
+
+  async eligibleShippingMethods(): Promise<VendureShippingMethod[]> {
+    const data = await this.graphql<{ eligibleShippingMethods?: unknown[] }>(
+      `query CraysEligibleShipping { eligibleShippingMethods { id code name description priceWithTax } }`,
+      {},
+    );
+    return z.array(shippingMethodSchema).parse(data.eligibleShippingMethods ?? []);
+  }
+
+  async setShippingMethod(shippingMethodId: string): Promise<VendureOrder> {
+    const data = await this.graphql<{ setOrderShippingMethod?: unknown }>(
+      `mutation CraysSetShipping($shippingMethodId: [ID!]!) {
+        setOrderShippingMethod(shippingMethodId: $shippingMethodId) { ... on Order { ${this.orderSelection()} } }
+      }`,
+      { shippingMethodId: [shippingMethodId] },
+    );
+    return vendureOrderSchema.parse(data.setOrderShippingMethod);
+  }
+
+  async eligiblePaymentMethods(): Promise<VendurePaymentMethod[]> {
+    const data = await this.graphql<{ eligiblePaymentMethods?: unknown[] }>(
+      `query CraysEligiblePayments {
+        eligiblePaymentMethods { id code name description isEligible eligibilityMessage }
+      }`,
+      {},
+    );
+    return z.array(paymentMethodSchema).parse(data.eligiblePaymentMethods ?? []);
+  }
+
+  async addStripePayment(metadata: { stripePaymentIntentId: string; idempotencyKey: string }): Promise<VendureOrder> {
+    if (process.env.CRAYS_REAL_MONEY_MOVEMENT !== "false") {
+      throw new Error("REAL_MONEY_MOVEMENT_MUST_BE_EXPLICITLY_FALSE");
+    }
+    if (!/^pi_crays_test_[A-Za-z0-9_-]+$/.test(metadata.stripePaymentIntentId)) {
+      throw new Error("ONLY_CRAYS_TEST_PAYMENT_INTENTS_ALLOWED");
+    }
+    if (metadata.idempotencyKey.trim().length < 8) {
+      throw new Error("COMMERCE_IDEMPOTENCY_KEY_REQUIRED");
+    }
+    const data = await this.graphql<{ addPaymentToOrder?: unknown }>(
+      `mutation CraysAddStripePayment($input: PaymentInput!) {
+        addPaymentToOrder(input: $input) { ... on Order { ${this.orderSelection()} } }
+      }`,
+      {
+        input: {
+          method: "stripe",
+          metadata: {
+            stripePaymentIntentId: metadata.stripePaymentIntentId,
+            craysIdempotencyKey: metadata.idempotencyKey,
+            paymentDomain: "retail-commerce",
+          },
+        },
+      },
+    );
+    return vendureOrderSchema.parse(data.addPaymentToOrder);
+  }
+
+  async transitionOrderToState(state: "ArrangingPayment" | "Cancelled"): Promise<VendureOrder> {
+    const data = await this.graphql<{ transitionOrderToState?: unknown }>(
+      `mutation CraysTransitionOrder($state: String!) {
+        transitionOrderToState(state: $state) { ... on Order { ${this.orderSelection()} } }
+      }`,
+      { state },
+    );
+    return vendureOrderSchema.parse(data.transitionOrderToState);
+  }
+
+  async requestReturn(input: {
+    orderCode: string;
+    lines: Array<{ orderLineId: string; quantity: number }>;
+    reasonCode: string;
+    idempotencyKey: string;
+  }): Promise<{ requestId: string; state: string }> {
+    const data = await this.graphql<{ craysRequestReturn?: unknown }>(
+      `mutation CraysRequestReturn($input: CraysReturnRequestInput!) {
+        craysRequestReturn(input: $input) { requestId state }
+      }`,
+      { input },
+    );
+    return z.object({ requestId: z.string().min(1), state: z.string().min(1) }).parse(data.craysRequestReturn);
+  }
+
+  async requestRefund(input: {
+    paymentId: string;
+    amountMinor: number;
+    reasonCode: string;
+    idempotencyKey: string;
+  }): Promise<{ refundId: string; state: string }> {
+    const data = await this.graphql<{ craysRequestRefund?: unknown }>(
+      `mutation CraysRequestRefund($input: CraysRefundRequestInput!) {
+        craysRequestRefund(input: $input) { refundId state }
+      }`,
+      { input },
+    );
+    return z.object({ refundId: z.string().min(1), state: z.string().min(1) }).parse(data.craysRequestRefund);
+  }
+
+  async transitionReturn(input: {
+    requestId: string;
+    expectedState: string;
+    targetState: string;
+    idempotencyKey: string;
+  }): Promise<{ requestId: string; state: string }> {
+    const data = await this.graphql<{ craysTransitionReturn?: unknown }>(
+      `mutation CraysTransitionReturn($input: CraysReturnTransitionInput!) {
+        craysTransitionReturn(input: $input) { requestId state }
+      }`,
+      { input },
+    );
+    return z.object({ requestId: z.string().min(1), state: z.string().min(1) }).parse(data.craysTransitionReturn);
+  }
+
+  async transitionRefund(input: {
+    refundId: string;
+    expectedState: "Pending";
+    targetState: "Settled" | "Failed";
+    idempotencyKey: string;
+  }): Promise<{ refundId: string; state: string }> {
+    const data = await this.graphql<{ craysTransitionRefund?: unknown }>(
+      `mutation CraysTransitionRefund($input: CraysRefundTransitionInput!) {
+        craysTransitionRefund(input: $input) { refundId state }
+      }`,
+      { input },
+    );
+    return z.object({ refundId: z.string().min(1), state: z.string().min(1) }).parse(data.craysTransitionRefund);
+  }
+
+  async pendingProviderEvents(take = 50): Promise<VendureProviderEvent[]> {
+    const data = await this.graphql<{ craysPendingCommerceEvents?: unknown[] }>(
+      `query CraysPendingCommerceEvents($take: Int!) {
+        craysPendingCommerceEvents(take: $take) {
+          eventId eventType aggregateType aggregateId idempotencyKey payload createdAt
+        }
+      }`,
+      { take: Math.min(Math.max(take, 1), 100) },
+    );
+    return z.array(providerEventSchema).parse(data.craysPendingCommerceEvents ?? []);
+  }
+
+  async acknowledgeProviderEvent(eventId: string): Promise<boolean> {
+    const data = await this.graphql<{ craysAcknowledgeCommerceEvent?: unknown }>(
+      `mutation CraysAcknowledgeCommerceEvent($eventId: String!) {
+        craysAcknowledgeCommerceEvent(eventId: $eventId)
+      }`,
+      { eventId },
+    );
+    return z.boolean().parse(data.craysAcknowledgeCommerceEvent);
+  }
+}
+
+export const craysVendurePluginContract = {
+  pluginRequired: true,
+  browserCallable: false,
+  commands: [
+    "craysRequestReturn",
+    "craysRequestRefund",
+    "craysTransitionReturn",
+    "craysTransitionRefund",
+  ],
+  canonicalMemberOwnershipValidatedByCraysCoreBeforeProviderCommand: true,
+  validatesSignedAdapterAndProviderObject: true,
+  requiresIdempotencyKey: true,
+  emitsTransactionalOutboxEvents: true,
+  erpAcknowledgementAndReconciliationRequired: true,
+  activationState: "provider-command-enabled-when-adapter-key-configured",
+  paymentHandler: "crays-test-payment-only",
+  realMoneyMovement: false,
+} as const;
+
+export function createVendureCommerceAdapter(options?: {
+  memberContext?: CommerceMemberContext;
+  sessionStore?: CommerceSessionStore;
+}): CraysCommerceAdapter {
+  const config = configuredVendure();
+  if (!config) return new ClosedCommerceAdapter();
+  const memberContext = options?.memberContext ?? null;
+  const store = options?.sessionStore ?? (memberContext ? new CoreCommerceSessionStore() : null);
+  return new VendureHttpAdapter(config, memberContext, store);
+}

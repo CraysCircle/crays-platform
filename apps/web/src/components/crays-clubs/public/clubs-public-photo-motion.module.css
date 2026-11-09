@@ -1,0 +1,62 @@
+/* Explicit opt-in on editorial photo frames. HeroMosaic is never selected. */
+.heroSentence { display: block; }
+.photography.photography.photography a.learningCta,
+.photography.photography.photography a.learningCta:visited {
+  background: #ff0751 !important;
+  border-color: #ff0751 !important;
+  color: #fff !important;
+}
+.photography.photography.photography a.learningCta:hover,
+.photography.photography.photography a.learningCta:focus-visible {
+  background: #e90045 !important;
+  border-color: #e90045 !important;
+  color: #fff !important;
+}
+.photography.photography.photography .hotelCard { border-radius: 18px !important; overflow: hidden !important; }
+.photography.photography.photography .networkStrip {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.photography.photography.photography .networkStripCopy {
+  width: auto !important;
+  height: auto !important;
+  font-family: var(--crays-font-display) !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  line-height: 1.35 !important;
+  letter-spacing: 1.65px !important;
+  text-transform: none !important;
+  text-align: center !important;
+  white-space: normal !important;
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .photography.photography.photography [data-crays-photo-motion] > img {
+    transition: transform var(--crays-motion-image, 880ms cubic-bezier(.22, 1, .36, 1));
+  }
+  .photography.photography.photography [data-crays-photo-motion]:hover > img {
+    transform: scale(1.035);
+  }
+}
+/* Also neutralize inherited hover zooms when motion is reduced or unavailable. */
+@media (prefers-reduced-motion: reduce), (hover: none), (pointer: coarse) {
+  .photography.photography.photography [data-crays-photo-motion] > img,
+  .photography.photography.photography [data-crays-photo-motion]:hover > img,
+  .photography.photography.photography [data-crays-photo-motion]:focus > img {
+    transform: none !important;
+    transition: none !important;
+  }
+}
+@media (max-width: 679px) {
+  .photography.photography.photography .networkStripCopy { font-size: 12px !important; letter-spacing: 1px !important; }
+  .photography.photography.photography .heroHeadline {
+    font-size: clamp(28px, 9.1vw, 38px) !important;
+    line-height: 1.06 !important;
+  }
+  .photography.photography.photography .heroDescription {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+  }
+  .heroSentence { text-wrap: balance; }
+  .heroSentence + .heroSentence { margin-top: 4px; }
+}

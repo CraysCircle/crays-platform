@@ -30,3 +30,7 @@ The reviewed Qlo account2 revision03 and unchanged storage guard are preserved w
 ## Clubs Commerce BFF
 
 The nine original component files are preserved unchanged with their [source record](../services/clubs-commerce-bff/source-index.json). All fourteen locked npm package archives were checked against their original SHA-512 lock integrity. Twelve standalone license files and two complete original READMEs containing license text are retained under its third-party directory; their copyright and permissions are not replaced with a generic license. This does not establish the BFF application license, exact runtime/base-image notices or AWS deployment parity.
+
+## Shared Next.js application
+
+The [qualified shared web capture](../apps/web/README.md) retains 2,045 selected original inputs in baseline and prepared source views. Its [direct-package index](../apps/web/third-party/index.json) preserves the observed package metadata and original root notice texts located for 45 of 47 direct packages. The server-only and drizzle-kit notice questions, application rights, transitive/bundled/runtime notices and source-availability obligations remain open. The [recovery record](../apps/web/docs/recovery.md) identifies missing operational helpers, the unqualified project lockfile and remaining media/runtime inputs. No application test, build, database program or deployment was executed by this import.

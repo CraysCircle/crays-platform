@@ -1,0 +1,201 @@
+"use client";
+
+import { FormEvent, useEffect, useMemo, useState } from "react";
+import styles from "@/app/clubs/forest-city/page.module.css";
+
+type RoomOffer = {
+  propertyId:string; propertyName:string; location:string; address:string;
+  propertyDescription:string; checkInTime:string; checkOutTime:string;
+  physicalRoomCount:number|null; roomCountStatus:string; launchStatus:string;
+  officialSourceUrl:string; roomTypeId:string; roomCode:string; roomName:string;
+  roomDescription:string; bedding:string; maxAdults:number; maxChildren:number;
+  sizeSqm:number|null; imagePath:string; imageSourceUrl:string; currency:string;
+  nightlyAmountMinor:number; totalAmountMinor:number; availableRooms:number;
+};
+type Catalog = {
+  status:string;
+  authority:{price:string;availability:string};
+  dates:{checkIn:string;checkOut:string;nights:number};
+  rooms:RoomOffer[];
+};
+type Search = {checkIn:string;checkOut:string;rooms:number;adults:number;children:number};
+
+function isoDay(offset:number) {
+  const date = new Date();
+  date.setUTCDate(date.getUTCDate()+offset);
+  return date.toISOString().slice(0,10);
+}
+function money(minor:number,currency:string) {
+  return new Intl.NumberFormat("de-DE",{style:"currency",currency}).format(minor/100);
+}
+function commandKey() {
+  return "forest-city-web-" + crypto.randomUUID();
+}
+
+export function ForestCityBookingExperience() {
+  const [search,setSearch] = useState<Search>({checkIn:isoDay(7),checkOut:isoDay(9),rooms:1,adults:2,children:0});
+  const [catalog,setCatalog] = useState<Catalog|null>(null);
+  const [loading,setLoading] = useState(true);
+  const [message,setMessage] = useState("");
+  const [selected,setSelected] = useState<RoomOffer|null>(null);
+  const [booking,setBooking] = useState(false);
+  const [key,setKey] = useState(commandKey);
+
+  async function load(next=search) {
+    setLoading(true); setMessage("");
+    try {
+      const query = new URLSearchParams({
+        checkIn:next.checkIn,checkOut:next.checkOut,rooms:String(next.rooms),
+        adults:String(next.adults),children:String(next.children),
+      });
+      const response = await fetch("/api/crays/clubs/forest-city?"+query,{cache:"no-store"});
+      const payload = await response.json();
+      if (!response.ok) throw new Error(payload.reason ?? "Die Suche ist gerade nicht verfügbar.");
+      setCatalog(payload);
+    } catch(error) {
+      setCatalog(null);
+      setMessage(error instanceof Error?error.message:"Die Suche ist gerade nicht verfügbar.");
+    } finally { setLoading(false); }
+  }
+  useEffect(()=>{void load();},[]);
+
+  const hotels = useMemo(()=>{
+    const grouped = new Map<string,RoomOffer[]>();
+    for (const room of catalog?.rooms ?? []) {
+      grouped.set(room.propertyId,[...(grouped.get(room.propertyId)??[]),room]);
+    }
+    return [...grouped.values()];
+  },[catalog]);
+
+  function searchSubmit(event:FormEvent) {
+    event.preventDefault();
+    setSelected(null);
+    void load(search);
+  }
+
+  async function book(event:FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (!selected) return;
+    setBooking(true); setMessage("");
+    const form = new FormData(event.currentTarget);
+    try {
+      const response = await fetch("/api/crays/clubs/forest-city",{
+        method:"POST",
+        headers:{"content-type":"application/json","idempotency-key":key},
+        body:JSON.stringify({
+          roomTypeId:selected.roomTypeId,...search,
+          guestName:String(form.get("guestName")??""),
+          guestEmail:String(form.get("guestEmail")??""),
+          guestPhone:String(form.get("guestPhone")??"")||undefined,
+        }),
+      });
+      const payload = await response.json();
+      if (!response.ok) throw new Error(
+        payload.reason==="inventory_conflict"
+          ?"Das letzte verfügbare Kontingent wurde gerade gebucht. Bitte neu suchen."
+          :payload.reason??"Die Buchung konnte nicht abgeschlossen werden."
+      );
+      const receipt = payload.receipt;
+      setMessage(
+        "CRAYS-Buchung "+receipt.bookingReference+" ist intern bestätigt. "+
+        (receipt.pmsDeliveryStatus==="awaiting-configuration"
+          ?"Die Übermittlung an PMS/Channel Manager wartet auf die Zugangskonfiguration."
+          :"Die Übermittlung an das PMS ist eingeplant.")
+      );
+      setKey(commandKey());
+      setSelected(null);
+      await load(search);
+    } catch(error) {
+      setMessage(error instanceof Error?error.message:"Unbekannter Buchungsausgang. Mit derselben Anfrage erneut versuchen.");
+    } finally { setBooking(false); }
+  }
+
+  return (
+    <>
+      <header className={styles.hero}>
+        <p className={styles.eyebrow}>CRAYS Clubs · Forest City</p>
+        <h1>Golf, Marina und Ihr Aufenthalt in Forest City</h1>
+        <p>Entdecken Sie zwei besondere Hotels mit festen CRAYS-Raten und Verfügbarkeit aus unseren eigenen Kontingenten.</p>
+        <div className={styles.prelaunch}>Vorab-Testkatalog · keine Live-Freigabe oder Zahlungsbelastung</div>
+      </header>
+
+      <section className={styles.searchSection} aria-labelledby="search-title">
+        <h2 id="search-title">Aufenthalt suchen</h2>
+        <form className={styles.searchForm} onSubmit={searchSubmit}>
+          <label>Anreise<input type="date" min={isoDay(1)} value={search.checkIn}
+            onChange={e=>setSearch({...search,checkIn:e.target.value})} required /></label>
+          <label>Abreise<input type="date" min={search.checkIn} value={search.checkOut}
+            onChange={e=>setSearch({...search,checkOut:e.target.value})} required /></label>
+          <label>Zimmer<input type="number" min="1" max="10" value={search.rooms}
+            onChange={e=>setSearch({...search,rooms:Number(e.target.value)})} required /></label>
+          <label>Erwachsene<input type="number" min="1" max="40" value={search.adults}
+            onChange={e=>setSearch({...search,adults:Number(e.target.value)})} required /></label>
+          <label>Kinder<input type="number" min="0" max="40" value={search.children}
+            onChange={e=>setSearch({...search,children:Number(e.target.value)})} required /></label>
+          <button type="submit" disabled={loading}>{loading?"Suche läuft …":"Verfügbarkeit prüfen"}</button>
+        </form>
+        <p className={styles.authority}>Preis und Verfügbarkeit: ausschließlich CRAYS Kontingent-System.</p>
+      </section>
+
+      <div role="status" aria-live="polite" className={message?styles.message:styles.srOnly}>{message}</div>
+      {loading && <p className={styles.state}>CRAYS-Kontingente werden geprüft …</p>}
+      {!loading && catalog?.status==="no_availability" && <p className={styles.state}>Für diese Auswahl ist aktuell kein CRAYS-Kontingent verfügbar.</p>}
+
+      {hotels.map((rooms)=>{
+        const hotel=rooms[0];
+        return <section className={styles.hotel} key={hotel.propertyId}>
+          <div className={styles.hotelIntro}>
+            <p className={styles.eyebrow}>{hotel.location}</p>
+            <h2>{hotel.propertyName}</h2>
+            <p>{hotel.propertyDescription}</p>
+            <p className={styles.facts}>Check-in {hotel.checkInTime.slice(0,5)} · Check-out {hotel.checkOutTime.slice(0,5)} · {hotel.address}</p>
+          </div>
+          <div className={styles.roomGrid}>
+            {rooms.map(room=><article className={styles.roomCard} key={room.roomTypeId}>
+              <img src={room.imagePath} alt={room.roomName+" im "+room.propertyName} />
+              <div className={styles.roomBody}>
+                <p className={styles.roomCode}>{room.roomCode}</p>
+                <h3>{room.roomName}</h3>
+                <p>{room.roomDescription}</p>
+                <ul>
+                  <li>{room.bedding}</li>
+                  <li>Bis {room.maxAdults} Erwachsene und {room.maxChildren} Kinder pro Zimmer</li>
+                  {room.sizeSqm&&<li>{room.sizeSqm} m²</li>}
+                  <li>Noch {room.availableRooms} Zimmer im CRAYS-Testkontingent</li>
+                </ul>
+                <div className={styles.price}>
+                  <span>ab {money(room.nightlyAmountMinor,room.currency)} / Nacht</span>
+                  <strong>{money(room.totalAmountMinor,room.currency)} gesamt</strong>
+                  <small>{catalog?.dates.nights} Nächte · {search.rooms} Zimmer · keine Zahlung im Test</small>
+                </div>
+                <button onClick={()=>{setSelected(room);setMessage("");}}>Zimmer auswählen</button>
+              </div>
+            </article>)}
+          </div>
+        </section>;
+      })}
+
+      {selected&&<section className={styles.booking} aria-labelledby="booking-title">
+        <div>
+          <p className={styles.eyebrow}>Buchungsabschluss</p>
+          <h2 id="booking-title">{selected.roomName} · {selected.propertyName}</h2>
+          <p>{search.checkIn} bis {search.checkOut} · {money(selected.totalAmountMinor,selected.currency)}</p>
+        </div>
+        <form onSubmit={book} className={styles.bookingForm}>
+          <label>Vollständiger Name<input name="guestName" autoComplete="name" minLength={2} required /></label>
+          <label>E-Mail<input name="guestEmail" type="email" autoComplete="email" required /></label>
+          <label>Telefon (optional)<input name="guestPhone" type="tel" autoComplete="tel" /></label>
+          <label className={styles.consent}><input type="checkbox" required /> Ich bestätige die Testbuchung und die Übermittlung an das später konfigurierte PMS.</label>
+          <div className={styles.actions}>
+            <button type="submit" disabled={booking}>{booking?"Buchung wird bestätigt …":"Ohne Zahlung verbindlich testen"}</button>
+            <button type="button" className={styles.secondary} onClick={()=>setSelected(null)}>Abbrechen</button>
+          </div>
+        </form>
+      </section>}
+
+      <footer className={styles.footer}>
+        <p>Hotel- und Zimmerdaten wurden aus freigegebenen offiziellen und lizenzierten Quellen gegengeprüft. OTA-Angebote bestimmen weder CRAYS-Preis noch CRAYS-Bestand.</p>
+      </footer>
+    </>
+  );
+}

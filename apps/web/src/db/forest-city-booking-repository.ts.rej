@@ -1,0 +1,9 @@
+--- crays-platform/src/db/forest-city-booking-repository.ts
++++ crays-platform/src/db/forest-city-booking-repository.ts
+@@ -175,5 +175,5 @@
+       `select hp.property_id,rt.room_type_id,p.store_id,a.assignment_id,a.version assignment_version,
+          rt.max_adults,rt.max_children,rate.currency,rate.nightly_amount_minor,
+          binding.binding_id provider_binding_id,
+-         (binding.qlo_shop_id is not null and binding.qlo_hotel_id is not null) qlo_ready
++         connector.connector_binding_id,connector.provider_kind connector_provider_kind
+        from crays_core.clubs_hotel_room_types rt

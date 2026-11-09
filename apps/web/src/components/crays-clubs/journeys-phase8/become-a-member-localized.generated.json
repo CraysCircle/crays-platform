@@ -1,0 +1,1286 @@
+{
+  "de": {
+    "localeName": "Englisch",
+    "metaTitle": "Werden Sie Mitglied | Crays Clubs",
+    "metaDescription": "Eine Mitgliedschaft zum Leben, Arbeiten und Ankommen in der realen Welt.",
+    "shell": {
+      "languageName": "Englisch",
+      "skip": "Zum Mitgliedschaftsinhalt springen",
+      "home": "CRAYS Clubs Zuhause",
+      "nav": "Primäre Navigation",
+      "menu": "Speisekarte",
+      "open": "Menü öffnen",
+      "close": "Menü schließen",
+      "account": "Konto",
+      "language": "Sprache",
+      "title": "Entdecken Sie CRAYS Clubs",
+      "lead": "Forest City ist unser Campus. Entdecken Sie Menschen, Orte und eingeladene Reisen.",
+      "explore": "Erkunden",
+      "belong": "Gehören",
+      "company": "CRAYS Clubs",
+      "association": "CRAYS Association",
+      "associationLead": "Die unabhängige Assoziation ist Teil des umfassenderen CRAYS-Kontexts.",
+      "newTab": "öffnet sich in einem neuen Tab",
+      "footerLead": "Treffen Sie Freunde, Kollegen und Partner in der neuen Welt des Crays Clubs.",
+      "footerCta": "Beanspruchen Sie Ihr globales Zuhause",
+      "release": "Öffentliche Erfahrung vor der Veröffentlichung. Keine Zusage bezüglich Buchung, Preis, Verfügbarkeit, Investition oder Eintritt.",
+      "links": {
+        "forest": "Forest City",
+        "community": "Gemeinschaftsleben",
+        "school": "Schule & Jobs",
+        "ambassadors": "Botschafter",
+        "families": "Familien",
+        "teams": "Mannschaften",
+        "events": "Veranstaltungen",
+        "companies": "Portfoliounternehmen",
+        "conference": "Konferenz",
+        "about": "Über uns",
+        "lifestyle": "Lebensstil",
+        "hospitality": "Gastfreundschaft",
+        "member": "Werden Sie Mitglied",
+        "contact": "Kontakt",
+        "brand": "Marke als Service",
+        "account": "Konto",
+        "legal": "Legal"
+      }
+    },
+    "pageLabel": "Werden Sie Mitglied",
+    "mediaBlocked": "Medien werden zurückgehalten, bis Quelle, Ersteller, Lizenz, Abrufdatensatz, Zuschnitt und Genehmigung vollständig sind.",
+    "hero": {
+      "title": "Eine Mitgliedschaft zum Leben, Arbeiten und Ankommen in der realen Welt.",
+      "body": "Die Crays-Mitgliedschaft verbindet flexible Aufenthalte, produktive Arbeitsumgebungen, lokale Gemeinschaft, verantwortungsvolle Gastfreundschaft, Geschäftszugang und Schöpferpartnerschaften in einer Crays-Ebene.",
+      "primary": "Zugang zur Mitgliedschaft anfragen",
+      "secondary": "Mitgliedschaftsmodelle ansehen",
+      "signals": [
+        "Flexibles Wohnen",
+        "Clubzugang",
+        "Geschäftsteams",
+        "Creator-Partner"
+      ]
+    },
+    "idea": {
+      "title": "Die Idee der Mitgliedschaft",
+      "lead": "Crays ist keine weitere Buchungsseite, sondern ein Mitgliedschaftssystem für Menschen, die mobil leben.",
+      "paragraphs": [
+        "Remote-Arbeit, Wohnen im Abonnement, geschäftliche Mobilität und eine von Kreativen geleitete Community weisen alle auf das gleiche Bedürfnis hin: Menschen wollen Orte, an denen sie sich leichter bewegen können, ohne dass sich das Leben vorübergehend anfühlt.",
+        "Eine Crays-Mitgliedschaft bietet Mitgliedern einen einzigen Weg zu Aufenthalten, Arbeitsbereichen, gehosteten Momenten, lokalem Zugriff und zukünftiger Buchungslogik anstelle eines Stapels getrennter Produkte."
+      ]
+    },
+    "access": {
+      "title": "Zugangswege",
+      "lead": "Vier Wege in denselben Crays Kreis.",
+      "items": [
+        {
+          "label": "01",
+          "title": "Flexibles Wohnen",
+          "body": "Übernachten Sie an kuratierten Crays-Orten, ohne Routine, Produktivität oder das Gefühl von Zuhause zu verlieren."
+        },
+        {
+          "label": "02",
+          "title": "Arbeitsbereite Clubs",
+          "body": "Nutzen Sie Arbeitsplätze, Ruhezonen, Meetings, Konnektivität, Kaffee und Service als tägliche Infrastruktur."
+        },
+        {
+          "label": "03",
+          "title": "Unternehmensteams",
+          "body": "Geben Sie Ihren Mitarbeitern die Freiheit, aus der Ferne zu arbeiten, Teamverbindung und vorhersehbaren Zugang zu produktiven Orten."
+        },
+        {
+          "label": "04",
+          "title": "Kreativpartner",
+          "body": "Bringen Sie Geschichten, Publikum und kulturelle Dynamik an echte Crays Orte und Veranstaltungen."
+        }
+      ]
+    },
+    "living": {
+      "title": "Ein System fürs Leben",
+      "lead": "Flexibles Wohnen wird wertvoll, wenn Arbeit, Zuhause und Gemeinschaft zusammengedacht werden.",
+      "body": "Der heutige Vermietungsmarkt spiegelt nicht die Bedürfnisse einer modernen Remote-Belegschaft wider. Crays verwandelt flexible Häuser, Hotels, Clubs und Arbeitsumgebungen in eine einzige Betriebsebene für Menschen, die zwischen Städten leben.",
+      "items": [
+        {
+          "label": "Fernarbeit",
+          "title": "Von überall arbeiten",
+          "body": "Mitglieder brauchen verlässliche Arbeitsplätze, ohne dass sie ihre Strukturen in jeder Stadt neu aufbauen müssen."
+        },
+        {
+          "label": "Wohnen als Dienstleistung",
+          "title": "Mobil leben und sich zu Hause fühlen",
+          "body": "Möblierte Unterkünfte, Komfort und Routinen sorgen dafür, dass sich Mobilität praktisch und nicht nur vorübergehend anfühlt."
+        },
+        {
+          "label": "Stadtschicht",
+          "title": "Mit Kontext ankommen",
+          "body": "Der Club bietet lokale Einführungen, gehosteten Zugang und einen Grund, vorbeizukommen."
+        },
+        {
+          "label": "Zukünftige Buchung",
+          "title": "Bereit für verfügbare Angebote",
+          "body": "Die visuelle Mitgliedschaftsebene kann später eine Verbindung zu Crays Buchungsräumen, Diensten und Add-ons herstellen."
+        }
+      ]
+    },
+    "companies": {
+      "title": "Für Unternehmen",
+      "lead": "Teammitgliedschaften geben Unternehmen einen verlässlichen Rahmen für flexibles Arbeiten.",
+      "body": "Unternehmen können Crays als gemeinsame Remote-Arbeits- und Wohnebene für Teams, Projekte und Geschäftsreisen nutzen. Das Ziel ist einfach: Reibungsverluste reduzieren, die Arbeitgeberattraktivität verbessern und die Verbindung zwischen Teams aufrechterhalten, wenn die Arbeit nicht mehr an ein Büro gebunden ist.",
+      "items": [
+        {
+          "title": "Wettbewerbsvorteil",
+          "body": "Geben Sie Teams Zugang zu Orten, die modernes Arbeiten und globale Mobilität unterstützen."
+        },
+        {
+          "title": "Talentsignal",
+          "body": "Freiheit, Verantwortung und unvergessliche Orte werden Teil des Arbeitgeberangebots."
+        },
+        {
+          "title": "Flexible Sitze",
+          "body": "Die Mitgliedschaften können je nach Mitarbeitern, Teams und Projektanforderungen erweitert oder verringert werden."
+        },
+        {
+          "title": "Monatslogik",
+          "body": "Der Unternehmenszugang kann als wiederkehrende Mitgliedschaft mit einer Kontoebene strukturiert werden."
+        }
+      ],
+      "close": "Entwickelt für Unternehmen, die Remote-Freiheit wünschen, ohne die Teamkultur zu verlieren."
+    },
+    "responsible": {
+      "title": "Verantwortungsbewusstes Leben",
+      "lead": "Nachhaltigkeit gehört in das Betriebsmodell, nicht in die Fußzeile.",
+      "body": "Die Ebene des nachhaltigen Lebens ist Teil der Mitgliedschaft: abfallarme Einrichtung, bewusster Betrieb, Bildung in der Gemeinschaft und ein Fahrplan für gesündere, verantwortungsvollere Orte.",
+      "points": [
+        "Möbel und Materialien, die im Hinblick auf Langlebigkeit, Wiederverwendung und Spendemöglichkeiten ausgewählt wurden.",
+        "Anwohnerberatung, die dazu beiträgt, den Energieverbrauch zu senken, ohne das tägliche Leben zu erschweren.",
+        "Lokale Gemeinschaften werden als Partner und nicht als Kulisse behandelt.",
+        "Langfristige Kohlenstoffdisziplin bei Heimen, Vereinen und Betriebspartnern."
+      ]
+    },
+    "creators": {
+      "title": "Partnerschaften mit Kreativen",
+      "lead": "Kreative machen die Welt von Crays im echten Leben sichtbar.",
+      "body": "Crays arbeitet mit YouTubern, Community-Buildern und sozialen Stimmen zusammen, die Orte in Geschichten übersetzen können. Die nützlichen Partner können mehr als nur online posten: Sie bringen Menschen zusammen, dokumentieren echte Momente und machen die Community verständlicher.",
+      "items": [
+        {
+          "title": "Starke Gemeinschaft",
+          "body": "Erzählen Sie Ihrem Publikum vom Crays-Lifestyle, den Mitgliedschaften und dem Zugang zur realen Welt."
+        },
+        {
+          "title": "Reichweite des Erstellers",
+          "body": "Influencer-Partnerschaften richten sich an YouTuber mit bedeutenden Zielgruppen und Absichten."
+        },
+        {
+          "title": "Reiserhythmus",
+          "body": "Reisen, dokumentieren und arbeiten Sie von Crays-Orten aus und machen Sie gleichzeitig das Netzwerk greifbar."
+        },
+        {
+          "title": "Unterstützte Plattformen",
+          "body": "Instagram, YouTube, TikTok, LinkedIn, X, Events und Community-Kanäle."
+        }
+      ],
+      "close": "Creator-Partnerschaften sollten die Aufmerksamkeit auf Menschen lenken, die auftauchen, und nicht auf leere Reichweite."
+    },
+    "layers": {
+      "title": "Mitgliedschaftsmodelle",
+      "lead": "Klein beginnen und den Zugang gezielt erweitern.",
+      "body": "Die erste sichtbare Mitgliederstruktur bleibt einfach. Preise, Verfügbarkeit, Zimmertypen und Dienstleistungen können später mit Crays Booking verknüpft werden, wenn die Buchungsebene bereit ist.",
+      "items": [
+        {
+          "title": "Fashion-Mitgliedschaft",
+          "price": "EUR 3,500",
+          "body": "Einstiegsebene für ausgewählte Ziele, Zugriff auf den Arbeitsbereich und Standard-Crays-Concierge-Unterstützung."
+        },
+        {
+          "title": "Sphere-Mitgliedschaft",
+          "price": "EUR 5,000",
+          "body": "Breiterer Zugang zu Unterkünften, Arbeitsumgebungen und Gemeinschaftsvorteilen in mehreren Crays Regionen."
+        },
+        {
+          "title": "Falcon-Mitgliedschaft",
+          "price": "EUR 7,500",
+          "body": "Erstklassiger Zugang zum Stadtleben mit VIP-Events, stärkerem Concierge-Service und automatisierter Check-in-Anweisung."
+        }
+      ],
+      "close": "Jede Ebene beginnt mit einem Mitgliedschaftsgespräch. Der nächste Schritt besteht darin, den Zugang der richtigen Nutzung zuzuordnen: Privatmitglied, Geschäftsteam, Erstellerpartner oder Gastfreundschaftsaufenthalt.",
+      "signals": [
+        "Zugang zur Stadt",
+        "Gemeinschaftsrhythmus",
+        "Club-Lebensstil"
+      ]
+    },
+    "closing": {
+      "lead": "Ein Mitgliedsgespräch. Dann verbinden wir die richtige Schicht.",
+      "body": "Beginnen Sie zuerst mit dem Kreis Crays. Die Buchungs-, Aufenthalts- und Add-on-Logik kann transaktional werden, nachdem die Crays Booking-Verbindung bereit ist.",
+      "action": "Zugang zur Mitgliedschaft anfragen",
+      "title": "Werden Sie Mitglied"
+    }
+  },
+  "es": {
+    "localeName": "Inglés",
+    "metaTitle": "Conviértase en miembro | Crays Clubs",
+    "metaDescription": "Una membresía para vivir, trabajar y estar presente en el mundo real.",
+    "shell": {
+      "languageName": "Inglés",
+      "skip": "Saltar al contenido de la membresía",
+      "home": "CRAYS Clubs casa",
+      "nav": "Navegación primaria",
+      "menu": "Menú",
+      "open": "abrir menú",
+      "close": "Cerrar menú",
+      "account": "Cuenta",
+      "language": "Idioma",
+      "title": "Explorar CRAYS Clubs",
+      "lead": "Forest City es nuestro campus. Descubra personas, lugares y viajes guiados por invitaciones.",
+      "explore": "Explorar",
+      "belong": "Pertenecer",
+      "company": "CRAYS Clubs",
+      "association": "CRAYS Association",
+      "associationLead": "La asociación independiente es parte del contexto más amplio CRAYS.",
+      "newTab": "se abre en una nueva pestaña",
+      "footerLead": "Conozca amigos, colegas y socios en el nuevo mundo de Crays Club.",
+      "footerCta": "Reclama tu hogar global",
+      "release": "Experiencia pública previa al lanzamiento. Sin promesa de reserva, precio, disponibilidad, inversión o admisión.",
+      "links": {
+        "forest": "Forest City",
+        "community": "Vida comunitaria",
+        "school": "Escuela y empleo",
+        "ambassadors": "Embajadores",
+        "families": "Familias",
+        "teams": "equipos",
+        "events": "Eventos",
+        "companies": "Empresas de cartera",
+        "conference": "Conferencia",
+        "about": "Sobre nosotros",
+        "lifestyle": "Estilo de vida",
+        "hospitality": "Hospitalidad",
+        "member": "Conviértete en miembro",
+        "contact": "Contacto",
+        "brand": "Marca como servicio",
+        "account": "Cuenta",
+        "legal": "Legal"
+      }
+    },
+    "pageLabel": "Conviértete en miembro",
+    "mediaBlocked": "Medios retenidos hasta que se completen la fuente, el creador, la licencia, el registro de recuperación, el recorte y la aprobación.",
+    "hero": {
+      "title": "Una membresía para vivir, trabajar y estar presente en el mundo real.",
+      "body": "La membresía Crays conecta estadías flexibles, entornos de trabajo productivos, comunidad local, hospitalidad responsable, acceso a empresas y asociaciones con creadores en una sola capa Crays.",
+      "primary": "Solicitar acceso a la membresía",
+      "secondary": "Ver niveles de membresía",
+      "signals": [
+        "Vida flexible",
+        "Acceso al club",
+        "Equipos de Negocios",
+        "Socios creadores"
+      ]
+    },
+    "idea": {
+      "title": "La idea de la membresía",
+      "lead": "Crays no es otra página de reservas, sino un sistema de membresía para personas que viven en movimiento.",
+      "paragraphs": [
+        "El trabajo remoto, la vida por suscripción, la movilidad empresarial y la comunidad liderada por creadores apuntan a la misma necesidad: la gente quiere lugares que faciliten el movimiento sin que la vida parezca temporal.",
+        "Una membresía Crays brinda a los miembros una ruta hacia estadías, espacios de trabajo, momentos alojados, acceso local y lógica de reservas futuras en lugar de una pila de productos desconectados."
+      ]
+    },
+    "access": {
+      "title": "Vías de acceso",
+      "lead": "Cuatro vías hacia el mismo círculo Crays.",
+      "items": [
+        {
+          "label": "01",
+          "title": "Vida flexible",
+          "body": "Quédese en lugares Crays seleccionados sin perder las rutinas, la productividad o la sensación de hogar."
+        },
+        {
+          "label": "02",
+          "title": "Clubes preparados para trabajar",
+          "body": "Utilizar espacios de trabajo, zonas tranquilas, reuniones, conectividad, café y servicio como infraestructura diaria."
+        },
+        {
+          "label": "03",
+          "title": "Equipos de empresa",
+          "body": "Ofrezca a los empleados libertad para trabajar a distancia, conexión en equipo y acceso predecible a lugares productivos."
+        },
+        {
+          "label": "04",
+          "title": "Socios creativos",
+          "body": "Lleve historias, audiencias e impulso cultural a lugares y eventos reales de Crays."
+        }
+      ]
+    },
+    "living": {
+      "title": "Un sistema para vivir",
+      "lead": "La vida flexible cobra sentido cuando resuelve a la vez el trabajo, el hogar y la comunidad.",
+      "body": "El mercado de alquiler actual no refleja las necesidades de una fuerza laboral remota moderna. Crays convierte hogares, hoteles, clubes y entornos de trabajo flexibles en una capa operativa para las personas que viven entre ciudades.",
+      "items": [
+        {
+          "label": "Trabajo remoto",
+          "title": "Trabajar desde cualquier lugar",
+          "body": "Los miembros necesitan lugares confiables para trabajar sin tener que reconstruir su configuración en cada ciudad."
+        },
+        {
+          "label": "Vivienda como servicio",
+          "title": "Vivir sin perder la sensación de hogar",
+          "body": "Las estancias amuebladas, la comodidad y las rutinas hacen que la movilidad parezca práctica en lugar de temporal."
+        },
+        {
+          "label": "Capa de ciudad",
+          "title": "Llegar con contexto",
+          "body": "El club ofrece presentaciones locales, acceso organizado y un motivo para presentarse."
+        },
+        {
+          "label": "Reserva futura",
+          "title": "Preparado para la disponibilidad",
+          "body": "La capa de membresía visual puede conectarse más adelante a Crays salas de reserva, servicios y complementos."
+        }
+      ]
+    },
+    "companies": {
+      "title": "Para Empresas",
+      "lead": "Las membresías corporativas aportan confianza al trabajo flexible.",
+      "body": "Las empresas pueden utilizar Crays como una capa compartida de vida y trabajo remoto para equipos, proyectos y viajes de negocios. El objetivo es simple: reducir la fricción, mejorar el atractivo para los empleadores y mantener a los equipos conectados cuando el trabajo ya no esté ligado a una sola oficina.",
+      "items": [
+        {
+          "title": "Ventaja competitiva",
+          "body": "Brinde a los equipos acceso a lugares que respalden el trabajo moderno y la movilidad global."
+        },
+        {
+          "title": "señal de talento",
+          "body": "Libertad, responsabilidad y lugares memorables pasan a formar parte de la oferta del empleador."
+        },
+        {
+          "title": "Asientos flexibles",
+          "body": "Las membresías pueden aumentar o disminuir según los empleados, los equipos y las necesidades del proyecto."
+        },
+        {
+          "title": "Lógica mensual",
+          "body": "El acceso corporativo se puede estructurar como membresías recurrentes con una capa de cuenta."
+        }
+      ],
+      "close": "Creado para empresas que desean libertad remota sin perder la cultura del equipo."
+    },
+    "responsible": {
+      "title": "Vida responsable",
+      "lead": "La sostenibilidad pertenece al modelo operativo, no al pie de página.",
+      "body": "La capa de vida sustentable es parte de la membresía: muebles con menor desperdicio, operaciones conscientes, educación comunitaria y una hoja de ruta hacia lugares más saludables y responsables.",
+      "points": [
+        "Muebles y materiales seleccionados por su durabilidad, reutilización y caminos de donación.",
+        "Orientación para residentes que ayuda a reducir el consumo energético sin complicar la vida diaria.",
+        "Las comunidades locales son tratadas como socios, no como telones de fondo.",
+        "Disciplina de carbono a largo plazo en hogares, clubes y socios operativos."
+      ]
+    },
+    "creators": {
+      "title": "Colaboraciones con creadores",
+      "lead": "Los creadores hacen visible el mundo Crays en la vida real.",
+      "body": "Crays trabaja con creadores, constructores de comunidades y voces sociales que pueden traducir lugares en historias. Este útil socio hace más que publicar en línea: reúne a las personas, documenta momentos reales y hace que la comunidad sea más fácil de entender.",
+      "items": [
+        {
+          "title": "Comunidad fuerte",
+          "body": "Cuéntale a tu audiencia sobre el estilo de vida, las membresías y el acceso al mundo real de Crays."
+        },
+        {
+          "title": "Alcance del creador",
+          "body": "Las asociaciones con influencers están diseñadas para creadores con audiencias e intenciones significativas."
+        },
+        {
+          "title": "Ritmo de viaje",
+          "body": "Viaja, documenta y trabaja desde Crays lugares mientras haces tangible la red."
+        },
+        {
+          "title": "Plataformas compatibles",
+          "body": "Instagram, YouTube, TikTok, LinkedIn, X, eventos y canales comunitarios."
+        }
+      ],
+      "close": "Las asociaciones de creadores deben centrar la atención en la presencia de personas, no en un alcance vacío."
+    },
+    "layers": {
+      "title": "Niveles de membresía",
+      "lead": "Empieza con lo esencial y amplía el acceso.",
+      "body": "La primera estructura de membresía visible sigue siendo simple. Los precios, la disponibilidad, los tipos de habitaciones y los servicios se pueden conectar más tarde a Crays Booking cuando la capa de reservas esté lista.",
+      "items": [
+        {
+          "title": "Membresía de moda",
+          "price": "EUR 3,500",
+          "body": "Capa de entrada para destinos seleccionados, acceso al espacio de trabajo y soporte de conserjería estándar Crays."
+        },
+        {
+          "title": "Membresía Esfera",
+          "price": "EUR 5,000",
+          "body": "Acceso más amplio a alojamiento, entornos laborales y beneficios comunitarios en múltiples regiones de Crays."
+        },
+        {
+          "title": "Membresía Halcón",
+          "price": "EUR 7,500",
+          "body": "Acceso premium a la vida de la ciudad con eventos VIP, un mejor servicio de conserjería y dirección de check-in automatizada."
+        }
+      ],
+      "close": "Cada capa comienza con una conversación de membresía. El siguiente paso es relacionar el acceso con el uso correcto: miembro privado, equipo de negocios, socio creador o estadía en un hotel.",
+      "signals": [
+        "Acceso a la ciudad",
+        "Ritmo comunitario",
+        "Estilo de vida de club"
+      ]
+    },
+    "closing": {
+      "lead": "Una conversación de membresía. Luego conectamos la capa correcta.",
+      "body": "Comience primero con el círculo Crays. La lógica de reserva, estadía y complementos puede volverse transaccional una vez que la conexión de reserva Crays esté lista.",
+      "action": "Solicitar acceso a la membresía",
+      "title": "Conviértete en miembro"
+    }
+  },
+  "ca": {
+    "localeName": "Anglès",
+    "metaTitle": "Fes-te soci | Crays Clubs",
+    "metaDescription": "Una subscripció per viure, treballar i ser present en el món real.",
+    "shell": {
+      "languageName": "Anglès",
+      "skip": "Ves al contingut de la pertinença",
+      "home": "CRAYS Clubs casa",
+      "nav": "Navegació primària",
+      "menu": "Menú",
+      "open": "Obre el menú",
+      "close": "Tanca el menú",
+      "account": "Compte",
+      "language": "Llengua",
+      "title": "Explora CRAYS Clubs",
+      "lead": "Forest City és el nostre campus. Descobriu persones, llocs i viatges amb invitació.",
+      "explore": "Explora",
+      "belong": "Pertànyer",
+      "company": "CRAYS Clubs",
+      "association": "CRAYS Association",
+      "associationLead": "L'associació independent forma part del context més ampli CRAYS.",
+      "newTab": "s'obre en una pestanya nova",
+      "footerLead": "Coneix amics, companys i socis al nou món de Crays Club.",
+      "footerCta": "Reclameu la vostra llar global",
+      "release": "Experiència pública prèvia al llançament. Cap promesa de reserva, preu, disponibilitat, inversió o entrada.",
+      "links": {
+        "forest": "Forest City",
+        "community": "Vida comunitària",
+        "school": "Escola i feina",
+        "ambassadors": "Ambaixadors",
+        "families": "Famílies",
+        "teams": "Equips",
+        "events": "Esdeveniments",
+        "companies": "Empreses de cartera",
+        "conference": "Conferència",
+        "about": "Sobre Nosaltres",
+        "lifestyle": "Estil de vida",
+        "hospitality": "Hospitalitat",
+        "member": "Fes-te soci",
+        "contact": "Contacte",
+        "brand": "Marca com a servei",
+        "account": "Compte",
+        "legal": "Legal"
+      }
+    },
+    "pageLabel": "Fes-te soci",
+    "mediaBlocked": "Mitjans retinguts fins que la font, el creador, la llicència, el registre de recuperació, el retall i l'aprovació estiguin complets.",
+    "hero": {
+      "title": "Una subscripció per viure, treballar i ser present en el món real.",
+      "body": "La subscripció a Crays connecta estades flexibles, entorns de treball productius, comunitat local, hospitalitat responsable, accés empresarial i associacions de creadors en una sola capa de Crays.",
+      "primary": "Sol·licita accés a la subscripció",
+      "secondary": "Consulta els nivells de subscripció",
+      "signals": [
+        "Vida flexible",
+        "Accés al Club",
+        "Equips empresarials",
+        "Socis creadors"
+      ]
+    },
+    "idea": {
+      "title": "La idea de la subscripció",
+      "lead": "Crays no és una altra pàgina de reserves, sinó un sistema de subscripció per a persones que viuen en moviment.",
+      "paragraphs": [
+        "El treball remot, la vida per subscripció, la mobilitat empresarial i la comunitat dirigida per creadors apunten a la mateixa necessitat: la gent vol llocs que facilitin els moviments sense que la vida se senti temporal.",
+        "Una subscripció a Crays ofereix als membres una ruta cap a estades, espais de treball, moments allotjats, accés local i lògica de reserves futures en lloc d'una pila de productes desconnectats."
+      ]
+    },
+    "access": {
+      "title": "Vies d’accés",
+      "lead": "Quatre vies cap al mateix cercle Crays.",
+      "items": [
+        {
+          "label": "01",
+          "title": "Vida flexible",
+          "body": "Queda't per llocs seleccionats de Crays sense perdre rutines, productivitat o sensació de casa."
+        },
+        {
+          "label": "02",
+          "title": "Clubs preparats per treballar",
+          "body": "Utilitzeu espais de treball, zones tranquil·les, reunions, connectivitat, cafè i servei com a infraestructura diària."
+        },
+        {
+          "label": "03",
+          "title": "Equips d’empresa",
+          "body": "Oferiu als empleats llibertat de treball remot, connexió en equip i accés previsible a llocs productius."
+        },
+        {
+          "label": "04",
+          "title": "Socis creatius",
+          "body": "Aporta històries, públics i impuls cultural a Crays ubicacions i esdeveniments reals."
+        }
+      ]
+    },
+    "living": {
+      "title": "Un sistema per viure",
+      "lead": "La vida flexible pren sentit quan resol alhora la feina, la llar i la comunitat.",
+      "body": "El mercat de lloguer actual no reflecteix les necessitats d'una mà d'obra remota moderna. Crays converteix cases flexibles, hotels, clubs i llocs de treball en una capa operativa per a les persones que viuen entre ciutats.",
+      "items": [
+        {
+          "label": "Treball a distància",
+          "title": "Treballa des de qualsevol lloc",
+          "body": "Els membres necessiten llocs fiables per treballar sense reconstruir la seva configuració a cada ciutat."
+        },
+        {
+          "label": "L'habitatge com a servei",
+          "title": "Viu sense perdre la sensació de llar",
+          "body": "Les estades moblades, la comoditat i les rutines fan que la mobilitat se senti pràctica en lloc de temporal."
+        },
+        {
+          "label": "Capa de ciutat",
+          "title": "Arriba amb context",
+          "body": "El club ofereix presentacions locals, accés allotjat i un motiu per presentar-se."
+        },
+        {
+          "label": "Reserva futura",
+          "title": "Preparat per a la disponibilitat",
+          "body": "La capa de pertinença visual es pot connectar més tard a Crays Reserva d'habitacions, serveis i complements."
+        }
+      ]
+    },
+    "companies": {
+      "title": "Per a Empreses",
+      "lead": "Les subscripcions corporatives aporten confiança al treball flexible.",
+      "body": "Les empreses poden utilitzar Crays com a capa de treball remot i de vida compartida per a equips, projectes i viatges de negocis. L'objectiu és senzill: reduir la fricció, millorar l'atractiu de l'empresari i mantenir els equips connectats quan la feina ja no està lligada a una oficina.",
+      "items": [
+        {
+          "title": "Avantatge competitiu",
+          "body": "Doneu als equips accés a llocs que donen suport al treball modern i a la mobilitat global."
+        },
+        {
+          "title": "Senyal de talent",
+          "body": "La llibertat, la responsabilitat i els llocs memorables passen a formar part de l'oferta de l'empresari."
+        },
+        {
+          "title": "Seients flexibles",
+          "body": "Les pertinences poden augmentar o reduir amb els empleats, els equips i les necessitats del projecte."
+        },
+        {
+          "title": "Lògica mensual",
+          "body": "L'accés corporatiu es pot estructurar com a membres recurrents amb una capa de compte."
+        }
+      ],
+      "close": "Creat per a empreses que volen llibertat remota sense perdre la cultura d'equip."
+    },
+    "responsible": {
+      "title": "Vida responsable",
+      "lead": "La sostenibilitat pertany al model operatiu, no al peu de pàgina.",
+      "body": "La capa de vida sostenible forma part dels membres: mobles amb menys residus, operacions conscients, educació comunitària i un full de ruta cap a llocs més saludables i responsables.",
+      "points": [
+        "Mobles i materials seleccionats per a vies de durabilitat, reutilització i donació.",
+        "Orientació als residents que ajuda a reduir el consum d'energia sense complicar la vida diària.",
+        "Les comunitats locals són tractades com a socis, no com a telons de fons.",
+        "Disciplina de carboni a llarg termini a llars, clubs i socis operatius."
+      ]
+    },
+    "creators": {
+      "title": "Col·laboracions amb creadors",
+      "lead": "Els creadors fan visible el món Crays en la vida real.",
+      "body": "Crays treballa amb creadors, creadors de comunitats i veus socials que poden traduir llocs en històries. El soci útil fa més que publicar en línia: reuneix persones, documenten moments reals i fan que la comunitat sigui més fàcil d'entendre.",
+      "items": [
+        {
+          "title": "Comunitat forta",
+          "body": "Parla al teu públic sobre Crays estil de vida, membres i accés al món real."
+        },
+        {
+          "title": "L'abast del creador",
+          "body": "Les associacions d'influencers estan creades per a creadors amb audiències i intencions significatives."
+        },
+        {
+          "title": "Ritme de viatge",
+          "body": "Viatja, documenta i treballa des de Crays llocs tot fent tangible la xarxa."
+        },
+        {
+          "title": "Plataformes compatibles",
+          "body": "Instagram, YouTube, TikTok, LinkedIn, X, esdeveniments i canals comunitaris."
+        }
+      ],
+      "close": "Les associacions de creadors haurien de centrar l'atenció en persones que es presenten, no en un abast buit."
+    },
+    "layers": {
+      "title": "Nivells de subscripció",
+      "lead": "Comença amb l’essencial i amplia l’accés.",
+      "body": "La primera estructura de membres visible es manté senzilla. Els preus, la disponibilitat, els tipus d'habitació i els serveis es poden connectar més tard a Crays Booking quan la capa de reserva estigui a punt.",
+      "items": [
+        {
+          "title": "Membre de moda",
+          "price": "EUR 3,500",
+          "body": "Capa d'entrada per a destinacions seleccionades, accés a l'espai de treball i suport estàndard de consergeria Crays."
+        },
+        {
+          "title": "Membres de l'Esfera",
+          "price": "EUR 5,000",
+          "body": "Accés més ampli a l'allotjament, la configuració del treball i els avantatges de la comunitat en diverses Crays regions."
+        },
+        {
+          "title": "Membre Falcon",
+          "price": "EUR 7,500",
+          "body": "Accés premium a la vida de la ciutat amb esdeveniments VIP, servei de consergeria més potent i direcció d'entrada automatitzada."
+        }
+      ],
+      "close": "Cada capa comença amb una conversa de pertinença. El següent pas és fer coincidir l'accés amb l'ús adequat: membre privat, equip empresarial, soci creador o estada d'hostaleria.",
+      "signals": [
+        "Accés a la ciutat",
+        "Ritme comunitari",
+        "Estil de vida del club"
+      ]
+    },
+    "closing": {
+      "lead": "Una conversa d'afiliació. Després connectem la capa correcta.",
+      "body": "Comenceu amb el cercle Crays primer. La lògica de reserva, estada i complements es pot convertir en transaccional quan la connexió de reserva Crays estigui preparada.",
+      "action": "Sol·licita accés a la subscripció",
+      "title": "Fes-te soci"
+    }
+  },
+  "fr": {
+    "localeName": "Anglais",
+    "metaTitle": "Devenez membre | Crays Clubs",
+    "metaDescription": "Une adhésion pour vivre, travailler et être présent dans le monde réel.",
+    "shell": {
+      "languageName": "Anglais",
+      "skip": "Passer au contenu de l'adhésion",
+      "home": "CRAYS Clubs maison",
+      "nav": "Navigation principale",
+      "menu": "Menu",
+      "open": "Ouvrir le menu",
+      "close": "Fermer le menu",
+      "account": "Compte",
+      "language": "Langue",
+      "title": "Explorez CRAYS Clubs",
+      "lead": "Forest City est notre campus. Découvrez des personnes, des lieux et des voyages sur invitation.",
+      "explore": "Explorer",
+      "belong": "Appartenir",
+      "company": "CRAYS Clubs",
+      "association": "CRAYS Association",
+      "associationLead": "L'association indépendante fait partie du contexte plus large CRAYS.",
+      "newTab": "s'ouvre dans un nouvel onglet",
+      "footerLead": "Rencontrez des amis, des collègues et des partenaires dans le nouveau monde du Crays Club.",
+      "footerCta": "Réclamez votre maison mondiale",
+      "release": "Expérience publique préliminaire. Aucune promesse de réservation, de prix, de disponibilité, d'investissement ou d'admission.",
+      "links": {
+        "forest": "Forest City",
+        "community": "Vie communautaire",
+        "school": "École et emplois",
+        "ambassadors": "Ambassadeurs",
+        "families": "Familles",
+        "teams": "Équipes",
+        "events": "Événements",
+        "companies": "Sociétés de portefeuille",
+        "conference": "Conférence",
+        "about": "À propos de nous",
+        "lifestyle": "Mode de vie",
+        "hospitality": "Hospitalité",
+        "member": "Devenez membre",
+        "contact": "Contact",
+        "brand": "Marque en tant que service",
+        "account": "Compte",
+        "legal": "Légal"
+      }
+    },
+    "pageLabel": "Devenez membre",
+    "mediaBlocked": "Médias retenus jusqu'à ce que la source, le créateur, la licence, l'enregistrement de récupération, le recadrage et l'approbation soient terminés.",
+    "hero": {
+      "title": "Une adhésion pour vivre, travailler et être présent dans le monde réel.",
+      "body": "L'adhésion Crays relie les séjours flexibles, les environnements de travail productifs, la communauté locale, l'hospitalité responsable, l'accès aux entreprises et les partenariats avec les créateurs en une seule couche Crays.",
+      "primary": "Demander l’accès à l’adhésion",
+      "secondary": "Voir les niveaux d’adhésion",
+      "signals": [
+        "Vie flexible",
+        "Accès aux clubs",
+        "Équipes commerciales",
+        "Partenaires créateurs"
+      ]
+    },
+    "idea": {
+      "title": "L’idée de l’adhésion",
+      "lead": "Crays n’est pas une autre page de réservation, mais un système d’adhésion pour celles et ceux qui vivent en mouvement.",
+      "paragraphs": [
+        "Le travail à distance, la vie par abonnement, la mobilité professionnelle et la communauté dirigée par des créateurs soulignent tous le même besoin : les gens veulent des lieux qui facilitent les déplacements sans rendre la vie temporaire.",
+        "Une adhésion Crays offre aux membres un itinéraire unique vers les séjours, les espaces de travail, les moments hébergés, l'accès local et la logique de réservation future au lieu d'une pile de produits déconnectés."
+      ]
+    },
+    "access": {
+      "title": "Voies d’accès",
+      "lead": "Quatre voies vers un même cercle Crays.",
+      "items": [
+        {
+          "label": "01",
+          "title": "Vie flexible",
+          "body": "Restez dans des lieux Crays sélectionnés sans perdre les routines, la productivité ou le sentiment d'être chez vous."
+        },
+        {
+          "label": "02",
+          "title": "Clubs prêts pour le travail",
+          "body": "Utilisez les espaces de travail, les zones calmes, les réunions, la connectivité, le café et le service comme infrastructure quotidienne."
+        },
+        {
+          "label": "03",
+          "title": "Équipes d’entreprise",
+          "body": "Offrez aux employés la liberté de travailler à distance, une connexion d'équipe et un accès prévisible à des lieux productifs."
+        },
+        {
+          "label": "04",
+          "title": "Partenaires créatifs",
+          "body": "Apportez des histoires, des publics et un élan culturel dans de véritables lieux et événements Crays."
+        }
+      ]
+    },
+    "living": {
+      "title": "Un système pour vivre",
+      "lead": "La vie flexible prend tout son sens lorsqu’elle réunit travail, foyer et communauté.",
+      "body": "Le marché locatif actuel ne reflète pas les besoins d'une main-d'œuvre moderne à distance. Crays transforme les maisons, hôtels, clubs et environnements de travail flexibles en une seule couche opérationnelle pour les personnes vivant entre les villes.",
+      "items": [
+        {
+          "label": "Travail à distance",
+          "title": "Travailler où que vous soyez",
+          "body": "Les membres ont besoin de lieux de travail fiables sans reconstruire leur installation dans chaque ville."
+        },
+        {
+          "label": "Le logement en tant que service",
+          "title": "Vivre sans perdre le sentiment d’être chez soi",
+          "body": "Les séjours meublés, le confort et les routines rendent la mobilité pratique plutôt que temporaire."
+        },
+        {
+          "label": "Couche de ville",
+          "title": "Arriver avec du contexte",
+          "body": "Le club propose des présentations locales, un accès hébergé et une raison de se présenter."
+        },
+        {
+          "label": "Réservation future",
+          "title": "Prêt pour les disponibilités",
+          "body": "La couche d'adhésion visuelle peut ensuite se connecter aux salles, services et modules complémentaires de Crays Booking."
+        }
+      ]
+    },
+    "companies": {
+      "title": "Pour les entreprises",
+      "lead": "Les adhésions d’équipe donnent aux entreprises un cadre fiable pour le travail flexible.",
+      "body": "Les entreprises peuvent utiliser Crays comme couche partagée de travail à distance et de vie pour les équipes, les projets et les voyages d'affaires. L’objectif est simple : réduire les frictions, améliorer l’attractivité des employeurs et maintenir les équipes connectées lorsque le travail n’est plus lié à un seul bureau.",
+      "items": [
+        {
+          "title": "Avantage concurrentiel",
+          "body": "Donnez aux équipes l’accès à des lieux qui soutiennent le travail moderne et la mobilité mondiale."
+        },
+        {
+          "title": "Signal de talent",
+          "body": "Liberté, responsabilité et lieux mémorables font partie de l'offre de l'employeur."
+        },
+        {
+          "title": "Sièges flexibles",
+          "body": "Les adhésions peuvent augmenter ou diminuer en fonction des employés, des équipes et des besoins du projet."
+        },
+        {
+          "title": "Logique mensuelle",
+          "body": "L'accès d'entreprise peut être structuré sous forme d'adhésions récurrentes avec une seule couche de compte."
+        }
+      ],
+      "close": "Conçu pour les entreprises qui recherchent la liberté à distance sans perdre la culture d'équipe."
+    },
+    "responsible": {
+      "title": "Vie responsable",
+      "lead": "La durabilité appartient au modèle opérationnel, pas au pied de page.",
+      "body": "Le niveau de vie durable fait partie de l'adhésion : un mobilier réduisant les déchets, des opérations conscientes, une éducation communautaire et une feuille de route vers des endroits plus sains et plus responsables.",
+      "points": [
+        "Mobilier et matériaux sélectionnés pour leur durabilité, leur réutilisation et leurs parcours de don.",
+        "Des conseils aux résidents qui contribuent à réduire la consommation d’énergie sans compliquer la vie quotidienne.",
+        "Les communautés locales sont traitées comme des partenaires et non comme des toiles de fond.",
+        "Discipline carbone à long terme dans les foyers, les clubs et les partenaires opérationnels."
+      ]
+    },
+    "creators": {
+      "title": "Partenariats avec les créateurs",
+      "lead": "Les créateurs rendent l’univers Crays visible dans la vie réelle.",
+      "body": "Crays travaille avec des créateurs, des bâtisseurs de communauté et des voix sociales qui peuvent traduire des lieux en histoires. Le partenaire utile fait plus que publier en ligne : il rassemble les gens, documente les moments réels et rend la communauté plus facile à comprendre.",
+      "items": [
+        {
+          "title": "Une communauté forte",
+          "body": "Parlez à votre public du style de vie Crays, des adhésions et de l'accès au monde réel."
+        },
+        {
+          "title": "Portée des créateurs",
+          "body": "Les partenariats d'influenceurs sont conçus pour les créateurs ayant un public et une intention significatifs."
+        },
+        {
+          "title": "Rythme de voyage",
+          "body": "Voyagez, documentez et travaillez depuis des lieux Crays tout en rendant le réseau tangible."
+        },
+        {
+          "title": "Plateformes prises en charge",
+          "body": "Instagram, YouTube, TikTok, LinkedIn, X, événements et chaînes communautaires."
+        }
+      ],
+      "close": "Les partenariats avec les créateurs doivent attirer l'attention sur les personnes qui se présentent, et non sur une portée vide."
+    },
+    "layers": {
+      "title": "Niveaux d’adhésion",
+      "lead": "Commencer par l’essentiel, puis élargir l’accès.",
+      "body": "La première structure d’adhésion visible reste simple. Les prix, la disponibilité, les types de chambres et les services peuvent ensuite être connectés à Crays Booking lorsque la couche de réservation est prête.",
+      "items": [
+        {
+          "title": "Adhésion mode",
+          "price": "EUR 3,500",
+          "body": "Couche d'entrée pour les destinations sélectionnées, accès à l'espace de travail et support de conciergerie standard Crays."
+        },
+        {
+          "title": "Adhésion à la Sphère",
+          "price": "EUR 5,000",
+          "body": "Accès plus large aux logements, aux environnements de travail et aux avantages communautaires dans plusieurs régions Crays."
+        },
+        {
+          "title": "Adhésion Faucon",
+          "price": "EUR 7,500",
+          "body": "Accès haut de gamme à la vie urbaine avec événements VIP, service de conciergerie renforcé et direction d'enregistrement automatisée."
+        }
+      ],
+      "close": "Chaque couche commence par une conversation d'adhésion. L’étape suivante consiste à adapter l’accès au bon usage : membre privé, équipe commerciale, partenaire créateur ou séjour d’hospitalité.",
+      "signals": [
+        "Accès à la ville",
+        "Rythme communautaire",
+        "Style de vie en club"
+      ]
+    },
+    "closing": {
+      "lead": "Une conversation d’adhésion. Ensuite, nous connectons le bon calque.",
+      "body": "Commencez par le cercle Crays. La logique de réservation, de séjour et d'ajout peut devenir transactionnelle une fois que la connexion Crays Booking est prête.",
+      "action": "Demander l’accès à l’adhésion",
+      "title": "Devenez membre"
+    }
+  },
+  "pt": {
+    "localeName": "Inglês",
+    "metaTitle": "Torne-se membro | Crays Clubs",
+    "metaDescription": "Uma adesão para viver, trabalhar e estar presente no mundo real.",
+    "shell": {
+      "languageName": "Inglês",
+      "skip": "Saltar para o conteúdo de assinatura",
+      "home": "CRAYS Clubs página inicial",
+      "nav": "Navegação primária",
+      "menu": "Menu",
+      "open": "Abrir menu",
+      "close": "Fechar menu",
+      "account": "Conta",
+      "language": "Idioma",
+      "title": "Explorar CRAYS Clubs",
+      "lead": "Forest City é o nosso campus. Descubra pessoas, lugares e viagens guiadas por convite.",
+      "explore": "Explorar",
+      "belong": "Pertencer",
+      "company": "CRAYS Clubs",
+      "association": "CRAYS Association",
+      "associationLead": "A associação independente faz parte do contexto CRAYS mais amplo.",
+      "newTab": "abre numa nova aba",
+      "footerLead": "Conheça amigos, colegas e parceiros no novo mundo do Crays Club.",
+      "footerCta": "Reivindique a sua casa global",
+      "release": "Experiência pública de pré-lançamento. Sem promessa de reserva, preço, disponibilidade, investimento ou admissão.",
+      "links": {
+        "forest": "Forest City",
+        "community": "Vida Comunitária",
+        "school": "Escola e empregos",
+        "ambassadors": "Embaixadores",
+        "families": "Famílias",
+        "teams": "Equipes",
+        "events": "Eventos",
+        "companies": "Empresas de portfólio",
+        "conference": "Conferência",
+        "about": "Sobre nós",
+        "lifestyle": "Estilo de vida",
+        "hospitality": "Hotelaria",
+        "member": "Torne-se membro",
+        "contact": "Contacto",
+        "brand": "Marca como serviço",
+        "account": "Conta",
+        "legal": "Legal"
+      }
+    },
+    "pageLabel": "Torne-se membro",
+    "mediaBlocked": "Suporte retido até que a fonte, o criador, a licença, o registo de recuperação, o corte e a aprovação estejam concluídos.",
+    "hero": {
+      "title": "Uma adesão para viver, trabalhar e estar presente no mundo real.",
+      "body": "A associação Crays liga estadias flexíveis, ambientes de trabalho produtivos, comunidade local, hospitalidade responsável, acesso comercial e parcerias com criadores numa camada Crays.",
+      "primary": "Pedir acesso à adesão",
+      "secondary": "Ver níveis de adesão",
+      "signals": [
+        "Vida flexível",
+        "Acesso ao clube",
+        "Equipas de negócios",
+        "Parceiros criadores"
+      ]
+    },
+    "idea": {
+      "title": "A ideia da adesão",
+      "lead": "A Crays não é mais uma página de reservas, mas um sistema de adesão para quem vive em movimento.",
+      "paragraphs": [
+        "O trabalho remoto, a vida por subscrição, a mobilidade empresarial e a comunidade liderada por criadores apontam para a mesma necessidade: as pessoas querem locais que facilitem a deslocação sem fazer com que a vida pareça temporária.",
+        "Uma associação Crays oferece aos membros um caminho para estadias, espaços de trabalho, momentos alojados, acesso local e lógica de reservas futuras, em vez de uma pilha de produtos desconectados."
+      ]
+    },
+    "access": {
+      "title": "Vias de acesso",
+      "lead": "Quatro vias para o mesmo círculo Crays.",
+      "items": [
+        {
+          "label": "01",
+          "title": "Vida flexível",
+          "body": "Fique em locais Crays selecionados sem perder rotinas, produtividade ou a sensação de estar em casa."
+        },
+        {
+          "label": "02",
+          "title": "Clubes preparados para trabalhar",
+          "body": "Utilize espaços de trabalho, zonas tranquilas, reuniões, conectividade, café e serviço como infraestrutura diária."
+        },
+        {
+          "label": "03",
+          "title": "Equipas empresariais",
+          "body": "Dê aos colaboradores liberdade de trabalho remoto, ligação à equipa e acesso previsível a locais produtivos."
+        },
+        {
+          "label": "04",
+          "title": "Parceiros criativos",
+          "body": "Traga histórias, públicos e impulso cultural para locais e eventos Crays reais."
+        }
+      ]
+    },
+    "living": {
+      "title": "Um sistema para viver",
+      "lead": "A vida flexível ganha sentido quando reúne trabalho, casa e comunidade.",
+      "body": "O mercado de arrendamento atual não reflete as necessidades de uma força de trabalho remota moderna. Crays transforma residências, hotéis, clubes e ambientes de trabalho flexíveis numa camada operacional para as pessoas que vivem entre cidades.",
+      "items": [
+        {
+          "label": "Trabalho Remoto",
+          "title": "Trabalhar a partir de qualquer lugar",
+          "body": "Os membros precisam de locais fiáveis ​​para trabalhar sem terem de reconstruir as suas instalações em todas as cidades."
+        },
+        {
+          "label": "Habitação como serviço",
+          "title": "Viver sem perder a sensação de casa",
+          "body": "Estadias mobiladas, conforto e rotinas fazem com que a mobilidade pareça prática em vez de temporária."
+        },
+        {
+          "label": "Camada da cidade",
+          "title": "Chegar com contexto",
+          "body": "O clube oferece apresentações locais, acesso alojado e um motivo para comparecer."
+        },
+        {
+          "label": "Reserva Futura",
+          "title": "Preparado para a disponibilidade",
+          "body": "A camada de associação visual pode posteriormente ligar-se a Crays Reservas de salas, serviços e add-ons."
+        }
+      ]
+    },
+    "companies": {
+      "title": "Para as empresas",
+      "lead": "As adesões empresariais dão às equipas um enquadramento fiável para o trabalho flexível.",
+      "body": "As empresas podem utilizar Crays como uma camada partilhada de trabalho remoto e de convivência para equipas, projetos e viagens de negócios. O objetivo é simples: reduzir a fricção, melhorar a atratividade dos empregadores e manter as equipas ligadas quando o trabalho já não está ligado a um escritório.",
+      "items": [
+        {
+          "title": "Vantagem competitiva",
+          "body": "Dê às equipas acesso a locais que apoiem o trabalho moderno e a mobilidade global."
+        },
+        {
+          "title": "Sinal de talento",
+          "body": "Liberdade, responsabilidade e locais memoráveis ​​passam a fazer parte da oferta do empregador."
+        },
+        {
+          "title": "Assentos flexíveis",
+          "body": "As associações podem aumentar ou diminuir de acordo com as necessidades dos colaboradores, das equipas e do projeto."
+        },
+        {
+          "title": "Lógica mensal",
+          "body": "O acesso empresarial pode ser estruturado como subscrições recorrentes com uma camada de conta."
+        }
+      ],
+      "close": "Criado para empresas que desejam liberdade remota sem perder a cultura da equipa."
+    },
+    "responsible": {
+      "title": "Vida Responsável",
+      "lead": "A sustentabilidade pertence ao modelo operacional, não ao rodapé.",
+      "body": "A camada de vida sustentável faz parte da adesão: mobiliário com menos resíduos, operações conscientes, educação comunitária e um roteiro para locais mais saudáveis ​​e responsáveis.",
+      "points": [
+        "Mobiliário e materiais selecionados para durabilidade, reutilização e caminhos de doação.",
+        "Orientação ao residente que ajuda a reduzir o consumo de energia sem complicar o dia-a-dia.",
+        "Comunidades locais tratadas como parceiras e não como pano de fundo.",
+        "Disciplina de carbono a longo prazo em residências, clubes e parceiros operacionais."
+      ]
+    },
+    "creators": {
+      "title": "Parcerias com criadores",
+      "lead": "Os criadores tornam o mundo Crays visível na vida real.",
+      "body": "Crays trabalha com criadores, construtores de comunidades e vozes sociais que podem traduzir lugares em histórias. O parceiro útil faz mais do que publicar online: reúne pessoas, documenta momentos reais e torna a comunidade mais fácil de compreender.",
+      "items": [
+        {
+          "title": "Comunidade forte",
+          "body": "Conte ao seu público sobre o estilo de vida Crays, as associações e o acesso no mundo real."
+        },
+        {
+          "title": "Alcance do criador",
+          "body": "As parcerias com influenciadores são construídas para criadores com públicos e intenções significativas."
+        },
+        {
+          "title": "Ritmo de viagem",
+          "body": "Viaje, documente e trabalhe em locais Crays enquanto torna a rede tangível."
+        },
+        {
+          "title": "Plataformas suportadas",
+          "body": "Instagram, YouTube, TikTok, LinkedIn, X, eventos e canais comunitários."
+        }
+      ],
+      "close": "As parcerias com os criadores devem dirigir a atenção para as pessoas que aparecem, e não para o alcance vazio."
+    },
+    "layers": {
+      "title": "Níveis de adesão",
+      "lead": "Começar pelo essencial e ampliar o acesso.",
+      "body": "A primeira estrutura de associação visível permanece simples. Os preços, disponibilidade, tipos de quartos e serviços podem ser posteriormente ligados ao Crays Booking quando a camada de reserva estiver pronta.",
+      "items": [
+        {
+          "title": "Associação de moda",
+          "price": "EUR 3,500",
+          "body": "Camada de entrada para destinos selecionados, acesso ao espaço de trabalho e suporte de concierge padrão Crays."
+        },
+        {
+          "title": "Associação Esfera",
+          "price": "EUR 5,000",
+          "body": "Acesso mais amplo a alojamento, ambientes de trabalho e benefícios comunitários em diversas regiões Crays."
+        },
+        {
+          "title": "Associação Falcão",
+          "price": "EUR 7,500",
+          "body": "Acesso premium à vida urbana com eventos VIP, serviço de concierge mais robusto e direção de check-in automatizado."
+        }
+      ],
+      "close": "Cada camada começa com uma conversa de adesão. O passo seguinte é combinar o acesso ao uso correto: membro privado, equipa de negócios, parceiro criador ou estadia em hotelaria.",
+      "signals": [
+        "Acesso à cidade",
+        "Ritmo comunitário",
+        "Estilo de vida do clube"
+      ]
+    },
+    "closing": {
+      "lead": "Uma conversa de adesão. Depois ligamos a camada certa.",
+      "body": "Comece pelo círculo Crays primeiro. A lógica de reserva, estadia e complemento pode tornar-se transacional depois de a ligação Crays Booking estar pronta.",
+      "action": "Pedir acesso à adesão",
+      "title": "Torne-se membro"
+    }
+  },
+  "it": {
+    "localeName": "Inglese",
+    "metaTitle": "Diventa membro | Crays Clubs",
+    "metaDescription": "Un’adesione per vivere, lavorare ed essere presenti nel mondo reale.",
+    "shell": {
+      "languageName": "Inglese",
+      "skip": "Passa al contenuto dell'abbonamento",
+      "home": "CRAYS Clubs casa",
+      "nav": "Navigazione primaria",
+      "menu": "Menu",
+      "open": "Apri il menu",
+      "close": "Chiudi menù",
+      "account": "Account",
+      "language": "Lingua",
+      "title": "Esplora CRAYS Clubs",
+      "lead": "Forest City è il nostro campus. Scopri persone, luoghi e viaggi su invito.",
+      "explore": "Esplorare",
+      "belong": "Appartenere",
+      "company": "CRAYS Clubs",
+      "association": "CRAYS Association",
+      "associationLead": "L'associazione indipendente si inserisce nel più ampio contesto CRAYS.",
+      "newTab": "si apre in una nuova scheda",
+      "footerLead": "Incontra amici, colleghi e partner nel nuovo mondo del Crays Club.",
+      "footerCta": "Rivendica la tua casa globale",
+      "release": "Esperienza pubblica pre-release. Nessuna promessa di prenotazione, prezzo, disponibilità, investimento o ammissione.",
+      "links": {
+        "forest": "Forest City",
+        "community": "Vita comunitaria",
+        "school": "Scuola e lavoro",
+        "ambassadors": "Ambasciatori",
+        "families": "Famiglie",
+        "teams": "Squadre",
+        "events": "Eventi",
+        "companies": "Società in portafoglio",
+        "conference": "Conferenza",
+        "about": "Chi siamo",
+        "lifestyle": "Stile di vita",
+        "hospitality": "Ospitalità",
+        "member": "Diventa un membro",
+        "contact": "Contatto",
+        "brand": "Il marchio come servizio",
+        "account": "Account",
+        "legal": "Legale"
+      }
+    },
+    "pageLabel": "Diventa un membro",
+    "mediaBlocked": "Supporti trattenuti fino al completamento della fonte, del creatore, della licenza, del recupero, del ritaglio e dell'approvazione.",
+    "hero": {
+      "title": "Un’adesione per vivere, lavorare ed essere presenti nel mondo reale.",
+      "body": "L'abbonamento a Crays collega soggiorni flessibili, ambienti di lavoro produttivi, comunità locale, ospitalità responsabile, accesso aziendale e partnership con i creatori in un unico livello di Crays.",
+      "primary": "Richiedi l’accesso all’adesione",
+      "secondary": "Vedi i livelli di adesione",
+      "signals": [
+        "Vita flessibile",
+        "Accesso al club",
+        "Squadre aziendali",
+        "Partner creativi"
+      ]
+    },
+    "idea": {
+      "title": "L’idea dell’adesione",
+      "lead": "Crays non è un’altra pagina di prenotazione, ma un sistema di adesione per chi vive in movimento.",
+      "paragraphs": [
+        "Il lavoro a distanza, la vita in abbonamento, la mobilità aziendale e la comunità guidata dai creatori puntano tutti alla stessa esigenza: le persone vogliono luoghi che semplifichino gli spostamenti senza far sembrare la vita temporanea.",
+        "Un abbonamento Crays offre ai membri un percorso verso soggiorni, spazi di lavoro, momenti ospitati, accesso locale e logica di prenotazione futura invece di una serie di prodotti sconnessi."
+      ]
+    },
+    "access": {
+      "title": "Modalità di accesso",
+      "lead": "Quattro percorsi verso lo stesso circolo Crays.",
+      "items": [
+        {
+          "label": "01",
+          "title": "Vita flessibile",
+          "body": "Soggiorna in luoghi Crays selezionati senza perdere la routine, la produttività o la sensazione di casa."
+        },
+        {
+          "label": "02",
+          "title": "Club pronti per il lavoro",
+          "body": "Utilizza gli spazi di lavoro, le zone tranquille, le riunioni, la connettività, il caffè e il servizio come infrastruttura quotidiana."
+        },
+        {
+          "label": "03",
+          "title": "Team aziendali",
+          "body": "Offri ai dipendenti libertà di lavoro da remoto, connessione con il team e accesso prevedibile ai luoghi produttivi."
+        },
+        {
+          "label": "04",
+          "title": "Partner creativi",
+          "body": "Porta storie, pubblico e slancio culturale in luoghi ed eventi reali di Crays."
+        }
+      ]
+    },
+    "living": {
+      "title": "Un sistema per vivere",
+      "lead": "La vita flessibile acquista valore quando riunisce lavoro, casa e community.",
+      "body": "Il mercato degli affitti di oggi non riflette le esigenze della moderna forza lavoro remota. Crays trasforma case, hotel, club e ambienti di lavoro flessibili in un unico livello operativo per le persone che vivono tra le città.",
+      "items": [
+        {
+          "label": "Lavoro remoto",
+          "title": "Lavora da qualsiasi luogo",
+          "body": "I membri hanno bisogno di posti di lavoro affidabili senza dover ricostruire la propria struttura in ogni città."
+        },
+        {
+          "label": "L'abitazione come servizio",
+          "title": "Vivi senza perdere la sensazione di casa",
+          "body": "Soggiorni arredati, comfort e routine fanno sì che la mobilità sembri pratica anziché temporanea."
+        },
+        {
+          "label": "Strato di città",
+          "title": "Arriva con il giusto contesto",
+          "body": "Il club offre presentazioni locali, accesso ospitato e un motivo per presentarsi."
+        },
+        {
+          "label": "Prenotazione futura",
+          "title": "Pronto per le disponibilità",
+          "body": "Il livello di appartenenza visivo può successivamente connettersi a Crays Camere, servizi e componenti aggiuntivi di prenotazione."
+        }
+      ]
+    },
+    "companies": {
+      "title": "Per le aziende",
+      "lead": "Le adesioni aziendali offrono ai team un quadro affidabile per il lavoro flessibile.",
+      "body": "Le aziende possono utilizzare Crays come livello di vita e lavoro remoto condiviso per team, progetti e viaggi di lavoro. L’obiettivo è semplice: ridurre gli attriti, migliorare l’attrattiva del datore di lavoro e mantenere i team connessi quando il lavoro non è più legato a un unico ufficio.",
+      "items": [
+        {
+          "title": "Vantaggio competitivo",
+          "body": "Offri ai team l'accesso a luoghi che supportano il lavoro moderno e la mobilità globale."
+        },
+        {
+          "title": "Segnale di talento",
+          "body": "Libertà, responsabilità e luoghi memorabili diventano parte dell'offerta del datore di lavoro."
+        },
+        {
+          "title": "Sedili flessibili",
+          "body": "Le iscrizioni possono aumentare o diminuire in base alle esigenze dei dipendenti, dei team e del progetto."
+        },
+        {
+          "title": "Logica mensile",
+          "body": "L'accesso aziendale può essere strutturato come abbonamenti ricorrenti con un livello di account."
+        }
+      ],
+      "close": "Progettato per le aziende che desiderano la libertà remota senza perdere la cultura del team."
+    },
+    "responsible": {
+      "title": "Vita responsabile",
+      "lead": "La sostenibilità appartiene al modello operativo, non al piè di pagina.",
+      "body": "Il livello di vita sostenibile fa parte dell’adesione: arredamento con meno rifiuti, operazioni consapevoli, educazione della comunità e una tabella di marcia verso luoghi più sani e responsabili.",
+      "points": [
+        "Arredi e materiali selezionati per durabilità, riuso e percorsi di donazione.",
+        "Guida residente che aiuta a ridurre il consumo di energia senza complicare la vita quotidiana.",
+        "Comunità locali trattate come partner, non come fondali.",
+        "Disciplina del carbonio a lungo termine nelle case, nei club e nei partner operativi."
+      ]
+    },
+    "creators": {
+      "title": "Partnership con i creator",
+      "lead": "I creator rendono visibile il mondo Crays nella vita reale.",
+      "body": "Crays lavora con creatori, costruttori di comunità e voci sociali che possono tradurre luoghi in storie. Il partner utile fa molto più che pubblicare online: unisce le persone, documenta momenti reali e rende la comunità più facile da comprendere.",
+      "items": [
+        {
+          "title": "Comunità forte",
+          "body": "Racconta al tuo pubblico lo stile di vita, gli abbonamenti e l'accesso al mondo reale di Crays."
+        },
+        {
+          "title": "Portata del creatore",
+          "body": "Le partnership con gli influencer sono pensate per i creatori con un pubblico e un intento significativi."
+        },
+        {
+          "title": "Ritmo del viaggio",
+          "body": "Viaggia, documenta e lavora dai luoghi di Crays rendendo la rete tangibile."
+        },
+        {
+          "title": "Piattaforme supportate",
+          "body": "Instagram, YouTube, TikTok, LinkedIn, X, eventi e canali della community."
+        }
+      ],
+      "close": "Le partnership con i creativi dovrebbero attirare l'attenzione sulle persone che appaiono, non su una portata vuota."
+    },
+    "layers": {
+      "title": "Livelli di adesione",
+      "lead": "Parti dall’essenziale e amplia l’accesso.",
+      "body": "La prima struttura di appartenenza visibile rimane semplice. Prezzi, disponibilità, tipologie di camere e servizi possono essere successivamente collegati a Crays Booking quando il livello di prenotazione è pronto.",
+      "items": [
+        {
+          "title": "Iscrizione alla moda",
+          "price": "EUR 3,500",
+          "body": "Livello di ingresso per destinazioni selezionate, accesso allo spazio di lavoro e supporto concierge standard Crays."
+        },
+        {
+          "title": "Iscrizione alla Sfera",
+          "price": "EUR 5,000",
+          "body": "Accesso più ampio ad alloggi, ambienti di lavoro e vantaggi per la comunità in più regioni di Crays."
+        },
+        {
+          "title": "Iscrizione al Falcone",
+          "price": "EUR 7,500",
+          "body": "Accesso premium alla vita cittadina con eventi VIP, servizio concierge più efficace e indicazioni per il check-in automatizzato."
+        }
+      ],
+      "close": "Ogni livello inizia con una conversazione di adesione. Il passo successivo è abbinare l'accesso al giusto utilizzo: membro privato, team aziendale, partner creativo o soggiorno di ospitalità.",
+      "signals": [
+        "Accesso alla città",
+        "Ritmo comunitario",
+        "Stile di vita del club"
+      ]
+    },
+    "closing": {
+      "lead": "Una conversazione sull'adesione. Quindi colleghiamo il livello giusto.",
+      "body": "Inizia prima con il cerchio Crays. La logica di prenotazione, soggiorno e aggiunta può diventare transazionale dopo che la connessione di prenotazione Crays è pronta.",
+      "action": "Richiedi l’accesso all’adesione",
+      "title": "Diventa un membro"
+    }
+  }
+}

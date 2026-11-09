@@ -1,0 +1,112 @@
+.section {
+  width: 100%;
+  margin: 0;
+  padding: 80px 0;
+  background: #002237;
+  color: #fff;
+  isolation: isolate;
+  scroll-margin-top: 70px;
+}
+.inner {
+  width: min(1440px, calc(100% - 2 * var(--crays-page-gutter, 4vw)));
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, .72fr) minmax(0, 1fr);
+  gap: 42px;
+  align-items: center;
+}
+.copy, .preview { min-width: 0; }
+.kicker { margin: 0 0 28px; color: #ff0751; font-size: 13px; font-weight: 800; line-height: 1.4; letter-spacing: .065em; }
+.copy h2 { margin: 0; font-family: var(--crays-font-display); font-size: clamp(38px, 3.7vw, 60px); font-weight: 400; line-height: 1.09; letter-spacing: -.045em; }
+.description, .control { font-size: 19px; line-height: 1.5; font-weight: 400; letter-spacing: -.01em; }
+.description { margin: 28px 0 0; }
+.control { margin: 32px 0 0; }
+.cta { display: inline-flex; justify-content: center; align-items: center; gap: 17px; min-height: 54px; padding: 14px 36px; margin-top: 36px; background: #ff0751; border-radius: 999px; color: #fff; text-decoration: none; font-size: 16px; line-height: 1.35; font-weight: 800; }
+.cta:focus-visible { outline: 3px solid #fff; outline-offset: 5px; }
+.previewLabel { margin: 0 0 4px 30px; font-size: 13px; line-height: 1.5; color: #c2d9e7; }
+.intention { display: flex; align-items: center; gap: 24px; padding: 16px 24px; margin: 0 0 0 30px; border: 1px solid #28516b; border-radius: 15px; background: #103a58; }
+.intention > svg { flex: 0 0 42px; color: #ff0751; }
+.intention p { margin: 0; font-size: 19px; line-height: 1.4; }
+.possibilities { position: relative; display: grid; grid-template-columns: 1.1fr 1fr; column-gap: 17px; row-gap: 28px; padding-top: 50px; }
+/* Relationship connectors use layout borders; all pictorial assets are original photos. */
+.possibilities::before { content: ""; position: absolute; top: 0; left: 51%; height: 26px; border-left: 1.5px solid #ff0751; }
+.possibilities::after { content: ""; position: absolute; top: 25px; height: 25px; left: 26%; right: 24%; border: 1.5px solid #ff0751; border-bottom: 0; border-radius: 14px 14px 0 0; }
+.possibility { position: relative; min-width: 0; margin: 0; border: 1px solid #28516b; border-radius: 13px; background: #002237; }
+.junction { position: absolute; z-index: 1; top: -8px; left: calc(50% - 6px); color: #ff0751; fill: #002237; }
+.imageFrame { overflow: hidden; border-radius: 12px 12px 4px 4px; aspect-ratio: 1.45; padding: 10px; display: flex; align-items: center; justify-content: center; }
+.imageFrame img { display: block; width: 100%; height: 100%; min-height: 0; object-fit: contain; object-position: center; border-radius: 6px; }
+.together { width: 64%; grid-column: 1 / -1; justify-self: center; }
+.together::before { content: ""; position: absolute; left: 50%; bottom: 100%; height: 30px; border-left: 1.5px solid #ff0751; }
+.together .imageFrame { aspect-ratio: 1.78; }
+.possibility figcaption { min-height: 76px; display: flex; gap: 19px; align-items: center; padding: 15px 20px; }
+.possibility figcaption > svg { color: #ff0751; flex: 0 0 31px; }
+.possibility h3 { margin: 0; font-size: 20px; font-weight: 400; line-height: 1.2; letter-spacing: -.02em; }
+.possibility figcaption p { margin: 5px 0 0; font-size: 14px; line-height: 1.4; color: #c2d9e7; }
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .imageFrame img { transition: transform 650ms cubic-bezier(.22,1,.36,1); }
+  .possibility { transition: border-color 240ms ease, box-shadow 240ms ease; }
+  .possibility:hover { border-color: #ff0751; box-shadow: 0 8px 24px #0003; }
+  .possibility:hover img { transform: translate(var(--agentic-x, 0px), var(--agentic-y, 0px)) scale(1.02); }
+  .possibility:hover .junction { fill: #ff0751; }
+  .cta, .cta svg { transition: transform 220ms ease, background-color 220ms ease; }
+  .cta:hover { background: #e90045; transform: translateY(-2px); }
+  .cta:hover svg { transform: translateX(4px); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .section[data-entered="true"] .possibility { animation: arrive 650ms cubic-bezier(.22,1,.36,1) both; }
+  .section[data-entered="true"] .place { animation-delay: 90ms; }
+  .section[data-entered="true"] .together { animation-delay: 180ms; }
+  @keyframes arrive { from { opacity: .6; translate: 0 9px; } to { opacity: 1; translate: 0 0; } }
+}
+@media (max-width: 1199px) {
+  .section { padding-block: 64px; }
+  .inner { gap: 30px; }
+  .copy h2 { font-size: 42px; }
+  .description, .control { font-size: 17px; }
+  .intention { margin-left: 0; padding: 15px; gap: 15px; }
+  .intention p { font-size: 17px; }
+  .previewLabel { margin-left: 0; }
+  .possibility figcaption { gap: 12px; padding: 14px; }
+  .possibility figcaption > svg { flex-basis: 24px; width: 24px; }
+  .possibility h3 { font-size: 18px; }
+  .possibility figcaption p { font-size: 13px; }
+  .together { width: 76%; }
+}
+@media (max-width: 959px) {
+  .inner { grid-template-columns: 1fr; gap: 38px; }
+  .copy { max-width: 660px; }
+  .copy h2 { font-size: 46px; max-width: 18ch; }
+  .description, .control { font-size: 19px; }
+  .control { margin-top: 22px; }
+  .cta { margin-top: 24px; }
+  .preview { max-width: 700px; width: 100%; margin-inline: auto; }
+}
+@media (max-width: 599px) {
+  .section { padding-block: 48px; }
+  .inner { width: calc(100% - 36px); }
+  .kicker { font-size: 11px; margin-bottom: 18px; }
+  .copy h2 { font-size: clamp(32px, 8.7vw, 40px); line-height: 1.06; }
+  .description, .control { font-size: 17px; line-height: 1.5; }
+  .description { margin-top: 22px; }
+  .cta { width: 100%; padding-inline: 12px; font-size: 15px; }
+  .intention { padding: 15px; gap: 12px; align-items: start; }
+  .intention > svg { flex-basis: 26px; width: 26px; height: 32px; }
+  .intention p { font-size: 16px; }
+  .possibilities { grid-template-columns: 1fr; gap: 28px; padding-top: 28px; }
+  .possibilities::before { height: 28px; left: 50%; }
+  .possibilities::after { display: none; }
+  .place::before, .together::before { content: ""; position: absolute; left: 50%; bottom: 100%; height: 28px; border-left: 1.5px solid #ff0751; }
+  .together { width: 100%; grid-column: auto; }
+  .imageFrame, .together .imageFrame { aspect-ratio: 1.65; }
+  .possibility h3 { font-size: 20px; }
+  .possibility figcaption p { font-size: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .section *, .section *::before, .section *::after { animation: none !important; transition: none !important; transform: none !important; translate: none !important; }
+}
+
+/* Match the existing Build Your Future desktop heading; keep long uppercase words legible on phones. */
+.section .copy h2 { font-size: clamp(54px, 3.35vw, 62px); text-transform: uppercase; }
+@media (max-width: 599px) {
+  .section .copy h2 { font-size: clamp(32px, 8.7vw, 40px); }
+}

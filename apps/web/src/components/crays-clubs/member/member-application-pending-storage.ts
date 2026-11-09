@@ -1,0 +1,19 @@
+"use client";
+import {memberApplicationCommandSchema,type MemberApplicationCommand} from "@/lib/clubs/member-application-contract";
+const own="acct_384c05e7-e716-4dc9-864d-8c63bf13876c";
+type Store=Pick<Storage,"getItem"|"setItem"|"removeItem">;
+function key(accountId:string){if(accountId!==own)throw Error("Application request storage is not available for this account.");return `crays.member.application.pending.v1:${accountId}`;}
+export function restorePendingMemberApplication(accountId:string,storage:Store):MemberApplicationCommand|null{
+ const raw=storage.getItem(key(accountId));if(raw===null)return null;
+ if(raw.length>3000)throw Error("Your saved request reference needs review. No new application was sent.");
+ let value:unknown;try{value=JSON.parse(raw);}catch{throw Error("Your saved request reference needs review. No new application was sent.");}
+ const parsed=memberApplicationCommandSchema.safeParse(value);if(!parsed.success)throw Error("Your saved request reference needs review. No new application was sent.");return parsed.data;
+}
+export function persistPendingMemberApplication(accountId:string,storage:Store,command:MemberApplicationCommand){
+ const parsed=memberApplicationCommandSchema.parse(command),existing=restorePendingMemberApplication(accountId,storage);
+ if(existing&&JSON.stringify(existing)!==JSON.stringify(parsed))throw Error("Check your original saved request before starting another application change.");
+ storage.setItem(key(accountId),JSON.stringify(parsed));const readback=restorePendingMemberApplication(accountId,storage);if(JSON.stringify(readback)!==JSON.stringify(parsed))throw Error("We couldn't retain your request reference. No new application was sent.");
+}
+export function clearPendingMemberApplication(accountId:string,storage:Store,idempotencyKey:string){
+ const saved=restorePendingMemberApplication(accountId,storage);if(saved&&saved.idempotencyKey!==idempotencyKey)throw Error("Your original request reference has changed. Check saved status before continuing.");storage.removeItem(key(accountId));if(storage.getItem(key(accountId))!==null)throw Error("Your browser retained the original request reference. Check saved status before continuing.");
+}

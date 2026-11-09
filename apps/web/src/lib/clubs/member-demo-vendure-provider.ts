@@ -1,0 +1,163 @@
+import "server-only";
+import {z} from "zod";
+import {createHash,createHmac,createCipheriv,createDecipheriv,randomBytes,timingSafeEqual} from "node:crypto";
+import {parse} from "graphql";
+import {readFile} from "node:fs/promises";
+type Json=Record<string,any>;
+const canonical=(value:any):string=>value===null||typeof value!=="object"?JSON.stringify(value):Array.isArray(value)?`[${value.map(canonical).join(",")}]`:`{${Object.keys(value).sort().map(key=>`${JSON.stringify(key)}:${canonical(value[key])}`).join(",")}}`;
+export const commerceHash=(value:any)=>createHash("sha256").update(canonical(value)).digest("hex");
+const BASE="/srv/crays/dev-state/member-area-screen1-20261006/member-demo100-20261012/";
+const FIELDS="id code state currencyCode totalWithTax lines{id quantity unitPriceWithTax linePriceWithTax productVariant{id sku}} customer{id} payments{id state amount method transactionId metadata}";
+export class NativeCommerceUnknown extends Error{constructor(readonly reasonCode="NATIVE_OUTCOME_UNCONFIRMED"){super("COMMERCE_NATIVE_RECONCILIATION_REQUIRED");}}
+
+/** Compare every native position, not only the position being edited. */
+export function assertNativeCommerceCorrelation(prepared:Json,input:Json,actual:Json,expectedState:string){
+ const fail=()=>{throw new NativeCommerceUnknown("NATIVE_CART_CORRELATION_UNCONFIRMED");};
+ const before=prepared.nativeReadback;
+ if(!actual||typeof actual.id!=="string"||typeof actual.code!=="string"||actual.customer?.id!=="1"||actual.currencyCode!=="USD"||actual.state!==expectedState||!Number.isSafeInteger(actual.totalWithTax)||actual.totalWithTax<0)fail();
+ if(prepared.providerOrderId&&(actual.id!==prepared.providerOrderId||actual.code!==prepared.providerOrderCode||!before||before.id!==actual.id||before.code!==actual.code))fail();
+ if(!prepared.providerOrderId&&(input.action!=="add"||before?.lines?.length))fail();
+ const normalize=(lines:any):Json[]=>{
+  if(!Array.isArray(lines))fail();const ids=new Set<string>(),variants=new Set<string>();
+  return lines.map((line:Json)=>{if(typeof line.id!=="string"||!line.id||typeof line.productVariant?.id!=="string"||typeof line.productVariant?.sku!=="string"||ids.has(line.id)||variants.has(line.productVariant.id)||!Number.isSafeInteger(line.quantity)||line.quantity<1||!Number.isSafeInteger(line.unitPriceWithTax)||line.unitPriceWithTax<0||!Number.isSafeInteger(line.linePriceWithTax)||line.linePriceWithTax!==line.quantity*line.unitPriceWithTax)fail();ids.add(line.id);variants.add(line.productVariant.id);return {id:line.id,variantId:line.productVariant.id,sku:line.productVariant.sku,quantity:line.quantity,unitPriceWithTax:line.unitPriceWithTax,linePriceWithTax:line.linePriceWithTax};}).sort((a:Json,b:Json)=>a.id.localeCompare(b.id));
+ };
+ const original=normalize(before?.lines??[]),observed=normalize(actual.lines);let expected=original.map(line=>({...line})),total=before?.totalWithTax??0;
+ if(!Number.isSafeInteger(total)||total<0||original.reduce((sum,line)=>sum+line.linePriceWithTax,0)!==total)fail();
+ if(input.action==="add"){
+  const offer=prepared.offer;if(!offer||!Number.isSafeInteger(offer.unitPriceMinor)||offer.unitPriceMinor<0||!Number.isSafeInteger(input.quantity)||input.quantity<1||original.some(line=>line.variantId===offer.variantId))fail();
+  const added=observed.filter(line=>!original.some(previous=>previous.id===line.id));if(added.length!==1||added[0].variantId!==offer.variantId||added[0].quantity!==input.quantity||added[0].unitPriceWithTax!==offer.unitPriceMinor||(offer.sku&&added[0].sku!==offer.sku))fail();expected.push(added[0]);total+=offer.unitPriceMinor*input.quantity;
+ }else if(input.action==="adjust"||input.action==="remove"){
+  const line=expected.find(value=>value.id===input.lineId);if(!line)fail();total-=line!.linePriceWithTax;
+  if(input.action==="remove")expected=expected.filter(value=>value.id!==input.lineId);else{if(!Number.isSafeInteger(input.quantity)||input.quantity<1)fail();line!.quantity=input.quantity;line!.linePriceWithTax=input.quantity*line!.unitPriceWithTax;total+=line!.linePriceWithTax;}
+ }else if(input.action!=="checkout"||total!==input.expectedTotalMinor)fail();
+ expected.sort((a,b)=>a.id.localeCompare(b.id));if(canonical(expected)!==canonical(observed)||total!==actual.totalWithTax)fail();
+}
+
+/** Provider tokens are AES-GCM encrypted in Core and never sent to the client. */
+async function encryptionKey(){const raw=(await readFile(BASE+"commerce-session-key.private", "utf8")).trim();if(!/^[a-f0-9]{64}$/.test(raw))throw Error("COMMERCE_SESSION_KEY_INVALID");return Buffer.from(raw,"hex");}
+async function encrypt(token:string){const iv=randomBytes(12),cipher=createCipheriv("aes-256-gcm",await encryptionKey(),iv);cipher.setAAD(Buffer.from("crays-member-demo-commerce-v1"));const bytes=Buffer.concat([cipher.update(token,"utf8"),cipher.final()]);return Buffer.concat([iv,cipher.getAuthTag(),bytes]).toString("base64url");}
+async function decrypt(raw:string){const data=Buffer.from(raw,"base64url");if(data.length<29)throw Error("COMMERCE_SESSION_INVALID");const d=createDecipheriv("aes-256-gcm",await encryptionKey(),data.subarray(0,12));d.setAAD(Buffer.from("crays-member-demo-commerce-v1"));d.setAuthTag(data.subarray(12,28));return Buffer.concat([d.update(data.subarray(28)),d.final()]).toString("utf8");}
+export class NativeCommercePreflightRejected extends Error{constructor(){super("COMMERCE_PROVIDER_PREFLIGHT_REJECTED");}}
+async function admittedProviderConfig(expectedAccountId:string){try{
+ const cfg=JSON.parse(await readFile(BASE+"commerce-provider.private.json","utf8")),decision=JSON.parse(await readFile(BASE+"TEST_COMMERCE_BINDINGS_NATIVE.json","utf8"));
+ const a=cfg.authority; const expiry=typeof a?.effectiveUntil==="string"?Date.parse(a.effectiveUntil):NaN;
+ if(!a||a.accountId!==expectedAccountId||expectedAccountId!=="acct_384c05e7-e716-4dc9-864d-8c63bf13876c"||a.testOnly!==true||a.liveMoney!==false||a.productionActivationAllowed!==false||!Number.isFinite(expiry)||expiry<=Date.now()||String(a.vendureChannelId)!=="3"||String(a.vendureSellerId)!=="3"||cfg.shopEndpoint!=="http://172.30.0.2:3000/shop-api")throw Error("COMMERCE_PROVIDER_AUTHORITY_INVALID");
+ return {cfg,decision};
+}catch{throw new NativeCommercePreflightRejected();}}
+export async function preflightNativeMemberDemoCommerce(expectedAccountId:string){await admittedProviderConfig(expectedAccountId);}
+export async function executeNativeMemberDemoCommerce(prepared:Json,input:Json,expectedAccountId:string){
+ let cfg:Json,decision:Json,token:string|null=null;
+ try{({cfg,decision}=await admittedProviderConfig(expectedAccountId));token=prepared.sessionCipher?await decrypt(prepared.sessionCipher):null;}
+ catch{return {result:{state:"rejected",errorCode:"NATIVE_PREFLIGHT_REJECTED",testOnly:true,liveMoney:false,nativeObservedOrder:null,nativeStage:"preflight",nativeReasonCode:"PROVIDER_AUTHORITY_OR_SESSION_UNAVAILABLE",nativeWriteAttempted:false},sessionCipher:prepared.sessionCipher??null};}
+ const a=cfg.authority;
+ let effectAttempted=false,nativeObservedOrder:Json|null=null,nativeStage="preflight";
+ function signed(purpose:string,contextId?:string){
+  const now=Math.floor(Date.now()/1000),e:Json={};for(const k of ["deploymentCellId","operatorTenantId","operatorLegalEntityId","storeId","storeOperatorAssignmentId","assignmentVersion","bindingId","bindingVersion","vendureSellerId","vendureChannelId"])e[k]=a[k];
+  Object.assign(e,{version:2,contextId:contextId??prepared.commandId,requestId:prepared.commandId+"-"+randomBytes(8).toString("hex"),issuedAtEpochSeconds:now,expiresAtEpochSeconds:now+55,actorReference:expectedAccountId,verticalRoot:"clubs",vendureChannelTokenSha256:a.channelTokenSha256,primaryVendureStockLocationId:a.primaryStockLocationId,sellerSnapshot:decision.sellerSnapshot,sellerSnapshotSha256:commerceHash(decision.sellerSnapshot),commerceAdmission:{decision:"ADMIT",purpose,evaluatedAtEpochSeconds:now,validUntilEpochSeconds:now+55,policyVersion:"member-demo-test-authority-v1",reasonCode:"user-authorized-test-only",availabilitySnapshotSha256:decision.catalogueVersion2SourceSha256,targetSetSha256:commerceHash(Object.fromEntries(["vendureSellerId","vendureChannelId","storeId","bindingId"].map(k=>[k,e[k]])))}});
+  const encoded=Buffer.from(canonical(e)).toString("base64url");return {context:e,headers:{"x-crays-commerce-context":encoded,"x-crays-commerce-context-signature":createHmac("sha256",cfg.contextHmacSecret).update(encoded).digest("base64url"),"vendure-token":cfg.channelToken}};
+ }
+ async function gql(query:string,variables:Json={},purpose="public-catalog",signedOverride?:ReturnType<typeof signed>){
+  try{parse(query);}catch{throw new NativeCommerceUnknown("GRAPHQL_DOCUMENT_INVALID");}const mutation=/^\s*mutation\b/.test(query);if(mutation)effectAttempted=true;
+  let response:Response;try{response=await fetch(cfg.shopEndpoint,{method:"POST",headers:{"Content-Type":"application/json",...(signedOverride??signed(purpose)).headers,...(token?{Authorization:"Bearer "+token}:{})},body:JSON.stringify({query,variables}),cache:"no-store",signal:AbortSignal.timeout(15000)});}catch{throw new NativeCommerceUnknown();}
+  const next=response.headers.get("vendure-auth-token");if(next)token=next;
+  let data:Json;try{data=await response.json();}catch{throw new NativeCommerceUnknown();}
+  if(!response.ok||data.errors){const code=data.errors?.[0]?.extensions?.code;throw new NativeCommerceUnknown(typeof code==="string"&&/^[A-Z][A-Z0-9_]{1,79}$/.test(code)?code:"NATIVE_GRAPHQL_REJECTED");}return data.data;
+ }
+ async function readAdministrativeOrder(nativeOrderId:string){
+  if(cfg.adminEndpoint!=="http://172.30.0.2:3000/admin-api")throw new NativeCommerceUnknown();
+  let adminToken:string|null=null;
+  async function query(text:string,variables:Json){
+   let response:Response;try{response=await fetch(cfg.adminEndpoint,{method:"POST",headers:{"Content-Type":"application/json","vendure-token":cfg.channelToken,...(adminToken?{Authorization:"Bearer "+adminToken}:{})},body:JSON.stringify({query:text,variables}),cache:"no-store",signal:AbortSignal.timeout(15000)});}catch{throw new NativeCommerceUnknown();}
+   const next=response.headers.get("vendure-auth-token");if(next)adminToken=next;const body=await response.json();if(!response.ok||body.errors)throw new NativeCommerceUnknown();return body.data;
+  }
+  const login=await query("mutation($u:String!,$p:String!){login(username:$u,password:$p){__typename}}",{u:cfg.adminUsername,p:cfg.adminPassword});if(login.login?.__typename!=="CurrentUser"||!adminToken)throw new NativeCommerceUnknown();
+  const native=(await query(`query($id:ID!){order(id:$id){${FIELDS} channels{id}}}`,{id:nativeOrderId})).order;
+  if(!native||native.id!==nativeOrderId||native.customer?.id!=="1"||native.currencyCode!=="USD"||!native.channels?.some((channel:Json)=>channel.id==="3")||native.channels.some((channel:Json)=>!["1","3"].includes(channel.id)))throw new NativeCommerceUnknown();
+  const {channels:verifiedChannels,...receipt}=native;return receipt;
+ }
+ function observedIdentity():Json|null{return nativeObservedOrder;}
+ function order(result:Json){if(result?.__typename!=="Order"){const code=result?.errorCode;throw new NativeCommerceUnknown(typeof code==="string"&&/^[A-Z][A-Z0-9_]{1,79}$/.test(code)?code:"NATIVE_ORDER_RESULT_REJECTED");}nativeObservedOrder={id:result.id,code:result.code};return result;}
+ try{
+  if(input.action==="add"){
+   const o=prepared.offer;if(o.currency!=="USD"||!o.sellable||o.offerId!==input.offerId)throw Error("COMMERCE_OFFER_INVALID");
+   if(prepared.providerOrderId){const old=(await gql(`{activeOrder{${FIELDS}}}`)).activeOrder;assertNativeCommerceCorrelation(prepared,{action:"checkout",expectedTotalMinor:prepared.nativeReadback?.totalWithTax},old,"AddingItems");if(old.lines.some((line:Json)=>line.productVariant.id===o.variantId))throw Error("COMMERCE_VARIANT_ALREADY_IN_CART");}
+   nativeStage="add";order((await gql(`mutation($v:ID!,$q:Int!){addItemToOrder(productVariantId:$v,quantity:$q){__typename ... on Order{${FIELDS}} ... on ErrorResult{errorCode message}}}`,{v:o.variantId,q:input.quantity},"cart-mutation")).addItemToOrder);
+   const current=(await gql(`{activeOrder{${FIELDS}}}`)).activeOrder;
+   if(!current||current.id!==observedIdentity()?.id||current.code!==observedIdentity()?.code||(prepared.providerOrderId&&current.id!==prepared.providerOrderId))throw new NativeCommerceUnknown("NATIVE_CART_CORRELATION_UNCONFIRMED");
+   nativeStage="bindCustomer";const bound=(await gql("mutation($i:CraysBindCanonicalCustomerInput!){craysBindCanonicalCustomerToActiveOrder(input:$i){orderId orderCode customerId state}}",{i:{orderCode:current.code,vendureCustomerId:"1",vendureUserId:"2"}},"checkout-preflight")).craysBindCanonicalCustomerToActiveOrder;
+   if(bound.customerId!=="1"||bound.orderId!==current.id||bound.orderCode!==current.code)throw new NativeCommerceUnknown();
+  }else if(input.action==="adjust"){
+   const current=(await gql(`{activeOrder{${FIELDS}}}`)).activeOrder;assertNativeCommerceCorrelation(prepared,{action:"checkout",expectedTotalMinor:prepared.nativeReadback?.totalWithTax},current,"AddingItems");
+   nativeStage="adjust";order((await gql(`mutation($l:ID!,$q:Int!){adjustOrderLine(orderLineId:$l,quantity:$q){__typename ... on Order{${FIELDS}} ... on ErrorResult{errorCode message}}}`,{l:input.lineId,q:input.quantity},"cart-mutation")).adjustOrderLine);
+  }else if(input.action==="remove"){
+   const current=(await gql(`{activeOrder{${FIELDS}}}`)).activeOrder;assertNativeCommerceCorrelation(prepared,{action:"checkout",expectedTotalMinor:prepared.nativeReadback?.totalWithTax},current,"AddingItems");
+   nativeStage="remove";order((await gql(`mutation($l:ID!){removeOrderLine(orderLineId:$l){__typename ... on Order{${FIELDS}} ... on ErrorResult{errorCode message}}}`,{l:input.lineId},"cart-mutation")).removeOrderLine);
+  }else{
+   const current=(await gql(`{activeOrder{${FIELDS}}}`)).activeOrder;assertNativeCommerceCorrelation(prepared,input,current,"AddingItems");
+   const shipping=(await gql("{eligibleShippingMethods{id priceWithTax}} ")).eligibleShippingMethods;
+   if(!shipping.some((x:Json)=>x.id==="3"&&x.priceWithTax===0))throw Error("COMMERCE_VIRTUAL_SHIPPING_INVALID");
+   nativeStage="shipping";order((await gql(`mutation{setOrderShippingMethod(shippingMethodId:["3"]){__typename ... on Order{${FIELDS}} ... on ErrorResult{errorCode message}}}`,{},"cart-mutation")).setOrderShippingMethod);
+   const signedContext=signed("checkout-preflight",prepared.commandId+"-snapshot"),context=signedContext.context,sp:Json={version:1},cp:Json={version:1};
+   for(const k of ["deploymentCellId","verticalRoot","operatorTenantId","operatorLegalEntityId","storeId","storeOperatorAssignmentId","assignmentVersion","bindingId","bindingVersion","vendureSellerId","vendureChannelId","primaryVendureStockLocationId","sellerSnapshot"])sp[k]=context[k];
+   for(const k of ["contextId","deploymentCellId","verticalRoot","operatorTenantId","operatorLegalEntityId","storeId","storeOperatorAssignmentId","assignmentVersion","bindingId","bindingVersion","vendureSellerId","vendureChannelId"])cp[k]=context[k];
+   Object.assign(cp,{orderCode:current.code,providerOrderId:current.id,snapshotSha256:commerceHash(sp)});
+   nativeStage="snapshot";const receipt=(await gql("mutation($i:CraysPrepareOrderSellerSnapshotInput!){craysPrepareOrderSellerSnapshot(input:$i){commandId snapshotId state}}",{i:{orderCode:current.code,providerOrderId:current.id,idempotencyKey:prepared.commandId+"-snapshot",payloadSha256:commerceHash(cp)}},"checkout-preflight",signedContext)).craysPrepareOrderSellerSnapshot;
+   if(receipt.state!=="PREPARED")throw new NativeCommerceUnknown();
+   nativeStage="paymentTransition";order((await gql(`mutation{transitionOrderToState(state:"ArrangingPayment"){__typename ... on Order{${FIELDS}} ... on ErrorResult{errorCode message}}}`,{},"checkout-preflight")).transitionOrderToState);
+   const session=JSON.parse(await readFile(BASE+"cart-session.private.json","utf8"));
+   nativeStage="payment";const settled=order((await gql(`mutation($i:PaymentInput!){addPaymentToOrder(input:$i){__typename ... on Order{${FIELDS}} ... on ErrorResult{errorCode message}}}`,{i:{method:session.paymentMethod.code,metadata:{stripePaymentIntentId:"pi_crays_test_"+prepared.commandId,craysIdempotencyKey:prepared.commandId+"-payment",paymentDomain:"clubs-booking-test-only",evidenceClass:"test_only",liveMoneyAllowed:false}}},"payment-admission")).addPaymentToOrder);
+   if(settled.state!=="PaymentSettled"||settled.id!==current.id||settled.payments.length!==1||settled.payments[0].state!=="Settled"||settled.payments[0].metadata?.public?.realMoneyMovement!==false)throw new NativeCommerceUnknown();
+   nativeStage="adminReadback";const verified=await readAdministrativeOrder(settled.id);
+   assertNativeCommerceCorrelation(prepared,input,verified,"PaymentSettled");
+   if(verified.state!=="PaymentSettled"||verified.totalWithTax!==input.expectedTotalMinor||verified.payments.length!==1||verified.payments[0].state!=="Settled"||verified.payments[0].method!==session.paymentMethod.code||verified.payments[0].amount!==input.expectedTotalMinor||verified.payments[0].metadata?.public?.realMoneyMovement!==false||verified.payments[0].metadata?.externalNetworkCall!==false)throw new NativeCommerceUnknown();
+   return {result:{state:"applied",order:verified,testOnly:true,liveMoney:false},sessionCipher:token?await encrypt(token):null};
+  }
+  const rb=(await gql(`{activeOrder{${FIELDS}}}`)).activeOrder;
+  if(!rb||rb.id!==observedIdentity()?.id||rb.code!==observedIdentity()?.code||!token)throw new NativeCommerceUnknown("NATIVE_CART_CORRELATION_UNCONFIRMED");
+  nativeStage="adminReadback";const verified=await readAdministrativeOrder(rb.id);assertNativeCommerceCorrelation(prepared,input,rb,"AddingItems");assertNativeCommerceCorrelation(prepared,input,verified,"AddingItems");
+  return {result:{state:"applied",order:verified,testOnly:true,liveMoney:false},sessionCipher:await encrypt(token)};
+ }catch(error){return {result:{state:effectAttempted||error instanceof NativeCommerceUnknown?"unknown":"rejected",errorCode:effectAttempted?"NATIVE_EFFECT_REQUIRES_RECONCILIATION":"NATIVE_PREFLIGHT_REJECTED",testOnly:true,liveMoney:false,nativeObservedOrder,nativeStage,nativeReasonCode:error instanceof NativeCommerceUnknown?error.reasonCode:"NATIVE_PREFLIGHT_REJECTED",nativeWriteAttempted:effectAttempted},sessionCipher:token?await encrypt(token):null};}
+}
+
+
+// The original Core and Vendure own the cart. A browser must present the
+// server-issued review of that exact cart before starting a new command.
+export const MEMBER_CART_CONTEXT_GENERATION="member-native-cart-context-v1";
+export class NativeCartContextRejected extends Error {constructor(){super("COMMERCE_CART_CONTEXT_REJECTED");}}
+const nativeCartReviewSchema=z.object({accountId:z.literal("acct_384c05e7-e716-4dc9-864d-8c63bf13876c"),cartId:z.string().min(1).max(180).nullable(),version:z.number().int().min(0).max(999999999),state:z.enum(["open","reconciliation_required"]).nullable(),orderId:z.string().min(1).max(180).nullable(),orderCode:z.string().min(1).max(180).nullable(),totalMinor:z.number().int().nonnegative().max(1000000000),linesSha256:z.string().regex(/^[a-f0-9]{64}$/),ordersSha256:z.string().regex(/^[a-f0-9]{64}$/)}).strict();
+const nativeCartContextSchema=z.object({generation:z.literal(MEMBER_CART_CONTEXT_GENERATION),issuedAt:z.number().int().nonnegative(),expiresAt:z.number().int().nonnegative(),commandSha256:z.string().regex(/^[a-f0-9]{64}$/).nullable(),review:nativeCartReviewSchema}).strict();
+export type NativeCartReview=z.output<typeof nativeCartReviewSchema>;
+export type NativeCartContext=z.output<typeof nativeCartContextSchema>;
+export function captureNativeCartReview(data:Json):NativeCartReview{
+ if(data.schema!=="crays.member.demo-commerce.v1"||data.accountId!=="acct_384c05e7-e716-4dc9-864d-8c63bf13876c"||data.currency!=="USD"||data.testOnly!==true||data.liveMoney!==false||!Array.isArray(data.orders))throw new NativeCartContextRejected();
+ const cart=data.cart;
+ return nativeCartReviewSchema.parse({accountId:data.accountId,cartId:cart?.cartId??null,version:cart?.version??0,state:cart?.state??null,orderId:cart?.order?.id??null,orderCode:cart?.order?.code??null,totalMinor:cart?.order?.totalWithTax??0,linesSha256:commerceHash(cart?.lines??[]),ordersSha256:commerceHash(data.orders.map((o:Json)=>({cartId:o.cartId,version:o.version,id:o.order.id,code:o.order.code,total:o.order.totalWithTax})).sort((a:Json,b:Json)=>a.cartId.localeCompare(b.cartId)))});
+}
+async function cartContextKey(){return createHmac("sha256",await encryptionKey()).update("CRAYS/member-cart-review/v1").digest();}
+export function nativeCartCommandExpiry(command:Json):number|null{
+ const match=/^mctx1\.([0-9]{13})\.[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/.exec(command.idempotencyKey);
+ if(!match)return null;const created=Number(match[1]);return Number.isSafeInteger(created)&&created<=Date.now()+2000?created+120000:null;
+}
+export async function issueNativeCartContext(data:Json,command?:Json){
+ const issuedAt=Date.now(),commandExpiry=command?nativeCartCommandExpiry(command):null;
+ if(command&&(commandExpiry===null||commandExpiry<=issuedAt))throw new NativeCartContextRejected();
+ const context:NativeCartContext={generation:MEMBER_CART_CONTEXT_GENERATION,issuedAt,expiresAt:commandExpiry??issuedAt+120000,commandSha256:command?commerceHash(command):null,review:captureNativeCartReview(data)};
+ const payload=Buffer.from(canonical(context)).toString("base64url"),signature=createHmac("sha256",await cartContextKey()).update(payload).digest("base64url");
+ return {generation:context.generation,expiresAt:context.expiresAt,token:payload+"."+signature};
+}
+export async function verifyNativeCartContext(token:string,accountId:string,allowExpired=false):Promise<NativeCartContext>{
+ try{
+  if(typeof token!=="string"||token.length>2500||!/^[-_a-zA-Z0-9]+\.[-_a-zA-Z0-9]{43}$/.test(token))throw Error();
+  const [payload,signature]=token.split("."),expected=createHmac("sha256",await cartContextKey()).update(payload).digest(),observed=Buffer.from(signature,"base64url");
+  if(observed.length!==expected.length||!timingSafeEqual(observed,expected))throw Error();
+  const value=nativeCartContextSchema.parse(JSON.parse(Buffer.from(payload,"base64url").toString("utf8")));
+  if(value.expiresAt<=value.issuedAt||value.expiresAt-value.issuedAt>122000||value.issuedAt>Date.now()+2000||value.review.accountId!==accountId||observed.toString("base64url")!==signature)throw Error();
+  if(!allowExpired&&value.expiresAt<=Date.now())throw Error();
+  return value as NativeCartContext;
+ }catch{throw new NativeCartContextRejected();}
+}
+/** Called under the SAME account30111 transaction lock as Core prepare. */
+export function assertNativeCartReview(context:NativeCartContext,data:Json,command:Json){
+ if(context.commandSha256!==commerceHash(command)||nativeCartCommandExpiry(command)!==context.expiresAt||context.expiresAt<=Date.now()||canonical(context.review)!==canonical(captureNativeCartReview(data)))throw new NativeCartContextRejected();
+}
+

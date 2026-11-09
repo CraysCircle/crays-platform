@@ -1,0 +1,18 @@
+--- crays-platform/src/lib/member-commerce/vendure-http-adapter.ts
++++ crays-platform/src/lib/member-commerce/vendure-http-adapter.ts
+@@ -300,8 +300,15 @@
+ }
+ 
++export type VendurePublicCatalogContext = Readonly<{
++  encodedContext: string;
++  signature: string;
++}>;
++
+ export type VendureConfig = {
+   shopApiUrl: string;
+   channelToken: string | null;
+   adapterKey: string | null;
+   timeoutMs: number;
++  publicCatalogContext?: () =>
++    Promise<VendurePublicCatalogContext> | VendurePublicCatalogContext;
+ };

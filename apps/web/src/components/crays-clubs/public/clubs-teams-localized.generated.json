@@ -1,0 +1,1934 @@
+{
+  "de": {
+    "benefits": [
+      [
+        "Aufenthaltskoordination",
+        "Eine Beherbergungsrolle kann erst übernommen werden, nachdem die Immobilie, die Daten und der Zugang bestätigt wurden."
+      ],
+      [
+        "Gemeinsame Mahlzeiten",
+        "Essen kann den Teamrhythmus unterstützen; Menüs, Ernährungsumstellung und Service bleiben Bestätigungspunkte."
+      ],
+      [
+        "Bewegung",
+        "Zeit für Bewegung kann geplant werden, ohne dass ein Fitnessstudio, ein Kurs oder ein Leistungsergebnis versprochen wird."
+      ],
+      [
+        "Lernen",
+        "Eine praktische Sitzung beginnt mit einer realen Frage aus der aktuellen Arbeit des Teams."
+      ],
+      [
+        "Coworking",
+        "Ruhiges, individuelles Arbeiten und gemeinsame Besprechungszeiten erhalten einen festen Platz im Tagesablauf."
+      ],
+      [
+        "Workshops",
+        "Der gesamte Raum kann ein begrenztes Problem kartieren, herausfordern und entscheiden."
+      ],
+      [
+        "Teamräume",
+        "Der private Teamraum bleibt eine eingeschränkte Einrichtungsaufgabe und nicht die pauschale Verfügbarkeit."
+      ],
+      [
+        "Gemeinschaft",
+        "Einführungen sind Opt-in, kontextbezogen und niemals ein versprochener Kunden- oder Investorenweg."
+      ],
+      [
+        "Konnektivität",
+        "Technische Anforderungen werden erfasst, bevor eine Leistungsaussage auf Standortebene abgegeben wird."
+      ],
+      [
+        "Content-Studio",
+        "Die Produktion erfordert bestätigte Ausrüstung, Support, Rechte und Veröffentlichungsgrenzen."
+      ],
+      [
+        "Fitnessangebote",
+        "Bevor ein Kurs angeboten wird, müssen der Kursleiter, der Zeitplan, der Zugang und die Sicherheit des Eigentümers bestätigt werden."
+      ],
+      [
+        "Schriftlich definierter Umfang",
+        "Leistungen, Verantwortlichkeiten und Ausschlüsse werden gemeinsam erfasst und nicht hinter einer Paketangabe versteckt."
+      ]
+    ],
+    "proofLanes": [
+      {
+        "number": "01",
+        "title": "Gründungsteams",
+        "question": "Kann ein kleines Team den Fokus bewahren, ohne sich selbst abzuschneiden?",
+        "answer": "Ein CRAYS-Format kann Maker-Zeit, Entscheidungszeit und Opt-in-Community-Zeit trennen. Die Gründer behalten die Verantwortung für Prioritäten und Ergebnisse; Der Club stellt nur die bestätigten Räumlichkeiten und Dienstleistungen zur Verfügung.",
+        "gate": "Veröffentlichen Sie nur mit der tatsächlichen Organisation, den Daten, dem Format, der Einwilligung und einer evidenzbasierten Darstellung der abgeschlossenen Arbeiten."
+      },
+      {
+        "number": "02",
+        "title": "Verteilte Teams",
+        "question": "Können Remote-Kollegen aus einer Zusammenkunft bessere Arbeitsgewohnheiten machen?",
+        "answer": "Das Programm kann einen gemeinsamen Ort zum Planen, Erstellen, Überprüfen und Dokumentieren schaffen. Das Team entscheidet, was danach weitergeht, und kein späteres Unternehmensergebnis wird CRAYS ohne Beweis zugeschrieben.",
+        "gate": "Trennen Sie die gelieferte Erfassung von späteren Leistungs-, Einstellungs-, Umsatz- oder Produktergebnissen."
+      },
+      {
+        "number": "03",
+        "title": "Produkt- und Kreativteams",
+        "question": "Können Macher von einem lockeren Problem zu einer Arbeit übergehen, die sie erklären können?",
+        "answer": "Geschützte Produktion, Workshops und eine optionale Demo schaffen einen praktischen Ablauf: Problem formulieren, Entscheidungen treffen, eine Version erstellen und dann angeben, was sich geändert hat und was ungelöst bleibt.",
+        "gate": "Das Team genehmigt jedes öffentliche Artefakt und definiert die Grenzen vertraulicher Arbeit und geistigen Eigentums."
+      },
+      {
+        "number": "04",
+        "title": "Führungsgruppen",
+        "question": "Können Führungskräfte aus der Routine ausbrechen, ohne Unternehmenstheater zu inszenieren?",
+        "answer": "Der Besuch bleibt Arbeitszeit. Die Tagesordnung kann schwierige Entscheidungen, individuelle Überlegungen, Gruppendiskussionen und eine schriftliche Aufzeichnung der Eigentumsverhältnisse umfassen, ohne den Eindruck zu erwecken, dass ein Retreat selbst eine Ausrichtung schafft.",
+        "gate": "Bis Identität, Rolle, Wortlaut und Veröffentlichungserlaubnis bestätigt sind, erscheint kein Anführer, Unternehmen oder Statement."
+      },
+      {
+        "number": "05",
+        "title": "Firmenresidenzen",
+        "question": "Kann ein längeres Format Übermittlung, nachhaltigen Rhythmus und lokale Verbindung vereinen?",
+        "answer": "Eine Residenz kann fokussierte Arbeit, Lernen, Bewegung und Gemeinschaft sequenzieren, während Unterbringung, Ausstattung, Zugang und Termine einer ausdrücklichen schriftlichen Bestätigung unterliegen.",
+        "gate": "Eine Fähigkeit wird erst nach Lieferung und Genehmigung des Sachverhalts zu einer Fallstudie."
+      }
+    ],
+    "methods": [
+      {
+        "step": "Lernen",
+        "line": "Stellen Sie nützliches Wissen neben die Arbeit.",
+        "body": "Das Team legt vor der Ankunft fest, was es verstehen muss. Jede Sitzung basiert dann auf einer tatsächlichen Entscheidung oder Fähigkeit und nicht auf einem allgemeinen Lehrplan.",
+        "details": [
+          "Benennen Sie zuerst die Entscheidung oder Fähigkeit.",
+          "Beauftragen Sie einen Praktiker erst, nachdem die Teilnahme bestätigt wurde.",
+          "Trennen Sie praktisches Lernen von Rechts-, Finanz- oder Beschäftigungsberatung.",
+          "Notieren Sie, was das Team anschließend testen wird."
+        ]
+      },
+      {
+        "step": "Netzwerk",
+        "line": "Treffen Sie Menschen aus einem bestimmten Grund, niemals wegen eines Abzeichens.",
+        "body": "Einführungen beginnen mit dem Kontext und der gegenseitigen Zustimmung. CRAYS bedeutet nicht, dass ein Besucher einen Investor, Kunden, Arbeitgeber oder Partner trifft.",
+        "details": [
+          "Geben Sie an, welche Perspektive sinnvoll wäre.",
+          "Bestätigen Sie die Einwilligung, bevor Identitäten weitergegeben werden.",
+          "Geben Sie jedem Gespräch eine klare Grenze.",
+          "Lassen Sie Beziehungen ohne kommerzielle Versprechen entstehen."
+        ]
+      },
+      {
+        "step": "Umsetzen",
+        "line": "Verwandeln Sie geschützte Zeit in sichtbaren Fortschritt.",
+        "body": "Fokussierte Blöcke, Teamräume und Überprüfungspunkte helfen dem Team, seine eigenen Prioritäten zu setzen. CRAYS wird nicht zum Lieferteam und garantiert keinen Start.",
+        "details": [
+          "Wählen Sie ein begrenztes Ergebnis.",
+          "Schützen Sie die Maker-Zeit vor unnötiger Programmierung.",
+          "Planen Sie Entscheidungen vor Arbeitsblockaden.",
+          "Notieren Sie, was sich geändert hat und was noch Beweise benötigen."
+        ]
+      },
+      {
+        "step": "Demo",
+        "line": "Erklären Sie die Arbeit, ohne die Geschichte aufzublähen.",
+        "body": "Eine optionale Demo kann zeigen, was gelernt oder gemacht wurde, nachdem Publikum, Vertraulichkeits- und Feedbackregeln vereinbart wurden. Es handelt sich nicht um eine Finanzierungsveranstaltung oder Unterstützung.",
+        "details": [
+          "Entscheiden Sie, was gezeigt werden kann.",
+          "Laden Sie nur ein entsprechend bestätigtes Publikum ein.",
+          "Trennen Sie Feedback von Verpflichtungen.",
+          "Veröffentlichen Sie nichts ohne ausdrückliche Genehmigung."
+        ]
+      }
+    ],
+    "expertiseSlots": [
+      [
+        "Arbeit für Gründerteams",
+        "Prioritäten, Entscheidungsverantwortung und Betriebsrhythmus."
+      ],
+      [
+        "Produktpraxis",
+        "Problemstellung, Beurteilung und Liefermöglichkeiten."
+      ],
+      [
+        "Engineering",
+        "Architektur, Zuverlässigkeit und verantwortungsvolle Umsetzung."
+      ],
+      [
+        "Design",
+        "Forschung, Interaktion und Produktkohärenz."
+      ],
+      [
+        "Markteinführung",
+        "Positionierung, Kanäle und evidenzbasiertes Lernen."
+      ],
+      [
+        "Marke & Inhalte",
+        "Erzählung, Produktion und wahrheitsgetreue Kommunikation."
+      ],
+      [
+        "Remote-Führung",
+        "Verteilte Entscheidungen und schriftliche Betriebsgewohnheiten."
+      ],
+      [
+        "Community-Aufbau",
+        "Zustimmung, Zugehörigkeit und sinnvolle Teilnahme."
+      ],
+      [
+        "Teamgesundheit",
+        "Nachhaltige Routinen ohne medizinische Ansprüche."
+      ],
+      [
+        "Moderation",
+        "Strukturierte Kritik-, Mapping- und Entscheidungssitzungen."
+      ],
+      [
+        "Unternehmensgründung",
+        "Nur durch einen entsprechend qualifizierten und geprüften Sachverständigen."
+      ],
+      [
+        "Finanzen",
+        "Nur durch einen entsprechend qualifizierten und geprüften Sachverständigen."
+      ],
+      [
+        "Rechtliche Abläufe",
+        "Nur durch einen entsprechend qualifizierten und geprüften Sachverständigen."
+      ],
+      [
+        "Regionaler Kontext",
+        "Nur durch geprüfte Ortskenntnis."
+      ],
+      [
+        "Hospitality-Betrieb",
+        "Nur durch bestätigte operative Praktiker."
+      ],
+      [
+        "Technologiestrategie",
+        "Entscheidungen, Kompromisse und verantwortungsvolle Roadmaps."
+      ],
+      [
+        "Sicherheit & Datenschutz",
+        "Nur durch nachweislich qualifizierte Praktiker."
+      ],
+      [
+        "Personalwesen",
+        "Kein Einstellungs- oder Beschäftigungsergebnisversprechen."
+      ],
+      [
+        "Kreativproduktion",
+        "Rechtebewusste Produktions- und Veröffentlichungsentscheidungen."
+      ],
+      [
+        "Öffentliche Kommunikation",
+        "Beweise, Genehmigungen und verantwortungsvolle Ansprüche."
+      ]
+    ],
+    "facilities": [
+      [
+        "Unterkunftskoordination",
+        "Eine echte Option erscheint erst, nachdem Eigentum, Daten und Zugang bestätigt wurden.",
+        "Bestätigung erforderlich"
+      ],
+      [
+        "Gemeinsame Mahlzeiten",
+        "Essensformate können den Tag unterstützen; Menüs, Ernährungsumstellung und Service bedürfen der Bestätigung.",
+        "Geltungsbereich vor der Ankunft"
+      ],
+      [
+        "Bewegung & Fitness",
+        "Bewegung gehört in den Rhythmus; Der tatsächliche Zugang zur Einrichtung muss überprüft werden.",
+        "Zugriff noch nicht beansprucht"
+      ],
+      [
+        "Expertengespräche",
+        "Eine Sitzung ist an eine bestätigte Person, ein bestätigtes Thema und ein bestätigtes Datum gebunden.",
+        "Profile warten auf Genehmigung"
+      ],
+      [
+        "Community-Momente",
+        "Opt-in-Treffen schaffen Raum für Gespräche ohne Networking-Garantie.",
+        "Formatorientiert"
+      ],
+      [
+        "Coworking",
+        "Ruhiges Arbeiten, gemeinsame Tische und Besprechungszonen werden dem vereinbarten Programm zugeordnet.",
+        "Standortbestätigung erforderlich"
+      ],
+      [
+        "Content-Studio",
+        "Die Nutzung ist abhängig von Ausstattung, Support, Rechten und den zur Veröffentlichung zugelassenen Inhalten.",
+        "Rechtebewusst"
+      ],
+      [
+        "Workshops",
+        "Räume und Formate unterstützen Kartierung, Kritik, Planung und Entscheidung.",
+        "Von der Agenda geleitet"
+      ],
+      [
+        "Fitnesskurse",
+        "Kursleiter, Zeitplan, Zugang und Sicherheitsverantwortung müssen bestätigt werden.",
+        "Programm blockiert"
+      ],
+      [
+        "Persönliche Kontakte",
+        "Die Einführung von Kunden, Partnern, Arbeitgebern und Investoren kann niemals garantiert werden.",
+        "Gegenseitige Zustimmung erforderlich"
+      ],
+      [
+        "Konnektivität",
+        "Anforderungen werden erfasst, bevor ein Leistungsanspruch geltend gemacht wird.",
+        "Technische Bestätigung erforderlich"
+      ]
+    ],
+    "socialProof": [
+      [
+        "Teamergebnis",
+        "Genehmigte Organisation, Termine, Format und eine sachliche Darstellung der abgeschlossenen Arbeiten."
+      ],
+      [
+        "Reflexion eines Gründers",
+        "Verifizierte Person und Rolle, genaue genehmigte Aussage und Einwilligung zur Veröffentlichung."
+      ],
+      [
+        "Programmnachweis",
+        "Übermittelte Tagesordnung und ein Protokoll, das die Aktivitäten von den späteren Ergebnissen trennt."
+      ],
+      [
+        "Community-Erfahrung",
+        "Zustimmung aller identifizierbaren Mitwirkenden und keine abgeleitete Billigung."
+      ],
+      [
+        "Erneuter Besuch",
+        "Ein echtes zweites Engagement plus die Zustimmung, darzulegen, warum das Team zurückgekehrt ist."
+      ]
+    ],
+    "faqs": [
+      [
+        "Ist das eine Buchungsseite?",
+        "Nein. Teams erklärt die Reise und eröffnet ein begrenztes Gespräch. Termine, Unterbringung, Ausstattung, Zugang und Geschäftsbedingungen bedürfen einer gesonderten Bestätigung."
+      ],
+      [
+        "Verspricht CRAYS Einführungen?",
+        "Nein. Eine relevante Einführung kann erst dann in Betracht gezogen werden, wenn Kontext und gegenseitige Zustimmung vorliegen. Es gibt keine Zusage von Investoren, Kunden, Partnern, Arbeitgebern oder Finanzierung."
+      ],
+      [
+        "Kann die Arbeit des Teams privat bleiben?",
+        "Ja. Das Team entscheidet, was besprochen, demonstriert oder veröffentlicht werden darf. Öffentliche Belege, Medien und Zitate bedürfen einer gesonderten ausdrücklichen Genehmigung."
+      ],
+      [
+        "Ist jede Einrichtung immer verfügbar?",
+        "Nein. Jede Einrichtung, jeder Service und jedes Betriebsdetail muss hinsichtlich des tatsächlichen Standorts, Umfangs und der Daten bestätigt werden."
+      ],
+      [
+        "Kann CRAYS einen Start oder ein Ergebnis garantieren?",
+        "Nein. Das Team ist für Entscheidungen und Ergebnisse verantwortlich. CRAYS bietet eine strukturierte Einstellung und nur explizit bestätigte Dienste."
+      ],
+      [
+        "Wie beginnt ein Team?",
+        "Beginnen Sie mit Zweck, Größe, Arbeitsanforderungen und bevorzugtem Format. CRAYS kann dann erkennen, was möglich ist, was einer Bestätigung bedarf und was blockiert bleibt."
+      ]
+    ]
+  },
+  "es": {
+    "benefits": [
+      [
+        "Coordinación de la estancia",
+        "La función de alojamiento se puede determinar únicamente después de que se confirmen los bienes inmuebles, las fechas y el acceso."
+      ],
+      [
+        "Comidas compartidas",
+        "La comida puede apoyar el ritmo del equipo; Los menús, el manejo dietético y el servicio siguen siendo elementos de confirmación."
+      ],
+      [
+        "Movimiento",
+        "El tiempo de movimiento se puede planificar sin prometer resultados en el gimnasio, la clase o el rendimiento."
+      ],
+      [
+        "Aprendizaje",
+        "Una sesión práctica comienza con una pregunta real del trabajo actual del equipo."
+      ],
+      [
+        "Coworking",
+        "El trabajo individual tranquilo y el tiempo de revisión compartido tienen distintos lugares durante el día."
+      ],
+      [
+        "Talleres",
+        "Toda la sala puede mapear, desafiar y decidir en torno a un problema acotado."
+      ],
+      [
+        "Espacios de equipo",
+        "El espacio privado para equipos sigue siendo una función de instalación específica, no una disponibilidad general."
+      ],
+      [
+        "Comunidad",
+        "Las presentaciones son voluntarias, basadas en el contexto y nunca son una ruta prometida para el cliente o el inversor."
+      ],
+      [
+        "Conectividad",
+        "Las necesidades técnicas se capturan antes de realizar cualquier declaración de desempeño a nivel de ubicación."
+      ],
+      [
+        "Estudio de contenidos",
+        "La producción requiere equipo, soporte, derechos y límites de publicación confirmados."
+      ],
+      [
+        "Actividades de fitness",
+        "Se debe confirmar el instructor, el horario, el acceso y el propietario de seguridad antes de ofrecer una clase."
+      ],
+      [
+        "Alcance definido por escrito",
+        "Los servicios, responsabilidades y exclusiones se registran juntos en lugar de ocultarse detrás de un reclamo de paquete."
+      ]
+    ],
+    "proofLanes": [
+      {
+        "number": "01",
+        "title": "Equipos fundadores",
+        "question": "¿Puede un equipo pequeño proteger el foco sin aislarse?",
+        "answer": "Un formato CRAYS puede separar el tiempo del creador, el tiempo de decisión y el tiempo de la comunidad de participación voluntaria. Los fundadores mantienen la propiedad de las prioridades y los resultados; el club suministra únicamente el entorno y los servicios que están confirmados.",
+        "gate": "Publicar únicamente con la organización real, fechas, formato, consentimiento y un relato basado en evidencia de lo que se completó."
+      },
+      {
+        "number": "02",
+        "title": "Equipos distribuidos",
+        "question": "¿Pueden los colegas remotos convertir una reunión en mejores hábitos de trabajo?",
+        "answer": "El programa puede crear un lugar compartido para planificar, construir, revisar y documentar. El equipo decide qué continúa después y ningún resultado posterior de la empresa se atribuye a CRAYS sin pruebas.",
+        "gate": "Separe la reunión entregada del desempeño posterior, la contratación, los ingresos o los resultados del producto."
+      },
+      {
+        "number": "03",
+        "title": "Equipos creativos y de producto.",
+        "question": "¿Pueden los creadores pasar de un problema sencillo a un trabajo que puedan explicar?",
+        "answer": "La producción protegida, los talleres y una demostración opcional crean una secuencia práctica: encuadre el problema, tome decisiones, cree una versión y luego indique qué cambió y qué queda sin resolver.",
+        "gate": "El equipo aprueba cada artefacto público y define los límites entre el trabajo confidencial y la propiedad intelectual."
+      },
+      {
+        "number": "04",
+        "title": "Grupos de liderazgo",
+        "question": "¿Pueden los líderes salir de la rutina sin montar un teatro corporativo?",
+        "answer": "La visita sigue siendo tiempo de trabajo. La agenda puede contener decisiones difíciles, pensamiento individual, discusión grupal y un registro escrito de propiedad sin pretender que un retiro en sí mismo genere alineación.",
+        "gate": "Ningún líder, empresa o declaración aparece hasta que se confirme la identidad, el rol, la redacción y el permiso de publicación."
+      },
+      {
+        "number": "05",
+        "title": "Residencias de empresas",
+        "question": "¿Puede un formato más largo combinar entrega, ritmo sostenible y conexión local?",
+        "answer": "Una residencia puede secuenciar trabajo, aprendizaje, movimiento y comunidad enfocados, mientras que el alojamiento, las instalaciones, el acceso y las fechas permanecen sujetos a confirmación explícita por escrito.",
+        "gate": "Una capacidad se convierte en un estudio de caso sólo después de la entrega y aprobación del expediente de hechos."
+      }
+    ],
+    "methods": [
+      {
+        "step": "Aprender",
+        "line": "Ponga conocimientos útiles al lado del trabajo.",
+        "body": "El equipo identifica lo que debe entender antes de llegar. Luego, cualquier sesión se estructura en torno a una decisión o capacidad en vivo en lugar de un plan de estudios genérico.",
+        "details": [
+          "Nombre la decisión o capacidad primero.",
+          "Utilice un profesional solo después de que se confirme la participación.",
+          "Separe el aprendizaje práctico del asesoramiento legal, financiero o laboral.",
+          "Registre lo que el equipo probará después."
+        ]
+      },
+      {
+        "step": "Conectar",
+        "line": "Conoce gente por una razón, nunca por una insignia.",
+        "body": "Las presentaciones comienzan con el contexto y el consentimiento mutuo. CRAYS no implica que un visitante conozca a un inversor, cliente, empleador o socio.",
+        "details": [
+          "Indique qué perspectiva sería útil.",
+          "Confirme el consentimiento antes de compartir identidades.",
+          "Dale a cada conversación un límite claro.",
+          "Dejemos que las relaciones se desarrollen sin una promesa comercial."
+        ]
+      },
+      {
+        "step": "Construir",
+        "line": "Convierta el tiempo protegido en progreso visible.",
+        "body": "Los bloques enfocados, las salas de equipo y los puntos de revisión ayudan al equipo a avanzar en sus propias prioridades. CRAYS no se convierte en el equipo de entrega y no garantiza un lanzamiento.",
+        "details": [
+          "Elija un resultado acotado.",
+          "Proteja el tiempo del fabricante de programación innecesaria.",
+          "Programe decisiones antes de los bloques de trabajo.",
+          "Registre qué cambió y qué aún necesita evidencia."
+        ]
+      },
+      {
+        "step": "Demo",
+        "line": "Explica el trabajo sin inflar la historia.",
+        "body": "Una demostración opcional puede mostrar lo que se aprendió o se hizo después de que se acuerde la audiencia, las reglas de confidencialidad y retroalimentación. No es un evento de financiación o respaldo.",
+        "details": [
+          "Decide qué se puede mostrar.",
+          "Invite sólo a una audiencia confirmada adecuada.",
+          "Separe la retroalimentación de los compromisos.",
+          "No publicar nada sin aprobación explícita."
+        ]
+      }
+    ],
+    "expertiseSlots": [
+      [
+        "Operaciones para fundadores",
+        "Prioridades, propiedad de las decisiones y ritmo operativo."
+      ],
+      [
+        "Práctica de producto",
+        "Encuadre del problema, juicio y opciones de entrega."
+      ],
+      [
+        "Ingeniería",
+        "Arquitectura, confiabilidad e implementación responsable."
+      ],
+      [
+        "Diseño",
+        "Investigación, interacción y coherencia del producto."
+      ],
+      [
+        "Estrategia de mercado",
+        "Posicionamiento, canales y aprendizaje basado en evidencia."
+      ],
+      [
+        "Marca y contenidos",
+        "Narrativa, producción y comunicación veraz."
+      ],
+      [
+        "Liderazgo remoto",
+        "Decisiones distribuidas y hábitos operativos escritos."
+      ],
+      [
+        "Creación de comunidad",
+        "Consentimiento, pertenencia y participación útil."
+      ],
+      [
+        "Salud del equipo",
+        "Rutinas sustentables sin reclamos médicos."
+      ],
+      [
+        "Facilitación",
+        "Sesiones estructuradas de crítica, mapeo y decisión."
+      ],
+      [
+        "Constitución de empresas",
+        "Sólo a través de un experto confirmado y debidamente cualificado."
+      ],
+      [
+        "Finanzas",
+        "Sólo a través de un experto confirmado y debidamente cualificado."
+      ],
+      [
+        "Operaciones legales",
+        "Sólo a través de un experto confirmado y debidamente cualificado."
+      ],
+      [
+        "Contexto regional",
+        "Sólo a través del conocimiento local verificado."
+      ],
+      [
+        "Operaciones de hospitalidad",
+        "Sólo a través de profesionales operativos confirmados."
+      ],
+      [
+        "Estrategia tecnológica",
+        "Opciones, compensaciones y hojas de ruta responsables."
+      ],
+      [
+        "Seguridad y privacidad",
+        "Sólo a través de profesionales calificados confirmados."
+      ],
+      [
+        "Gestión de personas",
+        "Sin promesa de resultados de contratación o empleo."
+      ],
+      [
+        "Producción creativa",
+        "Decisiones de producción y publicación conscientes de los derechos."
+      ],
+      [
+        "Comunicación pública",
+        "Pruebas, aprobaciones y reclamaciones responsables."
+      ]
+    ],
+    "facilities": [
+      [
+        "Coordinación del alojamiento",
+        "Una opción real aparece sólo después de que se confirman la propiedad, las fechas y el acceso.",
+        "Se requiere confirmación"
+      ],
+      [
+        "Comidas compartidas",
+        "Los formatos de las comidas pueden acompañar el día; Los menús, el manejo dietético y el servicio requieren confirmación.",
+        "Alcance antes de la llegada"
+      ],
+      [
+        "Movimiento y gimnasio",
+        "El movimiento pertenece al ritmo; Se debe verificar el acceso real a las instalaciones.",
+        "Acceso aún no reclamado"
+      ],
+      [
+        "Sesiones con expertos",
+        "Se adjunta sesión a persona, tema y fecha confirmados.",
+        "Perfiles en espera de aprobación"
+      ],
+      [
+        "Encuentros de la comunidad",
+        "Las reuniones voluntarias crean espacio para la conversación sin garantía de networking.",
+        "Guiado por el formato"
+      ],
+      [
+        "Coworking",
+        "El trabajo tranquilo, las mesas compartidas y las zonas de revisión se asignan al programa acordado.",
+        "Se requiere confirmación de ubicación"
+      ],
+      [
+        "Estudio de contenidos",
+        "El uso depende del equipo, soporte, derechos y contenido permitido para su publicación.",
+        "Consciente de los derechos"
+      ],
+      [
+        "Talleres",
+        "Salas y formatos apoyan el mapeo, la crítica, la planificación y las decisiones.",
+        "Dirigido por una agenda"
+      ],
+      [
+        "Clases de fitness",
+        "Se debe confirmar instructor, horario, acceso y responsabilidad de seguridad.",
+        "Programa bloqueado"
+      ],
+      [
+        "Presentaciones",
+        "La presentación de clientes, socios, empleadores e inversores nunca está garantizada.",
+        "Se requiere consentimiento mutuo"
+      ],
+      [
+        "Conectividad",
+        "Los requisitos se capturan antes de realizar cualquier reclamo de desempeño.",
+        "Se requiere confirmación técnica"
+      ]
+    ],
+    "socialProof": [
+      [
+        "Resultado del equipo",
+        "Organización aprobada, fechas, formato y relato fáctico del trabajo completado."
+      ],
+      [
+        "Reflexión del fundador",
+        "Persona y rol verificados, declaración exacta aprobada y consentimiento de publicación."
+      ],
+      [
+        "Evidencia del programa",
+        "Agenda entregada y registro que separa la actividad de los resultados posteriores."
+      ],
+      [
+        "Experiencia en la comunidad",
+        "Consentimiento de cada contribuyente identificable y ningún respaldo inferido."
+      ],
+      [
+        "Nueva visita",
+        "Un segundo compromiso real más aprobación para explicar por qué regresó el equipo."
+      ]
+    ],
+    "faqs": [
+      [
+        "¿Es esta una página de reservas?",
+        "No. Teams explica el recorrido y abre una conversación específica. Las fechas, el alojamiento, las instalaciones, el acceso y las condiciones comerciales requieren confirmación por separado."
+      ],
+      [
+        "¿CRAYS promete presentaciones?",
+        "No. Se puede considerar una introducción relevante solo después de que exista contexto y consentimiento mutuo. No hay ninguna promesa de inversores, clientes, socios, empleadores o financiación."
+      ],
+      [
+        "¿Puede el trabajo del equipo permanecer privado?",
+        "Sí. El equipo decide qué se puede discutir, demostrar o publicar. Las pruebas públicas, los medios y las citas necesitan aprobación explícita por separado."
+      ],
+      [
+        "¿Están todas las instalaciones siempre disponibles?",
+        "No. Se debe confirmar la ubicación, el alcance y las fechas reales de cada instalación, servicio y detalle operativo."
+      ],
+      [
+        "¿Puede CRAYS garantizar un lanzamiento o un resultado?",
+        "No. El equipo es dueño de las decisiones y los resultados. CRAYS proporciona una configuración estructurada y solo servicios confirmados explícitamente."
+      ],
+      [
+        "¿Cómo empieza un equipo?",
+        "Comience con el propósito, el tamaño, las necesidades de trabajo y el formato preferido. CRAYS puede entonces identificar qué es posible, qué necesita confirmación y qué permanece bloqueado."
+      ]
+    ]
+  },
+  "ca": {
+    "benefits": [
+      [
+        "Coordinació de l’estada",
+        "Una funció d'allotjament només es pot definir després de confirmar la propietat, les dates i l'accés."
+      ],
+      [
+        "Menjars compartits",
+        "El menjar pot suportar el ritme de l'equip; els menús, la manipulació dietètica i el servei segueixen sent elements de confirmació."
+      ],
+      [
+        "Moviment",
+        "El temps per al moviment es pot planificar sense prometre un resultat de gimnàs, classe o rendiment."
+      ],
+      [
+        "Aprenentatge",
+        "Una sessió pràctica comença amb una pregunta real del treball actual de l'equip."
+      ],
+      [
+        "Coworking",
+        "El treball individual tranquil i el temps de revisió compartit tenen diferents llocs durant el dia."
+      ],
+      [
+        "Tallers",
+        "Tota la sala pot mapejar, desafiar i decidir sobre un problema limitat."
+      ],
+      [
+        "Espais d’equip",
+        "L'espai privat de l'equip continua sent una funció d'abast de les instal·lacions, no la disponibilitat general."
+      ],
+      [
+        "Comunitat",
+        "Les presentacions són opt-in, es basen en el context i mai són una ruta promesa per a clients o inversors."
+      ],
+      [
+        "Connectivitat",
+        "Les necessitats tècniques es capturen abans de fer qualsevol declaració de rendiment a nivell d'ubicació."
+      ],
+      [
+        "Estudi de continguts",
+        "La producció requereix equips, suport, drets i límits de publicació confirmats."
+      ],
+      [
+        "Activitats de fitness",
+        "Abans d'oferir una classe, s'ha de confirmar un instructor, un horari, un accés i un propietari de seguretat."
+      ],
+      [
+        "Abast definit per escrit",
+        "Els serveis, les responsabilitats i les exclusions es registren conjuntament en lloc d'amagar-se darrere d'una reclamació de paquet."
+      ]
+    ],
+    "proofLanes": [
+      {
+        "number": "01",
+        "title": "Equips fundadors",
+        "question": "Pot un equip petit protegir el focus sense tallar-se?",
+        "answer": "Un format CRAYS pot separar el temps del creador, el temps de decisió i el temps d'activació de la comunitat. Els fundadors mantenen la propietat de les prioritats i els resultats; el club només proporciona l'entorn i els serveis que es confirmin.",
+        "gate": "Publicar només amb l'organització real, les dates, el format, el consentiment i un compte basat en evidències del que s'ha completat."
+      },
+      {
+        "number": "02",
+        "title": "Equips distribuïts",
+        "question": "Els companys remots poden convertir una reunió en millors hàbits de treball?",
+        "answer": "El programa pot crear un lloc compartit per planificar, construir, revisar i documentar. L'equip decideix què continua després, i no s'atribueix cap resultat posterior de l'empresa a CRAYS sense proves.",
+        "gate": "Separeu la reunió lliurada dels resultats posteriors del rendiment, la contractació, els ingressos o el producte."
+      },
+      {
+        "number": "03",
+        "title": "Equips creatius i de producte",
+        "question": "Els fabricants poden passar d'un problema solt a un treball que poden explicar?",
+        "answer": "La producció protegida, els tallers i una demostració opcional creen una seqüència pràctica: emmarca el problema, pren decisions, construeix una versió, després indica què ha canviat i què segueix sense resoldre.",
+        "gate": "L'equip aprova cada artefacte públic i defineix el límit al voltant del treball confidencial i la propietat intel·lectual."
+      },
+      {
+        "number": "04",
+        "title": "Grups de lideratge",
+        "question": "Els líders poden sortir de la rutina sense muntar un teatre corporatiu?",
+        "answer": "La visita continua sent en horari laboral. L'agenda pot contenir decisions difícils, pensament individual, discussió en grup i un registre escrit de la propietat sense pretendre que un retir en si mateix crea l'alineació.",
+        "gate": "No apareix cap líder, empresa o declaració fins que no es confirmi la identitat, el paper, la redacció i el permís de publicació."
+      },
+      {
+        "number": "05",
+        "title": "Residències de l'empresa",
+        "question": "Un format més llarg pot combinar el lliurament, el ritme sostenible i la connexió local?",
+        "answer": "Una residència pot seqüenciar el treball centrat, l'aprenentatge, el moviment i la comunitat, mentre que l'allotjament, les instal·lacions, l'accés i les dates romanen subjectes a una confirmació per escrit explícita.",
+        "gate": "Una capacitat es converteix en un estudi de cas només després del lliurament i l'aprovació del registre de fets."
+      }
+    ],
+    "methods": [
+      {
+        "step": "Aprendre",
+        "line": "Posa coneixements útils al costat del treball.",
+        "body": "L'equip identifica què ha d'entendre abans d'arribar. Tot seguit, qualsevol sessió es configura al voltant d'una decisió o capacitat en directe en lloc d'un currículum genèric.",
+        "details": [
+          "Anomena primer la decisió o la capacitat.",
+          "Utilitzeu un professional només després de confirmar la participació.",
+          "Separa l'aprenentatge pràctic de l'assessorament legal, financer o laboral.",
+          "Anoteu el que l'equip provarà després."
+        ]
+      },
+      {
+        "step": "Connectar",
+        "line": "Coneix gent per una raó, mai per una insígnia.",
+        "body": "Les presentacions comencen amb el context i el consentiment mutu. CRAYS no implica que un visitant es trobi amb un inversor, client, empresari o soci.",
+        "details": [
+          "Indica quina perspectiva seria útil.",
+          "Confirmeu el consentiment abans de compartir les identitats.",
+          "Dóna a cada conversa un límit clar.",
+          "Deixeu que les relacions es desenvolupin sense una promesa comercial."
+        ]
+      },
+      {
+        "step": "Construir",
+        "line": "Converteix el temps protegit en un progrés visible.",
+        "body": "Els blocs centrats, les sales d'equip i els punts de revisió ajuden l'equip a moure les seves pròpies prioritats. CRAYS no es converteix en l'equip de lliurament i no garanteix un llançament.",
+        "details": [
+          "Trieu un resultat limitat.",
+          "Protegiu el temps del fabricant de programacions innecessàries.",
+          "Planificar les decisions abans dels blocs de treball.",
+          "Anoteu què ha canviat i què encara necessita proves."
+        ]
+      },
+      {
+        "step": "Demo",
+        "line": "Explica el treball sense inflar la història.",
+        "body": "Una demostració opcional pot mostrar el que s'ha après o fet després que s'acordin les normes d'audiència, confidencialitat i comentaris. No és un esdeveniment de finançament o aval.",
+        "details": [
+          "Decidiu què es pot mostrar.",
+          "Convida només un públic confirmat adequat.",
+          "Separa el feedback dels compromisos.",
+          "No publiqueu res sense aprovació explícita."
+        ]
+      }
+    ],
+    "expertiseSlots": [
+      [
+        "Operacions per a fundadors",
+        "Prioritats, propietat de la decisió i ritme de funcionament."
+      ],
+      [
+        "Pràctica de producte",
+        "Enquadrament de problemes, judici i opcions de lliurament."
+      ],
+      [
+        "Enginyeria",
+        "Arquitectura, fiabilitat i implementació responsable."
+      ],
+      [
+        "Disseny",
+        "Recerca, interacció i coherència del producte."
+      ],
+      [
+        "Estratègia de mercat",
+        "Posicionament, canals i aprenentatge basat en l'evidència."
+      ],
+      [
+        "Marca i continguts",
+        "Narrativa, producció i comunicació veraç."
+      ],
+      [
+        "Lideratge a distància",
+        "Decisions distribuïdes i hàbits operatius escrits."
+      ],
+      [
+        "Creació de comunitat",
+        "Consentiment, pertinença i participació útil."
+      ],
+      [
+        "Salut de l’equip",
+        "Rutines sostenibles sense reclamacions mèdiques."
+      ],
+      [
+        "Facilitació",
+        "Sessions estructurades de crítica, mapes i decisions."
+      ],
+      [
+        "Constitució d’empreses",
+        "Només a través d'un expert confirmat degudament qualificat."
+      ],
+      [
+        "Finances",
+        "Només a través d'un expert confirmat degudament qualificat."
+      ],
+      [
+        "Operacions legals",
+        "Només a través d'un expert confirmat degudament qualificat."
+      ],
+      [
+        "Context regional",
+        "Només mitjançant coneixement local verificat."
+      ],
+      [
+        "Operacions d’hospitalitat",
+        "Només a través de professionals operatius confirmats."
+      ],
+      [
+        "Estratègia tecnològica",
+        "Opcions, compromisos i fulls de ruta responsables."
+      ],
+      [
+        "Seguretat i privacitat",
+        "Només a través de professionals qualificats confirmats."
+      ],
+      [
+        "Gestió de persones",
+        "No hi ha cap promesa de resultats laborals ni de contractació."
+      ],
+      [
+        "Producció creativa",
+        "Decisions de producció i publicació conscients dels drets."
+      ],
+      [
+        "Comunicació pública",
+        "Evidències, aprovacions i reclamacions responsables."
+      ]
+    ],
+    "facilities": [
+      [
+        "Coordinació de l’allotjament",
+        "Una opció real només apareix després de confirmar la propietat, les dates i l'accés.",
+        "Cal confirmació"
+      ],
+      [
+        "Menjars compartits",
+        "Els formats d'àpats poden donar suport al dia; menús, manipulació dietètica i servei requereixen confirmació.",
+        "Àmbit abans de l'arribada"
+      ],
+      [
+        "Moviment i gimnàs",
+        "El moviment pertany al ritme; S'ha de verificar l'accés real a les instal·lacions.",
+        "Accés encara no reclamat"
+      ],
+      [
+        "Sessions amb experts",
+        "S'adjunta una sessió a una persona, tema i data confirmats.",
+        "Perfils pendents d'aprovació"
+      ],
+      [
+        "Trobades de la comunitat",
+        "Les reunions d'activació creen espai per a la conversa sense una garantia de xarxa.",
+        "dirigit per format"
+      ],
+      [
+        "Coworking",
+        "El treball tranquil, les taules compartides i les zones de revisió s'assignen al programa acordat.",
+        "Cal confirmar la ubicació"
+      ],
+      [
+        "Estudi de continguts",
+        "L'ús depèn de l'equip, el suport, els drets i el contingut permès per a la publicació.",
+        "Conscient dels drets"
+      ],
+      [
+        "Tallers",
+        "Les sales i els formats admeten mapes, crítica, planificació i decisions.",
+        "Dirigit per agenda"
+      ],
+      [
+        "Classes de fitness",
+        "S'ha de confirmar la responsabilitat de l'instructor, horari, accés i seguretat.",
+        "Programa bloquejat"
+      ],
+      [
+        "Presentacions",
+        "Les presentacions de clients, socis, empresaris i inversors mai estan garantides.",
+        "Cal consentiment mutu"
+      ],
+      [
+        "Connectivitat",
+        "Els requisits es recullen abans de fer qualsevol reclamació de rendiment.",
+        "Es requereix confirmació tècnica"
+      ]
+    ],
+    "socialProof": [
+      [
+        "Resultat de l’equip",
+        "Organització aprovada, dates, format i compte fet del treball realitzat."
+      ],
+      [
+        "Reflexió del fundador",
+        "Persona i rol verificats, declaració aprovada exacta i consentiment de publicació."
+      ],
+      [
+        "Evidència del programa",
+        "Agenda lliurada i un registre que separa l'activitat dels resultats posteriors."
+      ],
+      [
+        "Experiència en la comunitat",
+        "Consentiment de tots els col·laboradors identificables i cap aval inferit."
+      ],
+      [
+        "Nova visita",
+        "Un veritable segon compromís més aprovació per indicar per què l'equip va tornar."
+      ]
+    ],
+    "faqs": [
+      [
+        "Aquesta és una pàgina de reserves?",
+        "No. Teams explica el viatge i obre una conversa amb l'abast. Les dates, allotjament, instal·lacions, accés i condicions comercials requereixen una confirmació per separat."
+      ],
+      [
+        "CRAYS promet presentacions?",
+        "No. Només es pot considerar una introducció rellevant després que existeixi el context i el consentiment mutu. No hi ha cap promesa d'inversors, clients, socis, empresaris o finançament."
+      ],
+      [
+        "El treball de l'equip pot romandre privat?",
+        "Sí. L'equip decideix què es pot discutir, demostrar o publicar. La prova pública, els mitjans de comunicació i les cites necessiten una aprovació explícita separada."
+      ],
+      [
+        "Totes les instal·lacions estan sempre disponibles?",
+        "No. Cada instal·lació, servei i detall de funcionament s'han de confirmar per a la ubicació, l'abast i les dates reals."
+      ],
+      [
+        "Pot CRAYS garantir un llançament o un resultat?",
+        "No. L'equip és propietari de les decisions i dels resultats. CRAYS proporciona una configuració estructurada i només serveis confirmats explícitament."
+      ],
+      [
+        "Com comença un equip?",
+        "Comenceu amb el propòsit, la mida, les necessitats de treball i el format preferit. Aleshores, CRAYS pot identificar què és possible, què necessita confirmació i què roman bloquejat."
+      ]
+    ]
+  },
+  "fr": {
+    "benefits": [
+      [
+        "Coordination du séjour",
+        "Un rôle d'hébergement ne peut être défini qu'après confirmation du bien immobilier, des dates et de l'accès."
+      ],
+      [
+        "Repas partagés",
+        "La nourriture peut soutenir le rythme de l’équipe ; les menus, la gestion diététique et le service restent des éléments de confirmation."
+      ],
+      [
+        "Mouvement",
+        "Du temps pour bouger peut être planifié sans promettre un résultat en salle de sport, en cours ou en performance."
+      ],
+      [
+        "Apprentissage",
+        "Une séance pratique commence par une vraie question issue du travail actuel de l'équipe."
+      ],
+      [
+        "Coworking",
+        "Le travail individuel tranquille et le temps de révision partagé occupent des places distinctes dans la journée."
+      ],
+      [
+        "Ateliers",
+        "La salle entière peut cartographier, contester et décider autour d’un problème délimité."
+      ],
+      [
+        "Espaces d’équipe",
+        "L'espace d'équipe privé reste un rôle d'installation limité et non une disponibilité générale."
+      ],
+      [
+        "Communauté",
+        "Les introductions sont facultatives, basées sur le contexte et ne constituent jamais une route promise à un client ou à un investisseur."
+      ],
+      [
+        "Connectivité",
+        "Les besoins techniques sont capturés avant toute déclaration de performance au niveau de l'emplacement."
+      ],
+      [
+        "Studio de contenu",
+        "La production nécessite un équipement, un support, des droits et des limites de publication confirmés."
+      ],
+      [
+        "Activités fitness",
+        "Un instructeur, un horaire, un propriétaire d'accès et de sécurité doivent être confirmés avant qu'un cours ne soit offert."
+      ],
+      [
+        "Périmètre défini par écrit",
+        "Les services, responsabilités et exclusions sont enregistrés ensemble au lieu d'être cachés derrière une réclamation de forfait."
+      ]
+    ],
+    "proofLanes": [
+      {
+        "number": "01",
+        "title": "Équipes fondatrices",
+        "question": "Une petite équipe peut-elle protéger sa concentration sans se couper ?",
+        "answer": "Un format CRAYS peut séparer le temps du créateur, le temps de décision et le temps de la communauté opt-in. Les fondateurs restent propriétaires des priorités et des résultats ; le club fournit uniquement le cadre et les services confirmés.",
+        "gate": "Publiez uniquement avec l'organisation réelle, les dates, le format, le consentement et un compte rendu fondé sur des preuves de ce qui a été réalisé."
+      },
+      {
+        "number": "02",
+        "title": "Équipes distribuées",
+        "question": "Les collègues à distance peuvent-ils transformer une réunion en de meilleures habitudes de travail ?",
+        "answer": "Le programme peut créer un espace partagé pour planifier, construire, réviser et documenter. L'équipe décide de ce qui continue après, et aucun résultat ultérieur de l'entreprise n'est attribué à CRAYS sans preuve.",
+        "gate": "Séparez la collecte livrée des performances ultérieures, de l'embauche, des revenus ou des résultats des produits."
+      },
+      {
+        "number": "03",
+        "title": "Équipes produit et créatives",
+        "question": "Les créateurs peuvent-ils passer d’un problème vague à un travail qu’ils peuvent expliquer ?",
+        "answer": "Une production protégée, des ateliers et une démo facultative créent une séquence pratique : formuler le problème, prendre des décisions, construire une version, puis indiquer ce qui a changé et ce qui reste non résolu.",
+        "gate": "L'équipe approuve chaque artefact public et définit les limites entre les travaux confidentiels et la propriété intellectuelle."
+      },
+      {
+        "number": "04",
+        "title": "Groupes de direction",
+        "question": "Les dirigeants peuvent-ils sortir de la routine sans mettre en scène un théâtre d’entreprise ?",
+        "answer": "La visite reste du temps de travail. L'ordre du jour peut contenir des décisions difficiles, des réflexions individuelles, des discussions de groupe et un enregistrement écrit de l'appropriation sans prétendre qu'une retraite elle-même crée un alignement.",
+        "gate": "Aucun dirigeant, entreprise ou déclaration n'apparaît tant que l'identité, le rôle, la formulation et l'autorisation de publication ne sont pas confirmés."
+      },
+      {
+        "number": "05",
+        "title": "Résidences d'entreprise",
+        "question": "Un format plus long peut-il combiner livraison, rythme durable et connexion locale ?",
+        "answer": "Une résidence peut séquencer un travail ciblé, un apprentissage, un mouvement et une communauté tandis que l'hébergement, les installations, l'accès et les dates restent soumis à une confirmation écrite explicite.",
+        "gate": "Une capacité ne devient une étude de cas qu'après la livraison et l'approbation du dossier factuel."
+      }
+    ],
+    "methods": [
+      {
+        "step": "Apprendre",
+        "line": "Mettez des connaissances utiles à côté du travail.",
+        "body": "L'équipe identifie ce qu'elle doit comprendre avant son arrivée. Toute session est ensuite structurée autour d'une décision ou d'une capacité en direct plutôt que d'un programme générique.",
+        "details": [
+          "Nommez d’abord la décision ou la capacité.",
+          "Faites appel à un praticien seulement après confirmation de la participation.",
+          "Séparez l’apprentissage pratique des conseils juridiques, financiers ou en matière d’emploi.",
+          "Enregistrez ce que l’équipe testera par la suite."
+        ]
+      },
+      {
+        "step": "Créer des liens",
+        "line": "Rencontrez des gens pour une raison, jamais pour un badge.",
+        "body": "Les présentations commencent par le contexte et le consentement mutuel. CRAYS n'implique pas qu'un visiteur rencontrera un investisseur, un client, un employeur ou un partenaire.",
+        "details": [
+          "Indiquez quelle perspective serait utile.",
+          "Confirmez le consentement avant que les identités ne soient partagées.",
+          "Donnez à chaque conversation une limite claire.",
+          "Laissez les relations se développer sans promesse commerciale."
+        ]
+      },
+      {
+        "step": "Construire",
+        "line": "Transformez le temps protégé en progrès visible.",
+        "body": "Les blocs ciblés, les salles d'équipe et les points de révision aident l'équipe à définir ses propres priorités. CRAYS ne devient pas l'équipe de livraison et ne garantit pas un lancement.",
+        "details": [
+          "Choisissez un résultat limité.",
+          "Protégez le temps du créateur de la programmation inutile.",
+          "Planifiez les décisions avant les blocs de travail.",
+          "Enregistrez ce qui a changé et ce qui nécessite encore des preuves."
+        ]
+      },
+      {
+        "step": "Démo",
+        "line": "Expliquez l’œuvre sans gonfler l’histoire.",
+        "body": "Une démo facultative peut présenter ce qui a été appris ou créé, une fois le public ainsi que les règles de confidentialité et de retour convenus. Il ne s’agit ni d’une levée de fonds ni d’une validation commerciale.",
+        "details": [
+          "Décidez de ce qui peut être montré.",
+          "Invitez uniquement un public confirmé approprié.",
+          "Séparez les commentaires des engagements.",
+          "Ne publiez rien sans approbation explicite."
+        ]
+      }
+    ],
+    "expertiseSlots": [
+      [
+        "Opérations pour fondateurs",
+        "Priorités, appropriation des décisions et rythme de fonctionnement."
+      ],
+      [
+        "Pratique produit",
+        "Cadrage du problème, jugement et choix de livraison."
+      ],
+      [
+        "Ingénierie",
+        "Architecture, fiabilité et mise en œuvre responsable."
+      ],
+      [
+        "Design",
+        "Recherche, interaction et cohérence des produits."
+      ],
+      [
+        "Stratégie de mise sur le marché",
+        "Positionnement, canaux et apprentissage fondé sur des données probantes."
+      ],
+      [
+        "Marque et contenu",
+        "Récit, production et communication véridique."
+      ],
+      [
+        "Management à distance",
+        "Décisions distribuées et habitudes de fonctionnement écrites."
+      ],
+      [
+        "Développement de communauté",
+        "Consentement, appartenance et participation utile."
+      ],
+      [
+        "Santé de l’équipe",
+        "Des routines durables sans prétention médicale."
+      ],
+      [
+        "Facilitation",
+        "Séances structurées de critique, de cartographie et de décision."
+      ],
+      [
+        "Création d’entreprise",
+        "Uniquement par l'intermédiaire d'un expert confirmé dûment qualifié."
+      ],
+      [
+        "Finance",
+        "Uniquement par l'intermédiaire d'un expert confirmé dûment qualifié."
+      ],
+      [
+        "Opérations juridiques",
+        "Uniquement par l'intermédiaire d'un expert confirmé dûment qualifié."
+      ],
+      [
+        "Contexte régional",
+        "Uniquement grâce à des connaissances locales vérifiées."
+      ],
+      [
+        "Opérations hôtelières",
+        "Uniquement par l'intermédiaire de praticiens opérationnels confirmés."
+      ],
+      [
+        "Stratégie technologique",
+        "Choix, compromis et feuilles de route responsables."
+      ],
+      [
+        "Sécurité et confidentialité",
+        "Uniquement par l'intermédiaire de praticiens qualifiés confirmés."
+      ],
+      [
+        "Ressources humaines",
+        "Aucune promesse d’embauche ou de résultat d’emploi."
+      ],
+      [
+        "Production créative",
+        "Décisions de production et de publication respectueuses des droits."
+      ],
+      [
+        "Communication publique",
+        "Preuves, approbations et réclamations responsables."
+      ]
+    ],
+    "facilities": [
+      [
+        "Coordination de l’hébergement",
+        "Une véritable option n'apparaît qu'après confirmation de la propriété, des dates et de l'accès.",
+        "Confirmation requise"
+      ],
+      [
+        "Repas partagés",
+        "Les formats de repas peuvent soutenir la journée ; les menus, la gestion diététique et le service nécessitent une confirmation.",
+        "Portée avant l'arrivée"
+      ],
+      [
+        "Mouvement et salle de sport",
+        "Le mouvement appartient au rythme ; L’accès réel aux installations doit être vérifié.",
+        "Accès non encore réclamé"
+      ],
+      [
+        "Sessions d’experts",
+        "Une séance est attachée à une personne, un sujet et une date confirmés.",
+        "Profils en attente d'approbation"
+      ],
+      [
+        "Rencontres communautaires",
+        "Les rassemblements opt-in créent un espace de conversation sans garantie de réseautage.",
+        "Axé sur le format"
+      ],
+      [
+        "Coworking",
+        "Le travail silencieux, les tables partagées et les zones de révision sont mappés selon le programme convenu.",
+        "Confirmation de localisation requise"
+      ],
+      [
+        "Studio de contenu",
+        "L'utilisation dépend de l'équipement, du support, des droits et du contenu autorisé à la publication.",
+        "Conscient des droits"
+      ],
+      [
+        "Ateliers",
+        "Les salles et les formats soutiennent la cartographie, la critique, la planification et les décisions.",
+        "Dirigé par l'agenda"
+      ],
+      [
+        "Cours de fitness",
+        "L’instructeur, l’horaire, l’accès et la responsabilité en matière de sécurité doivent être confirmés.",
+        "Programme bloqué"
+      ],
+      [
+        "Mises en relation",
+        "Les présentations de clients, partenaires, employeurs et investisseurs ne sont jamais garanties.",
+        "Consentement mutuel requis"
+      ],
+      [
+        "Connectivité",
+        "Les exigences sont capturées avant toute réclamation de performance.",
+        "Confirmation technique requise"
+      ]
+    ],
+    "socialProof": [
+      [
+        "Résultat de l’équipe",
+        "Organisation approuvée, dates, format et compte rendu factuel des travaux réalisés."
+      ],
+      [
+        "Réflexion du fondateur",
+        "Personne et rôle vérifiés, déclaration approuvée exacte et consentement à la publication."
+      ],
+      [
+        "Preuve du programme",
+        "Ordre du jour livré et enregistrement séparant l'activité des résultats ultérieurs."
+      ],
+      [
+        "Expérience communautaire",
+        "Consentement de chaque contributeur identifiable et aucune approbation déduite."
+      ],
+      [
+        "Nouvelle visite",
+        "Un véritable deuxième engagement plus une approbation pour expliquer pourquoi l'équipe est revenue."
+      ]
+    ],
+    "faqs": [
+      [
+        "Est-ce une page de réservation ?",
+        "Non. Teams explique le parcours et ouvre une conversation ciblée. Les dates, l'hébergement, les installations, l'accès et les conditions commerciales nécessitent une confirmation séparée."
+      ],
+      [
+        "CRAYS promet-il des présentations ?",
+        "Non. Une introduction pertinente ne peut être envisagée qu’après l’existence d’un contexte et d’un consentement mutuel. Il n’y a aucune promesse d’investisseurs, de clients, de partenaires, d’employeurs ou de financement."
+      ],
+      [
+        "Le travail de l'équipe peut-il rester privé ?",
+        "Oui. L'équipe décide de ce qui peut être discuté, démontré ou publié. Les preuves publiques, les médias et les citations nécessitent une approbation explicite distincte."
+      ],
+      [
+        "Chaque installation est-elle toujours disponible ?",
+        "Non. Chaque détail d’installation, de service et de fonctionnement doit être confirmé pour l’emplacement, la portée et les dates réels."
+      ],
+      [
+        "CRAYS peut-il garantir un lancement ou un résultat ?",
+        "Non. L’équipe est propriétaire des décisions et des résultats. CRAYS fournit un paramètre structuré et uniquement des services explicitement confirmés."
+      ],
+      [
+        "Comment commence une équipe ?",
+        "Commencez par l’objectif, la taille, les besoins de travail et le format préféré. CRAYS peut alors identifier ce qui est possible, ce qui doit être confirmé et ce qui reste bloqué."
+      ]
+    ]
+  },
+  "pt": {
+    "benefits": [
+      [
+        "Coordenação da estadia",
+        "A função de alojamento só poderá ser definida após confirmação do imóvel, datas e acesso."
+      ],
+      [
+        "Refeições partilhadas",
+        "A comida pode apoiar o ritmo da equipa; ementas, maneio dietético e atendimento continuam a ser itens de confirmação."
+      ],
+      [
+        "Movimento",
+        "O tempo para o movimento pode ser planeado sem prometer resultados no ginásio, na aula ou no desempenho."
+      ],
+      [
+        "Aprendizagem",
+        "Uma sessão prática começa com uma questão real do trabalho atual da equipa."
+      ],
+      [
+        "Coworking",
+        "O trabalho individual tranquilo e o tempo de revisão partilhada ocupam lugares distintos durante o dia."
+      ],
+      [
+        "Workshops",
+        "Toda a sala pode mapear, desafiar e decidir sobre um problema delimitado."
+      ],
+      [
+        "Espaços de equipa",
+        "O espaço privado da equipa continua a ser uma função de instalação com um âmbito definido, e não uma disponibilidade geral."
+      ],
+      [
+        "Comunidade",
+        "As apresentações são opcionais, orientadas pelo contexto e nunca uma rota prometida para o cliente ou investidor."
+      ],
+      [
+        "Conectividade",
+        "As necessidades técnicas são captadas antes de ser feita qualquer declaração de desempenho a nível local."
+      ],
+      [
+        "Estúdio de conteúdos",
+        "A produção requer equipamento, suporte, direitos e limites de publicação confirmados."
+      ],
+      [
+        "Atividades de fitness",
+        "Um instrutor, horário, proprietário de acesso e segurança devem ser confirmados antes de a aula ser oferecida."
+      ],
+      [
+        "Âmbito definido por escrito",
+        "Os serviços, responsabilidades e exclusões são registados em conjunto, em vez de ficarem ocultos atrás de uma reclamação de pacote."
+      ]
+    ],
+    "proofLanes": [
+      {
+        "number": "01",
+        "title": "Equipas fundadoras",
+        "question": "Uma equipa pequena pode proteger o foco sem se isolar?",
+        "answer": "Um formato CRAYS pode separar o tempo do criador, o tempo de decisão e o tempo da comunidade aderente. Os fundadores mantêm a propriedade das prioridades e dos resultados; o clube apenas fornece o ambiente e os serviços confirmados.",
+        "gate": "Publique apenas com a organização, datas, formato, consentimento reais e um relato baseado em evidências do que foi concluído."
+      },
+      {
+        "number": "02",
+        "title": "Equipas distribuídas",
+        "question": "Os colegas remotos podem transformar uma reunião em melhores hábitos de trabalho?",
+        "answer": "O programa pode criar um local partilhado para planear, construir, rever e documentar. A equipa decide o que continua depois, e nenhum resultado posterior da empresa é atribuído a CRAYS sem prova.",
+        "gate": "Separe a recolha entregue dos resultados posteriores de desempenho, contratação, receita ou produto."
+      },
+      {
+        "number": "03",
+        "title": "Equipas de produto e criativas",
+        "question": "Os criadores podem passar de um problema vago para um trabalho que possam explicar?",
+        "answer": "A produção protegida, os workshops e uma demonstração opcional criam uma sequência prática: enquadrar o problema, tomar decisões, construir uma versão e depois declarar o que mudou e o que permanece por resolver.",
+        "gate": "A equipa aprova todos os artefactos públicos e define os limites do trabalho confidencial e da propriedade intelectual."
+      },
+      {
+        "number": "04",
+        "title": "Grupos de liderança",
+        "question": "Os líderes podem sair da rotina sem encenar um teatro corporativo?",
+        "answer": "A visita mantém-se em horário de trabalho. A agenda pode conter decisões difíceis, pensamento individual, discussão em grupo e um registo escrito da propriedade sem fingir que um retiro em si cria alinhamento.",
+        "gate": "Nenhum líder, empresa ou declaração aparece até que a identidade, o papel, o texto e a permissão de publicação sejam confirmados."
+      },
+      {
+        "number": "05",
+        "title": "Residências da empresa",
+        "question": "Um formato mais longo pode combinar entrega, ritmo sustentável e ligação local?",
+        "answer": "Uma residência pode sequenciar o trabalho, a aprendizagem, o movimento e a comunidade focados, enquanto o alojamento, as instalações, o acesso e as datas permanecem sujeitos a confirmação explícita por escrito.",
+        "gate": "Uma capacidade torna-se um estudo de caso apenas após a entrega e aprovação do registo factual."
+      }
+    ],
+    "methods": [
+      {
+        "step": "Aprender",
+        "line": "Coloque conhecimento útil ao lado do trabalho.",
+        "body": "A equipa identifica o que deve compreender antes da chegada. Qualquer sessão é então moldada em torno de uma decisão ou capacidade em tempo real, em vez de um currículo genérico.",
+        "details": [
+          "Nomeie primeiro a decisão ou capacidade.",
+          "Utilize um profissional apenas após a confirmação da participação.",
+          "Separe a aprendizagem prática do aconselhamento jurídico, financeiro ou laboral.",
+          "Registe o que a equipa testará depois."
+        ]
+      },
+      {
+        "step": "Criar ligações",
+        "line": "Conheça pessoas por um motivo, nunca por um distintivo.",
+        "body": "As apresentações começam com o contexto e o consentimento mútuo. CRAYS não significa que um visitante irá conhecer um investidor, cliente, empregador ou parceiro.",
+        "details": [
+          "Indique qual a perspetiva que seria útil.",
+          "Confirme o consentimento antes de as identidades serem partilhadas.",
+          "Dê a cada conversa um limite claro.",
+          "Deixe os relacionamentos desenvolverem-se sem promessa comercial."
+        ]
+      },
+      {
+        "step": "Construir",
+        "line": "Transforme o tempo protegido em progresso visível.",
+        "body": "Os blocos focados, as salas de equipa e os pontos de revisão ajudam a equipa a definir as suas próprias prioridades. CRAYS não se torna equipa de entrega e não garante lançamento.",
+        "details": [
+          "Escolha um resultado limitado.",
+          "Proteja o tempo do fabricante contra programação desnecessária.",
+          "Programe as decisões antes dos blocos de trabalho.",
+          "Registe o que mudou e o que ainda precisa de provas."
+        ]
+      },
+      {
+        "step": "Demo",
+        "line": "Explique o trabalho sem exagerar na história.",
+        "body": "Uma demonstração opcional pode mostrar o que foi aprendido ou feito depois de as regras de audiência, confidencialidade e feedback terem sido acordadas. Não é um evento de financiamento ou de endosso.",
+        "details": [
+          "Decida o que pode ser mostrado.",
+          "Convide apenas um público confirmado apropriado.",
+          "Separe o feedback dos compromissos.",
+          "Não publique nada sem aprovação explícita."
+        ]
+      }
+    ],
+    "expertiseSlots": [
+      [
+        "Operações para fundadores",
+        "Prioridades, propriedade das decisões e ritmo operacional."
+      ],
+      [
+        "Prática de produto",
+        "Enquadramento do problema, julgamento e escolhas de entrega."
+      ],
+      [
+        "Engenharia",
+        "Arquitetura, fiabilidade e implementação responsável."
+      ],
+      [
+        "Design",
+        "Pesquisa, interação e coerência do produto."
+      ],
+      [
+        "Estratégia de entrada no mercado",
+        "Posicionamento, canais e aprendizagem baseada na evidência."
+      ],
+      [
+        "Marca e conteúdos",
+        "Narrativa, produção e comunicação verdadeira."
+      ],
+      [
+        "Liderança à distância",
+        "Decisões distribuídas e hábitos operacionais escritos."
+      ],
+      [
+        "Desenvolvimento de comunidade",
+        "Consentimento, pertença e participação útil."
+      ],
+      [
+        "Saúde da equipa",
+        "Rotinas sustentáveis ​​sem queixas médicas."
+      ],
+      [
+        "Facilitação",
+        "Sessões estruturadas de crítica, mapeamento e decisão."
+      ],
+      [
+        "Constituição de empresas",
+        "Apenas através de um especialista confirmado e devidamente qualificado."
+      ],
+      [
+        "Finanças",
+        "Apenas através de um especialista confirmado e devidamente qualificado."
+      ],
+      [
+        "Operações jurídicas",
+        "Apenas através de um especialista confirmado e devidamente qualificado."
+      ],
+      [
+        "Contexto regional",
+        "Apenas através de conhecimento local verificado."
+      ],
+      [
+        "Operações de hotelaria",
+        "Apenas através de profissionais operacionais confirmados."
+      ],
+      [
+        "Estratégia tecnológica",
+        "Escolhas, compromissos e guiões responsáveis."
+      ],
+      [
+        "Segurança e privacidade",
+        "Apenas através de profissionais qualificados confirmados."
+      ],
+      [
+        "Gestão de pessoas",
+        "Sem promessa de contratação ou resultado de emprego."
+      ],
+      [
+        "Produção criativa",
+        "Decisões de produção e publicação conscientes dos direitos."
+      ],
+      [
+        "Comunicação pública",
+        "Evidências, aprovações e alegações responsáveis."
+      ]
+    ],
+    "facilities": [
+      [
+        "Coordenação do alojamento",
+        "Uma opção real só aparece após a confirmação do imóvel, das datas e do acesso.",
+        "Confirmação necessária"
+      ],
+      [
+        "Refeições partilhadas",
+        "Os formatos de refeição podem sustentar o dia; menus, gestão dietética e serviço requerem confirmação.",
+        "Âmbito antes da chegada"
+      ],
+      [
+        "Movimento e ginásio",
+        "O movimento pertence ao ritmo; o acesso real às instalações deve ser verificado.",
+        "Acesso ainda não reivindicado"
+      ],
+      [
+        "Sessões com especialistas",
+        "Uma sessão é anexada a uma pessoa confirmada, tópico e data.",
+        "Perfis a aguardar aprovação"
+      ],
+      [
+        "Momentos em comunidade",
+        "As reuniões opt-in criam espaço para conversas sem garantia de networking.",
+        "Orientado por formato"
+      ],
+      [
+        "Coworking",
+        "O trabalho tranquilo, as mesas partilhadas e as zonas de revisão são mapeadas de acordo com o programa acordado.",
+        "Confirmação de localização necessária"
+      ],
+      [
+        "Estúdio de conteúdos",
+        "A utilização depende do equipamento, do suporte, dos direitos e do conteúdo permitido para publicação.",
+        "Ciente dos direitos"
+      ],
+      [
+        "Workshops",
+        "As salas e os formatos apoiam o mapeamento, a crítica, o planeamento e as decisões.",
+        "Liderado pela agenda"
+      ],
+      [
+        "Aulas de fitness",
+        "O instrutor, o horário, o acesso e a responsabilidade de segurança devem ser confirmados.",
+        "Programa bloqueado"
+      ],
+      [
+        "Apresentações",
+        "As apresentações de clientes, parceiros, empregadores e investidores nunca são garantidas.",
+        "É necessário o consentimento mútuo"
+      ],
+      [
+        "Conectividade",
+        "Os requisitos são captados antes de qualquer declaração de desempenho ser feita.",
+        "Confirmação técnica necessária"
+      ]
+    ],
+    "socialProof": [
+      [
+        "Resultado da equipa",
+        "Organização aprovada, datas, formato e relato factual do trabalho realizado."
+      ],
+      [
+        "Reflexão do fundador",
+        "Pessoa e função verificadas, declaração exata aprovada e consentimento de publicação."
+      ],
+      [
+        "Evidência do programa",
+        "Agenda entregue e um registo separando a atividade dos resultados posteriores."
+      ],
+      [
+        "Experiência na comunidade",
+        "Consentimento de todos os colaboradores identificáveis ​​e nenhum endosso inferido."
+      ],
+      [
+        "Nova visita",
+        "Um verdadeiro segundo compromisso mais aprovação para explicar o motivo do regresso da equipa."
+      ]
+    ],
+    "faqs": [
+      [
+        "Esta é uma página de reserva?",
+        "Não. O Teams explica a jornada e abre uma conversa com um âmbito definido. As datas, alojamento, instalações, acessos e condições comerciais requerem confirmação separada."
+      ],
+      [
+        "CRAYS promete atuações?",
+        "Não. Uma introdução relevante só pode ser considerada após existir contexto e consentimento mútuo. Não há qualquer promessa de investidores, clientes, parceiros, empregadores ou financiamento."
+      ],
+      [
+        "O trabalho da equipa pode permanecer privado?",
+        "Sim. A equipa decide o que pode ser discutido, demonstrado ou publicado. As provas públicas, os media e as citações precisam de aprovação explícita separada."
+      ],
+      [
+        "Todas as instalações estão sempre disponíveis?",
+        "Não. Cada detalhe de instalação, serviço e operação deve ser confirmado quanto à localização, âmbito e datas reais."
+      ],
+      [
+        "O CRAYS pode garantir um lançamento ou resultado?",
+        "Não. A equipa é dona das decisões e dos resultados. CRAYS fornece uma configuração estruturada e apenas serviços explicitamente confirmados."
+      ],
+      [
+        "Como começa uma equipa?",
+        "Comece com a finalidade, o tamanho, as necessidades de trabalho e o formato preferido. CRAYS pode então identificar o que é possível, o que necessita de confirmação e o que permanece bloqueado."
+      ]
+    ]
+  },
+  "it": {
+    "benefits": [
+      [
+        "Coordinamento del soggiorno",
+        "Un ruolo di alloggio può essere definito solo dopo la conferma della proprietà immobiliare, delle date e dell'accesso."
+      ],
+      [
+        "Pasti condivisi",
+        "Il cibo può sostenere il ritmo della squadra; menù, trattamento dietetico e servizio restano punti di conferma."
+      ],
+      [
+        "Movimento",
+        "Il tempo per il movimento può essere pianificato senza promettere risultati in palestra, lezione o prestazione."
+      ],
+      [
+        "Apprendimento",
+        "Una sessione pratica inizia con una domanda reale sul lavoro attuale del team."
+      ],
+      [
+        "Coworking",
+        "Il lavoro individuale tranquillo e il tempo di revisione condiviso hanno posti distinti nel corso della giornata."
+      ],
+      [
+        "Workshop",
+        "L'intera stanza può mappare, sfidare e decidere attorno ad un problema limitato."
+      ],
+      [
+        "Spazi per il team",
+        "Lo spazio del team privato rimane un ruolo della struttura limitato, non una disponibilità generale."
+      ],
+      [
+        "Comunità",
+        "Le presentazioni sono facoltative, guidate dal contesto e non sono mai un percorso promesso al cliente o all'investitore."
+      ],
+      [
+        "Connettività",
+        "Le esigenze tecniche vengono catturate prima che venga fatta qualsiasi dichiarazione sulle prestazioni a livello di ubicazione."
+      ],
+      [
+        "Studio di contenuti",
+        "La produzione richiede attrezzature, supporto, diritti e limiti di pubblicazione confermati."
+      ],
+      [
+        "Attività fitness",
+        "L'istruttore, il programma, l'accesso e il proprietario della sicurezza devono essere confermati prima che venga offerta una lezione."
+      ],
+      [
+        "Ambito definito per iscritto",
+        "Servizi, responsabilità ed esclusioni vengono registrati insieme anziché nascosti dietro una richiesta di pacchetto."
+      ]
+    ],
+    "proofLanes": [
+      {
+        "number": "01",
+        "title": "Squadre fondatrici",
+        "question": "Può un piccolo team proteggere il focus senza tagliarsi fuori?",
+        "answer": "Un formato CRAYS può separare il tempo del creatore, il tempo della decisione e il tempo di adesione della comunità. I fondatori mantengono la proprietà delle priorità e dei risultati; il club fornisce solo l'ambiente ed i servizi confermati.",
+        "gate": "Pubblica solo con l'organizzazione, le date, il formato, il consenso reali e un resoconto basato sull'evidenza di ciò che è stato completato."
+      },
+      {
+        "number": "02",
+        "title": "Squadre distribuite",
+        "question": "I colleghi remoti possono trasformare un incontro in migliori abitudini lavorative?",
+        "answer": "Il programma può creare un luogo condiviso in cui pianificare, costruire, rivedere e documentare. Il team decide cosa continuare in seguito e nessun risultato aziendale successivo viene attribuito a CRAYS senza prova.",
+        "gate": "Separare l'incontro consegnato dalle prestazioni successive, dalle assunzioni, dalle entrate o dai risultati del prodotto."
+      },
+      {
+        "number": "03",
+        "title": "Team di prodotto e creativi",
+        "question": "I maker possono passare da un problema vago a un lavoro che possono spiegare?",
+        "answer": "Produzione protetta, workshop e una demo opzionale creano una sequenza pratica: inquadrare il problema, prendere decisioni, costruire una versione, quindi dichiarare cosa è cambiato e cosa rimane irrisolto.",
+        "gate": "Il team approva ogni artefatto pubblico e definisce il confine tra lavoro riservato e proprietà intellettuale."
+      },
+      {
+        "number": "04",
+        "title": "Gruppi dirigenti",
+        "question": "Possono i leader uscire dalla routine senza mettere in scena un teatrino aziendale?",
+        "answer": "La visita rimane orario di lavoro. L'agenda può contenere decisioni difficili, pensieri individuali, discussioni di gruppo e una registrazione scritta della proprietà senza pretendere che un ritiro stesso crei allineamento.",
+        "gate": "Nessun leader, azienda o dichiarazione appare finché non vengono confermati l'identità, il ruolo, la dicitura e il permesso di pubblicazione."
+      },
+      {
+        "number": "05",
+        "title": "Residenze aziendali",
+        "question": "Può un formato più lungo coniugare delivery, ritmo sostenibile e connessione locale?",
+        "answer": "Una residenza può mettere in sequenza lavoro mirato, apprendimento, movimento e comunità, mentre alloggio, strutture, accesso e date rimangono soggetti a esplicita conferma scritta.",
+        "gate": "Una capacità diventa un caso di studio solo dopo la consegna e l'approvazione della documentazione fattuale."
+      }
+    ],
+    "methods": [
+      {
+        "step": "Imparare",
+        "line": "Metti le conoscenze utili accanto al lavoro.",
+        "body": "Il team identifica ciò che deve capire prima dell'arrivo. Qualsiasi sessione viene quindi modellata attorno a una decisione o capacità dal vivo piuttosto che a un curriculum generico.",
+        "details": [
+          "Dai un nome prima alla decisione o alla capacità.",
+          "Rivolgiti a un professionista solo dopo che la partecipazione è stata confermata.",
+          "Separare l'apprendimento pratico dalla consulenza legale, finanziaria o occupazionale.",
+          "Registra ciò che il team testerà in seguito."
+        ]
+      },
+      {
+        "step": "Creare connessioni",
+        "line": "Incontra persone per una ragione, mai per un distintivo.",
+        "body": "Le presentazioni iniziano con il contesto e il consenso reciproco. CRAYS non implica che un visitatore incontrerà un investitore, cliente, datore di lavoro o partner.",
+        "details": [
+          "Indicare quale prospettiva sarebbe utile.",
+          "Conferma il consenso prima che le identità vengano condivise.",
+          "Dai a ogni conversazione un confine chiaro.",
+          "Lascia che le relazioni si sviluppino senza una promessa commerciale."
+        ]
+      },
+      {
+        "step": "Costruire",
+        "line": "Trasforma il tempo protetto in progresso visibile.",
+        "body": "Blocchi mirati, stanze del team e punti di revisione aiutano il team a spostare le proprie priorità. CRAYS non diventa il team di consegna e non garantisce il lancio.",
+        "details": [
+          "Scegli un risultato limitato.",
+          "Proteggi il tempo del produttore da programmazioni non necessarie.",
+          "Pianifica le decisioni prima dei blocchi di lavoro.",
+          "Registra cosa è cambiato e cosa necessita ancora di prove."
+        ]
+      },
+      {
+        "step": "Demo",
+        "line": "Spiegare il lavoro senza esagerare la storia.",
+        "body": "Una demo opzionale può mostrare ciò che è stato appreso o realizzato dopo aver concordato le regole sul pubblico, sulla riservatezza e sul feedback. Non è un evento di finanziamento o di approvazione.",
+        "details": [
+          "Decidere cosa può essere mostrato.",
+          "Invita solo un pubblico confermato appropriato.",
+          "Feedback separato dagli impegni.",
+          "Non pubblicare nulla senza esplicita approvazione."
+        ]
+      }
+    ],
+    "expertiseSlots": [
+      [
+        "Attività per fondatori",
+        "Priorità, titolarità delle decisioni e ritmo operativo."
+      ],
+      [
+        "Pratiche di prodotto",
+        "Inquadramento del problema, giudizio e scelte di consegna."
+      ],
+      [
+        "Ingegneria",
+        "Architettura, affidabilità e implementazione responsabile."
+      ],
+      [
+        "Design",
+        "Ricerca, interazione e coerenza di prodotto."
+      ],
+      [
+        "Strategia go-to-market",
+        "Posizionamento, canali e apprendimento guidato dall’evidenza."
+      ],
+      [
+        "Marchio e contenuti",
+        "Narrativa, produzione e comunicazione veritiera."
+      ],
+      [
+        "Leadership da remoto",
+        "Decisioni distribuite e abitudini operative scritte."
+      ],
+      [
+        "Sviluppo della comunità",
+        "Consenso, appartenenza e partecipazione utile."
+      ],
+      [
+        "Benessere del team",
+        "Routine sostenibili senza pretese mediche."
+      ],
+      [
+        "Facilitazione",
+        "Sessioni di critica strutturata, mappatura e decisione."
+      ],
+      [
+        "Costituzione societaria",
+        "Solo attraverso un esperto confermato adeguatamente qualificato."
+      ],
+      [
+        "Finanza",
+        "Solo attraverso un esperto confermato adeguatamente qualificato."
+      ],
+      [
+        "Operazioni legali",
+        "Solo attraverso un esperto confermato adeguatamente qualificato."
+      ],
+      [
+        "Contesto regionale",
+        "Solo attraverso una conoscenza locale verificata."
+      ],
+      [
+        "Operazioni di ospitalità",
+        "Solo attraverso professionisti operativi confermati."
+      ],
+      [
+        "Strategia tecnologica",
+        "Scelte, compromessi e roadmap responsabili."
+      ],
+      [
+        "Sicurezza e privacy",
+        "Solo attraverso professionisti qualificati confermati."
+      ],
+      [
+        "Gestione delle persone",
+        "Nessuna promessa di assunzione o di risultato lavorativo."
+      ],
+      [
+        "Produzione creativa",
+        "Decisioni di produzione e pubblicazione consapevoli dei diritti."
+      ],
+      [
+        "Comunicazione pubblica",
+        "Prove, approvazioni e affermazioni responsabili."
+      ]
+    ],
+    "facilities": [
+      [
+        "Coordinamento dell’alloggio",
+        "Un'opzione reale appare solo dopo la conferma della proprietà, delle date e dell'accesso.",
+        "È necessaria la conferma"
+      ],
+      [
+        "Pasti condivisi",
+        "I formati dei pasti possono supportare la giornata; i menu, la gestione della dieta e il servizio richiedono conferma.",
+        "Ambito prima dell'arrivo"
+      ],
+      [
+        "Movimento e palestra",
+        "Il movimento appartiene al ritmo; deve essere verificato l’effettivo accesso alla struttura.",
+        "Accesso non ancora richiesto"
+      ],
+      [
+        "Sessioni con esperti",
+        "Una sessione è allegata a una persona, un argomento e una data confermati.",
+        "Profili in attesa di approvazione"
+      ],
+      [
+        "Momenti di comunità",
+        "Le riunioni partecipative creano spazio per la conversazione senza una garanzia di networking.",
+        "Guidato dal formato"
+      ],
+      [
+        "Coworking",
+        "Lavoro tranquillo, tavoli condivisi e zone di revisione sono mappati sul programma concordato.",
+        "È richiesta la conferma della posizione"
+      ],
+      [
+        "Studio di contenuti",
+        "L'utilizzo dipende dall'attrezzatura, dal supporto, dai diritti e dal contenuto consentito per la pubblicazione.",
+        "Consapevole dei diritti"
+      ],
+      [
+        "Workshop",
+        "Le stanze e i formati supportano la mappatura, la critica, la pianificazione e le decisioni.",
+        "Guidato dall'agenda"
+      ],
+      [
+        "Corsi di fitness",
+        "L'istruttore, il programma, l'accesso e la responsabilità della sicurezza devono essere confermati.",
+        "Programma bloccato"
+      ],
+      [
+        "Presentazioni",
+        "Le presentazioni di clienti, partner, datori di lavoro e investitori non sono mai garantite.",
+        "È necessario il consenso reciproco"
+      ],
+      [
+        "Connettività",
+        "I requisiti vengono acquisiti prima che venga presentata qualsiasi dichiarazione di prestazione.",
+        "È necessaria una conferma tecnica"
+      ]
+    ],
+    "socialProof": [
+      [
+        "Risultato del team",
+        "Organizzazione, date, formato approvati e un resoconto fattuale del lavoro completato."
+      ],
+      [
+        "Riflessione del fondatore",
+        "Persona e ruolo verificati, esatta dichiarazione approvata e consenso alla pubblicazione."
+      ],
+      [
+        "Evidenze del programma",
+        "Agenda consegnata e un record che separa l'attività dai risultati successivi."
+      ],
+      [
+        "Esperienza nella comunità",
+        "Consenso di ogni collaboratore identificabile e nessuna approvazione implicita."
+      ],
+      [
+        "Nuova visita",
+        "Un vero secondo impegno più l'approvazione per dichiarare il motivo per cui la squadra è tornata."
+      ]
+    ],
+    "faqs": [
+      [
+        "Questa è una pagina di prenotazione?",
+        "No. Teams spiega il percorso e apre una conversazione mirata. Date, sistemazione, strutture, accesso e condizioni commerciali richiedono una conferma separata."
+      ],
+      [
+        "CRAYS promette presentazioni?",
+        "No. Un'introduzione pertinente può essere presa in considerazione solo dopo che esiste il contesto e il consenso reciproco. Non vi è alcuna promessa di investitori, clienti, partner, datori di lavoro o finanziamenti."
+      ],
+      [
+        "Il lavoro del team può rimanere privato?",
+        "SÌ. Il team decide cosa può essere discusso, dimostrato o pubblicato. Le prove pubbliche, i media e le citazioni necessitano di un'approvazione esplicita separata."
+      ],
+      [
+        "Ogni struttura è sempre disponibile?",
+        "No. Ogni struttura, servizio e dettaglio operativo deve essere confermato per l'ubicazione, la portata e le date effettive."
+      ],
+      [
+        "Può CRAYS garantire un lancio o un risultato?",
+        "No. Il team possiede decisioni e risultati. CRAYS fornisce un'impostazione strutturata e solo servizi esplicitamente confermati."
+      ],
+      [
+        "Come nasce una squadra?",
+        "Inizia con lo scopo, le dimensioni, le esigenze lavorative e il formato preferito. CRAYS può quindi identificare cosa è possibile, cosa necessita di conferma e cosa rimane bloccato."
+      ]
+    ]
+  }
+}

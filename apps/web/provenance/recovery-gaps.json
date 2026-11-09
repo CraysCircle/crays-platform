@@ -1,0 +1,799 @@
+{
+  "operationalHelpersOutsideCapture": [
+    {
+      "path": "scripts/local-db-status.mjs",
+      "packageScriptNames": [
+        "db:local:status"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/managed-db-status.mjs",
+      "packageScriptNames": [
+        "db:managed:status"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/check-db-config.mjs",
+      "packageScriptNames": [
+        "db:status"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/migrate-core-identity.mjs",
+      "packageScriptNames": [
+        "db:migrate:core:dry-run",
+        "db:migrate:core"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-core-identity-schema.mjs",
+      "packageScriptNames": [
+        "db:verify:core"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/migrate-core-domain.mjs",
+      "packageScriptNames": [
+        "db:migrate:domain:dry-run",
+        "db:migrate:domain"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-core-domain-schema.mjs",
+      "packageScriptNames": [
+        "db:verify:domain"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/migrate-communication-persistence.mjs",
+      "packageScriptNames": [
+        "db:migrate:communication:dry-run",
+        "db:migrate:communication"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-communication-persistence-draft.mjs",
+      "packageScriptNames": [
+        "db:verify:communication:draft"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-communication-persistence-schema.mjs",
+      "packageScriptNames": [
+        "db:verify:communication"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-case-communication-core.mjs",
+      "packageScriptNames": [
+        "communication:seed:case"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/migrate-candidate-intent-persistence.mjs",
+      "packageScriptNames": [
+        "db:migrate:candidate-intent:dry-run",
+        "db:migrate:candidate-intent"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-candidate-intent-persistence-draft.mjs",
+      "packageScriptNames": [
+        "db:verify:candidate-intent:draft"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-candidate-intent-persistence-schema.mjs",
+      "packageScriptNames": [
+        "db:verify:candidate-intent"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/migrate-evidence-core.mjs",
+      "packageScriptNames": [
+        "db:migrate:evidence-core:dry-run",
+        "db:migrate:evidence-core"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-evidence-core-persistence-draft.mjs",
+      "packageScriptNames": [
+        "db:verify:evidence-core:draft"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/migrate-core-command-persistence.mjs",
+      "packageScriptNames": [
+        "db:migrate:core-command:dry-run",
+        "db:migrate:core-command"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-core-command-persistence-draft.mjs",
+      "packageScriptNames": [
+        "db:verify:core-command:draft"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-core-command-persistence-schema.mjs",
+      "packageScriptNames": [
+        "db:verify:core-command"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/migrate-workbench-saved-views.mjs",
+      "packageScriptNames": [
+        "db:migrate:workbench-views:dry-run",
+        "db:migrate:workbench-views"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-workbench-saved-views-schema.mjs",
+      "packageScriptNames": [
+        "db:verify:workbench-views"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/benchmark-seed-inventory.mjs",
+      "packageScriptNames": [
+        "benchmark:seed:inventory"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/import-benchmark-seed.mjs",
+      "packageScriptNames": [
+        "benchmark:seed:dry-run",
+        "benchmark:seed:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-benchmark-seed.mjs",
+      "packageScriptNames": [
+        "benchmark:seed:verify"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/repair-core-golden-test-data.mjs",
+      "packageScriptNames": [
+        "core:repair:golden-test-data",
+        "core:repair:golden-test-data:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/audit-golden-operating-dataset.mjs",
+      "packageScriptNames": [
+        "core:audit:golden-operating-dataset"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/migrate-golden-operating-dataset-v1.mjs",
+      "packageScriptNames": [
+        "core:migrate:golden-operating-dataset",
+        "core:migrate:golden-operating-dataset:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/repair-location-pilot-realistic-data.mjs",
+      "packageScriptNames": [
+        "core:repair:location-pilot-realistic-data",
+        "core:repair:location-pilot-realistic-data:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-golden-test-tenant-source-maps.mjs",
+      "packageScriptNames": [
+        "source:seed:golden-tenant",
+        "source:seed:golden-tenant:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-golden-demo-tenant-v2.mjs",
+      "packageScriptNames": [
+        "source:seed:golden-demo-v2",
+        "source:seed:golden-demo-v2:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-crm-workflow-source-slice.mjs",
+      "packageScriptNames": [
+        "source:seed:crm-workflow",
+        "source:seed:crm-workflow:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-erp-finance-workflow-source-slice.mjs",
+      "packageScriptNames": [
+        "source:seed:erp-finance-workflow",
+        "source:seed:erp-finance-workflow:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-files-workflow-source-slice.mjs",
+      "packageScriptNames": [
+        "source:seed:files-workflow",
+        "source:seed:files-workflow:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-financial-model-workbook-source-slice.mjs",
+      "packageScriptNames": [
+        "source:seed:financial-workbook",
+        "source:seed:financial-workbook:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-financial-forecast-5y-source-slice.mjs",
+      "packageScriptNames": [
+        "source:seed:financial-forecast-5y",
+        "source:seed:financial-forecast-5y:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-location-intelligence-source-slice.mjs",
+      "packageScriptNames": [
+        "source:seed:location-intelligence",
+        "source:seed:location-intelligence:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-role-metric-access-source-slice.mjs",
+      "packageScriptNames": [
+        "source:seed:role-metric-access",
+        "source:seed:role-metric-access:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-b2c-member-database-source-slice.mjs",
+      "packageScriptNames": [
+        "source:seed:b2c-member-database",
+        "source:seed:b2c-member-database:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-member-payment-recovery-source-slice.mjs",
+      "packageScriptNames": [
+        "source:seed:member-payment-recovery",
+        "source:seed:member-payment-recovery:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-studio-operations-recovery-source-slice.mjs",
+      "packageScriptNames": [
+        "source:seed:studio-operations-recovery",
+        "source:seed:studio-operations-recovery:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-franchise-partner-performance-source-slice.mjs",
+      "packageScriptNames": [
+        "source:seed:franchise-partner-performance",
+        "source:seed:franchise-partner-performance:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-erp-finance-ledger-source-slice.mjs",
+      "packageScriptNames": [
+        "source:seed:erp-finance-ledger",
+        "source:seed:erp-finance-ledger:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-bank-package-workflow-source-slice.mjs",
+      "packageScriptNames": [
+        "source:seed:bank-package-workflow",
+        "source:seed:bank-package-workflow:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-real-estate-decision-source-slice.mjs",
+      "packageScriptNames": [
+        "source:seed:real-estate-decision",
+        "source:seed:real-estate-decision:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-candidate-offer-workflow-source-slice.mjs",
+      "packageScriptNames": [
+        "source:seed:candidate-offer-workflow",
+        "source:seed:candidate-offer-workflow:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-franchise-partner-decision-source-slice.mjs",
+      "packageScriptNames": [
+        "source:seed:franchise-partner-decision",
+        "source:seed:franchise-partner-decision:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-opening-project-workflow-source-slice.mjs",
+      "packageScriptNames": [
+        "source:seed:opening-project",
+        "source:seed:opening-project:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-support-recovery-workflow-source-slice.mjs",
+      "packageScriptNames": [
+        "source:seed:support-recovery",
+        "source:seed:support-recovery:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-evidence-packages-workflow-source-slice.mjs",
+      "packageScriptNames": [
+        "source:seed:evidence-packages",
+        "source:seed:evidence-packages:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/sync-back-office-source-snapshot.mjs",
+      "packageScriptNames": [
+        "source:sync:back-office"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-crm-golden-source-records.mjs",
+      "packageScriptNames": [
+        "source:seed:crm-golden",
+        "source:seed:crm-golden:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-operational-realism-fixtures.mjs",
+      "packageScriptNames": [
+        "source:seed:operational-realism",
+        "source:seed:operational-realism:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-member-app-source-snapshot.mjs",
+      "packageScriptNames": [
+        "source:seed:member-app"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/cleanup-benchmark-seed.mjs",
+      "packageScriptNames": [
+        "benchmark:seed:cleanup:dry-run",
+        "benchmark:seed:cleanup"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/create-dev-property-case.mjs",
+      "packageScriptNames": [
+        "domain:dev:create-property-case"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/transition-dev-property-case.mjs",
+      "packageScriptNames": [
+        "domain:dev:transition-property-case"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/prepare-dev-property-case-readiness.mjs",
+      "packageScriptNames": [
+        "domain:dev:prepare-property-case-readiness"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/transition-dev-property-case-review.mjs",
+      "packageScriptNames": [
+        "domain:dev:transition-property-case-review"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/mark-dev-property-case-handoff-ready.mjs",
+      "packageScriptNames": [
+        "domain:dev:mark-property-case-handoff-ready"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/create-dev-prepared-offer-draft.mjs",
+      "packageScriptNames": [
+        "domain:dev:create-prepared-offer-draft"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/transition-dev-prepared-offer-review.mjs",
+      "packageScriptNames": [
+        "domain:dev:transition-prepared-offer-review"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-contract-routes.mjs",
+      "packageScriptNames": [
+        "verify:contracts"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-prototype-closeout-v1.mjs",
+      "packageScriptNames": [
+        "verify:prototype-closeout-v1"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/audit-route-role-authority.mjs",
+      "packageScriptNames": [
+        "security:audit:route-role-authority"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block73-trust-boundary.mjs",
+      "packageScriptNames": [
+        "verify:block73:trust-boundary"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block74-resource-contracts.mjs",
+      "packageScriptNames": [
+        "verify:block74:resource-contracts"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block75-workspace-provider.mjs",
+      "packageScriptNames": [
+        "verify:block75:workspace-provider"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block76-shell-navigation.mjs",
+      "packageScriptNames": [
+        "verify:block76:shell-navigation"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block77-entity-table.mjs",
+      "packageScriptNames": [
+        "verify:block77:entity-table"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block78-field-mutation-system.mjs",
+      "packageScriptNames": [
+        "verify:block78:field-mutation-system"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block79-crm-collection-slice.mjs",
+      "packageScriptNames": [
+        "verify:block79:crm-collection-slice"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block80-crm-entity-workspace.mjs",
+      "packageScriptNames": [
+        "verify:block80:crm-entity-workspace"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block81-project-work-item-slice.mjs",
+      "packageScriptNames": [
+        "verify:block81:project-work-item-slice"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block82-project-board.mjs",
+      "packageScriptNames": [
+        "verify:block82:project-board"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block83-public-publication.mjs",
+      "packageScriptNames": [
+        "verify:block83:public-publication"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block84-portal-bridge.mjs",
+      "packageScriptNames": [
+        "verify:block84:portal-bridge"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block85-candidate-portal.mjs",
+      "packageScriptNames": [
+        "verify:block85:candidate-portal"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block86-stakeholder-portals.mjs",
+      "packageScriptNames": [
+        "verify:block86:stakeholder-portals"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block87-remaining-workspace-migration.mjs",
+      "packageScriptNames": [
+        "verify:block87:remaining-workspace-migration"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block88-client-boundary-hardening.mjs",
+      "packageScriptNames": [
+        "verify:block88:client-boundary-hardening"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block89-quality-system.mjs",
+      "packageScriptNames": [
+        "verify:block89:quality-system"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block90-final-full-check.mjs",
+      "packageScriptNames": [
+        "verify:block90:final-full-check"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block91-production-reliability.mjs",
+      "packageScriptNames": [
+        "verify:block91:production-reliability",
+        "verify:block91:production-live"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block92-source-discovery-registry.mjs",
+      "packageScriptNames": [
+        "verify:block92:source-discovery-registry"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block93-identity-dedupe.mjs",
+      "packageScriptNames": [
+        "verify:block93:identity-dedupe"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block94-crm-source-bound-readiness.mjs",
+      "packageScriptNames": [
+        "verify:block94:crm-source-bound-readiness"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block95-crm-daily-operating.mjs",
+      "packageScriptNames": [
+        "verify:block95:crm-daily-operating"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block96-plane-discovery-readiness.mjs",
+      "packageScriptNames": [
+        "verify:block96:plane-discovery-readiness"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block97-103-operating-hardening.mjs",
+      "packageScriptNames": [
+        "verify:block97-103:operating-hardening"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block104-108-product-ops.mjs",
+      "packageScriptNames": [
+        "verify:block104-108:product-ops"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block109-visual-a11y-system.mjs",
+      "packageScriptNames": [
+        "verify:block109:visual-a11y-system",
+        "verify:block109:visual-a11y-browser"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block110-controlled-beta-readiness.mjs",
+      "packageScriptNames": [
+        "verify:block110:controlled-beta-readiness"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-block111-performance-initial-payloads.mjs",
+      "packageScriptNames": [
+        "verify:block111:performance-initial-payloads"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/verify-operational-realism-fixtures.mjs",
+      "packageScriptNames": [
+        "verify:operational-realism-fixtures"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    }
+  ],
+  "qualifiedApplicationLockfileMissing": true,
+  "publicAssetAndSymlinkRecoveryOpen": true,
+  "runtimeVersionAndNoticesOpen": true,
+  "earlierMixedHistoryAndOtherWipOpen": true,
+  "applicationAndCompleteDependencyRightsOpen": true,
+  "fullRecoveryProven": false
+}

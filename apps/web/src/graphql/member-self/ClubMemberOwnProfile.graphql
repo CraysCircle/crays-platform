@@ -1,0 +1,1 @@
+query ClubMemberOwnProfile($input: ClubMemberOwnProfileInput!) { clubMemberOwnProfile(input: $input) { schema payloadJson } }

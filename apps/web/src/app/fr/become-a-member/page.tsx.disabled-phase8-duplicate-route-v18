@@ -1,0 +1,7 @@
+import type { Metadata } from "next";
+import { ClubsAmbassadorApplyPage } from "../../../components/crays-clubs/public/clubs-ambassador-apply-page";
+import { ambassadorJourneyCopy } from "../../../components/crays-clubs/public/clubs-ambassador-journey-copy";
+
+const copy = ambassadorJourneyCopy["fr"];
+export const metadata: Metadata = { title: copy.metaTitle, description: copy.metaDescription };
+export default function BecomeAMemberPage() { return <ClubsAmbassadorApplyPage locale="fr" />; }

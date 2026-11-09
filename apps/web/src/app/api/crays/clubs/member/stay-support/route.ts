@@ -1,0 +1,11 @@
+import {NextRequest} from "next/server";
+import {memberSelfPorts} from "@/graphql/member-self/member-self-runtime-ports";
+import {createMemberSupportDatabasePorts} from "@/db/member-support-bff-runtime";
+import {createMemberStaySupportHandlers} from "@/db/member-stay-support-handler";
+import {validateClubsMemberMutationRequest} from "@/lib/clubs/member-request-security";
+export const dynamic="force-dynamic";
+export const runtime="nodejs";
+const ports=createMemberSupportDatabasePorts();
+const handlers=createMemberStaySupportHandlers({...ports,resolveCurrentSdk:memberSelfPorts.resolveCurrentSdk,validateMutationRequest:request=>validateClubsMemberMutationRequest(new NextRequest(request.url,{headers:request.headers}))});
+export const GET=handlers.GET;
+export const POST=handlers.POST;

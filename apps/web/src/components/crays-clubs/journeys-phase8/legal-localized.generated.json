@@ -1,0 +1,2702 @@
+{
+  "de": {
+    "imprint": {
+      "url": "https://www.craysclub.com/de/legal/imprint",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "Impressum",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Company- und Kontaktinformationen für Crays Clubs.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Offizielle Informationen",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Die folgenden Angaben benennen Crays AG als Betreibergesellschaft.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Kontakt",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Email for Crays Club guest access and operating inquiries: team@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:team@craysclub.com",
+              "text": "team@craysclub.com"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "General legal contact from the referenced Crays framework: info@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:info@craysclub.com",
+              "text": "info@craysclub.com"
+            }
+          ]
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Haftungsausschluss",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Die Angaben auf dieser Website dienen der allgemeinen Information. Crays unternimmt angemessene Anstrengungen, um die Inhalte aktuell zu halten, es wird jedoch keine Garantie dafür übernommen, dass alle Informationen jederzeit vollständig, richtig und verfügbar sind.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Externe Links können zu Websites Dritter führen. Crays ist nicht für Inhalte Dritter verantwortlich und macht sich diese durch die Verlinkung nicht automatisch zu eigen.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Copyright und Trademark",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Texte, Bilder, Logos, Layouts, Konzepte und andere Website-Elemente unterliegen dem Urheberrecht, Markenrecht und verwandten Schutzrechten, sofern nicht anders angegeben. Jede über die normale Nutzung der Website hinausgehende Nutzung bedarf der vorherigen schriftlichen Zustimmung des Rechteinhabers.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays und verwandte Marken werden als geschützte Markenkennzeichnungen innerhalb des Crays-Ökosystems verwendet.",
+          "links": []
+        }
+      ]
+    },
+    "terms-and-conditions": {
+      "url": "https://www.craysclub.com/de/legal/terms-and-conditions",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "AGB",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Klare Operating Terms für Website-Nutzung, Early-Access-Anfragen und Crays Club Kommunikation.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Geltungsbereich",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Diese Bedingungen gelten für die Nutzung von CraysClub.com, die auf dieser Website präsentierten Informationen und alle Frühzugänge, Gastzugänge oder Mitgliedschaftsinteressen, die über die Kontaktkanäle des Crays Clubs übermittelt werden.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Bestimmte kostenpflichtige Produkte, Aufenthalte, Veranstaltungen, Mitgliedschaften oder Partnerdienste können gesonderten Vereinbarungen, Buchungsbedingungen oder lokalen Anforderungen unterliegen. Sofern gesonderte Bedingungen gelten, haben diese Bedingungen für die jeweilige Transaktion Vorrang.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Website-Inhalt",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays Clubinhalte beschreiben Konzepte, geplante Funktionen, Community-Ebenen, Standorte und Serviceideen. Einige Elemente befinden sich möglicherweise in der Entwicklung, sind aufgrund der Verfügbarkeit begrenzt oder werden vor der Veröffentlichung angepasst.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Wir können den Inhalt der Website jederzeit aktualisieren, entfernen oder umstrukturieren, um das Crays Club-Erlebnis korrekt und aktuell zu halten.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Zugriffsanfragen",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Mit der Übermittlung eines Antrags auf Gastzugang, Mitgliedschaftszugang oder Auskunft entsteht kein automatischer Anspruch auf Eintritt, Buchung oder Teilnahme. Crays kann Anfragen prüfen, Bewerber kontaktieren und über den Zugriff auf der Grundlage von Verfügbarkeit, betrieblicher Eignung und geltenden Regeln entscheiden.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Sie sind dafür verantwortlich, korrekte Kontaktinformationen anzugeben und dafür zu sorgen, dass Ihre Kommunikation respektvoll, rechtmäßig und für den angeforderten Crays-Dienst relevant ist.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Dienste Dritter",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays Club kann auf Plattformen, Veranstaltungsorte, Gastronomieanbieter, Zahlungsanbieter, soziale Netzwerke oder Community-Tools von Drittanbietern verlinken oder mit diesen zusammenarbeiten. Diese Anbieter können ihre eigenen Geschäftsbedingungen und Datenschutzbestimmungen anwenden.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays ist nicht verantwortlich für Websites oder Dienste Dritter, es sei denn, die Haftung ist nach geltendem Recht zwingend erforderlich.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Haftung",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays sorgt dafür, dass die Website verfügbar und zuverlässig bleibt, ein ununterbrochener Zugriff kann jedoch nicht garantiert werden. Die Haftung ist auf den gesetzlich zulässigen Umfang beschränkt.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Nichts in diesen Bedingungen schränkt zwingende gesetzliche Rechte oder Haftungen ein, die gesetzlich nicht ausgeschlossen werden können.",
+          "links": []
+        }
+      ]
+    },
+    "data-protection": {
+      "url": "https://www.craysclub.com/de/legal/data-protection",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "Datenschutz",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Wie Crays Club personenbezogene Daten behandelt, wenn Menschen die Website besuchen, Access anfragen oder das Team kontaktieren.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Verarbeitete personenbezogene Daten",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Wenn Sie CraysClub.com besuchen, Crays-Zugang anfordern oder uns kontaktieren, verarbeiten wir möglicherweise Kontaktdaten, Nachrichteninhalte, technische Browserinformationen, Nutzungsdaten und Informationen, die zur Beantwortung Ihrer Anfrage erforderlich sind.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Wir fragen nur nach Informationen, die für den Betrieb des Crays Club-Erlebnisses, die Abwicklung der Kommunikation, die Verbesserung der Website oder die Vorbereitung der angeforderten Dienste nützlich sind.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Zwecke",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Bereitstellung und Verbesserung der Website.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Beantwortung von Anfragen und Zugriffsanfragen.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Vorbereitung der Gäste-, Mitglieder-, Partner- oder Community-Kommunikation.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Schutz der Website vor Missbrauch, Spam und Sicherheitsvorfällen.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Erfüllen Sie bei Bedarf rechtliche, buchhalterische oder Compliance-Verpflichtungen.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Rechtsgrundlagen",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Je nach Kontext kann die Verarbeitung auf Vertragsschritten, Einwilligungen, rechtlichen Verpflichtungen oder berechtigten Interessen wie sicherem Website-Betrieb, Kommunikationsmanagement und Produktverbesserung basieren.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Sie können Ihre Einwilligung widerrufen, wenn die Verarbeitung auf einer Einwilligung beruht. Verarbeitungen, die vor dem Widerruf erfolgt sind, bleiben vom Widerruf unberührt.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Weitergabe und Service Provider",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays kann technische Anbieter für Hosting, Analyse, Kommunikation, Sicherheit, Formulare und damit verbundene Betriebsdienste nutzen. Anbieter werden ausgewählt, um einen sicheren und zuverlässigen Betrieb zu unterstützen.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Bei der internationalen Übermittlung von Informationen setzt Crays geeignete Sicherheitsmaßnahmen ein, sofern dies gesetzlich vorgeschrieben ist.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Deine Rechte",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Je nach geltendem Recht haben Sie möglicherweise das Recht, auf Ihre personenbezogenen Daten zuzugreifen, sie zu berichtigen, zu löschen, einzuschränken oder zu erhalten, einer bestimmten Verarbeitung zu widersprechen und sich bei einer Aufsichtsbehörde zu beschweren.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "To exercise privacy rights, contact team@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:team@craysclub.com",
+              "text": "team@craysclub.com"
+            }
+          ]
+        }
+      ]
+    },
+    "privacy-policy": {
+      "url": "https://www.craysclub.com/de/legal/privacy-policy",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "Datenschutzerklärung",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Ein praktischer Privacy-Überblick für Besucher, Early-Access-Anfragen und Crays Club Community-Kontakte.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Überblick",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays Club nutzt personenbezogene Daten, um die Website zu betreiben, Nachrichten zu beantworten, Access-Interesse zu verwalten und die Community Experience zu verbessern. Die Datenerhebung bleibt fokussiert und verständlich.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Diese Policy ergänzt die Datenschutzseite und erklärt den praktischen Umgang mit privacy-relevanten Informationen auf CraysClub.com.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Website-Besuche",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Beim Besuch der Website können technische Informationen wie Browsertyp, Gerätedaten, Zugriffszeiten, aufgerufene Seiten und sicherheitsrelevante Logs durch Hosting- und Infrastruktur-Provider verarbeitet werden.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Diese Informationen helfen, Seiten auszuliefern, Missbrauch zu verhindern, Fehler zu beheben und den Service sicher zu halten.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Kontakt- und Access-Formulare",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Wenn du Crays kontaktierst oder Access anfragst, verarbeiten wir die von dir angegebenen Daten wie Name, E-Mail, Nachricht und relevanten Kontext. Diese Informationen werden zur Antwort und Bewertung der gewünschten Crays Club Interaktion genutzt.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Bitte sende keine sensiblen Informationen, außer sie sind für die konkrete Anfrage erforderlich.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Cookies und ähnliche Technologien",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Die Website kann Technologien für Grundfunktionen, Sicherheit, Analytics oder eingebundene Drittanbieter nutzen. Wo erforderlich, werden Consent oder zusätzliche Informationen bereitgestellt, bevor optionale Technologien eingesetzt werden.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Aufbewahrung",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Daten werden nur so lange gespeichert, wie es für den jeweiligen Zweck, rechtliche Anforderungen, Streitvermeidung oder legitime operative Bedürfnisse nötig ist. Danach werden sie gelöscht oder anonymisiert.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Deine Optionen",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Du kannst Crays kontaktieren, um Auskunft, Korrektur oder Löschung deiner Daten zu verlangen, bestimmten Nutzungen zu widersprechen oder Consent zu widerrufen, soweit die Verarbeitung darauf beruht.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Kontakt: team@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:team@craysclub.com",
+              "text": "team@craysclub.com"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "es": {
+    "imprint": {
+      "url": "https://www.craysclub.com/es/legal/imprint",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "Aviso legal",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Información de empresa y contacto de Crays Clubs.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Información oficial",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Los siguientes datos identifican a Crays AG como entidad operadora.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Contacto",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Email for Crays Club guest access and operating inquiries: team@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:team@craysclub.com",
+              "text": "team@craysclub.com"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "General legal contact from the referenced Crays framework: info@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:info@craysclub.com",
+              "text": "info@craysclub.com"
+            }
+          ]
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Descargo de responsabilidad",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "La información contenida en este sitio web se proporciona para información general. Crays hace esfuerzos razonables para mantener el contenido actualizado, pero no se garantiza que toda la información esté completa, sea precisa o esté disponible en todo momento.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Los enlaces externos pueden conducir a sitios web de terceros. Crays no es responsable del contenido de terceros y no lo respalda automáticamente al vincularlo.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Derechos de autor y marca registrada",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Los textos, imágenes, logotipos, diseños, conceptos y otros elementos del sitio web están protegidos por derechos de autor, marcas comerciales y derechos relacionados a menos que se indique lo contrario. Cualquier uso más allá de la visualización normal del sitio web requiere el consentimiento previo por escrito del titular de los derechos.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays y las marcas relacionadas se utilizan como identificadores de marca protegidos dentro del ecosistema Crays.",
+          "links": []
+        }
+      ]
+    },
+    "terms-and-conditions": {
+      "url": "https://www.craysclub.com/es/legal/terms-and-conditions",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "Términos y condiciones",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Términos operativos claros para el uso de la web, solicitudes de early access y comunicación de Crays Club.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Alcance",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Estos términos se aplican al uso de CraysClub.com, la información presentada en este sitio web y cualquier acceso anticipado, acceso de invitado o interés de membresía enviado a través de los canales de contacto del Crays Club.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Productos de pago, estancias, eventos, membresías o servicios de socios específicos pueden estar sujetos a acuerdos, términos de reserva o requisitos locales separados. Si se aplican términos separados, esos términos tienen prioridad para la transacción relevante.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Contenido del sitio web",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays El contenido del club describe conceptos, características planificadas, niveles comunitarios, ubicaciones e ideas de servicios. Algunos elementos pueden estar en desarrollo, limitados por disponibilidad o adaptados antes del lanzamiento.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Podemos actualizar, eliminar o reestructurar el contenido del sitio web en cualquier momento para mantener la experiencia del Crays Club precisa y actualizada.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Solicitudes de acceso",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Enviar una solicitud de acceso de invitado, acceso de membresía o información no crea un derecho automático de admisión, reserva o participación. Crays puede revisar solicitudes, contactar a los solicitantes y decidir el acceso según la disponibilidad, la idoneidad operativa y las reglas aplicables.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Usted es responsable de proporcionar información de contacto precisa y de mantener su comunicación respetuosa, legal y relevante para el servicio Crays solicitado.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Servicios de terceros",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays Club puede vincularse o cooperar con plataformas, lugares, proveedores de hospitalidad, proveedores de pagos, redes sociales o herramientas comunitarias de terceros. Esos proveedores pueden aplicar sus propios términos y reglas de privacidad.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays no es responsable de los sitios web o servicios de terceros a menos que la responsabilidad sea obligatoria según la ley aplicable.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Responsabilidad",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays trabaja para mantener el sitio web disponible y confiable, pero no se puede garantizar el acceso ininterrumpido. La responsabilidad está limitada en la medida permitida por la ley aplicable.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Nada en estos términos limita los derechos o responsabilidades legales obligatorios que no puedan excluirse legalmente.",
+          "links": []
+        }
+      ]
+    },
+    "data-protection": {
+      "url": "https://www.craysclub.com/es/legal/data-protection",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "Protección de datos",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Cómo Crays Club gestiona datos personales cuando se visita la web, se solicita access o se contacta con el equipo.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Datos personales que procesamos",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Cuando visita CraysClub.com, solicita acceso a Crays o se comunica con nosotros, podemos procesar detalles de contacto, contenido de mensajes, información técnica del navegador, datos de uso e información necesaria para responder a su solicitud.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Solo solicitamos información que sea útil para operar la experiencia del Crays Club, manejar la comunicación, mejorar el sitio web o preparar los servicios solicitados.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Propósitos",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Proporcionar y mejorar el sitio web.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Atender consultas y solicitudes de acceso.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Preparar la comunicación de invitados, miembros, socios o comunidad.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Proteger el sitio web contra mal uso, spam e incidentes de seguridad.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Cumplir con obligaciones legales, contables o de cumplimiento cuando sea necesario.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Bases Legales",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Dependiendo del contexto, el procesamiento puede basarse en pasos contractuales, consentimiento, obligaciones legales o intereses legítimos, como el funcionamiento seguro del sitio web, la gestión de la comunicación y la mejora del producto.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Puede retirar el consentimiento cuando el procesamiento se base en el consentimiento. El retiro no afecta el procesamiento que tuvo lugar antes del retiro.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Proveedores de servicios e intercambio",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays puede utilizar proveedores técnicos para alojamiento, análisis, comunicación, seguridad, formularios y servicios operativos relacionados. Los proveedores son seleccionados para respaldar una operación segura y confiable.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Cuando la información se transfiere internacionalmente, Crays utiliza las medidas de seguridad adecuadas cuando lo exige la ley.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Tus derechos",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Dependiendo de la ley aplicable, es posible que tenga derecho a acceder, corregir, eliminar, restringir o recibir sus datos personales, oponerse a cierto procesamiento y presentar una queja ante una autoridad supervisora.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "To exercise privacy rights, contact team@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:team@craysclub.com",
+              "text": "team@craysclub.com"
+            }
+          ]
+        }
+      ]
+    },
+    "privacy-policy": {
+      "url": "https://www.craysclub.com/es/legal/privacy-policy",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "Política de privacidad",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Un resumen práctico de privacidad para visitantes, solicitudes de early access y contactos de la Crays Club community.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Resumen",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays Club usa datos personales para operar la web, responder mensajes, gestionar interés de access y mejorar la community experience. Buscamos que la recogida de datos sea clara y limitada.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Esta política complementa la página de Data Protection y explica cómo se maneja la información relevante para la privacidad en CraysClub.com.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Visitas al sitio web",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Al visitar la web, proveedores de hosting e infraestructura pueden tratar datos técnicos como tipo de navegador, dispositivo, horas de acceso, páginas solicitadas y logs de seguridad.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Esta información ayuda a entregar páginas, prevenir abusos, resolver errores y mantener seguro el servicio.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Formularios de Contacto y Acceso",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Si contactas con Crays o solicitas access, tratamos los datos que aportas, como nombre, email, mensaje y contexto relevante. Se usan para responder y evaluar la interacción solicitada con Crays Club.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "No envíes información sensible salvo que sea necesaria para esa solicitud concreta.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Cookies y tecnologías similares",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "La web puede usar tecnologías para funcionalidad básica, seguridad, analytics o servicios externos integrados. Cuando sea necesario, se pedirá consentimiento o se dará información adicional antes de usar tecnologías opcionales.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Retención",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Los datos se conservan solo durante el tiempo necesario para la finalidad, requisitos legales, prevención de disputas o necesidades operativas legítimas. Después se eliminan o anonimizan cuando procede.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Tus opciones",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Puedes contactar con Crays para preguntar por tus datos, pedir corrección o eliminación, oponerte a ciertos usos o retirar el consentimiento cuando el tratamiento dependa de él.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Contacto: team@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:team@craysclub.com",
+              "text": "team@craysclub.com"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "ca": {
+    "imprint": {
+      "url": "https://www.craysclub.com/ca/legal/imprint",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "Avís legal",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Informació d'empresa i contacte de Crays Clubs.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Informació oficial",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Les dades següents identifiquen Crays AG com a entitat operadora.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Contacte",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Email for Crays Club guest access and operating inquiries: team@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:team@craysclub.com",
+              "text": "team@craysclub.com"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "General legal contact from the referenced Crays framework: info@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:info@craysclub.com",
+              "text": "info@craysclub.com"
+            }
+          ]
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Exempció de responsabilitat",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "La informació d'aquest lloc web es proporciona per a informació general. Crays fa esforços raonables per mantenir el contingut actual, però no es garanteix que tota la informació sigui completa, precisa o disponible en tot moment.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Els enllaços externs poden conduir a llocs web de tercers. Crays no es fa responsable del contingut de tercers i no l'aprova automàticament en enllaçar-hi.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Copyright i marca registrada",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Els textos, les imatges, els logotips, els dissenys, els conceptes i altres elements del lloc web estan protegits per drets d'autor, marques registrades i drets relacionats tret que s'indiqui el contrari. Qualsevol ús més enllà de la visualització normal del lloc web requereix el consentiment previ per escrit del titular dels drets.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays i les marques relacionades s'utilitzen com a identificadors de marca protegits a l'ecosistema Crays.",
+          "links": []
+        }
+      ]
+    },
+    "terms-and-conditions": {
+      "url": "https://www.craysclub.com/ca/legal/terms-and-conditions",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "Termes i condicions",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Termes operatius clars per a l'ús de la web, sol·licituds d'early access i comunicació de Crays Club.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Àmbit",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Aquests termes s'apliquen a l'ús de CraysClub.com, la informació presentada en aquest lloc web i qualsevol accés anticipat, accés de convidat o interès de membre enviat a través dels canals de contacte del Crays Club.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Els productes, estades, esdeveniments, membres o serveis de socis específics de pagament poden estar subjectes a acords separats, condicions de reserva o requisits locals. Si s'apliquen termes diferents, aquests termes tenen prioritat per a la transacció corresponent.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Contingut del lloc web",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays El contingut del club descriu conceptes, funcions planificades, capes de comunitat, ubicacions i idees de servei. Alguns elements poden estar en desenvolupament, limitats per la disponibilitat o adaptats abans del llançament.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Podem actualitzar, eliminar o reestructurar el contingut del lloc web en qualsevol moment per mantenir l'experiència del Crays Club precisa i actual.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Sol·licituds d'accés",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "L'enviament d'una sol·licitud d'accés de convidat, accés de membre o informació no crea un dret automàtic d'admissió, reserva o participació. Crays pot revisar les sol·licituds, contactar amb els sol·licitants i decidir l'accés en funció de la disponibilitat, l'adequació operativa i les regles aplicables.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Sou responsable de proporcionar informació de contacte precisa i de mantenir la vostra comunicació respectuosa, lícita i rellevant per al servei Crays sol·licitat.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Serveis de tercers",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays Club pot enllaçar o cooperar amb plataformes de tercers, llocs, proveïdors d'hostaleria, proveïdors de pagament, xarxes socials o eines de la comunitat. Aquests proveïdors poden aplicar els seus propis termes i normes de privadesa.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays no es fa responsable dels llocs web o dels serveis de tercers tret que la responsabilitat sigui obligatòria segons la llei aplicable.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Responsabilitat",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays treballa per mantenir el lloc web disponible i fiable, però no es pot garantir l'accés ininterromput. La responsabilitat està limitada en la mesura que ho permeti la llei aplicable.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Res d'aquests termes limita els drets legals obligatoris o la responsabilitat que no es poden excloure legalment.",
+          "links": []
+        }
+      ]
+    },
+    "data-protection": {
+      "url": "https://www.craysclub.com/ca/legal/data-protection",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "Protecció de dades",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Com Crays Club tracta dades personals quan es visita la web, es demana access o es contacta amb l'equip.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Dades personals que tractem",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Quan visiteu CraysClub.com, sol·liciteu l'accés a Crays o contacteu amb nosaltres, podem processar les dades de contacte, el contingut del missatge, la informació tècnica del navegador, les dades d'ús i la informació necessària per respondre a la vostra sol·licitud.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Només demanem informació útil per operar l'experiència del Club Crays, gestionar la comunicació, millorar el lloc web o preparar els serveis sol·licitats.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Propòsits",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Provisió i millora del lloc web.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Resposta a consultes i sol·licituds d'accés.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Preparació de la comunicació com a convidat, membre, soci o comunitat.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Protecció del lloc web contra mal ús, correu brossa i incidents de seguretat.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Complir les obligacions legals, comptables o de compliment quan sigui necessari.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Bases legals",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Depenent del context, el tractament es pot basar en passos contractuals, consentiment, obligacions legals o interessos legítims com ara el funcionament segur del lloc web, la gestió de la comunicació i la millora del producte.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Podeu retirar el consentiment quan el processament es basi en el consentiment. La retirada no afecta el tractament realitzat abans de la retirada.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Compartir i proveïdors de serveis",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays pot utilitzar proveïdors tècnics per a l'allotjament, l'anàlisi, la comunicació, la seguretat, els formularis i els serveis operatius relacionats. Els proveïdors són seleccionats per donar suport a un funcionament segur i fiable.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Quan la informació es transfereix internacionalment, Crays utilitza les garanties adequades quan ho requereixi legalment.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Els teus drets",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Depenent de la legislació aplicable, és possible que tinguis drets per accedir, corregir, eliminar, restringir o rebre les teves dades personals, oposar-te a determinats tractaments i reclamar davant una autoritat de control.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "To exercise privacy rights, contact team@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:team@craysclub.com",
+              "text": "team@craysclub.com"
+            }
+          ]
+        }
+      ]
+    },
+    "privacy-policy": {
+      "url": "https://www.craysclub.com/ca/legal/privacy-policy",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "Política de privacitat",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Un resum pràctic de privacitat per a visitants, sol·licituds d'early access i contactes de la Crays Club community.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Visió general",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays Club utilitza dades personals per operar la web, respondre missatges, gestionar interès d'access i millorar la community experience. Volem que la recollida de dades sigui clara i limitada.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Aquesta política complementa la pàgina de Data Protection i explica el tractament pràctic de la informació rellevant per a la privacitat a CraysClub.com.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Visites al lloc web",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Quan es visita la web, proveïdors de hosting i infraestructura poden tractar informació tècnica com navegador, dispositiu, hores d'accés, pàgines sol·licitades i logs de seguretat.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Aquesta informació ajuda a servir pàgines, prevenir abusos, resoldre errors i mantenir segur el servei.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Formularis de contacte i accés",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Si contactes amb Crays o demanes access, tractem les dades que facilites, com nom, email, missatge i context rellevant. S'utilitzen per respondre i avaluar la interacció sol·licitada amb Crays Club.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "No enviïs informació sensible llevat que sigui necessària per a la petició concreta.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Cookies i Tecnologies Similars",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "La web pot usar tecnologies per a funcionalitat bàsica, seguretat, analytics o serveis externs integrats. Quan calgui, es demanarà consentiment o es donarà informació addicional abans d'usar tecnologies opcionals.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Retenció",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Les dades es conserven només el temps necessari per a la finalitat, requisits legals, prevenció de conflictes o necessitats operatives legítimes. Després s'eliminen o anonimitzen quan correspongui.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Les vostres eleccions",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Pots contactar amb Crays per preguntar per les teves dades, demanar correcció o eliminació, oposar-te a certs usos o retirar consentiment quan el tractament en depengui.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Contacte: team@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:team@craysclub.com",
+              "text": "team@craysclub.com"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "fr": {
+    "imprint": {
+      "url": "https://www.craysclub.com/fr/legal/imprint",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "Mentions légales",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Informations société et contact pour Crays Clubs.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Informations officielles",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Les coordonnées suivantes identifient Crays AG comme société exploitante.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Contact",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Email for Crays Club guest access and operating inquiries: team@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:team@craysclub.com",
+              "text": "team@craysclub.com"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "General legal contact from the referenced Crays framework: info@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:info@craysclub.com",
+              "text": "info@craysclub.com"
+            }
+          ]
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Clause de non-responsabilité",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Les informations présentes sur ce site Web sont fournies à titre d'information générale. Crays fait des efforts raisonnables pour maintenir le contenu à jour, mais aucune garantie n'est donnée que toutes les informations sont complètes, exactes ou disponibles à tout moment.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Des liens externes peuvent conduire vers des sites Internet de tiers. Crays n'est pas responsable du contenu tiers et ne l'approuve pas automatiquement en créant un lien vers celui-ci.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Droit d'auteur et marque déposée",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Les textes, images, logos, mises en page, concepts et autres éléments du site Web sont protégés par le droit d'auteur, les marques et les droits voisins, sauf indication contraire. Toute utilisation au-delà de la consultation normale du site Web nécessite l'accord écrit préalable du titulaire des droits.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays et les marques associées sont utilisées comme identifiants de marque protégés au sein de l'écosystème Crays.",
+          "links": []
+        }
+      ]
+    },
+    "terms-and-conditions": {
+      "url": "https://www.craysclub.com/fr/legal/terms-and-conditions",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "Conditions générales",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Conditions opérationnelles claires pour l'usage du site, les demandes d'early access et la communication Crays Club.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Portée",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Ces conditions s'appliquent à l'utilisation de CraysClub.com, aux informations présentées sur ce site Web et à tout accès anticipé, accès invité ou intérêt d'adhésion soumis via les canaux de contact du Crays Club.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Des produits, séjours, événements, adhésions ou services partenaires payants spécifiques peuvent être soumis à des accords distincts, à des conditions de réservation ou à des exigences locales. Si des conditions distinctes s'appliquent, ces conditions prévaudront pour la transaction concernée.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Contenu du site Web",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Le contenu du Crays Club décrit les concepts, les fonctionnalités prévues, les couches communautaires, les emplacements et les idées de services. Certains éléments peuvent être en développement, limités par la disponibilité ou adaptés avant le lancement.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Nous pouvons mettre à jour, supprimer ou restructurer le contenu du site Web à tout moment pour que l'expérience du Crays Club reste exacte et à jour.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Demandes d'accès",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "La soumission d’une demande d’accès invité, d’accès membre ou d’informations ne crée pas un droit automatique d’admission, de réservation ou de participation. Crays peut examiner les demandes, contacter les candidats et décider de l'accès en fonction de la disponibilité, de l'adéquation opérationnelle et des règles applicables.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Vous êtes responsable de fournir des informations de contact exactes et de garder votre communication respectueuse, licite et pertinente pour le service Crays demandé.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Services tiers",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays Club peut créer des liens vers ou coopérer avec des plateformes, lieux, prestataires d'accueil, prestataires de paiement, réseaux sociaux ou outils communautaires tiers. Ces fournisseurs peuvent appliquer leurs propres conditions et règles de confidentialité.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays n'est pas responsable des sites Web ou services tiers, sauf si la responsabilité est obligatoire en vertu de la loi applicable.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Responsabilité",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays s'efforce de maintenir le site Web disponible et fiable, mais un accès ininterrompu ne peut être garanti. La responsabilité est limitée dans la mesure permise par la loi applicable.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Rien dans ces conditions ne limite les droits ou responsabilités statutaires obligatoires qui ne peuvent légalement être exclus.",
+          "links": []
+        }
+      ]
+    },
+    "data-protection": {
+      "url": "https://www.craysclub.com/fr/legal/data-protection",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "Protection des données",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Comment Crays Club traite les données personnelles lors des visites, demandes d'access ou contacts avec l'équipe.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Données personnelles que nous traitons",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Lorsque vous visitez CraysClub.com, demandez un accès à Crays ou contactez-nous, nous pouvons traiter les coordonnées, le contenu des messages, les informations techniques du navigateur, les données d'utilisation et les informations nécessaires pour répondre à votre demande.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Nous demandons uniquement les informations utiles au fonctionnement de l'expérience du Club Crays, à la gestion de la communication, à l'amélioration du site Internet ou à la préparation des services demandés.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Objectifs",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Mise à disposition et amélioration du site Internet.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Répondre aux demandes de renseignements et d'accès.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Préparer la communication avec les invités, les membres, les partenaires ou la communauté.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Protéger le site Web contre les abus, le spam et les incidents de sécurité.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Respecter les obligations légales, comptables ou de conformité lorsque cela est nécessaire.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Bases juridiques",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Selon le contexte, le traitement peut être fondé sur des étapes contractuelles, un consentement, des obligations légales ou des intérêts légitimes tels que le fonctionnement sécurisé du site Web, la gestion de la communication et l'amélioration des produits.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Vous pouvez retirer votre consentement lorsque le traitement est basé sur le consentement. Le retrait n'affecte pas le traitement ayant eu lieu avant le retrait.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Partage et fournisseurs de services",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays peut faire appel à des prestataires techniques pour l'hébergement, l'analyse, la communication, la sécurité, les formulaires et les services opérationnels associés. Les fournisseurs sont sélectionnés pour prendre en charge un fonctionnement sécurisé et fiable.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Lorsque les informations sont transférées à l'international, Crays utilise des garanties appropriées lorsque la loi l'exige.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Vos droits",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Selon la loi applicable, vous pouvez disposer du droit d'accéder, de rectification, de suppression, de restriction ou de réception de vos données personnelles, de vous opposer à certains traitements et de porter plainte auprès d'une autorité de contrôle.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "To exercise privacy rights, contact team@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:team@craysclub.com",
+              "text": "team@craysclub.com"
+            }
+          ]
+        }
+      ]
+    },
+    "privacy-policy": {
+      "url": "https://www.craysclub.com/fr/legal/privacy-policy",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "Politique de confidentialité",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Un aperçu privacy pratique pour visiteurs, demandes d'early access et contacts de la Crays Club community.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Aperçu",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays Club utilise des données personnelles pour exploiter le site, répondre aux messages, gérer l'intérêt access et améliorer la community experience. La collecte reste ciblée et lisible.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Cette politique complète la page Data Protection et explique le traitement pratique des informations liées à la privacy sur CraysClub.com.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Visites du site Web",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Lors d'une visite, des informations techniques comme navigateur, appareil, heures d'accès, pages demandées et logs de sécurité peuvent être traitées par les fournisseurs d'hébergement et d'infrastructure.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Ces informations aident à servir les pages, prévenir les abus, corriger les erreurs et sécuriser le service.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Formulaires de contact et d'accès",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Si vous contactez Crays ou demandez access, nous traitons les données fournies, comme nom, email, message et contexte utile. Elles servent à répondre et évaluer l'interaction Crays Club demandée.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "N'envoyez pas d'informations sensibles sauf si elles sont nécessaires à la demande précise.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Cookies et technologies similaires",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Le site peut utiliser des technologies pour les fonctions de base, la sécurité, analytics ou des services tiers intégrés. Lorsque nécessaire, un consentement ou des informations supplémentaires seront fournis avant toute technologie optionnelle.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Rétention",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Les données sont conservées seulement le temps nécessaire à la finalité, aux obligations légales, à la prévention des litiges ou aux besoins opérationnels légitimes. Ensuite, elles sont supprimées ou anonymisées.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Vos choix",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Vous pouvez contacter Crays pour vos données personnelles, demander correction ou suppression, vous opposer à certains usages ou retirer un consentement lorsque le traitement en dépend.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Contact : team@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:team@craysclub.com",
+              "text": "team@craysclub.com"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "pt": {
+    "imprint": {
+      "url": "https://www.craysclub.com/pt/legal/imprint",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "Ficha legal",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Informação de empresa e contacto da Crays Clubs.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Informação Oficial",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Os dados seguintes identificam Crays AG como entidade operadora.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Contacto",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Email for Crays Club guest access and operating inquiries: team@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:team@craysclub.com",
+              "text": "team@craysclub.com"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "General legal contact from the referenced Crays framework: info@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:info@craysclub.com",
+              "text": "info@craysclub.com"
+            }
+          ]
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Isenção de responsabilidade",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "As informações neste site são fornecidas para informações gerais. A Crays faz esforços razoáveis ​​para manter o conteúdo atualizado, mas não é dada qualquer garantia de que todas as informações estejam completas, precisas ou disponíveis em todos os momentos.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Os links externos podem levar a sites de terceiros. Crays não é responsável pelo conteúdo de terceiros e não o endossa automaticamente ao criar ligações para o mesmo.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Direitos de autor e marca registrada",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Os textos, imagens, logótipos, layouts, conceitos e outros elementos do site estão protegidos por direitos de autor, marcas registadas e direitos conexos, salvo indicação em contrário. Qualquer utilização para além da visualização normal do site requer o consentimento prévio por escrito do detentor dos direitos.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays e marcas relacionadas são utilizados como identificadores de marca protegidos no ecossistema Crays.",
+          "links": []
+        }
+      ]
+    },
+    "terms-and-conditions": {
+      "url": "https://www.craysclub.com/pt/legal/terms-and-conditions",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "Termos e condições",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Termos operacionais claros para uso do site, pedidos de early access e comunicação Crays Club.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Âmbito",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Estes termos aplicam-se à utilização de CraysClub.com, às informações apresentadas neste website e a qualquer acesso antecipado, acesso de convidado ou interesse de membro enviado através dos canais de contacto do Crays Club.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Os produtos pagos, estadias, eventos, associações ou serviços de parceiros específicos podem estar sujeitos a acordos, termos de reserva ou requisitos locais separados. Se forem aplicáveis ​​termos separados, estes termos terão prioridade para a transação relevante.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Conteúdo do site",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays O conteúdo do clube descreve conceitos, características planeadas, camadas da comunidade, locais e ideias de serviços. Alguns elementos podem estar em desenvolvimento, limitados pela disponibilidade ou adaptados antes do lançamento.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Podemos atualizar, remover ou reestruturar o conteúdo do website a qualquer momento para manter a experiência do Crays Club precisa e atual.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Solicitações de acesso",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "O envio de um pedido de acesso de convidado, acesso de membro ou informação não cria um direito automático de admissão, reserva ou participação. O Crays pode analisar os pedidos, contactar os candidatos e decidir o acesso com base na disponibilidade, adequação operacional e regras aplicáveis.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "É responsável por fornecer informações de contacto precisas e por manter a sua comunicação respeitosa, legal e relevante para o serviço Crays solicitado.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Serviços de terceiros",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays O Clube pode ligar ou cooperar com plataformas, locais, fornecedores de hospitalidade, fornecedores de pagamento, redes sociais ou ferramentas comunitárias de terceiros. Estes fornecedores podem aplicar os seus próprios termos e regras de privacidade.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays não é responsável por sites ou serviços de terceiros, a menos que a responsabilidade seja obrigatória pela lei aplicável.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Responsabilidade",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays trabalha para manter o site disponível e fiável, mas o acesso ininterrupto não pode ser garantido. A responsabilidade é limitada na medida do permitido pela lei aplicável.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Nada nestes termos limita direitos ou responsabilidades legais obrigatórias que não possam ser legalmente excluídas.",
+          "links": []
+        }
+      ]
+    },
+    "data-protection": {
+      "url": "https://www.craysclub.com/pt/legal/data-protection",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "Proteção de dados",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Como a Crays Club trata dados pessoais quando pessoas visitam o site, pedem access ou contactam a equipa.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Dados pessoais que tratamos",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Quando visita CraysClub.com, solicita o acesso a Crays ou entra em contacto connosco, podemos processar os dados de contacto, o conteúdo das mensagens, as informações técnicas do browser, os dados de utilização e as informações necessárias para responder ao seu pedido.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Solicitamos apenas informações úteis para operar a experiência do Crays Club, tratar da comunicação, melhorar o website ou preparar os serviços solicitados.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Finalidades",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Disponibilização e melhoria do site.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Responder a dúvidas e pedidos de acesso.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Preparar a comunicação de convidados, membros, parceiros ou comunidade.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Proteger o site contra uso indevido, spam e incidentes de segurança.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Cumprir as obrigações legais, contabilísticas ou de conformidade quando necessário.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Bases Legais",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Dependendo do contexto, o tratamento pode basear-se em etapas contratuais, consentimento, obrigações legais ou interesses legítimos, tais como a operação segura do website, a gestão da comunicação e a melhoria do produto.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Pode retirar o consentimento quando o tratamento for baseado no consentimento. A retirada não afeta o processamento ocorrido antes da retirada.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Partilha e fornecedores de serviços",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays pode utilizar fornecedores técnicos para alojamento, análise, comunicação, segurança, formulários e serviços operacionais relacionados. Os fornecedores são selecionados para suportar uma operação segura e fiável.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Quando a informação é transferida internacionalmente, Crays utiliza salvaguardas apropriadas quando legalmente exigido.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Os seus direitos",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Dependendo da lei aplicável, poderá ter direitos de aceder, corrigir, eliminar, restringir ou receber os seus dados pessoais, opor-se a um determinado tratamento e reclamar junto de uma autoridade de supervisão.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "To exercise privacy rights, contact team@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:team@craysclub.com",
+              "text": "team@craysclub.com"
+            }
+          ]
+        }
+      ]
+    },
+    "privacy-policy": {
+      "url": "https://www.craysclub.com/pt/legal/privacy-policy",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "Política de privacidade",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Um resumo prático de privacidade para visitantes, pedidos de early access e contactos da Crays Club community.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Visão geral",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "A Crays Club usa dados pessoais para operar o site, responder a mensagens, gerir interesse de access e melhorar a community experience. A recolha de dados deve ser focada e compreensível.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Esta política complementa a página Data Protection e explica o tratamento prático de informação relevante para privacidade em CraysClub.com.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Visitas ao site",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Ao visitar o site, fornecedores de hosting e infraestrutura podem tratar informação técnica como navegador, dispositivo, horas de acesso, páginas pedidas e logs de segurança.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Esta informação ajuda a entregar páginas, prevenir abuso, resolver erros e manter o serviço seguro.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Formulários de contacto e acesso",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Se contactar a Crays ou pedir access, tratamos os dados fornecidos, como nome, email, mensagem e contexto relevante. A informação é usada para responder e avaliar a interação Crays Club pedida.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Não envie informação sensível salvo se for necessária para o pedido específico.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Cookies e tecnologias similares",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "O site pode usar tecnologias para funcionalidade básica, segurança, analytics ou serviços terceiros integrados. Quando necessário, será pedido consentimento ou dada informação adicional antes de tecnologias opcionais.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Retenção",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Os dados são guardados apenas pelo tempo necessário para a finalidade, requisitos legais, prevenção de litígios ou necessidades operacionais legítimas. Depois são apagados ou anonimizados.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "As suas escolhas",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Pode contactar a Crays para perguntar sobre os seus dados, pedir correção ou eliminação, opor-se a certos usos ou retirar consentimento quando o tratamento dependa dele.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Contacto: team@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:team@craysclub.com",
+              "text": "team@craysclub.com"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "it": {
+    "imprint": {
+      "url": "https://www.craysclub.com/it/legal/imprint",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "Note legali",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Informazioni aziendali e contatti per Crays Clubs.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Informazioni ufficiali",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "I dati seguenti identificano Crays AG come società operativa.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Contatto",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Email for Crays Club guest access and operating inquiries: team@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:team@craysclub.com",
+              "text": "team@craysclub.com"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "General legal contact from the referenced Crays framework: info@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:info@craysclub.com",
+              "text": "info@craysclub.com"
+            }
+          ]
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Esclusione di responsabilità",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Le informazioni contenute in questo sito Web sono fornite a titolo informativo generale. Crays compie ogni ragionevole sforzo per mantenere aggiornati i contenuti, ma non viene fornita alcuna garanzia che tutte le informazioni siano complete, accurate o disponibili in ogni momento.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "I collegamenti esterni possono portare a siti Web di terzi. Crays non è responsabile dei contenuti di terze parti e non li approva automaticamente collegandosi ad essi.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Diritto d'autore e marchio",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Testi, immagini, loghi, layout, concetti e altri elementi del sito web sono protetti da copyright, marchi e diritti connessi, salvo diversa indicazione. Qualsiasi utilizzo oltre la normale visualizzazione del sito richiede il previo consenso scritto del titolare dei diritti.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays e i marchi correlati vengono utilizzati come identificatori di marchio protetti all'interno dell'ecosistema Crays.",
+          "links": []
+        }
+      ]
+    },
+    "terms-and-conditions": {
+      "url": "https://www.craysclub.com/it/legal/terms-and-conditions",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "Termini e condizioni",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Termini operativi chiari per uso del sito, richieste di early access e comunicazione Crays Club.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Ambito",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "I presenti termini si applicano all'uso di CraysClub.com, alle informazioni presentate su questo sito Web e a qualsiasi accesso anticipato, accesso ospite o interesse di iscrizione inviato tramite i canali di contatto del Crays Club.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Prodotti specifici a pagamento, soggiorni, eventi, abbonamenti o servizi dei partner possono essere soggetti ad accordi separati, termini di prenotazione o requisiti locali. Se si applicano termini separati, tali termini hanno la priorità per la transazione in questione.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Contenuto del sito web",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays I contenuti del club descrivono concetti, funzionalità pianificate, livelli di comunità, luoghi e idee di servizio. Alcuni elementi potrebbero essere in fase di sviluppo, limitati dalla disponibilità o adattati prima del lancio.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Potremmo aggiornare, rimuovere o ristrutturare i contenuti del sito web in qualsiasi momento per mantenere l'esperienza del Crays Club accurata e aggiornata.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Richieste di accesso",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "L'invio di una richiesta di accesso ospite, accesso associativo o informazioni non crea un diritto automatico all'ammissione, alla prenotazione o alla partecipazione. Crays può esaminare le richieste, contattare i candidati e decidere l'accesso in base alla disponibilità, all'idoneità operativa e alle regole applicabili.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Sei responsabile di fornire informazioni di contatto accurate e di mantenere la tua comunicazione rispettosa, legale e pertinente al servizio Crays richiesto.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Servizi di terze parti",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays Club può collegarsi o collaborare con piattaforme, locali, fornitori di ospitalità, fornitori di pagamenti, social network o strumenti della community di terzi. Tali fornitori possono applicare i propri termini e regole sulla privacy.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays non è responsabile per siti Web o servizi di terze parti a meno che la responsabilità non sia obbligatoria ai sensi della legge applicabile.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Responsabilità",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays lavora per mantenere il sito web disponibile e affidabile, ma non è possibile garantire un accesso ininterrotto. La responsabilità è limitata nella misura consentita dalla legge applicabile.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Niente in questi termini limita i diritti o le responsabilità obbligatorie previsti dalla legge che non possono essere legalmente esclusi.",
+          "links": []
+        }
+      ]
+    },
+    "data-protection": {
+      "url": "https://www.craysclub.com/it/legal/data-protection",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "Protezione dati",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Come Crays Club gestisce dati personali quando si visita il sito, si richiede access o si contatta il team.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Dati personali che trattiamo",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Quando visiti CraysClub.com, richiedi l'accesso a Crays o ci contatti, potremmo elaborare i dettagli di contatto, il contenuto del messaggio, le informazioni tecniche del browser, i dati di utilizzo e le informazioni necessarie per rispondere alla tua richiesta.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Chiediamo solo informazioni utili per gestire l'esperienza del Crays Club, gestire la comunicazione, migliorare il sito web o preparare i servizi richiesti.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Scopi",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Fornire e migliorare il sito web.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Rispondere alle domande e alle richieste di accesso.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Preparare la comunicazione con ospiti, membri, partner o comunità.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Proteggere il sito web da abusi, spam e incidenti di sicurezza.",
+          "links": []
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "text": "Adempiere agli obblighi legali, contabili o di conformità ove richiesto.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Basi giuridiche",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "A seconda del contesto, il trattamento può basarsi su fasi contrattuali, consenso, obblighi legali o interessi legittimi come il funzionamento sicuro del sito web, la gestione della comunicazione e il miglioramento del prodotto.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "È possibile revocare il consenso laddove il trattamento sia basato sul consenso. Il recesso non pregiudica i trattamenti avvenuti prima del recesso.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Condivisione e fornitori di servizi",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays può utilizzare fornitori tecnici per hosting, analisi, comunicazione, sicurezza, moduli e servizi operativi correlati. I fornitori sono selezionati per supportare un funzionamento sicuro e affidabile.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Laddove le informazioni vengono trasferite a livello internazionale, Crays utilizza garanzie adeguate ove richiesto dalla legge.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "I tuoi diritti",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "A seconda della legge applicabile, potresti avere il diritto di accedere, correggere, eliminare, limitare o ricevere i tuoi dati personali, opporti a determinati trattamenti e presentare reclamo a un'autorità di controllo.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "To exercise privacy rights, contact team@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:team@craysclub.com",
+              "text": "team@craysclub.com"
+            }
+          ]
+        }
+      ]
+    },
+    "privacy-policy": {
+      "url": "https://www.craysclub.com/it/legal/privacy-policy",
+      "records": [
+        {
+          "tag": "h1",
+          "id": null,
+          "text": "politica sulla riservatezza",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Una panoramica privacy pratica per visitatori, richieste di early access e contatti della Crays Club community.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Panoramica",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Crays Club usa dati personali per gestire il sito, rispondere ai messaggi, gestire l'interesse access e migliorare la community experience. La raccolta dati resta chiara e mirata.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Questa policy integra la pagina Data Protection e spiega la gestione pratica delle informazioni privacy su CraysClub.com.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Visite al sito web",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Quando il sito viene visitato, provider di hosting e infrastruttura possono trattare informazioni tecniche come browser, dispositivo, orari di accesso, pagine richieste e log di sicurezza.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Queste informazioni aiutano a servire le pagine, prevenire abusi, risolvere errori e mantenere sicuro il servizio.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Moduli di contatto e accesso",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Se contatti Crays o richiedi access, trattiamo i dati forniti, come nome, email, messaggio e contesto utile. Sono usati per rispondere e valutare l'interazione Crays Club richiesta.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Non inviare informazioni sensibili salvo se necessarie per la richiesta specifica.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Cookie e tecnologie simili",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Il sito può usare tecnologie per funzionalità base, sicurezza, analytics o servizi terzi integrati. Dove necessario, verranno forniti consenso o informazioni aggiuntive prima dell'uso di tecnologie opzionali.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Conservazione",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "I dati sono conservati solo per il tempo necessario allo scopo, agli obblighi legali, alla prevenzione di controversie o a esigenze operative legittime. Poi sono cancellati o anonimizzati.",
+          "links": []
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "text": "Le tue scelte",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Puoi contattare Crays per chiedere informazioni sui tuoi dati, richiedere correzione o cancellazione, opporti a certi usi o revocare il consenso quando il trattamento dipende da esso.",
+          "links": []
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "text": "Contatto: team@craysclub.com.",
+          "links": [
+            {
+              "href": "mailto:team@craysclub.com",
+              "text": "team@craysclub.com"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

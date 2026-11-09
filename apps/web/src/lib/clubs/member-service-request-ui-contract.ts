@@ -1,0 +1,46 @@
+export const clubsMemberServiceRequestUiContract = Object.freeze({
+  schema: "crays.clubs.member-service-request-ui.v1",
+  version: "1.0.0",
+  endpoint: "/api/crays/clubs/member/services",
+  cache: "no-store",
+  authentication: "crays-clubs-b2c",
+  commandTypes: ["request_service", "cancel_service"] as const,
+  reconciliation: {
+    method: "GET",
+    endpoint: "/api/crays/clubs/member/services",
+    cache: "no-store",
+  },
+  states: {
+    ready: 200,
+    applied: 200,
+    validation_error: 400,
+    signed_out: 401,
+    invalid_session_provenance: 401,
+    denied: 403,
+    identity_binding_required: 409,
+    conflict: 409,
+    configuration_not_ready: 503,
+    provider_session_unreadable: 503,
+    core_unavailable: 503,
+    temporarily_unavailable: 503,
+    unknown_outcome: 503,
+  },
+  guarantees: {
+    sameOriginJsonOnly: true,
+    idempotencyRequired: true,
+    replaySafe: true,
+    unknownOutcomeRequiresGetReconciliation: true,
+    automaticMutationRetry: false,
+    retryWithSameIdempotencyKeyOnlyAfterReconciliation: true,
+    ownActiveBookingRequired: true,
+    publishedSamePropertyOfferingRequired: true,
+    assignedOwnBookingGuestRequiredWhenProvided: true,
+    priceNullable: true,
+    paymentAuthority: false,
+    bookingAuthority: false,
+    providerFulfillmentAuthority: false,
+  },
+});
+
+export type ClubsMemberServiceRequestUiContract =
+  typeof clubsMemberServiceRequestUiContract;

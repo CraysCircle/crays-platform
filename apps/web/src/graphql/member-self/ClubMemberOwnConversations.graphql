@@ -1,0 +1,11 @@
+query ClubMemberOwnConversations($input: ClubMemberOwnConversationsInput!) {
+  clubMemberOwnConversations(input: $input) {
+    schema accountId teamReplyPublicationAvailable providerAttachmentAccessAvailable
+    cases {
+      caseId caseVersion publicReference bookingId category subject status openedAt updatedAt
+      crmRecords { recordId taskId title provider testOnly }
+      tasks { taskId title provider authorName testOnly }
+      messages { messageId authorType authorName body createdAt messageRevisionSha256 }
+    }
+  }
+}

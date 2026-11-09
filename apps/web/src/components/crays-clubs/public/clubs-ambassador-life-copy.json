@@ -1,0 +1,562 @@
+{
+  "en": {
+    "introKicker": "CRAYS COMMUNITY",
+    "introTitle": "Grow your business.",
+    "introLead": "Make friends, colleagues, business partners, and meet many new people.",
+    "introBody": "As a Crays member, you are always something special among the masses — part of a community shaped by people who love music, fashion, architecture, art, tech, and of course Bitcoin.",
+    "mission": "Our job and motivation is to bring you together with great people in high-class lifestyle work-live-play venues all around the globe in a playful way — digitally and, above all, in real life.",
+    "quote": "Crays is where strangers become stories — and global citizens feel at home before they even check in.",
+    "lifeKicker": "WORK · LIVE · PLAY",
+    "lifeTitle": "Extraordinary places.\nReal connections.",
+    "lifeIntro": "A place to build. A place to belong. A life to share.",
+    "slides": [
+      [
+        "Work",
+        "Work how you want, where you want, and whenever you want. Find your next collaborator and room for your ideas.",
+        "People exchanging ideas in a bright CRAYS workspace"
+      ],
+      [
+        "Live",
+        "Live your life sustainably, in a green and healthy way. Feel at home in inspiring spaces, with your people nearby.",
+        "The green coastline and architecture of Forest City"
+      ],
+      [
+        "Play",
+        "Music, art, new friendships and moments worth sharing. Make time for the people who make life awesome.",
+        "People meeting and sharing a moment at a CRAYS event"
+      ]
+    ],
+    "valuesKicker": "OUR TEN VALUES",
+    "valuesTitle": "A mindset for a more connected world.",
+    "values": [
+      "Take care of your family, friends, and everyone at Crays",
+      "You are what you believe",
+      "Work how you want, where you want, and whenever you want",
+      "Grow relationships, not just transactions",
+      "Don’t be cool—ask stupid questions",
+      "Live your life sustainably, in a green and healthy way",
+      "Be whatever you want to be—but always be nice and honest",
+      "Great organizations are driven by purpose, not profit alone",
+      "Young is a state of mind",
+      "Think different — change lives"
+    ],
+    "purpose": "Crays inspires us to focus on what truly matters in life. It will always represent the core values of mental freedom, creative use of spaces, and shared community experiences.",
+    "founderKicker": "A SHARED FOUNDER STORY",
+    "founderTitle": "A Vision Born from 20 Years on the Road.",
+    "founderBody": [
+      "For two decades, the Crays Founder Thorben lived on the move — 250 to 300 days a year, across 121 countries.",
+      "Along the way, as a traveler, he realized what was missing: real connection, seamless living, and hospitality spaces that truly bring people together."
+    ],
+    "founderClose": "Crays is his answer.",
+    "audienceKicker": "WHO WE BUILD FOR",
+    "audienceTitle": "Builders. Makers. Global citizens.",
+    "groupTitles": [
+      "People & community",
+      "Creative culture",
+      "Builders & professionals"
+    ],
+    "audiences": [
+      "Local and Global Lifestyle Community, Bitcoin Plebs, Digital/Crypto Nomads",
+      "Representatives from Tech, Music, Film, Fashion, Art, and Media",
+      "Web5 Entrepreneurs seeking Inspiration and networking",
+      "Early Adopters, Tech Enthusiast & Innovative Web5 Startups",
+      "Lifestyle Brands & IRL Events, Brand Partnerships, Brand Integration",
+      "Tech-oriented Lifestyle Brands, Influencers, and Podcasters",
+      "Design and Architecture Lovers",
+      "International Business Travelers, Remote Workers",
+      "Local Professionals Looking for an Inspiring Work Environment"
+    ],
+    "ecosystemKicker": "OUR ECOSYSTEM",
+    "ecosystemTitle": "A community and ecosystem of Bitcoin native builders & makers!",
+    "ecosystemBody": "Crays and the Crays Clubs form a full ecosystem that exists both physically and digitally. We want to connect people through community and technology, transforming venues into smart, local hubs that grow into a global network of like-minded individuals.",
+    "previous": "Previous slide",
+    "next": "Next slide",
+    "slideStatus": "Slide {current} of {total}",
+    "imageAlts": [
+      "Two people sharing a lively conversation at a CRAYS gathering",
+      "Friends coming together in Forest City",
+      "Forest City architecture beside the sea",
+      "A welcoming CRAYS venue with space to connect"
+    ]
+  },
+  "de": {
+    "introKicker": "CRAYS COMMUNITY",
+    "introTitle": "Lass dein Business wachsen.",
+    "introLead": "Finde Freunde, Kollegen und Geschäftspartner – und lerne viele neue Menschen kennen.",
+    "introBody": "Als Crays-Mitglied bist du immer etwas Besonderes in der Menge – Teil einer Gemeinschaft von Menschen, die Musik, Mode, Architektur, Kunst, Tech und natürlich Bitcoin lieben.",
+    "mission": "Unsere Aufgabe und Motivation ist es, dich auf spielerische Weise mit großartigen Menschen in erstklassigen Lifestyle-Orten zum Arbeiten, Leben und Erleben rund um den Globus zusammenzubringen – digital und vor allem im echten Leben.",
+    "quote": "Crays ist der Ort, an dem Fremde zu Geschichten werden – und Weltbürger sich zu Hause fühlen, noch bevor sie einchecken.",
+    "lifeKicker": "WORK · LIVE · PLAY",
+    "lifeTitle": "Besondere Orte.\nEchte Verbindungen.",
+    "lifeIntro": "Ein Ort zum Gestalten. Ein Ort zum Ankommen. Ein Leben zum Teilen.",
+    "slides": [
+      [
+        "Work",
+        "Arbeite, wie, wo und wann du möchtest. Finde Menschen für gemeinsame Projekte und Raum für deine Ideen.",
+        "Menschen tauschen sich in einem hellen CRAYS-Arbeitsbereich aus"
+      ],
+      [
+        "Live",
+        "Lebe nachhaltig, grün und gesund. Fühle dich in inspirierenden Räumen zu Hause – mit deinen Menschen in der Nähe.",
+        "Die grüne Küste und Architektur von Forest City"
+      ],
+      [
+        "Play",
+        "Musik, Kunst, neue Freundschaften und gemeinsame Erlebnisse. Nimm dir Zeit für die Menschen, die dein Leben bereichern.",
+        "Menschen begegnen sich bei einer CRAYS-Veranstaltung"
+      ]
+    ],
+    "valuesKicker": "UNSERE ZEHN WERTE",
+    "valuesTitle": "Eine Haltung für eine stärker verbundene Welt.",
+    "values": [
+      "Kümmere dich um deine Familie, Freunde und alle bei Crays",
+      "Du bist, was du glaubst",
+      "Arbeite, wie, wo und wann du möchtest",
+      "Lass Beziehungen wachsen, nicht nur Transaktionen",
+      "Sei nicht cool – stell dumme Fragen",
+      "Lebe nachhaltig, grün und gesund",
+      "Sei, wer du sein möchtest – aber immer freundlich und ehrlich",
+      "Großartige Organisationen werden von Sinn angetrieben, nicht nur von Gewinn",
+      "Jung sein ist eine Frage der Einstellung",
+      "Denk anders – verändere Leben"
+    ],
+    "purpose": "Crays inspiriert uns, uns auf das zu konzentrieren, was im Leben wirklich zählt. Es steht für die zentralen Werte geistiger Freiheit, der kreativen Nutzung von Räumen und gemeinsamer Erlebnisse in einer Gemeinschaft.",
+    "founderKicker": "DIE GESCHICHTE UNSERES GRÜNDERS",
+    "founderTitle": "Eine Vision aus 20 Jahren unterwegs.",
+    "founderBody": [
+      "Zwei Jahrzehnte lang war der Crays-Gründer Thorben unterwegs – 250 bis 300 Tage im Jahr, in 121 Ländern.",
+      "Auf seinen Reisen erkannte er, was fehlte: echte Verbindung, ein reibungsloser Alltag und Orte der Gastfreundschaft, die Menschen wirklich zusammenbringen."
+    ],
+    "founderClose": "Crays ist seine Antwort.",
+    "audienceKicker": "FÜR WEN WIR GESTALTEN",
+    "audienceTitle": "Gestalter. Macher. Weltbürger.",
+    "groupTitles": [
+      "Menschen & Gemeinschaft",
+      "Kreative Kultur",
+      "Gründer & Berufstätige"
+    ],
+    "audiences": [
+      "Lokale und globale Lifestyle-Community, Bitcoin-Plebs und Digital-/Krypto-Nomaden",
+      "Menschen aus Tech, Musik, Film, Mode, Kunst und Medien",
+      "Web5-Unternehmer auf der Suche nach Inspiration und Vernetzung",
+      "Early Adopters, Tech-Begeisterte und innovative Web5-Start-ups",
+      "Lifestyle-Marken und reale Events, Markenpartnerschaften und Markenintegration",
+      "Technologieorientierte Lifestyle-Marken, Influencer und Podcaster",
+      "Design- und Architekturliebhaber",
+      "Internationale Geschäftsreisende und Remote Worker",
+      "Lokale Berufstätige, die ein inspirierendes Arbeitsumfeld suchen"
+    ],
+    "ecosystemKicker": "UNSER ÖKOSYSTEM",
+    "ecosystemTitle": "Eine Community und ein Ökosystem von Bitcoin-nativen Gestaltern und Machern!",
+    "ecosystemBody": "Crays und die Crays Clubs bilden ein vollständiges Ökosystem, das sowohl physisch als auch digital existiert. Wir wollen Menschen durch Gemeinschaft und Technologie verbinden und Orte in smarte lokale Treffpunkte verwandeln, die zu einem globalen Netzwerk Gleichgesinnter wachsen.",
+    "previous": "Vorherige Folie",
+    "next": "Nächste Folie",
+    "slideStatus": "Folie {current} von {total}",
+    "imageAlts": [
+      "Zwei Menschen im lebhaften Gespräch bei einem CRAYS-Treffen",
+      "Freunde kommen in Forest City zusammen",
+      "Architektur von Forest City direkt am Meer",
+      "Ein einladender CRAYS-Ort für Begegnungen"
+    ]
+  },
+  "es": {
+    "introKicker": "COMUNIDAD CRAYS",
+    "introTitle": "Haz crecer tu negocio.",
+    "introLead": "Haz amigos, conoce a colegas, socios y muchas personas nuevas.",
+    "introBody": "Como miembro de Crays, siempre eres alguien especial entre la multitud: parte de una comunidad de personas que aman la música, la moda, la arquitectura, el arte, la tecnología y, por supuesto, Bitcoin.",
+    "mission": "Nuestra labor y motivación es conectarte de forma lúdica con personas extraordinarias en espacios de alto nivel para trabajar, vivir y disfrutar por todo el mundo: digitalmente y, sobre todo, en la vida real.",
+    "quote": "Crays es donde los desconocidos se convierten en historias y los ciudadanos del mundo se sienten en casa incluso antes de llegar.",
+    "lifeKicker": "WORK · LIVE · PLAY",
+    "lifeTitle": "Lugares extraordinarios.\nConexiones reales.",
+    "lifeIntro": "Un lugar para crear. Un lugar al que pertenecer. Una vida para compartir.",
+    "slides": [
+      [
+        "Work",
+        "Trabaja como quieras, donde quieras y cuando quieras. Encuentra colaboradores y espacio para tus ideas.",
+        "Personas compartiendo ideas en un luminoso espacio de trabajo CRAYS"
+      ],
+      [
+        "Live",
+        "Vive de forma sostenible, verde y saludable. Siéntete en casa en espacios inspiradores, con tu gente cerca.",
+        "La costa verde y la arquitectura de Forest City"
+      ],
+      [
+        "Play",
+        "Música, arte, nuevas amistades y momentos para compartir. Dedica tiempo a las personas que hacen tu vida increíble.",
+        "Personas conociéndose en un evento CRAYS"
+      ]
+    ],
+    "valuesKicker": "NUESTROS DIEZ VALORES",
+    "valuesTitle": "Una forma de pensar para un mundo más conectado.",
+    "values": [
+      "Cuida de tu familia, tus amigos y de todos en Crays",
+      "Eres lo que crees",
+      "Trabaja como quieras, donde quieras y cuando quieras",
+      "Cultiva relaciones, no solo transacciones",
+      "No intentes parecer cool: haz preguntas tontas",
+      "Vive de forma sostenible, verde y saludable",
+      "Sé quien quieras ser, pero siempre amable y honesto",
+      "Las grandes organizaciones se guían por un propósito, no solo por el beneficio",
+      "Ser joven es una actitud",
+      "Piensa diferente: cambia vidas"
+    ],
+    "purpose": "Crays nos inspira a centrarnos en lo que de verdad importa en la vida. Siempre representará la libertad mental, el uso creativo de los espacios y las experiencias compartidas en comunidad.",
+    "founderKicker": "LA HISTORIA DE NUESTRO FUNDADOR",
+    "founderTitle": "Una visión nacida de 20 años de viajes.",
+    "founderBody": [
+      "Durante dos décadas, Thorben, el fundador de Crays, vivió en movimiento: entre 250 y 300 días al año, por 121 países.",
+      "Como viajero, descubrió lo que faltaba: conexiones reales, una vida sin complicaciones y espacios de hospitalidad que de verdad reúnen a las personas."
+    ],
+    "founderClose": "Crays es su respuesta.",
+    "audienceKicker": "PARA QUIÉN CREAMOS",
+    "audienceTitle": "Creadores. Hacedores. Ciudadanos del mundo.",
+    "groupTitles": [
+      "Personas y comunidad",
+      "Cultura creativa",
+      "Emprendedores y profesionales"
+    ],
+    "audiences": [
+      "Comunidad lifestyle local y global, Bitcoin plebs y nómadas digitales y cripto",
+      "Personas del mundo de la tecnología, música, cine, moda, arte y medios",
+      "Emprendedores Web5 que buscan inspiración y contactos",
+      "Early adopters, entusiastas de la tecnología y startups Web5 innovadoras",
+      "Marcas lifestyle y eventos presenciales, alianzas e integración de marcas",
+      "Marcas lifestyle tecnológicas, influencers y podcasters",
+      "Amantes del diseño y la arquitectura",
+      "Viajeros internacionales de negocios y profesionales en remoto",
+      "Profesionales locales que buscan un entorno de trabajo inspirador"
+    ],
+    "ecosystemKicker": "NUESTRO ECOSISTEMA",
+    "ecosystemTitle": "¡Una comunidad y un ecosistema de creadores y hacedores nativos de Bitcoin!",
+    "ecosystemBody": "Crays y los Crays Clubs forman un ecosistema completo, físico y digital. Queremos conectar a las personas a través de la comunidad y la tecnología, transformando los espacios en centros locales inteligentes que crecen hasta formar una red global de personas afines.",
+    "previous": "Diapositiva anterior",
+    "next": "Siguiente diapositiva",
+    "slideStatus": "Diapositiva {current} de {total}",
+    "imageAlts": [
+      "Dos personas conversan animadamente en un encuentro CRAYS",
+      "Amigos reunidos en Forest City",
+      "Arquitectura de Forest City junto al mar",
+      "Un espacio CRAYS acogedor para conectar"
+    ]
+  },
+  "ca": {
+    "introKicker": "COMUNITAT CRAYS",
+    "introTitle": "Fes créixer el teu negoci.",
+    "introLead": "Fes amics, coneix companys, socis i moltes persones noves.",
+    "introBody": "Com a membre de Crays, sempre ets algú especial entre la multitud: formes part d’una comunitat de persones que estimen la música, la moda, l’arquitectura, l’art, la tecnologia i, per descomptat, Bitcoin.",
+    "mission": "La nostra feina i motivació és connectar-te d’una manera lúdica amb persones extraordinàries en espais de primer nivell per treballar, viure i gaudir arreu del món: digitalment i, sobretot, a la vida real.",
+    "quote": "Crays és on els desconeguts es converteixen en històries i els ciutadans del món se senten a casa abans, fins i tot, d’arribar.",
+    "lifeKicker": "WORK · LIVE · PLAY",
+    "lifeTitle": "Llocs extraordinaris.\nConnexions reals.",
+    "lifeIntro": "Un lloc per crear. Un lloc on pertànyer. Una vida per compartir.",
+    "slides": [
+      [
+        "Work",
+        "Treballa com vulguis, on vulguis i quan vulguis. Troba col·laboradors i espai per a les teves idees.",
+        "Persones compartint idees en un espai de treball CRAYS lluminós"
+      ],
+      [
+        "Live",
+        "Viu de manera sostenible, verda i saludable. Sent-te a casa en espais inspiradors, amb la teva gent a prop.",
+        "La costa verda i l’arquitectura de Forest City"
+      ],
+      [
+        "Play",
+        "Música, art, noves amistats i moments per compartir. Dedica temps a les persones que fan la vida genial.",
+        "Persones coneixent-se en un esdeveniment CRAYS"
+      ]
+    ],
+    "valuesKicker": "ELS NOSTRES DEU VALORS",
+    "valuesTitle": "Una manera de pensar per a un món més connectat.",
+    "values": [
+      "Cuida la teva família, els amics i tothom a Crays",
+      "Ets allò en què creus",
+      "Treballa com vulguis, on vulguis i quan vulguis",
+      "Fes créixer les relacions, no només les transaccions",
+      "No vulguis semblar cool: fes preguntes tontes",
+      "Viu de manera sostenible, verda i saludable",
+      "Sigues qui vulguis ser, però sempre amable i honest",
+      "Les grans organitzacions es mouen per un propòsit, no només pel benefici",
+      "Ser jove és una actitud",
+      "Pensa diferent: canvia vides"
+    ],
+    "purpose": "Crays ens inspira a centrar-nos en allò que realment importa a la vida. Sempre representarà la llibertat mental, l’ús creatiu dels espais i les experiències compartides en comunitat.",
+    "founderKicker": "LA HISTÒRIA DEL NOSTRE FUNDADOR",
+    "founderTitle": "Una visió nascuda de 20 anys de viatges.",
+    "founderBody": [
+      "Durant dues dècades, Thorben, el fundador de Crays, va viure en moviment: entre 250 i 300 dies l’any, per 121 països.",
+      "Com a viatger, es va adonar del que faltava: connexions reals, una vida sense complicacions i espais d’hospitalitat que realment reuneixen les persones."
+    ],
+    "founderClose": "Crays és la seva resposta.",
+    "audienceKicker": "PER A QUI CREEM",
+    "audienceTitle": "Creadors. Gent que fa. Ciutadans del món.",
+    "groupTitles": [
+      "Persones i comunitat",
+      "Cultura creativa",
+      "Emprenedors i professionals"
+    ],
+    "audiences": [
+      "Comunitat lifestyle local i global, Bitcoin plebs i nòmades digitals i cripto",
+      "Persones de la tecnologia, música, cinema, moda, art i mitjans",
+      "Emprenedors Web5 que busquen inspiració i connexions",
+      "Early adopters, entusiastes de la tecnologia i startups Web5 innovadores",
+      "Marques lifestyle i esdeveniments presencials, aliances i integració de marques",
+      "Marques lifestyle tecnològiques, influencers i podcasters",
+      "Amants del disseny i l’arquitectura",
+      "Viatgers internacionals de negocis i professionals en remot",
+      "Professionals locals que busquen un entorn de treball inspirador"
+    ],
+    "ecosystemKicker": "EL NOSTRE ECOSISTEMA",
+    "ecosystemTitle": "Una comunitat i un ecosistema de creadors i gent que fa, natius de Bitcoin!",
+    "ecosystemBody": "Crays i els Crays Clubs formen un ecosistema complet, físic i digital. Volem connectar les persones a través de la comunitat i la tecnologia, transformant els espais en centres locals intel·ligents que creixen fins a formar una xarxa global de persones afins.",
+    "previous": "Diapositiva anterior",
+    "next": "Diapositiva següent",
+    "slideStatus": "Diapositiva {current} de {total}",
+    "imageAlts": [
+      "Dues persones conversen animadament en una trobada CRAYS",
+      "Amics reunits a Forest City",
+      "Arquitectura de Forest City al costat del mar",
+      "Un espai CRAYS acollidor per connectar"
+    ]
+  },
+  "fr": {
+    "introKicker": "COMMUNAUTÉ CRAYS",
+    "introTitle": "Fais grandir ton activité.",
+    "introLead": "Rencontre des amis, des collègues, des partenaires et plein de nouvelles personnes.",
+    "introBody": "En tant que membre Crays, tu te distingues toujours dans la foule : tu fais partie d’une communauté de passionnés de musique, de mode, d’architecture, d’art, de tech et, bien sûr, de Bitcoin.",
+    "mission": "Notre mission et notre motivation : te faire rencontrer, de façon ludique, des personnes formidables dans des lieux lifestyle haut de gamme où travailler, vivre et profiter, partout dans le monde — en ligne et, surtout, dans la vraie vie.",
+    "quote": "Crays, c’est là où des inconnus deviennent des histoires et où les citoyens du monde se sentent chez eux avant même leur arrivée.",
+    "lifeKicker": "WORK · LIVE · PLAY",
+    "lifeTitle": "Des lieux extraordinaires.\nDes liens bien réels.",
+    "lifeIntro": "Un lieu pour créer. Un lieu où appartenir. Une vie à partager.",
+    "slides": [
+      [
+        "Work",
+        "Travaille comme tu veux, où tu veux et quand tu veux. Trouve des collaborateurs et de l’espace pour tes idées.",
+        "Des personnes échangent dans un espace de travail CRAYS lumineux"
+      ],
+      [
+        "Live",
+        "Vis de façon durable, verte et saine. Sens-toi chez toi dans des lieux inspirants, avec tes proches à tes côtés.",
+        "La côte verdoyante et l’architecture de Forest City"
+      ],
+      [
+        "Play",
+        "Musique, art, nouvelles amitiés et moments à partager. Prends du temps pour les personnes qui rendent ta vie formidable.",
+        "Des personnes se rencontrent lors d’un événement CRAYS"
+      ]
+    ],
+    "valuesKicker": "NOS DIX VALEURS",
+    "valuesTitle": "Un état d’esprit pour un monde plus connecté.",
+    "values": [
+      "Prends soin de ta famille, de tes amis et de chacun chez Crays",
+      "Tu es ce en quoi tu crois",
+      "Travaille comme tu veux, où tu veux et quand tu veux",
+      "Cultive les relations, pas seulement les transactions",
+      "Ne joue pas les gens cool : pose des questions bêtes",
+      "Vis de façon durable, verte et saine",
+      "Sois qui tu veux être, mais toujours avec gentillesse et honnêteté",
+      "Les grandes organisations sont guidées par un sens, pas seulement par le profit",
+      "La jeunesse est un état d’esprit",
+      "Pense autrement : change des vies"
+    ],
+    "purpose": "Crays nous invite à nous concentrer sur ce qui compte vraiment dans la vie. La marque représentera toujours la liberté d’esprit, l’usage créatif des espaces et les expériences partagées en communauté.",
+    "founderKicker": "L’HISTOIRE DE NOTRE FONDATEUR",
+    "founderTitle": "Une vision née de 20 ans sur les routes.",
+    "founderBody": [
+      "Pendant deux décennies, Thorben, le fondateur de Crays, a vécu en mouvement : 250 à 300 jours par an, à travers 121 pays.",
+      "Au fil de ses voyages, il a compris ce qui manquait : de vrais liens, une vie sans friction et des lieux d’hospitalité qui réunissent réellement les gens."
+    ],
+    "founderClose": "Crays est sa réponse.",
+    "audienceKicker": "POUR QUI NOUS CRÉONS",
+    "audienceTitle": "Créateurs. Bâtisseurs. Citoyens du monde.",
+    "groupTitles": [
+      "Personnes et communauté",
+      "Culture créative",
+      "Entrepreneurs et professionnels"
+    ],
+    "audiences": [
+      "Communauté lifestyle locale et mondiale, Bitcoin plebs et nomades numériques et crypto",
+      "Professionnels de la tech, musique, cinéma, mode, art et médias",
+      "Entrepreneurs Web5 en quête d’inspiration et de rencontres",
+      "Early adopters, passionnés de tech et startups Web5 innovantes",
+      "Marques lifestyle et événements en présentiel, partenariats et intégration de marques",
+      "Marques lifestyle technologiques, influenceurs et podcasteurs",
+      "Passionnés de design et d’architecture",
+      "Voyageurs d’affaires internationaux et travailleurs à distance",
+      "Professionnels locaux à la recherche d’un environnement de travail inspirant"
+    ],
+    "ecosystemKicker": "NOTRE ÉCOSYSTÈME",
+    "ecosystemTitle": "Une communauté et un écosystème de créateurs et de bâtisseurs natifs de Bitcoin !",
+    "ecosystemBody": "Crays et les Crays Clubs forment un écosystème complet, à la fois physique et numérique. Nous voulons relier les gens par la communauté et la technologie, en transformant les lieux en pôles locaux intelligents qui deviennent un réseau mondial de personnes partageant les mêmes idées.",
+    "previous": "Diapositive précédente",
+    "next": "Diapositive suivante",
+    "slideStatus": "Diapositive {current} sur {total}",
+    "imageAlts": [
+      "Deux personnes discutent avec enthousiasme lors d’une rencontre CRAYS",
+      "Des amis réunis à Forest City",
+      "L’architecture de Forest City au bord de la mer",
+      "Un lieu CRAYS accueillant pour se rencontrer"
+    ]
+  },
+  "pt": {
+    "introKicker": "COMUNIDADE CRAYS",
+    "introTitle": "Faz crescer o teu negócio.",
+    "introLead": "Faz amigos, conhece colegas, parceiros de negócios e muitas pessoas novas.",
+    "introBody": "Como membro Crays, és sempre alguém especial no meio da multidão: parte de uma comunidade de pessoas que adoram música, moda, arquitetura, arte, tecnologia e, claro, Bitcoin.",
+    "mission": "O nosso trabalho e motivação é aproximar-te, de forma descontraída, de pessoas extraordinárias em espaços lifestyle de excelência para trabalhar, viver e desfrutar por todo o mundo — digitalmente e, acima de tudo, na vida real.",
+    "quote": "Crays é onde desconhecidos se tornam histórias e os cidadãos do mundo se sentem em casa antes mesmo de chegarem.",
+    "lifeKicker": "WORK · LIVE · PLAY",
+    "lifeTitle": "Lugares extraordinários.\nLigações reais.",
+    "lifeIntro": "Um lugar para criar. Um lugar a que pertencer. Uma vida para partilhar.",
+    "slides": [
+      [
+        "Work",
+        "Trabalha como quiseres, onde quiseres e quando quiseres. Encontra colaboradores e espaço para as tuas ideias.",
+        "Pessoas a trocar ideias num espaço de trabalho CRAYS luminoso"
+      ],
+      [
+        "Live",
+        "Vive de forma sustentável, verde e saudável. Sente-te em casa em espaços inspiradores, com as tuas pessoas por perto.",
+        "A costa verde e a arquitetura de Forest City"
+      ],
+      [
+        "Play",
+        "Música, arte, novas amizades e momentos para partilhar. Dedica tempo às pessoas que tornam a vida incrível.",
+        "Pessoas a conhecerem-se num evento CRAYS"
+      ]
+    ],
+    "valuesKicker": "OS NOSSOS DEZ VALORES",
+    "valuesTitle": "Uma mentalidade para um mundo mais ligado.",
+    "values": [
+      "Cuida da tua família, dos amigos e de todos na Crays",
+      "És aquilo em que acreditas",
+      "Trabalha como quiseres, onde quiseres e quando quiseres",
+      "Faz crescer relações, não apenas transações",
+      "Não tentes ser cool: faz perguntas parvas",
+      "Vive de forma sustentável, verde e saudável",
+      "Sê quem quiseres ser, mas sempre simpático e honesto",
+      "As grandes organizações são guiadas por um propósito, não apenas pelo lucro",
+      "Ser jovem é um estado de espírito",
+      "Pensa diferente: muda vidas"
+    ],
+    "purpose": "A Crays inspira-nos a focar no que realmente importa na vida. Representará sempre a liberdade mental, a utilização criativa dos espaços e as experiências partilhadas em comunidade.",
+    "founderKicker": "A HISTÓRIA DO NOSSO FUNDADOR",
+    "founderTitle": "Uma visão nascida de 20 anos na estrada.",
+    "founderBody": [
+      "Durante duas décadas, Thorben, o fundador da Crays, viveu em movimento: 250 a 300 dias por ano, em 121 países.",
+      "Ao longo das suas viagens, percebeu o que faltava: ligações reais, uma vida sem complicações e espaços de hospitalidade que realmente aproximam as pessoas."
+    ],
+    "founderClose": "A Crays é a sua resposta.",
+    "audienceKicker": "PARA QUEM CRIAMOS",
+    "audienceTitle": "Criadores. Fazedores. Cidadãos do mundo.",
+    "groupTitles": [
+      "Pessoas e comunidade",
+      "Cultura criativa",
+      "Empreendedores e profissionais"
+    ],
+    "audiences": [
+      "Comunidade lifestyle local e global, Bitcoin plebs e nómadas digitais e cripto",
+      "Pessoas da tecnologia, música, cinema, moda, arte e media",
+      "Empreendedores Web5 à procura de inspiração e contactos",
+      "Early adopters, entusiastas da tecnologia e startups Web5 inovadoras",
+      "Marcas lifestyle e eventos presenciais, parcerias e integração de marcas",
+      "Marcas lifestyle tecnológicas, influenciadores e podcasters",
+      "Amantes do design e da arquitetura",
+      "Viajantes internacionais de negócios e profissionais em trabalho remoto",
+      "Profissionais locais à procura de um ambiente de trabalho inspirador"
+    ],
+    "ecosystemKicker": "O NOSSO ECOSSISTEMA",
+    "ecosystemTitle": "Uma comunidade e um ecossistema de criadores e fazedores nativos de Bitcoin!",
+    "ecosystemBody": "A Crays e os Crays Clubs formam um ecossistema completo, físico e digital. Queremos ligar pessoas através da comunidade e da tecnologia, transformando espaços em centros locais inteligentes que crescem até formar uma rede global de pessoas com ideias semelhantes.",
+    "previous": "Diapositivo anterior",
+    "next": "Diapositivo seguinte",
+    "slideStatus": "Diapositivo {current} de {total}",
+    "imageAlts": [
+      "Duas pessoas conversam animadamente num encontro CRAYS",
+      "Amigos reunidos em Forest City",
+      "A arquitetura de Forest City junto ao mar",
+      "Um espaço CRAYS acolhedor para criar ligações"
+    ]
+  },
+  "it": {
+    "introKicker": "COMMUNITY CRAYS",
+    "introTitle": "Fai crescere il tuo business.",
+    "introLead": "Trova amici, colleghi, partner e incontra tante persone nuove.",
+    "introBody": "Come membro Crays, sei sempre una presenza speciale tra la folla: fai parte di una community di persone che amano musica, moda, architettura, arte, tecnologia e, naturalmente, Bitcoin.",
+    "mission": "Il nostro lavoro e la nostra motivazione è farti incontrare in modo giocoso persone straordinarie in spazi lifestyle di alto livello per lavorare, vivere e divertirsi in tutto il mondo: in digitale e, soprattutto, nella vita reale.",
+    "quote": "Crays è dove gli sconosciuti diventano storie e i cittadini del mondo si sentono a casa prima ancora di arrivare.",
+    "lifeKicker": "WORK · LIVE · PLAY",
+    "lifeTitle": "Luoghi straordinari.\nLegami reali.",
+    "lifeIntro": "Un luogo per creare. Un luogo a cui appartenere. Una vita da condividere.",
+    "slides": [
+      [
+        "Work",
+        "Lavora come vuoi, dove vuoi e quando vuoi. Trova collaboratori e spazio per le tue idee.",
+        "Persone che condividono idee in uno spazio di lavoro CRAYS luminoso"
+      ],
+      [
+        "Live",
+        "Vivi in modo sostenibile, verde e sano. Sentiti a casa in spazi che ispirano, con le tue persone vicine.",
+        "La costa verde e l’architettura di Forest City"
+      ],
+      [
+        "Play",
+        "Musica, arte, nuove amicizie e momenti da condividere. Trova il tempo per le persone che rendono la vita fantastica.",
+        "Persone che si incontrano a un evento CRAYS"
+      ]
+    ],
+    "valuesKicker": "I NOSTRI DIECI VALORI",
+    "valuesTitle": "Una mentalità per un mondo più connesso.",
+    "values": [
+      "Prenditi cura della tua famiglia, degli amici e di tutti in Crays",
+      "Sei ciò in cui credi",
+      "Lavora come vuoi, dove vuoi e quando vuoi",
+      "Coltiva relazioni, non solo transazioni",
+      "Non fare il cool: fai domande stupide",
+      "Vivi in modo sostenibile, verde e sano",
+      "Sii chi vuoi essere, ma sempre gentile e onesto",
+      "Le grandi organizzazioni sono guidate da uno scopo, non solo dal profitto",
+      "Essere giovani è uno stato d’animo",
+      "Pensa diverso: cambia vite"
+    ],
+    "purpose": "Crays ci ispira a concentrarci su ciò che conta davvero nella vita. Rappresenterà sempre la libertà mentale, l’uso creativo degli spazi e le esperienze condivise nella community.",
+    "founderKicker": "LA STORIA DEL NOSTRO FONDATORE",
+    "founderTitle": "Una visione nata da 20 anni in viaggio.",
+    "founderBody": [
+      "Per due decenni, Thorben, il fondatore di Crays, ha vissuto in movimento: da 250 a 300 giorni all’anno, in 121 paesi.",
+      "Durante i suoi viaggi ha capito cosa mancava: legami reali, una vita senza complicazioni e spazi di ospitalità che uniscono davvero le persone."
+    ],
+    "founderClose": "Crays è la sua risposta.",
+    "audienceKicker": "PER CHI CREIAMO",
+    "audienceTitle": "Creatori. Persone che fanno. Cittadini del mondo.",
+    "groupTitles": [
+      "Persone e community",
+      "Cultura creativa",
+      "Imprenditori e professionisti"
+    ],
+    "audiences": [
+      "Community lifestyle locale e globale, Bitcoin plebs e nomadi digitali e cripto",
+      "Persone di tecnologia, musica, cinema, moda, arte e media",
+      "Imprenditori Web5 in cerca di ispirazione e contatti",
+      "Early adopter, appassionati di tecnologia e startup Web5 innovative",
+      "Brand lifestyle ed eventi dal vivo, partnership e integrazione dei brand",
+      "Brand lifestyle tecnologici, influencer e podcaster",
+      "Amanti del design e dell’architettura",
+      "Viaggiatori internazionali d’affari e lavoratori da remoto",
+      "Professionisti locali in cerca di un ambiente di lavoro stimolante"
+    ],
+    "ecosystemKicker": "IL NOSTRO ECOSISTEMA",
+    "ecosystemTitle": "Una community e un ecosistema di creatori e persone che fanno, nativi di Bitcoin!",
+    "ecosystemBody": "Crays e i Crays Clubs formano un ecosistema completo, sia fisico sia digitale. Vogliamo connettere le persone attraverso la community e la tecnologia, trasformando gli spazi in hub locali intelligenti che crescono fino a diventare una rete globale di persone affini.",
+    "previous": "Diapositiva precedente",
+    "next": "Diapositiva successiva",
+    "slideStatus": "Diapositiva {current} di {total}",
+    "imageAlts": [
+      "Due persone conversano con entusiasmo a un incontro CRAYS",
+      "Amici riuniti a Forest City",
+      "L’architettura di Forest City sul mare",
+      "Uno spazio CRAYS accogliente per incontrarsi"
+    ]
+  }
+}

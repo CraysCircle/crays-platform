@@ -1,11 +1,12 @@
 # CRAYS platform sources
 
-Shared CRAYS services, website-hosting wrappers and reviewed migration operations source, with exact provenance and version records. Website implementations and retained upstream forks remain in their own project repositories.
+Shared CRAYS application/service sources, website-hosting wrappers and migration operations source, with exact provenance and version records. The shared Next.js composition is under apps/web; independent website implementations and retained upstream forks remain in their project repositories.
 
 ## Find a component
 
 | Component | Source and documentation |
 | --- | --- |
+| Shared Next.js application | [Qualified Club/Member/SaaS source views, recovery prerequisites and original notices](apps/web/README.md) |
 | Qlo gateway | [Service, original tests and configuration](services/qlo-gateway/README.md) |
 | Clubs Commerce BFF | [Original service, build/test inputs and dependency notices](services/clubs-commerce-bff/README.md) |
 | Net hosting | [Unchanged static-hosting wrapper and exact application reference](hosting/net/README.md) |
@@ -16,6 +17,8 @@ Shared CRAYS services, website-hosting wrappers and reviewed migration operation
 
 ## Repository layout
 
+    apps/
+      web/
     services/
       qlo-gateway/
       clubs-commerce-bff/

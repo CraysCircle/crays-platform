@@ -1,0 +1,37 @@
+{
+  "tool": "gitleaks v8.30.1",
+  "scope": "All staged selected source, baseline preimage and dependency/legal input roots",
+  "selectedSourceFiles": 2045,
+  "findings": 2,
+  "contextAdjudicatedFalsePositives": 2,
+  "decisions": [
+    {
+      "findingIndex": 0,
+      "file": "source/src/lib/core-identity-persistence.ts",
+      "rule": "generic-api-key",
+      "line": 93,
+      "classification": "SCHEMA_REPOSITORY_DESCRIPTOR_KEY_NOT_CREDENTIAL",
+      "reason": "The key names a table/repository descriptor alongside tableName, label and purpose; it is not a runtime authentication key.",
+      "sourceSHA256": "d6ada6e2dc91390d89991c21e7d55d23217abadeb74f025a10cea6930d99d98d",
+      "originalLiteralValueIncludedInReport": false
+    },
+    {
+      "findingIndex": 1,
+      "file": "source/src/lib/clubs/booking-membership-application-handoff-contract.ts",
+      "rule": "generic-api-key",
+      "line": 68,
+      "classification": "DECLARATIVE_UNKNOWN_OR_EXPIRED_TOKEN_POLICY_LABEL_NOT_TOKEN_VALUE",
+      "reason": "The property declares the handling policy for an unknown/expired token in an exported handoff contract; its value is a protocol/policy identifier, not a supplied token.",
+      "sourceSHA256": "facea6c8ba02640e194ec09fdc69b647d39196bca450e1dec995f709668f93bb",
+      "originalLiteralValueIncludedInReport": false
+    }
+  ],
+  "scannerRulesOrIgnoresChanged": false,
+  "sourceProgramsExecuted": false,
+  "buildTestDeploymentExecuted": false,
+  "resourcePhysicalReturnVerified": true,
+  "fullApplicationRightsAndRecoveryClosure": false,
+  "originalInputFormattingPreservedWithoutNormalization": true,
+  "originalDiffCheckWarningsPresent": true,
+  "authoredDocumentationDiffCheckPassed": true
+}

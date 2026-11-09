@@ -1,0 +1,314 @@
+import "server-only";
+import { createHash, randomUUID } from "node:crypto";
+import type { PoolClient } from "pg";
+import { getCorePgPool } from "@/db/client";
+
+const isoDate = /^\d{4}-\d{2}-\d{2}$/;
+const strongKey = /^[A-Za-z0-9:_.-]{16,200}$/;
+
+export type ForestCityBookingInput = {
+  roomTypeId: string;
+  checkIn: string;
+  checkOut: string;
+  rooms: number;
+  adults: number;
+  children: number;
+  guestName: string;
+  guestEmail: string;
+  guestPhone?: string;
+  idempotencyKey: string;
+};
+
+function nightsBetween(checkIn: string, checkOut: string) {
+  if (!isoDate.test(checkIn) || !isoDate.test(checkOut)) throw new Error("invalid_dates");
+  const start = Date.parse(checkIn + "T00:00:00Z");
+  const end = Date.parse(checkOut + "T00:00:00Z");
+  const nights = Math.round((end - start) / 86400000);
+  if (!Number.isInteger(nights) || nights < 1 || nights > 30) throw new Error("invalid_dates");
+  return nights;
+}
+
+function requestHash(input: ForestCityBookingInput) {
+  return createHash("sha256").update(JSON.stringify({
+    roomTypeId: input.roomTypeId,
+    checkIn: input.checkIn,
+    checkOut: input.checkOut,
+    rooms: input.rooms,
+    adults: input.adults,
+    children: input.children,
+    guestName: input.guestName.trim(),
+    guestEmail: input.guestEmail.trim().toLowerCase(),
+    guestPhone: input.guestPhone?.trim() || null,
+  })).digest("hex");
+}
+
+async function transaction<T>(run: (client: PoolClient) => Promise<T>) {
+  const client = await getCorePgPool().connect();
+  try {
+    await client.query("begin isolation level serializable");
+    const result = await run(client);
+    await client.query("commit");
+    return result;
+  } catch (error) {
+    await client.query("rollback").catch(() => undefined);
+    throw error;
+  } finally {
+    client.release();
+  }
+}
+
+export async function readForestCityCatalog(input: {
+  checkIn: string;
+  checkOut: string;
+  rooms: number;
+  adults: number;
+  children: number;
+}) {
+  const nights = nightsBetween(input.checkIn, input.checkOut);
+  const result = await getCorePgPool().query<{
+    property_id: string; property_name: string; location_name: string; address_text: string;
+    property_description: string; check_in_time: string; check_out_time: string;
+    physical_room_count: number | null; physical_room_count_status: string; launch_status: string;
+    official_source_url: string; room_type_id: string; room_code: string; room_name: string;
+    room_description: string; bedding: string; max_adults: number; max_children: number;
+    size_sqm: number | null; hero_image_path: string; image_source_url: string;
+    currency: string; nightly_amount_minor: number; available_rooms: number;
+  }>(
+    `select hp.property_id,hp.display_name property_name,hp.location_name,hp.address_text,
+       hp.description property_description,hp.check_in_time::text,hp.check_out_time::text,
+       hp.physical_room_count,hp.physical_room_count_status,hp.launch_status,hp.official_source_url,
+       rt.room_type_id,rt.room_code,rt.display_name room_name,rt.description room_description,
+       rt.bedding,rt.max_adults,rt.max_children,rt.size_sqm,rt.hero_image_path,rt.image_source_url,
+       rate.currency,rate.nightly_amount_minor,
+       min(inv.allotment_quantity-inv.booked_quantity-inv.held_quantity)::int available_rooms
+     from crays_core.clubs_hotel_profiles hp
+     join crays_core.clubs_properties property on property.property_id=hp.property_id and property.lifecycle='published'
+     join crays_core.clubs_hotel_room_types rt on rt.property_id=hp.property_id and rt.status='active'
+     join lateral (
+       select r.currency,r.nightly_amount_minor
+       from crays_core.clubs_hotel_room_rates r
+       where r.room_type_id=rt.room_type_id
+         and r.status in ('test','contracted','active')
+         and r.valid_from<=$1::date and r.valid_until>=$2::date-1
+       order by case r.status when 'active' then 1 when 'contracted' then 2 else 3 end,r.version desc
+       limit 1
+     ) rate on true
+     join crays_core.clubs_hotel_inventory_days inv on inv.room_type_id=rt.room_type_id
+       and inv.stay_date>=$1::date and inv.stay_date<$2::date
+     where hp.property_id in('property-clubs-forest-city-golf','property-clubs-forest-city-marina')
+       and hp.launch_status in('prelaunch-test','contracted','live')
+       and rt.max_adults*$3 >= $4 and rt.max_children*$3 >= $5
+     group by hp.property_id,hp.display_name,hp.location_name,hp.address_text,hp.description,
+       hp.check_in_time,hp.check_out_time,hp.physical_room_count,hp.physical_room_count_status,
+       hp.launch_status,hp.official_source_url,rt.room_type_id,rt.room_code,rt.display_name,
+       rt.description,rt.bedding,rt.max_adults,rt.max_children,rt.size_sqm,rt.hero_image_path,
+       rt.image_source_url,rate.currency,rate.nightly_amount_minor
+     having count(*)=$6 and min(inv.allotment_quantity-inv.booked_quantity-inv.held_quantity)>=$3
+     order by hp.display_name,rate.nightly_amount_minor,rt.display_name`,
+    [input.checkIn,input.checkOut,input.rooms,input.adults,input.children,nights],
+  );
+  return {
+    status: result.rowCount ? "ready" : "no_availability",
+    authority: { price: "crays-allotment-contract", availability: "crays-allotment-contract" },
+    dates: { checkIn: input.checkIn, checkOut: input.checkOut, nights },
+    rooms: result.rows.map((row) => ({
+      propertyId: row.property_id, propertyName: row.property_name, location: row.location_name,
+      address: row.address_text, propertyDescription: row.property_description,
+      checkInTime: row.check_in_time, checkOutTime: row.check_out_time,
+      physicalRoomCount: row.physical_room_count, roomCountStatus: row.physical_room_count_status,
+      launchStatus: row.launch_status, officialSourceUrl: row.official_source_url,
+      roomTypeId: row.room_type_id, roomCode: row.room_code, roomName: row.room_name,
+      roomDescription: row.room_description, bedding: row.bedding,
+      maxAdults: row.max_adults, maxChildren: row.max_children, sizeSqm: row.size_sqm,
+      imagePath: row.hero_image_path, imageSourceUrl: row.image_source_url,
+      currency: row.currency, nightlyAmountMinor: row.nightly_amount_minor,
+      totalAmountMinor: row.nightly_amount_minor * nights * input.rooms,
+      availableRooms: row.available_rooms,
+    })),
+  };
+}
+
+type ExistingBooking = {
+  booking_id: string; booking_reference: string; request_sha256: string;
+  booking_status: string; payment_status: string; pms_delivery_status: string;
+  currency: string; total_amount_minor: number;
+};
+
+function bookingResponse(row: ExistingBooking, replayed: boolean) {
+  return {
+    outcome: "applied" as const,
+    replayed,
+    bookingId: row.booking_id,
+    bookingReference: row.booking_reference,
+    bookingStatus: row.booking_status,
+    paymentStatus: row.payment_status,
+    pmsDeliveryStatus: row.pms_delivery_status,
+    currency: row.currency,
+    totalAmountMinor: row.total_amount_minor,
+  };
+}
+
+export async function createForestCityBooking(input: ForestCityBookingInput) {
+  const nights = nightsBetween(input.checkIn,input.checkOut);
+  if (!strongKey.test(input.idempotencyKey)) throw new Error("invalid_idempotency_key");
+  if (!Number.isInteger(input.rooms) || input.rooms<1 || input.rooms>10) throw new Error("invalid_rooms");
+  const hash = requestHash(input);
+  return transaction(async (client) => {
+    const existing = await client.query<ExistingBooking>(
+      `select booking_id,booking_reference,request_sha256,booking_status,payment_status,
+         pms_delivery_status,currency,total_amount_minor
+       from crays_core.clubs_hotel_bookings where idempotency_key=$1`,
+      [input.idempotencyKey],
+    );
+    if (existing.rows[0]) {
+      if (existing.rows[0].request_sha256 !== hash) throw new Error("idempotency_conflict");
+      return bookingResponse(existing.rows[0],true);
+    }
+
+    const offer = await client.query<{
+      property_id:string; room_type_id:string; store_id:string; assignment_id:string;
+      assignment_version:number; max_adults:number; max_children:number;
+      currency:string; nightly_amount_minor:number; provider_binding_id:string|null;
+      connector_binding_id:string|null;
+      connector_provider_kind:"qlo"|"channel-manager"|"pms"|null;
+    }>(
+      `select hp.property_id,rt.room_type_id,p.store_id,a.assignment_id,a.version assignment_version,
+         rt.max_adults,rt.max_children,rate.currency,rate.nightly_amount_minor,
+         binding.binding_id provider_binding_id,
+         connector.connector_binding_id,connector.provider_kind connector_provider_kind
+       from crays_core.clubs_hotel_room_types rt
+       join crays_core.clubs_hotel_profiles hp on hp.property_id=rt.property_id
+       join crays_core.clubs_properties p on p.property_id=hp.property_id and p.lifecycle='published'
+       join crays_core.store_operator_assignments a on a.store_id=p.store_id and a.status='active'
+         and a.valid_from<=now() and (a.valid_until is null or a.valid_until>now())
+       join lateral (
+         select r.currency,r.nightly_amount_minor from crays_core.clubs_hotel_room_rates r
+         where r.room_type_id=rt.room_type_id and r.status in('test','contracted','active')
+           and r.valid_from<=$2::date and r.valid_until>=$3::date-1
+         order by case r.status when 'active' then 1 when 'contracted' then 2 else 3 end,r.version desc limit 1
+       ) rate on true
+       left join lateral (
+         select b.binding_id,b.qlo_shop_id,b.qlo_hotel_id from crays_core.provider_scope_bindings b
+         where b.assignment_id=a.assignment_id and b.assignment_version=a.version and b.status='active'
+         order by b.binding_version desc limit 1
+       ) binding on true
+       left join lateral (
+         select c.connector_binding_id,c.provider_kind
+         from crays_core.clubs_pms_connector_bindings c
+         join crays_core.clubs_pms_room_mappings mapping
+           on mapping.connector_binding_id=c.connector_binding_id
+          and mapping.room_type_id=rt.room_type_id and mapping.status='active'
+         where c.assignment_id=a.assignment_id and c.assignment_version=a.version
+           and c.property_id=hp.property_id and c.environment='sandbox' and c.status='active'
+         order by c.binding_version desc limit 1
+       ) connector on true
+       where rt.room_type_id=$1 and rt.status='active'
+         and hp.launch_status in('prelaunch-test','contracted','live')`,
+      [input.roomTypeId,input.checkIn,input.checkOut],
+    );
+    const selected = offer.rows[0];
+    if (!selected) throw new Error("offer_unavailable");
+    if (selected.max_adults*input.rooms<input.adults || selected.max_children*input.rooms<input.children) {
+      throw new Error("occupancy_exceeded");
+    }
+
+    const locked = await client.query<{stay_date:string; available:number}>(
+      `select stay_date::text,(allotment_quantity-booked_quantity-held_quantity)::int available
+       from crays_core.clubs_hotel_inventory_days
+       where room_type_id=$1 and stay_date>=$2::date and stay_date<$3::date
+       order by stay_date for update`,
+      [input.roomTypeId,input.checkIn,input.checkOut],
+    );
+    if (locked.rowCount!==nights || locked.rows.some((row)=>row.available<input.rooms)) {
+      throw new Error("inventory_conflict");
+    }
+
+    const bookingId = "clubs-booking-" + randomUUID();
+    const bookingReference = "FC-" + randomUUID().replaceAll("-","").slice(0,10).toUpperCase();
+    const totalAmountMinor = selected.nightly_amount_minor*nights*input.rooms;
+    const pmsState = selected.connector_binding_id ? "pending" : "awaiting-configuration";
+    await client.query(
+      `insert into crays_core.clubs_hotel_bookings(
+        booking_id,booking_reference,idempotency_key,request_sha256,property_id,room_type_id,
+        store_id,assignment_id,assignment_version,check_in_date,check_out_date,rooms,adults,children,
+        guest_name,guest_email,guest_phone,currency,nightly_amount_minor,total_amount_minor,
+        booking_status,payment_status,pms_delivery_status
+       ) values($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,
+         'internally-confirmed','not-required-test',$21)`,
+      [bookingId,bookingReference,input.idempotencyKey,hash,selected.property_id,selected.room_type_id,
+       selected.store_id,selected.assignment_id,selected.assignment_version,input.checkIn,input.checkOut,
+       input.rooms,input.adults,input.children,input.guestName.trim(),input.guestEmail.trim().toLowerCase(),
+       input.guestPhone?.trim()||null,selected.currency,selected.nightly_amount_minor,totalAmountMinor,pmsState],
+    );
+    await client.query(
+      `insert into crays_core.clubs_hotel_booking_nights(booking_id,room_type_id,stay_date,rooms,nightly_amount_minor)
+       select $1,$2,day::date,$3,$4 from generate_series($5::date,$6::date-1,interval '1 day') day`,
+      [bookingId,input.roomTypeId,input.rooms,selected.nightly_amount_minor,input.checkIn,input.checkOut],
+    );
+    await client.query(
+      `update crays_core.clubs_hotel_inventory_days set booked_quantity=booked_quantity+$1,
+         version=version+1,updated_at=now()
+       where room_type_id=$2 and stay_date>=$3::date and stay_date<$4::date`,
+      [input.rooms,input.roomTypeId,input.checkIn,input.checkOut],
+    );
+    const payload = {
+      bookingId,bookingReference,propertyId:selected.property_id,roomTypeId:selected.room_type_id,
+      checkIn:input.checkIn,checkOut:input.checkOut,rooms:input.rooms,adults:input.adults,
+      children:input.children,guest:{name:input.guestName.trim(),email:input.guestEmail.trim().toLowerCase(),
+      phone:input.guestPhone?.trim()||null},currency:selected.currency,totalAmountMinor,
+    };
+    const payloadHash = createHash("sha256").update(JSON.stringify(payload)).digest("hex");
+    await client.query(
+      `insert into crays_core.clubs_pms_delivery_outbox(
+        outbox_id,booking_id,assignment_id,provider_binding_id,connector_binding_id,provider_kind,delivery_state,
+        idempotency_key,request_payload,request_sha256,next_attempt_at
+       ) values($1,$2,$3,$4,$5,$6,$7,$8::jsonb,$9,$10)`,
+      ["clubs-pms-outbox-"+randomUUID(),bookingId,selected.assignment_id,selected.provider_binding_id,
+       selected.qlo_ready?"qlo":"unconfigured",pmsState,"pms:"+bookingId,JSON.stringify(payload),payloadHash,
+       selected.qlo_ready?new Date():null],
+    );
+    const outcomePayload = {bookingReference,bookingStatus:"internally-confirmed",pmsDeliveryStatus:pmsState};
+    await client.query(
+      `insert into crays_core.clubs_hotel_command_receipts(
+        receipt_id,booking_id,idempotency_key,request_sha256,outcome,outcome_payload
+       ) values($1,$2,$3,$4,'applied',$5::jsonb)`,
+      ["clubs-booking-receipt-"+randomUUID(),bookingId,input.idempotencyKey,hash,JSON.stringify(outcomePayload)],
+    );
+    await client.query(
+      `insert into crays_core.clubs_hotel_booking_events(event_id,booking_id,event_type,event_payload)
+       values($1,$2,'booking-internally-confirmed',$3::jsonb)`,
+      ["clubs-booking-event-"+randomUUID(),bookingId,JSON.stringify(outcomePayload)],
+    );
+    return bookingResponse({
+      booking_id:bookingId,booking_reference:bookingReference,request_sha256:hash,
+      booking_status:"internally-confirmed",payment_status:"not-required-test",
+      pms_delivery_status:pmsState,currency:selected.currency,total_amount_minor:totalAmountMinor,
+    },false);
+  });
+}
+export async function readForestCityBookingStatus(bookingId: string) {
+  const result = await getCorePgPool().query<{
+    booking_id:string; booking_reference:string; booking_status:string;
+    payment_status:string; pms_delivery_status:string; currency:string;
+    total_amount_minor:number; created_at:Date;
+  }>(
+    `select booking_id,booking_reference,booking_status,payment_status,
+       pms_delivery_status,currency,total_amount_minor,created_at
+     from crays_core.clubs_hotel_bookings
+     where booking_id=$1 and property_id in(
+       'property-clubs-forest-city-golf','property-clubs-forest-city-marina'
+     )`,
+    [bookingId],
+  );
+  const row = result.rows[0];
+  return row ? {
+    bookingId:row.booking_id,
+    bookingReference:row.booking_reference,
+    bookingStatus:row.booking_status,
+    paymentStatus:row.payment_status,
+    pmsDeliveryStatus:row.pms_delivery_status,
+    currency:row.currency,
+    totalAmountMinor:row.total_amount_minor,
+    createdAt:row.created_at.toISOString(),
+  } : null;
+}

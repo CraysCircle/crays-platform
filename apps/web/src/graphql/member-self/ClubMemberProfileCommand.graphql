@@ -1,0 +1,1 @@
+mutation ClubMemberProfileCommand($input: ClubMemberProfileCommandInput!) { clubMemberProfileCommand(input: $input) { schema payloadJson } }

@@ -1,0 +1,24 @@
+import {readNativeMemberFinanceRequests,submitNativeMemberFinanceRequest} from "./member-finance-request-native-resolver";
+import {readNativeMemberOwnPurchaseFulfilment} from "./member-own-purchase-fulfilment-native-resolver";
+import {readNativeMemberDemoDocuments} from "@/lib/clubs/member-native-document-handler";
+import {writeNativeMemberSavedPlan} from "./member-demo-saved-plan-resolver";
+import {readNativeMemberOwnCommerce,writeNativeMemberOwnCommerce} from "./member-demo-commerce-resolvers";
+import {readNativeMemberOwnFinance} from "./member-own-finance-native-resolver";
+import {readNativeMemberOwnServices} from "./member-own-services-native-resolver";
+import {readNativeMemberOwnExperiences} from "./member-own-experiences-native-resolver";
+import "server-only";
+import {createSchema,createYoga} from "graphql-yoga";
+import {usePersistedOperations as createPersistedOperationsPlugin} from "@graphql-yoga/plugin-persisted-operations";
+import {readFileSync} from "node:fs";
+import {join} from "node:path";
+import documents from "./persisted-documents.json";
+type MemberServerContext={params?:Promise<Record<string,string>>};
+import {createMemberSelfResolvers} from "./member-self-resolvers";
+import {memberSelfPorts,readCurrentOriginalMemberStateCombined} from "./member-self-runtime-ports";
+import {createNativeMemberOwnTestStaysResolver} from "./member-own-test-stays-native-resolver";
+import {queryMemberOwnTestStays} from "@/db/core-member-test-stays-runtime";
+import {readNativeMemberOwnConversations} from "./member-own-conversations-native-resolver";
+import {readNativeMemberApplication,writeNativeMemberApplication} from "./member-application-resolver";
+import {readNativeMemberOwnProfile,writeNativeMemberOwnProfile} from "./member-own-profile-native-resolver";
+import {readNativeMemberOwnPrivacyRequests,writeNativeMemberPrivacyRequest} from "./member-own-privacy-native-resolver";
+export function createMemberSelfGraphQLServer(){return createYoga<MemberServerContext,{request:Request}>({graphqlEndpoint:"/api/graphql",graphiql:false,maskedErrors:true,schema:createSchema<MemberServerContext & {request:Request}>({typeDefs:readFileSync(join(process.cwd(),"src/graphql/member-self/member-self.graphql"),"utf8"),resolvers:{Query:{clubMemberOwnPrivacyRequests:readNativeMemberOwnPrivacyRequests,readOwnFinanceRequests:readNativeMemberFinanceRequests,clubMemberOwnApplication:readNativeMemberApplication,clubMemberOwnPurchaseFulfilment:readNativeMemberOwnPurchaseFulfilment,clubMemberOwnProfile:readNativeMemberOwnProfile,clubMemberOwnDemoDocuments:readNativeMemberDemoDocuments,clubMemberOwnCommerce:readNativeMemberOwnCommerce,...createMemberSelfResolvers(memberSelfPorts,readCurrentOriginalMemberStateCombined).Query,clubMemberOwnFinance:readNativeMemberOwnFinance,clubMemberOwnServiceOffers:readNativeMemberOwnServices,clubMemberOwnExperiences:readNativeMemberOwnExperiences,clubMemberOwnConversations:readNativeMemberOwnConversations,clubMemberOwnTestStays:createNativeMemberOwnTestStaysResolver({...memberSelfPorts,query:queryMemberOwnTestStays})},Mutation:{clubMemberPrivacyRequestCommand:writeNativeMemberPrivacyRequest,submitRequest:submitNativeMemberFinanceRequest,clubMemberApplicationCommand:writeNativeMemberApplication,clubMemberSavedPlanCommand:writeNativeMemberSavedPlan,clubMemberProfileCommand:writeNativeMemberOwnProfile,clubMemberCommerceCommand:writeNativeMemberOwnCommerce}}}),context:({request})=>({request}),plugins:[createPersistedOperationsPlugin({allowArbitraryOperations:false,getPersistedOperation:(id)=>(documents as Record<string,string>)[id]??null})]});}

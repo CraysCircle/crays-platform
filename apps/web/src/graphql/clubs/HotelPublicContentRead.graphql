@@ -1,0 +1,15 @@
+query HotelPublicContentRead($input: PublicHospitalityContentInput!) {
+  clubPublicHospitalityContent(input: $input) {
+    schema version propertyId status code authority nativeReadGranted bookingGranted
+    content {
+      propertyId locale canonicalName contentVersionId contentSha256
+      copy { headline cardSummary overview locationText amenitiesIntroduction diningIntroduction meetingsIntroduction roomIntroduction seoTitle seoDescription }
+      location { address countryCode map { embedUrl placeUrl directionsUrl latitude longitude coordinateStatus officialEntityReference loadPolicy } }
+      facilities { id label description details }
+      dining { id label description details }
+      meetings { id label description details }
+      rooms { publicRoomTypeId name description providerRoomTypeId }
+      media { assetId url width height alt caption purpose galleryGroup galleryOrder maxCssWidth maxDevicePixelRatio }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+/* Scoped form alignment; existing CRAYS typefaces and page tokens remain inherited. */
+.form { min-width: 0; }
+.form > section { margin-bottom: 24px; }
+.personal { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 24px; align-items: start; }
+.personal > svg { color: var(--member-ink); }
+.fieldGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 24px; min-width: 0; }
+.field { display: flex; flex-direction: column; gap: 8px; min-width: 0; font-family: var(--crays-font-avenir-medium); font-size: 14px; font-weight: 500; line-height: 20px; color: var(--member-ink); }
+.fullWidth, .readMetadata { grid-column: 1 / -1; min-width: 0; }
+.field > input, .field > select, .field > textarea { box-sizing: border-box; display: block; width: 100%; min-width: 0; min-height: 44px; margin: 0; border: 1px solid var(--member-line); border-radius: 5px; padding: 10px 12px; background: white; color: var(--member-ink); font-family: var(--crays-font-avenir-book); font-size: 16px; font-weight: 400; line-height: 24px; }
+.field > textarea { min-height: 128px; resize: vertical; }
+.field > input[readonly] { background: var(--account-paper, #f7f8f8); color: var(--member-muted); }
+.field > input:disabled, .field > select:disabled, .field > textarea:disabled { cursor: not-allowed; background: var(--account-paper, #f7f8f8); }
+.field > input:focus-visible, .field > select:focus-visible, .field > textarea:focus-visible { outline: 2px solid var(--member-pink); outline-offset: 2px; }
+.readMetadata > p { margin: 0 0 8px !important; }
+.readMetadata > p:last-child { margin-bottom: 0 !important; }
+.actions { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 16px; margin-top: 24px; }
+.actions > button { min-height: 44px; }
+@media (max-width: 760px) { .personal, .fieldGrid { grid-template-columns: minmax(0, 1fr); } .personal > svg { margin: 0; } .actions { justify-content: flex-start; } }
+
+.signInSlot [id="profile"] { display:block; min-width:0; }
+
+.signInSlot [id="profile"] > div:last-child {
+ display:grid;
+ grid-template-columns:auto minmax(0,1fr);
+ align-items:start;
+}
+.signInSlot [id="profile"] > div:last-child strong {
+ overflow-wrap:anywhere;
+}
+.signInSlot [id="profile"] > div:last-child > div:last-child {
+ grid-column:1/-1;
+ min-width:0;
+ flex-wrap:wrap;
+}
+.signInSlot [id="profile"] > div:last-child > div:last-child > a {
+ flex:1 1 auto;
+ min-width:0;
+ max-width:100%;
+ white-space:normal;
+ overflow-wrap:anywhere;
+}

@@ -1,0 +1,119 @@
+{
+  "scope": "Prepared source24 borrowed dependency input, not a live runtime inventory",
+  "directPackageCount": 47,
+  "allObservedDirectVersionsMatchInstalledTreeLock": true,
+  "borrowedMainLockMismatches": [
+    {
+      "name": "@fullcalendar/daygrid",
+      "version": "6.1.21",
+      "lockVersionMatches": {
+        "borrowed-package-lock.json": false,
+        "borrowed-node-modules-package-lock.json": true
+      }
+    },
+    {
+      "name": "@fullcalendar/list",
+      "version": "6.1.21",
+      "lockVersionMatches": {
+        "borrowed-package-lock.json": false,
+        "borrowed-node-modules-package-lock.json": true
+      }
+    },
+    {
+      "name": "@fullcalendar/react",
+      "version": "6.1.21",
+      "lockVersionMatches": {
+        "borrowed-package-lock.json": false,
+        "borrowed-node-modules-package-lock.json": true
+      }
+    },
+    {
+      "name": "next",
+      "version": "16.2.10",
+      "lockVersionMatches": {
+        "borrowed-package-lock.json": false,
+        "borrowed-node-modules-package-lock.json": true
+      }
+    },
+    {
+      "name": "@axe-core/playwright",
+      "version": "4.12.1",
+      "lockVersionMatches": {
+        "borrowed-package-lock.json": false,
+        "borrowed-node-modules-package-lock.json": true
+      }
+    },
+    {
+      "name": "@types/papaparse",
+      "version": "5.5.2",
+      "lockVersionMatches": {
+        "borrowed-package-lock.json": false,
+        "borrowed-node-modules-package-lock.json": true
+      }
+    }
+  ],
+  "borrowedMainLockNotQualifiedAsApplicationProjectLock": true,
+  "originalPackageRootDependenciesEqualCapture": {
+    "dependencies": false,
+    "devDependencies": false
+  },
+  "sevenRegistryIntegrityChecks": [
+    {
+      "name": "drizzle-orm",
+      "version": "0.45.2",
+      "registryIntegrityMatchesLocks": {
+        "borrowed-package-lock.json": true,
+        "borrowed-node-modules-package-lock.json": true
+      }
+    },
+    {
+      "name": "server-only",
+      "version": "0.0.1",
+      "registryIntegrityMatchesLocks": {
+        "borrowed-package-lock.json": true,
+        "borrowed-node-modules-package-lock.json": true
+      }
+    },
+    {
+      "name": "@storybook/addon-a11y",
+      "version": "10.5.0",
+      "registryIntegrityMatchesLocks": {
+        "borrowed-package-lock.json": true,
+        "borrowed-node-modules-package-lock.json": true
+      }
+    },
+    {
+      "name": "@storybook/nextjs-vite",
+      "version": "10.5.0",
+      "registryIntegrityMatchesLocks": {
+        "borrowed-package-lock.json": true,
+        "borrowed-node-modules-package-lock.json": true
+      }
+    },
+    {
+      "name": "drizzle-kit",
+      "version": "0.31.10",
+      "registryIntegrityMatchesLocks": {
+        "borrowed-package-lock.json": true,
+        "borrowed-node-modules-package-lock.json": true
+      }
+    },
+    {
+      "name": "eslint-config-next",
+      "version": "16.2.10",
+      "registryIntegrityMatchesLocks": {
+        "borrowed-package-lock.json": true,
+        "borrowed-node-modules-package-lock.json": true
+      }
+    },
+    {
+      "name": "storybook",
+      "version": "10.5.0",
+      "registryIntegrityMatchesLocks": {
+        "borrowed-package-lock.json": true,
+        "borrowed-node-modules-package-lock.json": true
+      }
+    }
+  ],
+  "fullDependencyRuntimeAndSourceClosure": false
+}

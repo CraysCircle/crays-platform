@@ -1,0 +1,486 @@
+.page {
+  min-height: 100svh;
+  margin-top: var(--crays-header-height);
+  overflow-x: clip;
+  color: var(--crays-color-ink);
+  background: var(--crays-color-paper);
+  font-family: var(--crays-font-avenir-book);
+}
+
+.page * {
+  box-sizing: border-box;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(360px, 0.8fr) minmax(0, 1.2fr);
+  min-height: 680px;
+  color: var(--crays-color-white);
+  background: var(--crays-color-navy);
+}
+
+.monogramPanel {
+  position: relative;
+  min-width: 0;
+  padding: clamp(2rem, 4vw, 4.5rem);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: var(--crays-color-blue);
+}
+
+.backLink,
+.monogramPanel > p {
+  position: absolute;
+  z-index: 1;
+  color: var(--crays-color-white);
+  font-family: var(--crays-font-avenir-medium);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.backLink {
+  inset: 2rem auto auto 2rem;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.monogramPanel > p {
+  inset: auto 2rem 2rem auto;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.monogram {
+  font-family: var(--crays-font-display);
+  font-size: clamp(8rem, 20vw, 18rem);
+  font-weight: 400;
+  letter-spacing: -0.11em;
+  line-height: 0.78;
+  transform: translateX(-0.06em);
+}
+
+.profilePortrait {
+  z-index: 0;
+  object-fit: cover;
+}
+
+.heroCopy {
+  padding: clamp(4rem, 8vw, 8rem) clamp(2rem, 7vw, 8rem);
+  display: grid;
+  align-content: center;
+  gap: 1.5rem;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--crays-color-red);
+  font-family: var(--crays-font-avenir-medium);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.hero h1,
+.story h2,
+.steps h2,
+.closing h2 {
+  margin: 0;
+  font-family: var(--crays-font-display);
+  font-weight: 400;
+  letter-spacing: -0.047em;
+}
+
+.hero h1 {
+  max-width: 12ch;
+  font-size: clamp(4rem, 7.2vw, 8rem);
+  line-height: 0.9;
+}
+
+.intro {
+  max-width: 41ch;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: clamp(1.1rem, 1.45vw, 1.45rem);
+  line-height: 1.55;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.primaryAction,
+.linkedinAction,
+.closingAction {
+  min-height: 50px;
+  padding: 0.85rem 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  color: var(--crays-color-white);
+  font-family: var(--crays-font-avenir-medium);
+  font-size: 0.84rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.primaryAction,
+.closingAction {
+  background: var(--crays-color-red);
+}
+
+.linkedinAction {
+  border: 1px solid rgba(255, 255, 255, 0.72);
+}
+
+.linkedinBadge {
+  width: 19px;
+  height: 19px;
+  display: inline-grid;
+  place-items: center;
+  color: var(--crays-color-navy);
+  background: var(--crays-color-white);
+  font-family: Arial, sans-serif;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.authorityNote {
+  max-width: 46ch;
+  margin: 0;
+  padding-top: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+.authorityNote svg {
+  flex: 0 0 auto;
+  color: var(--crays-color-red);
+}
+
+.story,
+.steps,
+.closing {
+  padding: clamp(4rem, 7vw, 7.5rem) var(--crays-page-gutter);
+}
+
+.story {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
+  gap: clamp(3rem, 8vw, 9rem);
+}
+
+.storyHeading,
+.stepsIntro,
+.closing > div {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+}
+
+.story h2,
+.steps h2,
+.closing h2 {
+  font-size: clamp(2.8rem, 5vw, 5.6rem);
+  line-height: 0.94;
+}
+
+.storyBody {
+  display: grid;
+  align-content: center;
+  gap: 1.5rem;
+}
+
+.storyBody p {
+  margin: 0;
+  font-size: clamp(1.05rem, 1.35vw, 1.3rem);
+  line-height: 1.65;
+}
+
+.storyBody p + p {
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(4, 29, 55, 0.22);
+  color: rgba(4, 29, 55, 0.68);
+}
+
+.steps {
+  color: var(--crays-color-white);
+  background: var(--crays-color-blue);
+}
+
+.stepsIntro {
+  max-width: 720px;
+  margin-bottom: clamp(2.5rem, 5vw, 5rem);
+}
+
+.steps .eyebrow {
+  color: #ff9aaf;
+}
+
+.steps ol {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  list-style: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.38);
+  border-left: 1px solid rgba(255, 255, 255, 0.38);
+}
+
+.steps li {
+  min-height: 250px;
+  padding: 1.5rem;
+  display: grid;
+  align-content: start;
+  gap: 1.2rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.38);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+}
+
+.steps li > span {
+  color: #ff9aaf;
+  font-family: var(--crays-font-avenir-medium);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.steps li strong {
+  max-width: 13ch;
+  font-family: var(--crays-font-display);
+  font-size: clamp(1.75rem, 2.6vw, 2.75rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1;
+}
+
+.steps li p {
+  max-width: 30ch;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.76);
+  line-height: 1.55;
+}
+
+.closing {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  color: var(--crays-color-white);
+  background: var(--crays-color-navy);
+}
+
+.closingAction {
+  min-width: min(100%, 250px);
+}
+
+.backLink:focus-visible,
+.primaryAction:focus-visible,
+.linkedinAction:focus-visible,
+.closingAction:focus-visible {
+  outline: 3px solid var(--crays-color-white);
+  outline-offset: 3px;
+}
+
+.applyHeroMonogram {
+  width: 100%;
+  height: 100%;
+  padding: clamp(2rem, 4vw, 4.5rem);
+  display: grid;
+  place-items: center;
+  color: var(--crays-color-white);
+  background: var(--crays-color-blue);
+}
+
+.applyHeroInitials {
+  font-family: var(--crays-font-display);
+  font-size: clamp(7rem, 17vw, 15rem);
+  font-weight: 400;
+  letter-spacing: -0.1em;
+  line-height: 0.78;
+  transform: translateX(-0.06em);
+}
+
+.applyHeroMeta {
+  position: absolute;
+  inset: auto 1.5rem 1.5rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.applyHeroMeta strong {
+  font-family: var(--crays-font-display);
+  font-size: clamp(1.7rem, 2.5vw, 2.7rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+}
+
+.applyHeroMeta span {
+  font-family: var(--crays-font-avenir-medium);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .story {
+    grid-template-columns: 1fr;
+  }
+
+  .monogramPanel {
+    min-height: 420px;
+  }
+
+  .steps ol {
+    grid-template-columns: 1fr;
+  }
+
+  .steps li {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .hero {
+    min-height: 0;
+  }
+
+  .monogramPanel {
+    min-height: 360px;
+    padding: 1.25rem;
+  }
+
+  .backLink {
+    inset: 1.1rem auto auto 1.1rem;
+  }
+
+  .monogramPanel > p {
+    inset: auto 1.1rem 1.1rem auto;
+  }
+
+  .heroCopy {
+    padding: 3.5rem 1.25rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.6rem, 17vw, 5.6rem);
+  }
+
+  .actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .primaryAction,
+  .linkedinAction {
+    width: 100%;
+  }
+
+  .story,
+  .steps,
+  .closing {
+    padding: 3.8rem 1.25rem;
+  }
+
+  .story {
+    gap: 2rem;
+  }
+
+  .closing {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .closingAction {
+    width: 100%;
+  }
+
+  .applyHeroMonogram {
+    min-height: 440px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .primaryAction svg,
+  .closingAction svg,
+  .backLink svg {
+    transition: transform var(--crays-motion-fast);
+  }
+
+  .primaryAction:hover svg,
+  .closingAction:hover svg {
+    transform: translateX(3px);
+  }
+
+  .backLink:hover svg {
+    transform: translateX(-3px);
+  }
+}
+
+/* Preserve the approved hero composition, occupying the first full viewport. */
+@media(min-width:901px){.hero{min-height:calc(100svh - var(--crays-header-height))}}
+
+/* Keep the selected full-screen portrait/name composition; use actual public CI controls. */
+.page{font-family:var(--crays-font-display)}
+.intro{font-family:var(--crays-font-display);font-size:19px;line-height:1.5;letter-spacing:-.012em}
+.eyebrow{font-family:var(--crays-font-display);font-size:13.824px;line-height:18.6624px;letter-spacing:1.65888px}
+.page .primaryAction,.page .primaryAction:link,.page .primaryAction:visited{font-family:var(--crays-font-display);min-height:52px;padding:13px 24px;border-radius:999px;background:#ff174f;color:#fff;font-size:14.976px;line-height:1.35;letter-spacing:.075em;transition:background-color 220ms ease,transform 200ms ease}
+.page .primaryAction:hover,.page .primaryAction:focus-visible{background:#e71347;color:#fff;transform:translateY(-2px)}
+.page .linkedinAction,.page .linkedinAction:link,.page .linkedinAction:visited{font-family:var(--crays-font-display);min-height:52px;padding:13px 24px;border-radius:999px;color:#fff;font-size:14.976px;line-height:1.35;letter-spacing:.075em;transition:background-color 220ms ease,border-color 220ms ease}
+.page .linkedinAction:hover,.page .linkedinAction:focus-visible{background:rgba(255,255,255,.08);border-color:#fff;color:#fff}
+.page .primaryAction:focus-visible,.page .linkedinAction:focus-visible{box-shadow:none;outline:3px solid #8ec5ff;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.page .primaryAction,.page .linkedinAction{transition:none}.page .primaryAction:hover,.page .primaryAction:focus-visible{transform:none}}
+
+/* Owner-approved dedicated phone/tablet presentation; desktop >=1200px untouched. */
+@media (min-width:680px) and (max-width:1199px){
+ .hero{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);min-height:calc(100svh - var(--crays-header-height));align-items:stretch}
+ .monogramPanel{min-height:0;padding:24px}
+ .heroCopy{padding:40px 28px;gap:22px;min-width:0}
+ .hero h1{font-size:clamp(48px,6.3vw,72px);line-height:.98;overflow-wrap:anywhere}
+ .intro{font-size:18px;line-height:1.5}
+ .backLink{inset:20px auto auto 20px;max-width:calc(100% - 40px);font-size:11px}
+ .monogramPanel>p{inset:auto 20px 20px;font-size:11px;text-align:right}
+ .actions{gap:12px}
+ .page .primaryAction,.page .linkedinAction{max-width:100%;padding:13px 20px;letter-spacing:.035em}
+}
+@media (max-width:679px){
+ .hero{min-height:calc(100svh - var(--crays-header-height));grid-template-columns:minmax(0,1fr)}
+ .monogramPanel{min-height:clamp(260px,36svh,340px)}
+ .heroCopy{padding:32px 20px 36px;gap:18px;min-width:0}
+ .hero h1{font-size:clamp(43px,13vw,60px);line-height:1;overflow-wrap:anywhere}
+ .intro{font-size:18px;line-height:1.5}
+ .actions{gap:12px}
+ .page .primaryAction,.page .linkedinAction{letter-spacing:.035em;padding-inline:18px;min-height:52px;white-space:normal;text-align:center}
+ .authorityNote{margin:0;padding-top:16px}
+}
+
+/* Visual QA: preserve the whole face instead of enlarging square photos to tablet height. */
+@media(min-width:680px) and (max-width:1199px){
+ .hero{align-items:center}
+ .monogramPanel{aspect-ratio:3/4;align-self:center;min-height:0;background:var(--crays-color-navy)}
+ .profilePortrait{object-fit:contain}
+}
+@media(max-width:679px){
+ .profilePortrait[data-portrait-shape="wide"]{object-fit:contain}
+ .monogramPanel{background:var(--crays-color-navy)}
+}

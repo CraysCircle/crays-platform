@@ -1,0 +1,14 @@
+import type {MemberFeed} from "./clubs-member-home-model";
+import type {MemberFinanceRead} from "@/lib/clubs/member-finance-contract";
+import type {MemberExperienceRead} from "@/lib/clubs/member-experience-contract";
+const originalAccount="acct_384c05e7-e716-4dc9-864d-8c63bf13876c";
+export function memberOwnedPurchasedLines(feed:MemberFeed<MemberFinanceRead>|undefined,mode:"experience"|"service"){
+ if(feed?.kind!=="ready"||feed.data.accountId!==originalAccount)return null;
+ return feed.data.orders.flatMap(order=>order.lines.filter(line=>line.kind===mode&&order.currency==="USD"&&line.currency==="USD").map(line=>({...line,orderId:order.orderId,invoiceId:order.invoiceId,invoiceStatus:order.invoiceStatus})));
+}
+/** A saved idea stays saved. A separate native order may match its exact chosen date. */
+export function memberSavedPlanPurchaseContext(feed:MemberFeed<MemberFinanceRead>|undefined,plan:Pick<MemberExperienceRead["plans"][number],"offerId"|"selectedSlotId">){
+ if(!plan.selectedSlotId)return [];
+ const lines=memberOwnedPurchasedLines(feed,"experience")??[];const seen=new Set<string>();
+ return lines.filter(line=>line.offerId===plan.offerId&&line.slotId===plan.selectedSlotId).filter(line=>{if(seen.has(line.orderId))return false;seen.add(line.orderId);return true;});
+}

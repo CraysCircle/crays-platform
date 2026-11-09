@@ -1,0 +1,3 @@
+mutation ClubMemberSavedPlanCommand($input: ClubMemberSavedPlanCommandInput!) {
+  clubMemberSavedPlanCommand(input: $input) { schema payloadJson }
+}

@@ -1,0 +1,57 @@
+"use client";
+import {MemberSaveExperiencePlanButton} from "./member-save-experience-plan-button";
+import {memberSavedPlanPurchaseContext} from "./member-plans-purchase-context";
+import {paymentOrderHash} from "./member-payment-selection";
+import {MemberPurchasedOfferOrders} from "./member-purchased-offer-orders";
+import type {MemberPurchaseFulfilmentRead} from "@/lib/clubs/member-purchase-fulfilment-contract";
+import type {MemberFinanceRead} from "@/lib/clubs/member-finance-contract";
+import type {MemberFeed} from "./clubs-member-home-model";
+import {MemberNativeCommerceOfferPanel} from "./member-native-commerce-workspace";
+import {ArrowLeft,ArrowRight,CalendarDays,ImageOff,Ticket} from "lucide-react";
+import Image from "next/image";
+import {useState} from "react";
+import type {MemberExperienceRead} from "@/lib/clubs/member-experience-contract";
+import {memberDate} from "./clubs-member-home-model";
+import shared from "./clubs-member-home.module.css";
+import styles from "./member-experiences-workspace.module.css";
+type Props={financeFeed?:MemberFeed<MemberFinanceRead>;fulfilmentFeed?:MemberFeed<MemberPurchaseFulfilmentRead>;data:Pick<MemberExperienceRead,"catalog"|"plans">&Partial<Pick<MemberExperienceRead,"accountId">>;mode?:"experience"|"service";locale:string;selected:string|null;category:string;onCategory:(category:string)=>void;onOpen:(offerId:string|null)=>void;onMessages:()=>void};
+function price(currency:string,minor:number,locale:string){if(minor===0)return "Free";const format=new Intl.NumberFormat(locale,{style:"currency",currency});const digits=format.resolvedOptions().maximumFractionDigits??2;return format.format(minor/10**digits);}
+/** Actual own Core catalogue and saved plans; read authority never grants a cart command. */
+export function MemberExperienceReadWorkspace({data,financeFeed,fulfilmentFeed,mode="experience",locale,selected,category,onCategory,onOpen,onMessages}:Props){
+ const [section,setSection]=useState<"discover"|"bookings"|"plans">("discover");
+ const [dateFrom,setDateFrom]=useState("");const [dateTo,setDateTo]=useState("");const [pricing,setPricing]=useState<"all"|"free"|"paid">("all");
+ const invalidRange=Boolean(dateFrom&&dateTo&&dateFrom>dateTo);
+ const current=selected?data.catalog.find(offer=>offer.offerId===selected):null;
+ const categories=["All",...new Set(data.catalog.map(offer=>offer.category))];
+ const visibleCategory=categories.includes(category)?category:"All";
+ const slotMatches=(slot:MemberExperienceRead["catalog"][number]["slots"][number])=>(!dateFrom||slot.date>=dateFrom)&&(!dateTo||slot.date<=dateTo);
+ const visibleOffers=data.catalog.filter(offer=>(visibleCategory==="All"||offer.category===visibleCategory)&&(pricing==="all"||(pricing==="free"?offer.unitPriceMinor===0:offer.unitPriceMinor>0))&&!invalidRange&&(!(dateFrom||dateTo)||offer.slots.some(slotMatches)));
+ function cardDate(offer:MemberExperienceRead["catalog"][number]){const slot=offer.slots.find(slotMatches);return slot?memberDate(slot.date,locale):"Dates to be confirmed";}
+ function clearFilters(){setDateFrom("");setDateTo("");setPricing("all");onCategory("All");}
+ const missingImage=<div className={styles.nativeImagePending}><ImageOff size={32} aria-hidden/><span>Experience photo coming soon.</span></div>;
+ const image=(offer:MemberExperienceRead["catalog"][number],detail=false)=>offer.imageAssetId&&(/^\/api\/member-demo-media\/member-demo-20261012-[0-9]{3}-[a-f0-9]{12}\.png$/.test(offer.imageAssetId)||["/member-demo-catalog/member-demo-20261012-dining-72c052a0b04b.png", "/member-demo-catalog/member-demo-20261012-wellness-ccbb597fe236.png", "/member-demo-catalog/member-demo-20261012-workspace-b9c6688245fe.png", "/member-demo-catalog/member-demo-20261012-nature-a0cfd36bfbd6.png", "/member-demo-catalog/member-demo-20261012-water-4854f3d04402.png", "/member-demo-catalog/member-demo-20261012-golf-ce5d6860c8d7.png", "/member-demo-catalog/member-demo-20261012-family-1dec094fd706.png", "/member-demo-catalog/member-demo-20261012-mobility-84d72fd12826.png", "/member-demo-catalog/member-demo-20261012-housekeeping-f2b31bd5e1d3.png", "/member-demo-catalog/member-demo-20261012-culture-6d6bb15b1c66.png", "/member-demo-catalog/member-demo-20261012-celebrations-ffeffd8a3a22.png", "/member-demo-catalog/member-demo-20261012-concierge-e0ccb8fa9ff4.png", "/member-demo-catalog/member-demo-20261012-community-f97297fbc756.png", "/member-demo-catalog/member-demo-20261012-explore-e4ad398b81c9.png", "/member-demo-catalog/member-demo-20261012-fitness-42e13582d097.png"].includes(offer.imageAssetId))?<Image className={detail?styles.detailImage:undefined} src={offer.imageAssetId} unoptimized={offer.imageAssetId.startsWith("/api/member-demo-media/")} alt={offer.title} width={1672} height={941} quality={95} sizes="(max-width:1100px) 100vw, 65vw"/>:missingImage;
+ const notice=<p role="status" className={styles.notice}>TEST catalogue · Choose a date to add an experience or service to your cart. Payments are simulated; no real money is charged.</p>;
+ if(selected&&!current)return <section className={styles.panel}><h2>We couldn’t find that experience.</h2><p>Choose an experience from the current catalogue to see its details.</p><button type="button" className={shared.textAction} onClick={()=>onOpen(null)}>{mode==="service"?"All services":"All experiences"} <ArrowRight size={18} aria-hidden/></button></section>;
+ if(current)return <div className={styles.detailLayout}><div><button type="button" className={shared.textAction} onClick={()=>onOpen(null)}><ArrowLeft size={18} aria-hidden/>{mode==="service"?"All services":"All experiences"}</button>{image(current,true)}<p className={shared.eyebrow}>{current.category}</p><section className={styles.panel}><h2>{current.title}</h2><p>{current.description}</p>{current.slots.length?<><h3>{mode==="service"?"Service dates":"Experience dates"}</h3><ul>{current.slots.map(slot=><li key={slot.slotId}>{memberDate(slot.date,locale)}{slot.capacity===null?"":" · "+slot.capacity+" places"}</li>)}</ul><p>Times and meeting details are being connected.</p></>:<p>Dates are being connected.</p>}</section></div><aside><MemberNativeCommerceOfferPanel accountId={data.accountId} mode={mode} savedPlan={data.plans.find(plan=>plan.offerId===current.offerId)} offer={current} locale={locale} onCart={()=>{history.replaceState(null,"","#cart");window.dispatchEvent(new Event("hashchange"));}}/><section className={styles.panel}><button type="button" className={shared.textAction} onClick={onMessages}>Chat with CRAYS <ArrowRight size={18} aria-hidden/></button></section></aside></div>;
+ const sectionTabs=mode==="experience"?<div className={styles.toolbar}><div className={styles.categories} role="group" aria-label="Your experiences"><button type="button" aria-pressed={section==="discover"} onClick={()=>setSection("discover")}>Discover</button><button type="button" aria-pressed={section==="bookings"} onClick={()=>setSection("bookings")}>My bookings</button><button type="button" aria-pressed={section==="plans"} onClick={()=>setSection("plans")}>Saved plans ({data.plans.length})</button></div></div>:null;
+ if(mode==="experience"&&section==="plans")return <>{sectionTabs}<section className={styles.panel}><h2>Saved plans</h2><p>Ideas you’ve saved for later. These plans are not confirmed bookings.</p>{data.plans.length?<ul className={styles.savedPlans}>{data.plans.map(plan=>{
+  const offer=data.catalog.find(item=>item.offerId===plan.offerId);
+  const slot=offer?.slots.find(item=>item.slotId===plan.selectedSlotId);
+  const recordedPurchases=memberSavedPlanPurchaseContext(financeFeed,plan);
+  const title=offer?.title??"Experience";
+  return <li className={styles.savedPlanRow} key={plan.planId}>
+   <div className={styles.savedPlanPhoto} aria-hidden="true">{offer?image(offer):<Ticket size={26} aria-hidden/>}</div>
+   <div className={styles.savedPlanContent}>
+    <div className={styles.savedPlanHeading}><strong>{title}</strong><span className={styles.savedPlanBadge}>Saved idea</span></div>
+    <p className={styles.savedPlanDate}>{slot?memberDate(slot.date,locale):"Date to choose"}</p>
+    {recordedPurchases.length?<div className={styles.savedPlanPurchases}><span>Recorded purchase</span>{recordedPurchases.map(purchase=><button key={purchase.orderId} type="button" className={styles.savedPlanOrder} aria-label={`View recorded TEST order ${purchase.orderId} for ${title}`} onClick={()=>{history.replaceState(null,"",paymentOrderHash(purchase.orderId));window.dispatchEvent(new Event("hashchange"));}}>View order {purchase.orderId} <ArrowRight size={16} aria-hidden/></button>)}</div>:null}
+   </div>
+   <div className={styles.savedPlanActions}>
+    <button type="button" className={`${shared.smallAction} ${styles.savedPlanOpen}`} aria-label={`Open saved plan: ${title}`} onClick={()=>onOpen(plan.offerId)}>Open plan <ArrowRight size={18} aria-hidden/></button>
+    {offer?<div className={styles.savedPlanRemove}><MemberSaveExperiencePlanButton offer={offer} savedPlan={plan}/></div>:null}
+   </div>
+  </li>;
+ })}</ul>:<p>No saved experience plans yet.</p>}</section></>;
+ if(mode==="experience"&&section==="bookings")return <>{sectionTabs}<MemberPurchasedOfferOrders feed={financeFeed} fulfilmentFeed={fulfilmentFeed} catalog={data.catalog} locale={locale} mode="experience"/></>;
+ return <>{sectionTabs}<details className={styles.dateFilters}><summary><CalendarDays size={24} aria-hidden/>{dateFrom&&dateTo?`${memberDate(dateFrom,locale)} – ${memberDate(dateTo,locale)}`:"Choose your dates"}</summary><div className={styles.dateFilterFields}><label>From<input type="date" value={dateFrom} max={dateTo||undefined} onChange={event=>setDateFrom(event.target.value)}/></label><label>To<input type="date" value={dateTo} min={dateFrom||undefined} onChange={event=>setDateTo(event.target.value)}/></label><label>Price<select value={pricing} onChange={event=>setPricing(event.target.value as "all"|"free"|"paid")}><option value="all">Free and paid</option><option value="free">Free</option><option value="paid">Paid</option></select></label><button type="button" className={shared.textAction} onClick={clearFilters}>Clear filters</button></div>{invalidRange?<p role="status" className={styles.notice}>Choose an end date on or after your start date.</p>:null}</details><div className={styles.toolbar}><div className={styles.categories} role="group" aria-label="Experience categories">{categories.map(item=><button type="button" key={item} aria-pressed={visibleCategory===item} onClick={()=>onCategory(item)}>{item}</button>)}</div></div>{notice}<div className={styles.discovery}>{visibleOffers.map(offer=><button type="button" className={styles.experienceCard} key={offer.offerId} onClick={()=>onOpen(offer.offerId)}>{image(offer)}<span className={styles.category}>{offer.category}</span><span className={styles.cardPrice}>{price(offer.currency,offer.unitPriceMinor,locale)}</span><span className={styles.cardCopy}><strong>{offer.title}</strong><span>{cardDate(offer)}</span><span>{mode==="service"?"View service":"View experience"} <ArrowRight size={18} aria-hidden/></span></span></button>)}</div>{data.catalog.length===0?<p>No experiences have been shared with your account yet.</p>:null}{data.catalog.length>0&&visibleOffers.length===0&&!invalidRange?<p role="status" className={styles.notice}>No experiences match these filters. <button type="button" className={shared.textAction} onClick={clearFilters}>Clear filters</button></p>:null}</>;
+}

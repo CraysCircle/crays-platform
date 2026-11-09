@@ -1,0 +1,281 @@
+.root {
+  color: #17362f;
+  padding: clamp(18px, 3vw, 28px);
+  border: 1px solid rgba(66, 99, 87, 0.16);
+  border-radius: 22px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(244, 249, 246, 0.9));
+  box-shadow: 0 20px 48px rgba(44, 67, 58, 0.08);
+}
+
+.header,
+.errorMessage,
+.nextAction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.header h2 {
+  margin: 5px 0 8px;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 650;
+  letter-spacing: -0.035em;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #28735e;
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.intro {
+  max-width: 650px;
+  margin: 0;
+  color: #516961;
+  line-height: 1.55;
+}
+
+.refreshButton {
+  min-height: 44px;
+  flex: 0 0 auto;
+  padding: 10px 15px;
+  border: 1px solid #aac0b7;
+  border-radius: 10px;
+  background: #fff;
+  color: #285c4c;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.refreshButton:hover:not(:disabled) {
+  border-color: #2b866b;
+  background: #f4fbf7;
+}
+
+.refreshButton:focus-visible {
+  outline: 3px solid rgba(43, 134, 107, 0.32);
+  outline-offset: 3px;
+}
+
+.refreshButton:disabled {
+  cursor: wait;
+  opacity: 0.56;
+}
+
+.message,
+.errorMessage {
+  min-height: 112px;
+  margin-top: 20px;
+  padding: 18px;
+  border: 1px solid #dbe5e0;
+  border-radius: 15px;
+  background: rgba(252, 253, 252, 0.92);
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.message p,
+.errorMessage p,
+.nextAction p {
+  margin: 5px 0 0;
+  color: #657b73;
+  line-height: 1.5;
+}
+
+.errorMessage {
+  border-color: #e1b5ac;
+  background: #fff7f4;
+}
+
+.errorMessage strong {
+  color: #8f3327;
+}
+
+.spinner,
+.neutralDot,
+.readyDot,
+.pendingDot {
+  display: inline-block;
+  flex: 0 0 auto;
+  border-radius: 999px;
+}
+
+.spinner {
+  width: 34px;
+  height: 34px;
+  border: 3px solid #d4dfda;
+  border-top-color: #28735e;
+  animation: integration-status-spin 0.9s linear infinite;
+}
+
+.neutralDot,
+.readyDot,
+.pendingDot {
+  width: 9px;
+  height: 9px;
+}
+
+.neutralDot {
+  background: #8aa198;
+}
+
+.readyDot {
+  background: #2b866b;
+}
+
+.pendingDot {
+  border: 1px solid #8d7657;
+  background: #f4e8cf;
+}
+
+.statusGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 20px 0 0;
+}
+
+.statusCard {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid #dbe5e0;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.statusCard dt {
+  color: #789087;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.statusCard dd {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0 0;
+  color: #214f41;
+  font-size: 0.96rem;
+  font-weight: 750;
+}
+
+.statusCard dd.detail {
+  display: block;
+  margin-top: 5px;
+  color: #657b73;
+  font-size: 0.78rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.providerCard {
+  border-color: #d8cbb5;
+  background: #fffaf0;
+}
+
+.statusCard dd.providerCode {
+  display: block;
+  margin-top: 10px;
+}
+
+.providerCode code {
+  display: inline-block;
+  padding: 4px 7px;
+  border-radius: 6px;
+  background: #f4ead8;
+  color: #695331;
+  font-size: 0.7rem;
+  overflow-wrap: anywhere;
+}
+
+.nextAction {
+  margin-top: 12px;
+  padding: 15px 16px;
+  border: 1px solid #b9d7cb;
+  border-radius: 14px;
+  background: rgba(238, 248, 243, 0.88);
+}
+
+.nextActionLabel {
+  display: block;
+  margin-bottom: 5px;
+  color: #28735e;
+  font-size: 0.68rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nextAction p {
+  font-size: 0.8rem;
+}
+
+.boundedBadge {
+  flex: 0 0 auto;
+  padding: 6px 9px;
+  border: 1px solid #aac0b7;
+  border-radius: 999px;
+  color: #49645b;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+@keyframes integration-status-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 760px) {
+  .statusGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .root {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .header,
+  .errorMessage,
+  .nextAction {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .refreshButton {
+    width: 100%;
+  }
+
+  .boundedBadge {
+    align-self: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .neutralDot,
+  .readyDot,
+  .pendingDot {
+    forced-color-adjust: none;
+  }
+}

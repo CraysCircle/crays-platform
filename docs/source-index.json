@@ -89,6 +89,10 @@
     {
       "component": "net-website-hosting",
       "path": "hosting/net/source-composition.json"
+    },
+    {
+      "component": "shared-next-web-application",
+      "path": "apps/web/source-capture.json"
     }
   ]
 }

@@ -1,0 +1,96 @@
+input ClubMemberOwnStateInput { contractVersion: String! }
+type ClubMemberApplication { applicationId: ID!, status: String!, interestPropertyId: ID, version: Int!, submittedAt: String!, updatedAt: String! }
+type ClubMemberMembership { membershipId: ID!, status: String!, membershipTypeId: ID, membershipTypeMappingReady: Boolean!, version: Int!, validFrom: String!, validUntil: String, decisionAuthority: String! }
+type ClubMemberOwnAuthorities { authenticationReady: Boolean!, membershipConfirmed: Boolean!, marinaPropertyAdmission: Boolean!, availabilityAuthority: Boolean!, bookingAuthority: Boolean! }
+type ClubMemberOwnState { schema: String!, accountId: ID!, savedPropertyIds: [ID!]!, application: ClubMemberApplication, membership: ClubMemberMembership, authorities: ClubMemberOwnAuthorities! }
+type Query { clubMemberOwnState(input: ClubMemberOwnStateInput!): ClubMemberOwnState! }
+
+input ClubMemberOwnTestStaysInput { contractVersion: String!, sourceRecordId: ID, scene: String!, limit: Int! }
+type ClubMemberOwnTestStay { sourceRecordId: ID!, sourceId: ID!, sourceVersion: Int!, sourceRowSha256: String!, publicReference: String!, propertyId: ID!, propertyDisplayName: String!, arrivalDate: String!, departureDate: String!, departureDateSemantics: String!, dateSemanticsTimezone: String!, dateSemanticsReceiptSha256: String!, nativeDateSemanticsVerified: Boolean!, guestCount: Int!, status: String!, currency: String, totalMinor: Int, scene: String!, testOnly: Boolean!, sourceAuthority: String!, providerConfirmed: Boolean!, nativeBookingId: ID, bookingAuthority: Boolean!, paymentAuthority: Boolean!, nativeConfirmation: Boolean!, changeRequestAuthority: Boolean! }
+type ClubMemberOwnTestStays { schema: String!, accountId: ID!, scene: String!, testOnly: Boolean!, sourceAuthority: String!, stays: [ClubMemberOwnTestStay!]! }
+extend type Query { clubMemberOwnTestStays(input: ClubMemberOwnTestStaysInput!): ClubMemberOwnTestStays! }
+
+input ClubMemberOwnConversationsInput { contractVersion: String!, caseId: ID, limit: Int! }
+type ClubMemberOwnConversationTask { taskId: ID!, title: String!, provider: String!, authorName: String!, testOnly: Boolean! }
+type ClubMemberOwnConversationMessage { messageId: ID!, authorType: String!, authorName: String!, body: String!, createdAt: String!, messageRevisionSha256: String! }
+type ClubMemberOwnConversationCrmRecord { recordId: ID!, taskId: ID!, title: String!, provider: String!, testOnly: Boolean! }
+type ClubMemberOwnConversation { caseId: ID!, caseVersion: Int!, publicReference: String!, bookingId: ID, category: String!, subject: String!, status: String!, openedAt: String!, updatedAt: String!, tasks: [ClubMemberOwnConversationTask!]!, crmRecords: [ClubMemberOwnConversationCrmRecord!]!, messages: [ClubMemberOwnConversationMessage!]! }
+type ClubMemberOwnConversations { schema: String!, accountId: ID!, teamReplyPublicationAvailable: Boolean!, providerAttachmentAccessAvailable: Boolean!, cases: [ClubMemberOwnConversation!]! }
+extend type Query { clubMemberOwnConversations(input: ClubMemberOwnConversationsInput!): ClubMemberOwnConversations! }
+
+input ClubMemberOwnExperiencesInput { contractVersion: String!, offerId: ID, planId: ID, limit: Int! }
+type ClubMemberExperienceSlot { slotId: ID!, date: String!, version: Int!, capacity: Int, sourceSha256: String! }
+type ClubMemberExperienceOffer { offerId: ID!, offerVersion: Int!, coreCatalogueReceiptId: ID!, coreCatalogueReceiptSha256: String!, productId: ID!, variantId: ID!, productKind: String!, title: String!, description: String!, category: String!, imageAssetId: ID, currency: String!, unitPriceMinor: Int!, priceRevisionSha256: String!, slots: [ClubMemberExperienceSlot!]!, productEnabled: Boolean!, variantEnabled: Boolean!, sellable: Boolean!, sourceAuthority: String!, bookingAuthority: Boolean!, paymentAuthority: Boolean! }
+type ClubMemberExperienceSavedPlan { planId: ID!, version: Int!, offerId: ID!, offerVersion: Int!, offerSourceSha256: String!, state: String!, selectedSlotId: ID, createdAt: String!, updatedAt: String! }
+type ClubMemberOwnExperiences { schema: String!, accountId: ID!, sourceAuthority: String!, catalog: [ClubMemberExperienceOffer!]!, plans: [ClubMemberExperienceSavedPlan!]!, cartWriteAvailable: Boolean!, checkoutAvailable: Boolean!, liveMoneyAvailable: Boolean!, confirmedPlansAvailable: Boolean! }
+extend type Query { clubMemberOwnExperiences(input: ClubMemberOwnExperiencesInput!): ClubMemberOwnExperiences! }
+
+input ClubMemberOwnServiceOffersInput { contractVersion: String!, offerId: ID, planId: ID, limit: Int! }
+type ClubMemberOwnServiceOffers { schema: String!, accountId: ID!, sourceAuthority: String!, catalog: [ClubMemberExperienceOffer!]!, plans: [ClubMemberExperienceSavedPlan!]!, cartWriteAvailable: Boolean!, checkoutAvailable: Boolean!, liveMoneyAvailable: Boolean!, confirmedPlansAvailable: Boolean! }
+extend type Query { clubMemberOwnServiceOffers(input: ClubMemberOwnServiceOffersInput!): ClubMemberOwnServiceOffers! }
+
+input ClubMemberOwnFinanceInput { contractVersion: String!, offerId: ID, planId: ID, limit: Int! }
+type ClubMemberFinanceOrderLine { lineId: ID!, offerId: ID!, variantId: ID!, sku: String!, title: String!, kind: String!, productKind: String!, category: String!, imageAssetId: String, quantity: Int!, currency: String!, unitPriceMinor: Int!, grossTotalMinor: Int!, slotId: ID, date: String, bookingState: String!, financeState: String!, testOnly: Boolean! }
+type ClubMemberFinanceOrder { orderId: ID!, paymentId: ID, title: String!, offerId: ID!, currency: String!, totalMinor: Int!, outstandingMinor: Int!, salesOrderId: ID!, invoiceId: ID!, paymentEntryId: ID, invoiceStatus: String!, financeState: String!, testOnly: Boolean!, lines: [ClubMemberFinanceOrderLine!]! }
+type ClubMemberOwnFinance { schema: String!, accountId: ID!, sourceAuthority: String!, orders: [ClubMemberFinanceOrder!]! }
+extend type Query { clubMemberOwnFinance(input: ClubMemberOwnFinanceInput!): ClubMemberOwnFinance! }
+
+input ClubMemberOwnCommerceInput { contractVersion: String!, pendingCommandJson: String }
+input ClubMemberCommerceCommandInput { commandJson: String! }
+type ClubMemberOwnCommerce { schema: String!, payloadJson: String! }
+extend type Query { clubMemberOwnCommerce(input: ClubMemberOwnCommerceInput!): ClubMemberOwnCommerce! }
+type Mutation { clubMemberCommerceCommand(input: ClubMemberCommerceCommandInput!): ClubMemberOwnCommerce! }
+
+input ClubMemberSavedPlanCommandInput { commandJson: String! }
+extend type Mutation { clubMemberSavedPlanCommand(input: ClubMemberSavedPlanCommandInput!): ClubMemberOwnCommerce! }
+
+input ClubMemberDemoDocumentsInput {
+  contractVersion: String!
+  documentId: ID
+}
+
+type ClubMemberDemoDocumentsEnvelope {
+  schema: String!
+  payloadJson: String!
+}
+
+extend type Query {
+  clubMemberOwnDemoDocuments(input: ClubMemberDemoDocumentsInput!): ClubMemberDemoDocumentsEnvelope!
+}
+
+input ClubMemberOwnPurchaseFulfilmentInput { contractVersion: String! orderId: String }
+type ClubMemberPurchaseFulfilmentTask {
+ kind: String! provider: String! orderId: String! lineId: String! taskId: String! projectId: String! workspaceId: String!
+ offerId: String! offerKind: String! title: String! slotId: String date: String quantity: Int!
+ nativeStateId: String! status: String! assigneeType: String! assigneeName: String! nativeApiAcknowledged: Boolean!
+ testOnly: Boolean! realWorldDeliveryConfirmed: Boolean! humanTeamAssigned: Boolean!
+}
+type ClubMemberOwnPurchaseFulfilment {
+ schema: String! accountId: String! tasks: [ClubMemberPurchaseFulfilmentTask!]! testOnly: Boolean!
+ realWorldDeliveryConfirmed: Boolean! humanTeamAssigned: Boolean!
+}
+extend type Query { clubMemberOwnPurchaseFulfilment(input: ClubMemberOwnPurchaseFulfilmentInput!): ClubMemberOwnPurchaseFulfilment! }
+
+input ClubMemberApplicationReadInput { contractVersion: String! }
+input ClubMemberApplicationCommandInput { requestId: String!, commandJson: String! }
+type ClubMemberApplicationEnvelope { schema: String!, payloadJson: String! }
+extend type Query { clubMemberOwnApplication(input: ClubMemberApplicationReadInput!): ClubMemberApplicationEnvelope! }
+extend type Mutation { clubMemberApplicationCommand(input: ClubMemberApplicationCommandInput!): ClubMemberApplicationEnvelope! }
+
+input ClubMemberOwnProfileInput { contractVersion: String! idempotencyKey: String }
+input ClubMemberProfileCommandInput { commandJson: String! }
+type ClubMemberProfileEnvelope { schema: String! payloadJson: String! }
+extend type Query { clubMemberOwnProfile(input: ClubMemberOwnProfileInput!): ClubMemberProfileEnvelope! }
+extend type Mutation { clubMemberProfileCommand(input: ClubMemberProfileCommandInput!): ClubMemberProfileEnvelope! }
+
+input ClubMemberFinanceRequestReadInput { contractVersion: String! }
+input ClubMemberFinanceRequestCommandInput { commandJson: String! correlationId: String! requestId: String! }
+type ClubMemberFinanceRequestEnvelope { schema: String! payloadJson: String! }
+extend type Query { readOwnFinanceRequests(input: ClubMemberFinanceRequestReadInput!): ClubMemberFinanceRequestEnvelope! }
+extend type Mutation { submitRequest(input: ClubMemberFinanceRequestCommandInput!): ClubMemberFinanceRequestEnvelope! }
+
+input ClubMemberOwnPrivacyRequestsInput { contractVersion: String!, idempotencyKey: String }
+input ClubMemberPrivacyRequestCommandInput { commandJson: String! }
+type ClubMemberPrivacyRequestsPayload { schema: String!, payloadJson: String! }
+extend type Query { clubMemberOwnPrivacyRequests(input: ClubMemberOwnPrivacyRequestsInput!): ClubMemberPrivacyRequestsPayload! }
+extend type Mutation { clubMemberPrivacyRequestCommand(input: ClubMemberPrivacyRequestCommandInput!): ClubMemberPrivacyRequestsPayload! }

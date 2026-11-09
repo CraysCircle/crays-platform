@@ -1,0 +1,1520 @@
+{
+  "de": {
+    "localeName": "Englisch",
+    "metaTitle": "Gastfreundschaft | CRAYS Clubs",
+    "metaDescription": "Hospitality als reale Ebene von Crays.",
+    "shell": {
+      "languageName": "Englisch",
+      "skip": "Zum Hospitality-Inhalt springen",
+      "home": "CRAYS Clubs Zuhause",
+      "nav": "Primäre Navigation",
+      "menu": "Speisekarte",
+      "open": "Menü öffnen",
+      "close": "Menü schließen",
+      "account": "Konto",
+      "language": "Sprache",
+      "title": "Entdecken Sie CRAYS Clubs",
+      "lead": "Forest City ist unser Campus. Entdecken Sie Menschen, Orte und eingeladene Reisen.",
+      "explore": "Erkunden",
+      "belong": "Gehören",
+      "company": "CRAYS Clubs",
+      "association": "CRAYS Association",
+      "associationLead": "Die unabhängige Assoziation ist Teil des umfassenderen CRAYS-Kontexts.",
+      "newTab": "öffnet sich in einem neuen Tab",
+      "footerLead": "Treffen Sie Freunde, Kollegen und Partner in der neuen Welt des Crays Clubs.",
+      "footerCta": "Beanspruchen Sie Ihr globales Zuhause",
+      "release": "Öffentliche Erfahrung vor der Veröffentlichung. Keine Zusage bezüglich Buchung, Preis, Verfügbarkeit, Investition oder Eintritt.",
+      "links": {
+        "forest": "Forest City",
+        "community": "Gemeinschaftsleben",
+        "school": "Schule & Jobs",
+        "ambassadors": "Botschafter",
+        "families": "Familien",
+        "teams": "Mannschaften",
+        "events": "Veranstaltungen",
+        "companies": "Portfoliounternehmen",
+        "conference": "Konferenz",
+        "about": "Über uns",
+        "lifestyle": "Lebensstil",
+        "hospitality": "Gastfreundschaft",
+        "member": "Werden Sie Mitglied",
+        "contact": "Kontakt",
+        "brand": "Marke als Service",
+        "account": "Konto",
+        "legal": "Legal"
+      }
+    },
+    "mediaBlocked": "Medien werden zurückgehalten, bis Quelle, Rechte, Urheber, Ausschnitt und Genehmigung erfasst sind.",
+    "form": {
+      "title": "CRAYS Hospitality Brand Alliance",
+      "languages": [
+        "Englisch",
+        "Spanisch",
+        "Deutsch"
+      ],
+      "email": "Ihre E-Mail-Adresse*",
+      "job": "Aktuelle Tätigkeit",
+      "residence": "Aktueller Wohnsitz",
+      "places": "Welche Regionen möchten Sie erkunden?",
+      "regions": [
+        "Nordamerika",
+        "Südamerika",
+        "Westeuropa",
+        "Mittel- und Osteuropa",
+        "Naher Osten",
+        "Ozeanien",
+        "Afrika"
+      ],
+      "membership": "Welche Mitgliedschaft passt am besten zu Ihnen?",
+      "select": "Bitte auswählen ...",
+      "memberships": [
+        "Fashion Membership – 1.850 €",
+        "Sphere Membership – 2.500 €",
+        "Falcon Membership – 3.750 €"
+      ],
+      "upload": "Laden Sie vorhandene Bilder und Baupläne der Immobilie hoch.",
+      "accept": "Ich akzeptiere die",
+      "terms": "Bedingungen",
+      "submit": "Projektanfrage starten",
+      "success": "Vielen Dank! Ihre Anfrage ist eingegangen.",
+      "error": "Beim Senden des Formulars ist ein Fehler aufgetreten.",
+      "unavailable": "Dieses Formular ist noch nicht verbunden. Es werden keine Daten oder Dateien übertragen."
+    },
+    "hero": {
+      "eyebrow": "Crays Gastfreundschaft",
+      "title": "Hospitality als reale Ebene von Crays.",
+      "body": "Crays verbindet Clubs, Hotels, Kaffee, Veranstaltungen, Villen, Lounges und digitalen Zugang in einem wiedererkennbaren Betriebssystem für Menschen, die weltweit arbeiten, leben, reisen und bauen.",
+      "alliance": "Allianz der Hotelmarken",
+      "model": "Entdecken Sie das Modell"
+    },
+    "journey": {
+      "title": "Eine Gastreise",
+      "lead": "Ankommen, sich treffen, arbeiten, essen, übernachten, bezahlen und sich über Crays wieder vernetzen.",
+      "items": [
+        {
+          "label": "Anker",
+          "title": "Crays Clubs",
+          "body": "Soziale Wohnzimmer für Städte, Hotels und Reiseziele."
+        },
+        {
+          "label": "Tägliches Ritual",
+          "title": "Crays Kaffee",
+          "body": "Nachbarschaftliche Kontaktpunkte, die das Netzwerk lokal und wiederholbar machen."
+        },
+        {
+          "label": "Zugang",
+          "title": "Crays Kreis",
+          "body": "Identität, Mitgliedschaften, Zahlungen, Matching, Buchungen und lokaler Kontext."
+        },
+        {
+          "label": "Oben",
+          "title": "Partnerschicht",
+          "body": "Betreiber, Eigentümer, Schöpfer und Marken können sich an Nachfrage und Infrastruktur anschließen."
+        }
+      ]
+    },
+    "engine": {
+      "eyebrow": "Die Crays-Engine",
+      "title": "Keine andere Hotelmarke. Ein soziales Betriebssystem für Orte.",
+      "body": "In der Gastfreundschaft wird das Crays-Ökosystem sichtbar. Ein Mitglied sollte die gleiche Logik in einer Club-Lounge, einem Café, einem Hotel, einer Villa, einer Dachterrasse, einem Rückzugsort oder einem Partner-Veranstaltungsort erkennen: vertrauter Zugang, vertrauenswürdige Menschen, starkes Design, lokale Dienstleistungen und digitale Kontinuität.",
+      "items": [
+        {
+          "title": "Ort",
+          "body": "Premium-Zimmer, Lounges, Schreibtische, Terrassen, Pools und Veranstaltungsräume."
+        },
+        {
+          "title": "Menschen",
+          "body": "Mitglieder, Gründer, Reisende, Schöpfer, Eigentümer und lokale Partner."
+        },
+        {
+          "title": "Technologie",
+          "body": "Profile, Buchungen, Zugriffe, Zahlungen, CRM, KI und lokale Netzwerkeffekte."
+        },
+        {
+          "title": "Teilnahme",
+          "body": "Partnermodelle, die von der Nutzung zum Beitrag und zu strukturierten Vorteilen übergehen können."
+        }
+      ]
+    },
+    "culture": {
+      "title": "Club, Kaffee, Kultur",
+      "lead": "Die Marke fühlt sich konsistent an, aber jeder Knotenpunkt hat seine eigene lokale Energie.",
+      "body": "Crays sollte sich nicht wie eine Kopier-Einfüge-Kette anfühlen. Das CI hält das System zusammen, während jede Stadt und jeder Veranstaltungsort ihren eigenen Rhythmus zum Ausdruck bringen kann: Geschäft am Morgen, Gemeinschaft am Nachmittag, Essen und Veranstaltungen am Abend.",
+      "items": [
+        {
+          "label": "01",
+          "title": "Urban-Club-Schicht",
+          "body": "Arbeit, Meetings, Zugang für Mitglieder, private Veranstaltungen und erstklassige tägliche Gastfreundschaft."
+        },
+        {
+          "label": "02",
+          "title": "Veranstaltungen und Schöpfer",
+          "body": "Kultur, Gründer, Musik, Abendessen und Partner machen Veranstaltungsorte zu Nachfragemotoren."
+        },
+        {
+          "label": "03",
+          "title": "Reiselebensstil",
+          "body": "Villen, Strände, Dächer und Zielclubs vermitteln das gleiche Mitgliedschaftsgefühl."
+        }
+      ]
+    },
+    "guestFlow": {
+      "title": "Gästestrom",
+      "lead": "Eine Reise vom ersten Besuch bis zur langfristigen Zugehörigkeit.",
+      "body": "Das Gastfreundschaftserlebnis sollte sich für Gäste einfach und für Betreiber nützlich anfühlen. Jede Interaktion fügt Kontext hinzu: wo jemand übernachtet hat, was er gebucht hat, wen er getroffen hat, was er gekauft hat, an welcher Veranstaltung er teilgenommen hat und was er als nächstes möchte.",
+      "items": [
+        {
+          "label": "01",
+          "title": "Ankommen",
+          "body": "Wiedererkennbarer Empfang, lokale Orientierung und mitgliederbewusster Zugang."
+        },
+        {
+          "label": "02",
+          "title": "Treffen",
+          "body": "Vorstellungen, Tische, Treffen, soziale Signale und Gemeinschaftsmomente."
+        },
+        {
+          "label": "03",
+          "title": "Verwenden",
+          "body": "Arbeitsbereiche, Lounges, F&B, Spa, Pool, Einzelhandel, Zimmer und Partnerservices."
+        },
+        {
+          "label": "04",
+          "title": "Zahlen",
+          "body": "Buchungen, Tickets, Trinkgelder, Einzelhandel, Abonnements und Direktabrechnungskonzepte."
+        },
+        {
+          "label": "05",
+          "title": "Zurückkehren",
+          "body": "Bessere Empfehlungen, Loyalität, Einladungen und standortübergreifende Kontinuität."
+        }
+      ]
+    },
+    "operator": {
+      "title": "Mehrwert für Betreiber und Partner",
+      "lead": "Gastfreundschaft wird zu einer Nachfrage-, Daten- und Beteiligungsebene.",
+      "body": "Für Betreiber, Eigentümer und Markenpartner soll Crays mehr bieten als nur Designsprache. Es kann Community-Nachfrage, Mitgliedschaftslogik, Software, Veranstaltungsformate, Partnereinnahmen, CRM-Kontext und einen Weg zur strukturierten Projektbeteiligung hinzufügen.",
+      "items": [
+        {
+          "title": "Einnahmen",
+          "body": "Unterkunft, Gastronomie, Veranstaltungen, Einzelhandel, Zugang, Abonnements und Lizenzen."
+        },
+        {
+          "title": "Nachfrage",
+          "body": "Mitglieder, Ersteller, Gründer, Reisende und lokale Communities sorgen für wiederkehrenden Traffic."
+        },
+        {
+          "title": "Daten",
+          "body": "Buchungs-, Besuchs-, Zahlungs- und Präferenzsignale verbessern Ertrag und Servicequalität."
+        },
+        {
+          "title": "Asset-Logik",
+          "body": "Ausgewählte Veranstaltungsorte und Eigentümer können Beitrags-, Fonds- und Projektstrukturen besprechen."
+        }
+      ]
+    },
+    "digital": {
+      "title": "Digitale Welt trifft auf reale Welt",
+      "lead": "Der Raum wird intelligenter, ohne seine menschliche Ausstrahlung zu verlieren.",
+      "body": "Profile, Zugang, Buchung, Zahlungen, lokaler Abgleich, KI und Veranstaltungsortbetrieb sollten dem Gastfreundschaftsmoment dienen und ihn nicht dominieren. Die Tech-Schicht bleibt an der Oberfläche ruhig und kraftvoll im Hintergrund.",
+      "items": [
+        {
+          "title": "Nostr-Profil",
+          "body": "Tragbare Identität und Reputation."
+        },
+        {
+          "title": "Buchungsebene",
+          "body": "Villen, Aufenthalte, Veranstaltungen und Dienstleistungen in einem Fluss."
+        },
+        {
+          "title": "Zahlungen",
+          "body": "Karten, Quittungen, Trinkgelder, Lightning-Konzepte und Direktabrechnung."
+        },
+        {
+          "title": "Veranstaltungsort-CRM",
+          "body": "Kontext für bessere Gastfreundschaft, bevor der Gast etwas erklären muss."
+        },
+        {
+          "title": "KI-Unterstützung",
+          "body": "Empfehlungen, Routing, Matching und Service-Orchestrierung."
+        },
+        {
+          "title": "Partner-API",
+          "body": "Hotels, Eigentümer, Betreiber und Marken können sich mit Crays verbinden."
+        }
+      ]
+    },
+    "promise": {
+      "title": "Das Gastfreundschaftsversprechen",
+      "lead": "Crays sorgt dafür, dass sich das globale Leben weniger fragmentiert anfühlt.",
+      "body": "Wenn Gastfreundschaft, Gemeinschaft, Zugang, Technologie und Partizipation zusammenarbeiten, fühlt sich der Gast nicht durch unzusammenhängende Produkte gedrängt. Sie fühlen sich anerkannt, verbunden und eingeladen in eine Welt, die sich immer weiter entfaltet.",
+      "intake": "Starten Sie die Projektaufnahme",
+      "talk": "Sprechen Sie mit Crays"
+    }
+  },
+  "es": {
+    "localeName": "Inglés",
+    "metaTitle": "Hospitalidad | CRAYS Clubs",
+    "metaDescription": "La hospitalidad como dimensión real de Crays.",
+    "shell": {
+      "languageName": "Inglés",
+      "skip": "Saltar al contenido de Hospitalidad",
+      "home": "CRAYS Clubs casa",
+      "nav": "Navegación primaria",
+      "menu": "Menú",
+      "open": "abrir menú",
+      "close": "Cerrar menú",
+      "account": "Cuenta",
+      "language": "Idioma",
+      "title": "Explorar CRAYS Clubs",
+      "lead": "Forest City es nuestro campus. Descubra personas, lugares y viajes guiados por invitaciones.",
+      "explore": "Explorar",
+      "belong": "Pertenecer",
+      "company": "CRAYS Clubs",
+      "association": "CRAYS Association",
+      "associationLead": "La asociación independiente es parte del contexto más amplio CRAYS.",
+      "newTab": "se abre en una nueva pestaña",
+      "footerLead": "Conozca amigos, colegas y socios en el nuevo mundo de Crays Club.",
+      "footerCta": "Reclama tu hogar global",
+      "release": "Experiencia pública previa al lanzamiento. Sin promesa de reserva, precio, disponibilidad, inversión o admisión.",
+      "links": {
+        "forest": "Forest City",
+        "community": "Vida comunitaria",
+        "school": "Escuela y empleo",
+        "ambassadors": "Embajadores",
+        "families": "Familias",
+        "teams": "equipos",
+        "events": "Eventos",
+        "companies": "Empresas de cartera",
+        "conference": "Conferencia",
+        "about": "Sobre nosotros",
+        "lifestyle": "Estilo de vida",
+        "hospitality": "Hospitalidad",
+        "member": "Conviértete en miembro",
+        "contact": "Contacto",
+        "brand": "Marca como servicio",
+        "account": "Cuenta",
+        "legal": "Legal"
+      }
+    },
+    "mediaBlocked": "Medios retenidos hasta que se registren la fuente, los derechos, el creador, el cultivo y la aprobación.",
+    "form": {
+      "title": "Alianza de marcas de hospitalidad CRAYS",
+      "languages": [
+        "Inglés",
+        "Español",
+        "Alemán"
+      ],
+      "email": "Correo electrónico*",
+      "job": "Puesto actual",
+      "residence": "Residencia actual",
+      "places": "¿Qué regiones desea explorar?",
+      "regions": [
+        "Norteamérica",
+        "Sudamérica",
+        "Europa occidental",
+        "Europa central y oriental",
+        "Oriente Medio",
+        "Oceanía",
+        "África"
+      ],
+      "membership": "¿Qué membresía le conviene más?",
+      "select": "Seleccione una opción ...",
+      "memberships": [
+        "Fashion Membership – 1.850 €",
+        "Sphere Membership – 2.500 €",
+        "Falcon Membership – 3.750 €"
+      ],
+      "upload": "Suba las imágenes y los planos disponibles de la propiedad.",
+      "accept": "Acepto las",
+      "terms": "Condiciones",
+      "submit": "Iniciar solicitud de proyecto",
+      "success": "Gracias. Hemos recibido su solicitud.",
+      "error": "Se ha producido un error al enviar el formulario.",
+      "unavailable": "Este formulario aún no está conectado. No se transmiten datos ni archivos."
+    },
+    "hero": {
+      "eyebrow": "Crays Hospitalidad",
+      "title": "La hospitalidad como dimensión real de Crays.",
+      "body": "Crays conecta clubes, hoteles, cafés, eventos, villas, salones y acceso digital en un sistema operativo reconocible para personas que trabajan, viven, viajan y construyen globalmente.",
+      "alliance": "Alianza de marcas hoteleras",
+      "model": "Explora el modelo"
+    },
+    "journey": {
+      "title": "Viaje de un invitado",
+      "lead": "Llegue, reúnase, trabaje, cene, quédese, pague y vuelva a conectarse a través de Crays.",
+      "items": [
+        {
+          "label": "Ancla",
+          "title": "Crays Clubs",
+          "body": "Salones sociales para ciudades, hoteles y lugares de destino."
+        },
+        {
+          "label": "ritual diario",
+          "title": "Crays Café",
+          "body": "Puntos de contacto vecinales que hacen que la red sea local y repetible."
+        },
+        {
+          "label": "Acceso",
+          "title": "Crays Círculo",
+          "body": "Identidad, membresías, pagos, emparejamiento, reservas y contexto local."
+        },
+        {
+          "label": "al revés",
+          "title": "Capa de socio",
+          "body": "Los operadores, propietarios, creadores y marcas pueden conectarse con la demanda y la infraestructura."
+        }
+      ]
+    },
+    "engine": {
+      "eyebrow": "El motor Crays",
+      "title": "No es otra marca de hotel. Un sistema operativo social para lugares.",
+      "body": "La hostelería es donde el ecosistema Crays se hace visible. Un miembro debería reconocer la misma lógica en el salón de un club, una cafetería, un hotel, una villa, una azotea, un retiro o un lugar asociado: acceso familiar, gente confiable, diseño sólido, servicios locales y continuidad digital.",
+      "items": [
+        {
+          "title": "Lugar",
+          "body": "Habitaciones premium, salones, escritorios, terrazas, piscinas y espacios para eventos."
+        },
+        {
+          "title": "Gente",
+          "body": "Miembros, fundadores, viajeros, creadores, propietarios y socios locales."
+        },
+        {
+          "title": "Tecnología",
+          "body": "Perfiles, reservas, accesos, pagos, CRM, IA y efectos de red local."
+        },
+        {
+          "title": "Participación",
+          "body": "Modelos de socios que pueden pasar del uso a la contribución y al alza estructurada."
+        }
+      ]
+    },
+    "culture": {
+      "title": "Club, café, cultura.",
+      "lead": "La marca se siente consistente, pero cada nodo tiene su propia energía local.",
+      "body": "Crays no debería parecer una cadena de copiar y pegar. La CI mantiene unido el sistema, mientras que cada ciudad y lugar puede expresar su propio ritmo: negocios por la mañana, comunidad por la tarde, cenas y eventos por la noche.",
+      "items": [
+        {
+          "label": "01",
+          "title": "Capa de club urbano",
+          "body": "Trabajo, reuniones, acceso para miembros, eventos privados y hospitalidad diaria premium."
+        },
+        {
+          "label": "02",
+          "title": "Eventos y creadores",
+          "body": "La cultura, los fundadores, la música, las cenas y los socios convierten los espacios en motores de demanda."
+        },
+        {
+          "label": "03",
+          "title": "Estilo de vida de viaje",
+          "body": "Villas, playas, tejados y clubes de destino transmiten la misma sensación de membresía."
+        }
+      ]
+    },
+    "guestFlow": {
+      "title": "Flujo de invitados",
+      "lead": "Un viaje desde la primera visita hasta la pertenencia a largo plazo.",
+      "body": "La experiencia de hospitalidad debe resultar sencilla para los huéspedes y útil para los operadores. Cada interacción agrega contexto: dónde se quedó alguien, qué reservó, a quién conoció, qué compró, a qué evento se unió y qué puede querer a continuación.",
+      "items": [
+        {
+          "label": "01",
+          "title": "Llegar",
+          "body": "Bienvenida reconocible, orientación local y acceso consciente de los miembros."
+        },
+        {
+          "label": "02",
+          "title": "Encontrarse",
+          "body": "Presentaciones, mesas, reuniones, señales sociales y momentos comunitarios."
+        },
+        {
+          "label": "03",
+          "title": "Usar",
+          "body": "Espacios de trabajo, lounges, F&B, spa, piscina, comercio minorista, habitaciones y servicios asociados."
+        },
+        {
+          "label": "04",
+          "title": "Pagar",
+          "body": "Reservas, billetes, propinas, retail, abonos y conceptos de liquidación directa."
+        },
+        {
+          "label": "05",
+          "title": "Devolver",
+          "body": "Mejores recomendaciones, fidelización, invitaciones y continuidad entre ubicaciones."
+        }
+      ]
+    },
+    "operator": {
+      "title": "Valor del operador y del socio",
+      "lead": "La hostelería se convierte en una capa de demanda, datos y participación.",
+      "body": "Para operadores, propietarios y socios de marca, Crays está diseñado para brindar más que un lenguaje de diseño. Puede agregar demanda de la comunidad, lógica de membresía, software, formatos de eventos, ingresos de socios, contexto de CRM y una ruta hacia la participación estructurada en proyectos.",
+      "items": [
+        {
+          "title": "Ganancia",
+          "body": "Alojamiento, alimentación y bebidas, eventos, venta minorista, acceso, suscripciones y licencias."
+        },
+        {
+          "title": "Demanda",
+          "body": "Los miembros, creadores, fundadores, viajeros y comunidades locales generan tráfico repetido."
+        },
+        {
+          "title": "Datos",
+          "body": "Las señales de reserva, visita, pago y preferencia mejoran el rendimiento y la calidad del servicio."
+        },
+        {
+          "title": "Lógica de activos",
+          "body": "Los lugares y propietarios seleccionados pueden discutir las estructuras de contribución, fondos y proyectos."
+        }
+      ]
+    },
+    "digital": {
+      "title": "El mundo digital se encuentra con el mundo real",
+      "lead": "La habitación se vuelve más inteligente sin perder su sensación humana.",
+      "body": "Los perfiles, el acceso, las reservas, los pagos, las coincidencias locales, la inteligencia artificial y las operaciones del lugar deben servir al momento de la hospitalidad, no dominarlo. La capa tecnológica permanece silenciosa en la superficie y poderosa en segundo plano.",
+      "items": [
+        {
+          "title": "Perfil de Nostr",
+          "body": "Identidad y reputación portátiles."
+        },
+        {
+          "title": "Capa de reserva",
+          "body": "Villas, estancias, eventos y servicios en un solo flujo."
+        },
+        {
+          "title": "Pagos",
+          "body": "Tarjetas, recibos, propinas, conceptos Lightning y liquidación directa."
+        },
+        {
+          "title": "CRM del lugar",
+          "body": "Contexto para una mejor hospitalidad antes de que el huésped tenga que explicar."
+        },
+        {
+          "title": "asistencia de IA",
+          "body": "Recomendaciones, enrutamiento, coincidencia y orquestación de servicios."
+        },
+        {
+          "title": "API de socio",
+          "body": "Hoteles, propietarios, operadores y marcas pueden conectarse a Crays."
+        }
+      ]
+    },
+    "promise": {
+      "title": "La promesa de hospitalidad",
+      "lead": "Crays hace que la vida global parezca menos fragmentada.",
+      "body": "Cuando la hospitalidad, la comunidad, el acceso, la tecnología y la participación trabajan juntos, el huésped no se siente presionado por productos desconectados. Se sienten reconocidos, conectados e invitados a un mundo que sigue desarrollándose.",
+      "intake": "Iniciar la admisión del proyecto",
+      "talk": "Habla con Crays"
+    }
+  },
+  "ca": {
+    "localeName": "Anglès",
+    "metaTitle": "Hostaleria | CRAYS Clubs",
+    "metaDescription": "L’hospitalitat com a dimensió real de Crays.",
+    "shell": {
+      "languageName": "Anglès",
+      "skip": "Passeu al contingut d'hostaleria",
+      "home": "CRAYS Clubs casa",
+      "nav": "Navegació primària",
+      "menu": "Menú",
+      "open": "Obre el menú",
+      "close": "Tanca el menú",
+      "account": "Compte",
+      "language": "Llengua",
+      "title": "Explora CRAYS Clubs",
+      "lead": "Forest City és el nostre campus. Descobriu persones, llocs i viatges amb invitació.",
+      "explore": "Explora",
+      "belong": "Pertànyer",
+      "company": "CRAYS Clubs",
+      "association": "CRAYS Association",
+      "associationLead": "L'associació independent forma part del context més ampli CRAYS.",
+      "newTab": "s'obre en una pestanya nova",
+      "footerLead": "Coneix amics, companys i socis al nou món de Crays Club.",
+      "footerCta": "Reclameu la vostra llar global",
+      "release": "Experiència pública prèvia al llançament. Cap promesa de reserva, preu, disponibilitat, inversió o entrada.",
+      "links": {
+        "forest": "Forest City",
+        "community": "Vida comunitària",
+        "school": "Escola i feina",
+        "ambassadors": "Ambaixadors",
+        "families": "Famílies",
+        "teams": "Equips",
+        "events": "Esdeveniments",
+        "companies": "Empreses de cartera",
+        "conference": "Conferència",
+        "about": "Sobre Nosaltres",
+        "lifestyle": "Estil de vida",
+        "hospitality": "Hospitalitat",
+        "member": "Fes-te soci",
+        "contact": "Contacte",
+        "brand": "Marca com a servei",
+        "account": "Compte",
+        "legal": "Legal"
+      }
+    },
+    "mediaBlocked": "Mitjans retinguts fins que s'enregistrin la font, els drets, el creador, el retall i l'aprovació.",
+    "form": {
+      "title": "Aliança de marques d’hospitalitat CRAYS",
+      "languages": [
+        "Anglès",
+        "Espanyol",
+        "Alemany"
+      ],
+      "email": "Adreça electrònica*",
+      "job": "Ocupació actual",
+      "residence": "Residència actual",
+      "places": "Quines regions voleu explorar?",
+      "regions": [
+        "Amèrica del Nord",
+        "Amèrica del Sud",
+        "Europa occidental",
+        "Europa central i oriental",
+        "Orient Mitjà",
+        "Oceania",
+        "Àfrica"
+      ],
+      "membership": "Quina subscripció us convé més?",
+      "select": "Seleccioneu una opció ...",
+      "memberships": [
+        "Fashion Membership – 1.850 €",
+        "Sphere Membership – 2.500 €",
+        "Falcon Membership – 3.750 €"
+      ],
+      "upload": "Pengeu les imatges i els plànols disponibles de la propietat.",
+      "accept": "Accepto les",
+      "terms": "Condicions",
+      "submit": "Inicia la sol·licitud del projecte",
+      "success": "Gràcies. Hem rebut la vostra sol·licitud.",
+      "error": "S’ha produït un error en enviar el formulari.",
+      "unavailable": "Aquest formulari encara no està connectat. No es transmeten dades ni fitxers."
+    },
+    "hero": {
+      "eyebrow": "Crays Hospitalitat",
+      "title": "L’hospitalitat com a dimensió real de Crays.",
+      "body": "Crays connecta clubs, hotels, cafès, esdeveniments, vil·les, salons i accés digital en un sistema operatiu reconeixible per a persones que treballen, viuen, viatgen i construeixen a tot el món.",
+      "alliance": "Aliança de marques d'hostaleria",
+      "model": "Exploreu el model"
+    },
+    "journey": {
+      "title": "Un viatge de convidat",
+      "lead": "Arribeu, coneixeu-vos, treballeu, sopeu, quedeu-vos, pagueu i torneu a connectar-vos mitjançant Crays.",
+      "items": [
+        {
+          "label": "Àncora",
+          "title": "Crays Clubs",
+          "body": "Sales socials per a ciutats, hotels i llocs de destinació."
+        },
+        {
+          "label": "Ritual diari",
+          "title": "Crays Cafè",
+          "body": "Punts de contacte de barri que fan que la xarxa sigui local i repetible."
+        },
+        {
+          "label": "Accés",
+          "title": "Crays Cercle",
+          "body": "Identitat, pertinences, pagaments, coincidències, reserves i context local."
+        },
+        {
+          "label": "Al revés",
+          "title": "Capa de soci",
+          "body": "Els operadors, propietaris, creadors i marques poden connectar-se a la demanda i la infraestructura."
+        }
+      ]
+    },
+    "engine": {
+      "eyebrow": "El motor Crays",
+      "title": "No una altra marca d'hotels. Un sistema operatiu social per a llocs.",
+      "body": "L'hospitalitat és on l'ecosistema Crays es fa visible. Un membre hauria de reconèixer la mateixa lògica en un saló del club, una cafeteria, un hotel, una vila, un terrat, un retir o un lloc associat: accés familiar, persones de confiança, disseny fort, serveis locals i continuïtat digital.",
+      "items": [
+        {
+          "title": "Lloc",
+          "body": "Sales premium, salons, escriptoris, terrasses, piscines i espais per a esdeveniments."
+        },
+        {
+          "title": "Gent",
+          "body": "Membres, fundadors, viatgers, creadors, propietaris i socis locals."
+        },
+        {
+          "title": "Tecnologia",
+          "body": "Perfils, reserves, accés, pagaments, CRM, IA i efectes de xarxa local."
+        },
+        {
+          "title": "Participació",
+          "body": "Models de socis que poden passar de l'ús a la contribució i a l'alça estructurat."
+        }
+      ]
+    },
+    "culture": {
+      "title": "Club, cafè, cultura",
+      "lead": "La marca se sent coherent, però cada node té la seva pròpia energia local.",
+      "body": "Crays no hauria de semblar una cadena de copiar i enganxar. El CI manté el sistema unit, mentre que cada ciutat i lloc pot expressar el seu propi ritme: negocis al matí, comunitat a la tarda, sopars i esdeveniments a la nit.",
+      "items": [
+        {
+          "label": "01",
+          "title": "Capa de club urbà",
+          "body": "Treball, reunions, accés de membres, esdeveniments privats i hospitalitat diària premium."
+        },
+        {
+          "label": "02",
+          "title": "Esdeveniments i creadors",
+          "body": "Cultura, fundadors, música, sopars i socis converteixen els espais en motors de demanda."
+        },
+        {
+          "label": "03",
+          "title": "Estil de vida de viatge",
+          "body": "Vil·les, platges, terrats i clubs de destinació amplien el mateix sentiment de membres."
+        }
+      ]
+    },
+    "guestFlow": {
+      "title": "Flux de convidats",
+      "lead": "Un viatge des de la primera visita fins a la pertinença a llarg termini.",
+      "body": "L'experiència d'hospitalitat hauria de ser senzilla per als hostes i útil per als operadors. Cada interacció afegeix context: on s'ha allotjat algú, què ha reservat, amb qui s'ha conegut, què ha comprat, a quin esdeveniment es va unir i què voldria després.",
+      "items": [
+        {
+          "label": "01",
+          "title": "Arribeu",
+          "body": "Benvinguda reconeixible, orientació local i accés conscient dels membres."
+        },
+        {
+          "label": "02",
+          "title": "Conèixer",
+          "body": "Presentacions, taules, reunions, senyals socials i moments comunitaris."
+        },
+        {
+          "label": "03",
+          "title": "Ús",
+          "body": "Espais de treball, salons, menjar i esmorzar, spa, piscina, comerç al detall, habitacions i serveis per a socis."
+        },
+        {
+          "label": "04",
+          "title": "Pagar",
+          "body": "Conceptes de reserves, entrades, propines, venda al detall, subscripcions i liquidació directa."
+        },
+        {
+          "label": "05",
+          "title": "Tornar",
+          "body": "Millors recomanacions, fidelització, invitacions i continuïtat entre ubicacions."
+        }
+      ]
+    },
+    "operator": {
+      "title": "Valor d'operador i soci",
+      "lead": "L'hostaleria esdevé una capa de demanda, dades i participació.",
+      "body": "Per als operadors, propietaris i socis de marca, Crays està dissenyat per aportar més que un llenguatge de disseny. Pot afegir la demanda de la comunitat, la lògica de pertinença, el programari, els formats d'esdeveniments, els ingressos dels socis, el context CRM i una ruta cap a la participació estructurada del projecte.",
+      "items": [
+        {
+          "title": "Ingressos",
+          "body": "Allotjament, menjar i esmorzar, esdeveniments, venda al detall, accés, subscripcions i llicències."
+        },
+        {
+          "title": "Demanda",
+          "body": "Membres, creadors, fundadors, viatgers i comunitats locals creen trànsit repetit."
+        },
+        {
+          "title": "Dades",
+          "body": "Els senyals de reserves, visites, pagaments i preferències milloren el rendiment i la qualitat del servei."
+        },
+        {
+          "title": "Lògica patrimonial",
+          "body": "Els llocs i els propietaris seleccionats poden discutir les estructures de contribucions, fons i projectes."
+        }
+      ]
+    },
+    "digital": {
+      "title": "El món digital es troba amb el món real",
+      "lead": "L'habitació es torna més intel·ligent sense perdre el seu sentiment humà.",
+      "body": "Els perfils, l'accés, la reserva, els pagaments, la concordança local, la IA i les operacions del lloc haurien de servir el moment de l'hospitalitat, no dominar-lo. La capa tecnològica es manté silenciosa a la superfície i potent al fons.",
+      "items": [
+        {
+          "title": "Perfil Nostr",
+          "body": "Identitat i reputació portàtils."
+        },
+        {
+          "title": "Capa de reserva",
+          "body": "Vil·les, estades, esdeveniments i serveis en un sol flux."
+        },
+        {
+          "title": "Pagaments",
+          "body": "Targetes, rebuts, propis, conceptes Lightning i liquidació directa."
+        },
+        {
+          "title": "Lloc CRM",
+          "body": "Context per a una millor hospitalitat abans que l'hoste hagi d'explicar."
+        },
+        {
+          "title": "Assistència d'IA",
+          "body": "Recomanacions, encaminament, associació i orquestració de serveis."
+        },
+        {
+          "title": "Partner API",
+          "body": "Els hotels, els propietaris, els operadors i les marques es poden connectar a Crays."
+        }
+      ]
+    },
+    "promise": {
+      "title": "La promesa de l'hospitalitat",
+      "lead": "Crays fa que la vida global se senti menys fragmentada.",
+      "body": "Quan l'hospitalitat, la comunitat, l'accés, la tecnologia i la participació treballen junts, el convidat no se sent empès per productes desconnectats. Se senten reconeguts, connectats i convidats a un món que no para de desplegar.",
+      "intake": "Iniciar la recepció del projecte",
+      "talk": "Parla amb Crays"
+    }
+  },
+  "fr": {
+    "localeName": "Anglais",
+    "metaTitle": "Hospitalité | CRAYS Clubs",
+    "metaDescription": "L’hospitalité comme dimension concrète de Crays.",
+    "shell": {
+      "languageName": "Anglais",
+      "skip": "Passer au contenu d'accueil",
+      "home": "CRAYS Clubs maison",
+      "nav": "Navigation principale",
+      "menu": "Menu",
+      "open": "Ouvrir le menu",
+      "close": "Fermer le menu",
+      "account": "Compte",
+      "language": "Langue",
+      "title": "Explorez CRAYS Clubs",
+      "lead": "Forest City est notre campus. Découvrez des personnes, des lieux et des voyages sur invitation.",
+      "explore": "Explorer",
+      "belong": "Appartenir",
+      "company": "CRAYS Clubs",
+      "association": "CRAYS Association",
+      "associationLead": "L'association indépendante fait partie du contexte plus large CRAYS.",
+      "newTab": "s'ouvre dans un nouvel onglet",
+      "footerLead": "Rencontrez des amis, des collègues et des partenaires dans le nouveau monde du Crays Club.",
+      "footerCta": "Réclamez votre maison mondiale",
+      "release": "Expérience publique préliminaire. Aucune promesse de réservation, de prix, de disponibilité, d'investissement ou d'admission.",
+      "links": {
+        "forest": "Forest City",
+        "community": "Vie communautaire",
+        "school": "École et emplois",
+        "ambassadors": "Ambassadeurs",
+        "families": "Familles",
+        "teams": "Équipes",
+        "events": "Événements",
+        "companies": "Sociétés de portefeuille",
+        "conference": "Conférence",
+        "about": "À propos de nous",
+        "lifestyle": "Mode de vie",
+        "hospitality": "Hospitalité",
+        "member": "Devenez membre",
+        "contact": "Contact",
+        "brand": "Marque en tant que service",
+        "account": "Compte",
+        "legal": "Légal"
+      }
+    },
+    "mediaBlocked": "Médias retenus jusqu'à ce que la source, les droits, le créateur, le recadrage et l'approbation soient enregistrés.",
+    "form": {
+      "title": "Alliance de marques hôtelières CRAYS",
+      "languages": [
+        "Anglais",
+        "Espagnol",
+        "Allemand"
+      ],
+      "email": "Adresse e-mail*",
+      "job": "Fonction actuelle",
+      "residence": "Lieu de résidence actuel",
+      "places": "Quelles régions souhaitez-vous explorer ?",
+      "regions": [
+        "Amérique du Nord",
+        "Amérique du Sud",
+        "Europe occidentale",
+        "Europe centrale et orientale",
+        "Moyen-Orient",
+        "Océanie",
+        "Afrique"
+      ],
+      "membership": "Quelle adhésion vous convient le mieux ?",
+      "select": "Sélectionnez une option ...",
+      "memberships": [
+        "Fashion Membership – 1.850 €",
+        "Sphere Membership – 2.500 €",
+        "Falcon Membership – 3.750 €"
+      ],
+      "upload": "Téléversez les images et plans disponibles du bien.",
+      "accept": "J’accepte les",
+      "terms": "Conditions",
+      "submit": "Démarrer la demande de projet",
+      "success": "Merci. Votre demande a bien été reçue.",
+      "error": "Une erreur s’est produite lors de l’envoi du formulaire.",
+      "unavailable": "Ce formulaire n’est pas encore connecté. Aucune donnée ni aucun fichier n’est transmis."
+    },
+    "hero": {
+      "eyebrow": "Crays Hospitalité",
+      "title": "L’hospitalité comme dimension concrète de Crays.",
+      "body": "Crays connecte les clubs, les hôtels, les cafés, les événements, les villas, les salons et l'accès numérique en un seul système d'exploitation reconnaissable pour les personnes qui travaillent, vivent, voyagent et construisent dans le monde entier.",
+      "alliance": "Alliance des marques hôtelières",
+      "model": "Découvrez le modèle"
+    },
+    "journey": {
+      "title": "Un voyage invité",
+      "lead": "Arrivez, rencontrez-vous, travaillez, dînez, restez, payez et reconnectez-vous via Crays.",
+      "items": [
+        {
+          "label": "Ancre",
+          "title": "Crays Clubs",
+          "body": "Salons sociaux pour les villes, les hôtels et les lieux de destination."
+        },
+        {
+          "label": "Rituel quotidien",
+          "title": "Crays Café",
+          "body": "Des points de contact de quartier qui rendent le réseau local et reproductible."
+        },
+        {
+          "label": "Accéder",
+          "title": "Crays Cercle",
+          "body": "Identité, adhésions, paiements, correspondance, réservations et contexte local."
+        },
+        {
+          "label": "À l’envers",
+          "title": "Couche partenaire",
+          "body": "Les opérateurs, propriétaires, créateurs et marques peuvent se connecter à la demande et aux infrastructures."
+        }
+      ]
+    },
+    "engine": {
+      "eyebrow": "Le moteur Crays",
+      "title": "Pas une autre marque hôtelière. Un système d'exploitation social pour les lieux.",
+      "body": "L'hospitalité est l'endroit où l'écosystème Crays devient visible. Un membre doit reconnaître la même logique dans un salon club, un café, un hôtel, une villa, un toit, une retraite ou un lieu partenaire : accès familier, personnes de confiance, design fort, services de proximité et continuité numérique.",
+      "items": [
+        {
+          "title": "Lieu",
+          "body": "Chambres premium, salons, bureaux, terrasses, piscines et espaces événementiels."
+        },
+        {
+          "title": "Personnes",
+          "body": "Membres, fondateurs, voyageurs, créateurs, propriétaires et partenaires locaux."
+        },
+        {
+          "title": "Technologie",
+          "body": "Profils, réservations, accès, paiements, CRM, IA et effets de réseau local."
+        },
+        {
+          "title": "Participation",
+          "body": "Des modèles de partenariat qui peuvent passer de l’utilisation à la contribution et aux avantages structurés."
+        }
+      ]
+    },
+    "culture": {
+      "title": "Club, café, culture",
+      "lead": "La marque semble cohérente, mais chaque nœud a sa propre énergie locale.",
+      "body": "Crays ne devrait pas ressembler à une chaîne de copier-coller. Le CI maintient le système ensemble, tandis que chaque ville et chaque lieu peut exprimer son propre rythme : affaires le matin, communauté l'après-midi, restaurants et événements le soir.",
+      "items": [
+        {
+          "label": "01",
+          "title": "Couche de club urbain",
+          "body": "Travail, réunions, accès membres, événements privés et hospitalité quotidienne haut de gamme."
+        },
+        {
+          "label": "02",
+          "title": "Événements et créateurs",
+          "body": "La culture, les fondateurs, la musique, les dîners et les partenaires font des lieux des moteurs de demande."
+        },
+        {
+          "label": "03",
+          "title": "Style de vie de voyage",
+          "body": "Villas, plages, toits et clubs de destination prolongent le même sentiment d’appartenance."
+        }
+      ]
+    },
+    "guestFlow": {
+      "title": "Flux d'invités",
+      "lead": "Un voyage depuis la première visite jusqu'à l'appartenance à long terme.",
+      "body": "L'expérience d'accueil doit être simple pour les clients et utile pour les opérateurs. Chaque interaction ajoute du contexte : où quelqu'un a séjourné, ce qu'il a réservé, qui il a rencontré, ce qu'il a acheté, à quel événement il a participé et ce qu'il pourrait souhaiter ensuite.",
+      "items": [
+        {
+          "label": "01",
+          "title": "Arriver",
+          "body": "Accueil reconnaissable, orientation locale et accès adapté aux membres."
+        },
+        {
+          "label": "02",
+          "title": "Rencontrer",
+          "body": "Présentations, tables, réunions, signaux sociaux et moments communautaires."
+        },
+        {
+          "label": "03",
+          "title": "Utiliser",
+          "body": "Espaces de travail, salons, F&B, spa, piscine, commerces, chambres et services partenaires."
+        },
+        {
+          "label": "04",
+          "title": "Payer",
+          "body": "Réservations, billets, pourboires, vente au détail, abonnements et concepts de règlement direct."
+        },
+        {
+          "label": "05",
+          "title": "Retour",
+          "body": "Meilleures recommandations, fidélité, invitations et continuité entre sites."
+        }
+      ]
+    },
+    "operator": {
+      "title": "Valeur opérateur et partenaire",
+      "lead": "L’hospitalité devient une couche de demande, de données et de participation.",
+      "body": "Pour les opérateurs, les propriétaires et les partenaires de marque, Crays est conçu pour apporter plus qu'un simple langage de conception. Il peut ajouter la demande de la communauté, la logique d'adhésion, les logiciels, les formats d'événements, les revenus des partenaires, le contexte CRM et une voie vers une participation structurée au projet.",
+      "items": [
+        {
+          "title": "Revenu",
+          "body": "Hébergement, restauration, événements, vente au détail, accès, abonnements et licences."
+        },
+        {
+          "title": "Demande",
+          "body": "Les membres, créateurs, fondateurs, voyageurs et communautés locales créent un trafic répété."
+        },
+        {
+          "title": "Données",
+          "body": "Les signaux de réservation, de visite, de paiement et de préférence améliorent le rendement et la qualité du service."
+        },
+        {
+          "title": "Logique des actifs",
+          "body": "Les lieux sélectionnés et les propriétaires peuvent discuter des structures de contribution, de financement et de projet."
+        }
+      ]
+    },
+    "digital": {
+      "title": "Le monde numérique rencontre le monde réel",
+      "lead": "La pièce devient plus intelligente sans perdre son côté humain.",
+      "body": "Les profils, l'accès, la réservation, les paiements, la correspondance locale, l'IA et les opérations sur les sites doivent servir le moment d'hospitalité et non le dominer. La couche technologique reste silencieuse en surface et puissante en arrière-plan.",
+      "items": [
+        {
+          "title": "Profil Nostr",
+          "body": "Identité et réputation portables."
+        },
+        {
+          "title": "Couche de réservation",
+          "body": "Villas, séjours, événements et services en un seul flux."
+        },
+        {
+          "title": "Paiements",
+          "body": "Cartes, reçus, pourboires, concepts Lightning et règlement direct."
+        },
+        {
+          "title": "CRM de site",
+          "body": "Contexte pour une meilleure hospitalité avant que le client ne doive s'expliquer."
+        },
+        {
+          "title": "Assistance IA",
+          "body": "Recommandations, routage, matching et orchestration des services."
+        },
+        {
+          "title": "API partenaire",
+          "body": "Les hôtels, les propriétaires, les opérateurs et les marques peuvent se connecter à Crays."
+        }
+      ]
+    },
+    "promise": {
+      "title": "La promesse de l'hospitalité",
+      "lead": "Crays rend la vie mondiale moins fragmentée.",
+      "body": "Lorsque l’hospitalité, la communauté, l’accès, la technologie et la participation travaillent ensemble, le client ne se sent pas poussé par des produits déconnectés. Ils se sentent reconnus, connectés et invités dans un monde en constante évolution.",
+      "intake": "Démarrer la réception du projet",
+      "talk": "Parlez à Crays"
+    }
+  },
+  "pt": {
+    "localeName": "Inglês",
+    "metaTitle": "Hospitalidade | CRAYS Clubs",
+    "metaDescription": "A hospitalidade como dimensão real da Crays.",
+    "shell": {
+      "languageName": "Inglês",
+      "skip": "Saltar para o conteúdo de Hotelaria",
+      "home": "CRAYS Clubs página inicial",
+      "nav": "Navegação primária",
+      "menu": "Menu",
+      "open": "Abrir menu",
+      "close": "Fechar menu",
+      "account": "Conta",
+      "language": "Idioma",
+      "title": "Explorar CRAYS Clubs",
+      "lead": "Forest City é o nosso campus. Descubra pessoas, lugares e viagens guiadas por convite.",
+      "explore": "Explorar",
+      "belong": "Pertencer",
+      "company": "CRAYS Clubs",
+      "association": "CRAYS Association",
+      "associationLead": "A associação independente faz parte do contexto CRAYS mais amplo.",
+      "newTab": "abre numa nova aba",
+      "footerLead": "Conheça amigos, colegas e parceiros no novo mundo do Crays Club.",
+      "footerCta": "Reivindique a sua casa global",
+      "release": "Experiência pública de pré-lançamento. Sem promessa de reserva, preço, disponibilidade, investimento ou admissão.",
+      "links": {
+        "forest": "Forest City",
+        "community": "Vida Comunitária",
+        "school": "Escola e empregos",
+        "ambassadors": "Embaixadores",
+        "families": "Famílias",
+        "teams": "Equipes",
+        "events": "Eventos",
+        "companies": "Empresas de portfólio",
+        "conference": "Conferência",
+        "about": "Sobre nós",
+        "lifestyle": "Estilo de vida",
+        "hospitality": "Hotelaria",
+        "member": "Torne-se membro",
+        "contact": "Contacto",
+        "brand": "Marca como serviço",
+        "account": "Conta",
+        "legal": "Legal"
+      }
+    },
+    "mediaBlocked": "Suporte retido até que a fonte, os direitos, o criador, o corte e a aprovação sejam registados.",
+    "form": {
+      "title": "Aliança de marcas de hospitalidade CRAYS",
+      "languages": [
+        "Inglês",
+        "Espanhol",
+        "Alemão"
+      ],
+      "email": "Endereço de e-mail*",
+      "job": "Função atual",
+      "residence": "Residência atual",
+      "places": "Que regiões pretende explorar?",
+      "regions": [
+        "América do Norte",
+        "América do Sul",
+        "Europa Ocidental",
+        "Europa Central e Oriental",
+        "Médio Oriente",
+        "Oceania",
+        "África"
+      ],
+      "membership": "Qual adesão se adequa melhor a si?",
+      "select": "Selecione uma opção ...",
+      "memberships": [
+        "Fashion Membership – 1.850 €",
+        "Sphere Membership – 2.500 €",
+        "Falcon Membership – 3.750 €"
+      ],
+      "upload": "Carregue as imagens e plantas disponíveis da propriedade.",
+      "accept": "Aceito os",
+      "terms": "Termos",
+      "submit": "Iniciar pedido de projeto",
+      "success": "Obrigado. Recebemos o seu pedido.",
+      "error": "Ocorreu um erro ao enviar o formulário.",
+      "unavailable": "Este formulário ainda não está ligado. Não são transmitidos dados nem ficheiros."
+    },
+    "hero": {
+      "eyebrow": "Crays Hotelaria",
+      "title": "A hospitalidade como dimensão real da Crays.",
+      "body": "Crays liga clubes, hotéis, cafés, eventos, villas, lounges e acesso digital num sistema operativo reconhecível para pessoas que trabalham, vivem, viajam e constroem globalmente.",
+      "alliance": "Aliança de marca de hospitalidade",
+      "model": "Explorar o modelo"
+    },
+    "journey": {
+      "title": "Uma viagem de convidado",
+      "lead": "Chegue, conheça, trabalhe, jante, fique, pague e reconecte-se através de Crays.",
+      "items": [
+        {
+          "label": "Âncora",
+          "title": "Crays Clubs",
+          "body": "Salas sociais para cidades, hotéis e locais de destino."
+        },
+        {
+          "label": "Ritual diário",
+          "title": "Crays Café",
+          "body": "Pontos de contacto de vizinhança que tornam a rede local e repetível."
+        },
+        {
+          "label": "Acesso",
+          "title": "Crays Círculo",
+          "body": "Identidade, associações, pagamentos, correspondência, reservas e contexto local."
+        },
+        {
+          "label": "De cabeça",
+          "title": "Camada de Parceiro",
+          "body": "Os operadores, proprietários, criadores e marcas podem ligar-se à procura e à infraestrutura."
+        }
+      ]
+    },
+    "engine": {
+      "eyebrow": "O mecanismo Crays",
+      "title": "Não é mais uma marca de hotel. Um sistema operacional social para os lugares.",
+      "body": "A hospitalidade é onde o ecossistema Crays se torna visível. Um membro deve reconhecer a mesma lógica num club lounge, num café, num hotel, numa villa, num rooftop, num retiro ou num local parceiro: acesso familiar, pessoas de confiança, design forte, serviços locais e continuidade digital.",
+      "items": [
+        {
+          "title": "Local",
+          "body": "Quartos premium, lounges, mesas, esplanadas, piscinas e espaços para eventos."
+        },
+        {
+          "title": "Pessoas",
+          "body": "Membros, fundadores, viajantes, criadores, proprietários e parceiros locais."
+        },
+        {
+          "title": "Tecnologia",
+          "body": "Perfis, reservas, acessos, pagamentos, CRM, IA e efeitos de rede local."
+        },
+        {
+          "title": "Participação",
+          "body": "Modelos de parceiros que podem passar da utilização à contribuição e à vantagem estruturada."
+        }
+      ]
+    },
+    "culture": {
+      "title": "Clube, café, cultura",
+      "lead": "A marca parece consistente, mas cada nó tem a sua própria energia local.",
+      "body": "Crays não deve parecer uma cadeia de copiar e colar. O CI mantém o sistema unido, enquanto cada cidade e local pode expressar o seu próprio ritmo: negócios de manhã, comunidade à tarde, jantares e eventos à noite.",
+      "items": [
+        {
+          "label": "01",
+          "title": "Camada de clube urbano",
+          "body": "Trabalho, reuniões, acesso de membros, eventos privados e hospitalidade diária premium."
+        },
+        {
+          "label": "02",
+          "title": "Eventos e criadores",
+          "body": "Cultura, fundadores, música, jantares e parceiros transformam os locais em motores de procura."
+        },
+        {
+          "label": "03",
+          "title": "Estilo de vida de viagem",
+          "body": "Vilas, praias, rooftops e clubes de destino estendem a mesma sensação de adesão."
+        }
+      ]
+    },
+    "guestFlow": {
+      "title": "Fluxo de convidados",
+      "lead": "Uma viagem desde a primeira visita até à pertença a longo prazo.",
+      "body": "A experiência de hospitalidade deve ser simples para os hóspedes e útil para os operadores. Cada interação acrescenta contexto: onde alguém ficou, o que reservou, quem conheceu, o que comprou, em que evento participou e o que pode querer a seguir.",
+      "items": [
+        {
+          "label": "01",
+          "title": "Chegar",
+          "body": "Boas-vindas reconhecíveis, orientação local e acesso consciente dos membros."
+        },
+        {
+          "label": "02",
+          "title": "Conhecer",
+          "body": "Apresentações, mesas, reuniões, sinais sociais e momentos comunitários."
+        },
+        {
+          "label": "03",
+          "title": "Uso",
+          "body": "Espaços de trabalho, lounges, F&B, spa, piscina, retalho, quartos e serviços de parceiros."
+        },
+        {
+          "label": "04",
+          "title": "Pagar",
+          "body": "Reservas, bilhetes, gorjetas, retalho, assinaturas e conceitos de liquidação direta."
+        },
+        {
+          "label": "05",
+          "title": "Devolver",
+          "body": "Melhores recomendações, fidelização, convites e continuidade entre locais."
+        }
+      ]
+    },
+    "operator": {
+      "title": "Valor do operador e do parceiro",
+      "lead": "A hospitalidade torna-se uma camada de procura, dados e participação.",
+      "body": "Para operadores, proprietários e parceiros de marca, Crays foi concebido para trazer mais do que linguagem de design. Pode adicionar procura da comunidade, lógica de associação, software, formatos de eventos, receitas de parceiros, contexto de CRM e um caminho para a participação estruturada em projetos.",
+      "items": [
+        {
+          "title": "Rendimentos",
+          "body": "Alojamento, F&B, eventos, retalho, acessos, subscrições e licenciamento."
+        },
+        {
+          "title": "Exigência",
+          "body": "Os membros, criadores, fundadores, viajantes e comunidades locais criam tráfego repetido."
+        },
+        {
+          "title": "Dados",
+          "body": "Os sinais de reserva, visita, pagamento e preferência melhoram o rendimento e a qualidade do serviço."
+        },
+        {
+          "title": "Lógica de ativos",
+          "body": "Os locais e proprietários selecionados podem discutir estruturas de contribuições, fundos e projetos."
+        }
+      ]
+    },
+    "digital": {
+      "title": "O mundo digital encontra o mundo real",
+      "lead": "A sala fica mais inteligente sem perder o sentimento humano.",
+      "body": "Perfis, acesso, reservas, pagamentos, correspondência local, IA e operações do local devem servir o momento da hospitalidade, e não dominá-lo. A camada tecnológica permanece silenciosa à superfície e poderosa em segundo plano.",
+      "items": [
+        {
+          "title": "Perfil Nostr",
+          "body": "Identidade e reputação portáteis."
+        },
+        {
+          "title": "Camada de reserva",
+          "body": "Villas, estadias, eventos e serviços num só fluxo."
+        },
+        {
+          "title": "Pagamentos",
+          "body": "Cartões, recibos, gorjetas, conceitos Lightning e liquidação direta."
+        },
+        {
+          "title": "CRM do local",
+          "body": "Contexto para uma melhor hospitalidade antes de o hóspede ter de explicar."
+        },
+        {
+          "title": "Assistência de IA",
+          "body": "Recomendações, encaminhamento, correspondência e orquestração de serviços."
+        },
+        {
+          "title": "API de parceiro",
+          "body": "Hotéis, proprietários, operadores e marcas podem ligar-se em Crays."
+        }
+      ]
+    },
+    "promise": {
+      "title": "A promessa de hospitalidade",
+      "lead": "Crays faz com que a vida global pareça menos fragmentada.",
+      "body": "Quando a hospitalidade, a comunidade, o acesso, a tecnologia e a participação trabalham em conjunto, o hóspede não se sente pressionado por produtos desconectados. Sentem-se reconhecidos, conectados e convidados para um mundo que continua a revelar-se.",
+      "intake": "Iniciar a entrada do projeto",
+      "talk": "Fale com Crays"
+    }
+  },
+  "it": {
+    "localeName": "Inglese",
+    "metaTitle": "Ospitalità | CRAYS Clubs",
+    "metaDescription": "L’ospitalità come dimensione reale di Crays.",
+    "shell": {
+      "languageName": "Inglese",
+      "skip": "Passa al contenuto dell'ospitalità",
+      "home": "CRAYS Clubs casa",
+      "nav": "Navigazione primaria",
+      "menu": "Menu",
+      "open": "Apri il menu",
+      "close": "Chiudi menù",
+      "account": "Account",
+      "language": "Lingua",
+      "title": "Esplora CRAYS Clubs",
+      "lead": "Forest City è il nostro campus. Scopri persone, luoghi e viaggi su invito.",
+      "explore": "Esplorare",
+      "belong": "Appartenere",
+      "company": "CRAYS Clubs",
+      "association": "CRAYS Association",
+      "associationLead": "L'associazione indipendente si inserisce nel più ampio contesto CRAYS.",
+      "newTab": "si apre in una nuova scheda",
+      "footerLead": "Incontra amici, colleghi e partner nel nuovo mondo del Crays Club.",
+      "footerCta": "Rivendica la tua casa globale",
+      "release": "Esperienza pubblica pre-release. Nessuna promessa di prenotazione, prezzo, disponibilità, investimento o ammissione.",
+      "links": {
+        "forest": "Forest City",
+        "community": "Vita comunitaria",
+        "school": "Scuola e lavoro",
+        "ambassadors": "Ambasciatori",
+        "families": "Famiglie",
+        "teams": "Squadre",
+        "events": "Eventi",
+        "companies": "Società in portafoglio",
+        "conference": "Conferenza",
+        "about": "Chi siamo",
+        "lifestyle": "Stile di vita",
+        "hospitality": "Ospitalità",
+        "member": "Diventa un membro",
+        "contact": "Contatto",
+        "brand": "Il marchio come servizio",
+        "account": "Account",
+        "legal": "Legale"
+      }
+    },
+    "mediaBlocked": "File multimediali trattenuti fino alla registrazione della fonte, dei diritti, dell'autore, del ritaglio e dell'approvazione.",
+    "form": {
+      "title": "Alleanza dei marchi dell’ospitalità CRAYS",
+      "languages": [
+        "Inglese",
+        "Spagnolo",
+        "Tedesco"
+      ],
+      "email": "Indirizzo e-mail*",
+      "job": "Ruolo attuale",
+      "residence": "Residenza attuale",
+      "places": "Quali regioni desideri esplorare?",
+      "regions": [
+        "Nord America",
+        "Sud America",
+        "Europa occidentale",
+        "Europa centrale e orientale",
+        "Medio Oriente",
+        "Oceania",
+        "Africa"
+      ],
+      "membership": "Quale adesione è più adatta a te?",
+      "select": "Seleziona un’opzione ...",
+      "memberships": [
+        "Fashion Membership – 1.850 €",
+        "Sphere Membership – 2.500 €",
+        "Falcon Membership – 3.750 €"
+      ],
+      "upload": "Carica le immagini e le planimetrie disponibili della struttura.",
+      "accept": "Accetto i",
+      "terms": "Termini",
+      "submit": "Avvia la richiesta di progetto",
+      "success": "Grazie. La richiesta è stata ricevuta.",
+      "error": "Si è verificato un errore durante l’invio del modulo.",
+      "unavailable": "Questo modulo non è ancora collegato. Non vengono trasmessi dati o file."
+    },
+    "hero": {
+      "eyebrow": "Crays Ospitalità",
+      "title": "L’ospitalità come dimensione reale di Crays.",
+      "body": "Crays collega club, hotel, caffè, eventi, ville, lounge e accesso digitale in un unico sistema operativo riconoscibile per le persone che lavorano, vivono, viaggiano e costruiscono a livello globale.",
+      "alliance": "Alleanza del marchio dell'ospitalità",
+      "model": "Esplora il modello"
+    },
+    "journey": {
+      "title": "Un viaggio per gli ospiti",
+      "lead": "Arriva, incontra, lavora, cena, soggiorna, paga e riconnettiti tramite Crays.",
+      "items": [
+        {
+          "label": "Ancorare",
+          "title": "Crays Clubs",
+          "body": "Salotti sociali per città, hotel e luoghi di destinazione."
+        },
+        {
+          "label": "Rituale quotidiano",
+          "title": "Crays Caffè",
+          "body": "Punti di contatto di quartiere che rendono la rete locale e ripetibile."
+        },
+        {
+          "label": "Accesso",
+          "title": "Crays Cerchio",
+          "body": "Identità, adesioni, pagamenti, abbinamento, prenotazioni e contesto locale."
+        },
+        {
+          "label": "Sottosopra",
+          "title": "Livello partner",
+          "body": "Operatori, proprietari, creatori e marchi possono adattarsi alla domanda e all'infrastruttura."
+        }
+      ]
+    },
+    "engine": {
+      "eyebrow": "Il motore Crays",
+      "title": "Non un altro marchio di hotel. Un sistema operativo sociale per i luoghi.",
+      "body": "L'ospitalità è il luogo in cui l'ecosistema Crays diventa visibile. Un membro dovrebbe riconoscere la stessa logica in un club lounge, una caffetteria, un hotel, una villa, un roof top, un rifugio o un locale partner: accesso familiare, persone fidate, design forte, servizi locali e continuità digitale.",
+      "items": [
+        {
+          "title": "Posto",
+          "body": "Camere premium, lounge, scrivanie, terrazze, piscine e spazi per eventi."
+        },
+        {
+          "title": "Persone",
+          "body": "Membri, fondatori, viaggiatori, creatori, proprietari e partner locali."
+        },
+        {
+          "title": "Tecnologia",
+          "body": "Profili, prenotazioni, accessi, pagamenti, CRM, AI ed effetti di rete locale."
+        },
+        {
+          "title": "Partecipazione",
+          "body": "Modelli di partner che possono passare dall'utilizzo al contributo e al rialzo strutturato."
+        }
+      ]
+    },
+    "culture": {
+      "title": "Club, caffè, cultura",
+      "lead": "Il marchio sembra coerente, ma ogni nodo ha la propria energia locale.",
+      "body": "Crays non dovrebbe sembrare una catena di copia-incolla. Il CI tiene insieme il sistema, mentre ogni città e luogo può esprimere il proprio ritmo: affari al mattino, comunità nel pomeriggio, ristoranti ed eventi la sera.",
+      "items": [
+        {
+          "label": "01",
+          "title": "Strato del club urbano",
+          "body": "Lavoro, riunioni, accesso ai membri, eventi privati ​​e ospitalità quotidiana premium."
+        },
+        {
+          "label": "02",
+          "title": "Eventi e creatori",
+          "body": "Cultura, fondatori, musica, cene e partner trasformano i locali in motori della domanda."
+        },
+        {
+          "label": "03",
+          "title": "Stile di vita da viaggio",
+          "body": "Ville, spiagge, tetti e club di destinazione estendono la stessa sensazione di appartenenza."
+        }
+      ]
+    },
+    "guestFlow": {
+      "title": "Flusso degli ospiti",
+      "lead": "Un viaggio dalla prima visita all’appartenenza a lungo termine.",
+      "body": "L’esperienza dell’ospitalità deve sembrare semplice per gli ospiti e utile per gli operatori. Ogni interazione aggiunge contesto: dove ha soggiornato qualcuno, cosa ha prenotato, chi ha incontrato, cosa ha comprato, a quale evento ha partecipato e cosa potrebbe desiderare dopo.",
+      "items": [
+        {
+          "label": "01",
+          "title": "Arrivare",
+          "body": "Accoglienza riconoscibile, orientamento locale e accesso consapevole dei membri."
+        },
+        {
+          "label": "02",
+          "title": "Incontrare",
+          "body": "Presentazioni, tavoli, incontri, segnali social e momenti comunitari."
+        },
+        {
+          "label": "03",
+          "title": "Utilizzo",
+          "body": "Spazi di lavoro, lounge, F&B, spa, piscina, vendita al dettaglio, camere e servizi dei partner."
+        },
+        {
+          "label": "04",
+          "title": "Paga",
+          "body": "Prenotazioni, biglietti, mance, vendita al dettaglio, abbonamenti e concetti di pagamento diretto."
+        },
+        {
+          "label": "05",
+          "title": "Ritorno",
+          "body": "Migliori raccomandazioni, fidelizzazione, inviti e continuità tra sedi."
+        }
+      ]
+    },
+    "operator": {
+      "title": "Valore dell'operatore e del partner",
+      "lead": "L’ospitalità diventa un livello di domanda, dati e partecipazione.",
+      "body": "Per operatori, proprietari e partner del marchio, Crays è progettato per offrire qualcosa di più del semplice linguaggio del design. Può aggiungere domanda della comunità, logica di adesione, software, formati di eventi, entrate dei partner, contesto CRM e un percorso verso la partecipazione strutturata al progetto.",
+      "items": [
+        {
+          "title": "Reddito",
+          "body": "Alloggio, ristorazione, eventi, vendita al dettaglio, accesso, abbonamenti e licenze."
+        },
+        {
+          "title": "Richiesta",
+          "body": "Membri, creatori, fondatori, viaggiatori e comunità locali creano traffico ripetuto."
+        },
+        {
+          "title": "Dati",
+          "body": "I segnali di prenotazione, visita, pagamento e preferenza migliorano la resa e la qualità del servizio."
+        },
+        {
+          "title": "Logica patrimoniale",
+          "body": "Sedi e proprietari selezionati possono discutere di contributi, fondi e strutture del progetto."
+        }
+      ]
+    },
+    "digital": {
+      "title": "Il mondo digitale incontra il mondo reale",
+      "lead": "La stanza diventa più intelligente senza perdere il suo senso umano.",
+      "body": "Profili, accesso, prenotazione, pagamenti, abbinamento locale, intelligenza artificiale e operazioni della sede dovrebbero servire il momento dell'ospitalità, non dominarlo. Lo strato tecnologico rimane silenzioso in superficie e potente in sottofondo.",
+      "items": [
+        {
+          "title": "Profilo del nostro",
+          "body": "Identità e reputazione portatili."
+        },
+        {
+          "title": "Livello di prenotazione",
+          "body": "Ville, soggiorni, eventi e servizi in un unico flusso."
+        },
+        {
+          "title": "Pagamenti",
+          "body": "Carte, ricevute, mance, concetti Lightning e conteggio diretto."
+        },
+        {
+          "title": "CRM della sede",
+          "body": "Contesto per una migliore ospitalità prima che l'ospite debba spiegare."
+        },
+        {
+          "title": "Assistenza dell'intelligenza artificiale",
+          "body": "Raccomandazioni, instradamento, abbinamento e orchestrazione dei servizi."
+        },
+        {
+          "title": "API partner",
+          "body": "Hotel, proprietari, operatori e marchi possono connettersi a Crays."
+        }
+      ]
+    },
+    "promise": {
+      "title": "La promessa di ospitalità",
+      "lead": "Crays fa sembrare la vita globale meno frammentata.",
+      "body": "Quando ospitalità, comunità, accesso, tecnologia e partecipazione lavorano insieme, l’ospite non si sente spinto attraverso prodotti sconnessi. Si sentono riconosciuti, connessi e invitati in un mondo che continua a svilupparsi.",
+      "intake": "Avvia l'assunzione del progetto",
+      "talk": "Parla con Crays"
+    }
+  }
+}

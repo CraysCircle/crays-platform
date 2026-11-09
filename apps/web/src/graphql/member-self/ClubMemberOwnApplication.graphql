@@ -1,0 +1,3 @@
+query ClubMemberOwnApplication($input: ClubMemberApplicationReadInput!) {
+  clubMemberOwnApplication(input: $input) { schema payloadJson }
+}

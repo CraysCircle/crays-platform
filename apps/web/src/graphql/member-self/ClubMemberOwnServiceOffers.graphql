@@ -1,0 +1,7 @@
+query ClubMemberOwnServiceOffers($input: ClubMemberOwnServiceOffersInput!) {
+  clubMemberOwnServiceOffers(input: $input) {
+    schema accountId sourceAuthority cartWriteAvailable checkoutAvailable liveMoneyAvailable confirmedPlansAvailable
+    catalog { offerId offerVersion coreCatalogueReceiptId coreCatalogueReceiptSha256 productId variantId productKind title description category imageAssetId currency unitPriceMinor priceRevisionSha256 productEnabled variantEnabled sellable sourceAuthority bookingAuthority paymentAuthority slots { slotId date version capacity sourceSha256 } }
+    plans { planId version offerId offerVersion offerSourceSha256 state selectedSlotId createdAt updatedAt }
+  }
+}

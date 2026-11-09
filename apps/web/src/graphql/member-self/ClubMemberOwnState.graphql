@@ -1,0 +1,8 @@
+query ClubMemberOwnState($input: ClubMemberOwnStateInput!) {
+  clubMemberOwnState(input: $input) {
+    schema accountId savedPropertyIds
+    application { applicationId status interestPropertyId version submittedAt updatedAt }
+    membership { membershipId status membershipTypeId membershipTypeMappingReady version validFrom validUntil decisionAuthority }
+    authorities { authenticationReady membershipConfirmed marinaPropertyAdmission availabilityAuthority bookingAuthority }
+  }
+}

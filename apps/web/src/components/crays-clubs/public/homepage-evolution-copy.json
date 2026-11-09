@@ -1,0 +1,660 @@
+{
+  "en": {
+    "eyebrow": "Orange-Pilled Private Members’ Club",
+    "heroTitle": [
+      "Find your people.",
+      "Build your next chapter."
+    ],
+    "heroBody": [
+      "Work, live and play in an invitation-led community.",
+      "Find people to build, feel at home and share life with."
+    ],
+    "heroPrimary": "This your kinda crowd?",
+    "heroSecondary": "Discover Crays Club",
+    "strip": "Tick tock. Next block * Fix the money. Fix the world * Don’t trust. Verify.",
+    "lifeKicker": "The Living Network — Work. Live. Play.",
+    "lifeTitle": [
+      "Build your future without",
+      "putting your life on hold."
+    ],
+    "lifeIntro": "Success is at the heart of our community. Whatever success means to you, we believe in achieving it together.\nThe people you build with can also be the people you share your life with.",
+    "experiences": [
+      {
+        "name": "Work",
+        "title": [
+          "Earn from what you do best.",
+          "Go further together."
+        ],
+        "body": "Find your next role, client or co-founder. Meet investors and mentors. Build with people who see your value.",
+        "details": "Workshops · Hackathons · Pitch rounds",
+        "alt": "A smiling man in a Crays cap and shirt giving a thumbs up"
+      },
+      {
+        "name": "Live",
+        "title": [
+          "Live independently.",
+          "Not alone."
+        ],
+        "body": "Find real friends, share everyday moments and make room for your wellbeing. Be seen. Be valued. Be yourself.",
+        "details": "Friendship · Healthy routines · A sense of home",
+        "alt": "Two people laughing together over a relaxed conversation"
+      },
+      {
+        "name": "Play",
+        "title": [
+          "Make memories,",
+          "not just money."
+        ],
+        "body": "Find people to explore with, laugh with and celebrate with. Meet your people. Maybe even your person.",
+        "details": "Shared adventures · Music · Moments that stay",
+        "alt": "A group of friends enjoying a sunny day together outdoors"
+      }
+    ],
+    "bridge": "A conversation becomes a collaboration. A shared day becomes a friendship.",
+    "networkTitle": "Your Network for Life.",
+    "networkBody": [
+      "Build your alumni network across work and life. Your time at Crays can be one chapter.",
+      "The people you meet can become part of many more. Your status is verified by Membership NFTs."
+    ],
+    "ambassadorAction": "Find your Ambassador",
+    "networkInvitation": "An invitation-led community. A shared future.",
+    "appKicker": "The Crays Agentic AI Lifestyle App.",
+    "appTitle": "Meet Chuck. Chuck Crays. Your personal AI wingman for life.",
+    "appBody": "Chuck connects you with the right people, the coolest places, and experiences worth sharing. From conversations and bookings to payments, he’s got you covered. All in one app.",
+    "appAlt": "Two people connecting over a phone at a Crays gathering",
+    "appAction": "Meet Chuck Crays",
+    "agenticKicker": "CRAYS AGENTIC LIFE",
+    "agenticTitle": "What if your next chapter started with one conversation?",
+    "agenticBody": "We’re bringing your personal AI, your community and real-world services into one experience. From finding a co-founder to booking your stay and making plans with new friends—your agent will help make it happen.",
+    "agenticControl": "You choose what to share. You approve what happens.",
+    "agenticAction": "Discover Agentic Life",
+    "previewLabel": "Concept preview",
+    "previewAria": "Concept preview: one wish, three connected possibilities",
+    "intention": "“I’m coming to Forest City. Help me find people to build with, a place to stay and plans we can share.”",
+    "possibilities": [
+      {
+        "title": "Someone to build with",
+        "status": "Introduction to review",
+        "alt": "People sharing ideas around laptops at a Crays gathering"
+      },
+      {
+        "title": "Your place in Forest City",
+        "status": "Stay + workspace options",
+        "alt": "Forest City homes and shoreline seen from a green balcony"
+      },
+      {
+        "title": "An evening together",
+        "status": "Plans to choose from",
+        "alt": "People sharing a buffet at a Crays community gathering"
+      }
+    ],
+    "appFamilyBefore": "We call ’em your ",
+    "appFamilyTerm": "VIFs — Very Important Family.",
+    "appFamilyAfter": "The best part? I'm one of your VIFs now, too.",
+    "appFamilyQuestion": "And those people who make life awesome?"
+  },
+  "de": {
+    "eyebrow": "Orange-Pilled Private Members’ Club",
+    "heroTitle": [
+      "Finde deine Menschen.",
+      "Gestalte dein nächstes Kapitel."
+    ],
+    "heroBody": [
+      "Arbeite, lebe und genieße das Leben in einer Community auf Einladung.",
+      "Finde Menschen zum gemeinsamen Gestalten, Ankommen und Leben."
+    ],
+    "heroPrimary": "Sind das deine Leute?",
+    "heroSecondary": "Crays Club entdecken",
+    "strip": "Tick tack. Nächster Block * Repariere das Geld. Repariere die Welt * Vertraue nicht. Verifiziere.",
+    "lifeKicker": "Arbeiten. Leben. Erleben.",
+    "lifeTitle": [
+      "Gestalte deine Zukunft,",
+      "ohne dein Leben auf später zu verschieben."
+    ],
+    "lifeIntro": "Erfolg steht im Mittelpunkt unserer Community. Was auch immer Erfolg für dich bedeutet: Wir glauben daran, ihn gemeinsam zu erreichen.\nDie Menschen, mit denen du etwas aufbaust, können auch die sein, mit denen du dein Leben teilst.",
+    "experiences": [
+      {
+        "name": "Arbeiten",
+        "title": [
+          "Verdiene mit dem, was du am besten kannst.",
+          "Kommt gemeinsam weiter."
+        ],
+        "body": "Finde deinen nächsten Job, Kunden oder Mitgründer. Triff Investoren und Mentoren. Baue mit Menschen auf, die deinen Wert erkennen.",
+        "details": "Workshops · Hackathons · Pitch-Runden",
+        "alt": "Ein lächelnder Mann mit Crays-Kappe und -Shirt zeigt den Daumen nach oben"
+      },
+      {
+        "name": "Leben",
+        "title": [
+          "Lebe unabhängig.",
+          "Nicht allein."
+        ],
+        "body": "Finde echte Freunde, teile Alltagsmomente und schaffe Raum für dein Wohlbefinden. Werde gesehen. Werde geschätzt. Sei du selbst.",
+        "details": "Freundschaft · Gesunde Routinen · Ein Gefühl von Zuhause",
+        "alt": "Zwei Menschen lachen bei einem entspannten Gespräch"
+      },
+      {
+        "name": "Erleben",
+        "title": [
+          "Sammle Erinnerungen,",
+          "nicht nur Geld."
+        ],
+        "body": "Finde Menschen, mit denen du entdecken, lachen und feiern kannst. Finde deine Leute. Vielleicht sogar deinen Lieblingsmenschen.",
+        "details": "Gemeinsame Abenteuer · Musik · Momente, die bleiben",
+        "alt": "Eine Gruppe von Freunden genießt gemeinsam einen sonnigen Tag im Freien"
+      }
+    ],
+    "bridge": "Aus einem Gespräch wird Zusammenarbeit. Aus einem gemeinsamen Tag wird Freundschaft.",
+    "networkTitle": "Dein Netzwerk fürs Leben.",
+    "networkBody": [
+      "Baue dein Alumni-Netzwerk für Arbeit und Leben auf. Deine Zeit bei Crays kann ein Kapitel sein.",
+      "Die Menschen, die du triffst, können Teil vieler weiterer werden. Dein Status wird durch Membership-NFTs verifiziert."
+    ],
+    "ambassadorAction": "Finde deinen Ambassador",
+    "networkInvitation": "Eine Community auf Einladung. Eine gemeinsame Zukunft.",
+    "appKicker": "Die Crays Agentic AI Lifestyle App.",
+    "appTitle": "Lerne Chuck kennen. Chuck Crays. Dein persönlicher KI-Wingman fürs Leben.",
+    "appBody": "Chuck bringt dich mit den richtigen Menschen, den coolsten Orten und Erlebnissen zusammen, die man teilen möchte. Von Gesprächen und Buchungen bis hin zu Zahlungen – er kümmert sich darum. Alles in einer App.",
+    "appAlt": "Zwei Menschen tauschen sich bei einem Crays-Treffen über ein Smartphone aus",
+    "appAction": "Lerne Chuck Crays kennen",
+    "agenticKicker": "CRAYS AGENTIC LIFE",
+    "agenticTitle": "Was wäre, wenn dein nächstes Kapitel mit einem einzigen Gespräch beginnt?",
+    "agenticBody": "Wir verbinden deine persönliche KI, deine Community und Angebote vor Ort zu einem Erlebnis. Ob du einen Mitgründer suchst, deinen Aufenthalt buchst oder etwas mit neuen Freunden planst — dein Agent hilft dir dabei.",
+    "agenticControl": "Du entscheidest, was du teilst. Du bestimmst, was geschieht.",
+    "agenticAction": "Agentic Life entdecken",
+    "previewLabel": "Konzeptvorschau",
+    "previewAria": "Konzeptvorschau: ein Wunsch, drei verbundene Möglichkeiten",
+    "intention": "„Ich komme nach Forest City. Hilf mir, Menschen zum gemeinsamen Gestalten, eine Unterkunft und Pläne für uns zu finden.“",
+    "possibilities": [
+      {
+        "title": "Jemand zum gemeinsamen Gestalten",
+        "status": "Vorgeschlagener Kontakt zur Prüfung",
+        "alt": "Menschen tauschen bei einem Crays-Treffen Ideen an Laptops aus"
+      },
+      {
+        "title": "Dein Platz in Forest City",
+        "status": "Unterkunft und Arbeitsplatz zur Auswahl",
+        "alt": "Wohnungen und Küste von Forest City, von einem begrünten Balkon aus gesehen"
+      },
+      {
+        "title": "Ein gemeinsamer Abend",
+        "status": "Pläne zur Auswahl",
+        "alt": "Menschen genießen ein Buffet bei einem Crays-Community-Treffen"
+      }
+    ],
+    "appFamilyBefore": "Wir nennen sie deine ",
+    "appFamilyTerm": "VIFs — Very Important Family.",
+    "appFamilyAfter": "Das Beste daran? Ich gehöre jetzt auch zu deinen VIFs.",
+    "appFamilyQuestion": "Und die Menschen, die dein Leben großartig machen?"
+  },
+  "es": {
+    "eyebrow": "Club privado de miembros Orange-Pilled",
+    "heroTitle": [
+      "Encuentra a tu gente.",
+      "Construye tu próximo capítulo."
+    ],
+    "heroBody": [
+      "Trabaja, vive y disfruta en una comunidad por invitación.",
+      "Encuentra personas con quienes crear, sentirte en casa y compartir la vida."
+    ],
+    "heroPrimary": "¿Esta es tu gente?",
+    "heroSecondary": "Descubre Crays Club",
+    "strip": "Tic tac. Próximo bloque * Arregla el dinero. Arregla el mundo * No confíes. Verifica.",
+    "lifeKicker": "Trabaja. Vive. Disfruta.",
+    "lifeTitle": [
+      "Construye tu futuro",
+      "sin poner tu vida en pausa."
+    ],
+    "lifeIntro": "El éxito está en el corazón de nuestra comunidad. Sea lo que sea que signifique para ti, creemos en alcanzarlo juntos.\nLas personas con quienes construyes también pueden ser aquellas con quienes compartes la vida.",
+    "experiences": [
+      {
+        "name": "Trabaja",
+        "title": [
+          "Gana con lo que mejor sabes hacer.",
+          "Llegad más lejos juntos."
+        ],
+        "body": "Encuentra tu próximo empleo, cliente o cofundador. Conoce a inversores y mentores. Construye con personas que reconocen tu valor.",
+        "details": "Talleres · Hackatones · Rondas de presentación",
+        "alt": "Un hombre sonriente con gorra y camiseta Crays levanta el pulgar"
+      },
+      {
+        "name": "Vive",
+        "title": [
+          "Vive con independencia.",
+          "Sin estar solo."
+        ],
+        "body": "Encuentra amistades auténticas, comparte momentos cotidianos y deja espacio para tu bienestar. Que te vean. Que te valoren. Sé tú mismo.",
+        "details": "Amistad · Hábitos saludables · Sentirte en casa",
+        "alt": "Dos personas se ríen durante una conversación relajada"
+      },
+      {
+        "name": "Disfruta",
+        "title": [
+          "Crea recuerdos,",
+          "no solo dinero."
+        ],
+        "body": "Encuentra personas con quienes explorar, reír y celebrar. Conoce a tu gente. Quizá incluso a esa persona especial.",
+        "details": "Aventuras compartidas · Música · Momentos que perduran",
+        "alt": "Un grupo de amigos disfruta de un día soleado al aire libre"
+      }
+    ],
+    "bridge": "Una conversación se convierte en colaboración. Un día compartido se convierte en amistad.",
+    "networkTitle": "Tu red para toda la vida.",
+    "networkBody": [
+      "Construye tu red de antiguos miembros entre el trabajo y la vida. Tu tiempo en Crays puede ser un capítulo.",
+      "Las personas que conozcas pueden formar parte de muchos más. Tu estatus se verifica mediante NFT de membresía."
+    ],
+    "ambassadorAction": "Encuentra a tu embajador",
+    "networkInvitation": "Una comunidad por invitación. Un futuro compartido.",
+    "appKicker": "La app de estilo de vida Crays con IA agéntica.",
+    "appTitle": "Conoce a Chuck. Chuck Crays. Tu compañero personal de IA para la vida.",
+    "appBody": "Chuck te conecta con las personas adecuadas, los lugares más increíbles y las experiencias que merece la pena compartir. Desde conversaciones y reservas hasta pagos, él se encarga. Todo en una sola app.",
+    "appAlt": "Dos personas conectan a través de un teléfono en un encuentro Crays",
+    "appAction": "Conoce a Chuck Crays",
+    "agenticKicker": "CRAYS AGENTIC LIFE",
+    "agenticTitle": "¿Y si tu próximo capítulo empezara con una conversación?",
+    "agenticBody": "Reunimos tu IA personal, tu comunidad y los servicios del mundo real en una misma experiencia. Desde encontrar un cofundador hasta reservar tu estancia y hacer planes con nuevos amigos: tu agente te ayudará a hacerlo realidad.",
+    "agenticControl": "Tú eliges qué compartir. Tú apruebas lo que ocurre.",
+    "agenticAction": "Descubre Agentic Life",
+    "previewLabel": "Vista previa del concepto",
+    "previewAria": "Vista previa del concepto: un deseo, tres posibilidades conectadas",
+    "intention": "«Voy a Forest City. Ayúdame a encontrar personas con quienes crear, un lugar donde alojarme y planes que podamos compartir».",
+    "possibilities": [
+      {
+        "title": "Alguien con quien crear",
+        "status": "Presentación pendiente de revisión",
+        "alt": "Personas intercambian ideas con portátiles en un encuentro Crays"
+      },
+      {
+        "title": "Tu lugar en Forest City",
+        "status": "Opciones de alojamiento y trabajo",
+        "alt": "Viviendas y costa de Forest City vistas desde un balcón con plantas"
+      },
+      {
+        "title": "Una noche juntos",
+        "status": "Planes para elegir",
+        "alt": "Personas comparten un bufé en un encuentro de la comunidad Crays"
+      }
+    ],
+    "appFamilyBefore": "Las llamamos tus ",
+    "appFamilyTerm": "VIFs — Very Important Family.",
+    "appFamilyAfter": "¿Lo mejor? Ahora yo también soy uno de tus VIFs.",
+    "appFamilyQuestion": "¿Y esas personas que hacen que la vida sea increíble?"
+  },
+  "ca": {
+    "eyebrow": "Club privat de membres Orange-Pilled",
+    "heroTitle": [
+      "Troba la teva gent.",
+      "Construeix el teu pròxim capítol."
+    ],
+    "heroBody": [
+      "Treballa, viu i gaudeix en una comunitat per invitació.",
+      "Troba persones amb qui crear, sentir-te a casa i compartir la vida."
+    ],
+    "heroPrimary": "És la teva gent?",
+    "heroSecondary": "Descobreix Crays Club",
+    "strip": "Tic-tac. Pròxim bloc * Arregla els diners. Arregla el món * No confiïs. Verifica.",
+    "lifeKicker": "Treballa. Viu. Gaudeix.",
+    "lifeTitle": [
+      "Construeix el teu futur",
+      "sense posar la vida en pausa."
+    ],
+    "lifeIntro": "L’èxit és al cor de la nostra comunitat. Sigui el que sigui que signifiqui per a tu, creiem a assolir-lo junts.\nLes persones amb qui construeixes també poden ser aquelles amb qui comparteixes la vida.",
+    "experiences": [
+      {
+        "name": "Treballa",
+        "title": [
+          "Guanya amb allò que saps fer millor.",
+          "Arribeu més lluny plegats."
+        ],
+        "body": "Troba la teva pròxima feina, client o cofundador. Coneix inversors i mentors. Construeix amb persones que reconeixen el teu valor.",
+        "details": "Tallers · Hackatons · Rondes de presentació",
+        "alt": "Un home somrient amb gorra i samarreta Crays aixeca el polze"
+      },
+      {
+        "name": "Viu",
+        "title": [
+          "Viu amb independència.",
+          "Sense estar sol."
+        ],
+        "body": "Troba amistats autèntiques, comparteix moments quotidians i deixa espai per al teu benestar. Que et vegin. Que et valorin. Sigues tu mateix.",
+        "details": "Amistat · Hàbits saludables · Sentir-te a casa",
+        "alt": "Dues persones riuen durant una conversa relaxada"
+      },
+      {
+        "name": "Gaudeix",
+        "title": [
+          "Crea records,",
+          "no només diners."
+        ],
+        "body": "Troba persones amb qui explorar, riure i celebrar. Coneix la teva gent. Potser fins i tot aquella persona especial.",
+        "details": "Aventures compartides · Música · Moments que perduren",
+        "alt": "Un grup d’amics gaudeix d’un dia assolellat a l’aire lliure"
+      }
+    ],
+    "bridge": "Una conversa es converteix en col·laboració. Un dia compartit es converteix en amistat.",
+    "networkTitle": "La teva xarxa per a tota la vida.",
+    "networkBody": [
+      "Construeix la teva xarxa d’antics membres entre la feina i la vida. El teu temps a Crays pot ser un capítol.",
+      "Les persones que coneguis poden formar part de molts més. El teu estatus es verifica mitjançant NFT de membre."
+    ],
+    "ambassadorAction": "Troba el teu ambaixador",
+    "networkInvitation": "Una comunitat per invitació. Un futur compartit.",
+    "appKicker": "L’app d’estil de vida Crays amb IA agèntica.",
+    "appTitle": "Coneix en Chuck. Chuck Crays. El teu company personal d’IA per a la vida.",
+    "appBody": "Chuck et connecta amb les persones adequades, els llocs més increïbles i les experiències que val la pena compartir. Des de converses i reserves fins a pagaments, ell se n’encarrega. Tot en una sola app.",
+    "appAlt": "Dues persones es connecten a través d’un telèfon en una trobada Crays",
+    "appAction": "Coneix en Chuck Crays",
+    "agenticKicker": "CRAYS AGENTIC LIFE",
+    "agenticTitle": "I si el teu pròxim capítol comencés amb una conversa?",
+    "agenticBody": "Reunim la teva IA personal, la teva comunitat i els serveis del món real en una mateixa experiència. Des de trobar un cofundador fins a reservar l’estada i fer plans amb nous amics: el teu agent t’ajudarà a fer-ho realitat.",
+    "agenticControl": "Tu tries què comparteixes. Tu aproves què passa.",
+    "agenticAction": "Descobreix Agentic Life",
+    "previewLabel": "Previsualització del concepte",
+    "previewAria": "Previsualització del concepte: un desig, tres possibilitats connectades",
+    "intention": "«Vinc a Forest City. Ajuda’m a trobar persones amb qui crear, un lloc on allotjar-me i plans que puguem compartir».",
+    "possibilities": [
+      {
+        "title": "Algú amb qui crear",
+        "status": "Presentació pendent de revisió",
+        "alt": "Persones intercanvien idees amb portàtils en una trobada Crays"
+      },
+      {
+        "title": "El teu lloc a Forest City",
+        "status": "Opcions d’allotjament i feina",
+        "alt": "Habitatges i costa de Forest City vistos des d’un balcó amb plantes"
+      },
+      {
+        "title": "Una nit plegats",
+        "status": "Plans per triar",
+        "alt": "Persones comparteixen un bufet en una trobada de la comunitat Crays"
+      }
+    ],
+    "appFamilyBefore": "Les anomenem els teus ",
+    "appFamilyTerm": "VIFs — Very Important Family.",
+    "appFamilyAfter": "El millor de tot? Ara jo també soc un dels teus VIFs.",
+    "appFamilyQuestion": "I aquelles persones que fan que la vida sigui genial?"
+  },
+  "fr": {
+    "eyebrow": "Club privé de membres Orange-Pilled",
+    "heroTitle": [
+      "Trouvez les vôtres.",
+      "Écrivez votre prochain chapitre."
+    ],
+    "heroBody": [
+      "Travaillez, vivez et profitez de la vie dans une communauté sur invitation.",
+      "Rencontrez des personnes avec qui construire, vous sentir chez vous et partager la vie."
+    ],
+    "heroPrimary": "C’est votre communauté ?",
+    "heroSecondary": "Découvrez Crays Club",
+    "strip": "Tic-tac. Prochain bloc * Réparez l’argent. Réparez le monde * Ne faites pas confiance. Vérifiez.",
+    "lifeKicker": "Travailler. Vivre. Profiter.",
+    "lifeTitle": [
+      "Construisez votre avenir",
+      "sans mettre votre vie en pause."
+    ],
+    "lifeIntro": "La réussite est au cœur de notre communauté. Quel que soit le sens que vous lui donnez, nous croyons qu’elle se construit ensemble.\nLes personnes avec qui vous construisez peuvent aussi être celles avec qui vous partagez votre vie.",
+    "experiences": [
+      {
+        "name": "Travailler",
+        "title": [
+          "Gagnez votre vie avec vos talents.",
+          "Allez plus loin ensemble."
+        ],
+        "body": "Trouvez votre prochain poste, client ou cofondateur. Rencontrez des investisseurs et des mentors. Construisez avec des personnes qui reconnaissent votre valeur.",
+        "details": "Ateliers · Hackathons · Sessions de pitch",
+        "alt": "Un homme souriant portant une casquette et un t-shirt Crays lève le pouce"
+      },
+      {
+        "name": "Vivre",
+        "title": [
+          "Vivez en toute indépendance.",
+          "Sans être seul."
+        ],
+        "body": "Trouvez de vrais amis, partagez les moments du quotidien et faites place à votre bien-être. Soyez reconnu. Soyez apprécié. Soyez vous-même.",
+        "details": "Amitié · Habitudes saines · Se sentir chez soi",
+        "alt": "Deux personnes rient au cours d’une conversation détendue"
+      },
+      {
+        "name": "Profiter",
+        "title": [
+          "Créez des souvenirs,",
+          "pas seulement de la richesse."
+        ],
+        "body": "Rencontrez des personnes avec qui explorer, rire et célébrer. Trouvez les vôtres. Peut-être même la personne qui compte pour vous.",
+        "details": "Aventures partagées · Musique · Moments qui restent",
+        "alt": "Un groupe d’amis profite ensemble d’une journée ensoleillée en plein air"
+      }
+    ],
+    "bridge": "Une conversation devient une collaboration. Une journée partagée devient une amitié.",
+    "networkTitle": "Votre réseau pour la vie.",
+    "networkBody": [
+      "Construisez votre réseau d’anciens membres au fil du travail et de la vie. Votre séjour chez Crays peut être un chapitre.",
+      "Les personnes rencontrées peuvent faire partie de bien d’autres. Votre statut est vérifié par des NFT d’adhésion."
+    ],
+    "ambassadorAction": "Trouvez votre ambassadeur",
+    "networkInvitation": "Une communauté sur invitation. Un avenir partagé.",
+    "appKicker": "L’app lifestyle Crays avec IA agentique.",
+    "appTitle": "Voici Chuck. Chuck Crays. Ton allié IA personnel pour la vie.",
+    "appBody": "Chuck te met en relation avec les bonnes personnes, les endroits les plus cool et les expériences qui méritent d’être partagées. Des conversations aux réservations, en passant par les paiements, il s’occupe de tout. Dans une seule app.",
+    "appAlt": "Deux personnes échangent autour d’un téléphone lors d’une rencontre Crays",
+    "appAction": "Rencontre Chuck Crays",
+    "agenticKicker": "CRAYS AGENTIC LIFE",
+    "agenticTitle": "Et si votre prochain chapitre commençait par une conversation ?",
+    "agenticBody": "Nous réunissons votre IA personnelle, votre communauté et les services du monde réel en une seule expérience. Trouver un cofondateur, réserver votre séjour ou faire des projets avec de nouveaux amis : votre agent vous aidera à concrétiser vos envies.",
+    "agenticControl": "Vous choisissez ce que vous partagez. Vous approuvez ce qui se passe.",
+    "agenticAction": "Découvrez Agentic Life",
+    "previewLabel": "Aperçu du concept",
+    "previewAria": "Aperçu du concept : un souhait, trois possibilités connectées",
+    "intention": "« Je viens à Forest City. Aidez-moi à trouver des personnes avec qui construire, un lieu où séjourner et des projets à partager. »",
+    "possibilities": [
+      {
+        "title": "Quelqu’un avec qui construire",
+        "status": "Présentation à examiner",
+        "alt": "Des personnes échangent des idées autour d’ordinateurs lors d’une rencontre Crays"
+      },
+      {
+        "title": "Votre place à Forest City",
+        "status": "Options de séjour et de travail",
+        "alt": "Logements et littoral de Forest City vus d’un balcon végétalisé"
+      },
+      {
+        "title": "Une soirée ensemble",
+        "status": "Des projets au choix",
+        "alt": "Des personnes partagent un buffet lors d’une rencontre de la communauté Crays"
+      }
+    ],
+    "appFamilyBefore": "On les appelle tes ",
+    "appFamilyTerm": "VIFs — Very Important Family.",
+    "appFamilyAfter": "Le meilleur ? Maintenant, moi aussi, je fais partie de tes VIFs.",
+    "appFamilyQuestion": "Et ces personnes qui rendent la vie géniale ?"
+  },
+  "pt": {
+    "eyebrow": "Clube privado de membros Orange-Pilled",
+    "heroTitle": [
+      "Encontre as suas pessoas.",
+      "Construa o seu próximo capítulo."
+    ],
+    "heroBody": [
+      "Trabalhe, viva e desfrute numa comunidade por convite.",
+      "Encontre pessoas com quem construir, sentir-se em casa e partilhar a vida."
+    ],
+    "heroPrimary": "São estas as suas pessoas?",
+    "heroSecondary": "Descubra o Crays Club",
+    "strip": "Tique-taque. Próximo bloco * Corrija o dinheiro. Corrija o mundo * Não confie. Verifique.",
+    "lifeKicker": "Trabalhar. Viver. Desfrutar.",
+    "lifeTitle": [
+      "Construa o seu futuro",
+      "sem pôr a vida em pausa."
+    ],
+    "lifeIntro": "O sucesso está no coração da nossa comunidade. Seja qual for o significado que tem para si, acreditamos em alcançá-lo juntos.\nAs pessoas com quem constrói também podem ser aquelas com quem partilha a vida.",
+    "experiences": [
+      {
+        "name": "Trabalhar",
+        "title": [
+          "Ganhe com o que faz melhor.",
+          "Vão mais longe juntos."
+        ],
+        "body": "Encontre o seu próximo emprego, cliente ou cofundador. Conheça investidores e mentores. Construa com pessoas que reconhecem o seu valor.",
+        "details": "Workshops · Hackathons · Sessões de apresentação",
+        "alt": "Um homem sorridente com boné e t-shirt Crays faz um sinal de aprovação com o polegar"
+      },
+      {
+        "name": "Viver",
+        "title": [
+          "Viva com independência.",
+          "Sem estar sozinho."
+        ],
+        "body": "Encontre amigos verdadeiros, partilhe momentos do dia a dia e dê espaço ao seu bem-estar. Seja reconhecido. Seja valorizado. Seja quem é.",
+        "details": "Amizade · Rotinas saudáveis · Sentir-se em casa",
+        "alt": "Duas pessoas riem durante uma conversa descontraída"
+      },
+      {
+        "name": "Desfrutar",
+        "title": [
+          "Crie memórias,",
+          "não apenas dinheiro."
+        ],
+        "body": "Encontre pessoas com quem explorar, rir e celebrar. Conheça as suas pessoas. Talvez até aquela pessoa especial.",
+        "details": "Aventuras partilhadas · Música · Momentos que ficam",
+        "alt": "Um grupo de amigos desfruta de um dia de sol ao ar livre"
+      }
+    ],
+    "bridge": "Uma conversa torna-se uma colaboração. Um dia partilhado torna-se uma amizade.",
+    "networkTitle": "A sua rede para a vida.",
+    "networkBody": [
+      "Construa a sua rede de antigos membros entre o trabalho e a vida. O seu tempo na Crays pode ser um capítulo.",
+      "As pessoas que conhece podem fazer parte de muitos outros. O seu estatuto é verificado por NFT de membro."
+    ],
+    "ambassadorAction": "Encontre o seu embaixador",
+    "networkInvitation": "Uma comunidade por convite. Um futuro partilhado.",
+    "appKicker": "A app de estilo de vida Crays com IA agêntica.",
+    "appTitle": "Conhece o Chuck. Chuck Crays. O teu companheiro pessoal de IA para a vida.",
+    "appBody": "O Chuck liga-te às pessoas certas, aos lugares mais fixes e às experiências que vale a pena partilhar. Das conversas e reservas aos pagamentos, ele trata de tudo. Numa só app.",
+    "appAlt": "Duas pessoas ligam-se através de um telefone num encontro Crays",
+    "appAction": "Conhece o Chuck Crays",
+    "agenticKicker": "CRAYS AGENTIC LIFE",
+    "agenticTitle": "E se o seu próximo capítulo começasse com uma conversa?",
+    "agenticBody": "Reunimos a sua IA pessoal, a sua comunidade e os serviços do mundo real numa só experiência. Desde encontrar um cofundador a reservar a sua estadia e fazer planos com novos amigos — o seu agente ajudará a concretizá-los.",
+    "agenticControl": "Escolhe o que partilha. Aprova o que acontece.",
+    "agenticAction": "Descubra Agentic Life",
+    "previewLabel": "Pré-visualização do conceito",
+    "previewAria": "Pré-visualização do conceito: um desejo, três possibilidades ligadas",
+    "intention": "«Vou para Forest City. Ajude-me a encontrar pessoas com quem construir, um lugar onde ficar e planos que possamos partilhar.»",
+    "possibilities": [
+      {
+        "title": "Alguém com quem construir",
+        "status": "Apresentação para analisar",
+        "alt": "Pessoas partilham ideias com portáteis num encontro Crays"
+      },
+      {
+        "title": "O seu lugar em Forest City",
+        "status": "Opções de estadia e trabalho",
+        "alt": "Casas e costa de Forest City vistas de uma varanda com plantas"
+      },
+      {
+        "title": "Uma noite juntos",
+        "status": "Planos à escolha",
+        "alt": "Pessoas partilham um bufete num encontro da comunidade Crays"
+      }
+    ],
+    "appFamilyBefore": "Chamamos-lhes os teus ",
+    "appFamilyTerm": "VIFs — Very Important Family.",
+    "appFamilyAfter": "A melhor parte? Agora também sou um dos teus VIFs.",
+    "appFamilyQuestion": "E aquelas pessoas que tornam a vida incrível?"
+  },
+  "it": {
+    "eyebrow": "Club privato per membri Orange-Pilled",
+    "heroTitle": [
+      "Trova le tue persone.",
+      "Costruisci il tuo prossimo capitolo."
+    ],
+    "heroBody": [
+      "Lavora, vivi e divertiti in una comunità su invito.",
+      "Trova persone con cui costruire, sentirti a casa e condividere la vita."
+    ],
+    "heroPrimary": "È questa la tua gente?",
+    "heroSecondary": "Scopri Crays Club",
+    "strip": "Tic tac. Prossimo blocco * Aggiusta il denaro. Aggiusta il mondo * Non fidarti. Verifica.",
+    "lifeKicker": "Lavora. Vivi. Divertiti.",
+    "lifeTitle": [
+      "Costruisci il tuo futuro",
+      "senza mettere la vita in pausa."
+    ],
+    "lifeIntro": "Il successo è al centro della nostra community. Qualunque cosa significhi per te, crediamo nel raggiungerlo insieme.\nLe persone con cui costruisci possono anche essere quelle con cui condividi la vita.",
+    "experiences": [
+      {
+        "name": "Lavora",
+        "title": [
+          "Guadagna con ciò che sai fare meglio.",
+          "Andate più lontano insieme."
+        ],
+        "body": "Trova il tuo prossimo lavoro, cliente o cofondatore. Incontra investitori e mentori. Costruisci con persone che riconoscono il tuo valore.",
+        "details": "Workshop · Hackathon · Sessioni di pitch",
+        "alt": "Un uomo sorridente con cappellino e maglietta Crays alza il pollice"
+      },
+      {
+        "name": "Vivi",
+        "title": [
+          "Vivi in modo indipendente.",
+          "Senza essere solo."
+        ],
+        "body": "Trova amici veri, condividi i momenti quotidiani e fai spazio al tuo benessere. Fatti vedere. Fatti apprezzare. Sii te stesso.",
+        "details": "Amicizia · Abitudini sane · Sentirsi a casa",
+        "alt": "Due persone ridono durante una conversazione rilassata"
+      },
+      {
+        "name": "Divertiti",
+        "title": [
+          "Crea ricordi,",
+          "non solo denaro."
+        ],
+        "body": "Trova persone con cui esplorare, ridere e festeggiare. Incontra le tue persone. Magari anche quella speciale.",
+        "details": "Avventure condivise · Musica · Momenti che restano",
+        "alt": "Un gruppo di amici si gode una giornata di sole all’aperto"
+      }
+    ],
+    "bridge": "Una conversazione diventa una collaborazione. Una giornata condivisa diventa un’amicizia.",
+    "networkTitle": "La tua rete per la vita.",
+    "networkBody": [
+      "Costruisci la tua rete di ex membri tra lavoro e vita. Il tuo tempo a Crays può essere un capitolo.",
+      "Le persone che incontri possono far parte di molti altri. Il tuo status viene verificato tramite NFT di iscrizione."
+    ],
+    "ambassadorAction": "Trova il tuo ambassador",
+    "networkInvitation": "Una comunità su invito. Un futuro condiviso.",
+    "appKicker": "L’app lifestyle Crays con IA agentica.",
+    "appTitle": "Ti presento Chuck. Chuck Crays. Il tuo alleato IA personale per la vita.",
+    "appBody": "Chuck ti mette in contatto con le persone giuste, i posti più belli e le esperienze che vale la pena condividere. Dalle conversazioni alle prenotazioni, fino ai pagamenti, ci pensa lui. Tutto in un’unica app.",
+    "appAlt": "Due persone si connettono tramite un telefono durante un incontro Crays",
+    "appAction": "Conosci Chuck Crays",
+    "agenticKicker": "CRAYS AGENTIC LIFE",
+    "agenticTitle": "E se il tuo prossimo capitolo iniziasse con una conversazione?",
+    "agenticBody": "Riuniamo la tua IA personale, la tua comunità e i servizi del mondo reale in un’unica esperienza. Dalla ricerca di un cofondatore alla prenotazione del soggiorno e ai programmi con nuovi amici: il tuo agente ti aiuterà a realizzarli.",
+    "agenticControl": "Scegli cosa condividere. Approvi ciò che accade.",
+    "agenticAction": "Scopri Agentic Life",
+    "previewLabel": "Anteprima del concetto",
+    "previewAria": "Anteprima del concetto: un desiderio, tre possibilità connesse",
+    "intention": "«Vengo a Forest City. Aiutami a trovare persone con cui costruire, un posto dove soggiornare e programmi da condividere.»",
+    "possibilities": [
+      {
+        "title": "Qualcuno con cui costruire",
+        "status": "Presentazione da valutare",
+        "alt": "Persone condividono idee intorno a portatili durante un incontro Crays"
+      },
+      {
+        "title": "Il tuo posto a Forest City",
+        "status": "Opzioni di soggiorno e lavoro",
+        "alt": "Case e costa di Forest City viste da un balcone verde"
+      },
+      {
+        "title": "Una serata insieme",
+        "status": "Programmi tra cui scegliere",
+        "alt": "Persone condividono un buffet durante un incontro della comunità Crays"
+      }
+    ],
+    "appFamilyBefore": "Le chiamiamo i tuoi ",
+    "appFamilyTerm": "VIFs — Very Important Family.",
+    "appFamilyAfter": "La parte migliore? Ora anch’io sono uno dei tuoi VIFs.",
+    "appFamilyQuestion": "E quelle persone che rendono la vita fantastica?"
+  }
+}

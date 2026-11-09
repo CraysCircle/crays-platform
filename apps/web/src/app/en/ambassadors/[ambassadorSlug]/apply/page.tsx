@@ -1,0 +1,20 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { ClubsAmbassadorProfilePage } from "../../../../../components/crays-clubs/public/clubs-ambassador-profile-page";
+import { ambassadorJourneyCopy } from "../../../../../components/crays-clubs/public/clubs-ambassador-journey-copy";
+import { findPublicAmbassador } from "@/lib/server/clubs/public-ambassador-page-data";
+import { clubsAmbassadorProfileMetadata } from "@/lib/clubs/ambassador-profile-metadata";
+type PageProps = { params: Promise<{ ambassadorSlug: string }> };
+export const dynamic = "force-dynamic";
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+ const { ambassadorSlug } = await params;
+ const ambassador = await findPublicAmbassador("en", ambassadorSlug);
+ if (!ambassador) notFound();
+ return clubsAmbassadorProfileMetadata("en", ambassador, { title: `${ambassador.name} | CRAYS Ambassador`, description: ambassadorJourneyCopy["en"].metaDescription });
+}
+export default async function AmbassadorReferralPage({ params }: PageProps) {
+ const { ambassadorSlug } = await params;
+ const ambassador = await findPublicAmbassador("en", ambassadorSlug);
+ if (!ambassador) notFound();
+ return <ClubsAmbassadorProfilePage locale="en" ambassador={ambassador} />;
+}
