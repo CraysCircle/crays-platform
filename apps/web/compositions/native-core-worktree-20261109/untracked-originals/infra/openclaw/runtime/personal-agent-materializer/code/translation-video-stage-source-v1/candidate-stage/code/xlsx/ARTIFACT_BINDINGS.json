@@ -1,0 +1,35 @@
+{
+  "schema": "crays.xlsx.v03.live-delta.bindings.v1",
+  "oldPluginRoot": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/91657222c665286a8c26439de14c0b293dddc46f3f21a4302d9aed1f074098f0",
+  "newPluginRoot": "/opt/crays/openclaw/renderer-artifacts/document-exports-xlsx-v03/d8ac913b1428ceb577e2cb3678ad26cac6bd476c0bbf852d262dd73de42d2714/plugin",
+  "oldSkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-document-exports/cb021ff621e2375f21bfbb6ad09cebf504c64f5cfdcdf60abd3d7404bca1de4c",
+  "newSkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-document-exports/7b85813d43331b02bb396f0d45ed8ccaa9c6b48a530a753b7e8f12b170d10fb7",
+  "newSkillManifestSha256": "7b85813d43331b02bb396f0d45ed8ccaa9c6b48a530a753b7e8f12b170d10fb7",
+  "newSkillContentSha256": "cc0172bd076085b29630b4c92ade8ca756e9bda79e951e87585448781e2ad319",
+  "unchangedPluginRoots": [
+    "/opt/crays/openclaw/plugin-artifacts/crays-calculator/9dc61bf9690602b5c8cb0460199160735d70146b2e2ab2b237284c1ad1267241",
+    "/opt/crays/openclaw/plugin-artifacts/crays-personal-records/315bccd5e9d5507617090cce5040cf05538347ec701cf9d33dd850f7762e0356",
+    "/opt/crays/openclaw/plugin-artifacts/crays-personal-dates/14a5123f63e1a67bd5d01ab92e97e3e56ccecc9007a8eca41649bb071ef87741",
+    "/opt/crays/openclaw/plugin-artifacts/crays-shared-expenses/a8fc7d75d3be395a2ac7c1b7dc4233b3b6bf5e42ac109e05ae9e29ea4530fc0a",
+    "/opt/crays/openclaw/plugin-artifacts/crays-feed-reader/46481eb3d47ee26f3b5bb7a577c7ed7e81a9c97fe87ff554fa53397aeb320f7d",
+    "/opt/crays/openclaw/plugin-artifacts/crays-service-notices/a1528a72413c6f55b6d760e11d6a07fb35e451667d38356ab30c094ce2fe1c27"
+  ],
+  "rootInstalledInputs": [
+    {
+      "path": "/opt/crays/openclaw/renderer-artifacts/document-exports-xlsx-v03/d8ac913b1428ceb577e2cb3678ad26cac6bd476c0bbf852d262dd73de42d2714/PUBLIC_SOURCE_MANIFEST.json",
+      "bytes": 2062,
+      "sha256": "d8ac913b1428ceb577e2cb3678ad26cac6bd476c0bbf852d262dd73de42d2714"
+    },
+    {
+      "path": "/opt/crays/openclaw/skill-artifacts/crays-document-exports/7b85813d43331b02bb396f0d45ed8ccaa9c6b48a530a753b7e8f12b170d10fb7/CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "sha256": "7b85813d43331b02bb396f0d45ed8ccaa9c6b48a530a753b7e8f12b170d10fb7",
+      "bytes": 529
+    },
+    {
+      "path": "/opt/crays/openclaw/skill-artifacts/crays-document-exports/7b85813d43331b02bb396f0d45ed8ccaa9c6b48a530a753b7e8f12b170d10fb7/skills/crays-document-exports/SKILL.md",
+      "sha256": "cc0172bd076085b29630b4c92ade8ca756e9bda79e951e87585448781e2ad319",
+      "bytes": 1591
+    }
+  ],
+  "newSkillRootInstallationPending": true
+}

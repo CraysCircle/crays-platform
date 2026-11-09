@@ -1,0 +1,67 @@
+{
+  "schema": "crays.core-sql-identity-protected-source.v1",
+  "sourceHead": "c2018d04f6a52d8716326a098dde7624cbb18963",
+  "files": [
+    {
+      "sourcePath": "crays-platform/scripts/ios-native-auth-qualification/original-core-rpc-fixture.sql",
+      "originalBytes": 5579,
+      "originalSHA256": "56f5fd5aba868ecc84d1689761b2b856b4b50b18a1796c12ebd34c0b6cd1df1a",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/crays-platform/scripts/ios-native-auth-qualification/original-core-rpc-fixture.sql.template",
+      "templateBytes": 5743,
+      "templateSHA256": "7c367b823a7859594e78966c8035791530e36cc736c65220d709b7651562a6be",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_SQL_SUBJECT_0f99b9bf0aae2afb1a4abbb5__",
+          "categories": [
+            "fixed_auth0_subject_public_authority_unestablished"
+          ],
+          "sourceCharacterStart": 837,
+          "sourceCharacterEnd": 871,
+          "occurrences": 1
+        },
+        {
+          "placeholder": "__CRAYS_PRIVATE_SQL_SUBJECT_acba6c18b8cd301406dfb29c__",
+          "categories": [
+            "fixed_auth0_subject_public_authority_unestablished"
+          ],
+          "sourceCharacterStart": 745,
+          "sourceCharacterEnd": 763,
+          "occurrences": 1
+        },
+        {
+          "placeholder": "__CRAYS_PRIVATE_SQL_SUBJECT_f747621a2115d5126e48c07a__",
+          "categories": [
+            "fixed_auth0_subject_public_authority_unestablished"
+          ],
+          "sourceCharacterStart": 768,
+          "sourceCharacterEnd": 786,
+          "occurrences": 1
+        },
+        {
+          "placeholder": "__CRAYS_PRIVATE_SQL_SUBJECT_e3147a0b9f7fcf53a4ca7759__",
+          "categories": [
+            "fixed_auth0_subject_public_authority_unestablished"
+          ],
+          "sourceCharacterStart": 791,
+          "sourceCharacterEnd": 809,
+          "occurrences": 1
+        },
+        {
+          "placeholder": "__CRAYS_PRIVATE_SQL_SUBJECT_5d82b031f438ecb8281e690d__",
+          "categories": [
+            "fixed_auth0_subject_public_authority_unestablished"
+          ],
+          "sourceCharacterStart": 814,
+          "sourceCharacterEnd": 832,
+          "occurrences": 1
+        }
+      ]
+    }
+  ],
+  "privateArchiveSHA256": "b93fa671e6e50600e5c5dcd89032ad9f82162fe416f64ead225d16696decf34b",
+  "privateArchiveBytes": 4100312,
+  "sourceAuthority": "Original header identifies disposable qualification DB only and disclaims hosted migration/TLS/ACL/DDL approval. This does not establish public authority for five fixed Auth0 subjects, so their raw literal values remain protected.",
+  "publicOriginalBody": false,
+  "originalSQLExecuted": false
+}

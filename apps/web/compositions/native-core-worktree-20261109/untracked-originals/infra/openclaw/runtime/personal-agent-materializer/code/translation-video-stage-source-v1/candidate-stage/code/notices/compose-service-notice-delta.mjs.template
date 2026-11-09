@@ -1,0 +1,28 @@
+/** Pure additive owner-only service-message localization. No IO/auth reads/runtime admission. */
+import assert from 'node:assert/strict';
+import ARTIFACTS from './ARTIFACT_BINDINGS.json' with {type:'json'};
+export const NOTICE_PLUGIN_ID='crays-service-notices';
+export const NINE_TOOLS=Object.freeze(['read','web_fetch','web_search','pdf','crays_calculator','crays_personal_records','crays_personal_dates','crays_shared_expenses','crays_feed_reader']);
+const ID='crays-agent-thorben',ACCOUNT='crays-agent-business',RECIPIENT='__CRAYS_PRIVATE_LITERAL_5b14519f6e8b332e32a0eba7__';
+const CUSTOM=['crays-calculator','crays-personal-records','crays-personal-dates','crays-shared-expenses','crays-feed-reader'];
+export function composeServiceNoticeDelta(base){
+ assert.deepEqual(Object.keys(base.agents.entries),[ID]);
+ const agent=base.agents.entries[ID];
+ for(const p of [base.tools,agent.tools]){assert.equal(p.profile,'full');assert.deepEqual(p.allow,NINE_TOOLS);assert.deepEqual(p.deny,[]);assert.equal(p.fs.workspaceOnly,true);}
+ assert.deepEqual(base.plugins.allow,['openai','whatsapp','document-extract',...CUSTOM]);
+ assert.equal(new Set(base.plugins.load.paths).size,base.plugins.load.paths.length);
+ assert.deepEqual(base.plugins.load.paths.filter(p=>p.startsWith('/opt/crays/openclaw/plugin-artifacts/')),ARTIFACTS.existingPluginRoots);
+ for(const id of ['openai','whatsapp','document-extract',...CUSTOM])assert.equal(base.plugins.entries[id].enabled,true);
+ assert.equal(base.channels.whatsapp.enabled,true);assert.equal(base.channels.whatsapp.dmPolicy,'allowlist');assert.equal(base.channels.whatsapp.groupPolicy,'disabled');assert.equal(base.channels.whatsapp.configWrites,false);
+ assert.deepEqual(base.channels.whatsapp.allowFrom,[RECIPIENT]);assert.deepEqual(base.commands.ownerAllowFrom,['whatsapp:'+RECIPIENT]);
+ assert.deepEqual(Object.keys(base.channels.whatsapp.accounts),[ACCOUNT]);
+ const account=base.channels.whatsapp.accounts[ACCOUNT];assert.equal(account.enabled,true);assert.equal(account.dmPolicy,'allowlist');assert.equal(account.groupPolicy,'disabled');assert.equal(account.configWrites,false);assert.deepEqual(account.allowFrom,[RECIPIENT]);
+ assert.deepEqual(base.bindings,[{agentId:ID,match:{channel:'whatsapp',accountId:ACCOUNT}}]);
+ assert(!Object.hasOwn(base.plugins.entries,NOTICE_PLUGIN_ID));assert(!base.plugins.load.paths.includes(ARTIFACTS.noticePluginRoot));
+ const config={bindings:[{accountId:ACCOUNT,recipient:base.channels.whatsapp.allowFrom[0],locale:'de'}]};
+ const cfg={...base,plugins:{...base.plugins,allow:[...base.plugins.allow,NOTICE_PLUGIN_ID],load:{...base.plugins.load,paths:[...base.plugins.load.paths,ARTIFACTS.noticePluginRoot]},entries:{...base.plugins.entries,[NOTICE_PLUGIN_ID]:{enabled:true,hooks:{allowConversationAccess:true},config}}}};
+ for(const [key,value] of Object.entries(base))if(key!=='plugins')assert.strictEqual(cfg[key],value);
+ for(const [key,value] of Object.entries(base.plugins))if(!['allow','load','entries'].includes(key))assert.strictEqual(cfg.plugins[key],value);
+ for(const [key,value] of Object.entries(base.plugins.entries))assert.strictEqual(cfg.plugins.entries[key],value);
+ return cfg;
+}

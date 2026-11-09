@@ -1,0 +1,7 @@
+`createNewPersonalAgentStandardConfigWith107(input)` receives the exact original V2 input and calls the existing everyday-assistance wrapper. Original V2 code and descriptor remain unchanged. The returned immutable proposal preserves the original100 IDs, adds101–107 and assigns receipt-reading instructions at the fixed root artifact referenced by SHA3a332961f27eb95b0d4935f976ca131102cf12337201dbc248a448920bdf4a0a.
+
+The receipt manifest ef76541cf351e9f67c4a3d21a53097189292c9ef08a1f129787baf0f26dbfc50 is a reference, not a verification performed by the factory. Native load/photo acceptance and runtime start remain unproven. The proposal lists weather/everyday/receipt instructions; its consumer must verify actual artifacts and admission before applying configuration.
+
+All seven additional skill assignments remain pending implementation/installation/connection. No missing seven tool names are added to the runtime allowlist or plugin paths. Existing tools/account/isolated paths remain as the original factory produced them; no account or credential is inherited. Binding107 means required intent, not107 completed functions.
+
+The actual server assignment command imports this wrapper and persists its proposal. Replay requires exact JSONB equality, in addition to original person/account/package checks. An older100 intent is retained and returns ASSIGNMENT_REVIEW_REQUIRED rather than being silently represented as107 or overwritten. Future lifecycle consumers must independently verify current person/account binding, own connection and runtime admission.

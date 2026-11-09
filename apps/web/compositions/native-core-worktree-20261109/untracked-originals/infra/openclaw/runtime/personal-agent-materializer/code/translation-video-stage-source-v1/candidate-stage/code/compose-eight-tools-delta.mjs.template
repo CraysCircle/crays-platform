@@ -1,0 +1,22 @@
+/** Add two qualified personal utilities to the current exact six-tool policy. No I/O or auth/transport changes. */
+import assert from 'node:assert/strict';
+import ARTIFACTS from './ARTIFACT_BINDINGS.json' with {type:'json'};
+const ID='crays-agent-thorben';
+const SIX=Object.freeze(['read','web_fetch','web_search','pdf','crays_calculator','crays_personal_records']);
+export function composeEightToolsDelta(base){
+ assert.equal(ARTIFACTS.final,true,'Exact final shared artifacts required');
+ for(const [id,key] of [['crays-personal-dates','datePluginRoot'],['crays-shared-expenses','expensePluginRoot']])assert(new RegExp('^/opt/crays/openclaw/plugin-artifacts/'+id+'/[a-f0-9]{64}$').test(ARTIFACTS[key]));
+ for(const [id,key] of [['crays-personal-dates','dateSkillRoot'],['crays-shared-expenses','expenseSkillRoot']])assert(new RegExp('^/opt/crays/openclaw/skill-artifacts/'+id+'/[a-f0-9]{64}$').test(ARTIFACTS[key]));
+ assert.deepEqual(Object.keys(base.agents.entries),[ID]);const agent=base.agents.entries[ID];
+ for(const policy of [base.tools,agent.tools]){assert.equal(policy.profile,'full');assert.deepEqual(policy.allow,SIX);assert.deepEqual(policy.deny,[]);assert.equal(policy.fs.workspaceOnly,true);}
+ assert.equal(base.plugins.entries.whatsapp.enabled,true);assert(base.plugins.allow.includes('crays-calculator')&&base.plugins.allow.includes('crays-personal-records'));
+ assert.deepEqual(base.commands.ownerAllowFrom,['whatsapp:__CRAYS_PRIVATE_LITERAL_1a372a181bee43a798255298__']);assert.deepEqual(base.channels.whatsapp.allowFrom,['__CRAYS_PRIVATE_LITERAL_1a372a181bee43a798255298__']);assert.equal(base.channels.whatsapp.groupPolicy,'disabled');
+ const extraIds=['crays-personal-dates','crays-shared-expenses'],extraTools=['crays_personal_dates','crays_shared_expenses'];
+ const policy=p=>({...p,allow:[...p.allow,...extraTools]});
+ const skillNames=[...agent.skills,...extraIds];
+ const cfg={...base,agents:{...base.agents,entries:{[ID]:{...agent,tools:policy(agent.tools),skills:skillNames}}},tools:policy(base.tools),
+ plugins:{...base.plugins,allow:[...base.plugins.allow,...extraIds],load:{...base.plugins.load,paths:[...base.plugins.load.paths,ARTIFACTS.datePluginRoot,ARTIFACTS.expensePluginRoot]},entries:{...base.plugins.entries,...Object.fromEntries(extraIds.map(id=>[id,{enabled:true}]))}},
+ skills:{...base.skills,load:{...base.skills.load,extraDirs:[...base.skills.load.extraDirs,ARTIFACTS.dateSkillRoot+'/skills',ARTIFACTS.expenseSkillRoot+'/skills']},entries:{...base.skills.entries,...Object.fromEntries(extraIds.map(id=>[id,{enabled:true}]))}}};
+ for(const key of ['gateway','channels','bindings','commands','auth','session','cron','hooks'])assert.strictEqual(cfg[key],base[key]);assert.strictEqual(cfg.agents.defaults,base.agents.defaults);assert.strictEqual(cfg.plugins.entries.whatsapp,base.plugins.entries.whatsapp);
+ return cfg;
+}

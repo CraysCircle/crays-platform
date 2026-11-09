@@ -1,0 +1,150 @@
+{
+  "schema": "crays.generic-personal-speech.source-inheritance.v1",
+  "status": "SOURCE_ONLY_NOT_ADOPTED",
+  "sharedCodeRoot": "/opt/crays/openclaw/personal-services/crays-owner-tools-whatsapp-live-v45-native-tts/code/tts",
+  "runtimeAlias": "/run/crays-owner-tools-whatsapp-live",
+  "files": [
+    {
+      "path": "/opt/crays/openclaw/personal-services/crays-owner-tools-whatsapp-live-v45-native-tts/code/tts/compose-explicit-speech-delta.mjs",
+      "relative": "compose-explicit-speech-delta.mjs",
+      "bytes": 2345,
+      "sha256": "da72a8e1b3f12bb56972ffd879b92e2a0e4532045ba4f5ee2f3407a48c9ccd8c"
+    },
+    {
+      "path": "/opt/crays/openclaw/personal-services/crays-owner-tools-whatsapp-live-v45-native-tts/code/tts/crays-explicit-speech-call.mjs",
+      "relative": "crays-explicit-speech-call.mjs",
+      "bytes": 3419,
+      "sha256": "74ce3ed6a4d9ba08e78a29c3d2b7ccbfac4266642b7f2e1c4ea9e85bd2cf078e"
+    },
+    {
+      "path": "/opt/crays/openclaw/personal-services/crays-owner-tools-whatsapp-live-v45-native-tts/code/tts/crays-tts-isolated-worker.mjs",
+      "relative": "crays-tts-isolated-worker.mjs",
+      "bytes": 1474,
+      "sha256": "16498f42372c7ee609898a07b3357aa31f1f9109d217b6ed72d93271d3bcef74"
+    },
+    {
+      "path": "/opt/crays/openclaw/personal-services/crays-owner-tools-whatsapp-live-v45-native-tts/code/tts/crays-tts-original-writer.mjs",
+      "relative": "crays-tts-original-writer.mjs",
+      "bytes": 2052,
+      "sha256": "25c2c2a809f8ca5dd277c645abc3d6308275d6c7bc7d7eafec815357c043f4b0"
+    },
+    {
+      "path": "/opt/crays/openclaw/personal-services/crays-owner-tools-whatsapp-live-v45-native-tts/code/tts/microsoft-capability-catalog.js",
+      "relative": "microsoft-capability-catalog.js",
+      "bytes": 287,
+      "sha256": "d40ce05416dc9ad5d1dceba5ecc45606f24bbb070bf0ef94552eaffd6334de78"
+    },
+    {
+      "path": "/opt/crays/openclaw/personal-services/crays-owner-tools-whatsapp-live-v45-native-tts/code/tts/openclaw-tools-BA3mvtXt.mjs",
+      "relative": "openclaw-tools-BA3mvtXt.mjs",
+      "bytes": 805735,
+      "sha256": "db2e21377c75611379e596e0b89db582c5323f1a3a1189f99e22a57e517de934"
+    },
+    {
+      "path": "/opt/crays/openclaw/personal-services/crays-owner-tools-whatsapp-live-v45-native-tts/code/tts/tts-D9HL-FBa.mjs",
+      "relative": "tts-D9HL-FBa.mjs",
+      "bytes": 3657,
+      "sha256": "f009286378ca9d047e863888fdcb4c890242f244fcf6f60590f95a6104529ad2"
+    }
+  ],
+  "instruction": {
+    "skillId": "crays-voice-translation",
+    "name": "crays-voice-translation",
+    "root": "/opt/crays/openclaw/skill-artifacts/crays-explicit-voice-translation/bce655768df4c2526d3396dcd964362ad50d2108f6ddd6d044cbe1120f673db3",
+    "manifestSha256": "bce655768df4c2526d3396dcd964362ad50d2108f6ddd6d044cbe1120f673db3",
+    "manifestName": "CRAYS_ARTIFACT_MANIFEST.json",
+    "contentSha256": "83be5b1a0ba2da72ec158a6cc749463bf7218532b486d9b9fa11249cbf334a36"
+  },
+  "acceptedOwnerSpeech": {
+    "path": "/srv/crays/worktrees/openclaw-phase5-019ff983/docs/architecture/evidence/CRAYS_AGENT_NATIVE_TTS_V45_OWNER_SPANISH_SPEECH_HANDSET_ACCEPTANCE_2026_10_17.json",
+    "sha256": "ff22f0b8bafdd15abb32cc9d44ec0d4cd3885ed65fc1f2d16a269e7c3d860096"
+  },
+  "defaultConfig": {
+    "auto": "off",
+    "provider": "microsoft",
+    "mode": "final",
+    "maxTextLength": 2000,
+    "timeoutMs": 10000,
+    "modelOverrides": {
+      "enabled": false
+    },
+    "providers": {
+      "microsoft": {
+        "enabled": true,
+        "voice": "es-ES-ElviraNeural",
+        "lang": "es-ES",
+        "outputFormat": "audio-24khz-48kbitrate-mono-mp3",
+        "timeoutMs": 10000,
+        "saveSubtitles": false
+      }
+    }
+  },
+  "nodeEdgeTts": {
+    "name": "node-edge-tts",
+    "version": "1.2.11",
+    "publishedSourceRoot": "/srv/crays/openclaw/oca063/general-skills-first-wave-20261015/selected032-edge-tts-native-qualification-preparation-v2/replacement-node-edge-tts",
+    "publishedTarball": {
+      "path": "/srv/crays/openclaw/oca063/general-skills-first-wave-20261015/selected032-edge-tts-upstream403-primary-source-review-v1/node-edge-tts-1.2.11.tgz",
+      "bytes": 6706,
+      "sha256": "1d51f7200ae0528ee66ae97f596295f1762382aafd44fcacc5ca335f6bf50b4e"
+    },
+    "packageSha256": "3055431818c366ab2cfe9768c931eeea9e23c9fe64cba3704850646e7f1c673d",
+    "immutableRoot": "/opt/crays/openclaw/dependency-artifacts/node-edge-tts/98666ef098a18b70c00ab86e96736ea5efcdc0f1879e4dacaf60351f56c0948d",
+    "manifestName": "CRAYS_ARTIFACT_MANIFEST.json",
+    "manifestBytes": 1300,
+    "manifestSha256": "98666ef098a18b70c00ab86e96736ea5efcdc0f1879e4dacaf60351f56c0948d",
+    "files": [
+      {
+        "path": "LICENSE",
+        "bytes": 1089,
+        "sha256": "25d554f5f2e61ceaf199ca29a7be934e053453e5f51ed969e001ec7b0bfcda46"
+      },
+      {
+        "path": "README.md",
+        "bytes": 5002,
+        "sha256": "9c7404288b42cd29c8fa3e37babfcd3a15765de6b75ae8f033a37bb0d739d072"
+      },
+      {
+        "path": "bin.js",
+        "bytes": 1934,
+        "sha256": "6136bf7b952af9d04f9c8a758312f4b49084bb8b66dc257b3dcf30a8499b8203"
+      },
+      {
+        "path": "dist/drm.d.ts",
+        "bytes": 199,
+        "sha256": "ad7c5faf99a3d796394d7925558bf72dc0710a9548a9379f4347f54a4f0dec50"
+      },
+      {
+        "path": "dist/drm.js",
+        "bytes": 853,
+        "sha256": "fdf5b1ebe3857c5a8122b94cb888175da33e6cd53c6906620ef3f4c7047fda69"
+      },
+      {
+        "path": "dist/edge-tts.d.ts",
+        "bytes": 1215,
+        "sha256": "a69063ea0acb1cdf8c778a689f98ea2b7fd8dfbe971d3979b724e9aa9c5506d6"
+      },
+      {
+        "path": "dist/edge-tts.js",
+        "bytes": 10207,
+        "sha256": "a3d4db15eba2ef8f208363c7c9d758a3df5ff63ca7991522bc2b64c83f7d84b3"
+      },
+      {
+        "path": "package.json",
+        "bytes": 962,
+        "sha256": "3055431818c366ab2cfe9768c931eeea9e23c9fe64cba3704850646e7f1c673d"
+      }
+    ],
+    "rootPublicationPerformed": false,
+    "status": "PENDING_ROOT_IMMUTABLE_COPY_AND_NAMESPACE_QUALIFICATION",
+    "requiredParentSdkDependencies": [
+      "https-proxy-agent",
+      "ws"
+    ],
+    "qualifiedSourcePlan": {
+      "path": "/srv/crays/openclaw/oca063/general-skills-first-wave-20261015/selected032-edge-tts-native-qualification-preparation-v2/PLAN.json",
+      "bytes": 174150,
+      "sha256": "7560729914450eb27128ff523ab0af8d095f27131b47b4fe27beaeec37106b81"
+    }
+  }
+}

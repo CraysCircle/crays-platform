@@ -1,0 +1,128 @@
+{
+  "existingCorrectedBudgetSkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-personal-budget/5610766631db07ecddce7b6a3c6879520c8386812fb579b1d8a01dcbc4914c80",
+  "existingDocumentSkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-document-exports/560e34e6b19fb2d55a57e956431659b2e04221d4e759d495415611e2ed379d97",
+  "chessSkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-chess/7027ab8a67333d9acabedb140b604eaa46a72d3bb196ef8f53cab92dfd08c710",
+  "inventorySkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-item-inventory/aa8e99ec3f4e6fb25b27d0aa04bfa917a38790b6b9b6c48be41aa6297767589b",
+  "trainingSkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-training-log/9b8b083d3f48233535121446965f0f5a24b1de39000394271514bb2936c09e6a",
+  "existingPantrySkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-pantry/cedd363a8bebaaf75c111a3ed8a4c27e9d365334d6ba4bcc04f475581971e1a1",
+  "existingSubscriptionsSkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-subscriptions/51ec66ddf1dddf978ae4221d6a019d0e4f46d7254b592836c2d4d582dc8c1541",
+  "schema": "crays.owner-personal-packing-forward-bindings.v1",
+  "existingPluginRoots": [
+    "/opt/crays/openclaw/plugin-artifacts/crays-calculator/9dc61bf9690602b5c8cb0460199160735d70146b2e2ab2b237284c1ad1267241",
+    "/opt/crays/openclaw/plugin-artifacts/crays-personal-records/315bccd5e9d5507617090cce5040cf05538347ec701cf9d33dd850f7762e0356",
+    "/opt/crays/openclaw/plugin-artifacts/crays-personal-dates/14a5123f63e1a67bd5d01ab92e97e3e56ccecc9007a8eca41649bb071ef87741",
+    "/opt/crays/openclaw/plugin-artifacts/crays-shared-expenses/a8fc7d75d3be395a2ac7c1b7dc4233b3b6bf5e42ac109e05ae9e29ea4530fc0a",
+    "/opt/crays/openclaw/plugin-artifacts/crays-feed-reader/46481eb3d47ee26f3b5bb7a577c7ed7e81a9c97fe87ff554fa53397aeb320f7d",
+    "/opt/crays/openclaw/plugin-artifacts/crays-service-notices/a1528a72413c6f55b6d760e11d6a07fb35e451667d38356ab30c094ce2fe1c27",
+    "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/cea34ce3ae897ddef5483d34e33b0a96596c1048b2f1a55904003f28c2098f85",
+    "/opt/crays/openclaw/plugin-artifacts/crays-qr/5173486fc3058967aafa1b097b7ada6e9c8992fd97ce1d99bb1869b5f373f794",
+    "/opt/crays/openclaw/plugin-artifacts/crays-chess/7bb7660806245748ea6ae56deb23e2a2754a7a5bb014d3520939aec68abf9d4d",
+    "/opt/crays/openclaw/plugin-artifacts/crays-item-inventory/25be80ee88b1543350c12ed2523d9b5fe0644996b88e39920adde98615e94e9d",
+    "/opt/crays/openclaw/plugin-artifacts/crays-training-log/2e47d04ebb5f44c1748f5abc578e106a0717d6a0e950f01197364a9a39e20040",
+    "/opt/crays/openclaw/plugin-artifacts/crays-personal-budget/2770097d42125cd5554888d541cc4d02d1e20d1a1057be4671af641b68422f03",
+    "/opt/crays/openclaw/plugin-artifacts/crays-pantry/9bfdacf9446094a471b6662ef0d0e4b760de84c6200a9b8777c1fb49eae50a20",
+    "/opt/crays/openclaw/plugin-artifacts/crays-subscriptions/b47585084ebee3e5d19dddca86b8fbeea863d96899a0a6b0fe987b162f583b0f",
+    "/opt/crays/openclaw/plugin-artifacts/crays-personal-webtools/bb62c5f7c4db952d0af573dfb0db4dcff14fb1ec0601ecbd42f364c9e64b785e",
+    "/opt/crays/openclaw/plugin-artifacts/crays-habits/525731b5d4f07f772f30805719bfd3bec6ae5a67899d76f0444ac40c042db413"
+  ],
+  "existingWebtoolsSkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-personal-webtools/1f8ebaa5de8c262527636b7adcb9b61e2852ac6e09eeab420e6b00e8fd174abd",
+  "nativeQualificationPending": false,
+  "rootApprovalGranted": false,
+  "runtimeActivationAllowed": false,
+  "runtimeNamespaceNewRootVisibilityProven": false,
+  "allNewUsersDefaultAssigned": false,
+  "sourceOnly": true,
+  "existingHabitsSkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-habits/b08f3b0ea859bc5814e7410d98e0b7d6f4a768dc97d7df40e45b726401f789b6",
+  "previousConfigSha256": "f94f5ced9326019b88eb180e5fa1e38ee5892e46c1234edf3efa92c40dfbcac5",
+  "packingPluginRoot": "/opt/crays/openclaw/plugin-artifacts/crays-packing/9c71e07a66cfa7b93158ca720c8ef82e28904583a02de1fcabc017ad7792b713",
+  "packingSkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-packing/895c10bf2014ba9ccee1fbccf012403b9b3fec709dd66610c4ee34c1674e797c",
+  "preferencesPluginRoot": "/opt/crays/openclaw/plugin-artifacts/crays-personal-preferences/04eb4614f3010cceb04b2eddf45113dff79a87ea68144722976805b928e70f82",
+  "preferencesSkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-personal-preferences/a1d4be35a3d9c46696f949be9ee9f5059425fd104ada859adf8b52e4425dcd2f",
+  "actualLiveHabitsEvidence": {
+    "path": "/srv/crays/worktrees/openclaw-phase5-019ff983/docs/architecture/evidence/CRAYS_AGENT_PERSONAL_HABITS_OWNER_NATIVE_HOTRELOAD_2026_10_16.json",
+    "bytes": 3847,
+    "sha256": "087d4776f481324bde6e11988703903ff7b5682044edcc7a3f897757a85fd194"
+  },
+  "actualNative6Proof": {
+    "path": "/srv/crays/worktrees/openclaw-phase5-019ff983/docs/architecture/evidence/CRAYS_AGENT_PERSONAL_PACKING_ORIGINAL_NATIVE_2026_10_16.json",
+    "bytes": 7575,
+    "sha256": "64d1088635b0e9e1a0e3d467d643a63d6c226397cebf1c88c6a3969e43039fd9"
+  },
+  "actualComponent18Proof": {
+    "path": "/srv/crays/worktrees/openclaw-phase5-019ff983/docs/architecture/evidence/CRAYS_AGENT_PERSONAL_PACKING_COMPONENT_2026_10_16.json",
+    "bytes": 5125,
+    "sha256": "7fe32c7c3f5cff654bea257c37ce5a9eca898ea4a94c8dee2b91c40aeb6a320f"
+  },
+  "actualCanonicalSourceAdoption": {
+    "path": "/srv/crays/openclaw/oca063/general-skills-first-wave-20261015/personal-packing-source-adoption-v1/ACTUAL_CANONICAL_SOURCE_ADOPTION.json",
+    "bytes": 2147,
+    "sha256": "aaff78a35adb6b545a658c32c67873a2924a3801f6f40bc3fdf4b7d6118ef570"
+  },
+  "installedV25Retention": {
+    "path": "/srv/crays/worktrees/openclaw-phase5-019ff983/docs/architecture/evidence/CRAYS_AGENT_PERSONAL_HABITS_V25_NEXT_START_RETENTION_2026_10_16.json",
+    "bytes": 3138,
+    "sha256": "206c0df0d272e169bb0142ce51fb85572271c985f35df717cdc2563ee0ce87a4"
+  },
+  "stagedV26Plan": {
+    "path": "/opt/crays/openclaw/personal-services/crays-owner-tools-whatsapp-live-v26/code/PLAN.json",
+    "bytes": 1898747,
+    "sha256": "be2079ea93d969d094e93da2d3894334f8da2dbc81406aeab6a7135e180b4c7a"
+  },
+  "stagedV26Unit": {
+    "path": "/opt/crays/openclaw/personal-services/crays-owner-tools-whatsapp-live-v26/crays-owner-tools-whatsapp-live.service",
+    "bytes": 151369,
+    "sha256": "df6a3f2fe966ccdb4d6c3f5b6f8beb1b7c2c6758e992823a2c002937fed9f993"
+  },
+  "fullCAP026Complete": false,
+  "actualLiveTools": 19,
+  "actualLiveSkills": 15,
+  "installedNextStartVersion": "V25",
+  "preferencesV26PublicStagedOnly": true,
+  "namespaceRequiredNewRootInputs": [
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-packing/9c71e07a66cfa7b93158ca720c8ef82e28904583a02de1fcabc017ad7792b713/CRAYS_ARTIFACT_MANIFEST.json",
+      "bytes": 775,
+      "sha256": "9c71e07a66cfa7b93158ca720c8ef82e28904583a02de1fcabc017ad7792b713"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-packing/9c71e07a66cfa7b93158ca720c8ef82e28904583a02de1fcabc017ad7792b713/index.mjs",
+      "bytes": 5743,
+      "sha256": "7b9ec80a431300b8970b560aa94864aea1c02b06cecc8a21bcfdcac57c590342"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-packing/9c71e07a66cfa7b93158ca720c8ef82e28904583a02de1fcabc017ad7792b713/input.mjs",
+      "bytes": 5758,
+      "sha256": "c1eb9b80f104451cde07571323edcb54a6da6c307aa4a0231d2b3c129a2f237a"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-packing/9c71e07a66cfa7b93158ca720c8ef82e28904583a02de1fcabc017ad7792b713/openclaw.plugin.json",
+      "bytes": 330,
+      "sha256": "aceea987b6a4becbfa9fe50a4138df287b9d4974b59eed2bd4a1d2c96b721f33"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-packing/9c71e07a66cfa7b93158ca720c8ef82e28904583a02de1fcabc017ad7792b713/package.json",
+      "bytes": 375,
+      "sha256": "72836b63c869dd0f6ad9dc85bf73315c8eef667030cb179c4524e743a18573c5"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-packing/9c71e07a66cfa7b93158ca720c8ef82e28904583a02de1fcabc017ad7792b713/rules.mjs",
+      "bytes": 2191,
+      "sha256": "cc360357269f5a7eddb78982a1c7b1f606916b65a1e61a1bbacd1c034b9fe8d5"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-packing/9c71e07a66cfa7b93158ca720c8ef82e28904583a02de1fcabc017ad7792b713/store.mjs",
+      "bytes": 11899,
+      "sha256": "27629e3108f902a84deada01df2fb4ff93e5ef259d021dc3c0667c65d21aec63"
+    },
+    {
+      "path": "/opt/crays/openclaw/skill-artifacts/crays-packing/895c10bf2014ba9ccee1fbccf012403b9b3fec709dd66610c4ee34c1674e797c/CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "bytes": 453,
+      "sha256": "895c10bf2014ba9ccee1fbccf012403b9b3fec709dd66610c4ee34c1674e797c"
+    },
+    {
+      "path": "/opt/crays/openclaw/skill-artifacts/crays-packing/895c10bf2014ba9ccee1fbccf012403b9b3fec709dd66610c4ee34c1674e797c/skills/crays-packing/SKILL.md",
+      "bytes": 3982,
+      "sha256": "2978c38f1353637e33b49a0123886ba0feb9f72941fa7c18df3bf1b8a42848b3"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+import test from 'node:test';import assert from 'node:assert/strict';import{createHash}from'node:crypto';
+import {composeApprovedGeneralRuntime as compose,prepareApprovedGeneralRuntime as prepare,prepareChannelIndependentGeneralRuntime as entry,verifyApprovedGeneralRuntimeArtifacts as verify}from'./prepare-approved-general-runtime.candidate-v5.mjs';
+import {composeApprovedGeneralRuntime as oldCompose}from'./prepare-approved-general-runtime.candidate-v3.mjs';
+import DEPLOY from'./approved-general-baseline-v5-catalogue-source-v1/FINAL_CHANNEL_INDEPENDENT_PROJECTION.json'with{type:'json'};
+import S from'./approved-general-baseline-composition-v3/INPUT_PROJECTED_RUNTIME_STANDARD.json'with{type:'json'};
+import R from'./approved-general-baseline-composition-v3/reminders/REMINDER_BASELINE_BINDINGS.json'with{type:'json'};
+import L from'./approved-general-baseline-composition-v3/selected-local-skills/ARTIFACT_BINDINGS.json'with{type:'json'};
+import M from'./approved-general-baseline-composition-v3/multipart-pdf/ARTIFACT_BINDINGS.json'with{type:'json'};
+import INPUTCAT from'./approved-general-baseline-composition-v3/INPUT_HOST_ARTIFACT_CATALOG.json'with{type:'json'};
+const hash=x=>createHash('sha256').update(x).digest('hex');
+function fixture(person,sender){const id='personal-'+hash('crays.personal-agent.assignment.v1\n'+person).slice(0,48),runtime='/var/lib/crays-personal-agents/'+hash('crays.personal-agent.person-namespace.v1\n'+person)+'/'+id,account='fixture-business-'+person,policy={profile:'full',allow:[...S.descriptor.tools],deny:[],fs:{workspaceOnly:true}},channel={enabled:true,dmPolicy:'allowlist',groupPolicy:'disabled',configWrites:false,allowFrom:[sender]};return {context:{canonicalPersonId:person,agentId:id,runtime},base:{tools:structuredClone(policy),agents:{defaults:{timeoutSeconds:120,heartbeat:{every:'0m',target:'none'}},entries:{[id]:{workspace:runtime+'/workspace',agentDir:runtime+'/agents/'+id+'/agent',tools:structuredClone(policy),skills:[...S.descriptor.skills],heartbeat:{every:'0m',target:'none'},model:{primary:'openai/fixture-own-model',fallbacks:[]}}}},skills:{load:{extraDirs:[...L.artifacts.map(x=>x.extraDir)]},entries:Object.fromEntries(S.descriptor.skills.map(x=>[x,{enabled:true}]))},plugins:{allow:[...R.pluginAllow],load:{paths:[M.oldPluginRoot]},entries:Object.fromEntries(R.pluginAllow.map(x=>[x,{enabled:true}]))},auth:{profiles:{['own-'+person]:{provider:'openai',mode:'oauth'}},order:{openai:['own-'+person]}},channels:{whatsapp:{...channel,accounts:{[account]:structuredClone(channel)}}},bindings:[{agentId:id,match:{channel:'whatsapp',accountId:account}}],commands:{ownerAllowFrom:['whatsapp:'+sender]},cron:{enabled:false},hooks:{enabled:false}}};}
+
+function person(name){const x=fixture(name,'__CRAYS_PRIVATE_LITERAL_54c2e5cec36d64245e14e7a4__');delete x.base.channels;delete x.base.bindings;delete x.base.commands;delete x.base.auth;x.base.skills.load.extraDirs=INPUTCAT.skills.map(s=>s.root+'/skills');x.base.plugins.load.paths=INPUTCAT.plugins.map(p=>p.root);return x;}
+function projection(x){const p=structuredClone(DEPLOY),l=p.legacyProjection;l.instructionAliases=l.instructionAliasSuffixes.map(a=>({runtimePath:x.context.runtime+a.runtimeSuffix,artifactPath:a.artifactPath}));delete l.instructionAliasSuffixes;return p;}
+function receipt(x){return {accountId:'synthetic-account-'+x.context.canonicalPersonId,canonicalPersonId:x.context.canonicalPersonId,agentId:x.context.agentId,agentDir:x.context.runtime+'/agents/'+x.context.agentId+'/agent',provider:'openai',apiRoute:'openai-chatgpt-responses',profileRef:'synthetic-own-profile',receiptSha256:'1'.repeat(64),expiresAtMs:Date.now()+60000};}
+function pureGuard(){let live=true;return {check:()=>{assert(live,'SYNTHETIC_PURE_SCOPE_CLOSED');},close:()=>{live=false;}};}
+
+import {resolveDefaultInstructionRoots,prepareChannelIndependentGeneralRuntime as directEntry} from './resolve-default-instruction-roots-v1.mjs';
+
+function directFixture(name){const x=person(name),g=pureGuard(),r=compose(x.base,x.context,projection(x),{assertInvocationCurrent:g.check});g.close();return {x,r};}
+test('exact two guide aliases resolve at their positions; all other settings and parent projection retained',()=>{
+ for(const name of ['direct-alice','direct-bob']){const {x,r}=directFixture(name),before=JSON.stringify(r),out=resolveDefaultInstructionRoots(r,x.context);
+  assert.equal(JSON.stringify(r),before);assert.equal(out.personalInstructionAliasMountsRequired,false);assert.equal(out.toolCount,29);assert.equal(out.skillCount,32);
+  assert.notEqual(out.projectionSha256,r.projectionSha256);assert.equal(out.legacyCompositionProjectionSha256,r.projectionSha256);
+  for(const key of Reflect.ownKeys(r.config))if(key!=='skills')assert.strictEqual(out.config[key],r.config[key]);
+  for(const a of r.legacyProjection.instructionAliases){const i=r.config.skills.load.extraDirs.indexOf(a.runtimePath);assert.equal(out.config.skills.load.extraDirs[i],a.artifactPath);}
+  assert(out.config.skills.load.extraDirs.every(p=>p.startsWith('/opt/crays/openclaw/')));assert.equal(out.defaultFactorySwitched,false);
+ }
+});
+test('foreign person, removed alias, extra root, duplicate target and changed capabilities cannot be normalized',()=>{
+ for(const change of[(r,x)=>x.context.runtime='/var/lib/foreign',(r)=>r.config.skills.load.extraDirs.pop(),(r)=>r.config.skills.load.extraDirs.push('/tmp/foreign'),(r)=>r.config.skills.load.extraDirs.push(r.legacyProjection.instructionAliases[0].artifactPath),(r)=>r.config.tools.allow.push('exec')]){
+  const {x,r}=directFixture('direct-denial');change(r,x);assert.throws(()=>resolveDefaultInstructionRoots(r,x.context));
+ }
+});
+test('resolved artifact verification uses original complete legacy and fixed guide verifiers without alias mounts',async()=>{
+ const {x,r}=directFixture('direct-ro-verification'),out=resolveDefaultInstructionRoots(r,x.context),artifacts=await verify(out);
+ assert.equal(artifacts.skills.length,31);assert.equal(artifacts.fixedGuides.skills.length,3);assert.equal(artifacts.authorityGranted,false);
+});
+test('direct host wrapper still awaits original own-account checks twice and leaves channels unconnected',async()=>{
+ const x=person('direct-host');let calls=0;const a=receipt(x),out=await directEntry(x.base,x.context,{recheckHost:async()=>{calls++;return {...a};}});
+ assert.equal(calls,2);assert.equal(out.personalInstructionAliasMountsRequired,false);assert(!out.config.channels);assert(!out.config.tools.allow.includes('automations'));
+});

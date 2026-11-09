@@ -1,0 +1,454 @@
+{
+  "schema": "crays.personal-baseline-composition-source-pins.v1",
+  "sourceOnly": true,
+  "entry": "infra/openclaw/runtime/personal-agent-materializer/code/server-materializer.mjs",
+  "files": [
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/APPROVED_GENERAL_CHANNEL_INDEPENDENT_CATALOGUE.candidate.json",
+      "bytes": 555150,
+      "sha256": "c1d32b87ed1f9fd33bc8299dd17e909d9a8e3b505cdcc0bdecac11ab65e504f2"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/BASE_HOST_ARTIFACT_CATALOG.json",
+      "bytes": 14839,
+      "sha256": "9d5c85ca0562a4922ee9ff75e3e119077580b9b324603ac6ff4b212c58e5e8d0"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/HOST_ARTIFACT_CATALOG.json",
+      "bytes": 17906,
+      "sha256": "78f06295bef03accf24bb3ff710b8eb5c1331d648f8f9665ed30d0ddd1d5a0e0"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/PROJECTED_RUNTIME_STANDARD.json",
+      "bytes": 337322,
+      "sha256": "3b22035d421297260efc169f32bf87c1be9973438cad6ab76d48a3056a04a9d8"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/SHARED_DEFAULT_PROJECTION.json",
+      "bytes": 20208,
+      "sha256": "82893dabfbdad631b95f538f11aec0e52fd9fbfefdef512f29423908347523a1"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/apply-shared-default-inheritance.mjs",
+      "bytes": 2492,
+      "sha256": "49e83f18102c1881601ef0c6674e990f785c8ab5cc35ae7aaf1f9110aa054ca6"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/INPUT_PROJECTED_RUNTIME_STANDARD.json",
+      "bytes": 337322,
+      "sha256": "3b22035d421297260efc169f32bf87c1be9973438cad6ab76d48a3056a04a9d8"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/channel-independent/cited-research/BASELINE_BINDINGS.json",
+      "bytes": 2621,
+      "sha256": "984e7f960059bc2b500ae9e21200f16f1327047940e66bfacd8cd007e84991a9"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/channel-independent/cited-research/compose-cited-research-inheritance.mjs",
+      "bytes": 2618,
+      "sha256": "14c6aa71657035a25852837b0942c3c5455829139b9b1faaf2cf315324bdb989"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/channel-independent/expedia/BASELINE_BINDINGS.json",
+      "bytes": 238279,
+      "sha256": "931c64f2dd44e40a4e60502ab2b7a03069df140e336b3fd19fe5c0bd8509767c"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/channel-independent/multipart-pdf/ARTIFACT_BINDINGS.json",
+      "bytes": 63466,
+      "sha256": "353aa3eb21b46d419d0f195152cffc8b80bcd19730677565fdec23c26c8fb568"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/channel-independent/multipart-pdf/compose-multipart-pdf-delta.mjs",
+      "bytes": 2358,
+      "sha256": "f9c419316be54b0824086e2cbd313e6f483696b40513d65597f629a2ded8ab9d"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/cited-research/BASELINE_BINDINGS.json",
+      "bytes": 2639,
+      "sha256": "727d31b3158f9da047885b746a5d06662f6b998d7fbfe7d2afe6085e0ead468f"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/cited-research/compose-cited-research-inheritance.mjs",
+      "bytes": 2604,
+      "sha256": "a95b6917382970419b888a7baf5662d86fd22235a0c17b2f2f10427604c1b5d2"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/expedia/BASELINE_BINDINGS.json",
+      "bytes": 238324,
+      "sha256": "ba461bb7e07f2f6d8f79769a29cb5f996da8c69975dcf5c92976821dce4a2d32"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/expedia/compose-expedia-search-delta.mjs",
+      "bytes": 4782,
+      "sha256": "0c4e73f7312b79d2167e7d36b6716ab846160a50a529b9a229d41d0d23709529"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/multipart-pdf/ARTIFACT_BINDINGS.json",
+      "bytes": 63474,
+      "sha256": "a163a10324f3580d3146de0ebc5e475ae7f2dadc791f18202d4ac22e3a140f9c"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/multipart-pdf/compose-multipart-pdf-delta.mjs",
+      "bytes": 2358,
+      "sha256": "1bdb04c103456b9efd82154e1f42f7720e03ee393e6e67d3b9f6ba1786caa377"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/reminders/REMINDER_BASELINE_BINDINGS.json",
+      "bytes": 2968,
+      "sha256": "103367f489b62f1ecdbad4b14b621a8fd9ffd3fcd2fbf08f109596c5d7635f13"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/reminders/compose-personal-reminder-candidate.mjs",
+      "bytes": 4672,
+      "sha256": "f717d07532f06498cbdd0c9cdad96ae0206d0ef473bdcbdb1df778d421dc8d80"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/selected-local-skills/ARTIFACT_BINDINGS.json",
+      "bytes": 9846,
+      "sha256": "5e1bb563217929f9191b6653818cc9b2a1a1ce59e754ba278bc010db2a011880"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/selected-local-skills/compose-selected-local-skills.mjs",
+      "bytes": 1579,
+      "sha256": "83048f9b4486e8f9e0932e4c5b89f31ff901d62cc9059ab2035b6fb4a377ebed"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/tts/compose-explicit-speech-delta.mjs",
+      "bytes": 2345,
+      "sha256": "da72a8e1b3f12bb56972ffd879b92e2a0e4532045ba4f5ee2f3407a48c9ccd8c"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v4-real-factory/compose-approved-general-baseline.mjs",
+      "bytes": 6322,
+      "sha256": "d0fb2977bee827220f36748959bc6f6dc3534ecdc821ca688adb29512d25ccaf"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v4-real-factory/compose-channel-independent-baseline.mjs",
+      "bytes": 4468,
+      "sha256": "defeae3bf1fb0a5a774eda5e4002c320ab0cfa5d8eefb5707c64bb468f2c3159"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v4-real-factory/compose-expedia-search-delta.mjs",
+      "bytes": 5544,
+      "sha256": "bc73d288168157e54f4d44cd8d224698bc7d2a6239fa9cfb199543a8c29df6eb"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v4-real-factory/compose-explicit-speech-delta.mjs",
+      "bytes": 2456,
+      "sha256": "80b37d457dbd6e69ed2bd493e26ec0e42555c3d76c8a4e73fce261e48d2b7f3b"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v5-translation-video/FIXED_THREE_GUIDE_BINDINGS.json",
+      "bytes": 4043,
+      "sha256": "24ab0b89496714674c4871dce5bf9c9935773966d7ef0d9f7e23668c90a9088e"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v5-translation-video/compose-approved-general-baseline.mjs",
+      "bytes": 5113,
+      "sha256": "bb5a0fd4ea70cd5317ce29c5e2db587da2f3d5a9513a4250ddad9edffd15a15e"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-v5-catalogue-source-v1/FINAL_CHANNEL_INDEPENDENT_PROJECTION.json",
+      "bytes": 1115296,
+      "sha256": "04252011cc976ac561dc04a1aff53e699737b46c02dc45ca0542382887698bbf"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/materialize-personal-general-runtime.candidate.mjs",
+      "bytes": 14355,
+      "sha256": "20e8ffb63037203735d572f942864bd99a3299f64aa4827f8c20955cfd910e6a"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/materialize-personal-general-runtime.direct-roots.candidate.mjs",
+      "bytes": 14404,
+      "sha256": "9c94bb34a67b392116b9579891484f633ea8f97d84a6fa71d6474753ca6ea133"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/materialize-personal-runtime.mjs",
+      "bytes": 13585,
+      "sha256": "98c8b6c1b650a2ceb6f84da482214f231b9483d14b027ec51d18fe6eacf8c065"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/native-own-account-authority.mjs",
+      "bytes": 6563,
+      "sha256": "800ae4cca87c0cebc22676c9bd5468de0d7da439c196e51e85e697ab6bc664fc"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/open-runtime-root.mjs",
+      "bytes": 915,
+      "sha256": "4602a115ff65d64041d40c2b55b75bf89649204d7953d10e995a32c2ffb01a3e"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/original-native-config-validator.mjs",
+      "bytes": 476,
+      "sha256": "6b2ec1e4de41b4e89199aa5e78c1adb766fb99f2a49495c0f2bc61102c762705"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/prepare-approved-general-runtime.candidate-v3.mjs",
+      "bytes": 5762,
+      "sha256": "d327e87800ddfa320a9dd87292bf453f8936e68435bf3650d4f6250f07a7f5d9"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/prepare-approved-general-runtime.candidate-v5.mjs",
+      "bytes": 9409,
+      "sha256": "ae3152077224e7575baf02719435eed672cc2a10ccfc11a4c3b6a85e344440ee"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/prepare-channel-independent-general-runtime.candidate-v2.mjs",
+      "bytes": 2701,
+      "sha256": "53d5f4b6fd891febbc49c3442192e860a165d5d7f4fad2a6be32a33a9833be86"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/resolve-core-assignment.mjs",
+      "bytes": 3812,
+      "sha256": "7d523569f6835879e8e515260a3cf6f9d0f4c223eda495335ef837a32e12486a"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/resolve-default-instruction-roots-v1.mjs",
+      "bytes": 3701,
+      "sha256": "78287ca162577cd0775159ef7cb5923bd2bae8a462985d5f122d857674c9e9d5"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/runtime-journal.mjs",
+      "bytes": 3713,
+      "sha256": "af5f7d6f6fdc7245bbae98ef0c49a8afc276651858b547b2f23b8ad47c576695"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/server-general-materializer.direct-roots.candidate.mjs",
+      "bytes": 1727,
+      "sha256": "d84a74f80508116f9f5cf676be252ac6ca4c692603193d8475aeb16affb8fd39"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/server-materializer.mjs",
+      "bytes": 444,
+      "sha256": "2e46d8a8fa8c5eda4a257eefc763b34c3b80ef38e0b80cf5d3202da827d28055"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-batch-v1/TRANSLATION_VIDEO_BINDINGS.json",
+      "bytes": 5149,
+      "sha256": "046c37ca559f77fb597f157578820b2c4a00a051e0585307c0c2cee2f206e2cf"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-batch-v1/baseline/V53_WEATHER_BINDINGS.json",
+      "bytes": 12269,
+      "sha256": "eba404173c3006e37606c9cdd8a72e4dfb61955faadd45a0bf93fa7576fbd840"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-batch-v1/compose-translation-video-batch.mjs",
+      "bytes": 7411,
+      "sha256": "9e0651ba3d7cea304773ec0f3c1ee2c604709f847e2b9fc303154a46cd5e0a98"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/verify-fixed-general-guides-v1.mjs",
+      "bytes": 3781,
+      "sha256": "5627687a1c618630157212c2de37f7303769b5dd3705031947f78965e3451b08"
+    },
+    {
+      "relative": "infra/openclaw/runtime/personal-agent-materializer/code/verify-shared-artifacts.mjs",
+      "bytes": 4507,
+      "sha256": "d4864d79f71e84dc003121ac9210674bb090399b749c5658e591ae26eed1f798"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v10/STANDARD_PACKAGE.json",
+      "bytes": 233933,
+      "sha256": "1cdfabaaa9d13b57da11ad6dfbe87a046b30657f341e25fe55d7e790c7f38a31"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v10/new-personal-agent-baseline-config.mjs",
+      "bytes": 4882,
+      "sha256": "d3d1c19fcc8cd313c4bd054a2d5c9b3afb8fca9a63807c41c284882a645349eb"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v11/STANDARD_PACKAGE.json",
+      "bytes": 242706,
+      "sha256": "603b4b92071a006e87514445b98485f576f1d5604ddcfffd802eaba2ddf1b483"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v11/new-personal-agent-baseline-config.mjs",
+      "bytes": 4918,
+      "sha256": "5fdf22052c0dec49c9827808910112178049570bde0928973c5e7dc7002eaeb5"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v12/STANDARD_PACKAGE.json",
+      "bytes": 247401,
+      "sha256": "4dbafd67fd73fc49522d992fb5af1eef735800d5ec05060e304182c8508b75a5"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v12/new-personal-agent-baseline-config.mjs",
+      "bytes": 4896,
+      "sha256": "fa34fefdf4296022ac1a0060d211325aaf9be758638324a83c8efd1fd05009de"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v13/STANDARD_PACKAGE.json",
+      "bytes": 253213,
+      "sha256": "d04d08754bde12c9db728a7e94a33e4e062fa0a629a95df4006a8b79cc7d855c"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v13/new-personal-agent-baseline-config.mjs",
+      "bytes": 5487,
+      "sha256": "f7347e915d1bc18cb58c0160ef2a339a412dd4e7d8fa2ce4bf8df6c26636a7ba"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v14/STANDARD_PACKAGE.json",
+      "bytes": 258904,
+      "sha256": "fff1cc68353646ba342e2266ec3d678bffe2e6caca2e029d2f2d03c4b7e90355"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v14/new-personal-agent-baseline-config.mjs",
+      "bytes": 4991,
+      "sha256": "cbea4fdd8fb0f635f1a9cb673aa21bc23cfb6ce4e32b029504c46e1cb6af37a1"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v15/STANDARD_PACKAGE.json",
+      "bytes": 265621,
+      "sha256": "ea8174f9e770749b5c86d6e38f476a2376d4c98c77502f1d342fd069a9f296da"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v15/new-personal-agent-baseline-config.mjs",
+      "bytes": 5008,
+      "sha256": "8411e56768351e3f6f414bc583846fb422c70075644187e0c3a77b92d0e1fc38"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v16/STANDARD_PACKAGE.json",
+      "bytes": 271413,
+      "sha256": "46e0d4f8913bfaf3dd664bf0d506359dfad3ea779c978615c117c25b3c8dad5c"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v16/new-personal-agent-baseline-config.mjs",
+      "bytes": 4963,
+      "sha256": "d54dd8a9d6cf49949e7562ad377832248c4f7d702f1411f6df152f6f57824b15"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v17/STANDARD_PACKAGE.json",
+      "bytes": 278197,
+      "sha256": "5ce5da5f28e51d87ff62e3b267e5ef5a29bb933f75fba7954e96b6d1614b4b04"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v17/new-personal-agent-baseline-config.mjs",
+      "bytes": 4976,
+      "sha256": "760d2756abe1dc5edbce847cf8fc43ac186bc7194cc900683d5816d99159edde"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v19/STANDARD_PACKAGE.json",
+      "bytes": 293459,
+      "sha256": "9744765b9e77a2fe6f2bca91730b5c330cd8406b6766142df500ae49b51ecd95"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v19/new-personal-agent-baseline-config.mjs",
+      "bytes": 5113,
+      "sha256": "5046ea69da9fd0dfbb023e905dd7a0fff033b04b97297fe29aef67e867024d0b"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v2/STANDARD_PACKAGE.json",
+      "bytes": 3020,
+      "sha256": "f87e415b476a618dd835e7a9d7e8ce51d0a1dfb7536359a7a31ce3b22149f911"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v2/new-personal-agent-baseline-config.mjs",
+      "bytes": 7036,
+      "sha256": "c35a444eb2794561fc1eba4ed2fac2eef486e380b7a0c7ed0c9c513dc1a1412f"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v2/with-binding107.mjs",
+      "bytes": 2649,
+      "sha256": "13d04022387767fa7068ca908a6bd9548c186a453df7f9c737ef695215284a7f"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v2/with-everyday-assistance.mjs",
+      "bytes": 1930,
+      "sha256": "81f2259cfcedd1978aa766342db3a8b695782c37ef3c5e7d5db5cdaf3207dad3"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v20/STANDARD_PACKAGE.json",
+      "bytes": 319902,
+      "sha256": "108055d4421823e5a62e4f754209378e43dbc5d79a424eb8f45afff84302c1b8"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v20/new-personal-agent-baseline-config.mjs",
+      "bytes": 5084,
+      "sha256": "85eda7519c5728aed386b42576ea3935b727fb1c4b348ac49bd6e16cdf452415"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v3/STANDARD_PACKAGE.json",
+      "bytes": 8107,
+      "sha256": "ea68570d3f7ef61ea86de78604dd48f3b2f5f4e2ce7eee7e92187b6d8116f284"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v3/new-personal-agent-baseline-config.mjs",
+      "bytes": 4536,
+      "sha256": "cd1bb42dd6bc1f5067f11479dbfd6302800592ae127ed6753652deee4c11a59c"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v4/STANDARD_PACKAGE.json",
+      "bytes": 14457,
+      "sha256": "e0e14aa974aee9897ec9fd1c0cc865156402edafccc50225409a0efd07746fba"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v4/new-personal-agent-baseline-config.mjs",
+      "bytes": 2525,
+      "sha256": "28e8c7d54492e2afeef9f4514d79397d575ad165f1dbb63a8d9f7d087408e717"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v5/STANDARD_PACKAGE.json",
+      "bytes": 92652,
+      "sha256": "8d7959378ee2c59877553ef9b8958173ad92c73d44ec4010b142e412a618d863"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v5/new-personal-agent-baseline-config.mjs",
+      "bytes": 3971,
+      "sha256": "b31ae0d1bb0a00f5a83cdec19491d475d9c42d4c107445fa7f2e98ab10b2f9d6"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v6/STANDARD_PACKAGE.json",
+      "bytes": 96396,
+      "sha256": "a3f272ec6a96ef4ed6e4771dc5f3ad343ba643b48c55747db433d78116cc9ff7"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v6/new-personal-agent-baseline-config.mjs",
+      "bytes": 4466,
+      "sha256": "4911c7d776882a77b0969cc4637ad1c7525f72ca92575687b8efb697e0770193"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v7/STANDARD_PACKAGE.json",
+      "bytes": 98219,
+      "sha256": "10a1fcb62c23e93ec2e9f785b5aa229bdb957b45d3b98e7100b0d4fd8b854d73"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v7/new-personal-agent-baseline-config.mjs",
+      "bytes": 4746,
+      "sha256": "a0d681cb8fb8113807766bb88c2e2fb8982ce6b091fcf6b5e7769dec62ec3635"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v8/STANDARD_PACKAGE.json",
+      "bytes": 159493,
+      "sha256": "7f0d65b71cc134e510f8794e1366e723297f71534ddf0e7e1da1508ecf965f3b"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v8/new-personal-agent-baseline-config.mjs",
+      "bytes": 4809,
+      "sha256": "a3fd98a7c87dc2360b36d8279e55b6d27845f253d3d9ae29279eb99381912bf5"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v9/STANDARD_PACKAGE.json",
+      "bytes": 223415,
+      "sha256": "3676a201be3cb52795c5d17e28ea9d81fd50268616d792b335f48a25d0f80dc2"
+    },
+    {
+      "relative": "scripts/personal-agent-standard-package-v9/new-personal-agent-baseline-config.mjs",
+      "bytes": 5997,
+      "sha256": "398c526ba8d2ee4a6d1be56d4102d2b2e2006ca723044a55e8ce4149c2e014a8"
+    }
+  ],
+  "sdk": {
+    "inventorySha256": "ee2338744dd9b247b026093929eae5a1bf9a7a1d9f5997412c4adeb04088e5df",
+    "originalManifestSha256": "a8747c7eb66ac678073c361e35dd81848cf87e4527d543bd05114611b7905f88",
+    "fileCount": 41969,
+    "symlinkCount": 34
+  },
+  "node": {
+    "bytes": 126595440,
+    "sha256": "7fde7b8afa198da66257f42ee2001d874c7355631e6d1579a5fb5ef1f246df4c"
+  },
+  "canonicalServerSourceMode": "DIRECT_IMMUTABLE_GENERAL_29_TOOLS_32_INSTRUCTIONS",
+  "operationalDeploymentOrNewEndpointAuthorized": false
+}

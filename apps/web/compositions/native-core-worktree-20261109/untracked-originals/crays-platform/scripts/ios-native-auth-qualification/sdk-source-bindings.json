@@ -1,0 +1,198 @@
+{
+  "schema": "crays.native-qualification.actual-owner-sdk-source.v1",
+  "version": "2026.10.4",
+  "root": "/opt/crays/openclaw/dependency-artifacts/sdk4-complete/2badb63c9d2ed692a4d2d71c63e1d96ac7453a9c5519348a8dc5a001d611afbb/node_modules/openclaw",
+  "ownerRuntimeService": "crays-owner-tools-whatsapp-live.service",
+  "sourceInventory": {
+    "path": "/opt/crays/openclaw/personal-services/crays-owner-tools-whatsapp-sdk4-document37-live-v2/FULL_SOURCE_INVENTORY.json",
+    "sha256": "d448103e0d90867e80d6596458d351ed9ae71f01e7d506da9b33f6a81e948eb6"
+  },
+  "scope": "Current owner SDK public code only. Controlled peer and synthetic SQL tests; not live owner pairing, model reply or Core person grant. No credentials/state or live mutations.",
+  "files": [
+    {
+      "file": "dist/chat-broadcast-fbR7vwZn.mjs",
+      "bytes": 6136,
+      "sha256": "5f7fa1f16fa3ad9ac599dc9e7496269c0191a3bbba06875c4bc5264469bfef2a"
+    },
+    {
+      "file": "dist/chat-display-projection.core-BRO3Pr6M.mjs",
+      "bytes": 36167,
+      "sha256": "68cc34536da15bb752aa8a4986407d0aa750f96726f9afdbc52daaaacb7ab28d"
+    },
+    {
+      "file": "dist/chat-display-projection.core-DBpQGAs4.mjs",
+      "bytes": 572,
+      "sha256": "945f38c07c590b40febbdee8f3fffe3b84e3edbebf1ca19003937ba01744f1f0"
+    },
+    {
+      "file": "dist/chat-display-projection.history-BwJmMvNQ.mjs",
+      "bytes": 958,
+      "sha256": "5b4396f2317b48314155f5c12bae9c26673d5b546bd036b09ebc9d3d423bb347"
+    },
+    {
+      "file": "dist/chat-display-projection.history-C7mOEuaq.mjs",
+      "bytes": 18939,
+      "sha256": "fb11e07d3841482c66749c98618ead6d95e7dcef0e92b3c7d7acfcab30df8120"
+    },
+    {
+      "file": "dist/chat-history-handler-BKMKq528.mjs",
+      "bytes": 44072,
+      "sha256": "e75dd8e976c31de86e3f70cf33ceacf98c7b73c930043b88b5abb25b2bd57fd6"
+    },
+    {
+      "file": "dist/chat-history-handler-DdlC1l2x.mjs",
+      "bytes": 122,
+      "sha256": "e20ddfc8d64920d81c3317f5c3adc3329820a3b460f651bf4b65179d0c403ba7"
+    },
+    {
+      "file": "dist/chat-history-page-kernel-BuoHzeSi.mjs",
+      "bytes": 333,
+      "sha256": "12eacd4b47014ebe36f4a471d7627eaaf09d35d57bb156210e9fa858962d86ad"
+    },
+    {
+      "file": "dist/chat-history-page-kernel-DgKDawOP.mjs",
+      "bytes": 9539,
+      "sha256": "47db7129126079996ef8feb91e4d57b89128ddc73bcd4bb89d17cd8a0bfe25ff"
+    },
+    {
+      "file": "dist/chat-history-response-page-C2SXT9wr.mjs",
+      "bytes": 207,
+      "sha256": "db65995bb0259b08d3b9615ea87ac0cd1e7b8cb220d4b4f78c6e025068614892"
+    },
+    {
+      "file": "dist/chat-history-response-page-w4aVQq-O.mjs",
+      "bytes": 3366,
+      "sha256": "06a18b59d3a67154a31a28597f2d8bc99edcaf1a37b96bed5db95cda18df81cb"
+    },
+    {
+      "file": "dist/chat-message-content-C-d0FKNG.mjs",
+      "bytes": 5765,
+      "sha256": "283d88391806d30ba8f35f5e084f9bf2bd0e217ecde125f83c2afaa4dbdce490"
+    },
+    {
+      "file": "dist/chat-send-handler-1WfNJbYF.mjs",
+      "bytes": 309,
+      "sha256": "678efcf98c2045a7c69e5d5977c6183ba3e93f70c445e61b29c07d66461dea5a"
+    },
+    {
+      "file": "dist/chat-send-handler-CvwtstrM.mjs",
+      "bytes": 251637,
+      "sha256": "94e598f4f92f81f6fbb7c99573b3479e23d75d591b85fc40c750d9bf4e343aae"
+    },
+    {
+      "file": "dist/chat-transcript-inject-D29kMQVD.mjs",
+      "bytes": 5034,
+      "sha256": "a5768a8b4a8cfee612b7febf3d520b705341a666f682f85824faf285a74d3730"
+    },
+    {
+      "file": "dist/client-Bd9s4LXT.mjs",
+      "bytes": 77367,
+      "sha256": "bdcf44e924a71da26a909de024bd6be21048c15b3b022dd86e98252275d0cb3e"
+    },
+    {
+      "file": "dist/device-auth-BT2rF0Jc.mjs",
+      "bytes": 1114,
+      "sha256": "ca29a67f0fae072f2c7bcf8a9fc2f72ad3198cdb5b455e34e42d2a3ae956e242"
+    },
+    {
+      "file": "dist/device-auth-store-BEiXAvyd.mjs",
+      "bytes": 5534,
+      "sha256": "79c1b5893a52558d4a771a43dde57be189a4579cf6b5957045d0ed60c24ace50"
+    },
+    {
+      "file": "dist/device-identity-KmxGQO-v.mjs",
+      "bytes": 3057,
+      "sha256": "f2d479439934b870ecc2cb63671a66e3ef18c3ceb827c988088a70c764e7792c"
+    },
+    {
+      "file": "dist/device-pairing-Drmq_Czv.mjs",
+      "bytes": 4892,
+      "sha256": "48bcfdbfa2b870d1784420852f77ec85a3848e69333a7820f19479af2e8bf314"
+    },
+    {
+      "file": "dist/device-pairing-approval-DyoNg7Fe.mjs",
+      "bytes": 3643,
+      "sha256": "2d964a7547b7c4ed41691eb3869801506a6b7cb59b440935378505454499ca70"
+    },
+    {
+      "file": "dist/ed25519-signature-D_xiObSW.mjs",
+      "bytes": 6724,
+      "sha256": "0a879928b4d3a9810fab9a75de0e10ca86338ea318bb093dd887dbe127ee4ef2"
+    },
+    {
+      "file": "dist/main-session-00MgEWj5.mjs",
+      "bytes": 4275,
+      "sha256": "20cfcc48140dcad5b57d8a5c9f3c950313169d94608349d84743b318020752c1"
+    },
+    {
+      "file": "dist/protocol-validator-BeXu4Ype.mjs",
+      "bytes": 960,
+      "sha256": "2c182e494518cfc496d203fea771e333a6c993c161316b4a5e2ef7df040c941b"
+    },
+    {
+      "file": "dist/server-DBBA_cCO.mjs",
+      "bytes": 5384,
+      "sha256": "9f27f8cc0c3d67b3f4236cbcb333e5ad016d7e6aedce1f5a172fe1ad124e2bcd"
+    },
+    {
+      "file": "dist/server-start-CJuITJLz.mjs",
+      "bytes": 357675,
+      "sha256": "a90370b682156d7c2d2140b5c4abb165d1a8c4c9800089773a6d0d0ba3acc912"
+    },
+    {
+      "file": "dist/sessions-DJqMAtE3.mjs",
+      "bytes": 127324,
+      "sha256": "52632072cf5da9accf18b181b93551d07e6a282467d8cfa3d00a0bba6f61ee2f"
+    },
+    {
+      "file": "dist/sessions-row-DAFw32gg.mjs",
+      "bytes": 14251,
+      "sha256": "81aed9a218cb192b1046e5ad7febcbb1f6e7293fc224e56c9fe043be5fee37b2"
+    },
+    {
+      "file": "dist/src-l2dWvEsN.mjs",
+      "bytes": 317487,
+      "sha256": "d5ad6564ace5e2bfa36c71b8b8d93ea95d4b87c46d02a817a70eac07294b7974"
+    },
+    {
+      "file": "dist/transcript-events-DUHAZLVw.mjs",
+      "bytes": 6840,
+      "sha256": "4aa7040897cdc99160acfea6b8d7e7b3bcc31160bba0b278a6ed12fa1f0824ee"
+    },
+    {
+      "file": "dist/transcript-visible-record-C_2yzTED.mjs",
+      "bytes": 2392,
+      "sha256": "9824fede6b2522ea20aee2910a9a7b768dfe0914d4c09a67c23a762101af07a2"
+    },
+    {
+      "file": "dist/websocket-CGHaToS5.mjs",
+      "bytes": 577,
+      "sha256": "7d37c32ff866a7952e4b4e4eac98e82050f4b8a33273f3a6f9aba1320bc9d867"
+    },
+    {
+      "file": "package.json",
+      "bytes": 148587,
+      "sha256": "1ef9c6031d4789c57f1d7632d0b1c149d31e194b2a9441d93dcfc0010d8d74f6"
+    },
+    {
+      "file": "dist/users-mTKgp7uM.mjs",
+      "bytes": 29717,
+      "sha256": "09c2a41d9708ac3a0a9e7da79ce7de1b8575b234bbadaa9349ec9957c9a8f59a"
+    },
+    {
+      "file": "dist/session-method-scopes-base-CcbSY8lP.mjs",
+      "bytes": 4667,
+      "sha256": "1ee44fc922346e20344859722b97564b2af5d962a252ac37b1dec315b719fbe2"
+    },
+    {
+      "file": "dist/user-profile-email-Bp-r4diT.mjs",
+      "bytes": 1414,
+      "sha256": "a6521afc13a8874e92fae746fbce145afe1d92d09cbcee7abe45022836dce1c4"
+    },
+    {
+      "file": "dist/user-profiles-B3UR6UN9.mjs",
+      "bytes": 22008,
+      "sha256": "78bdd62d991bbad865c106dcbdf8cc7431057e763e4447b2472568192cf02ec2"
+    }
+  ]
+}

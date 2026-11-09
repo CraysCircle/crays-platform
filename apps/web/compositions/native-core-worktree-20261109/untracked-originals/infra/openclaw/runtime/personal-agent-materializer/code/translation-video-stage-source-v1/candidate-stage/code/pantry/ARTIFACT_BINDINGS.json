@@ -1,0 +1,103 @@
+{
+  "schema": "crays.owner-personal-pantry-forward-bindings.v1",
+  "previousConfigSha256": "53386713d8d39efcea58c64d673799a5fb56558fa12a27a71045360c230bfd37",
+  "existingPluginRoots": [
+    "/opt/crays/openclaw/plugin-artifacts/crays-calculator/9dc61bf9690602b5c8cb0460199160735d70146b2e2ab2b237284c1ad1267241",
+    "/opt/crays/openclaw/plugin-artifacts/crays-personal-records/315bccd5e9d5507617090cce5040cf05538347ec701cf9d33dd850f7762e0356",
+    "/opt/crays/openclaw/plugin-artifacts/crays-personal-dates/14a5123f63e1a67bd5d01ab92e97e3e56ccecc9007a8eca41649bb071ef87741",
+    "/opt/crays/openclaw/plugin-artifacts/crays-shared-expenses/a8fc7d75d3be395a2ac7c1b7dc4233b3b6bf5e42ac109e05ae9e29ea4530fc0a",
+    "/opt/crays/openclaw/plugin-artifacts/crays-feed-reader/46481eb3d47ee26f3b5bb7a577c7ed7e81a9c97fe87ff554fa53397aeb320f7d",
+    "/opt/crays/openclaw/plugin-artifacts/crays-service-notices/a1528a72413c6f55b6d760e11d6a07fb35e451667d38356ab30c094ce2fe1c27",
+    "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/cea34ce3ae897ddef5483d34e33b0a96596c1048b2f1a55904003f28c2098f85",
+    "/opt/crays/openclaw/plugin-artifacts/crays-qr/5173486fc3058967aafa1b097b7ada6e9c8992fd97ce1d99bb1869b5f373f794",
+    "/opt/crays/openclaw/plugin-artifacts/crays-chess/7bb7660806245748ea6ae56deb23e2a2754a7a5bb014d3520939aec68abf9d4d",
+    "/opt/crays/openclaw/plugin-artifacts/crays-item-inventory/25be80ee88b1543350c12ed2523d9b5fe0644996b88e39920adde98615e94e9d",
+    "/opt/crays/openclaw/plugin-artifacts/crays-training-log/2e47d04ebb5f44c1748f5abc578e106a0717d6a0e950f01197364a9a39e20040",
+    "/opt/crays/openclaw/plugin-artifacts/crays-personal-budget/2770097d42125cd5554888d541cc4d02d1e20d1a1057be4671af641b68422f03"
+  ],
+  "existingCorrectedBudgetSkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-personal-budget/5610766631db07ecddce7b6a3c6879520c8386812fb579b1d8a01dcbc4914c80",
+  "existingDocumentSkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-document-exports/560e34e6b19fb2d55a57e956431659b2e04221d4e759d495415611e2ed379d97",
+  "chessSkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-chess/7027ab8a67333d9acabedb140b604eaa46a72d3bb196ef8f53cab92dfd08c710",
+  "inventorySkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-item-inventory/aa8e99ec3f4e6fb25b27d0aa04bfa917a38790b6b9b6c48be41aa6297767589b",
+  "trainingSkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-training-log/9b8b083d3f48233535121446965f0f5a24b1de39000394271514bb2936c09e6a",
+  "pantryPluginRoot": "/opt/crays/openclaw/plugin-artifacts/crays-pantry/9bfdacf9446094a471b6662ef0d0e4b760de84c6200a9b8777c1fb49eae50a20",
+  "pantrySkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-pantry/cedd363a8bebaaf75c111a3ed8a4c27e9d365334d6ba4bcc04f475581971e1a1",
+  "namespaceRequiredNewRootInputs": [
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-pantry/9bfdacf9446094a471b6662ef0d0e4b760de84c6200a9b8777c1fb49eae50a20/CRAYS_ARTIFACT_MANIFEST.json",
+      "bytes": 665,
+      "sha256": "9bfdacf9446094a471b6662ef0d0e4b760de84c6200a9b8777c1fb49eae50a20"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-pantry/9bfdacf9446094a471b6662ef0d0e4b760de84c6200a9b8777c1fb49eae50a20/index.mjs",
+      "bytes": 5486,
+      "sha256": "ba1046b059e4bf96a5486fd35908b1e8150d27803462379581b223ec83604ccc"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-pantry/9bfdacf9446094a471b6662ef0d0e4b760de84c6200a9b8777c1fb49eae50a20/input.mjs",
+      "bytes": 5164,
+      "sha256": "3e409a0a21bab96d8144124c31aa7f0da142041ea5631d701875604d4fb8ecc0"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-pantry/9bfdacf9446094a471b6662ef0d0e4b760de84c6200a9b8777c1fb49eae50a20/openclaw.plugin.json",
+      "bytes": 320,
+      "sha256": "a65177b7974ba79fe9e2ff6ceb0a83c02188d74d1011c173405f74ec3c9aa6be"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-pantry/9bfdacf9446094a471b6662ef0d0e4b760de84c6200a9b8777c1fb49eae50a20/package.json",
+      "bytes": 404,
+      "sha256": "92888002fba8605cf664b62e7ed07cb69e38769b43a9c8a1be30166e2f281ff5"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-pantry/9bfdacf9446094a471b6662ef0d0e4b760de84c6200a9b8777c1fb49eae50a20/store.mjs",
+      "bytes": 17088,
+      "sha256": "efcd364c3d5bc241573a10ba306628a9fc4cda49557d77a8123aeb70da4bea05"
+    },
+    {
+      "path": "/opt/crays/openclaw/skill-artifacts/crays-pantry/cedd363a8bebaaf75c111a3ed8a4c27e9d365334d6ba4bcc04f475581971e1a1/CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "bytes": 397,
+      "sha256": "cedd363a8bebaaf75c111a3ed8a4c27e9d365334d6ba4bcc04f475581971e1a1"
+    },
+    {
+      "path": "/opt/crays/openclaw/skill-artifacts/crays-pantry/cedd363a8bebaaf75c111a3ed8a4c27e9d365334d6ba4bcc04f475581971e1a1/skills/crays-pantry/SKILL.md",
+      "bytes": 2631,
+      "sha256": "a0a643928a26b4fcdef967ecb97cedda2d3ac32022847e7d0ac79f8b772f2b24"
+    }
+  ],
+  "actualComponent18Proof": {
+    "path": "/srv/crays/worktrees/openclaw-phase5-019ff983/docs/architecture/evidence/CRAYS_AGENT_PERSONAL_PANTRY_COMPONENT_2026_10_16.json",
+    "bytes": 4737,
+    "sha256": "55a1f55e4f6885898b10e891a030c67203e6a5b72805a428950fe8a1564cca52"
+  },
+  "canonicalSourceAdoption": {
+    "path": "/srv/crays/openclaw/oca063/general-skills-first-wave-20261015/personal-pantry-adoption-and-root-stage-source-review-v1/ACTUAL_CANONICAL_SOURCE_ADOPTION.json",
+    "bytes": 243,
+    "sha256": "7fa489b656540c3221bcffac1b215311903d2a1959a79a230413863dd3a29bf3"
+  },
+  "sourceStageBinding": {
+    "path": "/srv/crays/openclaw/oca063/general-skills-first-wave-20261015/personal-pantry-adoption-and-root-stage-source-review-v1/SOURCE_BINDINGS.json",
+    "bytes": 3398,
+    "sha256": "1f4c85e4922eb9eb97a5bcd773a023f10ca6039e953606eb5ab0ff5c08f20996"
+  },
+  "actualRootPluginReceipt": {
+    "path": "/srv/crays/openclaw/oca063/general-skills-first-wave-20261015/personal-pantry-adoption-and-root-stage-source-review-v1/ACTUAL_ROOT_READONLY_ARTIFACT_STAGE.json",
+    "bytes": 738,
+    "sha256": "dac4f25ce4c398a7d3bc76d4c97943b306c8e1f3b2a229d2690434baf616d529"
+  },
+  "actualRootSkillReceipt": {
+    "path": "/srv/crays/openclaw/oca063/general-skills-first-wave-20261015/personal-pantry-adoption-and-root-stage-source-review-v1/ACTUAL_ROOT_PANTRY_SKILL_STAGE.json",
+    "bytes": 1315,
+    "sha256": "65124f04c7dd44ee60f492b567b4c35849eeca1e4d9a995dcd87a5a10b729abc"
+  },
+  "actualNative10Proof": {
+    "path": "/srv/crays/worktrees/openclaw-phase5-019ff983/docs/architecture/evidence/CRAYS_AGENT_PERSONAL_PANTRY_ORIGINAL_NATIVE_2026_10_16.json",
+    "bytes": 8155,
+    "sha256": "b044ccfc7a474547a3b71f17a4ea33691e595305fb51d559821b84030cf0afe1"
+  },
+  "nativeQualificationPending": false,
+  "nativeProofRequiredBeforePolicyStageOrLivePrepare": true,
+  "rootApprovalGranted": false,
+  "runtimeNamespaceNewRootVisibilityProven": false,
+  "runtimeActivationAllowed": false,
+  "nativeTenActualPassed": true
+}

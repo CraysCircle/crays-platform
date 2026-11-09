@@ -1,0 +1,24 @@
+/** Exact additive private household budget plugin. Source only; no publication or runtime activation. */
+import assert from 'node:assert/strict';import A from './ARTIFACT_BINDINGS.json' with {type:'json'};
+export const OWNER_AGENT='crays-agent-thorben';
+export const FOURTEEN_TOOLS=Object.freeze(['read','web_fetch','web_search','pdf','crays_calculator','crays_personal_records','crays_personal_dates','crays_shared_expenses','crays_feed_reader','crays_document_exports','crays_qr','crays_chess','crays_item_inventory','crays_training_log']);
+export const TEN_SKILLS=Object.freeze(['weather','crays-everyday-assistance','crays-receipt-reading','crays-personal-dates','crays-shared-expenses','crays-feed-reader','crays-document-exports','crays-chess','crays-item-inventory','crays-training-log']);
+const ADD_PLUGINS=['crays-personal-budget'],ADD_TOOLS=['crays_personal_budget'];
+const PLUGINS=['openai','whatsapp','document-extract','crays-calculator','crays-personal-records','crays-personal-dates','crays-shared-expenses','crays-feed-reader','crays-service-notices','crays-document-exports','crays-qr','crays-chess','crays-item-inventory','crays-training-log'];
+export function composePersonalBudgetDelta(base){
+ assert.deepEqual(Object.keys(base.agents.entries),[OWNER_AGENT]);const agent=base.agents.entries[OWNER_AGENT];
+ for(const p of[base.tools,agent.tools]){assert.equal(p.profile,'full');assert.deepEqual(p.allow,FOURTEEN_TOOLS);assert.deepEqual(p.deny,[]);assert.equal(p.fs.workspaceOnly,true);assert(!p.alsoAllow?.length);}
+ assert.deepEqual(agent.skills,TEN_SKILLS);assert.deepEqual(base.plugins.allow,PLUGINS);assert.equal(base.cron?.enabled,false);
+ assert.deepEqual(base.plugins.entries['crays-service-notices'],{enabled:true,hooks:{allowConversationAccess:true},config:{bindings:[{accountId:'crays-agent-business',recipient:'__CRAYS_PRIVATE_LITERAL_49f10c58323688646ab5eebb__',locale:'de'}]}});
+ assert.deepEqual(base.plugins.load.paths.filter(v=>v.startsWith('/opt/')),A.existingPluginRoots);assert.equal(new Set(base.plugins.load.paths).size,base.plugins.load.paths.length);
+ for(const id of ADD_PLUGINS){assert(!Object.hasOwn(base.plugins.entries,id));assert(!Object.hasOwn(base.skills.entries,id));assert(!agent.skills.includes(id));}
+ const extraRoots=[A.budgetSkillRoot+'/skills'];for(const v of extraRoots)assert(!base.skills.load.extraDirs.includes(v));
+ for(const root of[A.existingDocumentSkillRoot,A.chessSkillRoot,A.inventorySkillRoot,A.trainingSkillRoot])assert.equal(base.skills.load.extraDirs.filter(v=>v===root+'/skills').length,1);
+ const out={...base,tools:{...base.tools,allow:[...base.tools.allow,...ADD_TOOLS]},agents:{...base.agents,entries:{...base.agents.entries,[OWNER_AGENT]:{...agent,tools:{...agent.tools,allow:[...agent.tools.allow,...ADD_TOOLS]},skills:[...agent.skills,...ADD_PLUGINS]}}},plugins:{...base.plugins,allow:[...base.plugins.allow,...ADD_PLUGINS],load:{...base.plugins.load,paths:[...base.plugins.load.paths,A.budgetPluginRoot]},entries:{...base.plugins.entries,'crays-personal-budget':{enabled:true}}},skills:{...base.skills,load:{...base.skills.load,extraDirs:[...base.skills.load.extraDirs,...extraRoots]},entries:{...base.skills.entries,'crays-personal-budget':{enabled:true}}}};
+ for(const[k,v]of Object.entries(base))if(!['tools','agents','plugins','skills'].includes(k))assert.strictEqual(out[k],v);
+ assert.strictEqual(out.tools.media,base.tools.media);assert.strictEqual(out.tools.fs,base.tools.fs);assert.strictEqual(out.agents.defaults,base.agents.defaults);
+ for(const[k,v]of Object.entries(agent))if(!['tools','skills'].includes(k))assert.strictEqual(out.agents.entries[OWNER_AGENT][k],v);
+ for(const[k,v]of Object.entries(base.plugins.entries))assert.strictEqual(out.plugins.entries[k],v);
+ for(const[k,v]of Object.entries(base.skills.entries))assert.strictEqual(out.skills.entries[k],v);
+ return out;
+}

@@ -1,0 +1,11 @@
+{
+  "baselinePacketRoot": "/opt/crays/openclaw/live-policy/nine-tools-v2",
+  "noticePluginRoot": "/opt/crays/openclaw/plugin-artifacts/crays-service-notices/a1528a72413c6f55b6d760e11d6a07fb35e451667d38356ab30c094ce2fe1c27",
+  "existingPluginRoots": [
+    "/opt/crays/openclaw/plugin-artifacts/crays-calculator/9dc61bf9690602b5c8cb0460199160735d70146b2e2ab2b237284c1ad1267241",
+    "/opt/crays/openclaw/plugin-artifacts/crays-personal-records/315bccd5e9d5507617090cce5040cf05538347ec701cf9d33dd850f7762e0356",
+    "/opt/crays/openclaw/plugin-artifacts/crays-personal-dates/14a5123f63e1a67bd5d01ab92e97e3e56ccecc9007a8eca41649bb071ef87741",
+    "/opt/crays/openclaw/plugin-artifacts/crays-shared-expenses/a8fc7d75d3be395a2ac7c1b7dc4233b3b6bf5e42ac109e05ae9e29ea4530fc0a",
+    "/opt/crays/openclaw/plugin-artifacts/crays-feed-reader/46481eb3d47ee26f3b5bb7a577c7ed7e81a9c97fe87ff554fa53397aeb320f7d"
+  ]
+}

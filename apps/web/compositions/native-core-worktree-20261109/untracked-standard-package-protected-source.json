@@ -1,0 +1,410 @@
+{
+  "schema": "crays.core-untracked-standard-package-protected-test-source.v1",
+  "sourceHead": "c2018d04f6a52d8716326a098dde7624cbb18963",
+  "files": [
+    {
+      "sourcePath": "scripts/personal-agent-standard-package-v10/test-new-personal-agent-baseline-config.mjs",
+      "originalBytes": 6745,
+      "originalSHA256": "924274c167e0d51fc2540d7384190820f6d19e6ec8ce80446bf6099a9ac27fea",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/scripts/personal-agent-standard-package-v10/test-new-personal-agent-baseline-config.mjs.template",
+      "templateBytes": 6883,
+      "templateSHA256": "2c29005078060529833a297c0428bd940a6c6d932e8f7a5dd72bf28618a17359",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_IDENTIFIER_2ffa1d6bb3c0000db345e786__",
+          "categories": [
+            "fixed_person_or_account_identifier_not_assumed_public"
+          ],
+          "sourceCharacterStart": 6072,
+          "sourceCharacterEnd": 6079,
+          "occurrences": 3
+        }
+      ]
+    },
+    {
+      "sourcePath": "scripts/personal-agent-standard-package-v11/test-new-personal-agent-baseline-config.mjs",
+      "originalBytes": 4958,
+      "originalSHA256": "ebb49ad9001fc14d5367873806a10a8dbf0d545bc76179f618eff9c2cc6c4a5d",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/scripts/personal-agent-standard-package-v11/test-new-personal-agent-baseline-config.mjs.template",
+      "templateBytes": 5096,
+      "templateSHA256": "a0530d15feca7ddfc33f28b57cdabf5971706c0d27461eaf9ced083f8326e974",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_IDENTIFIER_6d13c78e455ffa1413c7ff01__",
+          "categories": [
+            "fixed_person_or_account_identifier_not_assumed_public"
+          ],
+          "sourceCharacterStart": 4435,
+          "sourceCharacterEnd": 4442,
+          "occurrences": 3
+        }
+      ]
+    },
+    {
+      "sourcePath": "scripts/personal-agent-standard-package-v12/test-new-personal-agent-baseline-config.mjs",
+      "originalBytes": 6921,
+      "originalSHA256": "6edee48d8fec28f505e504177684c4b7c339623c1c6fca7f72d893177f6721f7",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/scripts/personal-agent-standard-package-v12/test-new-personal-agent-baseline-config.mjs.template",
+      "templateBytes": 7059,
+      "templateSHA256": "6210b85ced969f5dc45ef53d4abdf4bac45c71b35de8d33967a636162093f722",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_IDENTIFIER_4723d52ae210ecab29d498d0__",
+          "categories": [
+            "fixed_person_or_account_identifier_not_assumed_public"
+          ],
+          "sourceCharacterStart": 6398,
+          "sourceCharacterEnd": 6405,
+          "occurrences": 3
+        }
+      ]
+    },
+    {
+      "sourcePath": "scripts/personal-agent-standard-package-v13/test-new-personal-agent-baseline-config.mjs",
+      "originalBytes": 5040,
+      "originalSHA256": "c705d2cd98d8bbf32a2239d913ccf15e93814aa5b4202de77ead27652a858fbf",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/scripts/personal-agent-standard-package-v13/test-new-personal-agent-baseline-config.mjs.template",
+      "templateBytes": 5178,
+      "templateSHA256": "20303cdd16a20362d9c443e2e7fa3cab9b7dde527e6c8460a9022eb7ab5a3144",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_IDENTIFIER_c4bde3af8b0fd15ce7ec8356__",
+          "categories": [
+            "fixed_person_or_account_identifier_not_assumed_public"
+          ],
+          "sourceCharacterStart": 4697,
+          "sourceCharacterEnd": 4704,
+          "occurrences": 3
+        }
+      ]
+    },
+    {
+      "sourcePath": "scripts/personal-agent-standard-package-v14/test-new-personal-agent-baseline-config.mjs",
+      "originalBytes": 4297,
+      "originalSHA256": "5a51b0253aec374221b1ea1171a9d499971eb1af7f2d559964af9dc2704b4707",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/scripts/personal-agent-standard-package-v14/test-new-personal-agent-baseline-config.mjs.template",
+      "templateBytes": 4435,
+      "templateSHA256": "4433d54cc6c2f54c635d0c71359ff6ac56960431ddc06a5e1af04dc445e38e86",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_IDENTIFIER_cea006e67407098d02d4b881__",
+          "categories": [
+            "fixed_person_or_account_identifier_not_assumed_public"
+          ],
+          "sourceCharacterStart": 3854,
+          "sourceCharacterEnd": 3861,
+          "occurrences": 3
+        }
+      ]
+    },
+    {
+      "sourcePath": "scripts/personal-agent-standard-package-v15/test-new-personal-agent-baseline-config.mjs",
+      "originalBytes": 5273,
+      "originalSHA256": "01c40ed4fb0e111b260767deec9c5674d1c5583fcf5f5d03d4493c252000057e",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/scripts/personal-agent-standard-package-v15/test-new-personal-agent-baseline-config.mjs.template",
+      "templateBytes": 5411,
+      "templateSHA256": "cf26ceb6bac4685e71a34b4e1ae5a770f8ac83c7d9352a03857d74be4a7b56cf",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_IDENTIFIER_231b1142ce0b02f8eefa5e45__",
+          "categories": [
+            "fixed_person_or_account_identifier_not_assumed_public"
+          ],
+          "sourceCharacterStart": 4754,
+          "sourceCharacterEnd": 4761,
+          "occurrences": 3
+        }
+      ]
+    },
+    {
+      "sourcePath": "scripts/personal-agent-standard-package-v16/test-new-personal-agent-baseline-config.mjs",
+      "originalBytes": 5171,
+      "originalSHA256": "1ef438d0f3f8137d995cc60b931dfc91ba719e37cedeb1761d49c8579f1e5717",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/scripts/personal-agent-standard-package-v16/test-new-personal-agent-baseline-config.mjs.template",
+      "templateBytes": 5309,
+      "templateSHA256": "7c83e17fb7503fe63c3701fdabdd9a94a66aec0a816e5bf5f5a11b8e2a86b787",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_IDENTIFIER_19638b6cd3cd73a1aef20d68__",
+          "categories": [
+            "fixed_person_or_account_identifier_not_assumed_public"
+          ],
+          "sourceCharacterStart": 4658,
+          "sourceCharacterEnd": 4665,
+          "occurrences": 3
+        }
+      ]
+    },
+    {
+      "sourcePath": "scripts/personal-agent-standard-package-v17/test-new-personal-agent-baseline-config.mjs",
+      "originalBytes": 5249,
+      "originalSHA256": "0c5e51da4e276f9a66abdb4b85a9808acf253b4d275329be4b38dc600f187631",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/scripts/personal-agent-standard-package-v17/test-new-personal-agent-baseline-config.mjs.template",
+      "templateBytes": 5387,
+      "templateSHA256": "c1cc415664246a82c80f5fa632811587624e42ec2318d8a9b6420da4c3b6d86c",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_IDENTIFIER_5f159876be42c060ae123518__",
+          "categories": [
+            "fixed_person_or_account_identifier_not_assumed_public"
+          ],
+          "sourceCharacterStart": 4535,
+          "sourceCharacterEnd": 4542,
+          "occurrences": 3
+        }
+      ]
+    },
+    {
+      "sourcePath": "scripts/personal-agent-standard-package-v19/test-new-personal-agent-baseline-config.mjs",
+      "originalBytes": 6594,
+      "originalSHA256": "69a0ba3cfa10f8fdf8baef8217f12b9759513100069b523060a4013993578646",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/scripts/personal-agent-standard-package-v19/test-new-personal-agent-baseline-config.mjs.template",
+      "templateBytes": 6732,
+      "templateSHA256": "4b457156d09e319ede498f21c749dc26d0ad6164b7e92d12a25a72089dab62a8",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_IDENTIFIER_cbbba69a62645bfbb765cf7a__",
+          "categories": [
+            "fixed_person_or_account_identifier_not_assumed_public"
+          ],
+          "sourceCharacterStart": 5825,
+          "sourceCharacterEnd": 5832,
+          "occurrences": 3
+        }
+      ]
+    },
+    {
+      "sourcePath": "scripts/personal-agent-standard-package-v2/test-new-personal-agent-baseline-config.mjs",
+      "originalBytes": 5721,
+      "originalSHA256": "cd34be9029dd87d8fc24d5cba1c02b63042db5bd409e5ce1b48a9481ef0ac4ed",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/scripts/personal-agent-standard-package-v2/test-new-personal-agent-baseline-config.mjs.template",
+      "templateBytes": 6129,
+      "templateSHA256": "82fd87cf7c115b5aea3adb2a9480c4e45b1972e14c9128dc76fbceb040f87f82",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_IDENTIFIER_2bf3f207d1b2e88f74d6d874__",
+          "categories": [
+            "fixed_person_or_account_identifier_not_assumed_public"
+          ],
+          "sourceCharacterStart": 966,
+          "sourceCharacterEnd": 976,
+          "occurrences": 4
+        },
+        {
+          "placeholder": "__CRAYS_PRIVATE_IDENTIFIER_3db277d4a5ec79bd085b60ea__",
+          "categories": [
+            "fixed_person_or_account_identifier_not_assumed_public"
+          ],
+          "sourceCharacterStart": 5151,
+          "sourceCharacterEnd": 5160,
+          "occurrences": 1
+        },
+        {
+          "placeholder": "__CRAYS_PRIVATE_IDENTIFIER_a1f64bf00d9cae3e0447b727__",
+          "categories": [
+            "fixed_person_or_account_identifier_not_assumed_public"
+          ],
+          "sourceCharacterStart": 3791,
+          "sourceCharacterEnd": 3796,
+          "occurrences": 4
+        }
+      ]
+    },
+    {
+      "sourcePath": "scripts/personal-agent-standard-package-v2/test-with-binding107.mjs",
+      "originalBytes": 3130,
+      "originalSHA256": "1a4fac740134725798fbbc1ddad578ae48dd075dffdafd0a1bef074763b580d9",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/scripts/personal-agent-standard-package-v2/test-with-binding107.mjs.template",
+      "templateBytes": 3259,
+      "templateSHA256": "98edb2bd153093f6819629d2ab3c936177efac803e00c377edf01f84dd85206e",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_IDENTIFIER_9d1be93fb6b119f67274721e__",
+          "categories": [
+            "fixed_person_or_account_identifier_not_assumed_public"
+          ],
+          "sourceCharacterStart": 2802,
+          "sourceCharacterEnd": 2812,
+          "occurrences": 3
+        }
+      ]
+    },
+    {
+      "sourcePath": "scripts/personal-agent-standard-package-v20/test-new-personal-agent-baseline-config.mjs",
+      "originalBytes": 6644,
+      "originalSHA256": "08552b985ce02acc2e2b6c40c2aeeeebeb3011512c4856aea9308b893046f6ac",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/scripts/personal-agent-standard-package-v20/test-new-personal-agent-baseline-config.mjs.template",
+      "templateBytes": 6782,
+      "templateSHA256": "4ecbf5d0c29e678d0dd72171257f9e389ca6a39f884a22bbb1d46f5746304460",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_IDENTIFIER_81adb9d7d9b6619c1ab45156__",
+          "categories": [
+            "fixed_person_or_account_identifier_not_assumed_public"
+          ],
+          "sourceCharacterStart": 5919,
+          "sourceCharacterEnd": 5926,
+          "occurrences": 3
+        }
+      ]
+    },
+    {
+      "sourcePath": "scripts/personal-agent-standard-package-v3/test-new-personal-agent-baseline-config.mjs",
+      "originalBytes": 5059,
+      "originalSHA256": "c5c0a8483c710296cd504c91abf719b9b60e769f67d136e5a8e3676d6156c694",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/scripts/personal-agent-standard-package-v3/test-new-personal-agent-baseline-config.mjs.template",
+      "templateBytes": 5100,
+      "templateSHA256": "1b681098def0e0ba47b1e45c53beb9eaacef9543fa7d3a64547c742628239039",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_IDENTIFIER_6dc113eb0985609e4667e9eb__",
+          "categories": [
+            "fixed_person_or_account_identifier_not_assumed_public"
+          ],
+          "sourceCharacterStart": 4597,
+          "sourceCharacterEnd": 4609,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "scripts/personal-agent-standard-package-v4/test-new-personal-agent-baseline-config.mjs",
+      "originalBytes": 3038,
+      "originalSHA256": "e49cc5fdc6d2e259d427fa41346e295c5e420555e814fb7ad5424a315a6cc9b8",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/scripts/personal-agent-standard-package-v4/test-new-personal-agent-baseline-config.mjs.template",
+      "templateBytes": 3124,
+      "templateSHA256": "7dbc5c8eb258fd1212df440735b663635fc432d6d7a0b0bdc80cf85dca6422b3",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_IDENTIFIER_3fd462ccb7984f3320a95755__",
+          "categories": [
+            "fixed_person_or_account_identifier_not_assumed_public"
+          ],
+          "sourceCharacterStart": 2607,
+          "sourceCharacterEnd": 2617,
+          "occurrences": 2
+        }
+      ]
+    },
+    {
+      "sourcePath": "scripts/personal-agent-standard-package-v5/test-new-personal-agent-baseline-config.mjs",
+      "originalBytes": 4970,
+      "originalSHA256": "21719c1f8d3e1bea3287c498916127eae7638099688108b9fe300ead986cbfdb",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/scripts/personal-agent-standard-package-v5/test-new-personal-agent-baseline-config.mjs.template",
+      "templateBytes": 5018,
+      "templateSHA256": "3e2913d4783d7f92c50b8afb7a1cccc8a4e4d3000269edeee5c6a98ccb2781f0",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_IDENTIFIER_7eb863a3b1da45472861bc2e__",
+          "categories": [
+            "fixed_person_or_account_identifier_not_assumed_public"
+          ],
+          "sourceCharacterStart": 4644,
+          "sourceCharacterEnd": 4649,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "scripts/personal-agent-standard-package-v6/test-new-personal-agent-baseline-config.mjs",
+      "originalBytes": 4379,
+      "originalSHA256": "26315dd2580651fc3064a5cdb338d73feccd4759e226415a50e7a235084877ba",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/scripts/personal-agent-standard-package-v6/test-new-personal-agent-baseline-config.mjs.template",
+      "templateBytes": 4517,
+      "templateSHA256": "66ea522527ead983f12805659523bde848224041df6123a5046daa78ad7aae2a",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_IDENTIFIER_32774887db612565912f91e5__",
+          "categories": [
+            "fixed_person_or_account_identifier_not_assumed_public"
+          ],
+          "sourceCharacterStart": 3849,
+          "sourceCharacterEnd": 3856,
+          "occurrences": 3
+        }
+      ]
+    },
+    {
+      "sourcePath": "scripts/personal-agent-standard-package-v7/test-new-personal-agent-baseline-config.mjs",
+      "originalBytes": 8252,
+      "originalSHA256": "4710bd74bf1be2af22f4402a2b8724360d5c86c17f9702a5792c0be76bd912e0",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/scripts/personal-agent-standard-package-v7/test-new-personal-agent-baseline-config.mjs.template",
+      "templateBytes": 8528,
+      "templateSHA256": "444f41de5f121084188e6b434f62f15b9907ca58a1b8238930c368be92029e22",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_IDENTIFIER_db272b1973d59ff99c9aef18__",
+          "categories": [
+            "fixed_person_or_account_identifier_not_assumed_public"
+          ],
+          "sourceCharacterStart": 7432,
+          "sourceCharacterEnd": 7439,
+          "occurrences": 6
+        }
+      ]
+    },
+    {
+      "sourcePath": "scripts/personal-agent-standard-package-v8/test-new-personal-agent-baseline-config.mjs",
+      "originalBytes": 8656,
+      "originalSHA256": "e5ced24532c85583bae708841083516114ee9707864968428af952e0ff8d0cf9",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/scripts/personal-agent-standard-package-v8/test-new-personal-agent-baseline-config.mjs.template",
+      "templateBytes": 8695,
+      "templateSHA256": "3d24fedc66e037f5ab98912ddffcb445d765c719f6135afa22d6e55e87011dde",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_IDENTIFIER_e2ffa67de7a94746b9405e2c__",
+          "categories": [
+            "fixed_person_or_account_identifier_not_assumed_public"
+          ],
+          "sourceCharacterStart": 8094,
+          "sourceCharacterEnd": 8108,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "scripts/personal-agent-standard-package-v9/test-new-personal-agent-baseline-config.mjs",
+      "originalBytes": 11808,
+      "originalSHA256": "7d3644273ceece199fc3e371e97157c65400f87dd3d6836542bc538f10767723",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/scripts/personal-agent-standard-package-v9/test-new-personal-agent-baseline-config.mjs.template",
+      "templateBytes": 12130,
+      "templateSHA256": "6f704e43e47aadbb8e772503303eb82ee9892272fb788f44dd3b317622bb5a51",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_IDENTIFIER_9b012c9b1f08ed14af8938f6__",
+          "categories": [
+            "fixed_person_or_account_identifier_not_assumed_public"
+          ],
+          "sourceCharacterStart": 6911,
+          "sourceCharacterEnd": 6918,
+          "occurrences": 7
+        }
+      ]
+    }
+  ],
+  "privateArchiveSHA256": "b93fa671e6e50600e5c5dcd89032ad9f82162fe416f64ead225d16696decf34b",
+  "privateArchiveBytes": 4100312,
+  "publicOriginalBodies": false,
+  "exactOriginalRecoveryRequiresPrivateCustodyArchive": true,
+  "identityLabelsNotAssumedSyntheticOrPublic": true,
+  "originalTestProgramsExecuted": false
+}

@@ -1,0 +1,50 @@
+-- Disposable qualification DB ONLY. This is NOT an original hosted Core migration.
+-- Simulates exact issuer/client approval while real tables, SQL transactions and
+-- the unmodified native V2 RPC parser/lookup execute. Hosted TLS/ACL/DDL pins are
+-- deliberately NOT accepted by this laboratory transport.
+create schema crays_native_qualification;
+create schema crays_core_rpc;
+create role ios_native_original_rpc_owner nologin nosuperuser nobypassrls noinherit;
+create role ios_native_original_rpc_fixture login nosuperuser nobypassrls noinherit;
+create table crays_native_qualification.exact_bindings(subject text primary key, revoked boolean not null default false);
+insert into crays_native_qualification.exact_bindings(subject) values
+ ('__CRAYS_PRIVATE_SQL_SUBJECT_acba6c18b8cd301406dfb29c__'),('__CRAYS_PRIVATE_SQL_SUBJECT_f747621a2115d5126e48c07a__'),('__CRAYS_PRIVATE_SQL_SUBJECT_e3147a0b9f7fcf53a4ca7759__'),('__CRAYS_PRIVATE_SQL_SUBJECT_5d82b031f438ecb8281e690d__'),('__CRAYS_PRIVATE_SQL_SUBJECT_0f99b9bf0aae2afb1a4abbb5__');
+grant usage on schema crays_core,crays_core_rpc,crays_native_qualification to ios_native_original_rpc_owner;
+grant select on crays_native_qualification.exact_bindings to ios_native_original_rpc_owner;
+grant select on crays_core.crays_accounts,crays_core.auth_identities,crays_core.nostr_identities,crays_core.organization_memberships,crays_core.role_assignments to ios_native_original_rpc_owner;
+do $$ declare t text; begin
+ foreach t in array array['crays_accounts','auth_identities','nostr_identities','organization_memberships','role_assignments'] loop
+ execute format('create policy qualification_original_rpc_read on crays_core.%I for select to ios_native_original_rpc_owner using(true)',t);
+ end loop;
+end $$;
+create function crays_native_qualification.pick_columns(value jsonb,names text[]) returns jsonb
+ language sql immutable set search_path=pg_catalog as $$select jsonb_object_agg(k,value->k) from unnest(names) k$$;
+alter function crays_native_qualification.pick_columns(jsonb,text[]) owner to ios_native_original_rpc_owner;
+revoke all on function crays_native_qualification.pick_columns(jsonb,text[]) from public;
+create function crays_core_rpc.resolve_auth0_identity_bundle_v2(issuer text,subject text,client_hash text) returns jsonb
+ language plpgsql security definer set search_path=pg_catalog as $$
+ declare selected record; a record; bundle jsonb;
+ begin
+ if issuer<>'https://crays-http-qualification.auth0.com/' or client_hash<>encode(sha256(convert_to('native_http_fixture','UTF8')),'hex') or
+ not exists(select 1 from crays_native_qualification.exact_bindings b where b.subject=$2 and not b.revoked) then return null;end if;
+ select * into selected from crays_core.auth_identities i where i.provider_key='auth0' and i.provider_subject=$2 and i.verified;
+ if not found then return null;end if;
+ select * into a from crays_core.crays_accounts c where c.account_id=selected.account_id and c.status='active';
+ if not found then return null;end if;
+ bundle:=jsonb_build_object('schema_version','crays.core.identity-bundle.v1',
+ 'account',crays_native_qualification.pick_columns(to_jsonb(a),array['account_id','display_name','primary_contact','primary_contact_type','status','crays_id','default_role']),
+ 'access_identities',jsonb_build_array(crays_native_qualification.pick_columns(to_jsonb(selected),array['identity_id','account_id','method_type','provider_key','verified','last_used_at'])),
+ 'nostr_identity',(select crays_native_qualification.pick_columns(to_jsonb(n),array['account_id','npub','pubkey_hex','nip05','nip05_status','issuer','issuance_status','private_key_handoff','access_enabled','proof_method','signer_status','linked_at','last_signed_event_at']) from crays_core.nostr_identities n where n.account_id=a.account_id),
+ 'memberships',coalesce((select jsonb_agg(crays_native_qualification.pick_columns(to_jsonb(m),array['account_id','organization_id','role_key','status','scopes']) order by m.membership_id) from crays_core.organization_memberships m where m.account_id=a.account_id),'[]'::jsonb),
+ 'role_assignments',coalesce((select jsonb_agg(crays_native_qualification.pick_columns(to_jsonb(r),array['assignment_id','account_id','role_key','nostr_binding_status','nostr_pubkey_hex','nostr_nip05','nostr_verified_at','organization_id','entity_type','entity_id','granted_by_account_id','status']) order by r.assignment_id) from crays_core.role_assignments r where r.account_id=a.account_id),'[]'::jsonb));
+ return jsonb_build_object('schema_version','crays.core.auth0-login-context.v2','source_auth_identity_id',selected.identity_id,'bundle',bundle,
+ 'exact_binding',jsonb_build_object('issuer_binding_id','synthetic-original-binding-'||selected.identity_id,'identity_id',selected.identity_id,'account_id',a.account_id,
+ 'account_security_version','1','binding_version','1','provider_key','auth0','issuer',$1,'client_id_sha256',$3,'provider_subject_sha256',encode(sha256(convert_to($2,'UTF8')),'hex'),
+ 'approval_record_sha256',repeat('a',64),'approval_purpose','approve-exact-identity-binding','policy_version','synthetic-laboratory-only-not-production',
+ 'status','active','valid_from',current_timestamp-interval '1 hour','valid_until',current_timestamp+interval '1 hour','revoked_at',null));
+ end $$;
+alter function crays_core_rpc.resolve_auth0_identity_bundle_v2(text,text,text) owner to ios_native_original_rpc_owner;
+revoke all on schema crays_core_rpc from public;
+revoke all on function crays_core_rpc.resolve_auth0_identity_bundle_v2(text,text,text) from public;
+grant usage on schema crays_core_rpc to ios_native_original_rpc_fixture;
+grant execute on function crays_core_rpc.resolve_auth0_identity_bundle_v2(text,text,text) to ios_native_original_rpc_fixture;

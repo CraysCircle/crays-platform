@@ -1,0 +1,23 @@
+/** Pure additive CREATE-only proposal. No decoder, auth, model, filesystem or lifecycle actions. */
+import assert from 'node:assert/strict';
+import A from './ARTIFACT_BINDINGS.json' with {type:'json'};
+export const OWNER_AGENT='crays-agent-thorben';
+export const TEN_TOOLS=Object.freeze(['read','web_fetch','web_search','pdf','crays_calculator','crays_personal_records','crays_personal_dates','crays_shared_expenses','crays_feed_reader','crays_document_exports']);
+export const SEVEN_SKILLS=Object.freeze(['weather','crays-everyday-assistance','crays-receipt-reading','crays-personal-dates','crays-shared-expenses','crays-feed-reader','crays-document-exports']);
+const PLUGINS=['openai','whatsapp','document-extract','crays-calculator','crays-personal-records','crays-personal-dates','crays-shared-expenses','crays-feed-reader','crays-service-notices','crays-document-exports'];
+export function composeQrCreateDelta(base){
+ assert.deepEqual(Object.keys(base.agents.entries),[OWNER_AGENT]);const agent=base.agents.entries[OWNER_AGENT];
+ for(const policy of [base.tools,agent.tools]){assert.equal(policy.profile,'full');assert.deepEqual(policy.allow,TEN_TOOLS);assert.deepEqual(policy.deny,[]);assert.equal(policy.fs.workspaceOnly,true);assert(!policy.alsoAllow?.length);}
+ assert.deepEqual(agent.skills,SEVEN_SKILLS);assert.deepEqual(base.plugins.allow,PLUGINS);
+ assert.equal(base.cron?.enabled,false);assert(!Object.hasOwn(base.plugins.entries,'crays-qr'));
+ assert.deepEqual(base.plugins.entries['crays-service-notices'],{enabled:true,hooks:{allowConversationAccess:true},config:{bindings:[{accountId:'crays-agent-business',recipient:'__CRAYS_PRIVATE_LITERAL_14d8c0752ed73e269ffe784c__',locale:'de'}]}});
+ assert.equal(new Set(base.plugins.load.paths).size,base.plugins.load.paths.length);assert(!base.plugins.load.paths.includes(A.qrPluginRoot));
+ assert.deepEqual(base.plugins.load.paths.filter(v=>v.startsWith('/opt/')),A.existingPluginRoots);
+ assert.equal(base.skills.load.extraDirs.filter(v=>v===A.existingDocumentSkillRoot+'/skills').length,1);
+ const out={...base,tools:{...base.tools,allow:[...base.tools.allow,'crays_qr']},agents:{...base.agents,entries:{...base.agents.entries,[OWNER_AGENT]:{...agent,tools:{...agent.tools,allow:[...agent.tools.allow,'crays_qr']}}}},plugins:{...base.plugins,allow:[...base.plugins.allow,'crays-qr'],load:{...base.plugins.load,paths:[...base.plugins.load.paths,A.qrPluginRoot]},entries:{...base.plugins.entries,'crays-qr':{enabled:true}}}};
+ for(const[k,v]of Object.entries(base))if(!['tools','agents','plugins'].includes(k))assert.strictEqual(out[k],v);
+ assert.strictEqual(out.tools.media,base.tools.media);assert.strictEqual(out.tools.fs,base.tools.fs);assert.strictEqual(out.agents.defaults,base.agents.defaults);
+ for(const[k,v]of Object.entries(agent))if(k!=='tools')assert.strictEqual(out.agents.entries[OWNER_AGENT][k],v);
+ for(const[k,v]of Object.entries(base.plugins.entries))assert.strictEqual(out.plugins.entries[k],v);
+ return out;
+}

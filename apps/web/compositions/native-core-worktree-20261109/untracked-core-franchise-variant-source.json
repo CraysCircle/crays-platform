@@ -1,0 +1,132 @@
+{
+  "schema": "crays.core-franchise-original-source-variant.v1",
+  "sourceHead": "c2018d04f6a52d8716326a098dde7624cbb18963",
+  "files": [
+    {
+      "path": "crays-platform/src/app/crays-franchise/[[...slug]]/page.tsx",
+      "bytes": 1474,
+      "sha256": "334f7c0e1577acf0391bfa1657245c70c643d70c6876ade1330d9c9af17e99d2",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/app/crays-franchise/[[...slug]]/page.tsx"
+    },
+    {
+      "path": "crays-platform/src/app/crays-franchise/layout.tsx",
+      "bytes": 442,
+      "sha256": "3681c0d986a57e92ca7eb3fd6ac74db3436da849cbc9d8e4694b1c30aec10d58",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/app/crays-franchise/layout.tsx"
+    },
+    {
+      "path": "crays-platform/src/components/crays-franchise/franchise-footer.module.css",
+      "bytes": 3332,
+      "sha256": "03b9d0be324b6f90928c21c4d21ebd77acf24b6244ef71d776489c0f8fe7853f",
+      "originalMode": "0o644",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/components/crays-franchise/franchise-footer.module.css"
+    },
+    {
+      "path": "crays-platform/src/components/crays-franchise/franchise-footer.tsx",
+      "bytes": 4403,
+      "sha256": "33ca11b2cc8375248c33ee372a08aed8743c5bc594ac55ac8b72372aad3b89af",
+      "originalMode": "0o644",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/components/crays-franchise/franchise-footer.tsx"
+    },
+    {
+      "path": "crays-platform/src/components/crays-franchise/franchise-fullscreen-menu.module.css",
+      "bytes": 4257,
+      "sha256": "294455d45bc5f1a4be6cc8264645644ebc69ee937ab8a77079aa295261f1fc88",
+      "originalMode": "0o644",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/components/crays-franchise/franchise-fullscreen-menu.module.css"
+    },
+    {
+      "path": "crays-platform/src/components/crays-franchise/franchise-fullscreen-menu.tsx",
+      "bytes": 5943,
+      "sha256": "3e0c4df069f1fc31649b12cae058e2a64c42be7427eb36bcad43831dcc9c4f24",
+      "originalMode": "0o644",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/components/crays-franchise/franchise-fullscreen-menu.tsx"
+    },
+    {
+      "path": "crays-platform/src/components/crays-franchise/franchise-header-menu-button.tsx",
+      "bytes": 1726,
+      "sha256": "4a311c2265d5b0aa6db129758337f343d7316c2db318023dfe5ea1c59a377895",
+      "originalMode": "0o644",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/components/crays-franchise/franchise-header-menu-button.tsx"
+    },
+    {
+      "path": "crays-platform/src/components/crays-franchise/franchise-header.module.css",
+      "bytes": 3774,
+      "sha256": "bfef997c5ef6032416ba91709e9ddd5b35b3474337e9095a69e7a4e82d5bc664",
+      "originalMode": "0o644",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/components/crays-franchise/franchise-header.module.css"
+    },
+    {
+      "path": "crays-platform/src/components/crays-franchise/franchise-header.tsx",
+      "bytes": 1918,
+      "sha256": "6d6bbf52e3c56d84133d6c5a06433f8c27469d6510868397684c90b9ac6cf5ab",
+      "originalMode": "0o644",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/components/crays-franchise/franchise-header.tsx"
+    },
+    {
+      "path": "crays-platform/src/components/crays-franchise/franchise-menu-content.module.css",
+      "bytes": 3243,
+      "sha256": "58bb633553643811c6d0d365aa2922d851536124e17a008ec8def31924607705",
+      "originalMode": "0o644",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/components/crays-franchise/franchise-menu-content.module.css"
+    },
+    {
+      "path": "crays-platform/src/components/crays-franchise/franchise-menu-content.tsx",
+      "bytes": 5685,
+      "sha256": "a387a90df28d6eab58f1328885d9a6f7841a09d9147c32ac4a81b04366f10887",
+      "originalMode": "0o644",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/components/crays-franchise/franchise-menu-content.tsx"
+    },
+    {
+      "path": "crays-platform/src/components/crays-franchise/franchise-shell.module.css",
+      "bytes": 1213,
+      "sha256": "2e0d6827574c7062d011d4886bf7ff9ecea767ab730a9f3cecc6560f4e8fef31",
+      "originalMode": "0o644",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/components/crays-franchise/franchise-shell.module.css"
+    },
+    {
+      "path": "crays-platform/src/components/crays-franchise/franchise-shell.tsx",
+      "bytes": 2961,
+      "sha256": "42d33b1ed7d3b680b13e9f964f8943b2dd8ce98f344e093e1bbda0df7f0a4215",
+      "originalMode": "0o644",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/components/crays-franchise/franchise-shell.tsx"
+    },
+    {
+      "path": "crays-platform/src/components/crays-franchise/franchise-site-interactive.tsx",
+      "bytes": 26739,
+      "sha256": "43af0ac99783ad7ce1c44590421834feb161407e511b25c791408b73c45789a7",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/components/crays-franchise/franchise-site-interactive.tsx"
+    },
+    {
+      "path": "crays-platform/src/components/crays-franchise/franchise-site.module.css",
+      "bytes": 129996,
+      "sha256": "47599cd9b5dce6f0f8defae03f685392ff4cbbc361727e5367758160f07a053a",
+      "originalMode": "0o644",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/components/crays-franchise/franchise-site.module.css"
+    },
+    {
+      "path": "crays-platform/src/components/crays-franchise/franchise-site.tsx",
+      "bytes": 118430,
+      "sha256": "0f1dbd832573110f1c8d5f1df2c5d7aa88041f2e7609b22ec17bedf157b8181a",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/components/crays-franchise/franchise-site.tsx"
+    },
+    {
+      "path": "crays-platform/src/lib/crays-pro-public-metadata.ts",
+      "bytes": 5443,
+      "sha256": "764a766e5894618f4752c675b7af602f4863d870d5dee5a09a2204df8fb32121",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/crays-pro-public-metadata.ts"
+    }
+  ],
+  "variantScope": "Original Core-worktree Franchise/Pro routes, UI, CSS and metadata. Distinct from the private separate Franchise mirror src/routes/index.tsx profile dataset.",
+  "privacyReview": "This exact Core variant contains generic concept/module labels and concept-area/own-capital guidance, not named personal/operator/contact profiles or private financing/deal records.",
+  "sourceArchiveNotEndorsementOfHistoricalFinancialOrLegalClaims": true,
+  "latestSeparateFranchiseOrProOrLiveWebsiteClaim": false,
+  "linkedAssetBodiesOrFullRightsClosureIncluded": false,
+  "originalSourceProgramsExecuted": false,
+  "newBlanketLicenseGranted": false
+}

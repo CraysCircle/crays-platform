@@ -1,0 +1,11 @@
+{
+  "final": true,
+  "feedPluginRoot": "/opt/crays/openclaw/plugin-artifacts/crays-feed-reader/46481eb3d47ee26f3b5bb7a577c7ed7e81a9c97fe87ff554fa53397aeb320f7d",
+  "feedSkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-feed-reader/584a73606558bf209e31c9b12c72a042cb3f9fea4e8253b3f17544cb36d6805c",
+  "feedSkillSha256": "584a73606558bf209e31c9b12c72a042cb3f9fea4e8253b3f17544cb36d6805c",
+  "feedSkillRootInstallationRequired": true,
+  "pluginArtifactManifestSha256": "46481eb3d47ee26f3b5bb7a577c7ed7e81a9c97fe87ff554fa53397aeb320f7d",
+  "pluginArtifactContainsLocalDependencies": true,
+  "pluginArtifactExpectedFileCount": 334,
+  "pluginArtifactInstallationAndQualificationPending": true
+}

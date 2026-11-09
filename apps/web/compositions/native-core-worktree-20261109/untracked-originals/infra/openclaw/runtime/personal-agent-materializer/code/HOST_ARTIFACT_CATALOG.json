@@ -1,0 +1,317 @@
+{
+  "schema": "crays.personal-runtime.actual-shared-root-catalog.v1",
+  "packageSha256": "d68aaca84ace9397f49511135bcc7215aa20f45249a30d569ac9a17fd4cb1edc",
+  "plugins": [
+    {
+      "pluginId": "crays-calculator",
+      "root": "/opt/crays/openclaw/plugin-artifacts/crays-calculator/9dc61bf9690602b5c8cb0460199160735d70146b2e2ab2b237284c1ad1267241",
+      "manifestSha256": "9dc61bf9690602b5c8cb0460199160735d70146b2e2ab2b237284c1ad1267241"
+    },
+    {
+      "pluginId": "crays-personal-records",
+      "root": "/opt/crays/openclaw/plugin-artifacts/crays-personal-records/315bccd5e9d5507617090cce5040cf05538347ec701cf9d33dd850f7762e0356",
+      "manifestSha256": "315bccd5e9d5507617090cce5040cf05538347ec701cf9d33dd850f7762e0356"
+    },
+    {
+      "pluginId": "crays-personal-dates",
+      "root": "/opt/crays/openclaw/plugin-artifacts/crays-personal-dates/14a5123f63e1a67bd5d01ab92e97e3e56ccecc9007a8eca41649bb071ef87741",
+      "manifestSha256": "14a5123f63e1a67bd5d01ab92e97e3e56ccecc9007a8eca41649bb071ef87741"
+    },
+    {
+      "pluginId": "crays-shared-expenses",
+      "root": "/opt/crays/openclaw/plugin-artifacts/crays-shared-expenses/a8fc7d75d3be395a2ac7c1b7dc4233b3b6bf5e42ac109e05ae9e29ea4530fc0a",
+      "manifestSha256": "a8fc7d75d3be395a2ac7c1b7dc4233b3b6bf5e42ac109e05ae9e29ea4530fc0a"
+    },
+    {
+      "pluginId": "crays-feed-reader",
+      "root": "/opt/crays/openclaw/plugin-artifacts/crays-feed-reader/46481eb3d47ee26f3b5bb7a577c7ed7e81a9c97fe87ff554fa53397aeb320f7d",
+      "manifestSha256": "46481eb3d47ee26f3b5bb7a577c7ed7e81a9c97fe87ff554fa53397aeb320f7d"
+    },
+    {
+      "pluginId": "crays-document-exports",
+      "root": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/cea34ce3ae897ddef5483d34e33b0a96596c1048b2f1a55904003f28c2098f85",
+      "manifestSha256": "cea34ce3ae897ddef5483d34e33b0a96596c1048b2f1a55904003f28c2098f85"
+    },
+    {
+      "pluginId": "crays-qr",
+      "root": "/opt/crays/openclaw/plugin-artifacts/crays-qr/5173486fc3058967aafa1b097b7ada6e9c8992fd97ce1d99bb1869b5f373f794",
+      "manifestSha256": "5173486fc3058967aafa1b097b7ada6e9c8992fd97ce1d99bb1869b5f373f794"
+    },
+    {
+      "pluginId": "crays-chess",
+      "root": "/opt/crays/openclaw/plugin-artifacts/crays-chess/7bb7660806245748ea6ae56deb23e2a2754a7a5bb014d3520939aec68abf9d4d",
+      "manifestSha256": "7bb7660806245748ea6ae56deb23e2a2754a7a5bb014d3520939aec68abf9d4d"
+    },
+    {
+      "pluginId": "crays-item-inventory",
+      "root": "/opt/crays/openclaw/plugin-artifacts/crays-item-inventory/25be80ee88b1543350c12ed2523d9b5fe0644996b88e39920adde98615e94e9d",
+      "manifestSha256": "25be80ee88b1543350c12ed2523d9b5fe0644996b88e39920adde98615e94e9d"
+    },
+    {
+      "pluginId": "crays-training-log",
+      "root": "/opt/crays/openclaw/plugin-artifacts/crays-training-log/2e47d04ebb5f44c1748f5abc578e106a0717d6a0e950f01197364a9a39e20040",
+      "manifestSha256": "2e47d04ebb5f44c1748f5abc578e106a0717d6a0e950f01197364a9a39e20040"
+    },
+    {
+      "pluginId": "crays-personal-budget",
+      "root": "/opt/crays/openclaw/plugin-artifacts/crays-personal-budget/2770097d42125cd5554888d541cc4d02d1e20d1a1057be4671af641b68422f03",
+      "manifestSha256": "2770097d42125cd5554888d541cc4d02d1e20d1a1057be4671af641b68422f03"
+    },
+    {
+      "pluginId": "crays-pantry",
+      "root": "/opt/crays/openclaw/plugin-artifacts/crays-pantry/9bfdacf9446094a471b6662ef0d0e4b760de84c6200a9b8777c1fb49eae50a20",
+      "manifestSha256": "9bfdacf9446094a471b6662ef0d0e4b760de84c6200a9b8777c1fb49eae50a20"
+    },
+    {
+      "pluginId": "crays-subscriptions",
+      "root": "/opt/crays/openclaw/plugin-artifacts/crays-subscriptions/b47585084ebee3e5d19dddca86b8fbeea863d96899a0a6b0fe987b162f583b0f",
+      "manifestSha256": "b47585084ebee3e5d19dddca86b8fbeea863d96899a0a6b0fe987b162f583b0f"
+    },
+    {
+      "pluginId": "crays-personal-webtools",
+      "root": "/opt/crays/openclaw/plugin-artifacts/crays-personal-webtools/bb62c5f7c4db952d0af573dfb0db4dcff14fb1ec0601ecbd42f364c9e64b785e",
+      "manifestSha256": "bb62c5f7c4db952d0af573dfb0db4dcff14fb1ec0601ecbd42f364c9e64b785e"
+    },
+    {
+      "pluginId": "crays-habits",
+      "root": "/opt/crays/openclaw/plugin-artifacts/crays-habits/525731b5d4f07f772f30805719bfd3bec6ae5a67899d76f0444ac40c042db413",
+      "manifestSha256": "525731b5d4f07f772f30805719bfd3bec6ae5a67899d76f0444ac40c042db413"
+    },
+    {
+      "pluginId": "crays-packing",
+      "root": "/opt/crays/openclaw/plugin-artifacts/crays-packing/9c71e07a66cfa7b93158ca720c8ef82e28904583a02de1fcabc017ad7792b713",
+      "manifestSha256": "9c71e07a66cfa7b93158ca720c8ef82e28904583a02de1fcabc017ad7792b713"
+    },
+    {
+      "pluginId": "crays-personal-preferences",
+      "root": "/opt/crays/openclaw/plugin-artifacts/crays-personal-preferences/04eb4614f3010cceb04b2eddf45113dff79a87ea68144722976805b928e70f82",
+      "manifestSha256": "04eb4614f3010cceb04b2eddf45113dff79a87ea68144722976805b928e70f82"
+    },
+    {
+      "pluginId": "crays-learning-plan",
+      "root": "/opt/crays/openclaw/plugin-artifacts/crays-learning-plan/fe73d8f467c1a4c39c86428b81fc981d86f73c0b605493805f52441d818b115b",
+      "manifestSha256": "fe73d8f467c1a4c39c86428b81fc981d86f73c0b605493805f52441d818b115b"
+    },
+    {
+      "pluginId": "crays-personal-cooking",
+      "root": "/opt/crays/openclaw/plugin-artifacts/crays-personal-cooking/bb9711d8f9d60a714689fd4126b637694b3b7f2caf93e7c7b3d7b09e7b9d1371",
+      "manifestSha256": "bb9711d8f9d60a714689fd4126b637694b3b7f2caf93e7c7b3d7b09e7b9d1371"
+    },
+    {
+      "pluginId": "crays-quiz-review",
+      "root": "/opt/crays/openclaw/plugin-artifacts/crays-quiz-review/13fd67fd6b2e9079aef14b993fc24d2900f20e7e6f3ed62f6f96e57ae892ab3f",
+      "manifestSha256": "13fd67fd6b2e9079aef14b993fc24d2900f20e7e6f3ed62f6f96e57ae892ab3f"
+    },
+    {
+      "pluginId": "crays-personal-planner",
+      "root": "/opt/crays/openclaw/plugin-artifacts/crays-personal-planner/34ef643e42c2fe8dc54df5be27f3414f6be566a62035a5a5d1b4301ca6dccc73",
+      "manifestSha256": "34ef643e42c2fe8dc54df5be27f3414f6be566a62035a5a5d1b4301ca6dccc73"
+    }
+  ],
+  "skills": [
+    {
+      "skillId": "crays-everyday-assistance",
+      "root": "/opt/crays/openclaw/skill-artifacts/crays-everyday-assistance/861181bfc30500e87b548e205429207aababc5eadd853e2b88d16a6328d0e1b2",
+      "manifestSha256": "461c67b1888c50651f25370daeeb19adaddc9d6da30895faed527a74d75565f4",
+      "manifestName": "CRAYS_ARTIFACT_MANIFEST.json",
+      "contentSha256": "861181bfc30500e87b548e205429207aababc5eadd853e2b88d16a6328d0e1b2",
+      "name": "crays-everyday-assistance"
+    },
+    {
+      "skillId": "crays-receipt-reading",
+      "root": "/opt/crays/openclaw/skill-artifacts/crays-receipt-reading/3a332961f27eb95b0d4935f976ca131102cf12337201dbc248a448920bdf4a0a",
+      "manifestSha256": "ef76541cf351e9f67c4a3d21a53097189292c9ef08a1f129787baf0f26dbfc50",
+      "manifestName": "CRAYS_ARTIFACT_MANIFEST.json",
+      "contentSha256": "3a332961f27eb95b0d4935f976ca131102cf12337201dbc248a448920bdf4a0a",
+      "name": "crays-receipt-reading"
+    },
+    {
+      "skillId": "crays-personal-dates",
+      "root": "/opt/crays/openclaw/skill-artifacts/crays-personal-dates/0cb5789cd7583702d41e31eee8668e09458e0edb930c56e7085c32a149e20fa3",
+      "manifestSha256": "7fe61472dc4fbaee4ca20efb522805c75220719dd3559e267bde221586bcd951",
+      "manifestName": "CRAYS_ARTIFACT_MANIFEST.json",
+      "contentSha256": "0cb5789cd7583702d41e31eee8668e09458e0edb930c56e7085c32a149e20fa3",
+      "name": "crays-personal-dates"
+    },
+    {
+      "skillId": "crays-shared-expenses",
+      "root": "/opt/crays/openclaw/skill-artifacts/crays-shared-expenses/da0408d88a868073b74b1702e34173e45e9dae69859b6903585632011b17f0f1",
+      "manifestSha256": "62255e5c7a25edf5dfb1f5396857dcc5da9b89ae7036595d0afb0f7811ce2351",
+      "manifestName": "CRAYS_ARTIFACT_MANIFEST.json",
+      "contentSha256": "da0408d88a868073b74b1702e34173e45e9dae69859b6903585632011b17f0f1",
+      "name": "crays-shared-expenses"
+    },
+    {
+      "skillId": "crays-feed-reader",
+      "root": "/opt/crays/openclaw/skill-artifacts/crays-feed-reader/584a73606558bf209e31c9b12c72a042cb3f9fea4e8253b3f17544cb36d6805c",
+      "manifestSha256": "6c62c6a3e823ce64cd5245549bf5577dc0907a25dc96fdc6d27dfa61bb0da6b8",
+      "manifestName": "CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "contentSha256": "584a73606558bf209e31c9b12c72a042cb3f9fea4e8253b3f17544cb36d6805c",
+      "name": "crays-feed-reader"
+    },
+    {
+      "skillId": "crays-document-exports",
+      "root": "/opt/crays/openclaw/skill-artifacts/crays-document-exports/560e34e6b19fb2d55a57e956431659b2e04221d4e759d495415611e2ed379d97",
+      "manifestSha256": "560e34e6b19fb2d55a57e956431659b2e04221d4e759d495415611e2ed379d97",
+      "manifestName": "CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "contentSha256": "48c47bf0d95485b0090a2eb2cc7cb9b12d0bcebbf074e809c68d6edbcfc18d84",
+      "name": "crays-document-exports"
+    },
+    {
+      "skillId": "crays-chess",
+      "root": "/opt/crays/openclaw/skill-artifacts/crays-chess/7027ab8a67333d9acabedb140b604eaa46a72d3bb196ef8f53cab92dfd08c710",
+      "manifestSha256": "7027ab8a67333d9acabedb140b604eaa46a72d3bb196ef8f53cab92dfd08c710",
+      "manifestName": "CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "contentSha256": "c62868e9f3c81d6ab02ab6309735b45ae8e255ed41186a202c893d0c4e98f8a2",
+      "name": "crays-chess"
+    },
+    {
+      "skillId": "crays-item-inventory",
+      "root": "/opt/crays/openclaw/skill-artifacts/crays-item-inventory/aa8e99ec3f4e6fb25b27d0aa04bfa917a38790b6b9b6c48be41aa6297767589b",
+      "manifestSha256": "aa8e99ec3f4e6fb25b27d0aa04bfa917a38790b6b9b6c48be41aa6297767589b",
+      "manifestName": "CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "contentSha256": "447644cd50123f1cf10ece64fa73a81c040d026edb32b829247dd5cfb874d4ce",
+      "name": "crays-item-inventory"
+    },
+    {
+      "skillId": "crays-training-log",
+      "root": "/opt/crays/openclaw/skill-artifacts/crays-training-log/9b8b083d3f48233535121446965f0f5a24b1de39000394271514bb2936c09e6a",
+      "manifestSha256": "9b8b083d3f48233535121446965f0f5a24b1de39000394271514bb2936c09e6a",
+      "manifestName": "CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "contentSha256": "6eb47c0f3f3dbccd821c2eef80c035a295390081a0e96ac80f74aa9e72c0cfe3",
+      "name": "crays-training-log"
+    },
+    {
+      "skillId": "crays-personal-budget",
+      "root": "/opt/crays/openclaw/skill-artifacts/crays-personal-budget/5610766631db07ecddce7b6a3c6879520c8386812fb579b1d8a01dcbc4914c80",
+      "manifestSha256": "5610766631db07ecddce7b6a3c6879520c8386812fb579b1d8a01dcbc4914c80",
+      "manifestName": "CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "contentSha256": "a17d094e4929d882fa135d0c5d6cc59cd00033ab0c69399f78eb5b99ec241577",
+      "name": "crays-personal-budget"
+    },
+    {
+      "skillId": "crays-pantry",
+      "root": "/opt/crays/openclaw/skill-artifacts/crays-pantry/cedd363a8bebaaf75c111a3ed8a4c27e9d365334d6ba4bcc04f475581971e1a1",
+      "manifestSha256": "cedd363a8bebaaf75c111a3ed8a4c27e9d365334d6ba4bcc04f475581971e1a1",
+      "manifestName": "CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "contentSha256": "a0a643928a26b4fcdef967ecb97cedda2d3ac32022847e7d0ac79f8b772f2b24",
+      "name": "crays-pantry"
+    },
+    {
+      "skillId": "crays-subscriptions",
+      "root": "/opt/crays/openclaw/skill-artifacts/crays-subscriptions/51ec66ddf1dddf978ae4221d6a019d0e4f46d7254b592836c2d4d582dc8c1541",
+      "manifestSha256": "51ec66ddf1dddf978ae4221d6a019d0e4f46d7254b592836c2d4d582dc8c1541",
+      "manifestName": "CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "contentSha256": "4d76515f5c58aa98ec49be127fd14443ff69e446ebbf222f08d06d37ad016472",
+      "name": "crays-subscriptions"
+    },
+    {
+      "skillId": "crays-personal-webtools",
+      "root": "/opt/crays/openclaw/skill-artifacts/crays-personal-webtools/1f8ebaa5de8c262527636b7adcb9b61e2852ac6e09eeab420e6b00e8fd174abd",
+      "manifestSha256": "1f8ebaa5de8c262527636b7adcb9b61e2852ac6e09eeab420e6b00e8fd174abd",
+      "manifestName": "CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "contentSha256": "dd89b62a808bfc6677c1d79cd423d01327e2234b6aa83524957271eb4203b7dd",
+      "name": "crays-personal-webtools"
+    },
+    {
+      "skillId": "crays-habits",
+      "root": "/opt/crays/openclaw/skill-artifacts/crays-habits/b08f3b0ea859bc5814e7410d98e0b7d6f4a768dc97d7df40e45b726401f789b6",
+      "manifestSha256": "b08f3b0ea859bc5814e7410d98e0b7d6f4a768dc97d7df40e45b726401f789b6",
+      "manifestName": "CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "contentSha256": "b7f8bc5e7b0e52f01764114785e0821054ceea04aba7581ce75e2ca01eeb1a4c",
+      "name": "crays-habits"
+    },
+    {
+      "skillId": "crays-packing",
+      "root": "/opt/crays/openclaw/skill-artifacts/crays-packing/895c10bf2014ba9ccee1fbccf012403b9b3fec709dd66610c4ee34c1674e797c",
+      "manifestSha256": "895c10bf2014ba9ccee1fbccf012403b9b3fec709dd66610c4ee34c1674e797c",
+      "manifestName": "CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "contentSha256": "2978c38f1353637e33b49a0123886ba0feb9f72941fa7c18df3bf1b8a42848b3",
+      "name": "crays-packing"
+    },
+    {
+      "skillId": "crays-personal-preferences",
+      "root": "/opt/crays/openclaw/skill-artifacts/crays-personal-preferences/a1d4be35a3d9c46696f949be9ee9f5059425fd104ada859adf8b52e4425dcd2f",
+      "manifestSha256": "a1d4be35a3d9c46696f949be9ee9f5059425fd104ada859adf8b52e4425dcd2f",
+      "manifestName": "CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "contentSha256": "14bd1005dec849509e8c2055dd9ab12e37e746005d3565d45e5a980d8216b2aa",
+      "name": "crays-personal-preferences"
+    },
+    {
+      "skillId": "crays-learning-plan",
+      "root": "/opt/crays/openclaw/skill-artifacts/crays-learning-plan/893e80020b006aedf358aa04e46345b380fc333ca6f33e930a8cadbc193f4704",
+      "manifestSha256": "893e80020b006aedf358aa04e46345b380fc333ca6f33e930a8cadbc193f4704",
+      "manifestName": "CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "contentSha256": "bc0eb280777e9c4a2bc1e834ccfdddc202f9343119d54b14c281e494f2a19e0e",
+      "name": "crays-learning-plan"
+    },
+    {
+      "skillId": "crays-personal-cooking",
+      "root": "/opt/crays/openclaw/skill-artifacts/crays-personal-cooking/344b5799dc3436dd61ed0b74060ab56d96379615cab7c973d683935848da563f",
+      "manifestSha256": "344b5799dc3436dd61ed0b74060ab56d96379615cab7c973d683935848da563f",
+      "manifestName": "CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "contentSha256": "72154f2b116fa83d44bdbfabe8aedd3b6e4624a0c1262a800f5db0dc203edbfb",
+      "name": "crays-personal-cooking"
+    },
+    {
+      "skillId": "crays-quiz-review",
+      "root": "/opt/crays/openclaw/skill-artifacts/crays-quiz-review/a37720effffd1c0a535424843c997f8e9224a54ce51e99f76a37c22ab459b7ff",
+      "manifestSha256": "a37720effffd1c0a535424843c997f8e9224a54ce51e99f76a37c22ab459b7ff",
+      "manifestName": "CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "contentSha256": "a78e592ca1ea270bea566b893c7df301e3dc209286f90fd5ac442153a09f88d1",
+      "name": "crays-quiz-review"
+    },
+    {
+      "skillId": "crays-personal-planner",
+      "root": "/opt/crays/openclaw/skill-artifacts/crays-personal-planner/f9b1ed42a5a267f3eb83d8f2b616a92c6b84db17a0045efb7f70e072ccaadc02",
+      "manifestSha256": "f9b1ed42a5a267f3eb83d8f2b616a92c6b84db17a0045efb7f70e072ccaadc02",
+      "manifestName": "CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "contentSha256": "a0d4eab3eadd2ce0fe50dadec6517f8afd8944c14764ea0d080ee04d4d0b8617",
+      "name": "crays-personal-planner"
+    },
+    {
+      "skillId": "word-docx",
+      "root": "/opt/crays/openclaw/skill-artifacts/ivangdavila-word-docx/1f53d5caaa3c237f1d995f9de7c57d650c99332a1b3066bd1b0a49140840836b",
+      "manifestSha256": "1f53d5caaa3c237f1d995f9de7c57d650c99332a1b3066bd1b0a49140840836b",
+      "manifestName": "CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "contentSha256": "c766da489810acf03290283780ba9d3be798678d689255ace34477caeb6d7541",
+      "name": "Word / DOCX"
+    },
+    {
+      "skillId": "excel-xlsx",
+      "root": "/opt/crays/openclaw/skill-artifacts/ivangdavila-excel-xlsx/b6bcd55ab3934eb78634d30c23774e02e309776da2b2248614bc990403ac039c",
+      "manifestSha256": "b6bcd55ab3934eb78634d30c23774e02e309776da2b2248614bc990403ac039c",
+      "manifestName": "CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "contentSha256": "52421d9fba8fdb64124416c450849434f3639e7b95249ce10fecd209aa90f038",
+      "name": "Excel / XLSX"
+    },
+    {
+      "skillId": "powerpoint-pptx",
+      "root": "/opt/crays/openclaw/skill-artifacts/ivangdavila-powerpoint-pptx/fa8b1af76aa2b8bef828d1c21f0753d4701dfaf770358ac6528e9ee2846afe99",
+      "manifestSha256": "fa8b1af76aa2b8bef828d1c21f0753d4701dfaf770358ac6528e9ee2846afe99",
+      "manifestName": "CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "contentSha256": "d286c8cd144b9957d9d27046e75797d9dfd577e5c1d01ffda6373573d5a5a956",
+      "name": "Powerpoint / PPTX"
+    },
+    {
+      "skillId": "language-learning",
+      "root": "/opt/crays/openclaw/skill-artifacts/chipagosfinest-language-learning/f02bf95efea61a9d9271ca2fa272de99147c62d3711e41a8251622b0a3b70f95",
+      "manifestSha256": "f02bf95efea61a9d9271ca2fa272de99147c62d3711e41a8251622b0a3b70f95",
+      "manifestName": "CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "contentSha256": "bb9b988f3423308577acf60cbd22b7e734f64ba6960b96f0b36fce426f160fed",
+      "name": "language-learning"
+    },
+    {
+      "skillId": "data-analysis",
+      "root": "/opt/crays/openclaw/skill-artifacts/ivangdavila-data-analysis/2afcb2d48203198051a529326f6da4c004a0b877597230bec70c0cc0882497d6",
+      "manifestSha256": "2afcb2d48203198051a529326f6da4c004a0b877597230bec70c0cc0882497d6",
+      "manifestName": "CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "contentSha256": "3f1e1a7093c7391eb8f364bdafc8e6357842455b03933b5ba5af76feb32637e7",
+      "name": "Data Analysis"
+    }
+  ],
+  "bundledSkills": [
+    "weather"
+  ],
+  "qualifiesPerPersonRuntime": false
+}

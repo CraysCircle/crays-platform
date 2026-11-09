@@ -1,0 +1,24 @@
+/** Additive runtime proposal; no I/O, auth reads, signals, admission or runtime changes. */
+import assert from 'node:assert/strict';
+const ID='crays-agent-thorben';
+export const pluginPaths=Object.freeze(['/opt/crays/openclaw/plugin-artifacts/crays-calculator/9dc61bf9690602b5c8cb0460199160735d70146b2e2ab2b237284c1ad1267241','/opt/crays/openclaw/plugin-artifacts/crays-personal-records/315bccd5e9d5507617090cce5040cf05538347ec701cf9d33dd850f7762e0356']);
+export const skillDirs=Object.freeze(['/opt/crays/openclaw/skill-artifacts/crays-everyday-assistance/861181bfc30500e87b548e205429207aababc5eadd853e2b88d16a6328d0e1b2/skills','/opt/crays/openclaw/skill-artifacts/crays-receipt-reading/3a332961f27eb95b0d4935f976ca131102cf12337201dbc248a448920bdf4a0a/skills']);
+export function composeSixToolsDelta(base){
+ assert.deepEqual(Object.keys(base.agents.entries),[ID]);const agent=base.agents.entries[ID];
+ assert.deepEqual(base.tools,{profile:'minimal',deny:['*']});assert.deepEqual(agent.tools,{profile:'minimal',deny:['*']});
+ assert.deepEqual(base.plugins.allow,['openai','whatsapp']);assert.equal(base.plugins.entries.whatsapp.enabled,true);
+ assert.deepEqual(base.commands.ownerAllowFrom,['whatsapp:__CRAYS_PRIVATE_LITERAL_fc3164d694d774547e171400__']);assert.deepEqual(base.channels.whatsapp.allowFrom,['__CRAYS_PRIVATE_LITERAL_fc3164d694d774547e171400__']);
+ assert.equal(base.channels.whatsapp.groupPolicy,'disabled');assert.equal(base.channels.whatsapp.configWrites,false);
+ const model=agent.model.primary;assert(/^openai\/[A-Za-z0-9_.-]+$/.test(model));
+ const tools=['read','web_fetch','web_search','pdf','crays_calculator','crays_personal_records'];
+ const policy=()=>({profile:'full',allow:[...tools],deny:[],fs:{workspaceOnly:true}});
+ const skills=['weather','crays-everyday-assistance','crays-receipt-reading'];
+ const cfg={...base,agents:{...base.agents,entries:{[ID]:{...agent,skills,tools:policy()}},defaults:{...base.agents.defaults,pdfModel:{primary:model,fallbacks:[]}}},
+ tools:{...policy(),web:{fetch:{enabled:true},search:{enabled:true,openaiCodex:{enabled:true}}}},
+ plugins:{...base.plugins,allow:[...base.plugins.allow,'document-extract','crays-calculator','crays-personal-records'],load:{...base.plugins.load,paths:[...base.plugins.load.paths,...pluginPaths]},entries:{...base.plugins.entries,'document-extract':{enabled:true},'crays-calculator':{enabled:true},'crays-personal-records':{enabled:true}}},
+ skills:{...base.skills,allowBundled:['weather'],load:{...base.skills?.load,extraDirs:[...skillDirs]},entries:{weather:{enabled:true},'crays-everyday-assistance':{enabled:true},'crays-receipt-reading':{enabled:true}}}};
+ // These objects retain their exact values/references; replacing owner/auth/channel config is outside this delta.
+ for(const k of ['gateway','channels','bindings','commands','auth','session','cron','hooks'])assert.strictEqual(cfg[k],base[k]);
+ assert.strictEqual(cfg.plugins.entries.whatsapp,base.plugins.entries.whatsapp);
+ return cfg;
+}

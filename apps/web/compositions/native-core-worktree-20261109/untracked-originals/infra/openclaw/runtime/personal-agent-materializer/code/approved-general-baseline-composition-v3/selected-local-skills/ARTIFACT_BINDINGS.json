@@ -1,0 +1,161 @@
+{
+  "schema": "crays.selected-five.actual-root-skill-bindings.v1",
+  "rootInstallationReceipt": {
+    "path": "/srv/crays/openclaw/oca063/general-skills-first-wave-20261015/selected-five-original-skill-artifacts-source-review-v1/ACTUAL_ROOT_INSTALLATION.json",
+    "sha256": "97aca376e097144426041c57a6679de1a36bd9344ed20c968ba073a4fa43167c",
+    "mode": "0600",
+    "metadataOnlyNotRead": true
+  },
+  "artifacts": [
+    {
+      "candidateId": "ECOSYSTEM-023",
+      "name": "Word / DOCX",
+      "safeSlug": "word-docx",
+      "root": "/opt/crays/openclaw/skill-artifacts/ivangdavila-word-docx/1f53d5caaa3c237f1d995f9de7c57d650c99332a1b3066bd1b0a49140840836b",
+      "extraDir": "/opt/crays/openclaw/skill-artifacts/ivangdavila-word-docx/1f53d5caaa3c237f1d995f9de7c57d650c99332a1b3066bd1b0a49140840836b/skills",
+      "skillFile": "/opt/crays/openclaw/skill-artifacts/ivangdavila-word-docx/1f53d5caaa3c237f1d995f9de7c57d650c99332a1b3066bd1b0a49140840836b/skills/word-docx/SKILL.md",
+      "manifest": {
+        "path": "/opt/crays/openclaw/skill-artifacts/ivangdavila-word-docx/1f53d5caaa3c237f1d995f9de7c57d650c99332a1b3066bd1b0a49140840836b/CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+        "bytes": 594,
+        "sha256": "1f53d5caaa3c237f1d995f9de7c57d650c99332a1b3066bd1b0a49140840836b"
+      },
+      "files": [
+        {
+          "path": "/opt/crays/openclaw/skill-artifacts/ivangdavila-word-docx/1f53d5caaa3c237f1d995f9de7c57d650c99332a1b3066bd1b0a49140840836b/skills/word-docx/SKILL.md",
+          "bytes": 7887,
+          "sha256": "c766da489810acf03290283780ba9d3be798678d689255ace34477caeb6d7541"
+        },
+        {
+          "path": "/opt/crays/openclaw/skill-artifacts/ivangdavila-word-docx/1f53d5caaa3c237f1d995f9de7c57d650c99332a1b3066bd1b0a49140840836b/skills/word-docx/skill-card.md",
+          "bytes": 2484,
+          "sha256": "ee543d852ff1ee291171a5c768b546451e93558e990dc0ae9e9ac1189da54364"
+        }
+      ]
+    },
+    {
+      "candidateId": "ECOSYSTEM-024",
+      "name": "Excel / XLSX",
+      "safeSlug": "excel-xlsx",
+      "root": "/opt/crays/openclaw/skill-artifacts/ivangdavila-excel-xlsx/b6bcd55ab3934eb78634d30c23774e02e309776da2b2248614bc990403ac039c",
+      "extraDir": "/opt/crays/openclaw/skill-artifacts/ivangdavila-excel-xlsx/b6bcd55ab3934eb78634d30c23774e02e309776da2b2248614bc990403ac039c/skills",
+      "skillFile": "/opt/crays/openclaw/skill-artifacts/ivangdavila-excel-xlsx/b6bcd55ab3934eb78634d30c23774e02e309776da2b2248614bc990403ac039c/skills/excel-xlsx/SKILL.md",
+      "manifest": {
+        "path": "/opt/crays/openclaw/skill-artifacts/ivangdavila-excel-xlsx/b6bcd55ab3934eb78634d30c23774e02e309776da2b2248614bc990403ac039c/CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+        "bytes": 597,
+        "sha256": "b6bcd55ab3934eb78634d30c23774e02e309776da2b2248614bc990403ac039c"
+      },
+      "files": [
+        {
+          "path": "/opt/crays/openclaw/skill-artifacts/ivangdavila-excel-xlsx/b6bcd55ab3934eb78634d30c23774e02e309776da2b2248614bc990403ac039c/skills/excel-xlsx/SKILL.md",
+          "bytes": 6960,
+          "sha256": "52421d9fba8fdb64124416c450849434f3639e7b95249ce10fecd209aa90f038"
+        },
+        {
+          "path": "/opt/crays/openclaw/skill-artifacts/ivangdavila-excel-xlsx/b6bcd55ab3934eb78634d30c23774e02e309776da2b2248614bc990403ac039c/skills/excel-xlsx/skill-card.md",
+          "bytes": 1870,
+          "sha256": "1ca3fbe81c9663f3b852a7a011e5e884d3f4f9b4ba198792cb4fe2a368eb1118"
+        }
+      ]
+    },
+    {
+      "candidateId": "ECOSYSTEM-025",
+      "name": "Powerpoint / PPTX",
+      "safeSlug": "powerpoint-pptx",
+      "root": "/opt/crays/openclaw/skill-artifacts/ivangdavila-powerpoint-pptx/fa8b1af76aa2b8bef828d1c21f0753d4701dfaf770358ac6528e9ee2846afe99",
+      "extraDir": "/opt/crays/openclaw/skill-artifacts/ivangdavila-powerpoint-pptx/fa8b1af76aa2b8bef828d1c21f0753d4701dfaf770358ac6528e9ee2846afe99/skills",
+      "skillFile": "/opt/crays/openclaw/skill-artifacts/ivangdavila-powerpoint-pptx/fa8b1af76aa2b8bef828d1c21f0753d4701dfaf770358ac6528e9ee2846afe99/skills/powerpoint-pptx/SKILL.md",
+      "manifest": {
+        "path": "/opt/crays/openclaw/skill-artifacts/ivangdavila-powerpoint-pptx/fa8b1af76aa2b8bef828d1c21f0753d4701dfaf770358ac6528e9ee2846afe99/CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+        "bytes": 612,
+        "sha256": "fa8b1af76aa2b8bef828d1c21f0753d4701dfaf770358ac6528e9ee2846afe99"
+      },
+      "files": [
+        {
+          "path": "/opt/crays/openclaw/skill-artifacts/ivangdavila-powerpoint-pptx/fa8b1af76aa2b8bef828d1c21f0753d4701dfaf770358ac6528e9ee2846afe99/skills/powerpoint-pptx/SKILL.md",
+          "bytes": 7058,
+          "sha256": "d286c8cd144b9957d9d27046e75797d9dfd577e5c1d01ffda6373573d5a5a956"
+        },
+        {
+          "path": "/opt/crays/openclaw/skill-artifacts/ivangdavila-powerpoint-pptx/fa8b1af76aa2b8bef828d1c21f0753d4701dfaf770358ac6528e9ee2846afe99/skills/powerpoint-pptx/skill-card.md",
+          "bytes": 2058,
+          "sha256": "9a3779b2704efb2999f7464707dcc33b7d6d747b555d1f5285c49c0a12119bbd"
+        }
+      ]
+    },
+    {
+      "candidateId": "ECOSYSTEM-037",
+      "name": "language-learning",
+      "safeSlug": "language-learning",
+      "root": "/opt/crays/openclaw/skill-artifacts/chipagosfinest-language-learning/f02bf95efea61a9d9271ca2fa272de99147c62d3711e41a8251622b0a3b70f95",
+      "extraDir": "/opt/crays/openclaw/skill-artifacts/chipagosfinest-language-learning/f02bf95efea61a9d9271ca2fa272de99147c62d3711e41a8251622b0a3b70f95/skills",
+      "skillFile": "/opt/crays/openclaw/skill-artifacts/chipagosfinest-language-learning/f02bf95efea61a9d9271ca2fa272de99147c62d3711e41a8251622b0a3b70f95/skills/language-learning/SKILL.md",
+      "manifest": {
+        "path": "/opt/crays/openclaw/skill-artifacts/chipagosfinest-language-learning/f02bf95efea61a9d9271ca2fa272de99147c62d3711e41a8251622b0a3b70f95/CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+        "bytes": 619,
+        "sha256": "f02bf95efea61a9d9271ca2fa272de99147c62d3711e41a8251622b0a3b70f95"
+      },
+      "files": [
+        {
+          "path": "/opt/crays/openclaw/skill-artifacts/chipagosfinest-language-learning/f02bf95efea61a9d9271ca2fa272de99147c62d3711e41a8251622b0a3b70f95/skills/language-learning/SKILL.md",
+          "bytes": 10735,
+          "sha256": "bb9b988f3423308577acf60cbd22b7e734f64ba6960b96f0b36fce426f160fed"
+        },
+        {
+          "path": "/opt/crays/openclaw/skill-artifacts/chipagosfinest-language-learning/f02bf95efea61a9d9271ca2fa272de99147c62d3711e41a8251622b0a3b70f95/skills/language-learning/skill-card.md",
+          "bytes": 2244,
+          "sha256": "2fabc61eb1e068859515bba2638ec2a73c51ef7b7c4bf1bc6a5c92f61c9a602f"
+        }
+      ]
+    },
+    {
+      "candidateId": "ECOSYSTEM-038",
+      "name": "Data Analysis",
+      "safeSlug": "data-analysis",
+      "root": "/opt/crays/openclaw/skill-artifacts/ivangdavila-data-analysis/2afcb2d48203198051a529326f6da4c004a0b877597230bec70c0cc0882497d6",
+      "extraDir": "/opt/crays/openclaw/skill-artifacts/ivangdavila-data-analysis/2afcb2d48203198051a529326f6da4c004a0b877597230bec70c0cc0882497d6/skills",
+      "skillFile": "/opt/crays/openclaw/skill-artifacts/ivangdavila-data-analysis/2afcb2d48203198051a529326f6da4c004a0b877597230bec70c0cc0882497d6/skills/data-analysis/SKILL.md",
+      "manifest": {
+        "path": "/opt/crays/openclaw/skill-artifacts/ivangdavila-data-analysis/2afcb2d48203198051a529326f6da4c004a0b877597230bec70c0cc0882497d6/CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+        "bytes": 1485,
+        "sha256": "2afcb2d48203198051a529326f6da4c004a0b877597230bec70c0cc0882497d6"
+      },
+      "files": [
+        {
+          "path": "/opt/crays/openclaw/skill-artifacts/ivangdavila-data-analysis/2afcb2d48203198051a529326f6da4c004a0b877597230bec70c0cc0882497d6/skills/data-analysis/SKILL.md",
+          "bytes": 7910,
+          "sha256": "3f1e1a7093c7391eb8f364bdafc8e6357842455b03933b5ba5af76feb32637e7"
+        },
+        {
+          "path": "/opt/crays/openclaw/skill-artifacts/ivangdavila-data-analysis/2afcb2d48203198051a529326f6da4c004a0b877597230bec70c0cc0882497d6/skills/data-analysis/chart-selection.md",
+          "bytes": 1756,
+          "sha256": "01d040c85f79df832d8d9956e0decab76cbf6ee57cf7c584e35ab9c0c1410a47"
+        },
+        {
+          "path": "/opt/crays/openclaw/skill-artifacts/ivangdavila-data-analysis/2afcb2d48203198051a529326f6da4c004a0b877597230bec70c0cc0882497d6/skills/data-analysis/decision-briefs.md",
+          "bytes": 1144,
+          "sha256": "e9a4a5ae1fbe0950f2669d03b9b3ba8b7e85fbbaf42465f48f2ae192fa3d170b"
+        },
+        {
+          "path": "/opt/crays/openclaw/skill-artifacts/ivangdavila-data-analysis/2afcb2d48203198051a529326f6da4c004a0b877597230bec70c0cc0882497d6/skills/data-analysis/metric-contracts.md",
+          "bytes": 1580,
+          "sha256": "074be3abdc96242096fe516f633315138a07ff216c44e649c59cd8a597a223d6"
+        },
+        {
+          "path": "/opt/crays/openclaw/skill-artifacts/ivangdavila-data-analysis/2afcb2d48203198051a529326f6da4c004a0b877597230bec70c0cc0882497d6/skills/data-analysis/pitfalls.md",
+          "bytes": 3961,
+          "sha256": "88eb29fc1e307bbb984c47a2bb28fbbd045bde7e296aa0f51fa244995566b14e"
+        },
+        {
+          "path": "/opt/crays/openclaw/skill-artifacts/ivangdavila-data-analysis/2afcb2d48203198051a529326f6da4c004a0b877597230bec70c0cc0882497d6/skills/data-analysis/techniques.md",
+          "bytes": 4994,
+          "sha256": "e073dd1b2af9bed0a11cdf7bd231184ff3d76d9acd61f32e56dc8413118fda78"
+        },
+        {
+          "path": "/opt/crays/openclaw/skill-artifacts/ivangdavila-data-analysis/2afcb2d48203198051a529326f6da4c004a0b877597230bec70c0cc0882497d6/skills/data-analysis/skill-card.md",
+          "bytes": 2491,
+          "sha256": "a832d903bc77ac18b6c59ac306c11bd4dc40c45df2d528d5fc006679606df62f"
+        }
+      ]
+    }
+  ]
+}

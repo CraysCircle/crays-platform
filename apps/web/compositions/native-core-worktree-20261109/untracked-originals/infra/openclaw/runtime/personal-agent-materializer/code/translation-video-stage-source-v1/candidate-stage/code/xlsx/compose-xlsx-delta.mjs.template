@@ -1,0 +1,22 @@
+/** Pure reversible export-artifact upgrade; no auth/filesystem/provider actions. */
+import assert from 'node:assert/strict';
+import ART from './ARTIFACT_BINDINGS.json' with {type:'json'};
+const ID='crays-agent-thorben',NOTICE='crays-service-notices',PLUGIN='crays-document-exports';
+const TOOLS=['read','web_fetch','web_search','pdf','crays_calculator','crays_personal_records','crays_personal_dates','crays_shared_expenses','crays_feed_reader','crays_document_exports'];
+const SKILLS=['weather','crays-everyday-assistance','crays-receipt-reading','crays-personal-dates','crays-shared-expenses','crays-feed-reader',PLUGIN];
+const PLUGINS=['openai','whatsapp','document-extract','crays-calculator','crays-personal-records','crays-personal-dates','crays-shared-expenses','crays-feed-reader',NOTICE,PLUGIN];
+export function composeXlsxDelta(base,direction='forward'){
+ assert(['forward','rollback'].includes(direction));assert.deepEqual(Object.keys(base.agents.entries),[ID]);const agent=base.agents.entries[ID];
+ for(const p of [base.tools,agent.tools]){assert.equal(p.profile,'full');assert.deepEqual(p.allow,TOOLS);assert.deepEqual(p.deny,[]);assert.equal(p.fs.workspaceOnly,true);assert(!p.alsoAllow?.length);}
+ assert.deepEqual(agent.skills,SKILLS);assert.deepEqual(base.plugins.allow,PLUGINS);assert.deepEqual(base.plugins.entries[PLUGIN],{enabled:true});
+ assert.deepEqual(base.plugins.entries[NOTICE],{enabled:true,hooks:{allowConversationAccess:true},config:{bindings:[{accountId:'crays-agent-business',recipient:'__CRAYS_PRIVATE_LITERAL_73b08b6e7a31a62f258b5c4a__',locale:'de'}]}});
+ const from=direction==='forward'?ART.oldPluginRoot:ART.newPluginRoot,to=direction==='forward'?ART.newPluginRoot:ART.oldPluginRoot;
+ const fromSkill=(direction==='forward'?ART.oldSkillRoot:ART.newSkillRoot)+'/skills',toSkill=(direction==='forward'?ART.newSkillRoot:ART.oldSkillRoot)+'/skills';
+ assert.equal(base.plugins.load.paths.filter(p=>p===from).length,1);assert(!base.plugins.load.paths.includes(to));assert.equal(new Set(base.plugins.load.paths).size,base.plugins.load.paths.length);
+ assert.deepEqual(base.plugins.load.paths.filter(p=>p.startsWith('/opt/')), [...ART.unchangedPluginRoots,from]);
+ assert.equal(base.skills.load.extraDirs.filter(p=>p===fromSkill).length,1);assert(!base.skills.load.extraDirs.includes(toSkill));assert.equal(new Set(base.skills.load.extraDirs).size,base.skills.load.extraDirs.length);assert.deepEqual(base.skills.entries[PLUGIN],{enabled:true});
+ const cfg={...base,plugins:{...base.plugins,load:{...base.plugins.load,paths:base.plugins.load.paths.map(p=>p===from?to:p)}},skills:{...base.skills,load:{...base.skills.load,extraDirs:base.skills.load.extraDirs.map(p=>p===fromSkill?toSkill:p)}}};
+ for(const[k,v]of Object.entries(base))if(!['plugins','skills'].includes(k))assert.strictEqual(cfg[k],v);
+ assert.strictEqual(cfg.plugins.entries,base.plugins.entries);assert.strictEqual(cfg.plugins.allow,base.plugins.allow);assert.strictEqual(cfg.skills.entries,base.skills.entries);
+ return cfg;
+}

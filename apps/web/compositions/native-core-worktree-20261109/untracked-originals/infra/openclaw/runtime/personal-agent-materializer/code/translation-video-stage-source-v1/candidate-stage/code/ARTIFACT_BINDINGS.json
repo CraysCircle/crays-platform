@@ -1,0 +1,7 @@
+{
+  "datePluginRoot": "/opt/crays/openclaw/plugin-artifacts/crays-personal-dates/14a5123f63e1a67bd5d01ab92e97e3e56ccecc9007a8eca41649bb071ef87741",
+  "expensePluginRoot": "/opt/crays/openclaw/plugin-artifacts/crays-shared-expenses/a8fc7d75d3be395a2ac7c1b7dc4233b3b6bf5e42ac109e05ae9e29ea4530fc0a",
+  "dateSkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-personal-dates/0cb5789cd7583702d41e31eee8668e09458e0edb930c56e7085c32a149e20fa3",
+  "expenseSkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-shared-expenses/da0408d88a868073b74b1702e34173e45e9dae69859b6903585632011b17f0f1",
+  "final": true
+}

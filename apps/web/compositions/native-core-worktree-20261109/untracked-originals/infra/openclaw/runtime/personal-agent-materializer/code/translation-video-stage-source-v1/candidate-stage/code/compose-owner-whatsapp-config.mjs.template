@@ -1,0 +1,57 @@
+import{composeOperationalLearningDelta}from'./operational-learning/compose-operational-learning-delta.mjs';
+import {composeSelectedLocalSkills} from './selected-local-skills/compose-selected-local-skills.mjs';
+import {composePersonalReminderCandidate} from './reminders/compose-personal-reminder-candidate.mjs';
+import {composePersonalPlannerDelta} from './personal-planner/compose-personal-planner-delta.mjs';
+import {composePersonalQuizReviewDelta} from './quiz-review/compose-personal-quiz-review-delta.mjs';
+import {composePersonalCookingDelta} from './cooking/compose-personal-cooking-delta.mjs';
+import {composePersonalLearningPlanDelta} from './learning-plan/compose-personal-learning-plan-delta.mjs';
+import {composePersonalPackingDelta} from './packing/compose-personal-packing-delta.mjs';
+import {composePersonalPreferencesDelta} from './preferences/compose-personal-preferences-delta.mjs';
+import {composePersonalHabitsDelta} from './habits/compose-personal-habits-delta.mjs';
+import {composePersonalWebtoolsDelta} from './webtools/compose-personal-webtools-delta.mjs';
+import {composePersonalSubscriptionsDelta} from './subscriptions/compose-personal-subscriptions-delta.mjs';
+import {composePersonalPantryDelta} from './pantry/compose-personal-pantry-delta.mjs';
+import {composePersonalBudgetDelta} from './budget/compose-personal-budget-delta.mjs';
+import {composeInventoryTrainingDelta} from './inventory-training/compose-inventory-training-delta.mjs';
+import {composeChessEpubDelta} from './chess-epub/compose-chess-epub-delta.mjs';
+import {composeQrCreateDelta} from './qr/compose-qr-create-delta.mjs';
+import {composeShortVideoDelta} from './video/compose-short-video-delta.mjs';
+import {composeSixFormatDelta} from './six-formats/compose-six-format-delta.mjs';
+import {composePptxDelta} from './pptx/compose-pptx-delta.mjs';
+import {composeXlsxDelta} from './xlsx/compose-xlsx-delta.mjs';
+import {composeTenToolsExportDelta} from './exports/compose-ten-tools-export-delta.mjs';
+/** Pure fixed owner/business proposal. No profile, identity, auth-store or filesystem access. */
+import assert from 'node:assert/strict';
+import {composeSixToolsDelta} from './compose-six-tools-delta.mjs';
+import {composeEightToolsDelta} from './compose-eight-tools-delta.mjs';
+import {composeNineToolsDelta} from './rss/compose-nine-tools-delta.mjs';
+import {composeServiceNoticeDelta} from './notices/compose-service-notice-delta.mjs';
+import {composeOwnerToolConfig} from './compose-owner-config.mjs';
+const UNIT='crays-owner-tools-whatsapp-live',ID='crays-agent-thorben';
+export function composeOwnerWhatsAppTools({runtime,base,modelRouteEvidence,verifiedBusinessIdentity,canonicalBusinessPath}) {
+ assert.equal(runtime,'/run/'+UNIT);assert([runtime+'/business','/run/private/'+UNIT+'/business'].includes(canonicalBusinessPath),'Exact canonical business alias required');assert.equal(verifiedBusinessIdentity,'__CRAYS_PRIVATE_LITERAL_b855cb376b180ca91e307090__');
+ const token=base?.gateway?.auth?.token;assert(typeof token==='string'&&token.length>=32,'Existing native own gateway token required');
+ const cfg=composeOwnerToolConfig({runtime,base,modelRouteEvidence});
+ cfg.gateway={mode:'local',bind:'loopback',port:18789,auth:{mode:'token',token},controlUi:{enabled:false}};
+ cfg.plugins.allow.push('whatsapp');cfg.plugins.load.paths.push(runtime+'/whatsapp');cfg.plugins.entries.whatsapp={enabled:true};
+ const restrictions={dmPolicy:'allowlist',allowFrom:['__CRAYS_PRIVATE_LITERAL_d05daae50b022669259b28fc__'],groupPolicy:'disabled',groupAllowFrom:[],selfChatMode:false,sendReadReceipts:false,configWrites:false};
+ cfg.channels={whatsapp:{enabled:true,...restrictions,historyLimit:0,dmHistoryLimit:0,reactionLevel:'off',pluginHooks:{messageReceived:false},accounts:{'crays-agent-business':{enabled:true,name:'Chuck Crays',authDir:canonicalBusinessPath+'/credentials/whatsapp/crays-agent-business',...restrictions}}}};
+ cfg.commands={ownerAllowFrom:['whatsapp:__CRAYS_PRIVATE_LITERAL_d05daae50b022669259b28fc__'],config:false,debug:false,bash:false,restart:false,mcp:false,plugins:false};
+ cfg.bindings=[{agentId:ID,match:{channel:'whatsapp',accountId:'crays-agent-business'}}];
+ cfg.agents.entries[ID].skills=['weather','crays-everyday-assistance','crays-receipt-reading'];
+ cfg.skills.load={...cfg.skills.load,extraDirs:['/opt/crays/openclaw/skill-artifacts/crays-everyday-assistance/861181bfc30500e87b548e205429207aababc5eadd853e2b88d16a6328d0e1b2/skills','/opt/crays/openclaw/skill-artifacts/crays-receipt-reading/3a332961f27eb95b0d4935f976ca131102cf12337201dbc248a448920bdf4a0a/skills']};
+ cfg.skills.entries['crays-everyday-assistance']={enabled:true};cfg.skills.entries['crays-receipt-reading']={enabled:true};
+ assert.deepEqual(cfg.agents.entries[ID].skills,['weather','crays-everyday-assistance','crays-receipt-reading']);assert.equal(cfg.tools.allow.length,6);assert.deepEqual(cfg.tools.allow,cfg.agents.entries[ID].tools.allow);
+ return cfg;
+}
+
+// Recovery first: original native model/WhatsApp route only, with qualified brand guard.
+export function composeDurableRecovery(args) {
+ const cfg=composeOwnerWhatsAppTools(args);
+ cfg.agents.entries[ID].skills=[];
+ cfg.agents.entries[ID].tools={profile:'minimal',deny:['*']};
+ cfg.tools={profile:'minimal',deny:['*']};cfg.skills={allowBundled:[],entries:{}};
+ cfg.plugins={allow:['openai','whatsapp'],load:{paths:[args.runtime+'/whatsapp']},entries:{openai:{enabled:true},whatsapp:{enabled:true}}};
+ const baseline=composePersonalPlannerDelta(composePersonalQuizReviewDelta(composePersonalCookingDelta(composePersonalLearningPlanDelta(composePersonalPackingDelta(composePersonalPreferencesDelta(composePersonalHabitsDelta(composePersonalWebtoolsDelta(composePersonalSubscriptionsDelta(composePersonalPantryDelta(composePersonalBudgetDelta(composeInventoryTrainingDelta(composeChessEpubDelta(composeQrCreateDelta(composeShortVideoDelta(composeSixFormatDelta(composePptxDelta(composeXlsxDelta(composeTenToolsExportDelta(composeServiceNoticeDelta(composeNineToolsDelta(composeEightToolsDelta(composeSixToolsDelta(cfg)))))))), {agentId:ID})))))))))))))));
+ return composeOperationalLearningDelta(composeSelectedLocalSkills(composePersonalReminderCandidate(baseline).candidateConfig));
+}

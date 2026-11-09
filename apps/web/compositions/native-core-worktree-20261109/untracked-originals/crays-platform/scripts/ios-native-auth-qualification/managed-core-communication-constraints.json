@@ -1,0 +1,49 @@
+{
+  "schema": "crays.native.actual-managed-communication-constraints.v1",
+  "recordedAtUTC": "2026-10-24T17:44:58.354313+00:00",
+  "source": {
+    "projectId": "lively-mouse-02463015",
+    "branchId": "br-noisy-field-asv3idxv",
+    "endpointId": "ep-wandering-field-astlbgje",
+    "database": "neondb",
+    "metadataOnly": true,
+    "privateRowsRead": false
+  },
+  "constraints": [
+    {
+      "table": "conversation_participants",
+      "name": "conversation_participants_role_key_check",
+      "type": "c",
+      "validated": true,
+      "definition": "CHECK (role_key = ANY (ARRAY['deal-manager'::text, 'expansion-manager'::text, 'finance'::text, 'reviewer'::text, 'crays-management'::text, 'admin'::text, 'franchise-candidate'::text, 'franchise-partner'::text, 'studio-manager'::text, 'holiday-manager'::text, 'bank-partner'::text, 'landlord'::text, 'vendor'::text, 'gym-member'::text, 'hr'::text, 'system'::text]))"
+    },
+    {
+      "table": "conversations",
+      "name": "conversations_opened_by_role_check",
+      "type": "c",
+      "validated": true,
+      "definition": "CHECK (opened_by_role = ANY (ARRAY['deal-manager'::text, 'expansion-manager'::text, 'finance'::text, 'reviewer'::text, 'crays-management'::text, 'admin'::text, 'franchise-candidate'::text, 'franchise-partner'::text, 'studio-manager'::text, 'holiday-manager'::text, 'bank-partner'::text, 'landlord'::text, 'vendor'::text, 'gym-member'::text, 'hr'::text, 'system'::text]))"
+    },
+    {
+      "table": "conversations",
+      "name": "conversations_related_type_check",
+      "type": "c",
+      "validated": true,
+      "definition": "CHECK (related_entity_type = ANY (ARRAY['prepared-offer'::text, 'deal'::text, 'property-case'::text, 'bank-package'::text, 'loan-case'::text, 'document'::text, 'project'::text, 'studio'::text, 'member'::text, 'support-ticket'::text]))"
+    },
+    {
+      "table": "conversations",
+      "name": "conversations_type_check",
+      "type": "c",
+      "validated": true,
+      "definition": "CHECK (conversation_type = ANY (ARRAY['candidate_deal_thread'::text, 'bank_questions'::text, 'property_lease_thread'::text, 'opening_project_thread'::text, 'support_thread'::text, 'finance_review'::text, 'internal_review'::text]))"
+    },
+    {
+      "table": "messages",
+      "name": "messages_sender_role_check",
+      "type": "c",
+      "validated": true,
+      "definition": "CHECK (sender_role = ANY (ARRAY['deal-manager'::text, 'expansion-manager'::text, 'finance'::text, 'reviewer'::text, 'crays-management'::text, 'admin'::text, 'franchise-candidate'::text, 'franchise-partner'::text, 'studio-manager'::text, 'holiday-manager'::text, 'bank-partner'::text, 'landlord'::text, 'vendor'::text, 'gym-member'::text, 'hr'::text, 'system'::text]))"
+    }
+  ]
+}

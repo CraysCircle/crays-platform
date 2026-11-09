@@ -1,0 +1,31 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {getPersonalAgentStandardPackage} from './new-personal-agent-baseline-config.mjs';
+import {createNewPersonalAgentStandardConfigWithEverydayAssistance} from './with-everyday-assistance.mjs';
+import {createNewPersonalAgentStandardConfigWith107} from './with-binding107.mjs';
+const standard=getPersonalAgentStandardPackage();
+const fixture=(id='person-one',agent='agent-one')=>({canonicalPersonId:id,agentId:agent,
+ expectedPackageVersion:standard.descriptor.version,expectedPackageSha256:standard.sha256,
+ modelAccount:{canonicalPersonId:id,agentId:agent,provider:'openai',apiRoute:'openai-chatgpt-responses',modelRef:'openai/gpt-6-astra',state:'PENDING_OWN_LOGIN',readinessReceiptSha256:null},
+ artifactBindings:standard.descriptor.plugins.map(p=>({pluginId:p.id,codeSetSha256:p.codeSetSha256,manifestSha256:null,state:'SOURCE_ASSIGNED',admissionReceiptSha256:null}))});
+test('107 intent preserves original100, real original factory and tool policy without loading seven missing integrations',()=>{
+ const input=fixture(),before=structuredClone(input),old=createNewPersonalAgentStandardConfigWithEverydayAssistance(input),now=createNewPersonalAgentStandardConfigWith107(input);
+ assert.deepEqual(input,before);
+ assert.deepEqual(now.proposal.assignedBindingCapabilityIds.slice(0,100),old.proposal.assignedBindingCapabilityIds);
+ assert.deepEqual(now.proposal.assignedBindingCapabilityIds.slice(100),Array.from({length:7},(_,i)=>'B2C-CAP-'+(101+i)));
+ assert.equal(new Set(now.proposal.assignedBindingCapabilityIds).size,107);
+ assert.deepEqual(now.proposal.assignedTools,old.proposal.assignedTools);
+ assert.deepEqual(now.proposal.nativeConfigFragment.tools,old.proposal.nativeConfigFragment.tools);
+ assert.deepEqual(now.proposal.nativeConfigFragment.plugins,old.proposal.nativeConfigFragment.plugins);
+ assert.deepEqual(now.proposal.nativeConfigFragment.agents.entries['agent-one'].skills,['weather','crays-everyday-assistance','crays-receipt-reading']);
+ for(const row of now.additionalSkillAssignments){assert.equal(row.installed,false);assert.equal(row.connected,false);assert.equal(row.runtimeToolRegistered,false);assert.equal(row.userAcceptanceProven,false);assert.equal(now.proposal.nativeConfigFragment.tools.allow.includes(row.skillId),false);}
+ assert.equal(now.receiptSkillAssignment.nativeLoadVerified,false);assert.equal(now.receiptSkillAssignment.artifactReferenceVerifiedByFactory,false);
+ assert.equal(now.proposal.readiness.runtimeStartAllowed,false);assert.equal(Object.isFrozen(now),true);
+});
+test('107 keeps disjoint person/account namespaces and original other-person denial',()=>{
+ const a=createNewPersonalAgentStandardConfigWith107(fixture()),b=createNewPersonalAgentStandardConfigWith107(fixture('__CRAYS_PRIVATE_IDENTIFIER_9d1be93fb6b119f67274721e__','agent-two'));
+ assert.notEqual(a.proposal.paths.stateDir,b.proposal.paths.stateDir);
+ assert.equal(b.proposal.modelAccountReadiness.canonicalPersonId,'__CRAYS_PRIVATE_IDENTIFIER_9d1be93fb6b119f67274721e__');
+ const input=fixture();input.modelAccount.canonicalPersonId='__CRAYS_PRIVATE_IDENTIFIER_9d1be93fb6b119f67274721e__';
+ assert.throws(()=>createNewPersonalAgentStandardConfigWith107(input));
+});

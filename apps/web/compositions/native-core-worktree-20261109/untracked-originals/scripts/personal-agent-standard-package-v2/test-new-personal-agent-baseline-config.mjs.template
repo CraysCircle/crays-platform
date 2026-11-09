@@ -1,0 +1,45 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {getPersonalAgentStandardPackage as describe,createNewPersonalAgentStandardConfig as create} from './new-personal-agent-baseline-config.mjs';
+const standard=describe();
+const fixture=(person='person-one',agent='agent-one')=>({canonicalPersonId:person,agentId:agent,expectedPackageVersion:standard.descriptor.version,expectedPackageSha256:standard.sha256,
+ modelAccount:{canonicalPersonId:person,agentId:agent,provider:'openai',apiRoute:'openai-chatgpt-responses',modelRef:'openai/gpt-6-astra',state:'PENDING_OWN_LOGIN',readinessReceiptSha256:null},
+ artifactBindings:standard.descriptor.plugins.map(p=>({pluginId:p.id,codeSetSha256:p.codeSetSha256,manifestSha256:null,state:'SOURCE_ASSIGNED',admissionReceiptSha256:null}))});
+test('two users receive identical standard code but disjoint identities, workspace, agentDir and own readiness',()=>{
+ const a=create(fixture()),b=create(fixture('__CRAYS_PRIVATE_IDENTIFIER_2bf3f207d1b2e88f74d6d874__','agent-two'));
+ assert.deepEqual(a.assignedTools,b.assignedTools);assert.equal(a.assignedTools.length,6);assert.equal(a.assignedBindingCapabilityIds.length,100);
+ for(const key of ['stateDir','workspace','agentDir'])assert.notEqual(a.paths[key],b.paths[key]);
+ assert.notEqual(a.personNamespace,b.personNamespace);assert.equal(Object.hasOwn(a.nativeConfigFragment.agents.entries,'agent-two'),false);
+ assert.equal(a.modelAccountReadiness.canonicalPersonId,'person-one');assert.equal(b.modelAccountReadiness.canonicalPersonId,'__CRAYS_PRIVATE_IDENTIFIER_2bf3f207d1b2e88f74d6d874__');
+ assert.equal(a.nativeConfigFragment.tools.fs.workspaceOnly,true);assert.deepEqual(a.nativeConfigFragment.plugins.load.paths,[]);
+ assert.equal(a.nativeConfigFragment.tools.allow.includes('crays_personal_records'),false);
+ for(const result of [a,b])for(const [key,value] of Object.entries(result.readiness))if(key!=='codeAssigned')assert.equal(value,false,key);
+});
+test('exact shared artifact references produce optional plugin bindings without claiming verified installation',()=>{
+ const x=fixture();for(const row of x.artifactBindings){const p=standard.descriptor.plugins.find(p=>p.id===row.pluginId);row.state='INSTALLATION_ADMISSION_REFERENCE_SUPPLIED';row.manifestSha256=p.knownInstalledManifestSha256??'a'.repeat(64);row.admissionReceiptSha256='b'.repeat(64);}
+ const a=create(x),b=create({...x,canonicalPersonId:'__CRAYS_PRIVATE_IDENTIFIER_2bf3f207d1b2e88f74d6d874__',agentId:'agent-two',modelAccount:{...x.modelAccount,canonicalPersonId:'__CRAYS_PRIVATE_IDENTIFIER_2bf3f207d1b2e88f74d6d874__',agentId:'agent-two'}});
+ assert.deepEqual(a.nativeConfigFragment.plugins.load.paths,b.nativeConfigFragment.plugins.load.paths);assert.equal(a.nativeConfigFragment.plugins.load.paths.length,2);
+ assert(a.nativeConfigFragment.tools.allow.includes('crays_calculator'));assert(a.nativeConfigFragment.tools.allow.includes('crays_personal_records'));
+ for(const row of a.artifactAssignments){assert(row.proposedLoadPath.startsWith('/opt/crays/openclaw/plugin-artifacts/'+row.pluginId+'/'));assert.equal(row.referenceVerifiedByFactory,false);}
+ assert.equal(a.readiness.artifactAdmissionVerified,false);assert.equal(a.readiness.runtimeStartAllowed,false);
+});
+test('wrong artifact, duplicate plugin, wrong manifest and unknown shared path cannot be substituted',()=>{
+ const wrong=fixture();wrong.artifactBindings[0].codeSetSha256='0'.repeat(64);assert.throws(()=>create(wrong),/wrong artifact/);
+ const duplicate=fixture();duplicate.artifactBindings[1]=duplicate.artifactBindings[0];assert.throws(()=>create(duplicate),/unique expected plugin/);
+ const manifest=fixture();Object.assign(manifest.artifactBindings[0],{state:'INSTALLATION_ADMISSION_REFERENCE_SUPPLIED',manifestSha256:'f'.repeat(64),admissionReceiptSha256:'b'.repeat(64)});assert.throws(()=>create(manifest),/wrong installed artifact/);
+ const path=fixture();path.artifactBindings[0].path='/var/lib/__CRAYS_PRIVATE_IDENTIFIER_a1f64bf00d9cae3e0447b727__-user/plugin';assert.throws(()=>create(path),/exact keys/);
+});
+test('foreign account, unsupported provider and route, missing own readiness and credential input rejected',()=>{
+ for(const patch of [{canonicalPersonId:'__CRAYS_PRIVATE_IDENTIFIER_a1f64bf00d9cae3e0447b727__'},{agentId:'__CRAYS_PRIVATE_IDENTIFIER_a1f64bf00d9cae3e0447b727__-agent'},{provider:'anthropic'},{apiRoute:'openai-api-key'},{modelRef:'anthropic/model'},{state:'OWN_ACCOUNT_REFERENCE_SUPPLIED',readinessReceiptSha256:null},{token:'secret'}]){
+  const x=fixture();Object.assign(x.modelAccount,patch);assert.throws(()=>create(x));
+ }
+ const own=fixture();own.modelAccount.state='OWN_ACCOUNT_REFERENCE_SUPPLIED';own.modelAccount.readinessReceiptSha256='c'.repeat(64);const y=create(own);assert.equal(y.readiness.ownAccountVerified,false);assert.equal(y.modelAccountReadiness.referenceVerifiedByFactory,false);
+});
+test('no caller base/paths/secrets, no getters, package drift or mutable cross-user state',()=>{
+ for(const extra of [{base:{auth:'forbidden'}},{workspace:'/owner'},{auth:{token:'forbidden'}},{channels:{whatsapp:'__CRAYS_PRIVATE_IDENTIFIER_a1f64bf00d9cae3e0447b727__'}}])assert.throws(()=>create({...fixture(),...extra}),/exact keys/);
+ const x=fixture();Object.defineProperty(x,'agentId',{get(){throw new Error('getter executed');}});assert.throws(()=>create(x),/accessors/);
+ assert.throws(()=>create({...fixture(),expectedPackageSha256:'0'.repeat(64)}),/package drift/);
+ for(const patch of [{canonicalPersonId:'__CRAYS_PRIVATE_IDENTIFIER_3db277d4a5ec79bd085b60ea__'},{agentId:'../agent'},{agentId:'constructor'}])assert.throws(()=>create({...fixture(),...patch}));
+ const a=create(fixture());assert.throws(()=>a.nativeConfigFragment.tools.allow.push('exec'));assert.equal(create(fixture()).nativeConfigFragment.tools.allow.includes('exec'),false);
+ for(const forbidden of ['thorben','PRIVATE_GATEWAY_CONFIG','OPENAI_API_KEY'])assert.equal(JSON.stringify(a).includes(forbidden),false);
+ assert.equal(Object.hasOwn(a.nativeConfigFragment,'auth'),false);assert.equal(Object.hasOwn(a.nativeConfigFragment,'channels'),false);
+});

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "crays-weather-public",
+    "root": "/opt/crays/openclaw/skill-artifacts/crays-weather-public/5f118f25f96738d5493970efa14fb499573f1e681169a2d986c27a0eeea56313",
+    "extraDir": "/opt/crays/openclaw/skill-artifacts/crays-weather-public/5f118f25f96738d5493970efa14fb499573f1e681169a2d986c27a0eeea56313/skills",
+    "manifest": {
+      "relativePath": "PROPOSED_SKILL_ARTIFACT_MANIFEST.json",
+      "bytes": 328,
+      "sha256": "5f118f25f96738d5493970efa14fb499573f1e681169a2d986c27a0eeea56313"
+    },
+    "skill": {
+      "relativePath": "skills/crays-weather-public/SKILL.md",
+      "bytes": 2453,
+      "sha256": "a4cb0c8aca8109c536d04428810d52b42202545c80e6f6d52e46b7cb20917468"
+    },
+    "contentAddressing": "sha256-of-manifest"
+  },
+  {
+    "name": "crays-personal-translation",
+    "root": "/opt/crays/openclaw/skill-artifacts/crays-personal-translation/47b49c2682a360772978c17f009c5d531349a8441360c9ea48017b043007744c",
+    "extraDir": "/opt/crays/openclaw/skill-artifacts/crays-personal-translation/47b49c2682a360772978c17f009c5d531349a8441360c9ea48017b043007744c/skills",
+    "manifest": {
+      "relativePath": "ARTIFACT_MANIFEST.json",
+      "bytes": 629,
+      "sha256": "4925184f782dc2a5d7bbc96e37a934347351dd1e171552584a7bbc3b9ba74326"
+    },
+    "skill": {
+      "relativePath": "skills/crays-personal-translation/SKILL.md",
+      "bytes": 7480,
+      "sha256": "47b49c2682a360772978c17f009c5d531349a8441360c9ea48017b043007744c"
+    },
+    "contentAddressing": "sha256-of-exact-SKILL.md"
+  },
+  {
+    "name": "crays-short-video-explanation",
+    "root": "/opt/crays/openclaw/skill-artifacts/crays-short-video-explanation/3d2250e612004dec5110986e24da6b75aa6678aecb989aea34845fc43798fcc6",
+    "extraDir": "/opt/crays/openclaw/skill-artifacts/crays-short-video-explanation/3d2250e612004dec5110986e24da6b75aa6678aecb989aea34845fc43798fcc6/skills",
+    "manifest": {
+      "relativePath": "ARTIFACT_MANIFEST.json",
+      "bytes": 638,
+      "sha256": "5e9f9c5d1c168f1e26643c8ef3c19898566416353b56db75a6b62bf8c90383ca"
+    },
+    "skill": {
+      "relativePath": "skills/crays-short-video-explanation/SKILL.md",
+      "bytes": 4394,
+      "sha256": "3d2250e612004dec5110986e24da6b75aa6678aecb989aea34845fc43798fcc6"
+    },
+    "contentAddressing": "sha256-of-exact-SKILL.md"
+  }
+]

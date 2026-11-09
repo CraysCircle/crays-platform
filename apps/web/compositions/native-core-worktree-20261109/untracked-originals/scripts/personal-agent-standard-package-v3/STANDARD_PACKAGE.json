@@ -1,0 +1,200 @@
+{
+  "schema": "crays.personal-agent.standard-package.v3",
+  "version": "general-eight-tools-binding107-2026-10-15.v3",
+  "status": "SOURCE_BOUND_107_ASSIGNMENT_NOT_RUNTIME_ADMISSION",
+  "upstreamVersion": "2026.10.3",
+  "skills": [
+    "weather",
+    "crays-everyday-assistance",
+    "crays-receipt-reading",
+    "crays-personal-dates",
+    "crays-shared-expenses"
+  ],
+  "tools": [
+    "read",
+    "web_fetch",
+    "web_search",
+    "pdf",
+    "crays_calculator",
+    "crays_personal_records",
+    "crays_personal_dates",
+    "crays_shared_expenses"
+  ],
+  "implicitNativeTools": [
+    "skills_read"
+  ],
+  "plugins": [
+    {
+      "id": "crays-calculator",
+      "tool": "crays_calculator",
+      "version": "0.1.0",
+      "files": [
+        {
+          "path": "calculator-core.mjs",
+          "bytes": 10860,
+          "sha256": "18e461a6f351dd96227c0478eef05fb1489998ec15f405bbd34b3c5bef594f3a"
+        },
+        {
+          "path": "index.mjs",
+          "bytes": 3311,
+          "sha256": "dcf60690a131f05961f535245d89dfc70df8cc698cc2ac8397d183eaa4d32cd6"
+        },
+        {
+          "path": "openclaw.plugin.json",
+          "bytes": 386,
+          "sha256": "7a69cd7dfba5a63eebeb5f4e538a10f7756797eb233535de8407fa1dfc6fe0cb"
+        },
+        {
+          "path": "package.json",
+          "bytes": 302,
+          "sha256": "e265a88fff1629b3434ecf74b9679e8ee7fa7b98f19a2b22fec48d34018bce89"
+        }
+      ],
+      "codeSetSha256": "76b534b248453ceecae5dca9e6d5b7cff5aacf4e6779723dda1c2318e3259c7f",
+      "artifactRoot": "/opt/crays/openclaw/plugin-artifacts/crays-calculator",
+      "knownInstalledManifestSha256": "9dc61bf9690602b5c8cb0460199160735d70146b2e2ab2b237284c1ad1267241",
+      "qualification": "NATIVE_HOST_12_AND_27_UNIT_TESTS_PASS"
+    },
+    {
+      "id": "crays-personal-records",
+      "tool": "crays_personal_records",
+      "version": "0.1.0",
+      "files": [
+        {
+          "path": "index.mjs",
+          "bytes": 4012,
+          "sha256": "a6e922fc2868b13f5ac7fa0eb6ecccb6e769053d21de827561d8a965615636d0"
+        },
+        {
+          "path": "openclaw.plugin.json",
+          "bytes": 401,
+          "sha256": "f0805b92bee370a6a1ba2e51fcf1f44376be62d9640061c9bc8fd452faab40e6"
+        },
+        {
+          "path": "package.json",
+          "bytes": 358,
+          "sha256": "f079f943c3248481cfa7e047c551d41f64f8cfa062071ded239358481c707f37"
+        },
+        {
+          "path": "store.mjs",
+          "bytes": 11112,
+          "sha256": "d1a52182abe227d6dc20ed9c7f4432397267f9f7348f8390fab31cf3da09ee8c"
+        }
+      ],
+      "codeSetSha256": "3044dec19a4717f481698bcfc28dea834c5b2dc39b21d0397e3e6b6ec62f3ff8",
+      "artifactRoot": "/opt/crays/openclaw/plugin-artifacts/crays-personal-records",
+      "knownInstalledManifestSha256": "8d7f1cf9d1502435fd77e6021c898433a4db0fa41fb52e73338e1d221f8f9591",
+      "qualification": "SOURCE_SQLITE_12_PASS_NATIVE_HOST_PENDING"
+    },
+    {
+      "id": "crays-personal-dates",
+      "tool": "crays_personal_dates",
+      "version": "0.1.0",
+      "files": [
+        {
+          "bytes": 2432,
+          "path": "index.mjs",
+          "sha256": "ecad3529fdaff861bfb50d61e093ef3f4e49a758af209b95c1083b73d13b0bdf"
+        },
+        {
+          "bytes": 3437,
+          "path": "date-core.mjs",
+          "sha256": "7a03414da5f5cade05e21cdd1976dbde14c1b36f40226d30fc1fb530ebfec406"
+        },
+        {
+          "bytes": 359,
+          "path": "openclaw.plugin.json",
+          "sha256": "845652b61676ac5268f9bef36a9dff003cab309cf0b26c671a1948bb38fa0eb1"
+        },
+        {
+          "bytes": 360,
+          "path": "package.json",
+          "sha256": "588359ece9f745e73a79b07370f164cb28c83e06ec7ba1f18ced156e76162241"
+        }
+      ],
+      "codeSetSha256": "330b81d6ee8c45a9a1bc831422b52f6477f218c30ec3fcfe6e74d4799aaaf990",
+      "codeSetEncoding": "python-json-sort-keys-compact-utf8-files-array",
+      "artifactRoot": "/opt/crays/openclaw/plugin-artifacts/crays-personal-dates",
+      "knownInstalledManifestSha256": null,
+      "expectedArtifactManifestSha256": "14a5123f63e1a67bd5d01ab92e97e3e56ccecc9007a8eca41649bb071ef87741",
+      "qualification": "RETAINED_DATE_NATIVE13_PASS_NOT_THIS_USER_ACCEPTANCE"
+    },
+    {
+      "id": "crays-shared-expenses",
+      "tool": "crays_shared_expenses",
+      "version": "0.1.0",
+      "files": [
+        {
+          "bytes": 2926,
+          "path": "index.mjs",
+          "sha256": "0a4bffe158ddc953ecf648780961a889a33f73a71b87c3131ba0a3eee6a47e91"
+        },
+        {
+          "bytes": 6443,
+          "path": "expense-core.mjs",
+          "sha256": "a7a5179a4e2b0e44b4b206ce939c6bac160cfa08bd70505117939cd3b111aa4b"
+        },
+        {
+          "bytes": 369,
+          "path": "openclaw.plugin.json",
+          "sha256": "dfed78132d0e6b0f3159ac83ce8555d3c8777cb7838d2ba4adb7f9c7a14cfa7f"
+        },
+        {
+          "bytes": 364,
+          "path": "package.json",
+          "sha256": "96a7c269b9cb67931cfc1f5221627f26348c34d3acfdee396c87b03e17448ad0"
+        }
+      ],
+      "codeSetSha256": "437f0ce45bbbf69fe24640ed79560f2ed63d7e76a9871c678a77f6f87df547ef",
+      "codeSetEncoding": "python-json-sort-keys-compact-utf8-files-array",
+      "artifactRoot": "/opt/crays/openclaw/plugin-artifacts/crays-shared-expenses",
+      "knownInstalledManifestSha256": null,
+      "expectedArtifactManifestSha256": "a8fc7d75d3be395a2ac7c1b7dc4233b3b6bf5e42ac109e05ae9e29ea4530fc0a",
+      "qualification": "CURRENCY2_PURE9_PASS_NATIVE_AND_LIVE_UNPROVEN"
+    }
+  ],
+  "requiredAccountRoute": "openai-chatgpt-responses",
+  "binding100": {
+    "path": "infra/openclaw/agentic/b2c100-binding-priority.json",
+    "sha256": "33eefe8c3abd44c7bcfdd99e758321df508476003bfec0775064f14996aa388a",
+    "count": 100,
+    "all100Ready": false
+  },
+  "binding107": {
+    "count": 107,
+    "original100Unchanged": true,
+    "all107Ready": false
+  },
+  "addedSkillAssignments": [
+    {
+      "skillId": "crays-personal-dates",
+      "contentSha256": "0cb5789cd7583702d41e31eee8668e09458e0edb930c56e7085c32a149e20fa3",
+      "source": "infra/openclaw/skills/crays-personal-dates/SKILL.md",
+      "proposedArtifactRoot": "/opt/crays/openclaw/skill-artifacts/crays-personal-dates/0cb5789cd7583702d41e31eee8668e09458e0edb930c56e7085c32a149e20fa3",
+      "proposedExtraDir": "/opt/crays/openclaw/skill-artifacts/crays-personal-dates/0cb5789cd7583702d41e31eee8668e09458e0edb930c56e7085c32a149e20fa3/skills",
+      "proposedSkillPath": "/opt/crays/openclaw/skill-artifacts/crays-personal-dates/0cb5789cd7583702d41e31eee8668e09458e0edb930c56e7085c32a149e20fa3/skills/crays-personal-dates/SKILL.md",
+      "artifactManifestSha256Reference": "7fe61472dc4fbaee4ca20efb522805c75220719dd3559e267bde221586bcd951",
+      "state": "SOURCE_ASSIGNED_PENDING_REFERENCE_VERIFICATION_AND_NATIVE_LOAD",
+      "codeAssigned": true,
+      "artifactReferenceVerifiedByFactory": false,
+      "nativeLoadVerified": false,
+      "runtimeStartAllowed": false,
+      "userAcceptanceProven": false
+    },
+    {
+      "skillId": "crays-shared-expenses",
+      "contentSha256": "da0408d88a868073b74b1702e34173e45e9dae69859b6903585632011b17f0f1",
+      "source": "infra/openclaw/skills/crays-shared-expenses/SKILL.md",
+      "proposedArtifactRoot": "/opt/crays/openclaw/skill-artifacts/crays-shared-expenses/da0408d88a868073b74b1702e34173e45e9dae69859b6903585632011b17f0f1",
+      "proposedExtraDir": "/opt/crays/openclaw/skill-artifacts/crays-shared-expenses/da0408d88a868073b74b1702e34173e45e9dae69859b6903585632011b17f0f1/skills",
+      "proposedSkillPath": "/opt/crays/openclaw/skill-artifacts/crays-shared-expenses/da0408d88a868073b74b1702e34173e45e9dae69859b6903585632011b17f0f1/skills/crays-shared-expenses/SKILL.md",
+      "artifactManifestSha256Reference": "62255e5c7a25edf5dfb1f5396857dcc5da9b89ae7036595d0afb0f7811ce2351",
+      "state": "SOURCE_ASSIGNED_PENDING_REFERENCE_VERIFICATION_AND_NATIVE_LOAD",
+      "codeAssigned": true,
+      "artifactReferenceVerifiedByFactory": false,
+      "nativeLoadVerified": false,
+      "runtimeStartAllowed": false,
+      "userAcceptanceProven": false
+    }
+  ]
+}

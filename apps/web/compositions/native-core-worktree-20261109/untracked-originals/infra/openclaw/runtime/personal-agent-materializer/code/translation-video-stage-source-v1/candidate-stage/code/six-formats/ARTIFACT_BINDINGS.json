@@ -1,0 +1,1609 @@
+{
+  "schema": "crays.six-format.live-forward.bindings.v1",
+  "oldPluginRoot": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/2ba15cf0a89256da7985bcce7fc3af4f0d050ea493ebe369ab3ed09828660caf",
+  "newPluginRoot": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b",
+  "oldSkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-document-exports/2a5bcc11c8077df16a9265257e054055907844ef1c7015575eb9d423be43cbd0",
+  "newSkillRoot": "/opt/crays/openclaw/skill-artifacts/crays-document-exports/43d3b8b90d3c307849ede5ba59392b62d93cb7623e8562b5eb7afbb00527592d",
+  "newSkillManifestSha256": "43d3b8b90d3c307849ede5ba59392b62d93cb7623e8562b5eb7afbb00527592d",
+  "newSkillContentSha256": "eeafc2dec9db5a4991dcbef6c69dc3a74798eca3fb00ef717d9e269e3f7e95a3",
+  "unchangedPluginRoots": [
+    "/opt/crays/openclaw/plugin-artifacts/crays-calculator/9dc61bf9690602b5c8cb0460199160735d70146b2e2ab2b237284c1ad1267241",
+    "/opt/crays/openclaw/plugin-artifacts/crays-personal-records/315bccd5e9d5507617090cce5040cf05538347ec701cf9d33dd850f7762e0356",
+    "/opt/crays/openclaw/plugin-artifacts/crays-personal-dates/14a5123f63e1a67bd5d01ab92e97e3e56ccecc9007a8eca41649bb071ef87741",
+    "/opt/crays/openclaw/plugin-artifacts/crays-shared-expenses/a8fc7d75d3be395a2ac7c1b7dc4233b3b6bf5e42ac109e05ae9e29ea4530fc0a",
+    "/opt/crays/openclaw/plugin-artifacts/crays-feed-reader/46481eb3d47ee26f3b5bb7a577c7ed7e81a9c97fe87ff554fa53397aeb320f7d",
+    "/opt/crays/openclaw/plugin-artifacts/crays-service-notices/a1528a72413c6f55b6d760e11d6a07fb35e451667d38356ab30c094ce2fe1c27"
+  ],
+  "rootInstalledInputs": [
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/docx-child.mjs",
+      "bytes": 3312,
+      "sha256": "e5a002c2adf3a03eb46995a143336aa1e0fd7969b4f17909f448f200ec5759dc"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/docx-input.mjs",
+      "bytes": 1789,
+      "sha256": "84cdea59419b2dadf0b2dada22bee769c882a9bbc452e13949f0a02733234bf7"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/docx-worker.mjs",
+      "bytes": 1466,
+      "sha256": "d78f9442bae858ee3891c6d4d6c6d602b3e9eb44c7e04d4f1513dfed856fe264"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/export.mjs",
+      "bytes": 6874,
+      "sha256": "abaa47bee23e45c78c2ad95f9f300754e66d31e75fccb73e2e02fff4782a1dc4"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/index.mjs",
+      "bytes": 5423,
+      "sha256": "b5b49c647d2ae39285cec47bae12af1ef9cd728f21c49ea6b45b3a7db63fe696"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/core-util-is/LICENSE",
+      "bytes": 1077,
+      "sha256": "33b734d60042d0fe0c92dd1fc1e874193a1c899ec3e276a2eb935d2d0bf5b710"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/core-util-is/README.md",
+      "bytes": 67,
+      "sha256": "57072548a79553ec5a930b370f5f37f2b86f57ab39357dc63e097c7e8ba7412a"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/core-util-is/lib/util.js",
+      "bytes": 3039,
+      "sha256": "7427f16d9bd9185e409baff3e4b1ed6e3d8dfca84d367f4b8b351eb921618652"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/core-util-is/package.json",
+      "bytes": 799,
+      "sha256": "0067bcd4ef1c86da02a45ad770883b39a9d14aa0b00113071609d5fb3dce0bc0"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/immediate/LICENSE.txt",
+      "bytes": 1115,
+      "sha256": "809e66de579fb7d92503848bbe6d1f348f4f6521a71e5d294fe7cc0c87a3b4ff"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/immediate/README.md",
+      "bytes": 3697,
+      "sha256": "f8ba840a9e01f16ccab189fc52191a42324153ad376b8ade110db8af9300ffe1"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/immediate/dist/immediate.js",
+      "bytes": 2911,
+      "sha256": "f7d30178cb60471a7e90378c20453634b2ffb5f8ade5c8f584ae0ee0845fb3ac"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/immediate/dist/immediate.min.js",
+      "bytes": 1686,
+      "sha256": "de5e482a8b02c65c727c105b42888da53e25b9fe5d815afbadc03f4d193df7d4"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/immediate/lib/browser.js",
+      "bytes": 1883,
+      "sha256": "a736ab3e296a0637d040603df55a5943d1f850e51c94f8595965c4875e307512"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/immediate/lib/index.js",
+      "bytes": 1982,
+      "sha256": "285c9e2ca232f5d298816680d9f5a29c455daa56356ee3566b556e5dafeb9427"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/immediate/package.json",
+      "bytes": 1372,
+      "sha256": "1e40d711ce5348d237f7a2093d1707ca7c34fc56369f6be10c8e2dc9bcae0a96"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/inherits/LICENSE",
+      "bytes": 749,
+      "sha256": "5ffe28e7ade7d8f10d85d5337a73fd793dac5c462fb9a28fbf8c5046c7fbca3b"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/inherits/README.md",
+      "bytes": 1625,
+      "sha256": "b33c8be1ca837d9e4c9b0e04a550feacbc101556164d3cdbb875aed6ccbb8a29"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/inherits/inherits.js",
+      "bytes": 250,
+      "sha256": "bb380f32bef5feb18678f0f45f88073fed5d7a0069a309132cb2080cd553d5c7"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/inherits/inherits_browser.js",
+      "bytes": 753,
+      "sha256": "ad322a7b1dec60f3d2ebda2091816469efb55b567d241cf3cf0fa4c5a4afe500"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/inherits/package.json",
+      "bytes": 581,
+      "sha256": "be645800bc94fd8de29c8ae91690549b316cc437100108aeea7b2f347693cc80"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/isarray/.npmignore",
+      "bytes": 13,
+      "sha256": "16d30e4462189fb14dd611bdb708c510630c576a1f35b9383e89a4352da36c97"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/isarray/.travis.yml",
+      "bytes": 48,
+      "sha256": "9b9a2cce2d8b28843a1a10647f82300c8403ccde268df5b6abc6c349e5167b34"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/isarray/Makefile",
+      "bytes": 55,
+      "sha256": "928dc8c1df0d6ff86d985f520278a4c83498aa6353ff3d942270aa117397a8d1"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/isarray/README.md",
+      "bytes": 1890,
+      "sha256": "ff138e683771b187f3629c383db72ee7d632009010a36d08e18e8d2a34222ec7"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/isarray/component.json",
+      "bytes": 470,
+      "sha256": "f9e5ef95d8e8f65a5dcd3a200b38e5a13461ed95114dac053d908c391c12d731"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/isarray/index.js",
+      "bytes": 132,
+      "sha256": "9b8c691372802da788c9c5f4e1ca2f1ed0b88ab8722176c2aea15e38ec86d249"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/isarray/package.json",
+      "bytes": 958,
+      "sha256": "93165ce56e458216c18240cd961a522af5b18e51da06f55d88ac552234455d95"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/isarray/test.js",
+      "bytes": 320,
+      "sha256": "46997dc4554dd5a554b4883a9c13180c628bb36baadf8f89d2db5861f5239f44"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/.codeclimate.yml",
+      "bytes": 208,
+      "sha256": "3641875e15f3cf7a09a245414d7717f88831d41c1ee0d241be1b33465b89b582"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/.editorconfig",
+      "bytes": 115,
+      "sha256": "45cac0fcacf725939699e02bbe9a4910e4aa955876e2800acca2e069aa776019"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/.eslintrc.js",
+      "bytes": 896,
+      "sha256": "0ddfbda0c594ca371f67baaa166734f5075d34ef56fdd2984f574564843c2a66"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/.github/FUNDING.yml",
+      "bytes": 13,
+      "sha256": "8c7fa9ad3746ef1c0d8cba1c359fb41cb4c1c59311df3f6753f425737012536a"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/.github/actions/setup/action.yml",
+      "bytes": 681,
+      "sha256": "ddc71c5ed3eefac7aa7b4989d71d7f6c369d0d362b798b738b2bd420cc0df014"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/.github/workflows/benchmark.yml",
+      "bytes": 1019,
+      "sha256": "1799cef38b9a4cc7e60e23ae90952aac2219fab8dcbfee831548564651a6b641"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/.github/workflows/main.yml",
+      "bytes": 1213,
+      "sha256": "729e69940b0d1c486ea7dbb809b6b73cd118278bec5764672b7e29f6c32d190c"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/CHANGES.md",
+      "bytes": 12526,
+      "sha256": "7e07acb69b5b0f2bec576e865fb5a1cee78481616c1ed03e70e1a51c2b5a47d6"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/LICENSE.markdown",
+      "bytes": 33753,
+      "sha256": "566c953c6090b1218ca6217dd7359d45dde46581968586dc607d59a78af6a9c4"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/README.markdown",
+      "bytes": 678,
+      "sha256": "5eee3659204ed8f04b58d388b2dae55539c5cbcda733e4e945811c9121a68ede"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/dist/jszip.js",
+      "bytes": 374565,
+      "sha256": "fa62224aa46f5aa78b9449aa8d6d46d914f8a7cce80bc65c635359f7a2f8ffd7"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/dist/jszip.min.js",
+      "bytes": 97781,
+      "sha256": "7f839b2d4688b845c105ebf5d2f9803075f91ea0fe72bdaac176c3a04dd3d2c1"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/index.d.ts",
+      "bytes": 11438,
+      "sha256": "0f7eade540c8b30ed70e038cbd3d889a172477816812dd09ff0c1d2967bb1652"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/base64.js",
+      "bytes": 3382,
+      "sha256": "5df6b73d9ed6c317c67835f3427d860c16fd93acf503eb471fd897167e747fdb"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/compressedObject.js",
+      "bytes": 2890,
+      "sha256": "b91f823d32f39cda4002bc0954993f20ffea6747d42109253b7d6347b4abb31b"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/compressions.js",
+      "bytes": 350,
+      "sha256": "50e650a7eaf2a54ede299c12dfba30a362c7644e7c00df0d16ab3cf228bb77b0"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/crc32.js",
+      "bytes": 1924,
+      "sha256": "63750f4131b1eabb545a4718c863af860184baf033c76851be282f1c7f5dcba9"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/defaults.js",
+      "bytes": 284,
+      "sha256": "585eeeb04375fe7bd27e846d8941d26fd435efb36a87fba9ff137fd8b97880a6"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/external.js",
+      "bytes": 438,
+      "sha256": "982fed36a600668223d1d0ce8c446f87ccd1f82634df18f206b4a2f4096e31c7"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/flate.js",
+      "bytes": 2365,
+      "sha256": "57f1452680cf7af6a9659de398d847dd1e870ea3a601662c498b073c640eb547"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/generate/ZipFileWorker.js",
+      "bytes": 17954,
+      "sha256": "907d84ea582def3954aade073444f398bef6edf1b931084da4a77bb4dc26c1c8"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/generate/index.js",
+      "bytes": 2035,
+      "sha256": "19f13a6ff615464657aa5b8651e669950c633095cea37d3179a51d8c645adb3b"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/index.js",
+      "bytes": 1540,
+      "sha256": "32bd1c5286b33626d1b34e07ab8d09d3d2f67152850b2e4ba6449d80d974db1b"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/license_header.js",
+      "bytes": 388,
+      "sha256": "27873abeec2df3693480a8d1b8fe17dd61bee843d1b39c1c9cfab57ffe93099e"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/load.js",
+      "bytes": 3196,
+      "sha256": "7e3181c7669cfc584f29f3060cdf210021ec5c723c36af039fb5433de52d25da"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/nodejs/NodejsStreamInputAdapter.js",
+      "bytes": 1933,
+      "sha256": "dcf35c72168e825d2e634cfa13a289ba8c7a76da0584a39b785611d0d736ddd9"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/nodejs/NodejsStreamOutputAdapter.js",
+      "bytes": 1075,
+      "sha256": "cc88c3a8e6aa74262bd1ecc452ee8f78c48a16a0b6095d2f9df7500320957799"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/nodejsUtils.js",
+      "bytes": 1886,
+      "sha256": "763d0af1cde619da6d9cfbe1ee82e2e32d86349d8abe32613c7481e8143740e1"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/object.js",
+      "bytes": 12440,
+      "sha256": "51f8d689e02f62837edeb449866238cf03df7d779d260d19a683abee27651273"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/readable-stream-browser.js",
+      "bytes": 441,
+      "sha256": "ed51f0a96964f61d5700b6c681b055dd07e27140f1b719d2fe1c64fd14b506e0"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/reader/ArrayReader.js",
+      "bytes": 1587,
+      "sha256": "bb711509472587e8c88e8e311d5c86bde76528286793afbc6573c1ddd9674814"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/reader/DataReader.js",
+      "bytes": 3709,
+      "sha256": "e8e0b4728ddc6fc3dbe5b449d87b884c4b3be99862bd1edf6a700ecfb3b3b247"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/reader/NodeBufferReader.js",
+      "bytes": 519,
+      "sha256": "1703f32f1cba687ac630690901848ab07a1b6a06b0e8fbe88a8ae6f5a67da84d"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/reader/StringReader.js",
+      "bytes": 1020,
+      "sha256": "477a2e887eee11a56a50726152327b2a4d75d778f96463933197706e1ce90d59"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/reader/Uint8ArrayReader.js",
+      "bytes": 652,
+      "sha256": "198816389bc1c62b3ca7c5c6f5fdff1b076f83e5bd74b37ee5b504e6d7e155d9"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/reader/readerFor.js",
+      "bytes": 904,
+      "sha256": "1eef5a73bba844922812893f9a7e01cfdb54072aae42f7ecf67c41dc925ea9cf"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/signature.js",
+      "bytes": 294,
+      "sha256": "18e10348490604003a2480aea813a6e90eaaac26c050d559c281618b9aaded56"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/stream/ConvertWorker.js",
+      "bytes": 648,
+      "sha256": "ae1dc8573bab7e5be4a4cb9958201e3e763cb2f2392a04d9a8dc440d683042f0"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/stream/Crc32Probe.js",
+      "bytes": 599,
+      "sha256": "8e186e5e0ab42fff35907666a90266420751613c28266e5809b7bfa2d55a3a9a"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/stream/DataLengthProbe.js",
+      "bytes": 829,
+      "sha256": "638e65360b0fbe1f4e0b2628fd3a1782a4df59c477d454007fa52b1a2587b93f"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/stream/DataWorker.js",
+      "bytes": 2748,
+      "sha256": "8203f14e856d33aa9afc272a576f169b29980e8da0ee0f633e6e5f23cfa48a3e"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/stream/GenericWorker.js",
+      "bytes": 8206,
+      "sha256": "ae76cecd1d728ca41dd6ae0665b258f442da64d9b25ff94785dcb80a501b8be1"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/stream/StreamHelper.js",
+      "bytes": 6877,
+      "sha256": "aebc6518b4871d106e799f90139d55620d02e9413ef2a7b0f953a9cea7bda124"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/support.js",
+      "bytes": 1089,
+      "sha256": "7629a6ef610030595e4c2211249f487e44cfbe4b8299105d64b5491d87fd3a51"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/utf8.js",
+      "bytes": 8102,
+      "sha256": "5bdfe3666fe57640bc791b4d6d2fc00853f4d954596260138bf488054fa9df5a"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/utils.js",
+      "bytes": 16926,
+      "sha256": "82538b268e385eabde80d549606ded6d31ec9af7afcf567c6ae708366abe8550"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/zipEntries.js",
+      "bytes": 11867,
+      "sha256": "0891a1a82e557c64a51893a5ad70dec76f6b5c91170047ab28617286c96c6ec7"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/zipEntry.js",
+      "bytes": 11314,
+      "sha256": "105b8cec00daa3852f92371b3898d6eab52eeb984113ba8958d09bce701e34df"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/lib/zipObject.js",
+      "bytes": 4528,
+      "sha256": "18871af92fac75d015ba7d4d3105c0746839ab089f78670cb86d76bfa53b1ce6"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/package.json",
+      "bytes": 1787,
+      "sha256": "4138415020992b9a832333c64a13bd7e17faa462f7e0c0dd505f824d397f7281"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/sponsors.md",
+      "bytes": 704,
+      "sha256": "05023a2cdb8fbddf99c368ce364e008f99d2b8da90ce5aec67d2ad633665f672"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/tsconfig.json",
+      "bytes": 11000,
+      "sha256": "513defa2eb1fc4aed9407b2b08fb21ab1c9c54b043609fe6c2b344891392606d"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/jszip/vendor/FileSaver.js",
+      "bytes": 7745,
+      "sha256": "67421e50f3ff4c97f1c3fa3749bf071cc57357c0da97783f4f8fe3affa3a52cf"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/lie/README.md",
+      "bytes": 2165,
+      "sha256": "97a1e33c510ea9ce0eb1faf0bc1f89a71bfe414c1768b227d47b5ac3c50e1a29"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/lie/dist/lie.js",
+      "bytes": 9311,
+      "sha256": "d3fc34d3a5a96c7294ad76eaa93bcf89786abc82647cf4f30306e007b2c7aded"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/lie/dist/lie.min.js",
+      "bytes": 4805,
+      "sha256": "fd749fa138f78ba1f85a3260300ce67e7e7cb6f02085dcb51081ad68a522f4b3"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/lie/dist/lie.polyfill.js",
+      "bytes": 9235,
+      "sha256": "3eb9c37db77565e5843ddb6e6c9f6d6056916c30a5eac0fcc59aa680540ac9ec"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/lie/dist/lie.polyfill.min.js",
+      "bytes": 4718,
+      "sha256": "69bfdc3b86f44244316f7b97ec418e7763a129dc603ea4ea7b2e00802a5f6c6f"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/lie/lib/browser.js",
+      "bytes": 6362,
+      "sha256": "512e8898e512d2029d12067b8e059a9733fe7e43d0ea98f532522d34582e3e59"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/lie/lib/index.js",
+      "bytes": 6970,
+      "sha256": "9408e5a97d3e8a0b14c96aef888e9a1f0b7358fd22c4ee33e9321cc950ade9dc"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/lie/license.md",
+      "bytes": 1084,
+      "sha256": "5c81b0caa98593408b03125efa25efe622341ed87ae55561968828cd887d64a4"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/lie/lie.d.ts",
+      "bytes": 11966,
+      "sha256": "0d433663211c9a094928624c7418ed10d543051c575376687dce2bcd6b54cef8"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/lie/package.json",
+      "bytes": 2432,
+      "sha256": "3faafb3b558146534b1849e6d2ed8a9c9c88eff27ef868827d8de17b979cf701"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/lie/polyfill.js",
+      "bytes": 97,
+      "sha256": "9fdfb4a0bb2e0ed1fb340bbfcc6fc42fbab1dc8420e3ca217fbedaf2c82c1230"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/CHANGELOG.md",
+      "bytes": 4138,
+      "sha256": "8d3b2a5ff30f052a33ff5a2a0d32fea9c22228a2eff08deb76856eac3bd31090"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/LICENSE",
+      "bytes": 1104,
+      "sha256": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/README.md",
+      "bytes": 6066,
+      "sha256": "8174ca473d9df9da15064d199064e8e3ff88d46beb66b545e048756e6f0fb469"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/dist/pako.js",
+      "bytes": 221496,
+      "sha256": "f407f7f15b7a0fc3af813a8cc526869e088c70801cadc31132a195fcb6f7b133"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/dist/pako.min.js",
+      "bytes": 45988,
+      "sha256": "29cfa0542b9864b6640cfdcc8f15b184db6431b532db2702a3ce97e5f2a7fc1c"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/dist/pako_deflate.js",
+      "bytes": 128125,
+      "sha256": "da1738ff3bc96b16f25390d329f4cf90f409f73c2a3fc9ef00a14fa0240d7f9f"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/dist/pako_deflate.min.js",
+      "bytes": 27503,
+      "sha256": "2494cd81fab386095b70c85be95e06432733f828c4ba02f940ed05c54087114b"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/dist/pako_inflate.js",
+      "bytes": 108583,
+      "sha256": "ec7e5936c652800e132c63cc1fcd00c23103a6a10a294ed3736bab70e38fc592"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/dist/pako_inflate.min.js",
+      "bytes": 22682,
+      "sha256": "2ca27e9a8dae569cdeac42752ed1aed1afeff7f19282d3cc12c0aaa54a08bc04"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/index.js",
+      "bytes": 347,
+      "sha256": "e7ec4e35d94d01a2e4ee5dca62b8fb08ac7411596edb54b398651f4eb563561d"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/lib/deflate.js",
+      "bytes": 11074,
+      "sha256": "a19a5dee5ac13a5bec54c15629bcd3449a0a7f15410d0ab582c1efc797a01bb0"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/lib/inflate.js",
+      "bytes": 12412,
+      "sha256": "18b7dd3b012a1105f3280737107a5a6f32a97c7036849dba7bd1f1e54cda9f53"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/lib/utils/common.js",
+      "bytes": 2444,
+      "sha256": "6e7878274f7e0f42e7cfb379933b447df3045b9139501f797ed29adf1affde14"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/lib/utils/strings.js",
+      "bytes": 5293,
+      "sha256": "bf827ddd52c2e998196adb640ae1192f7dc49ce5e6e5926e86198feeb94542a8"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/lib/zlib/README",
+      "bytes": 2180,
+      "sha256": "d8b499598e43d755ea8918448128259ff01820c50d94d5a48c8883d0a594ddb1"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/lib/zlib/adler32.js",
+      "bytes": 1656,
+      "sha256": "99618eb68a96858148e2dd56f478aa7e4321c434f5f2ee6c57f59c0c568f0596"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/lib/zlib/constants.js",
+      "bytes": 2312,
+      "sha256": "e0c4148ed267a27f03aba9f9a34cba4bade2090c0f12905907539e38c842abbc"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/lib/zlib/crc32.js",
+      "bytes": 1750,
+      "sha256": "213f85e8b2e52e2cf6f7634897197400f7ddaed587274f160045f0b548ec21da"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/lib/zlib/deflate.js",
+      "bytes": 61184,
+      "sha256": "4b9b71ae7f42e506fe1fb134f1c21b944ef2b7ef79667ba1fe59eb963c353d22"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/lib/zlib/gzheader.js",
+      "bytes": 2240,
+      "sha256": "8fa0b4995cea477be96b8783a7d6c7cf5fec96765c2108c3bd52e77104bfdbd3"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/lib/zlib/inffast.js",
+      "bytes": 12668,
+      "sha256": "b1beb3b55270e8338f23fc397132d179942d5866153ca4e9be264200b00c0d44"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/lib/zlib/inflate.js",
+      "bytes": 50284,
+      "sha256": "d31799a23f2ae87f0c52d21241c92278b41d23bb5365b452f2706d41b00c4245"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/lib/zlib/inftrees.js",
+      "bytes": 12500,
+      "sha256": "75f75d8ae4a7bed86f90a4a38f70c5d95e807515e9326801f9a073a7f2bf8bc7"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/lib/zlib/messages.js",
+      "bytes": 1538,
+      "sha256": "eec5f5d6b8120ada9cd48a3ca0a253c64777906e835477b090e053434d38cf6c"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/lib/zlib/trees.js",
+      "bytes": 39879,
+      "sha256": "718adbbf68f4343bf17d61edffd9d0788a96a93e4e191d857459d95257e614cf"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/lib/zlib/zstream.js",
+      "bytes": 1811,
+      "sha256": "5fa10c7a59ca99113cf92d1260e56cbd6282e15afa85dc8a0eb8e8d6d2321298"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/pako/package.json",
+      "bytes": 1026,
+      "sha256": "0014f350a6834ed6a2d1211e0a2e3aa471cb426edf63379c785f9647ea2b4e01"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/LICENSE",
+      "bytes": 11601,
+      "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/NOTICE",
+      "bytes": 254,
+      "sha256": "6d602191187b35b9b01d2cffa01c8469c2c8d9de8a96f1bf868e0f264f51c81d"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/README.md",
+      "bytes": 120,
+      "sha256": "d16ff7f8e38fa1fc954f695ad551cdc118d9c9bdd5f3d83203901f4c317d7d7e"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/ThirdPartyNotices.txt",
+      "bytes": 676,
+      "sha256": "a549d329bad8806fe279f0ecae0fc0270dec7e7c2dc8ec10f90e394f7c32b144"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/bin/install_media_pack.ps1",
+      "bytes": 174,
+      "sha256": "bc20f049badf021e3a53bdb4156603caa5ef482c9a9a251f927605e676a44171"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/bin/install_webkit_wsl.ps1",
+      "bytes": 1464,
+      "sha256": "bc61beda37a808eef27d39ce684baa792f6d17737a25a432b1a84d3b591ab815"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/bin/reinstall_chrome_beta_linux.sh",
+      "bytes": 1217,
+      "sha256": "dc8c22b9dde76583cece2857575b88094299615f3136a3c598149710c45dee3a"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/bin/reinstall_chrome_beta_mac.sh",
+      "bytes": 563,
+      "sha256": "a92eaeb4ebcf5633a4e9c981481e14c80764fc81b6fcbc0565398e50ff319433"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/bin/reinstall_chrome_beta_win.ps1",
+      "bytes": 957,
+      "sha256": "b6d9e44742feafb98d5edc56fa20042949973cf30d141a1c5b4fb384096967c5"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/bin/reinstall_chrome_stable_linux.sh",
+      "bytes": 1212,
+      "sha256": "dc72ab3567a4ce43bd8353d4ecf41f1d9c03e870169367cd3ed9043aabf67dd1"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/bin/reinstall_chrome_stable_mac.sh",
+      "bytes": 519,
+      "sha256": "bb43a96c192a6cc81524ade0264686fff7809c019a89f7db0a9849635879c3be"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/bin/reinstall_chrome_stable_win.ps1",
+      "bytes": 923,
+      "sha256": "3d96c4e2f4ebbb3fad44cf3ba58d9cf90af1c9fb3073e3b27d45a74cf005515b"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/bin/reinstall_msedge_beta_linux.sh",
+      "bytes": 1494,
+      "sha256": "10b26f35dbc2000b94edf1172d803a29c5873a4eb8d523afbc687997b642767e"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/bin/reinstall_msedge_beta_mac.sh",
+      "bytes": 377,
+      "sha256": "0036d738bc90d686100d81f328ba0003bf07863f5500b792c8da391d149750fa"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/bin/reinstall_msedge_beta_win.ps1",
+      "bytes": 874,
+      "sha256": "b173c378a59f0cc38033cee702de1f44f09276c9b2270d1a650ebe66ee312433"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/bin/reinstall_msedge_dev_linux.sh",
+      "bytes": 1489,
+      "sha256": "00e4947e7a4f8339c6db09c87976d808583c07f9179e4aa7694d88614b82fe95"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/bin/reinstall_msedge_dev_mac.sh",
+      "bytes": 372,
+      "sha256": "6f899e3b311f742c24ca37ff9e32298e8290514ffc14bf588cc51556a29da4c0"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/bin/reinstall_msedge_dev_win.ps1",
+      "bytes": 869,
+      "sha256": "46f7f98c81cb0abe687d7f4a5afea9b897a38d2a6dd6f6662fbd847f7a22bd51"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/bin/reinstall_msedge_stable_linux.sh",
+      "bytes": 1507,
+      "sha256": "ec0a31a5f09c565e108473a1850895a4458ab00c713ac1de3aa2001912e4668f"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/bin/reinstall_msedge_stable_mac.sh",
+      "bytes": 371,
+      "sha256": "3af1e893527ff2257aa2dbc3b259a053b92f45c3eadb13e38eba46e87902655d"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/bin/reinstall_msedge_stable_win.ps1",
+      "bytes": 856,
+      "sha256": "40bb5fcbfcebbbe2ce43c6e736e7c5deefc5be03b6e9c6914423c06ec1f591be"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/browsers.json",
+      "bytes": 1137,
+      "sha256": "545d52f8382c391e605562c330e9c1c534a16045898203037a49bb8bd769a946"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/cli.js",
+      "bytes": 839,
+      "sha256": "f1c4075aef116c766092250d7f37b3249a7cee6465d953207fc38c8f6145becd"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/index.d.ts",
+      "bytes": 634,
+      "sha256": "7a8ec10b0834eb7183e4bfcd929838ac77583828e343211bb73676d1e47f6f01"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/index.js",
+      "bytes": 697,
+      "sha256": "a58fb2cec4293e7dcf73c58a179898a4f3986666451a19da4e731fa3af63265b"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/index.mjs",
+      "bytes": 1063,
+      "sha256": "3d36e2132d3c8b62397d23f0bb4177336aaee503203ae2a2c90fbeb5bf3317dd"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/bootstrap.js",
+      "bytes": 3481,
+      "sha256": "4637f4dbfef9cfc01baeb5f5d2cb63fa0901522c96915ea2227290558d27123e"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/coreBundle.js",
+      "bytes": 3477183,
+      "sha256": "549070af3acabb3efcc4f55bfe6210f9f7c2fcf633cf7eaa59bfe60719969171"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/entry/cliDaemon.js",
+      "bytes": 197,
+      "sha256": "062f256fb29a7bf91793a014b9c3f1f9cf2dc6b12e40a8a2ebba88a630ae16a0"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/entry/dashboardApp.js",
+      "bytes": 108,
+      "sha256": "209962c6eaeef11629f226d6a2ab33ec7a2480754242b6e19590a9e6eb71d126"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/entry/mcp.js",
+      "bytes": 442,
+      "sha256": "cc87dc0020cb41caebbf04f50e42bc7835b033a6d80e9c3f0a3d0b3dbdf341c7"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/entry/oopBrowserDownload.js",
+      "bytes": 120,
+      "sha256": "87567cdbd67dd2f50bb232d47d3784701ece7c81e39c0287bb7d1b466b68cf06"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/package.js",
+      "bytes": 2112,
+      "sha256": "9f938e1d44a0dd231b1660ca62f7dae964859b79cbdc370b8542c5d375ca3c05"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/server/chromium/appIcon.png",
+      "bytes": 16565,
+      "sha256": "6ba994f05c5cf18e22d9b6bef9898fbdec6ad4d4d77f5187d0609cb42d72d01e"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/server/electron/loader.js",
+      "bytes": 4994,
+      "sha256": "699fb5564539da34ed72f49e9821af28f9fc06940adb639cac55dc9c477cfe7c"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/serverRegistry.js",
+      "bytes": 57039,
+      "sha256": "38025f08f335705b099b9f188bf45b5908a56a722825fe895b1e90f56d5595b6"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/serverRegistry.js.LICENSE",
+      "bytes": 2982,
+      "sha256": "3098a6efcbc11752cbdf6075fa65480f5470f78c8d981fab9c0796dc9a41cefe"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/cli-client/channelSessions.js",
+      "bytes": 7087,
+      "sha256": "6b9c613e87340f48ad7182addd7495a8ff3fbe55feb1bbd0ce04f59f1552e126"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/cli-client/cli.js",
+      "bytes": 153,
+      "sha256": "dfde8e9dfde30c4b3914eb25ba1c5a8524ec64651d866171d75cd7b41a827180"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/cli-client/help.json",
+      "bytes": 38799,
+      "sha256": "e78d7a22d059196e838d1f076b563eae185b851e3e36063fa4ae77a8dc1415b1"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/cli-client/minimist.js",
+      "bytes": 4109,
+      "sha256": "9430489ebc06fd02231dccfe844516f743e812a9ac4fe8e6748a67718738851c"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/cli-client/output.js",
+      "bytes": 11972,
+      "sha256": "b4c3ebab965e73d621971cd3c76b60c22cf460a0921f14c5c6c51e46e06f02d2"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/cli-client/program.js",
+      "bytes": 16373,
+      "sha256": "55a9a10132c680ecdec25b5000afb12035745ac9e75dd9cc0ef3e5d5e08d7f3e"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/cli-client/registry.js",
+      "bytes": 6768,
+      "sha256": "4976cd5b2b3a25572cc1a4b5f055a756dacd4cc1b19d48987ee3253428e759b8"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/cli-client/session.js",
+      "bytes": 9544,
+      "sha256": "a71e03ba6dc99d6d9cca4577d534daa6d0c20c32e50065311823f41caba29b46"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/dashboard/appIcon.png",
+      "bytes": 18945,
+      "sha256": "38037bcf18c7f9b950da2e1a2d8800d38fb27637ccda293d38368a3704b67f18"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/skills/playwright-cli/SKILL.md",
+      "bytes": 12726,
+      "sha256": "1a609c93bff3eea9ab99fed93c0334c851fdc39fb6ac5335551bfb87c171d57c"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/skills/playwright-cli/references/element-attributes.md",
+      "bytes": 665,
+      "sha256": "bf19aa4671e0a50a0fefa9c790f39124e803060eefe395042b723c29fcb7faa2"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/skills/playwright-cli/references/playwright-tests.md",
+      "bytes": 1690,
+      "sha256": "c5b0719fef2cfdff50bd744051b2f9afc119775db4b48e9b2882c1cf3886797c"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/skills/playwright-cli/references/request-mocking.md",
+      "bytes": 2182,
+      "sha256": "54e801c9663fc2b6d68ceb058cb1c360724c2499f42acc7852a68e83e5b5f37c"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/skills/playwright-cli/references/running-code.md",
+      "bytes": 5642,
+      "sha256": "d95c539a5990b71d02d8bdf1d9414df16191eb6cff95b0063820518b7a13dcb2"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/skills/playwright-cli/references/session-management.md",
+      "bytes": 5671,
+      "sha256": "cd3e261b8763bf952f1e371b876cb78d054379afec85482f9250633e1b7e6c44"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/skills/playwright-cli/references/storage-state.md",
+      "bytes": 5198,
+      "sha256": "9ac47f9ae4a1aedcd2077f8ac9ab1ba6bee1962cb83ff51adcd36fb6d83b5ec6"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/skills/playwright-cli/references/test-generation.md",
+      "bytes": 16114,
+      "sha256": "12f54cfa718d9e559bad918120a4ca4f11c933167713d1b9c5f99872eddaf749"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/skills/playwright-cli/references/tracing.md",
+      "bytes": 3456,
+      "sha256": "ef73e71bee792e341df9cd4f60529c929ade48b538ac76e033f4f20843e8dbda"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/skills/playwright-cli/references/video-recording.md",
+      "bytes": 5387,
+      "sha256": "8555ab5400df0d90e66318aacc0a8a4418fbf872e7463824d55d5c41615abd83"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/skills/playwright-component-testing/SKILL.md",
+      "bytes": 10404,
+      "sha256": "60f57b31767d562c30cc5332081418c2945f4d9c998efa6e09191333654dd429"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/skills/playwright-component-testing/references/gallery-spec.md",
+      "bytes": 6199,
+      "sha256": "0ca25dde6112eb379f56eb618585b64dc2dfd13c2f7f956ac7eabbd76a68912b"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/skills/playwright-component-testing/references/migration.md",
+      "bytes": 5031,
+      "sha256": "bc3a336f7970bb7455fa5a38f937e45b35fb0c18d6c3b9f37916a4ff757b7acc"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/skills/playwright-component-testing/references/react.md",
+      "bytes": 3115,
+      "sha256": "54af9cc1cdb6d4ccdb8e811c0abb29b960d5c9304f4df7d1dcf9b8df3f973102"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/skills/playwright-component-testing/references/typing.md",
+      "bytes": 6883,
+      "sha256": "c511025b5c9b02d7f49034a5613c8b478193bf60c90ea6dddb3faf9c6985c82b"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/skills/playwright-component-testing/references/vue.md",
+      "bytes": 3374,
+      "sha256": "d1b129f126c700702a3c00ad8eb6c86898bc941c29a656c1191eb7230650bf8b"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/skills/playwright-trace/SKILL.md",
+      "bytes": 4845,
+      "sha256": "4124dd790915bb76108377121d1e6ca93a5544c90485c090fa5655235efe22aa"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/utils/extension.js",
+      "bytes": 4689,
+      "sha256": "404ae19e57a7c7c5ed3e6ecf9df26a3fcf95867250732f954823078ccb879e63"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/tools/utils/socketConnection.js",
+      "bytes": 3317,
+      "sha256": "973c2bea70a1f1445f4673f99e9fa351e50a2ec9fd93d7381b2c41bb4de764dd"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/utilsBundle.js",
+      "bytes": 3048692,
+      "sha256": "2d1ccc01d21b7d54ca99a6305991d7fb6e072ea4e725d7fec5eb6184188c52c9"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/utilsBundle.js.LICENSE",
+      "bytes": 106591,
+      "sha256": "2495f30be29620d54b58339821eda0ebabdfb6ee9b09455f7285a06fd46fb9f3"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/dashboard/assets/codeMirrorModule--QdMvsKi.css",
+      "bytes": 6251,
+      "sha256": "20be824a82832b62cc04642d31da3c609fd280b23f1cdcb1e622c4f40aac5ab8"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/dashboard/assets/codeMirrorModule-CQ8RZGBm.js",
+      "bytes": 307374,
+      "sha256": "56b9c6a50c09dfac28eea5ec3e76c8ae85a26009b20ebac9928959cf3c3312bb"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/dashboard/assets/codicon-DCmgc-ay.ttf",
+      "bytes": 80340,
+      "sha256": "0f1d5219934e96e83b8db162d60b4d8c09b5de1e7d38031cbafe4a3c0f2889c9"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/dashboard/assets/firefox-1bWoP6pv.svg",
+      "bytes": 7488,
+      "sha256": "3f3742d1e78c0db6c2d3531250f70c30675ee5310de32fa89befaf738c54efd0"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/dashboard/assets/firefox-beta-k3eOH_eK.svg",
+      "bytes": 9280,
+      "sha256": "7eab5ffdc25903ba33a7202f7fffa1999f119c7be45a39e9e703c118904f917a"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/dashboard/assets/firefox-nightly-Cp5nfeDT.svg",
+      "bytes": 9143,
+      "sha256": "f311c074b0fa999fcd6b73441301fb54ee87a48ff3bf05f318647928110476da"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/dashboard/assets/index-AwgwcYie.css",
+      "bytes": 139111,
+      "sha256": "82d06f291a7d0860e1b1e1803ab6f2e49c637541779a37168652e10b062b67f9"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/dashboard/assets/index-hRvO4yU2.js",
+      "bytes": 336491,
+      "sha256": "3a05ed0b026442a1459952df25b9a836d4fa1a917838cf6f9357daefc0e42285"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/dashboard/assets/safari-na3_-uQk.svg",
+      "bytes": 5254,
+      "sha256": "80fd72ca5eb8545f1981277b31f4f92951d469d4efebd078e4086b676fe517dc"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/dashboard/index.html",
+      "bytes": 1078,
+      "sha256": "202903aad66040604bc1a0c85615dda4bfc7e6f4a4674e60d9eda4d44f6faea7"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/dashboard/playwright-logo.svg",
+      "bytes": 5645,
+      "sha256": "511524a1c145819303a18fb71870a4307c3e740f9e9722f7686a2b42b0995b6c"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/htmlReport/index.html",
+      "bytes": 464,
+      "sha256": "ce7c098020a0eb9ce10edd416245ea6da50dfeaab18dfd0a2176979d22643be6"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/htmlReport/report.css",
+      "bytes": 100452,
+      "sha256": "d98a244bf950333ade383b109e97d396f970f650b20f2e5ef5ecc2740205dff7"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/htmlReport/report.js",
+      "bytes": 415864,
+      "sha256": "3db0c0291241102b14b62af4b80d84dd8169a281bb2ff360c986b9d7da57c339"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/recorder/assets/codeMirrorModule--QdMvsKi.css",
+      "bytes": 6251,
+      "sha256": "20be824a82832b62cc04642d31da3c609fd280b23f1cdcb1e622c4f40aac5ab8"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/recorder/assets/codeMirrorModule-CVQWJZAA.js",
+      "bytes": 307374,
+      "sha256": "45f900fd93bf33545e6915308a964c49ce342c2e175a54aaef0898f05b25fcf5"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/recorder/assets/codicon-DCmgc-ay.ttf",
+      "bytes": 80340,
+      "sha256": "0f1d5219934e96e83b8db162d60b4d8c09b5de1e7d38031cbafe4a3c0f2889c9"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/recorder/assets/index-BZpYJZ-P.css",
+      "bytes": 85502,
+      "sha256": "cc24563b96f286614b88f74da413e9984de263227971c4cdfabe1f73be095514"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/recorder/assets/index-hrlLqLtq.js",
+      "bytes": 358603,
+      "sha256": "f7f3dfd9113b0119821adf1f3fc873fa5dddba8b2c278014e0fb0ecc1b3f492b"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/recorder/index.html",
+      "bytes": 1078,
+      "sha256": "5783e9b7e2cc78dd8a1a409d84b44b2431bf60f8f54b8be36c6e433c6a1086ed"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/recorder/playwright-logo.svg",
+      "bytes": 5033,
+      "sha256": "6b0a4367bdeab10995bc239278f04c68c10e48adbec15e799e01909a0d66dcb9"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/traceViewer/assets/codeMirrorModule-BbkfBe3n.js",
+      "bytes": 307393,
+      "sha256": "274b964242426bf4e1c662a84f6345d8a99f67821caa508fb12c52e2d1dfd48c"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/traceViewer/assets/defaultSettingsView-Ds6CBOo0.js",
+      "bytes": 654294,
+      "sha256": "0b48f13034cfa075338cc0839f212297d22cadab9219d9699d161d2b18c79019"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/traceViewer/assets/urlMatch-L3liM589.js",
+      "bytes": 2510,
+      "sha256": "1bc6321e32d11c31a452bc75896f0b344e6153321854d9f1658818be7f845c16"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/traceViewer/assets/xtermModule-DywYcAf8.js",
+      "bytes": 288730,
+      "sha256": "2546783e4f74a432bbccd88a6763cf78ac4e951686262cdf85b54d5a26ca3995"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/traceViewer/codeMirrorModule.-QdMvsKi.css",
+      "bytes": 6251,
+      "sha256": "20be824a82832b62cc04642d31da3c609fd280b23f1cdcb1e622c4f40aac5ab8"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/traceViewer/codicon.DCmgc-ay.ttf",
+      "bytes": 80340,
+      "sha256": "0f1d5219934e96e83b8db162d60b4d8c09b5de1e7d38031cbafe4a3c0f2889c9"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/traceViewer/defaultSettingsView.Bqk9acqE.css",
+      "bytes": 107049,
+      "sha256": "cd1d3c277d4962246ed92d7d42734c5ffed6bac5c499232693f9c8331b71801f"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/traceViewer/index.B4cLoZK3.js",
+      "bytes": 6628,
+      "sha256": "7b96efd541639738a8d46e4b6ba9780ffaf57a5c104db66764e0cec46d9f64e8"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/traceViewer/index.B_TqY17P.css",
+      "bytes": 2055,
+      "sha256": "08a212fcacae1866f44f065654afcc4c7d03409c68c74b3315c5bda17a0ca003"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/traceViewer/index.html",
+      "bytes": 2363,
+      "sha256": "139ac80123fb450cfc0631296e9f01463313ca2fec961b3a247ec6c9528447a2"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/traceViewer/manifest.webmanifest",
+      "bytes": 429,
+      "sha256": "d8540500603a32a39fe7e5a0375dc0f9ebafd11118e06a846db7efc608223ab9"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/traceViewer/playwright-logo.svg",
+      "bytes": 5033,
+      "sha256": "6b0a4367bdeab10995bc239278f04c68c10e48adbec15e799e01909a0d66dcb9"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/traceViewer/snapshot.B_Jk1wbt.js",
+      "bytes": 650,
+      "sha256": "d4d09e05451d107d8e1a6bbd041405fe518b9fd2833890e4ebaaad83b7f554f5"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/traceViewer/snapshot.html",
+      "bytes": 389,
+      "sha256": "c608c8899c95c5a74d3f556e20146c3d852b9df85ae2854c659a7cc773c9b727"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/traceViewer/sw.bundle.js",
+      "bytes": 95459,
+      "sha256": "37b230329280e28e32b03df20738d2ed3bfd0ea45b408a69213158bb8400adb3"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/traceViewer/uiMode.CU5KtEkS.js",
+      "bytes": 38057,
+      "sha256": "0c0dc5e0c822c27e60420a5c1659683fda89398f1561e43608f9d829eafdc197"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/traceViewer/uiMode.CyMfwkXJ.css",
+      "bytes": 54590,
+      "sha256": "fb403cf0b07007bc1d771e29737f7408924da300e2fab8b289a3ef2e8fc08d7b"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/traceViewer/uiMode.html",
+      "bytes": 727,
+      "sha256": "c6e92923ea7f2b617db3a2128ac8889c6c1461a77764651588e0111b729c3a3d"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/vite/traceViewer/xtermModule.kHJ-D0s7.css",
+      "bytes": 2853,
+      "sha256": "0dd60056134e6a2994a86b59a1e9789b9f04e92924da109aef8c923acaf08ce5"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/webp_codec.LICENSE",
+      "bytes": 8841,
+      "sha256": "995c7ee35aceb7666829b7a501ca89c0864e12b493c1174b155774ab1e03d831"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/webp_codec.wasm",
+      "bytes": 565369,
+      "sha256": "164cd9583a3e4d081f767d3b41ff0a730443dc7535fcc5caff83561463384b79"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/lib/xdg-open",
+      "bytes": 32416,
+      "sha256": "7d759d54f0d4ce1beeb34ee62c587985b5042374e8de237b0dcb8cd47aa698cf"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/package.json",
+      "bytes": 876,
+      "sha256": "f061c58427e47e843e26d201f0a57076c734e57c734ecbbd87d4a23b7a20db9b"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/types/protocol.d.ts",
+      "bytes": 814210,
+      "sha256": "0410ed82a9ac63269dc1471ed249b280e2d461249a3a331e71cdb54cdf10db33"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/types/structs.d.ts",
+      "bytes": 2455,
+      "sha256": "c9b9179b7291c8562eb0fb781219ddbdcf36149ebd7bd355e5b4a553d6b60b81"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/playwright-core/types/types.d.ts",
+      "bytes": 1131883,
+      "sha256": "2806f6d7810fba0306066d500cd716a6d1128d90af2c3cf71723e3ea0a8904c4"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/process-nextick-args/index.js",
+      "bytes": 1083,
+      "sha256": "90ba524851f721e8aced79870d6d6a733cd3939b293a83e2d04417812a8ba330"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/process-nextick-args/license.md",
+      "bytes": 1064,
+      "sha256": "ecdccbcf39024f624ded480c01c0b25458e1eca8f26ecf040933865ce56d9a4f"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/process-nextick-args/package.json",
+      "bytes": 578,
+      "sha256": "6d6d93d057f39bc3173d53e694b61833fd0ce89c1d669156169136d31a968131"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/process-nextick-args/readme.md",
+      "bytes": 450,
+      "sha256": "f659caaae9d9f4a860850b3229f6c261a09b86e3644dbc01128fe5d74b01aecd"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/.travis.yml",
+      "bytes": 991,
+      "sha256": "9b7b2c21ac1d06ded7aba9b0383ee53d634c9d407971a4fe782e89b8019a3124"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/CONTRIBUTING.md",
+      "bytes": 1443,
+      "sha256": "56e4e12a6934a2c4d36c7bf893f4d8aefa6c96f9ffcec357dfa6476e36c4f1f5"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/GOVERNANCE.md",
+      "bytes": 5550,
+      "sha256": "7a521e462d1c6f3b599c44637fb337bbf969dda311510a87236ec539a415331d"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/LICENSE",
+      "bytes": 2337,
+      "sha256": "ec62dc96da0099b87f4511736c87309335527fb7031639493e06c95728dc8c54"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/README.md",
+      "bytes": 2999,
+      "sha256": "5a917d93a11215fbdfe7366e7466bc2ef3e3b9dee8291b0e1d48e6d4796f19cf"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/doc/wg-meetings/2015-01-30.md",
+      "bytes": 2280,
+      "sha256": "39bdf2c2d8d23df3239dde5e66449dcfa9bfd0accf840c91c35bb295f2bbae2d"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/duplex-browser.js",
+      "bytes": 53,
+      "sha256": "b492b180e158a495afa7b394de1440e037c5d60524bb2fce839aeb690e6ff968"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/duplex.js",
+      "bytes": 46,
+      "sha256": "16475035143997e924dc3f41af6fd657cf55c5843f415f00b155c20891da8a5b"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/lib/_stream_duplex.js",
+      "bytes": 4015,
+      "sha256": "fd17d6a92dd9ba004c85f8e364b2771af10d012a83766437447dbae63879fa6b"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/lib/_stream_passthrough.js",
+      "bytes": 1753,
+      "sha256": "bf61450b1ff5f94fea9d46665e931119642034c903e63cc224b4c96472eed4d4"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/lib/_stream_readable.js",
+      "bytes": 31426,
+      "sha256": "216e051224eff89a5d5eec76bef25addac078d9ebd2e88bd0a3d73a0e605091d"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/lib/_stream_transform.js",
+      "bytes": 7742,
+      "sha256": "56220d9dd58b976f1739bfc85948b267d79772ba23672ff402d13b6b3fcf4e40"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/lib/_stream_writable.js",
+      "bytes": 20335,
+      "sha256": "e6359ac652ed97f5f328c586c7a6b8f163782a9ca13da476e609a981c75e0469"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/lib/internal/streams/BufferList.js",
+      "bytes": 2009,
+      "sha256": "387991bfee34bbb7938e0c0a3f345c3e5e4c37d5b0cb600e6d432c9995321fa7"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/lib/internal/streams/destroy.js",
+      "bytes": 2175,
+      "sha256": "a59f90daec030125875a6028b32f93e2e2bc9fafd703991dbc36244f5cb21176"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/lib/internal/streams/stream-browser.js",
+      "bytes": 49,
+      "sha256": "72d46a15491627d8fb1489a47d03583cfe5c21902918016ab532b53e615e5a9a"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/lib/internal/streams/stream.js",
+      "bytes": 36,
+      "sha256": "1e7903927df33aadb3659ecce55266c9c851da65ce6c8b723a60a305c1c5422c"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/node_modules/safe-buffer/LICENSE",
+      "bytes": 1081,
+      "sha256": "c7cc929b57080f4b9d0c6cf57669f0463fc5b39906344dfc8d3bc43426b30eac"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/node_modules/safe-buffer/README.md",
+      "bytes": 19555,
+      "sha256": "d301a850808775718ddb510d4bf2a922d9b0afa72894e67137daa20fbeafac05"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/node_modules/safe-buffer/index.d.ts",
+      "bytes": 8738,
+      "sha256": "5e379df3d61561c2ed7789b5995b9ba2143bbba21a905e2381e16efe7d1fa424"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/node_modules/safe-buffer/index.js",
+      "bytes": 1529,
+      "sha256": "d58af21cb0518864d0c505742d1af71e5b5e1f142f4c0f27353aa0f431a616d4"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/node_modules/safe-buffer/package.json",
+      "bytes": 783,
+      "sha256": "3d8b6d944be9e931a178914afbb3d6b79bfa199c032872b687bed41ed996c747"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/package.json",
+      "bytes": 1370,
+      "sha256": "67bde829e31cba3f50c77d14a30fa0f2295223b7ffa07f3b84606a5a79bb97f8"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/passthrough.js",
+      "bytes": 51,
+      "sha256": "809dbc03b4c312355ff74eb14b2ccc77267ee71e04f519f437eb4b203407c4b7"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/readable-browser.js",
+      "bytes": 351,
+      "sha256": "ec8e6f4e484d5269bc134752e11770b66b6be3a470217c2a0166e977965f53c6"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/readable.js",
+      "bytes": 771,
+      "sha256": "a1efa3fa06393aff652f3529ea1b1bc32134d49eb794b23272fb0ba13d214550"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/transform.js",
+      "bytes": 49,
+      "sha256": "155f794c5c789568b7bc632cd37f28b9064890e887bfab96a4393100218d4230"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/writable-browser.js",
+      "bytes": 55,
+      "sha256": "427bae9a6a026082e46acb500da48b270234ebc2a1ded1315b49eccfa6311c61"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/readable-stream/writable.js",
+      "bytes": 229,
+      "sha256": "74cbbdc5d60e1ee6560d2850515b68c3d6b39d9b2f32346aac1386b031c2a661"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/setimmediate/LICENSE.txt",
+      "bytes": 1103,
+      "sha256": "c4b4ad3a5746f1f5249a6dd90396ec519264e1bb02e01e48a6522c48a3a97cb4"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/setimmediate/package.json",
+      "bytes": 980,
+      "sha256": "56c7968c8062ad56e94b8ddb477e514098e0fa34b060aa86b67232fdb12e184d"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/setimmediate/setImmediate.js",
+      "bytes": 6475,
+      "sha256": "9dc2eb8ff83f16f42fa5d9721bc15ac5a0b12eca91d185b7840dacf3381b3cd7"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/string_decoder/.travis.yml",
+      "bytes": 899,
+      "sha256": "5eb2942461b58b0dbc2cbdc6777f28888c20f41fa9c353916403bb280b64c691"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/string_decoder/LICENSE",
+      "bytes": 2338,
+      "sha256": "11f2aafb37d06b3ee5bdaf06e9811141d0da05263c316f3d627f45c20d43261b"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/string_decoder/README.md",
+      "bytes": 1801,
+      "sha256": "64417fec74bed1e4160c792189c85e6f37f4232a179e2beb04f32d80df76c4cf"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/string_decoder/lib/string_decoder.js",
+      "bytes": 9465,
+      "sha256": "f1d36d47b2c579063392c1a68963467f2d4f51a069af09eb068d974c63ee3b37"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/string_decoder/node_modules/safe-buffer/LICENSE",
+      "bytes": 1081,
+      "sha256": "c7cc929b57080f4b9d0c6cf57669f0463fc5b39906344dfc8d3bc43426b30eac"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/string_decoder/node_modules/safe-buffer/README.md",
+      "bytes": 19555,
+      "sha256": "d301a850808775718ddb510d4bf2a922d9b0afa72894e67137daa20fbeafac05"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/string_decoder/node_modules/safe-buffer/index.d.ts",
+      "bytes": 8738,
+      "sha256": "5e379df3d61561c2ed7789b5995b9ba2143bbba21a905e2381e16efe7d1fa424"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/string_decoder/node_modules/safe-buffer/index.js",
+      "bytes": 1529,
+      "sha256": "d58af21cb0518864d0c505742d1af71e5b5e1f142f4c0f27353aa0f431a616d4"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/string_decoder/node_modules/safe-buffer/package.json",
+      "bytes": 783,
+      "sha256": "3d8b6d944be9e931a178914afbb3d6b79bfa199c032872b687bed41ed996c747"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/string_decoder/package.json",
+      "bytes": 795,
+      "sha256": "e278ca18803862a6d1b6bedc6a3394159ac86e5c4a162614fef006c79dcda3a2"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/util-deprecate/History.md",
+      "bytes": 282,
+      "sha256": "ab183ff93d075137547f9d96938185f2cd4b29ba1f4e28b29e6fbd573255968d"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/util-deprecate/LICENSE",
+      "bytes": 1102,
+      "sha256": "0154425673db15cdfa80ecba2c9b1f1a867f7197a006764712849bfc3a93cbb7"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/util-deprecate/README.md",
+      "bytes": 1666,
+      "sha256": "d30a5eca847bc6edc7b9723884def8942a66f89d12a5735dc22d1ee1216ff2ea"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/util-deprecate/browser.js",
+      "bytes": 1614,
+      "sha256": "abaef53ebcdc98f3655331f834986a2d11b6a824f58d670369669246d1b7b69b"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/util-deprecate/node.js",
+      "bytes": 123,
+      "sha256": "9a86a29fa34a99b861e707345fb1d1e2e55a6c23edb8f992bed57cc607f42d8e"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/node_modules/util-deprecate/package.json",
+      "bytes": 694,
+      "sha256": "7bba467f049074957e693fc06672848b040c38fa071b6eed8690f5fbe090a8b2"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/openclaw.plugin.json",
+      "bytes": 571,
+      "sha256": "7a1c1265151f25b1fd276301948c828be7d70da6274a9131f60c1e77e60111ff"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/package.json",
+      "bytes": 778,
+      "sha256": "ceddcc279186a308499bed806ae76d6ba9dac143ecac43664195b0a265c433e4"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/pdf-render.mjs",
+      "bytes": 2507,
+      "sha256": "db2c1eb1a953e3a4e5bf20c8328a311056be26666bfc415fca4c144fb41f77c4"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/pptx-child.mjs",
+      "bytes": 4073,
+      "sha256": "000cd46e1eba016f834352e995e3405fc8725fd5e583370e0011e6d886234b9e"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/pptx-input.mjs",
+      "bytes": 1796,
+      "sha256": "ac006b7ed75f0c8963f7064505c3f453c04314144b5eab7ae516f4726773dab5"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/pptx-layout.mjs",
+      "bytes": 926,
+      "sha256": "21ec6460668127c3f9b4cadbf3392dbe39aa96a58ca20b28435912291872aa4c"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/pptx-measure.mjs",
+      "bytes": 6003,
+      "sha256": "d120978ffb82ded0083393b02d4edd26f2f16f6159e0a202024a93e02239cfaa"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/pptx-worker.mjs",
+      "bytes": 1746,
+      "sha256": "9a2593a987c6e9ffe98de8d7bf4d31fe35642fddd0478e4f3dcaa340f6246d61"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/provenance/LICENSE.original",
+      "bytes": 1084,
+      "sha256": "2ed526b7e7c7681dc2347995b5036ddf73dc27d0539cdea59b6d4a72b63a57a0"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/provenance/dist-LICENSE.original",
+      "bytes": 1084,
+      "sha256": "2ed526b7e7c7681dc2347995b5036ddf73dc27d0539cdea59b6d4a72b63a57a0"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/provenance/docx-LICENSE.original",
+      "bytes": 1072,
+      "sha256": "b5b2364c0c95a26b2a2399d7e706a61acac680be1d5b180b00592ee85830bffb"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/provenance/docx-README.original.md",
+      "bytes": 7624,
+      "sha256": "22dcf5a59a5ec842a9526c6f3d8f0e82f8d17f0edd240cf79af48a7f0ab040bd"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/provenance/docx-package.json.original",
+      "bytes": 6859,
+      "sha256": "6dd8639801ea8493e9179ea028550368f1b6e67495872b668e3f9a940a99c078"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/provenance/pptxgenjs-LICENSE.original",
+      "bytes": 1081,
+      "sha256": "7a2bfe96150786ed1908b8e63f98ebab88875c1e79e28faff6649e0f11f77e52"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/provenance/pptxgenjs-package.json.original",
+      "bytes": 2265,
+      "sha256": "a4fc694898ef6f7da4c5840b799b593a0a74e9e05b7490b2ac5ee144762db477"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/render-private-text-pdf.mjs",
+      "bytes": 4267,
+      "sha256": "3c271265e03d7714d699df0d2d2f7288d88d9f529727833a1da55db0d10de434"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/vendor/docx.original.mjs",
+      "bytes": 1316548,
+      "sha256": "217d93e1798a2c71410f809599b44c1a186981de9f8d310875e1edc2b8853ed5"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/vendor/exceljs.bare.min.cjs",
+      "bytes": 862631,
+      "sha256": "b039e32bfb7164dadd84a6973b30200dc07e1b58e1f21c546378fca6920a1f94"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/vendor/exceljs.bare.min.js.map",
+      "bytes": 2997481,
+      "sha256": "dccb441a3c27ae51d97a6aa2824706c03fed3dc32ea2a9196bbea69ed69c5c19"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/vendor/pptxgen.es.js",
+      "bytes": 516931,
+      "sha256": "05844c5625e2cda3b449eb967c2246dd57ca57341886a7c28eeebca263b29bd4"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/xlsx-child.mjs",
+      "bytes": 3736,
+      "sha256": "311dd4e3506981f19aaff9b10585d07c118b90b343eb7f871262415cb7e197b5"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/xlsx-encoder.mjs",
+      "bytes": 4834,
+      "sha256": "f18b565334e6f4274096ff36ec524b965cb072bb4365981f9f3d8c96a35cacb6"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/xlsx-worker.mjs",
+      "bytes": 838,
+      "sha256": "c892178d47a9a1009698a6b86e439f0ca372906ff5069ce37d2fb8ce20d5524b"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b/CRAYS_ARTIFACT_MANIFEST.json",
+      "bytes": 57922,
+      "sha256": "79e34b46af23d2f9f092b4a918658fb4557d9734113e7b58e5bfe2c74dc6b63b"
+    },
+    {
+      "path": "/opt/crays/openclaw/skill-artifacts/crays-document-exports/43d3b8b90d3c307849ede5ba59392b62d93cb7623e8562b5eb7afbb00527592d/CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "bytes": 418,
+      "sha256": "43d3b8b90d3c307849ede5ba59392b62d93cb7623e8562b5eb7afbb00527592d"
+    },
+    {
+      "path": "/opt/crays/openclaw/skill-artifacts/crays-document-exports/43d3b8b90d3c307849ede5ba59392b62d93cb7623e8562b5eb7afbb00527592d/skills/crays-document-exports/SKILL.md",
+      "bytes": 2819,
+      "sha256": "eeafc2dec9db5a4991dcbef6c69dc3a74798eca3fb00ef717d9e269e3f7e95a3"
+    }
+  ],
+  "rootSkillStageActual": true,
+  "actualDocxNativeFactoryProven": true,
+  "namespaceOnlyNativeInputs": [
+    {
+      "path": "/run/crays-owner-tools-whatsapp-live/node_modules/openclaw/dist/config-reload-plan-j1Dikn28.mjs",
+      "hostSource": "/srv/crays/openclaw/oca063/owner-test-intent/20261014/dependency-installation/project/node_modules/openclaw/dist/config-reload-plan-j1Dikn28.mjs",
+      "bytes": 18298,
+      "sha256": "16d39afe46e867e192d95971139e46e35f5ee86e69df3604439fb1fed5b76dc2",
+      "readInServiceNamespaceOnly": true
+    },
+    {
+      "path": "/run/crays-owner-tools-whatsapp-live/node_modules/openclaw/dist/validation-BEEczOwC.mjs",
+      "hostSource": "/srv/crays/openclaw/oca063/owner-test-intent/20261014/dependency-installation/project/node_modules/openclaw/dist/validation-BEEczOwC.mjs",
+      "bytes": 51066,
+      "sha256": "eb2e0c8095accfe6757be1a4a6d874886145dc239c531fd442011bc19b81905d",
+      "readInServiceNamespaceOnly": true
+    }
+  ],
+  "namespaceAssumptions": {
+    "existingMountedSource": "V7_WITH_XLSX_HOTRELOAD",
+    "futureReminderMountsRequired": false,
+    "newReadonlyUnitMountsRequired": false,
+    "restartRequired": false,
+    "reminderAndCronActivationAllowed": false
+  },
+  "actualPdfNativeFactoryProven": true,
+  "actualRootSkillStageReceipt": {
+    "path": "/srv/crays/openclaw/oca063/general-skills-first-wave-20261015/owner-six-format-documents-forward-source-review-v1/ACTUAL_ROOT_SKILL_STAGE.json",
+    "sha256": "a94798bdfaf86b3aff5c5fd4fb78de1e83f3916291b81fb101bbc71a6f31dc99"
+  }
+}

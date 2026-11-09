@@ -1,0 +1,24 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {getPersonalAgentStandardPackage,createNewPersonalAgentStandardConfigWith124 as create} from './new-personal-agent-baseline-config.mjs';
+import {getPersonalAgentStandardPackage as getV3,createNewPersonalAgentStandardConfigWith107 as createV3} from '../personal-agent-standard-package-v3/new-personal-agent-baseline-config.mjs';
+const standard=getPersonalAgentStandardPackage();
+const fixture=(person='person-one',agent='agent-one')=>({canonicalPersonId:person,agentId:agent,expectedPackageVersion:standard.descriptor.version,expectedPackageSha256:standard.sha256,
+ modelAccount:{canonicalPersonId:person,agentId:agent,provider:'openai',apiRoute:'openai-chatgpt-responses',modelRef:'openai/gpt-6-astra',state:'PENDING_OWN_LOGIN',readinessReceiptSha256:null},
+ artifactBindings:standard.descriptor.plugins.map(p=>({pluginId:p.id,codeSetSha256:p.codeSetSha256,manifestSha256:null,state:'SOURCE_ASSIGNED',admissionReceiptSha256:null}))});
+test('124 source intents preserve all107, eight-tool runtime proposal and pending connections',()=>{
+ const input=fixture(),before=structuredClone(input),result=create(input),v3=getV3();
+ const old=createV3({...input,expectedPackageVersion:v3.descriptor.version,expectedPackageSha256:v3.sha256});
+ assert.deepEqual(input,before);assert.deepEqual(result.proposal.assignedBindingCapabilityIds,Array.from({length:124},(_,i)=>'B2C-CAP-'+String(i+1).padStart(3,'0')));
+ assert.deepEqual(result.proposal.assignedBindingCapabilityIds.slice(0,107),old.proposal.assignedBindingCapabilityIds);
+ assert.deepEqual(result.proposal.nativeConfigFragment,old.proposal.nativeConfigFragment);assert.deepEqual(result.proposal.assignedTools,old.proposal.assignedTools);
+ assert.equal(result.proposal.assignedTools.length,8);assert.equal(result.proposal.artifactAssignments.length,4);
+ assert.equal(result.additionalSkillAssignments.length,24);assert.deepEqual(result.additionalSkillAssignments.slice(0,7),old.additionalSkillAssignments);
+ for(const row of result.additionalSkillAssignments)for(const flag of ['installed','connected','runtimeToolRegistered','userAcceptanceProven'])assert.equal(row[flag],false);
+ for(const[key,value]of Object.entries(result.proposal.readiness))if(key!=='codeAssigned')assert.equal(value,false,key);
+ assert.equal(result.proposal.bindingRequirementsReference.referenceVerifiedByFactory,false);assert(Object.isFrozen(result.proposal));
+});
+test('124 users retain isolation, cannot borrow own-login references or inject credentials',()=>{
+ const a=create(fixture()),b=create(fixture('__CRAYS_PRIVATE_IDENTIFIER_3fd462ccb7984f3320a95755__','agent-two'));
+ for(const key of ['stateDir','workspace','agentDir'])assert.notEqual(a.proposal.paths[key],b.proposal.paths[key]);
+ for(const mutate of [x=>x.modelAccount.canonicalPersonId='__CRAYS_PRIVATE_IDENTIFIER_3fd462ccb7984f3320a95755__',x=>x.modelAccount.token='forbidden',x=>x.expectedPackageSha256='0'.repeat(64),x=>x.expectedPackageVersion='old',x=>x.artifactBindings.pop()]){const input=fixture();mutate(input);assert.throws(()=>create(input));}
+});

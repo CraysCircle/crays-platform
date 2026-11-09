@@ -1,0 +1,14 @@
+{
+  "registryMode": "local-file-only",
+  "gateway": "graphql-hive-self-hostable-evaluated-not-activated",
+  "subgraphs": [
+    {
+      "name": "crays-pro-core",
+      "url": "http://127.0.0.1:3023/api/graphql",
+      "schema": "src/graphql/schema.graphql",
+      "owner": "Platform GraphQL"
+    }
+  ],
+  "externalPublication": false,
+  "runtimeCompositionEnabled": false
+}

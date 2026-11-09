@@ -1,0 +1,1695 @@
+{
+  "schema": "crays.channel-independent.multipart-explicit29-stage.v1",
+  "baseStage": "/opt/crays/openclaw/personal-services/crays-owner-tools-whatsapp-live-v49-request-budget300",
+  "oldPluginRoot": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/cea34ce3ae897ddef5483d34e33b0a96596c1048b2f1a55904003f28c2098f85",
+  "qualifiedPluginRoot": "/opt/crays/openclaw/qualification-artifacts/crays-document-exports/97ee90f710fc8e7a6267bf99d62a4e2901c8fa14fcf7e1ab76e4717773f1a5d6",
+  "pluginRoot": "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/97ee90f710fc8e7a6267bf99d62a4e2901c8fa14fcf7e1ab76e4717773f1a5d6",
+  "pluginId": "crays-document-exports",
+  "toolName": "crays_document_exports",
+  "manifestSha256": "97ee90f710fc8e7a6267bf99d62a4e2901c8fa14fcf7e1ab76e4717773f1a5d6",
+  "toolNames": [
+    "read",
+    "web_fetch",
+    "web_search",
+    "pdf",
+    "crays_calculator",
+    "crays_personal_records",
+    "crays_personal_dates",
+    "crays_shared_expenses",
+    "crays_feed_reader",
+    "crays_document_exports",
+    "crays_qr",
+    "crays_chess",
+    "crays_item_inventory",
+    "crays_training_log",
+    "crays_personal_budget",
+    "crays_pantry",
+    "crays_subscriptions",
+    "crays_personal_webtools",
+    "crays_habits",
+    "crays_personal_preferences",
+    "crays_packing",
+    "crays_learning_plan",
+    "crays_personal_cooking",
+    "crays_quiz_review",
+    "crays_personal_planner",
+    "tts",
+    "search_stays",
+    "search_flights",
+    "eg_tenant_status"
+  ],
+  "instructionNames": [
+    "weather",
+    "crays-everyday-assistance",
+    "crays-receipt-reading",
+    "crays-personal-dates",
+    "crays-shared-expenses",
+    "crays-feed-reader",
+    "crays-document-exports",
+    "crays-chess",
+    "crays-item-inventory",
+    "crays-training-log",
+    "crays-personal-budget",
+    "crays-pantry",
+    "crays-subscriptions",
+    "crays-personal-webtools",
+    "crays-habits",
+    "crays-personal-preferences",
+    "crays-packing",
+    "crays-learning-plan",
+    "crays-personal-cooking",
+    "crays-quiz-review",
+    "crays-personal-planner",
+    "Word / DOCX",
+    "Excel / XLSX",
+    "Powerpoint / PPTX",
+    "language-learning",
+    "Data Analysis",
+    "crays-voice-translation",
+    "crays-expedia-search",
+    "crays-cited-research"
+  ],
+  "contentPins": [
+    {
+      "bytes": 3312,
+      "relative": "docx-child.mjs",
+      "sha256": "e5a002c2adf3a03eb46995a143336aa1e0fd7969b4f17909f448f200ec5759dc"
+    },
+    {
+      "bytes": 1789,
+      "relative": "docx-input.mjs",
+      "sha256": "84cdea59419b2dadf0b2dada22bee769c882a9bbc452e13949f0a02733234bf7"
+    },
+    {
+      "bytes": 1466,
+      "relative": "docx-worker.mjs",
+      "sha256": "d78f9442bae858ee3891c6d4d6c6d602b3e9eb44c7e04d4f1513dfed856fe264"
+    },
+    {
+      "bytes": 3441,
+      "relative": "epub-child.mjs",
+      "sha256": "d85831d5f60bca30a791d489b84d217c2b972609549faa4920929e94ca47948b"
+    },
+    {
+      "bytes": 6725,
+      "relative": "epub-input.mjs",
+      "sha256": "b0308fde1fc6c1d6cb22ed0619b18acb60e88bec4e361eaf8d9cebee48ed125c"
+    },
+    {
+      "bytes": 4031,
+      "relative": "epub-worker.mjs",
+      "sha256": "e278f805ef92002e4b5a589c5b7fb49fe626e22a11a003e53244c3a98d5e14f6"
+    },
+    {
+      "bytes": 6886,
+      "relative": "export.mjs",
+      "sha256": "67d1500587fa8b7164f4cab3461a022542f73737dd21692e14c4626fe7423af5"
+    },
+    {
+      "relative": "index.mjs",
+      "bytes": 7793,
+      "sha256": "6af3b5b201c768b7b92f7286b09bca321337b0ed2dd1a08180a49b9a2ef6ce8d"
+    },
+    {
+      "bytes": 1077,
+      "relative": "node_modules/core-util-is/LICENSE",
+      "sha256": "33b734d60042d0fe0c92dd1fc1e874193a1c899ec3e276a2eb935d2d0bf5b710"
+    },
+    {
+      "bytes": 67,
+      "relative": "node_modules/core-util-is/README.md",
+      "sha256": "57072548a79553ec5a930b370f5f37f2b86f57ab39357dc63e097c7e8ba7412a"
+    },
+    {
+      "bytes": 3039,
+      "relative": "node_modules/core-util-is/lib/util.js",
+      "sha256": "7427f16d9bd9185e409baff3e4b1ed6e3d8dfca84d367f4b8b351eb921618652"
+    },
+    {
+      "bytes": 799,
+      "relative": "node_modules/core-util-is/package.json",
+      "sha256": "0067bcd4ef1c86da02a45ad770883b39a9d14aa0b00113071609d5fb3dce0bc0"
+    },
+    {
+      "bytes": 1115,
+      "relative": "node_modules/immediate/LICENSE.txt",
+      "sha256": "809e66de579fb7d92503848bbe6d1f348f4f6521a71e5d294fe7cc0c87a3b4ff"
+    },
+    {
+      "bytes": 3697,
+      "relative": "node_modules/immediate/README.md",
+      "sha256": "f8ba840a9e01f16ccab189fc52191a42324153ad376b8ade110db8af9300ffe1"
+    },
+    {
+      "bytes": 2911,
+      "relative": "node_modules/immediate/dist/immediate.js",
+      "sha256": "f7d30178cb60471a7e90378c20453634b2ffb5f8ade5c8f584ae0ee0845fb3ac"
+    },
+    {
+      "bytes": 1686,
+      "relative": "node_modules/immediate/dist/immediate.min.js",
+      "sha256": "de5e482a8b02c65c727c105b42888da53e25b9fe5d815afbadc03f4d193df7d4"
+    },
+    {
+      "bytes": 1883,
+      "relative": "node_modules/immediate/lib/browser.js",
+      "sha256": "a736ab3e296a0637d040603df55a5943d1f850e51c94f8595965c4875e307512"
+    },
+    {
+      "bytes": 1982,
+      "relative": "node_modules/immediate/lib/index.js",
+      "sha256": "285c9e2ca232f5d298816680d9f5a29c455daa56356ee3566b556e5dafeb9427"
+    },
+    {
+      "bytes": 1372,
+      "relative": "node_modules/immediate/package.json",
+      "sha256": "1e40d711ce5348d237f7a2093d1707ca7c34fc56369f6be10c8e2dc9bcae0a96"
+    },
+    {
+      "bytes": 749,
+      "relative": "node_modules/inherits/LICENSE",
+      "sha256": "5ffe28e7ade7d8f10d85d5337a73fd793dac5c462fb9a28fbf8c5046c7fbca3b"
+    },
+    {
+      "bytes": 1625,
+      "relative": "node_modules/inherits/README.md",
+      "sha256": "b33c8be1ca837d9e4c9b0e04a550feacbc101556164d3cdbb875aed6ccbb8a29"
+    },
+    {
+      "bytes": 250,
+      "relative": "node_modules/inherits/inherits.js",
+      "sha256": "bb380f32bef5feb18678f0f45f88073fed5d7a0069a309132cb2080cd553d5c7"
+    },
+    {
+      "bytes": 753,
+      "relative": "node_modules/inherits/inherits_browser.js",
+      "sha256": "ad322a7b1dec60f3d2ebda2091816469efb55b567d241cf3cf0fa4c5a4afe500"
+    },
+    {
+      "bytes": 581,
+      "relative": "node_modules/inherits/package.json",
+      "sha256": "be645800bc94fd8de29c8ae91690549b316cc437100108aeea7b2f347693cc80"
+    },
+    {
+      "bytes": 13,
+      "relative": "node_modules/isarray/.npmignore",
+      "sha256": "16d30e4462189fb14dd611bdb708c510630c576a1f35b9383e89a4352da36c97"
+    },
+    {
+      "bytes": 48,
+      "relative": "node_modules/isarray/.travis.yml",
+      "sha256": "9b9a2cce2d8b28843a1a10647f82300c8403ccde268df5b6abc6c349e5167b34"
+    },
+    {
+      "bytes": 55,
+      "relative": "node_modules/isarray/Makefile",
+      "sha256": "928dc8c1df0d6ff86d985f520278a4c83498aa6353ff3d942270aa117397a8d1"
+    },
+    {
+      "bytes": 1890,
+      "relative": "node_modules/isarray/README.md",
+      "sha256": "ff138e683771b187f3629c383db72ee7d632009010a36d08e18e8d2a34222ec7"
+    },
+    {
+      "bytes": 470,
+      "relative": "node_modules/isarray/component.json",
+      "sha256": "f9e5ef95d8e8f65a5dcd3a200b38e5a13461ed95114dac053d908c391c12d731"
+    },
+    {
+      "bytes": 132,
+      "relative": "node_modules/isarray/index.js",
+      "sha256": "9b8c691372802da788c9c5f4e1ca2f1ed0b88ab8722176c2aea15e38ec86d249"
+    },
+    {
+      "bytes": 958,
+      "relative": "node_modules/isarray/package.json",
+      "sha256": "93165ce56e458216c18240cd961a522af5b18e51da06f55d88ac552234455d95"
+    },
+    {
+      "bytes": 320,
+      "relative": "node_modules/isarray/test.js",
+      "sha256": "46997dc4554dd5a554b4883a9c13180c628bb36baadf8f89d2db5861f5239f44"
+    },
+    {
+      "bytes": 208,
+      "relative": "node_modules/jszip/.codeclimate.yml",
+      "sha256": "3641875e15f3cf7a09a245414d7717f88831d41c1ee0d241be1b33465b89b582"
+    },
+    {
+      "bytes": 115,
+      "relative": "node_modules/jszip/.editorconfig",
+      "sha256": "45cac0fcacf725939699e02bbe9a4910e4aa955876e2800acca2e069aa776019"
+    },
+    {
+      "bytes": 896,
+      "relative": "node_modules/jszip/.eslintrc.js",
+      "sha256": "0ddfbda0c594ca371f67baaa166734f5075d34ef56fdd2984f574564843c2a66"
+    },
+    {
+      "bytes": 13,
+      "relative": "node_modules/jszip/.github/FUNDING.yml",
+      "sha256": "8c7fa9ad3746ef1c0d8cba1c359fb41cb4c1c59311df3f6753f425737012536a"
+    },
+    {
+      "bytes": 681,
+      "relative": "node_modules/jszip/.github/actions/setup/action.yml",
+      "sha256": "ddc71c5ed3eefac7aa7b4989d71d7f6c369d0d362b798b738b2bd420cc0df014"
+    },
+    {
+      "bytes": 1019,
+      "relative": "node_modules/jszip/.github/workflows/benchmark.yml",
+      "sha256": "1799cef38b9a4cc7e60e23ae90952aac2219fab8dcbfee831548564651a6b641"
+    },
+    {
+      "bytes": 1213,
+      "relative": "node_modules/jszip/.github/workflows/main.yml",
+      "sha256": "729e69940b0d1c486ea7dbb809b6b73cd118278bec5764672b7e29f6c32d190c"
+    },
+    {
+      "bytes": 12526,
+      "relative": "node_modules/jszip/CHANGES.md",
+      "sha256": "7e07acb69b5b0f2bec576e865fb5a1cee78481616c1ed03e70e1a51c2b5a47d6"
+    },
+    {
+      "bytes": 33753,
+      "relative": "node_modules/jszip/LICENSE.markdown",
+      "sha256": "566c953c6090b1218ca6217dd7359d45dde46581968586dc607d59a78af6a9c4"
+    },
+    {
+      "bytes": 678,
+      "relative": "node_modules/jszip/README.markdown",
+      "sha256": "5eee3659204ed8f04b58d388b2dae55539c5cbcda733e4e945811c9121a68ede"
+    },
+    {
+      "bytes": 374565,
+      "relative": "node_modules/jszip/dist/jszip.js",
+      "sha256": "fa62224aa46f5aa78b9449aa8d6d46d914f8a7cce80bc65c635359f7a2f8ffd7"
+    },
+    {
+      "bytes": 97781,
+      "relative": "node_modules/jszip/dist/jszip.min.js",
+      "sha256": "7f839b2d4688b845c105ebf5d2f9803075f91ea0fe72bdaac176c3a04dd3d2c1"
+    },
+    {
+      "bytes": 11438,
+      "relative": "node_modules/jszip/index.d.ts",
+      "sha256": "0f7eade540c8b30ed70e038cbd3d889a172477816812dd09ff0c1d2967bb1652"
+    },
+    {
+      "bytes": 3382,
+      "relative": "node_modules/jszip/lib/base64.js",
+      "sha256": "5df6b73d9ed6c317c67835f3427d860c16fd93acf503eb471fd897167e747fdb"
+    },
+    {
+      "bytes": 2890,
+      "relative": "node_modules/jszip/lib/compressedObject.js",
+      "sha256": "b91f823d32f39cda4002bc0954993f20ffea6747d42109253b7d6347b4abb31b"
+    },
+    {
+      "bytes": 350,
+      "relative": "node_modules/jszip/lib/compressions.js",
+      "sha256": "50e650a7eaf2a54ede299c12dfba30a362c7644e7c00df0d16ab3cf228bb77b0"
+    },
+    {
+      "bytes": 1924,
+      "relative": "node_modules/jszip/lib/crc32.js",
+      "sha256": "63750f4131b1eabb545a4718c863af860184baf033c76851be282f1c7f5dcba9"
+    },
+    {
+      "bytes": 284,
+      "relative": "node_modules/jszip/lib/defaults.js",
+      "sha256": "585eeeb04375fe7bd27e846d8941d26fd435efb36a87fba9ff137fd8b97880a6"
+    },
+    {
+      "bytes": 438,
+      "relative": "node_modules/jszip/lib/external.js",
+      "sha256": "982fed36a600668223d1d0ce8c446f87ccd1f82634df18f206b4a2f4096e31c7"
+    },
+    {
+      "bytes": 2365,
+      "relative": "node_modules/jszip/lib/flate.js",
+      "sha256": "57f1452680cf7af6a9659de398d847dd1e870ea3a601662c498b073c640eb547"
+    },
+    {
+      "bytes": 17954,
+      "relative": "node_modules/jszip/lib/generate/ZipFileWorker.js",
+      "sha256": "907d84ea582def3954aade073444f398bef6edf1b931084da4a77bb4dc26c1c8"
+    },
+    {
+      "bytes": 2035,
+      "relative": "node_modules/jszip/lib/generate/index.js",
+      "sha256": "19f13a6ff615464657aa5b8651e669950c633095cea37d3179a51d8c645adb3b"
+    },
+    {
+      "bytes": 1540,
+      "relative": "node_modules/jszip/lib/index.js",
+      "sha256": "32bd1c5286b33626d1b34e07ab8d09d3d2f67152850b2e4ba6449d80d974db1b"
+    },
+    {
+      "bytes": 388,
+      "relative": "node_modules/jszip/lib/license_header.js",
+      "sha256": "27873abeec2df3693480a8d1b8fe17dd61bee843d1b39c1c9cfab57ffe93099e"
+    },
+    {
+      "bytes": 3196,
+      "relative": "node_modules/jszip/lib/load.js",
+      "sha256": "7e3181c7669cfc584f29f3060cdf210021ec5c723c36af039fb5433de52d25da"
+    },
+    {
+      "bytes": 1933,
+      "relative": "node_modules/jszip/lib/nodejs/NodejsStreamInputAdapter.js",
+      "sha256": "dcf35c72168e825d2e634cfa13a289ba8c7a76da0584a39b785611d0d736ddd9"
+    },
+    {
+      "bytes": 1075,
+      "relative": "node_modules/jszip/lib/nodejs/NodejsStreamOutputAdapter.js",
+      "sha256": "cc88c3a8e6aa74262bd1ecc452ee8f78c48a16a0b6095d2f9df7500320957799"
+    },
+    {
+      "bytes": 1886,
+      "relative": "node_modules/jszip/lib/nodejsUtils.js",
+      "sha256": "763d0af1cde619da6d9cfbe1ee82e2e32d86349d8abe32613c7481e8143740e1"
+    },
+    {
+      "bytes": 12440,
+      "relative": "node_modules/jszip/lib/object.js",
+      "sha256": "51f8d689e02f62837edeb449866238cf03df7d779d260d19a683abee27651273"
+    },
+    {
+      "bytes": 441,
+      "relative": "node_modules/jszip/lib/readable-stream-browser.js",
+      "sha256": "ed51f0a96964f61d5700b6c681b055dd07e27140f1b719d2fe1c64fd14b506e0"
+    },
+    {
+      "bytes": 1587,
+      "relative": "node_modules/jszip/lib/reader/ArrayReader.js",
+      "sha256": "bb711509472587e8c88e8e311d5c86bde76528286793afbc6573c1ddd9674814"
+    },
+    {
+      "bytes": 3709,
+      "relative": "node_modules/jszip/lib/reader/DataReader.js",
+      "sha256": "e8e0b4728ddc6fc3dbe5b449d87b884c4b3be99862bd1edf6a700ecfb3b3b247"
+    },
+    {
+      "bytes": 519,
+      "relative": "node_modules/jszip/lib/reader/NodeBufferReader.js",
+      "sha256": "1703f32f1cba687ac630690901848ab07a1b6a06b0e8fbe88a8ae6f5a67da84d"
+    },
+    {
+      "bytes": 1020,
+      "relative": "node_modules/jszip/lib/reader/StringReader.js",
+      "sha256": "477a2e887eee11a56a50726152327b2a4d75d778f96463933197706e1ce90d59"
+    },
+    {
+      "bytes": 652,
+      "relative": "node_modules/jszip/lib/reader/Uint8ArrayReader.js",
+      "sha256": "198816389bc1c62b3ca7c5c6f5fdff1b076f83e5bd74b37ee5b504e6d7e155d9"
+    },
+    {
+      "bytes": 904,
+      "relative": "node_modules/jszip/lib/reader/readerFor.js",
+      "sha256": "1eef5a73bba844922812893f9a7e01cfdb54072aae42f7ecf67c41dc925ea9cf"
+    },
+    {
+      "bytes": 294,
+      "relative": "node_modules/jszip/lib/signature.js",
+      "sha256": "18e10348490604003a2480aea813a6e90eaaac26c050d559c281618b9aaded56"
+    },
+    {
+      "bytes": 648,
+      "relative": "node_modules/jszip/lib/stream/ConvertWorker.js",
+      "sha256": "ae1dc8573bab7e5be4a4cb9958201e3e763cb2f2392a04d9a8dc440d683042f0"
+    },
+    {
+      "bytes": 599,
+      "relative": "node_modules/jszip/lib/stream/Crc32Probe.js",
+      "sha256": "8e186e5e0ab42fff35907666a90266420751613c28266e5809b7bfa2d55a3a9a"
+    },
+    {
+      "bytes": 829,
+      "relative": "node_modules/jszip/lib/stream/DataLengthProbe.js",
+      "sha256": "638e65360b0fbe1f4e0b2628fd3a1782a4df59c477d454007fa52b1a2587b93f"
+    },
+    {
+      "bytes": 2748,
+      "relative": "node_modules/jszip/lib/stream/DataWorker.js",
+      "sha256": "8203f14e856d33aa9afc272a576f169b29980e8da0ee0f633e6e5f23cfa48a3e"
+    },
+    {
+      "bytes": 8206,
+      "relative": "node_modules/jszip/lib/stream/GenericWorker.js",
+      "sha256": "ae76cecd1d728ca41dd6ae0665b258f442da64d9b25ff94785dcb80a501b8be1"
+    },
+    {
+      "bytes": 6877,
+      "relative": "node_modules/jszip/lib/stream/StreamHelper.js",
+      "sha256": "aebc6518b4871d106e799f90139d55620d02e9413ef2a7b0f953a9cea7bda124"
+    },
+    {
+      "bytes": 1089,
+      "relative": "node_modules/jszip/lib/support.js",
+      "sha256": "7629a6ef610030595e4c2211249f487e44cfbe4b8299105d64b5491d87fd3a51"
+    },
+    {
+      "bytes": 8102,
+      "relative": "node_modules/jszip/lib/utf8.js",
+      "sha256": "5bdfe3666fe57640bc791b4d6d2fc00853f4d954596260138bf488054fa9df5a"
+    },
+    {
+      "bytes": 16926,
+      "relative": "node_modules/jszip/lib/utils.js",
+      "sha256": "82538b268e385eabde80d549606ded6d31ec9af7afcf567c6ae708366abe8550"
+    },
+    {
+      "bytes": 11867,
+      "relative": "node_modules/jszip/lib/zipEntries.js",
+      "sha256": "0891a1a82e557c64a51893a5ad70dec76f6b5c91170047ab28617286c96c6ec7"
+    },
+    {
+      "bytes": 11314,
+      "relative": "node_modules/jszip/lib/zipEntry.js",
+      "sha256": "105b8cec00daa3852f92371b3898d6eab52eeb984113ba8958d09bce701e34df"
+    },
+    {
+      "bytes": 4528,
+      "relative": "node_modules/jszip/lib/zipObject.js",
+      "sha256": "18871af92fac75d015ba7d4d3105c0746839ab089f78670cb86d76bfa53b1ce6"
+    },
+    {
+      "bytes": 1787,
+      "relative": "node_modules/jszip/package.json",
+      "sha256": "4138415020992b9a832333c64a13bd7e17faa462f7e0c0dd505f824d397f7281"
+    },
+    {
+      "bytes": 704,
+      "relative": "node_modules/jszip/sponsors.md",
+      "sha256": "05023a2cdb8fbddf99c368ce364e008f99d2b8da90ce5aec67d2ad633665f672"
+    },
+    {
+      "bytes": 11000,
+      "relative": "node_modules/jszip/tsconfig.json",
+      "sha256": "513defa2eb1fc4aed9407b2b08fb21ab1c9c54b043609fe6c2b344891392606d"
+    },
+    {
+      "bytes": 7745,
+      "relative": "node_modules/jszip/vendor/FileSaver.js",
+      "sha256": "67421e50f3ff4c97f1c3fa3749bf071cc57357c0da97783f4f8fe3affa3a52cf"
+    },
+    {
+      "bytes": 2165,
+      "relative": "node_modules/lie/README.md",
+      "sha256": "97a1e33c510ea9ce0eb1faf0bc1f89a71bfe414c1768b227d47b5ac3c50e1a29"
+    },
+    {
+      "bytes": 9311,
+      "relative": "node_modules/lie/dist/lie.js",
+      "sha256": "d3fc34d3a5a96c7294ad76eaa93bcf89786abc82647cf4f30306e007b2c7aded"
+    },
+    {
+      "bytes": 4805,
+      "relative": "node_modules/lie/dist/lie.min.js",
+      "sha256": "fd749fa138f78ba1f85a3260300ce67e7e7cb6f02085dcb51081ad68a522f4b3"
+    },
+    {
+      "bytes": 9235,
+      "relative": "node_modules/lie/dist/lie.polyfill.js",
+      "sha256": "3eb9c37db77565e5843ddb6e6c9f6d6056916c30a5eac0fcc59aa680540ac9ec"
+    },
+    {
+      "bytes": 4718,
+      "relative": "node_modules/lie/dist/lie.polyfill.min.js",
+      "sha256": "69bfdc3b86f44244316f7b97ec418e7763a129dc603ea4ea7b2e00802a5f6c6f"
+    },
+    {
+      "bytes": 6362,
+      "relative": "node_modules/lie/lib/browser.js",
+      "sha256": "512e8898e512d2029d12067b8e059a9733fe7e43d0ea98f532522d34582e3e59"
+    },
+    {
+      "bytes": 6970,
+      "relative": "node_modules/lie/lib/index.js",
+      "sha256": "9408e5a97d3e8a0b14c96aef888e9a1f0b7358fd22c4ee33e9321cc950ade9dc"
+    },
+    {
+      "bytes": 1084,
+      "relative": "node_modules/lie/license.md",
+      "sha256": "5c81b0caa98593408b03125efa25efe622341ed87ae55561968828cd887d64a4"
+    },
+    {
+      "bytes": 11966,
+      "relative": "node_modules/lie/lie.d.ts",
+      "sha256": "0d433663211c9a094928624c7418ed10d543051c575376687dce2bcd6b54cef8"
+    },
+    {
+      "bytes": 2432,
+      "relative": "node_modules/lie/package.json",
+      "sha256": "3faafb3b558146534b1849e6d2ed8a9c9c88eff27ef868827d8de17b979cf701"
+    },
+    {
+      "bytes": 97,
+      "relative": "node_modules/lie/polyfill.js",
+      "sha256": "9fdfb4a0bb2e0ed1fb340bbfcc6fc42fbab1dc8420e3ca217fbedaf2c82c1230"
+    },
+    {
+      "bytes": 4138,
+      "relative": "node_modules/pako/CHANGELOG.md",
+      "sha256": "8d3b2a5ff30f052a33ff5a2a0d32fea9c22228a2eff08deb76856eac3bd31090"
+    },
+    {
+      "bytes": 1104,
+      "relative": "node_modules/pako/LICENSE",
+      "sha256": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539"
+    },
+    {
+      "bytes": 6066,
+      "relative": "node_modules/pako/README.md",
+      "sha256": "8174ca473d9df9da15064d199064e8e3ff88d46beb66b545e048756e6f0fb469"
+    },
+    {
+      "bytes": 221496,
+      "relative": "node_modules/pako/dist/pako.js",
+      "sha256": "f407f7f15b7a0fc3af813a8cc526869e088c70801cadc31132a195fcb6f7b133"
+    },
+    {
+      "bytes": 45988,
+      "relative": "node_modules/pako/dist/pako.min.js",
+      "sha256": "29cfa0542b9864b6640cfdcc8f15b184db6431b532db2702a3ce97e5f2a7fc1c"
+    },
+    {
+      "bytes": 128125,
+      "relative": "node_modules/pako/dist/pako_deflate.js",
+      "sha256": "da1738ff3bc96b16f25390d329f4cf90f409f73c2a3fc9ef00a14fa0240d7f9f"
+    },
+    {
+      "bytes": 27503,
+      "relative": "node_modules/pako/dist/pako_deflate.min.js",
+      "sha256": "2494cd81fab386095b70c85be95e06432733f828c4ba02f940ed05c54087114b"
+    },
+    {
+      "bytes": 108583,
+      "relative": "node_modules/pako/dist/pako_inflate.js",
+      "sha256": "ec7e5936c652800e132c63cc1fcd00c23103a6a10a294ed3736bab70e38fc592"
+    },
+    {
+      "bytes": 22682,
+      "relative": "node_modules/pako/dist/pako_inflate.min.js",
+      "sha256": "2ca27e9a8dae569cdeac42752ed1aed1afeff7f19282d3cc12c0aaa54a08bc04"
+    },
+    {
+      "bytes": 347,
+      "relative": "node_modules/pako/index.js",
+      "sha256": "e7ec4e35d94d01a2e4ee5dca62b8fb08ac7411596edb54b398651f4eb563561d"
+    },
+    {
+      "bytes": 11074,
+      "relative": "node_modules/pako/lib/deflate.js",
+      "sha256": "a19a5dee5ac13a5bec54c15629bcd3449a0a7f15410d0ab582c1efc797a01bb0"
+    },
+    {
+      "bytes": 12412,
+      "relative": "node_modules/pako/lib/inflate.js",
+      "sha256": "18b7dd3b012a1105f3280737107a5a6f32a97c7036849dba7bd1f1e54cda9f53"
+    },
+    {
+      "bytes": 2444,
+      "relative": "node_modules/pako/lib/utils/common.js",
+      "sha256": "6e7878274f7e0f42e7cfb379933b447df3045b9139501f797ed29adf1affde14"
+    },
+    {
+      "bytes": 5293,
+      "relative": "node_modules/pako/lib/utils/strings.js",
+      "sha256": "bf827ddd52c2e998196adb640ae1192f7dc49ce5e6e5926e86198feeb94542a8"
+    },
+    {
+      "bytes": 2180,
+      "relative": "node_modules/pako/lib/zlib/README",
+      "sha256": "d8b499598e43d755ea8918448128259ff01820c50d94d5a48c8883d0a594ddb1"
+    },
+    {
+      "bytes": 1656,
+      "relative": "node_modules/pako/lib/zlib/adler32.js",
+      "sha256": "99618eb68a96858148e2dd56f478aa7e4321c434f5f2ee6c57f59c0c568f0596"
+    },
+    {
+      "bytes": 2312,
+      "relative": "node_modules/pako/lib/zlib/constants.js",
+      "sha256": "e0c4148ed267a27f03aba9f9a34cba4bade2090c0f12905907539e38c842abbc"
+    },
+    {
+      "bytes": 1750,
+      "relative": "node_modules/pako/lib/zlib/crc32.js",
+      "sha256": "213f85e8b2e52e2cf6f7634897197400f7ddaed587274f160045f0b548ec21da"
+    },
+    {
+      "bytes": 61184,
+      "relative": "node_modules/pako/lib/zlib/deflate.js",
+      "sha256": "4b9b71ae7f42e506fe1fb134f1c21b944ef2b7ef79667ba1fe59eb963c353d22"
+    },
+    {
+      "bytes": 2240,
+      "relative": "node_modules/pako/lib/zlib/gzheader.js",
+      "sha256": "8fa0b4995cea477be96b8783a7d6c7cf5fec96765c2108c3bd52e77104bfdbd3"
+    },
+    {
+      "bytes": 12668,
+      "relative": "node_modules/pako/lib/zlib/inffast.js",
+      "sha256": "b1beb3b55270e8338f23fc397132d179942d5866153ca4e9be264200b00c0d44"
+    },
+    {
+      "bytes": 50284,
+      "relative": "node_modules/pako/lib/zlib/inflate.js",
+      "sha256": "d31799a23f2ae87f0c52d21241c92278b41d23bb5365b452f2706d41b00c4245"
+    },
+    {
+      "bytes": 12500,
+      "relative": "node_modules/pako/lib/zlib/inftrees.js",
+      "sha256": "75f75d8ae4a7bed86f90a4a38f70c5d95e807515e9326801f9a073a7f2bf8bc7"
+    },
+    {
+      "bytes": 1538,
+      "relative": "node_modules/pako/lib/zlib/messages.js",
+      "sha256": "eec5f5d6b8120ada9cd48a3ca0a253c64777906e835477b090e053434d38cf6c"
+    },
+    {
+      "bytes": 39879,
+      "relative": "node_modules/pako/lib/zlib/trees.js",
+      "sha256": "718adbbf68f4343bf17d61edffd9d0788a96a93e4e191d857459d95257e614cf"
+    },
+    {
+      "bytes": 1811,
+      "relative": "node_modules/pako/lib/zlib/zstream.js",
+      "sha256": "5fa10c7a59ca99113cf92d1260e56cbd6282e15afa85dc8a0eb8e8d6d2321298"
+    },
+    {
+      "bytes": 1026,
+      "relative": "node_modules/pako/package.json",
+      "sha256": "0014f350a6834ed6a2d1211e0a2e3aa471cb426edf63379c785f9647ea2b4e01"
+    },
+    {
+      "bytes": 11601,
+      "relative": "node_modules/playwright-core/LICENSE",
+      "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb"
+    },
+    {
+      "bytes": 254,
+      "relative": "node_modules/playwright-core/NOTICE",
+      "sha256": "6d602191187b35b9b01d2cffa01c8469c2c8d9de8a96f1bf868e0f264f51c81d"
+    },
+    {
+      "bytes": 120,
+      "relative": "node_modules/playwright-core/README.md",
+      "sha256": "d16ff7f8e38fa1fc954f695ad551cdc118d9c9bdd5f3d83203901f4c317d7d7e"
+    },
+    {
+      "bytes": 676,
+      "relative": "node_modules/playwright-core/ThirdPartyNotices.txt",
+      "sha256": "a549d329bad8806fe279f0ecae0fc0270dec7e7c2dc8ec10f90e394f7c32b144"
+    },
+    {
+      "bytes": 174,
+      "relative": "node_modules/playwright-core/bin/install_media_pack.ps1",
+      "sha256": "bc20f049badf021e3a53bdb4156603caa5ef482c9a9a251f927605e676a44171"
+    },
+    {
+      "bytes": 1464,
+      "relative": "node_modules/playwright-core/bin/install_webkit_wsl.ps1",
+      "sha256": "bc61beda37a808eef27d39ce684baa792f6d17737a25a432b1a84d3b591ab815"
+    },
+    {
+      "bytes": 1217,
+      "relative": "node_modules/playwright-core/bin/reinstall_chrome_beta_linux.sh",
+      "sha256": "dc8c22b9dde76583cece2857575b88094299615f3136a3c598149710c45dee3a"
+    },
+    {
+      "bytes": 563,
+      "relative": "node_modules/playwright-core/bin/reinstall_chrome_beta_mac.sh",
+      "sha256": "a92eaeb4ebcf5633a4e9c981481e14c80764fc81b6fcbc0565398e50ff319433"
+    },
+    {
+      "bytes": 957,
+      "relative": "node_modules/playwright-core/bin/reinstall_chrome_beta_win.ps1",
+      "sha256": "b6d9e44742feafb98d5edc56fa20042949973cf30d141a1c5b4fb384096967c5"
+    },
+    {
+      "bytes": 1212,
+      "relative": "node_modules/playwright-core/bin/reinstall_chrome_stable_linux.sh",
+      "sha256": "dc72ab3567a4ce43bd8353d4ecf41f1d9c03e870169367cd3ed9043aabf67dd1"
+    },
+    {
+      "bytes": 519,
+      "relative": "node_modules/playwright-core/bin/reinstall_chrome_stable_mac.sh",
+      "sha256": "bb43a96c192a6cc81524ade0264686fff7809c019a89f7db0a9849635879c3be"
+    },
+    {
+      "bytes": 923,
+      "relative": "node_modules/playwright-core/bin/reinstall_chrome_stable_win.ps1",
+      "sha256": "3d96c4e2f4ebbb3fad44cf3ba58d9cf90af1c9fb3073e3b27d45a74cf005515b"
+    },
+    {
+      "bytes": 1494,
+      "relative": "node_modules/playwright-core/bin/reinstall_msedge_beta_linux.sh",
+      "sha256": "10b26f35dbc2000b94edf1172d803a29c5873a4eb8d523afbc687997b642767e"
+    },
+    {
+      "bytes": 377,
+      "relative": "node_modules/playwright-core/bin/reinstall_msedge_beta_mac.sh",
+      "sha256": "0036d738bc90d686100d81f328ba0003bf07863f5500b792c8da391d149750fa"
+    },
+    {
+      "bytes": 874,
+      "relative": "node_modules/playwright-core/bin/reinstall_msedge_beta_win.ps1",
+      "sha256": "b173c378a59f0cc38033cee702de1f44f09276c9b2270d1a650ebe66ee312433"
+    },
+    {
+      "bytes": 1489,
+      "relative": "node_modules/playwright-core/bin/reinstall_msedge_dev_linux.sh",
+      "sha256": "00e4947e7a4f8339c6db09c87976d808583c07f9179e4aa7694d88614b82fe95"
+    },
+    {
+      "bytes": 372,
+      "relative": "node_modules/playwright-core/bin/reinstall_msedge_dev_mac.sh",
+      "sha256": "6f899e3b311f742c24ca37ff9e32298e8290514ffc14bf588cc51556a29da4c0"
+    },
+    {
+      "bytes": 869,
+      "relative": "node_modules/playwright-core/bin/reinstall_msedge_dev_win.ps1",
+      "sha256": "46f7f98c81cb0abe687d7f4a5afea9b897a38d2a6dd6f6662fbd847f7a22bd51"
+    },
+    {
+      "bytes": 1507,
+      "relative": "node_modules/playwright-core/bin/reinstall_msedge_stable_linux.sh",
+      "sha256": "ec0a31a5f09c565e108473a1850895a4458ab00c713ac1de3aa2001912e4668f"
+    },
+    {
+      "bytes": 371,
+      "relative": "node_modules/playwright-core/bin/reinstall_msedge_stable_mac.sh",
+      "sha256": "3af1e893527ff2257aa2dbc3b259a053b92f45c3eadb13e38eba46e87902655d"
+    },
+    {
+      "bytes": 856,
+      "relative": "node_modules/playwright-core/bin/reinstall_msedge_stable_win.ps1",
+      "sha256": "40bb5fcbfcebbbe2ce43c6e736e7c5deefc5be03b6e9c6914423c06ec1f591be"
+    },
+    {
+      "bytes": 1137,
+      "relative": "node_modules/playwright-core/browsers.json",
+      "sha256": "545d52f8382c391e605562c330e9c1c534a16045898203037a49bb8bd769a946"
+    },
+    {
+      "bytes": 839,
+      "relative": "node_modules/playwright-core/cli.js",
+      "sha256": "f1c4075aef116c766092250d7f37b3249a7cee6465d953207fc38c8f6145becd"
+    },
+    {
+      "bytes": 634,
+      "relative": "node_modules/playwright-core/index.d.ts",
+      "sha256": "7a8ec10b0834eb7183e4bfcd929838ac77583828e343211bb73676d1e47f6f01"
+    },
+    {
+      "bytes": 697,
+      "relative": "node_modules/playwright-core/index.js",
+      "sha256": "a58fb2cec4293e7dcf73c58a179898a4f3986666451a19da4e731fa3af63265b"
+    },
+    {
+      "bytes": 1063,
+      "relative": "node_modules/playwright-core/index.mjs",
+      "sha256": "3d36e2132d3c8b62397d23f0bb4177336aaee503203ae2a2c90fbeb5bf3317dd"
+    },
+    {
+      "bytes": 3481,
+      "relative": "node_modules/playwright-core/lib/bootstrap.js",
+      "sha256": "4637f4dbfef9cfc01baeb5f5d2cb63fa0901522c96915ea2227290558d27123e"
+    },
+    {
+      "bytes": 3477183,
+      "relative": "node_modules/playwright-core/lib/coreBundle.js",
+      "sha256": "549070af3acabb3efcc4f55bfe6210f9f7c2fcf633cf7eaa59bfe60719969171"
+    },
+    {
+      "bytes": 197,
+      "relative": "node_modules/playwright-core/lib/entry/cliDaemon.js",
+      "sha256": "062f256fb29a7bf91793a014b9c3f1f9cf2dc6b12e40a8a2ebba88a630ae16a0"
+    },
+    {
+      "bytes": 108,
+      "relative": "node_modules/playwright-core/lib/entry/dashboardApp.js",
+      "sha256": "209962c6eaeef11629f226d6a2ab33ec7a2480754242b6e19590a9e6eb71d126"
+    },
+    {
+      "bytes": 442,
+      "relative": "node_modules/playwright-core/lib/entry/mcp.js",
+      "sha256": "cc87dc0020cb41caebbf04f50e42bc7835b033a6d80e9c3f0a3d0b3dbdf341c7"
+    },
+    {
+      "bytes": 120,
+      "relative": "node_modules/playwright-core/lib/entry/oopBrowserDownload.js",
+      "sha256": "87567cdbd67dd2f50bb232d47d3784701ece7c81e39c0287bb7d1b466b68cf06"
+    },
+    {
+      "bytes": 2112,
+      "relative": "node_modules/playwright-core/lib/package.js",
+      "sha256": "9f938e1d44a0dd231b1660ca62f7dae964859b79cbdc370b8542c5d375ca3c05"
+    },
+    {
+      "bytes": 16565,
+      "relative": "node_modules/playwright-core/lib/server/chromium/appIcon.png",
+      "sha256": "6ba994f05c5cf18e22d9b6bef9898fbdec6ad4d4d77f5187d0609cb42d72d01e"
+    },
+    {
+      "bytes": 4994,
+      "relative": "node_modules/playwright-core/lib/server/electron/loader.js",
+      "sha256": "699fb5564539da34ed72f49e9821af28f9fc06940adb639cac55dc9c477cfe7c"
+    },
+    {
+      "bytes": 57039,
+      "relative": "node_modules/playwright-core/lib/serverRegistry.js",
+      "sha256": "38025f08f335705b099b9f188bf45b5908a56a722825fe895b1e90f56d5595b6"
+    },
+    {
+      "bytes": 2982,
+      "relative": "node_modules/playwright-core/lib/serverRegistry.js.LICENSE",
+      "sha256": "3098a6efcbc11752cbdf6075fa65480f5470f78c8d981fab9c0796dc9a41cefe"
+    },
+    {
+      "bytes": 7087,
+      "relative": "node_modules/playwright-core/lib/tools/cli-client/channelSessions.js",
+      "sha256": "6b9c613e87340f48ad7182addd7495a8ff3fbe55feb1bbd0ce04f59f1552e126"
+    },
+    {
+      "bytes": 153,
+      "relative": "node_modules/playwright-core/lib/tools/cli-client/cli.js",
+      "sha256": "dfde8e9dfde30c4b3914eb25ba1c5a8524ec64651d866171d75cd7b41a827180"
+    },
+    {
+      "bytes": 38799,
+      "relative": "node_modules/playwright-core/lib/tools/cli-client/help.json",
+      "sha256": "e78d7a22d059196e838d1f076b563eae185b851e3e36063fa4ae77a8dc1415b1"
+    },
+    {
+      "bytes": 4109,
+      "relative": "node_modules/playwright-core/lib/tools/cli-client/minimist.js",
+      "sha256": "9430489ebc06fd02231dccfe844516f743e812a9ac4fe8e6748a67718738851c"
+    },
+    {
+      "bytes": 11972,
+      "relative": "node_modules/playwright-core/lib/tools/cli-client/output.js",
+      "sha256": "b4c3ebab965e73d621971cd3c76b60c22cf460a0921f14c5c6c51e46e06f02d2"
+    },
+    {
+      "bytes": 16373,
+      "relative": "node_modules/playwright-core/lib/tools/cli-client/program.js",
+      "sha256": "55a9a10132c680ecdec25b5000afb12035745ac9e75dd9cc0ef3e5d5e08d7f3e"
+    },
+    {
+      "bytes": 6768,
+      "relative": "node_modules/playwright-core/lib/tools/cli-client/registry.js",
+      "sha256": "4976cd5b2b3a25572cc1a4b5f055a756dacd4cc1b19d48987ee3253428e759b8"
+    },
+    {
+      "bytes": 9544,
+      "relative": "node_modules/playwright-core/lib/tools/cli-client/session.js",
+      "sha256": "a71e03ba6dc99d6d9cca4577d534daa6d0c20c32e50065311823f41caba29b46"
+    },
+    {
+      "bytes": 18945,
+      "relative": "node_modules/playwright-core/lib/tools/dashboard/appIcon.png",
+      "sha256": "38037bcf18c7f9b950da2e1a2d8800d38fb27637ccda293d38368a3704b67f18"
+    },
+    {
+      "bytes": 12726,
+      "relative": "node_modules/playwright-core/lib/tools/skills/playwright-cli/SKILL.md",
+      "sha256": "1a609c93bff3eea9ab99fed93c0334c851fdc39fb6ac5335551bfb87c171d57c"
+    },
+    {
+      "bytes": 665,
+      "relative": "node_modules/playwright-core/lib/tools/skills/playwright-cli/references/element-attributes.md",
+      "sha256": "bf19aa4671e0a50a0fefa9c790f39124e803060eefe395042b723c29fcb7faa2"
+    },
+    {
+      "bytes": 1690,
+      "relative": "node_modules/playwright-core/lib/tools/skills/playwright-cli/references/playwright-tests.md",
+      "sha256": "c5b0719fef2cfdff50bd744051b2f9afc119775db4b48e9b2882c1cf3886797c"
+    },
+    {
+      "bytes": 2182,
+      "relative": "node_modules/playwright-core/lib/tools/skills/playwright-cli/references/request-mocking.md",
+      "sha256": "54e801c9663fc2b6d68ceb058cb1c360724c2499f42acc7852a68e83e5b5f37c"
+    },
+    {
+      "bytes": 5642,
+      "relative": "node_modules/playwright-core/lib/tools/skills/playwright-cli/references/running-code.md",
+      "sha256": "d95c539a5990b71d02d8bdf1d9414df16191eb6cff95b0063820518b7a13dcb2"
+    },
+    {
+      "bytes": 5671,
+      "relative": "node_modules/playwright-core/lib/tools/skills/playwright-cli/references/session-management.md",
+      "sha256": "cd3e261b8763bf952f1e371b876cb78d054379afec85482f9250633e1b7e6c44"
+    },
+    {
+      "bytes": 5198,
+      "relative": "node_modules/playwright-core/lib/tools/skills/playwright-cli/references/storage-state.md",
+      "sha256": "9ac47f9ae4a1aedcd2077f8ac9ab1ba6bee1962cb83ff51adcd36fb6d83b5ec6"
+    },
+    {
+      "bytes": 16114,
+      "relative": "node_modules/playwright-core/lib/tools/skills/playwright-cli/references/test-generation.md",
+      "sha256": "12f54cfa718d9e559bad918120a4ca4f11c933167713d1b9c5f99872eddaf749"
+    },
+    {
+      "bytes": 3456,
+      "relative": "node_modules/playwright-core/lib/tools/skills/playwright-cli/references/tracing.md",
+      "sha256": "ef73e71bee792e341df9cd4f60529c929ade48b538ac76e033f4f20843e8dbda"
+    },
+    {
+      "bytes": 5387,
+      "relative": "node_modules/playwright-core/lib/tools/skills/playwright-cli/references/video-recording.md",
+      "sha256": "8555ab5400df0d90e66318aacc0a8a4418fbf872e7463824d55d5c41615abd83"
+    },
+    {
+      "bytes": 10404,
+      "relative": "node_modules/playwright-core/lib/tools/skills/playwright-component-testing/SKILL.md",
+      "sha256": "60f57b31767d562c30cc5332081418c2945f4d9c998efa6e09191333654dd429"
+    },
+    {
+      "bytes": 6199,
+      "relative": "node_modules/playwright-core/lib/tools/skills/playwright-component-testing/references/gallery-spec.md",
+      "sha256": "0ca25dde6112eb379f56eb618585b64dc2dfd13c2f7f956ac7eabbd76a68912b"
+    },
+    {
+      "bytes": 5031,
+      "relative": "node_modules/playwright-core/lib/tools/skills/playwright-component-testing/references/migration.md",
+      "sha256": "bc3a336f7970bb7455fa5a38f937e45b35fb0c18d6c3b9f37916a4ff757b7acc"
+    },
+    {
+      "bytes": 3115,
+      "relative": "node_modules/playwright-core/lib/tools/skills/playwright-component-testing/references/react.md",
+      "sha256": "54af9cc1cdb6d4ccdb8e811c0abb29b960d5c9304f4df7d1dcf9b8df3f973102"
+    },
+    {
+      "bytes": 6883,
+      "relative": "node_modules/playwright-core/lib/tools/skills/playwright-component-testing/references/typing.md",
+      "sha256": "c511025b5c9b02d7f49034a5613c8b478193bf60c90ea6dddb3faf9c6985c82b"
+    },
+    {
+      "bytes": 3374,
+      "relative": "node_modules/playwright-core/lib/tools/skills/playwright-component-testing/references/vue.md",
+      "sha256": "d1b129f126c700702a3c00ad8eb6c86898bc941c29a656c1191eb7230650bf8b"
+    },
+    {
+      "bytes": 4845,
+      "relative": "node_modules/playwright-core/lib/tools/skills/playwright-trace/SKILL.md",
+      "sha256": "4124dd790915bb76108377121d1e6ca93a5544c90485c090fa5655235efe22aa"
+    },
+    {
+      "bytes": 4689,
+      "relative": "node_modules/playwright-core/lib/tools/utils/extension.js",
+      "sha256": "404ae19e57a7c7c5ed3e6ecf9df26a3fcf95867250732f954823078ccb879e63"
+    },
+    {
+      "bytes": 3317,
+      "relative": "node_modules/playwright-core/lib/tools/utils/socketConnection.js",
+      "sha256": "973c2bea70a1f1445f4673f99e9fa351e50a2ec9fd93d7381b2c41bb4de764dd"
+    },
+    {
+      "bytes": 3048692,
+      "relative": "node_modules/playwright-core/lib/utilsBundle.js",
+      "sha256": "2d1ccc01d21b7d54ca99a6305991d7fb6e072ea4e725d7fec5eb6184188c52c9"
+    },
+    {
+      "bytes": 106591,
+      "relative": "node_modules/playwright-core/lib/utilsBundle.js.LICENSE",
+      "sha256": "2495f30be29620d54b58339821eda0ebabdfb6ee9b09455f7285a06fd46fb9f3"
+    },
+    {
+      "bytes": 6251,
+      "relative": "node_modules/playwright-core/lib/vite/dashboard/assets/codeMirrorModule--QdMvsKi.css",
+      "sha256": "20be824a82832b62cc04642d31da3c609fd280b23f1cdcb1e622c4f40aac5ab8"
+    },
+    {
+      "bytes": 307374,
+      "relative": "node_modules/playwright-core/lib/vite/dashboard/assets/codeMirrorModule-CQ8RZGBm.js",
+      "sha256": "56b9c6a50c09dfac28eea5ec3e76c8ae85a26009b20ebac9928959cf3c3312bb"
+    },
+    {
+      "bytes": 80340,
+      "relative": "node_modules/playwright-core/lib/vite/dashboard/assets/codicon-DCmgc-ay.ttf",
+      "sha256": "0f1d5219934e96e83b8db162d60b4d8c09b5de1e7d38031cbafe4a3c0f2889c9"
+    },
+    {
+      "bytes": 7488,
+      "relative": "node_modules/playwright-core/lib/vite/dashboard/assets/firefox-1bWoP6pv.svg",
+      "sha256": "3f3742d1e78c0db6c2d3531250f70c30675ee5310de32fa89befaf738c54efd0"
+    },
+    {
+      "bytes": 9280,
+      "relative": "node_modules/playwright-core/lib/vite/dashboard/assets/firefox-beta-k3eOH_eK.svg",
+      "sha256": "7eab5ffdc25903ba33a7202f7fffa1999f119c7be45a39e9e703c118904f917a"
+    },
+    {
+      "bytes": 9143,
+      "relative": "node_modules/playwright-core/lib/vite/dashboard/assets/firefox-nightly-Cp5nfeDT.svg",
+      "sha256": "f311c074b0fa999fcd6b73441301fb54ee87a48ff3bf05f318647928110476da"
+    },
+    {
+      "bytes": 139111,
+      "relative": "node_modules/playwright-core/lib/vite/dashboard/assets/index-AwgwcYie.css",
+      "sha256": "82d06f291a7d0860e1b1e1803ab6f2e49c637541779a37168652e10b062b67f9"
+    },
+    {
+      "bytes": 336491,
+      "relative": "node_modules/playwright-core/lib/vite/dashboard/assets/index-hRvO4yU2.js",
+      "sha256": "3a05ed0b026442a1459952df25b9a836d4fa1a917838cf6f9357daefc0e42285"
+    },
+    {
+      "bytes": 5254,
+      "relative": "node_modules/playwright-core/lib/vite/dashboard/assets/safari-na3_-uQk.svg",
+      "sha256": "80fd72ca5eb8545f1981277b31f4f92951d469d4efebd078e4086b676fe517dc"
+    },
+    {
+      "bytes": 1078,
+      "relative": "node_modules/playwright-core/lib/vite/dashboard/index.html",
+      "sha256": "202903aad66040604bc1a0c85615dda4bfc7e6f4a4674e60d9eda4d44f6faea7"
+    },
+    {
+      "bytes": 5645,
+      "relative": "node_modules/playwright-core/lib/vite/dashboard/playwright-logo.svg",
+      "sha256": "511524a1c145819303a18fb71870a4307c3e740f9e9722f7686a2b42b0995b6c"
+    },
+    {
+      "bytes": 464,
+      "relative": "node_modules/playwright-core/lib/vite/htmlReport/index.html",
+      "sha256": "ce7c098020a0eb9ce10edd416245ea6da50dfeaab18dfd0a2176979d22643be6"
+    },
+    {
+      "bytes": 100452,
+      "relative": "node_modules/playwright-core/lib/vite/htmlReport/report.css",
+      "sha256": "d98a244bf950333ade383b109e97d396f970f650b20f2e5ef5ecc2740205dff7"
+    },
+    {
+      "bytes": 415864,
+      "relative": "node_modules/playwright-core/lib/vite/htmlReport/report.js",
+      "sha256": "3db0c0291241102b14b62af4b80d84dd8169a281bb2ff360c986b9d7da57c339"
+    },
+    {
+      "bytes": 6251,
+      "relative": "node_modules/playwright-core/lib/vite/recorder/assets/codeMirrorModule--QdMvsKi.css",
+      "sha256": "20be824a82832b62cc04642d31da3c609fd280b23f1cdcb1e622c4f40aac5ab8"
+    },
+    {
+      "bytes": 307374,
+      "relative": "node_modules/playwright-core/lib/vite/recorder/assets/codeMirrorModule-CVQWJZAA.js",
+      "sha256": "45f900fd93bf33545e6915308a964c49ce342c2e175a54aaef0898f05b25fcf5"
+    },
+    {
+      "bytes": 80340,
+      "relative": "node_modules/playwright-core/lib/vite/recorder/assets/codicon-DCmgc-ay.ttf",
+      "sha256": "0f1d5219934e96e83b8db162d60b4d8c09b5de1e7d38031cbafe4a3c0f2889c9"
+    },
+    {
+      "bytes": 85502,
+      "relative": "node_modules/playwright-core/lib/vite/recorder/assets/index-BZpYJZ-P.css",
+      "sha256": "cc24563b96f286614b88f74da413e9984de263227971c4cdfabe1f73be095514"
+    },
+    {
+      "bytes": 358603,
+      "relative": "node_modules/playwright-core/lib/vite/recorder/assets/index-hrlLqLtq.js",
+      "sha256": "f7f3dfd9113b0119821adf1f3fc873fa5dddba8b2c278014e0fb0ecc1b3f492b"
+    },
+    {
+      "bytes": 1078,
+      "relative": "node_modules/playwright-core/lib/vite/recorder/index.html",
+      "sha256": "5783e9b7e2cc78dd8a1a409d84b44b2431bf60f8f54b8be36c6e433c6a1086ed"
+    },
+    {
+      "bytes": 5033,
+      "relative": "node_modules/playwright-core/lib/vite/recorder/playwright-logo.svg",
+      "sha256": "6b0a4367bdeab10995bc239278f04c68c10e48adbec15e799e01909a0d66dcb9"
+    },
+    {
+      "bytes": 307393,
+      "relative": "node_modules/playwright-core/lib/vite/traceViewer/assets/codeMirrorModule-BbkfBe3n.js",
+      "sha256": "274b964242426bf4e1c662a84f6345d8a99f67821caa508fb12c52e2d1dfd48c"
+    },
+    {
+      "bytes": 654294,
+      "relative": "node_modules/playwright-core/lib/vite/traceViewer/assets/defaultSettingsView-Ds6CBOo0.js",
+      "sha256": "0b48f13034cfa075338cc0839f212297d22cadab9219d9699d161d2b18c79019"
+    },
+    {
+      "bytes": 2510,
+      "relative": "node_modules/playwright-core/lib/vite/traceViewer/assets/urlMatch-L3liM589.js",
+      "sha256": "1bc6321e32d11c31a452bc75896f0b344e6153321854d9f1658818be7f845c16"
+    },
+    {
+      "bytes": 288730,
+      "relative": "node_modules/playwright-core/lib/vite/traceViewer/assets/xtermModule-DywYcAf8.js",
+      "sha256": "2546783e4f74a432bbccd88a6763cf78ac4e951686262cdf85b54d5a26ca3995"
+    },
+    {
+      "bytes": 6251,
+      "relative": "node_modules/playwright-core/lib/vite/traceViewer/codeMirrorModule.-QdMvsKi.css",
+      "sha256": "20be824a82832b62cc04642d31da3c609fd280b23f1cdcb1e622c4f40aac5ab8"
+    },
+    {
+      "bytes": 80340,
+      "relative": "node_modules/playwright-core/lib/vite/traceViewer/codicon.DCmgc-ay.ttf",
+      "sha256": "0f1d5219934e96e83b8db162d60b4d8c09b5de1e7d38031cbafe4a3c0f2889c9"
+    },
+    {
+      "bytes": 107049,
+      "relative": "node_modules/playwright-core/lib/vite/traceViewer/defaultSettingsView.Bqk9acqE.css",
+      "sha256": "cd1d3c277d4962246ed92d7d42734c5ffed6bac5c499232693f9c8331b71801f"
+    },
+    {
+      "bytes": 6628,
+      "relative": "node_modules/playwright-core/lib/vite/traceViewer/index.B4cLoZK3.js",
+      "sha256": "7b96efd541639738a8d46e4b6ba9780ffaf57a5c104db66764e0cec46d9f64e8"
+    },
+    {
+      "bytes": 2055,
+      "relative": "node_modules/playwright-core/lib/vite/traceViewer/index.B_TqY17P.css",
+      "sha256": "08a212fcacae1866f44f065654afcc4c7d03409c68c74b3315c5bda17a0ca003"
+    },
+    {
+      "bytes": 2363,
+      "relative": "node_modules/playwright-core/lib/vite/traceViewer/index.html",
+      "sha256": "139ac80123fb450cfc0631296e9f01463313ca2fec961b3a247ec6c9528447a2"
+    },
+    {
+      "bytes": 429,
+      "relative": "node_modules/playwright-core/lib/vite/traceViewer/manifest.webmanifest",
+      "sha256": "d8540500603a32a39fe7e5a0375dc0f9ebafd11118e06a846db7efc608223ab9"
+    },
+    {
+      "bytes": 5033,
+      "relative": "node_modules/playwright-core/lib/vite/traceViewer/playwright-logo.svg",
+      "sha256": "6b0a4367bdeab10995bc239278f04c68c10e48adbec15e799e01909a0d66dcb9"
+    },
+    {
+      "bytes": 650,
+      "relative": "node_modules/playwright-core/lib/vite/traceViewer/snapshot.B_Jk1wbt.js",
+      "sha256": "d4d09e05451d107d8e1a6bbd041405fe518b9fd2833890e4ebaaad83b7f554f5"
+    },
+    {
+      "bytes": 389,
+      "relative": "node_modules/playwright-core/lib/vite/traceViewer/snapshot.html",
+      "sha256": "c608c8899c95c5a74d3f556e20146c3d852b9df85ae2854c659a7cc773c9b727"
+    },
+    {
+      "bytes": 95459,
+      "relative": "node_modules/playwright-core/lib/vite/traceViewer/sw.bundle.js",
+      "sha256": "37b230329280e28e32b03df20738d2ed3bfd0ea45b408a69213158bb8400adb3"
+    },
+    {
+      "bytes": 38057,
+      "relative": "node_modules/playwright-core/lib/vite/traceViewer/uiMode.CU5KtEkS.js",
+      "sha256": "0c0dc5e0c822c27e60420a5c1659683fda89398f1561e43608f9d829eafdc197"
+    },
+    {
+      "bytes": 54590,
+      "relative": "node_modules/playwright-core/lib/vite/traceViewer/uiMode.CyMfwkXJ.css",
+      "sha256": "fb403cf0b07007bc1d771e29737f7408924da300e2fab8b289a3ef2e8fc08d7b"
+    },
+    {
+      "bytes": 727,
+      "relative": "node_modules/playwright-core/lib/vite/traceViewer/uiMode.html",
+      "sha256": "c6e92923ea7f2b617db3a2128ac8889c6c1461a77764651588e0111b729c3a3d"
+    },
+    {
+      "bytes": 2853,
+      "relative": "node_modules/playwright-core/lib/vite/traceViewer/xtermModule.kHJ-D0s7.css",
+      "sha256": "0dd60056134e6a2994a86b59a1e9789b9f04e92924da109aef8c923acaf08ce5"
+    },
+    {
+      "bytes": 8841,
+      "relative": "node_modules/playwright-core/lib/webp_codec.LICENSE",
+      "sha256": "995c7ee35aceb7666829b7a501ca89c0864e12b493c1174b155774ab1e03d831"
+    },
+    {
+      "bytes": 565369,
+      "relative": "node_modules/playwright-core/lib/webp_codec.wasm",
+      "sha256": "164cd9583a3e4d081f767d3b41ff0a730443dc7535fcc5caff83561463384b79"
+    },
+    {
+      "bytes": 32416,
+      "relative": "node_modules/playwright-core/lib/xdg-open",
+      "sha256": "7d759d54f0d4ce1beeb34ee62c587985b5042374e8de237b0dcb8cd47aa698cf"
+    },
+    {
+      "bytes": 876,
+      "relative": "node_modules/playwright-core/package.json",
+      "sha256": "f061c58427e47e843e26d201f0a57076c734e57c734ecbbd87d4a23b7a20db9b"
+    },
+    {
+      "bytes": 814210,
+      "relative": "node_modules/playwright-core/types/protocol.d.ts",
+      "sha256": "0410ed82a9ac63269dc1471ed249b280e2d461249a3a331e71cdb54cdf10db33"
+    },
+    {
+      "bytes": 2455,
+      "relative": "node_modules/playwright-core/types/structs.d.ts",
+      "sha256": "c9b9179b7291c8562eb0fb781219ddbdcf36149ebd7bd355e5b4a553d6b60b81"
+    },
+    {
+      "bytes": 1131883,
+      "relative": "node_modules/playwright-core/types/types.d.ts",
+      "sha256": "2806f6d7810fba0306066d500cd716a6d1128d90af2c3cf71723e3ea0a8904c4"
+    },
+    {
+      "bytes": 1083,
+      "relative": "node_modules/process-nextick-args/index.js",
+      "sha256": "90ba524851f721e8aced79870d6d6a733cd3939b293a83e2d04417812a8ba330"
+    },
+    {
+      "bytes": 1064,
+      "relative": "node_modules/process-nextick-args/license.md",
+      "sha256": "ecdccbcf39024f624ded480c01c0b25458e1eca8f26ecf040933865ce56d9a4f"
+    },
+    {
+      "bytes": 578,
+      "relative": "node_modules/process-nextick-args/package.json",
+      "sha256": "6d6d93d057f39bc3173d53e694b61833fd0ce89c1d669156169136d31a968131"
+    },
+    {
+      "bytes": 450,
+      "relative": "node_modules/process-nextick-args/readme.md",
+      "sha256": "f659caaae9d9f4a860850b3229f6c261a09b86e3644dbc01128fe5d74b01aecd"
+    },
+    {
+      "bytes": 991,
+      "relative": "node_modules/readable-stream/.travis.yml",
+      "sha256": "9b7b2c21ac1d06ded7aba9b0383ee53d634c9d407971a4fe782e89b8019a3124"
+    },
+    {
+      "bytes": 1443,
+      "relative": "node_modules/readable-stream/CONTRIBUTING.md",
+      "sha256": "56e4e12a6934a2c4d36c7bf893f4d8aefa6c96f9ffcec357dfa6476e36c4f1f5"
+    },
+    {
+      "bytes": 5550,
+      "relative": "node_modules/readable-stream/GOVERNANCE.md",
+      "sha256": "7a521e462d1c6f3b599c44637fb337bbf969dda311510a87236ec539a415331d"
+    },
+    {
+      "bytes": 2337,
+      "relative": "node_modules/readable-stream/LICENSE",
+      "sha256": "ec62dc96da0099b87f4511736c87309335527fb7031639493e06c95728dc8c54"
+    },
+    {
+      "bytes": 2999,
+      "relative": "node_modules/readable-stream/README.md",
+      "sha256": "5a917d93a11215fbdfe7366e7466bc2ef3e3b9dee8291b0e1d48e6d4796f19cf"
+    },
+    {
+      "bytes": 2280,
+      "relative": "node_modules/readable-stream/doc/wg-meetings/2015-01-30.md",
+      "sha256": "39bdf2c2d8d23df3239dde5e66449dcfa9bfd0accf840c91c35bb295f2bbae2d"
+    },
+    {
+      "bytes": 53,
+      "relative": "node_modules/readable-stream/duplex-browser.js",
+      "sha256": "b492b180e158a495afa7b394de1440e037c5d60524bb2fce839aeb690e6ff968"
+    },
+    {
+      "bytes": 46,
+      "relative": "node_modules/readable-stream/duplex.js",
+      "sha256": "16475035143997e924dc3f41af6fd657cf55c5843f415f00b155c20891da8a5b"
+    },
+    {
+      "bytes": 4015,
+      "relative": "node_modules/readable-stream/lib/_stream_duplex.js",
+      "sha256": "fd17d6a92dd9ba004c85f8e364b2771af10d012a83766437447dbae63879fa6b"
+    },
+    {
+      "bytes": 1753,
+      "relative": "node_modules/readable-stream/lib/_stream_passthrough.js",
+      "sha256": "bf61450b1ff5f94fea9d46665e931119642034c903e63cc224b4c96472eed4d4"
+    },
+    {
+      "bytes": 31426,
+      "relative": "node_modules/readable-stream/lib/_stream_readable.js",
+      "sha256": "216e051224eff89a5d5eec76bef25addac078d9ebd2e88bd0a3d73a0e605091d"
+    },
+    {
+      "bytes": 7742,
+      "relative": "node_modules/readable-stream/lib/_stream_transform.js",
+      "sha256": "56220d9dd58b976f1739bfc85948b267d79772ba23672ff402d13b6b3fcf4e40"
+    },
+    {
+      "bytes": 20335,
+      "relative": "node_modules/readable-stream/lib/_stream_writable.js",
+      "sha256": "e6359ac652ed97f5f328c586c7a6b8f163782a9ca13da476e609a981c75e0469"
+    },
+    {
+      "bytes": 2009,
+      "relative": "node_modules/readable-stream/lib/internal/streams/BufferList.js",
+      "sha256": "387991bfee34bbb7938e0c0a3f345c3e5e4c37d5b0cb600e6d432c9995321fa7"
+    },
+    {
+      "bytes": 2175,
+      "relative": "node_modules/readable-stream/lib/internal/streams/destroy.js",
+      "sha256": "a59f90daec030125875a6028b32f93e2e2bc9fafd703991dbc36244f5cb21176"
+    },
+    {
+      "bytes": 49,
+      "relative": "node_modules/readable-stream/lib/internal/streams/stream-browser.js",
+      "sha256": "72d46a15491627d8fb1489a47d03583cfe5c21902918016ab532b53e615e5a9a"
+    },
+    {
+      "bytes": 36,
+      "relative": "node_modules/readable-stream/lib/internal/streams/stream.js",
+      "sha256": "1e7903927df33aadb3659ecce55266c9c851da65ce6c8b723a60a305c1c5422c"
+    },
+    {
+      "bytes": 1081,
+      "relative": "node_modules/readable-stream/node_modules/safe-buffer/LICENSE",
+      "sha256": "c7cc929b57080f4b9d0c6cf57669f0463fc5b39906344dfc8d3bc43426b30eac"
+    },
+    {
+      "bytes": 19555,
+      "relative": "node_modules/readable-stream/node_modules/safe-buffer/README.md",
+      "sha256": "d301a850808775718ddb510d4bf2a922d9b0afa72894e67137daa20fbeafac05"
+    },
+    {
+      "bytes": 8738,
+      "relative": "node_modules/readable-stream/node_modules/safe-buffer/index.d.ts",
+      "sha256": "5e379df3d61561c2ed7789b5995b9ba2143bbba21a905e2381e16efe7d1fa424"
+    },
+    {
+      "bytes": 1529,
+      "relative": "node_modules/readable-stream/node_modules/safe-buffer/index.js",
+      "sha256": "d58af21cb0518864d0c505742d1af71e5b5e1f142f4c0f27353aa0f431a616d4"
+    },
+    {
+      "bytes": 783,
+      "relative": "node_modules/readable-stream/node_modules/safe-buffer/package.json",
+      "sha256": "3d8b6d944be9e931a178914afbb3d6b79bfa199c032872b687bed41ed996c747"
+    },
+    {
+      "bytes": 1370,
+      "relative": "node_modules/readable-stream/package.json",
+      "sha256": "67bde829e31cba3f50c77d14a30fa0f2295223b7ffa07f3b84606a5a79bb97f8"
+    },
+    {
+      "bytes": 51,
+      "relative": "node_modules/readable-stream/passthrough.js",
+      "sha256": "809dbc03b4c312355ff74eb14b2ccc77267ee71e04f519f437eb4b203407c4b7"
+    },
+    {
+      "bytes": 351,
+      "relative": "node_modules/readable-stream/readable-browser.js",
+      "sha256": "ec8e6f4e484d5269bc134752e11770b66b6be3a470217c2a0166e977965f53c6"
+    },
+    {
+      "bytes": 771,
+      "relative": "node_modules/readable-stream/readable.js",
+      "sha256": "a1efa3fa06393aff652f3529ea1b1bc32134d49eb794b23272fb0ba13d214550"
+    },
+    {
+      "bytes": 49,
+      "relative": "node_modules/readable-stream/transform.js",
+      "sha256": "155f794c5c789568b7bc632cd37f28b9064890e887bfab96a4393100218d4230"
+    },
+    {
+      "bytes": 55,
+      "relative": "node_modules/readable-stream/writable-browser.js",
+      "sha256": "427bae9a6a026082e46acb500da48b270234ebc2a1ded1315b49eccfa6311c61"
+    },
+    {
+      "bytes": 229,
+      "relative": "node_modules/readable-stream/writable.js",
+      "sha256": "74cbbdc5d60e1ee6560d2850515b68c3d6b39d9b2f32346aac1386b031c2a661"
+    },
+    {
+      "bytes": 1103,
+      "relative": "node_modules/setimmediate/LICENSE.txt",
+      "sha256": "c4b4ad3a5746f1f5249a6dd90396ec519264e1bb02e01e48a6522c48a3a97cb4"
+    },
+    {
+      "bytes": 980,
+      "relative": "node_modules/setimmediate/package.json",
+      "sha256": "56c7968c8062ad56e94b8ddb477e514098e0fa34b060aa86b67232fdb12e184d"
+    },
+    {
+      "bytes": 6475,
+      "relative": "node_modules/setimmediate/setImmediate.js",
+      "sha256": "9dc2eb8ff83f16f42fa5d9721bc15ac5a0b12eca91d185b7840dacf3381b3cd7"
+    },
+    {
+      "bytes": 899,
+      "relative": "node_modules/string_decoder/.travis.yml",
+      "sha256": "5eb2942461b58b0dbc2cbdc6777f28888c20f41fa9c353916403bb280b64c691"
+    },
+    {
+      "bytes": 2338,
+      "relative": "node_modules/string_decoder/LICENSE",
+      "sha256": "11f2aafb37d06b3ee5bdaf06e9811141d0da05263c316f3d627f45c20d43261b"
+    },
+    {
+      "bytes": 1801,
+      "relative": "node_modules/string_decoder/README.md",
+      "sha256": "64417fec74bed1e4160c792189c85e6f37f4232a179e2beb04f32d80df76c4cf"
+    },
+    {
+      "bytes": 9465,
+      "relative": "node_modules/string_decoder/lib/string_decoder.js",
+      "sha256": "f1d36d47b2c579063392c1a68963467f2d4f51a069af09eb068d974c63ee3b37"
+    },
+    {
+      "bytes": 1081,
+      "relative": "node_modules/string_decoder/node_modules/safe-buffer/LICENSE",
+      "sha256": "c7cc929b57080f4b9d0c6cf57669f0463fc5b39906344dfc8d3bc43426b30eac"
+    },
+    {
+      "bytes": 19555,
+      "relative": "node_modules/string_decoder/node_modules/safe-buffer/README.md",
+      "sha256": "d301a850808775718ddb510d4bf2a922d9b0afa72894e67137daa20fbeafac05"
+    },
+    {
+      "bytes": 8738,
+      "relative": "node_modules/string_decoder/node_modules/safe-buffer/index.d.ts",
+      "sha256": "5e379df3d61561c2ed7789b5995b9ba2143bbba21a905e2381e16efe7d1fa424"
+    },
+    {
+      "bytes": 1529,
+      "relative": "node_modules/string_decoder/node_modules/safe-buffer/index.js",
+      "sha256": "d58af21cb0518864d0c505742d1af71e5b5e1f142f4c0f27353aa0f431a616d4"
+    },
+    {
+      "bytes": 783,
+      "relative": "node_modules/string_decoder/node_modules/safe-buffer/package.json",
+      "sha256": "3d8b6d944be9e931a178914afbb3d6b79bfa199c032872b687bed41ed996c747"
+    },
+    {
+      "bytes": 795,
+      "relative": "node_modules/string_decoder/package.json",
+      "sha256": "e278ca18803862a6d1b6bedc6a3394159ac86e5c4a162614fef006c79dcda3a2"
+    },
+    {
+      "bytes": 282,
+      "relative": "node_modules/util-deprecate/History.md",
+      "sha256": "ab183ff93d075137547f9d96938185f2cd4b29ba1f4e28b29e6fbd573255968d"
+    },
+    {
+      "bytes": 1102,
+      "relative": "node_modules/util-deprecate/LICENSE",
+      "sha256": "0154425673db15cdfa80ecba2c9b1f1a867f7197a006764712849bfc3a93cbb7"
+    },
+    {
+      "bytes": 1666,
+      "relative": "node_modules/util-deprecate/README.md",
+      "sha256": "d30a5eca847bc6edc7b9723884def8942a66f89d12a5735dc22d1ee1216ff2ea"
+    },
+    {
+      "bytes": 1614,
+      "relative": "node_modules/util-deprecate/browser.js",
+      "sha256": "abaef53ebcdc98f3655331f834986a2d11b6a824f58d670369669246d1b7b69b"
+    },
+    {
+      "bytes": 123,
+      "relative": "node_modules/util-deprecate/node.js",
+      "sha256": "9a86a29fa34a99b861e707345fb1d1e2e55a6c23edb8f992bed57cc607f42d8e"
+    },
+    {
+      "bytes": 694,
+      "relative": "node_modules/util-deprecate/package.json",
+      "sha256": "7bba467f049074957e693fc06672848b040c38fa071b6eed8690f5fbe090a8b2"
+    },
+    {
+      "bytes": 571,
+      "relative": "openclaw.plugin.json",
+      "sha256": "173870f8a33531d15ddb068ee638a4682b3fbdd1ff6c28fbd488b9f199f2c93c"
+    },
+    {
+      "bytes": 845,
+      "relative": "package.json",
+      "sha256": "62bf2060fb4bf67074b614bb8ac60e513f8e0599a60b94dbfbc057f1141ff480"
+    },
+    {
+      "bytes": 2507,
+      "relative": "pdf-render.mjs",
+      "sha256": "db2c1eb1a953e3a4e5bf20c8328a311056be26666bfc415fca4c144fb41f77c4"
+    },
+    {
+      "relative": "pdf-report.mjs",
+      "bytes": 5519,
+      "sha256": "95898fc336d1f60d3556ef1bd5e0f680a7aec7f4ce17b786b31b97d28caab869"
+    },
+    {
+      "bytes": 4073,
+      "relative": "pptx-child.mjs",
+      "sha256": "000cd46e1eba016f834352e995e3405fc8725fd5e583370e0011e6d886234b9e"
+    },
+    {
+      "bytes": 1796,
+      "relative": "pptx-input.mjs",
+      "sha256": "ac006b7ed75f0c8963f7064505c3f453c04314144b5eab7ae516f4726773dab5"
+    },
+    {
+      "bytes": 926,
+      "relative": "pptx-layout.mjs",
+      "sha256": "21ec6460668127c3f9b4cadbf3392dbe39aa96a58ca20b28435912291872aa4c"
+    },
+    {
+      "bytes": 6003,
+      "relative": "pptx-measure.mjs",
+      "sha256": "d120978ffb82ded0083393b02d4edd26f2f16f6159e0a202024a93e02239cfaa"
+    },
+    {
+      "bytes": 1746,
+      "relative": "pptx-worker.mjs",
+      "sha256": "9a2593a987c6e9ffe98de8d7bf4d31fe35642fddd0478e4f3dcaa340f6246d61"
+    },
+    {
+      "bytes": 1084,
+      "relative": "provenance/LICENSE.original",
+      "sha256": "2ed526b7e7c7681dc2347995b5036ddf73dc27d0539cdea59b6d4a72b63a57a0"
+    },
+    {
+      "bytes": 1084,
+      "relative": "provenance/dist-LICENSE.original",
+      "sha256": "2ed526b7e7c7681dc2347995b5036ddf73dc27d0539cdea59b6d4a72b63a57a0"
+    },
+    {
+      "bytes": 1072,
+      "relative": "provenance/docx-LICENSE.original",
+      "sha256": "b5b2364c0c95a26b2a2399d7e706a61acac680be1d5b180b00592ee85830bffb"
+    },
+    {
+      "bytes": 7624,
+      "relative": "provenance/docx-README.original.md",
+      "sha256": "22dcf5a59a5ec842a9526c6f3d8f0e82f8d17f0edd240cf79af48a7f0ab040bd"
+    },
+    {
+      "bytes": 6859,
+      "relative": "provenance/docx-package.json.original",
+      "sha256": "6dd8639801ea8493e9179ea028550368f1b6e67495872b668e3f9a940a99c078"
+    },
+    {
+      "bytes": 1081,
+      "relative": "provenance/pptxgenjs-LICENSE.original",
+      "sha256": "7a2bfe96150786ed1908b8e63f98ebab88875c1e79e28faff6649e0f11f77e52"
+    },
+    {
+      "bytes": 2265,
+      "relative": "provenance/pptxgenjs-package.json.original",
+      "sha256": "a4fc694898ef6f7da4c5840b799b593a0a74e9e05b7490b2ac5ee144762db477"
+    },
+    {
+      "bytes": 4267,
+      "relative": "render-private-text-pdf.mjs",
+      "sha256": "3c271265e03d7714d699df0d2d2f7288d88d9f529727833a1da55db0d10de434"
+    },
+    {
+      "bytes": 1316548,
+      "relative": "vendor/docx.original.mjs",
+      "sha256": "217d93e1798a2c71410f809599b44c1a186981de9f8d310875e1edc2b8853ed5"
+    },
+    {
+      "bytes": 862631,
+      "relative": "vendor/exceljs.bare.min.cjs",
+      "sha256": "b039e32bfb7164dadd84a6973b30200dc07e1b58e1f21c546378fca6920a1f94"
+    },
+    {
+      "bytes": 2997481,
+      "relative": "vendor/exceljs.bare.min.js.map",
+      "sha256": "dccb441a3c27ae51d97a6aa2824706c03fed3dc32ea2a9196bbea69ed69c5c19"
+    },
+    {
+      "bytes": 516931,
+      "relative": "vendor/pptxgen.es.js",
+      "sha256": "05844c5625e2cda3b449eb967c2246dd57ca57341886a7c28eeebca263b29bd4"
+    },
+    {
+      "bytes": 3736,
+      "relative": "xlsx-child.mjs",
+      "sha256": "311dd4e3506981f19aaff9b10585d07c118b90b343eb7f871262415cb7e197b5"
+    },
+    {
+      "bytes": 4834,
+      "relative": "xlsx-encoder.mjs",
+      "sha256": "f18b565334e6f4274096ff36ec524b965cb072bb4365981f9f3d8c96a35cacb6"
+    },
+    {
+      "bytes": 838,
+      "relative": "xlsx-worker.mjs",
+      "sha256": "c892178d47a9a1009698a6b86e439f0ca372906ff5069ce37d2fb8ce20d5524b"
+    },
+    {
+      "relative": "CRAYS_ARTIFACT_MANIFEST.json",
+      "bytes": 58557,
+      "sha256": "97ee90f710fc8e7a6267bf99d62a4e2901c8fa14fcf7e1ab76e4717773f1a5d6"
+    }
+  ],
+  "actualNativeAcceptance": {
+    "path": "/srv/crays/worktrees/openclaw-phase5-019ff983/docs/architecture/evidence/CRAYS_AGENT_MULTIPART_PDF_NATIVE_TWO_PERSON_MEDIA_ACTUAL_PASS_2026_10_17.json",
+    "bytes": 4977,
+    "sha256": "41a38985edaad5580f055a020a30a537458e30ebb33bec201850d64adc4cecad"
+  },
+  "qualifiedSource": {
+    "path": "/srv/crays/openclaw/oca063/general-skills-first-wave-20261015/personal-cited-report-multipart-pdf-source-v1/SOURCE_BINDINGS.json",
+    "bytes": 2485,
+    "sha256": "170497729e4a26b04260af36184a8eff61032aee3c92df0136fdcb4cd827d546"
+  },
+  "baseGateway": {
+    "path": "/opt/crays/openclaw/personal-services/crays-owner-tools-whatsapp-live-v49-request-budget300/code/gateway.mjs",
+    "bytes": 10221,
+    "sha256": "f24bafae6d096c722587a22bcca2f5398aeabe8270f403249709182a2deff7a8"
+  },
+  "baseNativeBoundary": {
+    "path": "/opt/crays/openclaw/personal-services/crays-owner-tools-whatsapp-live-v49-request-budget300/code/reminders/native-reminder-runtime-boundary.mjs",
+    "bytes": 9016,
+    "sha256": "29c85df071e38837b90e56b5dad7585f9eb8c3d659e10f9e4d3ecf047baa58ba"
+  },
+  "baseResearchInstruction": {
+    "path": "/opt/crays/openclaw/personal-services/crays-owner-tools-whatsapp-live-v49-request-budget300/code/cited-research/skills/crays-cited-research/SKILL.md",
+    "bytes": 5650,
+    "sha256": "5a217d83850d42c261a7ee3e3b382365b525e276706bdf73088233be8d791438"
+  },
+  "actualHandsetWorkflowFailure": {
+    "path": "/srv/crays/worktrees/openclaw-phase5-019ff983/docs/architecture/evidence/CRAYS_AGENT_RESEARCH_PDF_HANDSET_WORKFLOW_REPORTED_TIMEOUT_FAIL_2026_10_17.json",
+    "bytes": 1121,
+    "sha256": "66a9a9cbcab84dabbb0c4d6a6826bde0aa8b39876de805e360fb915747baa120"
+  },
+  "requestBudget": {
+    "expectedBaseSeconds": 300,
+    "candidateSeconds": 300,
+    "changed": false,
+    "reminderPayloadTimeoutSecondsUnchanged": 30
+  },
+  "actualBaseRuntime": {
+    "path": "/srv/crays/worktrees/openclaw-phase5-019ff983/docs/architecture/evidence/CRAYS_AGENT_REQUEST_BUDGET300_V49_ACTUAL_OWNER_RUNTIME_2026_10_17.json",
+    "bytes": 5076,
+    "sha256": "00f46ce60518a81f560e4b7f6f5714738d74471e12decddcd1737e779dfe578d"
+  },
+  "actualBaseCheckpoint": {
+    "path": "/srv/crays/worktrees/openclaw-phase5-019ff983/docs/architecture/evidence/CRAYS_AGENT_ACTUAL_SKILL_INTEGRATION_PROGRESS_2026_10_17_124726.json",
+    "bytes": 68947,
+    "sha256": "464596dbc0a4341cb4c7526077a76d1431ac3a72d375122b9b06c8d701c7202f"
+  },
+  "acceptedResearchPdfHandset": {
+    "path": "/srv/crays/worktrees/openclaw-phase5-019ff983/docs/architecture/evidence/CRAYS_AGENT_CITED_RESEARCH_V49_REAL_HANDSET_ACCEPTANCE_2026_10_17_124726.json",
+    "bytes": 1023,
+    "sha256": "2515e163b1cbe22d689045aa4fd8fc4e98f7d2f23213da3d78badd575e95a51c"
+  }
+}

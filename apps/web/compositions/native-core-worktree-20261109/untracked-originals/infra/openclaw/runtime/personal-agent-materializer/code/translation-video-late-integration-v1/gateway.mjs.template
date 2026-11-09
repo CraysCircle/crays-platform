@@ -1,0 +1,80 @@
+import {composeTranslationVideoBatch} from './translation-video-batch-v1/compose-translation-video-batch.mjs';
+import {composeWeatherV53} from './weather/compose-weather-v53.mjs';
+import weatherBindings from './weather/V53_WEATHER_BINDINGS.json' with {type:'json'};
+import {createStartupCurrentnessGuard} from './weather/startup-currentness.mjs';
+import {composeMultipartPdfDelta} from './multipart-pdf/compose-multipart-pdf-delta.mjs';
+import {composeCitedResearchDelta} from './cited-research/compose-cited-research-delta.mjs';
+import {composeExpediaSearchDelta,assertExpediaPersonalHome} from './expedia/compose-expedia-search-delta.mjs';
+import {composeExplicitSpeechDelta} from './tts/compose-explicit-speech-delta.mjs';
+import {createGatewayExitDiagnostics} from './gateway-exit-diagnostics.mjs';
+import {assertCumulativeOwnerPolicy} from './assert-cumulative-owner-policy.mjs';
+/** Source preparation: execute only under a separately reviewed gated owner+Business controller. */
+import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import crypto from 'node:crypto';import {spawn,spawnSync} from 'node:child_process';
+import {composeDurableRecovery} from './compose-owner-whatsapp-config.mjs';
+const UNIT='crays-owner-tools-whatsapp-live',runtime='/run/'+UNIT,state=runtime+'/state',business=runtime+'/business',configPath=runtime+'/PRIVATE_GATEWAY_CONFIG.json';
+const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+let wroteConfig=false,child,diagnostics,stopping=false,phase='ENVIRONMENT';
+const safe=(status,more={})=>console.log(JSON.stringify({status,...more,userProfileChanged:false,businessProfileChanged:false,all100Ready:false}));
+function privateAlias(p,expected){const s=fs.lstatSync(p,{bigint:true});assert(s.isDirectory()&&!s.isSymbolicLink()&&s.uid===BigInt(process.getuid())&&(s.mode&0o077n)===0n,'Private original-state bind required');assert.deepEqual({dev:s.dev.toString(),ino:s.ino.toString()},expected,'Original physical state identity mismatch');}
+try {
+ assert.equal(process.env.CRAYS_GATEWAY_UNIT,UNIT);assert(/^[a-f0-9]{32}$/.test(process.env.INVOCATION_ID??''),'Native invocation identity required');assert(process.getuid()!==0&&process.getuid()!==1000);
+ for(const key of ['OPENAI_API_KEY','ANTHROPIC_API_KEY','CODEX_HOME','OPENCLAW_AGENT_DIR'])assert(!process.env[key],'Unexpected inherited provider context');
+ phase='ADMISSION';const plan=read(runtime+'/code/PLAN.json'),gate=read(runtime+'/review/DURABLE_ADMISSION.json');
+ assert.equal(plan.unit,UNIT);assert.equal(plan.run,runtime);assert.equal(plan.launchEnabled,true);assert.equal(plan.mode,'DURABLE_OWNER_WHATSAPP_RECOVERY');
+ assert.equal(gate.unit,UNIT);assert.equal(gate.mode,'DURABLE_OWNER_WHATSAPP_RECOVERY');assert.equal(gate.durableServiceAuthorized,true);assert.equal(gate.planSha256,hash(runtime+'/code/PLAN.json'));
+ assert.equal(gate.gatewayStartAllowed,true);assert.equal(gate.whatsappStartAllowed,true);assert.equal(gate.originalOwnerAndBusinessExclusive,true);assert.equal(gate.fullSourceInventoryVerified,true);
+ assert.equal(plan.finiteTestWindowApplied,false);assert.equal(gate.testWindowContractApplied,false);
+ const verified=read(runtime+'/START_VERIFIED.json');assert.equal(verified.invocationId,process.env.INVOCATION_ID);assert.equal(verified.admissionSha256,hash(runtime+'/review/DURABLE_ADMISSION.json'));assert.equal(verified.allBoundBytesMatch,true);
+ const assertWeatherStartupCurrent=createStartupCurrentnessGuard({runtime,unit:UNIT,invocationId:process.env.INVOCATION_ID,plan,gate,verified});
+ phase='PHYSICAL_ALIASES';privateAlias(state,gate.stateIdentity);privateAlias(business,gate.businessIdentity);assert.notDeepEqual(gate.stateIdentity,gate.businessIdentity);
+ try{diagnostics=createGatewayExitDiagnostics({stateRoot:state,invocationId:process.env.INVOCATION_ID,role:'supervisor'});}catch{}
+ const canonicalBusinessPath=fs.realpathSync(business);assert([business,'/run/private/'+UNIT+'/business'].includes(canonicalBusinessPath),'Exact canonical business alias required');
+ phase='SOURCE_BINDINGS';for(const k of ['hostProof','sourceAdmission']){const b=gate[k];assert(b&&/^\/run\//.test(b.mountedPath)&&/^[a-f0-9]{64}$/.test(b.sha256));assert.equal(hash(b.mountedPath),b.sha256);}
+ for(const b of plan.runtimeBindings){const p=b.target.startsWith('/')?b.target:runtime+'/'+b.target;assert.equal(hash(p),b.sha256,'Exact staged bytes required');}
+ // READY/caps/mount/full-inventory checks are completed by the outer controller before these native imports.
+ phase='BUSINESS_IDENTITY';const {h:readSelf}=await import(runtime+'/whatsapp/dist/.setup/auth-store-D2rN-hP5.mjs');
+ const self=await readSelf(canonicalBusinessPath+'/credentials/whatsapp/crays-agent-business');assert.equal(self.e164,'__CRAYS_PRIVATE_LITERAL_92aa4c4ac2b694726b5f5b12__','Unexpected linked Business account');
+ phase='NATIVE_OWN_CONFIG';process.env.HOME=state;process.env.OPENCLAW_STATE_DIR=state;process.env.OPENCLAW_CONFIG_PATH=state+'/openclaw.json';
+ const {getRuntimeConfig}=await import(runtime+'/node_modules/openclaw/dist/io-DJzUaE27.mjs');const base=await getRuntimeConfig();
+ const route=runtime+'/node_modules/openclaw/dist/openai-chatgpt-provider-DSoHd8aC.mjs';
+ phase='COMPOSE_CONFIG';const speechBase=composeDurableRecovery({runtime,base,verifiedBusinessIdentity:self.e164,canonicalBusinessPath,modelRouteEvidence:{sourcePath:route,sourceSha256:hash(route)}});
+ phase='STRUCTURAL_OWNER_POLICY';
+ assertCumulativeOwnerPolicy(speechBase);
+ const speechCfg=composeExplicitSpeechDelta(speechBase,{agentId:'crays-agent-thorben',skillRoot:'/opt/crays/openclaw/skill-artifacts/crays-explicit-voice-translation/bce655768df4c2526d3396dcd964362ad50d2108f6ddd6d044cbe1120f673db3'});
+ assert.deepEqual(speechCfg.tools.allow,[...speechBase.tools.allow,'tts']);assert.equal(speechCfg.tools.allow.length,27);assert.strictEqual(speechCfg.channels,speechBase.channels);assert.strictEqual(speechCfg.commands,speechBase.commands);assert.strictEqual(speechCfg.cron,speechBase.cron);
+ const expediaBase=composeExpediaSearchDelta(speechCfg,{runtime});const researchBase=composeCitedResearchDelta(expediaBase,{runtime});const multipartCfg=composeMultipartPdfDelta(researchBase);assertExpediaPersonalHome(multipartCfg,process.env);assert.equal(multipartCfg.tools.allow.length,30);assert.equal(multipartCfg.agents.entries['crays-agent-thorben'].skills.length,29);assert.strictEqual(multipartCfg.tts,speechCfg.tts);
+ // Historical V53 identity is provenance; the guard above binds this actual candidate startup.
+ const weatherCfg=composeWeatherV53(multipartCfg,{sourceIdentity:weatherBindings.baselineIdentity,assertInvocationCurrent:assertWeatherStartupCurrent});assert.equal(weatherCfg.tools.allow.length,30);assert.equal(weatherCfg.agents.entries['crays-agent-thorben'].skills.length,30);
+ assertWeatherStartupCurrent();
+ const cfg=composeTranslationVideoBatch(weatherCfg,{assertInvocationCurrent:assertWeatherStartupCurrent});
+ assertWeatherStartupCurrent();assert.equal(cfg.tools.allow.length,30);assert.equal(cfg.agents.entries['crays-agent-thorben'].skills.length,32);
+ // Native owner interpretation is resolved after real WhatsApp registry/ingress initialization.
+ // This recovery preflight does not fabricate a native owner flag or operational tool grant.
+ // Only this ephemeral file contains the reused own gateway token. No owner-results/config copy is written.
+ phase='EPHEMERAL_CONFIG';assertWeatherStartupCurrent();fs.writeFileSync(configPath,JSON.stringify(cfg),{mode:0o600,flag:'wx'});wroteConfig=true;
+ const results=runtime+'/gateway-results';fs.mkdirSync(results,{mode:0o700,recursive:true});
+ const env={CRAYS_GATEWAY_UNIT:UNIT,HOME:state,PATH:runtime+'/node/bin:/usr/bin:/bin',LANG:'C.UTF-8',OPENCLAW_STATE_DIR:state,OPENCLAW_CONFIG_PATH:configPath,OPENCLAW_NO_RESPAWN:'1'};
+ const diagnosticPreload=runtime+'/code/gateway-exit-diagnostics.mjs',diagnosticEnv=phase=>({...env,INVOCATION_ID:process.env.INVOCATION_ID,CRAYS_GATEWAY_DIAGNOSTICS_ROLE:'native',CRAYS_GATEWAY_DIAGNOSTIC_PHASE:phase});
+ const cli=runtime+'/node_modules/openclaw/openclaw.mjs',log=fs.openSync(results+'/native.private.log','wx',0o600);
+ try {
+  phase='NATIVE_CRON_MACHINE_STATE';const partition=spawnSync(process.execPath,['--max-old-space-size=256','--import',diagnosticPreload,runtime+'/code/reminders/prepare-native-reminder-machine-state.mjs','--prepare-owned-cron-machine-state'],{env:diagnosticEnv(phase),stdio:['ignore',log,log],timeout:25000});diagnostics?.record({event:'child_exit',phase,childPid:partition.pid,exitCode:partition.status,signal:partition.signal,error:partition.error});assert.equal(partition.status,0,'Native own Cron partition preparation failed');
+  phase='NATIVE_CONFIG_VALIDATION';const v=spawnSync(process.execPath,['--max-old-space-size=256','--import',diagnosticPreload,cli,'config','validate','--json'],{env:diagnosticEnv(phase),stdio:['ignore',log,log],timeout:25000});diagnostics?.record({event:'child_exit',phase,childPid:v.pid,exitCode:v.status,signal:v.signal,error:v.error});assert.equal(v.status,0,'Native gateway config invalid');
+  safe('OWNER_WHATSAPP_RECOVERY_CONFIG_VALIDATED',{exactBusinessIdentityVerified:true,onlyAuthorizedOwnerDm:true,groupsDisabled:true,baseline:'TEN_TOOLS_AND_SHARED_SKILLS_SOURCE_PROPOSAL',toolsEnabled:true,brandMarkersGuardPreserved:true,semanticSecrecyGuaranteed:false});
+  phase='GATEWAY_RUNNING';child=spawn(process.execPath,['--max-old-space-size=1536','--import',diagnosticPreload,cli,'gateway','run','--port','18789'],{env:diagnosticEnv(phase),stdio:['ignore',log,log]});
+  diagnostics?.record({event:'child_spawn',phase,childPid:child.pid});
+  for(const sig of ['SIGTERM','SIGINT'])process.once(sig,()=>{stopping=true;child?.kill(sig);});
+  const healthTimer=setInterval(()=>{
+   if(stopping)return;
+   const probe=spawnSync(process.execPath,['--max-old-space-size=256',cli,'health','--json','--timeout','10000'],{env,encoding:'utf8',timeout:15000,maxBuffer:1024*1024});
+   let parsed;try{parsed=JSON.parse(probe.stdout);}catch{}
+   const whatsapp=parsed?.channels?.whatsapp;const account=whatsapp?.accounts?.['crays-agent-business']??whatsapp;
+   const health={nativeHealthCommandPassed:probe.status===0,gatewayReportsOk:parsed?.ok===true,whatsappLinked:account?.linked===true,whatsappConnected:account?.connected===true,connectedStateKnown:typeof account?.connected==='boolean',channelStateShapeKnown:!!whatsapp,privateContentPrinted:false};
+   safe('OWNER_WHATSAPP_DURABLE_HEALTH',health);
+  },30000);
+  const result=await new Promise((resolve,reject)=>{child.once('error',reject);child.once('exit',(code,signal)=>resolve({code,signal}));}).finally(()=>clearInterval(healthTimer));
+  diagnostics?.record({event:'child_exit',phase,childPid:child.pid,exitCode:result.code,signal:result.signal});
+  safe('OWNER_WHATSAPP_RECOVERY_GATEWAY_TERMINAL',{...result,requestedStop:stopping});if(!stopping)process.exitCode=1;
+ }finally{fs.closeSync(log);}
+}catch(error){diagnostics?.record({event:'supervisor_failure',phase:'SUPERVISOR',error});safe('OWNER_WHATSAPP_RECOVERY_FAILED_CLOSED',{errorPhase:phase,publicErrorCode:error.name==='AssertionError'?'STARTUP_ASSERTION_FAILED':'STARTUP_OPERATION_FAILED',publicSourceLine:(String(error.stack).match(/gateway\.mjs:(\d+):\d+/)?.[1]??null),errorName:error.name,errorMessageSha256:crypto.createHash('sha256').update(String(error.message)).digest('hex')});process.exitCode=1;}
+finally {if(wroteConfig)try{fs.unlinkSync(configPath);}catch{safe('EPHEMERAL_CONFIG_CLEANUP_UNPROVEN');process.exitCode=1;}}

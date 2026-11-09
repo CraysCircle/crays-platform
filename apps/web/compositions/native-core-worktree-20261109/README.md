@@ -65,3 +65,11 @@ These are source slices at the recorded historical Core authority, not a claim o
 ## Personal account and feature materializer source
 
 A further 212 original source files retain account-connection, credential-custody interface, runtime-authority, composition and feature modules. The [account/materializer guide](UNTRACKED_ORIGINAL_MATERIALIZER.md) and [feature-composition guide](UNTRACKED_FEATURE_COMPOSITION_SOURCE.md) describe original speech, research, translation, preference, planning and document-integration sources. Their exact paths and hashes remain recorded; no provider or product program was executed. Compiled upstream overlays, personal-literal contexts and full runtime/dependency rights remain separate.
+
+## Technical catalogs, upstream overlays and protected source
+
+A further 237 exact original files retain technical schema/factory/manifest inputs, the separately reviewed Core Franchise variant and 21 modified OpenClaw/WhatsApp bundles. [Technical catalog](UNTRACKED_TECHNICAL_SOURCE_CATALOG.md), [Core Franchise variant](UNTRACKED_CORE_FRANCHISE_VARIANT_SOURCE.md) and [upstream derivatives](UNTRACKED_UPSTREAM_DERIVATIVE_SOURCE.md) record their original paths and boundaries. Original upstream notices and exact preimage/modification relationships are retained in [the materializer provenance map](../../../../third-party/personal-agent-materializer/source-and-modification-map.json).
+
+Another 55 original inputs are represented by reversible templates: 35 materializer files, 19 fixed-label test files and one SQL identity fixture. Fixed identity/person literals remain protected; public templates are not self-contained raw originals. Each archive restorer verifies the protected original archive, public template and reconstructed original hashes and refuses unsafe destinations. No product source, SQL, generator or provider was executed.
+
+Within the reviewed 848-input candidate capture, 788 raw originals and 55 protected templates are now represented. Five inputs remain held for source authority: four generated client outputs with an unestablished exact producer/version and one response-policy file with unresolved origin. This bounded capture does not preserve the 453-commit history or establish complete source, asset, runtime, dependency or license compliance.

@@ -1,0 +1,25 @@
+/** Add one qualified RSS tool and its instruction to exact current eight-tool policy. Pure source only. */
+import assert from 'node:assert/strict';
+import ARTIFACTS from './ARTIFACT_BINDINGS.json' with {type:'json'};
+const ID='crays-agent-thorben',PLUGIN='crays-feed-reader',TOOL='crays_feed_reader';
+const EIGHT=Object.freeze(['read','web_fetch','web_search','pdf','crays_calculator','crays_personal_records','crays_personal_dates','crays_shared_expenses']);
+export function composeNineToolsDelta(base){
+ assert.equal(ARTIFACTS.final,true);
+ assert(new RegExp('^/opt/crays/openclaw/plugin-artifacts/'+PLUGIN+'/[a-f0-9]{64}$').test(ARTIFACTS.feedPluginRoot));
+ assert(new RegExp('^/opt/crays/openclaw/skill-artifacts/'+PLUGIN+'/[a-f0-9]{64}$').test(ARTIFACTS.feedSkillRoot));
+ assert.deepEqual(Object.keys(base.agents.entries),[ID]);const agent=base.agents.entries[ID];
+ for(const policy of [base.tools,agent.tools]){assert.equal(policy.profile,'full');assert.deepEqual(policy.allow,EIGHT);assert.deepEqual(policy.deny,[]);assert.equal(policy.fs.workspaceOnly,true);}
+ assert.equal(base.plugins.entries.whatsapp.enabled,true);
+ for(const plugin of ['crays-calculator','crays-personal-records','crays-personal-dates','crays-shared-expenses'])assert(base.plugins.allow.includes(plugin));
+ assert.deepEqual(base.commands.ownerAllowFrom,['whatsapp:__CRAYS_PRIVATE_LITERAL_7a2e6f541ad234d2b175eedf__']);assert.deepEqual(base.channels.whatsapp.allowFrom,['__CRAYS_PRIVATE_LITERAL_7a2e6f541ad234d2b175eedf__']);assert.equal(base.channels.whatsapp.groupPolicy,'disabled');
+ assert(!base.plugins.allow.includes(PLUGIN)&&!base.plugins.load.paths.includes(ARTIFACTS.feedPluginRoot)&&!Object.hasOwn(base.plugins.entries,PLUGIN),'Existing RSS policy requires explicit reconciliation');
+ assert(!agent.skills.includes(PLUGIN)&&!base.skills.load.extraDirs.includes(ARTIFACTS.feedSkillRoot+'/skills')&&!Object.hasOwn(base.skills.entries,PLUGIN),'Existing RSS skill policy requires explicit reconciliation');
+ const policy=value=>({...value,allow:[...value.allow,TOOL]});
+ const cfg={...base,agents:{...base.agents,entries:{[ID]:{...agent,tools:policy(agent.tools),skills:[...agent.skills,PLUGIN]}}},tools:policy(base.tools),
+  plugins:{...base.plugins,allow:[...base.plugins.allow,PLUGIN],load:{...base.plugins.load,paths:[...base.plugins.load.paths,ARTIFACTS.feedPluginRoot]},entries:{...base.plugins.entries,[PLUGIN]:{enabled:true}}},
+  skills:{...base.skills,load:{...base.skills.load,extraDirs:[...base.skills.load.extraDirs,ARTIFACTS.feedSkillRoot+'/skills']},entries:{...base.skills.entries,[PLUGIN]:{enabled:true}}}};
+ for(const key of ['gateway','channels','bindings','commands','auth','session','cron','hooks'])assert.strictEqual(cfg[key],base[key]);
+ assert.strictEqual(cfg.agents.defaults,base.agents.defaults);assert.strictEqual(cfg.agents.entries[ID].model,agent.model);
+ for(const [key,value] of Object.entries(base.plugins.entries))assert.strictEqual(cfg.plugins.entries[key],value);
+ return cfg;
+}

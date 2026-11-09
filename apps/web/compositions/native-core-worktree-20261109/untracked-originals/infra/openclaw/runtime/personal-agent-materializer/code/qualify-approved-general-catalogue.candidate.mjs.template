@@ -1,0 +1,60 @@
+/** Fixed deployment catalogue qualification. Synthetic person contexts, actual immutable shared artifacts; no assignment, account or runtime start. */
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+import S from './approved-general-baseline-composition-v3/INPUT_PROJECTED_RUNTIME_STANDARD.json' with {type:'json'};
+import R from './approved-general-baseline-composition-v3/reminders/REMINDER_BASELINE_BINDINGS.json' with {type:'json'};
+import L from './approved-general-baseline-composition-v3/selected-local-skills/ARTIFACT_BINDINGS.json' with {type:'json'};
+import M from './approved-general-baseline-composition-v3/multipart-pdf/ARTIFACT_BINDINGS.json' with {type:'json'};
+import INPUTCAT from './approved-general-baseline-composition-v3/INPUT_HOST_ARTIFACT_CATALOG.json' with {type:'json'};
+import {composeApprovedGeneralBaseline} from './approved-general-baseline-composition-v3/compose-approved-general-baseline.mjs';
+import {prepareApprovedGeneralRuntime} from './prepare-approved-general-runtime.candidate-v2.mjs';
+import {prepareChannelIndependentGeneralRuntime} from './prepare-channel-independent-general-runtime.candidate.mjs';
+import {readRootFile} from './verify-shared-artifacts.mjs';
+const hash=x=>createHash('sha256').update(x).digest('hex');
+const encode=x=>Array.isArray(x)?'['+x.map(encode).join(',')+']':x!==null&&typeof x==='object'?'{'+Object.keys(x).sort().map(k=>JSON.stringify(k)+':'+encode(x[k])).join(',')+'}':JSON.stringify(x);
+function fixture(person,sender){const id='personal-'+hash('crays.personal-agent.assignment.v1\n'+person).slice(0,48),runtime='/var/lib/crays-personal-agents/'+hash('crays.personal-agent.person-namespace.v1\n'+person)+'/'+id,account='fixture-business-'+person,policy={profile:'full',allow:[...S.descriptor.tools],deny:[],fs:{workspaceOnly:true}},channel={enabled:true,dmPolicy:'allowlist',groupPolicy:'disabled',configWrites:false,allowFrom:[sender]};return {context:{canonicalPersonId:person,agentId:id,runtime},base:{tools:structuredClone(policy),agents:{defaults:{timeoutSeconds:120,heartbeat:{every:'0m',target:'none'}},entries:{[id]:{workspace:runtime+'/workspace',agentDir:runtime+'/agents/'+id+'/agent',tools:structuredClone(policy),skills:[...S.descriptor.skills],heartbeat:{every:'0m',target:'none'},model:{primary:'openai/fixture-own-model',fallbacks:[]}}}},skills:{load:{extraDirs:[...L.artifacts.map(x=>x.extraDir)]},entries:Object.fromEntries(S.descriptor.skills.map(x=>[x,{enabled:true}]))},plugins:{allow:[...R.pluginAllow],load:{paths:[M.oldPluginRoot]},entries:Object.fromEntries(R.pluginAllow.map(x=>[x,{enabled:true}]))},auth:{profiles:{['own-'+person]:{provider:'openai',mode:'oauth'}},order:{openai:['own-'+person]}},channels:{whatsapp:{...channel,accounts:{[account]:structuredClone(channel)}}},bindings:[{agentId:id,match:{channel:'whatsapp',accountId:account}}],commands:{ownerAllowFrom:['whatsapp:'+sender]},cron:{enabled:false},hooks:{enabled:false}}};}
+const review=JSON.parse(await fs.readFile('/srv/crays/openclaw/oca063/general-skills-first-wave-20261015/shared-general-instruction-artifact-publication-source-v1/PUBLICATION_REVIEW.json','utf8'));
+assert.equal(hash(await fs.readFile('/srv/crays/openclaw/oca063/general-skills-first-wave-20261015/shared-general-instruction-artifact-publication-source-v1/PUBLICATION_REVIEW.json')),'df82e31415d74884d43a814045fee00a1c86d457c9a9ff25f35a1d3874ced803');
+const catalog=structuredClone(INPUTCAT);
+for(const a of review.artifacts)catalog.skills.push({name:a.name,skillId:a.skillId,root:a.root,manifestSha256:a.manifestSource.sha256,manifestName:a.manifestName,contentSha256:a.contentSha256});
+const voiceRoot='/opt/crays/openclaw/skill-artifacts/crays-explicit-voice-translation/bce655768df4c2526d3396dcd964362ad50d2108f6ddd6d044cbe1120f673db3';
+const voiceManifest=await readRootFile(voiceRoot+'/CRAYS_ARTIFACT_MANIFEST.json');
+catalog.skills.push({name:'crays-voice-translation',skillId:'crays-voice-translation',root:voiceRoot,manifestSha256:hash(voiceManifest),manifestName:'CRAYS_ARTIFACT_MANIFEST.json',contentSha256:hash(await readRootFile(voiceRoot+'/skills/crays-voice-translation/SKILL.md'))});
+const cases=[];
+for(const person of ['general-catalogue-fixture-a','general-catalogue-fixture-b']){
+ const x=fixture(person,'__CRAYS_PRIVATE_LITERAL_05b035449012d0f60e2c5f61__');delete x.base.channels;delete x.base.bindings;delete x.base.commands;
+ x.base.skills.load.extraDirs=INPUTCAT.skills.map(s=>s.root+'/skills');
+ x.base.plugins.load.paths=INPUTCAT.plugins.map(p=>p.root);
+ const config=composeApprovedGeneralBaseline(x.base,x.context).candidateConfig;
+ const plugins=[];const descriptors=[];
+ for(const root of config.plugins.load.paths){
+  const raw=await readRootFile(root+'/CRAYS_ARTIFACT_MANIFEST.json');const manifest=JSON.parse(raw);
+  let pluginId=INPUTCAT.plugins.find(p=>p.root===root)?.pluginId;
+  if(!pluginId){const meta=JSON.parse(await readRootFile(root+'/openclaw.plugin.json'));pluginId=meta.id;}
+  assert(config.plugins.allow.includes(pluginId));const digest=hash(raw);
+  plugins.push({pluginId,root,manifestSha256:digest});
+  descriptors.push({id:pluginId,artifactRoot:path.dirname(root),expectedArtifactManifestSha256:digest,files:manifest.files});
+ }
+ const standard={descriptor:{tools:config.tools.allow,skills:config.agents.entries[x.context.agentId].skills,plugins:descriptors}};standard.sha256=hash(encode(standard.descriptor));
+ const finalCatalog={...catalog,plugins,packageSha256:standard.sha256};
+ const aliases=config.skills.load.extraDirs.filter(d=>d.startsWith(x.context.runtime+'/code/')).map(runtimePath=>{
+  const skill=runtimePath.includes('/expedia/')?'crays-expedia-search':runtimePath.includes('/cited-research/')?'crays-cited-research':null;
+  assert(skill,'UNKNOWN_RUNTIME_INSTRUCTION_ALIAS');return {runtimePath,artifactPath:finalCatalog.skills.find(s=>s.skillId===skill).root+'/skills'};
+ });
+ const projection={baseProjectedSha256:S.sha256,standard,catalog:finalCatalog,instructionAliases:aliases};
+ assert.equal(plugins.length,INPUTCAT.plugins.length+1,'EVERY_BASE_PLUGIN_PLUS_EXPEDIA_REQUIRED');
+ const out=await prepareApprovedGeneralRuntime(x.base,x.context,projection);
+ const fixed=await prepareChannelIndependentGeneralRuntime(x.base,x.context);
+ assert.deepEqual(fixed.artifacts,out.artifacts);assert.deepEqual(fixed.config,out.config);
+ assert.equal(out.toolCount,29);assert.equal(out.skillCount,29);assert.strictEqual(out.config.auth,x.base.auth);
+ cases.push({personScope:'SYNTHETIC_NOT_REAL_ACCOUNT',context:x.context,projection,verification:{status:out.status,toolCount:out.toolCount,instructionCount:out.skillCount,artifacts:out.artifacts,pendingBranches:out.pendingBranches}});
+}
+assert.notEqual(cases[0].context.runtime,cases[1].context.runtime);
+const repo=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../../../../..');
+const target=repo+'/docs/architecture/evidence/CHUCK_GENERAL_BASELINE_FINAL_CHANNEL_INDEPENDENT_CATALOGUE_ACTUAL_VERIFICATION_2026_10_19.json';
+const evidence={schema:'crays.chuck.general-baseline-catalogue-qualification.v1',recordedAtUtc:new Date().toISOString(),status:'ACTUAL_SHARED_ARTIFACTS_VERIFIED_WITH_TWO_SYNTHETIC_PERSON_CONTEXTS_NOT_ADMITTED',cases,realUserAcceptance:false,nativeRegistryLoaded:false,readonlyRuntimeAliasesMounted:false,defaultFactorySwitched:false,liveServiceChanged:false,credentialsReadOrCopied:false};
+await fs.writeFile(target,JSON.stringify(evidence,null,2)+'\n');
+console.log(JSON.stringify({status:evidence.status,evidence:target,persons:cases.length,tools:29,instructions:29,plugins:cases[0].verification.artifacts.plugins.length,artifactInstructions:cases[0].verification.artifacts.skills.length}));

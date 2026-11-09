@@ -1,0 +1,9 @@
+/** Pure startup structural policy. Shared by real gateway and bounded synthetic delta qualification. */
+import assert from 'node:assert/strict';
+export function assertCumulativeOwnerPolicy(cfg){
+ assert.deepEqual(cfg.commands.ownerAllowFrom,['whatsapp:__CRAYS_PRIVATE_LITERAL_1bbc89209480c3ad3b2f0f18__'],'Exact configured owner policy required');
+ assert.deepEqual(cfg.channels.whatsapp.allowFrom,['__CRAYS_PRIVATE_LITERAL_1bbc89209480c3ad3b2f0f18__'],'Exact channel sender policy required');
+ assert.deepEqual(cfg.channels.whatsapp.accounts['crays-agent-business'].allowFrom,['__CRAYS_PRIVATE_LITERAL_1bbc89209480c3ad3b2f0f18__'],'Exact account sender policy required');
+ assert.equal(cfg.channels.whatsapp.groupPolicy,'disabled');assert.equal(cfg.channels.whatsapp.accounts['crays-agent-business'].groupPolicy,'disabled');
+ assert.deepEqual(cfg.tools.allow,["read","web_fetch","web_search","pdf","crays_calculator","crays_personal_records","crays_personal_dates","crays_shared_expenses","crays_feed_reader","crays_document_exports","crays_qr","crays_chess","crays_item_inventory","crays_training_log","crays_personal_budget","crays_pantry","crays_subscriptions","crays_personal_webtools","crays_habits","crays_personal_preferences","crays_packing","crays_learning_plan","crays_personal_cooking","crays_quiz_review","crays_personal_planner","automations"],'Exact cumulative twenty-six tool policy required');assert.deepEqual(cfg.tools.deny,[]);assert.equal(cfg.tools.fs.workspaceOnly,true);assert.deepEqual(cfg.agents.entries['crays-agent-thorben'].tools.allow,cfg.tools.allow);
+}

@@ -1,0 +1,231 @@
+@font-face {
+  font-family: "Crays Avenir Medium";
+  src: url("/assets/fonts/avenir-medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+.header {
+  position: relative;
+  z-index: 10;
+  box-sizing: border-box;
+  width: 100%;
+  height: 67px;
+  color: #fff;
+}
+
+.header[data-surface="light"] {
+  color: #171613;
+}
+
+.inner {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 67px;
+}
+
+.brandSlot {
+  position: absolute;
+  top: 11px;
+  left: 46px;
+  display: flex;
+  width: 142px;
+  height: 44px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.brandSlot > * {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.logo {
+  width: 142px;
+  height: auto;
+}
+
+.actionRail {
+  position: absolute;
+  top: 7px;
+  right: 40px;
+  display: grid;
+  width: 552px;
+  height: 60px;
+  grid-template-columns: 126px 270px 116px;
+  column-gap: 20px;
+  align-items: start;
+  font-family:
+    "Crays Avenir Medium",
+    "Avenir Medium",
+    "Crays Avenir Book",
+    Arial,
+    sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0.14em;
+  box-sizing: border-box;
+}
+
+.accountSlot,
+.associationSlot,
+.menuSlot {
+  min-width: 0;
+}
+
+.accountSlot {
+  width: 126px;
+  height: 44px;
+  margin-top: 5px;
+  color: #fff;
+  background: #262626;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 5px;
+}
+
+.associationSlot {
+  width: 270px;
+  height: 44px;
+  margin-top: 5px;
+  color: #171613;
+  background: #f6f4ef;
+  border: 1px solid rgba(23, 22, 19, 0.16);
+  border-radius: 5px;
+}
+
+.menuSlot {
+  width: 116px;
+  height: 60px;
+  color: inherit;
+  background: transparent;
+}
+
+.accountSlot,
+.associationSlot,
+.menuSlot,
+.accountSlot > *,
+.associationSlot > *,
+.menuSlot > * {
+  box-sizing: border-box;
+}
+
+.accountSlot > *,
+.associationSlot > *,
+.menuSlot > * {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+  background: transparent;
+  border: 0;
+  border-radius: inherit;
+}
+
+.header[data-surface="light"] .accountSlot {
+  border-color: rgba(23, 22, 19, 0.3);
+}
+
+.menuButton {
+  display: flex;
+  width: 116px;
+  height: 60px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.menuButton:focus-visible {
+  outline: 2px solid #ef1c4a;
+  outline-offset: 2px;
+}
+
+.menuButtonLabel {
+  display: block;
+  line-height: 40px;
+}
+
+.menuButtonOpenIcon {
+  display: block;
+  flex: 0 0 28px;
+  width: 28px;
+  height: 24px;
+}
+
+.menuButton[data-state="open"] {
+  gap: 16px;
+}
+
+.menuButtonCloseIcon {
+  display: block;
+  flex: 0 0 31px;
+  width: 31px;
+  height: 24px;
+}
+
+/* Task 80: match the approved full-screen-menu header reduction on narrow screens. */
+@media (max-width: 767px) {
+  .brandSlot {
+    top: 11px;
+    left: 24px;
+    width: 142px;
+    height: 44px;
+  }
+
+  .brandSlot > *,
+  .logo {
+    width: 142px;
+    max-width: 142px;
+    max-height: 30px;
+  }
+
+  .actionRail {
+    right: 24px;
+    display: flex;
+    width: 253px;
+    column-gap: 0;
+    justify-content: flex-end;
+  }
+
+  .accountSlot {
+    margin-right: 22px;
+  }
+
+  .associationSlot {
+    display: none;
+  }
+
+  .menuSlot,
+  .menuButton {
+    width: 105px;
+  }
+}
+
+@media (max-width: 639px) {
+  .brandSlot {
+    left: 20px;
+  }
+
+  .actionRail {
+    right: 12px;
+    width: 105px;
+  }
+
+  .accountSlot {
+    display: none;
+  }
+}

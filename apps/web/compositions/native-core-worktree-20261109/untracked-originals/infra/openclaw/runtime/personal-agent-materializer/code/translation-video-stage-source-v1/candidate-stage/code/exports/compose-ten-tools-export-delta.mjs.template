@@ -1,0 +1,32 @@
+/** Pure additive owner9+existingNotice ->10+sameNotice+boundedExports.
+ * No IO/auth, runtime launch, broad write, trust flag, account or model mutation.
+ */
+import assert from 'node:assert/strict';
+import ARTIFACTS from './ARTIFACT_BINDINGS.json' with {type:'json'};
+const ID='crays-agent-thorben',NOTICE='crays-service-notices',PLUGIN='crays-document-exports',TOOL='crays_document_exports',ACCOUNT='crays-agent-business',OWNER='__CRAYS_PRIVATE_LITERAL_5eff8bd876fe6fb60b86982d__';
+export const NINE_TOOLS=Object.freeze(['read','web_fetch','web_search','pdf','crays_calculator','crays_personal_records','crays_personal_dates','crays_shared_expenses','crays_feed_reader']);
+const PLUGINS=Object.freeze(['openai','whatsapp','document-extract','crays-calculator','crays-personal-records','crays-personal-dates','crays-shared-expenses','crays-feed-reader',NOTICE]);
+export function composeTenToolsExportDelta(base){
+ assert.equal(ARTIFACTS.final,true);assert.deepEqual(Object.keys(base.agents.entries),[ID]);const agent=base.agents.entries[ID];
+ assert(typeof agent.workspace==='string'&&agent.workspace.endsWith('/state/workspace'),'Exact current runtime own workspace required');
+ for(const p of [base.tools,agent.tools]){assert.equal(p.profile,'full');assert.deepEqual(p.allow,NINE_TOOLS);assert.deepEqual(p.deny,[]);assert.equal(p.fs.workspaceOnly,true);assert(!p.alsoAllow?.length);}
+ assert.deepEqual(base.plugins.allow,PLUGINS);assert.equal(new Set(base.plugins.load.paths).size,base.plugins.load.paths.length);
+ assert.deepEqual(base.plugins.load.paths.filter(p=>p.startsWith('/opt/crays/openclaw/plugin-artifacts/')),[...ARTIFACTS.existingPluginRoots,ARTIFACTS.noticePluginRoot]);
+ for(const id of PLUGINS)assert.equal(base.plugins.entries[id].enabled,true);
+ assert.deepEqual(base.plugins.entries[NOTICE],{enabled:true,hooks:{allowConversationAccess:true},config:{bindings:[{accountId:ACCOUNT,recipient:OWNER,locale:'de'}]}});
+ assert.equal(base.channels.whatsapp.enabled,true);assert.equal(base.channels.whatsapp.dmPolicy,'allowlist');assert.equal(base.channels.whatsapp.groupPolicy,'disabled');assert.equal(base.channels.whatsapp.configWrites,false);
+ assert.deepEqual(base.channels.whatsapp.allowFrom,[OWNER]);assert.deepEqual(base.commands.ownerAllowFrom,['whatsapp:'+OWNER]);
+ assert.deepEqual(Object.keys(base.channels.whatsapp.accounts),[ACCOUNT]);const account=base.channels.whatsapp.accounts[ACCOUNT];assert.equal(account.enabled,true);assert.equal(account.dmPolicy,'allowlist');assert.equal(account.groupPolicy,'disabled');assert.equal(account.configWrites,false);assert.deepEqual(account.allowFrom,[OWNER]);
+ assert.deepEqual(base.bindings,[{agentId:ID,match:{channel:'whatsapp',accountId:ACCOUNT}}]);
+ assert(!base.plugins.allow.includes(PLUGIN)&&!Object.hasOwn(base.plugins.entries,PLUGIN)&&!base.plugins.load.paths.includes(ARTIFACTS.exportPluginRoot));
+ assert(!agent.skills.includes(PLUGIN)&&!Object.hasOwn(base.skills.entries,PLUGIN)&&!base.skills.load.extraDirs.includes(ARTIFACTS.exportSkillRoot+'/skills'));
+ const add=value=>({...value,allow:[...value.allow,TOOL]});
+ const cfg={...base,tools:add(base.tools),agents:{...base.agents,entries:{[ID]:{...agent,tools:add(agent.tools),skills:[...agent.skills,PLUGIN]}}},plugins:{...base.plugins,allow:[...base.plugins.allow,PLUGIN],load:{...base.plugins.load,paths:[...base.plugins.load.paths,ARTIFACTS.exportPluginRoot]},entries:{...base.plugins.entries,[PLUGIN]:{enabled:true}}},skills:{...base.skills,load:{...base.skills.load,extraDirs:[...base.skills.load.extraDirs,ARTIFACTS.exportSkillRoot+'/skills']},entries:{...base.skills.entries,[PLUGIN]:{enabled:true}}}};
+ for(const [key,value]of Object.entries(base))if(!['agents','tools','plugins','skills'].includes(key))assert.strictEqual(cfg[key],value);
+ assert.strictEqual(cfg.agents.defaults,base.agents.defaults);assert.strictEqual(cfg.agents.entries[ID].model,agent.model);
+ for(const [key,value]of Object.entries(agent))if(!['tools','skills'].includes(key))assert.strictEqual(cfg.agents.entries[ID][key],value);
+ for(const [key,value]of Object.entries(base.plugins.entries))assert.strictEqual(cfg.plugins.entries[key],value);
+ assert.strictEqual(cfg.plugins.entries[NOTICE],base.plugins.entries[NOTICE]);
+ for(const p of [cfg.tools,cfg.agents.entries[ID].tools]){assert.equal(p.fs.workspaceOnly,true);assert.deepEqual(p.allow,[...NINE_TOOLS,TOOL]);for(const denied of ['write','edit','exec','process','message','cron'])assert(!p.allow.includes(denied));}
+ return cfg;
+}

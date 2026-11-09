@@ -1,0 +1,210 @@
+{
+  "schema": "crays.owner-cooking-quiz-planner.planner-bindings.v1",
+  "sourceOnly": true,
+  "pluginRoot": "/opt/crays/openclaw/plugin-artifacts/crays-personal-planner/34ef643e42c2fe8dc54df5be27f3414f6be566a62035a5a5d1b4301ca6dccc73",
+  "skillRoot": "/opt/crays/openclaw/skill-artifacts/crays-personal-planner/f9b1ed42a5a267f3eb83d8f2b616a92c6b84db17a0045efb7f70e072ccaadc02",
+  "baselineTools": [
+    "read",
+    "web_fetch",
+    "web_search",
+    "pdf",
+    "crays_calculator",
+    "crays_personal_records",
+    "crays_personal_dates",
+    "crays_shared_expenses",
+    "crays_feed_reader",
+    "crays_document_exports",
+    "crays_qr",
+    "crays_chess",
+    "crays_item_inventory",
+    "crays_training_log",
+    "crays_personal_budget",
+    "crays_pantry",
+    "crays_subscriptions",
+    "crays_personal_webtools",
+    "crays_habits",
+    "crays_personal_preferences",
+    "crays_packing",
+    "crays_learning_plan",
+    "crays_personal_cooking",
+    "crays_quiz_review"
+  ],
+  "baselineSkills": [
+    "weather",
+    "crays-everyday-assistance",
+    "crays-receipt-reading",
+    "crays-personal-dates",
+    "crays-shared-expenses",
+    "crays-feed-reader",
+    "crays-document-exports",
+    "crays-chess",
+    "crays-item-inventory",
+    "crays-training-log",
+    "crays-personal-budget",
+    "crays-pantry",
+    "crays-subscriptions",
+    "crays-personal-webtools",
+    "crays-habits",
+    "crays-personal-preferences",
+    "crays-packing",
+    "crays-learning-plan",
+    "crays-personal-cooking",
+    "crays-quiz-review"
+  ],
+  "baselinePluginAllow": [
+    "openai",
+    "whatsapp",
+    "document-extract",
+    "crays-calculator",
+    "crays-personal-records",
+    "crays-personal-dates",
+    "crays-shared-expenses",
+    "crays-feed-reader",
+    "crays-service-notices",
+    "crays-document-exports",
+    "crays-qr",
+    "crays-chess",
+    "crays-item-inventory",
+    "crays-training-log",
+    "crays-personal-budget",
+    "crays-pantry",
+    "crays-subscriptions",
+    "crays-personal-webtools",
+    "crays-habits",
+    "crays-personal-preferences",
+    "crays-packing",
+    "crays-learning-plan",
+    "crays-personal-cooking",
+    "crays-quiz-review"
+  ],
+  "baselinePluginRoots": [
+    "/opt/crays/openclaw/plugin-artifacts/crays-calculator/9dc61bf9690602b5c8cb0460199160735d70146b2e2ab2b237284c1ad1267241",
+    "/opt/crays/openclaw/plugin-artifacts/crays-personal-records/315bccd5e9d5507617090cce5040cf05538347ec701cf9d33dd850f7762e0356",
+    "/opt/crays/openclaw/plugin-artifacts/crays-personal-dates/14a5123f63e1a67bd5d01ab92e97e3e56ccecc9007a8eca41649bb071ef87741",
+    "/opt/crays/openclaw/plugin-artifacts/crays-shared-expenses/a8fc7d75d3be395a2ac7c1b7dc4233b3b6bf5e42ac109e05ae9e29ea4530fc0a",
+    "/opt/crays/openclaw/plugin-artifacts/crays-feed-reader/46481eb3d47ee26f3b5bb7a577c7ed7e81a9c97fe87ff554fa53397aeb320f7d",
+    "/opt/crays/openclaw/plugin-artifacts/crays-service-notices/a1528a72413c6f55b6d760e11d6a07fb35e451667d38356ab30c094ce2fe1c27",
+    "/opt/crays/openclaw/plugin-artifacts/crays-document-exports/cea34ce3ae897ddef5483d34e33b0a96596c1048b2f1a55904003f28c2098f85",
+    "/opt/crays/openclaw/plugin-artifacts/crays-qr/5173486fc3058967aafa1b097b7ada6e9c8992fd97ce1d99bb1869b5f373f794",
+    "/opt/crays/openclaw/plugin-artifacts/crays-chess/7bb7660806245748ea6ae56deb23e2a2754a7a5bb014d3520939aec68abf9d4d",
+    "/opt/crays/openclaw/plugin-artifacts/crays-item-inventory/25be80ee88b1543350c12ed2523d9b5fe0644996b88e39920adde98615e94e9d",
+    "/opt/crays/openclaw/plugin-artifacts/crays-training-log/2e47d04ebb5f44c1748f5abc578e106a0717d6a0e950f01197364a9a39e20040",
+    "/opt/crays/openclaw/plugin-artifacts/crays-personal-budget/2770097d42125cd5554888d541cc4d02d1e20d1a1057be4671af641b68422f03",
+    "/opt/crays/openclaw/plugin-artifacts/crays-pantry/9bfdacf9446094a471b6662ef0d0e4b760de84c6200a9b8777c1fb49eae50a20",
+    "/opt/crays/openclaw/plugin-artifacts/crays-subscriptions/b47585084ebee3e5d19dddca86b8fbeea863d96899a0a6b0fe987b162f583b0f",
+    "/opt/crays/openclaw/plugin-artifacts/crays-personal-webtools/bb62c5f7c4db952d0af573dfb0db4dcff14fb1ec0601ecbd42f364c9e64b785e",
+    "/opt/crays/openclaw/plugin-artifacts/crays-habits/525731b5d4f07f772f30805719bfd3bec6ae5a67899d76f0444ac40c042db413",
+    "/opt/crays/openclaw/plugin-artifacts/crays-personal-preferences/04eb4614f3010cceb04b2eddf45113dff79a87ea68144722976805b928e70f82",
+    "/opt/crays/openclaw/plugin-artifacts/crays-packing/9c71e07a66cfa7b93158ca720c8ef82e28904583a02de1fcabc017ad7792b713",
+    "/opt/crays/openclaw/plugin-artifacts/crays-learning-plan/fe73d8f467c1a4c39c86428b81fc981d86f73c0b605493805f52441d818b115b",
+    "/opt/crays/openclaw/plugin-artifacts/crays-personal-cooking/bb9711d8f9d60a714689fd4126b637694b3b7f2caf93e7c7b3d7b09e7b9d1371",
+    "/opt/crays/openclaw/plugin-artifacts/crays-quiz-review/13fd67fd6b2e9079aef14b993fc24d2900f20e7e6f3ed62f6f96e57ae892ab3f"
+  ],
+  "actualRootFiles": [
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-personal-planner/34ef643e42c2fe8dc54df5be27f3414f6be566a62035a5a5d1b4301ca6dccc73/CRAYS_ARTIFACT_MANIFEST.json",
+      "bytes": 1299,
+      "sha256": "34ef643e42c2fe8dc54df5be27f3414f6be566a62035a5a5d1b4301ca6dccc73"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-personal-planner/34ef643e42c2fe8dc54df5be27f3414f6be566a62035a5a5d1b4301ca6dccc73/index.mjs",
+      "bytes": 6803,
+      "sha256": "1c5a2e62d5bf32d16bc56b2522d3e065689517d9b165df64d2b507c224042a9e"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-personal-planner/34ef643e42c2fe8dc54df5be27f3414f6be566a62035a5a5d1b4301ca6dccc73/input.mjs",
+      "bytes": 5497,
+      "sha256": "77799450a60c6ea3f55b497b8f10548fbb7fc126f4124c52e7e424a4af6ba808"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-personal-planner/34ef643e42c2fe8dc54df5be27f3414f6be566a62035a5a5d1b4301ca6dccc73/openclaw.plugin.json",
+      "bytes": 363,
+      "sha256": "d502393faedf5aca637b0c845814462b62a0a083ac104354848f44fbe866d73c"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-personal-planner/34ef643e42c2fe8dc54df5be27f3414f6be566a62035a5a5d1b4301ca6dccc73/package.json",
+      "bytes": 420,
+      "sha256": "d44d9fe9fb6f9bc87ee389da804dcecc89c18d67a4a5705a69c38fac012aff3a"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-personal-planner/34ef643e42c2fe8dc54df5be27f3414f6be566a62035a5a5d1b4301ca6dccc73/rules.mjs",
+      "bytes": 1003,
+      "sha256": "3f96a5bf7ff944603bb8c499cb56fea9519640af4e76900b5790047538368762"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-personal-planner/34ef643e42c2fe8dc54df5be27f3414f6be566a62035a5a5d1b4301ca6dccc73/schedule.mjs",
+      "bytes": 2052,
+      "sha256": "e3a9f86e74c59ec86c7e2ebfd353b4c8f4fae6fca133f30194b5a90b6386330e"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-personal-planner/34ef643e42c2fe8dc54df5be27f3414f6be566a62035a5a5d1b4301ca6dccc73/store.mjs",
+      "bytes": 11863,
+      "sha256": "df03d1104798ba57b9ccc0ee78de36831b289d8607e06b0ba0d4dac9bed25714"
+    },
+    {
+      "path": "/opt/crays/openclaw/plugin-artifacts/crays-personal-planner/34ef643e42c2fe8dc54df5be27f3414f6be566a62035a5a5d1b4301ca6dccc73/time.mjs",
+      "bytes": 1435,
+      "sha256": "81d9397824f0673736642e81d11139dec8c8fbcec87a05d7ee3f01bf4cccf834"
+    },
+    {
+      "path": "/opt/crays/openclaw/skill-artifacts/crays-personal-planner/f9b1ed42a5a267f3eb83d8f2b616a92c6b84db17a0045efb7f70e072ccaadc02/CRAYS_SKILL_ARTIFACT_MANIFEST.json",
+      "bytes": 569,
+      "sha256": "f9b1ed42a5a267f3eb83d8f2b616a92c6b84db17a0045efb7f70e072ccaadc02"
+    },
+    {
+      "path": "/opt/crays/openclaw/skill-artifacts/crays-personal-planner/f9b1ed42a5a267f3eb83d8f2b616a92c6b84db17a0045efb7f70e072ccaadc02/skills/crays-personal-planner/SKILL.md",
+      "bytes": 2088,
+      "sha256": "a0d4eab3eadd2ce0fe50dadec6517f8afd8944c14764ea0d080ee04d4d0b8617"
+    }
+  ],
+  "actualProofs": [
+    {
+      "path": "/srv/crays/worktrees/openclaw-phase5-019ff983/docs/architecture/evidence/CRAYS_AGENT_PERSONAL_PLANNER_COMPONENT_AND_CANONICAL_SOURCE_2026_10_16.json",
+      "bytes": 5990,
+      "sha256": "5925b5e7b4be4d84aeca05e9add93165f532d32047fc7f190238ddca462a10a2"
+    }
+  ],
+  "nativeOriginalQualificationPending": false,
+  "nativeEntry": {
+    "enabled": true
+  },
+  "ownerActivationAllowed": false,
+  "externalCalendarOrCronAuthorityAdded": false,
+  "actualOriginalNativeProof": {
+    "path": "/srv/crays/worktrees/openclaw-phase5-019ff983/docs/architecture/evidence/CRAYS_AGENT_PERSONAL_PLANNER_ORIGINAL_NATIVE_2026_10_16.json",
+    "bytes": 4453,
+    "sha256": "3427ba9a43056768e464cd258fc570f95f9e193791058ad1ccd5ac89c22b10cc",
+    "expectedStatus": "ACTUAL_ORIGINAL_NATIVE_PASS6",
+    "proofKey": "nativeProof",
+    "caseNames": [
+      "original-optional-contextV2-create-and-schedule-around-explicit-busy-time",
+      "original-native-accept-correct-task-lifecycle-and-immutable-history",
+      "two-native-physical-owners-reload-idempotency-and-version-CAS",
+      "original-optional-tool-discovery-owner-session-and-agent-denials",
+      "original-native-budget-revocation-cancellation-and-config-currentness",
+      "original-native-forget-content-free-replay-and-other-owner-retention"
+    ],
+    "evidence": {
+      "RESULT.json": {
+        "path": "/srv/crays/openclaw/oca063/general-skills-first-wave-20261015/personal-planner-original-native-preparation-v1/actual-run/RESULT.json",
+        "bytes": 3633,
+        "sha256": "9f6b8453a391f5ac576b8bfc0cec227ab4197697cb18f01dbf814efa6859306f"
+      },
+      "ACTUAL_TERMINAL.json": {
+        "path": "/srv/crays/openclaw/oca063/general-skills-first-wave-20261015/personal-planner-original-native-preparation-v1/actual-run/ACTUAL_TERMINAL.json",
+        "bytes": 1099,
+        "sha256": "5b6aff231481e4f13716ef4d3f9664b8cd0f2e8f331e238656d22d920500a168"
+      },
+      "OWN_LEASE_ISSUED.json": {
+        "path": "/srv/crays/openclaw/oca063/general-skills-first-wave-20261015/personal-planner-original-native-preparation-v1/actual-run/OWN_LEASE_ISSUED.json",
+        "bytes": 675,
+        "sha256": "ec4855023f44cc70dbb13c34bd09bcdd2636772371bbf1ea7e4055b32c8d1586"
+      },
+      "ONLY_OWN_LEASE_RETURNED.json": {
+        "path": "/srv/crays/openclaw/oca063/general-skills-first-wave-20261015/personal-planner-original-native-preparation-v1/actual-run/ONLY_OWN_LEASE_RETURNED.json",
+        "bytes": 727,
+        "sha256": "bb67a56e5d57f0bff3de949954b6748b559b5080254f6dd389ff451e6e9e7a35"
+      }
+    }
+  }
+}

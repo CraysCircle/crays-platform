@@ -1,0 +1,812 @@
+{
+  "schema": "crays.core-untracked-protected-materializer-source.v1",
+  "sourceHead": "c2018d04f6a52d8716326a098dde7624cbb18963",
+  "files": [
+    {
+      "sourcePath": "infra/openclaw/connections/personal-account/test-envelope.mjs",
+      "originalBytes": 3276,
+      "originalSHA256": "1272256391e67112fb2d0feaaf353a1c5ee1876b84c7e8201e6ef038d6d39beb",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/connections/personal-account/test-envelope.mjs.template",
+      "templateBytes": 3324,
+      "templateSHA256": "9b7d471d65e7b5acc4eddb09fd3f6d3862a500c4124a32c94926e5ab8b1d59df",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_f438faf78481af324c6257e2__",
+          "categories": [
+            "credential_shaped_literal"
+          ],
+          "sourceCharacterStart": 870,
+          "sourceCharacterEnd": 905,
+          "occurrences": 1
+        },
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_ecd8b960ea18113b81f727da__",
+          "categories": [
+            "credential_shaped_literal"
+          ],
+          "sourceCharacterStart": 921,
+          "sourceCharacterEnd": 938,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/connections/personal-account/test-postgres-repository.mjs",
+      "originalBytes": 14921,
+      "originalSHA256": "8e29c7a275c91db7d6402d7fbbd7a85ade7acf1aff9f0d86ed65331d59981ef0",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/connections/personal-account/test-postgres-repository.mjs.template",
+      "templateBytes": 15167,
+      "templateSHA256": "f8df14e969dc37959f2f2b0c7ebbaf4cf6a7342b028974720af74f6999edd780",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_129f2f7b65f04449e49381aa__",
+          "categories": [
+            "credential_shaped_literal"
+          ],
+          "sourceCharacterStart": 8475,
+          "sourceCharacterEnd": 8501,
+          "occurrences": 1
+        },
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_ed1517f83d9d089cb64967cc__",
+          "categories": [
+            "credential_shaped_literal"
+          ],
+          "sourceCharacterStart": 10379,
+          "sourceCharacterEnd": 10400,
+          "occurrences": 1
+        },
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_3171ad45ad723a540418807c__",
+          "categories": [
+            "credential_shaped_literal"
+          ],
+          "sourceCharacterStart": 10343,
+          "sourceCharacterEnd": 10363,
+          "occurrences": 2
+        },
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_cec9a21b78670ca657de0d67__",
+          "categories": [
+            "credential_shaped_literal"
+          ],
+          "sourceCharacterStart": 8441,
+          "sourceCharacterEnd": 8459,
+          "occurrences": 1
+        },
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_8715df25dc4eb1c5a13ebab5__",
+          "categories": [
+            "credential_shaped_literal"
+          ],
+          "sourceCharacterStart": 4634,
+          "sourceCharacterEnd": 4651,
+          "occurrences": 1
+        },
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_afd0ab8e933f1b1e748c2d3a__",
+          "categories": [
+            "credential_shaped_literal"
+          ],
+          "sourceCharacterStart": 4602,
+          "sourceCharacterEnd": 4618,
+          "occurrences": 2
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v1/test-approved-general-baseline.mjs",
+      "originalBytes": 4440,
+      "originalSHA256": "b6271cafde42af26bbdc08beae8dc9dc61c0f225615c99eb76398938ce53fffc",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v1/test-approved-general-baseline.mjs.template",
+      "templateBytes": 4630,
+      "templateSHA256": "4a13e92aa026dc6d6895f12d382c83c76ab7dc7db6edc2907c047587fac07ea7",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_ea779e4445c87714eefe1b41__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 2295,
+          "sourceCharacterEnd": 2307,
+          "occurrences": 4
+        },
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_a5943fa56ecacdc9ab3616e3__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 2318,
+          "sourceCharacterEnd": 2330,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/test-approved-general-baseline.mjs",
+      "originalBytes": 6251,
+      "originalSHA256": "c00fb8a510316219998fbed6337437546051225410c63f415db1a0cacf6180cd",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v2/test-approved-general-baseline.mjs.template",
+      "templateBytes": 6517,
+      "templateSHA256": "3d2cbdaf16d257501aa28d9979a948f099ec13b052985841763ef75f8a4f67b2",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_f0c3f5ebfd170dbfc0d41336__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 2436,
+          "sourceCharacterEnd": 2448,
+          "occurrences": 6
+        },
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_fe0b9c0ee13b2c7b467e8301__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 2459,
+          "sourceCharacterEnd": 2471,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/test-approved-general-baseline.mjs",
+      "originalBytes": 7278,
+      "originalSHA256": "1997affb7a33620ac5838c65ffc0a48d4f3e177ee8fd872b9037a1745cca8cd8",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v3/test-approved-general-baseline.mjs.template",
+      "templateBytes": 7582,
+      "templateSHA256": "dc0f096e7536d6e4ffd3e992d0201536b3f3e5afe0910358ea5f8d452a68e273",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_9a115cb2a7aca41e429198e7__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 2571,
+          "sourceCharacterEnd": 2583,
+          "occurrences": 7
+        },
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_18b003ad14e9fc0f714a466b__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 2594,
+          "sourceCharacterEnd": 2606,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v5-translation-video/test-approved-general-baseline.mjs",
+      "originalBytes": 8665,
+      "originalSHA256": "4e7e985112f66402d568fb83893b22a6530565ff4f3ed63588376d6bf8cbb5b8",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v5-translation-video/test-approved-general-baseline.mjs.template",
+      "templateBytes": 8969,
+      "templateSHA256": "8ceff9c87a75bc4ad62cede34cb1b7383b040ede8e41065cc0f19f4916bf09f1",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_0c60f8e4eb82a7de1268df81__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 2878,
+          "sourceCharacterEnd": 2890,
+          "occurrences": 7
+        },
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_1d0816813e0c2d328e8ed7ab__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 2904,
+          "sourceCharacterEnd": 2916,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/prepare-approved-general-runtime.candidate-v2.test.mjs",
+      "originalBytes": 6828,
+      "originalSHA256": "f1fd379e0c687c68d919c3a629648ceded2e79a413fdb51636ec7b937c17c129",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/prepare-approved-general-runtime.candidate-v2.test.mjs.template",
+      "templateBytes": 6866,
+      "templateSHA256": "3f87aac67e9569f630d5f7f4dbcf9909c4c40817efc56162f01987f67bd81f40",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_44c160f8e0c1cc87875c5d1f__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 3441,
+          "sourceCharacterEnd": 3453,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/prepare-approved-general-runtime.candidate-v3.test.mjs",
+      "originalBytes": 8268,
+      "originalSHA256": "19df0af138e33d0052a5bac9527173eed2640a4e1a0bc658309d3c465050af3e",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/prepare-approved-general-runtime.candidate-v3.test.mjs.template",
+      "templateBytes": 8344,
+      "templateSHA256": "48843cc5eb4680e43e2cc8fbc3d4b205bb6f0e0ca5ad0aa3f4ce94177c496b93",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_f4afa53b6ab6072f450c03a9__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 3454,
+          "sourceCharacterEnd": 3466,
+          "occurrences": 2
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/prepare-approved-general-runtime.candidate-v5.test.mjs",
+      "originalBytes": 9048,
+      "originalSHA256": "ce50558a5cc46dda6b6ca7b05ba92a024b2fb99bc071a566b7ae6e9828b2728c",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/prepare-approved-general-runtime.candidate-v5.test.mjs.template",
+      "templateBytes": 9124,
+      "templateSHA256": "10050fb7370d47a177192f8dc89aed261e7e47204b4b77b27c8d17c840823bb7",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_854d92653fc7d955fc8d009f__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 2760,
+          "sourceCharacterEnd": 2772,
+          "occurrences": 2
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/prepare-approved-general-runtime.candidate.test.mjs",
+      "originalBytes": 6236,
+      "originalSHA256": "e7e60a1d32a2e693cc4605f780c9550343e3019e1dcc19fe8c409f006638daf8",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/prepare-approved-general-runtime.candidate.test.mjs.template",
+      "templateBytes": 6274,
+      "templateSHA256": "a17c851244d1db78693df49a44eb9551e1afc4f81cbb94ed2df1c9eb141cb78a",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_42ca34e1f10e6ab9d60b8a23__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 3438,
+          "sourceCharacterEnd": 3450,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/qualify-approved-general-catalogue.candidate.mjs",
+      "originalBytes": 7777,
+      "originalSHA256": "dc797163e29915fd401139d5815e232db590f9aa72fcbf24eb10a0ac98c5323f",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/qualify-approved-general-catalogue.candidate.mjs.template",
+      "templateBytes": 7815,
+      "templateSHA256": "da2c7243f75017e890b0b2c29949e65acd9d05a08e1973b4c26bfdb633a4cbcd",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_05b035449012d0f60e2c5f61__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 4400,
+          "sourceCharacterEnd": 4412,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/resolve-default-instruction-roots-v1.test.mjs",
+      "originalBytes": 6479,
+      "originalSHA256": "63620a00684e425a2a0c03c6da204203c59ad840b57f5c0ea5ba6710538c66aa",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/resolve-default-instruction-roots-v1.test.mjs.template",
+      "templateBytes": 6517,
+      "templateSHA256": "f53bc3801565f5cfcf04f6b5be3bc7ee428b5ff9572fa5b75f64229f9d2ceb88",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_54c2e5cec36d64245e14e7a4__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 2760,
+          "sourceCharacterEnd": 2772,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-late-integration-v1/gateway.mjs",
+      "originalBytes": 11596,
+      "originalSHA256": "0ccda78fd44a11c01369d395ef0cec6a6d38484061a167c7eb95a7ad849d6221",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-late-integration-v1/gateway.mjs.template",
+      "templateBytes": 11632,
+      "templateSHA256": "765006a5970284eaa7d9ee9f452df12582ada30754571ec65d9f28b395f2065a",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_92aa4c4ac2b694726b5f5b12__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 4844,
+          "sourceCharacterEnd": 4858,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-native-preparation-v1/candidate-overlays/gateway.mjs",
+      "originalBytes": 11596,
+      "originalSHA256": "0ccda78fd44a11c01369d395ef0cec6a6d38484061a167c7eb95a7ad849d6221",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-native-preparation-v1/candidate-overlays/gateway.mjs.template",
+      "templateBytes": 11632,
+      "templateSHA256": "377aaa6afdf4d092adfbd7db2e465698f6450169dbb4ab7eb467cbd73e7b7cb0",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_3b3c55a18079e64221983966__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 4844,
+          "sourceCharacterEnd": 4858,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-native-preparation-v1/code/test-full-gateway-startup.mjs",
+      "originalBytes": 13980,
+      "originalSHA256": "b45e7b94bbd46dee6c5513216676a22c76591575ee57aedf192ad8b4a0695194",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-native-preparation-v1/code/test-full-gateway-startup.mjs.template",
+      "templateBytes": 14016,
+      "templateSHA256": "7f3762171542faa4e24558e5e46c48d13f0fa2157223db8a1d35b26994417f6b",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_3e1a69bfbbcf2cf73ee5d81a__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 2040,
+          "sourceCharacterEnd": 2054,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/assert-cumulative-owner-policy.mjs",
+      "originalBytes": 1470,
+      "originalSHA256": "38437f5e8360630972767de47aacfc8871294ee18883fcad0f3790ef2f8203ac",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/assert-cumulative-owner-policy.mjs.template",
+      "templateBytes": 1584,
+      "templateSHA256": "1f4f003d1b3dd3b513082fcd4c013737811d1903ea42d58c827bbb2fb6df414b",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_1bbc89209480c3ad3b2f0f18__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 253,
+          "sourceCharacterEnd": 265,
+          "occurrences": 3
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/budget/compose-personal-budget-delta.mjs",
+      "originalBytes": 3839,
+      "originalSHA256": "00c029473b100bdb66f691b15198642abd0d2cee3581ebd1f6130b64bcd3c3b2",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/budget/compose-personal-budget-delta.mjs.template",
+      "templateBytes": 3877,
+      "templateSHA256": "8c5895b1456a1d44db6f12ed18d8f43aecfb5e6eed2aa0980f82b765610333fc",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_49f10c58323688646ab5eebb__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 1842,
+          "sourceCharacterEnd": 1854,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/chess-epub/compose-chess-epub-delta.mjs",
+      "originalBytes": 3726,
+      "originalSHA256": "7df0a0c73f9b67c0e85165cd2524ab7b6c657aeda1d386ee17547e3e03a151c3",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/chess-epub/compose-chess-epub-delta.mjs.template",
+      "templateBytes": 3764,
+      "templateSHA256": "7ba5b51923755a52e762a4a7d5bc287573df9e8f7fbad0b272156d52dba9567a",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_eda782218d3b598334fc92df__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 1554,
+          "sourceCharacterEnd": 1566,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/compose-eight-tools-delta.mjs",
+      "originalBytes": 2790,
+      "originalSHA256": "c62bddd1c6a92849a419c47052abe715702d031ceab0c1c7b68570724246d486",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/compose-eight-tools-delta.mjs.template",
+      "templateBytes": 2866,
+      "templateSHA256": "2c79d1b5453a9c70233485327310b8421ad43c00f540178b61bb31db3ed01afe",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_1a372a181bee43a798255298__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 1438,
+          "sourceCharacterEnd": 1450,
+          "occurrences": 2
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/compose-owner-whatsapp-config.mjs",
+      "originalBytes": 6134,
+      "originalSHA256": "a26e4bff12ff39bbe84f8f37311ab35ad337f3e05c513bd4d82fcfcbfe89ed06",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/compose-owner-whatsapp-config.mjs.template",
+      "templateBytes": 6246,
+      "templateSHA256": "07cf3300bd6f00f552dbe8ce0381db15a3aa0dcf815c7a3709f5c5cf23b1caf5",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_b855cb376b180ca91e307090__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 2912,
+          "sourceCharacterEnd": 2926,
+          "occurrences": 1
+        },
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_d05daae50b022669259b28fc__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 3428,
+          "sourceCharacterEnd": 3440,
+          "occurrences": 2
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/compose-six-tools-delta.mjs",
+      "originalBytes": 2917,
+      "originalSHA256": "e77eda5c23c60f55f459d1cd591216c1a82317a8ba1c997f64e54233106bb6d8",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/compose-six-tools-delta.mjs.template",
+      "templateBytes": 2993,
+      "templateSHA256": "adce2f2d5be89ef9e9f1095dcfe4b3d3b458ad0425d7a83e27bf00f26952b4a5",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_fc3164d694d774547e171400__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 1203,
+          "sourceCharacterEnd": 1215,
+          "occurrences": 2
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/exports/compose-ten-tools-export-delta.mjs",
+      "originalBytes": 4463,
+      "originalSHA256": "3658764d9a9743f7b872c9f5eff5ca62f4a88fa393044078575beed630170ffb",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/exports/compose-ten-tools-export-delta.mjs.template",
+      "templateBytes": 4501,
+      "templateSHA256": "e04f8d21d17ac8704cf532cebe81195961d3b513fa7f9e05a9354d09070c695b",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_5eff8bd876fe6fb60b86982d__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 431,
+          "sourceCharacterEnd": 443,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/gateway.mjs",
+      "originalBytes": 11596,
+      "originalSHA256": "0ccda78fd44a11c01369d395ef0cec6a6d38484061a167c7eb95a7ad849d6221",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/gateway.mjs.template",
+      "templateBytes": 11632,
+      "templateSHA256": "50e7a5cdd0796b5e3bd91f0aa03758226f76bba1644b48fc07c9e17b89d7faae",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_a0ccadbabd1e249c0c6a3302__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 4844,
+          "sourceCharacterEnd": 4858,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/habits/compose-personal-habits-delta.mjs",
+      "originalBytes": 4001,
+      "originalSHA256": "69e864d0b99fd73bd37c504a820479b4b3f9bb7fd97a63813965b7dcda463254",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/habits/compose-personal-habits-delta.mjs.template",
+      "templateBytes": 4039,
+      "templateSHA256": "14b09f4f1176e6387d14ab221226f2ff67da8c8ca52287efc7784e3e5d2b7a7d",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_ec6e1281ea541a75da88091d__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 2022,
+          "sourceCharacterEnd": 2034,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/inventory-training/compose-inventory-training-delta.mjs",
+      "originalBytes": 3883,
+      "originalSHA256": "9ce40c2dbcdaa4725bdcc10eac9231bf7d72e7217320a0e008f2528293eb60b7",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/inventory-training/compose-inventory-training-delta.mjs.template",
+      "templateBytes": 3921,
+      "templateSHA256": "31d50b4bfb73b14a1527d47a3cd03d66aae1ca844d165b3d1e5158ac86702bb9",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_e495293b0940f2433c0e00ea__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 1749,
+          "sourceCharacterEnd": 1761,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/learning-plan/compose-personal-learning-plan-delta.mjs",
+      "originalBytes": 5448,
+      "originalSHA256": "84d6354d6ef5e635872f939f0386ec089f758d5479a994572708ff9668d703b0",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/learning-plan/compose-personal-learning-plan-delta.mjs.template",
+      "templateBytes": 5486,
+      "templateSHA256": "123008d62dd47fb8df6f2527b0c9b670e7226420f023d5e18e29dcea48dda2b6",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_3c901740c3ac5f5b6d7a51f7__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 2643,
+          "sourceCharacterEnd": 2655,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/notices/compose-service-notice-delta.mjs",
+      "originalBytes": 3140,
+      "originalSHA256": "c3469b5cb8b100f540a1ca1b0871c01af766f41a8259ae56a47918607134674a",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/notices/compose-service-notice-delta.mjs.template",
+      "templateBytes": 3178,
+      "templateSHA256": "b129623cfe405004cb83ff7d9495b56bb051e9bc77b37a721915a909f672be55",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_5b14519f6e8b332e32a0eba7__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 527,
+          "sourceCharacterEnd": 539,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/packing/compose-personal-packing-delta.mjs",
+      "originalBytes": 4906,
+      "originalSHA256": "be7196b2a7a40339ffb508d695d7100f6e8bc02a49202fa83e8d3cde280e3c2c",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/packing/compose-personal-packing-delta.mjs.template",
+      "templateBytes": 4944,
+      "templateSHA256": "3428d82de5fae389ca96c9ecaf56c8bc243013698d01b6c251d7856fb204c2bb",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_9f505155ae490c235c9cf89f__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 2418,
+          "sourceCharacterEnd": 2430,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/pantry/compose-personal-pantry-delta.mjs",
+      "originalBytes": 3737,
+      "originalSHA256": "cc4f7391ed005a8ffc42f41750ebd79beb1aec5431a35444e530e4dabd3dee64",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/pantry/compose-personal-pantry-delta.mjs.template",
+      "templateBytes": 3775,
+      "templateSHA256": "9396a3ffe7a0f24c856e48262b13a35e5f0d3103cc0495a4b28d293573d346a6",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_ea82c22b8b84e0dfd1bd3aa0__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 1845,
+          "sourceCharacterEnd": 1857,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/qr/compose-qr-create-delta.mjs",
+      "originalBytes": 2956,
+      "originalSHA256": "a743ff039cbf9986312fc795c5f57e3dea13eea8b4f7e4fa7d8954465c5c0849",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/qr/compose-qr-create-delta.mjs.template",
+      "templateBytes": 2994,
+      "templateSHA256": "dd07a36f88ab2bb5ce03d623855e26177ce9ab2db857b5d06811ab8f5712b366",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_14d8c0752ed73e269ffe784c__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 1638,
+          "sourceCharacterEnd": 1650,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/rss/compose-nine-tools-delta.mjs",
+      "originalBytes": 2923,
+      "originalSHA256": "413367820d960eb0c7376de24ed614840b804d9d51db1f1fbeaef61da5ae0caf",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/rss/compose-nine-tools-delta.mjs.template",
+      "templateBytes": 2999,
+      "templateSHA256": "12c0431e02acda5fbe7bbbbc44eeb633211a207824fb59f12e891ac9c5c1da76",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_7a2e6f541ad234d2b175eedf__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 1345,
+          "sourceCharacterEnd": 1357,
+          "occurrences": 2
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/six-formats/compose-six-format-delta.mjs",
+      "originalBytes": 3017,
+      "originalSHA256": "d7c567c8d146723dfe5e927cebfc450f5ee1fb6f03aa5bb1abde20394424d222",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/six-formats/compose-six-format-delta.mjs.template",
+      "templateBytes": 3055,
+      "templateSHA256": "fe7b1f2a37a6a25858a0ab961eb9ad2189d6973b2f333b877c40091390d20cff",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_55c919a798ecb1ec5c8e40f7__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 1558,
+          "sourceCharacterEnd": 1570,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/subscriptions/compose-personal-subscriptions-delta.mjs",
+      "originalBytes": 3857,
+      "originalSHA256": "4bed962108926dbbab06559f2e58d93d0b94f46a66aa76d58328370e553fb9db",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/subscriptions/compose-personal-subscriptions-delta.mjs.template",
+      "templateBytes": 3895,
+      "templateSHA256": "1852688734c3fa7b3b0caecabe043299868db163c6cedea24b4034f5a874bf6d",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_1b29e068b91d6568d4468d32__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 1904,
+          "sourceCharacterEnd": 1916,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/webtools/compose-personal-webtools-delta.mjs",
+      "originalBytes": 3938,
+      "originalSHA256": "04366111b42418b579e6bb6f02fc006b0ad83691d1277ff36659c3ededbf83d0",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/webtools/compose-personal-webtools-delta.mjs.template",
+      "templateBytes": 3976,
+      "templateSHA256": "b8925c220055a39fec319701bdc635861dbb65380a4dfdc8d3f7666da5a57fc1",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_72ed8692a6b7a500d3b622e2__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 1959,
+          "sourceCharacterEnd": 1971,
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "sourcePath": "infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/xlsx/compose-xlsx-delta.mjs",
+      "originalBytes": 2987,
+      "originalSHA256": "c33644821279cc47ae63d784051da9638f05e3cb29745d43d8bafe297a6bd871",
+      "originalMode": "0o664",
+      "templateRelativePath": "untracked-originals/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-stage-source-v1/candidate-stage/code/xlsx/compose-xlsx-delta.mjs.template",
+      "templateBytes": 3025,
+      "templateSHA256": "d053b29d819eb22cdac66133f7534dc50ce089481cfe1017d52e327d619135d9",
+      "bindings": [
+        {
+          "placeholder": "__CRAYS_PRIVATE_LITERAL_73b08b6e7a31a62f258b5c4a__",
+          "categories": [
+            "phone"
+          ],
+          "sourceCharacterStart": 1521,
+          "sourceCharacterEnd": 1533,
+          "occurrences": 1
+        }
+      ]
+    }
+  ],
+  "privateArchiveSHA256": "b93fa671e6e50600e5c5dcd89032ad9f82162fe416f64ead225d16696decf34b",
+  "privateArchiveBytes": 4100312,
+  "originalSourceBodiesPublic": false,
+  "restoreRequiresAlreadyPreservedPrivate848SourceCustodyArchive": true,
+  "phonesOrNamesNotAssumedSyntheticFromAppearance": true,
+  "sourceProgramsExecuted": false,
+  "fullLicenseRecoveryClosure": false
+}

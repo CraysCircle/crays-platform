@@ -1,0 +1,48 @@
+/** Source-only focused V7 regressions. Execute only after exact source adoption/projection. */
+import test from 'node:test';import assert from 'node:assert/strict';
+import fs from 'node:fs';import {createHash} from 'node:crypto';
+import {getPersonalAgentStandardPackage as getV7,createNewPersonalAgentStandardConfigWith124 as createV7} from './new-personal-agent-baseline-config.mjs';
+import {getPersonalAgentStandardPackage as getV6,createNewPersonalAgentStandardConfigWith124 as createV6} from '../personal-agent-standard-package-v6/new-personal-agent-baseline-config.mjs';
+const current=getV7(),prior=getV6(),EXPORT='crays-document-exports',TOOL='crays_document_exports';
+const actualRoot='/opt/crays/openclaw/renderer-artifacts/document-exports-xlsx-v03/d8ac913b1428ceb577e2cb3678ad26cac6bd476c0bbf852d262dd73de42d2714/plugin';
+const skillRoot='/opt/crays/openclaw/skill-artifacts/crays-document-exports/7b85813d43331b02bb396f0d45ed8ccaa9c6b48a530a753b7e8f12b170d10fb7';
+const plugin=p=>p.descriptor.plugins.find(x=>x.id===EXPORT);
+const fixture=(p=current,person='person-one',agent='agent-one')=>({canonicalPersonId:person,agentId:agent,expectedPackageVersion:p.descriptor.version,expectedPackageSha256:p.sha256,modelAccount:{canonicalPersonId:person,agentId:agent,provider:'openai',apiRoute:'openai-chatgpt-responses',modelRef:'openai/gpt-6-astra',state:'PENDING_OWN_LOGIN',readinessReceiptSha256:null},artifactBindings:p.descriptor.plugins.map(x=>({pluginId:x.id,codeSetSha256:x.codeSetSha256,manifestSha256:null,state:'SOURCE_ASSIGNED',admissionReceiptSha256:null}))});
+const exportBinding=x=>x.artifactBindings.find(b=>b.pluginId===EXPORT);
+const admission=x=>{Object.assign(exportBinding(x),{state:'INSTALLATION_ADMISSION_REFERENCE_SUPPLIED',manifestSha256:'d8ac913b1428ceb577e2cb3678ad26cac6bd476c0bbf852d262dd73de42d2714',admissionReceiptSha256:'a'.repeat(64)});return x;};
+function pending(p){assert.equal(p.readiness.runtimeStartAllowed,false);assert.equal(p.readiness.ownAccountVerified,false);assert.equal(p.readiness.artifactAdmissionVerified,false);assert.equal(p.readiness.credentialsInherited,false);assert.equal(p.modelAccountReadiness.referenceVerifiedByFactory,false);assert.equal(p.modelAccountReadiness.state,'PENDING_OWN_LOGIN');}
+
+test('two independent people retain all124 capabilities and10 assignedtools/7skills without runtime authority',()=>{
+ const a=createV7(fixture()),b=createV7(fixture(current,'person-two','agent-two')),old=createV6(fixture(prior));
+ assert.equal(new Set(a.proposal.assignedBindingCapabilityIds).size,124);assert.deepEqual(a.proposal.assignedBindingCapabilityIds,old.proposal.assignedBindingCapabilityIds);assert.deepEqual(b.proposal.assignedBindingCapabilityIds,a.proposal.assignedBindingCapabilityIds);
+ assert.deepEqual(a.proposal.assignedTools,old.proposal.assignedTools);assert.equal(a.proposal.assignedTools.length,10);assert.equal(a.proposal.artifactAssignments.length,6);
+ for(const[k,person]of [['agent-one',a],['agent-two',b]]){assert.equal(person.proposal.nativeConfigFragment.agents.entries[k].skills.length,7);pending(person.proposal);const hook=person.proposal.hookArtifactAssignments[0];assert.equal(hook.accountId,null);assert.equal(hook.recipient,null);assert.equal(hook.channelId,null);assert.equal(hook.nativeConfigEnabled,false);assert.equal(hook.nativeConfigPatch,null);}
+ for(const key of ['stateDir','workspace','agentDir'])assert.notEqual(a.proposal.paths[key],b.proposal.paths[key]);assert.notEqual(a.proposal.personNamespace,b.proposal.personNamespace);assert.deepEqual(a.proposal.standardPackage,b.proposal.standardPackage);
+ assert(!a.proposal.nativeConfigFragment.plugins.allow.includes('crays-service-notices'));
+});
+test('SOURCE_ASSIGNED0.3 stays unregistered; only exact0.3 reference adds one exporttool and correct nested artifactpath',()=>{
+ const source=createV7(fixture()),admitted=createV7(admission(fixture())),s=source.proposal.nativeConfigFragment,c=admitted.proposal.nativeConfigFragment;
+ assert(!s.tools.allow.includes(TOOL));assert(!s.plugins.allow.includes(EXPORT));assert.equal(source.proposal.artifactAssignments.find(x=>x.pluginId===EXPORT).proposedLoadPath,null);
+ assert.deepEqual(c.tools.allow,[...s.tools.allow,TOOL]);assert.deepEqual(c.agents.entries['agent-one'].tools.allow,[...s.agents.entries['agent-one'].tools.allow,TOOL]);assert.equal(c.tools.allow.filter(t=>t===TOOL).length,1);
+ assert.deepEqual(c.plugins.load.paths,[...s.plugins.load.paths,actualRoot]);assert.equal(c.plugins.entries[EXPORT].enabled,true);
+ const assignment=admitted.proposal.artifactAssignments.find(x=>x.pluginId===EXPORT);assert.equal(assignment.proposedLoadPath,actualRoot);assert.equal(assignment.referenceVerifiedByFactory,false);pending(admitted.proposal);
+ assert.equal(admitted.proposal.hookArtifactAssignments[0].nativeConfigEnabled,false);
+});
+test('old0.1 codeSet/manifest/admission cannot masquerade as V7; V6 still accepts its own immutable source intent',()=>{
+ const legacy=plugin(prior),modern=plugin(current);assert.notEqual(legacy.codeSetSha256,modern.codeSetSha256);assert.equal(legacy.version,'0.1.0');assert.equal(modern.version,'0.3.0');
+ for(const alter of [x=>exportBinding(x).codeSetSha256=legacy.codeSetSha256,x=>exportBinding(x).manifestSha256=legacy.knownInstalledManifestSha256,x=>Object.assign(exportBinding(x),{codeSetSha256:legacy.codeSetSha256,manifestSha256:legacy.knownInstalledManifestSha256})]){const input=admission(fixture());alter(input);assert.throws(()=>createV7(input));}
+ const old=createV6(fixture(prior));assert.equal(old.proposal.standardPackage.version,prior.descriptor.version);assert.equal(old.proposal.artifactAssignments.find(b=>b.pluginId===EXPORT).codeSetSha256,legacy.codeSetSha256);
+ assert.equal(createV7(fixture()).proposal.artifactAssignments.find(b=>b.pluginId===EXPORT).codeSetSha256,modern.codeSetSha256);
+});
+test('V6 descriptor/functions and124requirements remain unchanged; actual new instruction file matches assignedhash',()=>{
+ const oldBefore=JSON.stringify(getV6()),a=createV7(fixture()),old=createV6(fixture(prior));
+ assert.deepEqual(current.descriptor.plugins.filter(p=>p.id!==EXPORT),prior.descriptor.plugins.filter(p=>p.id!==EXPORT));assert.deepEqual(current.descriptor.binding124,prior.descriptor.binding124);assert.deepEqual(current.descriptor.additional124SkillAssignments,prior.descriptor.additional124SkillAssignments);assert.deepEqual(current.descriptor.hookPlugins,prior.descriptor.hookPlugins);assert.deepEqual(a.additionalSkillAssignments,old.additionalSkillAssignments);
+ const skill=current.descriptor.addedSkillAssignments.find(s=>s.skillId===EXPORT);assert.equal(skill.proposedExtraDir,skillRoot+'/skills');assert.equal(skill.proposedSkillPath,skillRoot+'/skills/'+EXPORT+'/SKILL.md');
+ const bytes=fs.readFileSync(skill.proposedSkillPath);assert.equal(createHash('sha256').update(bytes).digest('hex'),'cc0172bd076085b29630b4c92ade8ca756e9bda79e951e87585448781e2ad319');assert.equal(skill.contentSha256,createHash('sha256').update(bytes).digest('hex'));
+ assert(a.proposal.nativeConfigFragment.skills.load.extraDirs.includes(skillRoot+'/skills'));assert(!a.proposal.nativeConfigFragment.skills.load.extraDirs.includes(prior.descriptor.addedSkillAssignments.find(s=>s.skillId===EXPORT).proposedExtraDir));
+ assert.equal(JSON.stringify(getV6()),oldBefore);assert(Object.isFrozen(a.proposal.nativeConfigFragment.agents.entries['agent-one'].tools));
+});
+test('__CRAYS_PRIVATE_IDENTIFIER_db272b1973d59ff99c9aef18__ owner/modelroute, credentials, substitutedpath, missing and duplicated bindings fail closed',()=>{
+ for(const mutate of [x=>x.modelAccount.canonicalPersonId='__CRAYS_PRIVATE_IDENTIFIER_db272b1973d59ff99c9aef18__',x=>x.modelAccount.agentId='__CRAYS_PRIVATE_IDENTIFIER_db272b1973d59ff99c9aef18__-agent',x=>x.modelAccount.provider='__CRAYS_PRIVATE_IDENTIFIER_db272b1973d59ff99c9aef18__',x=>x.modelAccount.apiRoute='unsupported-route',x=>x.modelAccount.token='SYNTHETIC_DENIED_TOKEN',x=>x.token='SYNTHETIC_DENIED_TOKEN',x=>x.workspace='/__CRAYS_PRIVATE_IDENTIFIER_db272b1973d59ff99c9aef18__',x=>x.artifactBindings.pop(),x=>x.artifactBindings[0]=structuredClone(exportBinding(x)),x=>exportBinding(x).proposedLoadPath='/__CRAYS_PRIVATE_IDENTIFIER_db272b1973d59ff99c9aef18__']){const input=fixture();mutate(input);assert.throws(()=>createV7(input));}
+ const input=fixture();Object.defineProperty(input,'token',{get(){throw new Error('Accessor must not execute');}});assert.throws(()=>createV7(input),e=>e.message!=='Accessor must not execute');
+});

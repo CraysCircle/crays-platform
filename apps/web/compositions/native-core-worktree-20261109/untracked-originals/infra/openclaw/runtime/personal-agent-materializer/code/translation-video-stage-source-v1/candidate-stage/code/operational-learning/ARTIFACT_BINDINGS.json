@@ -1,0 +1,16 @@
+{
+  "schema": "crays.owner.operational-learning.projection.v1",
+  "actualLearningClosureRoot": "/opt/crays/openclaw/plugin-artifacts/crays-personal-learning-native-closure/5c6993781cfffd1b7859e3aaf2bac1c345ed582a7704b44ab9d218ea16d045ad",
+  "actualLearningManifest": {
+    "path": "/opt/crays/openclaw/plugin-artifacts/crays-personal-learning-native-closure/5c6993781cfffd1b7859e3aaf2bac1c345ed582a7704b44ab9d218ea16d045ad/CRAYS_ARTIFACT_MANIFEST.json",
+    "bytes": 6168,
+    "sha256": "5c6993781cfffd1b7859e3aaf2bac1c345ed582a7704b44ab9d218ea16d045ad"
+  },
+  "oldRecordsPluginRoot": "/opt/crays/openclaw/plugin-artifacts/crays-personal-records/315bccd5e9d5507617090cce5040cf05538347ec701cf9d33dd850f7762e0356",
+  "oldPreferencesPluginRoot": "/opt/crays/openclaw/plugin-artifacts/crays-personal-preferences/04eb4614f3010cceb04b2eddf45113dff79a87ea68144722976805b928e70f82",
+  "recordsPluginRoot": "/run/crays-owner-tools-whatsapp-live/code/self-improving/records",
+  "preferencesPluginRoot": "/run/crays-owner-tools-whatsapp-live/code/self-improving/plugin",
+  "sharedPhysicalStoreModule": "/run/crays-owner-tools-whatsapp-live/code/personal-owner-records/store.mjs",
+  "expectedTools": 26,
+  "expectedSkills": 26
+}

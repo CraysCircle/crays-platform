@@ -1,0 +1,9 @@
+V3 is an additive pure default package for every new personal-agent assignment: four plugin code assignments, eight tool assignments, and all original107 capability IDs. It calls the unchanged V2/Alltag/107 factories with the original two bindings, then adds the final personal-dates and currency-corrected shared-expenses bindings and instruction references. V2 files/descriptor remain immutable.
+
+SOURCE_ASSIGNED plugins have no proposed runtime load path and are not registered in the proposed tool policy. Exact installation/admission references can generate proposed paths, but the factory verifies no artifact, account, identity, runtime or actual user result. Every readiness flag remains false except codeAssigned. Root references must be independently checked by the real runtime consumer. No credentials, profiles, auth state, channels or existing user configuration are copied.
+
+Date/expense instructions are additional source assignments. A date skill reference may point to root-installed code; native loading/user acceptance remains unproven. Expense supports a private calculation, not the full connected shared-expense ledger or payment workflow required by CAP103. All107 business outcomes stay independently UNPROVEN until their real completion proof.
+
+The existing real assignment command now imports this package/factory. It creates new V3 intents only for exact existing account→canonical_person bindings. Its existing JSONB equality/version/hash checks retain previous intents and report ASSIGNMENT_REVIEW_REQUIRED for changed package content; no old assignment is silently rewritten or represented as verified runtime.
+
+Four focused pure tests are prepared in test-new-personal-agent-baseline-config.mjs. No heavy/type/PostgreSQL/unit/model run is performed by source preparation. Refreshed verification input deltas are provided separately; prior actual V2 TypeScript/PostgreSQL receipts remain valid for those earlier exact bytes only.

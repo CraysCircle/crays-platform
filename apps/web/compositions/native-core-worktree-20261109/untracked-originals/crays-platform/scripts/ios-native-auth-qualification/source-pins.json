@@ -1,0 +1,19 @@
+{
+  "scope": "Actual native admission + DAL + mapper/permissions; DB/Auth0browser ports controlled, no live acceptance",
+  "files": {
+    "file:///srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/src/lib/native-core-auth.ts": "5a523fcecb96062837b6af08fd740e057d973448a09af89aef7efa61979b7ecd",
+    "file:///srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/src/lib/native-personal-messenger.ts": "506dad950fb0dffbb3229b50348d4486f8f39d59774604d241ac811e2dc8186f",
+    "file:///srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/src/graphql/native-identity-documents.ts": "4875f7fc998ae94c81d71ad8d4b26cf9a2f36d6514c73c5bfdd9c0cfeb5a52f9",
+    "file:///srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/src/lib/auth-session-mapping.ts": "5c425ac493c8511947805152cc918cb31b05443a24f77dc0bec3767deb60fa6c",
+    "file:///srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/src/lib/auth-boundary.ts": "9e88866507fe8b559f0cf1fe4060f6d0c5aee13ed3e65116673a6d57e76973b4",
+    "file:///srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/src/lib/permissions.ts": "6190955b2d70239e4cb113bfc131f5e2ec86471c5a8db0c5d3e517d976862c15",
+    "file:///srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/src/graphql/native-personal-messenger-documents.ts": "2c96f2f5f61b0f59434e098c1e4a6ead9f3503d219d7dfc8c64e16c2cbd5e05e",
+    "file:///srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/src/lib/role-nostr-policy.ts": "32691521ee63d7878b441a30c19d90ff61f91af4ee69421903f506f8bdef763c",
+    "file:///srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/src/lib/roles.ts": "41e0ce0564eaad2fa2954813368ea5e41b64f6c33ad2d5a6c1884b0eb2fe6fb1",
+    "file:///srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/src/lib/identity.ts": "d724803eae946b245a05eaa69172d763d17999c7605d5e8e0b6a770e9e5f7639",
+    "file:///srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/src/lib/nostr-identity.ts": "5c34c7d98932a7376080b652055605d3a59343c00c285efdfe28aba5378264a6",
+    "file:///srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/src/lib/dal/server-trust.ts": "02f0a3fbf44b40922ca1e356ced51b7958f4dbddba8125ad032d5ed5cafb6dba",
+    "file:///srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/src/lib/portal-access-bridge.ts": "a2a2e542944f71d5c256dd8ea5286ef2cfac33c20da00ec26ab813c3a3cb558d",
+    "file:///srv/crays/worktrees/ios-core-native-01a14a1b/crays-platform/src/lib/modules.ts": "f11ec806fd75c810c6e0bfd4a5f4d4ebda84198480ddba8e23f27c61646f4da7"
+  }
+}

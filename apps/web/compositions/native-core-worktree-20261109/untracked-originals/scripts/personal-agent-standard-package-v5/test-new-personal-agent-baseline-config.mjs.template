@@ -1,0 +1,29 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {getPersonalAgentStandardPackage,createNewPersonalAgentStandardConfigWith124 as create} from './new-personal-agent-baseline-config.mjs';
+import {getPersonalAgentStandardPackage as getV4,createNewPersonalAgentStandardConfigWith124 as createV4} from '../personal-agent-standard-package-v4/new-personal-agent-baseline-config.mjs';
+const standard=getPersonalAgentStandardPackage(),old=getV4();
+const fixture=(person='person-one',agent='agent-one')=>({canonicalPersonId:person,agentId:agent,expectedPackageVersion:standard.descriptor.version,expectedPackageSha256:standard.sha256,modelAccount:{canonicalPersonId:person,agentId:agent,provider:'openai',apiRoute:'openai-chatgpt-responses',modelRef:'openai/gpt-6-astra',state:'PENDING_OWN_LOGIN',readinessReceiptSha256:null},artifactBindings:standard.descriptor.plugins.map(p=>({pluginId:p.id,codeSetSha256:p.codeSetSha256,manifestSha256:null,state:'SOURCE_ASSIGNED',admissionReceiptSha256:null}))});
+const prior=x=>createV4({...x,expectedPackageVersion:old.descriptor.version,expectedPackageSha256:old.sha256,artifactBindings:x.artifactBindings.filter(b=>old.descriptor.plugins.some(p=>p.id===b.pluginId))});
+test('two fresh users receive identical nine-tool/124 baseline without inherited state or provider readiness',()=>{
+ const input=fixture(),snapshot=structuredClone(input),a=create(input),b=create(fixture('person-two','agent-two'));
+ assert.deepEqual(input,snapshot);assert.deepEqual(a.proposal.standardPackage,b.proposal.standardPackage);assert.equal(a.proposal.assignedTools.length,9);assert.equal(a.proposal.artifactAssignments.length,5);assert.equal(a.proposal.nativeConfigFragment.agents.entries['agent-one'].skills.length,6);
+ assert.deepEqual(a.proposal.assignedBindingCapabilityIds,prior(input).proposal.assignedBindingCapabilityIds);assert.equal(a.proposal.assignedBindingCapabilityIds.length,124);
+ for(const k of ['stateDir','workspace','agentDir'])assert.notEqual(a.proposal.paths[k],b.proposal.paths[k]);
+ assert.equal(a.proposal.modelAccountReadiness.state,'PENDING_OWN_LOGIN');assert.equal(a.proposal.readiness.runtimeStartAllowed,false);assert.equal(a.proposal.readiness.all124Ready,false);
+ assert(!a.proposal.nativeConfigFragment.tools.allow.includes('crays_feed_reader'));assert.equal(a.proposal.artifactAssignments.at(-1).proposedLoadPath,null);assert(Object.isFrozen(a.proposal));
+});
+test('RSS install reference adds only RSS tool/plugin paths, never runtime/connection proof',()=>{
+ const x=fixture(),rss=x.artifactBindings.at(-1);rss.state='INSTALLATION_ADMISSION_REFERENCE_SUPPLIED';rss.manifestSha256=standard.descriptor.plugins.at(-1).knownInstalledManifestSha256;rss.admissionReceiptSha256='a'.repeat(64);
+ const result=create(x),baseline=prior(x),cfg=result.proposal.nativeConfigFragment;
+ assert.deepEqual(cfg.tools.allow,[...baseline.proposal.nativeConfigFragment.tools.allow,'crays_feed_reader']);assert.deepEqual(cfg.plugins.load.paths,[...baseline.proposal.nativeConfigFragment.plugins.load.paths,standard.descriptor.plugins.at(-1).artifactRoot+'/'+rss.manifestSha256]);
+ assert.equal(cfg.plugins.entries['crays-feed-reader'].enabled,true);assert.equal(result.proposal.artifactAssignments.at(-1).referenceVerifiedByFactory,false);assert.equal(result.proposal.readiness.runtimeStartAllowed,false);assert.equal(result.proposal.modelAccountReadiness.referenceVerifiedByFactory,false);
+});
+test('immutable V4 package records, all124 IDs and pending per-capability outcomes retained',()=>{
+ assert.deepEqual(standard.descriptor.plugins.slice(0,4),old.descriptor.plugins);assert.deepEqual(standard.descriptor.additional124SkillAssignments,old.descriptor.additional124SkillAssignments);assert.deepEqual(standard.descriptor.binding124,old.descriptor.binding124);
+ const x=fixture(),a=create(x),b=prior(x);assert.deepEqual(a.additionalSkillAssignments,b.additionalSkillAssignments);assert.deepEqual(a.proposal.artifactAssignments.slice(0,4),b.proposal.artifactAssignments);assert.equal(standard.descriptor.plugins.at(-1).files.length,333);assert.equal(a.addedSkillAssignments.length,b.addedSkillAssignments.length+1);
+});
+test('reject wrong, duplicated or missing RSS bindings, package drift, forged own-login or credentials',()=>{
+ const changes=[x=>x.expectedPackageVersion=old.descriptor.version,x=>x.expectedPackageSha256='0'.repeat(64),x=>x.artifactBindings.pop(),x=>x.artifactBindings[0]=structuredClone(x.artifactBindings.at(-1)),x=>x.artifactBindings.at(-1).codeSetSha256='0'.repeat(64),x=>x.artifactBindings.at(-1).manifestSha256='b'.repeat(64),x=>x.modelAccount.canonicalPersonId='__CRAYS_PRIVATE_IDENTIFIER_7eb863a3b1da45472861bc2e__',x=>x.token='forbidden',x=>x.modelAccount.token='forbidden'];
+ for(const change of changes){const x=fixture();change(x);assert.throws(()=>create(x));}
+ const x=fixture();Object.defineProperty(x,'artifactBindings',{get(){throw new Error('getter must not execute');}});assert.throws(()=>create(x),/Exact plain data/);
+});

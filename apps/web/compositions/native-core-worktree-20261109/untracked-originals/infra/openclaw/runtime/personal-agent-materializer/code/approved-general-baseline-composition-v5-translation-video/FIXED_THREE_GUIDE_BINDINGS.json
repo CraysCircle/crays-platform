@@ -1,0 +1,88 @@
+{
+  "schema": "crays.approved-general-baseline.v5.fixed-three-guides.source.v1",
+  "sourceOnly": true,
+  "baselineInstructionNames": [
+    "weather",
+    "crays-everyday-assistance",
+    "crays-receipt-reading",
+    "crays-personal-dates",
+    "crays-shared-expenses",
+    "crays-feed-reader",
+    "crays-document-exports",
+    "crays-chess",
+    "crays-item-inventory",
+    "crays-training-log",
+    "crays-personal-budget",
+    "crays-pantry",
+    "crays-subscriptions",
+    "crays-personal-webtools",
+    "crays-habits",
+    "crays-personal-preferences",
+    "crays-packing",
+    "crays-learning-plan",
+    "crays-personal-cooking",
+    "crays-quiz-review",
+    "crays-personal-planner",
+    "Word / DOCX",
+    "Excel / XLSX",
+    "Powerpoint / PPTX",
+    "language-learning",
+    "Data Analysis",
+    "crays-voice-translation",
+    "crays-expedia-search",
+    "crays-cited-research"
+  ],
+  "weather": {
+    "name": "crays-weather-public",
+    "root": "/opt/crays/openclaw/skill-artifacts/crays-weather-public/5f118f25f96738d5493970efa14fb499573f1e681169a2d986c27a0eeea56313",
+    "extraDir": "/opt/crays/openclaw/skill-artifacts/crays-weather-public/5f118f25f96738d5493970efa14fb499573f1e681169a2d986c27a0eeea56313/skills",
+    "publishedGuide": {
+      "path": "/opt/crays/openclaw/skill-artifacts/crays-weather-public/5f118f25f96738d5493970efa14fb499573f1e681169a2d986c27a0eeea56313/skills/crays-weather-public/SKILL.md",
+      "bytes": 2453,
+      "sha256": "a4cb0c8aca8109c536d04428810d52b42202545c80e6f6d52e46b7cb20917468"
+    },
+    "publishedManifest": {
+      "path": "/opt/crays/openclaw/skill-artifacts/crays-weather-public/5f118f25f96738d5493970efa14fb499573f1e681169a2d986c27a0eeea56313/PROPOSED_SKILL_ARTIFACT_MANIFEST.json",
+      "bytes": 328,
+      "sha256": "5f118f25f96738d5493970efa14fb499573f1e681169a2d986c27a0eeea56313"
+    }
+  },
+  "sharedTwoGuideBindings": {
+    "path": "/srv/crays/worktrees/openclaw-phase5-019ff983/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-batch-v1/TRANSLATION_VIDEO_BINDINGS.json",
+    "bytes": 5149,
+    "sha256": "046c37ca559f77fb597f157578820b2c4a00a051e0585307c0c2cee2f206e2cf"
+  },
+  "sharedTwoGuideComposer": {
+    "path": "/srv/crays/worktrees/openclaw-phase5-019ff983/infra/openclaw/runtime/personal-agent-materializer/code/translation-video-batch-v1/compose-translation-video-batch.mjs",
+    "bytes": 7411,
+    "sha256": "9e0651ba3d7cea304773ec0f3c1ee2c604709f847e2b9fc303154a46cd5e0a98"
+  },
+  "unchangedV4SourcePins": [
+    {
+      "path": "/srv/crays/worktrees/openclaw-phase5-019ff983/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v4-real-factory/compose-approved-general-baseline.mjs",
+      "bytes": 6322,
+      "sha256": "d0fb2977bee827220f36748959bc6f6dc3534ecdc821ca688adb29512d25ccaf"
+    },
+    {
+      "path": "/srv/crays/worktrees/openclaw-phase5-019ff983/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v4-real-factory/compose-channel-independent-baseline.mjs",
+      "bytes": 4468,
+      "sha256": "defeae3bf1fb0a5a774eda5e4002c320ab0cfa5d8eefb5707c64bb468f2c3159"
+    },
+    {
+      "path": "/srv/crays/worktrees/openclaw-phase5-019ff983/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v4-real-factory/compose-expedia-search-delta.mjs",
+      "bytes": 5544,
+      "sha256": "bc73d288168157e54f4d44cd8d224698bc7d2a6239fa9cfb199543a8c29df6eb"
+    },
+    {
+      "path": "/srv/crays/worktrees/openclaw-phase5-019ff983/infra/openclaw/runtime/personal-agent-materializer/code/approved-general-baseline-composition-v4-real-factory/compose-explicit-speech-delta.mjs",
+      "bytes": 2456,
+      "sha256": "80b37d457dbd6e69ed2bd493e26ec0e42555c3d76c8a4e73fce261e48d2b7f3b"
+    }
+  ],
+  "instructionCount": 32,
+  "connectedOwnWhatsAppToolCount": 30,
+  "channelIndependentToolCount": 29,
+  "channelIndependentReminderStillPending": true,
+  "nativeRegistryLoaded": false,
+  "defaultFactorySwitched": false
+}

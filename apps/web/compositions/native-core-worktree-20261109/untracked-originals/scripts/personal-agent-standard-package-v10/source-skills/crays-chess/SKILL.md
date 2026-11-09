@@ -1,0 +1,10 @@
+---
+name: crays-chess
+description: Play a persistent private chess game with validated moves, FEN/PGN exports and a board view.
+---
+Use only the actual `crays_chess` tool for game state. If unavailable, say this branch is not ready; never invent a saved game, move, graphic delivery or tool result.
+Create a new game only when the user asks; choose their color explicitly. A supplied FEN starts a new game from that position and does not import prior repetition history. PGN is an export; PGN upload/import is not supported by this version.
+Keep the returned game ID. Read it to obtain the current exact version before a move, opponent move or deletion. Do not silently switch games or create a replacement when an ID is missing. Every write requires a fresh idempotency key, reused only for the exact same request retry. On a replay receipt read the same ID; never repeat an opponent move.
+Use from/to squares and explicit q/r/b/n promotion when needed. Only the user's color can move via `move`. Request `opponent` for the other color's turn. This opponent selects a random legal move; it is not a strategic engine or rated chess AI. Explain this honestly if asked about strength.
+Read real check, checkmate, stalemate and draw results. Do not declare outcomes from prose alone. Persisted move history is replayed through the legal engine after reload. Ask before deleting a game.
+A read result contains FEN, PGN and legacy fixed SVG source. When the user asks to see the board, call `board` with the exact saved game ID and current expectedVersion. The returned PNG is a labelled snapshot of that confirmed version; use its same own file path with normal final MEDIA. A file creation result does not prove delivery. If the board version changes, read the same game again and request its new version; never silently create another game. PNG rendering/normal MEDIA are not operationally qualified until their actual evidence exists. Native handset delivery, new-user default assignment and full capability acceptance remain separate.

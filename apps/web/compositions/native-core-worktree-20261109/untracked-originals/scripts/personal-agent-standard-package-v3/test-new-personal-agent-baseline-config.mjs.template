@@ -1,0 +1,34 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {getPersonalAgentStandardPackage,createNewPersonalAgentStandardConfigWith107 as create} from './new-personal-agent-baseline-config.mjs';
+const standard=getPersonalAgentStandardPackage();
+const fixture=(person='person-one',agent='agent-one')=>({canonicalPersonId:person,agentId:agent,expectedPackageVersion:standard.descriptor.version,expectedPackageSha256:standard.sha256,
+ modelAccount:{canonicalPersonId:person,agentId:agent,provider:'openai',apiRoute:'openai-chatgpt-responses',modelRef:'openai/gpt-6-astra',state:'PENDING_OWN_LOGIN',readinessReceiptSha256:null},
+ artifactBindings:standard.descriptor.plugins.map(p=>({pluginId:p.id,codeSetSha256:p.codeSetSha256,manifestSha256:null,state:'SOURCE_ASSIGNED',admissionReceiptSha256:null}))});
+test('V3 assigns four exact plugins/eight tools/107 IDs without installing or loading source-only tools',()=>{
+ const input=fixture(),before=structuredClone(input),result=create(input),proposal=result.proposal;
+ assert.deepEqual(input,before);assert.equal(standard.descriptor.plugins.length,4);assert.equal(proposal.artifactAssignments.length,4);assert.equal(proposal.assignedTools.length,8);
+ assert.deepEqual(proposal.assignedBindingCapabilityIds,Array.from({length:107},(_,i)=>'B2C-CAP-'+String(i+1).padStart(3,'0')));
+ assert.deepEqual(proposal.nativeConfigFragment.tools.allow,['read','web_fetch','web_search','pdf']);assert.deepEqual(proposal.nativeConfigFragment.plugins.load.paths,[]);
+ assert.deepEqual(proposal.nativeConfigFragment.agents.entries['agent-one'].skills,['weather','crays-everyday-assistance','crays-receipt-reading','crays-personal-dates','crays-shared-expenses']);
+ for(const [key,value]of Object.entries(proposal.readiness))if(key!=='codeAssigned')assert.equal(value,false,key);
+ for(const skill of result.addedSkillAssignments){assert.equal(skill.nativeLoadVerified,false);assert.equal(skill.artifactReferenceVerifiedByFactory,false);assert.equal(skill.runtimeStartAllowed,false);}
+ assert.equal(result.partialCapabilitySupport[0].fullOutcomeProven,false);assert.equal(Object.isFrozen(result),true);
+});
+test('two users get same code assignment but isolated namespaces and separately supplied own account references',()=>{
+ const a=fixture(),b=fixture('person-two','agent-two');for(const [input,hash]of [[a,'a'],[b,'b']]){input.modelAccount.state='OWN_ACCOUNT_REFERENCE_SUPPLIED';input.modelAccount.readinessReceiptSha256=hash.repeat(64);}
+ const one=create(a).proposal,two=create(b).proposal;assert.deepEqual(one.assignedTools,two.assignedTools);
+ for(const name of ['stateDir','workspace','agentDir'])assert.notEqual(one.paths[name],two.paths[name]);
+ assert.equal(one.modelAccountReadiness.canonicalPersonId,'person-one');assert.equal(two.modelAccountReadiness.canonicalPersonId,'person-two');assert.notEqual(one.modelAccountReadiness.readinessReceiptSha256,two.modelAccountReadiness.readinessReceiptSha256);
+ assert.equal(one.readiness.ownAccountVerified,false);assert.equal(two.readiness.ownAccountVerified,false);assert.equal(Object.hasOwn(one.nativeConfigFragment.agents.entries,'agent-two'),false);
+});
+test('exact manifest references propose all eight tool routes while never minting installation or runtime verification',()=>{
+ const input=fixture();for(const b of input.artifactBindings){const p=standard.descriptor.plugins.find(p=>p.id===b.pluginId);b.state='INSTALLATION_ADMISSION_REFERENCE_SUPPLIED';b.manifestSha256=p.expectedArtifactManifestSha256??p.knownInstalledManifestSha256;b.admissionReceiptSha256='c'.repeat(64);}
+ const result=create(input),cfg=result.proposal.nativeConfigFragment;
+ assert.equal(cfg.plugins.load.paths.length,4);assert.deepEqual(cfg.tools.allow,result.proposal.assignedTools);assert.deepEqual(cfg.agents.entries['agent-one'].tools.allow,cfg.tools.allow);
+ assert(cfg.plugins.load.paths.includes('/opt/crays/openclaw/plugin-artifacts/crays-personal-dates/14a5123f63e1a67bd5d01ab92e97e3e56ccecc9007a8eca41649bb071ef87741'));
+ assert(cfg.plugins.load.paths.includes('/opt/crays/openclaw/plugin-artifacts/crays-shared-expenses/a8fc7d75d3be395a2ac7c1b7dc4233b3b6bf5e42ac109e05ae9e29ea4530fc0a'));
+ assert(result.proposal.artifactAssignments.every(b=>b.referenceVerifiedByFactory===false));assert.equal(result.proposal.readiness.artifactAdmissionVerified,false);assert.equal(result.proposal.readiness.runtimeStartAllowed,false);
+});
+test('other-person account, extra credential fields, artifact/package drift and unsupported manifest fail closed',()=>{
+ for(const mutate of [x=>x.modelAccount.canonicalPersonId='__CRAYS_PRIVATE_IDENTIFIER_6dc113eb0985609e4667e9eb__',x=>x.modelAccount.token='must-not-be-in-a-pure-proposal',x=>x.expectedPackageSha256='0'.repeat(64),x=>x.artifactBindings[3].codeSetSha256='0'.repeat(64),x=>x.artifactBindings.pop(),x=>{x.artifactBindings[3].state='INSTALLATION_ADMISSION_REFERENCE_SUPPLIED';x.artifactBindings[3].manifestSha256='f'.repeat(64);x.artifactBindings[3].admissionReceiptSha256='a'.repeat(64);}]){const input=fixture();mutate(input);assert.throws(()=>create(input));}
+});

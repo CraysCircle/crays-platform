@@ -1,0 +1,91 @@
+{
+  "schema": "crays.personal-agent.standard-package.v2",
+  "version": "general-six-tools-2026-10-15.v2",
+  "status": "SOURCE_BOUND_ASSIGNMENT_NOT_UNIVERSAL_RUNTIME_ADMISSION",
+  "upstreamVersion": "2026.10.3",
+  "skills": [
+    "weather"
+  ],
+  "tools": [
+    "read",
+    "web_fetch",
+    "web_search",
+    "pdf",
+    "crays_calculator",
+    "crays_personal_records"
+  ],
+  "implicitNativeTools": [
+    "skills_read"
+  ],
+  "plugins": [
+    {
+      "id": "crays-calculator",
+      "tool": "crays_calculator",
+      "version": "0.1.0",
+      "files": [
+        {
+          "path": "calculator-core.mjs",
+          "bytes": 10860,
+          "sha256": "18e461a6f351dd96227c0478eef05fb1489998ec15f405bbd34b3c5bef594f3a"
+        },
+        {
+          "path": "index.mjs",
+          "bytes": 3311,
+          "sha256": "dcf60690a131f05961f535245d89dfc70df8cc698cc2ac8397d183eaa4d32cd6"
+        },
+        {
+          "path": "openclaw.plugin.json",
+          "bytes": 386,
+          "sha256": "7a69cd7dfba5a63eebeb5f4e538a10f7756797eb233535de8407fa1dfc6fe0cb"
+        },
+        {
+          "path": "package.json",
+          "bytes": 302,
+          "sha256": "e265a88fff1629b3434ecf74b9679e8ee7fa7b98f19a2b22fec48d34018bce89"
+        }
+      ],
+      "codeSetSha256": "76b534b248453ceecae5dca9e6d5b7cff5aacf4e6779723dda1c2318e3259c7f",
+      "artifactRoot": "/opt/crays/openclaw/plugin-artifacts/crays-calculator",
+      "knownInstalledManifestSha256": "9dc61bf9690602b5c8cb0460199160735d70146b2e2ab2b237284c1ad1267241",
+      "qualification": "NATIVE_HOST_12_AND_27_UNIT_TESTS_PASS"
+    },
+    {
+      "id": "crays-personal-records",
+      "tool": "crays_personal_records",
+      "version": "0.1.0",
+      "files": [
+        {
+          "path": "index.mjs",
+          "bytes": 4012,
+          "sha256": "a6e922fc2868b13f5ac7fa0eb6ecccb6e769053d21de827561d8a965615636d0"
+        },
+        {
+          "path": "openclaw.plugin.json",
+          "bytes": 401,
+          "sha256": "f0805b92bee370a6a1ba2e51fcf1f44376be62d9640061c9bc8fd452faab40e6"
+        },
+        {
+          "path": "package.json",
+          "bytes": 358,
+          "sha256": "f079f943c3248481cfa7e047c551d41f64f8cfa062071ded239358481c707f37"
+        },
+        {
+          "path": "store.mjs",
+          "bytes": 11112,
+          "sha256": "d1a52182abe227d6dc20ed9c7f4432397267f9f7348f8390fab31cf3da09ee8c"
+        }
+      ],
+      "codeSetSha256": "3044dec19a4717f481698bcfc28dea834c5b2dc39b21d0397e3e6b6ec62f3ff8",
+      "artifactRoot": "/opt/crays/openclaw/plugin-artifacts/crays-personal-records",
+      "knownInstalledManifestSha256": "8d7f1cf9d1502435fd77e6021c898433a4db0fa41fb52e73338e1d221f8f9591",
+      "qualification": "SOURCE_SQLITE_12_PASS_NATIVE_HOST_PENDING"
+    }
+  ],
+  "requiredAccountRoute": "openai-chatgpt-responses",
+  "binding100": {
+    "path": "infra/openclaw/agentic/b2c100-binding-priority.json",
+    "sha256": "33eefe8c3abd44c7bcfdd99e758321df508476003bfec0775064f14996aa388a",
+    "count": 100,
+    "all100Ready": false
+  }
+}

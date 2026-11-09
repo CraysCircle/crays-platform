@@ -1,0 +1,8 @@
+{
+  "schema": "crays.generic-personal-speech.runtime-projection.v1",
+  "baseProjectionSha256": "0998e255eaab2e00e415746608f87915ef27d6bf69c735241f067c98aa59a8ef",
+  "speechPinsSha256": "6b04568cffbb4f0cb586c5fd67781f87987c32aef7dc6bbbbaeb76ac23e86766",
+  "tool": "tts",
+  "skill": "crays-voice-translation",
+  "scope": "ALL_NEW_PERSONAL_AGENTS_SOURCE_CANDIDATE_NOT_ADOPTED"
+}

@@ -1,0 +1,13 @@
+# V5 trusted-host prepare successor — inactive source
+
+API: `prepareChannelIndependentGeneralRuntime(base,hostContext,{recheckHost})` uses the fixed deployment catalogue; the existing materializer must pass its actual `recheck` closure (committed Core assignment + own-account authority), never asynchronous identity.assertCurrent as a synchronous guide guard. The generic trusted-deployment `prepareApprovedGeneralRuntime` and pure `composeApprovedGeneralRuntime` are separate exports. `verifyApprovedGeneralRuntimeArtifacts(general)` is the materializer's before-CAS re-verifier.
+
+The genuine async recheck result must match the existing nine-field own-account receipt contract: accountId/canonicalPersonId/agentId/agentDir/provider/apiRoute/profileRef/receiptSha256/expiresAtMs. Both receipt validity and exact before/after account/person/agent/profile/receipt identity are checked. No receipt is a substitute for Core role authority. The existing materializer retains original Core/account rechecks, native validation, private journal/CAS publication and readiness gates.
+
+After the initial awaited recheck, only a bounded1000ms synchronous lexical composition scope exists. Its callback checks active scope and expiry; `finally` closes it before artifact I/O awaits. There is no noop callback and no callback injection into either verifier. After strict artifact I/O, actual async recheck runs again. A revoked or changed binding denies the prepared result.
+
+Original V3 prepare helper and all historical source remain unchanged. Original V3 pure composition checks the exact legacy projection with legacy29 instructions and29 tools. The source-only V5 fixed adapter appends published weather + exact translation/video guides to32. Legacy verifySharedArtifacts receives only legacy standard/catalog; the separately reviewed strict fixed-three verifier handles those three concrete manifests. Returned artifacts preserve top-level plugins, merged skills and sha256 for native validator/materializer compatibility, plus legacy/fixed details.
+
+This helper explicitly refuses WhatsApp/reminder/automations branch. Connected30-tool source composition belongs to its separate reviewed branch; this helper does not claim connected branch preparation. No defaultFactory switch, server entry registration, account creation, authority grant, native mount admission, native registry, channel delivery, provisioning acceptance or customer acceptance is performed here. Fixed root paths alone do not prove native readonly aliases.
+
+8 new focused tests passed. Existing Catalogue7/strict-fixed-verifier3/materializer tests were not replayed by this task. Tests include real public-artifact reads only; synthetic host receipts remain synthetic.

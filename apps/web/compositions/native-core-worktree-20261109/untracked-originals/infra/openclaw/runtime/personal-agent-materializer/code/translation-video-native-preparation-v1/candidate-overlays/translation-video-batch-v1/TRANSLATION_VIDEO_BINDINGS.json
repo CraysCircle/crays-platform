@@ -1,0 +1,128 @@
+{
+  "schema": "crays.translation-video-batch.bindings.source.v1",
+  "sourceOnly": true,
+  "published": false,
+  "agentId": "crays-agent-thorben",
+  "baselineInstructionNames": [
+    "weather",
+    "crays-everyday-assistance",
+    "crays-receipt-reading",
+    "crays-personal-dates",
+    "crays-shared-expenses",
+    "crays-feed-reader",
+    "crays-document-exports",
+    "crays-chess",
+    "crays-item-inventory",
+    "crays-training-log",
+    "crays-personal-budget",
+    "crays-pantry",
+    "crays-subscriptions",
+    "crays-personal-webtools",
+    "crays-habits",
+    "crays-personal-preferences",
+    "crays-packing",
+    "crays-learning-plan",
+    "crays-personal-cooking",
+    "crays-quiz-review",
+    "crays-personal-planner",
+    "Word / DOCX",
+    "Excel / XLSX",
+    "Powerpoint / PPTX",
+    "language-learning",
+    "Data Analysis",
+    "crays-voice-translation",
+    "crays-expedia-search",
+    "crays-cited-research",
+    "crays-weather-public"
+  ],
+  "finalInstructionNames": [
+    "weather",
+    "crays-everyday-assistance",
+    "crays-receipt-reading",
+    "crays-personal-dates",
+    "crays-shared-expenses",
+    "crays-feed-reader",
+    "crays-document-exports",
+    "crays-chess",
+    "crays-item-inventory",
+    "crays-training-log",
+    "crays-personal-budget",
+    "crays-pantry",
+    "crays-subscriptions",
+    "crays-personal-webtools",
+    "crays-habits",
+    "crays-personal-preferences",
+    "crays-packing",
+    "crays-learning-plan",
+    "crays-personal-cooking",
+    "crays-quiz-review",
+    "crays-personal-planner",
+    "Word / DOCX",
+    "Excel / XLSX",
+    "Powerpoint / PPTX",
+    "language-learning",
+    "Data Analysis",
+    "crays-voice-translation",
+    "crays-expedia-search",
+    "crays-cited-research",
+    "crays-weather-public",
+    "crays-personal-translation",
+    "crays-short-video-explanation"
+  ],
+  "artifacts": [
+    {
+      "name": "crays-personal-translation",
+      "root": "/opt/crays/openclaw/skill-artifacts/crays-personal-translation/47b49c2682a360772978c17f009c5d531349a8441360c9ea48017b043007744c",
+      "extraDir": "/opt/crays/openclaw/skill-artifacts/crays-personal-translation/47b49c2682a360772978c17f009c5d531349a8441360c9ea48017b043007744c/skills",
+      "relativePath": "skills/crays-personal-translation/SKILL.md",
+      "bytes": 7480,
+      "sha256": "47b49c2682a360772978c17f009c5d531349a8441360c9ea48017b043007744c",
+      "addressing": "sha256-of-exact-V2-SKILL-bytes",
+      "source": {
+        "path": "/home/craysdev/codex-chat-projects/openclaw/review/weather-stepwise-activation-20261019/next-b2c-translation-video-batch-source-v2/skills/crays-personal-translation/SKILL.md",
+        "bytes": 7480,
+        "sha256": "47b49c2682a360772978c17f009c5d531349a8441360c9ea48017b043007744c"
+      },
+      "manifestRelativePath": "ARTIFACT_MANIFEST.json",
+      "manifestBytes": 629,
+      "manifestSha256": "4925184f782dc2a5d7bbc96e37a934347351dd1e171552584a7bbc3b9ba74326"
+    },
+    {
+      "name": "crays-short-video-explanation",
+      "root": "/opt/crays/openclaw/skill-artifacts/crays-short-video-explanation/3d2250e612004dec5110986e24da6b75aa6678aecb989aea34845fc43798fcc6",
+      "extraDir": "/opt/crays/openclaw/skill-artifacts/crays-short-video-explanation/3d2250e612004dec5110986e24da6b75aa6678aecb989aea34845fc43798fcc6/skills",
+      "relativePath": "skills/crays-short-video-explanation/SKILL.md",
+      "bytes": 4394,
+      "sha256": "3d2250e612004dec5110986e24da6b75aa6678aecb989aea34845fc43798fcc6",
+      "addressing": "sha256-of-exact-V2-SKILL-bytes",
+      "source": {
+        "path": "/home/craysdev/codex-chat-projects/openclaw/review/weather-stepwise-activation-20261019/next-b2c-translation-video-batch-source-v2/skills/crays-short-video-explanation/SKILL.md",
+        "bytes": 4394,
+        "sha256": "3d2250e612004dec5110986e24da6b75aa6678aecb989aea34845fc43798fcc6"
+      },
+      "manifestRelativePath": "ARTIFACT_MANIFEST.json",
+      "manifestBytes": 638,
+      "manifestSha256": "5e9f9c5d1c168f1e26643c8ef3c19898566416353b56db75a6b62bf8c90383ca"
+    }
+  ],
+  "baselineSourceRoot": "/opt/crays/openclaw/personal-services/crays-owner-tools-whatsapp-live-v53-weather-memory-availability/code",
+  "baselineSources": [
+    {
+      "path": "/opt/crays/openclaw/personal-services/crays-owner-tools-whatsapp-live-v53-weather-memory-availability/code/weather/compose-weather-v53.mjs",
+      "bytes": 5216,
+      "sha256": "b4a62ab04e6b213e1f59ffb0a82d687faa787d49e437554201dcc1d1f4243d03"
+    },
+    {
+      "path": "/opt/crays/openclaw/personal-services/crays-owner-tools-whatsapp-live-v53-weather-memory-availability/code/weather/V53_WEATHER_BINDINGS.json",
+      "bytes": 12269,
+      "sha256": "eba404173c3006e37606c9cdd8a72e4dfb61955faadd45a0bf93fa7576fbd840"
+    }
+  ],
+  "guideSourceBindings": {
+    "path": "/home/craysdev/codex-chat-projects/openclaw/review/weather-stepwise-activation-20261019/next-b2c-translation-video-batch-source-v2/SOURCE_BINDINGS.json",
+    "bytes": 1256,
+    "sha256": "e90f89626aa9206bcb270fde6efb21bec53002ec68258f5d66b19be0cff4ba5b"
+  },
+  "noNewToolsPluginsAuthOrRoutes": true,
+  "newOriginalRuntimeActivations": 0
+}
