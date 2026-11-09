@@ -1,6 +1,6 @@
-# Selected RDS and Nextcloud source snapshots
+# Selected Core, VIF and Nextcloud source snapshots
 
-This register identifies five selected source snapshots preserved in GitHub. It is not a complete CRAYS backup, database backup or runtime-recovery inventory. Scopes overlap with public source and with each other's lineage; do not add row counts as distinct ecosystem coverage.
+This register identifies seven selected source snapshots preserved in GitHub. It is not a complete CRAYS backup, database backup or runtime-recovery inventory. Scopes overlap with public source and with each other's lineage; do not add row counts as distinct ecosystem coverage.
 
 Private originals are in **CraysWorld/crays-gym**, repository ID **1280582408**. Authorized owners or collaborators must sign in; public readers may see a 404. Each commit link opens the snapshot guide. Capture records identify original names, sizes and whole-file hashes.
 
@@ -11,8 +11,10 @@ Private originals are in **CraysWorld/crays-gym**, repository ID **1280582408**.
 | **Original30 revision01** — Historical guest runner and operations | Private; authorized access | [cd65d5a2089c](https://github.com/CraysWorld/crays-gym/blob/cd65d5a2089c7e7f3cc6e8452c6802da181db9bd/protected-source-archives/original30-revision01/README.md) · [capture](https://github.com/CraysWorld/crays-gym/blob/cd65d5a2089c7e7f3cc6e8452c6802da181db9bd/protected-source-archives/original30-revision01/source-capture.json) | 2 |
 | **Original52 executor** — Revision02/revision01 executor, secure session and two deltas | Private; authorized access | [44aad3046b1d](https://github.com/CraysWorld/crays-gym/blob/44aad3046b1d2257b6a1935ca442bea10fa37901/protected-source-archives/nextcloud-original52-executor/README.md) · [capture](https://github.com/CraysWorld/crays-gym/blob/44aad3046b1d2257b6a1935ca442bea10fa37901/protected-source-archives/nextcloud-original52-executor/source-capture.json) | 5 |
 | **Original52 SQL** — Ten raw migrations and two combined transaction programs | Private; authorized access | [c6112231fedc](https://github.com/CraysWorld/crays-gym/blob/c6112231fedcd0c7cc09c1bd4c18310eeec46167/protected-source-archives/nextcloud-original52-sql/README.md) · [capture](https://github.com/CraysWorld/crays-gym/blob/c6112231fedcd0c7cc09c1bd4c18310eeec46167/protected-source-archives/nextcloud-original52-sql/source-capture.json) | 12 |
+| **Core function153** — Guarded rollback-probe SQL/proof generator source | Private; authorized access | [c3ff989344ed](https://github.com/CraysWorld/crays-gym/blob/c3ff989344ed8949106e0fa832ad66451e97e50a/protected-source-archives/native-core-function153-rollback-probe/README.md) · [capture](https://github.com/CraysWorld/crays-gym/blob/c3ff989344ed8949106e0fa832ad66451e97e50a/protected-source-archives/native-core-function153-rollback-probe/source-capture.json) | 1 |
+| **VIF54 revision04** — Phase-window caller, ingress/projector, historical deltas and input-preparer source | Private; authorized access | [fcbee662ab21](https://github.com/CraysWorld/crays-gym/blob/fcbee662ab21b2439aca5cb4f89bc25452bd5eeb/protected-source-archives/vif54-root-caller-revision04/README.md) · [capture](https://github.com/CraysWorld/crays-gym/blob/fcbee662ab21b2439aca5cb4f89bc25452bd5eeb/protected-source-archives/vif54-root-caller-revision04/source-capture.json) | 9 |
 
-All five publication records report authenticated full-byte comparisons and verification of the isolated branch references; the existing master was retained. This establishes recorded source custody, not successful execution or complete system restoration.
+The publication records verify source bytes through authenticated readback and Git blob identities. Later child snapshots retain previously verified originals unchanged and verify their new or changed bodies. The isolated source branches and the existing master were checked; source custody does not establish execution or complete restoration.
 
 ## Recover the selected source bytes
 
@@ -28,6 +30,8 @@ Purpose45 history: 4022e921133d33dcc43f07967a10c7f21c23af614011b761eb92a20013e81
 Original30 revision01: 0df0de56a4311d648caf224ecfd614cc95f57f31d6d936dd41f7b4d1b268fdbc
 Original52 executor: d8ea4f8e1020fb475f94e5aa427f5eea95b073ec80d21216386189006a236024
 Original52 SQL: 4ca55bd027890c58f971f4ea8887c4f0812e22655388d555a7102a171c7c8018
+Core function153: d7a66fbe0a9f2a9f5da6cd7ec3563b31bda14e30fe2230051029582b03c02ab5
+VIF54 revision04: 0352c52e7ca7026f6f291468389ad2584609bde4decda60f469a233ccf23ac60
 ~~~
 
 These source snapshots do not supply execution approvals, expected-role/postprojection input bodies, CA/PGpass credentials, other secrets or database dumps. Code may refer to such inputs; this register neither backs them up nor promises their reconstruction.
@@ -44,5 +48,7 @@ These source snapshots do not supply execution approvals, expected-role/postproj
 Preservation or public visibility does not grant copyright permissions. No new AGPL grant for the original Purpose45 SQL/pool or Original30 revision01 is established by these records. Public grants apply only to their listed own revisions or corrective changes; upstream and dependency terms remain separate.
 
 The executor's revision01 and later acknowledgement fix are retained separately. The SQL snapshot keeps ten original migration files and both combined transaction programs: assembled combined SQL does not replace original files. Historical defects remain unchanged.
+
+The two additional snapshots preserve ten originals (58,702 bytes) across separate finite scopes: function153 has one source (7,869 bytes), and VIF54 has nine (50,833 bytes). Function153 preserves the generator, not generated or applied SQL. VIF54 preserves operating programs and deltas, including input-preparer code, not actual approval or runtime-binding inputs. Neither snapshot establishes a new own-code license grant or permission to execute its programs.
 
 This preservation does not activate SQL, SSO, roles or consumers. Full application acceptance, current runtime parity, complete dependency/license reconciliation and complete backup/recovery remain separate.
