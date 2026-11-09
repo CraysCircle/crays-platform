@@ -177,6 +177,14 @@
     {
       "component": "member-main-common46-operating-sources",
       "path": "operations/member-original-context46/source-capture.json"
+    },
+    {
+      "component": "member-current39-ingress46",
+      "path": "operations/member-original-context46/ingress/source-capture.json"
+    },
+    {
+      "component": "member-membership-title47",
+      "path": "services/member-identity/provider-account/source47/source-capture.json"
     }
   ]
 }

@@ -11,7 +11,7 @@ The corresponding [Member/Common application sources](../../services/member-iden
 | `build/` | Original build controller and Root resource-window wrapper, original review proposal and the exact source-guard/provenance input containing the 28 base-source pins. |
 | `install/` | Original stage, classification, environment projection, successor-payload, lifecycle, anchor-generation and finishing programs; retained listener/probe sources; the four-phase Root window wrapper. |
 
-There are fifteen original files: thirteen programs and two build-source metadata files. The source map records every original absolute path, byte length, SHA-256 and exported representation. Original formatting, filenames, import dependencies and internal path references are retained.
+The initial capture contains fifteen original files: thirteen programs and two build-source metadata files. The source map records every original absolute path, byte length, SHA-256 and exported representation. Original formatting, filenames, import dependencies and internal path references are retained.
 
 Four files reuse already preserved Source42 bodies: the Source42 classifier, anchor-generation program, listener and anonymous probe. The anchor-generation file was renamed for46 but its original bytes are unchanged. A renamed file is not evidence of new implementation.
 
@@ -36,3 +36,7 @@ Exact file representations and any protected recovery requirements are recorded 
 Original source and component relationships remain authoritative. No inline license or copyright notice is removed or replaced. This archive adds no blanket license over the application, runtime, imports or underlying frameworks. Source42's file-specific grant for two runtime wrappers does not license every operating program here.
 
 The original Source42 source/notice assessments are reused only where exact body hashes match. New or changed supplied code is reviewed separately. See [qualification.json](qualification.json) for the pinned source-review lineage and the distinction between source preservation and execution.
+
+## Ingress46 addendum
+
+The separate [three-program ingress addendum](ingress/README.md) records the supplied Source46 ingress controller, exact seven-block projector and retained physical-container helper. Its own source map and review scope distinguish these three originals from the initial fifteen-file build/install capture. The historical Work23 helper body remains identifiable; publication runs none of these programs.

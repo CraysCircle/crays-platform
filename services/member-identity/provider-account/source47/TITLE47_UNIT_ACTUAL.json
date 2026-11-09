@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "checks": 12,
+  "exactBrowserTitle": "Crays Membership",
+  "inputManifestTruthful": true,
+  "HEADLengthAndBodyQualified": true,
+  "allOtherCommon46BytesPreserved": true,
+  "otherAssetBytesAndNlinksUnchanged": true,
+  "noHTTPOrSQL": true,
+  "noRuntimeChanged": true,
+  "exitCode": 0,
+  "candidateSHA256": "822fab2fc20aba7cd6cd45e50089efaf8756425a5695db215eca2311b4ddb1d4",
+  "testSHA256": "b6fd59b0516bbd80751a626ee89367db78047e3924c2f0e6f4b7f3d7228e0b17",
+  "actualHTTPRequests": 0,
+  "actualSQLCalls": 0,
+  "actualBrowserRuns": 0
+}

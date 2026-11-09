@@ -1,0 +1,70 @@
+{
+  "schema": "crays.title47.public-source-capture.v1",
+  "candidateNotLive": true,
+  "sourceOnly": true,
+  "files": [
+    {
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-personal-membership-title47-source01/common-host.membership-title47.candidate.cjs",
+      "originalRelativePath": "common-host.membership-title47.candidate.cjs",
+      "originalBytes": 49254,
+      "originalSHA256": "822fab2fc20aba7cd6cd45e50089efaf8756425a5695db215eca2311b4ddb1d4",
+      "publishedRelativePath": "common-host.membership-title47.candidate.cjs",
+      "publishedBytes": 49254,
+      "publishedSHA256": "822fab2fc20aba7cd6cd45e50089efaf8756425a5695db215eca2311b4ddb1d4",
+      "representation": "unchanged-original"
+    },
+    {
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-personal-title47-independent-review01/COMMON46_TO_TITLE47_EXACT.patch",
+      "originalRelativePath": "COMMON46_TO_TITLE47_EXACT.patch",
+      "originalBytes": 5274,
+      "originalSHA256": "914a0b398a4a18008a8346ec5ea7c4060ad54eba6a947b349f07c9ed9bde53e1",
+      "publishedRelativePath": "COMMON46_TO_TITLE47_EXACT.patch",
+      "publishedBytes": 5274,
+      "publishedSHA256": "914a0b398a4a18008a8346ec5ea7c4060ad54eba6a947b349f07c9ed9bde53e1",
+      "representation": "unchanged-original"
+    },
+    {
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-personal-membership-title47-source01/TITLE47_RENDER_DERIVATION.json",
+      "originalRelativePath": "TITLE47_RENDER_DERIVATION.json",
+      "originalBytes": 1121,
+      "originalSHA256": "7f2824eac11239d05bd6f1559382a1b0e91e165acc04144fcdd67daaeec8afe3",
+      "publishedRelativePath": "TITLE47_RENDER_DERIVATION.json",
+      "publishedBytes": 1121,
+      "publishedSHA256": "7f2824eac11239d05bd6f1559382a1b0e91e165acc04144fcdd67daaeec8afe3",
+      "representation": "unchanged-original"
+    },
+    {
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-personal-membership-title47-source01/title47.regression.cjs",
+      "originalRelativePath": "title47.regression.cjs",
+      "originalBytes": 3661,
+      "originalSHA256": "b6fd59b0516bbd80751a626ee89367db78047e3924c2f0e6f4b7f3d7228e0b17",
+      "publishedRelativePath": "title47.regression.cjs",
+      "publishedBytes": 3661,
+      "publishedSHA256": "b6fd59b0516bbd80751a626ee89367db78047e3924c2f0e6f4b7f3d7228e0b17",
+      "representation": "unchanged-original"
+    },
+    {
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-personal-membership-title47-source01/TITLE47_UNIT_ACTUAL.json",
+      "originalRelativePath": "TITLE47_UNIT_ACTUAL.json",
+      "originalBytes": 557,
+      "originalSHA256": "4eb9141b4cba9cea8046ccb684421406d50e88e0275105086300580de6ae66a1",
+      "publishedRelativePath": "TITLE47_UNIT_ACTUAL.json",
+      "publishedBytes": 557,
+      "publishedSHA256": "4eb9141b4cba9cea8046ccb684421406d50e88e0275105086300580de6ae66a1",
+      "representation": "unchanged-original"
+    }
+  ],
+  "originalFiles": 5,
+  "originalBytes": 59867,
+  "Common46SourcePreservedUnchanged": true,
+  "predecessor": {
+    "commit": "ef3a04f101ba675028e97d5fcf95848e3883ad4b",
+    "path": "services/member-identity/provider-account/source46/common/common-host.main-context46.candidate.cjs",
+    "sha256": "0fded17840166bb8b992bb3e1708a4c566cb56f182cd239d44f2327f874c8e7c"
+  },
+  "sourceProgramsExecutedByPreservation": false,
+  "testReceiptReusedNotRerun": true,
+  "privateInputBodiesReadOrIncluded": false,
+  "runtimeAdoptionClaim": false,
+  "newBlanketLicenseGrant": false
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "crays.ingress46.public-source-capture.v1",
+  "sourceOnly": true,
+  "files": [
+    {
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member46-current39-ingress-source01/member46_current39_ingress.candidate.py",
+      "originalRelativePath": "member46_current39_ingress.candidate.py",
+      "originalBytes": 20961,
+      "originalSHA256": "7bc0f132e7cef9b58c67937a0b17deceb29efe1512e1097d33131f71e6b6deaa",
+      "publishedRelativePath": "member46_current39_ingress.candidate.py",
+      "publishedBytes": 20961,
+      "publishedSHA256": "7bc0f132e7cef9b58c67937a0b17deceb29efe1512e1097d33131f71e6b6deaa",
+      "representation": "unchanged-original",
+      "exactPrior42BodyReuse": false,
+      "prior42ControllerReference": {
+        "path": "operations/member-provider-account42/source-cases/ingress/member42_current39_ingress.candidate.py",
+        "sha256": "4535e4cff0e497671784f52635f9569c8cfe53cf708f80b40e236766299918a4",
+        "relationship": "Root peer review checked complete source delta; not byte-identical"
+      }
+    },
+    {
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member46-current39-ingress-source01/project_exact_seven_member46_ingress.candidate.py",
+      "originalRelativePath": "project_exact_seven_member46_ingress.candidate.py",
+      "originalBytes": 2202,
+      "originalSHA256": "78c4b4a55c53c743b4db880a7d1bac46b7bfa75588242aaba876152875ccdb94",
+      "publishedRelativePath": "project_exact_seven_member46_ingress.candidate.py",
+      "publishedBytes": 2202,
+      "publishedSHA256": "78c4b4a55c53c743b4db880a7d1bac46b7bfa75588242aaba876152875ccdb94",
+      "representation": "unchanged-original",
+      "exactPrior42BodyReuse": true,
+      "prior42SourceReference": {
+        "path": "operations/member-provider-account42/source-cases/ingress/project_exact_seven_member42_ingress.candidate.py",
+        "bytes": 2202,
+        "sha256": "78c4b4a55c53c743b4db880a7d1bac46b7bfa75588242aaba876152875ccdb94"
+      }
+    },
+    {
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member46-current39-ingress-source01/qualified_container_physical.py",
+      "originalRelativePath": "qualified_container_physical.py",
+      "originalBytes": 23361,
+      "originalSHA256": "63b137e94a98cebdfc456a83efabd907f64b4e34ac39fe59fbf364553f3b0bdb",
+      "publishedRelativePath": "qualified_container_physical.py",
+      "publishedBytes": 23361,
+      "publishedSHA256": "63b137e94a98cebdfc456a83efabd907f64b4e34ac39fe59fbf364553f3b0bdb",
+      "representation": "unchanged-original",
+      "exactPrior42BodyReuse": true,
+      "prior42SourceReference": {
+        "path": "operations/member-provider-account42/source-cases/ingress/qualified_container_physical.py",
+        "bytes": 23361,
+        "sha256": "63b137e94a98cebdfc456a83efabd907f64b4e34ac39fe59fbf364553f3b0bdb"
+      }
+    }
+  ],
+  "originalFiles": 3,
+  "originalBytes": 46524,
+  "exactPrior42BodyReuses": 2,
+  "prior42VersionsManifestSHA256": "339f2b97dedfddf9598c866fb078c47fd0ecc702d302e60abd10f2b059b0ced1",
+  "source42Ops46Common46OriginalsPreservedUnchanged": true,
+  "privatePhaseInputBodiesReadOrIncluded": false,
+  "originalProgramsExecuted": false,
+  "runtimeChangedByPreservation": false,
+  "actualAdoptionClaim": false,
+  "newBlanketLicenseGrant": false
+}

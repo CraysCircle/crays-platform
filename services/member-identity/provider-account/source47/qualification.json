@@ -1,0 +1,15 @@
+{
+  "schema": "crays.title47.source-qualification.v1",
+  "RootIndependentSourceReviewSHA256": "b9997374b10c55190ae12af7845ec19da8872582898ca8ae759ecab62d28acbb",
+  "originalDerivationSHA256": "7f2824eac11239d05bd6f1559382a1b0e91e165acc04144fcdd67daaeec8afe3",
+  "existingUnitReceiptSHA256": "4eb9141b4cba9cea8046ccb684421406d50e88e0275105086300580de6ae66a1",
+  "existingUnitReportedChecks": 12,
+  "existingUnitActualBrowserHTTPAndSQLCalls": 0,
+  "testReceiptReusedWithoutExecutionByPreservation": true,
+  "exactPatchReconstructionPASS": true,
+  "exactPatchLineageReceiptSHA256": "0e6196ab2e0f419a0f210c6f04e0258690430025e6e3fe2e8d82ad43bfb01d67",
+  "candidateNotLive": true,
+  "privateEnvCredentialSessionPolicyCustomerOrDatabaseBodiesRead": false,
+  "newBlanketLicenseGrant": false,
+  "independentPublicPacketPrivacyProvenanceReviewRequiredBeforePublication": true
+}

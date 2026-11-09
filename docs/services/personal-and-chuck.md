@@ -22,3 +22,7 @@ Set up only the layer being developed with reviewed synthetic inputs. Original o
 Existing records substantiate a composed agent/broker/tool system and separately preserved Personal-Intelligence sources. They do not establish complete public custody of every latest Chuck/broker/CNR file or acceptance of the latest entire AWS composition. The public frontend and build sources are concrete contribution entry points; remaining agent/source/runtime bindings and original dependency notices need their own completion.
 
 [Back to services](README.md)
+
+## Personal browser-title source revision
+
+The [Source47 Common candidate](../../services/member-identity/provider-account/source47/README.md) preserves the narrow renderer change for the browser title Crays Membership. Its exact delta, input/output derivation, original regression source and existing twelve-check result are recorded alongside the unchanged Common46 reference. This source-only record does not establish private adoption or browser/customer acceptance.

@@ -1,0 +1,14 @@
+{
+  "schema": "crays.ingress46.source-qualification.v1",
+  "RootPeerReviewSHA256": "17aa56b02ee66eb50c467f8c0bd6c9f2b63f646123380b6fea9097f98794ec70",
+  "RootPeerReviewStatus": "PASS_INGRESS46_DELTA_SOURCE_ONLY",
+  "RootPeerDeclaredManifestSHA256": "71e522c2133d7288bffe0d2067811c06a4405d74bfad5292d10ceef272657055",
+  "RootPeerDeclaredBaseControllerSHA256": "4535e4cff0e497671784f52635f9569c8cfe53cf708f80b40e236766299918a4",
+  "peerReviewReportsOriginalPhysicalAndProjectorByteEquality": true,
+  "existing42CloseAndRealCommitted46ReopenAreDistinct": true,
+  "privatePhaseInputBodiesNotReadOrPublished": true,
+  "sourcePreservationExecutesNoOriginalPrograms": true,
+  "PythonSyntaxParsedWithoutExecution": true,
+  "sourceReviewDoesNotAuthorizeExecution": true,
+  "independentPrivacyDerivativeNoticesReviewRequiredBeforePublication": true
+}

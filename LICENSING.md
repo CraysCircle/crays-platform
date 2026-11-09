@@ -40,3 +40,7 @@ The [Source46 provenance and licensing notes](services/member-identity/provider-
 ## Source46 operating source provenance
 
 The [Source46 operating-source notes](operations/member-original-context46/README.md#licensing-and-notices) preserve fifteen original build/install/proposal/guard files and the exact Source42 reuse relationships. Original inline notices are retained; public provider endpoints, dependency names and protected-input path references are source context rather than copies of those private inputs. No blanket grant over the operating programs, applications, imports or frameworks is added. The separate Source42 grants remain file-specific, and full dependency/runtime and rights reconciliation remains open.
+
+## Source46 ingress and Personal title47
+
+The [Ingress46 addendum](operations/member-original-context46/ingress/README.md) preserves three original operating programs and their exact Source42 relationships. The [Personal title47 candidate](services/member-identity/provider-account/source47/README.md#source-and-licensing-boundary) preserves five original candidate/delta/derivation/test-result inputs with its Common46 lineage. Original source/component notices remain authoritative; these additive archives introduce no blanket grant over the applications, operating programs or dependencies. No protected runtime input, actual execution or deployment acceptance is supplied by these source records.

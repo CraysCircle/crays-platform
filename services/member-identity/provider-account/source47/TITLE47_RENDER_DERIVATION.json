@@ -1,0 +1,21 @@
+{
+  "status": "SOURCE_ONLY_GUARDED_PERSONAL_HTML_TITLE_DERIVATIVE",
+  "originalCommon46SHA256": "0fded17840166bb8b992bb3e1708a4c566cb56f182cd239d44f2327f874c8e7c",
+  "candidateCommon47SHA256": "822fab2fc20aba7cd6cd45e50089efaf8756425a5695db215eca2311b4ddb1d4",
+  "inputArtifactRoot": "/srv/crays/acceptance/unified-static-20261105-01/artifacts/personal-latest8990-20261108-33",
+  "inputFile": "index.html",
+  "inputSHA256": "f8d54d3abcce6ee3c0b5ebbd495a635a443aaf8804a9e8f170efaf519316885f",
+  "inputTitle": "<title>CRAYS \u00b7 Personal web prototype</title>",
+  "outputSHA256": "c350a1f440b982eb972990c89c28af3f06fb8517941f4b40bcb0ee5e91eba4de",
+  "outputTitle": "<title>Crays Membership</title>",
+  "inputBytes": 1912,
+  "outputBytes": 1897,
+  "originalRegistryArtifactInputPinsUnchanged": true,
+  "originalAssetFilesOrMetadataChanged": false,
+  "allOtherHTMLBytesIdentical": true,
+  "scopeOnlyExactPersonalRootAndIndex": true,
+  "cacheAndHEADLength": "Existing headers use rendered bytes length; HEAD returns no body",
+  "sourcePreparationOnly": true,
+  "memberNextBuildRequired": false,
+  "runtimeExecuted": false
+}
