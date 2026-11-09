@@ -19,7 +19,9 @@ Root's selected relay metadata records a prior source-only review at an exact im
 
 ## License, privacy and execution limits
 
-Original source bytes, comments and any original terms remain unchanged. Root's relay directs inheritance of actual authorized license/NOTICE assignments; this archive creates no new license or ownership assertion. Existing [BFF license scope](../../../services/clubs-commerce-bff/LICENSING.md) remains scoped to that component and does not automatically grant rights over these separate operation programs or external dependencies.
+The CRAYS-owned code in the two exact Pure80 revisions, including the embedded 2,723-byte test string, is licensed under **AGPL-3.0-only**, copyright **CRAYS AG**. Read [LICENSING.md](LICENSING.md), the [exact file and embedded-code scope](license-scope.json), and the full [GNU AGPL version 3 text](LICENSE). A targeted actual source-author readback relayed by Root confirms these as CRAYS-specific migration programs. Recipient rights to run, modify and redistribute covered code and derivatives remain intact.
+
+Original source bytes, comments and applicable third-party terms are unchanged. The [source capture](source-capture.json) remains the initial source-only publication record; this separately dated license addition supersedes the earlier pending-authority position. Existing [BFF license scope](../../../services/clubs-commerce-bff/LICENSING.md), imported dependency implementations and private runtime inputs remain separate.
 
 No fixed credential, private principal, captured login/session or customer database record was identified in these two selected bodies. References to private paths, runtime admission and protected files are code dependencies; those contents are absent.
 

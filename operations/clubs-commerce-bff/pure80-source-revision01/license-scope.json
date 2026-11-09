@@ -1,0 +1,125 @@
+{
+  "schema": "crays.component.exact-owned-source-license-scope.v1",
+  "status": "PUBLICATION_READY_EXACT_SOURCE_AUTHOR_AUTHORITY_BOUND",
+  "licenseExpression": "AGPL-3.0-only",
+  "copyrightHolder": "CRAYS AG",
+  "grantDateUTC": "2026-11-09",
+  "componentPath": "operations/clubs-commerce-bff/pure80-source-revision01",
+  "sourceCommit": "d95b27a92acb352c86bf20f3b29dae6a5f1a5260",
+  "files": [
+    {
+      "path": "operations/clubs-commerce-bff/pure80-source-revision01/pure-original-probe80.py",
+      "bytes": 14932,
+      "sha256": "7bc79001d33a9b36c271e45d88fdabb0338d7e2b9d8707d8e5048aebf3bfb91f",
+      "originalFieldPath": [
+        "source"
+      ],
+      "immutableArtifact": {
+        "key": "migration-work/20261108/business/bff-image-probe80/pure-original-probe80.actual-pins-bound.rev04.json",
+        "versionId": "3k0nYwgEpYu8hnz99GN8DdZT5jGB3YGZ",
+        "envelopeBytes": 64283,
+        "envelopeSHA256": "b699424259553c06d9e3e80133621bb9f634bfc3c2d8eb6e53c9c745cd80dac7"
+      },
+      "imports": [
+        "ast",
+        "datetime",
+        "fcntl",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "re",
+        "signal",
+        "stat",
+        "sys",
+        "time"
+      ]
+    },
+    {
+      "path": "operations/clubs-commerce-bff/pure80-source-revision01/build80.controller.rev02.py",
+      "bytes": 27542,
+      "sha256": "2ba93e1f58a2e93549491407bd9d1c0d0d6440fb114df683d10d601e95cd9e52",
+      "originalFieldPath": [
+        "controller",
+        "source"
+      ],
+      "immutableArtifact": {
+        "key": "migration-work/20261108/business/bff-build-inputs80/build80.controller.recovery01.source-only.rev02.json",
+        "versionId": "wVgGyWR4H6ejWWSlqlNxlVcJvrijqlmN",
+        "envelopeBytes": 116917,
+        "envelopeSHA256": "7e89e19437b49e02fbe799232e4a00642106ec607bb298882f944f73ebd92b91"
+      },
+      "imports": [
+        "ast",
+        "datetime",
+        "fcntl",
+        "gzip",
+        "hashlib",
+        "io",
+        "json",
+        "os",
+        "pathlib",
+        "resource",
+        "signal",
+        "stat",
+        "subprocess",
+        "sys",
+        "tarfile",
+        "time"
+      ]
+    }
+  ],
+  "fileCount": 2,
+  "sourceBytes": 42474,
+  "embeddedOwnCode": [
+    {
+      "containerPath": "operations/clubs-commerce-bff/pure80-source-revision01/pure-original-probe80.py",
+      "variable": "JS",
+      "bytes": 2723,
+      "sha256": "8ef93ee31ac023ac8ad1a25d04b04d7dee8c70165fb71098371d2b67cd2f70f0",
+      "imports": [
+        "node:fs",
+        "node:crypto",
+        "node:child_process",
+        "file:///app/lib.mjs",
+        "pg"
+      ],
+      "externalImplementationsEmbedded": false
+    }
+  ],
+  "authority": {
+    "humanRule": "AGPL-3.0-only / CRAYS AG for demonstrably own previously unlicensed CRAYS code",
+    "actualSourceAuthorAttestationSHA256": "fbd4a1c896f5dae3894105dba758961f592489cd56930c7077e125be82e64ef6",
+    "basis": "Root relays targeted full-code readback by actual Business source authors: exact14932B7bc790,27542B2ba93 and2723B8ef93 embeddedJS created by Codex here for the authorized CRAYS migration as project-specific build/probe/resource protection programs.",
+    "scope": "Exact14932-byte probe7bc790,27542-byte build controller2ba93 and embedded2723-byte JS8ef93. Original Business source-author full-code readback relayed by trusted Root confirms Codex-created CRAYS-specific migration build/probe/resource programs. No ownership inference from absent headers, filenames or custody.",
+    "externalImportsAndReferencesRetainTerms": [
+      "Python stdlib",
+      "Node APIs",
+      "pg",
+      "PhysicalStoragehelper",
+      "five original BFF file path/hash pins"
+    ]
+  },
+  "recipientRights": "Hashes identify licensed originals; recipients AGPL rights to run, modify and redistribute covered code and derivatives remain unaffected.",
+  "excluded": [
+    "Existing BFF Dockerfile/package/lock/server/lib implementations and their separately scoped original terms",
+    "Node.js, Python, npm, pg, Vendure, Docker, systemd, PhysicalStoragehelper and other imported/invoked dependency implementations",
+    "Private admissions/captures/environment/credentials/runtime data/actual result files/logs and other source-envelope fields",
+    "Documentation, unlisted independent code and unrelated future revisions",
+    "Independently licensed third-party material, whose original terms and notices remain unchanged"
+  ],
+  "licenseText": {
+    "path": "operations/clubs-commerce-bff/pure80-source-revision01/LICENSE",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  "notOrLater": true,
+  "originalSourceBodiesAndSourceCaptureModified": false,
+  "sourceCaptureRemainsInitialSourcePublicationRecord": true,
+  "supersedesPreparedNotEffectiveDraft": {
+    "packetSHA256": "27c740690c43f6cf678a492284bbd0ec0523c8dec3291816be291ca08e5b99a4",
+    "reason": "Exact source-author attribution received and bound; this is a separate final grant, not an overwrite of the historic pending receipt."
+  },
+  "sourcePublicationDoesNotAuthorizeCRAYSInfrastructureOrPrivateCredentialUse": true,
+  "buildProbeRuntimeOrCustomerAcceptanceClaimed": false
+}
