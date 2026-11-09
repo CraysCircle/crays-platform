@@ -20,11 +20,13 @@ The environment example is derived from direct process.env references. It contai
 
 Choose the exact source tag and qualified inputs from the component/artifact index. Source preservation, dependency recovery, a successful new build, runtime adoption and customer/rights acceptance are separate checks.
 
+Separate protected custody now retains seventeen exact Spot/WebChuck working-source originals, with all original-member restoration hashes verified. The fifteen smaller originals total 85,820 bytes and have completed protected source-context/privacy review with no identified redaction holds; public source publication and full rights/dependency clearance remain separate. They are not additional public inputs in this 2,045-file composition. The two larger Prototype versions remain outside that fifteen-file review and must not replace this captured application wholesale.
+
 ## Exact source checkout
 
 The original capture includes its existing line endings. For the immutable capture tags, disable automatic line-ending conversion when cloning and switching to the tag:
 
-    git -c core.autocrlf=false clone https://github.com/CraysCircle/crays-platform.git
+    git -c core.autocrlf=false clone https://github.com/CraysWorld/crays-platform.git
     git -C crays-platform -c core.autocrlf=false switch --detach shared-web-source-state24-20261108
 
 The application directory also carries a byte-preserving attributes rule on the current branch. Compare captured source blobs against source-capture.json. The [anonymous GitHub readback record](../provenance/github-readback.json) identifies the already verified source revisions.
@@ -32,6 +34,8 @@ The application directory also carries a byte-preserving attributes rule on the 
 ## Operational program source supplement
 
 The [scripts source guide](../scripts/README.md) and [operational helper manifest](../provenance/operational-helpers.json) preserve 90 referenced programs and two imported helpers. Both the historical baseline and the two different worktree files have their own tags. Four source files containing contact/realistic fixture literals remain under provenance review. The original source-package manifest is retained separately; it is not the application's install manifest. Current runtime compatibility, external datasets and remaining technical documents are not established by this source supplement. No preserved program was run.
+
+The separate Gym review covers 77 exact path versions across 73 named paths. Its four older versions are different paths from the four withheld helper programs above; resolving those older privacy contexts does not clear the independent helper hold or establish full authorship/license rights.
 
 ## Member source composition recovery
 
