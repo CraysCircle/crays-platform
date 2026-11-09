@@ -99,7 +99,7 @@ const checks = [
     file: "src/lib/dal/server-trust.ts",
     patterns: [
       "const portalBridgeRole = readPortalBridgeRole(request);",
-      "const session = await resolveMappedSession();",
+      "const mapped = await resolveMappedSession(request);",
       "authoritySource: \"portal-bridge-cookie\"",
     ],
   },
@@ -168,7 +168,7 @@ if (portalSource.includes("href={primaryEntry.href}") || portalSource.includes("
 
 const serverTrustSource = existsSync("src/lib/dal/server-trust.ts") ? readFileSync("src/lib/dal/server-trust.ts", "utf8") : "";
 const portalBridgeIndex = serverTrustSource.indexOf("const portalBridgeRole = readPortalBridgeRole(request);");
-const mappedSessionIndex = serverTrustSource.indexOf("const session = await resolveMappedSession();");
+const mappedSessionIndex = serverTrustSource.indexOf("const mapped = await resolveMappedSession(request);");
 if (portalBridgeIndex === -1 || mappedSessionIndex === -1 || portalBridgeIndex > mappedSessionIndex) {
   failures.push("src/lib/dal/server-trust.ts must resolve the portal bridge cookie before calling Auth0 session resolution");
 }

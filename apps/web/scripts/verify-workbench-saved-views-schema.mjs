@@ -26,11 +26,14 @@ const pool = new Pool({
   max: 1,
   idleTimeoutMillis: 30_000,
   connectionTimeoutMillis: 10_000,
-  options: "-c crays.app_role=core_service",
 });
 
+const client = await pool.connect();
+
 try {
-  const tables = await pool.query(
+  await client.query("select set_config('crays.app_role', 'core_service', false)");
+
+  const tables = await client.query(
     `
       select table_name
       from information_schema.tables
@@ -39,7 +42,7 @@ try {
     `,
   );
 
-  const rls = await pool.query(
+  const rls = await client.query(
     `
       select relrowsecurity, relforcerowsecurity
       from pg_class
@@ -49,7 +52,7 @@ try {
     `,
   );
 
-  const policy = await pool.query(
+  const policy = await client.query(
     `
       select policyname
       from pg_policies
@@ -59,7 +62,7 @@ try {
     `,
   );
 
-  const counts = await pool.query(
+  const counts = await client.query(
     `
       select
         count(*)::text as saved_views,
@@ -95,5 +98,6 @@ try {
 
   if (!ready) process.exitCode = 1;
 } finally {
+  client.release();
   await pool.end();
 }
