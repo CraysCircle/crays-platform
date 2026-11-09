@@ -1,0 +1,515 @@
+{
+  "schema": "crays.core-untracked-source-location-programs.v1",
+  "sourceHead": "c2018d04f6a52d8716326a098dde7624cbb18963",
+  "files": [
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/authorize-existing-native-client.mjs",
+      "bytes": 7922,
+      "sha256": "7975dcecd45ffe8223b10d1441747df8a0b96b4001aef347a86f446427e6632a",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/authorize-existing-native-client.mjs",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 3
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/connect-owning-native-core.mjs",
+      "bytes": 7754,
+      "sha256": "ab33f7ddf63d6de5fb07c7284499bcd93e1285ef7196dcc38c3462d3fc1e2b7f",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/connect-owning-native-core.mjs",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 2
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v101.py",
+      "bytes": 3115,
+      "sha256": "b4bf0072c7cb48f208836a5963b0f58b584faa96bdc7cc2c6fff8369f3829382",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v101.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 2
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v65.py",
+      "bytes": 2949,
+      "sha256": "ebb6ed4fc74e41e716a25dcbf166b46df649b9652f4cabb0b0494c6eac69854d",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v65.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v66.py",
+      "bytes": 2949,
+      "sha256": "1c781400528bd47394c792aec166120aed8e125e48f5d2c6c496d5d820c3c24b",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v66.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v69.py",
+      "bytes": 2957,
+      "sha256": "cc746c5f44faafb898d98c47af62c7fc55e4fee93abe451ab754f1ebdf30221b",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v69.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v73.py",
+      "bytes": 2958,
+      "sha256": "9a4b0b6f69a87aceefa49829d9416ad16867e2bffd9e3db75f6e3c99cf8528f4",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v73.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v75.py",
+      "bytes": 2959,
+      "sha256": "494b4aabd0e91db4afb141588aaace5de05ecce413a9c30ca98c4f1550897613",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v75.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v77.py",
+      "bytes": 2963,
+      "sha256": "c66b30de067102c1ba0eb3b94a8b92c9bd9f9ab357fa686b478848c1c97281f2",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v77.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v79.py",
+      "bytes": 2958,
+      "sha256": "f3ed5f3846e1f49927e0571238829ad0f20586150fbe76bf86ac6c82d6d1b5d6",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v79.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v85.py",
+      "bytes": 2954,
+      "sha256": "4a87b9a4b54e6ffbfa9b070f4e43967ee513a7410a58f2aab8feb0ce5cc5da4a",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v85.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v90.py",
+      "bytes": 2961,
+      "sha256": "ba5f99f437572b46a264572f9eace600e85bf0cb9b0093a428544ecbdab4037b",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v90.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v93.py",
+      "bytes": 2969,
+      "sha256": "3bb362b2a988bc9530af5782946929377c849ed5140e41c91fe78245e7313f58",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v93.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v99.py",
+      "bytes": 3112,
+      "sha256": "74942c5673b5756de411af239196543e4606f9b3eec4d9d52a4aeabfc0868614",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-frozen-source-v99.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 2
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-images-v100.py",
+      "bytes": 2899,
+      "sha256": "cf9d14927bc95d31a3838e83fba41880db08b6bcd224e3707fc9e69a5de32b61",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-images-v100.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-images-v70.py",
+      "bytes": 2908,
+      "sha256": "a4eee115f48b5bc1ffe2980f083f6781188b684c2ca6bb38b7d1dfaef60e547c",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-images-v70.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-images-v74.py",
+      "bytes": 2918,
+      "sha256": "d858c44acfe2776f1663d543b8eedd51727da8a7b7ebb63a24df4067f1dad76d",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-images-v74.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-images-v76.py",
+      "bytes": 2912,
+      "sha256": "c7cc98e86be3d8338e904965586e4973de57908b1ecddd2f6d139ed851813a5f",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-images-v76.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-images-v78.py",
+      "bytes": 2925,
+      "sha256": "df700aaeb52dbc495573a66ecf556cac34c22ad1de6b42722964b022f254c021",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-images-v78.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-images-v80.py",
+      "bytes": 2917,
+      "sha256": "0753d8efbd3aab26ef2c90a03acb07cc1ba35317b2d470fa92dd3fa1dc59ad6a",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-images-v80.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-images-v81.py",
+      "bytes": 2917,
+      "sha256": "0e42e4b3061dc2afa0f3b9359da6fba6cbce673fa249a6d7160c1049c2138ac9",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-images-v81.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-images-v82.py",
+      "bytes": 2927,
+      "sha256": "69dda73e6392191075fe4700a3a0e3d04688ad41b681ad6ec5ca75403395c532",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-images-v82.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-images-v86.py",
+      "bytes": 2901,
+      "sha256": "5aaa46a328e3b600578c39dfc577976396a3e082562b3d816c7e57848b2d9091",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-images-v86.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-images-v87.py",
+      "bytes": 2903,
+      "sha256": "6ba3acbcbf043d67f1b28a07a606aa6759fef9c77da46f4805d961fef427205b",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-images-v87.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-images-v88.py",
+      "bytes": 2906,
+      "sha256": "a45a45ff6db6f2bb672178fb1f5002835e6c7eed951a0cb99eabfecced07790c",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-images-v88.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-images-v91.py",
+      "bytes": 2894,
+      "sha256": "327a619aefc0826416c2c70a885796883a3a61faf8afed50f5137e3c4a317bdf",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-images-v91.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-images-v92.py",
+      "bytes": 2908,
+      "sha256": "f5a43539d161e70592de10cb22c14b96cf7d75984bdd8e100d5265abf6930144",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-images-v92.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-images-v94.py",
+      "bytes": 2903,
+      "sha256": "368c766036b2efbed291c8119882e40618ec3a8eac8f470718bc10ea4f507b00",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-images-v94.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-images-v95.py",
+      "bytes": 2916,
+      "sha256": "a88458bc3cf54aa6f26143aa0f8084cc71d32d35f28e7be82c6b66a0de39c3e7",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-images-v95.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-images-v96.py",
+      "bytes": 2909,
+      "sha256": "3a1ee1c3198574b6f94a5fb006f2d3577f84d991af2d9eb9bbb82de66a68baa0",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-images-v96.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-images-v97.py",
+      "bytes": 2902,
+      "sha256": "c45724f33b63ee01904f32eaffaa5eabc5067bad95efed4335e91187eb7654e0",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-images-v97.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-library-images-v98.py",
+      "bytes": 2900,
+      "sha256": "dbf14f136f01b63ae85cc18cb0d66e60fc3e04301143d110cb6a811926ca2948",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-library-images-v98.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-article-reply-fields-v89.py",
+      "bytes": 2381,
+      "sha256": "58dce8f87c0043b3841d672d8d1492a39bd91f2a18e2ab6c36bc072a6cc0b10b",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-article-reply-fields-v89.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-article-reply-v83.py",
+      "bytes": 2298,
+      "sha256": "024fc77629d3ad01298b04e89eedacd75ddf3790978664c603fafc85f203dc84",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-article-reply-v83.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-article-reply-v84.py",
+      "bytes": 2320,
+      "sha256": "bce8973f7544ea549cae542b76832484f34c764c075b4f12f110050ca51923c5",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-article-reply-v84.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-auth-expiry-v47.py",
+      "bytes": 2237,
+      "sha256": "66282ea7fc31d4a7c13c8202272374d1e46e5fedebd5af8f721dc953b734bff8",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-auth-expiry-v47.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-reading-v67.py",
+      "bytes": 2235,
+      "sha256": "fa3e85d22f188b68e6d444932e9be3fedee26ebe02b2c1fc963015e2e82f6a2e",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-reading-v67.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-reading-v68.py",
+      "bytes": 2235,
+      "sha256": "054e9a1b024985eeb071e45dad43aaf257ceb2bf224173cc9a19ca4f112846ce",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-reading-v68.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-reading-v71.py",
+      "bytes": 2235,
+      "sha256": "637b0f4b3a26f507a8556f48d43d480f72ddaa2ce1942dc94fc0f931619faddc",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-reading-v71.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-reading-v72.py",
+      "bytes": 2235,
+      "sha256": "bf38811d8f542d298c5199855c034711b2295a93674a09d52547b8c08a58c331",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-reading-v72.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-receipt-recovery-v105.py",
+      "bytes": 2280,
+      "sha256": "8b808980d366716e6bd5db9f9dfbf9460e01ea4a2c972f196d4b58c48fb7f909",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-receipt-recovery-v105.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-session-renewal-v102.py",
+      "bytes": 2301,
+      "sha256": "c913ef4ff8ed6c77b38ca79bc9f9a77872073218fa00b2025357be3d1ab9129e",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-session-renewal-v102.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-session-renewal-v103.py",
+      "bytes": 2301,
+      "sha256": "9c2945b6f5dc1b4812906570a937943c8ac653d9660db1aa82740040af7a2acb",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-session-renewal-v103.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-session-renewal-v104.py",
+      "bytes": 2297,
+      "sha256": "fa386a3d10ab202dd3490f57bafb6ec9507be2abfb42eda55bbb2f435c6f411f",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-session-renewal-v104.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-original-source-use-v38.py",
+      "bytes": 7425,
+      "sha256": "fccb6345a4f93b8b55be8a3c89544cec0c4c2c30dfd1eaed8f2ddf6a396e033f",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-original-source-use-v38.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 3
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-original-source-use-v39.py",
+      "bytes": 6721,
+      "sha256": "d8777480b36899c3cfedc642b30487d5b615ed2f276e514767d8dcb9bec674c5",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-original-source-use-v39.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 2
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-original-source-use-v40.py",
+      "bytes": 6721,
+      "sha256": "ae6fad4c53eb0f0680acf056810a3dbf910fd210542cbc698e98195a84fbb3a9",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-original-source-use-v40.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 2
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-owner-model-observation-v41.py",
+      "bytes": 3672,
+      "sha256": "5ba3950d4891c97fa8b3ee76b8188d1b5581b4df2fe2cdbe594597aa1ec98214",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-owner-model-observation-v41.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-receipt-images-v106.py",
+      "bytes": 2901,
+      "sha256": "ed03dc23c6196d932523c699eb1e0c06db076ebcad7a3cb4ea181ff2848f668a",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-receipt-images-v106.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-receipt-images-v107.py",
+      "bytes": 2911,
+      "sha256": "3b13f2e2d5fe4fffc9e865fbab0979f8339f06766bad2927caaaf5d0ff9741ea",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-receipt-images-v107.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/native-server/pair-owner-service-device.mjs",
+      "bytes": 2632,
+      "sha256": "070eb384092a4ff9a8d40662406a51c9b88c9de53e5cae98db2b4e2af006e869",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/native-server/pair-owner-service-device.mjs",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 2
+    },
+    {
+      "path": "crays-platform/scripts/native-server/pair-owner-service-device.py",
+      "bytes": 5331,
+      "sha256": "fb675f025839be0fb59e8e4fc854b7ca6a553b3b57ec0d1c6c47b51059189d26",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/native-server/pair-owner-service-device.py",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/native-server/read-actual-owner-entry.mjs",
+      "bytes": 3140,
+      "sha256": "5ee5980900836233e8aad48e14814b0966c0e5a2dd67454361a41e21ed13eee5",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/native-server/read-actual-owner-entry.mjs",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/native-server/register-actual-owner-contact.mjs",
+      "bytes": 5021,
+      "sha256": "3b19268dca407c0b69869f194fd6def3913083fdec3560dfe04c4ebebcabfbf8",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/native-server/register-actual-owner-contact.mjs",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/scripts/native-server/upgrade-owner-service-device.mjs",
+      "bytes": 2384,
+      "sha256": "ea1ceb1d61ee113e7b557920b3b8b6d24b632138391ddcdfcf98c849f908a873",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/native-server/upgrade-owner-service-device.mjs",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 1
+    },
+    {
+      "path": "crays-platform/src/lib/personal-agent-baseline-bootstrap.ts",
+      "bytes": 7987,
+      "sha256": "4355191aa61c7d7c77c6e998c6735b774cc3c93578ff48737f5d4c0b2e1c5015",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/personal-agent-baseline-bootstrap.ts",
+      "qualification": "ORIGINAL_SOURCE_OR_RUNTIME_LOCATION_LITERAL_ONLY_NO_REFERENCED_PRIVATE_FILE_BODY",
+      "absolutePathLiteralCount": 3
+    }
+  ],
+  "sourcePathAdjudication": "Original source and runtime/configuration file locations are technical program literals. Only the original source program bodies are included; referenced private configuration, gateway state, credential files and logs were not copied. Location literals are preserved to retain original code and source relationships.",
+  "existingAuth0ClientIdAdjudicationReused": "connect-owning-native-core.mjs has a previously adjudicated nonsecret Auth0 native client identifier; no client secret or bearer token is introduced.",
+  "sourceProgramsExecuted": false,
+  "pythonASTParsedOnly": 49,
+  "wholePrivacyLicenseRecoveryClosure": false
+}

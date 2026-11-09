@@ -49,3 +49,15 @@ Version-matched upstream records supply root texts for eight additional packages
 ## Additional original implementation inputs
 
 [Additional source](UNTRACKED_SOURCE.md) preserves 34 original GraphQL operation documents and 60 targeted compiler configurations. [Generator and rollback sources](UNTRACKED_GENERATOR_AND_ROLLBACKS.md) retain eight original rollback programs, the isolated GraphQL generator and its exact dependency lock, plus schema metadata. All 107 original files retain their byte hashes and original relative paths. No generator, compiler check or SQL program was executed. These inputs supplement this source slice; they do not close the remaining untracked code, historical commits, dependency notices or runtime recovery.
+
+## Additional original implementation and test source
+
+A further 232 byte-preserved original files cover native/Personal identity and Core adapters, GraphQL/schema/Gym implementation, operational controllers and tests. Each manifest records the original path, size and SHA-256; source programs were not executed during preservation.
+
+- [Untracked Implementation Source](UNTRACKED_IMPLEMENTATION_SOURCE.md)
+- [Untracked Operational Source](UNTRACKED_OPERATIONAL_SOURCE.md)
+- [Untracked Source Location Programs](UNTRACKED_SOURCE_LOCATION_PROGRAMS.md)
+- [Untracked Adjudicated Technical Literals](UNTRACKED_ADJUDICATED_TECHNICAL_LITERALS.md)
+- [Untracked Synthetic Auth Fixtures](UNTRACKED_SYNTHETIC_AUTH_FIXTURES.md)
+
+These are source slices at the recorded historical Core authority, not a claim of the latest deployed runtime or complete recovery. Marketing/profile data, provider bindings, generated/vendor relationships and the remaining candidates require their own checks.

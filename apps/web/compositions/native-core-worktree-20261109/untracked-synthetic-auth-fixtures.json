@@ -1,0 +1,44 @@
+{
+  "schema": "crays.core-untracked-synthetic-auth-fixtures.v1",
+  "sourceHead": "c2018d04f6a52d8716326a098dde7624cbb18963",
+  "files": [
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/http-sql.test.mjs",
+      "bytes": 205847,
+      "sha256": "d7154a0083a7948f6a0c0e61f83a1f0783aa91cc91f64acb3417af6db9159598",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/http-sql.test.mjs",
+      "literalAdjudication": {
+        "classification": "SYNTHETIC_AUTH0_CLIENT_SECRET_SENTINEL",
+        "evidence": "Alphabetic/hyphen-only literal explicitly says not/secret; used in the synthetic test environment object alongside repeated synthetic AUTH0_SECRET bytes and example.invalid test identities. No provider credential fetched or introduced."
+      }
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/native-identity-config-check.mjs",
+      "bytes": 2552,
+      "sha256": "a66ca4936f37144afe22331a2d8df8e187a36b5acebb8e41b25b66c2a44ac0f1",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/native-identity-config-check.mjs",
+      "literalAdjudication": {
+        "classification": "UNUSED_DATABASE_PASSWORD_CONFIGURATION_FIXTURE",
+        "evidence": "Database URI password is explicitly labelled unused/password; checker validates builder output and denies foreign role/fallback queries. Complete original program explicitly states no connection opened and no credentials fetched. Retains original target hostname only as a configuration fixture."
+      }
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/real-gateway-probe.mjs",
+      "bytes": 23609,
+      "sha256": "e1fd96c207654fb9315248362d624705318279d49fff6f31833ba5dc292d59d7",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/real-gateway-probe.mjs",
+      "literalAdjudication": {
+        "classification": "DISPOSABLE_LOOPBACK_COMPARATOR_PASSWORD_AND_SYNTHETIC_GATEWAY_TOKEN",
+        "evidence": "Password used solely by localConnect comparator started on reserved loopback port; each comparator stops via finally local.stopAndWait. Adjacent shared token is explicitly SYNTHETIC and NOT_OWNER_AUTH. The source declares controlled canonical person and no real Auth0/Core grant. This is original test authentication material, not copied production/provider credentials."
+      }
+    }
+  ],
+  "completeOriginalProgramBodiesRetained": true,
+  "productionProviderCredentialsIncluded": false,
+  "sourceProgramsExecuted": false,
+  "newConnectionsOrGatewayProcessesStarted": false,
+  "wholeLegalRecoveryClosure": false
+}

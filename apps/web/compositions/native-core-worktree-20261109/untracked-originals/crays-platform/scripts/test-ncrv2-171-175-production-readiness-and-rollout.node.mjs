@@ -1,0 +1,30 @@
+import assert from "node:assert/strict";
+import { createPartnerRolloutAdmission, currentCapacityDecision, licensingAndSupport, migrationStages, productionTopology, rolloutStages } from "../src/lib/member-commerce/production-readiness-and-rollout-contract.ts";
+
+let passed = 0;
+const pass = (name, value) => { assert.ok(value, name); passed += 1; console.log(`PASS ${name}`); };
+
+pass("current host remains test-only", currentCapacityDecision.classification === "VPS_TEST_ONLY");
+pass("measured host facts retained", currentCapacityDecision.logicalCpu === 8 && currentCapacityDecision.ramBytes === 16_710_197_248 && currentCapacityDecision.rootStorageBytes === 498_131_243_008);
+pass("exactly one human tester retained", currentCapacityDecision.activeHumanTesters === 1);
+pass("no production capacity claim", !currentCapacityDecision.productionCapacityProven);
+pass("enlargement awaits workload evidence", currentCapacityDecision.enlargementDecision === "DEFER_UNTIL_ADMITTED_WORKLOAD_MEASUREMENT");
+pass("Vendure channel not security", productionTopology.vendure.includes("never security boundary"));
+pass("conservative multi-cell planning ceiling", productionTopology.vendurePlanningCeilingOperatorsPerCell === 50 && productionTopology.hundredsPerVerticalSupportedByMultipleCells);
+pass("Partner ERP isolation", productionTopology.erpnext.includes("one Partner site and database"));
+pass("heavy components separated", productionTopology.office.includes("separate") && productionTopology.talk.includes("dedicated") && productionTopology.mail.includes("separate"));
+pass("early sharding signals explicit", productionTopology.shardEarlierWhen.length === 4);
+pass("four licensing decisions explicit", licensingAndSupport.length === 4 && licensingAndSupport.every((item) => item.production.includes("REQUIRED")));
+pass("migration covers canonical graph", migrationStages.includes("canonical_person_organization_relationship_resolution_without_email_only_merge"));
+pass("migration forbids implicit calendar duplication", migrationStages.includes("single_primary_personal_calendar_consolidation_and_explicit_additional_calendar_decisions"));
+pass("migration preserves seller history", migrationStages.includes("versioned_store_operator_assignment_and_immutable_seller_history_import"));
+pass("migration rollback is Partner-scoped", migrationStages.includes("partner_scoped_rollback_without_global_reset"));
+pass("five rollout stages", rolloutStages.length === 5);
+const blocked = createPartnerRolloutAdmission({ partnerTenantId: "partner-a", operatorLegalEntityId: "legal-a", storeId: "store-a", vertical: "gym", stage: "internal_pilot", phase16Passed: false, migrationReconciled: false, licensingApproved: false, capacityCellAdmitted: false });
+pass("open prerequisites block rollout", !blocked.admitted && blocked.blockers.length === 5);
+pass("no global fallback", !blocked.globalFallbackAllowed);
+const admitted = createPartnerRolloutAdmission({ partnerTenantId: "partner-a", operatorLegalEntityId: "legal-a", storeId: "store-a", vertical: "gym", stage: "internal_pilot", phase16Passed: true, migrationReconciled: true, licensingApproved: true, capacityCellAdmitted: true, rollbackReceiptId: "rollback-a" });
+pass("hypothetical exact-scope admission", admitted.admitted && admitted.rollbackScope === "EXACT_PARTNER_OPERATOR_STORE");
+pass("deterministic decision receipt", createPartnerRolloutAdmission({ partnerTenantId: "partner-a", operatorLegalEntityId: "legal-a", storeId: "store-a", vertical: "gym", stage: "internal_pilot", phase16Passed: false, migrationReconciled: false, licensingApproved: false, capacityCellAdmitted: false }).decisionSha256 === blocked.decisionSha256);
+assert.equal(passed, 20);
+console.log(`RESULT ${passed}/20`);

@@ -1,0 +1,20 @@
+{
+	admin off
+}
+
+native-api.crays.pro {
+	@nativeCore path /api/graphql /api/native/personal-message-originals /api/native/personal-message-originals/read
+	handle @nativeCore {
+		request_body {
+			max_size 64MiB
+		}
+		reverse_proxy 127.0.0.1:19090
+	}
+	handle {
+		respond 404
+	}
+	header {
+		-Server
+		X-Content-Type-Options nosniff
+	}
+}

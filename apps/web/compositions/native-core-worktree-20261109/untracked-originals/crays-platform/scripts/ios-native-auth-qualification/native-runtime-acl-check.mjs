@@ -1,0 +1,55 @@
+import './runtime-source-loader.mjs';
+import assert from 'node:assert/strict';
+import {readFileSync,writeFileSync} from 'node:fs';
+import {randomUUID} from 'node:crypto';
+import {createFocusedNativeCustomerFixture} from './focused-native-customer-fixture.mjs';
+const f=await createFocusedNativeCustomerFixture(),verified=[];
+const database=await import('../../src/db/client.ts');
+const {Pool}=await import('pg');
+const uriBefore=process.env.CRAYS_DATABASE_URL;
+let legacy;
+try {
+ for(const file of ['0215_personal_message_attachment_custody.sql','0217_personal_message_original_display_name.sql','0219_native_personal_runtime_acl.sql'])await f.admin.query(readFileSync(new URL('../../database/migrations/'+file,import.meta.url),'utf8'));
+ const access=JSON.parse(readFileSync(new URL('../../src/db/native-personal-runtime-access.json',import.meta.url),'utf8'));
+ const role=(await f.admin.query('select rolcanlogin,rolinherit,rolsuper,rolcreatedb,rolcreaterole,rolreplication,rolbypassrls,rolconnlimit from pg_roles where rolname=$1',[access.role])).rows[0];
+ assert.deepEqual(role,{rolcanlogin:true,rolinherit:false,rolsuper:false,rolcreatedb:false,rolcreaterole:false,rolreplication:false,rolbypassrls:false,rolconnlimit:8});
+ const catalog=await f.admin.query("select c.relname,c.relrowsecurity,c.relforcerowsecurity,p.polpermissive from pg_class c join pg_namespace n on n.oid=c.relnamespace join pg_policy p on p.polrelid=c.oid where n.nspname='crays_core' and p.polname='native_runtime_own_boundary' and $1::regrole::oid=any(p.polroles)",[access.role]);
+ assert.equal(catalog.rows.length,access.tables.length);assert(catalog.rows.every(x=>x.relrowsecurity&&x.relforcerowsecurity&&!x.polpermissive));
+ verified.push('Actual source migration creates exact non-bypass/no-membership runtime role and19 role-specific restrictive FORCE-RLS boundaries');
+ legacy=new Pool({connectionString:uriBefore,ssl:false,max:1,options:'-c crays.app_role=core_service'});
+ assert.equal((await legacy.query('select count(*)::int n from crays_core.canonical_people')).rows[0].n,2);
+ verified.push('Previously unfiltered canonical-person read for existing non-native granted role remains unchanged');
+ await database.closeCoreDatabase();const nativeUri=new URL(uriBefore);nativeUri.username=access.role;process.env.CRAYS_DATABASE_URL=nativeUri.toString();
+ const pool=database.getCorePgPool();
+ assert.equal((await pool.query('select current_user role')).rows[0].role,access.role);
+ for(const table of ['crays_accounts','canonical_people','personal_agent_standard_assignments','conversations','messages'])assert.equal((await pool.query('select count(*)::int n from crays_core.'+table)).rows[0].n,0);
+ verified.push('New runtime role sees no personal rows without server-owned native transaction context, including original broad core_service policies');
+ const {executePersonalMessenger,receiveOwnPersonalMessageWithOriginals}=await import('../../src/db/personal-messenger-adapter.ts');
+ const own=await executePersonalMessenger(f.principals[0],'read',{});assert.equal(own.bindingId,f.bindings[0].bindingId);assert.equal((await f.runtime.read(f.invocation.receiptId)).attemptId,f.invocation.attemptId);
+ verified.push('Actual original conversation and runtime-attempt currentness work with column-only row-lock grants under the new role');
+ const incoming=await receiveOwnPersonalMessageWithOriginals(f.principals[0],{bindingId:f.bindings[0].bindingId,expectedBindingRevision:f.bindings[0].revision,expectedContactRevision:f.runtimeTarget.contactRevision,idempotencyKey:'role-original-'+randomUUID(),body:'Own synthetic original',originals:[{mimeType:'text/plain',retainSeconds:3600,bytes:Buffer.from('Own original bytes'),displayName:'own-note.txt'}]});
+ const projected=await executePersonalMessenger(f.principals[0],'read',{},true);const message=projected.messages.find(x=>x.messageId===incoming.messageId);assert.equal(message.originals.length,1);
+ const manifest=message.originals[0],reference={attachmentId:manifest.attachmentId,version:manifest.version,sha256:manifest.sha256};
+ const custody=await import('../../src/db/personal-message-attachment-custody.ts');assert.equal((await custody.readOwnMessageAttachmentOriginal(f.principals[0],reference)).bytes.toString(),'Own original bytes');await assert.rejects(custody.readOwnMessageAttachmentOriginal(f.principals[1],reference));
+ await custody.eraseOwnMessageAttachment(f.principals[0],reference);await assert.rejects(custody.readOwnMessageAttachmentOriginal(f.principals[0],reference));
+ verified.push('Actual atomic original-byte ingress/projection/own read/foreign denial/receipt-backed erasure work with bounded runtime grants');
+ const client=await pool.connect();
+ const ownContext=async()=>{await client.query('begin');await client.query("select set_config('crays.native_personal_account',$1,true),set_config('crays.native_personal_provider_key','auth0',true),set_config('crays.native_personal_provider_subject',$2,true)",[f.runtimeTarget.accountId,f.fixtures[0].authIdentity.providerSubject]);};
+ try {
+  await ownContext();assert.equal((await client.query('select count(*)::int n from crays_core.canonical_people')).rows[0].n,1);assert.equal((await client.query('select count(*)::int n from crays_core.crays_accounts where account_id=$1',[f.fixtures[1].account.accountId])).rows[0].n,0);await client.query('rollback');
+  await ownContext();await assert.rejects(client.query('update crays_core.personal_messenger_bindings set binding_id=binding_id where account_id=$1',[f.runtimeTarget.accountId]),/row-lock privilege is not mutation authority/);await client.query('rollback');
+  await ownContext();await assert.rejects(client.query("update crays_core.messages set body='not allowed' where sender_account_id=$1",[f.runtimeTarget.accountId]),/permission denied/);await client.query('rollback');
+  await ownContext();await assert.rejects(client.query('select * from crays_core.nostr_identities'),/permission denied/);await client.query('rollback');
+ }finally{client.release();}
+ verified.push('Own-only raw reads preserved; lock-only binding mutation, arbitrary message edit and unrelated Nostr-table reads denied');
+ await f.admin.query("update crays_core.canonical_person_accounts set status='revoked' where account_id=$1",[f.runtimeTarget.accountId]);await assert.rejects(executePersonalMessenger(f.principals[0],'read',{}));await assert.rejects(f.runtime.read(f.invocation.receiptId));
+ verified.push('Revoked original customer link still denies native chat and existing runtime attempt under new role');
+ assert.equal((await f.admin.query('select count(*)::int n from pg_auth_members where member=$1::regrole',[access.role])).rows[0].n,0);
+ verified.push('Runtime role has no inherited role membership and source grants no credentials or profile/lifecycle activation');
+ await database.closeCoreDatabase();
+ await f.admin.query(readFileSync(new URL('../../database/migrations/0219_native_personal_runtime_acl.down.sql',import.meta.url),'utf8'));
+ assert.equal((await f.admin.query('select to_regrole($1) role',[access.role])).rows[0].role,null);
+ assert.equal((await legacy.query('select count(*)::int n from crays_core.canonical_people')).rows[0].n,2);
+ verified.push('Actual source rollback removes only drained new role/ACL/role-local guards and preserves Core rows plus original non-native reads');
+ writeFileSync(process.env.CRAYS_NATIVE_CUSTOMER_RESULT,JSON.stringify({status:'PASS_ACTUAL_ISOLATED_NATIVE_RUNTIME_ACL_SOURCE_NOT_NEON_OR_HOST_DEPLOYMENT',verified,syntheticOwnerAndPostgres16:true,actualProductTransactionsAndRole:true,productiveChanges:false},null,2)+'\n');console.log(JSON.stringify({verified}));
+}finally{await legacy?.end();await database.closeCoreDatabase();process.env.CRAYS_DATABASE_URL=uriBefore;await f.close();}

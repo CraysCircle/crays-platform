@@ -1,0 +1,19 @@
+import{createHash}from"node:crypto";import{readFileSync,writeFileSync}from"node:fs";
+const [inputDir,output]=process.argv.slice(2);if(!inputDir||!output)throw new Error("inputDir and output required");
+const lock=readFileSync(inputDir+"/pnpm-lock.yaml","utf8"),pkg=JSON.parse(readFileSync(inputDir+"/package.json","utf8"));
+const sha=s=>createHash("sha256").update(s).digest("hex"),lockSha=sha(lock);
+if(lockSha!=="2cbd98fa54c8afe5a985a4e42ee66474715fdc49bb436c4b3ba57246e97ccab5")throw new Error("LOCKFILE_DIGEST_MISMATCH");
+const packageSection=lock.slice(lock.indexOf("\npackages:\n")+"\npackages:\n".length,lock.indexOf("\nsnapshots:\n"));
+const packageMatches=[...packageSection.matchAll(/^  ('(?:[^']|'')+'|[^\s][^:]*):\n([\s\S]*?)(?=^  (?:'(?:[^']|'')+'|[^\s][^:]*):\n|\s*$)/gm)];
+function unquote(v){return v.startsWith("'")?v.slice(1,-1).replaceAll("''","'"):v}
+function splitKey(key){key=unquote(key);const at=key.lastIndexOf("@");if(at<=0)return{name:key,version:"unknown"};return{name:key.slice(0,at),version:key.slice(at+1)}}
+function purl(name,version){const n=name.startsWith("@")?"%40"+name.slice(1).split("/").map(encodeURIComponent).join("/"):encodeURIComponent(name);return"pkg:npm/"+n+"@"+encodeURIComponent(version)}
+const components=[];
+for(const m of packageMatches){const key=unquote(m[1]),{name,version}=splitKey(key),body=m[2],integrity=/integrity:\s*(sha(?:256|384|512)-[A-Za-z0-9+/=]+)/.exec(body)?.[1],hashes=[];if(integrity){const [alg,b64]=integrity.split("-",2);hashes.push({alg:alg.toUpperCase().replace("SHA","SHA-"),content:Buffer.from(b64,"base64").toString("hex")})}components.push({type:"library",name,version,"bom-ref":purl(name,version),purl:purl(name,version),...(hashes.length?{hashes}:{}),properties:[{name:"crays:pnpm-lock-key",value:key}]})}
+const importerSection=lock.slice(lock.indexOf("\nimporters:\n")+"\nimporters:\n".length,lock.indexOf("\npackages:\n"));
+const importers=[...importerSection.matchAll(/^  ('(?:[^']|'')+'|[^\s][^:]*):\n/gm)].map(m=>unquote(m[1])).sort();
+for(const path of importers)components.push({type:"application",name:path==="."?(pkg.name||"openclaw"):"openclaw-workspace:"+path,version:pkg.version||"v2026.7.1","bom-ref":"openclaw-workspace:"+path,properties:[{name:"crays:workspace-path",value:path},{name:"crays:source-commit",value:"2d2ddc43d0dcf71f31283d780f9fe9ff4cc04fe4"}]});
+components.sort((a,b)=>a["bom-ref"].localeCompare(b["bom-ref"]));if(new Set(components.map(x=>x["bom-ref"])).size!==components.length)throw new Error("DUPLICATE_BOM_REF");
+const seed=sha("openclaw:2d2ddc43d0dcf71f31283d780f9fe9ff4cc04fe4:"+lockSha),uuid=[seed.slice(0,8),seed.slice(8,12),"4"+seed.slice(13,16),"8"+seed.slice(17,20),seed.slice(20,32)].join("-");
+const bom={bomFormat:"CycloneDX",specVersion:"1.6",serialNumber:"urn:uuid:"+uuid,version:1,metadata:{timestamp:"2026-07-13T22:33:14.000Z",tools:{components:[{type:"application",name:"crays-openclaw-pnpm-lock-sbom",version:"1.0.0"}]},component:{type:"application","bom-ref":"openclaw-source-2d2ddc43",name:"openclaw",version:"v2026.7.1",hashes:[{alg:"SHA-256",content:lockSha}],properties:[{name:"crays:source-commit-sha1",value:"2d2ddc43d0dcf71f31283d780f9fe9ff4cc04fe4"},{name:"crays:lockfile-sha256",value:lockSha},{name:"crays:oci-index-digest",value:"sha256:6a31d44b2944e7adcd2b582bf6fb463111264ebca97a0201795b799135bd102c"}]}},components,properties:[{name:"crays:generation-scope",value:"source package manifest, pnpm lockfile and workspace importers; no installed image or runtime"},{name:"crays:license-admission",value:"pending OCA-PB-03"}]};
+writeFileSync(output,JSON.stringify(bom,null,2)+"\n");console.log(JSON.stringify({status:"PASS",format:"CycloneDX",specVersion:"1.6",components:components.length,externalPackages:packageMatches.length,workspaceImporters:importers.length,documentSha256:sha(readFileSync(output))},null,2));

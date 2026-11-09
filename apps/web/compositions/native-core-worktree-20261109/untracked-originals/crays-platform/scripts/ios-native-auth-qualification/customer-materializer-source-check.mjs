@@ -1,0 +1,40 @@
+import './runtime-source-loader.mjs';
+import assert from 'node:assert/strict';
+import {writeFileSync} from 'node:fs';
+import {createFocusedNativeCustomerFixture} from './focused-native-customer-fixture.mjs';
+import {createAuthenticatedBaselineOrchestrator} from '../../../infra/openclaw/runtime/personal-agent-materializer/code/authenticated-baseline-v3.mjs';
+import {createCoreAssignmentResolver} from '../../../infra/openclaw/runtime/personal-agent-materializer/code/resolve-core-assignment-customer.mjs';
+import {createCoreAssignmentResolver as originalAssignmentResolver} from '../../../infra/openclaw/runtime/personal-agent-materializer/code/resolve-core-assignment.mjs';
+import * as standardFactory from '../../../scripts/personal-agent-standard-package-v20/new-personal-agent-baseline-config.mjs';
+const f=await createFocusedNativeCustomerFixture(),verified=[];
+const {assignPersonalAgentInTransaction}=await import('../../src/db/personal-agent-assignment.ts');
+try {
+ const accountId='synthetic-current-customer-c',personId='synthetic-current-person-c',subject='auth0|synthetic-current-customer-c';
+ // Test setup only, in the OWN disposable database; no owner data or production writes.
+ await f.admin.query("insert into crays_core.crays_accounts(account_id,crays_id,display_name,primary_contact_type,default_role,status) values($1,$1,'Synthetic current customer','contact','guest','active')",[accountId]);
+ await f.admin.query("insert into crays_core.auth_identities(identity_id,account_id,method_type,provider_key,provider_subject,verified) values('synthetic-current-customer-identity-c',$1,'social','auth0',$2,true)",[accountId,subject]);
+ await f.admin.query("insert into crays_core.canonical_people(canonical_person_id,person_version,account_id,display_name_sha256,encrypted_display_name_ref,field_authority_version,lifecycle_state) values($1,1,null,repeat('c',64),'secret://synthetic-current-customer','synthetic-only','active')",[personId]);
+ await f.admin.query("insert into crays_core.canonical_person_accounts(account_id,canonical_person_id,purpose,status,authority_ref) values($1,$2,'customer','active','synthetic-current-customer-source-only')",[accountId,personId]);
+ const bindings={getAuth0Session:async()=>({user:{sub:subject}}),getVerifiedSessionBinding:async()=> 'synthetic-current-customer-session-binding',getClient:()=>f.pool.connect()};
+ const ensure=createAuthenticatedBaselineOrchestrator({...bindings,assignInTransaction:(client,a)=>assignPersonalAgentInTransaction(client,a,'customer'),getMaterializer:async()=>null});
+ const pending=await ensure(Object.freeze({synthetic:true}));assert.equal(pending.status,'PENDING_RUNTIME_HOST');assert.equal(pending.assignmentStatus,'BASELINE_INTENT_ASSIGNED');assert.equal(pending.runtimeStarted,false);
+ verified.push('Actual restricted Core command creates current V20 assignment/delivery from explicit customer link with null legacy column; missing host remains pending');
+ const input={accountId,providerKey:'auth0',providerSubject:subject},standard=standardFactory.getPersonalAgentStandardPackage();
+ const resolve=createCoreAssignmentResolver({getClient:bindings.getClient,standardFactory});
+ const committed=await resolve(input,standard);assert.equal(committed.canonicalPersonId,personId);assert.equal(committed.personAccountLinkVersion,'1');assert.equal(committed.packageSha256,standard.sha256);await committed.assertCurrent();
+ verified.push('Actual downstream resolver accepts exact committed original proposal and current customer/person/link version');
+ await assert.rejects(originalAssignmentResolver({getClient:bindings.getClient,standardFactory})(input,standard));
+ verified.push('Original legacy downstream resolver reproduces rejection for the same actual assignment');
+ input.accountId=f.fixtures[0].account.accountId;input.providerSubject=f.fixtures[0].authIdentity.providerSubject;await committed.assertCurrent();
+ verified.push('Captured assignment currentness cannot be retargeted by later caller-input mutation');
+ await f.admin.query('update crays_core.canonical_person_accounts set version=version+1 where account_id=$1',[accountId]);await assert.rejects(committed.assertCurrent);
+ const account=Object.freeze({accountId,providerKey:'auth0',providerSubject:subject});const renewed=await resolve(account,standard);assert.equal(renewed.personAccountLinkVersion,'2');assert.equal(renewed.agentId,committed.agentId);
+ verified.push('Changed link version invalidates captured runtime readiness; re-resolution preserves same immutable assignment');
+ await assert.rejects(createCoreAssignmentResolver({getClient:()=>f.admin.connect(),standardFactory})(account,standard),/ACCOUNT_SCOPE_DENIED/);
+ verified.push('Bypass/superuser Core connection rejected by runtime assignment resolver');
+ await f.admin.query("update crays_core.canonical_person_accounts set purpose='business' where account_id=$1",[accountId]);await assert.rejects(renewed.assertCurrent);await assert.rejects(resolve(account,standard));
+ verified.push('Business-only link is not customer runtime authority');
+ await f.admin.query("update crays_core.canonical_person_accounts set purpose='customer',status='revoked' where account_id=$1",[accountId]);await assert.rejects(resolve(account,standard));
+ verified.push('Revoked customer link denied without legacy fallback or new runtime');
+ writeFileSync(process.env.CRAYS_NATIVE_CUSTOMER_RESULT,JSON.stringify({status:'PASS_ACTUAL_CUSTOMER_BASELINE_AND_COMMITTED_ASSIGNMENT_SOURCE_NOT_RUNTIME',verified,syntheticSessionAndSetup:true,actualRestrictedCore:true,runtimeOrRootChanged:false,productiveChanges:false},null,2)+'\n');console.log(JSON.stringify({verified}));
+}finally{await f.close();}

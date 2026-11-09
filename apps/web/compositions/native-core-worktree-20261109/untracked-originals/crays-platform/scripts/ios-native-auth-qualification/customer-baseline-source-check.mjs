@@ -1,0 +1,36 @@
+import './runtime-source-loader.mjs';
+import assert from 'node:assert/strict';
+import {writeFileSync} from 'node:fs';
+import {createFocusedNativeCustomerFixture} from './focused-native-customer-fixture.mjs';
+import {createCorePersonResolver} from '../../../infra/openclaw/connections/personal-account/slack-installation-v1/core-person-v3.mjs';
+import {createCorePersonResolver as legacyResolver} from '../../../infra/openclaw/connections/personal-account/slack-installation-v1/core-person-v2.mjs';
+import {createPersonPgContext} from '../../../infra/openclaw/connections/personal-account/slack-installation-v1/person-pg-context-v3.mjs';
+import {createAuthenticatedBaselineOrchestrator} from '../../../infra/openclaw/runtime/personal-agent-materializer/code/authenticated-baseline-v3.mjs';
+const f=await createFocusedNativeCustomerFixture(),verified=[];
+const {assignPersonalAgentInTransaction}=await import('../../src/db/personal-agent-assignment.ts');
+try {
+ const request=Object.freeze({synthetic:true});
+ const bindings={getAuth0Session:async()=>({user:{sub:f.fixtures[0].authIdentity.providerSubject}}),getVerifiedSessionBinding:async()=> 'synthetic-session-binding-for-own-customer',getClient:()=>f.pool.connect()};
+ await assert.rejects(legacyResolver(bindings)(request),/CANONICAL_PERSON_REQUIRED/);
+ const resolve=createCorePersonResolver(bindings),person=await resolve(request);
+ assert.equal(person.canonicalPersonId,f.runtimeTarget.canonicalPersonId);assert.equal(person.personAccountLinkVersion,'1');
+ verified.push('Actual original Core customer link resolves with legacy account column null; old resolver reproduces missing-person error');
+ const pg=await createPersonPgContext({...bindings,resolvePerson:resolve,person});
+ const id=await pg.tx(true,async c=>(await c.query('select current_user role')).rows[0].role);
+ assert.equal(id,'ios_native_personal_http_fixture');verified.push('Current customer-link context uses actual restricted role and own row locks');
+ let commandReached=false;
+ const run=createAuthenticatedBaselineOrchestrator({...bindings,assignInTransaction:async(c,a)=>{commandReached=true;return assignPersonalAgentInTransaction(c,a,'customer');},getMaterializer:async()=>{throw Error('NO_RUNTIME_ADMISSION_EXPECTED');}});
+ const result=await run(request);assert.equal(commandReached,true);assert.equal(result.status,'ASSIGNMENT_REVIEW_REQUIRED');
+ verified.push('Actual assignment command reached; incompatible existing synthetic intent remains review-required and unchanged, no fabricated runtime');
+ await f.admin.query('update crays_core.canonical_person_accounts set version=version+1 where account_id=$1',[person.accountId]);
+ await assert.rejects(resolve.assertResolvedPerson(person),/CORE_PERSON_CHANGED/);await assert.rejects(pg.tx(true,()=>{}));
+ verified.push('Existing issued context rejected after explicit original link-version change');
+ const renewed=await resolve(request);assert.equal(renewed.personAccountLinkVersion,'2');
+ await f.admin.query("update crays_core.canonical_person_accounts set purpose='business' where account_id=$1",[person.accountId]);
+ await assert.rejects(resolve.assertResolvedPerson(renewed));await assert.rejects(resolve(request),/CANONICAL_PERSON_REQUIRED/);
+ verified.push('Business link never supplies customer signup authority');
+ await f.admin.query("update crays_core.canonical_person_accounts set purpose='customer',status='revoked' where account_id=$1",[person.accountId]);
+ await assert.rejects(resolve(request),/CANONICAL_PERSON_REQUIRED/);verified.push('Revoked customer link unavailable; no direct-column or identity fallback');
+ writeFileSync(process.env.CRAYS_NATIVE_CUSTOMER_RESULT,JSON.stringify({status:'PASS_CHANGED_CUSTOMER_BASELINE_SOURCE_NOT_OWNER_OR_RUNTIME',verified,syntheticSession:true,actualRestrictedCore:true,productiveChanges:false},null,2)+'\n');
+ console.log(JSON.stringify({verified}));
+}finally{await f.close();}

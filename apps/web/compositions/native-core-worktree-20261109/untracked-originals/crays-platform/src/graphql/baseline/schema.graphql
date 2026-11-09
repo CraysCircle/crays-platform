@@ -1,0 +1,445 @@
+"""CRAYS domain owner responsible for a governed graph contract."""
+enum GraphQLDomainOwner {
+  PLATFORM
+  IDENTITY
+  ORGANIZATION_STUDIO
+  FRANCHISE
+  CRM
+  PROJECT
+  MEMBER
+  STUDIO_OPERATIONS
+  ERP_FINANCE
+  DOCUMENTS
+  COMMUNICATION
+  ANALYTICS
+}
+
+"""Sensitivity carried by a graph contract before resolver-level redaction."""
+enum GraphQLDataClassification {
+  PUBLIC
+  INTERNAL
+  CONFIDENTIAL
+  RESTRICTED
+}
+
+"""Binds a type or field to its owner, truth source, authorization rule and sensitivity."""
+directive @governed(
+  owner: GraphQLDomainOwner!
+  source: String!
+  auth: String!
+  classification: GraphQLDataClassification!
+) on OBJECT | INTERFACE | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+"""Declares the hard server-side maximum for a non-connection list."""
+directive @bounded(max: Int!) on FIELD_DEFINITION
+
+"""Opaque identifier shared by every canonical gym node."""
+interface GraphQLNode @governed(owner: PLATFORM, source: "CRAYS Core identity map", auth: "authorized node scope", classification: INTERNAL) {
+  """Opaque graph identifier; clients must not infer database identity from it."""
+  id: ID!
+}
+
+"""Canonical node that is always evaluated inside one tenant boundary."""
+interface TenantScopedNode @governed(owner: PLATFORM, source: "CRAYS Core tenant boundary", auth: "active tenant plus object policy", classification: INTERNAL) {
+  """Opaque graph identifier."""
+  id: ID!
+  """Server-derived tenant identifier used for authorization, never tenant selection."""
+  tenantId: ID!
+}
+
+"""Arbitrary-precision decimal serialized as a canonical base-10 string."""
+scalar Decimal
+
+"""Calendar date without an invented timezone."""
+scalar Date
+
+"""UTC ISO-8601 instant."""
+scalar DateTime
+
+"""ISO 4217 currency code."""
+scalar CurrencyCode
+
+"""Money value that never uses binary floating point."""
+type Money @governed(owner: ERP_FINANCE, source: "CRAYS finance value contract", auth: "parent field policy", classification: CONFIDENTIAL) {
+  """Exact base-10 amount."""
+  amount: Decimal!
+  """ISO 4217 currency."""
+  currency: CurrencyCode!
+}
+
+"""Postal address value with intentionally optional locality parts."""
+type PostalAddress @governed(owner: ORGANIZATION_STUDIO, source: "CRAYS address value contract", auth: "parent field policy", classification: CONFIDENTIAL) {
+  """Street and house number."""
+  line1: String!
+  """Optional secondary address line."""
+  line2: String
+  """Postal code."""
+  postalCode: String!
+  """Locality or city."""
+  locality: String!
+  """ISO 3166-1 alpha-2 country code."""
+  countryCode: String!
+}
+
+"""Validated contact point without embedded consent inference."""
+type ContactPoint @governed(owner: IDENTITY, source: "CRAYS identity contact projection", auth: "contact field permission", classification: RESTRICTED) {
+  """Contact channel such as email or phone."""
+  kind: String!
+  """Normalized contact value."""
+  value: String!
+  """Whether the value has provider-backed verification evidence."""
+  verified: Boolean!
+}
+
+"""Reference to immutable or version-locked business evidence."""
+type EvidenceReference @governed(owner: DOCUMENTS, source: "CRAYS evidence registry", auth: "evidence relationship permission", classification: CONFIDENTIAL) {
+  """Opaque evidence identifier."""
+  id: ID!
+  """Human-readable evidence classification."""
+  kind: String!
+  """Stable content or version hash when available."""
+  versionHash: String
+}
+
+"""Edge in a bounded evidence-reference connection."""
+type EvidenceReferenceEdge @governed(owner: DOCUMENTS, source: "CRAYS evidence registry", auth: "evidence relationship permission", classification: CONFIDENTIAL) {
+  """Opaque stable evidence pagination cursor."""
+  cursor: String!
+  """Authorized evidence reference."""
+  node: EvidenceReference!
+}
+
+"""Bounded authorized evidence references for one business object."""
+type EvidenceReferenceConnection @governed(owner: DOCUMENTS, source: "CRAYS evidence registry", auth: "evidence relationship permission", classification: CONFIDENTIAL) {
+  """At most 100 authorized evidence edges."""
+  edges: [EvidenceReferenceEdge!]! @bounded(max: 100)
+  """Cursor navigation metadata."""
+  pageInfo: PageInfo!
+  """Authorized evidence count when safe to disclose."""
+  totalCount: Int
+}
+
+"""Stable lifecycle state with its last authoritative transition time."""
+type LifecycleState @governed(owner: PLATFORM, source: "CRAYS command state", auth: "parent object policy", classification: INTERNAL) {
+  """Domain-defined stable state code."""
+  code: String!
+  """Human-readable state label."""
+  label: String!
+  """Last authoritative state transition."""
+  changedAt: DateTime!
+}
+
+"""Page metadata for stable opaque cursor traversal."""
+type PageInfo @governed(owner: PLATFORM, source: "CRAYS connection contract", auth: "parent collection policy", classification: INTERNAL) {
+  """Whether another page exists after the current edges."""
+  hasNextPage: Boolean!
+  """Whether another page exists before the current edges."""
+  hasPreviousPage: Boolean!
+  """Cursor of the first returned edge."""
+  startCursor: String
+  """Cursor of the last returned edge."""
+  endCursor: String
+}
+
+"""Edge in the bounded canonical gym-node connection."""
+type GymNodeEdge @governed(owner: PLATFORM, source: "CRAYS connection contract", auth: "node plus collection policy", classification: INTERNAL) {
+  """Opaque stable pagination cursor."""
+  cursor: String!
+  """Authorized canonical gym node."""
+  node: GraphQLNode!
+}
+
+"""Bounded connection used by cross-domain gym discovery."""
+type GymNodeConnection @governed(owner: PLATFORM, source: "CRAYS governed repositories", auth: "tenant plus collection and node policy", classification: INTERNAL) {
+  """At most 100 authorized edges."""
+  edges: [GymNodeEdge!]! @bounded(max: 100)
+  """Cursor navigation metadata."""
+  pageInfo: PageInfo!
+  """Authorized result count for the current filter, when safe to disclose."""
+  totalCount: Int
+}
+
+"""CRAYS account identity independent of the external login provider."""
+type IdentityAccount implements GraphQLNode & TenantScopedNode @governed(owner: IDENTITY, source: "CRAYS identity repositories", auth: "self or identity-administration permission", classification: RESTRICTED) {
+  """Opaque account node identifier."""
+  id: ID!
+  """Active server-authorized tenant context."""
+  tenantId: ID!
+  """Safe display name."""
+  displayName: String!
+  """Current account lifecycle."""
+  state: LifecycleState!
+}
+
+"""Operating organization that owns studios and tenant policy."""
+type GymOrganization implements GraphQLNode & TenantScopedNode @governed(owner: ORGANIZATION_STUDIO, source: "CRAYS organization repository", auth: "organization relationship scope", classification: CONFIDENTIAL) {
+  """Opaque organization node identifier."""
+  id: ID!
+  """Owning tenant identifier."""
+  tenantId: ID!
+  """Organization display name."""
+  name: String!
+  """Organization lifecycle."""
+  state: LifecycleState!
+}
+
+"""Physical gym studio operated within an organization."""
+type GymStudio implements GraphQLNode & TenantScopedNode @governed(owner: ORGANIZATION_STUDIO, source: "CRAYS studio repository", auth: "studio relationship scope", classification: CONFIDENTIAL) {
+  """Opaque studio node identifier."""
+  id: ID!
+  """Owning tenant identifier."""
+  tenantId: ID!
+  """Studio display name."""
+  name: String!
+  """Authorized studio address."""
+  address: PostalAddress
+  """Studio lifecycle."""
+  state: LifecycleState!
+}
+
+"""Canonical franchise acquisition or lifecycle case."""
+type FranchiseCase implements GraphQLNode & TenantScopedNode @governed(owner: FRANCHISE, source: "CRAYS franchise lifecycle repository", auth: "franchise case relationship scope", classification: CONFIDENTIAL) {
+  """Opaque franchise case identifier."""
+  id: ID!
+  """Owning tenant identifier."""
+  tenantId: ID!
+  """Case title safe for the authorized relationship."""
+  title: String!
+  """Case lifecycle."""
+  state: LifecycleState!
+  """Bounded and cursor-paginated authorized evidence references."""
+  evidence: EvidenceReferenceConnection!
+}
+
+"""Canonical CRM relationship rather than a vendor record shape."""
+type CrmRelationship implements GraphQLNode & TenantScopedNode @governed(owner: CRM, source: "CRAYS CRM repositories and source maps", auth: "CRM object and field policy", classification: CONFIDENTIAL) {
+  """Opaque relationship identifier."""
+  id: ID!
+  """Owning tenant identifier."""
+  tenantId: ID!
+  """Authorized relationship name."""
+  displayName: String!
+  """Relationship lifecycle."""
+  state: LifecycleState!
+}
+
+"""Opening or delivery project linked to one gym outcome."""
+type GymProject implements GraphQLNode & TenantScopedNode @governed(owner: PROJECT, source: "CRAYS project repositories and source maps", auth: "project participant and field policy", classification: CONFIDENTIAL) {
+  """Opaque project identifier."""
+  id: ID!
+  """Owning tenant identifier."""
+  tenantId: ID!
+  """Project title."""
+  title: String!
+  """Project lifecycle."""
+  state: LifecycleState!
+  """Current target completion date."""
+  targetDate: Date
+}
+
+"""Member identity and gym relationship, separate from login and payer identities."""
+type GymMember implements GraphQLNode & TenantScopedNode @governed(owner: MEMBER, source: "CRAYS member repositories", auth: "self, assigned staff or scoped support permission", classification: RESTRICTED) {
+  """Opaque member identifier."""
+  id: ID!
+  """Owning tenant identifier."""
+  tenantId: ID!
+  """Authorized member display name."""
+  displayName: String!
+  """Membership lifecycle."""
+  state: LifecycleState!
+}
+
+"""Daily studio work or exception requiring an accountable owner."""
+type StudioOperation implements GraphQLNode & TenantScopedNode @governed(owner: STUDIO_OPERATIONS, source: "CRAYS studio operations repository", auth: "studio assignment and work-family policy", classification: CONFIDENTIAL) {
+  """Opaque operation identifier."""
+  id: ID!
+  """Owning tenant identifier."""
+  tenantId: ID!
+  """Operation title."""
+  title: String!
+  """Operation lifecycle."""
+  state: LifecycleState!
+  """SLA due instant."""
+  dueAt: DateTime
+}
+
+"""Commercial or accounting document exposed through a governed finance concept."""
+type FinanceDocument implements GraphQLNode & TenantScopedNode @governed(owner: ERP_FINANCE, source: "CRAYS finance repositories and controlled ERP maps", auth: "finance object and field policy", classification: RESTRICTED) {
+  """Opaque finance document identifier."""
+  id: ID!
+  """Owning tenant identifier."""
+  tenantId: ID!
+  """Human-readable document reference."""
+  reference: String!
+  """Authoritative total."""
+  total: Money!
+  """Finance lifecycle."""
+  state: LifecycleState!
+}
+
+"""Version-locked CRAYS document with governed approval or signature evidence."""
+type ManagedDocument implements GraphQLNode & TenantScopedNode @governed(owner: DOCUMENTS, source: "CRAYS document repository", auth: "document relationship and field policy", classification: RESTRICTED) {
+  """Opaque document identifier."""
+  id: ID!
+  """Owning tenant identifier."""
+  tenantId: ID!
+  """Document title."""
+  title: String!
+  """Locked content/version hash."""
+  versionHash: String!
+  """Document lifecycle."""
+  state: LifecycleState!
+}
+
+"""Business-object-linked communication conversation."""
+type BusinessConversation implements GraphQLNode & TenantScopedNode @governed(owner: COMMUNICATION, source: "CRAYS communication repository", auth: "conversation participant and visibility policy", classification: RESTRICTED) {
+  """Opaque conversation identifier."""
+  id: ID!
+  """Owning tenant identifier."""
+  tenantId: ID!
+  """Conversation subject."""
+  subject: String!
+  """Conversation lifecycle."""
+  state: LifecycleState!
+}
+
+"""Governed metric observation with lineage instead of an unexplained KPI."""
+type MetricObservation implements GraphQLNode & TenantScopedNode @governed(owner: ANALYTICS, source: "CRAYS metric contracts and governed read models", auth: "metric contract role and field policy", classification: CONFIDENTIAL) {
+  """Opaque observation identifier."""
+  id: ID!
+  """Owning tenant identifier."""
+  tenantId: ID!
+  """Stable metric contract key."""
+  metricKey: String!
+  """Exact metric value."""
+  value: Decimal!
+  """Observation instant."""
+  observedAt: DateTime!
+}
+
+"""Stable client-visible mutation error without internal implementation detail."""
+type UserError @governed(owner: PLATFORM, source: "CRAYS command error contract", auth: "mutation caller", classification: INTERNAL) {
+  """Canonical error code."""
+  code: String!
+  """Safe user-facing message."""
+  message: String!
+  """Optional input field path."""
+  field: String
+}
+
+"""Optimistic concurrency conflict returned by a command."""
+type VersionConflict @governed(owner: PLATFORM, source: "CRAYS command version contract", auth: "mutation caller with object scope", classification: CONFIDENTIAL) {
+  """Version supplied by the client."""
+  expectedVersion: Int!
+  """Current authoritative version."""
+  actualVersion: Int!
+}
+
+"""Auditable server-authoritative command receipt."""
+type CommandReceipt @governed(owner: PLATFORM, source: "CRAYS command and audit repositories", auth: "mutation caller with receipt scope", classification: CONFIDENTIAL) {
+  """Opaque command identifier."""
+  commandId: ID!
+  """Stable command outcome code."""
+  status: String!
+  """Authoritative completion instant when available."""
+  completedAt: DateTime
+}
+
+"""Common mutation result shape used by domain-specific payloads."""
+type CommandPayload @governed(owner: PLATFORM, source: "CRAYS server-authoritative command layer", auth: "domain mutation policy", classification: CONFIDENTIAL) {
+  """Receipt when the command was accepted or deterministically replayed."""
+  receipt: CommandReceipt
+  """Bounded safe validation or authorization errors."""
+  errors: [UserError!]! @bounded(max: 100)
+  """Version conflict when expected-version validation failed."""
+  conflict: VersionConflict
+}
+
+"""Common bounded connection input; maximum `first` is 100."""
+input ConnectionInput @governed(owner: PLATFORM, source: "GraphQL request contract", auth: "query field policy", classification: INTERNAL) {
+  """Requested page size from 1 through 100."""
+  first: Int!
+  """Opaque cursor after which the page begins."""
+  after: String
+}
+
+"""Common optimistic command metadata."""
+input CommandInput @governed(owner: PLATFORM, source: "GraphQL mutation contract", auth: "mutation field policy", classification: CONFIDENTIAL) {
+  """Stable caller-generated idempotency key."""
+  idempotencyKey: String!
+  """Expected current version for conflict detection."""
+  expectedVersion: Int
+}
+
+"""Authority source selected by the server trust boundary."""
+enum GraphQLAuthoritySource {
+  AUTH0_CRAYS_SESSION
+  PORTAL_BRIDGE_COOKIE
+  SERVER_AUTHORIZED_REVIEW_PERSONA
+  ANONYMOUS_FAIL_CLOSED
+}
+
+"""Current composition state; service federation is not active."""
+enum GraphQLFederationStatus {
+  MODULAR_MONOLITH
+  FEDERATION_PLANNED
+  FEDERATED
+}
+
+"""Effective request limits enforced before resolver execution."""
+type GraphQLSecurityLimits @governed(owner: PLATFORM, source: "GraphQL runtime configuration", auth: "runtime metadata read", classification: INTERNAL) {
+  """Maximum operation depth."""
+  maximumDepth: Int!
+  """Maximum document token count."""
+  maximumTokens: Int!
+  """Maximum calculated operation cost."""
+  maximumCost: Int!
+  """Whether arbitrary operation documents are rejected."""
+  persistedOperationsRequired: Boolean!
+  """Whether schema introspection is enabled."""
+  introspectionEnabled: Boolean!
+}
+
+"""Truthful GraphQL runtime state without provider secrets."""
+type GraphQLRuntime @governed(owner: PLATFORM, source: "GraphQL runtime configuration", auth: "runtime metadata read", classification: INTERNAL) {
+  """Versioned CRAYS GraphQL API contract date."""
+  apiVersion: String!
+  """Canonical HTTP endpoint."""
+  endpoint: String!
+  """Development or production mode."""
+  mode: String!
+  """Current modular-monolith/federation state."""
+  federationStatus: GraphQLFederationStatus!
+  """Cache connection truth."""
+  cacheBackend: String!
+  """Event transport connection truth."""
+  eventTransport: String!
+  """External telemetry connection truth."""
+  telemetryBackend: String!
+  """Effective operation security controls."""
+  security: GraphQLSecurityLimits!
+}
+
+"""Server-derived caller identity and effective authorization context."""
+type Viewer @governed(owner: IDENTITY, source: "CRAYS server trust boundary", auth: "current request", classification: CONFIDENTIAL) {
+  """Effective server-authorized role."""
+  role: String!
+  """Effective server-authorized tenant."""
+  tenantId: ID!
+  """Authority path selected by the server."""
+  authoritySource: GraphQLAuthoritySource!
+  """Whether a mapped Auth0-backed CRAYS session is active."""
+  authenticated: Boolean!
+  """Whether the current context is an explicitly authorized review mode."""
+  reviewMode: Boolean!
+  """Bounded effective capability keys."""
+  capabilities: [String!]! @bounded(max: 256)
+}
+
+"""Root read contract for the protected CRAYS gym graph."""
+type Query @governed(owner: PLATFORM, source: "CRAYS governed resolver layer", auth: "field-specific server policy", classification: INTERNAL) {
+  """Safe runtime and security configuration truth."""
+  graphqlRuntime: GraphQLRuntime!
+  """Current server-derived caller context."""
+  viewer: Viewer!
+}

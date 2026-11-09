@@ -1,0 +1,182 @@
+{
+  "schema": "crays.core-untracked-adjudicated-technical-literals.v1",
+  "sourceHead": "c2018d04f6a52d8716326a098dde7624cbb18963",
+  "files": [
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/activate-native-ip-https-v43.py",
+      "bytes": 7495,
+      "sha256": "10879a26f8fb6b707d7ffd2b53578b57be586dbb8d08892a785568cd3194a958",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/activate-native-ip-https-v43.py",
+      "literalAdjudication": "Reserved-invalid-domain synthetic email fixture, synthetic UUID test identifiers, original source-owner thread identifier, loopback endpoint or original technical network binding; not a copied private key, customer database or provider credential."
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/auth.test.mjs",
+      "bytes": 20909,
+      "sha256": "421bc40d6510de94e19cc3ebeef4d6df952dec93516b4e09160f871392934066",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/auth.test.mjs",
+      "literalAdjudication": "Reserved-invalid-domain synthetic email fixture, synthetic UUID test identifiers, original source-owner thread identifier, loopback endpoint or original technical network binding; not a copied private key, customer database or provider credential."
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/controlled-core-identity-proxy.mjs",
+      "bytes": 4559,
+      "sha256": "e15d8369ac20c4f51d1a955a630a46b99e5d84bd290fe14b9bf13a35f45f7884",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/controlled-core-identity-proxy.mjs",
+      "literalAdjudication": "Reserved-invalid-domain synthetic email fixture, synthetic UUID test identifiers, original source-owner thread identifier, loopback endpoint or original technical network binding; not a copied private key, customer database or provider credential."
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/controlled-local-model.mjs",
+      "bytes": 1878,
+      "sha256": "de1b1fa1fcedf8610e53d3f3cee3a6ae63a8e422071232f8fa5ade92404cfcaa",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/controlled-local-model.mjs",
+      "literalAdjudication": "Reserved-invalid-domain synthetic email fixture, synthetic UUID test identifiers, original source-owner thread identifier, loopback endpoint or original technical network binding; not a copied private key, customer database or provider credential."
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/email-proof.test.mjs",
+      "bytes": 6806,
+      "sha256": "3371acebbce6a95a95c6b37643215057ce7828965e9f91cc55c8b335bdece181",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/email-proof.test.mjs",
+      "literalAdjudication": "Reserved-invalid-domain synthetic email fixture, synthetic UUID test identifiers, original source-owner thread identifier, loopback endpoint or original technical network binding; not a copied private key, customer database or provider credential."
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/native-original-read.test.mjs",
+      "bytes": 6665,
+      "sha256": "34f2ccd18b0ea8febd1853c4905f930491686779dbcc1f879136396de321f2dc",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/native-original-read.test.mjs",
+      "literalAdjudication": "Reserved-invalid-domain synthetic email fixture, synthetic UUID test identifiers, original source-owner thread identifier, loopback endpoint or original technical network binding; not a copied private key, customer database or provider credential."
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/native-proxy.test.mjs",
+      "bytes": 2070,
+      "sha256": "d4c1a1d7dca6909f402e416283a0514b36d9c82a2af7af3aebae16e8a4ca6e63",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/native-proxy.test.mjs",
+      "literalAdjudication": "Reserved-invalid-domain synthetic email fixture, synthetic UUID test identifiers, original source-owner thread identifier, loopback endpoint or original technical network binding; not a copied private key, customer database or provider credential."
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/native-scoped-contact-check.mjs",
+      "bytes": 10327,
+      "sha256": "037da0b7b6f06f71e8a93e29c7be37f23ab34e9771633f66ccc747dd8a0dd9e8",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/native-scoped-contact-check.mjs",
+      "literalAdjudication": "Reserved-invalid-domain synthetic email fixture, synthetic UUID test identifiers, original source-owner thread identifier, loopback endpoint or original technical network binding; not a copied private key, customer database or provider credential."
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/original-gateway-peer.mjs",
+      "bytes": 6542,
+      "sha256": "6d713fafe929332e5a2d96231bba781477eae5c530f591250ee0aba0f2c74dfe",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/original-gateway-peer.mjs",
+      "literalAdjudication": "Reserved-invalid-domain synthetic email fixture, synthetic UUID test identifiers, original source-owner thread identifier, loopback endpoint or original technical network binding; not a copied private key, customer database or provider credential."
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/original-sdk-server-fixture.mjs",
+      "bytes": 8992,
+      "sha256": "873edb37706bebf9bc6abc5daa4a408d9e24f7ed6a6f3c7b3250730c2a31db50",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/original-sdk-server-fixture.mjs",
+      "literalAdjudication": "Reserved-invalid-domain synthetic email fixture, synthetic UUID test identifiers, original source-owner thread identifier, loopback endpoint or original technical network binding; not a copied private key, customer database or provider credential."
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/personal-attachment-input.test.mjs",
+      "bytes": 5778,
+      "sha256": "60a98232da450e83658a079e52dc94da43458b655089cb91a60184e5186f555f",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/personal-attachment-input.test.mjs",
+      "literalAdjudication": "Reserved-invalid-domain synthetic email fixture, synthetic UUID test identifiers, original source-owner thread identifier, loopback endpoint or original technical network binding; not a copied private key, customer database or provider credential."
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-http-sql.py",
+      "bytes": 24483,
+      "sha256": "1c8173337f18ef1367ca78817f37cc24b46275f3bdb3af876c297f70d6c3bde1",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-http-sql.py",
+      "literalAdjudication": "Reserved-invalid-domain synthetic email fixture, synthetic UUID test identifiers, original source-owner thread identifier, loopback endpoint or original technical network binding; not a copied private key, customer database or provider credential."
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-shared-https-v45.py",
+      "bytes": 6163,
+      "sha256": "e9081a9a853028e57d24a30b2edc0842d2063b53164fb40b6137d1c028116144",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-shared-https-v45.py",
+      "literalAdjudication": "Reserved-invalid-domain synthetic email fixture, synthetic UUID test identifiers, original source-owner thread identifier, loopback endpoint or original technical network binding; not a copied private key, customer database or provider credential."
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-private-http-sql.py",
+      "bytes": 937,
+      "sha256": "f075e8a115438a9b6b9d2edb5639f715e50708da11c3ee51f78c531a8abdb30d",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-private-http-sql.py",
+      "literalAdjudication": "Reserved-invalid-domain synthetic email fixture, synthetic UUID test identifiers, original source-owner thread identifier, loopback endpoint or original technical network binding; not a copied private key, customer database or provider credential."
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-real-gateway.py",
+      "bytes": 10364,
+      "sha256": "747b20a3e6b19c109ab68cec70587e801f9630339728daf3de86d455bb966155",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-real-gateway.py",
+      "literalAdjudication": "Reserved-invalid-domain synthetic email fixture, synthetic UUID test identifiers, original source-owner thread identifier, loopback endpoint or original technical network binding; not a copied private key, customer database or provider credential."
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/sdk-original-encoding.test.mjs",
+      "bytes": 4548,
+      "sha256": "be9ef99e26adb1dbad6b560333c6f23551944f957c17f05e22c7c139c0ebabb3",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/sdk-original-encoding.test.mjs",
+      "literalAdjudication": "Reserved-invalid-domain synthetic email fixture, synthetic UUID test identifiers, original source-owner thread identifier, loopback endpoint or original technical network binding; not a copied private key, customer database or provider credential."
+    },
+    {
+      "path": "crays-platform/scripts/native-server/Caddyfile",
+      "bytes": 334,
+      "sha256": "558e8f7ba90231242a4366490ac1400d75ec498c17aeb4ad2ea61e320cc7a15f",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/native-server/Caddyfile",
+      "literalAdjudication": "Reserved-invalid-domain synthetic email fixture, synthetic UUID test identifiers, original source-owner thread identifier, loopback endpoint or original technical network binding; not a copied private key, customer database or provider credential."
+    },
+    {
+      "path": "crays-platform/scripts/native-server/check-actual-core-http.mjs",
+      "bytes": 3590,
+      "sha256": "ef30cf72077136cdefb4d53a572b1600e373d06cc6a2953079db837906aeb8b9",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/native-server/check-actual-core-http.mjs",
+      "literalAdjudication": "Reserved-invalid-domain synthetic email fixture, synthetic UUID test identifiers, original source-owner thread identifier, loopback endpoint or original technical network binding; not a copied private key, customer database or provider credential."
+    },
+    {
+      "path": "crays-platform/scripts/native-server/prepare-owner-sdk-session.mjs",
+      "bytes": 7100,
+      "sha256": "7bffff14461bc340abd417867730769915c35a5d9641371c9e8c81611c433787",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/native-server/prepare-owner-sdk-session.mjs",
+      "literalAdjudication": "Reserved-invalid-domain synthetic email fixture, synthetic UUID test identifiers, original source-owner thread identifier, loopback endpoint or original technical network binding; not a copied private key, customer database or provider credential."
+    },
+    {
+      "path": "crays-platform/scripts/native-server/write-native-response.test.mjs",
+      "bytes": 2766,
+      "sha256": "fcd645fed7396eadcbcaea0bae013914c8c9860bfde97b0a412eb2ca3609effa",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/native-server/write-native-response.test.mjs",
+      "literalAdjudication": "Reserved-invalid-domain synthetic email fixture, synthetic UUID test identifiers, original source-owner thread identifier, loopback endpoint or original technical network binding; not a copied private key, customer database or provider credential."
+    },
+    {
+      "path": "crays-platform/scripts/test-oca-privacy-consent-draft.browser.mjs",
+      "bytes": 10211,
+      "sha256": "7bec556a5a30c47ca13c0077f22cae369717b71f9696d93f3099df6ab71277a3",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/test-oca-privacy-consent-draft.browser.mjs",
+      "literalAdjudication": "Reserved-invalid-domain synthetic email fixture, synthetic UUID test identifiers, original source-owner thread identifier, loopback endpoint or original technical network binding; not a copied private key, customer database or provider credential."
+    }
+  ],
+  "heldSeparatelyForCredentialLiteralAdjudication": [
+    "crays-platform/scripts/ios-native-auth-qualification/http-sql.test.mjs",
+    "crays-platform/scripts/ios-native-auth-qualification/native-identity-config-check.mjs",
+    "crays-platform/scripts/ios-native-auth-qualification/real-gateway-probe.mjs"
+  ],
+  "originalProgramsOrTestsExecuted": false,
+  "pythonASTParsedOnly": 5,
+  "wholePrivacyLegalRecoveryClosure": false
+}

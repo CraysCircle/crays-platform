@@ -1,0 +1,31 @@
+import './runtime-source-loader.mjs';
+import assert from 'node:assert/strict';
+import {writeFileSync} from 'node:fs';
+import {createFocusedNativeCustomerTransportFixture} from './focused-native-customer-transport-fixture.mjs';
+const f=await createFocusedNativeCustomerTransportFixture(),verified=[];
+const fetchBefore=globalThis.fetch;
+try {
+ Object.assign(process.env,f.nativeEnvironment);globalThis.fetch=f.syntheticJwksFetch;
+ const {admitNativePersonalRequest,executeNativePersonalRequest}=await import('../../src/lib/native-personal-messenger.ts');
+ const {materializeCommittedNativePersonalBaseline}=await import('../../src/lib/native-personal-baseline-materialization.ts');
+ const {getPersonalAgentBaselineDeployment}=await import('../../src/lib/personal-agent-baseline-deployment.ts');
+ assert.equal(getPersonalAgentBaselineDeployment(),null);
+ const before=(await f.admin.query('select (select count(*) from crays_core.personal_agent_standard_assignments) assignments,(select count(*) from crays_core.personal_messenger_bindings) bindings,(select count(*) from crays_core.messages) messages')).rows[0];
+ const input={expectedContactRevision:f.runtimeTarget.contactRevision};
+ const request=await f.nativeRequest('BindPersonalMessenger',input);assert.equal(await admitNativePersonalRequest(request),true);
+ const result=await executeNativePersonalRequest(request,'bindPersonalMessenger',input);assert.equal(result.bindingId,f.bindings[0].bindingId);
+ verified.push('Actual fixed native bind APQ, RSA token verifier, isolated exact V2 SQL role and restricted Core transaction reach postcommit admitted-baseline continuation without cookie/second signup');
+ const pending=await materializeCommittedNativePersonalBaseline(f.principals[0]);assert.equal(pending.status,'PENDING_RUNTIME_HOST');assert.equal(pending.runtimeStarted,false);
+ verified.push('Actual unregistered deployment remains pending; no callback/profile/assignment promoted to runtime readiness');
+ const repeated=await f.nativeRequest('BindPersonalMessenger',input);assert.equal(await admitNativePersonalRequest(repeated),true);assert.equal((await executeNativePersonalRequest(repeated,'bindPersonalMessenger',input)).bindingId,result.bindingId);
+ assert.deepEqual((await f.admin.query('select (select count(*) from crays_core.personal_agent_standard_assignments) assignments,(select count(*) from crays_core.personal_messenger_bindings) bindings,(select count(*) from crays_core.messages) messages')).rows[0],before);
+ verified.push('Repeated actual native bind preserves same committed assignment/conversation/messages while host is unavailable');
+ const readOnly=await f.nativeRequest('BindPersonalMessenger',input,'fixture:identity:read fixture:personal:read');assert.equal(await admitNativePersonalRequest(readOnly),true);await assert.rejects(executeNativePersonalRequest(readOnly,'bindPersonalMessenger',input));
+ verified.push('Authenticated token without native write scope never reaches bind/materialization');
+ await assert.rejects(materializeCommittedNativePersonalBaseline({...f.principals[0]}),/NATIVE_VERIFIED_CORE_PRINCIPAL_REQUIRED/);
+ verified.push('Mutable caller principal rejected by private postcommit connector');
+ await f.admin.query("update crays_core.canonical_person_accounts set status='revoked' where account_id=$1",[f.runtimeTarget.accountId]);
+ const revoked=await f.nativeRequest('BindPersonalMessenger',input);assert.equal(await admitNativePersonalRequest(revoked),true);await assert.rejects(executeNativePersonalRequest(revoked,'bindPersonalMessenger',input));
+ verified.push('Revoked original customer link denies authenticated native bind without fallback');
+ writeFileSync(process.env.CRAYS_NATIVE_CUSTOMER_RESULT,JSON.stringify({status:'PASS_ACTUAL_NATIVE_APQ_CORE_POSTCOMMIT_UNCONFIGURED_HOST_NOT_REAL_OWNER',verified,syntheticJwtIssuerAndCoreBinding:true,actualJwtVerificationAndRestrictedSql:true,productiveOrSdkProviderChanges:false},null,2)+'\n');console.log(JSON.stringify({verified}));
+}finally{globalThis.fetch=fetchBefore;await (await import('./original-core-rpc-fixture.mjs')).closeCoreNativeIdentityRpcPool();await f.close();}

@@ -1,0 +1,27 @@
+import assert from "node:assert/strict";
+import { authorizeFinancingPackage, createPartnerFinancingPackage } from "../src/lib/member-commerce/partner-financing-package-journey-contract.ts";
+
+const base = {financingPackageId:"finance-a",packageVersion:2,canonicalOrganizationId:"org-a",relationshipId:"rel-a",partnerTenantId:"partner-a",operatorLegalEntityId:"legal-a",storeId:"store-a",erpSiteId:"erp-a",erpCompanyId:"company-a",authorizedPrincipalIds:["person-a","person-b"],nextcloudHostSessionBindingId:"host-a",artifactIds:["artifact-a","artifact-b"],stepReceipts:{},idempotencyKey:"finance-a-v1"};
+let count = 0;
+const pass = (name, value) => { assert.ok(value, name); count += 1; console.log(`PASS ${name}`); };
+const pending = createPartnerFinancingPackage(base);
+pass("six financing steps", pending.steps.length === 6);
+for (const step of ["evidence_intake","generated_dossier","approvals","secure_share","meeting","erp_reference"]) pass(`${step} pending honestly`, pending.steps.find(item => item.step === step)?.state === "PENDING");
+pass("secure share mandatory", pending.secureShareRequired);
+pass("exact ERP target frozen", pending.erpSiteId === "erp-a" && pending.erpCompanyId === "company-a" && !pending.browserErpTargetAllowed);
+pass("evidence artifacts retained", pending.artifactIds.length === 2);
+pass("meeting uses Calendar Talk", pending.steps.find(item => item.step === "meeting")?.provider === "nextcloud_calendar_talk");
+pass("ERP reference owned by ERPNext", pending.steps.find(item => item.step === "erp_reference")?.provider === "erpnext");
+const receipts = Object.fromEntries(pending.steps.map(item => [item.step, `receipt-${item.step}`]));
+const ready = createPartnerFinancingPackage({...base, stepReceipts: receipts});
+pass("all receipts ready for reconciliation", ready.state === "READY_FOR_RECONCILIATION");
+const view = authorizeFinancingPackage(ready,{principalId:"person-a",relationshipId:"rel-a",partnerTenantId:"partner-a",operatorLegalEntityId:"legal-a",storeId:"store-a"});
+pass("exact Partner principal authorized", view.authorized);
+assert.throws(() => authorizeFinancingPackage(ready,{principalId:"person-a",relationshipId:"rel-a",partnerTenantId:"partner-b",operatorLegalEntityId:"legal-a",storeId:"store-a"}), /NOT_FOUND_OR_DENIED/);
+pass("cross-partner no existence leak", true);
+assert.throws(() => authorizeFinancingPackage(ready,{principalId:"person-x",relationshipId:"rel-a",partnerTenantId:"partner-a",operatorLegalEntityId:"legal-a",storeId:"store-a"}), /NOT_FOUND_OR_DENIED/);
+pass("unauthorized principal denied", true);
+pass("canonical organization relationship retained", ready.canonicalOrganizationId === "org-a" && ready.relationshipId === "rel-a");
+pass("deterministic package receipt", createPartnerFinancingPackage(base).packageSha256 === pending.packageSha256);
+assert.equal(count, 18);
+console.log(`RESULT ${count}/18`);

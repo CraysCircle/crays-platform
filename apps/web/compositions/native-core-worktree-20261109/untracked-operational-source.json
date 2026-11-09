@@ -1,0 +1,662 @@
+{
+  "schema": "crays.core-untracked-operational-source.v1",
+  "sourceHead": "c2018d04f6a52d8716326a098dde7624cbb18963",
+  "files": [
+    {
+      "path": "crays-platform/scripts/generate-oca010-openclaw-lock-sbom.mjs",
+      "bytes": 3859,
+      "sha256": "385140ddaf6006d7c947b56c782fb9ac9843b0f2d491f7c4b80eda515a4f9f74",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_TEST_OR_OPERATIONAL_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/generate-oca010-openclaw-lock-sbom.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/atomic-personal-originals-input.test.mjs",
+      "bytes": 3771,
+      "sha256": "4758e103997deb5b795858558b3f9d80f4ce5326627769c586e7d926fe510d10",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/atomic-personal-originals-input.test.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/customer-baseline-source-check.mjs",
+      "bytes": 3923,
+      "sha256": "6423158ba0fe2c34e058d6665042b1e820c8298a8956221d4e634f9142406ae4",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/customer-baseline-source-check.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/customer-materializer-source-check.mjs",
+      "bytes": 5696,
+      "sha256": "a2cb8af90835f9b63a7b72ecd3c610e1c2d764d195202cea87a23ec71980cfe4",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/customer-materializer-source-check.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/focused-native-customer-fixture.mjs",
+      "bytes": 15542,
+      "sha256": "e053bb3842c411dabd7efbcdc5a4f80a69cbde10a1e74fd9a64f886cda8368eb",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/focused-native-customer-fixture.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/focused-native-customer-transport-fixture.mjs",
+      "bytes": 16886,
+      "sha256": "fb9502bebf0935ee1e3647acb38da9771fd20d11a7225cc07de5238f495fbe15",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/focused-native-customer-transport-fixture.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/native-bind-baseline-continuation-check.mjs",
+      "bytes": 4146,
+      "sha256": "e84529f55e44cf43e0967a97543744ba3823bc8fc8838b95ecab44feab914829",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/native-bind-baseline-continuation-check.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/native-customer-product-check.mjs",
+      "bytes": 3401,
+      "sha256": "315b6b1318c020c73942c3874f91deec1c2e48021bf10cf75096a9e119c2265c",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/native-customer-product-check.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/native-runtime-acl-check.mjs",
+      "bytes": 7795,
+      "sha256": "f726a5dd3c3acce8f2885a0b707375b65370f9406f1a5899f8192584f69bad48",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/native-runtime-acl-check.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/original-core-rpc-fixture.mjs",
+      "bytes": 1971,
+      "sha256": "107725fe9a268a83576f17b80e16c27d1cd9c315631de91657a14f9784127809",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/original-core-rpc-fixture.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/original-identity-lookup.test.mjs",
+      "bytes": 10220,
+      "sha256": "37aa76c49de6500ad5656f68afc30510238b5316d6ae8f3381709e3ab313f0e3",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/original-identity-lookup.test.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/personal-attachment-core-cases.mjs",
+      "bytes": 48428,
+      "sha256": "956c28f9f6dfce348e5dd05a293c17b70bb9997d94c835e7e9219eb9839c95c9",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/personal-attachment-core-cases.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/personal-feed-core-cases.mjs",
+      "bytes": 17061,
+      "sha256": "c3b4a569184fb90c0dda37e64312cb2d169b519c6a3642039296c9c9015c359b",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/personal-feed-core-cases.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/personal-original-display-name.test.mjs",
+      "bytes": 3659,
+      "sha256": "536aeb6344ac260d959981442e7e94f6e8eacdabe0a96726e04d915fce61fe76",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/personal-original-display-name.test.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/release-sibling-dependencies.test.mjs",
+      "bytes": 5255,
+      "sha256": "e26b74034b5aafd1ee81ec5fb0eb22a37fa31bdffd4c253e43ae725445dafa0f",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/release-sibling-dependencies.test.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-customer-baseline-source.py",
+      "bytes": 5970,
+      "sha256": "7777b534859e9f5974bdfcbc653c36517e38a9a0287720718c3425b7b200e3f9",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-customer-baseline-source.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-customer-baseline-v6.py",
+      "bytes": 5966,
+      "sha256": "17d86f877fa342956323c79dc74a1f36fd37a1084f95ef208d99a20e76adb59e",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-customer-baseline-v6.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-customer-baseline-v7.py",
+      "bytes": 5966,
+      "sha256": "1733e5212cdf6b66b0f23d20ebb9006ac14704a6f13f3a859684089dd49a6bed",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-customer-baseline-v7.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-customer-materializer-v8.py",
+      "bytes": 6447,
+      "sha256": "4e4d0926b6da1ba6bb3774b1020822cba64d161440f115f2ff436db655dc0878",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-customer-materializer-v8.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-customer-materializer-v9.py",
+      "bytes": 6447,
+      "sha256": "7c50cb860cb7d83057c23f6502b049bc637c2fb698ad05743a0f830fdc996392",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-customer-materializer-v9.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-bind-baseline-v10.py",
+      "bytes": 6545,
+      "sha256": "fb62c5a8d9754c0ea838ad9091a5300b94e4a43b2bcb7de07bd03fada0868af3",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-bind-baseline-v10.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-current-pool-types-v17.py",
+      "bytes": 4005,
+      "sha256": "e35879b532cc2f8201962c91412e83673f4fd5f77975249a15d5e3fb27c65594",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-current-pool-types-v17.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-current-types-v11.py",
+      "bytes": 3445,
+      "sha256": "618dc020583e2e7b447e4bb22e3aea1db7db7fcca7b55b3198bdced38c5367c5",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-current-types-v11.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-customer-product.py",
+      "bytes": 5806,
+      "sha256": "ce981c5dce4c6b1ba113cf556bbbab3ab077840315cf11e090d556164d3fc9e6",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-customer-product.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-identity-types.py",
+      "bytes": 3033,
+      "sha256": "d5e17e98140bc5f386a75f756380d8e9c942b4554066e3f75673adbbbe58dbff",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-identity-types.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-product-types.py",
+      "bytes": 2913,
+      "sha256": "b137a618edada918f18ca7ac92b7ad363e078dd5bc9ff7b9ea5ec97550f5d13c",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-product-types.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-runtime-acl-v12.py",
+      "bytes": 6510,
+      "sha256": "427725868728e75858d4cdf806bd3af6eed668dc429dc674bfc126a2bdfb195c",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-runtime-acl-v12.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-runtime-acl-v13.py",
+      "bytes": 6574,
+      "sha256": "67ff1690e9cc49dd9d61a42a27653b70f3de5ff962bb0f85d35115a8dd69f361",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-runtime-acl-v13.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-runtime-pool-v14.py",
+      "bytes": 6905,
+      "sha256": "ae877c038114e4698fcb8b9c04f280db50dfcf323498fe407b6445d1a2a8bb81",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-runtime-pool-v14.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-runtime-pool-v15.py",
+      "bytes": 6905,
+      "sha256": "42a01744a0e0d56a343e7e5c38488d6a3e72075ca3b7b0050d1a4ef672a795da",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-runtime-pool-v15.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-scoped-contact-v27.py",
+      "bytes": 5733,
+      "sha256": "9af7bd3e54f74eca4bd30e4571fd9b4063748bfc2ae0cf387a5cd1fdb4733db5",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-scoped-contact-v27.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-scoped-contact-v28.py",
+      "bytes": 5734,
+      "sha256": "9e1c1560762706eb89916b20d572072fe3a9a12dc034695a00b1a397316ffa60",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-scoped-contact-v28.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-scoped-contact-v29.py",
+      "bytes": 5734,
+      "sha256": "56f63b36b792b20af90d8670f48607b6e6de41a1d3856a7c718f28729e931779",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-scoped-contact-v29.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-scoped-contact-v30.py",
+      "bytes": 5971,
+      "sha256": "d7f0ee02d6d626e597444e207000c840148fe4f3d86a05f4f7e34c4dacdcf862",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-scoped-contact-v30.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-scoped-contact-v31.py",
+      "bytes": 5971,
+      "sha256": "e9db43d8e39a2549e1a1b9b73972e8abfcd701671738be44c88051ea9e351be3",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-scoped-contact-v31.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-scoped-contact-v32.py",
+      "bytes": 5971,
+      "sha256": "37f406d85c5d487bc3355f484812e9b04b34399e9d17f94e3df1d682fef671b5",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-scoped-contact-v32.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-native-scoped-contact-v33.py",
+      "bytes": 5971,
+      "sha256": "bab8f12138a9b2f1d34bd7a020d6586f1c63c1e5da67cd075a69bcf0a02d0dbf",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-native-scoped-contact-v33.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-original-source-use-v35.py",
+      "bytes": 6035,
+      "sha256": "06f07da7e652eeb0e999d8177c949ec90ce01dc7a3d2dd8a2e97110316af550d",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-original-source-use-v35.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-original-source-use-v36.py",
+      "bytes": 6035,
+      "sha256": "8bb5a8ba83819298c002fb427058b786028db07240cb2287fb44d75ccfdd159d",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-original-source-use-v36.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-original-source-use-v37.py",
+      "bytes": 6035,
+      "sha256": "070181786907bd9548da43f5897e45e14a63e26e43a8245d88825a4887d9970c",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-original-source-use-v37.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/run-owner-consumer-source-v34.py",
+      "bytes": 3973,
+      "sha256": "dc173d55547404fdb400c1efcf2f35b9d8717211a3d00b9cc96232b1edba0d3b",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/run-owner-consumer-source-v34.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/runtime-source-loader.mjs",
+      "bytes": 3634,
+      "sha256": "8a50c9b514eaabccf3d31fcbe37e53804311d8b431293053f13c742c7bde2c21",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/runtime-source-loader.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/sdk-source-bindings.mjs",
+      "bytes": 2103,
+      "sha256": "4978daf0676e1a563576faa3146500054539c46282d6e6ee159d391b420e7b7b",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/sdk-source-bindings.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/source-loader.mjs",
+      "bytes": 4143,
+      "sha256": "eb6d45eef135362b10e842fe38841a1c9fc2d4933289d9ac3f58a904bd7ed956",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/source-loader.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/test_resource_admission.py",
+      "bytes": 3229,
+      "sha256": "c74039d19abbc7263a958b00e3269205679501c3f20fc958ccab92f29ee274d0",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/test_resource_admission.py"
+    },
+    {
+      "path": "crays-platform/scripts/ios-native-auth-qualification/test_termination_cleanup.py",
+      "bytes": 2722,
+      "sha256": "3b021f5c91b6a1c663dc965f47866565df2f6b903344880e7940b2f294333d74",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_NATIVE_QUALIFICATION_SOURCE",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/ios-native-auth-qualification/test_termination_cleanup.py"
+    },
+    {
+      "path": "crays-platform/scripts/migrate-oca-authority-permission-lens-read-model.mjs",
+      "bytes": 1349,
+      "sha256": "d002998ba611c6da095bc72525d2d478638c52e40159f5bf5796550787f18ac4",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_MIGRATION_OR_PERSISTED_OPERATION_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/migrate-oca-authority-permission-lens-read-model.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/migrate-oca-authority-product-commands.mjs",
+      "bytes": 1338,
+      "sha256": "0b8ab75db370b451ba3c6a02b87fe20de7d3de89b8566bd80fe87e9b202c9b3b",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_MIGRATION_OR_PERSISTED_OPERATION_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/migrate-oca-authority-product-commands.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/migrate-oca-authority-resilience.mjs",
+      "bytes": 1232,
+      "sha256": "4052e94e965e3fce0c92b59dee6a0e9c736f8d1e90112c05234f8b72cbc4071c",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_MIGRATION_OR_PERSISTED_OPERATION_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/migrate-oca-authority-resilience.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/migrate-oca-component-admission-authority.mjs",
+      "bytes": 2580,
+      "sha256": "fc83484c98ea4db68fe51deb742436c08c5538652e9591d1948c4acbd498b78a",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_MIGRATION_OR_PERSISTED_OPERATION_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/migrate-oca-component-admission-authority.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/migrate-oca-component-admission-product-commands.mjs",
+      "bytes": 1569,
+      "sha256": "095eaa669e84b062f6c959486f061c00823d23be9b9e2047b861c07232a4b4c1",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_MIGRATION_OR_PERSISTED_OPERATION_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/migrate-oca-component-admission-product-commands.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/migrate-oca-context-broker-authority.mjs",
+      "bytes": 1488,
+      "sha256": "e7d07ce298ebd367d962dd07515e10ec8ab2e73d63da6586f4cdcda3b25ec25a",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_MIGRATION_OR_PERSISTED_OPERATION_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/migrate-oca-context-broker-authority.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/migrate-oca-governance-authority.mjs",
+      "bytes": 2596,
+      "sha256": "5e33be15015239f7e30ad3be6d5c6ba9eee75040f5613c3e744e568d6e3b78c6",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_MIGRATION_OR_PERSISTED_OPERATION_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/migrate-oca-governance-authority.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/migrate-oca-governance-denial-receipts.mjs",
+      "bytes": 2591,
+      "sha256": "e9b16f25aaf156b6ac5ab8f9bef1a33f849bd0e84b50a3878b0a807cdc8acd7f",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_MIGRATION_OR_PERSISTED_OPERATION_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/migrate-oca-governance-denial-receipts.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/migrate-oca-governance-lifecycle.mjs",
+      "bytes": 2494,
+      "sha256": "5258a409662485f0887a6c4f9eedce17a355d30762178efdb0fd0dfbec46306f",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_MIGRATION_OR_PERSISTED_OPERATION_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/migrate-oca-governance-lifecycle.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/migrate-oca-identity-authority.mjs",
+      "bytes": 2052,
+      "sha256": "390895f31c00193aa94a927182347cf11984f2ca1d5678657ada36df4296b50f",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_MIGRATION_OR_PERSISTED_OPERATION_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/migrate-oca-identity-authority.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/migrate-oca-privacy-product-commands.mjs",
+      "bytes": 1236,
+      "sha256": "56d41cf07368c11f206bacb0ea6f96995444ee86bd42cc75e7ef2d3e9e53795c",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_MIGRATION_OR_PERSISTED_OPERATION_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/migrate-oca-privacy-product-commands.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/migrate-oca-privacy-resilience.mjs",
+      "bytes": 1496,
+      "sha256": "3c773efd57d0ea86874de9316ec8e80072840455386df758e185cf6456cfda82",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_MIGRATION_OR_PERSISTED_OPERATION_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/migrate-oca-privacy-resilience.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/migrate-oca-purpose-consent-disclosure-authority.mjs",
+      "bytes": 1248,
+      "sha256": "6ce817c93dc23ce3bcf592ba5bd3fbdf8b4a5a2eba8f5b15aeb10bdc5db33da1",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_MIGRATION_OR_PERSISTED_OPERATION_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/migrate-oca-purpose-consent-disclosure-authority.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/migrate-oca-workload-authority-resolution.mjs",
+      "bytes": 1341,
+      "sha256": "e8f0ab794547875557ba340d9ef61f97bd5bbb8b73a35a0dbe3166b83fec9a99",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_MIGRATION_OR_PERSISTED_OPERATION_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/migrate-oca-workload-authority-resolution.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/native-server/prepare-native-core-vercel.mjs",
+      "bytes": 3475,
+      "sha256": "8c8c5288294298808917866058571344c74b6b3990def144492f4c06e1d63c19",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_TEST_OR_OPERATIONAL_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/native-server/prepare-native-core-vercel.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/native-server/run-first-owner-dialog.mjs",
+      "bytes": 4882,
+      "sha256": "b357ffc1b9dd677d975233c4f03e16bee23cad55e3b210a32f946f0c9c7ada6c",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_TEST_OR_OPERATIONAL_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/native-server/run-first-owner-dialog.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/native-server/verify-caddy-release.mjs",
+      "bytes": 3434,
+      "sha256": "e5515ca32aa3388b6afc1f4b288a809d8c66fb1fb543c6029619bcf3f51d771b",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_TEST_OR_OPERATIONAL_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/native-server/verify-caddy-release.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/native-server/write-native-response.mjs",
+      "bytes": 570,
+      "sha256": "aab0f49301470118bdf59d1da35da287fd3630138ced22a2fc25a8aa00ca2455",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_TEST_OR_OPERATIONAL_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/native-server/write-native-response.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/prepare-core-sibling-dependencies.mjs",
+      "bytes": 4681,
+      "sha256": "b0dd9b299e4a677da908cbd7a8fbb2c387fdeb159f275ef83cbada295f588ac3",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_TEST_OR_OPERATIONAL_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/prepare-core-sibling-dependencies.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/register-oca008-persisted-operations.mjs",
+      "bytes": 1133,
+      "sha256": "da10398608ebde797ed6e6a5aa4d977752a298e92b66fa2bb1e672016c12b61e",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_MIGRATION_OR_PERSISTED_OPERATION_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/register-oca008-persisted-operations.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/register-oca013-persisted-operations.mjs",
+      "bytes": 1064,
+      "sha256": "46fcfbd6b42d673b6b134dd6c206edf6b103a1b249ac07d4f573b7ca829341c0",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_MIGRATION_OR_PERSISTED_OPERATION_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/register-oca013-persisted-operations.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/register-oca018-persisted-operations.mjs",
+      "bytes": 1051,
+      "sha256": "44e45f90a52fc0501d1bf01ac3b0481e663f11db9cb59f88772d0e3e7daf9f4c",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_MIGRATION_OR_PERSISTED_OPERATION_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/register-oca018-persisted-operations.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/register-oca023-persisted-operations.mjs",
+      "bytes": 1270,
+      "sha256": "f282b8c9808f7670eba0c35e3766b97e180139bf9fb9e7b283ffebd2dc18e0ae",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_MIGRATION_OR_PERSISTED_OPERATION_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/register-oca023-persisted-operations.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/register-oca028-persisted-operations.mjs",
+      "bytes": 1505,
+      "sha256": "522aa9ca5c62799b96e5605be9f667ff778385866d8221c8de4f4b2a759ab4b7",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_MIGRATION_OR_PERSISTED_OPERATION_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/register-oca028-persisted-operations.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/test-ncrv2-153-partner-financing-package-journey.node.mjs",
+      "bytes": 2910,
+      "sha256": "dfb669d1e333be7065c23b4e271f7f5d4b0bb497ed6339d0f6ab40b7bf1cf699",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_TEST_OR_OPERATIONAL_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/test-ncrv2-153-partner-financing-package-journey.node.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/test-ncrv2-154-partner-property-assessment-journey.node.mjs",
+      "bytes": 3220,
+      "sha256": "0daebd27081a85639040fff0207e8d1b4fd58d1dedcf088fbb11e384bdbbd3a7",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_TEST_OR_OPERATIONAL_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/test-ncrv2-154-partner-property-assessment-journey.node.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/test-ncrv2-155-partner-store-opening-journey.node.mjs",
+      "bytes": 3846,
+      "sha256": "4c99db78f326649a8765f145db63e45d05c7ad5845411428d381bb62de42f652",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_TEST_OR_OPERATIONAL_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/test-ncrv2-155-partner-store-opening-journey.node.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/test-ncrv2-156-partner-employee-journey.verified.node.mjs",
+      "bytes": 3456,
+      "sha256": "bbe75d3fa56823565ae6c2791a25aacf2b1749855eeb3ced24f3db5d75588280",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_TEST_OR_OPERATIONAL_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/test-ncrv2-156-partner-employee-journey.verified.node.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/test-ncrv2-157-store-operations-journey.node.mjs",
+      "bytes": 3159,
+      "sha256": "7ec297fdefa93d640f2ce069d7634b6be28d0adba02e9e5c819ff62ff992f16e",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_TEST_OR_OPERATIONAL_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/test-ncrv2-157-store-operations-journey.node.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/test-ncrv2-158-member-retail-service-journey.node.mjs",
+      "bytes": 3227,
+      "sha256": "01788f5aaadf898fd720dd5b6d6c29ce9bdd8b9128a84b4a461ff30f5742f78a",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_TEST_OR_OPERATIONAL_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/test-ncrv2-158-member-retail-service-journey.node.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/test-ncrv2-159-multi-vertical-product-launch-journey.node.mjs",
+      "bytes": 4053,
+      "sha256": "2838160b0154f34456efc0257c2433190e694bfc07bd312a078cdd4fe3e7aa09",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_TEST_OR_OPERATIONAL_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/test-ncrv2-159-multi-vertical-product-launch-journey.node.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/test-ncrv2-171-175-production-readiness-and-rollout.node.mjs",
+      "bytes": 3770,
+      "sha256": "5a4616d65db3358cee87d3cc142768e510a2582844efb288dc8643303cdc4bbe",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_TEST_OR_OPERATIONAL_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/test-ncrv2-171-175-production-readiness-and-rollout.node.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/test-ncrv2-176-180-release-governance.node.mjs",
+      "bytes": 3499,
+      "sha256": "be7601db058005ae24f5e88f6e479c61776d33c257b1a3039e1658e4480db7ee",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_TEST_OR_OPERATIONAL_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/test-ncrv2-176-180-release-governance.node.mjs"
+    },
+    {
+      "path": "crays-platform/scripts/verify-oca002-governance-data.mjs",
+      "bytes": 4452,
+      "sha256": "5da32bca116add3710b59b734ed68245117fad043c8de5ff90f94a931d360546",
+      "originalMode": "0o664",
+      "category": "ORIGINAL_TEST_OR_OPERATIONAL_SCRIPT",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/verify-oca002-governance-data.mjs"
+    }
+  ],
+  "originalSourceProgramsExecuted": false,
+  "originalTestsExecuted": false,
+  "originalMigrationsExecuted": false,
+  "dependencyInstallOrBuildExecuted": false,
+  "staticPythonSyntaxOnly": {
+    "parsedFiles": 28,
+    "syntaxErrorsPreserved": []
+  },
+  "sourceReview": {
+    "existingGitleaksReceiptReused": true,
+    "noNewGitleaksExecution": true,
+    "selectedFilesHaveNoEmailUUIDIPv4PrivateKeyJWTCredentialAssignmentOrAbsoluteLocalPathLiteralIndicators": true,
+    "syntheticTestIdentifiersDoNotRepresentProductionRecords": true,
+    "wholeOriginalSourcePrivacyOrLegalCompletenessClaim": false
+  },
+  "licenseAndRecoveryScope": "Original source bytes and inherited notices preserved. No new blanket license, dependency closure, operational replay approval or full Core recovery is asserted."
+}

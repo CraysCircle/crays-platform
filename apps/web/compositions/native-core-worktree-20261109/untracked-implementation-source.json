@@ -1,0 +1,775 @@
+{
+  "schema": "crays.core-untracked-implementation-source.v1",
+  "sourceHead": "c2018d04f6a52d8716326a098dde7624cbb18963",
+  "sourceScope": "Original previously untracked Core API, identity, Personal, database, OCA and GraphQL implementation files. Original file paths are retained under untracked-originals.",
+  "originalFiles": 72,
+  "sourceBytes": 554188,
+  "files": [
+    {
+      "path": "crays-platform/src/app/api/crays/personal-accounts/callback/[provider]/route.ts",
+      "bytes": 358,
+      "sha256": "013e71d43d6eaf69a308fd92f08440049d1d2edc8441ec956893cd168090c1cb",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/app/api/crays/personal-accounts/callback/[provider]/route.ts",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "next/server"
+      ]
+    },
+    {
+      "path": "crays-platform/src/app/api/crays/personal-accounts/connect/route.ts",
+      "bytes": 267,
+      "sha256": "c3508dab11dbe390ca76a87acdfa239ed64016c13bea646cc5ba3d703e7e4b73",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/app/api/crays/personal-accounts/connect/route.ts",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "next/server"
+      ]
+    },
+    {
+      "path": "crays-platform/src/app/api/crays/personal-accounts/disconnect/route.ts",
+      "bytes": 273,
+      "sha256": "320944ee906157844a189ade4c2f4ffda4eb051028cfdf4093082b0e05ef8356",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/app/api/crays/personal-accounts/disconnect/route.ts",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "next/server"
+      ]
+    },
+    {
+      "path": "crays-platform/src/app/api/crays/personal-accounts/status/route.ts",
+      "bytes": 264,
+      "sha256": "1622a937c4beb12aecfae6b1bee613ba17510f811447f623bb07154e8e95821b",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/app/api/crays/personal-accounts/status/route.ts",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "next/server"
+      ]
+    },
+    {
+      "path": "crays-platform/src/app/api/graphql/route.ts",
+      "bytes": 2237,
+      "sha256": "f6c53ddb125d0c5b6a8d5e41043d00cf74f4b6e56330f85b4bc99a1127c59dbd",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/app/api/graphql/route.ts",
+      "category": "CORE_GRAPHQL_IMPLEMENTATION_AND_SCHEMA",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/app/api/native/personal-message-originals/read/route.ts",
+      "bytes": 1197,
+      "sha256": "974be9d5b6ad49f4fdf0497ca8a67d114bda92b19a0db9560649fb1e30b875fd",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/app/api/native/personal-message-originals/read/route.ts",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/app/api/native/personal-message-originals/route.ts",
+      "bytes": 1311,
+      "sha256": "54e9e410d5628e105497c4465d4d610a381a5c0aa6e59b1953f0b85c8b6a696f",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/app/api/native/personal-message-originals/route.ts",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/app/oca-authority/page.tsx",
+      "bytes": 721,
+      "sha256": "ed788820a120ae8eb652c60e12d43c7427a38331445f763abe072334a9b7800b",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/app/oca-authority/page.tsx",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/app/signin/complete/route.ts",
+      "bytes": 337,
+      "sha256": "855efaf9957e5481b4e24a912a6aad9ca484c74fa027ee8dae5a09c463bccc20",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/app/signin/complete/route.ts",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "next/server"
+      ]
+    },
+    {
+      "path": "crays-platform/src/components/oca-component-admission-panel.tsx",
+      "bytes": 9251,
+      "sha256": "2cc80bfa4f77f98b850482cfe8376630e016e8724add05f978754bf31a0cb1b2",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/components/oca-component-admission-panel.tsx",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "lucide-react",
+        "react"
+      ]
+    },
+    {
+      "path": "crays-platform/src/components/oca-governance-lifecycle-panel.tsx",
+      "bytes": 18451,
+      "sha256": "70fdf8531998566695359312bd26cb1426d644a784d9408e6cae153bbc002a0c",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/components/oca-governance-lifecycle-panel.tsx",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "lucide-react",
+        "react"
+      ]
+    },
+    {
+      "path": "crays-platform/src/components/oca-governance-workbench.tsx",
+      "bytes": 16815,
+      "sha256": "9038b318a8eabc7d876385c0fe37b4fbff94389f4ed30dcc5232d43b1826e6b4",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/components/oca-governance-workbench.tsx",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "lucide-react",
+        "react"
+      ]
+    },
+    {
+      "path": "crays-platform/src/components/oca-privacy-center.tsx",
+      "bytes": 16566,
+      "sha256": "94457c7f4cdc2c4f4ebef9c2a920be7340b9f8ab7020f16002f78aba60c86e18",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/components/oca-privacy-center.tsx",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "lucide-react",
+        "react"
+      ]
+    },
+    {
+      "path": "crays-platform/src/components/oca-runtime-inventory-panel.tsx",
+      "bytes": 11228,
+      "sha256": "34277fd90b88d81fabc020d8b70e570e9bade7c21071c0cfbed91fee2ba619e9",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/components/oca-runtime-inventory-panel.tsx",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "lucide-react",
+        "react"
+      ]
+    },
+    {
+      "path": "crays-platform/src/db/account-email-verification.ts",
+      "bytes": 5602,
+      "sha256": "3117f13c7e60a33e87fe4aee759ec0b87a47927ca0a381375a252971d781a216",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/account-email-verification.ts",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "pg"
+      ]
+    },
+    {
+      "path": "crays-platform/src/db/core-identity-runtime-rpc.ts",
+      "bytes": 30680,
+      "sha256": "5bf632b9f7014f432f86282bc3f763236e9fa9eeea36c4c37a639a0d7a0f0617",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/core-identity-runtime-rpc.ts",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/db/documents-approvals-signatures-repository.ts",
+      "bytes": 27950,
+      "sha256": "5f4ed6b8fb2832ae558fb21374ac7d251167f175f5abca16a0430da7f35b8c2f",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/documents-approvals-signatures-repository.ts",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "zod"
+      ]
+    },
+    {
+      "path": "crays-platform/src/db/mail-operating-system-repository.ts",
+      "bytes": 10217,
+      "sha256": "573089869393d6ef8ba3f0086dd6ea440f4560e04752bdf110868d342ed4bbf9",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/mail-operating-system-repository.ts",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "zod"
+      ]
+    },
+    {
+      "path": "crays-platform/src/db/native-email-registration.mjs",
+      "bytes": 10034,
+      "sha256": "b3cf3a5fe2b10873ec9573ae80791621dc88136e42d465ab5a9532a591b8b599",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/native-email-registration.mjs",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/db/native-personal-service-admission.ts",
+      "bytes": 3625,
+      "sha256": "36856ba278ff99a80af928d806dd9828d9181cbc7d1088ed27f731c4101ad98f",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/native-personal-service-admission.ts",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "server-only"
+      ]
+    },
+    {
+      "path": "crays-platform/src/db/oca-authority-workbench-service.ts",
+      "bytes": 16014,
+      "sha256": "1faacf8c120a0681cb11a190641a4f87e3fc20e65f9186102b79d7a3ad811769",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/oca-authority-workbench-service.ts",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "pg",
+        "zod"
+      ]
+    },
+    {
+      "path": "crays-platform/src/db/oca-component-admission-service.ts",
+      "bytes": 16337,
+      "sha256": "082fd5771981f721df6024b9b0337f1d82c37e43ab47794bb676a29f9736cb94",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/oca-component-admission-service.ts",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "pg",
+        "zod"
+      ]
+    },
+    {
+      "path": "crays-platform/src/db/oca-governance-command-service.ts",
+      "bytes": 15127,
+      "sha256": "74b11e49d2f8875de853594149af713ee09a763f0096b6282d009cafd78fc477",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/oca-governance-command-service.ts",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "pg",
+        "server-only",
+        "zod"
+      ]
+    },
+    {
+      "path": "crays-platform/src/db/oca-governance-denial-receipt-service.ts",
+      "bytes": 4403,
+      "sha256": "c2924e73605d3aa9af207e50e9d7e751c31ad0aa8c2f1fb20fecc3341faa855e",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/oca-governance-denial-receipt-service.ts",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "pg",
+        "server-only"
+      ]
+    },
+    {
+      "path": "crays-platform/src/db/oca-governance-lifecycle-service.ts",
+      "bytes": 56411,
+      "sha256": "47dbfa28a9f45fdc4f7ab33255f8520bf27c959cf538f2860f79f2c62820ee6b",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/oca-governance-lifecycle-service.ts",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "pg",
+        "server-only",
+        "zod"
+      ]
+    },
+    {
+      "path": "crays-platform/src/db/oca-governance-repository.ts",
+      "bytes": 6455,
+      "sha256": "08082a4e6311cfca54e1463949c595f8ab97be3902b4db45d5353aa8cd219e0f",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/oca-governance-repository.ts",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "pg",
+        "server-only"
+      ]
+    },
+    {
+      "path": "crays-platform/src/db/oca-privacy-workbench-service.ts",
+      "bytes": 35838,
+      "sha256": "0d4b8930eb9d792a450972288c1ec0f1a32f3e25c69a9b52d9ff5e765ed0b2ac",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/oca-privacy-workbench-service.ts",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "pg",
+        "zod"
+      ]
+    },
+    {
+      "path": "crays-platform/src/db/oca-runtime-inventory-service.ts",
+      "bytes": 17560,
+      "sha256": "d1328884768f2e821db0cf4d0d869d36c02e13eb67459d311418749424cdac42",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/oca-runtime-inventory-service.ts",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "pg",
+        "server-only",
+        "zod"
+      ]
+    },
+    {
+      "path": "crays-platform/src/db/operational-record-write-repository.ts",
+      "bytes": 14193,
+      "sha256": "ecd71ac6424496497c4876d9806c6fd57cc0f07ccecd03692dbb450d3a4ef00b",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/operational-record-write-repository.ts",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "pg"
+      ]
+    },
+    {
+      "path": "crays-platform/src/db/personal-feed-effects.ts",
+      "bytes": 25576,
+      "sha256": "0af4e7177dea74bedab3cccc310d96c83c3cfaf19adcc854adbe6ed9d98f98e3",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/personal-feed-effects.ts",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "pg",
+        "server-only"
+      ]
+    },
+    {
+      "path": "crays-platform/src/db/personal-message-attachment-input.d.mts",
+      "bytes": 1123,
+      "sha256": "484c6f2b7ba698ad48793f04f333fa1d056fcdd50db89a80a0d71207f217f1fa",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/personal-message-attachment-input.d.mts",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/db/personal-message-attachment-input.mjs",
+      "bytes": 6641,
+      "sha256": "7779c7eb0ef1cfcbee8362cd99f7ab582fd16a22936243991f6622e6c5ec387b",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/db/personal-message-attachment-input.mjs",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/graphql/baseline/schema.graphql",
+      "bytes": 17873,
+      "sha256": "7cf2e9d1c7c03baad51a94895b1f615dc1bc1d3d4d90650b44c500c7f42de0b6",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/baseline/schema.graphql",
+      "category": "CORE_GRAPHQL_IMPLEMENTATION_AND_SCHEMA",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/graphql/client/client-policy.ts",
+      "bytes": 852,
+      "sha256": "9283a3b85ecec5f4de15b35921596f0543a409d5e3f65e3f6a207ba2c4ab633f",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/client/client-policy.ts",
+      "category": "CORE_GRAPHQL_IMPLEMENTATION_AND_SCHEMA",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/graphql/context.ts",
+      "bytes": 7096,
+      "sha256": "272d02d9cbd44f7cb00ead482eee875845c849ca86dbc8910086641a20569d7b",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/context.ts",
+      "category": "CORE_GRAPHQL_IMPLEMENTATION_AND_SCHEMA",
+      "externalImportSpecifiers": [
+        "graphql"
+      ]
+    },
+    {
+      "path": "crays-platform/src/graphql/eventing/domain-event.ts",
+      "bytes": 991,
+      "sha256": "44d1e9dd0120035dbde7bcc234282cc040e093588755fb62e0cc01adda161a04",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/eventing/domain-event.ts",
+      "category": "CORE_GRAPHQL_IMPLEMENTATION_AND_SCHEMA",
+      "externalImportSpecifiers": [
+        "zod"
+      ]
+    },
+    {
+      "path": "crays-platform/src/graphql/eventing/gym-event-catalog.ts",
+      "bytes": 2403,
+      "sha256": "f381275477754f04995f8ea06511d26323496d44163e110daef74ce9f13416c2",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/eventing/gym-event-catalog.ts",
+      "category": "CORE_GRAPHQL_IMPLEMENTATION_AND_SCHEMA",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/graphql/eventing/kafka-readiness.ts",
+      "bytes": 1753,
+      "sha256": "a73d00f5f3ffd84cbdd1218812267e5617392d4811c3f814b595b97c39e7103d",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/eventing/kafka-readiness.ts",
+      "category": "CORE_GRAPHQL_IMPLEMENTATION_AND_SCHEMA",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/graphql/eventing/outbox-repository.ts",
+      "bytes": 7497,
+      "sha256": "bbf2079e7103ebfd1f4cef485383b194804c624d051c4e51b4f925bc76dc66e3",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/eventing/outbox-repository.ts",
+      "category": "CORE_GRAPHQL_IMPLEMENTATION_AND_SCHEMA",
+      "externalImportSpecifiers": [
+        "pg"
+      ]
+    },
+    {
+      "path": "crays-platform/src/graphql/integrations/gym-integrations.ts",
+      "bytes": 4541,
+      "sha256": "cc7f60ccf0775902b84421bf43b29b3d44231f0ac75a833103cab8752ac8f54c",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/integrations/gym-integrations.ts",
+      "category": "CORE_GRAPHQL_IMPLEMENTATION_AND_SCHEMA",
+      "externalImportSpecifiers": [
+        "graphql"
+      ]
+    },
+    {
+      "path": "crays-platform/src/graphql/mutations/gym-command.ts",
+      "bytes": 4248,
+      "sha256": "380fa41305cbbcf7f91551fcb53793f24262b92505db86ea08114f8d0a3cb23f",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/mutations/gym-command.ts",
+      "category": "CORE_GRAPHQL_IMPLEMENTATION_AND_SCHEMA",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/graphql/native-identity-documents.ts",
+      "bytes": 967,
+      "sha256": "4875f7fc998ae94c81d71ad8d4b26cf9a2f36d6514c73c5bfdd9c0cfeb5a52f9",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/native-identity-documents.ts",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/graphql/oca-authority-documents.ts",
+      "bytes": 578,
+      "sha256": "c004d4328052862d1ea5758ae61e8918818b840941b8e0eded68801bc7262b8a",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/oca-authority-documents.ts",
+      "category": "CORE_GRAPHQL_IMPLEMENTATION_AND_SCHEMA",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/graphql/oca-component-admission-documents.ts",
+      "bytes": 580,
+      "sha256": "74cfb1167def1c6ad42d808979d0bed4634405343bb3f5cf33f5b0493d4cc8bd",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/oca-component-admission-documents.ts",
+      "category": "CORE_GRAPHQL_IMPLEMENTATION_AND_SCHEMA",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/graphql/oca-privacy-documents.ts",
+      "bytes": 982,
+      "sha256": "408fb1b31a9465386ac55c0367d9fda160f754aa54988e39bb8e1204279f7a33",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/oca-privacy-documents.ts",
+      "category": "CORE_GRAPHQL_IMPLEMENTATION_AND_SCHEMA",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/graphql/oca-runtime-inventory-documents.ts",
+      "bytes": 570,
+      "sha256": "2bf0f48f06ed32fe2ed1619049da6b8d6bffb5417b6f3c47d6b5b7b3583a6023",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/oca-runtime-inventory-documents.ts",
+      "category": "CORE_GRAPHQL_IMPLEMENTATION_AND_SCHEMA",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/graphql/performance/redis-layer.ts",
+      "bytes": 5159,
+      "sha256": "bdb3d5f8e54ba71f4a39be42091e424d89306ff49e2d5f16281769aa05da81d9",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/performance/redis-layer.ts",
+      "category": "CORE_GRAPHQL_IMPLEMENTATION_AND_SCHEMA",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/graphql/performance/request-metadata.ts",
+      "bytes": 413,
+      "sha256": "9125276aa4c3079e547ae444aca66d8756f2fdc1e090a24b5911a0cf8c910082",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/performance/request-metadata.ts",
+      "category": "CORE_GRAPHQL_IMPLEMENTATION_AND_SCHEMA",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/graphql/persisted-operations.ts",
+      "bytes": 419,
+      "sha256": "44c7b58c0065f700992763305c0cc4f7bfea26a61f24ee3dd3ee3ff9670fb049",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/persisted-operations.ts",
+      "category": "CORE_GRAPHQL_IMPLEMENTATION_AND_SCHEMA",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/graphql/reads/gym-read-model.ts",
+      "bytes": 12739,
+      "sha256": "fb033db6ece257fd5900118d78c22ed2a80ce253baaf90426dac36b2196eddd7",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/reads/gym-read-model.ts",
+      "category": "CORE_GRAPHQL_IMPLEMENTATION_AND_SCHEMA",
+      "externalImportSpecifiers": [
+        "dataloader",
+        "graphql"
+      ]
+    },
+    {
+      "path": "crays-platform/src/graphql/runtime-config.ts",
+      "bytes": 1635,
+      "sha256": "bb82b5d2344fce32f35e973d4d86f05142b403c663092b0c1eaa5307cfbc80a6",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/runtime-config.ts",
+      "category": "CORE_GRAPHQL_IMPLEMENTATION_AND_SCHEMA",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/graphql/server.ts",
+      "bytes": 1662,
+      "sha256": "55b170c684796a06e26d29e4afedef4ebac33b50734dceea61c8e63d2828f5b8",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/server.ts",
+      "category": "CORE_GRAPHQL_IMPLEMENTATION_AND_SCHEMA",
+      "externalImportSpecifiers": [
+        "@escape.tech/graphql-armor-cost-limit",
+        "@escape.tech/graphql-armor-max-depth",
+        "@escape.tech/graphql-armor-max-tokens",
+        "@graphql-yoga/plugin-persisted-operations",
+        "graphql-yoga"
+      ]
+    },
+    {
+      "path": "crays-platform/src/graphql/subscriptions/gym-events.ts",
+      "bytes": 2302,
+      "sha256": "e4aaf4ea731830355b36019ec39ba110f33a97e79d164d5d9b730f0327859dca",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/subscriptions/gym-events.ts",
+      "category": "CORE_GRAPHQL_IMPLEMENTATION_AND_SCHEMA",
+      "externalImportSpecifiers": [
+        "graphql"
+      ]
+    },
+    {
+      "path": "crays-platform/src/lib/documents/documenso-capability-contract.ts",
+      "bytes": 1117,
+      "sha256": "7108ec4cb7eb19e42312b2194049f2604367f6acab819982452bc52241276df0",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/documents/documenso-capability-contract.ts",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/lib/mail/roundcube-capability-contract.ts",
+      "bytes": 996,
+      "sha256": "c9a0162084237154977b2844960819182646959726fd9e9f11cd8d990470492c",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/mail/roundcube-capability-contract.ts",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/lib/native-auth/native-auth0-verifier.mjs",
+      "bytes": 6339,
+      "sha256": "397ab34fe01d90c57f6d2823675b484c1ddd4e8120a6065748566da16acb9652",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/native-auth/native-auth0-verifier.mjs",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "jose"
+      ]
+    },
+    {
+      "path": "crays-platform/src/lib/native-auth/native-core-identity-boundary.mjs",
+      "bytes": 2590,
+      "sha256": "ae438b6e1d3271d61683fe5ba1ce741f2d78d86aba31aa5d7625be07cbd6092e",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/native-auth/native-core-identity-boundary.mjs",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/lib/native-auth/native-email-proof.mjs",
+      "bytes": 4395,
+      "sha256": "2a8646cb8c00d97d609c91a24632308a78bc29793f3cc6ae866fc71f418e0735",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/native-auth/native-email-proof.mjs",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/lib/native-auth/native-personal-original-read.d.mts",
+      "bytes": 805,
+      "sha256": "61eb7943ad6657f91dc7b9c512d5c1a1031399434ee9167550ed3f22b22f5996",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/native-auth/native-personal-original-read.d.mts",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/lib/native-auth/native-personal-original-read.mjs",
+      "bytes": 4738,
+      "sha256": "2b83a02e40ed5def45912114be2e090835602ff5fa47c7594019cf80949b78bf",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/native-auth/native-personal-original-read.mjs",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/lib/native-core-auth.ts",
+      "bytes": 19447,
+      "sha256": "2023efc9d186c8e7e2ad5a45658cb77d6187bcb2aab9d7c8b7c4bd4942d6d72a",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/native-core-auth.ts",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/lib/native-personal-agent-route.ts",
+      "bytes": 2565,
+      "sha256": "ae55d85ff9c3253d58fa1a60ba5cf016c8d414ca13fc7d6b1ad5bdbed8bf2c78",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/native-personal-agent-route.ts",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "server-only"
+      ]
+    },
+    {
+      "path": "crays-platform/src/lib/native-personal-chuck-lifecycle.ts",
+      "bytes": 5517,
+      "sha256": "8d272d91fd1f3b825f9f01f1d8318e4993d4aa493ba8ec238cb5a5bc7bb3c07c",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/native-personal-chuck-lifecycle.ts",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "server-only"
+      ]
+    },
+    {
+      "path": "crays-platform/src/lib/native-personal-sdk-dispatch.ts",
+      "bytes": 16841,
+      "sha256": "d691281d117e8abf45c3fddcd07c3a99e1925e9bf0aa6c2d883d88907c1ffedb",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/native-personal-sdk-dispatch.ts",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "server-only"
+      ]
+    },
+    {
+      "path": "crays-platform/src/lib/native-personal-sdk-original-encoding.mjs",
+      "bytes": 3475,
+      "sha256": "fe5543c55f9b6530b72f5ab0b7f909748aea8a1f2f798286cd14cb1ff5d0971a",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/native-personal-sdk-original-encoding.mjs",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "server-only"
+      ]
+    },
+    {
+      "path": "crays-platform/src/lib/personal-account-auth0-core.ts",
+      "bytes": 2047,
+      "sha256": "de6a564d4a4376e6c7c81ebd957e3933f206510b09849fbd552e80a52b3c1b08",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/personal-account-auth0-core.ts",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "next/server",
+        "server-only"
+      ]
+    },
+    {
+      "path": "crays-platform/src/lib/personal-account-deployment.ts",
+      "bytes": 1830,
+      "sha256": "459d52235076da91c03a7961706c4c3d2789f8d874f9407559c62af9b4a9ba61",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/personal-account-deployment.ts",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "server-only"
+      ]
+    },
+    {
+      "path": "crays-platform/src/lib/personal-account-route-host.ts",
+      "bytes": 10135,
+      "sha256": "889b1a68bfd2c76566021f7fc75e970ae484ae90062bd5d806236da45ff75c19",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/personal-account-route-host.ts",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "next/server",
+        "server-only"
+      ]
+    },
+    {
+      "path": "crays-platform/src/lib/personal-agent-baseline-admission.ts",
+      "bytes": 6834,
+      "sha256": "35d879073ce33b623e2d2042a10efb0e53f529ecbf37ee878f28c48de30ae326",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/personal-agent-baseline-admission.ts",
+      "category": "NATIVE_OR_PERSONAL_CORE_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "server-only"
+      ]
+    },
+    {
+      "path": "crays-platform/src/lib/read-write/operational-command-service.ts",
+      "bytes": 2356,
+      "sha256": "5a02e8ace7ee264d7bb8c7bf709eddcbf2e6deecc8bbdc0cb9e4c49e5eefe6d3",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/read-write/operational-command-service.ts",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": []
+    },
+    {
+      "path": "crays-platform/src/lib/read-write/operational-record-schema.ts",
+      "bytes": 3017,
+      "sha256": "a2a00212090bf568957fc306cd949d37aabfb15ccc97948a4c62c42e5e5836f6",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/lib/read-write/operational-record-schema.ts",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "zod"
+      ]
+    },
+    {
+      "path": "crays-platform/src/proxy.ts",
+      "bytes": 822,
+      "sha256": "dd0a69840c3c452ef4fb009e18c0d783ae2a25dfe89f604b52e966d864e33126",
+      "originalMode": "0o664",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/proxy.ts",
+      "category": "CORE_OCA_OR_OPERATIONAL_IMPLEMENTATION",
+      "externalImportSpecifiers": [
+        "next/server"
+      ]
+    }
+  ],
+  "privacyReview": {
+    "existing848SourceGitleaksReceiptReused": true,
+    "existing7CredentialShapeFindingsAllAdjudicatedFalsePositives": true,
+    "these72FilesHaveNoEmailUUIDIPv4PrivateKeyJWTCredentialAssignmentOrAbsoluteLocalPathLiteralIndicators": true,
+    "customerRecordsDatabaseDumpsOrPrivateCredentialInputsIncluded": false,
+    "noGuaranteeOfGlobalPrivacyOrLegalCompleteness": true
+  },
+  "originalityAndLicenseScope": "Preserved from the exact Core worktree authority identified by sourceHead and original hashes, outside generated/vendor/fixture paths. Existing repository and upstream notices continue to apply. Imports do not imply dependency implementations or full notices are included; no new blanket license is granted.",
+  "runtimeAcceptance": false,
+  "sourceProgramsExecuted": false
+}
