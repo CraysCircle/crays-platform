@@ -1,0 +1,39 @@
+{
+  "schema": "crays.member-graphql-origin50.source-capture.v1",
+  "sourceOnly": true,
+  "originalFiles": 1,
+  "originalBytes": 7459,
+  "files": [
+    {
+      "originalFilename": "member-graphql-transport.candidate.ts",
+      "publishedPath": "services/member-club/source50/member-graphql-transport.ts",
+      "bytes": 7459,
+      "originalSHA256": "bbf7b455ed31dcfbb1911be7fa3b7457e8f290dbd1ca98b450a1920af693c8e2",
+      "publishedSHA256": "bbf7b455ed31dcfbb1911be7fa3b7457e8f290dbd1ca98b450a1920af693c8e2",
+      "representation": "unchanged-original",
+      "filenameMapping": "Export filename only; original bytes unchanged."
+    }
+  ],
+  "independentSourceReview": {
+    "filename": "INDEPENDENT_ORIGIN50_SOURCE_REVIEW.json",
+    "sha256": "a91c5d4faeb107c79c1ec103454f680de5ed40919cc827b9543252f273fe6189",
+    "status": "PASS_SOURCE_ONLY_INDEPENDENT_ORIGIN50_REVIEW"
+  },
+  "sourceProgramsTestsExecutedDuringPreservation": false,
+  "privateInputOrCustomerPayloadBodiesReadOrIncluded": false,
+  "runtimeOrBuildOrCustomerAcceptanceClaimed": false,
+  "newLicenseGrantOrLicenseChange": false,
+  "predecessor": {
+    "scope": "Exact original Frontend35 workspace source, not Member46 server copy",
+    "sha256": "6970649a571bcef6c8d3eb0e460a9e6bcc000a781305ae237239753c3e0a5acf",
+    "delta": "Only add exact https://member.crays.world browser origin to existing localhost8990 Member alias predicate.",
+    "allOtherBytesUnchangedPerIndependentReview": true
+  },
+  "existingRegressionEvidence": {
+    "sha256": "beb4d34ad9b248cb9e89f395bce372d6dec5e25d6f6672fab4f06eb8dbeb51bf",
+    "reportedChecks": 19,
+    "status": "ORIGIN50_REGRESSION_PASS",
+    "reusedNotRerun": true
+  },
+  "externalDependencyBoundary": "Zod type import; dependency implementation/complete runtime not included."
+}

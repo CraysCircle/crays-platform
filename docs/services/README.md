@@ -71,3 +71,7 @@ The [source index](../source-index.json), [license/provenance record](../license
 ## More developer guides
 
 [Commerce](commerce.md) · [Identity](identity.md) · [Personal and Chuck](personal-and-chuck.md) · [Delivery and social](delivery-and-social.md) · [Network and native connectivity](network.md) · [Contributing](../../CONTRIBUTING.md)
+
+## Member routing and original messaging transport
+
+The [Member GraphQL origin guide](../../services/member-club/source50/README.md) explains how the browser transport selects the Member GraphQL alias for the exact Member origin. The [original messaging and Nostr transport guide](../../operations/original-messaging-nostr-transport50/README.md) records the listener boundaries for admitted messaging and relay requests. Both link to exact source versions and existing owner review evidence; build, lifecycle and authenticated customer acceptance remain separate records.

@@ -205,6 +205,14 @@
     {
       "component": "spot-personal-web-working-source15",
       "path": "source-archives/spot-and-personal-web-working-source15-20261109/source-capture.json"
+    },
+    {
+      "component": "member-graphql-origin50",
+      "path": "services/member-club/source50/source-capture.json"
+    },
+    {
+      "component": "original-messaging-nostr-transport50",
+      "path": "operations/original-messaging-nostr-transport50/source-capture.json"
     }
   ]
 }

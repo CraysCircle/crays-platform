@@ -1,0 +1,37 @@
+{
+  "schema": "crays.original-messaging-nostr50.source-capture.v1",
+  "sourceOnly": true,
+  "originalFiles": 1,
+  "originalBytes": 8688,
+  "files": [
+    {
+      "originalFilename": "listener.original-messaging-nostr50.candidate.mjs",
+      "publishedPath": "operations/original-messaging-nostr-transport50/listener.original-messaging-nostr50.candidate.mjs",
+      "bytes": 8688,
+      "originalSHA256": "284044a37f516d2fd9fbe3004773b40100bf7c6711c452936bf364f0395c3db6",
+      "publishedSHA256": "284044a37f516d2fd9fbe3004773b40100bf7c6711c452936bf364f0395c3db6",
+      "representation": "unchanged-original",
+      "filenameMapping": "Export filename only; original bytes unchanged."
+    }
+  ],
+  "independentSourceReview": {
+    "filename": "INDEPENDENT_ORIGINAL_TRANSPORT50_SOURCE_REVIEW.json",
+    "sha256": "c9a1d907d94ad163813184584d35f9d025b80d17d8817a2bd306f2da40476e19",
+    "status": "PASS_SOURCE_ONLY_NARROW_ORIGINAL_MESSAGING_NOSTR50_TRANSPORT_DELTA"
+  },
+  "sourceProgramsTestsExecutedDuringPreservation": false,
+  "privateInputOrCustomerPayloadBodiesReadOrIncluded": false,
+  "runtimeOrBuildOrCustomerAcceptanceClaimed": false,
+  "newLicenseGrantOrLicenseChange": false,
+  "predecessor": {
+    "publicPath": "operations/chuck-original-transport48/listener.chuck-original-transport.candidate.mjs",
+    "sha256": "30376559572bf19be05d3e1b724c20de026455361e0cd7e1d749b1056e2aa777",
+    "deltaScope": "Narrow original transport forwarded-header handling after existing exact admission; source peer reviewed complete candidate/delta."
+  },
+  "existingPureRegressionEvidence": {
+    "sha256": "3324e5dcc32066baa6a59b0a25e1456c8660351e3c02067add0d448f70f35946",
+    "reportedChecks": 167,
+    "reusedNotRerun": true
+  },
+  "externalDependencyBoundary": "Node built-ins and existing local application module; complete module/runtime inputs not included."
+}
