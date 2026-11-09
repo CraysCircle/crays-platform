@@ -17,6 +17,8 @@ This folder preserves ten source-only operations programs for the existing Vendu
 
 Read [source provenance](source-provenance.json) for exact original source hashes and immutable source-only artifact versions. All ten program bodies are preserved byte for byte; source envelopes, admission/request templates, private launch inputs, credentials and environment contents are outside this public packet.
 
+The CRAYS-owned code in the ten exact program revisions is licensed under **AGPL-3.0-only**, copyright **CRAYS AG**. Read [licensing and exclusions](LICENSING.md), the [exact file and embedded-code scope](license-scope.json), and the full [GNU AGPL version 3 text](LICENSE). This is an additive grant for the identified own code; imported frameworks and other third-party material retain their original terms.
+
 The controller imports `@nestjs/common` and `@vendure/core`; the wrapper delegates to existing application modules. These imports do not include the framework implementation or its complete dependency source. Original third-party licenses and notices continue to apply. This folder adds no blanket license grant to Vendure, NestJS, existing application modules, or other dependencies; the original selected program bodies contain no license headers to replace.
 
 The independent source/lifecycle review is bound to these exact four versions. Its source-only qualification is separate from execution admission and from runtime evidence. No preserved program was executed while preparing this publication.

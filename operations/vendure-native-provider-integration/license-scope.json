@@ -1,0 +1,296 @@
+{
+  "schema": "crays.component.exact-owned-source-license-scope.v1",
+  "licenseExpression": "AGPL-3.0-only",
+  "copyrightHolder": "CRAYS AG",
+  "grantDateUTC": "2026-11-09",
+  "sourceCommit": "5344449bce706e6fea993ab64aff491edbb3accc",
+  "componentPath": "operations/vendure-native-provider-integration",
+  "scopeMethod": "Only the exact CRAYS-owned source file revisions listed below, including their identified own-code nested regions; no directory-wide or future-revision blanket grant.",
+  "files": [
+    {
+      "path": "operations/vendure-native-provider-integration/original-asset-delivery-controller.compiled07.rev02.cjs",
+      "bytes": 6205,
+      "sha256": "93d6b67b19d8f44e0a549132b27b36193fcdf88b065aec38d3703c5f5440eaf2",
+      "immutableSourceArtifact": {
+        "key": "migration-work/20261108/business/vendure-native-assets-cjs-source/compiled07.controller.rev02.source-only.json",
+        "versionId": "xGiUSEceJBvFAT_eQ8g4s3gl4QRWB5zA",
+        "envelopeBytes": 9898,
+        "envelopeSHA256": "c51330e5bc86a1c61dcea735d4f4812e18f610a545875bb1d60e0ed8224ddce8"
+      }
+    },
+    {
+      "path": "operations/vendure-native-provider-integration/vendure-native-provider-wrapper.rev01.cjs",
+      "bytes": 2604,
+      "sha256": "dba7a51867bca95da783bb26ae2aa918e5c93f7507c2239ce76477ec43634563",
+      "immutableSourceArtifact": {
+        "key": "migration-work/20261108/business/vendure-native-provider-integration/wrapper.source-only.rev01.json",
+        "versionId": "LKui_jcls7qrcNVLSZn.aAh58NCkSOFY",
+        "envelopeBytes": 4766,
+        "envelopeSHA256": "f5a1fd0d867c6f0291214b0368f3e57567da0da1b9c8ac292a49eea1e756873c"
+      }
+    },
+    {
+      "path": "operations/vendure-native-provider-integration/vendure-same-cid-release01.rev03.py",
+      "bytes": 40157,
+      "sha256": "a6e0f27eaae51c7affb6c22dc6a5021cbbda625dce5d712637c17069434c94db",
+      "immutableSourceArtifact": {
+        "key": "migration-work/20261108/business/vendure-native-provider-integration/same-cid-release01.source-request.rev03.json",
+        "versionId": "Vpi2jyiowvVgw0W75W.ZX.MA1Ji_Jqjp",
+        "envelopeBytes": 156113,
+        "envelopeSHA256": "9485ec3f8fad611a59802dd1a451674a0cff39e6b79d5db4561a77d042768ced"
+      }
+    },
+    {
+      "path": "operations/vendure-native-provider-integration/vendure-root-slot-dispatcher.rev01.py",
+      "bytes": 58993,
+      "sha256": "d20e432ee1f125b65d4b226fa420879900116ef2b91712b3b6769ca63ee41eac",
+      "immutableSourceArtifact": {
+        "key": "migration-work/20261108/business/vendure-native-provider-integration/root-slot-dispatcher.source-only.rev01.json",
+        "versionId": "tzEHnQR71AixxqD9lQ7vbuQdiCOGTTvf",
+        "envelopeBytes": 122426,
+        "envelopeSHA256": "471d161d516639199b8a0455755de01834d2ed3527748f0c205afe1c08745690"
+      }
+    },
+    {
+      "path": "operations/vendure-native-provider-integration/vendure-native-verify-format-outcome.rev01.cjs",
+      "bytes": 8133,
+      "sha256": "3fdeea06f6d66834b33ec65aa75f44f464f5cf3ba8ae0d812ff7ca2ddc13e09a",
+      "immutableSourceArtifact": {
+        "key": "migration-work/20261108/business/vendure-native-provider-integration/native-verify-format-outcome-fix.source-only.rev01.json",
+        "versionId": "kbNWitF0KcX9oOCEtFrkmg8AJWmbdZ6d",
+        "envelopeBytes": 12544,
+        "envelopeSHA256": "5224f54c14c1abb422a1d5b2036dfc0e0033e6151584c8d1b4d7cc539e6d326c"
+      }
+    },
+    {
+      "path": "operations/vendure-native-provider-integration/vendure-native-verify-closed-runner.rev01.py",
+      "bytes": 2759,
+      "sha256": "cb8cc765709309993695fe3cc98a3b1b9b256f0c49209efc3dbfc61abdb1b325",
+      "immutableSourceArtifact": {
+        "key": "migration-work/20261108/business/vendure-native-provider-integration/native-verify-format-outcome-fix.source-only.rev01.json",
+        "versionId": "kbNWitF0KcX9oOCEtFrkmg8AJWmbdZ6d",
+        "envelopeBytes": 12544,
+        "envelopeSHA256": "5224f54c14c1abb422a1d5b2036dfc0e0033e6151584c8d1b4d7cc539e6d326c"
+      }
+    },
+    {
+      "path": "operations/vendure-native-provider-integration/vendure-native-verifier02-fresh-lease.rev01.py",
+      "bytes": 31652,
+      "sha256": "3a7f41d84541b4a9b605203f515474363c38600bb09b2bec7691447c69914e6c",
+      "immutableSourceArtifact": {
+        "key": "migration-work/20261108/business/vendure-native-provider-integration/native-verifier02.fresh-lease.source-request.rev01.json",
+        "versionId": "96Mue1YT8zL4aB5pc4.MZMtQlXTO7OSP",
+        "envelopeBytes": 79728,
+        "envelopeSHA256": "8676dc3a9cdf189f3e37a261edce6590cea472c4d024ee67a35d3809688483d9"
+      }
+    },
+    {
+      "path": "operations/vendure-native-provider-integration/original-asset-flow04.node.cjs",
+      "bytes": 16773,
+      "sha256": "eec6f95b32fa4b8f3b44892e9756bb07179a80f377e1d76c489099fa815a41b3",
+      "immutableSourceArtifact": {
+        "key": "migration-work/20261108/business/vendure-native-provider-integration/original-asset-flow04.source-only.rev02.json",
+        "versionId": "Csz_S1lIuBFF5pGzqxX6ZWVWWBcA5MfO",
+        "envelopeBytes": 24638,
+        "envelopeSHA256": "423261ee746aba545a06b099386a821ae9b5e61d8edad13531bdac65c430f732"
+      }
+    },
+    {
+      "path": "operations/vendure-native-provider-integration/original-asset-flow04.closed-runner.py",
+      "bytes": 5313,
+      "sha256": "f282508d1f635ce12bced6ee5f1da0494fa2f43aa27ad80266102e86ece0e77d",
+      "immutableSourceArtifact": {
+        "key": "migration-work/20261108/business/vendure-native-provider-integration/original-asset-flow04.source-only.rev02.json",
+        "versionId": "Csz_S1lIuBFF5pGzqxX6ZWVWWBcA5MfO",
+        "envelopeBytes": 24638,
+        "envelopeSHA256": "423261ee746aba545a06b099386a821ae9b5e61d8edad13531bdac65c430f732"
+      }
+    },
+    {
+      "path": "operations/vendure-native-provider-integration/native-verifier04.once.py",
+      "bytes": 42881,
+      "sha256": "561170b881cb6e6afe3f0b67ba3ab38f55d4f63d934ccd476b4da21cdcc5606a",
+      "immutableSourceArtifact": {
+        "key": "migration-work/20261108/business/vendure-native-provider-integration/native-verifier04.fresh-lease.source-request.rev01.json",
+        "versionId": "tPeG.SL8n2UUgUGNojQGgVNDHZcNpzro",
+        "envelopeBytes": 106980,
+        "envelopeSHA256": "8b4f5671527c11eb8e6b8234472b627a9f4b19a29faedf4a92f0bd36227a51a1"
+      }
+    }
+  ],
+  "fileCount": 10,
+  "sourceBytes": 215470,
+  "nestedOwnCodeRegions": [
+    {
+      "containerPath": "operations/vendure-native-provider-integration/vendure-same-cid-release01.rev03.py",
+      "region": "BUNDLE.ctor",
+      "bytes": 2686,
+      "sha256": "004eda30990cf15c0eff0b7e9210b14c6821ba5efe7743d15bd4bd780733ef24",
+      "matchesTopLevelScopedBody": null,
+      "JSImports": [
+        "node:crypto",
+        "node:fs",
+        "node:module",
+        "node:vm"
+      ],
+      "licenseMarkerLocated": false
+    },
+    {
+      "containerPath": "operations/vendure-native-provider-integration/vendure-same-cid-release01.rev03.py",
+      "region": "BUNDLE.module",
+      "bytes": 6205,
+      "sha256": "93d6b67b19d8f44e0a549132b27b36193fcdf88b065aec38d3703c5f5440eaf2",
+      "matchesTopLevelScopedBody": "operations/vendure-native-provider-integration/original-asset-delivery-controller.compiled07.rev02.cjs",
+      "JSImports": [
+        "@nestjs/common",
+        "@vendure/core"
+      ],
+      "licenseMarkerLocated": false
+    },
+    {
+      "containerPath": "operations/vendure-native-provider-integration/vendure-same-cid-release01.rev03.py",
+      "region": "BUNDLE.new",
+      "bytes": 2604,
+      "sha256": "dba7a51867bca95da783bb26ae2aa918e5c93f7507c2239ce76477ec43634563",
+      "matchesTopLevelScopedBody": "operations/vendure-native-provider-integration/vendure-native-provider-wrapper.rev01.cjs",
+      "JSImports": [
+        "/app/dist/config.js",
+        "/app/dist/index.js",
+        "/run/crays/original-asset-delivery-controller.cjs",
+        "node:fs"
+      ],
+      "licenseMarkerLocated": false
+    },
+    {
+      "containerPath": "operations/vendure-native-provider-integration/vendure-same-cid-release01.rev03.py",
+      "region": "BUNDLE.old",
+      "bytes": 1120,
+      "sha256": "ce9c30602f387d1dbcaf101621914e6a95e99c2f3a21b5edaaa6b66303665809",
+      "matchesTopLevelScopedBody": null,
+      "JSImports": [
+        "/app/dist/config.js",
+        "/app/dist/index.js",
+        "node:fs"
+      ],
+      "licenseMarkerLocated": false
+    },
+    {
+      "containerPath": "operations/vendure-native-provider-integration/vendure-same-cid-release01.rev03.py",
+      "region": "BUNDLE.verify",
+      "bytes": 7587,
+      "sha256": "a78cc457bd460debd0cd2b816e97e098be2b513be30d99347fd29df8b7a90370",
+      "matchesTopLevelScopedBody": null,
+      "JSImports": [
+        "node:crypto",
+        "node:fs"
+      ],
+      "licenseMarkerLocated": false
+    },
+    {
+      "containerPath": "operations/vendure-native-provider-integration/vendure-root-slot-dispatcher.rev01.py",
+      "region": "SOURCE_B64.decoded",
+      "bytes": 40157,
+      "sha256": "a6e0f27eaae51c7affb6c22dc6a5021cbbda625dce5d712637c17069434c94db",
+      "matchesTopLevelScopedBody": "operations/vendure-native-provider-integration/vendure-same-cid-release01.rev03.py",
+      "JSImports": [],
+      "licenseMarkerLocated": false
+    },
+    {
+      "containerPath": "operations/vendure-native-provider-integration/vendure-native-verifier02-fresh-lease.rev01.py",
+      "region": "NODE_SOURCE",
+      "bytes": 8133,
+      "sha256": "3fdeea06f6d66834b33ec65aa75f44f464f5cf3ba8ae0d812ff7ca2ddc13e09a",
+      "matchesTopLevelScopedBody": "operations/vendure-native-provider-integration/vendure-native-verify-format-outcome.rev01.cjs",
+      "JSImports": [
+        "node:crypto",
+        "node:fs"
+      ],
+      "licenseMarkerLocated": false
+    },
+    {
+      "containerPath": "operations/vendure-native-provider-integration/vendure-native-verifier02-fresh-lease.rev01.py",
+      "region": "CLOSED_RUNNER",
+      "bytes": 2759,
+      "sha256": "cb8cc765709309993695fe3cc98a3b1b9b256f0c49209efc3dbfc61abdb1b325",
+      "matchesTopLevelScopedBody": "operations/vendure-native-provider-integration/vendure-native-verify-closed-runner.rev01.py",
+      "JSImports": [],
+      "licenseMarkerLocated": false
+    },
+    {
+      "containerPath": "operations/vendure-native-provider-integration/vendure-native-verifier02-fresh-lease.rev01.py",
+      "region": "SHARED_CODE",
+      "bytes": 7885,
+      "sha256": "b825bdd6a7b673a9f4c6c4feb765dbc392809795e57b71bd9ecfbf77b55e3836",
+      "matchesTopLevelScopedBody": null,
+      "JSImports": [],
+      "licenseMarkerLocated": false
+    },
+    {
+      "containerPath": "operations/vendure-native-provider-integration/vendure-native-verifier02-fresh-lease.rev01.py",
+      "region": "PHYSICAL_CODE",
+      "bytes": 3333,
+      "sha256": "bb8c24f88245503af7d15eafdb92223107b86f566beb3dec877800a20c180e65",
+      "matchesTopLevelScopedBody": null,
+      "JSImports": [],
+      "licenseMarkerLocated": false
+    },
+    {
+      "containerPath": "operations/vendure-native-provider-integration/native-verifier04.once.py",
+      "region": "NODE_SOURCE",
+      "bytes": 16773,
+      "sha256": "eec6f95b32fa4b8f3b44892e9756bb07179a80f377e1d76c489099fa815a41b3",
+      "matchesTopLevelScopedBody": "operations/vendure-native-provider-integration/original-asset-flow04.node.cjs",
+      "JSImports": [
+        "node:crypto",
+        "node:fs"
+      ],
+      "licenseMarkerLocated": false
+    },
+    {
+      "containerPath": "operations/vendure-native-provider-integration/native-verifier04.once.py",
+      "region": "CLOSED_RUNNER",
+      "bytes": 5313,
+      "sha256": "f282508d1f635ce12bced6ee5f1da0494fa2f43aa27ad80266102e86ece0e77d",
+      "matchesTopLevelScopedBody": "operations/vendure-native-provider-integration/original-asset-flow04.closed-runner.py",
+      "JSImports": [],
+      "licenseMarkerLocated": false
+    },
+    {
+      "containerPath": "operations/vendure-native-provider-integration/native-verifier04.once.py",
+      "region": "SHARED_CODE",
+      "bytes": 7885,
+      "sha256": "b825bdd6a7b673a9f4c6c4feb765dbc392809795e57b71bd9ecfbf77b55e3836",
+      "matchesTopLevelScopedBody": null,
+      "JSImports": [],
+      "licenseMarkerLocated": false
+    },
+    {
+      "containerPath": "operations/vendure-native-provider-integration/native-verifier04.once.py",
+      "region": "PHYSICAL_CODE",
+      "bytes": 3333,
+      "sha256": "bb8c24f88245503af7d15eafdb92223107b86f566beb3dec877800a20c180e65",
+      "matchesTopLevelScopedBody": null,
+      "JSImports": [],
+      "licenseMarkerLocated": false
+    }
+  ],
+  "rightsAuthority": "CRAYS AG own-code rights and AGPL-3.0-only choice expressly confirmed by the human; Root-authored CRAYS integration/control/verifier provenance is bound to the exact original artifact versions.",
+  "excluded": [
+    "Vendure and NestJS framework implementations, packages and dependencies",
+    "Node.js and Python implementations and standard-library code imported at runtime",
+    "Existing application configuration/entrypoint implementations referenced by imports rather than reproduced own code in the exact listed bodies",
+    "Private source envelopes, admission/request/launch templates, runtime credentials, data, environment contents and execution approval",
+    "Unlisted paths, documentation, assets, unrelated repository code and future source revisions",
+    "Third-party material with independently applicable terms; its existing license and notices remain unchanged"
+  ],
+  "originalProductBodiesModified": false,
+  "existingOriginalThirdPartyTermsOverridden": false,
+  "licenseText": {
+    "path": "operations/vendure-native-provider-integration/LICENSE",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "original": "Previously verified official GNU Affero General Public License version 3, unchanged full text"
+  },
+  "notOrLater": true,
+  "sourcePublicationDoesNotGrantRuntimeAdmission": true
+}
