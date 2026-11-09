@@ -1,0 +1,44 @@
+{
+  "schema": "crays.personal-generated-food-source.v1",
+  "authorityPath": "/home/craysdev/codex-chat-projects/member/output/gym-unified-integration-20261028/nutrition-main-preparation-20261029/APPROVED_REFERENCE_AND_ASSETS.json",
+  "authoritySHA256": "f6741443284811f06397d59604d09a1cda478adaf6e45d513a93e48e0fff2a52",
+  "authoritySection": "generatedRecipeIllustrations",
+  "originalBodiesSHA256Verified": true,
+  "allFourBodiesIndividuallyVisuallyReviewed": true,
+  "rows": [
+    {
+      "path": "src/gym-design/source-media/nutrition-example-avocado-toast.png",
+      "bytes": 3009766,
+      "sha256": "8629b382135df93a28baf5046329bbbd1e8b05c803612aabdcf11ffdc3ffdd5e",
+      "classification": "CRAYS-generated food illustration identified in original generatedRecipeIllustrations record",
+      "visualReview": "Food-only illustration; no persons, documents, account details or identifying user content observed",
+      "canonicalRecipeOrNutritionClaim": false
+    },
+    {
+      "path": "src/gym-design/source-media/nutrition-example-berry-oats.png",
+      "bytes": 2862202,
+      "sha256": "871a985e27278fadc94c6939faa10df9a6f6fa85b1de7be5d61cf73fb38974be",
+      "classification": "CRAYS-generated food illustration identified in original generatedRecipeIllustrations record",
+      "visualReview": "Food-only illustration; no persons, documents, account details or identifying user content observed",
+      "canonicalRecipeOrNutritionClaim": false
+    },
+    {
+      "path": "src/gym-design/source-media/nutrition-example-mediterranean-bowl.png",
+      "bytes": 2937628,
+      "sha256": "b112774fa7aebcbfb49941d8d7c800207bf9bfc7675a51694a81df36db1e1f1a",
+      "classification": "CRAYS-generated food illustration identified in original generatedRecipeIllustrations record",
+      "visualReview": "Food-only illustration; no persons, documents, account details or identifying user content observed",
+      "canonicalRecipeOrNutritionClaim": false
+    },
+    {
+      "path": "src/gym-design/source-media/nutrition-example-yogurt-granola.png",
+      "bytes": 2819949,
+      "sha256": "77bffd7a0f8aa2a49bddd5e627d8426a8f144bc351d9082435f27668261f3df9",
+      "classification": "CRAYS-generated food illustration identified in original generatedRecipeIllustrations record",
+      "visualReview": "Food-only illustration; no persons, documents, account details or identifying user content observed",
+      "canonicalRecipeOrNutritionClaim": false
+    }
+  ],
+  "newBlanketLicenseGrant": false,
+  "remainingOriginalImageInputsUnderReview": 50
+}

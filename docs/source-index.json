@@ -117,6 +117,10 @@
     {
       "component": "personal-web-application",
       "path": "apps/personal/source-capture.json"
+    },
+    {
+      "component": "personal-build-operations",
+      "path": "operations/personal-build/source-capture.json"
     }
   ]
 }

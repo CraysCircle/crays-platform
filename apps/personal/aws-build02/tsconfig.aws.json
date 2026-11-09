@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "pdfjs-dist": [
+        "/work/.qualification/desktop-pdf-dependency-v576/node_modules/pdfjs-dist/types/src/pdf.d.ts"
+      ]
+    }
+  },
+  "extends": "./tsconfig.json"
+}

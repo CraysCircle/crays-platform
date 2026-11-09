@@ -12,7 +12,7 @@ It is a separate application from [the shared Next.js application](../web/) and 
 - `third-party/`: exact metadata for all 30 direct declared packages and 31 original root license/notice files from the captured dependency tree.
 - `build-binding.json`: relationship to the recorded AWS Build02 artifact, without claiming runtime adoption.
 
-The 54 original image inputs remain separately pinned while their provenance and publication rights are reviewed. Their bodies are not in this directory. All application text, original build inputs and ten original changed text files are retained here, with the protected account constant represented by a recoverable marker.
+Four original generated food illustrations are now preserved with their [source provenance](provenance/generated-food-illustrations.json). The other 50 image bodies remain separately pinned while their provenance and publication rights are reviewed. All application text, original build inputs and ten original changed text files are retained here, with the protected account constant represented by a recoverable marker.
 
 ## Restore the exact inputs
 
@@ -24,13 +24,13 @@ python3 restore_source.py --version candidate --destination /outside-git/persona
 
 Use `--version baseline` for the pre-overlay composition. The owner asset root must contain the exact original relative image paths. The source-binding JSON accepts `MEMBER_TEST_ACCOUNT_ID` and `MEMBER_TEST_SUBJECT_SHA256`; this application requires the account input. Keep that JSON outside Git. Missing or incorrect owner inputs are refused before destination files are written.
 
-The restorer checks the entire source composition against original hashes before writing files. Restoration executes no original application or build code. Public GitHub alone does not currently contain the 54 image bodies or the protected constant.
+The restorer checks the entire source composition against original hashes before writing files. Restoration executes no original application or build code. Public GitHub alone does not currently contain the remaining 50 image bodies or the protected constant.
 
 ## Development and build
 
 The unchanged original package declares `npm run dev` and `npm run build` (`tsc && vite build`). These declarations are retained as source, not instructions to deploy or run privileged migration programs.
 
-This is not yet a self-contained install recipe. The original Vite configuration has an absolute PDF dependency alias, preserves symlinks and externalizes React to the recorded shared runtime import map. The captured AWS build additionally depends on qualified fallback packages, original derived configuration and a separately recorded Recharts closure. Original files are preserved without silently rewriting these relationships. No dependency install, typecheck, build, server start or deployment was repeated to publish this source.
+This is not yet a self-contained install recipe. The original Vite configuration has an absolute PDF dependency alias, preserves symlinks and externalizes React to the recorded shared runtime import map. The captured AWS build additionally depends on qualified fallback packages and a separately recorded Recharts closure. Its two [original AWS Build02 configuration files](aws-build02/) and the [three controller revisions and helper programs](../../operations/personal-build/) are now preserved separately. Original files are preserved without silently rewriting these relationships. No dependency install, typecheck, build, server start or deployment was repeated to publish this source.
 
 ## Original notices and remaining work
 

@@ -9829,7 +9829,9 @@
       "path": "src/gym-design/source-media/nutrition-example-avocado-toast.png",
       "bytes": 3009766,
       "sha256": "8629b382135df93a28baf5046329bbbd1e8b05c803612aabdcf11ffdc3ffdd5e",
-      "protectedAsset": true
+      "exportPath": "source/src/gym-design/source-media/nutrition-example-avocado-toast.png",
+      "exportBytes": 3009766,
+      "exportSHA256": "8629b382135df93a28baf5046329bbbd1e8b05c803612aabdcf11ffdc3ffdd5e"
     },
     {
       "path": "src/gym-design/source-media/coaching-original-plan.jpg",
@@ -9889,7 +9891,9 @@
       "path": "src/gym-design/source-media/nutrition-example-berry-oats.png",
       "bytes": 2862202,
       "sha256": "871a985e27278fadc94c6939faa10df9a6f6fa85b1de7be5d61cf73fb38974be",
-      "protectedAsset": true
+      "exportPath": "source/src/gym-design/source-media/nutrition-example-berry-oats.png",
+      "exportBytes": 2862202,
+      "exportSHA256": "871a985e27278fadc94c6939faa10df9a6f6fa85b1de7be5d61cf73fb38974be"
     },
     {
       "path": "src/gym-design/source-media/health-original-assessment.png",
@@ -9943,7 +9947,9 @@
       "path": "src/gym-design/source-media/nutrition-example-mediterranean-bowl.png",
       "bytes": 2937628,
       "sha256": "b112774fa7aebcbfb49941d8d7c800207bf9bfc7675a51694a81df36db1e1f1a",
-      "protectedAsset": true
+      "exportPath": "source/src/gym-design/source-media/nutrition-example-mediterranean-bowl.png",
+      "exportBytes": 2937628,
+      "exportSHA256": "b112774fa7aebcbfb49941d8d7c800207bf9bfc7675a51694a81df36db1e1f1a"
     },
     {
       "path": "src/gym-design/source-media/membership-original-legpress-hero.jpeg",
@@ -10051,7 +10057,9 @@
       "path": "src/gym-design/source-media/nutrition-example-yogurt-granola.png",
       "bytes": 2819949,
       "sha256": "77bffd7a0f8aa2a49bddd5e627d8426a8f144bc351d9082435f27668261f3df9",
-      "protectedAsset": true
+      "exportPath": "source/src/gym-design/source-media/nutrition-example-yogurt-granola.png",
+      "exportBytes": 2819949,
+      "exportSHA256": "77bffd7a0f8aa2a49bddd5e627d8426a8f144bc351d9082435f27668261f3df9"
     },
     {
       "path": "src/gym-design/source-media/shopping-crays-accessories-range.png",

@@ -11,9 +11,11 @@
   "runtimeAcceptance": false,
   "requiredAdditionalBuildInputs": [
     "Exact original dependency tree and fallback packages",
-    "Original AWS derived build configuration",
+    "Original build-entry owner/control records; configuration bodies are preserved under aws-build02",
     "Recharts closure",
     "Existing external shared React import-map runtime",
     "Focus CSS/JS, fonts and remaining external runtime assets"
-  ]
+  ],
+  "originalAwsBuild02ConfigurationSource": "aws-build02",
+  "originalBuildOperationsSource": "../../operations/personal-build"
 }

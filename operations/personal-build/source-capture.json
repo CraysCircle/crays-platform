@@ -1,0 +1,82 @@
+{
+  "schema": "crays.personal-build-source.v1",
+  "atUTC": "2026-11-09T02:41:32.661041+00:00",
+  "originalCodeFiles": 8,
+  "pythonProgramsASTParsedNotExecuted": 6,
+  "awsConfigurationFiles": 2,
+  "rows": [
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/inventory/personal-frontend-build-entry-20261108-01/source/vite.aws.config.mjs",
+      "exportPath": "apps/personal/aws-build02/vite.aws.config.mjs",
+      "bytes": 905,
+      "sha256": "9544bd0167c05e974f5640ba120f160588e134292a62e827edaa295f4617f1ec",
+      "sourceStableDuringRead": true,
+      "originalBytesUnchanged": true
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/inventory/personal-frontend-build-entry-20261108-01/source/tsconfig.aws.json",
+      "exportPath": "apps/personal/aws-build02/tsconfig.aws.json",
+      "bytes": 215,
+      "sha256": "3b6910dd48bffc931d9fb627845095f0ae428606ec5561992ae472d63d7bc333",
+      "sourceStableDuringRead": true,
+      "originalBytesUnchanged": true
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/inventory/personal-frontend-build-runner-20261108-01/run_build_lifecycle.py",
+      "exportPath": "operations/personal-build/runner-rev01/run_build_lifecycle.py",
+      "bytes": 10668,
+      "sha256": "d18edc4f10c8e01ae569db2ae4ecf424e836353511fc3259c71a3097725f064d",
+      "sourceStableDuringRead": true,
+      "originalBytesUnchanged": true
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/inventory/personal-frontend-build-runner-20261108-02/run_build_lifecycle.py",
+      "exportPath": "operations/personal-build/runner-rev02/run_build_lifecycle.py",
+      "bytes": 10769,
+      "sha256": "a90b56a5ad58016602fec14ed92d5d575c78526bef4b05e145210c3b21323075",
+      "sourceStableDuringRead": true,
+      "originalBytesUnchanged": true
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/inventory/personal-frontend-build-runner-20261108-03/run_build_lifecycle.py",
+      "exportPath": "operations/personal-build/runner-rev03/run_build_lifecycle.py",
+      "bytes": 10814,
+      "sha256": "192f1911575b0b80032087b8d8302737b36275ff8875ad434cf692c82a1b0bcc",
+      "sourceStableDuringRead": true,
+      "originalBytesUnchanged": true
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/inventory/personal-build-lease-control-20261108-01/own_lease.py",
+      "exportPath": "operations/personal-build/lease-control/own_lease.py",
+      "bytes": 1550,
+      "sha256": "a66cebe6c76b0bc810eb7bd46c08825004dd22480d11dac5a8ce2e7e15905c66",
+      "sourceStableDuringRead": true,
+      "originalBytesUnchanged": true
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/inventory/personal-build02-output-digest-20261108-01/OUTPUT_DIGEST_CODE.py",
+      "exportPath": "operations/personal-build/artifact-digest/OUTPUT_DIGEST_CODE.py",
+      "bytes": 10347,
+      "sha256": "109d738bea37658749784091dcc88a8befa0eae172dc0177bcc0dfa17206f7be",
+      "sourceStableDuringRead": true,
+      "originalBytesUnchanged": true
+    },
+    {
+      "sourcePath": "/srv/crays/migration-work/20261108/inventory/personal-runtime-adoption-20261108-01/UNION_PLAN_CODE.py",
+      "exportPath": "operations/personal-build/adoption-plan/UNION_PLAN_CODE.py",
+      "bytes": 6517,
+      "sha256": "4474ef0a661dff8f70011a0f6602a8df81d4940ad8449de54b8652740ccda5e3",
+      "sourceStableDuringRead": true,
+      "originalBytesUnchanged": true
+    }
+  ],
+  "originalSourceCommit": "77150c3b8cfe200d21672c9e62c9c2b9562d982b",
+  "originalSourceTag": "personal-web-source1489-20261109",
+  "allOriginal1489InputsRecordedSeparately": true,
+  "build02ArtifactDigestSHA256": "2cdcf48ed1d3b1d99880969a5683b3c0a79b9431a91c300911097506cae1b088",
+  "derivedConfigurationHashesMatchOriginalBuild02Entry": true,
+  "buildRepeated": false,
+  "sourceProgramsExecuted": false,
+  "runtimeChanged": false,
+  "completeBuildEnvironmentAndRightsClosure": false
+}

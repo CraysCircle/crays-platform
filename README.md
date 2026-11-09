@@ -9,6 +9,7 @@ Shared CRAYS application/service sources, website-hosting wrappers and migration
 | Shared Next.js application | [Qualified Club/Member/SaaS source views, recovery prerequisites and original notices](apps/web/README.md) |
 | Personal web application | [Original and 13-overlay React/Vite source, recovery inputs and exact notices](apps/personal/README.md) |
 | Club/Member browser module | [Original and origin35 input views, recorded build and original notices](modules/club-member/README.md) |
+| Personal build operations | [Original build controllers, lease adapter, artifact inspection and adoption-plan source](operations/personal-build/README.md) |
 | Qlo gateway | [Service, original tests and configuration](services/qlo-gateway/README.md) |
 | Clubs Commerce BFF | [Original service, build/test inputs and dependency notices](services/clubs-commerce-bff/README.md) |
 | Work/Qlo runtime | [Original bootstrap and four local runtime modules](services/work-qlo-runtime/README.md) |
@@ -36,6 +37,7 @@ Shared CRAYS application/service sources, website-hosting wrappers and migration
       qlo/
       qlo-work-family/
       member-origin35/
+      personal-build/
       storage/
       delivery/postiz/
       neon-rds/

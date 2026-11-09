@@ -10,8 +10,11 @@
   "originalPreimages": 10,
   "newFiles": 3,
   "currentTextSourceFiles": 1435,
-  "assetsPendingPublicRightsReview": 54,
+  "assetsPendingPublicRightsReview": 50,
   "protectedTemplateFiles": 9,
   "wholeMigrationOrLicenseClosure": false,
-  "originalSourceProgramsExecuted": false
+  "originalSourceProgramsExecuted": false,
+  "publicImageInputs": 4,
+  "totalOriginalImageInputs": 54,
+  "publicImageProvenance": "provenance/generated-food-illustrations.json"
 }
