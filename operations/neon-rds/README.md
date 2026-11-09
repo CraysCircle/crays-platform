@@ -15,6 +15,8 @@ Dieses Verzeichnis sichert zwölf ausgewählte Originalprogramme der laufenden D
 
 Zusätzlich sind die [vier Original30-Vorbereitungsquellen](original30-grantee-preparation-revision02/README.md) unverändert gesichert: 52.167 Bytes für dreißig technische NOLOGIN-ACL-Rollen und die zugehörige Orchestrierung. Ihre [eigene AGPL-3.0-only-Freigabe von CRAYS AG](original30-grantee-preparation-revision02/LICENSING.md) gilt nur für diese vier Fassungen. Sie ändert weder die zwölf zuvor gesicherten Programme noch deren Lizenzgrenzen und belegt keine SQL-Ausführung, LOGIN-/Authentifizierungsparität, Freigabe angebundener Anwendungen oder Restore-Abnahme.
 
+Das [Register ausgewählter Quellsicherungen](../source-preservation.md) führt die exakten öffentlichen und zugangsgeschützten Snapshots, ihre Manifeste und die Schritte zur Prüfung der Originalbytes auf.
+
 ## Originale und öffentliche Vorlagen
 
 Sechs Programme sind unverändert enthalten. Sechs weitere liegen als .py.in vor: feste Prüfsummen geschützter Nachweis-, Freigabe- oder anderer Betriebsbindungen wurden durch benannte Platzhalter ersetzt. Mindestens eine dieser Konstanten identifiziert eine private Nachweisbibliothek. Die übrigen noch nicht abschließend klassifizierten Konstanten bleiben vorsorglich ebenfalls außerhalb dieses öffentlichen Exports.

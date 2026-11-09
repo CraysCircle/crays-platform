@@ -1,0 +1,48 @@
+# Selected RDS and Nextcloud source snapshots
+
+This register identifies five selected source snapshots preserved in GitHub. It is not a complete CRAYS backup, database backup or runtime-recovery inventory. Scopes overlap with public source and with each other's lineage; do not add row counts as distinct ecosystem coverage.
+
+Private originals are in **CraysWorld/crays-gym**, repository ID **1280582408**. Authorized owners or collaborators must sign in; public readers may see a 404. Each commit link opens the snapshot guide. Capture records identify original names, sizes and whole-file hashes.
+
+| Source purpose | Access | Exact snapshot and source records | Original files |
+| --- | --- | --- | --- |
+| **Nextcloud Purpose52** — Authority/intent SQL, pool, function pins and rollback qualification | Private; authorized access | [6d778b44d8da](https://github.com/CraysWorld/crays-gym/blob/6d778b44d8da1822e283fe1ec32c6ef7da29e4ba/protected-source-archives/nextcloud-purpose52/README.md) · [capture](https://github.com/CraysWorld/crays-gym/blob/6d778b44d8da1822e283fe1ec32c6ef7da29e4ba/protected-source-archives/nextcloud-purpose52/source-capture.json) | 4 |
+| **Purpose45 history** — Original SQL/pool and two correction deltas | Private; authorized access | [20888ce47eff](https://github.com/CraysWorld/crays-gym/blob/20888ce47eff4f5b69abcd3ea1dfe255a1631ef8/protected-source-archives/nextcloud-purpose45-history/README.md) · [capture](https://github.com/CraysWorld/crays-gym/blob/20888ce47eff4f5b69abcd3ea1dfe255a1631ef8/protected-source-archives/nextcloud-purpose45-history/source-capture.json) | 4 |
+| **Original30 revision01** — Historical guest runner and operations | Private; authorized access | [cd65d5a2089c](https://github.com/CraysWorld/crays-gym/blob/cd65d5a2089c7e7f3cc6e8452c6802da181db9bd/protected-source-archives/original30-revision01/README.md) · [capture](https://github.com/CraysWorld/crays-gym/blob/cd65d5a2089c7e7f3cc6e8452c6802da181db9bd/protected-source-archives/original30-revision01/source-capture.json) | 2 |
+| **Original52 executor** — Revision02/revision01 executor, secure session and two deltas | Private; authorized access | [44aad3046b1d](https://github.com/CraysWorld/crays-gym/blob/44aad3046b1d2257b6a1935ca442bea10fa37901/protected-source-archives/nextcloud-original52-executor/README.md) · [capture](https://github.com/CraysWorld/crays-gym/blob/44aad3046b1d2257b6a1935ca442bea10fa37901/protected-source-archives/nextcloud-original52-executor/source-capture.json) | 5 |
+| **Original52 SQL** — Ten raw migrations and two combined transaction programs | Private; authorized access | [c6112231fedc](https://github.com/CraysWorld/crays-gym/blob/c6112231fedcd0c7cc09c1bd4c18310eeec46167/protected-source-archives/nextcloud-original52-sql/README.md) · [capture](https://github.com/CraysWorld/crays-gym/blob/c6112231fedcd0c7cc09c1bd4c18310eeec46167/protected-source-archives/nextcloud-original52-sql/source-capture.json) | 12 |
+
+All five publication records report authenticated full-byte comparisons and verification of the isolated branch references; the existing master was retained. This establishes recorded source custody, not successful execution or complete system restoration.
+
+## Recover the selected source bytes
+
+1. Obtain authorized access and use the exact commit above. Download its README, capture and selected originals into protected storage. Do not publish private originals or execute them as a recovery shortcut.
+2. Compare the capture file with its SHA256 below, then check every original's recorded byte length and full SHA256. Preserve bytes and line endings; filenames alone do not establish identity.
+3. Use original-path mappings only within a suitable private workspace. Runtime dependencies, configuration and operational approvals need separately qualified recovery records.
+
+Pinned capture-file SHA256 values:
+
+~~~text
+Nextcloud Purpose52: 56f85ba5a5b12bb77386e8ed9089cfe29756940929af076339f2a07c99d7b842
+Purpose45 history: 4022e921133d33dcc43f07967a10c7f21c23af614011b761eb92a20013e81e3d
+Original30 revision01: 0df0de56a4311d648caf224ecfd614cc95f57f31d6d936dd41f7b4d1b268fdbc
+Original52 executor: d8ea4f8e1020fb475f94e5aa427f5eea95b073ec80d21216386189006a236024
+Original52 SQL: 4ca55bd027890c58f971f4ea8887c4f0812e22655388d555a7102a171c7c8018
+~~~
+
+These source snapshots do not supply execution approvals, expected-role/postprojection input bodies, CA/PGpass credentials, other secrets or database dumps. Code may refer to such inputs; this register neither backs them up nor promises their reconstruction.
+
+## Public counterparts
+
+- [Public Original30 revision02](https://github.com/CraysWorld/crays-platform/blob/be83d000ab1f245f63216e2490fbc1a0833d9176/operations/neon-rds/original30-grantee-preparation-revision02/README.md) preserves four later SQL/orchestration sources under their exact own-code scope. It establishes no LOGIN/authentication parity, application admission or restore acceptance.
+- [Purpose52](https://github.com/CraysWorld/crays-platform/blob/92fa35bfd0c49a3fca9e4e408384b021e9b67d3a/operations/nextcloud-access-purpose52/README.md) provides two unchanged inputs and two protected SQL views; raw originals remain in its private snapshot.
+- [Two Purpose45 corrective deltas](https://github.com/CraysWorld/crays-platform/blob/3f0d1b1abbff00810c23e4ca5277de2299be0ba2/operations/nextcloud-access-purpose45-history/README.md) provide a raw pool diff and protected SQL diff. Their license covers confirmed own corrective changes, not predecessor context or the original Purpose45 SQL/pool.
+- [Original migration 0075](https://github.com/CraysWorld/crays-platform/blob/eaa9bf67cb531309dc6a777d137089da59eaebe2/apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/database/migrations/0075_ncrv2_canonical_contact_mail_activity.sql) was already public byte-for-byte: 23,489 bytes, SHA256 3e5ee33a86acf74f0db6cf530a0755a46c81cbeeffa8d4664c2f6217bb36be6c. It is also in the private SQL snapshot. The bounded Core-catalog check found this one exact public match among ten selected migrations; it did not establish global absence for the other nine.
+
+## Scope and permissions
+
+Preservation or public visibility does not grant copyright permissions. No new AGPL grant for the original Purpose45 SQL/pool or Original30 revision01 is established by these records. Public grants apply only to their listed own revisions or corrective changes; upstream and dependency terms remain separate.
+
+The executor's revision01 and later acknowledgement fix are retained separately. The SQL snapshot keeps ten original migration files and both combined transaction programs: assembled combined SQL does not replace original files. Historical defects remain unchanged.
+
+This preservation does not activate SQL, SSO, roles or consumers. Full application acceptance, current runtime parity, complete dependency/license reconciliation and complete backup/recovery remain separate.
