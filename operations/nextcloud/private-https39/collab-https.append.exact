@@ -1,0 +1,36 @@
+
+# BEGIN collab39 private HTTPS; original HTTP routes preserved.
+https://collab-test.crays.pro {
+ bind 172.26.0.1
+ tls force_automate {
+  issuer internal {
+   ca crays-qlo-private-20261108
+  }
+ }
+ handle_path /whiteboard/* {
+  reverse_proxy 172.30.15.4:3002 {
+   header_up Host collab-test.crays.pro
+   header_up X-Forwarded-Proto https
+  }
+ }
+ handle_path /talk/* {
+  reverse_proxy 172.30.15.5:8081 {
+   header_up Host collab-test.crays.pro
+   header_up X-Forwarded-Proto https
+  }
+ }
+ handle /office/* {
+  reverse_proxy 172.30.15.3:9980 {
+   header_up Host collab-test.crays.pro
+   header_up X-Forwarded-Proto https
+   header_up X-Forwarded-Host collab-test.crays.pro
+  }
+ }
+ handle {
+  reverse_proxy 172.30.15.2:18081 {
+   header_up Host collab-test.crays.pro
+   header_up X-Forwarded-Proto https
+  }
+ }
+}
+# END collab39 private HTTPS.

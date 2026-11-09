@@ -1,0 +1,56 @@
+{
+  "schema": "crays.nextcloud.private-https39.original-source.v1",
+  "atUTC": "2026-11-09T06:09:45.587682+00:00",
+  "scope": "Two exact original source bodies only; private Caddy configuration preimages/candidates, approvals and operational receipts excluded",
+  "files": [
+    {
+      "path": "operations/nextcloud/private-https39/collab-https.append.exact",
+      "originalPath": "/srv/crays/migration-work/20261108/root/nextcloud-private-https39-source01/collab-https.append.exact",
+      "bytes": 839,
+      "sha256": "3a7b2e805a2c589081957d11ed72bd536f9281f8cd86c31e391f6f059d77167c",
+      "originalMode": "0o400",
+      "publishedMode": "100644",
+      "bytesChanged": false
+    },
+    {
+      "path": "operations/nextcloud/private-https39/apply_existing_private_collab_https39.candidate.py",
+      "originalPath": "/srv/crays/migration-work/20261108/root/nextcloud-private-https39-source01/apply_existing_private_collab_https39.candidate.py",
+      "bytes": 4448,
+      "sha256": "9993f70381e590ce8f9856034ff351fe1d33e5af8e629a016f22f3f111474ccf",
+      "originalMode": "0o400",
+      "publishedMode": "100644",
+      "bytesChanged": false
+    }
+  ],
+  "originalHelperSourceReferences": [
+    {
+      "name": "reopen23_controller.candidate.py",
+      "expectedSHA256FromOriginalController": "fb8c81e2ca8b42bbadd89144b66f55ee59dfa5615c058f8590a2f21808c2acd3",
+      "bodyIncludedHere": false,
+      "freshDependencyBodyVerificationClaimed": false
+    },
+    {
+      "name": "qualified_container_physical.py",
+      "expectedSHA256FromOriginalController": "63b137e94a98cebdfc456a83efabd907f64b4e34ac39fe59fbf364553f3b0bdb",
+      "bodyIncludedHere": false,
+      "freshDependencyBodyVerificationClaimed": false
+    },
+    {
+      "name": "reopen_exact_collab_ingress23.candidate.py",
+      "expectedSHA256FromOriginalController": "176c01432b25497c47bb24c784e50d7636d00209bc371eac657a1cde7608ad95",
+      "bodyIncludedHere": false,
+      "freshDependencyBodyVerificationClaimed": false
+    }
+  ],
+  "frozenConfigurationHashReferences": {
+    "beforeSHA256": "16c60f4013876ef2db3807d3112bfb7636d962305091050bdc5759d7c579c014",
+    "candidateSHA256": "af00ef01fdd0f7849f75ce8e8ccbc2ea33a93cc1cadba3b4f3cbfc1c17bfb8bb",
+    "configurationBodiesIncluded": false
+  },
+  "sourceParsedWithoutExecution": true,
+  "originalSourceProgramsExecuted": false,
+  "runtimeChangesMadeBySourceCapture": false,
+  "nativeBrowserAcceptanceProven": false,
+  "originalLicenseOrRightsGrantInvented": false,
+  "fullRuntimeDependencySourceRecoveryClosure": false
+}

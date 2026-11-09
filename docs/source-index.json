@@ -145,6 +145,10 @@
     {
       "component": "club-member-runtime38-operations",
       "path": "operations/club-next-runtime/member-runtime38/source-capture.json"
+    },
+    {
+      "component": "nextcloud-private-https39-operations",
+      "path": "operations/nextcloud/private-https39/source-capture.json"
     }
   ]
 }
