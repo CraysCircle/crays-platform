@@ -16,3 +16,7 @@ The original owner review records identify exact controller source hashes, and t
 These original files retain absolute paths, configuration fragments, environment assumptions and protected runtime dependencies. This archive executes none of them. Private CA/key bodies, issued leaf-key bodies, bound credentials, private bootstrap payloads, live approval/window records and user data are excluded.
 
 The directory is not a complete standalone runtime or installation recipe. Full base edge/bootstrap configuration, original protected projection/rendering code, exact dependency/image versions and original notices, all later changes and full recovery/source-offer closure remain under reconciliation. Original source and component licenses apply; no new blanket license grant is introduced.
+
+## Runtime38 and original browser-source revisions
+
+The [original Club/Member runtime38 record](../../operations/club-next-runtime/member-runtime38/README.md) retains five additional original program bodies and three unchanged immutable dependencies: installer, fourteen-field bootstrap template, original image-cache adapter and both browser-assertion revisions. It links the exact Build38 application source and distinguishes observed Docker image configuration ID from registry manifest digest, owner execution from fresh tests, and source custody from current acceptance. All private inputs, live approvals and browser output remain separate.

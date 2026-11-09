@@ -1,0 +1,21 @@
+{
+  "observedUTC": "2026-11-09T05:03:42.150336+00:00",
+  "applicationSourceRepository": "CraysCircle/crays-platform",
+  "applicationSourceCommit": "5ca2e4de262027a830131de8df9252558a6183a3",
+  "applicationSourceTag": "club-source38-preserved-20261109",
+  "applicationSourceInputFiles": 2045,
+  "rootRecordedFrameworkBuildId": "oBGvsXCd08tp4gsMwOOo5",
+  "rootRecordedCompiledManifestSHA256": "fb2a5cbe1d46cdcda8162ce23194237fac1972771c34cbc351be8db3294f52a5",
+  "observedContainerState": "running",
+  "observedDockerImageConfigurationId": "sha256:752ea8a2f758c34002a0461bd9f1cee4f9a3c36d48494586f60ffce1fc708e0e",
+  "observedRegistryRepoDigests": [],
+  "imageIdIsNotRegistryManifestDigest": true,
+  "imageArchitecture": "amd64",
+  "imageOperatingSystem": "linux",
+  "rootRuntimeInstallerReturnCode": 0,
+  "readinessAcceptedInOriginalRootReturn": false,
+  "customerAcceptanceInOriginalRootReturn": false,
+  "archiveChatCompiledBodiesFreshlyRehashed": false,
+  "archiveChatNewHttpOrBrowserTestsExecuted": false,
+  "fullRecoveryAndLicenseClosure": false
+}

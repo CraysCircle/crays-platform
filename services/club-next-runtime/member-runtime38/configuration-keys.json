@@ -1,0 +1,23 @@
+{
+  "source": "private-app-bootstrap38.template.cjs",
+  "requiredPrivateProjectionFields": [
+    "AUTH0_CLUBS_BASE_URL",
+    "AUTH0_CLUBS_CLIENT_ID",
+    "AUTH0_CLUBS_CLIENT_SECRET",
+    "AUTH0_CLUBS_DOMAIN",
+    "AUTH0_CLUBS_SECRET",
+    "CRAYS_AWS_IDENTITY_APPROVAL",
+    "CRAYS_AWS_IDENTITY_TRANSPORT",
+    "CRAYS_CLUBS_PUBLIC_PRODUCTION_DATABASE_URL",
+    "CRAYS_CORE_ORIGINAL_MEMBER_RPC_CONTRACT",
+    "CRAYS_CORE_ORIGINAL_MEMBER_RPC_DATABASE_URL",
+    "CRAYS_CORE_ORIGINAL_MEMBER_RPC_XL_TARGET",
+    "CRAYS_DATABASE_POOL_MAX",
+    "CRAYS_DATABASE_SSL",
+    "CRAYS_DATABASE_URL"
+  ],
+  "fieldCount": 14,
+  "valuesIntentionallyAbsent": true,
+  "rootApprovedPrivateInputsRequired": true,
+  "notAWorkingRuntimeConfiguration": true
+}

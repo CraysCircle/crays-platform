@@ -1,0 +1,89 @@
+{
+  "schema": "crays.club-member-runtime38.original-source.v1",
+  "captureUTC": "2026-11-09T05:08:29.366500+00:00",
+  "originalPrograms": 8,
+  "newOriginalBodies": 5,
+  "immutableExistingOriginalBodies": 3,
+  "files": [
+    {
+      "name": "runtime-installer.py",
+      "originalPath": "/srv/crays/migration-work/20261108/root/club38-member-runtime-install01/install_club38_member_runtime.candidate.py",
+      "bytes": 25143,
+      "sha256": "5934f030cf8b1c23cc8ec277138d4c21a650e521a10c9cb9dd5b53d04c1cb39d",
+      "originalMode": "0o644",
+      "repositoryPath": "operations/club-next-runtime/member-runtime38/install_club38_member_runtime.candidate.py",
+      "storage": "new-original-body"
+    },
+    {
+      "name": "private-app-bootstrap38.template.cjs",
+      "originalPath": "/srv/crays/migration-work/20261108/root/club38-member-runtime-install01/private-app-bootstrap38.template.cjs",
+      "bytes": 2261,
+      "sha256": "525a57490b5a0b479602478cb9cbc6254430f93759881a1fcd8a9e18d8af5990",
+      "originalMode": "0o644",
+      "repositoryPath": "services/club-next-runtime/member-runtime38/private-app-bootstrap38.template.cjs",
+      "storage": "new-original-body"
+    },
+    {
+      "name": "browser-display-name-candidate.cjs",
+      "originalPath": "/srv/crays/migration-work/20261108/root/club38-original-display-name-browser-candidate01/browser.candidate.cjs",
+      "bytes": 22988,
+      "sha256": "0df09c93ede04cb1b96401f4459c539421fd595e6e5715c25f9056990f22e137",
+      "originalMode": "0o400",
+      "repositoryPath": "operations/club-next-runtime/browser/display-name-candidate38.cjs",
+      "storage": "new-original-body"
+    },
+    {
+      "name": "browser-original.cjs",
+      "originalPath": "/srv/crays/migration-work/20261108/root/club28-private-https-browser23-source06-final01/browser.cjs",
+      "bytes": 22749,
+      "sha256": "d76282c1c9974d8da5c7297e67da3a1957e5f1226067efa2343cbfc00276fede",
+      "originalMode": "0o400",
+      "repositoryPath": "operations/club-next-runtime/browser/original-final01.cjs",
+      "storage": "new-original-body"
+    },
+    {
+      "name": "native-image-cache-bound.cjs",
+      "originalPath": "/srv/crays/migration-work/20261108/root/club-native-image-cache37-source01/native-image-cache-bound.cjs",
+      "bytes": 596,
+      "sha256": "8f129109ec9c4a10ac61e7aa48ea230d00237ee0aa147ee4b949018b494f921a",
+      "originalMode": "0o444",
+      "repositoryPath": "services/club-next-runtime/image-cache37/native-image-cache-bound.cjs",
+      "storage": "new-original-body"
+    },
+    {
+      "name": "install_org_private_candidate.py",
+      "originalPath": "/srv/crays/incoming/org-private-correction-20261107-02-r04/install_org_private_candidate.py",
+      "bytes": 24810,
+      "sha256": "157996e57ce3fd6ccfaf9d764f86a80edf9220d05f19987b5337bc61ce096aa0",
+      "originalMode": "0o400",
+      "repositoryPath": "operations/club-next-runtime/dependencies/org-private-correction-r04/install_org_private_candidate.py",
+      "storage": "immutable-existing-body",
+      "commit": "73e2dc220b745bef9ed650230e5b4b57db3bcaf7"
+    },
+    {
+      "name": "custom-listener.cjs",
+      "originalPath": "/srv/crays/migration-work/20261108/root/club28-custom-listener-source01/custom-listener.cjs",
+      "bytes": 1694,
+      "sha256": "8d9e51d4b5d5e3532289f3ff9e17072bc911914cce38b06c76f98a7aa139d380",
+      "originalMode": "0o444",
+      "repositoryPath": "services/club-next-runtime/custom-listener/custom-listener.cjs",
+      "storage": "immutable-existing-body",
+      "commit": "73e2dc220b745bef9ed650230e5b4b57db3bcaf7"
+    },
+    {
+      "name": "native-origin-config.append.cjs",
+      "originalPath": "/srv/crays/migration-work/20261108/root/club28-native-origin-config-source01/native-origin-config.append.cjs",
+      "bytes": 810,
+      "sha256": "672a68880a7c9fcbd6543396a8de3c9b49c39c37d71c3c60dc530ed6ff00b40f",
+      "originalMode": "0o400",
+      "repositoryPath": "services/club-next-runtime/native-origin/native-origin-config.append.cjs",
+      "storage": "immutable-existing-body",
+      "commit": "73e2dc220b745bef9ed650230e5b4b57db3bcaf7"
+    }
+  ],
+  "rootApprovedInstallerSHA256": "5934f030cf8b1c23cc8ec277138d4c21a650e521a10c9cb9dd5b53d04c1cb39d",
+  "rootApplicationSourceCommit": "5ca2e4de262027a830131de8df9252558a6183a3",
+  "sourceProgramsExecutedByArchiveChat": false,
+  "newProductTestsOrBuildsExecutedByArchiveChat": false,
+  "fullRuntimeAcceptanceSourceImageLicenseRecoveryClosure": false
+}

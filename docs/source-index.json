@@ -141,6 +141,10 @@
     {
       "component": "club-source38-composition",
       "path": "apps/web/compositions/club-source38/build-binding.json"
+    },
+    {
+      "component": "club-member-runtime38-operations",
+      "path": "operations/club-next-runtime/member-runtime38/source-capture.json"
     }
   ]
 }

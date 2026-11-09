@@ -22,3 +22,7 @@ The original controller reviews bind exact source hashes. The corresponding Root
 These programs can build images/artifacts, replace or restart containers, change private edge routing, manipulate leases or verify account-backed behavior when their original owner runs them. Original build/source manifests, protected projections, approved windows and current owner state are required; source publication is not a portable command sequence.
 
 Live approval templates/records, source fences, runtime registries, private digests unrelated to source integrity, certificate/private-key bodies, credential values and application/user data remain outside this source export. Additional runtime/dependency programs referenced by the originals, complete current image/source relationships, original third-party notices, corresponding-source requirements and full recovery remain open.
+
+## Runtime38 and original browser-source revisions
+
+The [original Club/Member runtime38 record](member-runtime38/README.md) retains five additional original program bodies and three unchanged immutable dependencies: installer, fourteen-field bootstrap template, original image-cache adapter and both browser-assertion revisions. It links the exact Build38 application source and distinguishes observed Docker image configuration ID from registry manifest digest, owner execution from fresh tests, and source custody from current acceptance. All private inputs, live approvals and browser output remain separate.
