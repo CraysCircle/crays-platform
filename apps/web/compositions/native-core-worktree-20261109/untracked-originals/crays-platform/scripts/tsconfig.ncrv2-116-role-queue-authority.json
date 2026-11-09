@@ -1,0 +1,13 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "include": [
+    "../src/lib/roles.ts",
+    "../src/lib/role-queue-read-authority.ts",
+    "../src/lib/dal/server-trust.ts",
+    "../src/app/api/crays/role-queues/read-model/route.ts",
+    "./test-ncrv2-116-role-queue-authority.mts"
+  ]
+}

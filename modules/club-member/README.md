@@ -25,7 +25,7 @@ The [dependency index](third-party/index.json) records 29 observed roots and 28 
 
 The package/lock under original/dependency-metadata describe the original dependency environment. They are not a new module project manifest or install contract. Exact dependency-file hashes are retained; dependency implementations and native compiler binaries were captured separately by the owner and are not mirrored by this notice record.
 
-The native @rolldown/binding-linux-x64-gnu1.1.5 package declares MIT in metadata, but its package-specific original notice is not established here. Full native/transitive/runtime sources and notices, original media/assets, application authorship rights and applicable source offers remain open. No generic license is substituted for an unestablished original.
+The exact @rolldown/binding-linux-x64-gnu 1.1.5 archive and its publisher source commit are now associated with the original upstream root LICENSE and THIRD-PARTY-LICENSE in [the native binding notice record](third-party/packages/@rolldown/binding-linux-x64-gnu/1.1.5/upstream-source-and-notices.json). The existing byte-identical root LICENSE is reused at an immutable commit; the additional original attribution text is retained without modification. Full native/transitive/runtime sources and notices, original media/assets, application authorship rights and applicable source offers remain open. No generic license is substituted for an unestablished original.
 
 ## Build and operating source
 

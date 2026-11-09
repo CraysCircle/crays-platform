@@ -1,0 +1,1 @@
+query PreflightRecordOcaConsent($input: RecordOcaConsentInput!) { preflightRecordOcaConsent(input: $input) { allowed code currentConsentVersion currentConsentSha256 nextSafeAction } }

@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "types": ["node"]
+  },
+  "include": [
+    "../src/lib/member-commerce/server-commerce-context-resolver.ts",
+    "../src/lib/member-commerce/server-bound-vendure-adapter.ts",
+    "./test-ncrv2-115-server-commerce-context.mts"
+  ]
+}

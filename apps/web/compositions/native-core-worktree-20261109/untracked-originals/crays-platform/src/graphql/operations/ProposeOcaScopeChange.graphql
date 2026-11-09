@@ -1,0 +1,12 @@
+query PreflightProposeOcaScopeChange($input: ProposeOcaScopeChangeInput!) {
+  preflightProposeOcaScopeChange(input: $input) {
+    allowed code currentManifestVersion currentManifestSha256 actorAssignmentId actorAssignmentVersion nextSafeAction
+  }
+}
+
+mutation ProposeOcaScopeChange($input: ProposeOcaScopeChangeInput!) {
+  proposeOcaScopeChange(input: $input) {
+    status replayed scopeChangeId scopeChangeVersion receiptId nextSafeAction correlationId
+    preflight { allowed code currentManifestVersion currentManifestSha256 actorAssignmentId actorAssignmentVersion nextSafeAction }
+  }
+}

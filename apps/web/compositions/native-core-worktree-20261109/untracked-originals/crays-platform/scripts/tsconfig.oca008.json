@@ -1,0 +1,19 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "incremental": false
+  },
+  "include": [
+    "../next-env.d.ts",
+    "../src/db/oca-runtime-inventory-service.ts",
+    "../src/graphql/oca-runtime-inventory-documents.ts",
+    "../src/components/oca-runtime-inventory-panel.tsx",
+    "./test-oca008-integrated-runtime-inventory.mts"
+  ],
+  "exclude": [
+    "../node_modules",
+    "../.next",
+    "../output"
+  ]
+}

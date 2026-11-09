@@ -1,0 +1,6 @@
+query PreflightReconcileOcaGovernanceCommand($input: ReconcileOcaGovernanceCommandInput!) {
+  preflightReconcileOcaGovernanceCommand(input: $input) { allowed code recordType recordId currentVersion currentSha256 actorAssignmentId actorAssignmentVersion nextSafeAction }
+}
+mutation ReconcileOcaGovernanceCommand($input: ReconcileOcaGovernanceCommandInput!) {
+  reconcileOcaGovernanceCommand(input: $input) { status replayed recordType recordId recordVersion receiptId nextSafeAction correlationId preflight { allowed code recordType recordId currentVersion currentSha256 actorAssignmentId actorAssignmentVersion nextSafeAction } }
+}

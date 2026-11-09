@@ -1,0 +1,1 @@
+{"extends":"../tsconfig.json","compilerOptions":{"noEmit":true},"include":["../src/lib/member-commerce/multi-vertical-product-launch-journey-contract.ts","./test-ncrv2-159-immutable-launch-receipt-graph.mts"]}

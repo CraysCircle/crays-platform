@@ -1,0 +1,1 @@
+{"extends":"../tsconfig.json","compilerOptions":{"noEmit":true,"incremental":false},"include":["../next-env.d.ts","../src/db/oca-privacy-workbench-service.ts","../src/graphql/oca-privacy-documents.ts","./test-oca023-privacy-workbench.mts","./test-oca023-privacy-command-authority.mts","../src/components/oca-privacy-center.tsx"],"exclude":["../node_modules","../.next","../output"]}

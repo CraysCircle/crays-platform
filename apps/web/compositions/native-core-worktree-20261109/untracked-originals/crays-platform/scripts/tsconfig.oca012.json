@@ -1,0 +1,17 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "incremental": false
+  },
+  "include": [
+    "../next-env.d.ts",
+    "./test-oca012-component-admission-authority.mts"
+  ],
+  "exclude": [
+    "../node_modules",
+    "../.next",
+    "../output"
+  ]
+}
+

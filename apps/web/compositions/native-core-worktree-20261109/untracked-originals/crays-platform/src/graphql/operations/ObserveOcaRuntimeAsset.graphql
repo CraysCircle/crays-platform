@@ -1,0 +1,3 @@
+mutation ObserveOcaRuntimeAsset($input: ObserveOcaRuntimeAssetInput!) {
+  observeOcaRuntimeAsset(input: $input) { status replayed runtimeAssetId runtimeAssetVersion receiptId nextSafeAction correlationId preflight { allowed code currentAssetVersion currentAssetSha256 nextSafeAction } }
+}

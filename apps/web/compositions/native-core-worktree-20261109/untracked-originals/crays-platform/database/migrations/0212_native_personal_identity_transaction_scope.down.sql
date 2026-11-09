@@ -1,0 +1,9 @@
+begin;
+drop trigger aaa_native_personal_account_readonly on crays_core.crays_accounts;
+drop trigger aaa_native_personal_auth_identity_readonly on crays_core.auth_identities;
+drop function crays_core.reject_native_personal_identity_write();
+drop policy native_own_account_context_read on crays_core.crays_accounts;
+drop policy native_own_account_context_lock on crays_core.crays_accounts;
+drop policy native_own_auth_identity_context_read on crays_core.auth_identities;
+drop policy native_own_auth_identity_context_lock on crays_core.auth_identities;
+commit;

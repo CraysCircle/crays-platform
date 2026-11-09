@@ -1,0 +1,1 @@
+{"extends":"../tsconfig.json","compilerOptions":{"noEmit":true},"include":["../src/lib/member-commerce/member-retail-service-journey-contract.ts","./test-ncrv2-158-immutable-member-retail-authority.mts"]}

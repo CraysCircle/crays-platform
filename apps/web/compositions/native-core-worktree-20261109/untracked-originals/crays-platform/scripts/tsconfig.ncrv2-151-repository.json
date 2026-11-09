@@ -1,0 +1,1 @@
+{"extends":"../tsconfig.json","compilerOptions":{"noEmit":true},"include":["../src/lib/member-commerce/contact-communication-action-repository.ts","./test-ncrv2-151-communication-action-repository-pglite.mts","./test-ncrv2-151-communication-input-snapshots.mts"]}

@@ -1,0 +1,42 @@
+query GymIntegrationHub {
+  gymIntegrationHub {
+    documents {
+      edges {
+        cursor
+        node { id title documentType lifecycleState versionHash approvalSteps approvedSteps envelopeCount requiredSignatureLevel }
+      }
+      pageInfo { hasNextPage hasPreviousPage startCursor endCursor }
+      totalCount
+    }
+    mailThreads {
+      edges {
+        cursor
+        node { id subject state messageCount unreadCount hasAttachments lastMessageAt }
+      }
+      pageInfo { hasNextPage hasPreviousPage startCursor endCursor }
+      totalCount
+    }
+    documentSignatureAdapter { provider domain inboundModes outboundCommands externalEffectsEnabled }
+    mailAdapter { provider domain inboundModes outboundCommands externalEffectsEnabled }
+    boundaries {
+      graphqlBinaryTransferAllowed
+      signedObjectUrlRequired
+      uploadRegistrationRequired
+      malwareScanRequired
+      externalSendEnabled
+      realUploadEnabled
+      signatureDispatchEnabled
+      providerSecretsReturned
+    }
+  }
+}
+
+mutation CaptureGymMailDraft($input: CaptureGymMailDraftInput!) {
+  captureGymMailDraft(input: $input) {
+    status
+    draftId
+    threadId
+    externalSendPerformed
+    errors { code message field }
+  }
+}

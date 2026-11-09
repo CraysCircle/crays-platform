@@ -1,0 +1,761 @@
+{
+  "schema": "crays.core-untracked-declarative-source.v1",
+  "sourceHead": "c2018d04f6a52d8716326a098dde7624cbb18963",
+  "sourceScope": "Previously untracked original declarative GraphQL operations and TypeScript compiler configurations only. These files supplement the existing native Core worktree source snapshot. They do not establish a complete application, dependency closure or accepted runtime.",
+  "originalSourceProgramsExecuted": false,
+  "files": [
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-115-server-commerce-context.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-115-server-commerce-context.json",
+      "bytes": 325,
+      "sha256": "e9f74ec0fa8b42c723d986092a1d2e7dbde3fac12d9c96fb25b582746eb0f448",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-116-access-support-diagnostic-authority.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-116-access-support-diagnostic-authority.json",
+      "bytes": 256,
+      "sha256": "a218cb448d148dff4ff7104d4aeba12ff8d2505b713611e954610578781dc1b7",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-116-partner-vendure-admin-grants.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-116-partner-vendure-admin-grants.json",
+      "bytes": 666,
+      "sha256": "802b2d176b761b19e8d89f40a52e5b56c0085f225e0022cd2f5a27d69b633947",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-116-role-dashboard-authority.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-116-role-dashboard-authority.json",
+      "bytes": 258,
+      "sha256": "018d5c0f14a1e91d5b1b4dc1f3c19775099dbd721a9502fd349dd672d2eae3ac",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-116-role-queue-authority.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-116-role-queue-authority.json",
+      "bytes": 336,
+      "sha256": "8dde62dbeb5bdc06a9b751a5c7b81d4c550d8c2a0c6f2b085355b8a54d7e9bf1",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-117-historical-order-snapshot-recovery.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-117-historical-order-snapshot-recovery.json",
+      "bytes": 1033,
+      "sha256": "e58b3343fea46d82c272b35b5e1e61d0933b483b6b4b2f4b428b4dd7612be743",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-117-partner-order-snapshot.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-117-partner-order-snapshot.json",
+      "bytes": 565,
+      "sha256": "d65467f51db821555c8e5c4a2cc396ed1dee5bf83f667f94d5e5bc89eede8e2e",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-118-authenticated-reconciliation-browser-gate.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-118-authenticated-reconciliation-browser-gate.json",
+      "bytes": 328,
+      "sha256": "071181c7bd3b34d1d2f16fa70150b1aaaf4faa86809c522f2dd33ab027a7ad62",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-118-commerce-reconciliation-workbench.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-118-commerce-reconciliation-workbench.json",
+      "bytes": 712,
+      "sha256": "fa224b3aebdac7628962d083feee3c7bf6cf8ea05d9bba5c960ff3ba57eca3b2",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-118-signed-store-context-http.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-118-signed-store-context-http.json",
+      "bytes": 522,
+      "sha256": "c7681ec31e9154d660ce852baabc9a6621fa93e7febf7042d59db1ea7622f664",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-118-vendure-admin-http.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-118-vendure-admin-http.json",
+      "bytes": 448,
+      "sha256": "c3ee89080000279326f8e1ad6e6ae50ad9ed5a8ab934cfa699f1f1cb48265523",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-118-vendure-business-reconciliation-http.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-118-vendure-business-reconciliation-http.json",
+      "bytes": 588,
+      "sha256": "5c7552f60c1bcc2dd67f9a4bd064bf21553151d7944ab5cd38398fb559c80dbd",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-121-storefront-bff-contract-runtime.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-121-storefront-bff-contract-runtime.json",
+      "bytes": 257,
+      "sha256": "6ab3281e32df3306cac7d818082309c1231381069de8182e17bcd5c5996863e5",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-122-customer-projection-repository.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-122-customer-projection-repository.json",
+      "bytes": 2145,
+      "sha256": "936348fef7581cafa134e0ff4998749dc5bae26b8a6b9795022f4d1664dc3f33",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-132.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-132.json",
+      "bytes": 563,
+      "sha256": "47e56391513c8ed03390f839add41fbcabc913b1900aeaa84ea5dd4b5841affb",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-133-persistence.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-133-persistence.json",
+      "bytes": 638,
+      "sha256": "80e67fb48c9baaadeeb63df812282431a5111da4148f9e7d62cacb74872a5158",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-133.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-133.json",
+      "bytes": 517,
+      "sha256": "3872ae65567a0c33ad49d99415712fd782493dc800861861f90a61de05ce96a6",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-134.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-134.json",
+      "bytes": 685,
+      "sha256": "f238969db6f6e1103b3f9225b18b1eae1e4c19f95f37ba2e1e56fdd2566858d2",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-135.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-135.json",
+      "bytes": 743,
+      "sha256": "0ffcf25a2cead97bf97b8d4fe14a1b27b032b0450f02b39b44983adceccef815",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-137-authority.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-137-authority.json",
+      "bytes": 605,
+      "sha256": "1f8f20a8127e875331e7354bdeb23423eafd875d76dfbb994925c399c5e878f8",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-138-persistence.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-138-persistence.json",
+      "bytes": 627,
+      "sha256": "c40676549466aeaba1f4e87a2b5012aba7c0d8685b7f4e356630136f42a9a062",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-139-persistence.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-139-persistence.json",
+      "bytes": 588,
+      "sha256": "acc0058a42b230d28b39d4a5c86c357141f433de7b7ad0dbbbaa950d4b17e165",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-142-delivery.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-142-delivery.json",
+      "bytes": 510,
+      "sha256": "92bccaaba352e30e4ed4dc868c6bafd63b5155cb8d452a628359b5012d8d8f6d",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-142-erp-document.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-142-erp-document.json",
+      "bytes": 449,
+      "sha256": "860bcc29b6cef5d1013d0d5210763275ac17b2271ced7603c707a83b052718f3",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-143-persistence.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-143-persistence.json",
+      "bytes": 604,
+      "sha256": "81caf52d938051c9c071f43d7529fc22a2727a68a102bd9269436848303e6e91",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-144-persistence.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-144-persistence.json",
+      "bytes": 597,
+      "sha256": "1b9412f841c670d45475703b4d627a7b8390675f0e53b6540c5cabbde6bf5307",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-145-persistence.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-145-persistence.json",
+      "bytes": 670,
+      "sha256": "0a60f6a44df21660ec1d01e8c1f61e9dae64416d80ca3319ae84f8eb465055db",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-146-persistence.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-146-persistence.json",
+      "bytes": 710,
+      "sha256": "1cab13c7d37c7b2582ca00ce0680f0f679691eefc22add207eef7a1e99a6b083",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-147-persistence.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-147-persistence.json",
+      "bytes": 711,
+      "sha256": "c2f04930304654c2b2fe00af8d0c5c0ff86ed40ce84105dd0d334c1d1a4fcdc5",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-148-persistence.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-148-persistence.json",
+      "bytes": 705,
+      "sha256": "0dab388a704b577ddfdb4767ed05b497da851b993adeeafac06642f7630e3c85",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-149-persistence.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-149-persistence.json",
+      "bytes": 773,
+      "sha256": "61093dfd8b675156f3c32f38fae0ed08403fd89dee2709b66576f7689b42e1f2",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-151-repository.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-151-repository.json",
+      "bytes": 265,
+      "sha256": "7bb86b8e1eee9eade9335861229c1cdd1ec12c26d100d3aa0b1f8b62a5f9aa26",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-152-repository.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-152-repository.json",
+      "bytes": 335,
+      "sha256": "33981286fa1e5939acf8d9c2582f06bed01c7bd02c9829a20c22141c57dd6f97",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-153-repository.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-153-repository.json",
+      "bytes": 329,
+      "sha256": "2965dadf757fdbda47476afca2984ebeee722f7c95645a1e226ac606f4bbb5d3",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-156-repository.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-156-repository.json",
+      "bytes": 309,
+      "sha256": "24f1c0c842e5ef73e5a35694684c645c73c42ca65f0e7fd52a417a6391229d36",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-157-contract.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-157-contract.json",
+      "bytes": 193,
+      "sha256": "ddcb853eb749675525cbdb4262f44c85eb955cdcd06297d1f0f0cc930b14068a",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-158-contract.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-158-contract.json",
+      "bytes": 206,
+      "sha256": "158f5ac0258b105bfd2fe5f6492b4f120cb195ba52b2dfaa1603bd1536146de2",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-159-contract.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-159-contract.json",
+      "bytes": 211,
+      "sha256": "e347831da62ba6174702ebfe0d2f38a4f27ef689645a0c788c13ff8227bc0b10",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-171-175-contract.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-171-175-contract.json",
+      "bytes": 207,
+      "sha256": "b29ce2237cce2c96a6312dda5deb6ac43ac50a8a1e0a0086333f40e20342e60f",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.ncrv2-176-180-contract.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.ncrv2-176-180-contract.json",
+      "bytes": 274,
+      "sha256": "b3c590112e0cbeaf5ae5feb137cc932439f97e134e5050c7413177af026de179",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.oca003.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.oca003.json",
+      "bytes": 611,
+      "sha256": "94bc68c5985a8d609de93da50f65dadd394af8a38351318305e070dfa818fd59",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.oca005-browser.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.oca005-browser.json",
+      "bytes": 285,
+      "sha256": "d8e2b1a65763f76ae304ae16b5b3d6b8bbf7895e941d0eb2375047d84bdab828",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.oca008.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.oca008.json",
+      "bytes": 445,
+      "sha256": "b55cacfaec4ed5469b7cc0045795812fdac09a4741f3003a278960f287cdfbf3",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.oca009.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.oca009.json",
+      "bytes": 500,
+      "sha256": "478743c7aed4a946b8ace7c6c3e7ccefc84efc929d2be0fdac25ce4e8cabc75e",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.oca010-browser.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.oca010-browser.json",
+      "bytes": 225,
+      "sha256": "5be7a644eb9405acf4541b70652c3f8ed3d75539b44e0e3633edf45d9c5c1aee",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.oca010-sbom.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.oca010-sbom.json",
+      "bytes": 205,
+      "sha256": "a73ba55439200ff0a8369f8a377144914bad4e62f43e6cc0e1c6a5a8f641f9c0",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.oca012.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.oca012.json",
+      "bytes": 283,
+      "sha256": "0cc3c65473849b2184ff71496a3ff38c96e456d000b055bf576f197f9d3ecf5f",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.oca013.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.oca013.json",
+      "bytes": 544,
+      "sha256": "53a009c607faa5dc1ce5634152313cc08db7f48ea46c768b794bc247030aee54",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.oca017.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.oca017.json",
+      "bytes": 208,
+      "sha256": "c69ce75723fd0d6cbfa1407bda5c6444c8e51cf7af459f78f6d856b9091aada1",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.oca018-product.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.oca018-product.json",
+      "bytes": 416,
+      "sha256": "0459bba66c20abeec97eb6c1c39ab80f3351ddd6f324f0b12887f62cd58cb2bd",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.oca018.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.oca018.json",
+      "bytes": 341,
+      "sha256": "76bd152fc8eb7ae8b9a818ef7a792d7b84d573961abd3d0690aeeb5cedb72799",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.oca019.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.oca019.json",
+      "bytes": 345,
+      "sha256": "5072cab3ff5004662a66b8b15ae430b3ef44e0e99b6d378091b052d10c7b3bbf",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.oca022.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.oca022.json",
+      "bytes": 226,
+      "sha256": "a50be236d627fc6fa78fe27dd23ceeb692163a1e4505b791c0ba2e1047081dcf",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.oca023-product.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.oca023-product.json",
+      "bytes": 383,
+      "sha256": "5d51cc02ff29abc74b05746e975bab01df9c9976134ebbdda21553cd92656766",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.oca024.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.oca024.json",
+      "bytes": 350,
+      "sha256": "c4da49b7db0c5ecb070e3edda775be36618070d8393d979beeacb73da6e295af",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.oca025.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.oca025.json",
+      "bytes": 314,
+      "sha256": "87eb6e97d13071f3cd5563242955c25414f114fc9b255ce914ef30bdb1286b27",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.oca027.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.oca027.json",
+      "bytes": 291,
+      "sha256": "4a24f63c02409d97345bfdbf7a6caee699a02d11fbb6a236e87e561ee2aead4b",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.oca028.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.oca028.json",
+      "bytes": 349,
+      "sha256": "a9407bf4298bb510f4aa2fcca09d2ce11f5ad220e0020e1582992b024efa9a3a",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.oca030.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.oca030.json",
+      "bytes": 144,
+      "sha256": "ea053e811d85af822b4268309ae2951f34469b9e15a259b3fa34a0f480c50cca",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/scripts/tsconfig.oca033.json",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/scripts/tsconfig.oca033.json",
+      "bytes": 145,
+      "sha256": "bb2ae672e1ab09d06e400139352f92179a5aee63e20c0819d2a3f981e1ab6bed",
+      "originalMode": "0o664",
+      "category": "CRAYS_TYPESCRIPT_COMPILER_CONFIGURATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/AcknowledgeOcaSourceDrift.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/AcknowledgeOcaSourceDrift.graphql",
+      "bytes": 614,
+      "sha256": "2285ae24e2a5293425e20cffec690a7a1b2bfbccec2c602a21af61fa56e8c6f0",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/AdvanceOcaDependencyFinding.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/AdvanceOcaDependencyFinding.graphql",
+      "bytes": 298,
+      "sha256": "08f74a1f64ff1097233020dc8576b5ca00f6a8df5ca5e66675b3ab0d9ab960e8",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/EvaluateOcaFieldProjection.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/EvaluateOcaFieldProjection.graphql",
+      "bytes": 256,
+      "sha256": "a3b5e0dbc24acb183ac2442625383f67e33f79bcdee35b386eeaf3a5f5ae1966",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/GymEventStream.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/GymEventStream.graphql",
+      "bytes": 137,
+      "sha256": "5de9a0aed7add716f234ebc58028b1e9112aa3e862b6f88e3956a415744b73a8",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/GymIntegrationHub.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/GymIntegrationHub.graphql",
+      "bytes": 1264,
+      "sha256": "f5d159e85f5e69e9c71891a667418b0e7fb54210d2a509c49a3a6ba63838f20c",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/GymReadSlice.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/GymReadSlice.graphql",
+      "bytes": 1021,
+      "sha256": "28c49e98561b3c57cb3af3ee3ce7aa3a052ff4389417711ff769a1a5014379be",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/GymRecordCommand.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/GymRecordCommand.graphql",
+      "bytes": 296,
+      "sha256": "ce5b2c5edafe0459ac03f02ef5f5ca4f2f12005b088021d2412320904c9acfd6",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/NativeEmailSetup.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/NativeEmailSetup.graphql",
+      "bytes": 108,
+      "sha256": "91ee4dfb4420c6c35acbc42747c990c7686697df029a9e139d7bf9f64eb67fde",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/NativeIdentityStatus.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/NativeIdentityStatus.graphql",
+      "bytes": 174,
+      "sha256": "0c1a1a098de42fa7cd10440387b26a5590b63b508fab8f4d3745c4f4a3b5c31d",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/NativeRegisterEmail.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/NativeRegisterEmail.graphql",
+      "bytes": 245,
+      "sha256": "f0511a5aef5e46d81c01a56c76b56a3ff6a6fcfd64596e66015223b67d5c1615",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/ObserveOcaRuntimeAsset.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/ObserveOcaRuntimeAsset.graphql",
+      "bytes": 289,
+      "sha256": "04f93cf38627131735def89fbdab3fb240c6d362f026cf5eac286b949276286e",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/OcaAuthorityWorkbench.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/OcaAuthorityWorkbench.graphql",
+      "bytes": 1235,
+      "sha256": "a304c25217ee90a9c4e00fb7b2822bf3f3008f9e9acb27c620bb67ff0fe7d4c4",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/OcaComponentAdmission.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/OcaComponentAdmission.graphql",
+      "bytes": 722,
+      "sha256": "4098b17051e834236ed1c86594dfe3f9f13257ae308b79dacc80bd830e2164e2",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/OcaGovernance.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/OcaGovernance.graphql",
+      "bytes": 975,
+      "sha256": "f24ea001e50b74363bb3ed4393ae86226b414a7745565bae0efecbfbfd57829b",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/OcaPurposeDisclosureWorkbench.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/OcaPurposeDisclosureWorkbench.graphql",
+      "bytes": 1728,
+      "sha256": "7d21879fb4ad74609a85d47a120a3c25ba7a8ed5613774c84f365397b577df72",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/OcaRuntimeInventory.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/OcaRuntimeInventory.graphql",
+      "bytes": 904,
+      "sha256": "e345378d25ca3b1630052dbe03ba0727b4e05728bfd74b1b4d4471a14823fde7",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/PlatformBootstrap.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/PlatformBootstrap.graphql",
+      "bytes": 457,
+      "sha256": "e1ae885f7869b3a46c31550a918f0d1d3437fba261c23c8ac1bb05cc3c392850",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/PreflightAdvanceOcaDependencyFinding.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/PreflightAdvanceOcaDependencyFinding.graphql",
+      "bytes": 219,
+      "sha256": "6561cc0ad8ad4fb2c6b781b9f7159b87c9c23021e243db538fbe3c3244336cf2",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/PreflightObserveOcaRuntimeAsset.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/PreflightObserveOcaRuntimeAsset.graphql",
+      "bytes": 200,
+      "sha256": "634453215b77100a0e78902223d551236dc3b33f94142554c9b6bdc7282f27e8",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/PreflightRecordOcaConsent.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/PreflightRecordOcaConsent.graphql",
+      "bytes": 184,
+      "sha256": "894ede373bdc480881cab0609dc13a90a7db1c2d19719f541b34e2ef67865b49",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/PreflightRevokeOcaConsent.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/PreflightRevokeOcaConsent.graphql",
+      "bytes": 184,
+      "sha256": "70e05c36bdc91c4d0a71a480e2fe9c01b36337fea0a3002732c8750e1baf5534",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/PreflightSuspendOcaWorkloadIdentity.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/PreflightSuspendOcaWorkloadIdentity.graphql",
+      "bytes": 218,
+      "sha256": "7e28625e532ab9617890c640f60b47114a8d002e1e3d8b061b574be4e4641fe4",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/ProposeOcaScopeChange.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/ProposeOcaScopeChange.graphql",
+      "bytes": 604,
+      "sha256": "28aff592ef1648dc433469139c4f87beb713ce61f277aa1cafbbe34f36c460a1",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/ReconcileOcaAuthorityCommand.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/ReconcileOcaAuthorityCommand.graphql",
+      "bytes": 255,
+      "sha256": "055f94472ee75f9cea4c7f28a09fe24c8e281ae63810bb16de3595590b724f17",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/ReconcileOcaComponentCommand.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/ReconcileOcaComponentCommand.graphql",
+      "bytes": 245,
+      "sha256": "2edde19825c4381df0501311e70a5c7a43295d294ffe78c613cdd8cd20972fde",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/ReconcileOcaGovernanceCommand.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/ReconcileOcaGovernanceCommand.graphql",
+      "bytes": 638,
+      "sha256": "56f57590bfa987e290d131620268311e6ccaf5dac5f5868f51f19e32c7aa9386",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/ReconcileOcaPrivacyCommand.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/ReconcileOcaPrivacyCommand.graphql",
+      "bytes": 271,
+      "sha256": "8354e647cc74321a7837eb81b2425c61e257bdb89e5f96fd940936e24dcb33ea",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/ReconcileOcaRuntimeObservation.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/ReconcileOcaRuntimeObservation.graphql",
+      "bytes": 265,
+      "sha256": "75d34b0c7a2dd9824d3b80c071d30b4e3e4cde88b1b6025b7e6837bfceeb01d7",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/RecordOcaConsent.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/RecordOcaConsent.graphql",
+      "bytes": 297,
+      "sha256": "c561827e11b0c63202c9ab3a02ed4e0430e9a47cad25de34e6b45cef8709df7c",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/RecordOcaDecision.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/RecordOcaDecision.graphql",
+      "bytes": 566,
+      "sha256": "aa1472ffe0dedd3f88dab38ad8e18576ce57b51322c23864d20d9729e22df5b6",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/RevokeOcaConsent.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/RevokeOcaConsent.graphql",
+      "bytes": 297,
+      "sha256": "9f515b181594f9220e35b3616e735b056f1563ccf4132bfe059aa4ed9dde801c",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/SupersedeOcaDecision.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/SupersedeOcaDecision.graphql",
+      "bytes": 584,
+      "sha256": "9058ccb5cb48497293cd43f037a52e7ab733ce9ed020a77e42d972f71754381e",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/SuspendOcaWorkloadIdentity.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/SuspendOcaWorkloadIdentity.graphql",
+      "bytes": 307,
+      "sha256": "8fbc9eaaa01d1ec9b7d9321c1653379af36b68459e5af13b6f4321e1b44518ed",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    },
+    {
+      "sourcePath": "crays-platform/src/graphql/operations/TransitionOcaScopeChange.graphql",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/operations/TransitionOcaScopeChange.graphql",
+      "bytes": 1188,
+      "sha256": "1a631b06f9e852f170b0f0c274241b60a7556f97174d51f69a3777a8e876734d",
+      "originalMode": "0o664",
+      "category": "CRAYS_DECLARATIVE_GRAPHQL_OPERATION"
+    }
+  ],
+  "licenseStatement": "Original source bytes retained; this packet does not grant a new license or replace upstream license texts. Exact upstream and generated dependency notice mapping remains open in the parent composition."
+}

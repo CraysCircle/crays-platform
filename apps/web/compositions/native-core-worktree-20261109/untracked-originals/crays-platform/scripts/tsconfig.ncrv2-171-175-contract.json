@@ -1,0 +1,1 @@
+{"extends":"../tsconfig.json","compilerOptions":{"noEmit":true},"include":["../src/lib/member-commerce/production-readiness-and-rollout-contract.ts","./test-ncrv2-171-175-immutable-rollout-authority.mts"]}

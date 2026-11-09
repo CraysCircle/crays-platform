@@ -1,0 +1,3 @@
+mutation AdvanceOcaDependencyFinding($input: AdvanceOcaDependencyFindingInput!) {
+  advanceOcaDependencyFinding(input: $input) { status replayed receiptId findingId findingVersion nextSafeAction correlationId preflight { allowed code currentFindingVersion currentFindingSha256 nextSafeAction } }
+}

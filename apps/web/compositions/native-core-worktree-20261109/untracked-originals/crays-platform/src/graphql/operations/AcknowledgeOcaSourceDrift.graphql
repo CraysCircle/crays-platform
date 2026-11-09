@@ -1,0 +1,6 @@
+query PreflightAcknowledgeOcaSourceDrift($input: AcknowledgeOcaSourceDriftInput!) {
+  preflightAcknowledgeOcaSourceDrift(input: $input) { allowed code recordType recordId currentVersion currentSha256 actorAssignmentId actorAssignmentVersion nextSafeAction }
+}
+mutation AcknowledgeOcaSourceDrift($input: AcknowledgeOcaSourceDriftInput!) {
+  acknowledgeOcaSourceDrift(input: $input) { status replayed recordType recordId recordVersion receiptId nextSafeAction correlationId preflight { allowed code recordType recordId currentVersion currentSha256 actorAssignmentId actorAssignmentVersion nextSafeAction } }
+}

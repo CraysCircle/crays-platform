@@ -1,0 +1,22 @@
+query GymReadSlice($domain: GymReadDomain!, $input: GymNodeQueryInput!) {
+  gymNodes(domain: $domain, input: $input) {
+    edges {
+      cursor
+      lineage { sourceSystem sourceRecordId freshnessAt }
+      node {
+        id
+        ... on TenantScopedNode { tenantId }
+        ... on CrmRelationship { displayName state { code label changedAt } }
+        ... on FranchiseCase { title state { code label changedAt } }
+        ... on GymProject { title targetDate state { code label changedAt } }
+        ... on GymMember { displayName state { code label changedAt } }
+        ... on StudioOperation { title dueAt state { code label changedAt } }
+        ... on FinanceDocument { reference total { amount currency } state { code label changedAt } }
+        ... on ManagedDocument { title versionHash state { code label changedAt } }
+        ... on MetricObservation { metricKey value observedAt }
+      }
+    }
+    pageInfo { hasNextPage hasPreviousPage startCursor endCursor }
+    totalCount
+  }
+}

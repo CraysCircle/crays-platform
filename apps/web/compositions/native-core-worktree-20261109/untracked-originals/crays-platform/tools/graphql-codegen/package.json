@@ -1,0 +1,12 @@
+{
+  "name": "@crays/internal-graphql-codegen",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@graphql-codegen/core": "6.2.2",
+    "@graphql-codegen/typescript": "6.1.2",
+    "@graphql-codegen/typescript-resolvers": "6.1.1",
+    "graphql": "16.14.2"
+  }
+}

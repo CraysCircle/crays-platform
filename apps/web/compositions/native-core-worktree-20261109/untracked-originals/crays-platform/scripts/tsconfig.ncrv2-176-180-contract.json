@@ -1,0 +1,11 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "allowImportingTsExtensions": true
+  },
+  "include": [
+    "../src/lib/member-commerce/release-governance-contract.ts",
+    "./test-ncrv2-176-180-bound-release-authority.mts"
+  ]
+}

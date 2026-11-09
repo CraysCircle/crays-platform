@@ -1,0 +1,1 @@
+mutation EvaluateOcaFieldProjection($input: EvaluateOcaFieldProjectionInput!) { evaluateOcaFieldProjection(input: $input) { status decisionId outcome disclosedFieldPaths deniedFieldPaths reasonCodes explainabilityReceiptId nextSafeAction correlationId } }

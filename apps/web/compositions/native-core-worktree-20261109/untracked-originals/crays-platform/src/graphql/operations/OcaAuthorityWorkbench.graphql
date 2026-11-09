@@ -1,0 +1,12 @@
+query OcaAuthorityWorkbench {
+  ocaAuthorityWorkbench {
+    status
+    access { allowed code tenantId actorId actorRole }
+    identities { workloadIdentityId workloadVersion cellId trustBoundaryId operatorId legalEntityId workloadState workloadValidUntil actorContextId actorContextVersion actorType purposeCode vertical storeId sellerId recordType recordId caseId actorContextState actorExpiresAt dualIdentityCurrent workloadSha256 }
+    envelopes { capabilityEnvelopeId envelopeVersion workloadIdentityId actorContextId persistedOperationName persistedOperationSha256 purposeCode vertical queryCapabilities modelProcessingCapabilities responseDisclosureFields commandCapabilities envelopeState envelopeSha256 decisionCount allowedDecisionCount decisionClasses }
+    denials { denialReceiptId denialVersion workloadIdentityId actorContextId persistedOperationSha256 decisionClass reasonCode nextSafeAction retryClass correlationId createdAt }
+    receipts { id version commandName resultCode workloadIdentityId workloadVersion correlationId nextSafeAction sha256 createdAt }
+    commandDenials { id commandName reasonCode expectedWorkloadVersion correlationId nextSafeAction sha256 createdAt }
+    nextSafeAction correlationId
+  }
+}

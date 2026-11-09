@@ -1,0 +1,3 @@
+query PreflightObserveOcaRuntimeAsset($input: ObserveOcaRuntimeAssetInput!) {
+  preflightObserveOcaRuntimeAsset(input: $input) { allowed code currentAssetVersion currentAssetSha256 nextSafeAction }
+}

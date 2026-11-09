@@ -1,0 +1,11 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "types": ["node"]
+  },
+  "include": [
+    "../src/lib/member-commerce/storefront-bff-contract.ts",
+    "./test-ncrv2-121-storefront-bff-contract-runtime.mts"
+  ]
+}

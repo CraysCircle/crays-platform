@@ -1,0 +1,4 @@
+{
+  "compilerOptions":{"target":"ES2022","module":"ESNext","moduleResolution":"Bundler","allowImportingTsExtensions":true,"strict":true,"noEmit":true,"skipLibCheck":true,"esModuleInterop":true,"baseUrl":"..","paths":{"@/*":["src/*"]},"types":["node"]},
+  "files":["../src/lib/member-commerce/seller-shipping-tax-calculator.ts","../src/lib/member-commerce/seller-shipping-tax-preflight-repository.ts","test-ncrv2-132-seller-shipping-tax-calculator.mts","test-ncrv2-132-shipping-tax-preflight-pglite.mts","test-ncrv2-132-shipping-tax-preflight-snapshot.mts"]
+}

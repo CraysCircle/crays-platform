@@ -1,0 +1,3 @@
+query ReconcileOcaAuthorityCommand($originalIdempotencyKey: String!) {
+  reconcileOcaAuthorityCommand(originalIdempotencyKey: $originalIdempotencyKey) { status found receiptId workloadIdentityId workloadVersion resultCode nextSafeAction correlationId }
+}

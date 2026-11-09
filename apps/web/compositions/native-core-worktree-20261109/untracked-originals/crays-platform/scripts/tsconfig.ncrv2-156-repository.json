@@ -1,0 +1,1 @@
+{"extends":"../tsconfig.json","compilerOptions":{"noEmit":true},"include":["../src/lib/member-commerce/partner-employee-journey-contract.ts","../src/lib/member-commerce/partner-employee-repository.ts","./test-ncrv2-156-partner-employee-repository.mts","./test-ncrv2-156-deep-immutable-employee-inputs.mts"]}

@@ -1,0 +1,18 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "incremental": false,
+    "noEmit": true
+  },
+  "include": [
+    "../next-env.d.ts",
+    "../src/lib/member-commerce/server-commerce-context-resolver.ts",
+    "../src/lib/member-commerce/partner-vendure-admin-authorization.ts",
+    "../src/lib/member-commerce/partner-vendure-admin-grant-repository.ts",
+    "../src/lib/member-commerce/partner-vendure-admin-command-authority-repository.ts",
+    "../src/store-operations/kds.ts",
+    "./test-ncrv2-116-partner-vendure-admin.mts",
+    "./test-ncrv2-116-partner-vendure-admin-grant-repository.mts"
+  ],
+  "exclude": ["../node_modules"]
+}

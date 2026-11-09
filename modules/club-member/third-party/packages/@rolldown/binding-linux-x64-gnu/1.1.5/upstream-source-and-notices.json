@@ -1,0 +1,59 @@
+{
+  "scope": "Original upstream root notices associated to exact @rolldown/binding-linux-x64-gnu 1.1.5; no native binary dependency closure claim",
+  "name": "@rolldown/binding-linux-x64-gnu",
+  "version": "1.1.5",
+  "registryVersionURL": "https://registry.npmjs.org/@rolldown%2fbinding-linux-x64-gnu/1.1.5",
+  "archive": {
+    "url": "https://registry.npmjs.org/@rolldown/binding-linux-x64-gnu/-/binding-linux-x64-gnu-1.1.5.tgz",
+    "integrity": "sha512-FjcpEKUyJygHgs1o50VYNvkt5+7Le/VEdYt0AkRpkL33MnyQfwr8l5mXwMmfmTbyMPr5vJLC+8/Gd9gXnwU1QQ==",
+    "integrityVerified": true,
+    "sha256": "f9810c10a3bdd9e962c43c42234c8b661e389fdc75febeec19da0c68928be913"
+  },
+  "originalInstalledManifest": {
+    "path": "modules/club-member/third-party/packages/@rolldown/binding-linux-x64-gnu/1.1.5/package.json",
+    "sha256": "4c465654b3cf360a6a25f5760f249c60613eded29ac881de585780a614975a7b",
+    "bytes": 808,
+    "byteIdenticalToExactRegistryArchive": true
+  },
+  "source": {
+    "repository": "https://github.com/rolldown/rolldown",
+    "commit": "f09947ab017d6df74299f691853dcfc4f4f0f86e",
+    "registryGitHead": true,
+    "registryPublishedProvenanceURL": "https://registry.npmjs.org/-/npm/v1/attestations/@rolldown%2fbinding-linux-x64-gnu@1.1.5",
+    "provenanceSubjectMatchesExactArchiveSHA512": true,
+    "provenanceResolvedDependencyMatchesGitHead": true,
+    "sigstoreBundleCryptographicVerificationPerformed": false,
+    "wholeGitTreeTruncated": false,
+    "treeSHA256": "0c6d6c9431107d7b724ebe2f43d80018f2149f5a1ac5c5ca7098aa251e2f436b"
+  },
+  "existingRootLicenseReference": {
+    "repository": "CraysCircle/crays-platform",
+    "commit": "def37d293076d098dbdb902a2b1588773e2a71c8",
+    "path": "modules/club-member/third-party/packages/rolldown/1.1.5/LICENSE",
+    "upstreamPath": "LICENSE",
+    "bytes": 1302,
+    "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+    "currentStoredBytesVerified": true
+  },
+  "additionalOriginalNotice": {
+    "path": "modules/club-member/third-party/packages/@rolldown/binding-linux-x64-gnu/1.1.5/THIRD-PARTY-LICENSE",
+    "upstreamPath": "THIRD-PARTY-LICENSE",
+    "url": "https://raw.githubusercontent.com/rolldown/rolldown/f09947ab017d6df74299f691853dcfc4f4f0f86e/THIRD-PARTY-LICENSE",
+    "bytes": 2209,
+    "sha256": "a877291d800ed43692f3f9ae09d8e01cc6f7293ad39d43896059c188ffbb8b7c",
+    "upstreamGitBlob": "6e673d76c2bf35903d2f16ae41f901cf7966c402"
+  },
+  "existingLock": {
+    "path": "modules/club-member/original/dependency-metadata/package-lock.json",
+    "sha256": "56f6a775592cfeed09711f1480c835832e4700b8c65837f7ae66a5480a580458",
+    "matchingEntries": [
+      {
+        "path": "node_modules/@rolldown/binding-linux-x64-gnu",
+        "version": "1.1.5",
+        "integrity": "sha512-FjcpEKUyJygHgs1o50VYNvkt5+7Le/VEdYt0AkRpkL33MnyQfwr8l5mXwMmfmTbyMPr5vJLC+8/Gd9gXnwU1QQ=="
+      }
+    ]
+  },
+  "originalNoticeTextLocated": true,
+  "fullTransitiveNativeBinarySourceRightsAndOfferClosure": false
+}

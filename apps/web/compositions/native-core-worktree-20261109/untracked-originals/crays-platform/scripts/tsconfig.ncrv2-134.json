@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "baseUrl": "..",
+    "paths": {"@/*": ["src/*"]},
+    "types": ["node"]
+  },
+  "files": [
+    "../src/lib/member-commerce/checkout-order-transition-contract.ts",
+    "../src/lib/member-commerce/checkout-order-transition-repository.ts",
+    "../src/lib/member-commerce/seller-bound-cart-lifecycle.ts",
+    "test-ncrv2-134-checkout-order-transitions.mts",
+    "test-ncrv2-134-checkout-order-snapshot-pglite.mts"
+  ]
+}

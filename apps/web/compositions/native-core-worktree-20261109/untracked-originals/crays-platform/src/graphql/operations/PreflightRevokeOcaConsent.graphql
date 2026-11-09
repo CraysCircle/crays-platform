@@ -1,0 +1,1 @@
+query PreflightRevokeOcaConsent($input: RevokeOcaConsentInput!) { preflightRevokeOcaConsent(input: $input) { allowed code currentConsentVersion currentConsentSha256 nextSafeAction } }

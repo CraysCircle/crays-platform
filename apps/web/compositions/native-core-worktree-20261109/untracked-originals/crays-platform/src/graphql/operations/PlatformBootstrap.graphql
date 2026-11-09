@@ -1,0 +1,27 @@
+query PlatformBootstrap {
+  graphqlRuntime {
+    apiVersion
+    graphIdentity
+    endpoint
+    mode
+    federationStatus
+    cacheBackend
+    eventTransport
+    telemetryBackend
+    security {
+      maximumDepth
+      maximumTokens
+      maximumCost
+      persistedOperationsRequired
+      introspectionEnabled
+    }
+  }
+  viewer {
+    role
+    tenantId
+    authoritySource
+    authenticated
+    reviewMode
+    capabilities
+  }
+}

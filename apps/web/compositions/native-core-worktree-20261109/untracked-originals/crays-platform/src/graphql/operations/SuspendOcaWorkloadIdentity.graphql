@@ -1,0 +1,3 @@
+mutation SuspendOcaWorkloadIdentity($input: SuspendOcaWorkloadIdentityInput!) {
+  suspendOcaWorkloadIdentity(input: $input) { status replayed receiptId workloadIdentityId workloadVersion preflight { allowed code currentWorkloadVersion currentWorkloadSha256 nextSafeAction } nextSafeAction correlationId }
+}

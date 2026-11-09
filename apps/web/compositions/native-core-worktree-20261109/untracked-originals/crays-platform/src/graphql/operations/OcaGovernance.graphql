@@ -1,0 +1,14 @@
+query OcaGovernance {
+  ocaGovernance {
+    status
+    access { allowed reasonCode tenantId actorId governanceRole }
+    programme { id version programmeKey northStar scopeStatement verticalKeys actorClassKeys productGate productionState approvedAt effectiveAt sha256 }
+    sourceDrift { id sourceKey sourceClass sourceVersion sha256 status reviewDueAt }
+    decisions { id version decisionKey title decisionClass state rationale affectedBlocks authorityDimensions sha256 reviewDueAt }
+    scopeChanges { id version changeClass proposal reason state riskClass affectedBlocks affectedVerticals authorityDimensions decisionId decisionVersion sha256 dueAt }
+    receipts { id version commandName commandState resultCode businessCompletionState correlationId nextSafeAction sha256 createdAt }
+    denials { id commandName reasonCode expectedRecordType expectedRecordVersion correlationId nextSafeAction sha256 createdAt }
+    nextSafeAction
+    correlationId
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "schema": "crays.core-untracked-additional-source.v1",
+  "sourceHead": "c2018d04f6a52d8716326a098dde7624cbb18963",
+  "files": [
+    {
+      "path": "crays-platform/database/migrations/0207_core_account_email_verification.down.sql",
+      "bytes": 390,
+      "sha256": "eb9a4ae8bc2c1133db128c94db69a7b39d43f742945447b4a2e210fcff9b688b",
+      "originalMode": "0o664",
+      "category": "CRAYS_SCHEMA_ROLLBACK_PROGRAM_REVIEWED_NOT_EXECUTED",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/database/migrations/0207_core_account_email_verification.down.sql"
+    },
+    {
+      "path": "crays-platform/database/migrations/0211_native_personal_runtime_attempts.down.sql",
+      "bytes": 1624,
+      "sha256": "c0ab34e1fe822d1d22290b293bca659bd3aea53a7e7bbbcb5c88c949c64a7e26",
+      "originalMode": "0o664",
+      "category": "CRAYS_SCHEMA_ROLLBACK_PROGRAM_REVIEWED_NOT_EXECUTED",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/database/migrations/0211_native_personal_runtime_attempts.down.sql"
+    },
+    {
+      "path": "crays-platform/database/migrations/0212_native_personal_identity_transaction_scope.down.sql",
+      "bytes": 558,
+      "sha256": "64aa9a37235cfea7387539b218b2ec6c007a1ca848112c631281f49d9d30a905",
+      "originalMode": "0o664",
+      "category": "CRAYS_SCHEMA_ROLLBACK_PROGRAM_REVIEWED_NOT_EXECUTED",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/database/migrations/0212_native_personal_identity_transaction_scope.down.sql"
+    },
+    {
+      "path": "crays-platform/database/migrations/0213_native_personal_verified_principal_scope.down.sql",
+      "bytes": 533,
+      "sha256": "d345ecbb3b6fe5f1efcdeded355e828894a1e02579261ccc8646de7a2e811fd0",
+      "originalMode": "0o664",
+      "category": "CRAYS_SCHEMA_ROLLBACK_PROGRAM_REVIEWED_NOT_EXECUTED",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/database/migrations/0213_native_personal_verified_principal_scope.down.sql"
+    },
+    {
+      "path": "crays-platform/database/migrations/0214_native_personal_agent_responses.down.sql",
+      "bytes": 1364,
+      "sha256": "932d61401c8cfc5911529ce34dac93be9de8ea00f88418bf9d37800feb9097e4",
+      "originalMode": "0o664",
+      "category": "CRAYS_SCHEMA_ROLLBACK_PROGRAM_REVIEWED_NOT_EXECUTED",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/database/migrations/0214_native_personal_agent_responses.down.sql"
+    },
+    {
+      "path": "crays-platform/database/migrations/0215_personal_message_attachment_custody.down.sql",
+      "bytes": 276,
+      "sha256": "f9018438879b0a884827e632a0fc3477686a145a8880142ffee92a5cec5e67fb",
+      "originalMode": "0o664",
+      "category": "CRAYS_SCHEMA_ROLLBACK_PROGRAM_REVIEWED_NOT_EXECUTED",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/database/migrations/0215_personal_message_attachment_custody.down.sql"
+    },
+    {
+      "path": "crays-platform/database/migrations/0216_personal_feed_effects.down.sql",
+      "bytes": 515,
+      "sha256": "09e905da6c2e9633e6cc5611f88aa6bf9755c29a23823dac3fcbe369d21b9012",
+      "originalMode": "0o664",
+      "category": "CRAYS_SCHEMA_ROLLBACK_PROGRAM_REVIEWED_NOT_EXECUTED",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/database/migrations/0216_personal_feed_effects.down.sql"
+    },
+    {
+      "path": "crays-platform/database/migrations/0217_personal_message_original_display_name.down.sql",
+      "bytes": 589,
+      "sha256": "065561bdada280df5d786d8e2db5c52eabc3d9621909acfccdd11bbfbe8002b4",
+      "originalMode": "0o664",
+      "category": "CRAYS_SCHEMA_ROLLBACK_PROGRAM_REVIEWED_NOT_EXECUTED",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/database/migrations/0217_personal_message_original_display_name.down.sql"
+    },
+    {
+      "path": "crays-platform/src/graphql/baseline/metadata.json",
+      "bytes": 234,
+      "sha256": "c492fcaaf327f062237b21991935664104d73b9f77dc4d16a8c7e397806994c5",
+      "originalMode": "0o664",
+      "category": "CRAYS_SCHEMA_BASELINE_METADATA",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/src/graphql/baseline/metadata.json"
+    },
+    {
+      "path": "crays-platform/tools/graphql-codegen/.gitignore",
+      "bytes": 14,
+      "sha256": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+      "originalMode": "0o664",
+      "category": "CRAYS_ISOLATED_GRAPHQL_CODEGEN_SOURCE_AND_LOCK",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/tools/graphql-codegen/.gitignore"
+    },
+    {
+      "path": "crays-platform/tools/graphql-codegen/generate.mjs",
+      "bytes": 2531,
+      "sha256": "76056d92bafa4a2cd2294ee701ebfc792f48cb123ff3696de66f4a1d6d778416",
+      "originalMode": "0o664",
+      "category": "CRAYS_ISOLATED_GRAPHQL_CODEGEN_SOURCE_AND_LOCK",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/tools/graphql-codegen/generate.mjs"
+    },
+    {
+      "path": "crays-platform/tools/graphql-codegen/package-lock.json",
+      "bytes": 20693,
+      "sha256": "32100e0f3d963a4a694003ce2aa0ab7a65e12b5dc08a5a584cd23972b2f47b7e",
+      "originalMode": "0o664",
+      "category": "CRAYS_ISOLATED_GRAPHQL_CODEGEN_SOURCE_AND_LOCK",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/tools/graphql-codegen/package-lock.json"
+    },
+    {
+      "path": "crays-platform/tools/graphql-codegen/package.json",
+      "bytes": 298,
+      "sha256": "9930ffd6d09ac3497a967193ad55c746a0284164c761c29155e6b75f04f4a097",
+      "originalMode": "0o664",
+      "category": "CRAYS_ISOLATED_GRAPHQL_CODEGEN_SOURCE_AND_LOCK",
+      "exportPath": "apps/web/compositions/native-core-worktree-20261109/untracked-originals/crays-platform/tools/graphql-codegen/package.json"
+    }
+  ],
+  "review": "The complete generator implementation and all eight rollback SQL bodies were read as source. No scripts, generators, SQL migrations or product checks were executed. The rollback sources contain schema operations and fail-closed data-preservation guards, not database dumps or personal records.",
+  "dependencyScope": {
+    "isolatedGeneratorDirectVersions": {
+      "@graphql-codegen/core": "6.2.2",
+      "@graphql-codegen/typescript": "6.1.2",
+      "@graphql-codegen/typescript-resolvers": "6.1.1",
+      "graphql": "16.14.2"
+    },
+    "lockfileVersion": 3,
+    "lockedDependencyPackages": 41,
+    "registryHosts": [
+      "registry.npmjs.org"
+    ],
+    "lockLicenseMetadataOnly": {
+      "MIT": 40,
+      "0BSD": 1
+    },
+    "originalDependencyNoticesClosureEstablished": false,
+    "generatedClientOutputsMapped": false
+  },
+  "runtimeAcceptance": false,
+  "noNewLicenseGranted": true
+}

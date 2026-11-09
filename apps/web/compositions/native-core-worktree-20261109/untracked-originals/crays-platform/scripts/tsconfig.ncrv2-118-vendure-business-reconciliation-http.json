@@ -1,0 +1,16 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "incremental": false,
+    "noEmit": true
+  },
+  "include": [
+    "../next-env.d.ts",
+    "../src/lib/member-commerce/vendure-business-reconciliation-provider.ts",
+    "../src/lib/member-commerce/environment-vendure-business-reconciliation-provider.ts",
+    "../src/lib/member-commerce/partner-vendure-reconciliation-http.ts",
+    "../src/app/api/crays/operations/commerce/vendure-reconciliation/route.ts",
+    "./test-ncrv2-118-vendure-business-reconciliation-http.mts"
+  ],
+  "exclude": ["../node_modules"]
+}

@@ -1,0 +1,1 @@
+query NativeIdentityStatus { nativeIdentityStatus { accountMapped accountId accountStatus emailVerificationRequired nostrPublicKeyHex nostrSignerVerified requiredActions } }

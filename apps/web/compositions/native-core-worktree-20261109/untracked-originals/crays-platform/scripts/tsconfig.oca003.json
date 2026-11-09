@@ -1,0 +1,19 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "incremental": false
+  },
+  "include": [
+    "../next-env.d.ts",
+    "../src/db/oca-governance-repository.ts",
+    "../src/db/oca-governance-command-service.ts",
+    "../src/db/oca-governance-lifecycle-service.ts",
+    "../src/db/oca-governance-denial-receipt-service.ts",
+    "../src/components/oca-governance-workbench.tsx",
+    "../src/components/oca-governance-lifecycle-panel.tsx",
+    "../src/graphql/schema.ts",
+    "../src/graphql/generated/**/*.ts"
+  ],
+  "exclude": ["../node_modules", "../.next"]
+}

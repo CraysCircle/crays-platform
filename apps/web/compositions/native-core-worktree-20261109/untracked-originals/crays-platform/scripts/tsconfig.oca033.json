@@ -1,0 +1,1 @@
+{"extends":"../tsconfig.json","compilerOptions":{"noEmit":true},"include":["../src/db/oca-model-gateway-service.ts","../src/graphql/schema.ts"]}

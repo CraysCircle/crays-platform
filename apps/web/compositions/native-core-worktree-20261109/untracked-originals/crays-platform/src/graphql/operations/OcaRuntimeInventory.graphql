@@ -1,0 +1,13 @@
+query OcaRuntimeInventory {
+  ocaRuntimeInventory {
+    status
+    access { allowed code tenantId actorId actorRole }
+    assets { id version componentKey assetClass origin observedState hostScope installedVersion installedDigest observedAt sourceAuthority sha256 }
+    releaseBom { id version releaseTag tagObjectSha1 sourceCommitSha1 ociIndexDigest platformManifestDigest contentDigestVerified localImagePresent sbomState sbomDocumentSha256 declaredLicense detectedLicense compatibilityState pinState sha256 }
+    gaps { gapClass recordId recordVersion gapState sha256 createdAt }
+    receipts { id version commandName commandState resultCode businessCompletionState runtimeAssetId runtimeAssetVersion correlationId nextSafeAction sha256 createdAt }
+    denials { id commandName reasonCode expectedAssetVersion correlationId nextSafeAction sha256 createdAt }
+    nextSafeAction
+    correlationId
+  }
+}

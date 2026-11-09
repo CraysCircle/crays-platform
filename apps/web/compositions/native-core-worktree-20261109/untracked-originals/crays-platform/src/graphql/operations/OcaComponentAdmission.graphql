@@ -1,0 +1,12 @@
+query OcaComponentAdmission {
+  ocaComponentAdmission {
+    status
+    access { allowed code tenantId actorId actorRole }
+    candidates { id version componentKey componentClass candidateSha256 candidateState compatibilityState blockingFindingCount currentFindingSnapshotSha256 admissionStatus admitted }
+    findings { id version candidateId candidateVersion candidateSha256 findingClass severity remediationState evidenceRef sha256 createdAt }
+    receipts { id version commandName resultCode findingId findingVersion correlationId nextSafeAction sha256 createdAt }
+    denials { id commandName reasonCode expectedFindingVersion correlationId nextSafeAction sha256 createdAt }
+    nextSafeAction
+    correlationId
+  }
+}

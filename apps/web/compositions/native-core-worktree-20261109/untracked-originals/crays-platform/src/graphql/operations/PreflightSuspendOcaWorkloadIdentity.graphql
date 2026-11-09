@@ -1,0 +1,3 @@
+query PreflightSuspendOcaWorkloadIdentity($input: SuspendOcaWorkloadIdentityInput!) {
+  preflightSuspendOcaWorkloadIdentity(input: $input) { allowed code currentWorkloadVersion currentWorkloadSha256 nextSafeAction }
+}

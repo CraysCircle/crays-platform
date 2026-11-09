@@ -1,0 +1,1 @@
+{"extends":"../tsconfig.json","compilerOptions":{"noEmit":true},"include":["../src/lib/member-commerce/partner-financing-package-journey-contract.ts","../src/lib/member-commerce/partner-financing-package-repository.ts","./test-ncrv2-153-financing-package-repository.mts","./test-ncrv2-153-deep-immutable-financing-inputs.mts"]}

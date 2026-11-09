@@ -1,0 +1,10 @@
+mutation GymRecordCommand($input: GymRecordMutationInput!) {
+  mutateGymRecord(input: $input) {
+    node { id __typename }
+    receipt { commandId status completedAt }
+    errors { code message field }
+    conflict { expectedVersion actualVersion }
+    replayed
+    correlationId
+  }
+}

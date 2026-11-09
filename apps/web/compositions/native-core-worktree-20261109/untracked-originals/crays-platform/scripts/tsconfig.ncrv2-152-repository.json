@@ -1,0 +1,1 @@
+{"extends":"../tsconfig.json","compilerOptions":{"noEmit":true},"include":["../src/lib/member-commerce/partner-deal-collaboration-journey-contract.ts","../src/lib/member-commerce/partner-deal-collaboration-repository.ts","./test-ncrv2-152-partner-deal-collaboration-repository.mts","./test-ncrv2-152-deep-immutable-deal-inputs.mts"]}

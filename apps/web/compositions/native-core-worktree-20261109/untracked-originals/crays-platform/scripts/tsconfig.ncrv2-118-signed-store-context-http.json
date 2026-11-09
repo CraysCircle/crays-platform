@@ -1,0 +1,16 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "incremental": false,
+    "noEmit": true
+  },
+  "include": [
+    "../next-env.d.ts",
+    "../src/lib/member-commerce/signed-store-context-probe.ts",
+    "../src/lib/member-commerce/environment-signed-store-context-provider.ts",
+    "../src/lib/member-commerce/signed-store-context-http.ts",
+    "../src/app/api/crays/commerce/store-context/route.ts",
+    "./test-ncrv2-118-signed-store-context-http.mts"
+  ],
+  "exclude": ["../node_modules"]
+}

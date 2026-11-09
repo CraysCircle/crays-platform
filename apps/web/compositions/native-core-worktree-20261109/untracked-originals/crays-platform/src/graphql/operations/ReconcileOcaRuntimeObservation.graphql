@@ -1,0 +1,5 @@
+query ReconcileOcaRuntimeObservation($originalIdempotencyKey: String!) {
+  reconcileOcaRuntimeObservation(originalIdempotencyKey: $originalIdempotencyKey) {
+    status found receiptId runtimeAssetId runtimeAssetVersion resultCode nextSafeAction correlationId
+  }
+}

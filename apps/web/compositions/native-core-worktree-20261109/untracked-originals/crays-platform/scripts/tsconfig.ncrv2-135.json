@@ -1,0 +1,4 @@
+{
+  "compilerOptions":{"target":"ES2022","module":"ESNext","moduleResolution":"Bundler","allowImportingTsExtensions":true,"strict":true,"noEmit":true,"skipLibCheck":true,"esModuleInterop":true,"baseUrl":"..","paths":{"@/*":["src/*"]},"types":["node"]},
+  "files":["../src/lib/member-commerce/seller-fulfillment-contract.ts","../src/lib/member-commerce/seller-fulfillment-repository.ts","../src/lib/member-commerce/return-transition-contract.ts","../src/lib/member-commerce/return-transition-repository.ts","test-ncrv2-135-seller-fulfillment-contract.mts","test-ncrv2-135-fulfillment-pglite.mts","test-ncrv2-135-fulfillment-input-snapshots.mts","test-ncrv2-136-return-transition-contract.mts","test-ncrv2-136-return-input-snapshots.mts"]
+}

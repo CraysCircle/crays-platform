@@ -1,0 +1,1 @@
+mutation RevokeOcaConsent($input: RevokeOcaConsentInput!) { revokeOcaConsent(input: $input) { status replayed receiptId consentId consentVersion consentSha256 revocationReceiptId preflight { allowed code currentConsentVersion currentConsentSha256 nextSafeAction } nextSafeAction correlationId } }

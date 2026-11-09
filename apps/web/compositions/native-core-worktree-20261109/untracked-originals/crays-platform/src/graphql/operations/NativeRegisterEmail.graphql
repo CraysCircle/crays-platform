@@ -1,0 +1,1 @@
+mutation NativeRegisterEmail($idempotencyKey: String!, $expectedContactRevision: String!) { nativeRegisterEmail(idempotencyKey: $idempotencyKey, expectedContactRevision: $expectedContactRevision) { receiptId contactRevision current replayed } }

@@ -1,0 +1,3 @@
+subscription GymEventStream($input: GymEventStreamInput!) {
+  gymEvents(input: $input) { eventId eventType aggregateId occurredAt }
+}

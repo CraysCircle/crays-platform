@@ -1,0 +1,1 @@
+{"extends":"../tsconfig.json","compilerOptions":{"noEmit":true},"include":["../src/lib/member-commerce/store-operations-journey-contract.ts","./test-ncrv2-157-immutable-store-authority.mts"]}
