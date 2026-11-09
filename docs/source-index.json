@@ -241,6 +241,10 @@
     {
       "component": "member-document-provider51-lifecycle-revision01",
       "path": "operations/member-document-provider51/lifecycle-revision01/source-capture.json"
+    },
+    {
+      "component": "vendure-original-typescript-source07-rev04",
+      "path": "operations/vendure-native-provider-integration/preferred-source07-rev04/source-capture.json"
     }
   ]
 }

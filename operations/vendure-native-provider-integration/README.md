@@ -2,6 +2,8 @@
 
 This folder preserves ten source-only operations programs for the existing Vendure service. The files are versioned implementation references. Their publication does not launch a controller, change a container, grant an execution window, or establish successful runtime adoption.
 
+The authored TypeScript behind the compiled asset controller is preserved separately in the [original TypeScript source guide](preferred-source07-rev04/README.md), with its exact compiler-input mapping and own-code license scope.
+
 | File | Responsibility |
 | --- | --- |
 | `original-asset-delivery-controller.compiled07.rev02.cjs` | Compiled CommonJS asset-delivery controller integrating with NestJS and Vendure. |

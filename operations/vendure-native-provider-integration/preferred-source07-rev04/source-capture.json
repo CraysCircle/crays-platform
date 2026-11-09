@@ -1,0 +1,86 @@
+{
+  "schema": "crays.vendure.original-preferred-typescript-source-capture.v1",
+  "sourceOnly": true,
+  "files": [
+    {
+      "path": "operations/vendure-native-provider-integration/preferred-source07-rev04/original-source.ts",
+      "bytes": 3574,
+      "sha256": "15c66ae20c6dc551e38a551be2aad8e042affc5c582c6cf860ddff5c6979106f",
+      "originalFilename": null,
+      "exportFilename": "original-source.ts",
+      "filenameQualification": "Custody/export filename only; original authored filename was not recorded.",
+      "originalSourceField": "source",
+      "originalSourceEncoding": "UTF-8",
+      "immutableArtifact": {
+        "bucket": "crays-acceptance-backups-391674093840-eu-central-2",
+        "key": "migration-work/20261108/business/vendure-original-publisher/evidence07-native-provider-flow.source-contract.rev04.json",
+        "versionId": "imfkyzbfFelBhvcRr_jOweQmJ3QLLwRq",
+        "wholeEnvelopeBytes": 15531,
+        "wholeEnvelopeSHA256": "9bf3e5675063af99f547399361067c150373b399121cb518de6068bfd9422ac5"
+      },
+      "transformation": "NONE_UNCHANGED_ORIGINAL_SOURCE_FIELD",
+      "restoration": {
+        "target": "Exact source field UTF-8 body",
+        "sourceField": "source",
+        "bytes": 3574,
+        "sha256": "15c66ae20c6dc551e38a551be2aad8e042affc5c582c6cf860ddff5c6979106f",
+        "originalFilesystemPathNotKnownOrInvented": true
+      }
+    }
+  ],
+  "compilerRelationship": {
+    "evidencePath": "/srv/crays/migration-work/20261108/github/parallel-core-license-review01/vendure-ops4-source01/PRIVATE_INTAKE_ACTUAL.json",
+    "evidenceSHA256": "03499429eb8e598b1e5ef540faa3c6cee556f27564c3719ac33b4d8e1dddbfd3",
+    "metadataField": "files[0].envelopeMetadata.input",
+    "inputHashAndImmutableVersionExactlyMatch": true,
+    "compiler": {
+      "existingCompilerReused": true,
+      "path": "/srv/crays/worktrees/club-manager-main-01a0d2f9/crays-platform/node_modules/typescript/lib/typescript.js",
+      "sourceBytes": 9112572,
+      "sourceSHA256": "3ae902c92cc44dace175c0e69e13a4b0899f6983c6121d76b9ab8dd5795e7675",
+      "version": "5.9.3"
+    },
+    "compilerOptions": {
+      "declaration": false,
+      "emitDecoratorMetadata": true,
+      "esModuleInterop": false,
+      "experimentalDecorators": true,
+      "importHelpers": false,
+      "inlineSourceMap": false,
+      "module": "CommonJS",
+      "moduleResolution": "Node10",
+      "newLine": "LF",
+      "noEmitHelpers": false,
+      "sourceMap": false,
+      "target": "ES2022",
+      "useDefineForClassFields": false
+    },
+    "previousCompiledSHA256": "3d13e4464b7f43e808ddb040baa343c409dd66d7a26c69d292bb94b799cc32e8",
+    "unprefixedCompiledSHA256": "185448051f57dda66b59d2b07cf3a41fbcf4a455ad1bae217ded8b78e01a51fb",
+    "unprefixedCompiledBytes": 6162,
+    "publishedCompiledPath": "operations/vendure-native-provider-integration/original-asset-delivery-controller.compiled07.rev02.cjs",
+    "publishedCompiledBytes": 6205,
+    "publishedCompiledSHA256": "93d6b67b19d8f44e0a549132b27b36193fcdf88b065aec38d3703c5f5440eaf2",
+    "singleAdditionalCJSLineAfterUseStrict": "module.paths.unshift('/app/node_modules');",
+    "compilerExecutedDuringPreservation": false
+  },
+  "deltaQualification": {
+    "staticSourceExpressionTake": ".take(1).getMany()",
+    "staticSourceExpressionMatches": "matches.length === 0",
+    "recordedCompilerUpstreamChanges": [
+      "take(2) to take(1)",
+      "matches.length !== 1 to matches.length === 0"
+    ],
+    "conclusion": "This actual source contains both recorded post-change forms. Exact historical compiler input hash/version links it to the published controller metadata. No independent recompile or emitted-byte reproduction was performed."
+  },
+  "imports": [
+    "@nestjs/common",
+    "@vendure/core",
+    "express (type only)"
+  ],
+  "upstreamImplementationsNotIncluded": true,
+  "originalNoticeRemoved": false,
+  "originalFilenameUnknown": true,
+  "otherEnvelopeFieldsExported": false,
+  "runtimeAdoptionOrFullDependencySourceOfferClosureClaimed": false
+}

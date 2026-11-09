@@ -1,0 +1,41 @@
+{
+  "schema": "crays.component.exact-owned-source-license-scope.v1",
+  "licenseExpression": "AGPL-3.0-only",
+  "copyrightHolder": "CRAYS AG",
+  "grantDateUTC": "2026-11-09",
+  "componentPath": "operations/vendure-native-provider-integration/preferred-source07-rev04",
+  "files": [
+    {
+      "path": "operations/vendure-native-provider-integration/preferred-source07-rev04/original-source.ts",
+      "bytes": 3574,
+      "sha256": "15c66ae20c6dc551e38a551be2aad8e042affc5c582c6cf860ddff5c6979106f",
+      "originalFilename": null,
+      "originalSourceField": "source",
+      "immutableArtifact": {
+        "bucket": "crays-acceptance-backups-391674093840-eu-central-2",
+        "key": "migration-work/20261108/business/vendure-original-publisher/evidence07-native-provider-flow.source-contract.rev04.json",
+        "versionId": "imfkyzbfFelBhvcRr_jOweQmJ3QLLwRq",
+        "wholeEnvelopeBytes": 15531,
+        "wholeEnvelopeSHA256": "9bf3e5675063af99f547399361067c150373b399121cb518de6068bfd9422ac5"
+      }
+    }
+  ],
+  "fileCount": 1,
+  "sourceBytes": 3574,
+  "authority": "Human confirmation AGPL-3.0-only / CRAYS AG for demonstrably own previously unlicensed CRAYS code; trusted Root-authored controller ownership previously bound for exact compiled93d6 source, now extended only to its actual3574-byte compiler input whose immutable version/hash matches original compilation metadata. No ownership inferred from filename or absent header.",
+  "recipientRights": "Hashes identify licensed originals; AGPL rights to run, modify and redistribute covered code and derivatives are unaffected.",
+  "excluded": [
+    "NestJS, Vendure, Express and imported dependency implementations and independently licensed material",
+    "Compiler/runtime implementation, application configuration, provider credentials, private assets and data, original contract envelope other fields",
+    "Unlisted independent source revisions and unrelated repository code, documentation and assets"
+  ],
+  "existingOriginalThirdPartyTermsOverridden": false,
+  "licenseText": {
+    "path": "operations/vendure-native-provider-integration/preferred-source07-rev04/LICENSE",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  "notOrLater": true,
+  "sourcePublicationDoesNotAuthorizeCRAYSInfrastructureOrPrivateCredentialUse": true,
+  "priorTenProgramGrantScopeUnchanged": true
+}
