@@ -39,6 +39,8 @@ The [architecture guide](docs/architecture.md) includes a component diagram and 
 
 We welcome focused improvements to integration behavior, accessible interfaces, tests and developer documentation. Useful starting areas include document access, company-scope handling, project webhooks, hospitality request validation and synthetic account-boundary tests.
 
+**Try a small local check:** the [Qlo projection-test walkthrough](docs/services/qlo.md#first-local-check-the-two-projection-tests) exercises two local modules with synthetic fixtures. Start there if you want a focused change without provider credentials; the [first contribution exercise](CONTRIBUTING.md#a-small-first-test) shows a concrete invalid-input case to add.
+
 Read [Contributing](CONTRIBUTING.md) to choose a component, find its real setup requirements and propose a reviewable change. There is no single install/start command for every application and provider in this repository.
 
 ## Repository guide
