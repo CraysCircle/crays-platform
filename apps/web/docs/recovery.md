@@ -28,3 +28,7 @@ The original capture includes its existing line endings. For the immutable captu
     git -C crays-platform -c core.autocrlf=false switch --detach shared-web-source-state24-20261108
 
 The application directory also carries a byte-preserving attributes rule on the current branch. Compare captured source blobs against source-capture.json. The [anonymous GitHub readback record](../provenance/github-readback.json) identifies the already verified source revisions.
+
+## Operational program source supplement
+
+The [scripts source guide](../scripts/README.md) and [operational helper manifest](../provenance/operational-helpers.json) preserve 90 referenced programs and two imported helpers. Both the historical baseline and the two different worktree files have their own tags. Four source files containing contact/realistic fixture literals remain under provenance review. The original source-package manifest is retained separately; it is not the application's install manifest. Current runtime compatibility, external datasets and remaining technical documents are not established by this source supplement. No preserved program was run.

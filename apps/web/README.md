@@ -58,3 +58,7 @@ The original package also references 94 distinct operational helper paths that a
 Original code, copyright and notice text is preserved. See [license status](LICENSE-STATUS.md) for the exact remaining questions.
 
 Original .orig/.rej/.tmp and disabled-route files remain in the captured tree as historical/WIP inputs. Original source and notice formatting is retained byte for byte; the source capture does not assert that every preserved WIP file is an active build input.
+
+## Operational source
+
+The [original scripts](scripts/README.md) retain 90 referenced operational programs and two imported helpers with exact baseline/worktree tags. Four referenced programs and remaining execution datasets/documents are still under review. The separate [helper manifest](provenance/operational-helpers.json) distinguishes their source history from the 2,045-file application capture and current AWS runtime.

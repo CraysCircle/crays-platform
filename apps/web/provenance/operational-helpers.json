@@ -1,0 +1,499 @@
+{
+  "schema": "crays.shared-web-operational-helpers.v1",
+  "captureDateUTC": "2026-11-09",
+  "state": "historical-baseline",
+  "historicalRepository": "CraysCircle/crays-gym",
+  "historicalCommit": "0dd822d7578dfffd55ff76eb8f37ae4c5f6f99ed",
+  "historicalSubtree": "crays-platform",
+  "baselineTag": "shared-web-helpers-baseline-20261109",
+  "workingStateTag": "shared-web-helpers-worktree-20261109",
+  "declaredOperationalHelperPaths": 94,
+  "publishedDeclaredOperationalHelpers": 90,
+  "publishedImportedHelpers": 2,
+  "files": [
+    {
+      "path": "scripts/audit-golden-operating-dataset.mjs",
+      "sha256": "13633b71a8568ce5c5bd5a8766324d1fb4047173c9bc78d511fde9f82eefcfa6",
+      "bytes": 5072
+    },
+    {
+      "path": "scripts/audit-route-role-authority.mjs",
+      "sha256": "3dcc76a923f001283eb88703852f173db8a2bd89182a6353f0f224ba31bc5237",
+      "bytes": 2134
+    },
+    {
+      "path": "scripts/benchmark-seed-inventory.mjs",
+      "sha256": "9d0a2d584cb163031c48eb3125894c9182fa272aca0e63096861d1b2ef9815c7",
+      "bytes": 861
+    },
+    {
+      "path": "scripts/check-db-config.mjs",
+      "sha256": "32c9d049d8bbd2520c14663e32f3b7a8caabff8688e40a4b95bd4ea014e97a03",
+      "bytes": 657
+    },
+    {
+      "path": "scripts/cleanup-benchmark-seed.mjs",
+      "sha256": "9cbf3eed27cc2b48ba6a21f4523246c0341fd906e7d608c1655f220e782a05f4",
+      "bytes": 3723
+    },
+    {
+      "path": "scripts/create-dev-prepared-offer-draft.mjs",
+      "sha256": "37455799d1d23447207a4eec6a1c12b3005f36d30a8a5c1a71d22886a8729c75",
+      "bytes": 7013
+    },
+    {
+      "path": "scripts/create-dev-property-case.mjs",
+      "sha256": "0d969c0e14fc1fa91aeb1cfc2dcf5295c271ed4a5890450f53aa4b92dbc73f0d",
+      "bytes": 5326
+    },
+    {
+      "path": "scripts/import-benchmark-seed.mjs",
+      "sha256": "9df1b9eb679b92980aed6f4b2396301293a35b2c1b27cbd799b450168f5249db",
+      "bytes": 3756
+    },
+    {
+      "path": "scripts/local-db-status.mjs",
+      "sha256": "53b0df7010f713d89149bb7e4a17684eed46bdef3a943d0233c9258cda4e6591",
+      "bytes": 1546
+    },
+    {
+      "path": "scripts/managed-db-status.mjs",
+      "sha256": "f040bd89c93d462114e60492b7d284e6c04f354e39c8a5574fbde8c511503520",
+      "bytes": 2607
+    },
+    {
+      "path": "scripts/mark-dev-property-case-handoff-ready.mjs",
+      "sha256": "d59e5ea8f0a934283321c6e809a9fe0ffb2cf7c0296b633c4ff7e4846c9b77cc",
+      "bytes": 7528
+    },
+    {
+      "path": "scripts/migrate-candidate-intent-persistence.mjs",
+      "sha256": "da320b6aa76e0660e7349c0663347e7f1df8c2b8df189c9ae5c78f2a4ea458e1",
+      "bytes": 2169
+    },
+    {
+      "path": "scripts/migrate-communication-persistence.mjs",
+      "sha256": "dccbac3618c75a34a89db818ee2d23cd73052e7e35bca8153e5e13c749baedae",
+      "bytes": 2166
+    },
+    {
+      "path": "scripts/migrate-core-command-persistence.mjs",
+      "sha256": "7d6098757040f00b4dc907ba30dd1736a99386e73b3ae4ab42da4cbac61ae9d2",
+      "bytes": 2165
+    },
+    {
+      "path": "scripts/migrate-core-domain.mjs",
+      "sha256": "723e5b1fce498e28556440b37ff11620eeb832e452e5aaf05802976963db4a23",
+      "bytes": 2152
+    },
+    {
+      "path": "scripts/migrate-core-identity.mjs",
+      "sha256": "07819df783ceb1d48bf9640061527352909844321f43d1addc0ebbc0a9eddc15",
+      "bytes": 2154
+    },
+    {
+      "path": "scripts/migrate-evidence-core.mjs",
+      "sha256": "ee54c056448db7485261d652a157e8bf675959c04554356383eeb430d9658a0c",
+      "bytes": 2154
+    },
+    {
+      "path": "scripts/migrate-workbench-saved-views.mjs",
+      "sha256": "5ba1073fe4432b103036a58ab10e179f208ca34dcf2630ecf43dd85a983fdaa8",
+      "bytes": 2207
+    },
+    {
+      "path": "scripts/prepare-dev-property-case-readiness.mjs",
+      "sha256": "e8e4b83a454737b59e5efae779bf7d82f9fff37c1205a12ef7ae5790babaa439",
+      "bytes": 10536
+    },
+    {
+      "path": "scripts/repair-location-pilot-realistic-data.mjs",
+      "sha256": "4a36ddfeedcbe1d180c9b087ff714126ca14e09bc40664088243516168834db5",
+      "bytes": 5822
+    },
+    {
+      "path": "scripts/seed-b2c-member-database-source-slice.mjs",
+      "sha256": "ad3081743fd7f1d0a4bb0c02dcfeb554fe1bb8cd58a9871e04568159180b49b1",
+      "bytes": 24906
+    },
+    {
+      "path": "scripts/seed-bank-package-workflow-source-slice.mjs",
+      "sha256": "a001674d96a646d690dd195d1b382c1d7e27af88de94e99a81ff52038586b2b0",
+      "bytes": 23124
+    },
+    {
+      "path": "scripts/seed-candidate-offer-workflow-source-slice.mjs",
+      "sha256": "9e5ebe61aed35dfa59942160f980105ada32f61369114a5e8866ce247cc446c8",
+      "bytes": 23714
+    },
+    {
+      "path": "scripts/seed-case-communication-core.mjs",
+      "sha256": "d6dafd660468563d8504a9d882d069a90a38d76363d6941ea056dd00105be8f7",
+      "bytes": 17766
+    },
+    {
+      "path": "scripts/seed-crm-workflow-source-slice.mjs",
+      "sha256": "610ed5645210b1363d0dda06b25d3e7e7ad64bf577eca5feeaaedb4de93bf359",
+      "bytes": 20429
+    },
+    {
+      "path": "scripts/seed-erp-finance-ledger-source-slice.mjs",
+      "sha256": "9ce845244b9c9b8b18c15b5e846b13babe09f8b5572b1fb1e650aa311e9fc19b",
+      "bytes": 25823
+    },
+    {
+      "path": "scripts/seed-evidence-packages-workflow-source-slice.mjs",
+      "sha256": "099d1cc71f03f7d8f3d3a261f65546250ee7d8b8b8ab883b2cbabe60ed1d03b3",
+      "bytes": 19308
+    },
+    {
+      "path": "scripts/seed-files-workflow-source-slice.mjs",
+      "sha256": "9322b2b38356bf6108cd885180f357726073ddc8bf4037b25221b0eaaeed6851",
+      "bytes": 27729
+    },
+    {
+      "path": "scripts/seed-financial-forecast-5y-source-slice.mjs",
+      "sha256": "126f6c25f85da4a9d72ef96489a86e871efb91bd7201d46ead8d79ca3265a995",
+      "bytes": 18321
+    },
+    {
+      "path": "scripts/seed-financial-model-workbook-source-slice.mjs",
+      "sha256": "4999cf23eaffe577159973da27720d4303be7bb31ffc000e2dd2eb287618e42f",
+      "bytes": 25425
+    },
+    {
+      "path": "scripts/seed-franchise-partner-decision-source-slice.mjs",
+      "sha256": "d5e1252cf12780842438af6fa6d76e360d8f82d97ca28cbea4d66d427fe5e120",
+      "bytes": 23781
+    },
+    {
+      "path": "scripts/seed-franchise-partner-performance-source-slice.mjs",
+      "sha256": "e8ac67ff669022de90d5f1441204272bd1d8a2e9e3f8fc5662e29224075b8c00",
+      "bytes": 22954
+    },
+    {
+      "path": "scripts/seed-golden-demo-tenant-v2.mjs",
+      "sha256": "9eab5793bc40c9d8f7a0d2d19b5b028bf52d689f09f713b2dbbb0da996e8ce32",
+      "bytes": 23257
+    },
+    {
+      "path": "scripts/seed-golden-test-tenant-source-maps.mjs",
+      "sha256": "eae9d8813125c126be19f9c569919d007fc7a42c5e64d36ef469ea3f7df9f566",
+      "bytes": 23047
+    },
+    {
+      "path": "scripts/seed-location-intelligence-source-slice.mjs",
+      "sha256": "9c0b946e6dcaf5716b359c61aaa33d3cb7e5f1378f1ced935ae92b34dde9f3e2",
+      "bytes": 25748
+    },
+    {
+      "path": "scripts/seed-member-app-source-snapshot.mjs",
+      "sha256": "1524c28489f37a9c2004989a405f39b66fa636ed6ce4c3df1f504dad2476dcc2",
+      "bytes": 10276
+    },
+    {
+      "path": "scripts/seed-member-payment-recovery-source-slice.mjs",
+      "sha256": "77faae75713836bc5b82534214515546bd1529dabab1dc20c35bb73a30c37c68",
+      "bytes": 18500
+    },
+    {
+      "path": "scripts/seed-opening-project-workflow-source-slice.mjs",
+      "sha256": "be2872f3938b2d31d7d93744ae49fe22af1dd8737244a727132910ea3ce8f0ee",
+      "bytes": 17926
+    },
+    {
+      "path": "scripts/seed-operational-realism-fixtures.mjs",
+      "sha256": "1b4b77b7dd880b00e3864aec661bbaaf6ae0048bbe00943409295cd7ed357dde",
+      "bytes": 33962
+    },
+    {
+      "path": "scripts/seed-real-estate-decision-source-slice.mjs",
+      "sha256": "d946ec66dd2f5a422281afbd0eb3f961d4bc09dd89f85145260468f4cdba9488",
+      "bytes": 20499
+    },
+    {
+      "path": "scripts/seed-role-metric-access-source-slice.mjs",
+      "sha256": "313ef29a6878e52aeb8e35581dbc6c0e065d7d559da74071faa743c1450bbf4e",
+      "bytes": 24851
+    },
+    {
+      "path": "scripts/seed-studio-operations-recovery-source-slice.mjs",
+      "sha256": "e45e8a98e07c348773c425c997d617b445420969b171c6b7cb93870135fe2ba6",
+      "bytes": 26094
+    },
+    {
+      "path": "scripts/seed-support-recovery-workflow-source-slice.mjs",
+      "sha256": "0d0faec28d6c57e45075ac9d0983631f12ec6ebe5a0d11907186080b1a4dc93d",
+      "bytes": 16434
+    },
+    {
+      "path": "scripts/sync-back-office-source-snapshot.mjs",
+      "sha256": "13c5819e0881d5e3e07b9ad5f269318c3ffd1decc98e3e51c96dba50ab3ad75a",
+      "bytes": 20122
+    },
+    {
+      "path": "scripts/transition-dev-prepared-offer-review.mjs",
+      "sha256": "4edbd5ba23ebdc3ded92bbad6a6837f4ee7847dd04799c0ce098d770bf194836",
+      "bytes": 5689
+    },
+    {
+      "path": "scripts/transition-dev-property-case-review.mjs",
+      "sha256": "3db3dfcefd5dd1ca0f555f522a21ff9534a5d9fa65c0d63251763a428c739c67",
+      "bytes": 7394
+    },
+    {
+      "path": "scripts/transition-dev-property-case.mjs",
+      "sha256": "8ea2d089d54af3e32abb887c505bcfe56bb96f43162b3fdfc6f57f2f4818a968",
+      "bytes": 5828
+    },
+    {
+      "path": "scripts/verify-benchmark-seed.mjs",
+      "sha256": "ef02f011691e531bd2e4c2fb66ea93f190e2fceba0c3be76f0ba56d4169a494f",
+      "bytes": 2767
+    },
+    {
+      "path": "scripts/verify-block104-108-product-ops.mjs",
+      "sha256": "4f8ac7bb3f087582722f33ad5e83b0b516679ecee74d8496c5151a0492653852",
+      "bytes": 2235
+    },
+    {
+      "path": "scripts/verify-block109-visual-a11y-system.mjs",
+      "sha256": "85366a5f207f42320a967ab1eacecb5392c9e82ab25106243710e6e0a37f63cb",
+      "bytes": 4840
+    },
+    {
+      "path": "scripts/verify-block110-controlled-beta-readiness.mjs",
+      "sha256": "9f1eed3fa0f6ceb81213d6cdbf7069c9c2cb50c9d889901071f92e2efd248b14",
+      "bytes": 2348
+    },
+    {
+      "path": "scripts/verify-block111-performance-initial-payloads.mjs",
+      "sha256": "b1c73e1272e1c37a5a8dbbd3b0ff595c11bab4861fddfce399face5e8b083110",
+      "bytes": 9095
+    },
+    {
+      "path": "scripts/verify-block73-trust-boundary.mjs",
+      "sha256": "6253aa1ffc81fef9a7369b5689985e92aafbd7a936ff93dc2c88e0cf2f9b593d",
+      "bytes": 2139
+    },
+    {
+      "path": "scripts/verify-block74-resource-contracts.mjs",
+      "sha256": "31d624c8c6d1320356a0410ca7982f53fd4d988af5e8f12473975e1d23594e6e",
+      "bytes": 3618
+    },
+    {
+      "path": "scripts/verify-block75-workspace-provider.mjs",
+      "sha256": "2ddd0cd893169fc5ccde8c5f8c917a0883a51efcdf28f8b19385f7c0af843712",
+      "bytes": 3683
+    },
+    {
+      "path": "scripts/verify-block76-shell-navigation.mjs",
+      "sha256": "c5f4245b1c6af694f22c0d24254c9d85f2352f2c43ce6aeffef4ed16acf25ec0",
+      "bytes": 1991
+    },
+    {
+      "path": "scripts/verify-block77-entity-table.mjs",
+      "sha256": "209699871cf1f53f5e6fd23786ec6a84454e9f3abdc628150a9a617042475137",
+      "bytes": 2396
+    },
+    {
+      "path": "scripts/verify-block78-field-mutation-system.mjs",
+      "sha256": "f3bb5f07c7e920989a80a2d69da66e6ea5aeba4354889ca9580dd954bd14931f",
+      "bytes": 2360
+    },
+    {
+      "path": "scripts/verify-block79-crm-collection-slice.mjs",
+      "sha256": "d491ac0d857cd98120d4703275bc7c3be50fc47e8de80c3093a4f93e9779cf62",
+      "bytes": 2101
+    },
+    {
+      "path": "scripts/verify-block80-crm-entity-workspace.mjs",
+      "sha256": "304b017a7cece731a35745300604152b79031466b8f790b5e537ae4e8fb9791a",
+      "bytes": 2073
+    },
+    {
+      "path": "scripts/verify-block81-project-work-item-slice.mjs",
+      "sha256": "ecf8d23c56f93d76a924ec0ed601b23f3bdf644ac07b42f1de35213d006caead",
+      "bytes": 2336
+    },
+    {
+      "path": "scripts/verify-block82-project-board.mjs",
+      "sha256": "3b499a69a0031ea057b7133095242fe68169208e16d6eb13dcb8da3416c9f6e4",
+      "bytes": 2298
+    },
+    {
+      "path": "scripts/verify-block83-public-publication.mjs",
+      "sha256": "064ee4eb869a55877687cbff5844c500e5fa815eb8e346a365d8d975d08065f6",
+      "bytes": 4138
+    },
+    {
+      "path": "scripts/verify-block84-portal-bridge.mjs",
+      "sha256": "e6930ae475c51e3709b2c5057159ee23d6e840a35e9b46f1703840ebd9d55cf3",
+      "bytes": 3929
+    },
+    {
+      "path": "scripts/verify-block85-candidate-portal.mjs",
+      "sha256": "4a2b342ffecc36021198b3d587a8cc1281f81de2e0a2cca0756f32e38f7b3615",
+      "bytes": 2405
+    },
+    {
+      "path": "scripts/verify-block86-stakeholder-portals.mjs",
+      "sha256": "f476109bfde4697262edc8f9c8480a2a72d4beaf9ac14ca8e4ec76cdb0102ab1",
+      "bytes": 3227
+    },
+    {
+      "path": "scripts/verify-block87-remaining-workspace-migration.mjs",
+      "sha256": "1b0b060b708d45dd504ff69f0f714251212e0b60cc6af90db0fc1480ea5345d2",
+      "bytes": 5282
+    },
+    {
+      "path": "scripts/verify-block88-client-boundary-hardening.mjs",
+      "sha256": "3d6695da2dbd3205cb9c090cf18068a466b9ce5254f5704122f63a373a05d6b5",
+      "bytes": 2839
+    },
+    {
+      "path": "scripts/verify-block89-quality-system.mjs",
+      "sha256": "d5d044c8200f5f695b88b40a424f1e177bb3f4ebae6405647155b9b92a132020",
+      "bytes": 12285
+    },
+    {
+      "path": "scripts/verify-block90-final-full-check.mjs",
+      "sha256": "1086f3ab2d4c284587cea8013deeaf7228c6b83d7a0bd7dd23bdc5848f134325",
+      "bytes": 9617
+    },
+    {
+      "path": "scripts/verify-block91-production-reliability.mjs",
+      "sha256": "3ca023857fff435c5bf2bc7f7e05d7c969c5defcb08a4bcc4d06ad740e701d06",
+      "bytes": 6620
+    },
+    {
+      "path": "scripts/verify-block92-source-discovery-registry.mjs",
+      "sha256": "3637e36d1b3a6e2c214eb6a05b3a4cbc71ea08a023ba6e66959402326273b7a3",
+      "bytes": 2447
+    },
+    {
+      "path": "scripts/verify-block93-identity-dedupe.mjs",
+      "sha256": "f2283a4789bd7298fce02100b637c13372734a096672f403af199cc1dc015658",
+      "bytes": 1987
+    },
+    {
+      "path": "scripts/verify-block94-crm-source-bound-readiness.mjs",
+      "sha256": "c159abb2e80750e0198d0d98658fc3598d745f293ba9ae78251e952ed15782e3",
+      "bytes": 1376
+    },
+    {
+      "path": "scripts/verify-block95-crm-daily-operating.mjs",
+      "sha256": "f2c04c5854b5c7c3086d491d2d18988bd1206485154efb2b29432466d41fd646",
+      "bytes": 1486
+    },
+    {
+      "path": "scripts/verify-block96-plane-discovery-readiness.mjs",
+      "sha256": "94a368dd9b90ddc5d5d5889d11daeeed965f86f316fc1235c28dc0e26a038fcf",
+      "bytes": 1389
+    },
+    {
+      "path": "scripts/verify-block97-103-operating-hardening.mjs",
+      "sha256": "9a3bdd9ae19ec404eaa8b12439070861d490a745cab363148fbde349748a1d5a",
+      "bytes": 2720
+    },
+    {
+      "path": "scripts/verify-candidate-intent-persistence-draft.mjs",
+      "sha256": "c1ab98e7f626a2e7e5c563bebcae9d196998b901ce59c1990e639b00ae099f71",
+      "bytes": 1525
+    },
+    {
+      "path": "scripts/verify-candidate-intent-persistence-schema.mjs",
+      "sha256": "7e9d02590b78d74aea69b24293633da0a49b6907969c2ee5426ef99ca2b0b044",
+      "bytes": 2535
+    },
+    {
+      "path": "scripts/verify-communication-persistence-draft.mjs",
+      "sha256": "ef54e3b63c42af30a93f7003bdcb1db3fc9b49cb69faa9deee3b3882754aacf0",
+      "bytes": 1595
+    },
+    {
+      "path": "scripts/verify-communication-persistence-schema.mjs",
+      "sha256": "9e7fa4096d69947acccd2c9d757c69a7c5d9a27aaa1f076d8a36a30a77be4a5d",
+      "bytes": 2591
+    },
+    {
+      "path": "scripts/verify-contract-routes.mjs",
+      "sha256": "d8ffd55689440a748d34bf46ec84221431f4810acaf5ef5942a245f5bc6acbe1",
+      "bytes": 266506
+    },
+    {
+      "path": "scripts/verify-core-command-persistence-draft.mjs",
+      "sha256": "7766d0604e5047c94e2791cddd8064958451b687788d7e7f84dc84544a582baa",
+      "bytes": 2346
+    },
+    {
+      "path": "scripts/verify-core-command-persistence-schema.mjs",
+      "sha256": "f35efd22ea1b75b0a680ea3116ec4d74a0997501d71f16f517812e461ef608e6",
+      "bytes": 2574
+    },
+    {
+      "path": "scripts/verify-core-domain-schema.mjs",
+      "sha256": "3aafd2806396770bdf9f25412e3d2f91ed84f7edc6419ad7ba1d5ea49e8e3048",
+      "bytes": 2700
+    },
+    {
+      "path": "scripts/verify-core-identity-schema.mjs",
+      "sha256": "b81dba6966010a99ad1ed30a4cc217f13cbdb39b1086106c685a1360e0a1ed48",
+      "bytes": 1706
+    },
+    {
+      "path": "scripts/verify-evidence-core-persistence-draft.mjs",
+      "sha256": "98a473aa9b281cfa3a6a13e57d192a7e547f9756a77c93cbd2d33d97fee7c0da",
+      "bytes": 1663
+    },
+    {
+      "path": "scripts/verify-operational-realism-fixtures.mjs",
+      "sha256": "8513d300cdb3733a8ad4fbdc7969849dbc1f640761b162939d9bb046052ec507",
+      "bytes": 3002
+    },
+    {
+      "path": "scripts/verify-prototype-closeout-v1.mjs",
+      "sha256": "5a2d0b3e86200d4ba1d862f760435fe6a250caca1b7e84706542e3e6581f18e5",
+      "bytes": 7213
+    },
+    {
+      "path": "scripts/verify-workbench-saved-views-schema.mjs",
+      "sha256": "06496188ef8d1dfca8d407a6727ae4879a213099951d880f78619816c9d592dd",
+      "bytes": 2568
+    },
+    {
+      "path": "scripts/env-loader.mjs",
+      "sha256": "17ea53beaa63a66ab8b05c4d7ceb47f0075e8d3cc34322edd54851f8a2725bd0",
+      "bytes": 1156
+    },
+    {
+      "path": "scripts/benchmark-seed-lib.mjs",
+      "sha256": "0801cb8c52111a57fb6d910e267a8adc87bb228f9d3f4830f20b143fc6e03529",
+      "bytes": 70221
+    }
+  ],
+  "sourcePackage": {
+    "path": "helper-source-package.json",
+    "sha256": "47f055af76818220e85746a255795eb005c62b71f8c7029befd71fee0e0c5162",
+    "role": "Original helper-source package for provenance only; does not replace apps/web/package.json."
+  },
+  "applicationPackageSHA256": "8334d99c71e4737d3c06f929c0b1ea502ee26b7a0d0902509ec25e1d83ca6906",
+  "packageRelationship": "Same 94 script paths and same script commands except build; original helper-source build/dependency declarations differ. Operational compatibility with captured application and current AWS runtime is unproven.",
+  "heldSourcePaths": [
+    "scripts/migrate-golden-operating-dataset-v1.mjs",
+    "scripts/repair-core-golden-test-data.mjs",
+    "scripts/seed-crm-golden-source-records.mjs",
+    "scripts/seed-erp-finance-workflow-source-slice.mjs"
+  ],
+  "heldReason": "Embedded name/contact/realistic business fixture literals require independent synthetic-data provenance review before public release. No actual private dataset is inferred, and no personal-data clearance is inferred from a seed/test label.",
+  "originalApplication2045FilesChanged": false,
+  "programsExecuted": false,
+  "privacyReview": {
+    "wholeSelectedSourceScanFindings": 1,
+    "adjudicatedMetricDescriptorFalsePositives": 1,
+    "confirmedCredentialFindings": 0,
+    "twoImportedHelpersByteIdenticalToAlreadyScannedGit": true,
+    "fullHistoricalRepositoryPrivacyReviewComplete": false
+  },
+  "applicationRightsAndCompleteRecoveryClosure": false
+}

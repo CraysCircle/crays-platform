@@ -795,5 +795,19 @@
   "runtimeVersionAndNoticesOpen": true,
   "earlierMixedHistoryAndOtherWipOpen": true,
   "applicationAndCompleteDependencyRightsOpen": true,
-  "fullRecoveryProven": false
+  "fullRecoveryProven": false,
+  "operationalHelpersRecovery": {
+    "capture": "operational-helpers.json",
+    "declaredProgramPaths": 94,
+    "publicDeclaredPrograms": 90,
+    "publicImportedHelpers": 2,
+    "heldPaths": [
+      "scripts/migrate-golden-operating-dataset-v1.mjs",
+      "scripts/repair-core-golden-test-data.mjs",
+      "scripts/seed-crm-golden-source-records.mjs",
+      "scripts/seed-erp-finance-workflow-source-slice.mjs"
+    ],
+    "currentRuntimeExecutionOrCompatibilityProven": false,
+    "remainingSourceDatasetsAndTechnicalDocsOpen": true
+  }
 }
