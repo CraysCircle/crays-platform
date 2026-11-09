@@ -213,6 +213,10 @@
     {
       "component": "original-messaging-nostr-transport50",
       "path": "operations/original-messaging-nostr-transport50/source-capture.json"
+    },
+    {
+      "component": "member-messaging-module50-install-revision04",
+      "path": "operations/member-messaging-module50/install-revision04/source-capture.json"
     }
   ]
 }

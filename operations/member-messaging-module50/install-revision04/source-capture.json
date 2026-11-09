@@ -1,0 +1,152 @@
+{
+  "schema": "crays.module50.rev04.source-capture.v1",
+  "sourceOnly": true,
+  "newOriginalSourceVersions": 6,
+  "newOriginalBytes": 87969,
+  "files": [
+    {
+      "path": "finish_module50_current_generation.candidate.py",
+      "originalSourceCase": "member-messaging-module50-install-source01",
+      "originalBasename": "finish_module50_current_generation.candidate.py",
+      "bytes": 32398,
+      "sha256": "9344e7f53dca64161c79f5bd9d95903955da3c1b01d8636c1a8f60e09d9adc5f",
+      "representation": "unchanged-original"
+    },
+    {
+      "path": "install_exact_current_module50.rev04.candidate.py",
+      "originalSourceCase": "member-messaging-module50-install-source01",
+      "originalBasename": "install_exact_current_module50.rev04.candidate.py",
+      "bytes": 24145,
+      "sha256": "f81417dfa39241f50913a8ff9263030a16b53a3983fd59e6d7059a9d2ece8064",
+      "representation": "unchanged-original"
+    },
+    {
+      "path": "module50_current39_ingress.candidate.py",
+      "originalSourceCase": "member-messaging-module50-install-source01",
+      "originalBasename": "module50_current39_ingress.candidate.py",
+      "bytes": 21641,
+      "sha256": "c1ace4d171888b61f3a66f3a270cbf4d717a049f633dfacc37e1d1d7f061d6f6",
+      "representation": "unchanged-original"
+    },
+    {
+      "path": "project_exact_club_registry50.rev02.candidate.py",
+      "originalSourceCase": "member-messaging-module50-install-source01",
+      "originalBasename": "project_exact_club_registry50.rev02.candidate.py",
+      "bytes": 1806,
+      "sha256": "f61bf01ccba4b8049dece2447433ab79c716ef410daa6e5a40c662ec8790c5d8",
+      "representation": "unchanged-original"
+    },
+    {
+      "path": "stage_immutable_module50.rev04.candidate.py",
+      "originalSourceCase": "member-messaging-module50-install-source01",
+      "originalBasename": "stage_immutable_module50.rev04.candidate.py",
+      "bytes": 6300,
+      "sha256": "4be950a779618adafe837c8af8a960954ac7bc8ec8dd9f0869d5e485b1c0d571",
+      "representation": "unchanged-original"
+    },
+    {
+      "path": "classify_exact_member50_runtime_addons.candidate.py",
+      "originalSourceCase": "member-messaging-module50-install-source01",
+      "originalBasename": "classify_exact_member50_runtime_addons.candidate.py",
+      "bytes": 1679,
+      "sha256": "bd79ab3b3c838fb9a4f523e39bd42af928544e4e6b6a247481d285c02f643d92",
+      "representation": "unchanged-original"
+    }
+  ],
+  "rootAuthority": {
+    "finalSourceManifest": {
+      "basename": "SOURCE_PINS_MODULE50_REV04.json",
+      "sha256": "8c83e2afda98c35afaee7253f24189bbf00f3ae3cfb9cbd6095022a0d1c5d40a"
+    },
+    "finalDeltaPeer": {
+      "basename": "INDEPENDENT_MODULE50_REV04_DELTA_REVIEW.json",
+      "sha256": "f900ff7c0508befbd806649434c4a17e27b5844ef2a9935a446213031a45b5ca"
+    },
+    "reusedUnchangedPeer": {
+      "basename": "INDEPENDENT_MODULE50_INSTALL_REV03_REVIEW.json",
+      "sha256": "373c0ecb09a25860934a3376d1c6828b0245207bfb380ac3c9a9560411c09ff6"
+    },
+    "classifierAndInheritedHelperManifest": {
+      "basename": "SOURCE_PINS_MODULE50_INSTALL.json",
+      "sha256": "0f69f074b83a746ce7e83f6c2faa321be085421cd01f77fa08fbbf16352d267e"
+    }
+  },
+  "existingExactPublicHelpers": [
+    {
+      "requiredBasename": "classify_exact_member46_runtime_addons.candidate.py",
+      "repository": "CraysWorld/crays-platform",
+      "commit": "970bc5b219b81e62cc8279074151ea703ce68cb4",
+      "path": "operations/member-original-context46/install/classify_exact_member46_runtime_addons.candidate.py",
+      "bytes": 1679,
+      "sha256": "3d306f4d65962a9fa606e7a22684ae7439e2fef3e3a8952b502bc04c34a60938",
+      "url": "https://github.com/CraysWorld/crays-platform/blob/970bc5b219b81e62cc8279074151ea703ce68cb4/operations/member-original-context46/install/classify_exact_member46_runtime_addons.candidate.py",
+      "restore": "Copy exact immutable file unchanged; verify bytes and SHA256 before assigning requiredBasename. No textual edits."
+    },
+    {
+      "requiredBasename": "derive_exact_member46_anchor_generation.candidate.py",
+      "repository": "CraysWorld/crays-platform",
+      "commit": "970bc5b219b81e62cc8279074151ea703ce68cb4",
+      "path": "operations/member-original-context46/install/derive_exact_member46_anchor_generation.candidate.py",
+      "bytes": 6363,
+      "sha256": "6b1f876a93b6bcd1dc30402fa707689054f22ede413aa51222fad79d7a4a99b5",
+      "url": "https://github.com/CraysWorld/crays-platform/blob/970bc5b219b81e62cc8279074151ea703ce68cb4/operations/member-original-context46/install/derive_exact_member46_anchor_generation.candidate.py",
+      "restore": "Copy exact immutable file unchanged; verify bytes and SHA256 before assigning requiredBasename. No textual edits."
+    },
+    {
+      "requiredBasename": "member46_lifecycle.candidate.py",
+      "repository": "CraysWorld/crays-platform",
+      "commit": "970bc5b219b81e62cc8279074151ea703ce68cb4",
+      "path": "operations/member-original-context46/install/member46_lifecycle.candidate.py",
+      "bytes": 32285,
+      "sha256": "a68b37a8f4436e52a2311ffe96f7744ab052da32099b76fbe337a9535881c32c",
+      "url": "https://github.com/CraysWorld/crays-platform/blob/970bc5b219b81e62cc8279074151ea703ce68cb4/operations/member-original-context46/install/member46_lifecycle.candidate.py",
+      "restore": "Copy exact immutable file unchanged; verify bytes and SHA256 before assigning requiredBasename. No textual edits."
+    },
+    {
+      "requiredBasename": "qualified_container_physical.py",
+      "repository": "CraysWorld/crays-platform",
+      "commit": "970bc5b219b81e62cc8279074151ea703ce68cb4",
+      "path": "operations/member-original-context46/ingress/qualified_container_physical.py",
+      "bytes": 23361,
+      "sha256": "63b137e94a98cebdfc456a83efabd907f64b4e34ac39fe59fbf364553f3b0bdb",
+      "url": "https://github.com/CraysWorld/crays-platform/blob/970bc5b219b81e62cc8279074151ea703ce68cb4/operations/member-original-context46/ingress/qualified_container_physical.py",
+      "restore": "Copy exact immutable file unchanged; verify bytes and SHA256 before assigning requiredBasename. No textual edits."
+    },
+    {
+      "requiredBasename": "project_exact_seven_module50_ingress.candidate.py",
+      "repository": "CraysWorld/crays-platform",
+      "commit": "970bc5b219b81e62cc8279074151ea703ce68cb4",
+      "path": "operations/member-original-context46/ingress/project_exact_seven_member46_ingress.candidate.py",
+      "bytes": 2202,
+      "sha256": "78c4b4a55c53c743b4db880a7d1bac46b7bfa75588242aaba876152875ccdb94",
+      "url": "https://github.com/CraysWorld/crays-platform/blob/970bc5b219b81e62cc8279074151ea703ce68cb4/operations/member-original-context46/ingress/project_exact_seven_member46_ingress.candidate.py",
+      "restore": "Copy exact immutable file unchanged; verify bytes and SHA256 before assigning requiredBasename. No textual edits."
+    },
+    {
+      "requiredBasename": "project_exact_member46_recovery_payloads.candidate.py",
+      "repository": "CraysWorld/crays-platform",
+      "commit": "eaa12737e9e1e1064e04108daabe92ee9f602991",
+      "path": "operations/member-original-context46/recovery/project_exact_member46_recovery_payloads.candidate.py",
+      "bytes": 5963,
+      "sha256": "ebcc5a05769b85d05f8e8a7873436e1152e3e68292b416ea0dc0a98596d31a9d",
+      "restore": "Copy exact immutable file unchanged; verify bytes and SHA256 before assigning requiredBasename. No textual edits.",
+      "url": "https://github.com/CraysWorld/crays-platform/blob/eaa12737e9e1e1064e04108daabe92ee9f602991/operations/member-original-context46/recovery/project_exact_member46_recovery_payloads.candidate.py"
+    }
+  ],
+  "productSourcesAlreadyPublished": {
+    "commit": "0246be6a",
+    "memberTransport": "services/member-club/source50/member-graphql-transport.ts",
+    "listener": "operations/original-messaging-nostr-transport50/listener.original-messaging-nostr50.candidate.mjs",
+    "listenerSHA256": "284044a37f516d2fd9fbe3004773b40100bf7c6711c452936bf364f0395c3db6"
+  },
+  "preservedContext": "Original source version50 stages the exact retained48 history assets and one new read-only history mount; prior listener and registry switches remain narrow. Original run-time paths, hashes, guard logic and dependency references remain unchanged.",
+  "excluded": [
+    "Private approval/bound-input JSON and runtime inputs",
+    "Superseded stage/install revisions01/02/03",
+    "Historical source/dependency re-inventory",
+    "Product source execution, build, install, ingress and runtime mutations"
+  ],
+  "licensing": "No new license grant; existing file-specific ownership and upstream terms remain authoritative. No third-party implementation is relicensed by this source capture.",
+  "completeRuntimeRecoveryClaim": false,
+  "customerAcceptanceClaim": false
+}
