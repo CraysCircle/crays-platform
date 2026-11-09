@@ -1,0 +1,195 @@
+{
+  "schema": "crays.purpose45.own-corrective-deltas.v1",
+  "state": "OWN_DELTA_SOURCE_SNAPSHOT_SQL_NOT_ACTIVATED",
+  "publicOriginalRevisions": 2,
+  "originalPatchBytes": 9756,
+  "publicRawPatches": 1,
+  "protectedPatchTemplates": 1,
+  "protectedOccurrences": 5,
+  "slot": {
+    "id": "account-slot-01",
+    "marker": "__CRAYS_PROTECTED_ACCOUNT_SLOT_01__",
+    "sameActualBindingAndMarkerAsPurpose52": true,
+    "valueAndPerLiteralFingerprintExcluded": true
+  },
+  "files": [
+    {
+      "originalName": "SQL52_EXACT_ORIGINAL45_DELTA.patch",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/nextcloud-access-purpose52-source01/SQL52_EXACT_ORIGINAL45_DELTA.patch",
+      "originalBytes": 7843,
+      "originalSHA256": "5d40b5a9036964e34708dda76ac74a9096ec5305c2e3ba854e90783f5ae596be",
+      "exportedName": "SQL52_EXACT_ORIGINAL45_DELTA.patch.template",
+      "exportedBytes": 7698,
+      "exportedSHA256": "49b80aab0325a450db5c0116164f57ea4d17f76c0f3e4aaa21e9279611dae5b5",
+      "representation": "SOURCE_TEMPLATE_NOT_RUNNABLE_INPUT",
+      "protectedSpans": [
+        {
+          "slot": "account-slot-01",
+          "originalStartByte": 3622,
+          "originalEndByteExclusive": 3686,
+          "originalLine": 21,
+          "templateStartByte": 3622,
+          "templateEndByteExclusive": 3657
+        },
+        {
+          "slot": "account-slot-01",
+          "originalStartByte": 4260,
+          "originalEndByteExclusive": 4324,
+          "originalLine": 22,
+          "templateStartByte": 4231,
+          "templateEndByteExclusive": 4266
+        },
+        {
+          "slot": "account-slot-01",
+          "originalStartByte": 5243,
+          "originalEndByteExclusive": 5307,
+          "originalLine": 23,
+          "templateStartByte": 5185,
+          "templateEndByteExclusive": 5220
+        },
+        {
+          "slot": "account-slot-01",
+          "originalStartByte": 6088,
+          "originalEndByteExclusive": 6152,
+          "originalLine": 24,
+          "templateStartByte": 6001,
+          "templateEndByteExclusive": 6036
+        },
+        {
+          "slot": "account-slot-01",
+          "originalStartByte": 7015,
+          "originalEndByteExclusive": 7079,
+          "originalLine": 25,
+          "templateStartByte": 6899,
+          "templateEndByteExclusive": 6934
+        }
+      ],
+      "wholeFileIdentityOutsideSelectedSpans": true,
+      "privateGithubOriginal": {
+        "repository": "CraysWorld/crays-gym",
+        "repositoryId": 1280582408,
+        "commit": "20888ce47eff4f5b69abcd3ea1dfe255a1631ef8",
+        "path": "protected-source-archives/nextcloud-purpose45-history/source/SQL52_EXACT_ORIGINAL45_DELTA.patch",
+        "url": "https://github.com/CraysWorld/crays-gym/blob/20888ce47eff4f5b69abcd3ea1dfe255a1631ef8/protected-source-archives/nextcloud-purpose45-history/source/SQL52_EXACT_ORIGINAL45_DELTA.patch"
+      }
+    },
+    {
+      "originalName": "POOL52_EXACT45_PIN_DELTA.patch",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/nextcloud-access-purpose52-source01/POOL52_EXACT45_PIN_DELTA.patch",
+      "originalBytes": 1913,
+      "originalSHA256": "da3f25f7d1d35f89fb706402fa87977b20d011dbf31d5d34ca3dfcbce5dcf1b9",
+      "exportedName": "POOL52_EXACT45_PIN_DELTA.patch",
+      "exportedBytes": 1913,
+      "exportedSHA256": "da3f25f7d1d35f89fb706402fa87977b20d011dbf31d5d34ca3dfcbce5dcf1b9",
+      "representation": "UNCHANGED_ORIGINAL",
+      "protectedSpans": [],
+      "wholeFileIdentityOutsideSelectedSpans": true,
+      "privateGithubOriginal": {
+        "repository": "CraysWorld/crays-gym",
+        "repositoryId": 1280582408,
+        "commit": "20888ce47eff4f5b69abcd3ea1dfe255a1631ef8",
+        "path": "protected-source-archives/nextcloud-purpose45-history/source/POOL52_EXACT45_PIN_DELTA.patch",
+        "url": "https://github.com/CraysWorld/crays-gym/blob/20888ce47eff4f5b69abcd3ea1dfe255a1631ef8/protected-source-archives/nextcloud-purpose45-history/source/POOL52_EXACT45_PIN_DELTA.patch"
+      }
+    }
+  ],
+  "privateOriginalCustody": {
+    "status": "ACTUAL_AUTHENTICATED_FOUR_ORIGINAL_FULL_BYTE_READBACK_AND_BRANCH_PASS",
+    "repository": "CraysWorld/crays-gym",
+    "repositoryId": 1280582408,
+    "private": true,
+    "branch": "codex/nextcloud-purpose45-private-source-20261109",
+    "commit": "20888ce47eff4f5b69abcd3ea1dfe255a1631ef8",
+    "sourcePrefix": "protected-source-archives/nextcloud-purpose45-history/source",
+    "allFourOriginalBytesUnchanged": true,
+    "masterUnchanged": true,
+    "privateRepositoryAccessRequired": true,
+    "serverOrCompleteApplicationRestoreClaim": false
+  },
+  "allFourPrivateOriginals": [
+    {
+      "originalName": "nextcloud-access-purpose45.proposal.sql",
+      "originalBytes": 38967,
+      "originalSHA256": "d540f3d9830a63202ea56c0a8ba0f368e668313be633d12e65d1f2c301a85db5",
+      "privateGithubOriginal": {
+        "repository": "CraysWorld/crays-gym",
+        "repositoryId": 1280582408,
+        "commit": "20888ce47eff4f5b69abcd3ea1dfe255a1631ef8",
+        "path": "protected-source-archives/nextcloud-purpose45-history/source/nextcloud-access-purpose45.proposal.sql",
+        "url": "https://github.com/CraysWorld/crays-gym/blob/20888ce47eff4f5b69abcd3ea1dfe255a1631ef8/protected-source-archives/nextcloud-purpose45-history/source/nextcloud-access-purpose45.proposal.sql"
+      }
+    },
+    {
+      "originalName": "nextcloud-access-purpose-pool45.ts",
+      "originalBytes": 5689,
+      "originalSHA256": "9dbf53d14a74565638866fc03413091b9ec4333a753db754b493292db1631ff8",
+      "privateGithubOriginal": {
+        "repository": "CraysWorld/crays-gym",
+        "repositoryId": 1280582408,
+        "commit": "20888ce47eff4f5b69abcd3ea1dfe255a1631ef8",
+        "path": "protected-source-archives/nextcloud-purpose45-history/source/nextcloud-access-purpose-pool45.ts",
+        "url": "https://github.com/CraysWorld/crays-gym/blob/20888ce47eff4f5b69abcd3ea1dfe255a1631ef8/protected-source-archives/nextcloud-purpose45-history/source/nextcloud-access-purpose-pool45.ts"
+      }
+    },
+    {
+      "originalName": "SQL52_EXACT_ORIGINAL45_DELTA.patch",
+      "originalBytes": 7843,
+      "originalSHA256": "5d40b5a9036964e34708dda76ac74a9096ec5305c2e3ba854e90783f5ae596be",
+      "privateGithubOriginal": {
+        "repository": "CraysWorld/crays-gym",
+        "repositoryId": 1280582408,
+        "commit": "20888ce47eff4f5b69abcd3ea1dfe255a1631ef8",
+        "path": "protected-source-archives/nextcloud-purpose45-history/source/SQL52_EXACT_ORIGINAL45_DELTA.patch",
+        "url": "https://github.com/CraysWorld/crays-gym/blob/20888ce47eff4f5b69abcd3ea1dfe255a1631ef8/protected-source-archives/nextcloud-purpose45-history/source/SQL52_EXACT_ORIGINAL45_DELTA.patch"
+      }
+    },
+    {
+      "originalName": "POOL52_EXACT45_PIN_DELTA.patch",
+      "originalBytes": 1913,
+      "originalSHA256": "da3f25f7d1d35f89fb706402fa87977b20d011dbf31d5d34ca3dfcbce5dcf1b9",
+      "privateGithubOriginal": {
+        "repository": "CraysWorld/crays-gym",
+        "repositoryId": 1280582408,
+        "commit": "20888ce47eff4f5b69abcd3ea1dfe255a1631ef8",
+        "path": "protected-source-archives/nextcloud-purpose45-history/source/POOL52_EXACT45_PIN_DELTA.patch",
+        "url": "https://github.com/CraysWorld/crays-gym/blob/20888ce47eff4f5b69abcd3ea1dfe255a1631ef8/protected-source-archives/nextcloud-purpose45-history/source/POOL52_EXACT45_PIN_DELTA.patch"
+      }
+    }
+  ],
+  "copyrightAuthority": {
+    "trustedRootSourceAuthorStatement": "Exactly these two 45-to-52 corrective patches were created here by Codex for CRAYS as its own deltas without embedded third-party implementation.",
+    "humanDecision": "Existing AGPL-3.0-only / CRAYS AG instruction for demonstrably own code",
+    "notCopyrightEvidence": "Database permission reviews and custody do not establish authorship."
+  },
+  "privateOnlyExcludedOriginal45Sources": {
+    "reason": "Root cannot establish authorship of the two original45 SQL/TypeScript files. They remain privately preserved, are not exported or licensed by this delta grant.",
+    "originalNames": [
+      "nextcloud-access-purpose45.proposal.sql",
+      "nextcloud-access-purpose-pool45.ts"
+    ]
+  },
+  "lineage": {
+    "original45ManifestSHA256": "0db6421bed659dfc5243113c6888a7551a4dff05f76ed44745888721a45c907b",
+    "original45ReviewSHA256": "e4665dfa45b61c2ad60bdf7f5ba7c88f9eec7726325b95a610ecf53b1535400f",
+    "fullFourPrivacyDeltaReviewSHA256": "34beaeec17382d6ee707b31291972d9bddce7bae59f43674214ff7f0fd435336",
+    "rawDeltasReproduceOriginal52SQLAndPool": "Existing independent review verified complete raw patches in RAM; no original SQL execution.",
+    "corrected45IntermediateAlias": {
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/nextcloud-access-purpose45-independent-review01/nextcloud-access-purpose45.rowlock-review-proposal.sql",
+      "sha256": "ae9d5e56650ae61d7a19fee3e048d9bf77708389ee50db645b8c9e83240fd175",
+      "alreadyPreservedAs": "nextcloud-access-purpose52.corrected.sql",
+      "publicSourceTag": "nextcloud-purpose52-source-agpl-20261109",
+      "publicProtectedPath": "operations/nextcloud-access-purpose52/nextcloud-access-purpose52.corrected.sql.template",
+      "privateOriginalRepository": "CraysWorld/crays-gym",
+      "privateOriginalCommit": "6d778b44d8da1822e283fe1ec32c6ef7da29e4ba",
+      "privateOriginalPath": "protected-source-archives/nextcloud-purpose52/source/nextcloud-access-purpose52.corrected.sql",
+      "duplicateBodyAdded": false
+    }
+  },
+  "reconstruction": "For authorized private recovery use the exact retained original, or replace every declared opaque slot using the privately retained exact binding; require all original byte lengths and whole-file SHA256s. Never guess a binding. Protected SQL/delta views are not runnable/deployment/replay inputs.",
+  "existingRoundtripReviewSha256": "73e63bc56908a5930c2dbdbd9405f99f6cd191179e320a635704dd642ff302d8",
+  "sourcePrivacyReviewSha256": "34beaeec17382d6ee707b31291972d9bddce7bae59f43674214ff7f0fd435336",
+  "licensing": "Exact own two corrective patch revisions and protected representation only; see LICENSING.md and license-scope.json. No grant for original45 source files or imported implementation.",
+  "SQLOrSSOActivated": false,
+  "originalSourceExecution": false,
+  "wholeRecoveryOrFunctionalityAcceptanceClaim": false
+}

@@ -269,6 +269,10 @@
     {
       "component": "original30-grantee-preparation-revision02",
       "path": "operations/neon-rds/original30-grantee-preparation-revision02/source-capture.json"
+    },
+    {
+      "component": "nextcloud-purpose45-own-corrective-deltas",
+      "path": "operations/nextcloud-access-purpose45-history/source-capture.json"
     }
   ]
 }

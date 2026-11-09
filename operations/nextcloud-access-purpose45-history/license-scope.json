@@ -1,0 +1,35 @@
+{
+  "license": "AGPL-3.0-only",
+  "copyrightHolder": "CRAYS AG",
+  "authority": "Existing human own-code instruction plus trusted Root exact-two-delta Codex-for-CRAYS source-author attestation, no embedded third-party implementation",
+  "scopeMeaning": "Own corrective changes only, not predecessor lines reproduced as unchanged patch context",
+  "originalPatchCount": 2,
+  "originalPatchBytes": 9756,
+  "covered": [
+    {
+      "originalName": "SQL52_EXACT_ORIGINAL45_DELTA.patch",
+      "originalBytes": 7843,
+      "originalSHA256": "5d40b5a9036964e34708dda76ac74a9096ec5305c2e3ba854e90783f5ae596be",
+      "exportedName": "SQL52_EXACT_ORIGINAL45_DELTA.patch.template",
+      "exportedBytes": 7698,
+      "exportedSHA256": "49b80aab0325a450db5c0116164f57ea4d17f76c0f3e4aaa21e9279611dae5b5",
+      "representation": "SOURCE_TEMPLATE_NOT_RUNNABLE_INPUT"
+    },
+    {
+      "originalName": "POOL52_EXACT45_PIN_DELTA.patch",
+      "originalBytes": 1913,
+      "originalSHA256": "da3f25f7d1d35f89fb706402fa87977b20d011dbf31d5d34ca3dfcbce5dcf1b9",
+      "exportedName": "POOL52_EXACT45_PIN_DELTA.patch",
+      "exportedBytes": 1913,
+      "exportedSHA256": "da3f25f7d1d35f89fb706402fa87977b20d011dbf31d5d34ca3dfcbce5dcf1b9",
+      "representation": "UNCHANGED_ORIGINAL"
+    }
+  ],
+  "excluded": [
+    "original Purpose45 SQL and TypeScript predecessor modules, including unchanged patch-context material",
+    "private account binding values and database content",
+    "imported or external product implementations",
+    "unlisted revisions or repository files"
+  ],
+  "recipientDerivativeRightsUnaffected": true
+}

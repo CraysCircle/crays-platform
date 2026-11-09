@@ -1,0 +1,11 @@
+--- pool45
++++ pool52
+@@ -3,7 +3,7 @@
+ import {createHash} from "node:crypto";
+ import type {NextcloudAccessPurposeClient,Claim,DispatchInput} from "./nextcloud-access-dispatch45";
+ import type {NextcloudAccessAcknowledgement,NextcloudGroupObservation} from "./nextcloud-collaboration-access-adapter";
+-const FUNCTION_PINS={"authorize_mutation_v1": "3d04ae837202b9a9965d45b1d045e130520730517a064414ed30627de0d43e80", "claim_v1": "a9605f0318946f18a12c2be3bffa11f40017cab0808b910808bbb3db130aa2c8", "mark_unknown_v1": "0b681eacebef21b84922a222a436ea81c40d9a300bd307391d043c5ceda04a20", "observe_v1": "f49a853954616e8f08735645a7dd8313657ee8b97fa71d2786998773948592b9", "resolve45": "935bdfe58063d7e03688f58ae18b16ed361302ab6b0fc403a56f55be1c285926"} as const;
++const FUNCTION_PINS={"authorize_mutation_v1": "3d04ae837202b9a9965d45b1d045e130520730517a064414ed30627de0d43e80", "claim_v1": "a9605f0318946f18a12c2be3bffa11f40017cab0808b910808bbb3db130aa2c8", "mark_unknown_v1": "0b681eacebef21b84922a222a436ea81c40d9a300bd307391d043c5ceda04a20", "observe_v1": "46dec4f0dbc889f9339faa5a4361029db033babf2c9f93ff064299e1a7374454", "resolve45": "935bdfe58063d7e03688f58ae18b16ed361302ab6b0fc403a56f55be1c285926"} as const;
+ const ROLE="crays_nextcloud_access_rpc_runtime_v1",OWNER="crays_nextcloud_access_rpc_owner_v1";
+ const SQL={claim:"select crays_nextcloud_access_rpc.claim_v1($1::text,$2::text,$3::bigint) as payload",authorize:"select crays_nextcloud_access_rpc.authorize_mutation_v1($1::text,$2::uuid) as payload",unknown:"select crays_nextcloud_access_rpc.mark_unknown_v1($1::text,$2::uuid) as payload",observe:"select crays_nextcloud_access_rpc.observe_v1($1::text,$2::uuid,$3::jsonb,$4::jsonb) as payload"} as const;
+ const QUALIFY=`select current_user as role,current_database() as database_name,r.rolcanlogin,r.rolinherit,r.rolsuper,r.rolbypassrls,r.rolcreatedb,r.rolcreaterole,r.rolreplication,r.rolconnlimit,
