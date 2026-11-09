@@ -253,6 +253,10 @@
     {
       "component": "member-document-provider51-forward-revision02",
       "path": "operations/member-document-provider51/forward-revision02/source-capture.json"
+    },
+    {
+      "component": "member-document-provider51-historical-revisions01-03",
+      "path": "operations/member-document-provider51/historical-revisions01-03/source-capture.json"
     }
   ]
 }

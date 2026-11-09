@@ -1,0 +1,79 @@
+{
+  "schema": "crays.component.exact-owned-source-license-scope.v1",
+  "licenseExpression": "AGPL-3.0-only",
+  "copyrightHolder": "CRAYS AG",
+  "grantDateUTC": "2026-11-09",
+  "componentPath": "operations/member-document-provider51/historical-revisions01-03",
+  "files": [
+    {
+      "path": "operations/member-document-provider51/historical-revisions01-03/recover_same_created_member51_family.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/recover_same_created_member51_family.candidate.py",
+      "bytes": 13211,
+      "sha256": "b1f40c7b5ffe22614301ab5b9cb0b34bf77442ffb22bcf49273527eb8cedb5c5",
+      "RootReportedHashPrefix": "b1f40"
+    },
+    {
+      "path": "operations/member-document-provider51/historical-revisions01-03/recover_same_created_member51_family.rev02.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/recover_same_created_member51_family.rev02.candidate.py",
+      "bytes": 13235,
+      "sha256": "b3ad791a5bf936b20c88033017998acf28a3e35e393a54c68c41e5d4fa6942cc",
+      "RootReportedHashPrefix": "b3ad79"
+    },
+    {
+      "path": "operations/member-document-provider51/historical-revisions01-03/recover_same_created_member51_family.rev03.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/recover_same_created_member51_family.rev03.candidate.py",
+      "bytes": 13819,
+      "sha256": "b5afaa77c9de580e9b8cd2cdb2ab22584db4415abfa478de58c9b7359839b845",
+      "RootReportedHashPrefix": "b5afaa"
+    },
+    {
+      "path": "operations/member-document-provider51/historical-revisions01-03/finish_current_member51_generation.rev03.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/finish_current_member51_generation.rev03.candidate.py",
+      "bytes": 32647,
+      "sha256": "76454578ee0a8b31e541a0c9fe9463fc7e28901551d210beff367c1cd56e15c0",
+      "RootReportedHashPrefix": "764545"
+    },
+    {
+      "path": "operations/member-document-provider51/historical-revisions01-03/verify_destroyed_member51_namespace.candidate.py",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/verify_destroyed_member51_namespace.candidate.py",
+      "bytes": 2274,
+      "sha256": "2f926d725fd2653e3dc34058718dc9fad690f3252bebac9ccec04b5d6bba4b9d",
+      "RootReportedHashPrefix": "2f926"
+    }
+  ],
+  "fileCount": 5,
+  "sourceBytes": 75186,
+  "identifiedLargeEmbeddedOwnCodeCandidates": [],
+  "rightsAuthority": {
+    "humanDecision": "AGPL-3.0-only / CRAYS AG for demonstrably own previously unlicensed CRAYS code",
+    "sourceAuthorBasis": "Trusted Root explicitly identifies these historical Python programs as own code created by Codex for the authorized CRAYS migration, under the same direct own-code rule. No ownership inferred from filenames, custody or absent headers.",
+    "exactSourcePinReadback": {
+      "path": "/srv/crays/migration-work/20261108/github/member51-forward-historical-pins01/EXACT_FIVE_SOURCE_PINS_ACTUAL.json",
+      "sha256": "a40a6bdb2de85889172826c8a7828aea80529dec928a7732bad6fbfd5f574708",
+      "fullHashesComputedFromExactAuthorizedOriginals": true,
+      "RootReportedPrefixesMatched": true,
+      "RootAuthoredCRAYSAssignmentExplicit": true
+    },
+    "evidenceLimit": "The exact five full hashes are from the pinned authorized readback and match Root-reported prefixes. They are not asserted to be extra rows in the current three-file Forward02 Root manifest."
+  },
+  "recipientRights": "Hashes identify the licensed originals; recipients AGPL rights to run, modify and redistribute covered code and derivatives are unaffected.",
+  "excluded": [
+    "Four current Forward02/namespace-lifetime/rev04-finisher/ingress programs already separately scoped",
+    "The initial five Lifecycle51 programs, Docs selector, Build51 programs and all other unchanged helper/application implementations",
+    "Python, Linux, Docker, systemd, Go, SDK, Node.js and other imported/invoked upstream implementations",
+    "Private current-family snapshots, admission/capture/preimage inputs, keys, credentials, environment contents, registry bodies, Caddy configuration, actuals, logs and runtime/customer data",
+    "Documentation, assets, unlisted independent code and unrelated future revisions",
+    "Third-party material with independently applicable terms; original terms and notices remain unchanged"
+  ],
+  "originalSourceBodiesAndRevisionLabelsModified": false,
+  "priorCurrentFourGrantChanged": false,
+  "originalThirdPartyTermsOverridden": false,
+  "licenseText": {
+    "path": "operations/member-document-provider51/historical-revisions01-03/LICENSE",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  "notOrLater": true,
+  "sourcePublicationDoesNotAuthorizeCRAYSInfrastructureOrPrivateCredentialUse": true,
+  "historicalExecutionOrCustomerAcceptanceInferred": false
+}

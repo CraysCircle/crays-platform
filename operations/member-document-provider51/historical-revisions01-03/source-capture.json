@@ -1,0 +1,57 @@
+{
+  "schema": "crays.member51.historical-source-revisions.v1",
+  "sourceOnlyHistoricalArchive": true,
+  "files": [
+    {
+      "path": "recover_same_created_member51_family.candidate.py",
+      "originalPath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/recover_same_created_member51_family.candidate.py",
+      "restoreTarget": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/recover_same_created_member51_family.candidate.py",
+      "bytes": 13211,
+      "sha256": "b1f40c7b5ffe22614301ab5b9cb0b34bf77442ffb22bcf49273527eb8cedb5c5",
+      "mode": "100644"
+    },
+    {
+      "path": "recover_same_created_member51_family.rev02.candidate.py",
+      "originalPath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/recover_same_created_member51_family.rev02.candidate.py",
+      "restoreTarget": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/recover_same_created_member51_family.rev02.candidate.py",
+      "bytes": 13235,
+      "sha256": "b3ad791a5bf936b20c88033017998acf28a3e35e393a54c68c41e5d4fa6942cc",
+      "mode": "100644"
+    },
+    {
+      "path": "recover_same_created_member51_family.rev03.candidate.py",
+      "originalPath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/recover_same_created_member51_family.rev03.candidate.py",
+      "restoreTarget": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/recover_same_created_member51_family.rev03.candidate.py",
+      "bytes": 13819,
+      "sha256": "b5afaa77c9de580e9b8cd2cdb2ab22584db4415abfa478de58c9b7359839b845",
+      "mode": "100644"
+    },
+    {
+      "path": "finish_current_member51_generation.rev03.candidate.py",
+      "originalPath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/finish_current_member51_generation.rev03.candidate.py",
+      "restoreTarget": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/finish_current_member51_generation.rev03.candidate.py",
+      "bytes": 32647,
+      "sha256": "76454578ee0a8b31e541a0c9fe9463fc7e28901551d210beff367c1cd56e15c0",
+      "mode": "100644"
+    },
+    {
+      "path": "verify_destroyed_member51_namespace.candidate.py",
+      "originalPath": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/verify_destroyed_member51_namespace.candidate.py",
+      "restoreTarget": "/srv/crays/migration-work/20261109/root/member-document-provider51-lifecycle-source01/verify_destroyed_member51_namespace.candidate.py",
+      "bytes": 2274,
+      "sha256": "2f926d725fd2653e3dc34058718dc9fad690f3252bebac9ccec04b5d6bba4b9d",
+      "mode": "100644"
+    }
+  ],
+  "sourceAuthority": {
+    "metadata": "Exact explicitly authorized Root historical Python paths; full SHA256s computed and matched to Root-reported prefixes. These are not invented additional rows in the current three-file Forward02 manifest.",
+    "pinReadbackSHA256": "a40a6bdb2de85889172826c8a7828aea80529dec928a7732bad6fbfd5f574708",
+    "authorship": "Trusted Root explicit creation-here by Codex for CRAYS."
+  },
+  "currentSuccessor": "../forward-revision02/README.md",
+  "privacyAndNoticeReview": "Full current base context plus all historical changed ranges and complete old verifier; no fixed personal/customer/credential payloads or removed upstream notices identified.",
+  "originalSourceExecution": false,
+  "historicalExecutionOrAcceptanceClaim": false,
+  "privateRuntimeInputsIncluded": false,
+  "licenseBoundary": "Exactly these five own programs; external imported/helper/app/provider implementations retain their own terms."
+}
