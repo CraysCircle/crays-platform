@@ -1,0 +1,18 @@
+{
+  "schema": "crays.github-public-source-readback.v1",
+  "sourceCommit": "a8e55d73faed5f6db5bba1439b9a7bcf3d43f24c",
+  "baselineCommit": "deddcff34e2ab9f3226b10c1b10f9d2322b3afbd",
+  "sourceTag": "shared-web-helpers-worktree-20261109",
+  "baselineTag": "shared-web-helpers-baseline-20261109",
+  "verifiedAtUTC": "2026-11-09T00:33:51.153359+00:00",
+  "anonymousHTTPSGitClone": true,
+  "currentChangedFilesSHA256AndByteCountVerified": 99,
+  "baselineOriginalHelpersSHA256AndByteCountVerified": 92,
+  "publishedDeclaredPrograms": 90,
+  "publishedImportedHelpers": 2,
+  "twoWorktreeDeltasRetained": true,
+  "original2045ApplicationSourceFilesUnchanged": true,
+  "heldProgramCount": 4,
+  "sourceProgramsExecuted": false,
+  "fullRecoveryOrLicenseClosure": false
+}

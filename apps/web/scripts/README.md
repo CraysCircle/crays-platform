@@ -28,3 +28,5 @@ These programs include database writes, source-system operations, fixture import
 Before any separately authorized execution, establish the exact environment, target, role, required source datasets, protected settings, installed dependency versions and current migration assumptions. The static import review observed Node built-ins, pg and playwright; this is not a complete transitive dependency or behavioral analysis. External SQL/JSON/dataset and documentation references still require reconciliation.
 
 No .env contents, database exports or runtime credentials are included. See [recovery limits](../docs/recovery.md), [source recovery gaps](../provenance/recovery-gaps.json) and [license status](../LICENSE-STATUS.md). The application rights record remains open; no new blanket license is inferred for these files.
+
+The [anonymous GitHub readback record](../provenance/operational-helpers-readback.json) confirms 99 current source/documentation files and all 92 historical helper files against their expected original bytes and SHA-256 values.

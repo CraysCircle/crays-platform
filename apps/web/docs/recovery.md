@@ -8,7 +8,7 @@ The source captures preserve the selected application inputs. Complete recovery 
 | Original integration source | Five original files are retained under their runtime-integration paths. |
 | Direct dependency versions | All 47 observed installed versions are recorded for the specified prepared borrowed dependency tree. |
 | Project lockfile | A qualified application-root lockfile is still missing. The borrowed main lock differs for six direct packages; the installed-tree lock records the observed versions. Both original files are retained as provenance. |
-| Operational helpers | The original package references 94 distinct helper paths outside this selection. Their actual current source/version recovery remains open. |
+| Operational helpers | 90 of the 94 referenced programs and their two imported helpers are public with exact historical/worktree tags. Four referenced programs remain under contact/fixture provenance review. Current AWS compatibility and external execution inputs remain open. |
 | Public assets and links | The original public tree, ten nested readonly asset views and 27 recorded symlinks require separate recovery and rights reconciliation. No replacement images or assets were generated for this import. |
 | Node/container/runtime | Exact runtime version and complete version-specific notices/source relationships remain open. |
 | Protected configuration and data | Restore through the responsible runtime owner from protected backups; these values and data exports are outside Git. |

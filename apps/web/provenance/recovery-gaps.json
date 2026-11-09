@@ -1,5 +1,27 @@
 {
-  "operationalHelpersOutsideCapture": [
+  "qualifiedApplicationLockfileMissing": true,
+  "publicAssetAndSymlinkRecoveryOpen": true,
+  "runtimeVersionAndNoticesOpen": true,
+  "earlierMixedHistoryAndOtherWipOpen": true,
+  "applicationAndCompleteDependencyRightsOpen": true,
+  "fullRecoveryProven": false,
+  "operationalHelpersRecovery": {
+    "capture": "operational-helpers.json",
+    "declaredProgramPaths": 94,
+    "publicDeclaredPrograms": 90,
+    "publicImportedHelpers": 2,
+    "heldPaths": [
+      "scripts/migrate-golden-operating-dataset-v1.mjs",
+      "scripts/repair-core-golden-test-data.mjs",
+      "scripts/seed-crm-golden-source-records.mjs",
+      "scripts/seed-erp-finance-workflow-source-slice.mjs"
+    ],
+    "currentRuntimeExecutionOrCompatibilityProven": false,
+    "remainingSourceDatasetsAndTechnicalDocsOpen": true,
+    "publicGitHubSourceCommit": "a8e55d73faed5f6db5bba1439b9a7bcf3d43f24c",
+    "anonymousReadbackVerified": true
+  },
+  "originalApplicationCaptureHelperCoverage": [
     {
       "path": "scripts/local-db-status.mjs",
       "packageScriptNames": [
@@ -790,24 +812,42 @@
       "presentInRecordedBaselineRelease": false
     }
   ],
-  "qualifiedApplicationLockfileMissing": true,
-  "publicAssetAndSymlinkRecoveryOpen": true,
-  "runtimeVersionAndNoticesOpen": true,
-  "earlierMixedHistoryAndOtherWipOpen": true,
-  "applicationAndCompleteDependencyRightsOpen": true,
-  "fullRecoveryProven": false,
-  "operationalHelpersRecovery": {
-    "capture": "operational-helpers.json",
-    "declaredProgramPaths": 94,
-    "publicDeclaredPrograms": 90,
-    "publicImportedHelpers": 2,
-    "heldPaths": [
-      "scripts/migrate-golden-operating-dataset-v1.mjs",
-      "scripts/repair-core-golden-test-data.mjs",
-      "scripts/seed-crm-golden-source-records.mjs",
-      "scripts/seed-erp-finance-workflow-source-slice.mjs"
-    ],
-    "currentRuntimeExecutionOrCompatibilityProven": false,
-    "remainingSourceDatasetsAndTechnicalDocsOpen": true
-  }
+  "operationalHelpersOutsideCapture": [
+    {
+      "path": "scripts/repair-core-golden-test-data.mjs",
+      "packageScriptNames": [
+        "core:repair:golden-test-data",
+        "core:repair:golden-test-data:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/migrate-golden-operating-dataset-v1.mjs",
+      "packageScriptNames": [
+        "core:migrate:golden-operating-dataset",
+        "core:migrate:golden-operating-dataset:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-erp-finance-workflow-source-slice.mjs",
+      "packageScriptNames": [
+        "source:seed:erp-finance-workflow",
+        "source:seed:erp-finance-workflow:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    },
+    {
+      "path": "scripts/seed-crm-golden-source-records.mjs",
+      "packageScriptNames": [
+        "source:seed:crm-golden",
+        "source:seed:crm-golden:apply"
+      ],
+      "presentInSelectedSource": false,
+      "presentInRecordedBaselineRelease": false
+    }
+  ]
 }
