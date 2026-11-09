@@ -1,0 +1,147 @@
+{
+  "schema": "crays.chuck.esbuild0281.installed-text-source-capture.v1",
+  "state": "EXACT_INSTALLED_TEXT_SOURCE_SNAPSHOT",
+  "originalTextFiles": 8,
+  "originalTextBytes": 138116,
+  "files": [
+    {
+      "path": "third-party/chuck-esbuild0281-tooling/source/node_modules/@esbuild/linux-x64/README.md",
+      "packageRelativePath": "@esbuild/linux-x64/README.md",
+      "originalInstalledPath": "/srv/crays/migration-work/20261108/root/member25-original-image-dependencies-copy03/node_modules/@esbuild/linux-x64/README.md",
+      "bytes": 141,
+      "sha256": "3b0ebdffe92e5b77c948c4ac0bf4bc4a38803b15405d0425b517705221c27a2f",
+      "gitBlobOID": "b2f19300430eb75c1a1fc7d5700ad0b6e7e69333",
+      "mode": "100644",
+      "originalBytesAndCommentsUnchanged": true
+    },
+    {
+      "path": "third-party/chuck-esbuild0281-tooling/source/node_modules/@esbuild/linux-x64/package.json",
+      "packageRelativePath": "@esbuild/linux-x64/package.json",
+      "originalInstalledPath": "/srv/crays/migration-work/20261108/root/member25-original-image-dependencies-copy03/node_modules/@esbuild/linux-x64/package.json",
+      "bytes": 372,
+      "sha256": "2332dc7d04175b16730f136b5bf32b31203eecea5be03b66e9453a4658b3d971",
+      "gitBlobOID": "1ce7bc3bed21efe1a508f0ac6cafb28c8771685c",
+      "mode": "100644",
+      "originalBytesAndCommentsUnchanged": true
+    },
+    {
+      "path": "third-party/chuck-esbuild0281-tooling/source/node_modules/esbuild/LICENSE.md",
+      "packageRelativePath": "esbuild/LICENSE.md",
+      "originalInstalledPath": "/srv/crays/migration-work/20261108/root/member25-original-image-dependencies-copy03/node_modules/esbuild/LICENSE.md",
+      "bytes": 1069,
+      "sha256": "b40ec5baec7bb34fa5b1c09521fa3cd52d5fad7adafed74932a2010d3612a681",
+      "gitBlobOID": "2027e8dcf3787f5aac9fcd835e2b80cb75a39211",
+      "mode": "100644",
+      "originalBytesAndCommentsUnchanged": true
+    },
+    {
+      "path": "third-party/chuck-esbuild0281-tooling/source/node_modules/esbuild/README.md",
+      "packageRelativePath": "esbuild/README.md",
+      "originalInstalledPath": "/srv/crays/migration-work/20261108/root/member25-original-image-dependencies-copy03/node_modules/esbuild/README.md",
+      "bytes": 175,
+      "sha256": "6d481cd60ec3c679e5e395f547ab4221147f35642894f6b95a8df38fd25c87bd",
+      "gitBlobOID": "93863d198004eae1c7b17aef26d829dfca4a314f",
+      "mode": "100644",
+      "originalBytesAndCommentsUnchanged": true
+    },
+    {
+      "path": "third-party/chuck-esbuild0281-tooling/source/node_modules/esbuild/install.js",
+      "packageRelativePath": "esbuild/install.js",
+      "originalInstalledPath": "/srv/crays/migration-work/20261108/root/member25-original-image-dependencies-copy03/node_modules/esbuild/install.js",
+      "bytes": 11773,
+      "sha256": "612294e278914443bdcf81cb17f54afec34dbdd2ebd999a6ee187912320cc315",
+      "gitBlobOID": "ee09eff8e0171c301b24f04185878b5761853cde",
+      "mode": "100644",
+      "originalBytesAndCommentsUnchanged": true
+    },
+    {
+      "path": "third-party/chuck-esbuild0281-tooling/source/node_modules/esbuild/lib/main.d.ts",
+      "packageRelativePath": "esbuild/lib/main.d.ts",
+      "originalInstalledPath": "/srv/crays/migration-work/20261108/root/member25-original-image-dependencies-copy03/node_modules/esbuild/lib/main.d.ts",
+      "bytes": 23392,
+      "sha256": "161c8e0690c46021506e32fda85956d785b70f309ae97011fd27374c065cac9b",
+      "gitBlobOID": "9e69c39f58b92dda3496b19481468b5057a1084f",
+      "mode": "100644",
+      "originalBytesAndCommentsUnchanged": true
+    },
+    {
+      "path": "third-party/chuck-esbuild0281-tooling/source/node_modules/esbuild/lib/main.js",
+      "packageRelativePath": "esbuild/lib/main.js",
+      "originalInstalledPath": "/srv/crays/migration-work/20261108/root/member25-original-image-dependencies-copy03/node_modules/esbuild/lib/main.js",
+      "bytes": 97214,
+      "sha256": "8331fe1d8b3a07381f33cc425fcfaa94776e263113653f80ec3ba433e9657e73",
+      "gitBlobOID": "1c23302b938a1164a990027c2e376aae8afc3e5b",
+      "mode": "100644",
+      "originalBytesAndCommentsUnchanged": true
+    },
+    {
+      "path": "third-party/chuck-esbuild0281-tooling/source/node_modules/esbuild/package.json",
+      "packageRelativePath": "esbuild/package.json",
+      "originalInstalledPath": "/srv/crays/migration-work/20261108/root/member25-original-image-dependencies-copy03/node_modules/esbuild/package.json",
+      "bytes": 3980,
+      "sha256": "d55d1d19fcc5b6079e4a71dd4111340c79c682bc36835ac7058a0c364c7db58a",
+      "gitBlobOID": "628583884bffe38c662c1806c474c22009d9bafa",
+      "mode": "100644",
+      "originalBytesAndCommentsUnchanged": true
+    }
+  ],
+  "packageVersions": [
+    {
+      "name": "esbuild",
+      "version": "0.28.1",
+      "installedManifestSHA256": "d55d1d19fcc5b6079e4a71dd4111340c79c682bc36835ac7058a0c364c7db58a",
+      "declaredLicense": "MIT"
+    },
+    {
+      "name": "@esbuild/linux-x64",
+      "version": "0.28.1",
+      "installedManifestSHA256": "2332dc7d04175b16730f136b5bf32b31203eecea5be03b66e9453a4658b3d971",
+      "declaredLicense": "MIT",
+      "os": "linux",
+      "cpu": "x64",
+      "includedBinary": false
+    }
+  ],
+  "originalNotice": {
+    "path": "third-party/chuck-esbuild0281-tooling/source/node_modules/esbuild/LICENSE.md",
+    "bytes": 1069,
+    "sha256": "b40ec5baec7bb34fa5b1c09521fa3cd52d5fad7adafed74932a2010d3612a681",
+    "copyright": "Copyright (c) 2020 Evan Wallace",
+    "originalTextUnchanged": true,
+    "platformPackageHasOnlyManifestAndREADMEInThisSnapshot": true,
+    "noCRAYSAGPLGrant": true
+  },
+  "sourcePrivacyQualification": {
+    "receiptSHA256": "b3a7bee9e98448bf3c20a62f7251bcce1b9628a496effa258e79ada5f9d9ae94",
+    "reusedPriorReviewSHA256": [
+      "eecd46a630a80de8dde5dda4da45ab59be06723f4b04f0bd13e6995f55e0b5e5",
+      "12ee3e4608d190d31fd59e989dab64a688df39550b2ab01039051c83bd6d975f"
+    ],
+    "scope": "Eight exact installed text files only; unchanged earlier API/package/notice review and full installer/declaration review reused, no binary body reread or execution.",
+    "noConcretePublicPrivacyHoldIdentified": true
+  },
+  "origin": "Read-only exact held copies from the existing qualified private toolchain/source intake; no new native access or registry/upstream fetch. Installed version metadata does not establish pristine upstream archive identity.",
+  "restoreLayout": "Retain source/node_modules/esbuild and source/node_modules/@esbuild/linux-x64 names with exact file-relative paths. Two executable paths are absent; this is source-text recovery, not a runnable installation.",
+  "excludedBinaryPaths": [
+    "source/node_modules/esbuild/bin/esbuild",
+    "source/node_modules/@esbuild/linux-x64/bin/esbuild"
+  ],
+  "limits": [
+    "No binary public release or binary executable included.",
+    "No complete preferred upstream TypeScript/Go compiler source, Node runtime, SDK or complete dependency graph.",
+    "No registry/archive equivalence, source-offer closure, complete legal clearance or build-reproduction claim.",
+    "No installation, compiler/API execution, runtime adoption or customer acceptance."
+  ],
+  "sourceProgramsExecuted": false,
+  "protectedRuntimeInputsRead": false,
+  "newOwnLicenseGrant": false,
+  "privateSelectedPackageRecovery": {
+    "repository": "CraysWorld/crays-gym",
+    "access": "PRIVATE_REPOSITORY_AUTHORIZATION_REQUIRED",
+    "commit": "c88fe99e05fde6da3f8221e218215f73376110eb",
+    "README": "https://github.com/CraysWorld/crays-gym/blob/c88fe99e05fde6da3f8221e218215f73376110eb/protected-source-archives/chuck-esbuild0281-toolchain/README.md",
+    "capture": "https://github.com/CraysWorld/crays-gym/blob/c88fe99e05fde6da3f8221e218215f73376110eb/protected-source-archives/chuck-esbuild0281-toolchain/source-capture.json",
+    "actualPublicationReceiptSHA256": "6defcb31dee310059c9ed316d8180b4069cda17b18e0c450142291cb5a03ffa6",
+    "scope": "Selected installed JS and Linux platform package; includes two binary paths privately. Not a full preferred-source/Node/SDK/reproduction guarantee."
+  }
+}
