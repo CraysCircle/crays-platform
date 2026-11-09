@@ -26,6 +26,8 @@ CRAYS AG grants **AGPL-3.0-only** for the following original CRAYS-owned source 
 
 The hashes identify the original covered source. Recipients may modify and redistribute that code under AGPL version 3; the scope records do not require downstream copies to keep the original hashes. These grants do not offer a later-version option.
 
+The exact 7,378-byte [Chuck custody-uploader source revision](operations/chuck-custody/uploader-source-revision01/README.md), SHA-256 9d37977a95ad7074c94dd43548e7658c2d3c044b93da5618eabbfcc5558418b2, is licensed by CRAYS AG under **AGPL-3.0-only**. Its [file-specific grant](operations/chuck-custody/uploader-source-revision01/LICENSING.md) and [exact version scope](operations/chuck-custody/uploader-source-revision01/license-scope.json) cover the uploader code; protected inputs, backup payloads and imported standard-library implementations are excluded.
+
 ## Upstream components and other material
 
 Qlo, Vendure, Frappe, Nextcloud, Plane, Nostr libraries, Node.js and other external implementations retain their original licenses and authorship. Their original notices and exact source/version records remain applicable. A CRAYS integration calling a provider does not relicense that provider.

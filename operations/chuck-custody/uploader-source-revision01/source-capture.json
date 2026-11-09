@@ -1,0 +1,52 @@
+{
+  "schema": "crays.chuck54.custody-uploader.public-source-capture.v1",
+  "state": "SOURCE_ARCHIVE_NOT_RUNTIME_ACTIVATION",
+  "originalFiles": 1,
+  "originalBytes": 7378,
+  "files": [
+    {
+      "path": "operations/chuck-custody/uploader-source-revision01/upload_original_four_private_files_ram54.candidate.py",
+      "originalPath": "/srv/crays/migration-work/20261109/root/chuck54-private-custody-transport-source01/upload_original_four_private_files_ram54.candidate.py",
+      "bytes": 7378,
+      "sha256": "9d37977a95ad7074c94dd43548e7658c2d3c044b93da5618eabbfcc5558418b2",
+      "originalSourceCommentsAndConstantsUnchanged": true
+    }
+  ],
+  "sourcePrivacyReview": {
+    "receiptSHA256": "663709082a0c0b35f9591631d8c4f42b55f44b22f932d21cf457eb31a57a2b32",
+    "method": "Complete static source and AST review; no execution/import/eval or protected target reads. Independent public-distribution qualification is recorded separately from this source capture."
+  },
+  "authorship": {
+    "source": "Actual trusted AWS Root authorship confirmation, scoped to the exact uploader source",
+    "receiptSHA256": "279ba0f7ae6f0f234741e075d697211dd5f6a756e224fa8e7a11d3fb2097d333",
+    "sourceSHA256": "9d37977a95ad7074c94dd43548e7658c2d3c044b93da5618eabbfcc5558418b2",
+    "sourceBytes": 7378,
+    "facts": "Created in this CRAYS Codex run by the commissioned agent as an internal adaptation of existing Original env20 transport, with no new external code sources and Python standard-library imports only. Root expressly permits the existing human AGPL-3.0-only / CRAYS AG instruction for this exact own source, excluding standard-library implementations and protected input contents.",
+    "custodyDoesNotByItselfProveOwnership": true
+  },
+  "licensing": {
+    "license": "AGPL-3.0-only",
+    "licensor": "CRAYS AG",
+    "exactScope": "license-scope.json",
+    "excludesStandardLibraryAndPrivateTargets": true
+  },
+  "sourcePurpose": "Finite operative RAM uploader source. Technical source paths, bucket/region, protocol validation field names and file-mode limits are code constants, not exported private input values or capabilities.",
+  "recoveryScope": "Recover the unchanged source using originalPath and whole-file SHA256 in an isolated source tree. This source snapshot does not include or establish recovery of the four protected payloads.",
+  "excluded": [
+    "Protected target file bodies and content hashes",
+    "Private CUSTODY metadata or its location pointer",
+    "Presigned URLs, signed requests and transport capabilities",
+    "Runtime credentials, environment/identity/Auth0 observation values"
+  ],
+  "notClaimed": [
+    "Execution or authorization to use CRAYS private infrastructure",
+    "Current backup or runtime state",
+    "Complete reproduction or customer acceptance",
+    "Licensing of private data or Python standard-library implementation"
+  ],
+  "sourceCodeModified": false,
+  "sourceProgramsExecuted": false,
+  "protectedInputsRead": false,
+  "cryptoOrS3TransportPerformed": false,
+  "newNativeAccessOrFiles": false
+}
