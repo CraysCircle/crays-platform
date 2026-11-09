@@ -1,6 +1,6 @@
 {
   "schema": "crays.vendure-native-provider-integration.source-provenance.v1",
-  "scope": "Seven exact source-only operation programs; three additional selected native-verifier code fields, no other envelope fields or admission/request templates or private launch payloads",
+  "scope": "Ten exact source-only operation programs; latest three selected original-asset-flow04/native-verifier04 code fields only, no other envelope fields or admission/request templates or private launch payloads",
   "files": [
     {
       "path": "operations/vendure-native-provider-integration/original-asset-delivery-controller.compiled07.rev02.cjs",
@@ -123,6 +123,72 @@
         "sha256": "3a7f41d84541b4a9b605203f515474363c38600bb09b2bec7691447c69914e6c",
         "scope": "Recover only the selected source field bytes; do not reconstruct/export other envelope fields or execute the program."
       }
+    },
+    {
+      "path": "operations/vendure-native-provider-integration/original-asset-flow04.node.cjs",
+      "originalBodyBytes": 16773,
+      "originalBodySHA256": "eec6f95b32fa4b8f3b44892e9756bb07179a80f377e1d76c489099fa815a41b3",
+      "exportedBodySHA256": "eec6f95b32fa4b8f3b44892e9756bb07179a80f377e1d76c489099fa815a41b3",
+      "originalSourceField": "JSON.nodeSource UTF-8 bytes",
+      "immutableSourceArtifact": {
+        "key": "migration-work/20261108/business/vendure-native-provider-integration/original-asset-flow04.source-only.rev02.json",
+        "versionId": "Csz_S1lIuBFF5pGzqxX6ZWVWWBcA5MfO",
+        "envelopeBytes": 24638,
+        "envelopeSHA256": "423261ee746aba545a06b099386a821ae9b5e61d8edad13531bdac65c430f732"
+      },
+      "transformation": "NONE_EXACT_ORIGINAL_SOURCE_FIELD",
+      "restoration": {
+        "publicSourcePath": "operations/vendure-native-provider-integration/original-asset-flow04.node.cjs",
+        "sourceField": "nodeSource",
+        "encoding": "UTF-8",
+        "bytes": 16773,
+        "sha256": "eec6f95b32fa4b8f3b44892e9756bb07179a80f377e1d76c489099fa815a41b3",
+        "scope": "Recover only the selected source field bytes; do not reconstruct/export other envelope fields or execute the program."
+      }
+    },
+    {
+      "path": "operations/vendure-native-provider-integration/original-asset-flow04.closed-runner.py",
+      "originalBodyBytes": 5313,
+      "originalBodySHA256": "f282508d1f635ce12bced6ee5f1da0494fa2f43aa27ad80266102e86ece0e77d",
+      "exportedBodySHA256": "f282508d1f635ce12bced6ee5f1da0494fa2f43aa27ad80266102e86ece0e77d",
+      "originalSourceField": "JSON.closedRunnerSource UTF-8 bytes",
+      "immutableSourceArtifact": {
+        "key": "migration-work/20261108/business/vendure-native-provider-integration/original-asset-flow04.source-only.rev02.json",
+        "versionId": "Csz_S1lIuBFF5pGzqxX6ZWVWWBcA5MfO",
+        "envelopeBytes": 24638,
+        "envelopeSHA256": "423261ee746aba545a06b099386a821ae9b5e61d8edad13531bdac65c430f732"
+      },
+      "transformation": "NONE_EXACT_ORIGINAL_SOURCE_FIELD",
+      "restoration": {
+        "publicSourcePath": "operations/vendure-native-provider-integration/original-asset-flow04.closed-runner.py",
+        "sourceField": "closedRunnerSource",
+        "encoding": "UTF-8",
+        "bytes": 5313,
+        "sha256": "f282508d1f635ce12bced6ee5f1da0494fa2f43aa27ad80266102e86ece0e77d",
+        "scope": "Recover only the selected source field bytes; do not reconstruct/export other envelope fields or execute the program."
+      }
+    },
+    {
+      "path": "operations/vendure-native-provider-integration/native-verifier04.once.py",
+      "originalBodyBytes": 42881,
+      "originalBodySHA256": "561170b881cb6e6afe3f0b67ba3ab38f55d4f63d934ccd476b4da21cdcc5606a",
+      "exportedBodySHA256": "561170b881cb6e6afe3f0b67ba3ab38f55d4f63d934ccd476b4da21cdcc5606a",
+      "originalSourceField": "JSON.source UTF-8 bytes",
+      "immutableSourceArtifact": {
+        "key": "migration-work/20261108/business/vendure-native-provider-integration/native-verifier04.fresh-lease.source-request.rev01.json",
+        "versionId": "tPeG.SL8n2UUgUGNojQGgVNDHZcNpzro",
+        "envelopeBytes": 106980,
+        "envelopeSHA256": "8b4f5671527c11eb8e6b8234472b627a9f4b19a29faedf4a92f0bd36227a51a1"
+      },
+      "transformation": "NONE_EXACT_ORIGINAL_SOURCE_FIELD",
+      "restoration": {
+        "publicSourcePath": "operations/vendure-native-provider-integration/native-verifier04.once.py",
+        "sourceField": "source",
+        "encoding": "UTF-8",
+        "bytes": 42881,
+        "sha256": "561170b881cb6e6afe3f0b67ba3ab38f55d4f63d934ccd476b4da21cdcc5606a",
+        "scope": "Recover only the selected source field bytes; do not reconstruct/export other envelope fields or execute the program."
+      }
     }
   ],
   "sourceOnly": true,
@@ -176,5 +242,38 @@
     "sourceProgramsOrVerifierExecutedDuringPreservation": false,
     "newLicenseGrant": false,
     "runtimeOrCustomerAcceptanceClaimed": false
+  },
+  "originalAssetFlow04Addition": {
+    "originalFiles": 3,
+    "originalBytes": 64967,
+    "selectedSourceFields": [
+      "nodeSource",
+      "closedRunnerSource",
+      "source"
+    ],
+    "independentSourceReviews": [
+      {
+        "key": "migration-work/20261108/business/vendure-native-provider-integration/original-asset-flow04.independent-review.rev02.json",
+        "versionId": "LyJfCy0TPCEI54NVeu6c9j9XfAQHhfc.",
+        "bytes": 1297,
+        "sha256": "461e158a3cd2309d51694c67514b2bf92c5924fb82ad63c4bb2120a79cea9c33",
+        "sourceOnlyStatus": "SOURCE_ONLY_PASS",
+        "qualification": "Pinned independent source/lease review only; actual execution admission, private request bindings and functional result remain separate and are not published here."
+      },
+      {
+        "key": "migration-work/20261108/business/vendure-native-provider-integration/native-verifier04.independent-lease-review.rev01.json",
+        "versionId": "glUhlHloagZFOSAsEoWf5phTglmXkDR2",
+        "bytes": 1367,
+        "sha256": "396fd6cc1abf5e1833a07aa63bbb81dcd0ced73ce4a1e37fad5c37ae1c0f7745",
+        "sourceOnlyStatus": "SOURCE_AND_REQUEST_TEMPLATE_PASS_FINAL_ADMISSION_UNBOUND",
+        "qualification": "Pinned independent source/lease review only; actual execution admission, private request bindings and functional result remain separate and are not published here."
+      }
+    ],
+    "allOtherEnvelopeFieldsExported": false,
+    "approvalRequestOrPrivateInputsExported": false,
+    "sourceProgramsOrVerifierExecutedDuringPreservation": false,
+    "newLicenseGrant": false,
+    "runtimeOrCustomerAcceptanceClaimed": false,
+    "pairedSourceRelationship": "The closed runner is a helper fragment requiring its paired native-verifier04 context. The native verifier embeds the exact Node and runner code fields; no standalone execution instructions are introduced."
   }
 }
