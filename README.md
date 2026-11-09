@@ -1,64 +1,61 @@
-# CRAYS platform sources
+# CRAYS Platform
 
-Shared CRAYS application/service sources, website-hosting wrappers and migration operations source, with exact provenance and version records. The shared Next.js composition is under apps/web; independent website implementations and retained upstream forks remain in their project repositories.
+### Software connecting CRAYS members, guests and venue operators.
+
+CRAYS connects community and hospitality projects with the digital tools behind them: member access, personal experiences, venue services and operator workflows. This repository contains the CRAYS web applications, integration contracts and services connecting those experiences to files, finance, projects, hospitality and commerce.
+
+We want developers to understand both sides of that work: the experience for a member or guest, and the systems an operator needs to run it.
+
+**[Explore services](docs/services/README.md) · [Architecture](docs/architecture.md) · [Start contributing](CONTRIBUTING.md) · [All CRAYS projects](https://github.com/CraysCircle/.github/blob/main/docs/repositories.md)**
+
+## What we are building
+
+**Personal** brings together the individual's frontend experiences. **Member** handles membership, account boundaries and provider-backed activities. **Work** connects operational workflows to established business systems. They have distinct responsibilities and source views; Work runtime version numbers are not additional products.
+
+We develop the CRAYS-specific applications and connections while retaining the identities and original licenses of the systems they connect to.
 
 ## Find a component
 
-| Component | Source and documentation |
+| Area | Purpose and developer entry point |
 | --- | --- |
-| Shared Next.js application | [Qualified Club/Member/SaaS source views, recovery prerequisites and original notices](apps/web/README.md) |
-| Club Build38 source | [Exact 2,045 input files, original RDS adapter and recorded build binding](apps/web/compositions/club-source38/README.md) |
-| Native Core working-tree slice | [28 tracked modifications, original preimages and verified restoration](apps/web/compositions/native-core-worktree-20261109/README.md) |
-| Personal web application | [Original and 13-overlay React/Vite source, recovery inputs and exact notices](apps/personal/README.md) |
-| Club/Member browser module | [Original and origin35 input views, recorded build and original notices](modules/club-member/README.md) |
-| Personal build operations | [Original build controllers, lease adapter, artifact inspection and adoption-plan source](operations/personal-build/README.md) |
-| Qlo gateway | [Service, original tests and configuration](services/qlo-gateway/README.md) |
-| Clubs Commerce BFF | [Original service, build/test inputs and dependency notices](services/clubs-commerce-bff/README.md) |
-| Club Next listener, private HTTPS and runtime38 | [Original listener/bootstrap fragments and exact source records](services/club-next-runtime/README.md); [controller revisions, original patches and acceptance-program source](operations/club-next-runtime/README.md)  [Original runtime38 installer, bootstrap and browser revisions](operations/club-next-runtime/member-runtime38/README.md) |
-| Work/Qlo runtime | [Original bootstrap and four local runtime modules](services/work-qlo-runtime/README.md) |
-| Qlo/Work family operations | [Original continuation revisions, source patches and binding checks](operations/qlo-work-family/README.md) |
-| Net hosting | [Unchanged static-hosting wrapper and exact application reference](hosting/net/README.md) |
-| Qlo operations | [Account2 correction](operations/qlo/README.md) and [runtime44 source versions](operations/qlo/gateway-runtime44/README.md) |
-| Delivery/Postiz operations | [Original-frontend qualifier and separate physical-return helper](operations/delivery/postiz/README.md) |
-| Neon → RDS operations | [Source export, original checksums and protected reconstruction](operations/neon-rds/README.md) |
-| Persistent storage guard | [Original source and operations index](operations/README.md) |
+| Files and collaboration | [Nextcloud](docs/services/nextcloud.md): member documents, access boundaries and collaboration reconciliation. |
+| Finance and ERP | [Frappe / ERPNext](docs/services/frappe.md): commerce-to-ERP mapping and company-scoped workflows. |
+| Projects | [Plane](docs/services/plane.md): the canonical project/work-item integration within Work. |
+| Hospitality | [Qlo](docs/services/qlo.md): gateway contracts and accommodation-operation integrations. |
+| Commerce, identity and more | [All platform service areas](docs/services/README.md): Vendure, account contracts, Personal/Chuck, Gym, Nostr and delivery tooling. |
+| Shared web experience | [apps/web](apps/web/README.md): Next.js application and named Club/Member source compositions. |
+| Personal frontend | [apps/personal](apps/personal/README.md): React/Vite source and captured Personal views. |
+| Browser module | [modules/club-member](modules/club-member/README.md): separately built Club/Member client. |
 
-## Repository layout
+The service guides explain user purpose, upstream responsibilities, CRAYS implementation, code entry points and concrete ways to contribute. Their status sections distinguish available source from integrations still being completed.
 
-    apps/
-      web/
-      personal/
-    modules/
-      club-member/
-    services/
-      qlo-gateway/
-      clubs-commerce-bff/
-      work-qlo-runtime/
-      club-next-runtime/
-    hosting/
-      net/
-    operations/
-      qlo/
-      qlo-work-family/
-      member-origin35/
-      personal-build/
-      club-next-runtime/
-      storage/
-      delivery/postiz/
-      neon-rds/
-    docs/
-      source-index.json
-      license-and-provenance.md
-      development-and-releases.md
+## How the pieces connect
 
-[Source/artifact index](docs/source-index.json) links each preserved component's exact file and version records. [License/provenance](docs/license-and-provenance.md) distinguishes established notices from missing evidence. [Development/releases](docs/development-and-releases.md) describes the required review and release sequence.
+Applications call CRAYS account, permission and provider contracts. Adapters connect those contracts to the appropriate service; provider credentials, document ownership, company scopes and webhook authority remain separate.
 
-The broader platform/app source reconciliation remains in progress. This repository does not yet claim to contain every CRAYS service, native/Core WIP, dependency source or runtime notice.
+The [architecture guide](docs/architecture.md) includes a component diagram and the source responsibilities behind these connections.
 
-## Source and execution boundaries
+## Build with us
 
-Original component files are retained unchanged unless a record explicitly identifies a later revision. Historical test output, source review, fresh tests/builds, actual runtime execution and customer/rights acceptance remain distinct evidence.
+We welcome focused improvements to integration behavior, accessible interfaces, tests and developer documentation. Useful starting areas include document access, company-scope handling, project webhooks, hospitality request validation and synthetic account-boundary tests.
 
-Operations programs retain original runtime assumptions and protected-input dependencies. Publication is source custody, not a standalone instruction or authorization to execute them. No product deployment workflow is included; GitHub Actions remains disabled during consolidation.
+Read [Contributing](CONTRIBUTING.md) to choose a component, find its real setup requirements and propose a reviewable change. There is no single install/start command for every application and provider in this repository.
 
-Credentials, private keys, customer data, database exports and private runtime/custody records remain outside Git. Original license/copyright/NOTICE terms apply per component; public readability does not create a new blanket license grant.
+## Repository guide
+
+| Path | Contents |
+| --- | --- |
+| [apps/](apps) | Web and Personal application sources. |
+| [modules/](modules) | Independently built browser modules. |
+| [services/](services) | Gateway, BFF and runtime implementations. |
+| [docs/services/](docs/services/README.md) | Canonical service hub and integration guides. |
+| [operations/](operations/README.md) | Original build, migration and operating-program source. |
+| [docs/source-index.json](docs/source-index.json) | Source captures, immutable references and exact version records. |
+
+Independent websites and native apps remain in their own repositories. Twenty and OpenProject are retained historical projects, outside the current active-service navigation; see [the legacy map](https://github.com/CraysCircle/.github/blob/main/docs/legacy-projects.md).
+
+## Versions, licenses and development status
+
+Source consolidation and integration are in progress. Select the component and source view you need before building; an archived controller is not a general installation command. Original licenses, copyright and NOTICE terms apply per component.
+
+[Source and version catalog](docs/source-index.json) · [License and provenance](docs/license-and-provenance.md) · [Development and releases](docs/development-and-releases.md) · [Organization coverage status](https://github.com/CraysCircle/.github/blob/main/docs/source-and-license-status.md)
