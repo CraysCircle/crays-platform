@@ -10,6 +10,59 @@ CRAYS is building the software connecting members, guests and venue operators ac
 
 **Work** connects operational workflows to systems such as ERPNext, Plane, Qlo and commerce providers. Work captures and runtime revisions are source versions of this area, rather than separate products.
 
+## Target architecture: APIs, Core/BCC and independent services
+
+**Target architecture · AWS integration in progress.** The following views describe the agreed responsibilities and migration direction. They do not assert completed provider connections, database cutovers or customer acceptance. Core/BCC is the shared layer for identity, accounts, authorization and business rules. Application-specific backends-for-frontends (BFFs) have a separate role.
+
+### Access and business authority
+
+~~~mermaid
+flowchart TD
+    Person["Person using web or native application"] --> API["CRAYS API / GraphQL operation"]
+    API --> Identity["Core / BCC: identity and account"]
+    Identity --> Rules["Permissions, tenant scope and business rules"]
+    Rules --> Adapter["Application BFF / provider adapter"]
+    Adapter --> Provider["Provider API and its own access checks"]
+    classDef crays fill:#fff1f2,stroke:#b42335,color:#202124;
+    class API,Identity,Rules,Adapter crays;
+~~~
+
+The application requests a defined operation. Core/BCC supplies account and business authority; the adapter carries the appropriate scope to the service. Provider credentials and access checks remain separate. The [Member GraphQL transport](../services/member-club/source50/README.md) provides a concrete route/operation boundary, while the [Commerce BFF](../services/clubs-commerce-bff/README.md) shapes browser requests and safe responses. Neither is proof that every provider implements GraphQL.
+
+### Independent service responsibilities
+
+~~~mermaid
+flowchart TD
+    Core["Core / BCC and CRAYS service adapters"] --> Projects["Plane: projects"]
+    Core --> Commerce["Vendure: commerce"]
+    Core --> Finance["Frappe / ERPNext: business and finance"]
+    Core --> Hotel["Qlo: hospitality"]
+    Core --> Cloud["Nextcloud: files and collaboration"]
+    Core --> Publishing["Postiz: publishing delivery"]
+    Core --> Chuck["Chuck: consumer, agent and workflow integration"]
+    Chuck -. "documented component relationship" .-> OpenClaw["OpenClaw agent components"]
+    classDef crays fill:#fff1f2,stroke:#b42335,color:#202124;
+    class Core,Chuck crays;
+~~~
+
+Each named service retains its own API, runtime and domain responsibilities. A cross-service workflow needs explicit correlation and outcome reconciliation. Vendure order/payment state, Booking Core holds/bookings/capacity and ERPNext accounting remain different authorities. Personal is the application experience; Chuck is the broader personal-intelligence integration; OpenClaw is a documented upstream component family, not a synonym for either. The [service catalog](services/README.md) links their implementations and limits. Twenty is [archived and no longer used](https://github.com/CraysWorld/.github/blob/main/docs/legacy-projects.md); its appearance in a broader service concept does not establish a current or reintroduced CRM provider.
+
+### Storage and the PostgreSQL migration
+
+~~~mermaid
+flowchart LR
+    Neon["Neon PostgreSQL: prior Core store"] -. "migration direction" .-> RDS["Amazon RDS PostgreSQL: Core store"]
+    Core["Core / BCC"] --> RDS
+    Services["Independent services"] --> PG["Service-owned PostgreSQL"]
+    Services --> MySQL["MySQL / MariaDB where required"]
+    Files["File / object-storage integrations"] --> S3["Amazon S3"]
+    Files --> ProviderFiles["Provider-specific file services"]
+    classDef crays fill:#fff1f2,stroke:#b42335,color:#202124;
+    class Core,Files crays;
+~~~
+
+RDS replaces Neon PostgreSQL in the Core storage role; it does not replace GraphQL or require every service to use PostgreSQL. Service-specific MySQL/MariaDB remains appropriate where required. S3 has an additional file/object-storage role, without implying that every Nextcloud file or provider database has moved there. These diagrams define boundaries; exact selected versions, source recovery and live migration acceptance need their own evidence.
+
 ## Connections between the layers
 
 The diagram describes source responsibilities and integration directions. It is not a claim that every edge is currently accepted for customer use.
