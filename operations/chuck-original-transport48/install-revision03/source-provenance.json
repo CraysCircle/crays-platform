@@ -1,0 +1,124 @@
+{
+  "schema": "crays.chuck48-common49.install-revision03.source-provenance.v1",
+  "sourceOnly": true,
+  "sourceFiles": 5,
+  "sourceBytes": 130403,
+  "files": [
+    {
+      "filename": "common-host.native-graphql49.candidate.cjs",
+      "path": "services/member-identity/provider-account/source49/common-host.native-graphql49.candidate.cjs",
+      "bytes": 49265,
+      "sha256": "f726cd9fb8a44309408da26f5d1ad621ef8de127028cf2d9f2b4fa09f44742f1",
+      "representation": "unchanged-original"
+    },
+    {
+      "filename": "serve-original-host.native-graphql49.candidate.mjs",
+      "path": "services/member-identity/provider-account/source49/serve-original-host.native-graphql49.candidate.mjs",
+      "bytes": 3525,
+      "sha256": "6541b66ceb48214977bb8b584bb54975238041155b4788714386cd9312ce829c",
+      "representation": "unchanged-original"
+    },
+    {
+      "filename": "install_exact_current_chuck48.rev03.candidate.py",
+      "path": "operations/chuck-original-transport48/install-revision03/install_exact_current_chuck48.rev03.candidate.py",
+      "bytes": 22979,
+      "sha256": "1fd5d86ced61d5b662e3130ed4ccb6843ac1e0cce6be990e72753727705e612c",
+      "representation": "unchanged-original"
+    },
+    {
+      "filename": "finish_chuck48_current_generation.rev03.candidate.py",
+      "path": "operations/chuck-original-transport48/install-revision03/finish_chuck48_current_generation.rev03.candidate.py",
+      "bytes": 33054,
+      "sha256": "25ee78147d5dd02aafe07e4bc17a06641524e55994be7c0ae1d132a1e2e0b9b2",
+      "representation": "unchanged-original"
+    },
+    {
+      "filename": "chuck48_current39_ingress.candidate.py",
+      "path": "operations/chuck-original-transport48/install-revision03/chuck48_current39_ingress.candidate.py",
+      "bytes": 21580,
+      "sha256": "f938d937a21b5b1c6193a3807634e8ae363d5aa914ad4b29e329791b232d1533",
+      "representation": "unchanged-original"
+    }
+  ],
+  "sourceAuthorityManifest": {
+    "filename": "SOURCE_PINS_CHUCK48_COMMON49_INSTALL_REV03.json",
+    "sha256": "b901057ef20a89b4c4818a660d54ae28cd0888d42a519cc0a5a0562d4505de32"
+  },
+  "independentSourceReviews": [
+    {
+      "filename": "INDEPENDENT_COMMON49_SOURCE_REVIEW_ACTUAL.json",
+      "sha256": "473484ccdff78611980da0553fe260243ffd062ae7c10bc4795bfd233b10c1d9",
+      "status": "PASS_INDEPENDENT_COMMON49_MINIMAL_NATIVE_TARGET_SOURCE_REVIEW",
+      "findings": []
+    },
+    {
+      "filename": "INDEPENDENT_CHUCK48_COMMON49_INSTALL_INGRESS_REV03_REVIEW.json",
+      "sha256": "41b0fe12a354b73e9ffbe265019b79c84f1e4e73304e5d33c0134c0256811a92",
+      "status": "PASS_SOURCE_ONLY_CURRENT46_TO_CHUCK48_COMMON49_INSTALL_AND_INGRESS",
+      "findings": []
+    }
+  ],
+  "pureClosureEvidence": {
+    "filename": "UNIT_CHUCK48_COMMON49_CLOSURE_ACTUAL.json",
+    "sha256": "0558f6108e5a17c96b1ab5adb1de31864123a68938171473ef48ef4fec30bc20",
+    "notRerunDuringPreservation": true
+  },
+  "pureNativeAdmissionEvidence": {
+    "filename": "UNIT_NATIVE_GRAPHQL_TARGET49_ACTUAL.json",
+    "sha256": "78ae485a2affa3cc43209e5207a83fbe7a141a96b9c78fab5cc76c3a426cde81",
+    "checks": 13,
+    "notRerunDuringPreservation": true
+  },
+  "commonPredecessor": {
+    "publicPath": "services/member-identity/provider-account/source47/common-host.membership-title47.candidate.cjs",
+    "sha256": "822fab2fc20aba7cd6cd45e50089efaf8756425a5695db215eca2311b4ddb1d4",
+    "exactSingleSubstitutionIndependentlyMatched": true
+  },
+  "existingListener": {
+    "publicPath": "operations/chuck-original-transport48/listener.chuck-original-transport.candidate.mjs",
+    "sha256": "30376559572bf19be05d3e1b724c20de026455361e0cd7e1d749b1056e2aa777",
+    "unchangedAndNotCopied": true,
+    "existingPublicationCommit": "f89fbec8a1dacc1842ca9647c111046c845781c0",
+    "immutablePublicSourceURL": "https://github.com/CraysWorld/crays-platform/blob/f89fbec8a1dacc1842ca9647c111046c845781c0/operations/chuck-original-transport48/listener.chuck-original-transport.candidate.mjs"
+  },
+  "existingHelpersNotCopied": [
+    {
+      "filename": "qualified_container_physical.py",
+      "sha256": "63b137e94a98cebdfc456a83efabd907f64b4e34ac39fe59fbf364553f3b0bdb",
+      "existingPublicPath": "operations/member-original-context46/ingress/qualified_container_physical.py",
+      "existingPublicationCommit": "970bc5b219b81e62cc8279074151ea703ce68cb4",
+      "notCopiedByThisPacket": true,
+      "pathExistsInOwnPublicClone": true,
+      "immutablePublicSourceURL": "https://github.com/CraysWorld/crays-platform/blob/970bc5b219b81e62cc8279074151ea703ce68cb4/operations/member-original-context46/ingress/qualified_container_physical.py",
+      "sourceRestoreMap": {
+        "immutableSourceURL": "https://github.com/CraysWorld/crays-platform/blob/970bc5b219b81e62cc8279074151ea703ce68cb4/operations/member-original-context46/ingress/qualified_container_physical.py",
+        "sourceBytes": 23361,
+        "requiredSHA256": "63b137e94a98cebdfc456a83efabd907f64b4e34ac39fe59fbf364553f3b0bdb",
+        "requiredRootFilename": "qualified_container_physical.py",
+        "operation": "Byte-for-byte copy to the required filename only; verify exact size and SHA256 before use. No code transformation or source execution."
+      }
+    },
+    {
+      "filename": "project_exact_seven_member46_ingress.candidate.py",
+      "sha256": "78c4b4a55c53c743b4db880a7d1bac46b7bfa75588242aaba876152875ccdb94",
+      "existingPublicPath": "operations/member-original-context46/ingress/project_exact_seven_member46_ingress.candidate.py",
+      "existingPublicationCommit": "970bc5b219b81e62cc8279074151ea703ce68cb4",
+      "notCopiedByThisPacket": true,
+      "pathExistsInOwnPublicClone": true,
+      "RootCurrentReferenceFilename": "project_exact_seven_chuck48_ingress.candidate.py",
+      "prior42PublicPath": "operations/member-provider-account42/source-cases/ingress/project_exact_seven_member42_ingress.candidate.py",
+      "immutablePublicSourceURL": "https://github.com/CraysWorld/crays-platform/blob/970bc5b219b81e62cc8279074151ea703ce68cb4/operations/member-original-context46/ingress/project_exact_seven_member46_ingress.candidate.py",
+      "sourceRestoreMap": {
+        "immutableSourceURL": "https://github.com/CraysWorld/crays-platform/blob/970bc5b219b81e62cc8279074151ea703ce68cb4/operations/member-original-context46/ingress/project_exact_seven_member46_ingress.candidate.py",
+        "sourceBytes": 2202,
+        "requiredSHA256": "78c4b4a55c53c743b4db880a7d1bac46b7bfa75588242aaba876152875ccdb94",
+        "requiredRootFilename": "project_exact_seven_chuck48_ingress.candidate.py",
+        "operation": "Byte-for-byte copy to the required filename only; verify exact size and SHA256 before use. No code transformation or source execution."
+      }
+    }
+  ],
+  "sourceProgramsExecutedDuringPreservation": false,
+  "privateInputContentsReadOrIncluded": false,
+  "runtimeOrCustomerAcceptanceClaimed": false,
+  "newBlanketLicenseGrant": false
+}

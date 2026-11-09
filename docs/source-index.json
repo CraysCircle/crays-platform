@@ -197,6 +197,10 @@
     {
       "component": "chuck-original-transport48",
       "path": "operations/chuck-original-transport48/source-provenance.json"
+    },
+    {
+      "component": "chuck48-common49-install-revision03",
+      "path": "operations/chuck-original-transport48/install-revision03/source-provenance.json"
     }
   ]
 }

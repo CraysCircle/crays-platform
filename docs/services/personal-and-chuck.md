@@ -26,3 +26,7 @@ Existing records substantiate a composed agent/broker/tool system and separately
 ## Personal browser-title source revision
 
 The [Source47 Common candidate](../../services/member-identity/provider-account/source47/README.md) preserves the narrow renderer change for the browser title Crays Membership. Its exact delta, input/output derivation, original regression source and existing twelve-check result are recorded alongside the unchanged Common46 reference. This source-only record does not establish private adoption or browser/customer acceptance.
+
+## Admitted native GraphQL target and Chuck48 source
+
+The [Common49 host](../../services/member-identity/provider-account/source49/common-host.native-graphql49.candidate.cjs) forwards the already admitted native member target to the proxy. Its paired Serve source and the [coordinated Chuck48 installation guide](../../operations/chuck-original-transport48/install-revision03/README.md) preserve the exact routing and installation source versions, including immutable references and filename restoration rules for existing helpers. The source records distinguish independent review from runtime execution and authenticated customer acceptance.
