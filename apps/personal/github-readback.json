@@ -1,8 +1,8 @@
 {
-  "atUTC": "2026-11-09T02:33:24.488388+00:00",
-  "sourceCommit": "77150c3b8cfe200d21672c9e62c9c2b9562d982b",
-  "sourceTag": "personal-web-source1489-20261109",
-  "anonymousPublicFilesSHA256AndSizeVerified": 1516,
+  "atUTC": "2026-11-09T02:46:22.916608+00:00",
+  "sourceCommit": "81ddce57809f0daff06eba3770c0442fb873bf17",
+  "sourceTag": "personal-build-inputs-source-20261109",
+  "anonymousPublicFilesSHA256AndSizeVerified": 25,
   "originalFilesRestoredAndIndependentlyCompared": 2975,
   "views": [
     {
@@ -17,8 +17,11 @@
     }
   ],
   "ownerProtectedInputsRequired": true,
-  "sourceImageBodiesFromGitHub": false,
+  "sourceImageBodiesFromGitHub": 4,
+  "remainingOwnerSuppliedImageBodies": 50,
   "sourceProgramsExecuted": false,
   "buildRepeated": false,
-  "allSourceLicenseRuntimeAndRecoveryClosure": false
+  "allSourceLicenseRuntimeAndRecoveryClosure": false,
+  "previousUnchangedPublicFilesReverified": 1510,
+  "allCurrentAndPriorSelectedPublicFileComparisons": 1535
 }
