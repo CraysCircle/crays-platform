@@ -221,6 +221,10 @@
     {
       "component": "tls19-dns01-bootstrap",
       "path": "operations/tls19-dns01-bootstrap/source-capture.json"
+    },
+    {
+      "component": "historical-nostr-broker-member-provider-original",
+      "path": "source-archives/nostr-broker/provider-deployment-9Bw2a9ACdj6YJGzqPTtSBcmTZA5T/web/source-capture.json"
     }
   ]
 }

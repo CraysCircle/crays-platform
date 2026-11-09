@@ -1,0 +1,50 @@
+{
+  "schema": "crays.historical-provider-exact-source-capture.v1",
+  "deployment": "dpl_9Bw2a9ACdj6YJGzqPTtSBcmTZA5T",
+  "projectId": "prj_yBYXIhwxKYoKyrmKNhUT5cxvCfAb",
+  "projectName": "crays-nostr-broker-dev",
+  "files": [
+    {
+      "publicPath": "source-archives/nostr-broker/provider-deployment-9Bw2a9ACdj6YJGzqPTtSBcmTZA5T/web/src/src/app/(web)/member/page.tsx",
+      "originalProviderPath": "src/src/app/(web)/member/page.tsx",
+      "originalFileUID": "daddbc855f6a2a422cd487d5531b3e15c9dbcd8b",
+      "bytes": 1431,
+      "sha256": "f135060596b8b86c687eb9944f59ce5f4f9b5737a4695545f062ce8683ba3f85",
+      "rawSHA1": "daddbc855f6a2a422cd487d5531b3e15c9dbcd8b",
+      "retrieval": "Vercel get_deployment_file_contents; complete Base64 result decoded without normalization",
+      "transformation": "NONE_UNCHANGED_ORIGINAL",
+      "restoration": {
+        "targetRelativeToOriginalProviderSourceRoot": "src/src/app/(web)/member/page.tsx",
+        "sourceRootNotInferred": true,
+        "bytes": 1431,
+        "sha256": "f135060596b8b86c687eb9944f59ce5f4f9b5737a4695545f062ce8683ba3f85",
+        "rawSHA1": "daddbc855f6a2a422cd487d5531b3e15c9dbcd8b"
+      }
+    }
+  ],
+  "sourceFiles": 1,
+  "sourceBytes": 1431,
+  "unresolvedExactSources": [
+    {
+      "path": "src/src/app/(web)/account/continue/page.tsx",
+      "uid": "b9a886e5cf72aca4451144384f0e4ce4df2f931b1",
+      "expectedBytes": 1406,
+      "expectedSHA256": "fce19ad6a6b1f9cbdc2f6500ac18ea1c41968f405617e79f6106f1a23f23f131",
+      "observed": "404 exact UID and exact UID plus known path"
+    },
+    {
+      "path": "src/src/app/(web)/workspace/candidate/page.tsx",
+      "uid": "430345a81f5714fdebc08b2c59c9e266ed7f3a8c7",
+      "expectedBytes": 754,
+      "expectedSHA256": "f10b24bfea48dc60a14d911f8b00c6e96fba78516cd0f356b11ce8ab4b0e2a2c",
+      "observed": "404 exact UID and exact UID plus known path"
+    }
+  ],
+  "deploymentMetadataExposedExplicitTeam": false,
+  "missingPermissionsOrGlobalAbsenceInferred": false,
+  "sourceCaptureDoesNotIncludeImportedModulesAssetsOrCompleteApplication": true,
+  "sourceOrTestExecuted": false,
+  "runtimeAdoptionClaimed": false,
+  "newLicenseGrant": false,
+  "otherNinePIDMarkersOrTwentyTruncatedFilesResolved": false
+}
