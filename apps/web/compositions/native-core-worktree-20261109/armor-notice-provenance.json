@@ -1,0 +1,129 @@
+{
+  "scope": "Original root license for the three exact Core GraphQL Armor versions",
+  "sourceRepository": "Escape-Technologies/graphql-armor",
+  "oneOriginalNoticeBodyStored": true,
+  "exactOriginalCopyrightTextPreserved": true,
+  "threePackageManifestsByteMatchExistingOriginals": true,
+  "noNestedApplicableNoticeInInspectedSourceTree": true,
+  "noLicenseGrantInvented": true,
+  "fullTransitiveRuntimeRightsClosure": false,
+  "packages": [
+    {
+      "package": "@escape.tech/graphql-armor-cost-limit",
+      "version": "2.4.3",
+      "registryURL": "https://registry.npmjs.org/%40escape.tech%2Fgraphql-armor-cost-limit/2.4.3",
+      "registryBodySHA256": "4878768814560cccd6af9aae55a2aea15a2eb2ca101ffa4325a56471aa206cdb",
+      "distIntegrityMatchesOriginalCoreLock": true,
+      "sourceGitHead": "b816c199741293871ec47ef5d1ce18fa2d36809e",
+      "exactUpstreamPackageVersionAndLicenseMatch": true,
+      "upstreamPackageManifest": {
+        "url": "https://raw.githubusercontent.com/Escape-Technologies/graphql-armor/b816c199741293871ec47ef5d1ce18fa2d36809e/packages/plugins/cost-limit/package.json",
+        "path": "packages/plugins/cost-limit/package.json",
+        "gitBlobSHA1": "b7ee870c93fb388d9ed9214a3397ddb707fd74a3",
+        "bytes": 1164,
+        "sha256": "3ce7e0119fb319161fa7a574fb2fa2cc44d59baf9126c8bb8ade274a869f4145"
+      },
+      "originalNotices": [
+        {
+          "url": "https://raw.githubusercontent.com/Escape-Technologies/graphql-armor/b816c199741293871ec47ef5d1ce18fa2d36809e/LICENSE",
+          "path": "LICENSE",
+          "gitBlobSHA1": "d296853cfac0905358b5eed3227dfdfe2e96e11d",
+          "bytes": 1084,
+          "sha256": "210d2c9d55e0e20b5532d932dba1a44d3cd8ec76524bc81235a228382edb1460"
+        }
+      ],
+      "nestedOrAlternateApplicableNoticeFound": false,
+      "exactOriginalInstalledManifestAlreadyPreserved": {
+        "repository": "CraysCircle/crays-platform",
+        "commit": "5e71d14b1ba300e568be67d76d8a5d65ba2d0234",
+        "path": "apps/web/third-party/packages/@escape.tech/graphql-armor-cost-limit/2.4.3/package.json",
+        "sha256": "3ce7e0119fb319161fa7a574fb2fa2cc44d59baf9126c8bb8ade274a869f4145"
+      },
+      "localNotice": {
+        "path": "apps/web/third-party/upstream/graphql-armor/b816c199741293871ec47ef5d1ce18fa2d36809e/LICENSE",
+        "bytes": 1084,
+        "sha256": "210d2c9d55e0e20b5532d932dba1a44d3cd8ec76524bc81235a228382edb1460",
+        "tag": "native-core-armor-notices-20261109"
+      },
+      "noticeBytesIdenticalAcrossBothPublisherSourceCommits": true
+    },
+    {
+      "package": "@escape.tech/graphql-armor-max-depth",
+      "version": "2.4.2",
+      "registryURL": "https://registry.npmjs.org/%40escape.tech%2Fgraphql-armor-max-depth/2.4.2",
+      "registryBodySHA256": "8ec40f4c13cc14718152150b78b52bad5c1596c5a5b391c33bcf19ddf0ce7fdf",
+      "distIntegrityMatchesOriginalCoreLock": true,
+      "sourceGitHead": "79fc49b70b2f5cfd3cc94a78c0964fee772ba420",
+      "exactUpstreamPackageVersionAndLicenseMatch": true,
+      "upstreamPackageManifest": {
+        "url": "https://raw.githubusercontent.com/Escape-Technologies/graphql-armor/79fc49b70b2f5cfd3cc94a78c0964fee772ba420/packages/plugins/max-depth/package.json",
+        "path": "packages/plugins/max-depth/package.json",
+        "gitBlobSHA1": "5e8dd5de93808329b8bc56dc96b35e58cf3692e5",
+        "bytes": 1169,
+        "sha256": "f39718cc0f7cd4260e32fe1af364e4ced7b9a77d0f2c5740b51bcc7df8004d66"
+      },
+      "originalNotices": [
+        {
+          "url": "https://raw.githubusercontent.com/Escape-Technologies/graphql-armor/79fc49b70b2f5cfd3cc94a78c0964fee772ba420/LICENSE",
+          "path": "LICENSE",
+          "gitBlobSHA1": "d296853cfac0905358b5eed3227dfdfe2e96e11d",
+          "bytes": 1084,
+          "sha256": "210d2c9d55e0e20b5532d932dba1a44d3cd8ec76524bc81235a228382edb1460"
+        }
+      ],
+      "nestedOrAlternateApplicableNoticeFound": false,
+      "exactOriginalInstalledManifestAlreadyPreserved": {
+        "repository": "CraysCircle/crays-platform",
+        "commit": "5e71d14b1ba300e568be67d76d8a5d65ba2d0234",
+        "path": "apps/web/third-party/packages/@escape.tech/graphql-armor-max-depth/2.4.2/package.json",
+        "sha256": "f39718cc0f7cd4260e32fe1af364e4ced7b9a77d0f2c5740b51bcc7df8004d66"
+      },
+      "localNotice": {
+        "path": "apps/web/third-party/upstream/graphql-armor/b816c199741293871ec47ef5d1ce18fa2d36809e/LICENSE",
+        "bytes": 1084,
+        "sha256": "210d2c9d55e0e20b5532d932dba1a44d3cd8ec76524bc81235a228382edb1460",
+        "tag": "native-core-armor-notices-20261109"
+      },
+      "noticeBytesIdenticalAcrossBothPublisherSourceCommits": true
+    },
+    {
+      "package": "@escape.tech/graphql-armor-max-tokens",
+      "version": "2.5.1",
+      "registryURL": "https://registry.npmjs.org/%40escape.tech%2Fgraphql-armor-max-tokens/2.5.1",
+      "registryBodySHA256": "2560a2a5a1c4b7f1e7917031970ba97edb82c8d30ed7380ab3b4bbfa9b9a33a6",
+      "distIntegrityMatchesOriginalCoreLock": true,
+      "sourceGitHead": "b816c199741293871ec47ef5d1ce18fa2d36809e",
+      "exactUpstreamPackageVersionAndLicenseMatch": true,
+      "upstreamPackageManifest": {
+        "url": "https://raw.githubusercontent.com/Escape-Technologies/graphql-armor/b816c199741293871ec47ef5d1ce18fa2d36809e/packages/plugins/max-tokens/package.json",
+        "path": "packages/plugins/max-tokens/package.json",
+        "gitBlobSHA1": "3487a6833de6fe12453712a3b725199c16d3ea04",
+        "bytes": 1205,
+        "sha256": "2d7718f22de8a77614aec55dc6a80a6b037b02df8117cb6acd02f5a6a413b259"
+      },
+      "originalNotices": [
+        {
+          "url": "https://raw.githubusercontent.com/Escape-Technologies/graphql-armor/b816c199741293871ec47ef5d1ce18fa2d36809e/LICENSE",
+          "path": "LICENSE",
+          "gitBlobSHA1": "d296853cfac0905358b5eed3227dfdfe2e96e11d",
+          "bytes": 1084,
+          "sha256": "210d2c9d55e0e20b5532d932dba1a44d3cd8ec76524bc81235a228382edb1460"
+        }
+      ],
+      "nestedOrAlternateApplicableNoticeFound": false,
+      "exactOriginalInstalledManifestAlreadyPreserved": {
+        "repository": "CraysCircle/crays-platform",
+        "commit": "5e71d14b1ba300e568be67d76d8a5d65ba2d0234",
+        "path": "apps/web/third-party/packages/@escape.tech/graphql-armor-max-tokens/2.5.1/package.json",
+        "sha256": "2d7718f22de8a77614aec55dc6a80a6b037b02df8117cb6acd02f5a6a413b259"
+      },
+      "localNotice": {
+        "path": "apps/web/third-party/upstream/graphql-armor/b816c199741293871ec47ef5d1ce18fa2d36809e/LICENSE",
+        "bytes": 1084,
+        "sha256": "210d2c9d55e0e20b5532d932dba1a44d3cd8ec76524bc81235a228382edb1460",
+        "tag": "native-core-armor-notices-20261109"
+      },
+      "noticeBytesIdenticalAcrossBothPublisherSourceCommits": true
+    }
+  ]
+}
