@@ -44,3 +44,7 @@ The separate [three-program ingress addendum](ingress/README.md) records the sup
 ## Journalled recovery revision03
 
 The [two-program revision03 recovery archive](recovery/README.md) preserves the final controller and pure payload projector, their exact source hashes and independent source-review scope. The earlier operating and ingress sources remain unchanged. Publication establishes source availability; recovery execution and its outcome require separate Root receipts.
+
+## Serve-pin continuation revision03
+
+The [three-program continuation archive](continuation/README.md) records the final revision03 controller, generation finisher and membership47 runtime guard. Its source table binds the unchanged originals and the previously published Title47 Common source. Source availability and review are distinct from Root execution and its actual result.
