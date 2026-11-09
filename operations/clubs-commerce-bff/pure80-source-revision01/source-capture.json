@@ -1,0 +1,117 @@
+{
+  "schema": "crays.clubs-commerce-bff.pure80.exact-source-capture.v1",
+  "files": [
+    {
+      "path": "operations/clubs-commerce-bff/pure80-source-revision01/pure-original-probe80.py",
+      "bytes": 14932,
+      "sha256": "7bc79001d33a9b36c271e45d88fdabb0338d7e2b9d8707d8e5048aebf3bfb91f",
+      "transformation": "NONE_EXACT_ORIGINAL_UTF8_SOURCE_BYTES",
+      "privateOriginalSource": {
+        "bucket": "crays-acceptance-backups-391674093840-eu-central-2",
+        "key": "migration-work/20261108/business/bff-image-probe80/pure-original-probe80.actual-pins-bound.rev04.json",
+        "versionId": "3k0nYwgEpYu8hnz99GN8DdZT5jGB3YGZ",
+        "envelopeBytes": 64283,
+        "envelopeSHA256": "b699424259553c06d9e3e80133621bb9f634bfc3c2d8eb6e53c9c745cd80dac7",
+        "selectedJSONFieldPath": [
+          "source"
+        ]
+      },
+      "restoration": "Restore these bytes only into the recorded selected JSON string field/standalone source file. The full original envelope contains other fields and is not reconstructed or exported by this source-only packet."
+    },
+    {
+      "path": "operations/clubs-commerce-bff/pure80-source-revision01/build80.controller.rev02.py",
+      "bytes": 27542,
+      "sha256": "2ba93e1f58a2e93549491407bd9d1c0d0d6440fb114df683d10d601e95cd9e52",
+      "transformation": "NONE_EXACT_ORIGINAL_UTF8_SOURCE_BYTES",
+      "privateOriginalSource": {
+        "bucket": "crays-acceptance-backups-391674093840-eu-central-2",
+        "key": "migration-work/20261108/business/bff-build-inputs80/build80.controller.recovery01.source-only.rev02.json",
+        "versionId": "wVgGyWR4H6ejWWSlqlNxlVcJvrijqlmN",
+        "envelopeBytes": 116917,
+        "envelopeSHA256": "7e89e19437b49e02fbe799232e4a00642106ec607bb298882f944f73ebd92b91",
+        "selectedJSONFieldPath": [
+          "controller",
+          "source"
+        ]
+      },
+      "restoration": "Restore these bytes only into the recorded selected JSON string field/standalone source file. The full original envelope contains other fields and is not reconstructed or exported by this source-only packet."
+    }
+  ],
+  "originalFiles": 2,
+  "originalBytes": 42474,
+  "selectedFieldsOnly": true,
+  "embeddedJS": {
+    "container": "pure-original-probe80.py",
+    "field": "JS Python string literal",
+    "bytes": 2723,
+    "sha256": "8ef93ee31ac023ac8ad1a25d04b04d7dee8c70165fb71098371d2b67cd2f70f0",
+    "imports": [
+      "node:fs",
+      "node:crypto",
+      "node:child_process",
+      "file:///app/lib.mjs",
+      "pg"
+    ],
+    "classification": "Finite syntax/import probe code. Does not inline the imported BFF or pg implementations. Keep once inside exact original Python source; no duplicate extracted JS file required."
+  },
+  "existingBFFSourceContext": {
+    "publicIndexPath": "services/clubs-commerce-bff/source-index.json",
+    "indexSHA256": "bca69d27a6cb12fc7eaa9fbeb11833b7ffe11452f4bb096e05ab9362988e72d4",
+    "fiveExactControllerContextPins": [
+      {
+        "name": "Dockerfile",
+        "bytes": 1249,
+        "sha256": "01062ffdf49886d0b65bb9c1334702ebc779d28647d21b7de9086eafae29b9da",
+        "publicPath": "services/clubs-commerce-bff/Dockerfile"
+      },
+      {
+        "name": "package.json",
+        "bytes": 282,
+        "sha256": "78c6b9b0c5a7ed424fba9cb5c81f8b278ea8d8553b58c52b1f41b80de73a2172",
+        "publicPath": "services/clubs-commerce-bff/package.json"
+      },
+      {
+        "name": "package-lock.json",
+        "bytes": 5729,
+        "sha256": "3bc3d679850e3e7181dcce08b5f78068e214d937a27a5817756eaa5bd5b7c6ef",
+        "publicPath": "services/clubs-commerce-bff/package-lock.json"
+      },
+      {
+        "name": "server.mjs",
+        "bytes": 11839,
+        "sha256": "6d14df24cbb8471bf36270546461ef8c398bdd8ee9e62d880368661d813e04a9",
+        "publicPath": "services/clubs-commerce-bff/server.mjs"
+      },
+      {
+        "name": "lib.mjs",
+        "bytes": 63459,
+        "sha256": "aa171859f5569f4ae52412f4b1ce872d62e55e16c0b4a9ebee6359af343960be",
+        "publicPath": "services/clubs-commerce-bff/lib.mjs"
+      }
+    ],
+    "probeFourPinsAreExactSubset": true,
+    "originalBffSourcesCopiedAgain": false,
+    "currentPublicSourcesNotRuntimeOrImageParity": true
+  },
+  "recordedPreviousSourceReview": {
+    "key": "migration-work/20261108/business/bff-image-probe80/pure-original-probe80.previous-independent-source-review.record.json",
+    "versionId": "BbnGPlhGAhoGoj_b2NaSFguUmfRwuVRt",
+    "bytes": 311,
+    "sha256": "43be77e0a7e0eb6945410cc27d5cfcbdff16a31201d1e75dcc0f8900c103ed5d",
+    "statusAsRecordedBySelectedRootRelay": "SOURCE_ONLY_PASS_ADMISSION_UNBOUND",
+    "recordBodyReadByThisReviewer": false,
+    "evidenceLimit": "Exact immutable locator/hash from selected relay metadata. The original311byte peer record was not retrieved/read in this review; no fresh independent source approval or runtime admission is inferred."
+  },
+  "sourceRootProgramDependency": {
+    "probeReferencesControllerPath": "/srv/crays/migration-work/20261108/business/bff-build80/build80.controller.rev02.py",
+    "controllerSHA256": "2ba93e1f58a2e93549491407bd9d1c0d0d6440fb114df683d10d601e95cd9e52",
+    "filesystemOriginalProbePathNotSupplied": "Source-field and supplied originalfilename preserved; no unprovided filesystem-origin path invented."
+  },
+  "licenseBoundary": "Selected Root relay says inherit actual current authorized license/NOTICE assignment, without introducing a new license. No new ownership or AGPL grant is created by these two source files or this provenance map. Existing BFF component/library/dependency terms remain separate.",
+  "originalCommentsAndNoticesUnchanged": true,
+  "allOtherEnvelopeFieldsExported": false,
+  "privateInputsAdmissionsOrBindingsIncluded": false,
+  "sourceProgramsOrImageBuildOrProbeExecuted": false,
+  "imageParityFunctionalOrCustomerAcceptanceClaimed": false,
+  "recoveryScope": "Exact two selected program byte streams and their recorded source fields only; no original envelope/private admission/full image/dependency/source-offer closure."
+}

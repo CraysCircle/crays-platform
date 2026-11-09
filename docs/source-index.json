@@ -245,6 +245,10 @@
     {
       "component": "vendure-original-typescript-source07-rev04",
       "path": "operations/vendure-native-provider-integration/preferred-source07-rev04/source-capture.json"
+    },
+    {
+      "component": "clubs-commerce-bff-pure80-source-revision01",
+      "path": "operations/clubs-commerce-bff/pure80-source-revision01/source-capture.json"
     }
   ]
 }
