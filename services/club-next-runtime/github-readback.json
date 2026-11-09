@@ -1,0 +1,14 @@
+{
+  "atUTC": "2026-11-09T03:00:51.601425+00:00",
+  "sourceCommit": "c2cc86b7fe91283c0c4615449fd60b7cefeec62c",
+  "sourceTag": "club-next-https36-source-20261109",
+  "anonymousNewChangedPublicFilesVerified": 33,
+  "allOriginalSourceFileBodiesIndependentlyVerified": 35,
+  "newOriginalSourceBodies": 24,
+  "existingOriginalSourceBodiesReverified": 11,
+  "gitModesVerifiedForNewChangedFiles": 33,
+  "certificatePrivateKeyCredentialAndLiveControlPayloadsIncluded": false,
+  "sourceProgramsExecuted": false,
+  "buildOrRuntimeRepeated": false,
+  "completeRuntimeSourceLicenseAndRecoveryClosure": false
+}
