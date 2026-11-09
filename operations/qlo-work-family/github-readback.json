@@ -1,0 +1,15 @@
+{
+  "schema": "crays.anonymous-source-readback.v1",
+  "sourceCommit": "78da50c4741164439106b48f9a94a6e3691ee435",
+  "sourceTag": "qlo-work-family-source44-20261109",
+  "verifiedAtUTC": "2026-11-09T01:26:24.804409+00:00",
+  "freshAnonymousHTTPSClone": true,
+  "noCredentialsOrLocalGitAlternates": true,
+  "newOrChangedPublicFileBlobsSHA256AndSizeVerified": 29,
+  "originalOperationsProgramAndPatchFiles": 14,
+  "originalWorkRuntimeFiles": 5,
+  "existingStorageGuardSHA256AndSizeVerified": true,
+  "originalProgramsExecuted": false,
+  "newApplicationBuildOrDeployment": false,
+  "completeUnderlyingApplicationDependencyRuntimeOrLicenseClosure": false
+}

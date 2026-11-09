@@ -27,3 +27,5 @@ Use a full Git clone and compare files with the source manifest. Original source
 All eleven Python files were parsed without executing the programs. All twenty selected source/dependency inputs passed the recorded secret scan. Those checks do not prove runtime behavior, successful continuation, complete recovery or license clearance. This GitHub capture did not run any preserved application, preflight or operations program.
 
 No new blanket license is assigned. Application/operations authorship rights, exact Docker/Python/Node/underlying application and dependency notice/source relationships, and applicable source-offer closure remain open. See the [platform provenance record](../../docs/license-and-provenance.md).
+
+The [anonymous GitHub readback](github-readback.json) verifies the annotated source tag, all 29 published file blobs and the reused storage guard against the recorded original bytes and SHA-256 values.

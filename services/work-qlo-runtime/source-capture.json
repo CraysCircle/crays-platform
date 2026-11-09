@@ -66,5 +66,6 @@
   "runtimeDependencySourceLicenseAndPrivateConfigurationClosure": false,
   "originalUnderlyingNextApplicationAndClientAssetContinuityNotIncluded": true,
   "sourceProgramsExecuted": false,
-  "freshRuntimeBuildOrDeployment": false
+  "freshRuntimeBuildOrDeployment": false,
+  "publicReadbackEvidence": "../../operations/qlo-work-family/github-readback.json"
 }
