@@ -1,0 +1,24 @@
+{
+  "atUTC": "2026-11-09T02:33:24.488388+00:00",
+  "sourceCommit": "77150c3b8cfe200d21672c9e62c9c2b9562d982b",
+  "sourceTag": "personal-web-source1489-20261109",
+  "anonymousPublicFilesSHA256AndSizeVerified": 1516,
+  "originalFilesRestoredAndIndependentlyCompared": 2975,
+  "views": [
+    {
+      "version": "baseline",
+      "originalFilesSHA256AndSizeVerified": 1486,
+      "sourceProgramsExecuted": false
+    },
+    {
+      "version": "candidate",
+      "originalFilesSHA256AndSizeVerified": 1489,
+      "sourceProgramsExecuted": false
+    }
+  ],
+  "ownerProtectedInputsRequired": true,
+  "sourceImageBodiesFromGitHub": false,
+  "sourceProgramsExecuted": false,
+  "buildRepeated": false,
+  "allSourceLicenseRuntimeAndRecoveryClosure": false
+}

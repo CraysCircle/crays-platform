@@ -113,6 +113,10 @@
     {
       "component": "club-member-origin35-operations",
       "path": "operations/member-origin35/source-capture.json"
+    },
+    {
+      "component": "personal-web-application",
+      "path": "apps/personal/source-capture.json"
     }
   ]
 }
