@@ -28,3 +28,7 @@ Use [CONTRIBUTING.md](CONTRIBUTING.md) to choose a component and propose a focus
 The [source and provenance record](docs/license-and-provenance.md) tracks dependencies, runtime images, source availability and remaining rights/recovery work. A source-code license grant does not by itself demonstrate complete build inputs, runtime notices or fulfillment of every deployment-specific obligation.
 
 The four shared-account source revisions match the original Platform paths recorded in the linked scope manifest, including their exact file hashes. The current Platform copies were compared byte for byte before this map update. Other Member/account variants and referenced font binaries retain their separate terms; this row grants no license for the complete shared web application.
+
+## Frappe Team Scope original package metadata
+
+The preserved [crays_team_scope 0.1.0 source](services/frappe/custom-apps/crays_team_scope/README.md) declares publisher CRAYS and app_license = "MIT" in its unchanged original hook. No standalone LICENSE, NOTICE or copyright-grant file occurs in the exact nine-member source archive. This publication preserves that evidence and adds no replacement grant; it does not apply the AGPL grants for other CRAYS files to this package. The original notice text and the complete external Frappe/dependency obligations remain to be reconciled.

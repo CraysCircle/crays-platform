@@ -44,3 +44,9 @@ Include the expected scope and accounting outcome in a proposed change. Runtime 
 ## Version and source status
 
 The integration is preserved inside the shared application source; start with its [source manifest](../../apps/web/source-capture.json) and [platform index](../source-index.json). Full Frappe application/custom-app source, dependency notices, current runtime bindings and end-to-end acceptance remain separate reconciliation work. See [license and provenance](../license-and-provenance.md).
+
+## Preserved CRAYS Team Scope source
+
+The [original Team Scope app](../../services/frappe/custom-apps/crays_team_scope/README.md) preserves five text inputs (7,008 bytes) from the crays_team_scope 0.1.0 capture. Its request hook and policy constrain dedicated synthetic test service principals, document fields, company/property scopes and exact time-limited fixture writes. This is a concrete source entry point for scoped-request and policy-test contributions.
+
+The preserved 4 November 2026 snapshot records Frappe 16.25.0 and ERPNext 16.26.1. It does not establish the complete current installed-app composition or general production tenant authorization. The [source record](../../services/frappe/custom-apps/crays_team_scope/source-capture.json) accounts separately for all nine original archive members, including four private Python-cache files. Original MIT metadata is retained; the missing standalone original notice and complete dependency/recovery relationships remain open.

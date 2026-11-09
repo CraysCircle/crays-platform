@@ -165,6 +165,10 @@
     {
       "component": "member42-installation-source-versions",
       "path": "operations/member-provider-account42/source-cases/source-versions.json"
+    },
+    {
+      "component": "frappe-crays-team-scope-0.1.0",
+      "path": "services/frappe/custom-apps/crays_team_scope/source-capture.json"
     }
   ]
 }

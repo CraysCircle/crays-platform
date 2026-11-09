@@ -1,0 +1,151 @@
+{
+  "schema": "crays.frappe.team-scope.original-source-capture.v1",
+  "component": "crays_team_scope",
+  "originalVersion": "0.1.0",
+  "versionAuthority": "Exact __init__.py and existing installed-app snapshot; no fresh runtime query",
+  "captureScope": {
+    "originalArchiveFiles": 9,
+    "originalArchiveBytes": 22370,
+    "publishedTextFiles": 5,
+    "publishedTextBytes": 7008,
+    "privateCompiledOriginals": 4,
+    "privateCompiledBytes": 15362
+  },
+  "originalArchive": {
+    "sourceContainer": "crays-main-frappe-web-v1",
+    "preservedAtUTC": "2026-11-04T19:05:10.196603+00:00",
+    "archiveName": "crays_team_scope.original.tar",
+    "bytes": 30720,
+    "sha256": "4a7109e82ec8a259914c244de71d332d630966263b008ad97120decdd3d0af04",
+    "sourcePreservationReceiptSHA256": "3d4fbb87eaa348202f816bda36b69a71cfc2e2888d9557207dc3fd28828838fd",
+    "regularMembers": 9,
+    "directoryMembers": 2,
+    "allMemberHeadersAndBodyHashesVerified": true,
+    "offHostCustodyNotEstablishedByThisCapture": true
+  },
+  "files": [
+    {
+      "archiveMember": "crays_team_scope/__init__.py",
+      "bytes": 22,
+      "sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+      "mode": "0o644",
+      "publishedAsSource": true,
+      "path": "crays_team_scope/__init__.py",
+      "originalBytesUnchanged": true
+    },
+    {
+      "archiveMember": "crays_team_scope/__pycache__/__init__.cpython-314.pyc",
+      "bytes": 212,
+      "sha256": "eabe338bf1cb7fe1e2153b875b4783e90378b82934b112e5668b918651912d80",
+      "mode": "0o644",
+      "publishedAsSource": false,
+      "originalBytesUnchanged": true
+    },
+    {
+      "archiveMember": "crays_team_scope/__pycache__/guard.cpython-314.pyc",
+      "bytes": 2908,
+      "sha256": "f035259b1c777824d055aeab2c86f1db961af8909b6e7161031185694e396b39",
+      "mode": "0o644",
+      "publishedAsSource": false,
+      "originalBytesUnchanged": true
+    },
+    {
+      "archiveMember": "crays_team_scope/__pycache__/hooks.cpython-314.pyc",
+      "bytes": 503,
+      "sha256": "788a0681a6c4ab466fc0528649c5babaf37728ecb69af7fa4d76c4254ffb61c5",
+      "mode": "0o644",
+      "publishedAsSource": false,
+      "originalBytesUnchanged": true
+    },
+    {
+      "archiveMember": "crays_team_scope/__pycache__/policy.cpython-314.pyc",
+      "bytes": 11739,
+      "sha256": "9d778ef8e129d789a99ed945f47bd4e1826c11f2639af27168339999b77a98f9",
+      "mode": "0o644",
+      "publishedAsSource": false,
+      "originalBytesUnchanged": true
+    },
+    {
+      "archiveMember": "crays_team_scope/guard.py",
+      "bytes": 1390,
+      "sha256": "1cea932aa26da0a2346ffc06e17334181fa936cd0919d0671600a50801450cf5",
+      "mode": "0o644",
+      "publishedAsSource": true,
+      "path": "crays_team_scope/guard.py",
+      "originalBytesUnchanged": true
+    },
+    {
+      "archiveMember": "crays_team_scope/hooks.py",
+      "bytes": 271,
+      "sha256": "d23cd6ebe6a63a1cea3c031163dd195e17c7e667183b45c7a6c4cbdd3175f004",
+      "mode": "0o644",
+      "publishedAsSource": true,
+      "path": "crays_team_scope/hooks.py",
+      "originalBytesUnchanged": true
+    },
+    {
+      "archiveMember": "crays_team_scope/modules.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "0o644",
+      "publishedAsSource": true,
+      "path": "crays_team_scope/modules.txt",
+      "originalBytesUnchanged": true
+    },
+    {
+      "archiveMember": "crays_team_scope/policy.py",
+      "bytes": 5325,
+      "sha256": "4f64ee4fc3d323f2899b543910bd641655a5e45b9c4cd76493e289af31e6e9c9",
+      "mode": "0o644",
+      "publishedAsSource": true,
+      "path": "crays_team_scope/policy.py",
+      "originalBytesUnchanged": true
+    }
+  ],
+  "installedSnapshot": {
+    "frappe": "16.25.0",
+    "erpnext": "16.26.1",
+    "crays_team_scope": "0.1.0",
+    "receiptSHA256": "760074cb97676daea53a98a82e1ebf8d89a9931ad303c60f57b2f4cedb3081c2",
+    "currentAWSVersionNotInferred": true
+  },
+  "sourceReview": {
+    "fiveTextFilesReadInFull": true,
+    "fourPythonFilesASTParsedOnly": true,
+    "noOriginalCodeExecuted": true,
+    "identifiedFixedPrivateSourceHolds": 0,
+    "syntheticPatternAndTESTScopeAreExplicit": true,
+    "privateBindingAndCustomerBodiesNotRead": true,
+    "compiledFilesHashedNotLoadedOrDecompiled": true
+  },
+  "imports": {
+    "external": [
+      "frappe"
+    ],
+    "local": [
+      "crays_team_scope.policy"
+    ],
+    "pythonStandardLibrary": [
+      "json",
+      "stat",
+      "pathlib",
+      "re",
+      "datetime"
+    ],
+    "externalCodeNotCopiedOrExecuted": true
+  },
+  "originalNoticeEvidence": {
+    "publisherMetadata": "CRAYS",
+    "appLicenseMetadata": "MIT",
+    "inlineCopyrightOrStandaloneLicenseNoticeFound": false,
+    "standaloneLicenseOrNoticeMembers": 0,
+    "noNewLicenseGrant": true,
+    "originalDeclarationNotOverridden": true,
+    "metadataIsNotIndependentAuthorshipOrCompleteLicenseText": true
+  },
+  "limits": [
+    "Dedicated synthetic test-principal request policy only; not accepted general production user authorization.",
+    "No captured packaging manifest, lockfile, original test harness or complete bench installation.",
+    "Does not close the other installed app source/notices, original writable delta, dependencies or runtime recovery."
+  ]
+}
