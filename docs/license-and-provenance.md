@@ -1,6 +1,6 @@
 # License and provenance
 
-This record separates the original application source, the CRAYS AWS build description and the runtime distribution. It is an evidence record. The explicit CRAYS AG grants for the listed Qlo/BFF source revisions are documented separately in the [component license map](../LICENSING.md).
+This record separates the original application source, the CRAYS AWS build description and the runtime distribution. It is an evidence record. The explicit CRAYS AG grants for the listed CRAYS-owned source revisions are documented separately in the [component license map](../LICENSING.md).
 
 | Material | Established provenance | License evidence and remaining work |
 | --- | --- | --- |
@@ -21,13 +21,15 @@ No customer data, provider keys, consumer tokens, private bindings, database dum
 
 ## Open acceptance points
 
-The initial source capture is usable for precise repository/commit identification. The explicit Qlo/BFF grants resolve the license designation for their listed CRAYS-owned revisions. Other application authorship/license questions, exact runtime license closure, test execution evidence and applicable source-offer obligations remain open. They must not be reported as legally complete or release-approved.
+The initial source capture is usable for precise repository/commit identification. The file-scoped CRAYS grants resolve the license designation for their listed owned revisions. Other application authorship/license questions, exact runtime license closure, test execution evidence and applicable source-offer obligations remain open. They must not be reported as legally complete or release-approved.
 
 ## Operations source
 
 The reviewed Qlo account2 revision03 and unchanged storage guard are preserved with their source packet/review identities under [operations](../operations/README.md). This import supplies no new license grant and does not authorize execution. Their original ownership and license evidence remain an explicit open item.
 
-The [Vendure provider operating-source packet](../operations/vendure-native-provider-integration/README.md) now preserves four exact original programs (107,959 bytes). The [Chuck48 listener](../operations/chuck-original-transport48/README.md) and [Common49/revision03 operational source](../operations/chuck-original-transport48/install-revision03/README.md) are also public with exact original hashes and existing-helper restoration references. Anonymous readback verified the published source packets. Source/lifecycle peer checks and publication do not establish the complete provider/image/dependency source, applicable notices, authenticated customer acceptance or current runtime adoption. These additions introduce no blanket license grant and include no private launch, approval or environment-input bodies.
+The [Vendure provider operating-source packet](../operations/vendure-native-provider-integration/README.md) now preserves ten exact original operating and verifier programs (215,470 bytes). Their exact CRAYS-owned revisions and fourteen mapped nested own-code regions have an explicit [AGPL-3.0-only grant from CRAYS AG](../operations/vendure-native-provider-integration/LICENSING.md); this does not relicense the Vendure/framework implementations. The [Chuck48 listener](../operations/chuck-original-transport48/README.md) and [Common49/revision03 operational source](../operations/chuck-original-transport48/install-revision03/README.md) are also public with exact original hashes and existing-helper restoration references. Anonymous readback verified the published source packets. Source/lifecycle peer checks and publication do not establish the complete provider/image/dependency source, applicable notices, authenticated customer acceptance or current runtime adoption. These additions introduce no blanket license grant and include no private launch, approval or environment-input bodies.
+
+The [TLS19 DNS01 bootstrap archive](../operations/tls19-dns01-bootstrap/README.md) preserves three exact original programs (15,367 bytes) with their own [AGPL-3.0-only scope](../operations/tls19-dns01-bootstrap/LICENSING.md). External package/system-tool implementations retain their upstream terms. Private keys and execution inputs remain excluded; source and license publication do not establish certificate issuance, installation, renewal or ingress adoption.
 
 ## Clubs Commerce BFF
 
@@ -36,6 +38,8 @@ The nine original component files are preserved unchanged with their [source rec
 ## Shared Next.js application
 
 The [qualified shared web capture](../apps/web/README.md) retains 2,045 selected original inputs in baseline and prepared source views. Its [direct-package index](../apps/web/third-party/index.json) preserves the observed package metadata and original root notice texts located for 45 of 47 direct packages. The server-only and drizzle-kit notice questions, application rights, transitive/bundled/runtime notices and source-availability obligations remain open. The [recovery record](../apps/web/docs/recovery.md) identifies missing operational helpers, the unqualified project lockfile and remaining media/runtime inputs. No application test, build, database program or deployment was executed by this import.
+
+The separate [Spot and Personal / Chuck working-source snapshot](../source-archives/spot-and-personal-web-working-source15-20261109/README.md) now preserves all seventeen selected originals (3,729,870 bytes), including two distinct complete Prototype.tsx files alongside the fifteen smaller source/evidence files. Their original working paths and restoration hashes remain separate from the canonical application compositions. This adds no license grant, complete imported module/asset graph or current runtime acceptance.
 
 ## Qlo/Work family operating and runtime sources
 
