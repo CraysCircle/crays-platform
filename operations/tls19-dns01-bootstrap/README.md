@@ -30,6 +30,8 @@ The APT source pins two requested Python packages. The separately reported three
 
 Root supplied these exact source hashes and the independent source review b0161631b4eaa38eab74ffc9f08a83dddc42a0c6a9796add74eb45524a5e3611. Its source-only PASS includes comparison with official Certbot ACME v2.9.0 APIs and a qualified future renewal plan; it is not a runtime or deployment acceptance.
 
+The CRAYS-owned code in the three exact program revisions is licensed under **AGPL-3.0-only**, copyright **CRAYS AG**. See [license scope and exclusions](LICENSING.md), the [exact three-file scope](license-scope.json), and the full [GNU AGPL version 3 text](LICENSE). Recipient rights to run, modify and redistribute covered code and derivatives remain intact; upstream package implementations retain their own terms.
+
 All three original program bodies are preserved byte for byte. No original copyright or license text has been removed or replaced. These are CRAYS orchestration sources using external packages and system tools. Their publication creates no new blanket license grant over Python ACME, josepy, cryptography, Ubuntu packages, OpenSSL or Caddy. Applicable original upstream terms and existing file-scoped CRAYS licensing boundaries remain separate. Dependency packages, package notices and a complete execution environment are not bundled here.
 
 Return to [operations](../README.md) or the [platform guide](../../README.md).

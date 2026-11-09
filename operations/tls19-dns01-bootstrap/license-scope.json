@@ -1,0 +1,72 @@
+{
+  "schema": "crays.component.exact-owned-source-license-scope.v1",
+  "licenseExpression": "AGPL-3.0-only",
+  "copyrightHolder": "CRAYS AG",
+  "grantDateUTC": "2026-11-09",
+  "sourceCommit": "4f58a11561a807e32a162305d6a21b418f99ca5a",
+  "componentPath": "operations/tls19-dns01-bootstrap",
+  "files": [
+    {
+      "path": "operations/tls19-dns01-bootstrap/official_dns01_two_phase.candidate.py",
+      "bytes": 12684,
+      "sha256": "a4a753f0f80c5d9d5342b6817d7804be2944fb9e86ba3976b23271ee9d66b298",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/public-tls19-official-acme-dns01-source01/official_dns01_two_phase.candidate.py"
+    },
+    {
+      "path": "operations/tls19-dns01-bootstrap/refresh_and_simulate.candidate.sh",
+      "bytes": 1587,
+      "sha256": "f94d735c53648debc34995988bfae6b20b3e2ca9ba2fdbe4a9205356fb0ba560",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/public-tls19-apt-https-source01/refresh_and_simulate.candidate.sh"
+    },
+    {
+      "path": "operations/tls19-dns01-bootstrap/install_exact_libraries.candidate.sh",
+      "bytes": 1096,
+      "sha256": "bf6696ad725bd8b0f3d86fa8ce1c15f68fd98159bf162f8e478f35ab92a1270b",
+      "originalSourcePath": "/srv/crays/migration-work/20261109/root/public-tls19-apt-https-source01/install_exact_libraries.candidate.sh"
+    }
+  ],
+  "fileCount": 3,
+  "sourceBytes": 15367,
+  "authority": {
+    "humanRightsAndLicenseDecision": "AGPL-3.0-only; Rechteinhaberin CRAYS AG",
+    "ownCodeScope": "Demonstrably CRAYS-owned previously unlicensed code",
+    "authorshipBasis": "Trusted Root source-owner identification of these exact three programs as CRAYS Root orchestration code, preserved exact source provenance and independent source review. Ownership is not inferred from absent headers or filenames.",
+    "sourcePeer": {
+      "originalPath": "/srv/crays/migration-work/20261109/root/public-tls19-official-acme-dns01-source01/INDEPENDENT_OFFICIAL_DNS01_TWO_PHASE_SOURCE_REVIEW.json",
+      "sha256": "b0161631b4eaa38eab74ffc9f08a83dddc42a0c6a9796add74eb45524a5e3611",
+      "status": "PASS_SOURCE_ONLY_INDEPENDENT_OFFICIAL_DNS01_TWO_PHASE_REVIEW",
+      "findings": 0,
+      "limits": "Source-only independent review; no runtime/install/renewal/deployment acceptance"
+    },
+    "publishedSourceCaptureSHA256": "e3921bafce8f7abd8bfe5c2136df0f001794bc0299572103ec9e554ec90f9293"
+  },
+  "scopeMethod": "The hashes identify exact licensed CRAYS-owned originals. Recipients AGPL rights to run, modify and redistribute covered code and derivatives are unaffected. No license inferred for unlisted independent code or all future CRAYS revisions.",
+  "upstreamBoundaries": {
+    "dependencyInterfacesNotImplementations": [
+      "python-acme",
+      "josepy",
+      "cryptography",
+      "Ubuntu APT and dpkg",
+      "OpenSSL",
+      "Caddy future renewal handoff"
+    ],
+    "embeddedThirdPartyImplementationIdentifiedByExistingSourceReview": false,
+    "upstreamTermsAndNoticesRetained": true,
+    "noRelicensingOfACMEJosepyCryptographyUbuntuOpenSSLCaddy": true
+  },
+  "excluded": [
+    "External package/system-tool implementations and their dependencies",
+    "Private ACME account/certificate keys, contacts, challenge/order resources, approval/proof inputs, runtime result files and credentials",
+    "Documentation, assets, unlisted independent code and unrelated future revisions"
+  ],
+  "licenseText": {
+    "path": "operations/tls19-dns01-bootstrap/LICENSE",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "original": "Unchanged verified official GNU Affero General Public License version 3 full text"
+  },
+  "notOrLater": true,
+  "sourceProgramsAndProvenanceRowsModified": false,
+  "recipientRightsToRunModifyRedistributeDerivativesUnaffected": true,
+  "CRAYSInfrastructureExecutionAndPrivateCredentialsNotAuthorizedBySourcePublication": true
+}
