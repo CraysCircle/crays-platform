@@ -1,0 +1,66 @@
+{
+  "schema": "crays.member.provider-account42.original-source-capture.v1",
+  "sourceOnly": true,
+  "sourceRevision": "provider-account42",
+  "originalRouteSHA256": "5cd073446364e48b59670d7577968b0fc0859cbedeab8f3dd17a63536d818860",
+  "candidateRouteSHA256": "3eb02e5e99b65d6e2e8dbc0385eade83149a4888e9a8adc37b3d5e200e569c18",
+  "originalFiles": [
+    {
+      "path": "services/member-identity/provider-account/provider-account.route.original.ts",
+      "bytes": 10359,
+      "sha256": "5cd073446364e48b59670d7577968b0fc0859cbedeab8f3dd17a63536d818860"
+    },
+    {
+      "path": "services/member-identity/provider-account/provider-account.patch",
+      "bytes": 2420,
+      "sha256": "bfc65bffff3b14d7d53d1f0a8ed87b19a6a3e28c3142e3b12fcb07bb353d6ad5"
+    },
+    {
+      "path": "services/member-identity/provider-account/provider-account.route.candidate.ts",
+      "bytes": 10939,
+      "sha256": "3eb02e5e99b65d6e2e8dbc0385eade83149a4888e9a8adc37b3d5e200e569c18"
+    },
+    {
+      "path": "services/member-identity/provider-account/provider-account.regression.candidate.cjs",
+      "bytes": 5268,
+      "sha256": "5c5205b780537092b0e8e56e1def4ca85f9ee02e67eebe240cb4bf65254633bb"
+    },
+    {
+      "path": "services/member-identity/provider-account/SOURCE_MANIFEST.json",
+      "bytes": 1305,
+      "sha256": "e3afeb6af699177f5c46937d9ed97f365397f5eab8ad0f27e7a4e4e7ca73e793"
+    },
+    {
+      "path": "services/member-identity/provider-account/UNIT_REGRESSION_ACTUAL.json",
+      "bytes": 417,
+      "sha256": "f0434c79ccad80d0dea4205ca183ac6ee41ea1e7bb026786aff9e2426291379f"
+    }
+  ],
+  "independentSourceReviewSHA256": "f79c5c4c24d4563840c6920252a4195f5cb62ee2973f037b53ba2859fc911cb7",
+  "reviewedDependencyInputSHA256": {
+    "/srv/crays/migration-work/20261109/root/member-provider-account42-source01/provider-account.route.original.ts": "5cd073446364e48b59670d7577968b0fc0859cbedeab8f3dd17a63536d818860",
+    "/srv/crays/migration-work/20261109/root/member-provider-account42-source01/provider-account.route.candidate.ts": "3eb02e5e99b65d6e2e8dbc0385eade83149a4888e9a8adc37b3d5e200e569c18",
+    "/srv/crays/releases/member-nextcloud26-20261108-01/app/src/db/core-identity-runtime-pool.ts": "b0c9bda86305cdb0490fcfd4944e24105daf4a395998ba8901cb40cc4c6ace4e",
+    "/srv/crays/releases/member-nextcloud26-20261108-01/app/src/db/core-identity-runtime-rpc.ts": "b0b18eeab55239524c4a898862b9bf3bc7a2a6c5604dad697233860a5b7af98e",
+    "/srv/crays/releases/member-nextcloud26-20261108-01/app/src/db/core-identity-repository.ts": "9f062240476d0e3ecc18ccb7afbc46254aede60979ba5525378a94da2d1f71fe",
+    "/srv/crays/releases/member-nextcloud26-20261108-01/app/src/lib/auth-session-mapping.ts": "29a3dcb9f54edfcf1ca9cb151e7f8fed56250709e8be4174b321b1308e4c3be4",
+    "/srv/crays/releases/member-nextcloud26-20261108-01/app/src/lib/auth0.ts": "6001f99d745f4d3928b60f4da79de3dc6f63e7dcceb779aec4ed85596412ba03",
+    "/srv/crays/releases/member-nextcloud26-20261108-01/app/src/lib/exact-oidc-identity.ts": "abe84a05e250681e72eee1096117ce1f0d7672aa1e72614599a021d4cc13cabd",
+    "/srv/crays/releases/member-nextcloud26-20261108-01/app/src/lib/clubs/member-account.ts": "9c9bb7f687421a4d08b9f1f1303b029cac72081f78ce8488525f3429cddb38cf",
+    "/srv/crays/releases/member-nextcloud26-20261108-01/app/src/lib/clubs/original-google-provisioning-duplicate-guard.ts": "6bd52451952beff3145a4b4f4ce45bab238d290b93a47f95edd14c5728a73663",
+    "/srv/crays/releases/member-nextcloud26-20261108-01/app/src/app/api/crays/clubs/member/session/route.ts": "294f969fe98a09547ef7849810f7c8242204b86c4736901b6ab120c7bae52642"
+  },
+  "ownerIsolatedUnitResult": {
+    "status": "PASS",
+    "candidateCases": 8,
+    "syntheticFixtures": true,
+    "originalLegacyFailureReproduced": true,
+    "postBodyByteIdentical": true,
+    "testSHA256": "5c5205b780537092b0e8e56e1def4ca85f9ee02e67eebe240cb4bf65254633bb",
+    "actualAuthOrDatabaseCalls": false,
+    "browserAcceptance": false
+  },
+  "archiveChatExecutedOriginalProgramsOrTests": false,
+  "archiveChatChangedRuntimeOrDatabase": false,
+  "fullBuildSourceLicenseAndRecoveryClosure": false
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "originalUnconfiguredLegacyRegressionReproduced": true,
+  "candidateCases": 8,
+  "postBodyByteIdentical": true,
+  "syntheticUnitFixtures": true,
+  "actualAuthOrDatabaseCalls": false,
+  "browserAcceptance": false,
+  "testSourceSHA256": "5c5205b780537092b0e8e56e1def4ca85f9ee02e67eebe240cb4bf65254633bb",
+  "candidateSHA256": "3eb02e5e99b65d6e2e8dbc0385eade83149a4888e9a8adc37b3d5e200e569c18"
+}

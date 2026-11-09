@@ -1,0 +1,47 @@
+--- src/app/api/crays/auth/provider/account/route.ts
++++ src/app/api/crays/auth/provider/account/route.ts
+@@ -1,5 +1,6 @@
+ import {createHash} from "node:crypto";
+-import {resolveAuth0IdentityBundleV2} from "@/db/core-identity-runtime-rpc";
++import {createCoreOriginalMemberIdentityRuntimeRpcClient} from "@/db/core-identity-runtime-rpc";
++import {getCoreOriginalMemberIdentityRpcPool} from "@/db/core-identity-runtime-pool";
+ import {isRegisteredOriginalGoogleRepairRequired,originalGoogleRepairPendingResponse} from "@/lib/clubs/original-google-provisioning-duplicate-guard";
+ import { NextRequest } from "next/server";
+ import { getIdentityBundleByProviderSubject } from "@/db/core-identity-repository";
+@@ -67,6 +68,7 @@
+       providerSubject: providerUser.sub,
+       clientValidated: true,
+       originalRepairSession: null,
++      originalClubsSession: null,
+     };
+   }
+   try {
+@@ -81,6 +83,7 @@
+       providerKey: identity.providerKey,
+       providerSubject: identity.subject,
+       clientValidated: Boolean(session.serverConfiguredClientId),
++      originalClubsSession: session,
+       originalRepairSession: isRegisteredOriginalGoogleRepairRequired({validatedIssuer:session.validatedIssuer,validatedSubject:session.validatedSubject,serverConfiguredClientIdSha256:createHash("sha256").update(session.serverConfiguredClientId,"utf8").digest("hex")}) ? session : null,
+     };
+   } catch {
+@@ -89,9 +92,18 @@
+ }
+ 
+ async function lookupProviderBundle(identity: NonNullable<Awaited<ReturnType<typeof getProviderIdentity>>>) {
+-  const original = identity.originalRepairSession;
++  // Clubs uses the same existing SDK-validated issuer/subject/client and
++  // restricted original-member RDS RPC as /clubs/member/session. Do not open
++  // the legacy direct Core pool or infer an account from a contact address.
++  const original = identity.originalClubsSession;
+   return original
+-    ? resolveAuth0IdentityBundleV2(original.validatedIssuer, original.validatedSubject, original.serverConfiguredClientId)
++    ? createCoreOriginalMemberIdentityRuntimeRpcClient(
++        (sql, values) => getCoreOriginalMemberIdentityRpcPool().query(sql, values),
++      ).resolveAuth0IdentityBundleV2(
++        original.validatedIssuer,
++        original.validatedSubject,
++        original.serverConfiguredClientId,
++      )
+     : getIdentityBundleByProviderSubject(identity.providerKey, identity.providerSubject);
+ }
+ 

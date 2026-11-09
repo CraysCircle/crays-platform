@@ -153,6 +153,10 @@
     {
       "component": "member-native-identity-reader40",
       "path": "services/member-identity/native-reader/source-capture.json"
+    },
+    {
+      "component": "member-provider-account42",
+      "path": "services/member-identity/provider-account/source-capture.json"
     }
   ]
 }

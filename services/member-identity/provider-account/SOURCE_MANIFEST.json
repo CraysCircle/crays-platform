@@ -1,0 +1,34 @@
+{
+  "schema": "crays.member.provider-account-rds42-source.v1",
+  "atUTC": "2026-11-09T07:09:04.881389+00:00",
+  "originalSource": "/srv/crays/releases/member-nextcloud26-20261108-01/app/src/app/api/crays/auth/provider/account/route.ts",
+  "originalSHA256": "5cd073446364e48b59670d7577968b0fc0859cbedeab8f3dd17a63536d818860",
+  "candidateSHA256": "3eb02e5e99b65d6e2e8dbc0385eade83149a4888e9a8adc37b3d5e200e569c18",
+  "sourceOnly": true,
+  "runtimeInstalled": false,
+  "dbMutated": false,
+  "newCredentials": false,
+  "originalSessionRouteReused": true,
+  "preserved": [
+    "SDK validated issuer+subject+server-selected-client",
+    "existing Member RDS RPC ACL/RLS",
+    "original response DTO/session mapping",
+    "registered Google repair boundary",
+    "other application lookup",
+    "POST role/CSRF/provisioning checks"
+  ],
+  "files": {
+    "provider-account.route.original.ts": {
+      "bytes": 10359,
+      "sha256": "5cd073446364e48b59670d7577968b0fc0859cbedeab8f3dd17a63536d818860"
+    },
+    "provider-account.patch": {
+      "bytes": 2420,
+      "sha256": "bfc65bffff3b14d7d53d1f0a8ed87b19a6a3e28c3142e3b12fcb07bb353d6ad5"
+    },
+    "provider-account.route.candidate.ts": {
+      "bytes": 10939,
+      "sha256": "3eb02e5e99b65d6e2e8dbc0385eade83149a4888e9a8adc37b3d5e200e569c18"
+    }
+  }
+}
