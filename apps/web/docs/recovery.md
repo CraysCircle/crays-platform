@@ -20,7 +20,7 @@ The environment example is derived from direct process.env references. It contai
 
 Choose the exact source tag and qualified inputs from the component/artifact index. Source preservation, dependency recovery, a successful new build, runtime adoption and customer/rights acceptance are separate checks.
 
-Separate protected custody now retains seventeen exact Spot/WebChuck working-source originals, with all original-member restoration hashes verified. The fifteen smaller originals total 85,820 bytes and have completed protected source-context/privacy review with no identified redaction holds; The [selected source snapshot](../../../source-archives/spot-and-personal-web-working-source15-20261109/README.md) preserves those fifteen originals publicly; complete rights/dependency clearance remains separate. They are not additional public inputs in this 2,045-file composition. The two larger Prototype versions remain outside that fifteen-file review and must not replace this captured application wholesale.
+The separate [Spot and Personal / Chuck working-source snapshot](../../../source-archives/spot-and-personal-web-working-source15-20261109/README.md) preserves seventeen exact originals (3,729,870 bytes): fifteen smaller files (85,820 bytes) and two distinct complete Prototype.tsx versions (3,644,050 bytes). Their original-member restoration hashes and scoped source-context/privacy reviews are recorded separately; complete rights/dependency clearance remains separate. These are not additional inputs in this 2,045-file composition. Preserve their original working/integration paths rather than replacing this captured application wholesale.
 
 ## Exact source checkout
 

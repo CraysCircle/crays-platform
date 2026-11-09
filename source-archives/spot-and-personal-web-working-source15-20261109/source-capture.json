@@ -1,9 +1,9 @@
 {
   "schema": "crays.spot-personal-working-source15.preservation.v1",
-  "purpose": "Readable unchanged source-preservation snapshot of selected exact Spot WIP and Personal/Chuck dirty integration/evidence revisions.",
-  "originalFiles": 15,
-  "originalBytes": 85820,
-  "sourceFilesAndScripts": 13,
+  "purpose": "Readable unchanged source-preservation snapshot of seventeen exact Spot WIP and Personal/Chuck dirty integration/evidence originals, including two distinct complete Prototype.tsx files.",
+  "originalFiles": 17,
+  "originalBytes": 3729870,
+  "sourceFilesAndScripts": 15,
   "historicalEvidenceFiles": 2,
   "files": [
     {
@@ -440,6 +440,64 @@
         "preserveUnchangedBytes": true,
         "runtimeOverlayOrExecutionAuthorized": false
       }
+    },
+    {
+      "originalSourceRoot": "/home/craysdev/codex-chat-projects/openclaw",
+      "sourceManifestSHA256": "5b825385f39b3501aa1ffee9b61d238adb9bdc0204c00273010e40eb942cc79d",
+      "observedSourceRepositoryHEAD": "7eb8fa3447aad9a8a10e6864ec41d04a924932aa",
+      "repositoryHEADNotAssertedAsExactDirtyBodySource": true,
+      "path": "spot/src/Prototype.tsx",
+      "bytes": 1780659,
+      "sha256": "a0d6327784c5ae3060e418bfbdc1989b4b3057be12780dec4b3498f58e42d68d",
+      "representation": "unchanged-original",
+      "role": "application-working-prototype-source",
+      "component": "Spot access working integration",
+      "originalRelativePath": "review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/Prototype.tsx",
+      "originalAbsolutePath": "/home/craysdev/codex-chat-projects/openclaw/review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/Prototype.tsx",
+      "archive": {
+        "key": "restore/approved/preservation/20261109/exact-working-originals-spot11-46be0f6dda1a020556c7c21367977e16e1374dfe42441c349d3e1fb301cf39b0.tar.gz",
+        "versionId": "Eu9tkE5ch6ZoG3P_VUDF8QKsSdwMXLgI",
+        "archiveBytes": 525537,
+        "archiveSHA256": "46be0f6dda1a020556c7c21367977e16e1374dfe42441c349d3e1fb301cf39b0",
+        "member": "originals/spot/src/Prototype.tsx",
+        "embeddedManifestSHA256": "cd4d8c06e4f7f35bbe806015a4514ed89af998dff5838d7fb7c61618a3f59f30"
+      },
+      "restoration": {
+        "targetRelativeToSourceRoot": "review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/Prototype.tsx",
+        "bytes": 1780659,
+        "sha256": "a0d6327784c5ae3060e418bfbdc1989b4b3057be12780dec4b3498f58e42d68d",
+        "preserveUnchangedBytes": true,
+        "runtimeOverlayOrExecutionAuthorized": false
+      }
+    },
+    {
+      "originalSourceRoot": "/srv/crays/worktrees/personal-web-runtime-01a183ad",
+      "sourceManifestSHA256": "77b9fb60fcfeccacc3962d32707445c30015786b98c1bd3e4ba52110d1419899",
+      "observedSourceRepositoryHEAD": "9c5473a82ec0f67ade80aff676f9993557893ef8",
+      "repositoryHEADNotAssertedAsExactDirtyBodySource": true,
+      "path": "personal-web/apps/web-runtime/integration/chuck-matching-preference-v406-20261102/source/web-runtime/src/Prototype.tsx",
+      "bytes": 1863391,
+      "sha256": "f2e1f6b95c2efb8031a8835ca3b2bba5c02a8b5ae588afc20a902a01815a081f",
+      "representation": "unchanged-original",
+      "role": "application-working-prototype-source",
+      "component": "Personal web / Chuck staged integration",
+      "originalRelativePath": "apps/web-runtime/integration/chuck-matching-preference-v406-20261102/source/web-runtime/src/Prototype.tsx",
+      "originalAbsolutePath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/integration/chuck-matching-preference-v406-20261102/source/web-runtime/src/Prototype.tsx",
+      "archive": {
+        "key": "restore/approved/preservation/20261109/exact-working-originals-webchuck6-420f144a46b50bacd390eafa1a06bd00b5bcdc53dd5cdbda18e8fb8f00b9170a.tar.gz",
+        "versionId": "t9LdDw9Gl3NA0756_xixSika4L21ZWh.",
+        "archiveBytes": 549235,
+        "archiveSHA256": "420f144a46b50bacd390eafa1a06bd00b5bcdc53dd5cdbda18e8fb8f00b9170a",
+        "member": "originals/webChuck/apps/web-runtime/integration/chuck-matching-preference-v406-20261102/source/web-runtime/src/Prototype.tsx",
+        "embeddedManifestSHA256": "618b8ead72e36805ee1d6657696443c9635d1387107ed1713ebe630ad19286ba"
+      },
+      "restoration": {
+        "targetRelativeToSourceRoot": "apps/web-runtime/integration/chuck-matching-preference-v406-20261102/source/web-runtime/src/Prototype.tsx",
+        "bytes": 1863391,
+        "sha256": "f2e1f6b95c2efb8031a8835ca3b2bba5c02a8b5ae588afc20a902a01815a081f",
+        "preserveUnchangedBytes": true,
+        "runtimeOverlayOrExecutionAuthorized": false
+      }
     }
   ],
   "sourceProvenance": {
@@ -479,17 +537,45 @@
     "localImportsAndCompleteBuildInputsNotIncludedByThisSnapshot": true,
     "ownedOrUpstreamLicenseGrantEstablishedByWorkingRootAlone": false,
     "newLicenseGrantAdded": false,
-    "wholeDependencyRightsOrSourceOfferClosureClaimed": false
-  },
-  "excludedLargePrototypeVersions": {
-    "originalsNotIncluded": 2,
-    "reason": "Separate original versions were not exported into this15-file intake and are outside this public-preservation packet.",
-    "bytes": [
-      1780659,
-      1863391
-    ]
+    "wholeDependencyRightsOrSourceOfferClosureClaimed": false,
+    "twoPrototypeSourceImports": [
+      "react",
+      "react-dom",
+      "@phosphor-icons/react",
+      "motion/react",
+      "qrcode",
+      "react-markdown",
+      "remark-gfm"
+    ],
+    "twoPrototypeOriginalNoticeTextModified": false
   },
   "sourceProgramsOrTestsExecuted": false,
   "newBuildOrRuntimeAdoptionClaimed": false,
-  "realOwnerLoginOrChuckCustomerAcceptanceClaimed": false
+  "realOwnerLoginOrChuckCustomerAcceptanceClaimed": false,
+  "initialFifteenFilePublication": {
+    "originalFiles": 15,
+    "originalBytes": 85820,
+    "historicalFolderURIUnchanged": true,
+    "initialPrototypeExclusion": {
+      "originalsNotIncluded": 2,
+      "reason": "Separate original versions were not exported into this15-file intake and are outside this public-preservation packet.",
+      "bytes": [
+        1780659,
+        1863391
+      ]
+    },
+    "priorFifteenRowsUnchanged": true
+  },
+  "twoPrototypeAddition": {
+    "originalFiles": 2,
+    "originalBytes": 3644050,
+    "protectedIntakeReceiptSHA256": "7d04145786ed126ece96bbe6c4ac830099d56398fbb20e99588b03c78b4cdcb6",
+    "completeSourceContextReviewSHA256": "fc3622057fe6a5a41f308dc4455d18cdd53dcee27bd7c11cd4f0c59db57b505f",
+    "identifiedPrivacyHolds": 0,
+    "protectedTemplatesNeeded": 0,
+    "versionsNotAssertedEquivalent": true,
+    "canonicalRuntimePrototypeReplaced": false,
+    "wholeBuildOrImportedGraphIncluded": false,
+    "humanSeed24AttestationUsed": false
+  }
 }
