@@ -193,6 +193,10 @@
     {
       "component": "vendure-native-provider-integration-operations",
       "path": "operations/vendure-native-provider-integration/source-provenance.json"
+    },
+    {
+      "component": "chuck-original-transport48",
+      "path": "operations/chuck-original-transport48/source-provenance.json"
     }
   ]
 }

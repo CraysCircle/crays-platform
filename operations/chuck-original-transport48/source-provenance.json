@@ -1,0 +1,32 @@
+{
+  "schema": "crays.chuck-transport48.source-provenance.v1",
+  "sourceOnly": true,
+  "originalFile": "listener.chuck-original-transport.candidate.mjs",
+  "originalBodyBytes": 5366,
+  "originalBodySHA256": "30376559572bf19be05d3e1b724c20de026455361e0cd7e1d749b1056e2aa777",
+  "exportedBodySHA256": "30376559572bf19be05d3e1b724c20de026455361e0cd7e1d749b1056e2aa777",
+  "transformation": "NONE_EXACT_ORIGINAL",
+  "sourceAuthority": "Root final Chuck48 source request and exact independent source review",
+  "previousListenerSHA256": "7e8b668caf10118d84082f8fd68a63e390a3ee36a2e0da7b022a06d7203fa5bb",
+  "deltaArtifact": {
+    "filename": "CHUCK_TRANSPORT48_SOURCE.patch",
+    "bytes": 1443,
+    "sha256": "07cf67273047ba475030081441bc0974731fde4e995821db9d6dab0620efffbb",
+    "scope": "One four-line insertion; patch retained as private review evidence, not an extra public program"
+  },
+  "independentSourceReview": {
+    "filename": "INDEPENDENT_CHUCK48_TRANSPORT_SOURCE_REVIEW.json",
+    "sha256": "49c9840e3872498e16a9dda5dbf581f033efabc3cea8546f40864d2743182253",
+    "status": "PASS_CHUCK48_TRANSPORT_SOURCE_ONLY"
+  },
+  "priorRegressionEvidence": {
+    "filename": "UNIT_ORIGINAL_CHUCK_TRANSPORT48_ACTUAL.json",
+    "sha256": "fa768e66be6e9b80204d9b5827d6f62a0eaa913363dd1aff7aa0c7fd6e13ffb7",
+    "cases": 13,
+    "basis": "Exact filename and hash bound by independent source review; not rerun during preservation"
+  },
+  "privateInputsRead": false,
+  "sourceExecutedDuringPreservation": false,
+  "runtimeAdoptionProven": false,
+  "licenseBoundary": "Original source terms and third-party notices retained; no new blanket license grant"
+}
