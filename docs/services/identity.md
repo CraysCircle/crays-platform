@@ -4,11 +4,11 @@ CRAYS uses Auth0 integration alongside its own application, native and provider 
 
 ## Follow the implementation
 
-- [Shared Club/Member application](https://github.com/CraysCircle/crays-platform/blob/main/apps/web/README.md) documents the qualified application source and its original configuration relationships.
-- [Auth0 SDK metadata](https://github.com/CraysCircle/crays-platform/blob/main/apps/web/third-party/packages/@auth0/nextjs-auth0/4.24.0/package.json) records the preserved **@auth0/nextjs-auth0 4.24.0** dependency.
-- [Personal sign-in workspace](https://github.com/CraysCircle/crays-platform/blob/main/apps/personal/source/src/SignInWorkspace.tsx) is a frontend entry point for understanding the captured Personal sign-in interface.
-- [Personal source guide](https://github.com/CraysCircle/crays-platform/blob/main/apps/personal/README.md) explains that frontend's source views and recovery inputs.
-- [Club runtime configuration keys](https://github.com/CraysCircle/crays-platform/blob/main/services/club-next-runtime/member-runtime38/configuration-keys.json) documents required field names without publishing private values.
+- [Shared Club/Member application](https://github.com/CraysWorld/crays-platform/blob/main/apps/web/README.md) documents the qualified application source and its original configuration relationships.
+- [Auth0 SDK metadata](https://github.com/CraysWorld/crays-platform/blob/main/apps/web/third-party/packages/@auth0/nextjs-auth0/4.24.0/package.json) records the preserved **@auth0/nextjs-auth0 4.24.0** dependency.
+- [Personal sign-in workspace](https://github.com/CraysWorld/crays-platform/blob/main/apps/personal/source/src/SignInWorkspace.tsx) is a frontend entry point for understanding the captured Personal sign-in interface.
+- [Personal source guide](https://github.com/CraysWorld/crays-platform/blob/main/apps/personal/README.md) explains that frontend's source views and recovery inputs.
+- [Club runtime configuration keys](https://github.com/CraysWorld/crays-platform/blob/main/services/club-next-runtime/member-runtime38/configuration-keys.json) documents required field names without publishing private values.
 
 Hosted Auth0, the SDK and CRAYS-owned integration code have different responsibilities. Public SDK/application source does not mean that CRAYS owns or mirrors Auth0's hosted implementation.
 

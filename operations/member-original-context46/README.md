@@ -2,7 +2,7 @@
 
 This archive preserves the exact reviewed operating programs supplied for the Source46 build and installation flow. It is source preservation: publication does not execute, install or authorize these programs, and does not establish that private runtime adoption succeeded.
 
-The corresponding [Member/Common application sources](../../services/member-identity/provider-account/source46/README.md) were preserved at commit [ef3a04f](https://github.com/CraysCircle/crays-platform/tree/ef3a04f101ba675028e97d5fcf95848e3883ad4b/services/member-identity/provider-account/source46). The older [Source42 operating sources](../member-provider-account42/source-cases/README.md) remain unchanged.
+The corresponding [Member/Common application sources](../../services/member-identity/provider-account/source46/README.md) were preserved at commit [ef3a04f](https://github.com/CraysWorld/crays-platform/tree/ef3a04f101ba675028e97d5fcf95848e3883ad4b/services/member-identity/provider-account/source46). The older [Source42 operating sources](../member-provider-account42/source-cases/README.md) remain unchanged.
 
 ## What is here
 

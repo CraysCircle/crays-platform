@@ -44,4 +44,4 @@ Do not include live API keys, private project contents or customer incident data
 
 The published CRAYS integration is part of the shared Next.js application. Its [source manifest](../../apps/web/source-capture.json) and [platform source index](../source-index.json) identify the captured scope.
 
-The complete deployed Plane application, required upstream source/notices and exact runtime acceptance remain separately qualified. The presence of adapter code is not a claim that every current project workflow has been accepted end to end. See [license/provenance](../license-and-provenance.md) and the [current coverage status](https://github.com/CraysCircle/.github/blob/main/docs/source-and-license-status.md).
+The complete deployed Plane application, required upstream source/notices and exact runtime acceptance remain separately qualified. The presence of adapter code is not a claim that every current project workflow has been accepted end to end. See [license/provenance](../license-and-provenance.md) and the [current coverage status](https://github.com/CraysWorld/.github/blob/main/docs/source-and-license-status.md).

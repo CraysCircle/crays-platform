@@ -4,10 +4,10 @@ Personal is CRAYS's application workspace for personal tools and interactions. C
 
 ## Follow the implementation
 
-- [Personal source guide](https://github.com/CraysCircle/crays-platform/blob/main/apps/personal/README.md) describes the original frontend and its thirteen-overlay source view.
-- [Application connections](https://github.com/CraysCircle/crays-platform/blob/main/apps/personal/source/src/appConnections.ts) provides a concrete frontend integration entry point.
-- [Chuck public starters](https://github.com/CraysCircle/crays-platform/blob/main/apps/personal/source/src/chuckPublicStarters.mjs) and [task review links](https://github.com/CraysCircle/crays-platform/blob/main/apps/personal/source/src/chuckTaskReviewLinks.mjs) are captured application-side sources.
-- [Personal build sources](https://github.com/CraysCircle/crays-platform/blob/main/operations/personal-build/README.md) preserve the original build/configuration controllers separately from the application.
+- [Personal source guide](https://github.com/CraysWorld/crays-platform/blob/main/apps/personal/README.md) describes the original frontend and its thirteen-overlay source view.
+- [Application connections](https://github.com/CraysWorld/crays-platform/blob/main/apps/personal/source/src/appConnections.ts) provides a concrete frontend integration entry point.
+- [Chuck public starters](https://github.com/CraysWorld/crays-platform/blob/main/apps/personal/source/src/chuckPublicStarters.mjs) and [task review links](https://github.com/CraysWorld/crays-platform/blob/main/apps/personal/source/src/chuckTaskReviewLinks.mjs) are captured application-side sources.
+- [Personal build sources](https://github.com/CraysWorld/crays-platform/blob/main/operations/personal-build/README.md) preserve the original build/configuration controllers separately from the application.
 
 The preserved frontend dependency record identifies React **19.2.7**. It is distinct from the shared Club/Member capture's React version. The later Personal-Intelligence reconciliation refers to **source1989** and **46 original CNR source packages**; that reference is a source-authority record, not an invented OpenClaw release number.
 

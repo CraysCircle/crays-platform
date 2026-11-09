@@ -4,10 +4,10 @@ The publishing area includes CRAYS creator interfaces and a separate Postiz deli
 
 ## Follow the implementation
 
-- [Personal creator studio](https://github.com/CraysCircle/crays-platform/blob/main/apps/personal/source/src/WebCreatorStudio.tsx) is a concrete captured frontend entry point.
-- [Publishing application source](https://github.com/CraysCircle/crays-platform/blob/main/apps/personal/source/src/publishing.ts) belongs to that frontend capture.
-- [Postiz operating-source guide](https://github.com/CraysCircle/crays-platform/blob/16e0a635282d5f5358c3e040257c9598a965655a/operations/delivery/postiz/README.md) links the original frontend qualifier and separate physical-readback helper.
-- [Personal source guide](https://github.com/CraysCircle/crays-platform/blob/main/apps/personal/README.md) describes the frontend's original source and recovery boundaries.
+- [Personal creator studio](https://github.com/CraysWorld/crays-platform/blob/main/apps/personal/source/src/WebCreatorStudio.tsx) is a concrete captured frontend entry point.
+- [Publishing application source](https://github.com/CraysWorld/crays-platform/blob/main/apps/personal/source/src/publishing.ts) belongs to that frontend capture.
+- [Postiz operating-source guide](https://github.com/CraysWorld/crays-platform/blob/16e0a635282d5f5358c3e040257c9598a965655a/operations/delivery/postiz/README.md) links the original frontend qualifier and separate physical-readback helper.
+- [Personal source guide](https://github.com/CraysWorld/crays-platform/blob/main/apps/personal/README.md) describes the frontend's original source and recovery boundaries.
 
 The preserved Postiz family includes frontend/proxy/API, Temporal workflows, PostgreSQL, Elasticsearch and Redis. A Postiz API health response is not evidence that publishing workers, browser API targeting and all external delivery integrations are ready. A creator-interface file and a Postiz service record also do not by themselves prove a direct accepted integration between those two particular paths.
 

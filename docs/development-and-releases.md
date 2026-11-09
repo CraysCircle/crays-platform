@@ -5,7 +5,7 @@ This repository is the source checkpoint for shared CRAYS services. It does not 
 ## Required sequence
 
 1. Develop the authorized change on a fresh XXL development environment.
-2. Preserve the complete intended source and required documentation in Git/GitHub under CraysCircle. Keep secrets and live data outside Git.
+2. Preserve the complete intended source and required documentation in Git/GitHub under CraysWorld. Keep secrets and live data outside Git.
 3. Check repository workflows, Git provider connections and external deploy triggers before pushing. Use an isolated source branch when preparing a candidate.
 4. Build through the authorized AWS/Amplify process and provide a protected preview.
 5. Before release approval, reconcile the exact source commit, build inputs, resulting artifact identity, original licenses/NOTICE files, modifications and any required source availability.

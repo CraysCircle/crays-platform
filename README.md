@@ -6,7 +6,7 @@ CRAYS connects community and hospitality projects with the digital tools behind 
 
 We want developers to understand both sides of that work: the experience for a member or guest, and the systems an operator needs to run it.
 
-**[Explore services](docs/services/README.md) · [Architecture](docs/architecture.md) · [Start contributing](CONTRIBUTING.md) · [All CRAYS projects](https://github.com/CraysCircle/.github/blob/main/docs/repositories.md)**
+**[Explore services](docs/services/README.md) · [Architecture](docs/architecture.md) · [Start contributing](CONTRIBUTING.md) · [All CRAYS projects](https://github.com/CraysWorld/.github/blob/main/docs/repositories.md)**
 
 ## What we are building
 
@@ -54,10 +54,10 @@ Read [Contributing](CONTRIBUTING.md) to choose a component, find its real setup 
 | [operations/](operations/README.md) | Original build, migration and operating-program source. |
 | [docs/source-index.json](docs/source-index.json) | Source captures, immutable references and exact version records. |
 
-Independent websites and native apps remain in their own repositories. Twenty and OpenProject are retained historical projects, outside the current active-service navigation; see [the legacy map](https://github.com/CraysCircle/.github/blob/main/docs/legacy-projects.md).
+Independent websites and native apps remain in their own repositories. Twenty and OpenProject are retained historical projects, outside the current active-service navigation; see [the legacy map](https://github.com/CraysWorld/.github/blob/main/docs/legacy-projects.md).
 
 ## Versions, licenses and development status
 
 Source consolidation and integration are in progress. Select the component and source view you need before building; an archived controller is not a general installation command. Original licenses, copyright and NOTICE terms apply per component.
 
-[Source and version catalog](docs/source-index.json) · [Component licenses](LICENSING.md) · [License and provenance](docs/license-and-provenance.md) · [Development and releases](docs/development-and-releases.md) · [Organization coverage status](https://github.com/CraysCircle/.github/blob/main/docs/source-and-license-status.md)
+[Source and version catalog](docs/source-index.json) · [Component licenses](LICENSING.md) · [License and provenance](docs/license-and-provenance.md) · [Development and releases](docs/development-and-releases.md) · [Organization coverage status](https://github.com/CraysWorld/.github/blob/main/docs/source-and-license-status.md)

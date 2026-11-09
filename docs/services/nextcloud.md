@@ -45,6 +45,6 @@ Keep protected principal credentials and real document content outside issues, p
 
 ## Version and source status
 
-The CRAYS adapters are linked above. The complete Nextcloud server, required apps and current deployment configuration are a broader source scope than these files. Their exact versions, own changes and original license/source-availability relationships remain part of the [current reconciliation](https://github.com/CraysCircle/.github/blob/main/docs/source-and-license-status.md).
+The CRAYS adapters are linked above. The complete Nextcloud server, required apps and current deployment configuration are a broader source scope than these files. Their exact versions, own changes and original license/source-availability relationships remain part of the [current reconciliation](https://github.com/CraysWorld/.github/blob/main/docs/source-and-license-status.md).
 
 Use the [platform source index](../source-index.json) and [license/provenance record](../license-and-provenance.md) for the published capture boundaries.

@@ -4,11 +4,11 @@ CRAYS has both a Net web application and a decentralized communication layer. Th
 
 ## Follow the implementation
 
-- [Net hosting composition](https://github.com/CraysCircle/crays-platform/blob/8704e6685a333ad14d75ddc931599863506a1b7d/hosting/net/README.md) links the retained application and its exact hosting relationship.
-- [Original Net hosting wrapper](https://github.com/CraysCircle/crays-platform/blob/8704e6685a333ad14d75ddc931599863506a1b7d/hosting/net/server.mjs) is the CRAYS platform-side source.
-- [Retained Net application source](https://github.com/CraysCircle/crays-web-codex/tree/2b81461e8e8b5ee6fbdb59e36215c4b574d235bf) remains in its existing repository.
-- [Personal Nostr interaction receipts](https://github.com/CraysCircle/crays-platform/blob/main/apps/personal/source/src/NostrInteractionReceipts.tsx) is a captured application-side entry point.
-- [Personal source guide](https://github.com/CraysCircle/crays-platform/blob/main/apps/personal/README.md) explains the scope of that frontend capture.
+- [Net hosting composition](https://github.com/CraysWorld/crays-platform/blob/8704e6685a333ad14d75ddc931599863506a1b7d/hosting/net/README.md) links the retained application and its exact hosting relationship.
+- [Original Net hosting wrapper](https://github.com/CraysWorld/crays-platform/blob/8704e6685a333ad14d75ddc931599863506a1b7d/hosting/net/server.mjs) is the CRAYS platform-side source.
+- [Retained Net application source](https://github.com/CraysWorld/crays-web-codex/tree/2b81461e8e8b5ee6fbdb59e36215c4b574d235bf) remains in its existing repository.
+- [Personal Nostr interaction receipts](https://github.com/CraysWorld/crays-platform/blob/main/apps/personal/source/src/NostrInteractionReceipts.tsx) is a captured application-side entry point.
+- [Personal source guide](https://github.com/CraysWorld/crays-platform/blob/main/apps/personal/README.md) explains the scope of that frontend capture.
 
 Existing original-source records substantiate Go relay and private Blossom services, with CRAYS group/fleet, policy/store, profile and private-history sources/tests. Nostr event transport, relay behavior, blob storage and application policies should be documented individually.
 

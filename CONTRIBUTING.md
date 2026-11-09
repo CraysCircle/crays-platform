@@ -22,7 +22,7 @@ These are contribution directions, not invented issue assignments or promises of
 ## Get oriented locally
 
 ```sh
-git clone https://github.com/CraysCircle/crays-platform.git
+git clone https://github.com/CraysWorld/crays-platform.git
 cd crays-platform
 ```
 
@@ -53,7 +53,7 @@ Describe the fixture, expected rejection and actual result in your pull request.
 
 ## Propose a focused change
 
-Use [a platform issue](https://github.com/CraysCircle/crays-platform/issues) to describe the user or developer problem, affected component and expected result. Include reproducible steps with synthetic inputs. For an independent website, mobile app or upstream project, use that project's own repository and contribution rules.
+Use [a platform issue](https://github.com/CraysWorld/crays-platform/issues) to describe the user or developer problem, affected component and expected result. Include reproducible steps with synthetic inputs. For an independent website, mobile app or upstream project, use that project's own repository and contribution rules.
 
 A useful proposal explains who benefits and what success looks like. For example: a Plane duplicate-webhook test should demonstrate the expected idempotent result; a Nextcloud access test should distinguish the requested member's files from another user's files.
 

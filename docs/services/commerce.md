@@ -4,10 +4,10 @@ CRAYS connects membership and commerce interfaces to a dedicated commerce provid
 
 ## Follow the implementation
 
-- [Clubs Commerce BFF](https://github.com/CraysCircle/crays-platform/tree/a9e950d5403f39750dfe6fa644f7bf2aac044a10/services/clubs-commerce-bff) contains the original service, library, build inputs, test source and dependency notices.
-- [server.mjs](https://github.com/CraysCircle/crays-platform/blob/a9e950d5403f39750dfe6fa644f7bf2aac044a10/services/clubs-commerce-bff/server.mjs) and [lib.mjs](https://github.com/CraysCircle/crays-platform/blob/a9e950d5403f39750dfe6fa644f7bf2aac044a10/services/clubs-commerce-bff/lib.mjs) are concrete service entry points.
-- [Shared web application](https://github.com/CraysCircle/crays-platform/blob/main/apps/web/README.md) explains the qualified Club/Member application compositions and their separate configuration requirements.
-- [Original BFF test source](https://github.com/CraysCircle/crays-platform/blob/a9e950d5403f39750dfe6fa644f7bf2aac044a10/services/clubs-commerce-bff/test.mjs) preserves the original test contract; its publication is not a new test result.
+- [Clubs Commerce BFF](https://github.com/CraysWorld/crays-platform/tree/a9e950d5403f39750dfe6fa644f7bf2aac044a10/services/clubs-commerce-bff) contains the original service, library, build inputs, test source and dependency notices.
+- [server.mjs](https://github.com/CraysWorld/crays-platform/blob/a9e950d5403f39750dfe6fa644f7bf2aac044a10/services/clubs-commerce-bff/server.mjs) and [lib.mjs](https://github.com/CraysWorld/crays-platform/blob/a9e950d5403f39750dfe6fa644f7bf2aac044a10/services/clubs-commerce-bff/lib.mjs) are concrete service entry points.
+- [Shared web application](https://github.com/CraysWorld/crays-platform/blob/main/apps/web/README.md) explains the qualified Club/Member application compositions and their separate configuration requirements.
+- [Original BFF test source](https://github.com/CraysWorld/crays-platform/blob/a9e950d5403f39750dfe6fa644f7bf2aac044a10/services/clubs-commerce-bff/test.mjs) preserves the original test contract; its publication is not a new test result.
 
 The original provider source record identifies Vendure **3.7.1**, CRAYS source package **3.7.1-crays.30** and Node **22.18.0**. These describe the cited preserved provider snapshot. The BFF source publication does not by itself establish that every current commerce container uses that exact revision.
 

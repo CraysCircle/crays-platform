@@ -31,7 +31,7 @@ Plane has one home in this service guide. It is part of the platform's project-w
 | --- | --- | --- |
 | [Identity and member access](identity.md) | Auth0 integration, session mapping and member access contracts | [Auth/session mapping](../../apps/web/src/lib/auth-session-mapping.ts), [member auth contract](../../apps/web/src/lib/clubs/member-auth-contract.ts) |
 | [Nostr identity and browser sessions](network.md) | Nostr identity, signature and browser-session boundaries | [Identity](../../apps/web/src/lib/nostr-identity.ts), [signatures](../../apps/web/src/lib/nostr-signature.ts), [browser session](../../apps/web/src/lib/nostr-browser-session.ts) |
-| Native applications | Separate native iOS, Android and BLE projects, with their own source and integration histories | [Mobile project guide](https://github.com/CraysCircle/.github/blob/main/docs/repositories.md#mobile-applications) and [native version map](https://github.com/CraysCircle/.github/blob/main/docs/native-source-map.md) |
+| Native applications | Separate native iOS, Android and BLE projects, with their own source and integration histories | [Mobile project guide](https://github.com/CraysWorld/.github/blob/main/docs/repositories.md#mobile-applications) and [native version map](https://github.com/CraysWorld/.github/blob/main/docs/native-source-map.md) |
 | [Social publishing and delivery](delivery-and-social.md) | Captured Postiz frontend qualification and delivery operating programs | [Postiz source guide](../../operations/delivery/postiz/README.md); the full provider application is a separate source scope |
 
 ## How the pieces work together
@@ -52,7 +52,7 @@ Application code, provider integrations and operating programs have different en
 - [Club runtime](../../services/club-next-runtime/README.md): listener, bootstrap and origin configuration.
 - [Operations](../../operations/README.md): reviewed build, delivery, migration and recovery programs, including [Neon → RDS](../../operations/neon-rds/README.md).
 
-Standalone Coffee, Shop, Pro and other website projects remain in their [matching repositories](https://github.com/CraysCircle/.github/blob/main/docs/repositories.md). A public website and its deeper business integrations can have different source/version records.
+Standalone Coffee, Shop, Pro and other website projects remain in their [matching repositories](https://github.com/CraysWorld/.github/blob/main/docs/repositories.md). A public website and its deeper business integrations can have different source/version records.
 
 ## Contribute where you can make a difference
 
@@ -66,7 +66,7 @@ There is no single root command that installs or starts every CRAYS service. Fol
 
 These pages describe inspected source responsibilities. They do not assert that every feature is enabled in a current public deployment. Original component licenses and notices apply; a readable repository does not create a blanket license over the combined system.
 
-The [source index](../source-index.json), [license/provenance record](../license-and-provenance.md) and [current coverage status](https://github.com/CraysCircle/.github/blob/main/docs/source-and-license-status.md) retain exact versions and outstanding source, dependency and rights work. Retained upstream forks are documented separately in the organization guide; their existence does not make them current CRAYS services.
+The [source index](../source-index.json), [license/provenance record](../license-and-provenance.md) and [current coverage status](https://github.com/CraysWorld/.github/blob/main/docs/source-and-license-status.md) retain exact versions and outstanding source, dependency and rights work. Retained upstream forks are documented separately in the organization guide; their existence does not make them current CRAYS services.
 
 ## More developer guides
 

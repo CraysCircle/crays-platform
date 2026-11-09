@@ -55,7 +55,7 @@ These responsibilities live in separate source areas because they have different
 | [operations](../operations/README.md) | Build, migration and operating-program source with original preconditions. |
 | [source index](source-index.json) | Exact source captures, immutable references and version records. |
 
-Independent websites and native applications keep their own repositories. The [organization map](https://github.com/CraysCircle/.github/blob/main/docs/repository-structure.md) explains those boundaries.
+Independent websites and native applications keep their own repositories. The [organization map](https://github.com/CraysWorld/.github/blob/main/docs/repository-structure.md) explains those boundaries.
 
 ## Identity, data and upstream ownership
 

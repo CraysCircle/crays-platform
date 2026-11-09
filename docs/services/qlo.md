@@ -68,4 +68,4 @@ The package's full `npm test` command runs these two scripts followed by two gat
 
 The original gateway application, tests and Dockerfile have exact source records in the [platform index](../source-index.json). Recorded Docker image IDs and registry manifest digests identify different objects; use the component's artifact notes.
 
-Full provider application source, dependency/runtime notices, channel-manager completion, booking/payment readiness and current customer acceptance are broader work than this gateway capture. See [license/provenance](../license-and-provenance.md) and [current coverage](https://github.com/CraysCircle/.github/blob/main/docs/source-and-license-status.md).
+Full provider application source, dependency/runtime notices, channel-manager completion, booking/payment readiness and current customer acceptance are broader work than this gateway capture. See [license/provenance](../license-and-provenance.md) and [current coverage](https://github.com/CraysWorld/.github/blob/main/docs/source-and-license-status.md).
