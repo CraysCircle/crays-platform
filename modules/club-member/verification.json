@@ -1,0 +1,18 @@
+{
+  "originalFiles": 133,
+  "origin35Files": 133,
+  "all266OriginalSourceComparisonsPassed": true,
+  "protectedTemplates": 9,
+  "rawProtectedInputPublished": false,
+  "negativeChecks": [
+    "missing-inputs",
+    "wrong-inputs",
+    "existing-output",
+    "output-inside-git",
+    "output-inside-archive",
+    "symlink-parent"
+  ],
+  "preservedProgramsExecuted": false,
+  "newBuildOrRuntimeMutation": false,
+  "completeRuntimeAndLicenseClosure": false
+}

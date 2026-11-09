@@ -1,0 +1,13 @@
+import {z} from "zod";
+const id=z.string().regex(/^[A-Za-z0-9:_.-]{1,180}$/),sha=z.string().regex(/^[a-f0-9]{64}$/),sourceRecordId=z.string().regex(/^map_member_test_stay_[a-f0-9]{32}$/);
+export const ownTestStaySchema=z.object({sourceRecordId,sourceId:id,sourceVersion:z.number().int().positive(),sourceRowSha256:sha,
+ publicReference:id,propertyId:z.enum(["property-clubs-forest-city-golf","property-clubs-forest-city-marina"]),propertyDisplayName:z.string().min(1).max(300),
+ arrivalDate:z.iso.date(),departureDate:z.iso.date(),departureDateSemantics:z.enum(["inclusive_last_day","exclusive_checkout"]),dateSemanticsTimezone:z.literal("Asia/Kuala_Lumpur"),dateSemanticsReceiptSha256:sha,nativeDateSemanticsVerified:z.literal(false),guestCount:z.number().int().positive().max(100),status:z.enum(["upcoming","current","completed"]),
+ currency:z.enum(["CHF","EUR","USD"]).nullable(),totalMinor:z.number().int().nonnegative().max(1000000000).nullable(),
+ scene:z.enum(["original_screenshot_baseline","additional_current_workflow"]),testOnly:z.literal(true),sourceAuthority:z.literal("SCREENSHOT_SIMULATION_NOT_PROVIDER_ACK"),
+ providerConfirmed:z.literal(false),nativeBookingId:z.null(),bookingAuthority:z.literal(false),paymentAuthority:z.literal(false),nativeConfirmation:z.literal(false),changeRequestAuthority:z.literal(false)}).strict().superRefine((s,c)=>{if(s.arrivalDate>s.departureDate||s.arrivalDate===s.departureDate&&s.departureDateSemantics==="exclusive_checkout")c.addIssue({code:"custom",message:"Original test stay dates invalid"});if((s.currency===null)!==(s.totalMinor===null))c.addIssue({code:"custom",message:"Unknown source price is not zero price"});});
+export const memberOwnTestStaysSchema=z.object({schema:z.literal("crays.clubs.member-own-test-stays.v1"),accountId:id,scene:z.enum(["original_screenshot_baseline","full_workflow"]),testOnly:z.literal(true),sourceAuthority:z.literal("SCREENSHOT_SIMULATION_NOT_PROVIDER_ACK"),stays:z.array(ownTestStaySchema).max(50)}).strict().superRefine((v,c)=>{if(new Set(v.stays.map(s=>s.sourceRecordId)).size!==v.stays.length||new Set(v.stays.map(s=>s.sourceId)).size!==v.stays.length)c.addIssue({code:"custom",message:"Duplicate original source stays"});if(v.scene==="original_screenshot_baseline"&&v.stays.some(s=>s.scene!=="original_screenshot_baseline"))c.addIssue({code:"custom",message:"Original screenshot scene cannot include additional workflow scene"});});
+export const memberOwnTestStaysInputSchema=z.object({sourceRecordId:sourceRecordId.nullable(),scene:z.enum(["original_screenshot_baseline","full_workflow"]),limit:z.number().int().min(1).max(50)}).strict();
+
+export type OwnTestStays=z.output<typeof memberOwnTestStaysSchema>;
+export type OwnTestStay=z.output<typeof ownTestStaySchema>;

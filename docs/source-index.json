@@ -105,6 +105,14 @@
     {
       "component": "member-source25-compositions",
       "path": "apps/web/compositions/member-source25/aws-build25-source.json"
+    },
+    {
+      "component": "club-member-browser-module-origin35",
+      "path": "modules/club-member/build-binding.json"
+    },
+    {
+      "component": "club-member-origin35-operations",
+      "path": "operations/member-origin35/source-capture.json"
     }
   ]
 }

@@ -1,0 +1,15 @@
+--- a/candidate/src/integration/original-platform-identity.ts
++++ b/candidate/src/integration/original-platform-identity.ts
+@@ -95,10 +95,10 @@
+  * This only permits a request; original server session and Core mapping still govern admission.
+  */
+ export function isOriginalPlatformOrigin(origin: string): boolean {
+-  return ['https://www.craysclub.com', 'https://craysclub.com', 'http://127.0.0.1:43172', 'http://localhost:8990'].includes(origin);
++  return ['https://www.craysclub.com', 'https://craysclub.com', 'http://127.0.0.1:43172', 'http://localhost:8990', 'https://member.crays.world'].includes(origin);
+ }
+ export function originalSdkStartOrigin(origin?: string): string {
+-  return origin && ['http://127.0.0.1:43172', 'http://localhost:8990'].includes(origin) ? origin : 'https://www.craysclub.com';
++  return origin && ['http://127.0.0.1:43172', 'http://localhost:8990', 'https://member.crays.world'].includes(origin) ? origin : 'https://www.craysclub.com';
+ }
+ /** Local test transport remains unavailable until the reviewed original BFF is actually served. */
+ export async function readOriginalPlatformIdentity(signal?: AbortSignal): Promise<OriginalPlatformIdentity> {

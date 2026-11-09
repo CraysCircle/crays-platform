@@ -40,3 +40,11 @@ The [qualified shared web capture](../apps/web/README.md) retains 2,045 selected
 The [operating-source archive](../operations/qlo-work-family/README.md) preserves fourteen exact original program/patch files across their recorded revisions, with an existing byte-identical storage guard linked separately. The [Work runtime component](../services/work-qlo-runtime/README.md) retains the original bootstrap and four local CommonJS modules.
 
 Recorded source pins, AST parsing and the source/dependency secret scan do not establish execution success, application ownership/license clearance, a complete original underlying Next application/dependency/asset source set, runtime/image notices or applicable corresponding-source closure. Protected review/environment/custody records remain outside Git. No original program or product runtime was executed by this import.
+
+## Club/Member browser module and origin35
+
+The [browser module](../modules/club-member/README.md) preserves both exact 133-file input views, including nine protected test-account templates, and the source/build relationship for all 129 application source files. Its separate dependency observation has 29 package roots and 28 versions, including nested duplicate picomatch. Twenty-eight original license/attribution files are preserved; the native Rolldown binding notice question remains open. Dependency package/lock metadata does not become an invented module project manifest.
+
+The existing TypeScript 5.9.3 ThirdPartyNoticeText.txt was already present and indexed in the shared web catalog. The new intake explicitly covers third-party/author filenames and retains the exact matching text for this component. No duplicate correction to the existing catalog was needed.
+
+Original capture/build/stage/adoption source is preserved under [operations/member-origin35](../operations/member-origin35/README.md). Protected inputs, actual Common-shell/backend/image adoption, complete underlying media/runtime/dependency source and notices, application rights and applicable source offers remain separate. No preserved original program or product build was executed by this import.

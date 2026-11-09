@@ -1,0 +1,1101 @@
+{
+  "schema": "crays.club-member.module-source.v1",
+  "version": "original",
+  "fileCount": 133,
+  "sourceRole": "Common-shell Club/Member browser module; not the separate Next backend",
+  "files": [
+    {
+      "path": "build-photo-contrast.original.cjs",
+      "sha256": "91ecf527cdc9451ed672c862b2099493f97c4ede915a5e4e5f567b4686f37b51",
+      "bytes": 1994,
+      "exportPath": "original/build-photo-contrast.original.cjs",
+      "exportSHA256": "91ecf527cdc9451ed672c862b2099493f97c4ede915a5e4e5f567b4686f37b51",
+      "exportBytes": 1994
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/clubs-member-home-model.ts",
+      "sha256": "731edc1998c8f73f67baf163af915591a58c90c6c0d59ed461ef4b9befc07fea",
+      "bytes": 5128,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/clubs-member-home-model.ts",
+      "exportSHA256": "731edc1998c8f73f67baf163af915591a58c90c6c0d59ed461ef4b9befc07fea",
+      "exportBytes": 5128
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/clubs-member-home.module.css",
+      "sha256": "42d870f2e82dd88ad7c8d2f9b1c389703f7fdf49df9eede14020b54a4cd93e32",
+      "bytes": 28554,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/clubs-member-home.module.css",
+      "exportSHA256": "42d870f2e82dd88ad7c8d2f9b1c389703f7fdf49df9eede14020b54a4cd93e32",
+      "exportBytes": 28554
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/clubs-member-home.tsx",
+      "sha256": "5687f6495a4ad916b63a96789ba4e97415cd478da4f1c9942166fb9186aae4eb",
+      "bytes": 40313,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/clubs-member-home.tsx",
+      "exportSHA256": "5687f6495a4ad916b63a96789ba4e97415cd478da4f1c9942166fb9186aae4eb",
+      "exportBytes": 40313
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/interaction/resize-grip.tsx",
+      "sha256": "206829cf47ebb1493b22e61cc3a92e7f2226ba0eaaa2e3ff0954c8b37123892d",
+      "bytes": 8198,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/interaction/resize-grip.tsx",
+      "exportSHA256": "206829cf47ebb1493b22e61cc3a92e7f2226ba0eaaa2e3ff0954c8b37123892d",
+      "exportBytes": 8198
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/interaction/table-column-widths.ts",
+      "sha256": "bcd08815a9cf8a61d53990baa76b216cb024208ebda9b07b4b99103e36b400af",
+      "bytes": 1240,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/interaction/table-column-widths.ts",
+      "exportSHA256": "bcd08815a9cf8a61d53990baa76b216cb024208ebda9b07b4b99103e36b400af",
+      "exportBytes": 1240
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/interaction/utils.ts",
+      "sha256": "d1f1e0d62cb8d8d1e04c26e14de842d8a151f75812d81b046c65b5d1fe8e4b27",
+      "bytes": 169,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/interaction/utils.ts",
+      "exportSHA256": "d1f1e0d62cb8d8d1e04c26e14de842d8a151f75812d81b046c65b5d1fe8e4b27",
+      "exportBytes": 169
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-ambassador-connected.tsx",
+      "sha256": "6dd3573a8950328d8ab8c87f8211622be2215f0560fcf7c956d3f8882d87dc23",
+      "bytes": 3373,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-ambassador-connected.tsx",
+      "exportSHA256": "6dd3573a8950328d8ab8c87f8211622be2215f0560fcf7c956d3f8882d87dc23",
+      "exportBytes": 3373
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-ambassador-connection.module.css",
+      "sha256": "a4b110225cf6de8a91396201b4e7301ff093dd78b3a9507a58d7667702b33e02",
+      "bytes": 436,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-ambassador-connection.module.css",
+      "exportSHA256": "a4b110225cf6de8a91396201b4e7301ff093dd78b3a9507a58d7667702b33e02",
+      "exportBytes": 436
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-ambassador-recruitment-input.ts",
+      "sha256": "e21338280651c378a6ef100102a37a9fb2a7b51a6495c272eeba7076f8f4f82c",
+      "bytes": 666,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-ambassador-recruitment-input.ts",
+      "exportSHA256": "e21338280651c378a6ef100102a37a9fb2a7b51a6495c272eeba7076f8f4f82c",
+      "exportBytes": 666
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-ambassador-recruitment.module.css",
+      "sha256": "b6778fdb7a4fbe9c2fa399610e501d016f1de0915cc9156c3b6d0004b71efac5",
+      "bytes": 8904,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-ambassador-recruitment.module.css",
+      "exportSHA256": "b6778fdb7a4fbe9c2fa399610e501d016f1de0915cc9156c3b6d0004b71efac5",
+      "exportBytes": 8904
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-ambassador-recruitment.tsx",
+      "sha256": "246d4354e7cd216eb3cfbfd1ad145dac895a5ff3c30f354457e43797e330d1d4",
+      "bytes": 17373,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-ambassador-recruitment.tsx",
+      "exportSHA256": "246d4354e7cd216eb3cfbfd1ad145dac895a5ff3c30f354457e43797e330d1d4",
+      "exportBytes": 17373
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-ambassador-resource.ts",
+      "sha256": "8b5851e5c701b7e7f22c77eacfe6bba03e36b23fee89dd32da3afc37d0ef6cdd",
+      "bytes": 5445,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-ambassador-resource.ts",
+      "exportSHA256": "8b5851e5c701b7e7f22c77eacfe6bba03e36b23fee89dd32da3afc37d0ef6cdd",
+      "exportBytes": 5445
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-ambassador-review-ledger.ts",
+      "sha256": "9991b706be1f628199c1339a6a68104d4d0e9feddc88a2c970a21c6d259f76d5",
+      "bytes": 7437,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-ambassador-review-ledger.ts",
+      "exportSHA256": "9991b706be1f628199c1339a6a68104d4d0e9feddc88a2c970a21c6d259f76d5",
+      "exportBytes": 7437
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-ambassador-route.ts",
+      "sha256": "14bd450da46c3388a3b2e4d54797a6aa9f4f49b21d5e9a0dbddf65de90156c9e",
+      "bytes": 1658,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-ambassador-route.ts",
+      "exportSHA256": "14bd450da46c3388a3b2e4d54797a6aa9f4f49b21d5e9a0dbddf65de90156c9e",
+      "exportBytes": 1658
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-ambassador-workspace.module.css",
+      "sha256": "225194348846280382dcbe933808c79cfe8aa0c564f76f8103a37ecf40591cbe",
+      "bytes": 11658,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-ambassador-workspace.module.css",
+      "exportSHA256": "225194348846280382dcbe933808c79cfe8aa0c564f76f8103a37ecf40591cbe",
+      "exportBytes": 11658
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-ambassador-workspace.tsx",
+      "sha256": "2e972d8259db4b71b85e9dbed4bcfab696e62dcccb1fe110dfaa5d2ec0b66cac",
+      "bytes": 29393,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-ambassador-workspace.tsx",
+      "exportSHA256": "2e972d8259db4b71b85e9dbed4bcfab696e62dcccb1fe110dfaa5d2ec0b66cac",
+      "exportBytes": 29393
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-application-client.ts",
+      "sha256": "cc85e66098156dfe35d41012eec652527db77713324e5af9a631c504ecbb87d3",
+      "bytes": 1796,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-application-client.ts",
+      "exportSHA256": "cc85e66098156dfe35d41012eec652527db77713324e5af9a631c504ecbb87d3",
+      "exportBytes": 1796
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-application-pending-storage.ts",
+      "sha256": "c1ffa292d094037e3147c90e6710c9b08f35b0bfbe2a32ceb6c43e2bc97c8939",
+      "bytes": 2217,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-application-pending-storage.ts.in",
+      "exportSHA256": "87584e95ce1aff14611f0432512508f3e8847ea551fc02874395c5a57672fd93",
+      "exportBytes": 2218,
+      "protectedInputs": [
+        "MEMBER_TEST_ACCOUNT_ID"
+      ]
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-commerce-offer.module.css",
+      "sha256": "269b4ced7bacf1ee5294633d4cf7690a58e40fe69500ed583e8b14e50edcd174",
+      "bytes": 2690,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-commerce-offer.module.css",
+      "exportSHA256": "269b4ced7bacf1ee5294633d4cf7690a58e40fe69500ed583e8b14e50edcd174",
+      "exportBytes": 2690
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-commerce-refresh-policy.ts",
+      "sha256": "1420f7179709b440d5d6a2fee912712434c2e8eb5ec60265d4c80b99a901cbb4",
+      "bytes": 1370,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-commerce-refresh-policy.ts",
+      "exportSHA256": "1420f7179709b440d5d6a2fee912712434c2e8eb5ec60265d4c80b99a901cbb4",
+      "exportBytes": 1370
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-complete-workspaces.module.css",
+      "sha256": "90ca61e68a289046fef251a6b0453735a048606f89f27c18918f6b94c075fe00",
+      "bytes": 20236,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-complete-workspaces.module.css",
+      "exportSHA256": "90ca61e68a289046fef251a6b0453735a048606f89f27c18918f6b94c075fe00",
+      "exportBytes": 20236
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-complete-workspaces.tsx",
+      "sha256": "e4dd7e11846cbe278c75ae5636095e330eb12b2e12ab60a9b2e2c1fba64b57fa",
+      "bytes": 29475,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-complete-workspaces.tsx",
+      "exportSHA256": "e4dd7e11846cbe278c75ae5636095e330eb12b2e12ab60a9b2e2c1fba64b57fa",
+      "exportBytes": 29475
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-conversation-feed.ts",
+      "sha256": "8bd42086825d4a6587547b8b89eb8a58c9711e575b57d619d3cbb63a547b6fd2",
+      "bytes": 467,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-conversation-feed.ts",
+      "exportSHA256": "8bd42086825d4a6587547b8b89eb8a58c9711e575b57d619d3cbb63a547b6fd2",
+      "exportBytes": 467
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-conversations-graphql-reader.ts",
+      "sha256": "e8d94a9c6df47bb3c555168b88808b66e9bd23fa737b681f67a86cb55d5f0334",
+      "bytes": 1530,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-conversations-graphql-reader.ts",
+      "exportSHA256": "e8d94a9c6df47bb3c555168b88808b66e9bd23fa737b681f67a86cb55d5f0334",
+      "exportBytes": 1530
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-demo-documents-graphql-reader.ts",
+      "sha256": "bac8988ff7a8d75d43dd8e3a6be8121495d1569409bbc04be53910d1ec57cf37",
+      "bytes": 1074,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-demo-documents-graphql-reader.ts",
+      "exportSHA256": "bac8988ff7a8d75d43dd8e3a6be8121495d1569409bbc04be53910d1ec57cf37",
+      "exportBytes": 1074
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-document-feed.ts",
+      "sha256": "2804faf44412c0aa84f87a6ba5594d29ea85be4b0361ba89ca9e18822ff916a7",
+      "bytes": 939,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-document-feed.ts",
+      "exportSHA256": "2804faf44412c0aa84f87a6ba5594d29ea85be4b0361ba89ca9e18822ff916a7",
+      "exportBytes": 939
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-experience-read-workspace.tsx",
+      "sha256": "287e30e1da932ee2c333b5d642c67903e3b5ba5abd11820113acf9f822b68ba6",
+      "bytes": 11508,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-experience-read-workspace.tsx",
+      "exportSHA256": "287e30e1da932ee2c333b5d642c67903e3b5ba5abd11820113acf9f822b68ba6",
+      "exportBytes": 11508
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-experiences-graphql-reader.ts",
+      "sha256": "bdce3ddcbcf6cdee07e005c5444ee80d6c63d94588dd527157d9d9ac97931f3b",
+      "bytes": 1541,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-experiences-graphql-reader.ts",
+      "exportSHA256": "bdce3ddcbcf6cdee07e005c5444ee80d6c63d94588dd527157d9d9ac97931f3b",
+      "exportBytes": 1541
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-experiences-workspace.module.css",
+      "sha256": "b0c72f37a1dd6a7e49089580b5318fad94f6427df6bd3ae12ac5534386f5fc8d",
+      "bytes": 12668,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-experiences-workspace.module.css",
+      "exportSHA256": "b0c72f37a1dd6a7e49089580b5318fad94f6427df6bd3ae12ac5534386f5fc8d",
+      "exportBytes": 12668
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-experiences-workspace.tsx",
+      "sha256": "08d4d8e88b80f77decd9cbe60e7d276c2a48051339e48190f79dad2ef77a455d",
+      "bytes": 16264,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-experiences-workspace.tsx",
+      "exportSHA256": "08d4d8e88b80f77decd9cbe60e7d276c2a48051339e48190f79dad2ef77a455d",
+      "exportBytes": 16264
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-finance-graphql-reader.ts",
+      "sha256": "953c488bd53d9467de4f2aba09731a713b7388b6a0281bc482f2b624813bdf87",
+      "bytes": 991,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-finance-graphql-reader.ts",
+      "exportSHA256": "953c488bd53d9467de4f2aba09731a713b7388b6a0281bc482f2b624813bdf87",
+      "exportBytes": 991
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-finance-records.tsx",
+      "sha256": "0e4010c6fe72e9746c3489a78eb92a7f118f7f09cf68ebf4c2c9e44206336773",
+      "bytes": 5412,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-finance-records.tsx",
+      "exportSHA256": "0e4010c6fe72e9746c3489a78eb92a7f118f7f09cf68ebf4c2c9e44206336773",
+      "exportBytes": 5412
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-finance-request-form.tsx",
+      "sha256": "49ae0c9e8a4c09c1ea7240c29d9e913b14c290171a54b527aaaf514a23f4954b",
+      "bytes": 9901,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-finance-request-form.tsx.in",
+      "exportSHA256": "a9725981ec31fc99f5e907a08977a5bd8bf9a5d18e3f1551d81c2fd45ed3d719",
+      "exportBytes": 9902,
+      "protectedInputs": [
+        "MEMBER_TEST_ACCOUNT_ID"
+      ]
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-finance-requests-graphql-reader.ts",
+      "sha256": "8be97458da8768c87530474abfe8e4d3ed62791029332732539e5d90450f4922",
+      "bytes": 1127,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-finance-requests-graphql-reader.ts",
+      "exportSHA256": "8be97458da8768c87530474abfe8e4d3ed62791029332732539e5d90450f4922",
+      "exportBytes": 1127
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-interaction-tools.tsx",
+      "sha256": "be6a933691c7cf83b1900268cf9ba8068e86c0c31013087c258a70a8bc96af44",
+      "bytes": 18459,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-interaction-tools.tsx",
+      "exportSHA256": "be6a933691c7cf83b1900268cf9ba8068e86c0c31013087c258a70a8bc96af44",
+      "exportBytes": 18459
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-interactions.module.css",
+      "sha256": "59d24c9cadcbe6e77de2b0776263b927dc1db15565b36f3eb8a52b7670874ea9",
+      "bytes": 5694,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-interactions.module.css",
+      "exportSHA256": "59d24c9cadcbe6e77de2b0776263b927dc1db15565b36f3eb8a52b7670874ea9",
+      "exportBytes": 5694
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-message-history.tsx",
+      "sha256": "4a376d1c0bcc0c5b040388f163c189973c1411c29aa2f09e41a0f54161c2eab8",
+      "bytes": 1373,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-message-history.tsx",
+      "exportSHA256": "4a376d1c0bcc0c5b040388f163c189973c1411c29aa2f09e41a0f54161c2eab8",
+      "exportBytes": 1373
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-messages-workspace.module.css",
+      "sha256": "921f0f9796c6b6a16828c054410c0779b62149f4e507bb2dd2d40a1f1deb7e15",
+      "bytes": 15647,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-messages-workspace.module.css",
+      "exportSHA256": "921f0f9796c6b6a16828c054410c0779b62149f4e507bb2dd2d40a1f1deb7e15",
+      "exportBytes": 15647
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-messages-workspace.tsx",
+      "sha256": "8a307370fb8d65e3ad521859568c4069543dc5dfe939debf5c1db7e7aae5b7b3",
+      "bytes": 11430,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-messages-workspace.tsx",
+      "exportSHA256": "8a307370fb8d65e3ad521859568c4069543dc5dfe939debf5c1db7e7aae5b7b3",
+      "exportBytes": 11430
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-native-application-workspace.module.css",
+      "sha256": "117bb80cb46bda44a03f1da8d2005c39cfa7dd36fa833409136883169e61a34b",
+      "bytes": 6085,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-native-application-workspace.module.css",
+      "exportSHA256": "117bb80cb46bda44a03f1da8d2005c39cfa7dd36fa833409136883169e61a34b",
+      "exportBytes": 6085
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-native-application-workspace.tsx",
+      "sha256": "2a3d2922c8f1d5afbe1bd36cde1423ff617ed0861d55400c2bf07009a4dd0e8b",
+      "bytes": 15481,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-native-application-workspace.tsx.in",
+      "exportSHA256": "6e30523f11c0b86f7dc673b55fe537a1f5159dc8d3198d70f2b3691e005657ac",
+      "exportBytes": 15482,
+      "protectedInputs": [
+        "MEMBER_TEST_ACCOUNT_ID"
+      ]
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-native-cart-presentation.module.css",
+      "sha256": "920289d7000574106c8f2b68d20fc796abdb2436c299746f6d4aea722e4ba174",
+      "bytes": 6022,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-native-cart-presentation.module.css",
+      "exportSHA256": "920289d7000574106c8f2b68d20fc796abdb2436c299746f6d4aea722e4ba174",
+      "exportBytes": 6022
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-native-cart-presentation.tsx",
+      "sha256": "27cb1ac1e75feefa56445d0d85006c190f08940b7a3b25c1f1df42f31f0706a0",
+      "bytes": 14922,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-native-cart-presentation.tsx",
+      "exportSHA256": "27cb1ac1e75feefa56445d0d85006c190f08940b7a3b25c1f1df42f31f0706a0",
+      "exportBytes": 14922
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-native-commerce-workspace.tsx",
+      "sha256": "1e630a70435f7aef14d7c0a7c70474e39f448a75997e1b54ef3120398ae600a5",
+      "bytes": 19739,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-native-commerce-workspace.tsx",
+      "exportSHA256": "1e630a70435f7aef14d7c0a7c70474e39f448a75997e1b54ef3120398ae600a5",
+      "exportBytes": 19739
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-native-privacy-requests.tsx",
+      "sha256": "e98c14c38b38296a814e2f86f4e41e04b5be9912745d28c0986902daae540fb6",
+      "bytes": 8849,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-native-privacy-requests.tsx.in",
+      "exportSHA256": "ce64fd7749acbcc3bc5eafde8a607457a2b1eb74e606c4620b7a5fb7eadfe074",
+      "exportBytes": 8850,
+      "protectedInputs": [
+        "MEMBER_TEST_ACCOUNT_ID"
+      ]
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-native-profile-workspace.module.css",
+      "sha256": "ff99bc5019d46239fd1a5a9cfa428fb1ea56d36bd539c1451a263295111938d2",
+      "bytes": 2498,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-native-profile-workspace.module.css",
+      "exportSHA256": "ff99bc5019d46239fd1a5a9cfa428fb1ea56d36bd539c1451a263295111938d2",
+      "exportBytes": 2498
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-native-profile-workspace.tsx",
+      "sha256": "3f4119c6f6213608b3cc0840505eb449b8ee69676505e5c830adc282b174b5c0",
+      "bytes": 12387,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-native-profile-workspace.tsx",
+      "exportSHA256": "3f4119c6f6213608b3cc0840505eb449b8ee69676505e5c830adc282b174b5c0",
+      "exportBytes": 12387
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-payment-selection.ts",
+      "sha256": "5eed1b0e8a811a69b8c3a8fd7a4c8539985712b7a8961439d2064851815e8b59",
+      "bytes": 600,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-payment-selection.ts",
+      "exportSHA256": "5eed1b0e8a811a69b8c3a8fd7a4c8539985712b7a8961439d2064851815e8b59",
+      "exportBytes": 600
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-plans-purchase-context.ts",
+      "sha256": "cc0d278a8a6b47a3e0e60dbb738db30b6abe8d6958b86b0a30b8ce40c00f250f",
+      "bytes": 1304,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-plans-purchase-context.ts.in",
+      "exportSHA256": "3e7d4ea7603e5bc4588147adf2a848bfae9383497b6230dd3bb7de29e95b19c8",
+      "exportBytes": 1305,
+      "protectedInputs": [
+        "MEMBER_TEST_ACCOUNT_ID"
+      ]
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-privacy-client.ts",
+      "sha256": "23f27590be9d68220aa34ddd8f6daa603bfcd9d40f3be0b76b35e991cd6eb7a0",
+      "bytes": 3683,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-privacy-client.ts",
+      "exportSHA256": "23f27590be9d68220aa34ddd8f6daa603bfcd9d40f3be0b76b35e991cd6eb7a0",
+      "exportBytes": 3683
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-privacy-pending.ts",
+      "sha256": "8a09ec503188106121671bbe083a45ed397a8dc4f11ea5632eaecb014d46d6a1",
+      "bytes": 670,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-privacy-pending.ts",
+      "exportSHA256": "8a09ec503188106121671bbe083a45ed397a8dc4f11ea5632eaecb014d46d6a1",
+      "exportBytes": 670
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-privacy-requests.module.css",
+      "sha256": "ad39988341c058441d439438ae0aa3e274802a23a7610b9cd99f3deafbf9f0fe",
+      "bytes": 1557,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-privacy-requests.module.css",
+      "exportSHA256": "ad39988341c058441d439438ae0aa3e274802a23a7610b9cd99f3deafbf9f0fe",
+      "exportBytes": 1557
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-profile-client.ts",
+      "sha256": "81a492581a4df75de9f8c1098857333ac2454e64539282ba837ed12aba6bbaa0",
+      "bytes": 3668,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-profile-client.ts",
+      "exportSHA256": "81a492581a4df75de9f8c1098857333ac2454e64539282ba837ed12aba6bbaa0",
+      "exportBytes": 3668
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-progressive-feeds.ts",
+      "sha256": "c30e92084aa9034be7b40b87051399b052360100f6a04cf03dbbfa13234a3e63",
+      "bytes": 552,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-progressive-feeds.ts",
+      "exportSHA256": "c30e92084aa9034be7b40b87051399b052360100f6a04cf03dbbfa13234a3e63",
+      "exportBytes": 552
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-purchase-fulfilment-graphql-reader.ts",
+      "sha256": "bb40292afa70de7ea1a110fb090f1815bb8ef7a94b06b812f4f2e75a07d6fe41",
+      "bytes": 1639,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-purchase-fulfilment-graphql-reader.ts.in",
+      "exportSHA256": "91b78eb145670488bc29d24f3af41693351b0075a56b69feddf3e465634794c0",
+      "exportBytes": 1640,
+      "protectedInputs": [
+        "MEMBER_TEST_ACCOUNT_ID"
+      ]
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-purchase-fulfilment-progress.tsx",
+      "sha256": "c7de95a665ae179710836d19aa34b3509288b5107188de05792874549efcb8b5",
+      "bytes": 2818,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-purchase-fulfilment-progress.tsx",
+      "exportSHA256": "c7de95a665ae179710836d19aa34b3509288b5107188de05792874549efcb8b5",
+      "exportBytes": 2818
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-purchase-request-feed.ts",
+      "sha256": "86709c46cd084c0ff308a4c45c7fc83c099094e4cacfd9b5cda70503fb0737c4",
+      "bytes": 2820,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-purchase-request-feed.ts.in",
+      "exportSHA256": "ed4b2637cdf2020e3318f5c8efd4c93973a963981eda52ab6ff3473a0cc7f4e0",
+      "exportBytes": 2821,
+      "protectedInputs": [
+        "MEMBER_TEST_ACCOUNT_ID"
+      ]
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-purchased-offer-orders.tsx",
+      "sha256": "cf87315362cf76ccd4371818d5b624abed0c95d79eed22bc4ed1d9e50dd5ba10",
+      "bytes": 2949,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-purchased-offer-orders.tsx",
+      "exportSHA256": "cf87315362cf76ccd4371818d5b624abed0c95d79eed22bc4ed1d9e50dd5ba10",
+      "exportBytes": 2949
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-recruitment-audience-text.ts",
+      "sha256": "247a867723361295668dae9d9f1ff38335f9265315c0bec343d983b6f86451ac",
+      "bytes": 1466,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-recruitment-audience-text.ts",
+      "exportSHA256": "247a867723361295668dae9d9f1ff38335f9265315c0bec343d983b6f86451ac",
+      "exportBytes": 1466
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-recruitment-audience.module.css",
+      "sha256": "c955ce650f7d34eeb81b166aea9291ec8dbed35b41007111e6428cf1f537b462",
+      "bytes": 1239,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-recruitment-audience.module.css",
+      "exportSHA256": "c955ce650f7d34eeb81b166aea9291ec8dbed35b41007111e6428cf1f537b462",
+      "exportBytes": 1239
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-recruitment-audience.tsx",
+      "sha256": "bd2d58bdfd1abe4ee79e3fff995fab6428720ff0d86c621e11f9ad991ac86b75",
+      "bytes": 2461,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-recruitment-audience.tsx",
+      "exportSHA256": "bd2d58bdfd1abe4ee79e3fff995fab6428720ff0d86c621e11f9ad991ac86b75",
+      "exportBytes": 2461
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-recruitment-command-consumer.ts",
+      "sha256": "ebf2f1d8305c69f709e3beded9db56e2a0a5c59508aed2cc72af4ad1326f99df",
+      "bytes": 7493,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-recruitment-command-consumer.ts",
+      "exportSHA256": "ebf2f1d8305c69f709e3beded9db56e2a0a5c59508aed2cc72af4ad1326f99df",
+      "exportBytes": 7493
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-requests-workspace.module.css",
+      "sha256": "5236504af0327e85546e36911d65df6e9808c9cad151cb754797bed2d27c1cf9",
+      "bytes": 6105,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-requests-workspace.module.css",
+      "exportSHA256": "5236504af0327e85546e36911d65df6e9808c9cad151cb754797bed2d27c1cf9",
+      "exportBytes": 6105
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-requests-workspace.tsx",
+      "sha256": "8f8afeed2bba5db309ddc0cfb31c9145d0e511b4bc8ed9786de8d6d6fbb7b34e",
+      "bytes": 11912,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-requests-workspace.tsx",
+      "exportSHA256": "8f8afeed2bba5db309ddc0cfb31c9145d0e511b4bc8ed9786de8d6d6fbb7b34e",
+      "exportBytes": 11912
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-route-target.ts",
+      "sha256": "7c80cbc8b253b1053e83f914f67cfc9a4892532246257e2b507e226fb3d70463",
+      "bytes": 604,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-route-target.ts",
+      "exportSHA256": "7c80cbc8b253b1053e83f914f67cfc9a4892532246257e2b507e226fb3d70463",
+      "exportBytes": 604
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-save-experience-plan-button.tsx",
+      "sha256": "8159996d6f0bb828bf5bc499814ff73047617158515782160f71a08122ce30d4",
+      "bytes": 2221,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-save-experience-plan-button.tsx",
+      "exportSHA256": "8159996d6f0bb828bf5bc499814ff73047617158515782160f71a08122ce30d4",
+      "exportBytes": 2221
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-search-model.ts",
+      "sha256": "8fc337e41bf2d3f19aa6de6ae5a9857a638fecd50f6916268fe9d0da9c042f9f",
+      "bytes": 3833,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-search-model.ts",
+      "exportSHA256": "8fc337e41bf2d3f19aa6de6ae5a9857a638fecd50f6916268fe9d0da9c042f9f",
+      "exportBytes": 3833
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-search-workspace.tsx",
+      "sha256": "95e1afac56aa5a56d01f75615915a9915c44e45b0b9146a6204088ee03b280f3",
+      "bytes": 2946,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-search-workspace.tsx",
+      "exportSHA256": "95e1afac56aa5a56d01f75615915a9915c44e45b0b9146a6204088ee03b280f3",
+      "exportBytes": 2946
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-service-offer-catalogue.tsx",
+      "sha256": "c6cb7158950adb26f51fa40b01fe2e6e69de2246a4bfc9fb740cfaf8364f3a75",
+      "bytes": 2512,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-service-offer-catalogue.tsx",
+      "exportSHA256": "c6cb7158950adb26f51fa40b01fe2e6e69de2246a4bfc9fb740cfaf8364f3a75",
+      "exportBytes": 2512
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-services-graphql-reader.ts",
+      "sha256": "e6e48118e0a344539937fb2ae3b85ccd5f5afbaf37e27eebcac900104d4803c2",
+      "bytes": 971,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-services-graphql-reader.ts",
+      "exportSHA256": "e6e48118e0a344539937fb2ae3b85ccd5f5afbaf37e27eebcac900104d4803c2",
+      "exportBytes": 971
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-stay-choice-adapter.ts",
+      "sha256": "1ff1b4536b61585dc8df390714cf8f6083aa2826a3d7d027eba19d88df0225aa",
+      "bytes": 2146,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-stay-choice-adapter.ts",
+      "exportSHA256": "1ff1b4536b61585dc8df390714cf8f6083aa2826a3d7d027eba19d88df0225aa",
+      "exportBytes": 2146
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-stay-choice-picker.tsx",
+      "sha256": "bc447bf1bb2c689d8d99fdbf0ade74cbbac1a77d68e4360fedfb58b9f7fe4ab7",
+      "bytes": 1087,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-stay-choice-picker.tsx",
+      "exportSHA256": "bc447bf1bb2c689d8d99fdbf0ade74cbbac1a77d68e4360fedfb58b9f7fe4ab7",
+      "exportBytes": 1087
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-stay-period.ts",
+      "sha256": "f7a509867318b18a9534c7b42abf607b200dcaab7d414a242b9c534b9ab45ed6",
+      "bytes": 1822,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-stay-period.ts",
+      "exportSHA256": "f7a509867318b18a9534c7b42abf607b200dcaab7d414a242b9c534b9ab45ed6",
+      "exportBytes": 1822
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-stays-workspace.module.css",
+      "sha256": "f83aab5eab130b750c32065567184e023f3ba8917027dcdb617745698ef64aef",
+      "bytes": 5180,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-stays-workspace.module.css",
+      "exportSHA256": "f83aab5eab130b750c32065567184e023f3ba8917027dcdb617745698ef64aef",
+      "exportBytes": 5180
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-stays-workspace.tsx",
+      "sha256": "8f6697cadc0c3dec66a15a3f18e36522a2dd153993ae7b4ee904ba0144441c94",
+      "bytes": 9741,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-stays-workspace.tsx",
+      "exportSHA256": "8f6697cadc0c3dec66a15a3f18e36522a2dd153993ae7b4ee904ba0144441c94",
+      "exportBytes": 9741
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-test-stay-selection.ts",
+      "sha256": "2f5f956427052231f34636db0d1ac050505c00fc05bb27349d963a00e83abc57",
+      "bytes": 954,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-test-stay-selection.ts",
+      "exportSHA256": "2f5f956427052231f34636db0d1ac050505c00fc05bb27349d963a00e83abc57",
+      "exportBytes": 954
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-test-stays-graphql-reader.ts",
+      "sha256": "3bf54c931a03051c2b7467eb7d4f921684199072d25bd56e20f55f9d1c5ed6ff",
+      "bytes": 1573,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-test-stays-graphql-reader.ts",
+      "exportSHA256": "3bf54c931a03051c2b7467eb7d4f921684199072d25bd56e20f55f9d1c5ed6ff",
+      "exportBytes": 1573
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/member/member-test-stays-workspace.tsx",
+      "sha256": "a05496ed6a4ddc3910c893d0e4599f188ab6f8c40989bd8b44b6586bf71e32d0",
+      "bytes": 6223,
+      "exportPath": "original/candidate/src/components/crays-clubs/member/member-test-stays-workspace.tsx",
+      "exportSHA256": "a05496ed6a4ddc3910c893d0e4599f188ab6f8c40989bd8b44b6586bf71e32d0",
+      "exportBytes": 6223
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/public/account-access-messages.ts",
+      "sha256": "0ce258afa699fcad4d82ebd7038ff4844783149129ed11b0cc3d9d44441abb99",
+      "bytes": 17496,
+      "exportPath": "original/candidate/src/components/crays-clubs/public/account-access-messages.ts",
+      "exportSHA256": "0ce258afa699fcad4d82ebd7038ff4844783149129ed11b0cc3d9d44441abb99",
+      "exportBytes": 17496
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/public/clubs-member-account.module.css",
+      "sha256": "d7c2e7e6ecb26f3747c38347484e23a36a2376ec7a876aa10368aaf119a1824b",
+      "bytes": 30884,
+      "exportPath": "original/candidate/src/components/crays-clubs/public/clubs-member-account.module.css",
+      "exportSHA256": "d7c2e7e6ecb26f3747c38347484e23a36a2376ec7a876aa10368aaf119a1824b",
+      "exportBytes": 30884
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/public/clubs-member-account.tsx",
+      "sha256": "2480016f413ad818b6b013f136d703ac884feee94aa467dc0e16e0dd3e2f39a7",
+      "bytes": 128998,
+      "exportPath": "original/candidate/src/components/crays-clubs/public/clubs-member-account.tsx",
+      "exportSHA256": "2480016f413ad818b6b013f136d703ac884feee94aa467dc0e16e0dd3e2f39a7",
+      "exportBytes": 128998
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/public/clubs-public-design-tokens.module.css",
+      "sha256": "156f2952c5116ae9f431be5f34c85b6bb1b716b40fc4d60876e9bec216e6ec3c",
+      "bytes": 4348,
+      "exportPath": "original/candidate/src/components/crays-clubs/public/clubs-public-design-tokens.module.css",
+      "exportSHA256": "156f2952c5116ae9f431be5f34c85b6bb1b716b40fc4d60876e9bec216e6ec3c",
+      "exportBytes": 4348
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/public/clubs-public-locale-contract.ts",
+      "sha256": "72efbcf71c718cd5f69b2126b3b0bfdf01d8c71dea3cf3a51b6f1a69374f62ab",
+      "bytes": 4173,
+      "exportPath": "original/candidate/src/components/crays-clubs/public/clubs-public-locale-contract.ts",
+      "exportSHA256": "72efbcf71c718cd5f69b2126b3b0bfdf01d8c71dea3cf3a51b6f1a69374f62ab",
+      "exportBytes": 4173
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/public/clubs-public-shell.module.css",
+      "sha256": "92c064baf80378453e135b91b99ed5eb6d14259c1f5ae76b139131f9053ea965",
+      "bytes": 33215,
+      "exportPath": "original/candidate/src/components/crays-clubs/public/clubs-public-shell.module.css",
+      "exportSHA256": "92c064baf80378453e135b91b99ed5eb6d14259c1f5ae76b139131f9053ea965",
+      "exportBytes": 33215
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/public/clubs-public-shell.tsx",
+      "sha256": "b6e038b7df0bc7553a62910a9fedd49d36fa75fa718451a08237877adae5394c",
+      "bytes": 35809,
+      "exportPath": "original/candidate/src/components/crays-clubs/public/clubs-public-shell.tsx",
+      "exportSHA256": "b6e038b7df0bc7553a62910a9fedd49d36fa75fa718451a08237877adae5394c",
+      "exportBytes": 35809
+    },
+    {
+      "path": "candidate/src/components/crays-clubs/public/today-localized-content.tsx",
+      "sha256": "78c79ffc2c707a8e60f29b50dabad5a45a5ab4a141ff16733a5a04b611adb276",
+      "bytes": 3540,
+      "exportPath": "original/candidate/src/components/crays-clubs/public/today-localized-content.tsx",
+      "exportSHA256": "78c79ffc2c707a8e60f29b50dabad5a45a5ab4a141ff16733a5a04b611adb276",
+      "exportBytes": 3540
+    },
+    {
+      "path": "candidate/src/db/member-support-native-contract.ts",
+      "sha256": "445cba8c27eee56803884fa2e0cdb962666aa98ac78dbc48b0870da1f07dbf5a",
+      "bytes": 3057,
+      "exportPath": "original/candidate/src/db/member-support-native-contract.ts",
+      "exportSHA256": "445cba8c27eee56803884fa2e0cdb962666aa98ac78dbc48b0870da1f07dbf5a",
+      "exportBytes": 3057
+    },
+    {
+      "path": "candidate/src/graphql/member-self/MEMBER_SELF_OPERATION_REGISTRY.json",
+      "sha256": "01a973b18c0f5952047d5a336aee1a28a847b208f8f0dca8a82968bd5ce53442",
+      "bytes": 9011,
+      "exportPath": "original/candidate/src/graphql/member-self/MEMBER_SELF_OPERATION_REGISTRY.json",
+      "exportSHA256": "01a973b18c0f5952047d5a336aee1a28a847b208f8f0dca8a82968bd5ce53442",
+      "exportBytes": 9011
+    },
+    {
+      "path": "candidate/src/integration/ClubMemberModule.tsx",
+      "sha256": "b7f803050b3d0b2c8a32edb15f569db6f148f631684610aebc647dd853077466",
+      "bytes": 1996,
+      "exportPath": "original/candidate/src/integration/ClubMemberModule.tsx",
+      "exportSHA256": "b7f803050b3d0b2c8a32edb15f569db6f148f631684610aebc647dd853077466",
+      "exportBytes": 1996
+    },
+    {
+      "path": "candidate/src/integration/OriginalAccountEntryPresentation.tsx",
+      "sha256": "c811cf21bfbb566bf01679c655bdd41e10a7a97de8660288ba4bbe93c3d35f92",
+      "bytes": 5343,
+      "exportPath": "original/candidate/src/integration/OriginalAccountEntryPresentation.tsx",
+      "exportSHA256": "c811cf21bfbb566bf01679c655bdd41e10a7a97de8660288ba4bbe93c3d35f92",
+      "exportBytes": 5343
+    },
+    {
+      "path": "candidate/src/integration/browser-image.tsx",
+      "sha256": "8fb3e87b194562fc764b4a213c40e1051b82588e8a44c2c68dba1e9b32cb9ca5",
+      "bytes": 1194,
+      "exportPath": "original/candidate/src/integration/browser-image.tsx",
+      "exportSHA256": "8fb3e87b194562fc764b4a213c40e1051b82588e8a44c2c68dba1e9b32cb9ca5",
+      "exportBytes": 1194
+    },
+    {
+      "path": "candidate/src/integration/browser-link.tsx",
+      "sha256": "47527bdd737aff234610d84a67adbfaafb2e112ee8871b8a1165b4c2f12859d1",
+      "bytes": 1111,
+      "exportPath": "original/candidate/src/integration/browser-link.tsx",
+      "exportSHA256": "47527bdd737aff234610d84a67adbfaafb2e112ee8871b8a1165b4c2f12859d1",
+      "exportBytes": 1111
+    },
+    {
+      "path": "candidate/src/integration/browser-navigation.ts",
+      "sha256": "5717ce06ca14f1a77056f970837923454233222b8f4c2c308e1ccb207830f566",
+      "bytes": 488,
+      "exportPath": "original/candidate/src/integration/browser-navigation.ts",
+      "exportSHA256": "5717ce06ca14f1a77056f970837923454233222b8f4c2c308e1ccb207830f566",
+      "exportBytes": 488
+    },
+    {
+      "path": "candidate/src/integration/club-global-layout.module.css",
+      "sha256": "e0c8d5f7dd4d9ccecb3f0c81827b56a08a974596877bdd09c055981b338a91f4",
+      "bytes": 1940,
+      "exportPath": "original/candidate/src/integration/club-global-layout.module.css",
+      "exportSHA256": "e0c8d5f7dd4d9ccecb3f0c81827b56a08a974596877bdd09c055981b338a91f4",
+      "exportBytes": 1940
+    },
+    {
+      "path": "candidate/src/integration/member-route.tsx",
+      "sha256": "c39533bd9cc34e525f39ee25ebd7292cc74bc51fd879901c671639b9fddca55f",
+      "bytes": 1518,
+      "exportPath": "original/candidate/src/integration/member-route.tsx",
+      "exportSHA256": "c39533bd9cc34e525f39ee25ebd7292cc74bc51fd879901c671639b9fddca55f",
+      "exportBytes": 1518
+    },
+    {
+      "path": "candidate/src/integration/original-platform-identity.ts",
+      "sha256": "2b7dfc3fb6665ced5588a5af11482b78e55a2efeb12c7bc145da2e4e0d81698d",
+      "bytes": 7083,
+      "exportPath": "original/candidate/src/integration/original-platform-identity.ts",
+      "exportSHA256": "2b7dfc3fb6665ced5588a5af11482b78e55a2efeb12c7bc145da2e4e0d81698d",
+      "exportBytes": 7083
+    },
+    {
+      "path": "candidate/src/lib/clubs/ambassador-recruitment-draft-contract.ts",
+      "sha256": "73f287cf60342305ae637a6c0e930ad73ed0292eb420e15351f387024c8f2337",
+      "bytes": 4565,
+      "exportPath": "original/candidate/src/lib/clubs/ambassador-recruitment-draft-contract.ts",
+      "exportSHA256": "73f287cf60342305ae637a6c0e930ad73ed0292eb420e15351f387024c8f2337",
+      "exportBytes": 4565
+    },
+    {
+      "path": "candidate/src/lib/clubs/ambassador-recruitment-native-port-contract.ts",
+      "sha256": "830adee33ca0cbef418bf0608a3dedfe44c79bc2659cc8830846e49f0afb1974",
+      "bytes": 6211,
+      "exportPath": "original/candidate/src/lib/clubs/ambassador-recruitment-native-port-contract.ts",
+      "exportSHA256": "830adee33ca0cbef418bf0608a3dedfe44c79bc2659cc8830846e49f0afb1974",
+      "exportBytes": 6211
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-application-contract.ts",
+      "sha256": "65e908dd27152ebe0341c5f969ae502e693a97290c0bd97564944ca456159b7e",
+      "bytes": 2155,
+      "exportPath": "original/candidate/src/lib/clubs/member-application-contract.ts",
+      "exportSHA256": "65e908dd27152ebe0341c5f969ae502e693a97290c0bd97564944ca456159b7e",
+      "exportBytes": 2155
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-checkout-confirmation.ts",
+      "sha256": "db5c76db1b3ae3b603104e761ff56977ab8ec546f474c800c50fc4a903096b5d",
+      "bytes": 8441,
+      "exportPath": "original/candidate/src/lib/clubs/member-checkout-confirmation.ts",
+      "exportSHA256": "db5c76db1b3ae3b603104e761ff56977ab8ec546f474c800c50fc4a903096b5d",
+      "exportBytes": 8441
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-conversation-contract.ts",
+      "sha256": "ffe52db06d4160b39f27dab08e9d9b62d7ef63373de6f7f592884619d7a1999c",
+      "bytes": 2144,
+      "exportPath": "original/candidate/src/lib/clubs/member-conversation-contract.ts",
+      "exportSHA256": "ffe52db06d4160b39f27dab08e9d9b62d7ef63373de6f7f592884619d7a1999c",
+      "exportBytes": 2144
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-demo-commerce-client.ts",
+      "sha256": "473bc0b6ac13826f0ad3d0b188c43f3572138c9f48f9a44b5826e1b9a3086c15",
+      "bytes": 6376,
+      "exportPath": "original/candidate/src/lib/clubs/member-demo-commerce-client.ts",
+      "exportSHA256": "473bc0b6ac13826f0ad3d0b188c43f3572138c9f48f9a44b5826e1b9a3086c15",
+      "exportBytes": 6376
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-demo-commerce-command-contract.ts",
+      "sha256": "fb8a263852770831cb7aff25f07fc5b477758970e91352563051d0644f9f5b29",
+      "bytes": 1873,
+      "exportPath": "original/candidate/src/lib/clubs/member-demo-commerce-command-contract.ts",
+      "exportSHA256": "fb8a263852770831cb7aff25f07fc5b477758970e91352563051d0644f9f5b29",
+      "exportBytes": 1873
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-demo-commerce-command-status-contract.ts",
+      "sha256": "d30b908ba09711a408f80b1944c702a98637909cd8dd0237e120a26be1dbf4f0",
+      "bytes": 3551,
+      "exportPath": "original/candidate/src/lib/clubs/member-demo-commerce-command-status-contract.ts",
+      "exportSHA256": "d30b908ba09711a408f80b1944c702a98637909cd8dd0237e120a26be1dbf4f0",
+      "exportBytes": 3551
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-demo-commerce-command-status.ts",
+      "sha256": "ec7d98bc6da90a313204f4c1bf32b1750ed28a666e3ce09e381bb76e1fcda214",
+      "bytes": 4327,
+      "exportPath": "original/candidate/src/lib/clubs/member-demo-commerce-command-status.ts",
+      "exportSHA256": "ec7d98bc6da90a313204f4c1bf32b1750ed28a666e3ce09e381bb76e1fcda214",
+      "exportBytes": 4327
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-demo-commerce-operations.json",
+      "sha256": "3cab518741fa7dd419991f06cada60208f4341a3031dceae3aa709fa9025ae2c",
+      "bytes": 213,
+      "exportPath": "original/candidate/src/lib/clubs/member-demo-commerce-operations.json",
+      "exportSHA256": "3cab518741fa7dd419991f06cada60208f4341a3031dceae3aa709fa9025ae2c",
+      "exportBytes": 213
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-demo-commerce-pending-storage.ts",
+      "sha256": "5a50427ef0f8057e52fc5c46c7f0d9fbb94c8fe6c830e2edd3bf9daefa6128e8",
+      "bytes": 26398,
+      "exportPath": "original/candidate/src/lib/clubs/member-demo-commerce-pending-storage.ts",
+      "exportSHA256": "5a50427ef0f8057e52fc5c46c7f0d9fbb94c8fe6c830e2edd3bf9daefa6128e8",
+      "exportBytes": 26398
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-demo-document-contract.ts",
+      "sha256": "b26f7c4c0f860a98d33024cefcf752feaf9f3267a4fef8257d6aedce52547226",
+      "bytes": 1332,
+      "exportPath": "original/candidate/src/lib/clubs/member-demo-document-contract.ts",
+      "exportSHA256": "b26f7c4c0f860a98d33024cefcf752feaf9f3267a4fef8257d6aedce52547226",
+      "exportBytes": 1332
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-demo-document-upload-client.ts",
+      "sha256": "1d87dd9599b6c261f3054c4e6d2cf4de93169a18508ce3b6d67fe0dc8d3dfe91",
+      "bytes": 1649,
+      "exportPath": "original/candidate/src/lib/clubs/member-demo-document-upload-client.ts",
+      "exportSHA256": "1d87dd9599b6c261f3054c4e6d2cf4de93169a18508ce3b6d67fe0dc8d3dfe91",
+      "exportBytes": 1649
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-demo-saved-plan-client.ts",
+      "sha256": "8763cf29e3630b1c29c8c72ec28f11583d200d5fb232913048a72c34eec7aeee",
+      "bytes": 1493,
+      "exportPath": "original/candidate/src/lib/clubs/member-demo-saved-plan-client.ts",
+      "exportSHA256": "8763cf29e3630b1c29c8c72ec28f11583d200d5fb232913048a72c34eec7aeee",
+      "exportBytes": 1493
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-demo-saved-plan-operation.json",
+      "sha256": "a95d37a50b7ff383a1114cac32058d5006924eb73f7e681f64cb784abe293375",
+      "bytes": 87,
+      "exportPath": "original/candidate/src/lib/clubs/member-demo-saved-plan-operation.json",
+      "exportSHA256": "a95d37a50b7ff383a1114cac32058d5006924eb73f7e681f64cb784abe293375",
+      "exportBytes": 87
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-document-contract.ts",
+      "sha256": "1540df0a894ec34c40bf95c28f3386a222140e07e073f1ecd2ea53aea3450771",
+      "bytes": 1116,
+      "exportPath": "original/candidate/src/lib/clubs/member-document-contract.ts",
+      "exportSHA256": "1540df0a894ec34c40bf95c28f3386a222140e07e073f1ecd2ea53aea3450771",
+      "exportBytes": 1116
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-document-upload-recovery.ts",
+      "sha256": "308f2b41536bb4d64d92dc03f9e89c8e7f8ff95f7d64210477138e18c4aea3ab",
+      "bytes": 5058,
+      "exportPath": "original/candidate/src/lib/clubs/member-document-upload-recovery.ts",
+      "exportSHA256": "308f2b41536bb4d64d92dc03f9e89c8e7f8ff95f7d64210477138e18c4aea3ab",
+      "exportBytes": 5058
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-experience-contract.ts",
+      "sha256": "2d507a9b4e6398d1e5a6286707682b8e489a4257cad8c6dc9f965518775d3b8c",
+      "bytes": 3067,
+      "exportPath": "original/candidate/src/lib/clubs/member-experience-contract.ts",
+      "exportSHA256": "2d507a9b4e6398d1e5a6286707682b8e489a4257cad8c6dc9f965518775d3b8c",
+      "exportBytes": 3067
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-finance-contract.ts",
+      "sha256": "dc8e8975a29f87de06230b73e3004c96bc2c783617c5abd6d8a6cee54990b958",
+      "bytes": 1655,
+      "exportPath": "original/candidate/src/lib/clubs/member-finance-contract.ts",
+      "exportSHA256": "dc8e8975a29f87de06230b73e3004c96bc2c783617c5abd6d8a6cee54990b958",
+      "exportBytes": 1655
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-finance-request-contract.ts",
+      "sha256": "1d913b3b323a7788c6692c8db8ffdb2a78d7c1d3519a742dceddc066960c8f02",
+      "bytes": 2977,
+      "exportPath": "original/candidate/src/lib/clubs/member-finance-request-contract.ts.in",
+      "exportSHA256": "f288f66e53c9decd6701a7a347d8cc58d8c7cd0c02dc34c52d79b209f6581ea8",
+      "exportBytes": 2979,
+      "protectedInputs": [
+        "MEMBER_TEST_ACCOUNT_ID"
+      ]
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-global-native-session.ts",
+      "sha256": "0935fc71905875d6e557864bdbd5e80a945991361fdcc0e8f099ec1fa338150e",
+      "bytes": 1813,
+      "exportPath": "original/candidate/src/lib/clubs/member-global-native-session.ts",
+      "exportSHA256": "0935fc71905875d6e557864bdbd5e80a945991361fdcc0e8f099ec1fa338150e",
+      "exportBytes": 1813
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-graphql-transport.ts",
+      "sha256": "6970649a571bcef6c8d3eb0e460a9e6bcc000a781305ae237239753c3e0a5acf",
+      "bytes": 7402,
+      "exportPath": "original/candidate/src/lib/clubs/member-graphql-transport.ts",
+      "exportSHA256": "6970649a571bcef6c8d3eb0e460a9e6bcc000a781305ae237239753c3e0a5acf",
+      "exportBytes": 7402
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-own-state-contract.ts",
+      "sha256": "181d5e385d6043dff94c502a3acb8e1349019a6de8993ddf71ad789a3fef1bcf",
+      "bytes": 1649,
+      "exportPath": "original/candidate/src/lib/clubs/member-own-state-contract.ts",
+      "exportSHA256": "181d5e385d6043dff94c502a3acb8e1349019a6de8993ddf71ad789a3fef1bcf",
+      "exportBytes": 1649
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-privacy-contract.ts",
+      "sha256": "7ae81b5b2f1185eb46d31361b4c729626210e58879d2d768847e37f8d734ad43",
+      "bytes": 2012,
+      "exportPath": "original/candidate/src/lib/clubs/member-privacy-contract.ts.in",
+      "exportSHA256": "04fdb17b7e81813798cdbff0e41a330d4d80dca3dfd1047ec4e29eb964516e3a",
+      "exportBytes": 2013,
+      "protectedInputs": [
+        "MEMBER_TEST_ACCOUNT_ID"
+      ]
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-profile-contract.ts",
+      "sha256": "2067c2e8ca4ce63873363f37716d5bd561306cb563280c95fe225e16952754e9",
+      "bytes": 1781,
+      "exportPath": "original/candidate/src/lib/clubs/member-profile-contract.ts",
+      "exportSHA256": "2067c2e8ca4ce63873363f37716d5bd561306cb563280c95fe225e16952754e9",
+      "exportBytes": 1781
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-purchase-fulfilment-contract.ts",
+      "sha256": "f2d23ce06cbd818ace90df18c4bf8308766e1169491abdc1b524e56ddced12d1",
+      "bytes": 1540,
+      "exportPath": "original/candidate/src/lib/clubs/member-purchase-fulfilment-contract.ts",
+      "exportSHA256": "f2d23ce06cbd818ace90df18c4bf8308766e1169491abdc1b524e56ddced12d1",
+      "exportBytes": 1540
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-service-offers-contract.ts",
+      "sha256": "fe16f00d801cdbdfaea69ade154d067b31cf1d8c037946757081f8fd3b757e67",
+      "bytes": 929,
+      "exportPath": "original/candidate/src/lib/clubs/member-service-offers-contract.ts",
+      "exportSHA256": "fe16f00d801cdbdfaea69ade154d067b31cf1d8c037946757081f8fd3b757e67",
+      "exportBytes": 929
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-support-command-readback.ts",
+      "sha256": "8283bad1d3cddd164d6c49abf7781de45c9fd1a2c8b3fe2f76b42fb8b8096e95",
+      "bytes": 3965,
+      "exportPath": "original/candidate/src/lib/clubs/member-support-command-readback.ts",
+      "exportSHA256": "8283bad1d3cddd164d6c49abf7781de45c9fd1a2c8b3fe2f76b42fb8b8096e95",
+      "exportBytes": 3965
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-support-command-status-contract.ts",
+      "sha256": "1ce87ca523380d3b6d3b12f0ab9b3e112c9dd68d5773c73abaecb0d6d4f089bb",
+      "bytes": 4811,
+      "exportPath": "original/candidate/src/lib/clubs/member-support-command-status-contract.ts",
+      "exportSHA256": "1ce87ca523380d3b6d3b12f0ab9b3e112c9dd68d5773c73abaecb0d6d4f089bb",
+      "exportBytes": 4811
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-support-pending-storage.ts",
+      "sha256": "3b2900a369bb79a7cf602ea0e2204a9a655ffe1cd437c0cf4325664b50b9528e",
+      "bytes": 6899,
+      "exportPath": "original/candidate/src/lib/clubs/member-support-pending-storage.ts",
+      "exportSHA256": "3b2900a369bb79a7cf602ea0e2204a9a655ffe1cd437c0cf4325664b50b9528e",
+      "exportBytes": 6899
+    },
+    {
+      "path": "candidate/src/lib/clubs/member-test-stays-contract.ts",
+      "sha256": "75ee0c61d08120e7319c12dce1a5a73bd74431f3ea1173961d38acca80833edf",
+      "bytes": 2765,
+      "exportPath": "original/candidate/src/lib/clubs/member-test-stays-contract.ts",
+      "exportSHA256": "75ee0c61d08120e7319c12dce1a5a73bd74431f3ea1173961d38acca80833edf",
+      "exportBytes": 2765
+    },
+    {
+      "path": "candidate/src/lib/clubs/public-site-copy.ts",
+      "sha256": "5d078cb1edaea24b5cfde350e1007c50b18b06d13836f70ae1d21b01a04a4750",
+      "bytes": 50213,
+      "exportPath": "original/candidate/src/lib/clubs/public-site-copy.ts",
+      "exportSHA256": "5d078cb1edaea24b5cfde350e1007c50b18b06d13836f70ae1d21b01a04a4750",
+      "exportBytes": 50213
+    },
+    {
+      "path": "candidate/src/lib/clubs/public-site.ts",
+      "sha256": "2c0458a758b7e819f51218fc61f327782efb9f7c6fad6f3988adc702e3e693e9",
+      "bytes": 1998,
+      "exportPath": "original/candidate/src/lib/clubs/public-site.ts",
+      "exportSHA256": "2c0458a758b7e819f51218fc61f327782efb9f7c6fad6f3988adc702e3e693e9",
+      "exportBytes": 1998
+    },
+    {
+      "path": "candidate/tsconfig.json",
+      "sha256": "f03e3c7974aee305b78a9e0d25d42f26ceb2b8af10047db1f593a4fa665cb4fc",
+      "bytes": 460,
+      "exportPath": "original/candidate/tsconfig.json",
+      "exportSHA256": "f03e3c7974aee305b78a9e0d25d42f26ceb2b8af10047db1f593a4fa665cb4fc",
+      "exportBytes": 460
+    },
+    {
+      "path": "dependency-metadata/package-lock.json",
+      "sha256": "56f6a775592cfeed09711f1480c835832e4700b8c65837f7ae66a5480a580458",
+      "bytes": 483086,
+      "exportPath": "original/dependency-metadata/package-lock.json",
+      "exportSHA256": "56f6a775592cfeed09711f1480c835832e4700b8c65837f7ae66a5480a580458",
+      "exportBytes": 483086
+    },
+    {
+      "path": "dependency-metadata/package.json",
+      "sha256": "8334d99c71e4737d3c06f929c0b1ea502ee26b7a0d0902509ec25e1d83ca6906",
+      "bytes": 14707,
+      "exportPath": "original/dependency-metadata/package.json",
+      "exportSHA256": "8334d99c71e4737d3c06f929c0b1ea502ee26b7a0d0902509ec25e1d83ca6906",
+      "exportBytes": 14707
+    }
+  ],
+  "sourceProgramsExecuted": false,
+  "fullRuntimeRecoveryAndLicenseClosure": false
+}

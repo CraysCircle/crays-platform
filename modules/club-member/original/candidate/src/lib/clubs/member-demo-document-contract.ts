@@ -1,0 +1,6 @@
+import {z} from "zod";
+const id=z.string().regex(/^doc_member_[a-f0-9]{32}$/),sha=z.string().regex(/^[a-f0-9]{64}$/);
+export const memberDemoDocumentSchema=z.object({documentId:id,version:z.number().int().positive(),sourceRecordId:z.string().regex(/^map_member_test_stay_[a-f0-9]{32}$/).nullable(),kind:z.enum(["travel","stay","membership","general"]),title:z.string().min(1).max(300),originalFilename:z.string().min(1).max(180),mimeType:z.enum(["application/pdf","image/png","image/jpeg"]),bytes:z.number().int().min(8).max(10485760),contentSha256:sha,createdAt:z.iso.datetime({offset:true}),downloadAvailable:z.literal(true),inlineAvailable:z.literal(true),testOnly:z.literal(true)}).strict();
+export const memberDemoDocumentsReadSchema=z.object({schema:z.literal("crays.clubs.member-demo-documents.v1"),accountId:z.string().min(1).max(180),documents:z.array(memberDemoDocumentSchema).max(100),testOnly:z.literal(true)}).strict().superRefine((value,ctx)=>{if(new Set(value.documents.map(doc=>doc.documentId)).size!==value.documents.length)ctx.addIssue({code:"custom",message:"Duplicate original document identity"});});
+export const memberDemoDocumentsInputSchema=z.object({contractVersion:z.literal("1.0.0"),documentId:id.nullable()}).strict();
+export type MemberDemoDocumentsRead=z.output<typeof memberDemoDocumentsReadSchema>;

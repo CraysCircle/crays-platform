@@ -1,0 +1,299 @@
+--- /srv/crays/migration-work/20261108/root/common-team-personal33-adoption-source01/adopt_same_common_personal_transport33.candidate.py
++++ origin35/adopt_same_common_club_origin35.candidate.py
+@@ -3,13 +3,13 @@
+ import os,stat,json,hashlib,runpy,subprocess,time,sys,signal,copy,fcntl,traceback
+ H=Path(__file__).resolve().parent
+ BASE=Path('/srv/crays/migration-work/20261108/root/member26-existing-family-continuation07-rev03')
+-OUT=Path('/srv/crays/acceptance/common-private-team-transport33-20261108-01')
+-PRE=H/'CURRENT_FAMILY33_PREIMAGE.private.json'
++OUT=Path('/srv/crays/acceptance/common-club-origin35-adoption-20261109-01')
++PRE=H/'stage01/CURRENT_FAMILY35_PREIMAGE.private.json'
+ LISTENER=Path('/srv/crays/releases/nostr-original-core-addon-20261108-18/common-machine57/listener.nostr18-machine57.candidate.mjs')
+-OLD='b39374e37524e9c62a01e96f6f09d57a42c524433355b62f9410d57aaebc3816'
++OLD='7e8b668caf10118d84082f8fd68a63e390a3ee36a2e0da7b022a06d7203fa5bb'
+ NEW='7e8b668caf10118d84082f8fd68a63e390a3ee36a2e0da7b022a06d7203fa5bb'
+-COMMIT=Path('/srv/crays/acceptance/common-private-team-transport32-20261108-01/RESULT_ACTUAL.json')
+-COMMIT_SHA='5b9fd4cc9ae729855a9cf215edb8908ec9c20eba4077cd56b3d6cc93fc574601'
++COMMIT=Path('/srv/crays/acceptance/common-private-team-transport33-20261108-01/RESULT_ACTUAL.json')
++COMMIT_SHA='d602b8f271025eb283d46bf7f444c1aa5a2c922fac6c6de3b5a06535013126b4'
+ m=runpy.run_path(str(BASE/'member26_lifecycle.candidate.py'))
+ for n in ['need','sha','canon','stable','put','sync']:globals()[n]=m[n]
+ UNITS=m['UNITS'];PATHS=m['PATHS']
+@@ -24,7 +24,7 @@
+  for n,h in r['sourcePins'].items():need(Path(n).name==n and sha(stable(H/n,131072))==h,'EXACT_SOURCE32_PINS')
+  need(os.environ.get('INVOCATION_ID')and r.get('freshExclusiveWindowApproved')is True and 0<r['windowExpiresAtUnix']-time.time()<=600,'ROOT_EXCLUSIVE_WINDOW_REQUIRED')
+  cg=Path('/sys/fs/cgroup')/Path('/proc/self/cgroup').read_text().strip().split(':',2)[-1].lstrip('/')
+- need(cg.name=='crays-common33-adopt-20261108-01.service'and int((cg/'memory.max').read_text())<=1073741824 and int((cg/'memory.swap.max').read_text())==0 and int((cg/'pids.max').read_text())<=128,'FINITE_OWN_RESOURCE_UNIT')
++ need(cg.name=='crays-common35-adopt-20261109-01.service'and int((cg/'memory.max').read_text())<=1073741824 and int((cg/'memory.swap.max').read_text())==0 and int((cg/'pids.max').read_text())<=128,'FINITE_OWN_RESOURCE_UNIT')
+  quota,period=(cg/'cpu.max').read_text().split();need(quota!='max'and int(quota)/int(period)<=.5,'HALF_CPU_BOUND')
+  need(not OUT.exists(),'EXCLUSIVE_NO_REPLAY_INTENT')
+  preRaw=stable(PRE,16777216,True);need(sha(preRaw)==r['preimageSHA256'],'EXACT_PRIVATE_PREIMAGE')
+@@ -32,8 +32,16 @@
+  committed=stable(COMMIT,131072,True);need(sha(committed)==COMMIT_SHA,'ACTUAL_COMMITTED_MEMBER26_REQUIRED');ack=json.loads(committed)
+  need(ack['ids']==pre['ids']and ack['generation']['controlsSHA256']==pre['controlsSHA256'],'EXACT_CURRENT07_GENERATION')
+  crraw=stable(r['originalCommon11RootReviewPath'],131072,True);need(sha(crraw)==r['originalCommon11RootReviewSHA256'],'ORIGINAL_COMMON11_REVIEW_CHAIN');cr=json.loads(crraw)
+- ingress=stable(r['ingressClosedActualPath'],131072,True);need(sha(ingress)==r['ingressClosedActualSHA256'],'CLOSED_INGRESS_ACTUAL')
+- iv=json.loads(ingress);need(iv['memberCommonWorkPrivateIngressClosed']is True and iv['allOtherSitesPreserved']is True,'SEVEN_PRIVATE_ROUTES_REMAIN_CLOSED')
++ need(r.get('boundedPrivateCommonMaintenanceApproved')is True,'ROOT_BOUNDED_PRIVATE_COMMON_MAINTENANCE_REQUIRED')
++ edge05=stable('/srv/crays/acceptance/root-shared-private-family-maintenance28-20261108-05/reopen-apply/RESULT_ACTUAL.json',131072,True)
++ need(sha(edge05)=='4dab13e68b69f6144bb0a642deec5f293a4e11002dd7718cfd7148f102293d59'and json.loads(edge05)['afterSHA256']==pre['edgeGuard']['fileSHA256']=='f9f992e24a6973d1b64cb225390959cb4d89c8d5ccac98466fbf52752b36260c','EXACT_REOPENED_CADDY05_BASELINE')
++ def preserved():
++  for guard in [pre['edgeGuard'],pre['qloGuard']]:
++   live=u['inspect'](guard['id'])
++   need(live['State']['Running']and list(u['physical'](live))==guard['physical']and all(u['canon'](live[k])==guard['hashes'][k]for k in ['Config','HostConfig','Mounts']),'CADDY05_AND_RUNNING_QLO44_PRESERVED')
++  ep=Path('/srv/crays/runtime/private-edge-caddy-20261106-03/Caddyfile.private');es=ep.lstat()
++  need([es.st_dev,es.st_ino]==pre['edgeGuard']['fileMetadata']and sha(stable(ep,131072))==pre['edgeGuard']['fileSHA256'],'CADDY05_BYTES_AND_INODE_UNCHANGED')
++ preserved()
+  def fresh():
+   b=stable(r['sourceFencePath'],16384,True);need(sha(b)==r['sourceFenceSHA256'],'SOURCE_FENCE_SHA');f=json.loads(b)
+   need(f.get('sourceArchiveSHA256')=='71084517d7378bb3b6125e161135bd71d921f6ad63b187b9b790cb645f85c53a'and f.get('sourceWriterFenceStillEffective')is True and f.get('originalSourceUnitsPhysicallyStopped')is True and f.get('sourceRestartApproved')is False and 0<=time.time()-f['observedAtUnix']<=120,'FRESH_ORIGINAL_SOURCE_FENCE_REQUIRED')
+@@ -41,24 +49,26 @@
+   c=u['inspect'](pre['ids'][role]);p=pre['containers'][role]
+   need(c['State']['Running']and u['physical'](c)[:2]==tuple(p['physical'][:2])and all(u['canon'](c[k])==p['hashes'][k]for k in ['Config','HostConfig','Mounts']),'EXACT_UNCHANGED_RUNNING_'+role.upper())
+   return c
+- fresh();member=family('member');work=family('work');common=family('common')
++ fresh();preserved();member=family('member');work=family('work');common=family('common')
+  need(common['HostConfig']['NetworkMode']=='container:'+member['Id']and work['HostConfig']['NetworkMode']=='container:'+member['Id'],'SAME_MEMBER_NAMESPACE_ONLY')
+  need(common['Config']['Cmd']==['/run/crays/common-private-edge-listener.mjs'],'EXACT_EXISTING_LISTENER_ENTRY')
+  rows=[v for v in common['Mounts']if v['Destination']=='/run/crays/common-private-edge-listener.mjs']
+  need(len(rows)==1 and rows[0]['Source']==str(LISTENER)and rows[0]['RW']is False,'EXACT_BOUND_LISTENER_FILE')
+- old=stable(LISTENER,131072);new=stable(H/'listener.nostr18-machine57-team33.candidate.mjs',131072)
+- need(sha(old)==OLD and sha(new)==NEW,'EXACT_ONLY_LISTENER32_SOURCE_DELTA')
++ old=stable(LISTENER,131072);new=old
++ need(sha(old)==OLD and sha(new)==NEW,'EXACT_UNCHANGED_CURRENT33_LISTENER')
+  st=LISTENER.lstat();meta=[st.st_dev,st.st_ino,st.st_uid,st.st_gid,stat.S_IMODE(st.st_mode),st.st_nlink]
+  need(meta==pre['listenerMetadata']and st.st_uid==0 and not st.st_mode&0o022,'EXACT_LISTENER_OWNER_MODE_INODE')
+  registry=Path('/srv/crays/releases/nostr-original-core-addon-20261108-18/common-machine57/MODULE_REGISTRY.member26.json')
+  registryOld=stable(registry,8388608);registryStat=registry.lstat();registryMeta=[registryStat.st_dev,registryStat.st_ino,registryStat.st_uid,registryStat.st_gid,stat.S_IMODE(registryStat.st_mode),registryStat.st_nlink]
+- need(registryMeta==pre['registryMetadata']and registryStat.st_uid==0 and not registryStat.st_mode&0o022 and registryStat.st_nlink==1 and sha(registryOld)==pre['registryRow']['sha256']=='ee68a6e2283fd0d6a4c2c1156d6f4d7d27a023de2250a5506940cafef374da88','EXACT_CURRENT32_BOUND_REGISTRY')
+- stageRaw=stable(r['personalStageActualPath'],131072,True);need(sha(stageRaw)==r['personalStageActualSHA256'],'ACTUAL_PERSONAL_IMMUTABLE_STAGE_PIN');stage=json.loads(stageRaw)
+- need(stage.get('status')=='LATEST_PERSONAL_IMMUTABLE_UNION_AND_DESCRIPTOR_STAGED_NOT_ADOPTED'and stage.get('root')=='/srv/crays/acceptance/unified-static-20261105-01/artifacts/personal-latest8990-20261108-33'and stage.get('files')==23721 and stage.get('registrySHA256')=='b0f083fe97b7a4cc2da1937a65ad9edcfa9babdd20b0b28462010f7514c2ae5a'and stage.get('registryBytes')==3847205 and stage.get('memberWorkChuckToolsBindingsUnchanged')is True and stage.get('liveRegistryOrRuntimeChanged')is False,'ACTUAL_PASSED_PERSONAL_UNION_ONLY_STAGE')
+- descriptor=Path('/srv/crays/releases/nostr-original-core-addon-20261108-18/common-machine57/MODULE_REGISTRY.personal33.json');need(stage.get('registryPath')==str(descriptor),'EXACT_STAGED_PERSONAL_DESCRIPTOR_PATH')
+- registryNew=stable(descriptor,8388608);ds=descriptor.lstat();need(ds.st_uid==0 and not ds.st_mode&0o022 and ds.st_nlink==1 and sha(registryNew)==stage['registrySHA256']and len(registryNew)==stage['registryBytes'],'ACTUAL_IMMUTABLE_PERSONAL_DESCRIPTOR')
+- delta=json.loads(stable(H/'PERSONAL_NEW_BUILD_DELTA33.json',131072));project=runpy.run_path(str(H/'project_exact_personal_registry33.candidate.py'))['project_registry']
+- need(project(registryOld,delta)==registryNew,'EXACT_FOUR_PERSONAL_FIELDS_AND_OTHER_MODULES_UNCHANGED')
++ need(registryMeta==pre['registryMetadata']and registryStat.st_uid==0 and not registryStat.st_mode&0o022 and registryStat.st_nlink==1 and sha(registryOld)==pre['registryRow']['sha256']=='b0f083fe97b7a4cc2da1937a65ad9edcfa9babdd20b0b28462010f7514c2ae5a','EXACT_CURRENT32_BOUND_REGISTRY')
++ stageRaw=stable(r['clubStageActualPath'],131072,True);need(sha(stageRaw)==r['clubStageActualSHA256'],'ACTUAL_CLUB35_IMMUTABLE_STAGE_PIN');stage=json.loads(stageRaw)
++ need(stage.get('status')=='CLUB35_IMMUTABLE_MODULE_DESCRIPTOR_AND_CURRENT33_PREIMAGE_STAGED_NOT_ADOPTED'and stage.get('root')=='/srv/crays/acceptance/unified-static-20261105-01/artifacts/clubMember-origin35-7e7915d4e15c66b1/dist'and stage.get('version')=='club-member-7e7915d4e15c66b1'and stage.get('files')==48 and stage.get('liveRegistryOrRuntimeChanged')is False and stage.get('memberWorkQloAndCaddyPreserved')is True and stage.get('preimageSHA256')==r['preimageSHA256'],'EXACT_PASSED_CLUB35_STAGE')
++ descriptor=H/'stage01/MODULE_REGISTRY.club35.json';need(stage['registryPath']==str(descriptor),'EXACT_STAGED_CLUB35_DESCRIPTOR_PATH')
++ registryNew=stable(descriptor,8388608);ds=descriptor.lstat();need(ds.st_uid==0 and not ds.st_mode&0o022 and ds.st_nlink==1 and sha(registryNew)==stage['registrySHA256']and len(registryNew)==stage['registryBytes'],'ACTUAL_IMMUTABLE_CLUB35_DESCRIPTOR')
++ manifestRaw=stable('/srv/crays/migration-work/20261108/root/member-origin-binding35-build01/execution01/MODULE_MANIFEST.json',131072)
++ need(sha(manifestRaw)=='5dd49cd0773ffa89b9897614b44998a826b525896d8d45c926f6c349ca1cf54b','EXACT_FROZEN_CLUB35_MANIFEST')
++ project=runpy.run_path(str(H/'project_exact_club_registry35.candidate.py'))['project_registry']
++ need(project(registryOld,json.loads(manifestRaw))==registryNew,'EXACT_CLUB35_ACTIVE_ROW_RETAIN606_ALL_OTHERS_UNCHANGED')
+  nextRegistryRow={'path':str(registry),'sha256':sha(registryNew),'bytes':len(registryNew)}
+  controls={n:read_control(p)for n,p in PATHS.items()}
+  need({n:sha(b)for n,b in controls.items()}==pre['controlsSHA256'],'EXACT_CURRENT07_FOUR_CONTROLS')
+@@ -76,11 +86,12 @@
+   sockets[text]=v
+  OUT.mkdir(mode=0o700);sync(OUT.parent)
+  def journal(n,v):put(OUT/n,v)
+- journal('INTENT.json',{'status':'SAME_COMMON32_PUBLIC_TRANSPORT_GENERATION_ADOPTION','previousActualSHA256':COMMIT_SHA,'ids':pre['ids'],'noMemberWorkRestart':True,'listenerBeforeSHA256':OLD,'listenerAfterSHA256':NEW,'automaticReplayAllowed':False})
++ journal('INTENT.json',{'status':'SAME_COMMON35_CLUB_ORIGIN_MODULE_ADOPTION','previousActualSHA256':COMMIT_SHA,'ids':pre['ids'],'noMemberWorkRestart':True,'listenerBeforeSHA256':OLD,'listenerAfterSHA256':NEW,'automaticReplayAllowed':False})
+  stopped=False;casDone=False;registryCasDone=False;published=False
+  signal.signal(signal.SIGTERM,lambda*a:(_ for _ in()).throw(KeyboardInterrupt()))
+  signal.signal(signal.SIGINT,lambda*a:(_ for _ in()).throw(KeyboardInterrupt()))
+  try:
++  fresh();preserved()
+   PHASE='EXACT_OWN_GENERATION_PHYSICAL_QUIESCE'
+   q['cmd'](['/usr/bin/systemctl','stop',*UNITS],timeout=45)
+   for name in UNITS:
+@@ -88,7 +99,7 @@
+    p=Path('/sys/fs/cgroup/system.slice')/name
+    if p.exists():need(all(not x.read_text().strip()for x in p.rglob('cgroup.procs')),'OWN_CGROUP_EMPTY')
+   need(u['halt'](common['Id'],u['physical'](common)),'SAME_COMMON_OLD_PROCESS_PHYSICALLY_TERMINATED');stopped=True
+-  family('member');family('work')
++  family('member');family('work');preserved()
+   journal('QUIESCENCE_ACK.json',{'sameCommonStopped':True,'sixOwnUnitsPhysicallyTerminal':True,'memberWorkProcessesPreserved':True})
+   PHASE='ARCHIVE_EXACT_CURRENT07_CONTROLS'
+   for n,p in PATHS.items():
+@@ -96,20 +107,10 @@
+    put(OUT/('prior11-'+n),controls[n],0o444);journal(n+'.ARCHIVE_INTENT.json',{'sha256':sha(controls[n]),'device':s.st_dev,'inode':s.st_ino})
+    now=p.lstat();need((now.st_dev,now.st_ino,now.st_ctime_ns)==(s.st_dev,s.st_ino,s.st_ctime_ns),'CONTROL_INODE_CAS')
+    p.unlink();sync(p.parent);journal(n+'.ARCHIVE_ACK.json',{'archived':True,'previousGenerationPreserved':True})
+-  PHASE='OWN_BOUND_LISTENER_INODE_CAS'
+-  journal('listener.original.public.mjs',old)
+-  fd=os.open(LISTENER,os.O_RDWR|os.O_NOFOLLOW)
+-  try:
+-   fcntl.flock(fd,fcntl.LOCK_EX|fcntl.LOCK_NB);s=os.fstat(fd);need([s.st_dev,s.st_ino,s.st_uid,s.st_gid,stat.S_IMODE(s.st_mode),s.st_nlink]==meta and os.read(fd,131073)==old,'EXACT_LISTENER_FD_CAS_PREIMAGE')
+-   journal('LISTENER_WRITE_INTENT.json',{'beforeSHA256':OLD,'afterSHA256':NEW,'metadata':meta,'oldSourceExclusivelyArchived':True,'deploymentProjectionChanges':True})
+-   os.lseek(fd,0,0);b=memoryview(new)
+-   while b:
+-    n=os.write(fd,b);need(n>0,'COMPLETE_PUBLIC_SOURCE_WRITE');b=b[n:]
+-   os.ftruncate(fd,len(new));os.fsync(fd);os.lseek(fd,0,0);need(os.read(fd,131073)==new and LISTENER.lstat().st_ino==s.st_ino,'EXACT_LISTENER_CAS_POSTIMAGE')
+-  finally:os.close(fd)
+-  casDone=True;journal('LISTENER_WRITE_ACK.json',{'beforeSHA256':OLD,'afterSHA256':NEW,'sameInode':True,'originalBytesArchived':True,'originalDeploymentFileUnchanged':False})
+-  PHASE='OWN_BOUND_PERSONAL_REGISTRY_INODE_CAS'
+-  journal('registry32.original.public.json',registryOld)
++  fresh();preserved()
++  need(stable(LISTENER,131072)==old and LISTENER.lstat().st_ino==meta[1],'CURRENT33_LISTENER_UNCHANGED_NO_WRITE')
++  PHASE='OWN_BOUND_CLUB35_REGISTRY_INODE_CAS'
++  journal('registry33.original.public.json',registryOld)
+   registryFD=os.open(registry,os.O_RDWR|os.O_NOFOLLOW)
+   try:
+    fcntl.flock(registryFD,fcntl.LOCK_EX|fcntl.LOCK_NB);rs=os.fstat(registryFD)
+@@ -118,20 +119,20 @@
+    while len(observed)<rs.st_size:
+     part=os.read(registryFD,min(1048576,rs.st_size-len(observed)));need(part,'COMPLETE_REGISTRY_CAS_READ');observed.extend(part)
+    need(bytes(observed)==registryOld,'EXACT_REGISTRY_BYTES_CAS_PREIMAGE')
+-   journal('REGISTRY_WRITE_INTENT.json',{'beforeSHA256':sha(registryOld),'afterSHA256':sha(registryNew),'metadata':registryMeta,'personalOnlyFourFieldProjection':True,'personalStageActualSHA256':sha(stageRaw),'automaticReplayAllowed':False})
++   journal('REGISTRY_WRITE_INTENT.json',{'beforeSHA256':sha(registryOld),'afterSHA256':sha(registryNew),'metadata':registryMeta,'club35OnlyActiveAndRetained606Projection':True,'clubStageActualSHA256':sha(stageRaw),'automaticReplayAllowed':False})
+    os.lseek(registryFD,0,0);remaining=memoryview(registryNew)
+    while remaining:
+     count=os.write(registryFD,remaining);need(count>0,'COMPLETE_PUBLIC_REGISTRY_WRITE');remaining=remaining[count:]
+    os.ftruncate(registryFD,len(registryNew));os.fsync(registryFD)
+-   need(stable(registry,8388608)==registryNew and registry.lstat().st_ino==rs.st_ino,'EXACT_PERSONAL_REGISTRY_CAS_POSTIMAGE')
++   need(stable(registry,8388608)==registryNew and registry.lstat().st_ino==rs.st_ino,'EXACT_CLUB35_REGISTRY_CAS_POSTIMAGE')
+   finally:os.close(registryFD)
+-  registryCasDone=True;journal('REGISTRY_WRITE_ACK.json',{'beforeSHA256':sha(registryOld),'afterSHA256':sha(registryNew),'sameInode':True,'samePathAndOwnerMode':True,'onlyPersonalRootSourceVersionFilesChanged':True,'allOtherModulesUnchanged':True})
++  registryCasDone=True;journal('REGISTRY_WRITE_ACK.json',{'beforeSHA256':sha(registryOld),'afterSHA256':sha(registryNew),'sameInode':True,'samePathAndOwnerMode':True,'onlyClubMemberRowAndRetained606Changed':True,'allOtherModulesUnchanged':True})
+   PHASE='FULL_ORIGINAL_CURRENT_SOURCE_GENERATION'
+   context={'newMember':member['Id'],'newCommon':common['Id'],'newWork':work['Id'],'expectedCommon':pre['expectedCommon'],'expectedCommonMounts':{k:tuple(v)for k,v in pre['expectedCommonMounts'].items()},'originalCommon':pre['containers']['common']['originalForVerifier'],'familyPreimage':{'units':pre['units'],'controlsSHA256':pre['controlsSHA256'],'containers':{'common':{'id':common['Id']}}},'registryRow':nextRegistryRow,'previousRegistryRow':pre['registryRow'],'output':str(OUT/'generation'),'parentOutput':str(OUT),'newMemberProcess':ap,'oldNetUnixFD':netfd,'socketPreimages':sockets}
+-  generation=runpy.run_path(str(H/'finish_same_common_transport33_generation.candidate.py'))['finish'](r,cr,context)
+-  published=True;family('member');family('work')
++  generation=runpy.run_path(str(H/'finish_same_common_origin35_generation.candidate.py'))['finish'](r,cr,context)
++  published=True;family('member');family('work');preserved()
+   final=u['inspect'](common['Id']);need(final['State']['Running']and final['Id']==common['Id']and all(u['canon'](final[k])==pre['containers']['common']['hashes'][k]for k in ['Config','HostConfig','Mounts']),'SAME_COMMON_CONFIG_MOUNTS_IMAGE_PRESERVED')
+-  result={'status':'SAME_COMMON33_CANONICAL_TEAM_AND_PERSONAL_FULL_SOURCE_GENERATION_READY','previousTransport32ActualSHA256':COMMIT_SHA,'ids':pre['ids'],'memberProcess':pre['containers']['member']['physical'][:2],'workProcess':pre['containers']['work']['physical'][:2],'commonProcess':u['physical'](final)[:2],'personalRegistrySHA256':sha(registryNew),'personalStageActualSHA256':sha(stageRaw),'listenerSHA256':NEW,'listenerPath':str(LISTENER),'teamHost':'team.craysclub.com','teamUpstream':'127.0.0.1:19109','privateIngress':'172.24.0.2:8990','sameMemberWorkPreserved':True,'generation':generation,'ingressReopened':False,'customerAcceptance':False,'automaticReplayAllowed':False}
++  result={'status':'SAME_COMMON35_ORIGIN_MODULE_FULL_SOURCE_GENERATION_READY','previousCombined33ActualSHA256':COMMIT_SHA,'ids':pre['ids'],'memberProcess':pre['containers']['member']['physical'][:2],'workProcess':pre['containers']['work']['physical'][:2],'commonProcess':u['physical'](final)[:2],'club35RegistrySHA256':sha(registryNew),'clubStageActualSHA256':sha(stageRaw),'listenerSHA256':NEW,'listenerPath':str(LISTENER),'teamHost':'team.craysclub.com','teamUpstream':'127.0.0.1:19109','privateIngress':'172.24.0.2:8990','sameMemberWorkPreserved':True,'generation':generation,'caddy05PreservedOpen':True,'customerAcceptance':False,'automaticReplayAllowed':False}
+   journal('RESULT_ACTUAL.json',result);return result
+  except BaseException as e:
+   signal.signal(signal.SIGTERM,signal.SIG_IGN);signal.signal(signal.SIGINT,signal.SIG_IGN)
+@@ -147,4 +148,4 @@
+  finally:os.close(netfd)
+ if __name__=='__main__':
+  try:print(json.dumps(main(json.loads(stable(sys.argv[1],131072,True)))))
+- except BaseException as e:print(json.dumps({'status':'COMMON33_STOP_NO_REPLAY','phase':PHASE,'errorClass':type(e).__name__,'safeGuard':str(e)if isinstance(e,RuntimeError)else None,'privateValuesReturned':False}));raise SystemExit(1)
++ except BaseException as e:print(json.dumps({'status':'COMMON35_STOP_NO_REPLAY','phase':PHASE,'errorClass':type(e).__name__,'safeGuard':str(e)if isinstance(e,RuntimeError)else None,'privateValuesReturned':False}));raise SystemExit(1)
+
+--- /srv/crays/migration-work/20261108/root/common-team-personal33-adoption-source01/finish_same_common_transport33_generation.candidate.py
++++ origin35/finish_same_common_origin35_generation.candidate.py
+@@ -56,10 +56,10 @@
+  need(sha(manifest)==sp['manifestSHA256'],'UNCHANGED33_PUBLIC_RELEASE_MANIFEST_REQUIRED')
+  oldreg={'path':str(RELEASE/'common-machine57/MODULE_REGISTRY.work24.json'),'sha256':None,'bytes':None};oldbody=stable(oldreg['path'],4194304);oldreg.update(sha256=sha(oldbody),bytes=len(oldbody))
+  legacy=runpy.run_path(str(H/'classify_exact_runtime_addons28.py'));oldaddons,oldpolicy=legacy['classify'](json.loads(manifest)['files'],oldreg)
+- previousFiles=copy.deepcopy(json.loads(manifest)['files']);previousListener=stable(HERE/'previous-listener32.public.mjs',131072);need(sha(previousListener)=='b39374e37524e9c62a01e96f6f09d57a42c524433355b62f9410d57aaebc3816','ACTUAL_PREVIOUS32_LISTENER_SOURCE')
++ previousFiles=copy.deepcopy(json.loads(manifest)['files']);previousListener=stable(HERE/'listener.nostr18-machine57-team33.candidate.mjs',131072);need(sha(previousListener)=='7e8b668caf10118d84082f8fd68a63e390a3ee36a2e0da7b022a06d7203fa5bb','ACTUAL_UNCHANGED_CURRENT33_LISTENER_SOURCE')
+  previousFiles['common-machine57/listener.nostr18-machine57.candidate.mjs']={**previousFiles['common-machine57/listener.nostr18-machine57.candidate.mjs'],'sha256':sha(previousListener),'bytes':len(previousListener)}
+  memberOldAddons,memberOldPolicy=runpy.run_path(str(HERE/'classify_exact_member26_runtime_addons.candidate.py'))['classify'](previousFiles,ctx['previousRegistryRow'])
+- need(current11policy['sourceFiles']==policy['sourceFiles']+[{k:row[k]for k in('path','sha256')}for row in memberOldPolicy]and current11pub['publicSourceFiles']==wp['publicSourceFiles']+memberOldAddons,'ACTUAL07_ORIGINAL_FULL_CLOSURE_PRESERVED_BEFORE_LISTENER32_PROJECTION')
++ need(current11policy['sourceFiles']==policy['sourceFiles']+[{k:row[k]for k in('path','sha256')}for row in memberOldPolicy]and current11pub['publicSourceFiles']==wp['publicSourceFiles']+memberOldAddons,'ACTUAL07_ORIGINAL_FULL_CLOSURE_PRESERVED_BEFORE_CLUB35_DESCRIPTOR_PROJECTION')
+  projectedFiles=copy.deepcopy(json.loads(manifest)['files']);listenerRel='common-machine57/listener.nostr18-machine57.candidate.mjs';priorListener=projectedFiles[listenerRel]
+  need(priorListener['sha256']=='8334924d65abb689fb97ace8f8b56f38df3fc93e3a09a0b9aa31b3614dbf59e5','EXACT_ORIGINAL_PUBLIC_STAGE_LISTENER_PIN')
+  nextListener=stable(HERE/'listener.nostr18-machine57-team33.candidate.mjs',131072);need(sha(nextListener)=='7e8b668caf10118d84082f8fd68a63e390a3ee36a2e0da7b022a06d7203fa5bb','EXACT_VERSIONED_TEAM32_SOURCE')
+
+--- /dev/null
++++ origin35/project_exact_club_registry35.candidate.py
+@@ -0,0 +1,24 @@
++"""Pure ClubMember35-only descriptor projection; no IO."""
++import copy,json,hashlib,re
++BASELINE_SHA='b0f083fe97b7a4cc2da1937a65ad9edcfa9babdd20b0b28462010f7514c2ae5a'
++VERSION='club-member-7e7915d4e15c66b1'
++BASE_VERSION='club-member-606b24d0f52dacf1'
++MANIFEST='/srv/crays/migration-work/20261108/root/member-origin-binding35-build01/execution01/MODULE_MANIFEST.json'
++MANIFEST_SHA='5dd49cd0773ffa89b9897614b44998a826b525896d8d45c926f6c349ca1cf54b'
++ROOT='/srv/crays/acceptance/unified-static-20261105-01/artifacts/clubMember-origin35-7e7915d4e15c66b1/dist'
++def need(v,g):
++ if not v:raise RuntimeError(g)
++def project_registry(original,manifest):
++ need(hashlib.sha256(original).hexdigest()==BASELINE_SHA,'EXACT_CURRENT33_REGISTRY')
++ a=json.loads(original);out=copy.deepcopy(a);club=a['clubMember']
++ need(club['version']==BASE_VERSION and len(club['files'])==48,'EXACT_RETAINED606_BASE')
++ need(manifest['version']==VERSION and manifest['baseVersion']==BASE_VERSION and manifest['sourceClosureSha256']=='7e7915d4e15c66b1cb3141c648670377929ec1971b94d8bf56f7f9f5e30d43df','EXACT_ORIGIN35_MANIFEST')
++ files=manifest['files'];need(type(files)is dict and len(files)==48,'EXACT48_BUILD_ARTIFACTS')
++ for n,h in files.items():need(n and not n.startswith('/') and '..'not in n.split('/') and re.fullmatch('[a-f0-9]{64}',h),'EXACT_SAFE_ARTIFACT_ROW')
++ retained=copy.deepcopy(club.get('retainedVersions',[]))
++ need(not any(r['version']in(BASE_VERSION,VERSION)for r in retained),'NO_DUPLICATE_RETAINED_VERSION')
++ retained.append({k:copy.deepcopy(club[k])for k in ['root','version','files']})
++ out['clubMember'].update(root=ROOT,version=VERSION,files=copy.deepcopy(files),manifest=MANIFEST,manifestSha256=MANIFEST_SHA,retainedVersions=retained)
++ need({k:v for k,v in out.items()if k!='clubMember'}=={k:v for k,v in a.items()if k!='clubMember'},'ALL_PERSONAL33_WORK_MEMBER_AND_OTHER_ROWS_UNCHANGED')
++ need(out['clubMember']['retainedVersions'][:-1]==club.get('retainedVersions',[]),'ALL_RETAINED_HISTORY_UNCHANGED')
++ return (json.dumps(out,sort_keys=True,indent=2)+'\n').encode()
+
+--- /dev/null
++++ origin35/stage_immutable_club_origin35.candidate.py
+@@ -0,0 +1,84 @@
++"""Root-reviewed immutable ClubMember35 stage and current33 preimage capture. No live adoption."""
++from pathlib import Path
++import os,stat,json,hashlib,runpy,sys
++H=Path(__file__).resolve().parent
++SOURCE=Path('/srv/crays/migration-work/20261108/root/member-origin-binding35-build01/execution01')
++OUT=H/'stage01'
++ROOT=Path('/srv/crays/acceptance/unified-static-20261105-01/artifacts/clubMember-origin35-7e7915d4e15c66b1')
++REGISTRY=Path('/srv/crays/releases/nostr-original-core-addon-20261108-18/common-machine57/MODULE_REGISTRY.member26.json')
++COMMON33=Path('/srv/crays/acceptance/common-private-team-transport33-20261108-01/RESULT_ACTUAL.json')
++EDGE05=Path('/srv/crays/acceptance/root-shared-private-family-maintenance28-20261108-05/reopen-apply/RESULT_ACTUAL.json')
++EDGEFILE=Path('/srv/crays/runtime/private-edge-caddy-20261106-03/Caddyfile.private')
++QLO='826680e27113c9834990fa46ad54905ea2dbc758c12bf519f09731c4ea7ef815'
++sha=lambda b:hashlib.sha256(b).hexdigest()
++def need(v,g):
++ if not v:raise RuntimeError(g)
++def stable(p,maxbytes=8388608):
++ p=Path(p);need(p.resolve()==p,'CANONICAL_SOURCE_ONLY')
++ fd=os.open(p,os.O_RDONLY|os.O_NOFOLLOW)
++ try:
++  a=os.fstat(fd);need(stat.S_ISREG(a.st_mode)and a.st_nlink==1 and 0<a.st_size<=maxbytes,'BOUNDED_REGULAR_SOURCE')
++  chunks=[];total=0
++  while True:
++   b=os.read(fd,min(1048576,maxbytes+1-total))
++   if not b:break
++   chunks.append(b);total+=len(b);need(total<=maxbytes,'SOURCE_BOUND')
++  raw=b''.join(chunks);keys=lambda s:(s.st_dev,s.st_ino,s.st_mode,s.st_uid,s.st_gid,s.st_size,s.st_mtime_ns,s.st_ctime_ns)
++  need(keys(a)==keys(os.fstat(fd))==keys(p.lstat())and len(raw)==a.st_size,'STABLE_SOURCE')
++  return raw
++ finally:os.close(fd)
++def put(p,b,mode=0o400):
++ if not isinstance(b,bytes):b=(json.dumps(b,sort_keys=True,indent=2)+'\n').encode()
++ fd=os.open(p,os.O_WRONLY|os.O_CREAT|os.O_EXCL|os.O_NOFOLLOW,mode)
++ with os.fdopen(fd,'wb')as f:f.write(b);f.flush();os.fsync(f.fileno())
++def main(r):
++ os.umask(0o022)
++ need(os.geteuid()==0 and Path('/sys/devices/virtual/dmi/id/board_asset_tag').read_text().strip()=='i-0eb300e1b02414d8f','ROOT_EXISTING_HOST_ONLY')
++ need(r.get('executionApproved')is True and r.get('sourceSHA256')==sha(stable(__file__)) and r.get('stageOnly')is True,'ROOT_STAGE_ONLY_REVIEW_REQUIRED')
++ for n,h in r['sourcePins'].items():need(Path(n).name==n and sha(stable(H/n))==h,'EXACT_STAGE_HELPER_PIN')
++ need(not OUT.exists()and not ROOT.exists(),'STAGE_INTENT_EXISTS_INSPECT_NO_REPLAY')
++ build=stable(SOURCE/'BUILD_ACTUAL.json');mr=stable(SOURCE/'MODULE_MANIFEST.json')
++ need(sha(build)=='3ea042b9c2d2f6e959b4215d8c6f42535df088222469e31ca5e1dd9f78b2c2aa'and sha(mr)=='5dd49cd0773ffa89b9897614b44998a826b525896d8d45c926f6c349ca1cf54b','EXACT_PASSED_BUILD35')
++ ba=json.loads(build);manifest=json.loads(mr)
++ need(ba['status']=='OWN_ORIGIN_MODULE_BUILD_PASS_ADOPTION_PENDING'and ba['serverBoundaryAbsent']is True and ba['liveAdopted']is False and ba['files']==manifest['files'],'PASSED_PUBLIC_MODULE_BUILD_ONLY')
++ registry=stable(REGISTRY);need(sha(registry)=='b0f083fe97b7a4cc2da1937a65ad9edcfa9babdd20b0b28462010f7514c2ae5a','EXACT_CURRENT33_REGISTRY')
++ project=runpy.run_path(str(H/'project_exact_club_registry35.candidate.py'))['project_registry']
++ descriptor=project(registry,manifest)
++ raw33=stable(COMMON33);need(sha(raw33)=='d602b8f271025eb283d46bf7f444c1aa5a2c922fac6c6de3b5a06535013126b4','EXACT_CURRENT33_ACTUAL');a33=json.loads(raw33)
++ er=stable(EDGE05);need(sha(er)=='4dab13e68b69f6144bb0a642deec5f293a4e11002dd7718cfd7148f102293d59'and sha(stable(EDGEFILE))=='f9f992e24a6973d1b64cb225390959cb4d89c8d5ccac98466fbf52752b36260c','EXACT_UNCHANGED_OPEN_CADDY05')
++ oldpre=Path('/srv/crays/migration-work/20261108/root/common-team-personal33-adoption-source01/CURRENT_FAMILY33_PREIMAGE.private.json')
++ pr=stable(oldpre);need(sha(pr)=='faae405053e378cc91093d17d79b9f998a456108aa870079813ef7878daa7eaa','PINNED_EXISTING_PREIMAGE_TEMPLATE')
++ pre=json.loads(pr);need(pre['ids']==a33['ids'],'SAME_CURRENT33_FAMILY')
++ u=runpy.run_path(str(H/'qualified_container_physical.py'));q=runpy.run_path(str(H/'qualified53_exact_helpers.py'))
++ for role in ['member','work','common']:
++  c=u['inspect'](a33['ids'][role]);need(c['State']['Running']and list(u['physical'](c)[:2])==a33[role+'Process']and all(u['canon'](c[k])==pre['containers'][role]['hashes'][k]for k in ['Config','HostConfig','Mounts']),'EXACT_CURRENT33_UNCHANGED_'+role.upper())
++  pre['containers'][role]['physical']=list(u['physical'](c))
++ pre['controlsSHA256']=a33['generation']['controlsSHA256']
++ for n,p in runpy.run_path(str(H/'member26_lifecycle.candidate.py'))['PATHS'].items():need(sha(stable(p))==pre['controlsSHA256'][n],'EXACT_CURRENT33_CONTROL')
++ pre['units']={n:q['show'](n)for n in runpy.run_path(str(H/'member26_lifecycle.candidate.py'))['UNITS']}
++ for n,v in pre['units'].items():need(v['ActiveState']=='active'and int(v['MainPID'])>0 and v['InvocationID'],'EXACT_CURRENT_SIX_UNITS')
++ need(pre['units']['crays-owner-tools-whatsapp-live.service']['InvocationID']==a33['generation']['sdk']['invocationId'],'CURRENT33_SDK_INVOCATION')
++ for n,h in pre['unitFiles'].items():need(sha(stable(n))==h,'ORIGINAL_UNIT_FILES_UNCHANGED')
++ pre['registryRow']={'path':str(REGISTRY),'sha256':sha(registry),'bytes':len(registry)}
++ for key,path in [('registryMetadata',REGISTRY),('listenerMetadata',Path('/srv/crays/releases/nostr-original-core-addon-20261108-18/common-machine57/listener.nostr18-machine57.candidate.mjs'))]:
++  s=path.lstat();pre[key]=[s.st_dev,s.st_ino,s.st_uid,s.st_gid,stat.S_IMODE(s.st_mode),s.st_nlink]
++ ec=u['inspect'](json.loads(er)['containerId']);need(ec['State']['Running'],'CURRENT_CADDY_RUNNING')
++ pre['edgeGuard']={'id':ec['Id'],'physical':list(u['physical'](ec)),'hashes':{k:u['canon'](ec[k])for k in ['Config','HostConfig','Mounts']},'fileSHA256':sha(stable(EDGEFILE)),'fileMetadata':[EDGEFILE.stat().st_dev,EDGEFILE.stat().st_ino]}
++ qc=u['inspect'](QLO);need(qc['State']['Running']and list(u['physical'](qc)[:2])==[1626455,'30108680'],'EXACT_RUNNING_QLO44')
++ pre['qloGuard']={'id':QLO,'physical':list(u['physical'](qc)),'hashes':{k:u['canon'](qc[k])for k in ['Config','HostConfig','Mounts']}}
++ files=manifest['files'];need(set(p.name for p in (SOURCE/'dist').iterdir())==set(files),'EXACT_DIST48_NO_EXTRA_FILES')
++ for n,h in files.items():need(sha(stable(SOURCE/'dist'/n))==h,'EXACT_DIST_ARTIFACT')
++ OUT.mkdir(mode=0o700);put(OUT/'INTENT.json',{'status':'CLUB35_IMMUTABLE_STAGE_ONLY','automaticReplayAllowed':False})
++ ROOT.mkdir(mode=0o755);(ROOT/'dist').mkdir(mode=0o755)
++ for n,h in files.items():
++  raw=stable(SOURCE/'dist'/n);need(sha(raw)==h,'BUILD_SOURCE_STABLE_DURING_COPY');put(ROOT/'dist'/n,raw,0o444)
++  need(sha(stable(ROOT/'dist'/n))==h,'IMMUTABLE_COPY_BYTE_EXACT')
++ for d in [ROOT,ROOT/'dist']:need(stat.S_IMODE(d.stat().st_mode)==0o755 and d.stat().st_uid==0,'PUBLIC_MODULE_DIRECTORY_CUSTODY')
++ for n in files:
++  host=(ROOT/'dist'/n).stat();inside=(Path('/proc',str(pre['containers']['common']['physical'][0]),'root')/str(ROOT/'dist'/n).lstrip('/')).stat()
++  need((host.st_dev,host.st_ino)==(inside.st_dev,inside.st_ino)and stat.S_IMODE(host.st_mode)==0o444 and host.st_uid==0,'SAME_COMMON_PUBLIC_BIND_NEW_MODULE_VISIBILITY')
++ put(OUT/'MODULE_REGISTRY.club35.json',descriptor,0o444)
++ put(OUT/'CURRENT_FAMILY35_PREIMAGE.private.json',pre)
++ put(OUT/'RESULT_ACTUAL.json',{'status':'CLUB35_IMMUTABLE_MODULE_DESCRIPTOR_AND_CURRENT33_PREIMAGE_STAGED_NOT_ADOPTED','root':str(ROOT/'dist'),'version':manifest['version'],'files':48,'registryPath':str(OUT/'MODULE_REGISTRY.club35.json'),'registrySHA256':sha(descriptor),'registryBytes':len(descriptor),'preimagePath':str(OUT/'CURRENT_FAMILY35_PREIMAGE.private.json'),'preimageSHA256':sha(stable(OUT/'CURRENT_FAMILY35_PREIMAGE.private.json')),'moduleManifestPath':str(SOURCE/'MODULE_MANIFEST.json'),'moduleManifestSHA256':sha(mr),'liveRegistryOrRuntimeChanged':False,'memberWorkQloAndCaddyPreserved':True,'customerAcceptance':False})
++ print(json.dumps({'status':'STAGE35_PASS_NOT_ADOPTED','actualPath':str(OUT/'RESULT_ACTUAL.json'),'actualSHA256':sha(stable(OUT/'RESULT_ACTUAL.json'))}))
++if __name__=='__main__':main(json.loads(stable(sys.argv[1])))

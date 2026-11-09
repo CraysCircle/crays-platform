@@ -1,0 +1,462 @@
+{
+  "scope": "Exact original observed build dependency metadata and root license/attribution texts",
+  "observedPackageRoots": 29,
+  "uniquePackageVersions": 28,
+  "originalNoticeFiles": 28,
+  "packages": [
+    {
+      "name": "vite",
+      "version": "8.1.4",
+      "observedRelativeRoots": [
+        "vite"
+      ],
+      "licenseMetadata": "MIT",
+      "packageJSONSHA256": "d26ea2d65c50959b1b5dcd0d1c52eba22eb6c3f4dc335f618053b15970bb63d6",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE.md",
+          "sha256": "b1d741c26b53de1bbc0d4d7d3365b79888f9fe511527544a8a7b8e24dec43147",
+          "bytes": 110976
+        }
+      ]
+    },
+    {
+      "name": "typescript",
+      "version": "5.9.3",
+      "observedRelativeRoots": [
+        "typescript"
+      ],
+      "licenseMetadata": "Apache-2.0",
+      "packageJSONSHA256": "822ef7ca6452205657b6288b066481ecf508bfbf43455d715cf7d3ec457561e6",
+      "originalNoticeFiles": [
+        {
+          "path": "ThirdPartyNoticeText.txt",
+          "sha256": "1af3c68039c57e539422da82a4faada506ce6d0ea6f90e0b699d02dbcdb7a90c",
+          "bytes": 37824
+        },
+        {
+          "path": "LICENSE.txt",
+          "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47",
+          "bytes": 9197
+        }
+      ]
+    },
+    {
+      "name": "react",
+      "version": "19.2.4",
+      "observedRelativeRoots": [
+        "react"
+      ],
+      "licenseMetadata": "MIT",
+      "packageJSONSHA256": "e60b92f6031f023907bbfab8f96e63e44307776ec1488f310ba61d41b8cda8cc",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+          "bytes": 1088
+        }
+      ]
+    },
+    {
+      "name": "react-dom",
+      "version": "19.2.4",
+      "observedRelativeRoots": [
+        "react-dom"
+      ],
+      "licenseMetadata": "MIT",
+      "packageJSONSHA256": "b8448092689c7e6191595a98526ced808288f35138d97fbce5801a94922e3c36",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+          "bytes": 1088
+        }
+      ]
+    },
+    {
+      "name": "clsx",
+      "version": "2.1.1",
+      "observedRelativeRoots": [
+        "clsx"
+      ],
+      "licenseMetadata": "MIT",
+      "packageJSONSHA256": "a5e616b9883177fb47c1fca22b6a4ab42be1c3ed6ffae8595a5c7d88630eeec2",
+      "originalNoticeFiles": [
+        {
+          "path": "license",
+          "sha256": "9a9edad7baae52622bddf3c15b2ef8a33d2c89f2d25408ad13e8a7481c6b0c97",
+          "bytes": 1104
+        }
+      ]
+    },
+    {
+      "name": "lucide-react",
+      "version": "1.23.0",
+      "observedRelativeRoots": [
+        "lucide-react"
+      ],
+      "licenseMetadata": "ISC",
+      "packageJSONSHA256": "89b273b576398863371027110beb8ecef8c822dd611c01f34adab5fe503e2e69",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+          "bytes": 3208
+        }
+      ]
+    },
+    {
+      "name": "tailwind-merge",
+      "version": "3.6.0",
+      "observedRelativeRoots": [
+        "tailwind-merge"
+      ],
+      "licenseMetadata": "MIT",
+      "packageJSONSHA256": "dd8a34386cdd58744a48027a30fc75103d8bf246cbbb4aa90f0b2333b25818b6",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE.md",
+          "sha256": "d4c70c7ce38cea8778f0aed3fc0bef0a9dbd27f13bd8b6773cbd6d37941971e5",
+          "bytes": 1070
+        }
+      ]
+    },
+    {
+      "name": "zod",
+      "version": "4.4.3",
+      "observedRelativeRoots": [
+        "zod"
+      ],
+      "licenseMetadata": "MIT",
+      "packageJSONSHA256": "c630bd10b52dcf71c112a2bf78dbf2734b9db58d62de663b8d86c2ec2c8cda2e",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8",
+          "bytes": 1072
+        }
+      ]
+    },
+    {
+      "name": "@types/node",
+      "version": "20.19.43",
+      "observedRelativeRoots": [
+        "@types/node"
+      ],
+      "licenseMetadata": "MIT",
+      "packageJSONSHA256": "30af579da31ec3b497b9405bed1592a8c041f15c8e25db3a010e3c67f765ab41",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "bytes": 1141
+        }
+      ]
+    },
+    {
+      "name": "@types/react",
+      "version": "19.2.17",
+      "observedRelativeRoots": [
+        "@types/react"
+      ],
+      "licenseMetadata": "MIT",
+      "packageJSONSHA256": "36496fc09a9dcf31b0ca969ce5677c9ce9ebb5c89da9bd6212e0c89b6fae3f88",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "bytes": 1141
+        }
+      ]
+    },
+    {
+      "name": "@types/react-dom",
+      "version": "19.2.3",
+      "observedRelativeRoots": [
+        "@types/react-dom"
+      ],
+      "licenseMetadata": "MIT",
+      "packageJSONSHA256": "bf90986beaec5f757c164bf1d374f3038dc41b0b06673de4a55fd975d1e5deca",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "bytes": 1141
+        }
+      ]
+    },
+    {
+      "name": "lightningcss",
+      "version": "1.32.0",
+      "observedRelativeRoots": [
+        "lightningcss"
+      ],
+      "licenseMetadata": "MPL-2.0",
+      "packageJSONSHA256": "1b7fbd47a660ecb37d1fa8304a14b726aa44a31bb3d3338f417593f6276b762f",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+          "bytes": 15648
+        }
+      ]
+    },
+    {
+      "name": "picomatch",
+      "version": "4.0.5",
+      "observedRelativeRoots": [
+        "vite/node_modules/picomatch",
+        "tinyglobby/node_modules/picomatch"
+      ],
+      "licenseMetadata": "MIT",
+      "packageJSONSHA256": "fb7766f5f9c724e13e075760a95d16f87cdb327143d153a913135fde267ec615",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9",
+          "bytes": 1091
+        }
+      ]
+    },
+    {
+      "name": "postcss",
+      "version": "8.5.16",
+      "observedRelativeRoots": [
+        "postcss"
+      ],
+      "licenseMetadata": "MIT",
+      "packageJSONSHA256": "cfbc7912de8beb67cb95208574045f4700400b3b26293b875d7dccbb9a9604ca",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8",
+          "bytes": 1095
+        }
+      ]
+    },
+    {
+      "name": "rolldown",
+      "version": "1.1.5",
+      "observedRelativeRoots": [
+        "rolldown"
+      ],
+      "licenseMetadata": "MIT",
+      "packageJSONSHA256": "01de4c2d7ebcc0f36c92f41e4ecab383ae7f5dd2e26f8f4b640fc58ca9c8f8e7",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+          "bytes": 1302
+        }
+      ]
+    },
+    {
+      "name": "tinyglobby",
+      "version": "0.2.17",
+      "observedRelativeRoots": [
+        "tinyglobby"
+      ],
+      "licenseMetadata": "MIT",
+      "packageJSONSHA256": "bd2b2af3c9ba0580f1acfb22c55d0b6d29abf683af5cac8a2efe82fa7c943f23",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "22c68811e174cbbfb3813d4135918df4f540959c14d872e601d9abe83d3cde8f",
+          "bytes": 1076
+        }
+      ]
+    },
+    {
+      "name": "scheduler",
+      "version": "0.27.0",
+      "observedRelativeRoots": [
+        "scheduler"
+      ],
+      "licenseMetadata": "MIT",
+      "packageJSONSHA256": "393bb96b7e481bf50189a1a02c7e0e7f4d01acba5abc6fbe7d214638624462fc",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+          "bytes": 1088
+        }
+      ]
+    },
+    {
+      "name": "undici-types",
+      "version": "6.21.0",
+      "observedRelativeRoots": [
+        "undici-types"
+      ],
+      "licenseMetadata": "MIT",
+      "packageJSONSHA256": "11f873b423b96a5ad444a099685ca6b9de1379dcd83fd8d368e757ddb53658e4",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "a6db8096b2707bc0102d256917d4d33f298ba36d8c3f25de067a2b5bb379db27",
+          "bytes": 1090
+        }
+      ]
+    },
+    {
+      "name": "csstype",
+      "version": "3.2.3",
+      "observedRelativeRoots": [
+        "csstype"
+      ],
+      "licenseMetadata": "MIT",
+      "packageJSONSHA256": "c818b74a9bc1556488b7ec2a65399224738f6619228f9a6491c5c02ca91f849e",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "11d55bd4541c75ee7879547ac49089c489163dae49551389713c3d026cab383e",
+          "bytes": 1062
+        }
+      ]
+    },
+    {
+      "name": "detect-libc",
+      "version": "2.1.2",
+      "observedRelativeRoots": [
+        "detect-libc"
+      ],
+      "licenseMetadata": "Apache-2.0",
+      "packageJSONSHA256": "ee88e5b954fdf3a8480b1d01ef767d68d8ca2c6da269f58c5cf1c5550e9aa2a7",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+          "bytes": 11357
+        }
+      ]
+    },
+    {
+      "name": "lightningcss-linux-x64-gnu",
+      "version": "1.32.0",
+      "observedRelativeRoots": [
+        "lightningcss-linux-x64-gnu"
+      ],
+      "licenseMetadata": "MPL-2.0",
+      "packageJSONSHA256": "38c8b40149b0492fbfcc06b4b8fab20314d9b9d0e648c7da8c5c0634b6a90412",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+          "bytes": 15648
+        }
+      ]
+    },
+    {
+      "name": "nanoid",
+      "version": "3.3.15",
+      "observedRelativeRoots": [
+        "nanoid"
+      ],
+      "licenseMetadata": "MIT",
+      "packageJSONSHA256": "3c39c3030eb4a167d70ef625edb5b0f49dbcd301442cfefbadcfac5a068628f4",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "da4db1480d9beea3483a2eda5c53b22238d0827d57da162b48f122e04d2d9987",
+          "bytes": 1095
+        }
+      ]
+    },
+    {
+      "name": "picocolors",
+      "version": "1.1.1",
+      "observedRelativeRoots": [
+        "picocolors"
+      ],
+      "licenseMetadata": "ISC",
+      "packageJSONSHA256": "ef2ac226c4811d312e12c64214c453878653e834482125ae475f27cea60de737",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750",
+          "bytes": 787
+        }
+      ]
+    },
+    {
+      "name": "source-map-js",
+      "version": "1.2.1",
+      "observedRelativeRoots": [
+        "source-map-js"
+      ],
+      "licenseMetadata": "BSD-3-Clause",
+      "packageJSONSHA256": "58f8e94a461a5e461e0cb2bb2be681cbd89b9181989fd26fceb858e67711469a",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "6cb0631f71c7749763fd3dd1d5bee52dd1070ec17f2edc1710079ad070bd2fbd",
+          "bytes": 1526
+        }
+      ]
+    },
+    {
+      "name": "@oxc-project/types",
+      "version": "0.139.0",
+      "observedRelativeRoots": [
+        "rolldown/node_modules/@oxc-project/types"
+      ],
+      "licenseMetadata": "MIT",
+      "packageJSONSHA256": "a1fd6732a952bcfae8540e6a1e4ce9d153f59a438f8f434f0de714986956608f",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "95ced5ecf1133fbf41d409b5555c86c344f83f3b019926057ddbc07cfdcc27b3",
+          "bytes": 1119
+        }
+      ]
+    },
+    {
+      "name": "@rolldown/pluginutils",
+      "version": "1.0.1",
+      "observedRelativeRoots": [
+        "@rolldown/pluginutils"
+      ],
+      "licenseMetadata": "MIT",
+      "packageJSONSHA256": "c3d2bfe0ff94de71fd5b82e6f3a01b12ee4d99b8f1b34cc00b984b9acde61cfa",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "e1919b3b98b8bf6c1b99fcc60a0ed46027c97ac947432e1278446c9606f50161",
+          "bytes": 1106
+        }
+      ]
+    },
+    {
+      "name": "@rolldown/binding-linux-x64-gnu",
+      "version": "1.1.5",
+      "observedRelativeRoots": [
+        "@rolldown/binding-linux-x64-gnu"
+      ],
+      "licenseMetadata": "MIT",
+      "packageJSONSHA256": "4c465654b3cf360a6a25f5760f249c60613eded29ac881de585780a614975a7b",
+      "originalNoticeFiles": []
+    },
+    {
+      "name": "fdir",
+      "version": "6.5.0",
+      "observedRelativeRoots": [
+        "tinyglobby/node_modules/fdir"
+      ],
+      "licenseMetadata": "MIT",
+      "packageJSONSHA256": "aca49395d61ef383a09f74555c66ed45817ca2b5724e710a4dc9e0471b83d8f5",
+      "originalNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "9a39f2aadab11a3697edd668ff2d8ad885b649737b7ab4d3bf12b34e5ada0c86",
+          "bytes": 1053
+        }
+      ]
+    }
+  ],
+  "allObservedMetadataAndNoticesMatchOriginalCaptureHashes": true,
+  "unresolved": [
+    "@rolldown/binding-linux-x64-gnu1.1.5 original package-specific notice not located; MIT is metadata, not a replacement original text"
+  ],
+  "moduleHasNoOwnPackageOrLock": true,
+  "fullDependencyRuntimeRightsAndSourceOfferClosure": false
+}
