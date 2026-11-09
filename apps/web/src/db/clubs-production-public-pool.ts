@@ -3,6 +3,7 @@ import {Pool, type PoolClient, type PoolConfig} from "pg";
 export const PRODUCTION_PUBLIC_DATABASE_URL_ENV = "CRAYS_CLUBS_PUBLIC_PRODUCTION_DATABASE_URL";
 export const PRODUCTION_PUBLIC_RUNTIME_ROLE = "crays_clubs_public_rpc_runtime_v1";
 const HOSTS = new Set([
+  "crays-prod-postgres-20261106-01.cpewggqg89tp.eu-central-2.rds.amazonaws.com",
   "ep-wandering-field-astlbgje.c-4.eu-central-1.aws.neon.tech",
   "ep-wandering-field-astlbgje-pooler.c-4.eu-central-1.aws.neon.tech",
 ]);
