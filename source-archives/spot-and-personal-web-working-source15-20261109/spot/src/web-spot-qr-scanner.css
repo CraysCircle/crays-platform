@@ -1,0 +1,41 @@
+.web-spot-qr{box-sizing:border-box;width:100%;padding:24px 28px 32px;color:#082638;font:16px/1.5 Crays,Avenir,sans-serif;container-type:inline-size;container-name:spotQr}
+.web-spot-qr *{box-sizing:border-box}
+.web-spot-qr :is(button,a){font:inherit}
+.web-spot-qr-path,.web-spot-qr-columns{max-width:1120px}
+.web-spot-qr-path{display:flex;align-items:center;flex-wrap:wrap;gap:10px;font-size:14px;color:#526b87;margin-bottom:8px}
+.web-spot-qr-path a{display:inline-flex;align-items:center;min-height:48px;color:inherit;text-decoration:none}
+.web-spot-qr-path a:hover{text-decoration:underline}
+.web-spot-qr-columns{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:28px;align-items:start}
+.web-spot-qr main{min-width:0}
+.web-spot-qr-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-bottom:16px;margin-bottom:24px;border-bottom:1px solid #d9e3ed}
+.web-spot-qr-heading h1{font-size:26px!important;line-height:1.3;margin:0!important}
+.web-spot-qr-heading button{display:inline-flex;align-items:center;gap:10px;min-height:48px;background:white;border:1px solid #d9e3ed;border-radius:6px;color:inherit;padding:0 16px;cursor:pointer}
+.web-spot-qr h2{font-size:20px;line-height:1.3;margin:0 0 16px}
+.web-spot-qr-intro{display:flex;align-items:center;gap:16px;margin-bottom:16px}
+.web-spot-qr-intro>svg{flex-shrink:0}
+.web-spot-qr-intro h2{margin:0}
+.web-spot-qr-examples>p{font-size:16px;line-height:1.5;max-width:65ch;margin:0 0 16px;text-align:left}
+.web-spot-qr-examples>p.notice{background:transparent;border:0;padding:0;font-size:16px;color:#526b87;border-radius:0}
+.web-spot-qr .chat-row{display:flex;align-items:center;gap:16px;width:100%;max-width:560px;min-height:80px;padding:12px 16px;margin:0 0 12px;border:1px solid #d9e3ed;border-radius:6px;background:white;color:inherit;text-align:left}
+.web-spot-qr .chat-row>span{flex:1;min-width:0}
+.web-spot-qr .chat-row .avatar{width:48px;height:48px;flex-shrink:0;object-fit:cover}
+.web-spot-qr .chat-row strong{display:block;font-size:16px;line-height:1.5;overflow-wrap:anywhere}
+.web-spot-qr .chat-row small{display:block;font-size:14px;line-height:1.5;color:#526b87;overflow-wrap:anywhere}
+.web-spot-qr .chat-row>svg{flex-shrink:0}
+.web-spot-qr :is(button.quiet,button.primary){display:inline-flex;align-items:center;justify-content:center;width:auto;max-width:100%;min-height:48px;font-size:16px;line-height:1.5;border-radius:6px;padding:10px 16px;margin:0 12px 12px 0;white-space:normal}
+.web-spot-qr button.primary{background:#cd003c;color:white}
+.web-spot-qr-personal{border-top:1px solid #d9e3ed;padding-top:24px;margin-top:12px}
+.web-spot-qr .list-row{display:flex;align-items:center;width:100%;max-width:560px;min-height:64px;padding:12px 16px;margin:0 0 12px;background:white;border:1px solid #d9e3ed;border-radius:6px;font-size:16px}
+.web-spot-qr .list-row .row-copy strong{font-size:16px;line-height:1.5}
+.web-spot-qr .list-row small{font-size:14px;line-height:1.5}
+.web-spot-qr .list-row .row-icon{width:32px;height:32px;flex-shrink:0;border-radius:0;background:none}
+.web-spot-qr aside{min-width:0;padding:16px;background:#f5f8fc;border:1px solid #d9e3ed;border-radius:6px}
+.web-spot-qr-photo{width:100%;height:160px;object-fit:cover;border-radius:6px;margin:0 0 16px}
+.web-spot-qr aside h2{font-size:20px;margin:0 0 12px;overflow-wrap:anywhere}
+.web-spot-qr aside p{font-size:14px;line-height:1.5;color:#526b87;margin:0 0 16px}
+.web-spot-qr aside .web-spot-qr-separation{padding-top:16px;margin-bottom:0;border-top:1px solid #d9e3ed;font-size:16px;color:#082638}
+.web-spot-qr :is(button,a):focus-visible{outline:2px solid #007d8c;outline-offset:4px}
+.space-native:has(>.web-spot-qr){padding:0!important}
+.crays-screen-body:has(.web-spot-qr){bottom:0!important;padding-bottom:0!important}
+@media(max-width:1250px){.web-spot-qr-heading h1{font-size:24px!important}.web-spot-qr-columns{grid-template-columns:minmax(0,1fr) 280px;gap:24px}}
+@container spotQr (max-width:900px){.web-spot-qr-columns{grid-template-columns:minmax(0,1fr)}.web-spot-qr aside{max-width:420px}}

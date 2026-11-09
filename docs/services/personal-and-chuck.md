@@ -30,3 +30,7 @@ The [Source47 Common candidate](../../services/member-identity/provider-account/
 ## Admitted native GraphQL target and Chuck48 source
 
 The [Common49 host](../../services/member-identity/provider-account/source49/common-host.native-graphql49.candidate.cjs) forwards the already admitted native member target to the proxy. Its paired Serve source and the [coordinated Chuck48 installation guide](../../operations/chuck-original-transport48/install-revision03/README.md) preserve the exact routing and installation source versions, including immutable references and filename restoration rules for existing helpers. The source records distinguish independent review from runtime execution and authenticated customer acceptance.
+
+## Spot access and staged preference interfaces
+
+The [Spot and Personal / Chuck working-source guide](../../source-archives/spot-and-personal-web-working-source15-20261109/README.md) connects the original navigation, community access, QR, arrival and payment-record interfaces with the staged matching-preference view and controller. It keeps their exact working revisions and restoration paths separate from the canonical Personal and shared-web application compositions. Historical qualification records in that slice describe their own limits; they do not establish an accepted live customer flow.

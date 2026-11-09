@@ -1,0 +1,495 @@
+{
+  "schema": "crays.spot-personal-working-source15.preservation.v1",
+  "purpose": "Readable unchanged source-preservation snapshot of selected exact Spot WIP and Personal/Chuck dirty integration/evidence revisions.",
+  "originalFiles": 15,
+  "originalBytes": 85820,
+  "sourceFilesAndScripts": 13,
+  "historicalEvidenceFiles": 2,
+  "files": [
+    {
+      "path": "spot/src/webPersonalNavigation.ts",
+      "bytes": 14417,
+      "sha256": "3694de0bfa939d0658a3a5a49c9ea646beade52c4c923580f2c6554461a089c4",
+      "representation": "unchanged-original",
+      "role": "application-integration-source",
+      "component": "Spot access working integration",
+      "originalSourceRoot": "/home/craysdev/codex-chat-projects/openclaw",
+      "originalRelativePath": "review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/webPersonalNavigation.ts",
+      "originalAbsolutePath": "/home/craysdev/codex-chat-projects/openclaw/review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/webPersonalNavigation.ts",
+      "sourceManifestSHA256": "5b825385f39b3501aa1ffee9b61d238adb9bdc0204c00273010e40eb942cc79d",
+      "observedSourceRepositoryHEAD": "7eb8fa3447aad9a8a10e6864ec41d04a924932aa",
+      "repositoryHEADNotAssertedAsExactDirtyBodySource": true,
+      "archive": {
+        "key": "restore/approved/preservation/20261109/exact-working-originals-spot11-46be0f6dda1a020556c7c21367977e16e1374dfe42441c349d3e1fb301cf39b0.tar.gz",
+        "versionId": "Eu9tkE5ch6ZoG3P_VUDF8QKsSdwMXLgI",
+        "archiveBytes": 525537,
+        "archiveSHA256": "46be0f6dda1a020556c7c21367977e16e1374dfe42441c349d3e1fb301cf39b0",
+        "member": "originals/spot/src/webPersonalNavigation.ts",
+        "embeddedManifestSHA256": "cd4d8c06e4f7f35bbe806015a4514ed89af998dff5838d7fb7c61618a3f59f30"
+      },
+      "restoration": {
+        "targetRelativeToSourceRoot": "review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/webPersonalNavigation.ts",
+        "bytes": 14417,
+        "sha256": "3694de0bfa939d0658a3a5a49c9ea646beade52c4c923580f2c6554461a089c4",
+        "preserveUnchangedBytes": true,
+        "runtimeOverlayOrExecutionAuthorized": false
+      }
+    },
+    {
+      "path": "spot/src/WebSpotCommunityAccess.tsx",
+      "bytes": 2197,
+      "sha256": "b28ad7e9f50748b3b66b903a5c7ab055a6452b43185e6c8caf297bfa6b365bca",
+      "representation": "unchanged-original",
+      "role": "application-integration-source",
+      "component": "Spot access working integration",
+      "originalSourceRoot": "/home/craysdev/codex-chat-projects/openclaw",
+      "originalRelativePath": "review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/WebSpotCommunityAccess.tsx",
+      "originalAbsolutePath": "/home/craysdev/codex-chat-projects/openclaw/review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/WebSpotCommunityAccess.tsx",
+      "sourceManifestSHA256": "5b825385f39b3501aa1ffee9b61d238adb9bdc0204c00273010e40eb942cc79d",
+      "observedSourceRepositoryHEAD": "7eb8fa3447aad9a8a10e6864ec41d04a924932aa",
+      "repositoryHEADNotAssertedAsExactDirtyBodySource": true,
+      "archive": {
+        "key": "restore/approved/preservation/20261109/exact-working-originals-spot11-46be0f6dda1a020556c7c21367977e16e1374dfe42441c349d3e1fb301cf39b0.tar.gz",
+        "versionId": "Eu9tkE5ch6ZoG3P_VUDF8QKsSdwMXLgI",
+        "archiveBytes": 525537,
+        "archiveSHA256": "46be0f6dda1a020556c7c21367977e16e1374dfe42441c349d3e1fb301cf39b0",
+        "member": "originals/spot/src/WebSpotCommunityAccess.tsx",
+        "embeddedManifestSHA256": "cd4d8c06e4f7f35bbe806015a4514ed89af998dff5838d7fb7c61618a3f59f30"
+      },
+      "restoration": {
+        "targetRelativeToSourceRoot": "review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/WebSpotCommunityAccess.tsx",
+        "bytes": 2197,
+        "sha256": "b28ad7e9f50748b3b66b903a5c7ab055a6452b43185e6c8caf297bfa6b365bca",
+        "preserveUnchangedBytes": true,
+        "runtimeOverlayOrExecutionAuthorized": false
+      }
+    },
+    {
+      "path": "spot/src/web-spot-community-access.css",
+      "bytes": 5619,
+      "sha256": "3aa720e03d47957112bc18f65a4863ea797e490adce0e460f0a441e1ff8dee3a",
+      "representation": "unchanged-original",
+      "role": "style-source",
+      "component": "Spot access working integration",
+      "originalSourceRoot": "/home/craysdev/codex-chat-projects/openclaw",
+      "originalRelativePath": "review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/web-spot-community-access.css",
+      "originalAbsolutePath": "/home/craysdev/codex-chat-projects/openclaw/review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/web-spot-community-access.css",
+      "sourceManifestSHA256": "5b825385f39b3501aa1ffee9b61d238adb9bdc0204c00273010e40eb942cc79d",
+      "observedSourceRepositoryHEAD": "7eb8fa3447aad9a8a10e6864ec41d04a924932aa",
+      "repositoryHEADNotAssertedAsExactDirtyBodySource": true,
+      "archive": {
+        "key": "restore/approved/preservation/20261109/exact-working-originals-spot11-46be0f6dda1a020556c7c21367977e16e1374dfe42441c349d3e1fb301cf39b0.tar.gz",
+        "versionId": "Eu9tkE5ch6ZoG3P_VUDF8QKsSdwMXLgI",
+        "archiveBytes": 525537,
+        "archiveSHA256": "46be0f6dda1a020556c7c21367977e16e1374dfe42441c349d3e1fb301cf39b0",
+        "member": "originals/spot/src/web-spot-community-access.css",
+        "embeddedManifestSHA256": "cd4d8c06e4f7f35bbe806015a4514ed89af998dff5838d7fb7c61618a3f59f30"
+      },
+      "restoration": {
+        "targetRelativeToSourceRoot": "review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/web-spot-community-access.css",
+        "bytes": 5619,
+        "sha256": "3aa720e03d47957112bc18f65a4863ea797e490adce0e460f0a441e1ff8dee3a",
+        "preserveUnchangedBytes": true,
+        "runtimeOverlayOrExecutionAuthorized": false
+      }
+    },
+    {
+      "path": "spot/src/WebSpotQrScanner.tsx",
+      "bytes": 2596,
+      "sha256": "907710d98110dace911a6bfba8219fa16be839e538f60e82218dfc4de475eb25",
+      "representation": "unchanged-original",
+      "role": "application-integration-source",
+      "component": "Spot access working integration",
+      "originalSourceRoot": "/home/craysdev/codex-chat-projects/openclaw",
+      "originalRelativePath": "review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/WebSpotQrScanner.tsx",
+      "originalAbsolutePath": "/home/craysdev/codex-chat-projects/openclaw/review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/WebSpotQrScanner.tsx",
+      "sourceManifestSHA256": "5b825385f39b3501aa1ffee9b61d238adb9bdc0204c00273010e40eb942cc79d",
+      "observedSourceRepositoryHEAD": "7eb8fa3447aad9a8a10e6864ec41d04a924932aa",
+      "repositoryHEADNotAssertedAsExactDirtyBodySource": true,
+      "archive": {
+        "key": "restore/approved/preservation/20261109/exact-working-originals-spot11-46be0f6dda1a020556c7c21367977e16e1374dfe42441c349d3e1fb301cf39b0.tar.gz",
+        "versionId": "Eu9tkE5ch6ZoG3P_VUDF8QKsSdwMXLgI",
+        "archiveBytes": 525537,
+        "archiveSHA256": "46be0f6dda1a020556c7c21367977e16e1374dfe42441c349d3e1fb301cf39b0",
+        "member": "originals/spot/src/WebSpotQrScanner.tsx",
+        "embeddedManifestSHA256": "cd4d8c06e4f7f35bbe806015a4514ed89af998dff5838d7fb7c61618a3f59f30"
+      },
+      "restoration": {
+        "targetRelativeToSourceRoot": "review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/WebSpotQrScanner.tsx",
+        "bytes": 2596,
+        "sha256": "907710d98110dace911a6bfba8219fa16be839e538f60e82218dfc4de475eb25",
+        "preserveUnchangedBytes": true,
+        "runtimeOverlayOrExecutionAuthorized": false
+      }
+    },
+    {
+      "path": "spot/src/web-spot-qr-scanner.css",
+      "bytes": 4076,
+      "sha256": "49fc8401a21b07afc8c6597658d364e6a433162728aa25f46b0d1164e3117194",
+      "representation": "unchanged-original",
+      "role": "style-source",
+      "component": "Spot access working integration",
+      "originalSourceRoot": "/home/craysdev/codex-chat-projects/openclaw",
+      "originalRelativePath": "review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/web-spot-qr-scanner.css",
+      "originalAbsolutePath": "/home/craysdev/codex-chat-projects/openclaw/review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/web-spot-qr-scanner.css",
+      "sourceManifestSHA256": "5b825385f39b3501aa1ffee9b61d238adb9bdc0204c00273010e40eb942cc79d",
+      "observedSourceRepositoryHEAD": "7eb8fa3447aad9a8a10e6864ec41d04a924932aa",
+      "repositoryHEADNotAssertedAsExactDirtyBodySource": true,
+      "archive": {
+        "key": "restore/approved/preservation/20261109/exact-working-originals-spot11-46be0f6dda1a020556c7c21367977e16e1374dfe42441c349d3e1fb301cf39b0.tar.gz",
+        "versionId": "Eu9tkE5ch6ZoG3P_VUDF8QKsSdwMXLgI",
+        "archiveBytes": 525537,
+        "archiveSHA256": "46be0f6dda1a020556c7c21367977e16e1374dfe42441c349d3e1fb301cf39b0",
+        "member": "originals/spot/src/web-spot-qr-scanner.css",
+        "embeddedManifestSHA256": "cd4d8c06e4f7f35bbe806015a4514ed89af998dff5838d7fb7c61618a3f59f30"
+      },
+      "restoration": {
+        "targetRelativeToSourceRoot": "review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/web-spot-qr-scanner.css",
+        "bytes": 4076,
+        "sha256": "49fc8401a21b07afc8c6597658d364e6a433162728aa25f46b0d1164e3117194",
+        "preserveUnchangedBytes": true,
+        "runtimeOverlayOrExecutionAuthorized": false
+      }
+    },
+    {
+      "path": "spot/src/WebSpotArrival.tsx",
+      "bytes": 2963,
+      "sha256": "3fc7651f9bb45347a8c75bda7cdcac55d45ffcb1a4560ff49844412f8b09616d",
+      "representation": "unchanged-original",
+      "role": "application-integration-source",
+      "component": "Spot access working integration",
+      "originalSourceRoot": "/home/craysdev/codex-chat-projects/openclaw",
+      "originalRelativePath": "review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/WebSpotArrival.tsx",
+      "originalAbsolutePath": "/home/craysdev/codex-chat-projects/openclaw/review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/WebSpotArrival.tsx",
+      "sourceManifestSHA256": "5b825385f39b3501aa1ffee9b61d238adb9bdc0204c00273010e40eb942cc79d",
+      "observedSourceRepositoryHEAD": "7eb8fa3447aad9a8a10e6864ec41d04a924932aa",
+      "repositoryHEADNotAssertedAsExactDirtyBodySource": true,
+      "archive": {
+        "key": "restore/approved/preservation/20261109/exact-working-originals-spot11-46be0f6dda1a020556c7c21367977e16e1374dfe42441c349d3e1fb301cf39b0.tar.gz",
+        "versionId": "Eu9tkE5ch6ZoG3P_VUDF8QKsSdwMXLgI",
+        "archiveBytes": 525537,
+        "archiveSHA256": "46be0f6dda1a020556c7c21367977e16e1374dfe42441c349d3e1fb301cf39b0",
+        "member": "originals/spot/src/WebSpotArrival.tsx",
+        "embeddedManifestSHA256": "cd4d8c06e4f7f35bbe806015a4514ed89af998dff5838d7fb7c61618a3f59f30"
+      },
+      "restoration": {
+        "targetRelativeToSourceRoot": "review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/WebSpotArrival.tsx",
+        "bytes": 2963,
+        "sha256": "3fc7651f9bb45347a8c75bda7cdcac55d45ffcb1a4560ff49844412f8b09616d",
+        "preserveUnchangedBytes": true,
+        "runtimeOverlayOrExecutionAuthorized": false
+      }
+    },
+    {
+      "path": "spot/src/web-spot-arrival.css",
+      "bytes": 8338,
+      "sha256": "15f603f27fe206c87d91aea3656bc0d5478b379e57d062ca00a6fb5307db1411",
+      "representation": "unchanged-original",
+      "role": "style-source",
+      "component": "Spot access working integration",
+      "originalSourceRoot": "/home/craysdev/codex-chat-projects/openclaw",
+      "originalRelativePath": "review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/web-spot-arrival.css",
+      "originalAbsolutePath": "/home/craysdev/codex-chat-projects/openclaw/review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/web-spot-arrival.css",
+      "sourceManifestSHA256": "5b825385f39b3501aa1ffee9b61d238adb9bdc0204c00273010e40eb942cc79d",
+      "observedSourceRepositoryHEAD": "7eb8fa3447aad9a8a10e6864ec41d04a924932aa",
+      "repositoryHEADNotAssertedAsExactDirtyBodySource": true,
+      "archive": {
+        "key": "restore/approved/preservation/20261109/exact-working-originals-spot11-46be0f6dda1a020556c7c21367977e16e1374dfe42441c349d3e1fb301cf39b0.tar.gz",
+        "versionId": "Eu9tkE5ch6ZoG3P_VUDF8QKsSdwMXLgI",
+        "archiveBytes": 525537,
+        "archiveSHA256": "46be0f6dda1a020556c7c21367977e16e1374dfe42441c349d3e1fb301cf39b0",
+        "member": "originals/spot/src/web-spot-arrival.css",
+        "embeddedManifestSHA256": "cd4d8c06e4f7f35bbe806015a4514ed89af998dff5838d7fb7c61618a3f59f30"
+      },
+      "restoration": {
+        "targetRelativeToSourceRoot": "review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/web-spot-arrival.css",
+        "bytes": 8338,
+        "sha256": "15f603f27fe206c87d91aea3656bc0d5478b379e57d062ca00a6fb5307db1411",
+        "preserveUnchangedBytes": true,
+        "runtimeOverlayOrExecutionAuthorized": false
+      }
+    },
+    {
+      "path": "spot/src/WebSpotPaymentRecords.tsx",
+      "bytes": 3641,
+      "sha256": "38f2b28c21ebcbb317af513c1d413e827cb6f0ff410fcf1612720516a14669a0",
+      "representation": "unchanged-original",
+      "role": "application-integration-source",
+      "component": "Spot access working integration",
+      "originalSourceRoot": "/home/craysdev/codex-chat-projects/openclaw",
+      "originalRelativePath": "review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/WebSpotPaymentRecords.tsx",
+      "originalAbsolutePath": "/home/craysdev/codex-chat-projects/openclaw/review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/WebSpotPaymentRecords.tsx",
+      "sourceManifestSHA256": "5b825385f39b3501aa1ffee9b61d238adb9bdc0204c00273010e40eb942cc79d",
+      "observedSourceRepositoryHEAD": "7eb8fa3447aad9a8a10e6864ec41d04a924932aa",
+      "repositoryHEADNotAssertedAsExactDirtyBodySource": true,
+      "archive": {
+        "key": "restore/approved/preservation/20261109/exact-working-originals-spot11-46be0f6dda1a020556c7c21367977e16e1374dfe42441c349d3e1fb301cf39b0.tar.gz",
+        "versionId": "Eu9tkE5ch6ZoG3P_VUDF8QKsSdwMXLgI",
+        "archiveBytes": 525537,
+        "archiveSHA256": "46be0f6dda1a020556c7c21367977e16e1374dfe42441c349d3e1fb301cf39b0",
+        "member": "originals/spot/src/WebSpotPaymentRecords.tsx",
+        "embeddedManifestSHA256": "cd4d8c06e4f7f35bbe806015a4514ed89af998dff5838d7fb7c61618a3f59f30"
+      },
+      "restoration": {
+        "targetRelativeToSourceRoot": "review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/WebSpotPaymentRecords.tsx",
+        "bytes": 3641,
+        "sha256": "38f2b28c21ebcbb317af513c1d413e827cb6f0ff410fcf1612720516a14669a0",
+        "preserveUnchangedBytes": true,
+        "runtimeOverlayOrExecutionAuthorized": false
+      }
+    },
+    {
+      "path": "spot/src/web-spot-payment-records.css",
+      "bytes": 4754,
+      "sha256": "fbcea4cb7e693931ac3f14f113e7994b459f614d67ff2156a2a110131a3a6661",
+      "representation": "unchanged-original",
+      "role": "style-source",
+      "component": "Spot access working integration",
+      "originalSourceRoot": "/home/craysdev/codex-chat-projects/openclaw",
+      "originalRelativePath": "review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/web-spot-payment-records.css",
+      "originalAbsolutePath": "/home/craysdev/codex-chat-projects/openclaw/review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/web-spot-payment-records.css",
+      "sourceManifestSHA256": "5b825385f39b3501aa1ffee9b61d238adb9bdc0204c00273010e40eb942cc79d",
+      "observedSourceRepositoryHEAD": "7eb8fa3447aad9a8a10e6864ec41d04a924932aa",
+      "repositoryHEADNotAssertedAsExactDirtyBodySource": true,
+      "archive": {
+        "key": "restore/approved/preservation/20261109/exact-working-originals-spot11-46be0f6dda1a020556c7c21367977e16e1374dfe42441c349d3e1fb301cf39b0.tar.gz",
+        "versionId": "Eu9tkE5ch6ZoG3P_VUDF8QKsSdwMXLgI",
+        "archiveBytes": 525537,
+        "archiveSHA256": "46be0f6dda1a020556c7c21367977e16e1374dfe42441c349d3e1fb301cf39b0",
+        "member": "originals/spot/src/web-spot-payment-records.css",
+        "embeddedManifestSHA256": "cd4d8c06e4f7f35bbe806015a4514ed89af998dff5838d7fb7c61618a3f59f30"
+      },
+      "restoration": {
+        "targetRelativeToSourceRoot": "review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/web-spot-payment-records.css",
+        "bytes": 4754,
+        "sha256": "fbcea4cb7e693931ac3f14f113e7994b459f614d67ff2156a2a110131a3a6661",
+        "preserveUnchangedBytes": true,
+        "runtimeOverlayOrExecutionAuthorized": false
+      }
+    },
+    {
+      "path": "spot/src/spotPaymentRecords.ts",
+      "bytes": 6349,
+      "sha256": "6b9ce2c36c80e42d1fd7225caafe7ac53ae598af4b68792b4e3d03f5345a939f",
+      "representation": "unchanged-original",
+      "role": "application-integration-source",
+      "component": "Spot access working integration",
+      "originalSourceRoot": "/home/craysdev/codex-chat-projects/openclaw",
+      "originalRelativePath": "review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/spotPaymentRecords.ts",
+      "originalAbsolutePath": "/home/craysdev/codex-chat-projects/openclaw/review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/spotPaymentRecords.ts",
+      "sourceManifestSHA256": "5b825385f39b3501aa1ffee9b61d238adb9bdc0204c00273010e40eb942cc79d",
+      "observedSourceRepositoryHEAD": "7eb8fa3447aad9a8a10e6864ec41d04a924932aa",
+      "repositoryHEADNotAssertedAsExactDirtyBodySource": true,
+      "archive": {
+        "key": "restore/approved/preservation/20261109/exact-working-originals-spot11-46be0f6dda1a020556c7c21367977e16e1374dfe42441c349d3e1fb301cf39b0.tar.gz",
+        "versionId": "Eu9tkE5ch6ZoG3P_VUDF8QKsSdwMXLgI",
+        "archiveBytes": 525537,
+        "archiveSHA256": "46be0f6dda1a020556c7c21367977e16e1374dfe42441c349d3e1fb301cf39b0",
+        "member": "originals/spot/src/spotPaymentRecords.ts",
+        "embeddedManifestSHA256": "cd4d8c06e4f7f35bbe806015a4514ed89af998dff5838d7fb7c61618a3f59f30"
+      },
+      "restoration": {
+        "targetRelativeToSourceRoot": "review/crays-unified-desktop-20261026/spot-access-desktop-20261029/working/src/spotPaymentRecords.ts",
+        "bytes": 6349,
+        "sha256": "6b9ce2c36c80e42d1fd7225caafe7ac53ae598af4b68792b4e3d03f5345a939f",
+        "preserveUnchangedBytes": true,
+        "runtimeOverlayOrExecutionAuthorized": false
+      }
+    },
+    {
+      "path": "personal-web/apps/web-runtime/evidence/chuck-web-20261028/SERVER_ORIGINAL_SDK_QUALIFICATION.json",
+      "bytes": 624,
+      "sha256": "03cee98fbc7bf1c9bfee061916b1cf355f3d580be51793a37c88eff96cf3dd3d",
+      "representation": "unchanged-original",
+      "role": "historical-evidence-metadata",
+      "component": "Personal web / Chuck staged integration",
+      "originalSourceRoot": "/srv/crays/worktrees/personal-web-runtime-01a183ad",
+      "originalRelativePath": "apps/web-runtime/evidence/chuck-web-20261028/SERVER_ORIGINAL_SDK_QUALIFICATION.json",
+      "originalAbsolutePath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/evidence/chuck-web-20261028/SERVER_ORIGINAL_SDK_QUALIFICATION.json",
+      "sourceManifestSHA256": "77b9fb60fcfeccacc3962d32707445c30015786b98c1bd3e4ba52110d1419899",
+      "observedSourceRepositoryHEAD": "9c5473a82ec0f67ade80aff676f9993557893ef8",
+      "repositoryHEADNotAssertedAsExactDirtyBodySource": true,
+      "archive": {
+        "key": "restore/approved/preservation/20261109/exact-working-originals-webchuck6-420f144a46b50bacd390eafa1a06bd00b5bcdc53dd5cdbda18e8fb8f00b9170a.tar.gz",
+        "versionId": "t9LdDw9Gl3NA0756_xixSika4L21ZWh.",
+        "archiveBytes": 549235,
+        "archiveSHA256": "420f144a46b50bacd390eafa1a06bd00b5bcdc53dd5cdbda18e8fb8f00b9170a",
+        "member": "originals/webChuck/apps/web-runtime/evidence/chuck-web-20261028/SERVER_ORIGINAL_SDK_QUALIFICATION.json",
+        "embeddedManifestSHA256": "618b8ead72e36805ee1d6657696443c9635d1387107ed1713ebe630ad19286ba"
+      },
+      "restoration": {
+        "targetRelativeToSourceRoot": "apps/web-runtime/evidence/chuck-web-20261028/SERVER_ORIGINAL_SDK_QUALIFICATION.json",
+        "bytes": 624,
+        "sha256": "03cee98fbc7bf1c9bfee061916b1cf355f3d580be51793a37c88eff96cf3dd3d",
+        "preserveUnchangedBytes": true,
+        "runtimeOverlayOrExecutionAuthorized": false
+      }
+    },
+    {
+      "path": "personal-web/apps/web-runtime/evidence/chuck-web-20261028/global-window-v1/LOGIN_RETURN_RESULT.json",
+      "bytes": 226,
+      "sha256": "b71ce5d4cc0939c727fbee8b80012f10cc657ca52742dc00bfc1773bc83ba1fc",
+      "representation": "unchanged-original",
+      "role": "historical-evidence-metadata",
+      "component": "Personal web / Chuck staged integration",
+      "originalSourceRoot": "/srv/crays/worktrees/personal-web-runtime-01a183ad",
+      "originalRelativePath": "apps/web-runtime/evidence/chuck-web-20261028/global-window-v1/LOGIN_RETURN_RESULT.json",
+      "originalAbsolutePath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/evidence/chuck-web-20261028/global-window-v1/LOGIN_RETURN_RESULT.json",
+      "sourceManifestSHA256": "77b9fb60fcfeccacc3962d32707445c30015786b98c1bd3e4ba52110d1419899",
+      "observedSourceRepositoryHEAD": "9c5473a82ec0f67ade80aff676f9993557893ef8",
+      "repositoryHEADNotAssertedAsExactDirtyBodySource": true,
+      "archive": {
+        "key": "restore/approved/preservation/20261109/exact-working-originals-webchuck6-420f144a46b50bacd390eafa1a06bd00b5bcdc53dd5cdbda18e8fb8f00b9170a.tar.gz",
+        "versionId": "t9LdDw9Gl3NA0756_xixSika4L21ZWh.",
+        "archiveBytes": 549235,
+        "archiveSHA256": "420f144a46b50bacd390eafa1a06bd00b5bcdc53dd5cdbda18e8fb8f00b9170a",
+        "member": "originals/webChuck/apps/web-runtime/evidence/chuck-web-20261028/global-window-v1/LOGIN_RETURN_RESULT.json",
+        "embeddedManifestSHA256": "618b8ead72e36805ee1d6657696443c9635d1387107ed1713ebe630ad19286ba"
+      },
+      "restoration": {
+        "targetRelativeToSourceRoot": "apps/web-runtime/evidence/chuck-web-20261028/global-window-v1/LOGIN_RETURN_RESULT.json",
+        "bytes": 226,
+        "sha256": "b71ce5d4cc0939c727fbee8b80012f10cc657ca52742dc00bfc1773bc83ba1fc",
+        "preserveUnchangedBytes": true,
+        "runtimeOverlayOrExecutionAuthorized": false
+      }
+    },
+    {
+      "path": "personal-web/apps/web-runtime/integration/chuck-matching-preference-v406-20261102/source/web-runtime/src/WebCanonicalMatchingPreference.tsx",
+      "bytes": 14641,
+      "sha256": "096078808e429e6450fa80d3967af7888624a59d025d0df25f0fc3ad2ae0e31a",
+      "representation": "unchanged-original",
+      "role": "application-integration-source",
+      "component": "Personal web / Chuck staged integration",
+      "originalSourceRoot": "/srv/crays/worktrees/personal-web-runtime-01a183ad",
+      "originalRelativePath": "apps/web-runtime/integration/chuck-matching-preference-v406-20261102/source/web-runtime/src/WebCanonicalMatchingPreference.tsx",
+      "originalAbsolutePath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/integration/chuck-matching-preference-v406-20261102/source/web-runtime/src/WebCanonicalMatchingPreference.tsx",
+      "sourceManifestSHA256": "77b9fb60fcfeccacc3962d32707445c30015786b98c1bd3e4ba52110d1419899",
+      "observedSourceRepositoryHEAD": "9c5473a82ec0f67ade80aff676f9993557893ef8",
+      "repositoryHEADNotAssertedAsExactDirtyBodySource": true,
+      "archive": {
+        "key": "restore/approved/preservation/20261109/exact-working-originals-webchuck6-420f144a46b50bacd390eafa1a06bd00b5bcdc53dd5cdbda18e8fb8f00b9170a.tar.gz",
+        "versionId": "t9LdDw9Gl3NA0756_xixSika4L21ZWh.",
+        "archiveBytes": 549235,
+        "archiveSHA256": "420f144a46b50bacd390eafa1a06bd00b5bcdc53dd5cdbda18e8fb8f00b9170a",
+        "member": "originals/webChuck/apps/web-runtime/integration/chuck-matching-preference-v406-20261102/source/web-runtime/src/WebCanonicalMatchingPreference.tsx",
+        "embeddedManifestSHA256": "618b8ead72e36805ee1d6657696443c9635d1387107ed1713ebe630ad19286ba"
+      },
+      "restoration": {
+        "targetRelativeToSourceRoot": "apps/web-runtime/integration/chuck-matching-preference-v406-20261102/source/web-runtime/src/WebCanonicalMatchingPreference.tsx",
+        "bytes": 14641,
+        "sha256": "096078808e429e6450fa80d3967af7888624a59d025d0df25f0fc3ad2ae0e31a",
+        "preserveUnchangedBytes": true,
+        "runtimeOverlayOrExecutionAuthorized": false
+      }
+    },
+    {
+      "path": "personal-web/apps/web-runtime/integration/chuck-matching-preference-v406-20261102/source/web-runtime/src/live-chuck/preference-controller.mjs",
+      "bytes": 10099,
+      "sha256": "2da6bf4c6ae4bd7be4da846ccb1439f9ca32bb804ded101a3e8fb577692dc079",
+      "representation": "unchanged-original",
+      "role": "application-integration-source",
+      "component": "Personal web / Chuck staged integration",
+      "originalSourceRoot": "/srv/crays/worktrees/personal-web-runtime-01a183ad",
+      "originalRelativePath": "apps/web-runtime/integration/chuck-matching-preference-v406-20261102/source/web-runtime/src/live-chuck/preference-controller.mjs",
+      "originalAbsolutePath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/integration/chuck-matching-preference-v406-20261102/source/web-runtime/src/live-chuck/preference-controller.mjs",
+      "sourceManifestSHA256": "77b9fb60fcfeccacc3962d32707445c30015786b98c1bd3e4ba52110d1419899",
+      "observedSourceRepositoryHEAD": "9c5473a82ec0f67ade80aff676f9993557893ef8",
+      "repositoryHEADNotAssertedAsExactDirtyBodySource": true,
+      "archive": {
+        "key": "restore/approved/preservation/20261109/exact-working-originals-webchuck6-420f144a46b50bacd390eafa1a06bd00b5bcdc53dd5cdbda18e8fb8f00b9170a.tar.gz",
+        "versionId": "t9LdDw9Gl3NA0756_xixSika4L21ZWh.",
+        "archiveBytes": 549235,
+        "archiveSHA256": "420f144a46b50bacd390eafa1a06bd00b5bcdc53dd5cdbda18e8fb8f00b9170a",
+        "member": "originals/webChuck/apps/web-runtime/integration/chuck-matching-preference-v406-20261102/source/web-runtime/src/live-chuck/preference-controller.mjs",
+        "embeddedManifestSHA256": "618b8ead72e36805ee1d6657696443c9635d1387107ed1713ebe630ad19286ba"
+      },
+      "restoration": {
+        "targetRelativeToSourceRoot": "apps/web-runtime/integration/chuck-matching-preference-v406-20261102/source/web-runtime/src/live-chuck/preference-controller.mjs",
+        "bytes": 10099,
+        "sha256": "2da6bf4c6ae4bd7be4da846ccb1439f9ca32bb804ded101a3e8fb577692dc079",
+        "preserveUnchangedBytes": true,
+        "runtimeOverlayOrExecutionAuthorized": false
+      }
+    },
+    {
+      "path": "personal-web/apps/web-runtime/scripts/build-host-candidate.py",
+      "bytes": 5280,
+      "sha256": "f7255e7be67f838d5c3bab15366a4a664df1f9a06c004389cfbd3dd98a9fb719",
+      "representation": "unchanged-original",
+      "role": "build-controller-source",
+      "component": "Personal web / Chuck staged integration",
+      "originalSourceRoot": "/srv/crays/worktrees/personal-web-runtime-01a183ad",
+      "originalRelativePath": "apps/web-runtime/scripts/build-host-candidate.py",
+      "originalAbsolutePath": "/srv/crays/worktrees/personal-web-runtime-01a183ad/apps/web-runtime/scripts/build-host-candidate.py",
+      "sourceManifestSHA256": "77b9fb60fcfeccacc3962d32707445c30015786b98c1bd3e4ba52110d1419899",
+      "observedSourceRepositoryHEAD": "9c5473a82ec0f67ade80aff676f9993557893ef8",
+      "repositoryHEADNotAssertedAsExactDirtyBodySource": true,
+      "archive": {
+        "key": "restore/approved/preservation/20261109/exact-working-originals-webchuck6-420f144a46b50bacd390eafa1a06bd00b5bcdc53dd5cdbda18e8fb8f00b9170a.tar.gz",
+        "versionId": "t9LdDw9Gl3NA0756_xixSika4L21ZWh.",
+        "archiveBytes": 549235,
+        "archiveSHA256": "420f144a46b50bacd390eafa1a06bd00b5bcdc53dd5cdbda18e8fb8f00b9170a",
+        "member": "originals/webChuck/apps/web-runtime/scripts/build-host-candidate.py",
+        "embeddedManifestSHA256": "618b8ead72e36805ee1d6657696443c9635d1387107ed1713ebe630ad19286ba"
+      },
+      "restoration": {
+        "targetRelativeToSourceRoot": "apps/web-runtime/scripts/build-host-candidate.py",
+        "bytes": 5280,
+        "sha256": "f7255e7be67f838d5c3bab15366a4a664df1f9a06c004389cfbd3dd98a9fb719",
+        "preserveUnchangedBytes": true,
+        "runtimeOverlayOrExecutionAuthorized": false
+      }
+    }
+  ],
+  "sourceProvenance": {
+    "qualifiedOriginalMetadataSHA256": "5b079379239f2ebf8ec84d6407f596b9c9a124c1faccfbc72335c7e76b569c74",
+    "spotHandoffManifestSHA256": "5b825385f39b3501aa1ffee9b61d238adb9bdc0204c00273010e40eb942cc79d",
+    "personalWebHandoffManifestSHA256": "77b9fb60fcfeccacc3962d32707445c30015786b98c1bd3e4ba52110d1419899",
+    "protectedSelected15IntakeReceiptSHA256": "6daa2e810cdda0b1f106150097ad6ee1f1c797a5b8a8863d6e3d2031f24d5713",
+    "boundedStaticReviewReceiptSHA256": "a5039723af8ecc737b3716aae91acb29114d65b2262c4334d05ac82fe96e6dda"
+  },
+  "canonicalComponentRelationship": {
+    "platformCommitCompared": "46e43e2cc83110fba0658024fe09f4caaf4bc8ad",
+    "knownIndexes": [
+      {
+        "path": "apps/web/source-capture.json",
+        "sha256": "19dc76df71acdadb038bc8f3a3d869e81f0e644c339ddb518f05823190586116"
+      },
+      {
+        "path": "apps/personal/source-capture.json",
+        "sha256": "aafb1fd36d7a78a6ac74354c802372eba348624adcce654d09b68b19809f241c"
+      },
+      {
+        "path": "operations/personal-build/source-capture.json",
+        "sha256": "98196b01260e37c94db376d7aea01bbe042c30d2415b66d0cc09953d05ba6bd8"
+      }
+    ],
+    "placement": "Separate source snapshot; does not replace apps/web, apps/personal or build-operation source.",
+    "boundedExactCandidatePathsMatched": 0,
+    "globalRepositoryContentAbsenceClaimed": false
+  },
+  "rightsAndDependencies": {
+    "originalNoticeOrLicenseTextLocatedInSelected15": false,
+    "originalSourceAndExistingThirdPartyTermsUnchanged": true,
+    "observedExternalImportFamilies": [
+      "react",
+      "@phosphor-icons/react"
+    ],
+    "localImportsAndCompleteBuildInputsNotIncludedByThisSnapshot": true,
+    "ownedOrUpstreamLicenseGrantEstablishedByWorkingRootAlone": false,
+    "newLicenseGrantAdded": false,
+    "wholeDependencyRightsOrSourceOfferClosureClaimed": false
+  },
+  "excludedLargePrototypeVersions": {
+    "originalsNotIncluded": 2,
+    "reason": "Separate original versions were not exported into this15-file intake and are outside this public-preservation packet.",
+    "bytes": [
+      1780659,
+      1863391
+    ]
+  },
+  "sourceProgramsOrTestsExecuted": false,
+  "newBuildOrRuntimeAdoptionClaimed": false,
+  "realOwnerLoginOrChuckCustomerAcceptanceClaimed": false
+}

@@ -1,0 +1,42 @@
+.web-spot-payments{box-sizing:border-box;width:100%;padding:16px 28px 32px;color:#082638;font:16px/1.5 Avenir,sans-serif;container-type:inline-size;container-name:spotPayments}
+.web-spot-payments *{box-sizing:border-box}
+.web-spot-payments-layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;grid-template-areas:'path path' 'heading context' 'intro context' 'content context';gap:16px 28px;max-width:1120px;align-items:start}
+.web-spot-payments-path{grid-area:path;display:flex;align-items:center;flex-wrap:wrap;gap:10px;font-size:14px;line-height:1.5;color:#526b87;min-width:0}
+.web-spot-payments a{display:inline-flex;align-items:center;gap:8px;min-height:48px;color:inherit;text-decoration:none;overflow-wrap:anywhere}
+.web-spot-payments a:hover{text-decoration:underline}
+.web-spot-payments-heading{grid-area:heading;display:flex;align-items:center;justify-content:space-between;gap:20px;min-width:0;border-bottom:1px solid #d9e3ed;padding-bottom:16px}
+.web-spot-payments h1{margin:0!important;font-size:26px!important;line-height:1.3!important;overflow-wrap:anywhere}
+.web-spot-payments h2{font-size:20px;line-height:1.3;margin:0;overflow-wrap:anywhere}
+.web-spot-payments :is(button,input,select){font:inherit;color:inherit}
+.web-spot-payments-heading button,.web-spot-payments-signin{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;max-width:100%;width:auto;padding:10px 16px;background:white;border:1px solid #d9e3ed;border-radius:6px;cursor:pointer}
+.web-spot-payments-intro{grid-area:intro;margin:0;font-size:16px;line-height:1.5}
+.web-spot-payments-content{grid-area:content;min-width:0}
+.web-spot-payments-empty{display:grid;grid-template-columns:32px minmax(0,1fr);gap:8px 24px;align-items:start;padding:20px 24px;background:#f5f8fc;border-radius:6px;min-width:0}
+.web-spot-payments-empty>svg{grid-column:1;grid-row:1/3;width:24px;height:24px;margin:4px}
+.web-spot-payments-empty>:is(h2,p,button,.web-spot-payments-return){grid-column:2}
+.web-spot-payments-empty>p{font-size:16px;line-height:1.5;color:#526b87;max-width:52ch;margin:0}
+.web-spot-payments-empty>.web-spot-payments-signin{justify-self:start}
+.web-spot-payments-return{font-size:16px;line-height:1.5;margin:0}
+.web-spot-payments-return a{text-decoration:underline}
+.web-spot-payments-group{margin:0 0 24px}
+.web-spot-payments-group>h2{margin-bottom:12px}
+.web-spot-payment-row{display:flex;align-items:center;gap:16px;width:100%;min-width:0;min-height:80px;padding:12px 0;border:0;border-bottom:1px solid #d9e3ed;border-radius:0;background:white;text-align:left;cursor:pointer}
+.web-spot-payment-row>svg{flex:none}
+.web-spot-payment-row>span{min-width:0;flex:1}
+.web-spot-payment-row strong{display:block;font-size:16px;line-height:1.5;white-space:normal;overflow-wrap:anywhere}
+.web-spot-payment-row small{display:block;font-size:14px;line-height:1.5;color:#526b87;white-space:normal;overflow-wrap:anywhere;margin-top:4px}
+.web-spot-payments-context{grid-area:context;padding:16px;background:#f5f8fc;border:1px solid #d9e3ed;border-radius:6px;min-width:0}
+.web-spot-payments-identity{display:flex;align-items:flex-start;gap:16px;min-width:0}
+.web-spot-payments-identity>img{width:96px;height:72px;object-fit:cover;border-radius:6px;flex:none}
+.web-spot-payments-identity>div{min-width:0;flex:1}
+.web-spot-payments-identity h2{font-size:20px;line-height:1.3;margin:0 0 8px}
+.web-spot-payments-identity p{font-size:14px;line-height:1.5;color:#526b87;margin:0}
+.web-spot-payments-explanation{font-size:16px;line-height:1.5;color:#526b87;margin:20px 0 0;padding:20px 0;border-top:1px solid #d9e3ed;border-bottom:1px solid #d9e3ed}
+.web-spot-payments-all{display:flex;align-items:center;gap:16px;padding-top:12px;min-height:64px}
+.web-spot-payments-all>svg{flex:none}
+.web-spot-payments-all>a{flex:1;min-width:0;font-size:16px;line-height:1.5}
+.web-spot-payments-review,.web-spot-payments-feedback{font-size:16px;line-height:1.5;padding:16px;margin:0 0 16px;background:#f5f8fc;border:1px solid #d9e3ed;border-radius:6px;overflow-wrap:anywhere}
+.space-native:has(>.web-spot-payments){padding:0!important}
+.crays-screen-body:has(.web-spot-payments){bottom:0!important;padding-bottom:0!important}
+@media(max-width:1250px){.web-spot-payments h1{font-size:24px!important}}
+@container spotPayments (max-width:900px){.web-spot-payments-layout{grid-template-columns:minmax(0,1fr);grid-template-areas:'path' 'heading' 'intro' 'content' 'context'}.web-spot-payments-context{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}.web-spot-payments-identity{grid-column:1}.web-spot-payments-explanation{grid-column:2;grid-row:1;margin:0;padding:0;border:0}.web-spot-payments-all{grid-column:1/-1;border-top:1px solid #d9e3ed}}

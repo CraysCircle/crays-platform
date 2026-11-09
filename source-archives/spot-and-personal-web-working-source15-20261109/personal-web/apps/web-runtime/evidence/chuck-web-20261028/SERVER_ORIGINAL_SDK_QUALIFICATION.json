@@ -1,0 +1,12 @@
+{
+  "atUTC": "2026-11-01T11:39:54.506Z",
+  "tier": "actual-original-Auth0SDK-4.24.0-cryptography-and-selected-Core-boundary-with-synthetic-cookie/Core-SQL-ports",
+  "sdkRoot": "/home/craysdev/codex-chat-projects/member/output/club-scoped-release-20261018/source/node_modules/@auth0/nextjs-auth0",
+  "SDKClientSHA256": "95e3d5277453758342a4f3f5e0c9209380821b9908e95d4065838b6c1d25237c",
+  "selectedCoreComposition": "SELECTED_CORE_WEB_COMPOSITION.json",
+  "nativeOrOwnerCredentialsRead": false,
+  "actualCoreOrModelCalls": false,
+  "allNetworkForbidden": true,
+  "realWebLoginAccepted": false,
+  "realChuckAccepted": false
+}

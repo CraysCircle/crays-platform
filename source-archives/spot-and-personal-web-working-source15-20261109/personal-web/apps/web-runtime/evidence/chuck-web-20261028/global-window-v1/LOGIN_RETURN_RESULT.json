@@ -1,0 +1,6 @@
+{
+  "atUTC": "2026-10-29T11:18:06.618Z",
+  "passed": true,
+  "scope": "Public canonical route and consumed tab-only return validation; no credentials, auth admission or automatic sending",
+  "realOwnerAuthentication": false
+}

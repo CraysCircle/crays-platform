@@ -201,6 +201,10 @@
     {
       "component": "chuck48-common49-install-revision03",
       "path": "operations/chuck-original-transport48/install-revision03/source-provenance.json"
+    },
+    {
+      "component": "spot-personal-web-working-source15",
+      "path": "source-archives/spot-and-personal-web-working-source15-20261109/source-capture.json"
     }
   ]
 }
