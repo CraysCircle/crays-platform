@@ -1,0 +1,48 @@
+{
+  "schema": "crays.member42.own-runtime2-license-scope.v1",
+  "license": "AGPL-3.0-only",
+  "copyrightHolder": "CRAYS AG",
+  "grantDate": "2026-11-09",
+  "files": [
+    {
+      "path": "operations/member-provider-account42/actual-runtime/member_rds_runtime_boot.cjs",
+      "bytes": 1364,
+      "sha256": "76f74910dc11bc9ca9c00c3599bbee0073b0298c4bbd1e0d2b9f242f3bc8e2e1",
+      "originalSourcePath": "/srv/crays/releases/member-provider-account42-20261109-01/member-code/member_rds_runtime_boot.cjs",
+      "originalBodyUnchanged": true
+    },
+    {
+      "path": "operations/member-provider-account42/actual-runtime/serve_exact_member42_common_currentness.py",
+      "bytes": 8950,
+      "sha256": "95b381ef86afec2efe4ab785cfd4cbc25008089aaadf918057147d7a5e3312cf",
+      "originalSourcePath": "/srv/crays/releases/member-provider-account42-20261109-01/witness-currentness42/serve_exact_member42_common_currentness.py",
+      "originalBodyUnchanged": true
+    }
+  ],
+  "coveredFiles": 2,
+  "coveredBytes": 10314,
+  "licenseText": {
+    "path": "LICENSE",
+    "source": "https://ftp.gnu.org/gnu/Licenses/agpl-3.0.txt",
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "bytes": 34523,
+    "preservedVerbatim": true
+  },
+  "authority": {
+    "humanLicenseAndRightsHolderDecision": "AGPL-3.0-only; Rechteinhaberin CRAYS AG",
+    "ownSourceResponsibility": "Root explicitly confirms the two captured runtime sources are own operations wrappers; no vendor implementation is granted.",
+    "sourceReviewReceiptSHA256": "d71393747bb1bad1dd4151052e032ddc9cb82dec9368d6fbf022ce1ba34a2d89",
+    "pinnedRootAdoptionReceiptSHA256": "813a9a412fcf552afbd0f1152b1e7b8a354af65bb9a216a6fdb0126fb61bd5c5"
+  },
+  "scope": "Only the exact two CRAYS-owned wrapper revisions listed. Hashes identify the initial grant and do not restrict recipients rights to modify or redistribute covered code under AGPL version 3.",
+  "exclusions": [
+    "All unlisted files, including the additional install/coordinator/ingress source cases and anonymous probe; those are not automatically covered by this two-file grant.",
+    "Application server code loaded at /app/server.js, external SDK/runtime implementations and third-party dependencies retain their own licenses.",
+    "Environment/principal/runtime-policy inputs, cookies, credentials, customer data and any other private operational records are outside this grant.",
+    "Historical Member26 preimages not listed here and independently authored future source revisions are not newly licensed by this notice."
+  ],
+  "provenanceLimit": "Root states narrow26-to42 wrapper binding changes with validators retained. A full independently pinned public26 preimage/diff was not established in the bounded source review. This records source-history limits and does not relicense any foreign material.",
+  "noOriginalSourceOrPackageEdits": true,
+  "sourceExecuted": false,
+  "runtimeDeploymentOrGlobalLegalClosure": false
+}
