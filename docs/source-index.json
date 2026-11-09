@@ -189,6 +189,10 @@
     {
       "component": "nostr-broker-historical-provider-config",
       "path": "source-archives/nostr-broker/provider-deployment-9Bw2a9ACdj6YJGzqPTtSBcmTZA5T/source-capture.json"
+    },
+    {
+      "component": "vendure-native-provider-integration-operations",
+      "path": "operations/vendure-native-provider-integration/source-provenance.json"
     }
   ]
 }

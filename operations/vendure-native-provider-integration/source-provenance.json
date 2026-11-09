@@ -1,0 +1,82 @@
+{
+  "schema": "crays.vendure-native-provider-integration.source-provenance.v1",
+  "scope": "Four exact source-only operation programs; no admission/request templates or private launch payloads",
+  "files": [
+    {
+      "path": "operations/vendure-native-provider-integration/original-asset-delivery-controller.compiled07.rev02.cjs",
+      "originalBodyBytes": 6205,
+      "originalBodySHA256": "93d6b67b19d8f44e0a549132b27b36193fcdf88b065aec38d3703c5f5440eaf2",
+      "exportedBodySHA256": "93d6b67b19d8f44e0a549132b27b36193fcdf88b065aec38d3703c5f5440eaf2",
+      "originalSourceField": "JSON.source UTF-8 bytes",
+      "immutableSourceArtifact": {
+        "key": "migration-work/20261108/business/vendure-native-assets-cjs-source/compiled07.controller.rev02.source-only.json",
+        "versionId": "xGiUSEceJBvFAT_eQ8g4s3gl4QRWB5zA",
+        "envelopeBytes": 9898,
+        "envelopeSHA256": "c51330e5bc86a1c61dcea735d4f4812e18f610a545875bb1d60e0ed8224ddce8"
+      },
+      "transformation": "NONE_EXACT_ORIGINAL_SOURCE_BODY"
+    },
+    {
+      "path": "operations/vendure-native-provider-integration/vendure-native-provider-wrapper.rev01.cjs",
+      "originalBodyBytes": 2604,
+      "originalBodySHA256": "dba7a51867bca95da783bb26ae2aa918e5c93f7507c2239ce76477ec43634563",
+      "exportedBodySHA256": "dba7a51867bca95da783bb26ae2aa918e5c93f7507c2239ce76477ec43634563",
+      "originalSourceField": "JSON.source UTF-8 bytes",
+      "immutableSourceArtifact": {
+        "key": "migration-work/20261108/business/vendure-native-provider-integration/wrapper.source-only.rev01.json",
+        "versionId": "LKui_jcls7qrcNVLSZn.aAh58NCkSOFY",
+        "envelopeBytes": 4766,
+        "envelopeSHA256": "f5a1fd0d867c6f0291214b0368f3e57567da0da1b9c8ac292a49eea1e756873c"
+      },
+      "transformation": "NONE_EXACT_ORIGINAL_SOURCE_BODY"
+    },
+    {
+      "path": "operations/vendure-native-provider-integration/vendure-same-cid-release01.rev03.py",
+      "originalBodyBytes": 40157,
+      "originalBodySHA256": "a6e0f27eaae51c7affb6c22dc6a5021cbbda625dce5d712637c17069434c94db",
+      "exportedBodySHA256": "a6e0f27eaae51c7affb6c22dc6a5021cbbda625dce5d712637c17069434c94db",
+      "originalSourceField": "JSON.source UTF-8 bytes",
+      "immutableSourceArtifact": {
+        "key": "migration-work/20261108/business/vendure-native-provider-integration/same-cid-release01.source-request.rev03.json",
+        "versionId": "Vpi2jyiowvVgw0W75W.ZX.MA1Ji_Jqjp",
+        "envelopeBytes": 156113,
+        "envelopeSHA256": "9485ec3f8fad611a59802dd1a451674a0cff39e6b79d5db4561a77d042768ced"
+      },
+      "transformation": "NONE_EXACT_ORIGINAL_SOURCE_BODY"
+    },
+    {
+      "path": "operations/vendure-native-provider-integration/vendure-root-slot-dispatcher.rev01.py",
+      "originalBodyBytes": 58993,
+      "originalBodySHA256": "d20e432ee1f125b65d4b226fa420879900116ef2b91712b3b6769ca63ee41eac",
+      "exportedBodySHA256": "d20e432ee1f125b65d4b226fa420879900116ef2b91712b3b6769ca63ee41eac",
+      "originalSourceField": "JSON.source UTF-8 bytes",
+      "immutableSourceArtifact": {
+        "key": "migration-work/20261108/business/vendure-native-provider-integration/root-slot-dispatcher.source-only.rev01.json",
+        "versionId": "tzEHnQR71AixxqD9lQ7vbuQdiCOGTTvf",
+        "envelopeBytes": 122426,
+        "envelopeSHA256": "471d161d516639199b8a0455755de01834d2ed3527748f0c205afe1c08745690"
+      },
+      "transformation": "NONE_EXACT_ORIGINAL_SOURCE_BODY"
+    }
+  ],
+  "sourceOnly": true,
+  "sourceOrRuntimeExecutedDuringPreservation": false,
+  "runtimeAdoptionProvenByPublication": false,
+  "independentSourceLifecycleReview": {
+    "key": "migration-work/20261108/business/vendure-native-provider-integration/independent-source-lifecycle-review.rev03-dispatcher01.json",
+    "versionId": "df5N.Ro2BNra._iaP7OxRbxYK5g37uOW",
+    "sha256": "450788c4b5d5b52120589eeac757d993f4fd9f4cb63c8ea1a960b62360a9d8c3",
+    "qualification": "Exact final source/security/lifecycle review; execution requires separate admission"
+  },
+  "licensing": {
+    "newBlanketGrant": false,
+    "originalHeadersUntouched": true,
+    "externalImports": [
+      "@nestjs/common",
+      "@vendure/core",
+      "existing application config/entrypoint modules"
+    ],
+    "dependenciesNotBundledByThisPacket": true
+  },
+  "privateOriginalCustody": "The exact source fields are retained in the immutable private S3 object versions identified per file; source-only JSON envelopes are not public exports."
+}
